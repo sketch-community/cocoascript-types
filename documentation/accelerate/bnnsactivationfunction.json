@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@BNNSActivationFunction",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -259,6 +264,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardswish": {
+      "title": "BNNSActivationFunctionHardSwish",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardswish",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardswish",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the hard swish function of its input."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionidentity": {
       "title": "BNNSActivationFunctionIdentity",
       "type": "topic",
@@ -438,6 +457,20 @@
         {
           "type": "text",
           "text": "An activation function that returns the sigmoid function of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsilu": {
+      "title": "BNNSActivationFunctionSiLU",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsilu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsilu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the sigmoid linear unit (SiLU) function of its input."
         }
       ]
     },
@@ -633,6 +666,7 @@
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongumbelmax",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardshrink",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardsigmoid",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardswish",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionidentity",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionleakyrectifiedlinear",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturate",
@@ -646,6 +680,7 @@
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionscaledtanh",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionselu",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsigmoid",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsilu",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftshrink",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftplus",
@@ -653,7 +688,8 @@
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiontanh",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiontanhshrink",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionthreshold"
-      ]
+      ],
+      "anchor": "1647724"
     }
   ],
   "seeAlsoSections": [
@@ -728,6 +764,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -738,7 +775,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

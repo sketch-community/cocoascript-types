@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Compresses the data object’s bytes using an algorithm that you specify."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSMutableData(im)compressUsingAlgorithm:error:",
+    "parent": {
+      "title": "NSMutableData"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,22 +128,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm": {
-      "title": "NSDataCompressionAlgorithm",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdatacompressionalgorithm"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nserror": {
-      "title": "NSError",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nserror"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsmutabledata/3174967-compressusingalgorithm": {
       "title": "compressUsingAlgorithm:error:",
       "type": "topic",
@@ -137,6 +135,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsmutabledata/3174967-compressusingalgorithm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compresses the data object’s bytes using an algorithm that you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -148,6 +152,36 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsmutabledata/3174967-compressusingalgorithm#3729342": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutabledata/3174967-compressusingalgorithm#3729342",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/nsmutabledata/3174967-compressusingalgorithm#3729342"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm": {
+      "title": "NSDataCompressionAlgorithm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdatacompressionalgorithm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An algorithm that indicates how to compress or decompress data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nserror": {
+      "title": "NSError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nserror"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsmutabledata/3174968-decompressusingalgorithm": {
       "title": "decompressUsingAlgorithm:error:",
       "type": "topic",
@@ -155,6 +189,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsmutabledata/3174968-decompressusingalgorithm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decompresses the data object’s bytes."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -272,6 +312,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -279,10 +320,136 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "algorithm",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The algorithm to use to compress the data. For a list of available algorithms, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "error",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On return, a pointer to an "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nserror"
+                },
+                {
+                  "type": "text",
+                  "text": " instance that indicates why compressing the data failed, or "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": " if no error occurred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this method to compress in-memory data when you want to reduce memory usage and can afford the time to compress and decompress the data. If your data object is already in a compressed format, such as media formats like JPEG images or AAC audio, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutabledata/3174967-compressusingalgorithm"
+            },
+            {
+              "type": "text",
+              "text": " may provide minimal or no benefit."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example shows how to compress data from a string and prints the sizes of the data instances to illustrate the amount of compression:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var string = \"NSData and its mutable subclass NSMutableData provide data objects, or object-oriented wrappers for byte buffers. Data objects let simple allocated buffers (that is, data with no embedded pointers) take on the behavior of Foundation objects.\"",
+            "let data = NSMutableData(data: Data(string.utf8))",
+            "print (\"original data size: \\(data.length)\")",
+            "do {",
+            "    try data.compress(using: .zlib)",
+            "    print(\"zlib compressed size: \\(data.length)\")",
+            "} catch {",
+            "    print (\"Compression error: \\(error)\")",
+            "}",
+            "// Prints:",
+            "//  original data size: 241",
+            "//  zlib compressed size: 158"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3729342",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

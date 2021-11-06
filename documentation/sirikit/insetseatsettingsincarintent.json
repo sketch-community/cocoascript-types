@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,20 +34,31 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSetSeatSettingsInCarIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,13 +93,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent#2315137": {
       "title": "Table 1",
@@ -130,7 +149,8 @@
           "type": "text",
           "text": "A request to change the seat-related settings in a CarPlay-enabled vehicle."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling": {
       "title": "INSetSeatSettingsInCarIntentHandling",
@@ -144,7 +164,8 @@
           "type": "text",
           "text": "The handler interface for changing a vehicle’s seat-related settings."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintentresponse": {
       "title": "INSetSeatSettingsInCarIntentResponse",
@@ -158,7 +179,8 @@
           "type": "text",
           "text": "Your app’s response to a set seat settings in car intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inintent": {
       "title": "INIntent",
@@ -190,7 +212,8 @@
           "kind": "identifier",
           "text": "initWithEnableHeating:enableCooling:enableMassage:seat:level:relativeLevelSetting:carName:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102622-initwithenableheating": {
       "title": "initWithEnableHeating:enableCooling:enableMassage:seat:level:relativeLevelSetting:",
@@ -229,7 +252,8 @@
           "type": "text",
           "text": "The seat position whose settings you want to modify."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102617-enablecooling": {
       "title": "enableCooling",
@@ -243,7 +267,8 @@
           "type": "text",
           "text": "A Boolean value indicating whether to enable the seat cooling system."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102618-enableheating": {
       "title": "enableHeating",
@@ -257,7 +282,8 @@
           "type": "text",
           "text": "A Boolean value indicating whether to enable the seat heating system."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102629-enablemassage": {
       "title": "enableMassage",
@@ -271,7 +297,8 @@
           "type": "text",
           "text": "A Boolean value indicating whether to enable the seat massage system."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102620-level": {
       "title": "level",
@@ -285,7 +312,8 @@
           "type": "text",
           "text": "An integer value indicating the desired level for the seat setting."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102626-relativelevelsetting": {
       "title": "relativeLevelSetting",
@@ -299,7 +327,8 @@
           "type": "text",
           "text": "A relative change to the level value."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/3019577-carname": {
       "title": "carName",
@@ -313,7 +342,8 @@
           "type": "text",
           "text": "The name of the car you applied the settings to."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -323,16 +353,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -350,14 +390,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/3019578-initwithenableheating",
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102622-initwithenableheating"
-      ]
+      ],
+      "anchor": "2315133"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Seat Position",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102630-seat"
-      ]
+      ],
+      "anchor": "2315135"
     },
     {
       "kind": "taskGroup",
@@ -368,14 +410,16 @@
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102629-enablemassage",
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102620-level",
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102626-relativelevelsetting"
-      ]
+      ],
+      "anchor": "2315136"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Car Name",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/3019577-carname"
-      ]
+      ],
+      "anchor": "3019783"
     }
   ],
   "seeAlsoSections": [
@@ -384,7 +428,7 @@
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintentresponse"
       ],
-      "title": "Set Seat Settings in Car",
+      "title": "CarPlay Seat Settings",
       "generated": true
     }
   ],
@@ -422,6 +466,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -459,7 +504,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This class contains properties for multiple types of seat-related settings, but a given instance of this class contains changes for only one setting at a time. When resolving and confirming the parameters of this intent, use the specified properties to modify your vehicle’s seat settings. Assume no changes for other settings. If your vehicle does not support a particular setting, offer a reasonable fallback setting and ask the user for confirmation. "
+              "text": "This class contains properties for multiple types of seat-related settings, but a given instance of this class contains changes for only one setting at a time. When resolving and confirming the parameters of this intent, use the specified properties to modify your vehicle’s seat settings. Assume no changes for other settings. If your vehicle doesn’t support a particular setting, offer a reasonable fallback setting and ask the user for confirmation. "
             }
           ]
         },
@@ -1460,7 +1505,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Sürücü koltuğu soğutucusunu 1'e getir"
+                      "text": "Sürücü koltuğu soğutucusunu 1’e getir"
                     }
                   ]
                 }
@@ -1483,7 +1528,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When managing CarPlay features, users do not need to include the name of the app in the phrases that they speak. Siri knows automatically when CarPlay is active and routes CarPlay-related intents to the app of the corresponding automotive vendor."
+              "text": "When managing CarPlay features, users don’t need to include the name of the app in the phrases that they speak. Siri knows automatically when CarPlay is active and routes CarPlay-related intents to the app of the corresponding automotive vendor."
             }
           ]
         }
@@ -1491,7 +1536,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

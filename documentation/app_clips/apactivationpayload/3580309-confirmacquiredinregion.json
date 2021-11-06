@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Checks whether an App Clip’s invocation happened at an expected physical location."
+      "text": "Checks whether an App Clip invocation happened at an expected physical location."
     }
   ],
   "documentVersion": 0,
@@ -34,20 +34,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)APActivationPayload(im)confirmAcquiredInRegion:completionHandler:",
+    "parent": {
+      "title": "APActivationPayload"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -154,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Checks whether an App Clip’s invocation happened at an expected physical location."
+          "text": "Checks whether an App Clip invocation happened at an expected physical location."
         }
       ],
       "fragments": [
@@ -276,6 +284,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -295,7 +304,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The expected physical location at the time of the App Clip’s invocation."
+                  "text": "The expected physical location at the time of the App Clip invocation."
                 }
               ]
             }
@@ -309,7 +318,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A closure called when the platform confirms the expected physical location at the time of the App Clip’s invocation."
+                  "text": "A closure called when the platform confirms the expected physical location at the time of the App Clip invocation."
                 }
               ]
             },
@@ -341,7 +350,7 @@
                         "inlineContent": [
                           {
                             "type": "text",
-                            "text": "A Boolean value that indicates whether the App Clip’s invocation happened at the expected physical location."
+                            "text": "A Boolean value that indicates whether the App Clip invocation happened at the expected physical location."
                           }
                         ]
                       }
@@ -381,7 +390,7 @@
                           },
                           {
                             "type": "text",
-                            "text": " if the platform was able to determine the user’s physical location at the time of the App Clip’s invocation."
+                            "text": " if the platform was able to determine the user’s physical location at the time of the App Clip invocation."
                           }
                         ]
                       }
@@ -408,7 +417,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Confirm the user’s location at the time of the App Clip’s invocation if the App Clip is associated with a physical location. The request to confirm the location fails with "
+              "text": "Confirm the user’s location at the time of the App Clip invocation if the App Clip is associated with a physical location. The request to confirm the location fails with "
             },
             {
               "type": "reference",
@@ -426,7 +435,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For the platform to accept the request to confirm the user’s location, you need to make modifications to the App Clip’s "
+              "text": "For the platform to accept the request to confirm the user’s location, you need to make modifications to the "
             },
             {
               "type": "codeVoice",
@@ -434,7 +443,7 @@
             },
             {
               "type": "text",
-              "text": " file. For more information, see "
+              "text": " file of the App Clip. For more information, see "
             },
             {
               "type": "reference",
@@ -455,7 +464,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Functionality to confirm the user’s location is only available to App Clips. For your App Clip’s corresponding full app, request permission to access the user’s location and make use of the "
+                  "text": "Functionality to confirm the user’s location is only available to App Clips. For the full app, request permission to access the user’s location and make use of the "
                 },
                 {
                   "type": "reference",
@@ -489,7 +498,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

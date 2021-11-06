@@ -45,36 +45,58 @@
     "platforms": [
       {
         "name": "iOS",
-        "introducedAt": "14.0",
-        "current": "14.3"
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
-        "introducedAt": "10.9",
-        "current": "11.1"
+        "introducedAt": "10.15",
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
-        "introducedAt": "14.0",
-        "current": "14.3"
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
-        "introducedAt": "7.0",
-        "current": "7.2"
+        "introducedAt": "6.0",
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "deprecatedAt": "13.0",
+        "current": "13.2",
+        "deprecated": true
       }
     ],
     "externalID": "s:10Accelerate4vDSPO3DFTC",
+    "parent": {
+      "title": "vDSP"
+    },
     "symbolKind": "cl",
     "fragments": [
       {
@@ -88,8 +110,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -143,6 +165,30 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/discretefouriertransform": {
+      "title": "vDSP.DiscreteFourierTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/discretefouriertransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/discretefouriertransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides forward and inverse discrete Fourier transforms on single- or double-precision collections of interleaved or split-complex data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP.DiscreteFourierTransform"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp_floatingpointdiscretefouriertransformable": {
       "title": "vDSP_FloatingPointDiscreteFourierTransformable",
@@ -214,7 +260,8 @@
           "kind": "text",
           "text": ": T.Type)"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/dft/3240725-transform": {
       "title": "transform(inputReal:inputImaginary:)",
@@ -274,7 +321,8 @@
           "kind": "text",
           "text": ": [T])"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/dft/3240726-transform": {
       "title": "transform(inputReal:inputImaginary:outputReal:outputImaginary:)",
@@ -334,31 +382,8 @@
           "kind": "text",
           "text": ": inout V)"
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/vdsp/dft": {
-      "title": "vDSP.DFT",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/dft",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/vdsp/dft",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A single- and double-precision discrete Fourier transform."
-        }
       ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "class "
-        },
-        {
-          "kind": "identifier",
-          "text": "vDSP.DFT"
-        }
-      ]
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/dfttransformtype": {
       "title": "vDSP.DFTTransformType",
@@ -384,6 +409,31 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/dft": {
+      "title": "vDSP.DFT",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/dft",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/dft",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A single- and double-precision discrete Fourier transform."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP.DFT"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -392,13 +442,34 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/discretefouriertransform"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "topicSections": [
     {
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/vdsp/dft/3240724-init"
-      ]
+      ],
+      "anchor": "3256633"
     },
     {
       "kind": "taskGroup",
@@ -406,15 +477,17 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/vdsp/dft/3240725-transform",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/dft/3240726-transform"
-      ]
+      ],
+      "anchor": "3256634"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/discretefouriertransform",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/dfttransformtype"
       ],
-      "title": "Objects that Simplify Discrete Fourier Transforms",
+      "title": "Objects that Simplify DFTs",
       "generated": true
     }
   ],
@@ -461,8 +534,13 @@
               "text": " "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3DFTC1Txmfp",
+              "text": "T"
+            },
+            {
               "kind": "text",
-              "text": "T : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -473,6 +551,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -483,7 +562,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

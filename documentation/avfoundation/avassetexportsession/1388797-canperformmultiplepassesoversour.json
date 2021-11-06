@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetExportSession(py)canPerformMultiplePassesOverSourceMediaData",
+    "parent": {
+      "title": "AVAssetExportSession"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that transcodes the contents of an asset source object to create an output of the form described by a specified export preset."
+          "text": "An object that transcodes the contents of an asset in a format that you specify using an export preset."
         }
       ]
     },
@@ -133,7 +141,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A directory that is suitable for containing temporary files generated during the export process."
+          "text": "A directory suitable to store temporary files that the export process generates."
         }
       ]
     },
@@ -155,7 +163,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The URL of the export session’s output."
+          "text": "A URL where an asset export session writes its output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype": {
+      "title": "outputFileType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The file type of the output an asset export session writes."
         }
       ]
     },
@@ -173,17 +195,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype": {
-      "title": "outputFileType",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388728-timerange": {
+      "title": "timeRange",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388728-timerange",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
+      "url": "/documentation/avfoundation/avassetexportsession/1388728-timerange",
       "abstract": [
         {
           "type": "text",
-          "text": "The type of file written by the session."
+          "text": "The time range of the source asset to export."
         }
       ]
     },
@@ -197,77 +219,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The file length that the output of the session should not exceed."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388728-timerange": {
-      "title": "timeRange",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388728-timerange",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1388728-timerange",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The time range exported from the source."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390453-metadata": {
-      "title": "metadata",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390453-metadata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1390453-metadata",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The metadata written to the output file by the export session."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter": {
-      "title": "metadataItemFilter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Specifies a filter object used during export to determine which metadata items to transfer from the source asset."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388155-audiomix": {
-      "title": "audioMix",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388155-audiomix",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1388155-audiomix",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The parameters for audio mixing and an indication whether to enable nondefault audio mixing for export."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm": {
-      "title": "audioTimePitchAlgorithm",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A processing algorithm used to manage audio pitch for scaled audio edits."
+          "text": "The file length that the output of the session must not exceed."
         }
       ]
     },
@@ -281,35 +233,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether to optimize the movie should for network use."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389477-videocomposition": {
-      "title": "videoComposition",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389477-videocomposition",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1389477-videocomposition",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The instructions for video composition, and indicates whether video composition is enabled for export."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor": {
-      "title": "customVideoCompositor",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The custom video compositor instance used, if any."
+          "text": "A Boolean value that indicates whether to optimize the movie for network use."
         }
       ]
     },
@@ -339,17 +263,11 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389970-outputurl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388762-supportedfiletypes",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387110-outputfiletype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388762-supportedfiletypes",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388728-timerange",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390453-metadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388155-audiomix",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390593-shouldoptimizefornetworkuse",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389477-videocomposition",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388699-directoryfortemporaryfiles"
       ],
       "title": "Configuring Output",
@@ -392,6 +310,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -422,7 +341,7 @@
             },
             {
               "type": "text",
-              "text": ", the export session can produce higher quality results at the expense of longer export times.  Setting this property to "
+              "text": ", the export session can produce higher quality results at the expense of longer export times. Setting this property to "
             },
             {
               "type": "reference",
@@ -431,7 +350,7 @@
             },
             {
               "type": "text",
-              "text": " may also require the export session to write temporary data to disk during the export.  To control the location of temporary data, use the property "
+              "text": " may also require the export session to write temporary data to disk during the export. To control the location of temporary data, use the property "
             },
             {
               "type": "reference",
@@ -458,7 +377,7 @@
             },
             {
               "type": "text",
-              "text": ".  Not all export session configurations can benefit from performing multiple passes over the source media.  In these cases, setting this property to "
+              "text": ". Not all export session configurations can benefit from performing multiple passes over the source media. In these cases, setting this property to "
             },
             {
               "type": "reference",
@@ -476,7 +395,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property cannot be set after the export has started."
+              "text": "You can’t set this property after the export starts."
             }
           ]
         }
@@ -484,7 +403,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

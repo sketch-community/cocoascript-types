@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The table view style resolves to a plain style."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -31,15 +37,18 @@
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@E@NSTableViewStyle@NSTableViewStylePlain",
+    "parent": {
+      "title": "NSTableViewStyle"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,6 +121,84 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nstableview/1524258-intercellspacing": {
+      "title": "intercellSpacing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstableview/1524258-intercellspacing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstableview/1524258-intercellspacing"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstyleautomatic": {
+      "title": "NSTableViewStyleAutomatic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstyleautomatic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstableviewstyle/nstableviewstyleautomatic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The system resolves the table view style based on the table view hierarchy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstylefullwidth": {
+      "title": "NSTableViewStyleFullWidth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstylefullwidth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstableviewstyle/nstableviewstylefullwidth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The table view style resolves to a full-width style."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstyleinset": {
+      "title": "NSTableViewStyleInset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstyleinset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstableviewstyle/nstableviewstyleinset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The table view style resolves to an inset style."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstylesourcelist": {
+      "title": "NSTableViewStyleSourceList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstylesourcelist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstableviewstyle/nstableviewstylesourcelist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The table view style resolves to a source-list style."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstyleplain": {
+      "title": "NSTableViewStylePlain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstyleplain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nstableviewstyle/nstableviewstyleplain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The table view style resolves to a plain style."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -120,16 +207,18 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "added",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstyleautomatic",
+        "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstylefullwidth",
+        "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstyleinset",
+        "doc://com.apple.documentation/documentation/appkit/nstableviewstyle/nstableviewstylesourcelist"
+      ],
+      "title": "Table Styles",
+      "generated": true
     }
-  },
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -149,10 +238,39 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A plain-style table applies no additional insets or padding around its content, except for the spacing that the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nstableview/1524258-intercellspacing"
+            },
+            {
+              "type": "text",
+              "text": " property specifies."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

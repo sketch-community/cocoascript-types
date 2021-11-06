@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSJSONSerialization(cm)dataWithJSONObject:options:error:",
+    "parent": {
+      "title": "NSJSONSerialization"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,13 +120,7 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonserialization",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsjsonserialization",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that converts between JSON and the equivalent Foundation objects."
-        }
-      ]
+      "url": "/documentation/foundation/nsjsonserialization"
     },
     "doc://com.apple.documentation/documentation/foundation/nsjsonwritingoptions": {
       "title": "NSJSONWritingOptions",
@@ -126,7 +128,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonwritingoptions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsjsonwritingoptions"
+      "url": "/documentation/foundation/nsjsonwritingoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for writing JSON data."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/1448136-nserror_codes/nspropertylistwriteinvaliderror": {
       "title": "NSPropertyListWriteInvalidError",
@@ -146,7 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that indicates whether a given object can be converted to JSON data."
+          "text": "Returns a Boolean value that indicates whether the serializer can convert a given object to JSON data."
         }
       ],
       "fragments": [
@@ -268,6 +276,7 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1417433-writejsonobject",
+        "doc://com.apple.documentation/documentation/foundation/nsjsonwritingoptions",
         "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1418461-isvalidjsonobject"
       ],
       "title": "Creating JSON Data",
@@ -392,6 +401,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -551,7 +561,16 @@
             },
             {
               "type": "text",
-              "text": " will not produce valid JSON, an exception is thrown. This exception is thrown prior to parsing and represents a programming error, not an internal error. You should check whether the input will produce valid JSON before calling this method by using "
+              "text": " can’t produce valid JSON, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonserialization"
+            },
+            {
+              "type": "text",
+              "text": " throws an exception. This exception occurs prior to parsing and represents a programming error, not an internal error. Before calling this method, you should check whether the input can produce valid JSON by using "
             },
             {
               "type": "reference",
@@ -578,7 +597,16 @@
             },
             {
               "type": "text",
-              "text": " option will generate JSON with whitespace designed to make the output more readable. If that option is not set, the most compact possible JSON will be generated. "
+              "text": " option generates JSON with white space designed to make the output more readable. If this option isn’t set, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonserialization"
+            },
+            {
+              "type": "text",
+              "text": " generates the most compact possible JSON. "
             }
           ]
         },
@@ -670,7 +698,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The scheduler time type used by the run loop."
+      "text": "The scheduler time type that the run loop uses."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So9NSRunLoopC10FoundationE17SchedulerTimeTypeV",
+    "parent": {
+      "title": "RunLoop"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -77,8 +85,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -303,7 +311,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The date represented by this type."
+          "text": "The date this type represents."
         }
       ],
       "fragments": [
@@ -623,32 +631,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358297-init": {
-      "title": "init(from:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358297-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/runloop/schedulertimetype/3358297-init",
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "from"
-        },
-        {
-          "kind": "text",
-          "text": ": Decoder)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358296-hashvalue": {
       "title": "hashValue",
       "type": "topic",
@@ -656,6 +638,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/runloop/schedulertimetype/3358296-hashvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The computed hash value of the run loop scheduler time."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -671,36 +659,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358294-encode": {
-      "title": "encode(to:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358294-encode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/runloop/schedulertimetype/3358294-encode",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "encode"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "to"
-        },
-        {
-          "kind": "text",
-          "text": ": Encoder)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358295-hash": {
       "title": "hash(into:)",
       "type": "topic",
@@ -708,6 +666,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/runloop/schedulertimetype/3358295-hash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hashes the essential components of the run loop schedule time by feeding them into the given hasher."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -728,6 +692,74 @@
         {
           "kind": "text",
           "text": ": inout Hasher)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358297-init": {
+      "title": "init(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358297-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/schedulertimetype/3358297-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a run loop scheduler time with data from an unarchiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Decoder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358294-encode": {
+      "title": "encode(to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358294-encode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/schedulertimetype/3358294-encode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encodes the run loop schedule time into the given encoder."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "encode"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Encoder)"
         }
       ]
     },
@@ -889,7 +921,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The minimum tolerance allowed by the run loop scheduler."
+          "text": "The minimum tolerance the run loop scheduler allows."
         }
       ],
       "fragments": [
@@ -945,7 +977,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The scheduler time type used by the run loop."
+          "text": "The scheduler time type that the run loop uses."
         }
       ],
       "fragments": [
@@ -1018,7 +1050,8 @@
       "title": "Creating Scheduler Times",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329469-init"
-      ]
+      ],
+      "anchor": "3330127"
     },
     {
       "kind": "taskGroup",
@@ -1027,14 +1060,16 @@
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329466-advanced",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329468-distance"
-      ]
+      ],
+      "anchor": "3330124"
     },
     {
       "kind": "taskGroup",
       "title": "Inspecting Properties",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329467-date"
-      ]
+      ],
+      "anchor": "3330119"
     },
     {
       "kind": "taskGroup",
@@ -1045,7 +1080,8 @@
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329400",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329402",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329405"
-      ]
+      ],
+      "anchor": "3330117"
     },
     {
       "kind": "taskGroup",
@@ -1056,30 +1092,20 @@
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329408",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329409",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329410",
-        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329411"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Initializers",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358297-init"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358296-hashvalue"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358294-encode",
+        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329411",
+        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358296-hashvalue",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358295-hash"
-      ]
+      ],
+      "anchor": "3330118"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Encoding Scheduler Times",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358297-init",
+        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358294-encode"
+      ],
+      "anchor": "3737843"
     }
   ],
   "seeAlsoSections": [
@@ -1120,6 +1146,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1130,7 +1157,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

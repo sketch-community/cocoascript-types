@@ -13,6 +13,13 @@
         "doc://com.apple.documentation/documentation/coredata",
         "doc://com.apple.documentation/documentation/coredata/core_data_stack",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/core_data_stack",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/deprecated_symbols"
       ]
     ]
   },
@@ -35,15 +42,20 @@
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "deprecatedAt": "10.13",
+        "current": "12.1",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSPersistentStoreCoordinator(im)importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:",
+    "parent": {
+      "title": "NSPersistentStoreCoordinator"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,6 +112,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/deprecated_symbols",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_options": {
       "title": "Store Options",
       "type": "topic",
@@ -150,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Removes a given persistent store."
+          "text": "Removes the specified persistent store from the coordinator."
         }
       ],
       "fragments": [
@@ -174,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Moves a persistent store to a new location, changing the storage type if necessary."
+          "text": "Changes the location and, if necessary, the store type of the specified persistent store."
         }
       ],
       "fragments": [
@@ -198,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Adds a new persistent store of a specified type at a given location."
+          "text": "Adds a specific type of persistent store at the provided location."
         }
       ],
       "fragments": [
@@ -262,7 +282,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A delegate that supports Core Spotlight integration."
+          "text": "A set of methods that enable integration with Core Spotlight."
         }
       ]
     },
@@ -272,7 +292,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightexporter",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nscoredatacorespotlightexporter"
+      "url": "/documentation/coredata/nscoredatacorespotlightexporter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key that specifies a CoreSpotlight delegate."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468919-elementsderivedfromexternalrecor": {
       "title": "elementsDerivedFromExternalRecordURL:",
@@ -296,7 +322,8 @@
           "kind": "identifier",
           "text": "elementsDerivedFromExternalRecordURL:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier": {
       "title": "importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:",
@@ -320,19 +347,34 @@
           "kind": "identifier",
           "text": "importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:"
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_external_record_elements": {
-      "title": "Spotlight External Record Elements",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_record_keys": {
+      "title": "Spotlight Record Keys",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_external_record_elements",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_record_keys",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/spotlight_external_record_elements",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/spotlight_record_keys",
       "abstract": [
         {
           "type": "text",
-          "text": "Specify values for the parsed elements derived from the Spotlight external record file."
+          "text": "The keys for the values that exist in the Spotlight external record file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/showcase_app_data_in_spotlight": {
+      "title": "Showcase App Data in Spotlight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/showcase_app_data_in_spotlight",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/showcase_app_data_in_spotlight",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "​ ​Index app data so users can find it by using Spotlight search. ​​"
         }
       ]
     },
@@ -350,9 +392,10 @@
         "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate",
         "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightexporter",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468919-elementsderivedfromexternalrecor",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_external_record_elements"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_record_keys",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/showcase_app_data_in_spotlight"
       ],
-      "title": "Working with Spotlight",
+      "title": "Integrating with Spotlight",
       "generated": true
     },
     {
@@ -856,7 +899,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

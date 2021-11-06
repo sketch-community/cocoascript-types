@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayer(im)addPeriodicTimeObserverForInterval:queue:usingBlock:",
+    "parent": {
+      "title": "AVPlayer"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -373,6 +381,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -395,15 +404,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The time interval at which the "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "block"
-                },
-                {
-                  "type": "text",
-                  "text": " should be invoked during normal playback, according to progress of the player’s current time."
+                  "text": "The time interval at which the system invokes the block during normal playback, according to progress of the player’s current time."
                 }
               ]
             }
@@ -417,28 +418,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A "
-                },
-                {
-                  "type": "emphasis",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "serial"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "text": " dispatch queue onto which "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "block"
-                },
-                {
-                  "type": "text",
-                  "text": " should be enqueued. Passing a concurrent queue is not supported and will result in undefined behavior."
+                  "text": "The dispatch queue on which the system calls the block. Passing a concurrent queue isn’t supported and results in undefined behavior."
                 }
               ]
             },
@@ -455,7 +435,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ", the main queue is used."
+                  "text": ", the system uses the main queue."
                 }
               ]
             }
@@ -469,7 +449,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The block to be invoked periodically."
+                  "text": "The block that the system periodically invokes."
                 }
               ]
             },
@@ -501,7 +481,7 @@
                         "inlineContent": [
                           {
                             "type": "text",
-                            "text": "The time at which the block is invoked."
+                            "text": "The time at which the system invokes the block."
                           }
                         ]
                       }
@@ -557,7 +537,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You must maintain a strong reference the returned value as long as you want the time observer to be invoked by the player. Each invocation of this method should be paired with a corresponding call to "
+              "text": "You must maintain a strong reference to the returned value as long as you want the time observer to be invoked by the player. You must pair each invocation of this method with a corresponding call to "
             },
             {
               "type": "reference",
@@ -575,7 +555,7 @@
             },
             {
               "type": "text",
-              "text": " will result in undefined behavior."
+              "text": " results in undefined behavior."
             }
           ]
         },
@@ -584,7 +564,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The block is invoked periodically at the interval specified, interpreted according to the timeline of the current item. The block is also invoked whenever time jumps and whenever playback starts or stops. If the interval corresponds to a very short interval in real time, the player may invoke the block less frequently than requested. Even so, the player will invoke the block sufficiently often for the client to update indications of the current time appropriately in its end-user interface."
+              "text": "The system invokes the block periodically at the interval specified, interpreted according to the timeline of the current item. It also invokes the block whenever time jumps or playback starts or stops. If the interval corresponds to a very short interval in real time, the player may invoke the block less frequently than your app requested. Even so, the player will invoke the block sufficiently often for the client to update indications of the current time appropriately in its end-user interface."
             }
           ]
         },
@@ -593,7 +573,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The following example illustrates how you would set up a callback to be fired every half second during normal playback."
+              "text": "The following example illustrates how you set up a callback the system invokes every half second during normal playback."
             }
           ]
         },
@@ -656,7 +636,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

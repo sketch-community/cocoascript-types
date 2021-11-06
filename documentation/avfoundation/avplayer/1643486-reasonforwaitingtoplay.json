@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayer(py)reasonForWaitingToPlay",
+    "parent": {
+      "title": "AVPlayer"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A status that indicates whether playback is currently in progress, paused indefinitely, or suspended while waiting for appropriate network conditions."
+          "text": "A value that indicates whether playback is in progress, paused indefinitely, or waiting for network conditions to improve."
         }
       ]
     },
@@ -172,6 +180,20 @@
       "title": "Key-value observing",
       "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingreason": {
+      "title": "AVPlayerWaitingReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingreason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerwaitingreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reasons a player is waiting to begin or resume playback."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643482-automaticallywaitstominimizestal": {
       "title": "automaticallyWaitsToMinimizeStalling",
       "type": "topic",
@@ -183,20 +205,6 @@
         {
           "type": "text",
           "text": "A Boolean value that indicates whether the player should automatically delay playback in order to minimize stalling."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingreason": {
-      "title": "AVPlayerWaitingReason",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingreason",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerwaitingreason",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The reasons the player is waiting begin or resume playback."
         }
       ]
     },
@@ -224,7 +232,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The player statuses indicating a playback rate change."
+          "text": "Constants that indicate the state of playback control."
         }
       ]
     },
@@ -258,16 +266,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -321,6 +319,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -469,7 +468,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

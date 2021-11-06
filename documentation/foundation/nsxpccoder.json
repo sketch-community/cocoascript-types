@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A coder that encodes and decodes objects that your app sends over an XPC connection."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSXPCCoder",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -99,6 +110,60 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/swift/codable": {
+      "title": "Codable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/codable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/codable"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsxpcconnection": {
+      "title": "NSXPCConnection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpcconnection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsxpcconnection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bidirectional communication channel between two processes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418511-iskindofclass": {
+      "title": "isKindOfClass:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418511-iskindofclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject/1418511-iskindofclass",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isKindOfClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsxpccoder": {
+      "title": "NSXPCCoder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsxpccoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A coder that encodes and decodes objects that your app sends over an XPC connection."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nscoder": {
       "title": "NSCoder",
       "type": "topic",
@@ -113,7 +178,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3172580-connection",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsxpccoder/3172580-connection"
+      "url": "/documentation/foundation/nsxpccoder/3172580-connection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The connection currently performing encoding or decoding."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3172581-userinfo": {
       "title": "userInfo",
@@ -121,23 +192,11 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3172581-userinfo",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsxpccoder/3172581-userinfo"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype": {
-      "title": "decodeXPCObjectOfType:forKey:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype",
-      "fragments": [
+      "url": "/documentation/foundation/nsxpccoder/3172581-userinfo",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "decodeXPCObjectOfType:forKey:"
+          "type": "text",
+          "text": "An optional user information object associated with the coder."
         }
       ]
     },
@@ -148,6 +207,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsxpccoder/3174970-encodexpcobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encodes an object to send over an XPC connection."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -156,6 +221,30 @@
         {
           "kind": "identifier",
           "text": "encodeXPCObject:forKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype": {
+      "title": "decodeXPCObjectOfType:forKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decodes an object and validates that its type matches the type a service provides over XPC."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "decodeXPCObjectOfType:forKey:"
         }
       ]
     },
@@ -173,20 +262,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsxpcconnection": {
-      "title": "NSXPCConnection",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpcconnection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsxpcconnection",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A bidirectional communication channel between two processes."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsxpcinterface": {
       "title": "NSXPCInterface",
       "type": "topic",
@@ -201,30 +276,12 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsxpccoder": {
-      "title": "NSXPCCoder",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsxpccoder"
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -240,19 +297,21 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Inspecting the Coder",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3172580-connection",
         "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3172581-userinfo"
-      ]
+      ],
+      "anchor": "3723780"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Methods",
+      "title": "Encoding and Decoding",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype",
-        "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174970-encodexpcobject"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174970-encodexpcobject",
+        "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype"
+      ],
+      "anchor": "3723779"
     }
   ],
   "seeAlsoSections": [
@@ -300,6 +359,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -307,10 +367,75 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you want to perform custom encoding or decoding of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/codable"
+            },
+            {
+              "type": "text",
+              "text": " objects that your app sends over an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpcconnection"
+            },
+            {
+              "type": "text",
+              "text": ", use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418511-iskindofclass"
+            },
+            {
+              "type": "text",
+              "text": " to determine if the coder provided to your object is a kind of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " "
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

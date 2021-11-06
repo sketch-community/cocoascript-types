@@ -11,6 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare",
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant"
       ]
@@ -35,35 +42,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@CKShareParticipantAcceptanceStatus",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -85,7 +97,7 @@
         }
       ],
       "paths": [
-        "documentation/cloudkit/ckshare_participant_acceptancestatus"
+        "documentation/cloudkit/ckshare/participantacceptancestatus"
       ]
     }
   ],
@@ -98,18 +110,26 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
-      "title": "CKShare",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
-      "url": "/documentation/cloudkit/ckshare",
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "url": "/documentation/cloudkit/shared_records",
       "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant": {
       "title": "CKShareParticipant",
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant",
       "url": "/documentation/cloudkit/ckshareparticipant",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
+      "title": "CKShare",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+      "url": "/documentation/cloudkit/ckshare",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
@@ -223,7 +243,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantacceptancestatus/ckshareparticipantacceptancestatuspending",
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantacceptancestatus/ckshareparticipantacceptancestatusaccepted",
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantacceptancestatus/ckshareparticipantacceptancestatusremoved"
-      ]
+      ],
+      "anchor": "1647740"
     }
   ],
   "seeAlsoSections": [
@@ -231,7 +252,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant/1640395-acceptancestatus"
       ],
-      "title": "Accessing the Participant Acceptance Status",
+      "title": "Accessing the Participant’s Status",
       "generated": true
     }
   ],
@@ -297,6 +318,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -307,7 +329,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

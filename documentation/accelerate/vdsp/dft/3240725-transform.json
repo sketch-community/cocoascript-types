@@ -48,36 +48,58 @@
     "platforms": [
       {
         "name": "iOS",
-        "introducedAt": "14.0",
-        "current": "14.3"
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
-        "introducedAt": "10.9",
-        "current": "11.1"
+        "introducedAt": "10.15",
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
-        "introducedAt": "14.0",
-        "current": "14.3"
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
-        "introducedAt": "7.0",
-        "current": "7.2"
+        "introducedAt": "6.0",
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "deprecatedAt": "13.0",
+        "current": "13.2",
+        "deprecated": true
       }
     ],
     "externalID": "s:10Accelerate4vDSPO3DFTC9transform9inputReal0E9ImaginarySayxG4real_AI9imaginarytqd___qd__t7ElementQyd__RszAA0A6BufferRd__lF",
+    "parent": {
+      "title": "vDSP.DFT"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -127,8 +149,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -191,6 +213,14 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer/3240653-element": {
+      "title": "Element",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer/3240653-element",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratebuffer/3240653-element"
+    },
     "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer": {
       "title": "AccelerateBuffer",
       "type": "topic",
@@ -250,7 +280,8 @@
               "text": ": "
             },
             {
-              "kind": "text",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3DFTC9transform9inputReal0E9ImaginarySayxG4real_AI9imaginarytqd___qd__t7ElementQyd__RszAA0A6BufferRd__lF1UL_qd__mfp",
               "text": "U"
             },
             {
@@ -266,7 +297,8 @@
               "text": ": "
             },
             {
-              "kind": "text",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3DFTC9transform9inputReal0E9ImaginarySayxG4real_AI9imaginarytqd___qd__t7ElementQyd__RszAA0A6BufferRd__lF1UL_qd__mfp",
               "text": "U"
             },
             {
@@ -287,7 +319,16 @@
             },
             {
               "kind": "text",
-              "text": "[T]"
+              "text": "["
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3DFTC1Txmfp",
+              "text": "T"
+            },
+            {
+              "kind": "text",
+              "text": "]"
             },
             {
               "kind": "text",
@@ -303,7 +344,16 @@
             },
             {
               "kind": "text",
-              "text": "[T]"
+              "text": "["
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3DFTC1Txmfp",
+              "text": "T"
+            },
+            {
+              "kind": "text",
+              "text": "]"
             },
             {
               "kind": "text",
@@ -322,16 +372,41 @@
               "text": " "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3DFTC1Txmfp",
+              "text": "T"
+            },
+            {
               "kind": "text",
-              "text": "T == U.Element"
+              "text": " == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3DFTC9transform9inputReal0E9ImaginarySayxG4real_AI9imaginarytqd___qd__t7ElementQyd__RszAA0A6BufferRd__lF1UL_qd__mfp",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP7ElementQa",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer/3240653-element",
+              "text": "Element"
             },
             {
               "kind": "text",
               "text": ", "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3DFTC9transform9inputReal0E9ImaginarySayxG4real_AI9imaginarytqd___qd__t7ElementQyd__RszAA0A6BufferRd__lF1UL_qd__mfp",
+              "text": "U"
+            },
+            {
               "kind": "text",
-              "text": "U : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -342,6 +417,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -352,7 +428,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

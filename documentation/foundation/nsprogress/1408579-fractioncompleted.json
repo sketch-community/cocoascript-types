@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The fraction of the overall work completed by this progress object, including work done by any children it may have."
+      "text": "The fraction of the overall work that the progress object completes, including work from its suboperations."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(py)fractionCompleted",
+    "parent": {
+      "title": "NSProgress"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
+          "text": "An object that conveys ongoing progress to the user for a specified task."
         }
       ]
     },
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The fraction of the overall work completed by this progress object, including work done by any children it may have."
+          "text": "The fraction of the overall work that the progress object completes, including work from its suboperations."
         }
       ]
     },
@@ -156,7 +164,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1412871-indeterminate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1412871-indeterminate"
+      "url": "/documentation/foundation/nsprogress/1412871-indeterminate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the tracked progress is indeterminate."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/no": {
       "title": "NO",
@@ -166,6 +180,20 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/2865603-finished": {
+      "title": "finished",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/2865603-finished",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/2865603-finished",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates the progress object is complete."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -174,6 +202,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/1412871-indeterminate",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/2865603-finished"
+      ],
+      "title": "Observing Progress",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -210,6 +248,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -232,7 +271,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the receiver object does not have any children, "
+              "text": "If the receiver object doesn’t have any suboperations, "
             },
             {
               "type": "reference",
@@ -263,7 +302,7 @@
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1410940-totalunitcount"
             },
             {
@@ -272,12 +311,12 @@
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1407934-completedunitcount"
             },
             {
               "type": "text",
-              "text": " properties to zero indicates that there is no progress to track; in this case, the "
+              "text": " properties to zero indicates that there is no progress to track. In this case, the "
             },
             {
               "type": "reference",
@@ -321,7 +360,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the receiver does have children, "
+              "text": "If the receiver does have suboperations, "
             },
             {
               "type": "reference",
@@ -330,25 +369,25 @@
             },
             {
               "type": "text",
-              "text": " reflects progress made in child objects in addition to its own "
+              "text": " reflects progress from those progress objects in addition to its own "
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1407934-completedunitcount"
             },
             {
               "type": "text",
-              "text": ". When children finish, the "
+              "text": ". When the suboperations finish, the "
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1407934-completedunitcount"
             },
             {
               "type": "text",
-              "text": " of the parent is updated."
+              "text": " of the containing progress object updates."
             }
           ]
         }
@@ -356,7 +395,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

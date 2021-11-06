@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@SA@DenseMatrix_Float@FI@rowCount",
+    "parent": {
+      "title": "DenseMatrix_Float"
+    },
     "symbolKind": "structp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,34 +128,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868250-attributes": {
-      "title": "attributes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868250-attributes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/densematrix_float/2868250-attributes",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The attributes of the matrix, for example, whether it is symmetrical or triangular."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t": {
-      "title": "SparseAttributes_t",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparseattributes_t",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure that represents the attributes of a matrix."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868199-rowcount": {
       "title": "rowCount",
       "type": "topic",
@@ -190,6 +170,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868250-attributes": {
+      "title": "attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868250-attributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/densematrix_float/2868250-attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The attributes of the matrix, such as whether it’s symmetrical or triangular."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t": {
+      "title": "SparseAttributes_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseattributes_t",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that represents the attributes of a matrix."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868090-data": {
       "title": "data",
       "type": "topic",
@@ -200,7 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The array of single-precision, floating-point values, in column-major order."
+          "text": "The array of single-precision, floating-point values in column-major order."
         }
       ]
     },
@@ -215,10 +223,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868250-attributes",
-        "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
         "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868008-columncount",
         "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868084-columnstride",
+        "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868250-attributes",
+        "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
         "doc://com.apple.documentation/documentation/accelerate/densematrix_float/2868090-data"
       ],
       "title": "Inspecting a Matrix's Structure and Data",
@@ -253,6 +261,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -263,7 +272,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A request to transfer of money to facilitate payment of a bill."
+      "text": "A request to transfer money to facilitate payment of a bill."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INPayBillIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,13 +100,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent#2826110": {
       "title": "Table 1",
@@ -141,9 +162,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A request to transfer of money to facilitate payment of a bill."
+          "text": "A request to transfer money to facilitate payment of a bill."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling": {
       "title": "INPayBillIntentHandling",
@@ -157,7 +179,8 @@
           "type": "text",
           "text": "The handler interface for paying a bill using money from the user’s account."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse": {
       "title": "INPayBillIntentResponse",
@@ -171,7 +194,8 @@
           "type": "text",
           "text": "Your app’s response to a request to pay a bill."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inintent": {
       "title": "INIntent",
@@ -203,7 +227,8 @@
           "kind": "identifier",
           "text": "initWithBillPayee:fromAccount:transactionAmount:transactionScheduledDate:transactionNote:billType:dueDate:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799063-billpayee": {
       "title": "billPayee",
@@ -217,7 +242,8 @@
           "type": "text",
           "text": "The recipient of the payment."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799073-billtype": {
       "title": "billType",
@@ -231,7 +257,8 @@
           "type": "text",
           "text": "The type of the bill."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799067-duedate": {
       "title": "dueDate",
@@ -245,7 +272,8 @@
           "type": "text",
           "text": "The due date of the payment."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799079-fromaccount": {
       "title": "fromAccount",
@@ -259,7 +287,8 @@
           "type": "text",
           "text": "The user account containing the funds for the payment."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799064-transactionamount": {
       "title": "transactionAmount",
@@ -273,7 +302,8 @@
           "type": "text",
           "text": "The amount to transfer from the user to the payee."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799062-transactionnote": {
       "title": "transactionNote",
@@ -287,7 +317,8 @@
           "type": "text",
           "text": "A note to associate with the payment transaction."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799075-transactionscheduleddate": {
       "title": "transactionScheduledDate",
@@ -301,7 +332,8 @@
           "type": "text",
           "text": "The scheduled date for the payment, as requested by the user."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -311,16 +343,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -337,7 +379,8 @@
       "title": "Initializing the Intent Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799077-initwithbillpayee"
-      ]
+      ],
+      "anchor": "2806298"
     },
     {
       "kind": "taskGroup",
@@ -346,7 +389,8 @@
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799063-billpayee",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799073-billtype",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799067-duedate"
-      ]
+      ],
+      "anchor": "2806299"
     },
     {
       "kind": "taskGroup",
@@ -356,7 +400,8 @@
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799064-transactionamount",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799062-transactionnote",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799075-transactionscheduleddate"
-      ]
+      ],
+      "anchor": "2826078"
     }
   ],
   "seeAlsoSections": [
@@ -365,7 +410,7 @@
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse"
       ],
-      "title": "Pay a Bill",
+      "title": "Bill Payment",
       "generated": true
     }
   ],
@@ -403,6 +448,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -468,7 +514,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This intent object represents a financial transaction between the user and an entity (such as a utility company or credit card bill) defined in your app. You are responsible for configuring and managing the entities that accept the payment of bills."
+              "text": "This intent object represents a financial transaction between the user and an entity (such as a utility company or credit card bill) defined in your app. You’re responsible for configuring and managing the entities that accept the payment of bills."
             }
           ]
         },
@@ -1513,7 +1559,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

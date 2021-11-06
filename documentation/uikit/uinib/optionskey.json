@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Options that specify how to unarchive and instantiate the nib."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UINibOptionsKey",
+    "parent": {
+      "title": "UINib"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -56,8 +70,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,17 +124,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that wraps, or contains, Interface Builder nib files. "
+          "text": "An object that contains Interface Builder nib files. "
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
-      "title": "NSDictionary",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsdictionary"
     },
     "doc://com.apple.documentation/documentation/swift/equatable": {
       "title": "Equatable",
@@ -146,6 +152,34 @@
       "role": "symbol",
       "url": "/documentation/swift/rawrepresentable"
     },
+    "doc://com.apple.documentation/documentation/uikit/uinib/optionskey/1618146-externalobjects": {
+      "title": "externalObjects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uinib/optionskey/1618146-externalobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uinib/optionskey/1618146-externalobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The replacements for any proxy objects in the nib file. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "externalObjects"
+        },
+        {
+          "kind": "text",
+          "text": ": UINib.OptionsKey"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uinib/optionskey/2983526-init": {
       "title": "init(rawValue:)",
       "type": "topic",
@@ -153,6 +187,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uinib/optionskey/2983526-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new instance with the specified raw value."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -172,43 +212,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uinib/optionskey/1618146-externalobjects": {
-      "title": "externalObjects",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uinib/optionskey/1618146-externalobjects",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uinib/optionskey/1618146-externalobjects",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The replacements for any proxy objects in the nib file. The value for this key is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary"
-        },
-        {
-          "type": "text",
-          "text": " object. The keys of the dictionary are the names of any proxy objects in the nib file, and the value for each key is the actual object to use in place of the proxy."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "externalObjects"
-        },
-        {
-          "kind": "text",
-          "text": ": UINib.OptionsKey"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiate": {
       "title": "instantiate(withOwner:options:)",
       "type": "topic",
@@ -219,7 +222,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Unarchives and instantiates the in-memory contents of the receiver’s nib file, creating a distinct object tree and set of top level objects."
+          "text": "Unarchives and instantiates the in-memory contents of the nib object’s nib file, creating a distinct object tree and set of top-level objects."
         }
       ],
       "fragments": [
@@ -260,6 +263,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uinib/optionskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options that specify how to unarchive and instantiate the nib."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -294,24 +303,25 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Keys",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uinib/optionskey/2983526-init"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uinib/optionskey/1618146-externalobjects"
+      ],
+      "anchor": "3677840"
     },
     {
       "kind": "taskGroup",
-      "title": "Type Properties",
+      "title": "Initializers",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uinib/optionskey/1618146-externalobjects"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uinib/optionskey/2983526-init"
+      ],
+      "anchor": "3677842"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiate",
-        "doc://com.apple.documentation/documentation/uikit/uinib/optionskey/1618146-externalobjects"
+        "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiate"
       ],
       "title": "Retrieving Objects from the Nib File",
       "generated": true
@@ -341,6 +351,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -349,7 +360,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

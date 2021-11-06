@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates an asset writer for writing to the file identified by a given URL in a format specified by a given UTI."
+      "text": "Creates an object that writes media data to a container file at the output URL."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter(im)initWithURL:fileType:error:",
+    "parent": {
+      "title": "AVAssetWriter"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,85 +128,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
-    "link-3023437": {
-      "title": "Error Handling",
+    "doc://com.apple.documentation/documentation/foundation/nserror": {
+      "title": "NSError",
       "type": "topic",
-      "identifier": "link-3023437",
-      "kind": "article",
-      "role": "link",
-      "url": "https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html"
-    },
-    "link-3023438": {
-      "title": "The Swift Programming Language",
-      "type": "topic",
-      "identifier": "link-3023438",
-      "kind": "article",
-      "role": "link",
-      "url": "https://docs.swift.org/swift-book/"
-    },
-    "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters": {
-      "title": "About Imported Cocoa Error Parameters",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl": {
-      "title": "outputURL",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387731-outputurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The URL you direct output to."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl": {
-      "title": "assetWriterWithURL:fileType:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an asset writer for writing to the file identified by a given URL in a format specified by a given UTI."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "assetWriterWithURL:fileType:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype": {
-      "title": "outputFileType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The file format of the writer’s output."
-        }
-      ]
+      "url": "/documentation/foundation/nserror"
     },
     "doc://com.apple.documentation/documentation/foundation/nsurl": {
       "title": "NSURL",
@@ -216,13 +156,29 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avfiletype"
     },
-    "doc://com.apple.documentation/documentation/foundation/nserror": {
-      "title": "NSError",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl": {
+      "title": "assetWriterWithURL:fileType:error:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nserror"
+      "url": "/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new object that writes media data to a container file at the output URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "assetWriterWithURL:fileType:error:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389201-initwithurl": {
       "title": "initWithURL:fileType:error:",
@@ -234,7 +190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an asset writer for writing to the file identified by a given URL in a format specified by a given UTI."
+          "text": "Creates an object that writes media data to a container file at the output URL."
         }
       ],
       "fragments": [
@@ -255,6 +211,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an object that outputs segment data in a specified container format."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -263,20 +225,6 @@
         {
           "kind": "identifier",
           "text": "initWithContentType:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes": {
-      "title": "availableMediaTypes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1388730-availablemediatypes",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The media types you can add inputs to."
         }
       ]
     },
@@ -292,19 +240,10 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype"
       ],
       "title": "Creating an Asset Writer",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -425,6 +364,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -446,7 +386,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The location of the file to be written. The URL must be a file URL."
+                  "text": "The location of the file to write."
                 }
               ]
             }
@@ -460,40 +400,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The UTI-identified format of the file to be written."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "For example, "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "AVFileTypeQuickTimeMovie"
-                },
-                {
-                  "type": "text",
-                  "text": " for a QuickTime movie file, "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "AVFileTypeMPEG4"
-                },
-                {
-                  "type": "text",
-                  "text": " for an MPEG-4 file, and "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "AVFileTypeAMR"
-                },
-                {
-                  "type": "text",
-                  "text": " for an adaptive multi-rate audio format file."
+                  "text": "The type of container file to write."
                 }
               ]
             }
@@ -507,53 +414,18 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "If initialization of the asset writer fails, upon return contains an error object that describes the problem."
+                  "text": "A pointer that the system populates with an "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nserror"
+                },
+                {
+                  "type": "text",
+                  "text": " object if a failure occurs."
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "An asset writer for writing to the file identified by "
-            },
-            {
-              "type": "codeVoice",
-              "code": "URL"
-            },
-            {
-              "type": "text",
-              "text": " in the format specified by "
-            },
-            {
-              "type": "codeVoice",
-              "code": "outputFileType"
-            },
-            {
-              "type": "text",
-              "text": ", or "
-            },
-            {
-              "type": "codeVoice",
-              "code": "nil"
-            },
-            {
-              "type": "text",
-              "text": " if the writer could not be initialized."
             }
           ]
         }
@@ -573,107 +445,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Writing will fail if a file already exists at "
-            },
-            {
-              "type": "codeVoice",
-              "code": "URL"
-            },
-            {
-              "type": "text",
-              "text": ". UTIs for container formats that can be written are declared in File Format UTIs."
+              "text": "Writing fails if a file already exists at the output URL."
             }
           ]
-        },
-        {
-          "type": "aside",
-          "content": [
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "In Swift, this API is imported as an initializer and is marked with the "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "throws"
-                },
-                {
-                  "type": "text",
-                  "text": " keyword to indicate that it throws an error in cases of failure."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "You call this method in a "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "try"
-                },
-                {
-                  "type": "text",
-                  "text": " expression and handle any errors in the "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "catch"
-                },
-                {
-                  "type": "text",
-                  "text": " clauses of a "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "do"
-                },
-                {
-                  "type": "text",
-                  "text": " statement, as described in "
-                },
-                {
-                  "type": "link",
-                  "title": "Error Handling",
-                  "destination": "https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html"
-                },
-                {
-                  "type": "text",
-                  "text": " in "
-                },
-                {
-                  "type": "link",
-                  "title": "The Swift Programming Language",
-                  "destination": "https://docs.swift.org/swift-book/"
-                },
-                {
-                  "type": "text",
-                  "text": " and "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
-                },
-                {
-                  "type": "text",
-                  "text": "."
-                }
-              ]
-            }
-          ],
-          "style": "note",
-          "name": "Handling Errors in Swift:"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

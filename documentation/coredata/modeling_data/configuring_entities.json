@@ -32,8 +32,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -84,38 +84,39 @@
       "role": "article",
       "url": "/documentation/coredata/creating_a_core_data_model"
     },
-    "link-media-3138872": {
-      "identifier": "link-media-3138872",
+    "link-media-3842665": {
+      "identifier": "link-media-3842665",
       "type": "link",
       "title": "Figure 1",
-      "url": "/documentation/coredata/modeling_data/configuring_entities#3138872"
+      "url": "/documentation/coredata/modeling_data/configuring_entities#3842665"
     },
-    "media-3138872": {
-      "identifier": "media-3138872",
+    "media-3842665": {
+      "identifier": "media-3842665",
       "type": "image",
       "variants": [
         {
           "traits": [
-            "1x"
+            "dark",
+            "2x"
           ],
           "size": {
-            "width": 681,
-            "height": 431
+            "width": 735,
+            "height": 533
           },
-          "url": "https://docs-assets.developer.apple.com/published/004c69c109/d59bc973-da61-469b-b905-81f39d697107.png"
+          "url": "https://docs-assets.developer.apple.com/published/2951e1d855/renderedDark2x-1622195118.png"
         },
         {
           "traits": [
             "2x"
           ],
           "size": {
-            "width": 681,
-            "height": 431
+            "width": 735,
+            "height": 533
           },
-          "url": "https://docs-assets.developer.apple.com/published/424dd1f482/72c53097-3f93-4baa-97b5-686099c80220.png"
+          "url": "https://docs-assets.developer.apple.com/published/733087454e/rendered2x-1622195121.png"
         }
       ],
-      "alt": "Screenshot showing the .xcdatamodeld file with the Entities list at left, Add Entity button at the bottom, and Data Model inspector at right.",
+      "alt": "A screenshot of Xcode’s Data Model editor, highlighting the Entities list on the left, the Data Model inspector on the right, and the Add Entity button in the toolbar at the bottom.",
       "title": "Figure 1"
     },
     "doc://com.apple.documentation/documentation/coredata/modeling_data/configuring_attributes": {
@@ -323,7 +324,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "In the Entities list, double-click the newly added entity, and name it in place. This updates both the entity name and class name visible in the Data Model inspector."
+                      "text": "In the Entities list, double-click the newly added entity and rename it. This step updates both the entity name and class name visible in the Data Model inspector."
                     }
                   ]
                 }
@@ -336,9 +337,9 @@
           "inlineContent": [
             {
               "type": "image",
-              "identifier": "media-3138872",
+              "identifier": "media-3842665",
               "metadata": {
-                "anchor": "3138872",
+                "anchor": "3842665",
                 "title": "Figure 1"
               }
             }
@@ -349,7 +350,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In addition to the required name and class name fields, entities have a default setting for the required code generation field. If you need to add inheritance, unique constraints, versioning or other optional information, configure your entity as described below. Otherwise, add the properties that compose your entity as described in "
+              "text": "In addition to the required name and class name fields, entities have a default setting for the required code generation field. If you need to add inheritance, unique constraints, versioning, or other optional information, configure your entity as described below. Otherwise, add the properties that compose your entity as described in "
             },
             {
               "type": "reference",
@@ -419,7 +420,7 @@
                     "inlineContent": [
                       {
                         "type": "text",
-                        "text": "Select the Abstract Entity checkbox if you won’t create any instances of the entity—for example, if it exists only as a parent entity that should never be instantiated directly. By default, this option is unselected, resulting in a concrete entity."
+                        "text": "Select the Abstract Entity checkbox if you won’t create any instances of the entity—for example, if it exists only as a parent entity that must never be instantiated directly. By default, this option is unselected, resulting in a concrete entity."
                       }
                     ]
                   }
@@ -465,7 +466,7 @@
                     "inlineContent": [
                       {
                         "type": "text",
-                        "text": "The name of the class you'll use when creating managed object instances from this entity. By default, the class name mirrors the entity name; however, if you change the class name, the changes are not reflected in the entity name."
+                        "text": "The name of the class you'll use when creating managed object instances from this entity. By default, the class name mirrors the entity name; however, if you change the class name, the entity name doesn’t reflect the changes."
                       }
                     ]
                   }
@@ -511,7 +512,7 @@
                     "inlineContent": [
                       {
                         "type": "text",
-                        "text": "Select a code generation option for generating managed object subclass and properties files to support your entity. By default, this is set to Class Definition, and Core Data generates both files for you automatically."
+                        "text": "Choose a code generation option for generating managed object subclass and properties files to support your entity. By default, this option is set to Class Definition, and Core Data generates both files for you automatically."
                       }
                     ]
                   },
@@ -611,7 +612,7 @@
                       },
                       {
                         "type": "text",
-                        "text": " used by Core Spotlight to display an instance created from this entity. This expression may include keypaths, functions built into the language such as "
+                        "text": " that Core Spotlight uses to display an instance of this entity. This expression may include keypaths,  language functions like "
                       },
                       {
                         "type": "reference",
@@ -747,7 +748,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

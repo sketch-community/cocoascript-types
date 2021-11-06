@@ -11,30 +11,34 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notification_priority_levels"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notification_priority_levels"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel"
       ]
     ]
   },
@@ -57,15 +61,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@E@NSAccessibilityPriorityLevel@NSAccessibilityPriorityMedium",
+    "parent": {
+      "title": "NSAccessibilityPriorityLevel"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,10 +107,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -112,6 +119,14 @@
       "title": "NSAccessibility",
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
       "url": "/documentation/appkit/nsaccessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey": {
+      "title": "NSAccessibilityNotificationUserInfoKey",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitynotificationuserinfokey",
+      "url": "/documentation/appkit/nsaccessibilitynotificationuserinfokey",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
@@ -130,6 +145,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions": {
+      "title": "Accessibility Functions",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+      "url": "/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
       "identifier": "doc://com.apple.documentation/documentation/accessibility",
@@ -138,13 +161,47 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notification_priority_levels": {
-      "title": "Notification Priority Levels",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notification_priority_levels",
-      "url": "/documentation/appkit/nsaccessibility/notification_priority_levels",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilitypriorityhigh": {
+      "title": "NSAccessibilityPriorityHigh",
       "type": "topic",
-      "kind": "article",
-      "role": "pseudoSymbol"
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilitypriorityhigh",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilitypriorityhigh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The notification is a high priority."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilityprioritymedium": {
+      "title": "NSAccessibilityPriorityMedium",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilityprioritymedium",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilityprioritymedium",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The notification is a medium priority."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilityprioritylow": {
+      "title": "NSAccessibilityPriorityLow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilityprioritylow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilityprioritylow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The notification is a low priority."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -154,6 +211,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilitypriorityhigh",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel/nsaccessibilityprioritylow"
+      ],
+      "title": "Priority Levels",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -180,7 +247,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

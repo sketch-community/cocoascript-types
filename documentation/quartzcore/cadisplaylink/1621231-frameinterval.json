@@ -35,30 +35,40 @@
         "name": "iOS",
         "introducedAt": "3.1",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.1",
+        "deprecatedAt": "10.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CADisplayLink(py)frameInterval",
+    "parent": {
+      "title": "CADisplayLink"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -103,9 +113,24 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A timer object that allows your application to synchronize its drawing to the refresh rate of the display."
+          "text": "A timer object that allows your app to synchronize its drawing to the refresh rate of the display."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648421-preferredframespersecond": {
+      "title": "preferredFramesPerSecond",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648421-preferredframespersecond",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cadisplaylink/1648421-preferredframespersecond",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The preferred frame rate for the display link callback."
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
@@ -129,17 +154,45 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648421-preferredframespersecond": {
-      "title": "preferredFramesPerSecond",
+    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621229-paused": {
+      "title": "paused",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648421-preferredframespersecond",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621229-paused",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/quartzcore/cadisplaylink/1648421-preferredframespersecond",
+      "url": "/documentation/quartzcore/cadisplaylink/1621229-paused",
       "abstract": [
         {
           "type": "text",
-          "text": "The preferred frame rate for the display link callback."
+          "text": "A Boolean value that indicates whether the system suspends the display link’s notifications to the target."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621257-timestamp": {
+      "title": "timestamp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621257-timestamp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cadisplaylink/1621257-timestamp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time interval that represents when the last frame displayed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp": {
+      "title": "targetTimestamp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cadisplaylink/1648422-targettimestamp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time interval that represents when the next frame displays."
         }
       ]
     },
@@ -158,48 +211,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621229-paused": {
-      "title": "paused",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621229-paused",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/quartzcore/cadisplaylink/1621229-paused",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that states whether the display link’s notifications to the target are suspended."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621257-timestamp": {
-      "title": "timestamp",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621257-timestamp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/quartzcore/cadisplaylink/1621257-timestamp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The time value associated with the last frame that was displayed."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp": {
-      "title": "targetTimestamp",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/quartzcore/cadisplaylink/1648422-targettimestamp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The time value associated with the next frame that was displayed."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -208,6 +219,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648421-preferredframespersecond"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -259,6 +290,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -287,7 +319,7 @@
             },
             {
               "type": "text",
-              "text": ", which results in your application being notified at the refresh rate of the display. If the value is set to a value larger than "
+              "text": ", which results in the system notifying your app at the refresh rate of the display. If you set the value to a value greater than "
             },
             {
               "type": "codeVoice",
@@ -295,7 +327,7 @@
             },
             {
               "type": "text",
-              "text": ", the display link notifies your application at a fraction of the native refresh rate. For example, setting the interval to "
+              "text": ", the display link notifies your app at a fraction of the native refresh rate. For example, setting the interval to "
             },
             {
               "type": "codeVoice",
@@ -328,7 +360,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

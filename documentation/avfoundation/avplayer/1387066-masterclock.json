@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The host clock used for item time bases."
+      "text": "The host clock for item time bases."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,55 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)AVPlayer(py)masterClock",
+    "parent": {
+      "title": "AVPlayer"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,6 +140,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/3746583-sourceclock": {
+      "title": "sourceClock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/3746583-sourceclock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/3746583-sourceclock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A clock the player uses for item time bases."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coremedia/cmclockref": {
       "title": "CMClockRef",
       "type": "topic",
@@ -138,7 +172,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Synchronizes the playback rate and time of the current item with an external source. "
+          "text": "Synchronizes the playback rate and time of the current item with an external source."
         }
       ],
       "fragments": [
@@ -186,7 +220,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Cancels any pending preroll requests and invokes the corresponding completion handlers if present."
+          "text": "Cancels any pending preroll requests and invokes the corresponding completion handlers, if present."
         }
       ],
       "fragments": [
@@ -210,9 +244,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The host clock used for item time bases."
+          "text": "The host clock for item time bases."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -222,22 +257,33 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/3746583-sourceclock"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
       ]
     }
-  },
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386591-setrate",
         "doc://com.apple.documentation/documentation/avfoundation/avplayer/1389712-prerollatrate",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388260-cancelpendingprerolls"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388260-cancelpendingprerolls",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/3746583-sourceclock"
       ],
       "title": "Synchronizing Multiple Players",
       "generated": true
@@ -281,6 +327,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -311,7 +358,7 @@
             },
             {
               "type": "text",
-              "text": ", which means that the host clock is automatically chosen. When non-"
+              "text": ", which means that the host clock is the automatic choice. When non-"
             },
             {
               "type": "codeVoice",
@@ -319,7 +366,7 @@
             },
             {
               "type": "text",
-              "text": ", this property overrides the automatic choice of host clock for item timebases. This is most useful when you are synchronizing video-only movies with audio played by another source."
+              "text": ", this property overrides the automatic choice of host clock for item time bases. This is most useful when you’re synchronizing video-only movies with audio from another source."
             }
           ]
         },
@@ -343,7 +390,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

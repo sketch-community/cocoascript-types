@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayer(im)prerollAtRate:completionHandler:",
+    "parent": {
+      "title": "AVPlayer"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -162,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Synchronizes the playback rate and time of the current item with an external source. "
+          "text": "Synchronizes the playback rate and time of the current item with an external source."
         }
       ],
       "fragments": [
@@ -210,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Cancels any pending preroll requests and invokes the corresponding completion handlers if present."
+          "text": "Cancels any pending preroll requests and invokes the corresponding completion handlers, if present."
         }
       ],
       "fragments": [
@@ -224,6 +232,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/3746583-sourceclock": {
+      "title": "sourceClock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/3746583-sourceclock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/3746583-sourceclock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A clock the player uses for item time bases."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387066-masterclock": {
       "title": "masterClock",
       "type": "topic",
@@ -234,9 +256,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The host clock used for item time bases."
+          "text": "The host clock for item time bases."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -251,6 +274,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386591-setrate",
         "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388260-cancelpendingprerolls",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/3746583-sourceclock",
         "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387066-masterclock"
       ],
       "title": "Synchronizing Multiple Players",
@@ -341,6 +365,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -404,7 +429,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " if the preroll was interrupted by a time change or incompatible rate change. "
+                  "text": " if the preroll was interrupted by a time change or incompatible rate change."
                 }
               ]
             }
@@ -461,7 +486,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

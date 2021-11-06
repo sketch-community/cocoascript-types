@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates and initializes an asset download task to be used with this download session."
+      "text": "Creates a download task to download the asset."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetDownloadURLSession(im)assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:",
+    "parent": {
+      "title": "AVAssetDownloadURLSession"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,7 +110,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloadurlsession"
+      "url": "/documentation/avfoundation/avassetdownloadurlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A URL session that creates and executes asset download tasks."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask": {
       "title": "AVAssetDownloadTask",
@@ -144,6 +158,128 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsdictionary"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredmediabitratekey": {
+      "title": "AVAssetDownloadTaskMinimumRequiredMediaBitrateKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredmediabitratekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtaskminimumrequiredmediabitratekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates the minimum bit rate of the variant to download."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey": {
+      "title": "AVAssetDownloadTaskMinimumRequiredPresentationSizeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates the minimum presentation size of the variant to download."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionkey": {
+      "title": "AVAssetDownloadTaskMediaSelectionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtaskmediaselectionkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates which media selection to download."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionprefersmultichannelkey": {
+      "title": "AVAssetDownloadTaskMediaSelectionPrefersMultichannelKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionprefersmultichannelkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtaskmediaselectionprefersmultichannelkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates whether the task downloads media selections with support for multichannel playback, when available."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskprefershdrkey": {
+      "title": "AVAssetDownloadTaskPrefersHDRKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskprefershdrkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtaskprefershdrkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates whether the task downloads HDR instead of SDR video, when available."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskpreferslosslessaudiokey": {
+      "title": "AVAssetDownloadTaskPrefersLosslessAudioKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskpreferslosslessaudiokey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtaskpreferslosslessaudiokey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates whether the task downloads media selections in lossless audio format, when available."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati": {
+      "title": "assetDownloadTaskWithConfiguration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a download task that uses the specified configuration."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "assetDownloadTaskWithConfiguration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadconfiguration": {
+      "title": "AVAssetDownloadConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadconfiguration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadconfiguration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides the configuration for a download task."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset": {
       "title": "assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:",
       "type": "topic",
@@ -154,7 +290,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes an asset download task to be used with this download session."
+          "text": "Creates a download task to download the asset."
         }
       ],
       "fragments": [
@@ -178,7 +314,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes a download task to download multiple media selections on a URL asset."
+          "text": "Creates a download task to download the asset and media selections."
         }
       ],
       "fragments": [
@@ -202,16 +338,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask"
-        },
-        {
-          "type": "text",
-          "text": " to be used with this download session."
+          "text": "Creates a download task to download the asset to the indicated location."
         }
       ],
       "fragments": [
@@ -226,20 +353,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration": {
-      "title": "Download Task Configuration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Configuration options that configure the behavior of a download task."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -248,14 +361,30 @@
       "title": "Technologies"
     }
   },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Option Keys",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredmediabitratekey",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionprefersmultichannelkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskprefershdrkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskpreferslosslessaudiokey"
+      ],
+      "anchor": "3761160"
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadconfiguration",
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/2897242-aggregateassetdownloadtaskwithur",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1621018-assetdownloadtaskwithurlasset",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1621018-assetdownloadtaskwithurlasset"
       ],
-      "title": "Creating a Download Task",
+      "title": "Creating Download Tasks",
       "generated": true
     }
   ],
@@ -427,6 +556,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -461,7 +591,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A human readable title for this asset in the user's preferred language. This value will be displayed in the usage pane of the Settings app."
+                  "text": "A human readable title for this asset in the user’s preferred language. The system displays this value in the usage pane of teh Settings app."
                 }
               ]
             }
@@ -475,7 +605,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Optional artwork data for this asset. This value will be displayed in the usage pane of the Settings app."
+                  "text": "Optional artwork data for this asset. The system displays the image in the usage pane of the Settings app."
                 }
               ]
             }
@@ -489,7 +619,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Configures non-default behavior for the download task. Using this parameter is required for downloading non-default media selections for HLS assets."
+                  "text": "Configures custom behavior on the download task. You must provide an options dictionary to download nondefault media selections for HLS assets."
                 }
               ]
             }
@@ -511,16 +641,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A new instance of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": "A new download task."
             }
           ]
         }
@@ -548,16 +669,7 @@
             },
             {
               "type": "text",
-              "text": " if the "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession"
-            },
-            {
-              "type": "text",
-              "text": " has been invalidated."
+              "text": " if you call it on an invalidated session."
             }
           ]
         }
@@ -565,7 +677,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

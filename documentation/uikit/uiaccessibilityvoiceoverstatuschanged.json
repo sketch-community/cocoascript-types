@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted by UIKit when VoiceOver starts or stops. This notification does not include a parameter."
+      "text": "A notification that UIKit posts when VoiceOver starts or stops."
     }
   ],
   "documentVersion": 0,
@@ -11,14 +11,43 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/notification_names"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/notification_names"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/objectivec",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
       ]
     ]
   },
@@ -42,21 +71,28 @@
         "name": "iOS",
         "introducedAt": "4.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "deprecatedAt": "11.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -64,8 +100,8 @@
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,18 +136,26 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/notification_names": {
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names": {
       "title": "Notification Names",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/notification_names",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/notification_names",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names",
+      "url": "/documentation/uikit/accessibility_for_uikit/notification_names",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility": {
+      "title": "UIAccessibility",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+      "url": "/documentation/objectivec/nsobject/uiaccessibility",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -124,6 +168,38 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/objectivec": {
+      "title": "Objective-C Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec",
+      "url": "/documentation/objectivec",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "url": "/documentation/objectivec/nsobject",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/object_runtime": {
+      "title": "Object Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/object_runtime",
+      "url": "/documentation/foundation/object_runtime",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibilityvoiceoverstatusdidchangenotification": {
       "title": "UIAccessibilityVoiceOverStatusDidChangeNotification",
       "type": "topic",
@@ -134,7 +210,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by UIKit when VoiceOver starts or stops."
+          "text": "A notification that UIKit posts when VoiceOver starts or stops."
         }
       ]
     },
@@ -164,7 +240,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by an app when an announcement needs to be conveyed to the assistive technology."
+          "text": "A notification that an app posts when it needs to convey an announcement to the assistive app."
         }
       ]
     },
@@ -178,7 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by UIKit when the system has finished reading an announcement."
+          "text": "A notification that UIKit posts when the system finishes reading an announcement."
         }
       ]
     },
@@ -192,7 +268,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by UIKit when VoiceOver starts or stops. This notification does not include a parameter."
+          "text": "A notification that UIKit posts when VoiceOver starts or stops."
         }
       ],
       "deprecated": true
@@ -228,8 +304,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilityvoiceoverstatusdidchangenotification",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilityannouncementnotification",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilityvoiceoverstatusdidchangenotification",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilityannouncementdidfinishnotification"
       ],
       "title": "VoiceOver",
@@ -274,6 +350,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -288,6 +365,15 @@
           "level": 2,
           "text": "Discussion",
           "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This notification doesn't include a parameter."
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -320,7 +406,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

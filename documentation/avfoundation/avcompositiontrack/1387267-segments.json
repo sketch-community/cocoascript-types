@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The composition track’s track segments."
+      "text": "The segments a composition track contains."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVCompositionTrack(py)segments",
+    "parent": {
+      "title": "AVCompositionTrack"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A track in a composition object, consisting of a media type, a track identifier, and track segments."
+          "text": "A track in a composition that presents media of a uniform type."
         }
       ]
     },
@@ -146,7 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The composition track’s track segments."
+          "text": "The segments a composition track contains."
         }
       ]
     },
@@ -160,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the composition track segment from the segment array that either contains or is closest to the supplied track time."
+          "text": "Returns a segment whose target time range contains, or is closest to, the specified track time."
         }
       ],
       "fragments": [
@@ -239,6 +247,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -249,7 +258,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

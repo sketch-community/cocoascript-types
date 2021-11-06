@@ -36,8 +36,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -182,20 +182,6 @@
       "role": "codeListing",
       "url": "/documentation/accelerate/solving_systems_using_direct_methods#2880970"
     },
-    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods": {
-      "title": "Implementing Iterative Methods",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/accelerate/implementing_iterative_methods",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Use iterative methods to solve large problems faster and with a lower memory overhead than with direct methods.  "
-        }
-      ]
-    },
     "link-media-2904628": {
       "identifier": "link-media-2904628",
       "type": "link",
@@ -217,7 +203,7 @@
           "url": "https://docs-assets.developer.apple.com/published/ab65d5da7e/feb41a19-1221-4cf5-883a-50821fbd034c.png"
         }
       ],
-      "alt": "Equation to solve using sparse Cholesky factorization.",
+      "alt": "A mathematical equation that consists of a four-by-four sparse matrix multiplied by a four-element vector of unknown values equals a four-element vector of known values.",
       "title": "Figure 1"
     },
     "link-2887079": {
@@ -282,7 +268,6 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices",
-        "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers"
@@ -306,16 +291,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Direct methods offer high-precision solving with a simple API when compared to iterative methods (see "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods"
-            },
-            {
-              "type": "text",
-              "text": " for a detailed comparison). The code discussed here uses sparse Cholesky factorization to solve the following equation:"
+              "text": "Direct methods offer high-precision solving with a simple API in comparison to iterative methods. The code example below uses sparse Cholesky factorization to solve the following equation:"
             }
           ]
         },
@@ -350,7 +326,7 @@
             },
             {
               "type": "text",
-              "text": " refers to the 4 x 4 matrix, and "
+              "text": " refers to the four-by-four matrix, and "
             },
             {
               "type": "emphasis",
@@ -411,7 +387,7 @@
             },
             {
               "type": "text",
-              "text": " is sparse: Some entries (those that are blank) are zero. For small matrices such as this, there is little gain in exploiting this structure. However it is essential for larger systems that would not otherwise fit in memory, even on a large machine."
+              "text": " is sparse: Some entries (those that are blank) are zero. For small matrices such as this, there’s little gain in exploiting this structure. However, it’s essential for larger systems that don’t otherwise fit in memory, even on a large computer."
             }
           ]
         },
@@ -420,7 +396,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The code below performs a sparse Cholesky factorization, equivalent to calling the LAPACK function DPOTRF on a dense matrix. The main requirement for sparse Cholesky factorization is that the matrix is symmetric "
+              "text": "The code in this article performs a sparse Cholesky factorization, equivalent to calling the LAPACK function DPOTRF on a dense matrix. The main requirement for sparse Cholesky factorization is that the matrix is symmetric "
             },
             {
               "type": "link",
@@ -541,7 +517,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use the code below to define the matrix structure. Recall from "
+              "text": "Use the code below to define the matrix structure. As "
             },
             {
               "type": "reference",
@@ -550,7 +526,7 @@
             },
             {
               "type": "text",
-              "text": " that because "
+              "text": " explains, because "
             },
             {
               "type": "emphasis",
@@ -655,7 +631,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": ":"
+                  "text": "."
                 }
               ]
             }
@@ -691,7 +667,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If there is an error, the above code prints an error message and terminates. You may instead want to capture the error by using the optional "
+              "text": "If there’s an error, the above code prints an error message and terminates. You may instead want to capture the error by using the optional "
             },
             {
               "type": "reference",
@@ -700,7 +676,7 @@
             },
             {
               "type": "text",
-              "text": " parameter with the "
+              "text": " parameter and set the "
             },
             {
               "type": "reference",
@@ -709,7 +685,7 @@
             },
             {
               "type": "text",
-              "text": " parameter set to a user-supplied error-handling routine. The returned "
+              "text": " parameter to a user-supplied error-handling routine. The returned "
             },
             {
               "type": "reference",
@@ -737,7 +713,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Once you have the factorization, you can solve the equation. The right-hand-side and solution vectors are arrays wrapped in flexible data types. The actual values of "
+              "text": "After you have the factorization, you can solve the equation. The right-hand-side and solution vectors are arrays that the system wraps in flexible data types. The actual values of "
             },
             {
               "type": "codeVoice",
@@ -745,7 +721,7 @@
             },
             {
               "type": "text",
-              "text": " do not matter, because they are overwritten by the solution:"
+              "text": " don’t matter because the function overwrites them."
             }
           ]
         },
@@ -917,7 +893,7 @@
             },
             {
               "type": "text",
-              "text": " with the solution:"
+              "text": " with the solution."
             }
           ]
         },
@@ -937,7 +913,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Again, if there is an error, the code prints an error message and terminates, unless you set "
+              "text": "Again, if there’s an error, the code prints an error message and terminates, unless you set "
             },
             {
               "type": "reference",
@@ -1012,7 +988,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

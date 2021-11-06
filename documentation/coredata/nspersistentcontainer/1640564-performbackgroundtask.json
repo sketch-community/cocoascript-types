@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Causes the persistent container to execute the block against a new private queue context."
+      "text": "Executes a block on a private queue using an ephemeral managed object context. "
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentContainer(im)performBackgroundTask:",
+    "parent": {
+      "title": "NSPersistentContainer"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -144,30 +152,6 @@
       "role": "symbol",
       "url": "/documentation/coredata/nsmanagedobjectcontextconcurrencytype/nsprivatequeueconcurrencytype"
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext": {
-      "title": "newBackgroundContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a private managed object context."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "newBackgroundContext"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640564-performbackgroundtask": {
       "title": "performBackgroundTask:",
       "type": "topic",
@@ -178,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Causes the persistent container to execute the block against a new private queue context."
+          "text": "Executes a block on a private queue using an ephemeral managed object context. "
         }
       ],
       "fragments": [
@@ -192,20 +176,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext": {
-      "title": "viewContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcontainer/1640622-viewcontext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The managed object context associated with the main queue. (read-only)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -214,16 +184,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext"
-      ],
-      "title": "Accessing the Context(s)",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -286,6 +246,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -365,7 +326,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

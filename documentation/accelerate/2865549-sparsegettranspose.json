@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseGetTranspose#$@SA@SparseMatrix_Double#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -122,6 +127,14 @@
       "role": "symbol",
       "url": "/documentation/accelerate/sparsematrix_double"
     },
+    "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868141-transpose": {
+      "title": "transpose",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868141-transpose",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseattributes_t/2868141-transpose"
+    },
     "doc://com.apple.documentation/documentation/accelerate/2865549-sparsegettranspose": {
       "title": "SparseGetTranspose",
       "type": "topic",
@@ -150,62 +163,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/2868128-sparsegettranspose": {
-      "title": "SparseGetTranspose",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868128-sparsegettranspose",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2868128-sparsegettranspose",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a transposed copy of the specified double-precision factorization."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2868157-sparsegettranspose": {
-      "title": "SparseGetTranspose",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868157-sparsegettranspose",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2868157-sparsegettranspose",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a transposed copy of the specified single-precision factorization."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2881903-sparsegettranspose": {
-      "title": "SparseGetTranspose",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881903-sparsegettranspose",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2881903-sparsegettranspose",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a transposed copy of the specified double-precision subfactor."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2881896-sparsegettranspose": {
-      "title": "SparseGetTranspose",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881896-sparsegettranspose",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2881896-sparsegettranspose",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a transposed copy of the specified single-precision subfactor."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -217,13 +174,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/2868181-sparsegettranspose",
-        "doc://com.apple.documentation/documentation/accelerate/2868128-sparsegettranspose",
-        "doc://com.apple.documentation/documentation/accelerate/2868157-sparsegettranspose",
-        "doc://com.apple.documentation/documentation/accelerate/2881903-sparsegettranspose",
-        "doc://com.apple.documentation/documentation/accelerate/2881896-sparsegettranspose"
+        "doc://com.apple.documentation/documentation/accelerate/2868181-sparsegettranspose"
       ],
-      "title": "Transposition ",
+      "title": "Matrix Transpose Functions",
       "generated": true
     }
   ],
@@ -267,6 +220,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -320,7 +274,7 @@
             },
             {
               "type": "text",
-              "text": " structure representing the transposed matrix."
+              "text": " structure that represents the transposed matrix."
             }
           ]
         }
@@ -340,7 +294,33 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Note that the underlying storage is not reference counted, so users must ensure the original matrix (or at least its underlying storage) is not destroyed before they are finished with the matrix returned by this routine."
+              "text": "Use this function to return a new "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double"
+            },
+            {
+              "type": "text",
+              "text": " structure that shares underlying storage with the specified matrix, but with its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868141-transpose"
+            },
+            {
+              "type": "text",
+              "text": " attribute as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": ". The system doesn’t reference-count the underlying storage, so you must ensure it doesn’t destroy the original matrix before you finish with the matrix that this routine returns."
             }
           ]
         }
@@ -348,7 +328,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

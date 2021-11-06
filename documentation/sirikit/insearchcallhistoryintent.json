@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/voip_calling"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSearchCallHistoryIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,13 +100,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
-      "title": "VoIP Calling",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
-      "url": "/documentation/sirikit/voip_calling",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent#2132402": {
       "title": "Table 1",
@@ -109,28 +130,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent#2528244": {
-      "title": "Table 2",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent#2528244",
-      "kind": "article",
-      "role": "table",
-      "url": "/documentation/sirikit/insearchcallhistoryintent#2528244",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Siri phrases that trigger the searching of calls"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/invocabulary": {
-      "title": "INVocabulary",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/invocabulary"
-    },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent": {
       "title": "INSearchCallHistoryIntent",
       "type": "topic",
@@ -143,7 +142,8 @@
           "type": "text",
           "text": "A request to list the calls matching the specified criteria."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintenthandling": {
       "title": "INSearchCallHistoryIntentHandling",
@@ -157,7 +157,8 @@
           "type": "text",
           "text": "The handler interface for searching the user’s call history."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintentresponse": {
       "title": "INSearchCallHistoryIntentResponse",
@@ -171,7 +172,8 @@
           "type": "text",
           "text": "Your app’s response to a search call history intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inintent": {
       "title": "INIntent",
@@ -203,7 +205,8 @@
           "kind": "identifier",
           "text": "initWithDateCreated:recipient:callCapabilities:callTypes:unseen:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1902451-initwithcalltype": {
       "title": "initWithCallType:dateCreated:recipient:callCapabilities:",
@@ -242,7 +245,8 @@
           "type": "text",
           "text": "The person involved in the call."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1638678-datecreated": {
       "title": "dateCreated",
@@ -256,7 +260,8 @@
           "type": "text",
           "text": "The range of dates associated with the call records."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2866200-calltypes": {
       "title": "callTypes",
@@ -270,7 +275,8 @@
           "type": "text",
           "text": "The types of calls to search."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1638944-calltype": {
       "title": "callType",
@@ -282,7 +288,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The call type. "
+          "text": "The call type."
         }
       ],
       "deprecated": true
@@ -299,21 +305,8 @@
           "type": "text",
           "text": "The audio-video capabilities of the call."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/incallcapabilityoptions": {
-      "title": "INCallCapabilityOptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallcapabilityoptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/incallcapabilityoptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants indicating the capabilities of the call."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2879132-unseen": {
       "title": "unseen",
@@ -327,7 +320,8 @@
           "type": "text",
           "text": "A Boolean value that indicates whether the user has seen the call yet."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -337,16 +331,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -364,14 +368,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2879133-initwithdatecreated",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1902451-initwithcalltype"
-      ]
+      ],
+      "anchor": "2528223"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Recipient",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1638907-recipient"
-      ]
+      ],
+      "anchor": "2880849"
     },
     {
       "kind": "taskGroup",
@@ -381,9 +387,9 @@
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2866200-calltypes",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1638944-calltype",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1639273-callcapabilities",
-        "doc://com.apple.documentation/documentation/sirikit/incallcapabilityoptions",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2879132-unseen"
-      ]
+      ],
+      "anchor": "2528235"
     }
   ],
   "seeAlsoSections": [
@@ -392,7 +398,7 @@
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintentresponse"
       ],
-      "title": "Search the Call History",
+      "title": "Call History Search",
       "generated": true
     }
   ],
@@ -430,6 +436,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -477,7 +484,7 @@
             },
             {
               "type": "text",
-              "text": " protocol. Your handler should confirm the request and create an "
+              "text": " protocol. Your handler confirms the request and creates an "
             },
             {
               "type": "reference",
@@ -597,1342 +604,12 @@
               }
             ]
           }
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Example Phrases",
-          "anchor": "2528218"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Users can ask Siri to search for calls in a variety of ways. "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent#2528244"
-            },
-            {
-              "type": "text",
-              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases."
-            }
-          ]
-        },
-        {
-          "type": "table",
-          "header": "row",
-          "rows": [
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Locale"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 1"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 2"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "en"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Show my calls from Kim on "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "在"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "上查找芳芳打来的电话"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "查一下"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "的通话记录"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_HK"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "上搵小明打來嘅電話"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "上搵小明打來嘅電話"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_TW"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "顯示我"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "的通話紀錄"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用<appName>顯示小明打來的電話"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "yue_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺<appName>上揾小明打来嘅电话"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺<appName>上揾小明打来嘅电话"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ar"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "اعرض سجل مكالمات "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "اعرض المكالمات من رنا على "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "da"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Vis samtalehistorik i "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "vis min "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " opkaldshistorie"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "de"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Liste alle "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " Anrufe"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Zeige mir eine Liste meiner "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " Anrufe"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "es"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Ver las llamadas de "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " de Javier"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Ver mi historial de llamadas por "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fi"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Näytä Julian "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " puheluhistoria"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Hae Johannan "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " puhelut"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Montre-moi l'historique de mes appels venant de Kim sur "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Affiche mes appels "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " de Kim"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "he"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "תראי לי את השיחות שלי ב"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "מה השיחה האחרונה בווטסאפ"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "it"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Mostrami le mie chiamate da Davide su "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Mostrami le mie chiamate da Davide di <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ja"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "で佐藤さんからの着信を探して"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "佐藤さんからの"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "の着信を見せて"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ko"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "에서 통화목록 보여줘"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "에서 충헌이한테서 온 통화 목록 보여줘"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ms"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Tunjukkan sejarah panggilan dari Ahmad dalam "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Tunjuk sejarah panggilan "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nb"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Vis samtalehistorikk i "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Vis anrop fra Kim i "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nl"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Toon mijn oproepen van Kim op "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Geef de belgeschiedenis van "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " weer"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "pt"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Mostrar meu histórico de ligações com João no "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Encontra meu histórico de ligações do "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ru"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Покажи мою историю звонков "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Найди историю звонков в "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "sv"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Lista alla samtal från Klas med "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Ta fram mina "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " samtal från Nathalie"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "th"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "แสดงประวัติการโทรทั้งหมดของ "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "แสดงประวัติการโทรจากคิมผ่าน <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "tr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Merve'den gelen "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " aramalarımı göster"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " arama geçmişi"
-                    }
-                  ]
-                }
-              ]
-            ]
-          ],
-          "metadata": {
-            "anchor": "2528244",
-            "title": "Table 2",
-            "abstract": [
-              {
-                "type": "text",
-                "text": "Siri phrases that trigger the searching of calls"
-              }
-            ]
-          }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "In "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent#2528244"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "<appName>"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " represents the name of the app whose Intents extension searches the call history. If your app uses custom names for contacts, you can tell Siri about those names using the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary"
-            },
-            {
-              "type": "text",
-              "text": " class."
-            }
-          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

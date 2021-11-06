@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates a queue player with player items from the specified array."
+      "text": "Creates an object that plays a queue of items."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVQueuePlayer(im)initWithItems:",
+    "parent": {
+      "title": "AVQueuePlayer"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,14 +122,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avqueueplayer"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
-      "title": "AVPlayerItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
       "type": "topic",
@@ -129,6 +129,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer/1389345-initwithitems": {
       "title": "initWithItems:",
@@ -140,7 +148,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a queue player with player items from the specified array."
+          "text": "Creates an object that plays a queue of items."
         }
       ],
       "fragments": [
@@ -164,15 +172,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an instance of "
-        },
-        {
-          "type": "codeVoice",
-          "code": "AVQueuePlayer"
-        },
-        {
-          "type": "text",
-          "text": " initialized to play items from a given array."
+          "text": "Returns an object that plays a queue of items."
         }
       ],
       "fragments": [
@@ -273,6 +273,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -295,54 +296,9 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "An array of "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
-                },
-                {
-                  "type": "text",
-                  "text": " objects with which to initially populate the player’s queue."
+                  "text": "The array of player items with which to populate the queue."
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "An instance of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVQueuePlayer"
-            },
-            {
-              "type": "text",
-              "text": " initialized to play the player items in "
-            },
-            {
-              "type": "codeVoice",
-              "code": "items"
-            },
-            {
-              "type": "text",
-              "text": "."
             }
           ]
         }
@@ -350,7 +306,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

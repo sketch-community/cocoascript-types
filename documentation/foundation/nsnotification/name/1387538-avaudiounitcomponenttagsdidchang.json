@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The component tags changed."
+      "text": "A notification that indicates when component tags change."
     }
   ],
   "documentVersion": 0,
@@ -25,11 +25,18 @@
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfaudio",
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine",
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_units",
+        "doc://com.apple.documentation/documentation/avfaudio/avaudiounitcomponent"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
-        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
-        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_units",
-        "doc://com.apple.documentation/documentation/avfoundation/avaudiounitcomponent"
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine",
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_units",
+        "doc://com.apple.documentation/documentation/avfaudio/avaudiounitcomponent"
       ]
     ]
   },
@@ -45,32 +52,40 @@
     "roleHeading": "Type Property",
     "modules": [
       {
-        "name": "AVFoundation"
+        "name": "AVFAudio"
       }
     ],
     "platforms": [
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@AVAudioUnitComponentTagsDidChangeNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -88,8 +103,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,7 +116,7 @@
         }
       ],
       "paths": [
-        "documentation/avfoundation/avaudiounitcomponenttagsdidchangenotification"
+        "documentation/avfaudio/avaudiounitcomponenttagsdidchangenotification"
       ]
     },
     {
@@ -156,6 +171,38 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnotification"
     },
+    "doc://com.apple.documentation/documentation/avfaudio": {
+      "title": "AVFAudio",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio",
+      "url": "/documentation/avfaudio",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/audio_engine": {
+      "title": "Audio Engine",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine",
+      "url": "/documentation/avfaudio/audio_engine",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_units": {
+      "title": "Audio Units",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_units",
+      "url": "/documentation/avfaudio/audio_engine/audio_units",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/avaudiounitcomponent": {
+      "title": "AVAudioUnitComponent",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiounitcomponent",
+      "url": "/documentation/avfaudio/avaudiounitcomponent",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
     "doc://com.apple.documentation/documentation/avfoundation": {
       "title": "AVFoundation",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation",
@@ -172,29 +219,33 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine": {
-      "title": "AVAudioEngine",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
-      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1389078-avaudioengineconfigurationchange": {
+      "title": "AVAudioEngineConfigurationChange",
       "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_units": {
-      "title": "Audio Units",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_units",
-      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_units",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avaudiounitcomponent": {
-      "title": "AVAudioUnitComponent",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiounitcomponent",
-      "url": "/documentation/avfoundation/avaudiounitcomponent",
-      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1389078-avaudioengineconfigurationchange",
       "kind": "symbol",
-      "role": "symbol"
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1389078-avaudioengineconfigurationchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the framework posts when the audio engine configuration changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "AVAudioEngineConfigurationChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1387538-avaudiounitcomponenttagsdidchang": {
       "title": "AVAudioUnitComponentTagsDidChange",
@@ -206,7 +257,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The component tags changed."
+          "text": "A notification that indicates when component tags change."
         }
       ],
       "fragments": [
@@ -224,6 +275,146 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616596-interruptionnotification": {
+      "title": "interruptionNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616596-interruptionnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfaudio/avaudiosession/1616596-interruptionnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the system posts when an audio interruption occurs."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class let "
+        },
+        {
+          "kind": "identifier",
+          "text": "interruptionNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616457-mediaserviceswerelostnotificatio": {
+      "title": "mediaServicesWereLostNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616457-mediaserviceswerelostnotificatio",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfaudio/avaudiosession/1616457-mediaserviceswerelostnotificatio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the system posts when it terminates the media server."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class let "
+        },
+        {
+          "kind": "identifier",
+          "text": "mediaServicesWereLostNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616540-mediaserviceswereresetnotificati": {
+      "title": "mediaServicesWereResetNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616540-mediaserviceswereresetnotificati",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfaudio/avaudiosession/1616540-mediaserviceswereresetnotificati",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the system posts when the media server restarts."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class let "
+        },
+        {
+          "kind": "identifier",
+          "text": "mediaServicesWereResetNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616493-routechangenotification": {
+      "title": "routeChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616493-routechangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfaudio/avaudiosession/1616493-routechangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the system posts when its audio route changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class let "
+        },
+        {
+          "kind": "identifier",
+          "text": "routeChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616622-silencesecondaryaudiohintnotific": {
+      "title": "silenceSecondaryAudioHintNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616622-silencesecondaryaudiohintnotific",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfaudio/avaudiosession/1616622-silencesecondaryaudiohintnotific",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the system posts when the primary audio from other apps starts and stops."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class let "
+        },
+        {
+          "kind": "identifier",
+          "text": "silenceSecondaryAudioHintNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -232,6 +423,20 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1389078-avaudioengineconfigurationchange",
+        "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616596-interruptionnotification",
+        "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616457-mediaserviceswerelostnotificatio",
+        "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616540-mediaserviceswereresetnotificati",
+        "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616493-routechangenotification",
+        "doc://com.apple.documentation/documentation/avfaudio/avaudiosession/1616622-silencesecondaryaudiohintnotific"
+      ],
+      "title": "AVFAudio",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -284,6 +489,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -305,7 +511,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The notification object is the AVAudioUnitComponent object which has changed tags."
+              "text": "The notification object contains the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVAudioUnitComponent"
+            },
+            {
+              "type": "text",
+              "text": " object with the tags."
             }
           ]
         }
@@ -313,7 +527,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

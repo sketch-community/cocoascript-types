@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Calculates the discrete single-precision cosine transform for a vector."
+      "text": "Calculates the discrete cosine transform for a vector."
     }
   ],
   "documentVersion": 0,
@@ -40,35 +40,40 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@vDSP_DCT_Execute",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -129,16 +134,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a data structure for use with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/1450016-vdsp_dct_execute"
-        },
+          "text": "Builds a data structure that contains precalculated data to perform a discrete cosine transform."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_dct_type": {
+      "title": "vDSP_DCT_Type",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_dct_type",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_dct_type",
+      "abstract": [
         {
           "type": "text",
-          "text": " to perform a single-precision, discrete cosine transform."
+          "text": "Constants that indicate the type for a discrete cosine transform."
         }
       ]
     },
@@ -152,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculates the discrete single-precision cosine transform for a vector."
+          "text": "Calculates the discrete cosine transform for a vector."
         }
       ]
     },
@@ -167,7 +177,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/1449930-vdsp_dct_createsetup"
+        "doc://com.apple.documentation/documentation/accelerate/1449930-vdsp_dct_createsetup",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_dct_type"
       ],
       "title": "Discrete Cosine Transforms",
       "generated": true
@@ -249,6 +260,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -290,7 +302,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Single-precision input vector"
+                  "text": "Single-precision input vector that contains the number of elements specified in the setup structure."
                 }
               ]
             }
@@ -304,7 +316,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Single-precision output vector"
+                  "text": "Single-precision output vector that contains the number of elements specified in the setup structure."
                 }
               ]
             }
@@ -326,118 +338,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For type II transformation, the calculation is"
-            }
-          ]
-        },
-        {
-          "type": "unorderedList",
-          "items": [
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "For 0 <= k < Length,"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "C[k] = sum(A[j] * cos(k * (j+1/2) * pi / Length, 0 <= j < Length)"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "For type III transformation, the calculation is"
-            }
-          ]
-        },
-        {
-          "type": "unorderedList",
-          "items": [
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "For 0 <= k < Length"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "C[k] = A[0]/2 + sum(A[j] * cos((k+1/2) * j * pi / Length), 1 <= j < Length)"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "For type IV transformation, the calculation is"
-            }
-          ]
-        },
-        {
-          "type": "unorderedList",
-          "items": [
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "For 0 <= k < Length,"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "C[k] = sum(A[j] * cos(k * (j+1/2) * pi / Length, 0 <= j < Length)"
-                    }
-                  ]
-                }
-              ]
+              "text": "In-place operation is supported."
             }
           ]
         }
@@ -445,7 +346,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Create preconditioners for iterative solves. "
+      "text": "Create preconditioners for iterative solves."
     }
   ],
   "documentVersion": 0,
@@ -31,8 +31,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -75,6 +75,20 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t": {
+      "title": "SparsePreconditioner_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsepreconditioner_t",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that define the preconditioner type."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/2873635-sparsecreatepreconditioner": {
       "title": "SparseCreatePreconditioner",
       "type": "topic",
@@ -85,7 +99,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a preconditioner that can be applied quickly to the given matrix of double-precision values."
+          "text": "Creates a preconditioner for the specified matrix of double-precision values."
         }
       ]
     },
@@ -99,7 +113,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a preconditioner that can be applied quickly to the given matrix of single-precision values."
+          "text": "Creates a preconditioner for the specified matrix of single-precision values."
         }
       ]
     },
@@ -131,34 +145,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t": {
-      "title": "SparsePreconditioner_t",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsepreconditioner_t",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Options that define the preconditioner."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods": {
-      "title": "Implementing Iterative Methods",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/accelerate/implementing_iterative_methods",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Use iterative methods to solve large problems faster and with a lower memory overhead than with direct methods.  "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods": {
       "title": "Solving Systems Using Iterative Methods",
       "type": "topic",
@@ -173,45 +159,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners": {
-      "title": "Preconditioners",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs": {
+      "title": "Sparse Iterative Solving Functions (Matrix RHS)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/preconditioners",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs",
       "abstract": [
         {
           "type": "text",
-          "text": "Create preconditioners for iterative solves. "
+          "text": "Solve a system with a right-hand-side dense matrix using iterative methods."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods": {
-      "title": "Sparse Iterative Methods",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs": {
+      "title": "Sparse Iterative Solving Functions (Vector RHS)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs",
       "abstract": [
         {
           "type": "text",
-          "text": "Select a suitable iterative method to solve a system. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions": {
-      "title": "Iterative Sparse Solve Functions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Solve a system using an iterative method."
+          "text": "Solve a system with a right-hand-side dense vector using iterative methods."
         }
       ]
     },
@@ -229,6 +201,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods": {
+      "title": "Sparse Iterative Methods",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Select a suitable iterative method to solve a system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners": {
+      "title": "Preconditioners",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/preconditioners",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create preconditioners for iterative solves."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -242,35 +242,52 @@
       "kind": "taskGroup",
       "title": "Preconditioners",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t",
         "doc://com.apple.documentation/documentation/accelerate/2873635-sparsecreatepreconditioner",
         "doc://com.apple.documentation/documentation/accelerate/2873557-sparsecreatepreconditioner",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_float"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Supporting Types",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t"
-      ]
+      ],
+      "anchor": "2877535"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterate_functions"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterate_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods"
       ],
-      "title": "Iterative Sparse Solving Methods",
+      "title": "Solving Systems with Iterative Sparse Methods",
       "generated": true
     }
   ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In many cases, applying a preconditioner to the coefficient matrix reduces the number of iterations necessary to solve the system. The Sparse Solvers library provides Jacobi and diagonal scaling preconditioners, and the functionality to create user-defined preconditioners."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

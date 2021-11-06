@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A type that represents PNG images."
+      "text": "A type that represents a PNG image."
     }
   ],
   "documentVersion": 0,
@@ -11,8 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types"
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers"
       ]
     ]
   },
@@ -35,40 +40,48 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:22UniformTypeIdentifiers6UTTypeV3pngACvpZ",
+    "parent": {
+      "title": "UTType"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
         "kind": "text",
-        "text": "static let "
+        "text": "static var "
       },
       {
         "kind": "identifier",
@@ -81,8 +94,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,6 +120,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "url": "/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype": {
       "title": "UTType",
       "type": "topic",
@@ -115,10 +136,10 @@
       "role": "symbol",
       "url": "/documentation/uniformtypeidentifiers/uttype"
     },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types": {
-      "title": "System Declared Types",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types",
-      "url": "/documentation/uniformtypeidentifiers/uttype/system_declared_types",
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers",
+      "url": "/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -131,62 +152,6 @@
       "role": "symbol",
       "url": "/documentation/uniformtypeidentifiers/uttypeimage"
     },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551508-image": {
-      "title": "image",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551508-image",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551508-image",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A base type that represents image data."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "image"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551523-jpeg": {
-      "title": "jpeg",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551523-jpeg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551523-jpeg",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents JPEG images."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "jpeg"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551551-png": {
       "title": "png",
       "type": "topic",
@@ -197,45 +162,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A type that represents PNG images."
+          "text": "A type that represents a PNG image."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
           "text": "png"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551505-icns": {
-      "title": "icns",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551505-icns",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551505-icns",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents Apple icon data."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "icns"
         },
         {
           "kind": "text",
@@ -253,17 +190,73 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A type that represents GIF images."
+          "text": "A type that represents a GIF image."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
           "text": "gif"
+        },
+        {
+          "kind": "text",
+          "text": ": UTType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551523-jpeg": {
+      "title": "jpeg",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551523-jpeg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uniformtypeidentifiers/uttype/3551523-jpeg",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that represents a JPEG image."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "jpeg"
+        },
+        {
+          "kind": "text",
+          "text": ": UTType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551599-webp": {
+      "title": "webP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551599-webp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uniformtypeidentifiers/uttype/3551599-webp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that represents a WebP image."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "webP"
         },
         {
           "kind": "text",
@@ -281,13 +274,13 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A type that represents TIFF images."
+          "text": "A type that represents a TIFF image."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -309,45 +302,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A type that represents Windows bitmap images."
+          "text": "A type that represents a Windows bitmap image."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
           "text": "bmp"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551506-ico": {
-      "title": "ico",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551506-ico",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551506-ico",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents Windows icon data."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "ico"
         },
         {
           "kind": "text",
@@ -365,13 +330,13 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A type that represents scalable vector graphics (SVG) images."
+          "text": "A type that represents a scalable vector graphics (SVG) image."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -393,129 +358,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A base type that represents raw image format used in digital photography."
+          "text": "A base type that represents a raw image format that you use in digital photography."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
           "text": "rawImage"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3566236-heic": {
-      "title": "heic",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3566236-heic",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3566236-heic",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents High Efficiency Image Coding images."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "heic"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551503-heif": {
-      "title": "heif",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551503-heif",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551503-heif",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents High Efficiency Image File Format images."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "heif"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551599-webp": {
-      "title": "webP",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551599-webp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551599-webp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents WebP images."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "webP"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551525-livephoto": {
-      "title": "livePhoto",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551525-livephoto",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551525-livephoto",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents Live Photos."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "livePhoto"
         },
         {
           "kind": "text",
@@ -534,21 +387,15 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551508-image",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551523-jpeg",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551505-icns",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551499-gif",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551523-jpeg",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551599-webp",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551581-tiff",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551468-bmp",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551506-ico",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551573-svg",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551559-rawimage",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3566236-heic",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551503-heif",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551599-webp",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551525-livephoto"
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551559-rawimage"
       ],
-      "title": "Image Types",
+      "title": "Images",
       "generated": true
     }
   ],
@@ -571,7 +418,7 @@
             },
             {
               "kind": "keyword",
-              "text": "let"
+              "text": "var"
             },
             {
               "kind": "text",
@@ -590,10 +437,23 @@
               "preciseIdentifier": "s:22UniformTypeIdentifiers6UTTypeV",
               "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype",
               "text": "UTType"
+            },
+            {
+              "kind": "text",
+              "text": " { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " }"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -654,7 +514,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

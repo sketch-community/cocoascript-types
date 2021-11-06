@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The values of "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915760-multipleroutesdetected"
-    },
-    {
-      "type": "text",
-      "text": " changed."
+      "text": "A notification the system posts when changes occur to its detected routes."
     }
   ],
   "documentVersion": 0,
@@ -51,30 +42,35 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@AVRouteDetectorMultipleRoutesDetectedDidChangeNotification",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -157,20 +153,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnotificationname"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915760-multipleroutesdetected": {
-      "title": "multipleRoutesDetected",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915760-multipleroutesdetected",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avroutedetector/2915760-multipleroutesdetected",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether more playback routes than the local playback route have been detected."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915762-routedetectionenabled": {
       "title": "routeDetectionEnabled",
       "type": "topic",
@@ -181,7 +163,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether route detection is enabled."
+          "text": "A Boolean value that indicates whether you’ve enabled route detection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915760-multipleroutesdetected": {
+      "title": "multipleRoutesDetected",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915760-multipleroutesdetected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avroutedetector/2915760-multipleroutesdetected",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the object detects more than one playback route."
         }
       ]
     },
@@ -195,16 +191,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The values of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915760-multipleroutesdetected"
-        },
-        {
-          "type": "text",
-          "text": " changed."
+          "text": "A notification the system posts when changes occur to its detected routes."
         }
       ]
     },
@@ -264,6 +251,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -273,7 +261,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

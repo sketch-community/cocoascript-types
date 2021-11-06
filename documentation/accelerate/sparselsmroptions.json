@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@SparseLSMROptions",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,35 +119,13 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctdefault": {
-      "title": "SparseLSMRCTDefault",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctdefault",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctdefault"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctfongsaunders": {
-      "title": "SparseLSMRCTFongSaunders",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctfongsaunders",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctfongsaunders"
-    },
     "doc://com.apple.documentation/documentation/accelerate/2873527-sparseconjugategradient": {
       "title": "SparseConjugateGradient",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/accelerate/2873527-sparseconjugategradient",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/2873527-sparseconjugategradient",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a conjugate gradient method with specified options."
-        }
-      ]
+      "url": "/documentation/accelerate/2873527-sparseconjugategradient"
     },
     "doc://com.apple.documentation/documentation/accelerate/2873536-sparsegmres": {
       "title": "SparseGMRES",
@@ -150,13 +133,7 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/2873536-sparsegmres",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/2873536-sparsegmres",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a generalized minimal residual method with specified options."
-        }
-      ]
+      "url": "/documentation/accelerate/2873536-sparsegmres"
     },
     "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875473-atol": {
       "title": "atol",
@@ -168,25 +145,20 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Either absolute tolerance ("
+          "text": "The absolute tolerance (default test) or "
         },
         {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctdefault"
-        },
-        {
-          "type": "text",
-          "text": ") or A tolerance ("
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctfongsaunders"
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A"
+            }
+          ]
         },
         {
           "type": "text",
-          "text": ")."
+          "text": " tolerance (Fong-Saunders test)."
         }
       ]
     },
@@ -200,16 +172,20 @@
       "abstract": [
         {
           "type": "text",
-          "text": "B tolerance ("
+          "text": "The "
         },
         {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctfongsaunders"
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "B"
+            }
+          ]
         },
         {
           "type": "text",
-          "text": ")"
+          "text": " tolerance (Fong-Saunders test only)."
         }
       ]
     },
@@ -223,16 +199,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Condition number limit ("
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctfongsaunders"
-        },
-        {
-          "type": "text",
-          "text": ")."
+          "text": "The condition number limit (Fong-Saunders test only)."
         }
       ]
     },
@@ -246,15 +213,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Convergence test to use for "
-        },
-        {
-          "type": "codeVoice",
-          "code": "SparseSolve"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "The convergence test to use for iterative solve methods."
         }
       ]
     },
@@ -264,7 +223,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparselsmrconvergencetest_t"
+      "url": "/documentation/accelerate/sparselsmrconvergencetest_t",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that specify the type of convergence test."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875486-lambda": {
       "title": "lambda",
@@ -276,7 +241,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Damping parameter lambda for regularized least squares."
+          "text": "The damping parameter lambda for regularized least squares."
         }
       ]
     },
@@ -290,7 +255,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Maximum number of iterations."
+          "text": "The maximum number of iterations."
         }
       ]
     },
@@ -318,7 +283,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Optional error reporting routine."
+          "text": "An optional error-reporting routine."
         }
       ]
     },
@@ -332,7 +297,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Optional status reporting routine."
+          "text": "An optional status-reporting routine."
         }
       ]
     },
@@ -346,72 +311,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Relative convergence tolerance ("
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t/sparselsmrctdefault"
-        },
-        {
-          "type": "text",
-          "text": ")"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2873619-sparseconjugategradient": {
-      "title": "SparseConjugateGradient",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2873619-sparseconjugategradient",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2873619-sparseconjugategradient",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a conjugate gradient method."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparsecgoptions": {
-      "title": "SparseCGOptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsecgoptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsecgoptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Options for creating a conjugate gradient method."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2873539-sparsegmres": {
-      "title": "SparseGMRES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2873539-sparsegmres",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2873539-sparsegmres",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a generalized minimal residual method."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparsegmresoptions": {
-      "title": "SparseGMRESOptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsegmresoptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsegmresoptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Options for creating a generalized minimal residual method."
+          "text": "The relative convergence tolerance (default test only)."
         }
       ]
     },
@@ -425,7 +325,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a default least squares minimum residual method."
+          "text": "Returns a default least squares minimum residual (LSMR) method."
         }
       ]
     },
@@ -481,22 +381,17 @@
         "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875532-reporterror",
         "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2879303-reportstatus",
         "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875468-rtol"
-      ]
+      ],
+      "anchor": "2876584"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/2873619-sparseconjugategradient",
-        "doc://com.apple.documentation/documentation/accelerate/2873527-sparseconjugategradient",
-        "doc://com.apple.documentation/documentation/accelerate/sparsecgoptions",
-        "doc://com.apple.documentation/documentation/accelerate/2873539-sparsegmres",
-        "doc://com.apple.documentation/documentation/accelerate/2873536-sparsegmres",
-        "doc://com.apple.documentation/documentation/accelerate/sparsegmresoptions",
         "doc://com.apple.documentation/documentation/accelerate/2875522-sparselsmr",
         "doc://com.apple.documentation/documentation/accelerate/2875494-sparselsmr"
       ],
-      "title": "Sparse Iterative Methods",
+      "title": "Sparse Iterative Methods for Overdetermined and Underdetermined Systems",
       "generated": true
     }
   ],
@@ -552,6 +447,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -574,7 +470,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "LSMR is MINRES specialized for solving least squares. Use LSMR to solve equations of the form "
+              "text": "LSMR is a minimal residual (MINRES) method for solving least squares. Use LSMR to solve equations of the form "
             },
             {
               "type": "emphasis",
@@ -587,7 +483,7 @@
             },
             {
               "type": "text",
-              "text": " where an exact solution does not exist. The returned solution minimizes ‖"
+              "text": " where an exact solution doesn’t exist. The returned solution minimizes ‖"
             },
             {
               "type": "emphasis",
@@ -609,7 +505,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Although LSMR is equivalent to MINRES applied to the normal equations "
+              "text": "Although LSMR is equivalent to applying MINRES to the normal equations "
             },
             {
               "type": "emphasis",
@@ -658,7 +554,7 @@
             },
             {
               "type": "text",
-              "text": " in exact arithmetic, it has superior numerical behavior and is preferred. Due to the implicit squaring of the condition of "
+              "text": " in exact arithmetic, it has superior numerical behavior and is the preferred method. Due to the implicit squaring of the condition of "
             },
             {
               "type": "emphasis",
@@ -671,7 +567,7 @@
             },
             {
               "type": "text",
-              "text": " in the normal equations, LSMR may struggle to converge in single precision, and double precision arithmetic is recommended. "
+              "text": " in the normal equations, LSMR may struggle to converge in single precision. Use double-precision arithmetic where possible."
             }
           ]
         },
@@ -689,7 +585,7 @@
             },
             {
               "type": "text",
-              "text": " instead. For square, full-rank unsymmetric or indefinite equations, use "
+              "text": ". For square, full-rank unsymmetric or indefinite equations, use "
             },
             {
               "type": "reference",
@@ -710,7 +606,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

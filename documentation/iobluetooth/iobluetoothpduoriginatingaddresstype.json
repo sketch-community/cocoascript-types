@@ -1,11 +1,18 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The format of the phone number for the sender of the text message."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/iobluetooth",
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants"
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants"
       ]
     ]
   },
@@ -28,20 +35,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
-      },
-      {
-        "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@IOBluetoothPDUOriginatingAddressType",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -76,10 +78,18 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants": {
-      "title": "IOBluetooth Constants",
-      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants",
-      "url": "/documentation/iobluetooth/iobluetooth_constants",
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate": {
+      "title": "IOBluetoothHandsFreeDeviceDelegate",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants": {
+      "title": "SMS Dictionary Key Constants",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -92,6 +102,62 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduoriginatingaddress": {
+      "title": "IOBluetoothPDUOriginatingAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduoriginatingaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothpduoriginatingaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The phone number for the sender of the text message."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduoriginatingaddresstype": {
+      "title": "IOBluetoothPDUOriginatingAddressType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduoriginatingaddresstype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothpduoriginatingaddresstype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the phone number for the sender of the text message."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduserviccenteraddress": {
+      "title": "IOBluetoothPDUServicCenterAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduserviccenteraddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothpduserviccenteraddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The phone number for the service center that stored and then delivered the message."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduservicecenteraddresstype": {
+      "title": "IOBluetoothPDUServiceCenterAddressType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduservicecenteraddresstype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothpduservicecenteraddresstype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the phone number for the service center."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -100,6 +166,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduoriginatingaddress",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduserviccenteraddress",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothpduservicecenteraddresstype"
+      ],
+      "title": "Sender Information",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -137,15 +214,14 @@
             }
           ],
           "platforms": [
-            "macOS",
-            "Mac Catalyst"
+            "macOS"
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

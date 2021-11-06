@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "User activity information that you use to restore your app to its previous state.   "
+      "text": "Information about user activities that you can use to configure your scene's interface."
     }
   ],
   "documentVersion": 0,
@@ -82,25 +82,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISceneConnectionOptions(py)userActivities",
+    "parent": {
+      "title": "UISceneConnectionOptions"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -205,6 +213,24 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsuseractivity"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/3197901-requestscenesessionactivation": {
+      "title": "requestSceneSessionActivation:userActivity:options:errorHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/3197901-requestscenesessionactivation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/3197901-requestscenesessionactivation",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestSceneSessionActivation:userActivity:options:errorHandler:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uisceneconnectionoptions/3238070-handoffuseractivitytype": {
       "title": "handoffUserActivityType",
       "type": "topic",
@@ -231,7 +257,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "User activity information that you use to restore your app to its previous state.   "
+          "text": "Information about user activities that you can use to configure your scene's interface."
         }
       ]
     },
@@ -291,6 +317,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -320,7 +347,16 @@
             },
             {
               "type": "text",
-              "text": " objects, use those objects to restore the state of your scene to its previous configuration. You create user activity objects at key moments in your scene's lifetime and register them with the system. Your activity objects specify the tasks your scene was managing and any associated data. For example, if the user was browsing a web page, your activity object might contain the URL of that page. Use the information in the activity object to configure your scene's UI and restore any state associated with the given task. "
+              "text": " objects, use those objects to configure your scene's interface when the scene connects. These activity objects represent the user activities that are available at the time the scene connects, like from search results, other apps, or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/3197901-requestscenesessionactivation"
+            },
+            {
+              "type": "text",
+              "text": ". For example, if the user was browsing a web page, an activity object might contain the URL of that page. "
             }
           ]
         },
@@ -329,7 +365,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property does not contain user activity objects related to Handoff. At connection time, UIKit delivers only the type of a Handoff interaction in the "
+              "text": "This property doesn't contain user activity objects related to Handoff. At connection time, UIKit delivers only the type of a Handoff interaction in the "
             },
             {
               "type": "reference",
@@ -364,7 +400,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

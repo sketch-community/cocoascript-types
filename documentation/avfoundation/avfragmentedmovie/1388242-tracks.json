@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An array of tracks in a movie."
+      "text": "The tracks that a movie contains."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVFragmentedMovie(py)tracks",
+    "parent": {
+      "title": "AVFragmentedMovie"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to handle fragmented movie files."
+          "text": "An object that represents a fragmented movie file."
         }
       ]
     },
@@ -141,7 +149,79 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of tracks in a movie."
+          "text": "The tracks that a movie contains."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovie/1388343-trackwithtrackid": {
+      "title": "trackWithTrackID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovie/1388343-trackwithtrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfragmentedmovie/1388343-trackwithtrackid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a track in the movie that contains the specified identifier."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "trackWithTrackID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovie/1390553-trackswithmediatype": {
+      "title": "tracksWithMediaType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovie/1390553-trackswithmediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfragmentedmovie/1390553-trackswithmediatype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves tracks in the movie that present media of the specified type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tracksWithMediaType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovie/1388651-trackswithmediacharacteristic": {
+      "title": "tracksWithMediaCharacteristic:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovie/1388651-trackswithmediacharacteristic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfragmentedmovie/1388651-trackswithmediacharacteristic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves tracks in the movie that present media of the specified characteristic."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tracksWithMediaCharacteristic:"
         }
       ]
     },
@@ -153,6 +233,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovie/1388343-trackwithtrackid",
+        "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovie/1390553-trackswithmediatype",
+        "doc://com.apple.documentation/documentation/avfoundation/avfragmentedmovie/1388651-trackswithmediacharacteristic"
+      ],
+      "title": "Accessing Tracks",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -201,6 +292,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -210,7 +302,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

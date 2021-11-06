@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/ingetvisualcodeintenthandling"
       ]
     ]
@@ -35,25 +35,41 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INGetVisualCodeIntentHandling(im)resolveVisualCodeTypeForGetVisualCode:withCompletion:",
+    "parent": {
+      "title": "INGetVisualCodeIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +104,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/visual_codes": {
-      "title": "Visual Codes",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/visual_codes",
-      "url": "/documentation/sirikit/visual_codes",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -109,6 +125,14 @@
           "text": "The handler interface for displaying your app’s visual codes."
         }
       ]
+    },
+    "link-3878691": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3878691",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/invisualcodetype": {
       "title": "INVisualCodeType",
@@ -157,7 +181,8 @@
           "kind": "identifier",
           "text": "resolveVisualCodeTypeForGetVisualCode:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -167,6 +192,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -259,6 +304,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -279,7 +325,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The intent object containing details of the user's request. Use this object to get the initial information, if any, provided by the user. "
+                  "text": "The intent object containing details of the user’s request. Use this object to get the initial information, if any, provided by the user. "
                 }
               ]
             }
@@ -333,7 +379,7 @@
                           },
                           {
                             "type": "text",
-                            "text": ". "
+                            "text": "."
                           }
                         ]
                       }
@@ -360,7 +406,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Implement this method to verify that your app supports providing a code of the specified type. If your app supports the requested code or supports only one type of code, return a resolution of success with the code type that you support. If your app does not support the requested type of visual code, provide a resolution asking the user to confirm the code type that you do support."
+              "text": "Implement this method to verify that your app supports providing a code of the specified type. If your app supports the requested code or supports only one type of code, return a resolution of success with the code type that you support. If your app doesn’t support the requested type of visual code, provide a resolution asking the user to confirm the code type that you do support."
             }
           ]
         }
@@ -368,7 +414,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

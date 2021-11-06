@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent"
       ]
     ]
@@ -35,20 +35,34 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSetRadioStationIntent(im)initWithRadioType:frequency:stationName:channel:presetNumber:",
+    "parent": {
+      "title": "INSetRadioStationIntent"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -73,10 +87,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -94,6 +108,14 @@
           "text": "A request to change the current radio station."
         }
       ]
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inradiotype": {
       "title": "INRadioType",
@@ -141,7 +163,8 @@
           "kind": "identifier",
           "text": "initWithRadioType:frequency:stationName:channel:presetNumber:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -151,6 +174,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -321,6 +364,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -390,7 +434,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " parameter, do not specify a value for this parameter. "
+                  "text": " parameter, don’t specify a value for this parameter. "
                 }
               ]
             }
@@ -412,7 +456,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " parameter, do not specify a value for this parameter."
+                  "text": " parameter, don’t specify a value for this parameter."
                 }
               ]
             }
@@ -462,7 +506,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Normally, you do not create instances of this class yourself. Instead, SiriKit creates instances when the user asks to change the radio station. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths."
+              "text": "Normally, you don’t create instances of this class yourself. Instead, SiriKit creates instances when the user asks to change the radio station. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths."
             }
           ]
         }
@@ -470,7 +514,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

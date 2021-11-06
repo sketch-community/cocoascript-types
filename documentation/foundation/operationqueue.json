@@ -39,27 +39,32 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSOperationQueue",
@@ -76,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -234,7 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The operations currently in the queue. "
+          "text": "The operations currently in the queue."
         }
       ],
       "fragments": [
@@ -292,7 +297,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The maximum number of queued operations that can execute at the same time."
+          "text": "The maximum number of queued operations that can run at the same time."
         }
       ],
       "fragments": [
@@ -401,30 +406,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/progressreporting"
-    },
-    "doc://com.apple.documentation/documentation/swift/cvararg": {
-      "title": "CVarArg",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/cvararg"
-    },
-    "doc://com.apple.documentation/documentation/swift/equatable": {
-      "title": "Equatable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/equatable"
-    },
-    "doc://com.apple.documentation/documentation/swift/hashable": {
-      "title": "Hashable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/hashable"
     },
     "doc://com.apple.documentation/documentation/combine/scheduler": {
       "title": "Scheduler",
@@ -582,6 +563,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3172534-addbarrierblock": {
+      "title": "addBarrierBlock(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3172534-addbarrierblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3172534-addbarrierblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invokes a block when the queue finishes all enqueued operations, and prevents subsequent operations from starting until the block has completed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "addBarrierBlock"
+        },
+        {
+          "kind": "text",
+          "text": "(() -> Void)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/operationqueue/1417849-cancelalloperations": {
       "title": "cancelAllOperations()",
       "type": "topic",
@@ -620,7 +629,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Blocks the current thread until all of the receiver’s queued and executing operations finish executing."
+          "text": "Blocks the current thread until all the receiver’s queued and executing operations finish executing."
         }
       ],
       "fragments": [
@@ -648,7 +657,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The default service level to apply to operations executed using the queue."
+          "text": "The default service level to apply to operations that the queue invokes."
         }
       ],
       "fragments": [
@@ -676,7 +685,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The default maximum number of operations to be executed concurrently in a queue.   "
+          "text": "The default maximum number of operations to invoke concurrently in a queue."
         }
       ],
       "fragments": [
@@ -694,6 +703,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3172535-progress": {
+      "title": "progress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3172535-progress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3172535-progress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the total progress of the operations executing in the queue."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "progress"
+        },
+        {
+          "kind": "text",
+          "text": ": Progress"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/operationqueue/1415344-underlyingqueue": {
       "title": "underlyingQueue",
       "type": "topic",
@@ -704,7 +741,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The dispatch queue used to execute operations."
+          "text": "The dispatch queue that the operation queue uses to invoke operations."
         }
       ],
       "fragments": [
@@ -722,79 +759,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance": {
-      "title": "minimumTolerance",
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule": {
+      "title": "schedule(after:tolerance:options:_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/3329362-minimumtolerance",
-      "fragments": [
+      "url": "/documentation/foundation/operationqueue/3329365-schedule",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "minimumTolerance"
-        },
-        {
-          "kind": "text",
-          "text": ": OperationQueue.SchedulerTimeType.Stride"
+          "type": "text",
+          "text": "Performs the action at some time after the specified date, optionally taking into account tolerance if possible."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now": {
-      "title": "now",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/3329363-now",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "now"
-        },
-        {
-          "kind": "text",
-          "text": ": OperationQueue.SchedulerTimeType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/3172535-progress": {
-      "title": "progress",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3172535-progress",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/3172535-progress",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "progress"
-        },
-        {
-          "kind": "text",
-          "text": ": Progress"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/3172534-addbarrierblock": {
-      "title": "addBarrierBlock(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3172534-addbarrierblock",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/3172534-addbarrierblock",
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -802,11 +779,35 @@
         },
         {
           "kind": "identifier",
-          "text": "addBarrierBlock"
+          "text": "schedule"
         },
         {
           "kind": "text",
-          "text": "(() -> Void)"
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "after"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType, "
+        },
+        {
+          "kind": "identifier",
+          "text": "tolerance"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType.Stride, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerOptions?, () -> Void)"
         }
       ]
     },
@@ -817,6 +818,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/operationqueue/3329364-schedule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the action at some time after the specified date, at the specified frequency, optionally taking into account tolerance if possible."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -864,52 +871,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule": {
-      "title": "schedule(after:tolerance:options:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/3329365-schedule",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "schedule"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "after"
-        },
-        {
-          "kind": "text",
-          "text": ": OperationQueue.SchedulerTimeType, "
-        },
-        {
-          "kind": "identifier",
-          "text": "tolerance"
-        },
-        {
-          "kind": "text",
-          "text": ": OperationQueue.SchedulerTimeType.Stride, "
-        },
-        {
-          "kind": "identifier",
-          "text": "options"
-        },
-        {
-          "kind": "text",
-          "text": ": OperationQueue.SchedulerOptions?, () -> Void)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/operationqueue/3329366-schedule": {
       "title": "schedule(options:_:)",
       "type": "topic",
@@ -917,6 +878,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/operationqueue/3329366-schedule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the action at the next possible opportunity."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -940,21 +907,59 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions": {
-      "title": "OperationQueue.SchedulerOptions",
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now": {
+      "title": "now",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/scheduleroptions",
+      "url": "/documentation/foundation/operationqueue/3329363-now",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The operation queue’s definition of the current moment in time."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
-          "text": "struct "
+          "text": "var "
         },
         {
           "kind": "identifier",
-          "text": "OperationQueue.SchedulerOptions"
+          "text": "now"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance": {
+      "title": "minimumTolerance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329362-minimumtolerance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The minimum tolerance the dispatch queue scheduler allows."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "minimumTolerance"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType.Stride"
         }
       ]
     },
@@ -965,6 +970,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/operationqueue/schedulertimetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scheduler time type the operation queue uses."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -973,6 +984,30 @@
         {
           "kind": "identifier",
           "text": "OperationQueue.SchedulerTimeType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions": {
+      "title": "OperationQueue.SchedulerOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/scheduleroptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that defines options the operation queue accepts."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "OperationQueue.SchedulerOptions"
         }
       ]
     },
@@ -1013,16 +1048,16 @@
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -1040,9 +1075,6 @@
       "title": "Conforms To",
       "type": "conformsTo",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/swift/cvararg",
-        "doc://com.apple.documentation/documentation/swift/equatable",
-        "doc://com.apple.documentation/documentation/swift/hashable",
         "doc://com.apple.documentation/documentation/foundation/progressreporting",
         "doc://com.apple.documentation/documentation/combine/scheduler"
       ]
@@ -1055,7 +1087,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1409193-main",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1413097-current"
-      ]
+      ],
+      "anchor": "1661191"
     },
     {
       "kind": "taskGroup",
@@ -1064,11 +1097,13 @@
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1410704-addoperation",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1408358-addoperations",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1412949-addoperation",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/1415168-operations",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/1415115-operationcount",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3172534-addbarrierblock",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1417849-cancelalloperations",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/1407971-waituntilalloperationsarefinishe"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/1407971-waituntilalloperationsarefinishe",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/1415168-operations",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/1415115-operationcount"
+      ],
+      "anchor": "1661222"
     },
     {
       "kind": "taskGroup",
@@ -1077,14 +1112,24 @@
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1417919-qualityofservice",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1414982-maxconcurrentoperationcount",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1411680-defaultmaxconcurrentoperationcou"
-      ]
+      ],
+      "anchor": "1661293"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Monitoring Progress of Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3172535-progress"
+      ],
+      "anchor": "3737983"
     },
     {
       "kind": "taskGroup",
       "title": "Suspending Execution",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1415909-issuspended"
-      ]
+      ],
+      "anchor": "1661321"
     },
     {
       "kind": "taskGroup",
@@ -1092,34 +1137,22 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1418063-name",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1415344-underlyingqueue"
-      ]
+      ],
+      "anchor": "1661335"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Scheduling Operations",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/3172535-progress"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/3172534-addbarrierblock",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329364-schedule",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329366-schedule"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Structures",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329364-schedule",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329366-schedule",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions"
+      ],
+      "anchor": "3173227"
     }
   ],
   "seeAlsoSections": [
@@ -1166,6 +1199,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1188,7 +1222,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An operation queue executes its queued "
+              "text": "An operation queue invokes its queued "
             },
             {
               "type": "reference",
@@ -1197,7 +1231,7 @@
             },
             {
               "type": "text",
-              "text": " objects based on their priority and readiness. After being added to an operation queue, an operation remains in its queue until it reports that it is finished with its task. You can’t directly remove an operation from a queue after it has been added."
+              "text": " objects based on their priority and readiness. After you add an operation to a queue, it remains in the queue until the operation finishes its task. You can’t directly remove an operation from a queue after you add it."
             }
           ]
         },
@@ -1209,7 +1243,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Operation queues retain operations until they're finished, and queues themselves are retained until all operations are finished. Suspending an operation queue with operations that aren't finished can result in a memory leak. "
+                  "text": "Operation queues retain operations until the operations finish, and queues themselves are retained until all operations are finished. Suspending an operation queue with operations that aren’t finished can result in a memory leak. "
                 }
               ]
             }
@@ -1226,7 +1260,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For more information about using operation queues, see "
+              "text": "For more information about using operation queues, see the "
             },
             {
               "type": "link",
@@ -1235,14 +1269,14 @@
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         },
         {
           "level": 3,
           "type": "heading",
-          "text": "Determining Execution Order",
+          "text": "Determine the Execution Order",
           "anchor": "2936058"
         },
         {
@@ -1250,7 +1284,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Operations within a queue are organized according to their readiness, priority level, and interoperation dependencies, and are executed accordingly. If all of the queued operations have the same "
+              "text": "An operation queue organizes and invokes its operations according to their readiness, priority level, and interoperation dependencies. If all of the queued operations have the same "
             },
             {
               "type": "reference",
@@ -1259,7 +1293,7 @@
             },
             {
               "type": "text",
-              "text": " and are ready to execute when they are put in the queue—that is, their "
+              "text": " and the "
             },
             {
               "type": "reference",
@@ -1277,7 +1311,7 @@
             },
             {
               "type": "text",
-              "text": "—they’re executed in the order in which they were submitted to the queue. Otherwise, the operation queue always executes the one with the highest priority relative to the other ready operations. "
+              "text": ", the queue invokes them in the order you added them. Otherwise, the operation queue always invokes the operation with the highest priority relative to the other ready operations. "
             }
           ]
         },
@@ -1286,7 +1320,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "However, you should never rely on queue semantics to ensure a specific execution order of operations, because changes in the readiness of an operation can change the resulting execution order. Interoperation dependencies provide an absolute execution order for operations, even if those operations are located in different operation queues. An operation object is not considered ready to execute until all of its dependent operations have finished executing. "
+              "text": "However, don’t rely on queue semantics to ensure a specific execution order of operations  because changes in the readiness of an operation can change the resulting execution order. Interoperation dependencies provide an absolute execution order for operations, even if those operations are located in different operation queues. An operation object isn’t ready to run until all of its dependent operations have finished running. "
             }
           ]
         },
@@ -1320,7 +1354,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Canceling Operations",
+          "text": "Respond to Operation Cancelation",
           "anchor": "2936059"
         },
         {
@@ -1349,7 +1383,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Canceling an operation causes the operation to ignore any dependencies it may have. This behavior makes it possible for the queue to execute the operation’s "
+                  "text": "Canceling an operation causes the operation to ignore any dependencies it may have. This behavior makes it possible for the queue to invoke the operation’s "
                 },
                 {
                   "type": "reference",
@@ -1405,7 +1439,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "KVO-Compliant Properties",
+          "text": "Observe Operations Using Key-Value Observing",
           "anchor": "1661144"
         },
         {
@@ -1422,7 +1456,7 @@
             },
             {
               "type": "text",
-              "text": " class is key-value coding (KVC) and key-value observing (KVO) compliant. You can observe these properties as desired to control other parts of your application. To observe the properties, use the following key paths: "
+              "text": " class is key-value coding (KVC) and key-value observing (KVO) compliant. You can observe these properties to control other parts of your application. To observe the properties, use the following key paths: "
             }
           ]
         },
@@ -1441,7 +1475,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " - read-only "
+                      "text": " — Read-only "
                     }
                   ]
                 }
@@ -1459,7 +1493,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " - read-only "
+                      "text": " — Read-only "
                     }
                   ]
                 }
@@ -1477,7 +1511,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " - readable and writable "
+                      "text": " — Readable and writable "
                     }
                   ]
                 }
@@ -1495,7 +1529,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " - readable and writable "
+                      "text": " — Readable and writable "
                     }
                   ]
                 }
@@ -1513,7 +1547,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " - readable and writable"
+                      "text": " — Readable and writable"
                     }
                   ]
                 }
@@ -1526,7 +1560,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Although you can attach observers to these properties, you shouldn’t use Cocoa bindings to bind them to elements of your application’s user interface. Code associated with your user interface typically must execute only in your app’s main thread. However, KVO notifications associated with an operation queue may occur in any thread. "
+              "text": "Although you can attach observers to these properties, don’t use Cocoa bindings to bind these properties to elements of your application’s user interface. Code associated with your user interface typically must run only in your app’s main thread. However, KVO notifications associated with an operation queue may occur in any thread. "
             }
           ]
         },
@@ -1535,7 +1569,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For more information about key-value observing and how to attach observers to an object, see "
+              "text": "For more information about KVO and how to attach observers to an object, see the "
             },
             {
               "type": "link",
@@ -1551,7 +1585,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Thread Safety",
+          "text": "Plan for Thread Safety",
           "anchor": "1661160"
         },
         {
@@ -1559,7 +1593,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "It is safe to use a single "
+              "text": "You can safely use a single "
             },
             {
               "type": "reference",
@@ -1586,7 +1620,7 @@
             },
             {
               "type": "text",
-              "text": " framework to initiate the execution of their operations. As a result, operations are always executed on a separate thread, regardless of whether they are designated as synchronous or asynchronous."
+              "text": " framework to initiate the execution of their operations. As a result, queues always invoke operations on a separate thread, regardless of whether the operation is synchronous or asynchronous."
             }
           ]
         }
@@ -1594,7 +1628,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

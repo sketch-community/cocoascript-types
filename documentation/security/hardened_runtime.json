@@ -35,8 +35,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,23 +101,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 680,
-            "height": 266
-          },
-          "url": "https://docs-assets.developer.apple.com/published/9cc7ab8862/e8fc0acf-47fe-4413-a9f7-4f6d037c92e5.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
-            "width": 680,
-            "height": 266
+            "width": 735,
+            "height": 280
           },
-          "url": "https://docs-assets.developer.apple.com/published/5a817d82da/30f60cce-4a5b-43fb-9ef5-f90d1d089ff1.png"
+          "url": "https://docs-assets.developer.apple.com/published/2d71450aee/3330446@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 735,
+            "height": 280
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ff3e4e82a5/3330446~dark@2x.png"
         }
       ],
       "alt": "Screenshot highlighting where to click to add a new capability in Xcode’s Signing & Capabilities tab.",
@@ -135,35 +136,36 @@
       "variants": [
         {
           "traits": [
-            "1x"
+            "2x"
           ],
           "size": {
-            "width": 1360,
-            "height": 591
+            "width": 735,
+            "height": 312
           },
-          "url": "https://docs-assets.developer.apple.com/published/fd194cf11b/b2524508-0a5b-452e-898a-8eb252c2db4f.png"
+          "url": "https://docs-assets.developer.apple.com/published/8c2654b740/3330445@2x.png"
         },
         {
           "traits": [
-            "1x"
+            "dark",
+            "2x"
           ],
           "size": {
-            "width": 1360,
-            "height": 591
+            "width": 735,
+            "height": 312
           },
-          "url": "https://docs-assets.developer.apple.com/published/cdbc382435/883514e6-75c9-413f-8cc9-714755c8980b.png"
+          "url": "https://docs-assets.developer.apple.com/published/220aa8fc02/3330445~dark@2x.png"
         }
       ],
       "alt": "Screenshot of Xcode showing some of the entitlements used for exceptions to the Hardened Runtime.",
       "title": "Figure 2"
     },
-    "doc://com.apple.documentation/documentation/xcode/notarizing_macos_software_before_distribution": {
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution": {
       "title": "Notarizing macOS Software Before Distribution",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/xcode/notarizing_macos_software_before_distribution",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/xcode/notarizing_macos_software_before_distribution",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution",
       "abstract": [
         {
           "type": "text",
@@ -248,7 +250,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the app may load arbitrary plug-ins or frameworks, without requiring code signing."
+          "text": "A Boolean value that indicates whether the app loads arbitrary plug-ins or frameworks, without requiring code signing."
         }
       ],
       "titleStyle": "title",
@@ -316,7 +318,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the app may capture movies and still images using the built-in camera."
+          "text": "A Boolean value that indicates whether the app may interact with the built-in and external cameras, and capture movies and still images."
         }
       ],
       "titleStyle": "title",
@@ -478,17 +480,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/xcode/using_the_latest_code_signature_format": {
-      "title": "Using the Latest Code Signature Format",
+    "doc://com.apple.documentation/documentation/security/updating_mac_software": {
+      "title": "Updating Mac Software",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/xcode/using_the_latest_code_signature_format",
+      "identifier": "doc://com.apple.documentation/documentation/security/updating_mac_software",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/xcode/using_the_latest_code_signature_format",
+      "url": "/documentation/security/updating_mac_software",
       "abstract": [
         {
           "type": "text",
-          "text": "Update legacy app code signatures to avoid a warning from iOS."
+          "text": "Implement Mac software updates without causing code-signing crashes."
         }
       ]
     },
@@ -511,7 +513,8 @@
         "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation",
         "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-executable-page-protection",
         "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_debugger"
-      ]
+      ],
+      "anchor": "3111188"
     },
     {
       "kind": "taskGroup",
@@ -524,18 +527,19 @@
         "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars",
         "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library",
         "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_automation_apple-events"
-      ]
+      ],
+      "anchor": "3111190"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/security/code_signing_services",
-        "doc://com.apple.documentation/documentation/xcode/notarizing_macos_software_before_distribution",
+        "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution",
         "doc://com.apple.documentation/documentation/security/preparing_your_app_to_work_with_pointer_authentication",
         "doc://com.apple.documentation/documentation/security/app_sandbox",
         "doc://com.apple.documentation/documentation/security/disabling_and_enabling_system_integrity_protection",
-        "doc://com.apple.documentation/documentation/xcode/using_the_latest_code_signature_format"
+        "doc://com.apple.documentation/documentation/security/updating_mac_software"
       ],
       "title": "Secure Code",
       "generated": true
@@ -617,7 +621,7 @@
                 {
                   "type": "reference",
                   "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/xcode/notarizing_macos_software_before_distribution"
+                  "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution"
                 },
                 {
                   "type": "text",
@@ -632,7 +636,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

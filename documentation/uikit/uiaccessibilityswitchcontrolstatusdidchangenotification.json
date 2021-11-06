@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted by UIKit when the system’s Switch Control setting has changed."
+      "text": "A notification that UIKit posts when the system’s Switch Control setting changes."
     }
   ],
   "documentVersion": 0,
@@ -11,14 +11,35 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/notification_names"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/notification_names"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/objectivec",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -26,6 +47,14 @@
         "doc://com.apple.documentation/documentation/foundation/notifications",
         "doc://com.apple.documentation/documentation/foundation/nsnotification",
         "doc://com.apple.documentation/documentation/foundation/nsnotificationname"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
       ]
     ]
   },
@@ -48,25 +77,30 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UIAccessibilitySwitchControlStatusDidChangeNotification",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,18 +135,26 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/notification_names": {
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names": {
       "title": "Notification Names",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos/notification_names",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos/notification_names",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names",
+      "url": "/documentation/uikit/accessibility_for_uikit/notification_names",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility": {
+      "title": "UIAccessibility",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+      "url": "/documentation/objectivec/nsobject/uiaccessibility",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -124,6 +166,22 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/objectivec": {
+      "title": "Objective-C Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec",
+      "url": "/documentation/objectivec",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "url": "/documentation/objectivec/nsobject",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/foundation": {
       "title": "Foundation",
@@ -157,23 +215,13 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnotificationname"
     },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615161-accessibilityscroll": {
-      "title": "accessibilityScroll:",
+    "doc://com.apple.documentation/documentation/foundation/object_runtime": {
+      "title": "Object Runtime",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/object_runtime",
+      "url": "/documentation/foundation/object_runtime",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615161-accessibilityscroll",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsobject/1615161-accessibilityscroll",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityScroll:"
-        }
-      ]
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibilityscreenchangednotification": {
       "title": "UIAccessibilityScreenChangedNotification",
@@ -185,7 +233,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by an application when a new view appears that makes up a major portion of the screen."
+          "text": "A notification that an app posts when a new view appears that occupies a major portion of the screen."
         }
       ]
     },
@@ -199,7 +247,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by an application when the layout of a screen changes, such as when an element appears or disappears."
+          "text": "A notification that an app posts when the layout of a screen changes."
         }
       ]
     },
@@ -213,16 +261,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by an application when a scroll action has completed and the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615161-accessibilityscroll"
-        },
-        {
-          "type": "text",
-          "text": " method has been called."
+          "text": "A notification that an app posts when a scroll action completes."
         }
       ]
     },
@@ -236,7 +275,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by UIKit when the system’s Switch Control setting has changed."
+          "text": "A notification that UIKit posts when the system’s Switch Control setting changes."
         }
       ]
     },
@@ -250,7 +289,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by UIKit when an assistive technology focuses on an element. "
+          "text": "A notification that UIKit posts when an assistive app focuses on an accessibility element. "
         }
       ]
     },
@@ -264,7 +303,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by UIKit when the system’s Reduce Transparency system setting has changed."
+          "text": "A notification that UIKit posts when the system’s Reduce Transparency setting changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitybuttonshapesenabledstatusdidchangenotification": {
+      "title": "UIAccessibilityButtonShapesEnabledStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitybuttonshapesenabledstatusdidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitybuttonshapesenabledstatusdidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Button Shapes setting changes."
         }
       ]
     },
@@ -283,7 +336,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitylayoutchangednotification",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitypagescrollednotification",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilityelementfocusednotification",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibilityreducetransparencystatusdidchangenotification"
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilityreducetransparencystatusdidchangenotification",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitybuttonshapesenabledstatusdidchangenotification"
       ],
       "title": "UI Changes",
       "generated": true
@@ -327,6 +381,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -347,7 +402,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This notification does not include a parameter. Observe this notification using the default notification center."
+              "text": "This notification doesn't include a parameter. Observe this notification using the default notification center."
             }
           ]
         }
@@ -355,7 +410,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

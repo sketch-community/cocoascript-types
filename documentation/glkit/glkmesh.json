@@ -28,21 +28,28 @@
         "name": "iOS",
         "introducedAt": "9.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "deprecatedAt": "12.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
         "deprecatedAt": "10.14",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -50,8 +57,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -221,16 +228,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -247,7 +244,8 @@
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/glkit/glkmesh/1488759-initwithmesh"
-      ]
+      ],
+      "anchor": "2862507"
     },
     {
       "kind": "taskGroup",
@@ -258,14 +256,16 @@
         "doc://com.apple.documentation/documentation/glkit/glkmesh/1488688-vertexbuffers",
         "doc://com.apple.documentation/documentation/glkit/glkmesh/1489043-vertexcount",
         "doc://com.apple.documentation/documentation/glkit/glkmesh/1488990-vertexdescriptor"
-      ]
+      ],
+      "anchor": "2862508"
     },
     {
       "kind": "taskGroup",
       "title": "Type Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/glkit/glkmesh/1488791-newmeshesfromasset"
-      ]
+      ],
+      "anchor": "2862509"
     }
   ],
   "seeAlsoSections": [
@@ -313,6 +313,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "tvOS"
           ]
@@ -321,7 +322,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

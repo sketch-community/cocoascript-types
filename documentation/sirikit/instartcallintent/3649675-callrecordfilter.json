@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Filters specified by the user to redial a call."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INStartCallIntent(py)callRecordFilter",
+    "parent": {
+      "title": "INStartCallIntent"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,6 +126,119 @@
       "role": "symbol",
       "url": "/documentation/sirikit/incallrecordfilter"
     },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165942-callcapability": {
+      "title": "callCapability",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165942-callcapability",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3165942-callcapability",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of call the user initiated."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165943-contacts": {
+      "title": "contacts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165943-contacts",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3165943-contacts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The users to call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165944-destinationtype": {
+      "title": "destinationType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165944-destinationtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3165944-destinationtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of call to place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3197610-audioroute": {
+      "title": "audioRoute",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3197610-audioroute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3197610-audioroute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The audio route the call is using."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3333284-recordtypeforredialing": {
+      "title": "recordTypeForRedialing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3333284-recordtypeforredialing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3333284-recordtypeforredialing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The category of past call record contact information used for redialing."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649675-callrecordfilter": {
+      "title": "callRecordFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649675-callrecordfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3649675-callrecordfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filters specified by the user to redial a call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback": {
+      "title": "callRecordToCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3649676-callrecordtocallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Details about a call to redial a missed call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallaudioroute": {
+      "title": "INCallAudioRoute",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallaudioroute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallaudioroute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe the audio route for the call."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -120,16 +247,21 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165942-callcapability",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165943-contacts",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165944-destinationtype",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3197610-audioroute",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3333284-recordtypeforredialing",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback",
+        "doc://com.apple.documentation/documentation/sirikit/incallaudioroute"
+      ],
+      "title": "Getting the Call Details",
+      "generated": true
     }
-  },
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -168,6 +300,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -176,7 +309,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

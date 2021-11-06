@@ -36,30 +36,40 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "11.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
         "deprecatedAt": "4.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSendMessageIntent(py)groupName",
+    "parent": {
+      "title": "INSendMessageIntent"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,6 +126,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866589-speakablegroupname": {
+      "title": "speakableGroupName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866589-speakablegroupname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent/2866589-speakablegroupname"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
       "type": "topic",
@@ -124,89 +142,80 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639316-recipients": {
-      "title": "recipients",
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866587-initwithrecipients": {
+      "title": "initWithRecipients:content:speakableGroupName:conversationIdentifier:serviceName:sender:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639316-recipients",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866587-initwithrecipients",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/1639316-recipients",
+      "url": "/documentation/sirikit/insendmessageintent/2866587-initwithrecipients",
       "abstract": [
         {
           "type": "text",
-          "text": "The array of users to receive the message."
+          "text": "Initializes a send message intent object with the specified content and recipients."
         }
-      ]
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRecipients:content:speakableGroupName:conversationIdentifier:serviceName:sender:"
+        }
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier": {
-      "title": "conversationIdentifier",
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778238-initwithrecipients": {
+      "title": "initWithRecipients:content:groupName:serviceName:sender:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778238-initwithrecipients",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/2866586-conversationidentifier",
+      "url": "/documentation/sirikit/insendmessageintent/1778238-initwithrecipients",
       "abstract": [
         {
           "type": "text",
-          "text": "The identifier associated with the conversation."
+          "text": "Initializes a send message intent object with the specified content and recipients."
         }
-      ]
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithRecipients:content:groupName:serviceName:sender:"
+        }
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866589-speakablegroupname": {
-      "title": "speakableGroupName",
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552231-initwithrecipients": {
+      "title": "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866589-speakablegroupname",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552231-initwithrecipients",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/2866589-speakablegroupname",
+      "url": "/documentation/sirikit/insendmessageintent/3552231-initwithrecipients",
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the group to receive the message."
+          "text": "Initializes a send message intent object with the specified content and recipients."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639106-content": {
-      "title": "content",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639106-content",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/1639106-content",
-      "abstract": [
+      ],
+      "fragments": [
         {
-          "type": "text",
-          "text": "The content of the message."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639342-servicename": {
-      "title": "serviceName",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639342-servicename",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/1639342-servicename",
-      "abstract": [
+          "kind": "text",
+          "text": "- "
+        },
         {
-          "type": "text",
-          "text": "The service to use when sending the message."
+          "kind": "identifier",
+          "text": "initWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:"
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639248-sender": {
-      "title": "sender",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639248-sender",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/1639248-sender",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The person or account that is sending the message."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname": {
       "title": "groupName",
@@ -231,27 +240,34 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866589-speakablegroupname"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
       ]
     }
-  },
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639316-recipients",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866589-speakablegroupname",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639106-content",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639342-servicename",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639248-sender"
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866587-initwithrecipients",
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778238-initwithrecipients",
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552231-initwithrecipients"
       ],
-      "title": "Specifying Details About a Message",
+      "title": "Deprecated Symbols",
       "generated": true
     }
   ],
@@ -293,6 +309,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -321,7 +338,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

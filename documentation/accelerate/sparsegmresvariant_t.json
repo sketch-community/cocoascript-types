@@ -36,35 +36,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@SparseGMRESVariant_t",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -137,7 +142,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsegmresvariant_t/sparsevariantdqgmres",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparsegmresvariant_t/sparsevariantdqgmres"
+      "url": "/documentation/accelerate/sparsegmresvariant_t/sparsevariantdqgmres",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that specifies the DQGMRES variant."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/sparsegmresvariant_t/sparsevariantfgmres": {
       "title": "SparseVariantFGMRES",
@@ -145,7 +156,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsegmresvariant_t/sparsevariantfgmres",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparsegmresvariant_t/sparsevariantfgmres"
+      "url": "/documentation/accelerate/sparsegmresvariant_t/sparsevariantfgmres",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that specifies the flexible GMRES variant."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/sparsegmresvariant_t/sparsevariantgmres": {
       "title": "SparseVariantGMRES",
@@ -153,7 +170,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsegmresvariant_t/sparsevariantgmres",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparsegmresvariant_t/sparsevariantgmres"
+      "url": "/documentation/accelerate/sparsegmresvariant_t/sparsevariantgmres",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that specifies the standard restarted GMRES variant."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/sparsegmresoptions/2873572-atol": {
       "title": "atol",
@@ -165,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Absolute convergence tolerance."
+          "text": "The absolute convergence tolerance."
         }
       ]
     },
@@ -179,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Maximum number of iterations to perform."
+          "text": "The maximum number of iterations to perform."
         }
       ]
     },
@@ -193,7 +216,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The number of orthagonal vectors maintained."
+          "text": "The number of orthogonal vectors the operation maintains."
         }
       ]
     },
@@ -207,7 +230,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Optional error reporting routine."
+          "text": "An optional error-reporting routine."
         }
       ]
     },
@@ -221,7 +244,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Optional status reporting routine."
+          "text": "The function to report status."
         }
       ]
     },
@@ -235,7 +258,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Relative convergence tolerance."
+          "text": "The relative convergence tolerance."
         }
       ]
     },
@@ -249,7 +272,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Exact variant of GMRES to implement."
+          "text": "The exact variant of GMRES to implement."
         }
       ]
     },
@@ -283,7 +306,8 @@
         "doc://com.apple.documentation/documentation/accelerate/sparsegmresvariant_t/sparsevariantdqgmres",
         "doc://com.apple.documentation/documentation/accelerate/sparsegmresvariant_t/sparsevariantfgmres",
         "doc://com.apple.documentation/documentation/accelerate/sparsegmresvariant_t/sparsevariantgmres"
-      ]
+      ],
+      "anchor": "2877717"
     }
   ],
   "seeAlsoSections": [
@@ -363,6 +387,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -373,7 +398,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

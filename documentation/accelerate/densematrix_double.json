@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@DenseMatrix_Double",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,33 +110,35 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868255-attributes": {
-      "title": "attributes",
+    "doc://com.apple.documentation/documentation/accelerate/densematrix_double": {
+      "title": "DenseMatrix_Double",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868255-attributes",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/densematrix_double/2868255-attributes",
+      "url": "/documentation/accelerate/densematrix_double",
       "abstract": [
         {
           "type": "text",
-          "text": "The attributes of the matrix, for example, whether it is symmetrical or triangular."
+          "text": "A structure that contains a dense matrix of double-precision, floating-point values."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t": {
-      "title": "SparseAttributes_t",
+    "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer/3240658-withunsafemutablebufferpointer": {
+      "title": "withUnsafeMutableBufferPointer(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer/3240658-withunsafemutablebufferpointer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparseattributes_t",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure that represents the attributes of a matrix."
-        }
-      ]
+      "url": "/documentation/accelerate/acceleratemutablebuffer/3240658-withunsafemutablebufferpointer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/densematrix_double#3702311": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double#3702311",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/densematrix_double#3702311"
     },
     "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868110-rowcount": {
       "title": "rowCount",
@@ -175,6 +182,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868255-attributes": {
+      "title": "attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868255-attributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/densematrix_double/2868255-attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The attributes of the matrix, such as whether it’s symmetrical or triangular."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t": {
+      "title": "SparseAttributes_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseattributes_t",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that represents the attributes of a matrix."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868236-data": {
       "title": "data",
       "type": "topic",
@@ -185,21 +220,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The array of double-precision, floating-point values, in column-major order."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/densematrix_double": {
-      "title": "DenseMatrix_Double",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/densematrix_double",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure that contains a dense matrix of double-precision, floating-point values."
+          "text": "The array of double-precision, floating-point values in column-major order."
         }
       ]
     },
@@ -258,13 +279,14 @@
       "kind": "taskGroup",
       "title": "Inspecting a Matrix's Structure and Data",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868255-attributes",
-        "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
         "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868110-rowcount",
         "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868146-columncount",
         "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868040-columnstride",
+        "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868255-attributes",
+        "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
         "doc://com.apple.documentation/documentation/accelerate/densematrix_double/2868236-data"
-      ]
+      ],
+      "anchor": "2877617"
     }
   ],
   "seeAlsoSections": [
@@ -274,7 +296,7 @@
         "doc://com.apple.documentation/documentation/accelerate/densevector_double",
         "doc://com.apple.documentation/documentation/accelerate/densevector_float"
       ],
-      "title": "Dense Matrices and Vectors",
+      "title": "Creating Dense Matrices and Dense Vectors",
       "generated": true
     }
   ],
@@ -330,6 +352,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -337,10 +360,137 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You typically use dense matrices to represent the unknowns matrix, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "X"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", and the right-hand-side matrix, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "B"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", in the matrix equation "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "AX = B."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " A "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double"
+            },
+            {
+              "type": "text",
+              "text": " structure provides a pointer to its underlying data, and information about its structure and attributes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows an example of how to create a dense matrix structure from an array of double-precision values. In this case, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer/3240658-withunsafemutablebufferpointer"
+            },
+            {
+              "type": "text",
+              "text": " to pass a pointer to your collection. The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double"
+            },
+            {
+              "type": "text",
+              "text": " structure is valid only during the execution of the closure. Don’t store or return the structure for later use."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// An array of `rowCount` x `columnCount` single-precision values.",
+            "var matrixValues = [...]",
+            "let rowCount = Int32(5)",
+            "let columnCount = Int32(5)",
+            "",
+            "matrixValues.withUnsafeMutableBufferPointer {",
+            "    let matrix = DenseMatrix_Double(rowCount: rowCount,",
+            "                                    columnCount: columnCount,",
+            "                                    columnStride: rowCount,",
+            "                                    attributes: SparseAttributes_t(),",
+            "                                    data: $0.baseAddress!)",
+            "    ",
+            "    // Perform operations using `matrix`.",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3702311",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

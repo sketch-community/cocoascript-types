@@ -48,17 +48,45 @@
     ],
     "platforms": [
       {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "8.0",
+        "current": "8.3"
       }
     ],
     "externalID": "c:@SA@AVSampleCursorChunkInfo@FI@chunkHasUniformFormatDescriptions",
+    "parent": {
+      "title": "AVSampleCursorChunkInfo"
+    },
     "symbolKind": "structp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -131,31 +159,17 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1386808-chunkhasuniformformatdescription": {
-      "title": "chunkHasUniformFormatDescriptions",
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388513-chunksamplecount": {
+      "title": "chunkSampleCount",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1386808-chunkhasuniformformatdescription",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388513-chunksamplecount",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avsamplecursorchunkinfo/1386808-chunkhasuniformformatdescription",
+      "url": "/documentation/avfoundation/avsamplecursorchunkinfo/1388513-chunksamplecount",
       "abstract": [
         {
           "type": "text",
-          "text": "The samples in the chunk have the same format description."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388585-chunkhasuniformsampledurations": {
-      "title": "chunkHasUniformSampleDurations",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388585-chunkhasuniformsampledurations",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avsamplecursorchunkinfo/1388585-chunkhasuniformsampledurations",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The samples in the chunk have the same duration."
+          "text": "The count of media samples in the chunk."
         }
       ]
     },
@@ -173,17 +187,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388513-chunksamplecount": {
-      "title": "chunkSampleCount",
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388585-chunkhasuniformsampledurations": {
+      "title": "chunkHasUniformSampleDurations",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388513-chunksamplecount",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388585-chunkhasuniformsampledurations",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avsamplecursorchunkinfo/1388513-chunksamplecount",
+      "url": "/documentation/avfoundation/avsamplecursorchunkinfo/1388585-chunkhasuniformsampledurations",
       "abstract": [
         {
           "type": "text",
-          "text": "The count of media samples in the chunk."
+          "text": "The samples in the chunk have the same duration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1386808-chunkhasuniformformatdescription": {
+      "title": "chunkHasUniformFormatDescriptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1386808-chunkhasuniformformatdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplecursorchunkinfo/1386808-chunkhasuniformformatdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The samples in the chunk have the same format description."
         }
       ]
     },
@@ -198,9 +226,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388585-chunkhasuniformsampledurations",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388513-chunksamplecount",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1386438-chunkhasuniformsamplesizes",
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388513-chunksamplecount"
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorchunkinfo/1388585-chunkhasuniformsampledurations"
       ],
       "title": "Chunk Information",
       "generated": true
@@ -233,14 +261,19 @@
             }
           ],
           "platforms": [
-            "macOS"
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

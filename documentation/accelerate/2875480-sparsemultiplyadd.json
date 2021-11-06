@@ -48,35 +48,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseMultiplyAdd#d#$@SA@SparseMatrix_Double#$@SA@DenseMatrix_Double#S1_#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,6 +131,46 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-media-3703078": {
+      "identifier": "link-media-3703078",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/2875480-sparsemultiplyadd#3703078"
+    },
+    "media-3703078": {
+      "identifier": "media-3703078",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 388,
+            "height": 91
+          },
+          "url": "https://docs-assets.developer.apple.com/published/73cd8327b3/rendered2x-1606928284.png"
+        }
+      ],
+      "alt": "A mathematical formula that describes the matrix multiplication, Y plus-equals alpha times A X. A four-by-two matrix added to a scalar value multiplied by a four-by-four matrix multiplied by a four-by-two matrix equals a four-by-two matrix.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2875538-sparsemultiplyadd": {
+      "title": "SparseMultiplyAdd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875538-sparsemultiplyadd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2875538-sparsemultiplyadd"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2875480-sparsemultiplyadd#3702334": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875480-sparsemultiplyadd#3702334",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/2875480-sparsemultiplyadd#3702334"
     },
     "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double": {
       "title": "SparseMatrix_Double",
@@ -336,6 +381,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -358,7 +404,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The "
+                  "text": "The scalar value "
                 },
                 {
                   "type": "emphasis",
@@ -398,7 +444,42 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The matrix to multiply by."
+                  "text": "The sparse matrix "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " in "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Y"
+                    }
+                  ]
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": " += AX"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": "."
                 }
               ]
             }
@@ -412,7 +493,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The matrix "
+                  "text": "The dense matrix "
                 },
                 {
                   "type": "emphasis",
@@ -425,7 +506,29 @@
                 },
                 {
                   "type": "text",
-                  "text": "."
+                  "text": " in "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Y"
+                    }
+                  ]
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": " += AX"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": ".  "
                 }
               ]
             }
@@ -439,7 +542,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The matrix "
+                  "text": "The dense matrix "
                 },
                 {
                   "type": "emphasis",
@@ -452,17 +555,155 @@
                 },
                 {
                   "type": "text",
-                  "text": "."
+                  "text": " in "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Y"
+                    }
+                  ]
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": " += AX"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": ".  "
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this function to multiply a scalar value by a sparse matrix, then by a dense matrix, and accumulate the result. The following equation is an example of a matrix-matrix multiplication where the first matrix is sparse: "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3703078",
+              "metadata": {
+                "anchor": "3703078",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/2875538-sparsemultiplyadd"
+            },
+            {
+              "type": "text",
+              "text": " to calculate the result."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let rowCount = Int32(4)",
+            "let columnCount = Int32(4)",
+            "let blockCount = 4",
+            "let blockSize = UInt8(1)",
+            "let rowIndices: [Int32] = [0, 3, 0, 3]",
+            "let columnIndices: [Int32] = [0, 0, 3, 3]",
+            "let data = [1.0, 4.0, 13.0, 16.0]",
+            "",
+            "/// The _A_ in _Y += alpha * AX_.",
+            "let A = SparseConvertFromCoordinate(rowCount, columnCount,",
+            "                                    blockCount, blockSize,",
+            "                                    SparseAttributes_t(),",
+            "                                    rowIndices, columnIndices,",
+            "                                    data)",
+            "defer {",
+            "    SparseCleanup(A)",
+            "}",
+            "",
+            "/// The values for _X_ in _Y += alpha * AX_.",
+            "var xValues = [10.0, -1.0, -1.0, 10.0,",
+            "               100.0, -1.0, -1.0, 100.0]",
+            "",
+            "/// The values for _Y_ in _Y += alpha * AX_.",
+            "var yValues = [Double](repeating: 1,",
+            "                       count: xValues.count)",
+            "",
+            "let alpha = 2.0",
+            "",
+            "yValues.withUnsafeMutableBufferPointer { yValuesPtr in",
+            "    xValues.withUnsafeMutableBufferPointer { denseMatrixPtr in",
+            "        /// The _X_ in _Y += alpha * AX_.",
+            "        let X = DenseMatrix_Double(rowCount: 4,",
+            "                                   columnCount: 2,",
+            "                                   columnStride: 4,",
+            "                                   attributes: SparseAttributes_t(),",
+            "                                   data: denseMatrixPtr.baseAddress!)",
+            "        ",
+            "        /// The _Y_ in _Y += alpha * AX_.",
+            "        let Y = DenseMatrix_Double(rowCount: 4,",
+            "                                   columnCount: 2,",
+            "                                   columnStride: 4,",
+            "                                   attributes: SparseAttributes_t(),",
+            "                                   data: yValuesPtr.baseAddress!)",
+            "        ",
+            "        SparseMultiplyAdd(alpha, A, X, Y)",
+            "    }",
+            "}",
+            "",
+            "// On return, `yValues` contains:",
+            "//      `[ 281.0, 1.0, 1.0,  401.0,",
+            "//        2801.0, 1.0, 1.0, 4001.0]`"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3702334",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

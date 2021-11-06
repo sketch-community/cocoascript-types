@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVCompositionTrackSegment(py)empty",
+    "parent": {
+      "title": "AVCompositionTrackSegment"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A segment of a track, consisting of a URL, a track identifier, and a time mapping from the source track to the composition track."
+          "text": "A track segment that maps a time from the source media track to the composition track."
         }
       ]
     },
@@ -130,9 +138,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The container file of the media presented by the track segment."
+          "text": "A URL of the container file whose media this track segment presents."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/coremedia/kcmtimeinvalid": {
+      "title": "kCMTimeInvalid",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coremedia/kcmtimeinvalid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coremedia/kcmtimeinvalid"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment/1388326-sourcetrackid": {
       "title": "sourceTrackID",
@@ -144,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The track ID of the container file of the media presented by the track segment."
+          "text": "An identifier of a track in the container file whose media this track segment presents."
         }
       ]
     },
@@ -176,7 +192,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment/1386814-sourceurl",
         "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment/1388326-sourcetrackid"
       ],
-      "title": "Getting Segment Properties",
+      "title": "Accessing Segment Properties",
       "generated": true
     }
   ],
@@ -216,6 +232,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -238,7 +255,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An empty segment has a valid target time range but "
+              "text": "An empty segment has a valid target time range, but its "
             },
             {
               "type": "reference",
@@ -247,7 +264,7 @@
             },
             {
               "type": "text",
-              "text": " is "
+              "text": " value is "
             },
             {
               "type": "codeVoice",
@@ -258,12 +275,13 @@
               "text": " and the source start time is "
             },
             {
-              "type": "codeVoice",
-              "code": "kCMTimeInvalid"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coremedia/kcmtimeinvalid"
             },
             {
               "type": "text",
-              "text": "; all other fields are undefined."
+              "text": ". It doesn’t set values for its other properties."
             }
           ]
         }
@@ -271,7 +289,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The NFC wireless radio on the device is disabled."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,20 +34,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@NFCReaderError@NFCReaderErrorRadioDisabled",
+    "parent": {
+      "title": "NFCReaderError"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -90,6 +104,90 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorunsupportedfeature": {
+      "title": "NFCReaderErrorUnsupportedFeature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorunsupportedfeature",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadererrorunsupportedfeature",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reader session does not support this feature."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorinvalidparameter": {
+      "title": "NFCReaderErrorInvalidParameter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorinvalidparameter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadererrorinvalidparameter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An input parameter is invalid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorinvalidparameterlength": {
+      "title": "NFCReaderErrorInvalidParameterLength",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorinvalidparameterlength",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadererrorinvalidparameterlength",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The length of an input parameter is invalid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorparameteroutofbound": {
+      "title": "NFCReaderErrorParameterOutOfBound",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorparameteroutofbound",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadererrorparameteroutofbound",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A parameter value is outside of the acceptable boundary."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorradiodisabled": {
+      "title": "NFCReaderErrorRadioDisabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorradiodisabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadererrorradiodisabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The NFC wireless radio on the device is disabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorsecurityviolation": {
+      "title": "NFCReaderErrorSecurityViolation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorsecurityviolation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadererrorsecurityviolation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A security violation associated with the reader session has occurred."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -98,6 +196,19 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorunsupportedfeature",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorinvalidparameter",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorinvalidparameterlength",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorparameteroutofbound",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorsecurityviolation"
+      ],
+      "title": "Other Errors",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -114,14 +225,35 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This condition happens, for example, when a person enables airplane mode on their device."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

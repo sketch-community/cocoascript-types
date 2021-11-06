@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Modes that a run loop operates in."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSRunLoopMode",
+    "parent": {
+      "title": "RunLoop"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -66,8 +80,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,21 +138,69 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corefoundation/1542137-cfrunloopaddcommonmode": {
-      "title": "CFRunLoopAddCommonMode(_:_:)",
+    "doc://com.apple.documentation/documentation/appkit/nsapplication": {
+      "title": "NSApplication",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542137-cfrunloopaddcommonmode",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corefoundation/1542137-cfrunloopaddcommonmode"
+      "url": "/documentation/appkit/nsapplication"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsconnection": {
-      "title": "NSConnection",
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel": {
+      "title": "modalPanel",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsconnection",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsconnection"
+      "url": "/documentation/foundation/runloop/mode/1428524-modalpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set when waiting for input from a modal panel, such as a save or open panel."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "modalPanel"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking": {
+      "title": "eventTracking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/mode/1428765-eventtracking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set when tracking events modally, such as a mouse-dragging loop."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "eventTracking"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht": {
       "title": "CFRunLoop",
@@ -182,16 +244,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Objects added to a run loop using this value as the mode are monitored by all run loop modes that have been declared as a member of the set of “common\" modes; see the description of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542137-cfrunloopaddcommonmode"
-        },
-        {
-          "type": "text",
-          "text": " for details."
+          "text": "A pseudo-mode that includes one or more other run loop modes."
         }
       ],
       "fragments": [
@@ -219,16 +272,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The mode to deal with input sources other than "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsconnection"
-        },
-        {
-          "type": "text",
-          "text": " objects."
+          "text": "The mode set to handle input sources other than connection objects."
         }
       ],
       "fragments": [
@@ -246,78 +290,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking": {
-      "title": "eventTracking",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/runloop/mode/1428765-eventtracking",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A run loop should be set to this mode when tracking events modally, such as a mouse-dragging loop."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "eventTracking"
-        },
-        {
-          "kind": "text",
-          "text": ": RunLoop.Mode"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel": {
-      "title": "modalPanel",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/runloop/mode/1428524-modalpanel",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A run loop should be set to this mode when waiting for input from a modal panel, such as "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSSavePanel"
-        },
-        {
-          "type": "text",
-          "text": " or "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSOpenPanel"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "modalPanel"
-        },
-        {
-          "kind": "text",
-          "text": ": RunLoop.Mode"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/runloop/mode/1622929-tracking": {
       "title": "tracking",
       "type": "topic",
@@ -328,7 +300,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The mode set while tracking in controls takes place. "
+          "text": "The mode set while tracking in controls takes place."
         }
       ],
       "fragments": [
@@ -353,6 +325,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/runloop/mode/1924027-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a run loop mode using the specified string value."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -371,6 +349,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/runloop/mode/1779714-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a run loop mode using the specified raw string value."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -554,6 +538,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/runloop/mode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modes that a run loop operates in."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -588,22 +578,24 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Type Properties",
+      "title": "System Run Loop Modes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/runloop/mode/1408609-common",
         "doc://com.apple.documentation/documentation/foundation/runloop/mode/1409732-default",
         "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking",
         "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel",
         "doc://com.apple.documentation/documentation/foundation/runloop/mode/1622929-tracking"
-      ]
+      ],
+      "anchor": "1789076"
     },
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Run Loop Mode Creation",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/runloop/mode/1924027-init",
         "doc://com.apple.documentation/documentation/foundation/runloop/mode/1779714-init"
-      ]
+      ],
+      "anchor": "2858519"
     }
   ],
   "seeAlsoSections": [
@@ -643,6 +635,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -650,10 +643,68 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication"
+            },
+            {
+              "type": "text",
+              "text": " defines additional run loop modes, including the following:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

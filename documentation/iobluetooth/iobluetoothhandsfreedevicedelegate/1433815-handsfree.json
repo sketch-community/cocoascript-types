@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Tells the delegate the phone sent an unknown code."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,15 +34,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)IOBluetoothHandsFreeDeviceDelegate(im)handsFree:unhandledResultCode:",
+    "parent": {
+      "title": "IOBluetoothHandsFreeDeviceDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -77,7 +86,13 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods for receiving status change updates and information about a connected Bluetooth hands-free phone or headset."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice": {
       "title": "IOBluetoothHandsFreeDevice",
@@ -95,6 +110,81 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430067-handsfree": {
+      "title": "handsFree:subscriberNumber:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430067-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430067-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the subscriber number of a call."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:subscriberNumber:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree": {
+      "title": "handsFree:ringAttempt:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the phone is ringing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:ringAttempt:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433815-handsfree": {
+      "title": "handsFree:unhandledResultCode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433815-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433815-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the phone sent an unknown code."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:unhandledResultCode:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -103,6 +193,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430067-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree"
+      ],
+      "title": "Receiving Other Information",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -190,10 +290,54 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "device",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The connected Bluetooth hands-free phone or headset."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "resultCode",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A string containing the result code. The "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "“/r/n”"
+                },
+                {
+                  "type": "text",
+                  "text": " strings are stripped from the beginning and end."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Boolean value that indicates whether the pointer is locked."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -6,6 +12,31 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/pointer_interactions",
+        "doc://com.apple.documentation/documentation/uikit/uipointerlockstate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene",
+        "doc://com.apple.documentation/documentation/uikit/uipointerlockstate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/windows_and_screens",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene",
+        "doc://com.apple.documentation/documentation/uikit/uipointerlockstate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene",
         "doc://com.apple.documentation/documentation/uikit/uipointerlockstate"
       ]
     ]
@@ -29,20 +60,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIPointerLockState(py)locked",
+    "parent": {
+      "title": "UIPointerLockState"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -91,7 +130,75 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uipointerlockstate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uipointerlockstate"
+      "url": "/documentation/uikit/uipointerlockstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains information about a scene’s pointer lock state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment": {
+      "title": "App and Environment",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+      "url": "/documentation/uikit/app_and_environment",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes": {
+      "title": "Scenes",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+      "url": "/documentation/uikit/app_and_environment/scenes",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiscene": {
+      "title": "UIScene",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene",
+      "url": "/documentation/uikit/uiscene",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/uikit/windows_and_screens": {
+      "title": "Windows and Screens",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/windows_and_screens",
+      "url": "/documentation/uikit/windows_and_screens",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad": {
+      "title": "Multitasking on iPad",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
+      "url": "/documentation/uikit/app_and_environment/multitasking_on_ipad",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipointerlockstatedidchangenotification": {
+      "title": "UIPointerLockStateDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipointerlockstatedidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipointerlockstatedidchangenotification"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipointerlockstate/3601226-locked": {
+      "title": "locked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipointerlockstate/3601226-locked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipointerlockstate/3601226-locked",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the pointer is locked."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -137,14 +244,53 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This value reflects the status of the pointer lock for the scene, as determined by the system. A view controller specifies its preferred pointer lock value, but the system may not honor the request."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This property is key-value observable. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uipointerlockstatedidchangenotification"
+            },
+            {
+              "type": "text",
+              "text": " is posted when it changes."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -11,7 +11,9 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants"
+        "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing",
+        "doc://com.apple.documentation/documentation/avfoundation/avmovie",
+        "doc://com.apple.documentation/documentation/avfoundation/avmovie/initialization_options"
       ]
     ]
   },
@@ -34,30 +36,35 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@AVMovieReferenceRestrictionsKey",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,10 +99,26 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants": {
-      "title": "AVFoundation Constants",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants",
-      "url": "/documentation/avfoundation/avfoundation_constants",
+    "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing": {
+      "title": "Media Composition and Editing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing",
+      "url": "/documentation/avfoundation/media_composition_and_editing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmovie": {
+      "title": "AVMovie",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie",
+      "url": "/documentation/avfoundation/avmovie",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmovie/initialization_options": {
+      "title": "Initialization Options",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovie/initialization_options",
+      "url": "/documentation/avfoundation/avmovie/initialization_options",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -140,6 +163,34 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmoviereferencerestrictionskey": {
+      "title": "AVMovieReferenceRestrictionsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmoviereferencerestrictionskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmoviereferencerestrictionskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key that indicates the restrictions used by the movie when resolving references to external media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmovieshouldsupportaliasdatareferenceskey": {
+      "title": "AVMovieShouldSupportAliasDataReferencesKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmovieshouldsupportaliasdatareferenceskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmovieshouldsupportaliasdatareferenceskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the system parses and resolves alias data references in the movie."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -148,6 +199,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmovieshouldsupportaliasdatareferenceskey"
+      ],
+      "title": "Options",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -186,6 +246,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -260,7 +321,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

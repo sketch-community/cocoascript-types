@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A value that specifies how the video is displayed within a player layer’s bounds."
+      "text": "A value that specifies how the layer displays the player’s visual content within the layer’s bounds."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerLayer(py)videoGravity",
+    "parent": {
+      "title": "AVPlayerLayer"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that manages a player’s visual output."
+          "text": "An object that presents the visual contents of a player object."
         }
       ]
     },
@@ -149,21 +157,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that defines how the video is displayed within a layer’s bounds rectangle."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1389748-readyfordisplay": {
-      "title": "readyForDisplay",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1389748-readyfordisplay",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer/1389748-readyfordisplay",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the first video frame has been made ready for display for the current item of the associated player."
+          "text": "A structure that defines how a layer displays a player’s visual content within the layer’s bounds."
         }
       ]
     },
@@ -177,7 +171,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The current size and position of the video image as displayed within the receiver's bounds."
+          "text": "The current size and position of the video image that displays within the layer’s bounds."
         }
       ]
     },
@@ -191,21 +185,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that specifies how the video is displayed within a player layer’s bounds."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1390055-pixelbufferattributes": {
-      "title": "pixelBufferAttributes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1390055-pixelbufferattributes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer/1390055-pixelbufferattributes",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The client requirements for the visual output displayed in the player layer during playback."
+          "text": "A value that specifies how the layer displays the player’s visual content within the layer’s bounds."
         }
       ]
     },
@@ -220,12 +200,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1389748-readyfordisplay",
         "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1385745-videorect",
-        "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1390055-pixelbufferattributes"
+        "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity"
       ],
-      "title": "Configuring the Display Behavior",
+      "title": "Configuring the Presentation",
       "generated": true
     }
   ],
@@ -267,6 +245,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -288,7 +267,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The video gravity determines how the video content is scaled or stretched within the player layer’s bounds. The player layer supports the following video gravity values:"
+              "text": "A player layer supports the following video gravity values:"
             }
           ]
         },
@@ -370,7 +349,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

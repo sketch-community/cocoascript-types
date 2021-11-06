@@ -46,35 +46,43 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Accelerate4vDSPO5FFT2DC",
+    "parent": {
+      "title": "vDSP"
+    },
     "symbolKind": "cl",
     "fragments": [
       {
@@ -88,8 +96,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -207,54 +215,6 @@
         {
           "kind": "text",
           "text": ": Int, "
-        },
-        {
-          "kind": "identifier",
-          "text": "ofType"
-        },
-        {
-          "kind": "text",
-          "text": ": T.Type)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/vdsp/fft2d/3240740-init": {
-      "title": "init(log2n:radix:ofType:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/fft2d/3240740-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/vdsp/fft2d/3240740-init",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes a new fast Fourier transform instance."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
-          "kind": "text",
-          "text": "?("
-        },
-        {
-          "kind": "identifier",
-          "text": "log2n"
-        },
-        {
-          "kind": "text",
-          "text": ": vDSP_Length, "
-        },
-        {
-          "kind": "identifier",
-          "text": "radix"
-        },
-        {
-          "kind": "text",
-          "text": ": vDSP.Radix, "
         },
         {
           "kind": "identifier",
@@ -413,16 +373,17 @@
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/vdsp/fft2d/3240741-init",
-        "doc://com.apple.documentation/documentation/accelerate/vdsp/fft2d/3240740-init"
-      ]
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/fft2d/3240741-init"
+      ],
+      "anchor": "3256641"
     },
     {
       "kind": "taskGroup",
       "title": "Instance Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/vdsp/fft2d/3240742-transform"
-      ]
+      ],
+      "anchor": "3256642"
     }
   ],
   "seeAlsoSections": [
@@ -488,7 +449,16 @@
             },
             {
               "kind": "text",
-              "text": "<T> "
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO5FFT2DC1Txmfp",
+              "text": "T"
+            },
+            {
+              "kind": "text",
+              "text": "> "
             },
             {
               "kind": "keyword",
@@ -499,8 +469,13 @@
               "text": " "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO5FFT2DC1Txmfp",
+              "text": "T"
+            },
+            {
               "kind": "text",
-              "text": "T : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -511,6 +486,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -521,7 +497,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

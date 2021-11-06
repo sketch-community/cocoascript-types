@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the identifiers compatible with a given asset."
+      "text": "Returns compatible export presets for the asset."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetExportSession(cm)exportPresetsCompatibleWithAsset:",
+    "parent": {
+      "title": "AVAssetExportSession"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,9 +119,33 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that transcodes the contents of an asset source object to create an output of the form described by a specified export preset."
+          "text": "An object that transcodes the contents of an asset in a format that you specify using an export preset."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets": {
+      "title": "Export Presets",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/avassetexportsession/export_presets"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1387953-tracks": {
+      "title": "tracks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387953-tracks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1387953-tracks"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsarray": {
+      "title": "NSArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsarray"
     },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
@@ -123,71 +155,25 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset": {
-      "title": "exportSessionWithAsset:presetName:",
+    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
+      "title": "AVAsset",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "exportSessionWithAsset:presetName:"
-        }
-      ]
+      "url": "/documentation/avfoundation/avasset"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_device-appropriate_quicktime_files": {
-      "title": "Export Preset Names for Device-Appropriate QuickTime Files",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390467-presetname": {
+      "title": "presetName",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_device-appropriate_quicktime_files",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_names_for_device-appropriate_quicktime_files",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "You use these export options to produce QuickTime movie files with video size appropriate to the current device."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size": {
-      "title": "Export Preset Names for QuickTime Files of a Given Size",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "You use these export options to produce QuickTime movie files with a specified video size."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus/avassetexportsessionstatuscancelled": {
-      "title": "AVAssetExportSessionStatusCancelled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus/avassetexportsessionstatuscancelled",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390467-presetname",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsessionstatus/avassetexportsessionstatuscancelled"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_itunes_audio": {
-      "title": "Export Preset Name for iTunes Audio",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_itunes_audio",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_name_for_itunes_audio",
+      "url": "/documentation/avfoundation/avassetexportsession/1390467-presetname",
       "abstract": [
         {
           "type": "text",
-          "text": "You use this export option to produce an audio-only MPEG 4 Audio file with appropriate iTunes gapless playback data."
+          "text": "The name of the preset that the asset export session uses."
         }
       ]
     },
@@ -215,36 +201,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsarray": {
-      "title": "NSArray",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsarray"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
-      "title": "AVAsset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasset"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390467-presetname": {
-      "title": "presetName",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390467-presetname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1390467-presetname",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The name of the preset used to initialize the session."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390567-exportpresetscompatiblewithasset": {
       "title": "exportPresetsCompatibleWithAsset:",
       "type": "topic",
@@ -255,7 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the identifiers compatible with a given asset."
+          "text": "Returns compatible export presets for the asset."
         }
       ],
       "fragments": [
@@ -279,7 +235,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reports the compatibility of an export present, asset, and output file type to the specified block."
+          "text": "Determines an export preset’s compatibility to export the asset in a container of the output file type."
         }
       ],
       "fragments": [
@@ -293,34 +249,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices": {
-      "title": "Export Preset Names for Apple Devices",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "You use these export options to produce playable files for use on specific Apple devices. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_pass_through": {
-      "title": "Export Preset Name for Pass Through",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_pass_through",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_name_for_pass_through",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "You use this export option to let all tracks pass through  as formatted unless otherwise prohibited."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith": {
       "title": "determineCompatibleFileTypesWithCompletionHandler:",
       "type": "topic",
@@ -331,7 +259,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reports the compatible file types for the current export session to the specified block. "
+          "text": "Determines the output file types an asset export session supports writing in its current configuration."
         }
       ],
       "fragments": [
@@ -359,11 +287,6 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390467-presetname",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387150-allexportpresets",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385821-determinecompatibilityofexportpr",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_device-appropriate_quicktime_files",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_itunes_audio",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_pass_through",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith"
       ],
       "title": "Configuring Export Presets",
@@ -440,6 +363,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -461,7 +385,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "An asset that is ready to be exported."
+                  "text": "An asset to export."
                 }
               ]
             }
@@ -483,86 +407,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An array of "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
-            },
-            {
-              "type": "text",
-              "text": " objects representing the identifiers compatible with "
-            },
-            {
-              "type": "codeVoice",
-              "code": "asset"
-            },
-            {
-              "type": "text",
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The array is a complete list of the valid identifiers that can be used with "
+              "text": "An array of compatible presets. See "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1564246-exportsessionwithasset"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets"
             },
             {
               "type": "text",
-              "text": " with the specified asset. For possible values, see "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_device-appropriate_quicktime_files"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus/avassetexportsessionstatuscancelled"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_name_for_itunes_audio"
-            },
-            {
-              "type": "text",
-              "text": ", and "
-            },
-            {
-              "type": "codeVoice",
-              "code": "Export Preset Name for Pass-Through"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": " for preset values an asset export session supports."
             }
           ]
         }
@@ -582,33 +436,47 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Not all export presets are compatible with all assets. For example, a video-only asset is not compatible with an audio-only preset. This method returns only the identifiers for presets that are compatible with the given asset. "
+              "text": "Not all export presets are compatible with all assets. For example, video-only assets aren’t compatible with an audio-only preset. Call this method to determine the compatible presets for the asset you’re exporting."
             }
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "aside",
+          "content": [
             {
-              "type": "text",
-              "text": "In order to ensure that the setup and running of an export operation will succeed using a given preset, you should not make significant changes to the asset (such as adding or deleting tracks) between retrieving compatible identifiers and performing the export operation."
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Load the asset’s "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387953-tracks"
+                },
+                {
+                  "type": "text",
+                  "text": " property before calling this method to avoid blocking the calling thread."
+                }
+              ]
             }
-          ]
+          ],
+          "style": "important"
         },
         {
           "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "If the asset’s tracks are not currently loaded, they may be loaded by this method before any checks are performed."
-            }
-          ]
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

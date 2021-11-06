@@ -5,7 +5,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror"
@@ -13,7 +13,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror"
@@ -56,20 +56,28 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "10.2",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation13CustomNSErrorPAAE9errorCodeSivp::SYNTHESIZED::s:SC23UIGuidedAccessErrorCodeLeV",
+    "parent": {
+      "title": "UIAccessibility.GuidedAccessError"
+    },
     "symbolKind": "structp",
     "fragments": [
       {
@@ -87,8 +95,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,10 +121,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -143,7 +151,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror"
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Guided Access error."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -193,6 +207,94 @@
       "role": "symbol",
       "url": "/documentation/swift/int"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain": {
+      "title": "errorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "errorDomain"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089211-errorcode": {
+      "title": "errorCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089211-errorcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089211-errorcode",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "errorCode"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089214-erroruserinfo": {
+      "title": "errorUserInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089214-erroruserinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089214-erroruserinfo",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "errorUserInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [String : Any]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089216-localizeddescription": {
+      "title": "localizedDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089216-localizeddescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089216-localizeddescription",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "localizedDescription"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -201,6 +303,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089214-erroruserinfo",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089216-localizeddescription"
+      ],
+      "title": "Accessing Error Codes",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -247,6 +360,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -254,7 +368,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

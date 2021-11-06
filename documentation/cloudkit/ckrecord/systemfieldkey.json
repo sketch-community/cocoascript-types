@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "10.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So8CKRecordC8CloudKitE14SystemFieldKeyO",
+    "parent": {
+      "title": "CKRecord"
+    },
     "symbolKind": "enum",
     "fragments": [
       {
@@ -76,8 +84,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,7 +120,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A dictionary of key-value pairs for persisting your app’s data."
+          "text": "A collection of key-value pairs that store your app’s data."
         }
       ]
     },
@@ -226,7 +234,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A reference to the parent record of this record."
+          "text": "A reference to the record’s parent record."
         }
       ],
       "fragments": [
@@ -241,6 +249,30 @@
         {
           "kind": "text",
           "text": ": CKRecord.Reference?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/reference": {
+      "title": "CKRecord.Reference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/reference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord/reference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A relationship between two records in a record zone."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "CKRecord.Reference"
         }
       ]
     },
@@ -300,30 +332,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/reference": {
-      "title": "CKRecord.Reference",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/reference",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord/reference",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that describes a many-to-one relationship between records in a database."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "class "
-        },
-        {
-          "kind": "identifier",
-          "text": "CKRecord.Reference"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecord/systemfieldkey": {
       "title": "CKRecord.SystemFieldKey",
       "type": "topic",
@@ -363,7 +371,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/systemfieldkey/3003376-parent",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/systemfieldkey/3003377-share"
-      ]
+      ],
+      "anchor": "3639573"
     }
   ],
   "seeAlsoSections": [
@@ -371,9 +380,9 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/reference",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690507-setparent",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690508-setparent",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/reference"
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690508-setparent"
       ],
       "title": "Sharing Records",
       "generated": true
@@ -403,6 +412,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -487,7 +497,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

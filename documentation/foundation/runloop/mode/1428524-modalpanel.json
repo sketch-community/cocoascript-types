@@ -2,23 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A run loop should be set to this mode when waiting for input from a modal panel, such as "
-    },
-    {
-      "type": "codeVoice",
-      "code": "NSSavePanel"
-    },
-    {
-      "type": "text",
-      "text": " or "
-    },
-    {
-      "type": "codeVoice",
-      "code": "NSOpenPanel"
-    },
-    {
-      "type": "text",
-      "text": "."
+      "text": "The mode set when waiting for input from a modal panel, such as a save or open panel."
     }
   ],
   "documentVersion": 0,
@@ -59,10 +43,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSModalPanelRunLoopMode",
+    "parent": {
+      "title": "RunLoop.Mode"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -80,8 +67,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -172,348 +159,87 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428436-runmodal": {
-      "title": "runModal(for:)",
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1408609-common": {
+      "title": "common",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428436-runmodal",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1408609-common",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428436-runmodal",
+      "url": "/documentation/foundation/runloop/mode/1408609-common",
       "abstract": [
         {
           "type": "text",
-          "text": "Starts a modal event loop for the specified window."
+          "text": "A pseudo-mode that includes one or more other run loop modes."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "func "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "runModal"
+          "text": "common"
         },
         {
           "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "for"
-        },
-        {
-          "kind": "text",
-          "text": ": NSWindow) -> NSApplication.ModalResponse"
+          "text": ": RunLoop.Mode"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428590-runmodalsession": {
-      "title": "runModalSession(_:)",
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1409732-default": {
+      "title": "default",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428590-runmodalsession",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1409732-default",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428590-runmodalsession",
+      "url": "/documentation/foundation/runloop/mode/1409732-default",
       "abstract": [
         {
           "type": "text",
-          "text": "Runs a given modal session, as defined in a previous invocation of "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428418-beginmodalsession"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "The mode set to handle input sources other than connection objects."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "func "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "runModalSession"
+          "text": "`default`"
         },
         {
           "kind": "text",
-          "text": "(NSApplication.ModalSession) -> NSApplication.ModalResponse"
+          "text": ": RunLoop.Mode"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428418-beginmodalsession": {
-      "title": "beginModalSession(for:)",
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking": {
+      "title": "eventTracking",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428418-beginmodalsession",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428418-beginmodalsession",
+      "url": "/documentation/foundation/runloop/mode/1428765-eventtracking",
       "abstract": [
         {
           "type": "text",
-          "text": "Sets up a modal session with the given window and returns a pointer to the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSModalSession"
-        },
-        {
-          "type": "text",
-          "text": " structure representing the session."
+          "text": "The mode set when tracking events modally, such as a mouse-dragging loop."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "func "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "beginModalSession"
+          "text": "eventTracking"
         },
         {
           "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "for"
-        },
-        {
-          "kind": "text",
-          "text": ": NSWindow) -> NSApplication.ModalSession"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428438-endmodalsession": {
-      "title": "endModalSession(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428438-endmodalsession",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428438-endmodalsession"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428489-stopmodal": {
-      "title": "stopModal()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428489-stopmodal",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428489-stopmodal",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Stops a modal event loop."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "stopModal"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428748-stopmodal": {
-      "title": "stopModal(withCode:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428748-stopmodal",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428748-stopmodal",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Stops a modal event loop, allowing you to return a custom result code. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "stopModal"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "withCode"
-        },
-        {
-          "kind": "text",
-          "text": ": NSApplication.ModalResponse)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428753-abortmodal": {
-      "title": "abortModal()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428753-abortmodal",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428753-abortmodal",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Aborts the event loop started by "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428436-runmodal"
-        },
-        {
-          "type": "text",
-          "text": " or "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428590-runmodalsession"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "abortModal"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428610-modalwindow": {
-      "title": "modalWindow",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428610-modalwindow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428610-modalwindow",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The modal window displayed by the app."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "modalWindow"
-        },
-        {
-          "kind": "text",
-          "text": ": NSWindow?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/modalresponse": {
-      "title": "NSApplication.ModalResponse",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/modalresponse",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/modalresponse",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A set of button return values for modal dialogs."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "struct "
-        },
-        {
-          "kind": "identifier",
-          "text": "NSApplication.ModalResponse"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/modalsession": {
-      "title": "NSApplication.ModalSession",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/modalsession",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/modalsession",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Variables of type "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSModalSession"
-        },
-        {
-          "type": "text",
-          "text": " point to information used by the system between "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSApplication"
-        },
-        {
-          "type": "text",
-          "text": "’s "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428418-beginmodalsession"
-        },
-        {
-          "type": "text",
-          "text": " and "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428438-endmodalsession"
-        },
-        {
-          "type": "text",
-          "text": " messages."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "typealias "
-        },
-        {
-          "kind": "identifier",
-          "text": "NSApplication.ModalSession"
+          "text": ": RunLoop.Mode"
         }
       ]
     },
@@ -527,23 +253,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A run loop should be set to this mode when waiting for input from a modal panel, such as "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSSavePanel"
-        },
-        {
-          "type": "text",
-          "text": " or "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSOpenPanel"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "The mode set when waiting for input from a modal panel, such as a save or open panel."
         }
       ],
       "fragments": [
@@ -554,6 +264,34 @@
         {
           "kind": "identifier",
           "text": "modalPanel"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1622929-tracking": {
+      "title": "tracking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1622929-tracking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/mode/1622929-tracking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set while tracking in controls takes place."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "tracking"
         },
         {
           "kind": "text",
@@ -572,17 +310,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428436-runmodal",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428489-stopmodal",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428748-stopmodal",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428753-abortmodal",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428418-beginmodalsession",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428590-runmodalsession",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428610-modalwindow",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/modalresponse",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/modalsession"
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1408609-common",
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1409732-default",
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking",
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1622929-tracking"
       ],
-      "title": "Running a Modal Window",
+      "title": "System Run Loop Modes",
       "generated": true
     }
   ],
@@ -644,7 +377,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

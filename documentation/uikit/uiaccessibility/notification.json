@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A notification that an accessible application can send."
+      "text": "An accessibility notification that an app can send."
     }
   ],
   "documentVersion": 0,
@@ -11,14 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
@@ -40,13 +40,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility"
       ],
       [
@@ -83,25 +83,33 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@UIAccessibilityNotifications",
+    "parent": {
+      "title": "UIAccessibility"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -115,8 +123,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -151,10 +159,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -174,14 +182,10 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiaccessibility",
-      "fragments": [
+      "abstract": [
         {
-          "kind": "text",
-          "text": "struct "
-        },
-        {
-          "kind": "identifier",
-          "text": "UIAccessibility"
+          "type": "text",
+          "text": "A namespace for accessibility symbols for UIKit apps."
         }
       ]
     },
@@ -225,14 +229,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615161-accessibilityscroll": {
-      "title": "accessibilityScroll(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615161-accessibilityscroll",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsobject/1615161-accessibilityscroll"
-    },
     "doc://com.apple.documentation/documentation/swift/equatable": {
       "title": "Equatable",
       "type": "topic",
@@ -257,32 +253,6 @@
       "role": "symbol",
       "url": "/documentation/swift/rawrepresentable"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/2993328-init": {
-      "title": "init(rawValue:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/2993328-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/notification/2993328-init",
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "rawValue"
-        },
-        {
-          "kind": "text",
-          "text": ": UInt32)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620176-announcement": {
       "title": "announcement",
       "type": "topic",
@@ -293,7 +263,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by an app when an announcement needs to be conveyed to the assistive technology."
+          "text": "A notification that an app posts when it needs to convey an announcement to the assistive app."
         }
       ],
       "fragments": [
@@ -321,7 +291,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by an application when the layout of a screen changes, such as when an element appears or disappears."
+          "text": "A notification that an app posts when the layout of a screen changes."
         }
       ],
       "fragments": [
@@ -339,6 +309,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620198-screenchanged": {
+      "title": "screenChanged",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620198-screenchanged",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/notification/1620198-screenchanged",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that an app posts when a new view appears that occupies a major portion of the screen."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "screenChanged"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibility.Notification"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620190-pagescrolled": {
       "title": "pageScrolled",
       "type": "topic",
@@ -349,16 +347,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted by an application when a scroll action has completed and the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615161-accessibilityscroll"
-        },
-        {
-          "type": "text",
-          "text": " method has been called."
+          "text": "A notification that an app posts when a scroll action completes."
         }
       ],
       "fragments": [
@@ -386,7 +375,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that pauses an assistive technology’s operations temporarily."
+          "text": "A notification that pauses an assistive app's operations temporarily."
         }
       ],
       "fragments": [
@@ -414,7 +403,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that resumes an assistive technology’s operations temporarily."
+          "text": "A notification that resumes an assistive app's operations temporarily."
         }
       ],
       "fragments": [
@@ -432,70 +421,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620198-screenchanged": {
-      "title": "screenChanged",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620198-screenchanged",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/notification/1620198-screenchanged",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posted by an application when a new view appears that makes up a major portion of the screen."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "screenChanged"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibility.Notification"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/assistive_technology_identifiers": {
-      "title": "Assistive Technology Identifiers",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/assistive_technology_identifiers",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/objectivec/nsobject/uiaccessibility/assistive_technology_identifiers",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Manage pausing and resuming assistive technologies with these identifiers."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys": {
-      "title": "Notification Dictionary Keys",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Handle notifications with the keys defined in the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "userInfo"
-        },
-        {
-          "type": "text",
-          "text": " parameter dictionary."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/assistivetechnologyidentifier": {
       "title": "UIAccessibility.AssistiveTechnologyIdentifier",
       "type": "topic",
@@ -503,6 +428,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiaccessibility/assistivetechnologyidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifiers for assistive apps."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -511,6 +442,82 @@
         {
           "kind": "identifier",
           "text": "UIAccessibility.AssistiveTechnologyIdentifier"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/2993328-init": {
+      "title": "init(rawValue:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/2993328-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/notification/2993328-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an accessibility notification with the specified raw value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": UInt32)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615194-post": {
+      "title": "post(notification:argument:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615194-post",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615194-post",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posts a notification to assistive apps."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "post"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "notification"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibility.Notification, "
+        },
+        {
+          "kind": "identifier",
+          "text": "argument"
+        },
+        {
+          "kind": "text",
+          "text": ": Any?)"
         }
       ]
     },
@@ -524,7 +531,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that an accessible application can send."
+          "text": "An accessibility notification that an app can send."
         }
       ],
       "fragments": [
@@ -561,33 +568,33 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Initializer",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/2993328-init"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Constants",
+      "title": "Notifications",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620176-announcement",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620186-layoutchanged",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620198-screenchanged",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620190-pagescrolled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620192-pauseassistivetechnology",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620181-resumeassistivetechnology",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/1620198-screenchanged"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/assistivetechnologyidentifier"
+      ],
+      "anchor": "3523982"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializer",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/notification/2993328-init"
+      ],
+      "anchor": "3528178"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/assistive_technology_identifiers",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/assistivetechnologyidentifier"
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615194-post"
       ],
-      "title": "Handling Notifications",
+      "title": "App Notifications",
       "generated": true
     }
   ],
@@ -615,6 +622,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -624,7 +632,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

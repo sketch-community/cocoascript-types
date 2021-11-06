@@ -2,25 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Operating system version structure used with "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1410906-operatingsystemversion"
-    },
-    {
-      "type": "text",
-      "text": " and "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1414876-isoperatingsystematleast"
-    },
-    {
-      "type": "text",
-      "text": "."
+      "text": "A structure that contains version information about the currently executing operating system, including major, minor, and patch version numbers."
     }
   ],
   "documentVersion": 0,
@@ -59,27 +41,32 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@SA@NSOperatingSystemVersion",
@@ -96,8 +83,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -142,11 +129,11 @@
     },
     "doc://com.apple.documentation/documentation/foundation/processinfo": {
       "title": "ProcessInfo",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo",
-      "url": "/documentation/foundation/processinfo",
       "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo",
       "kind": "symbol",
-      "role": "symbol"
+      "role": "symbol",
+      "url": "/documentation/foundation/processinfo"
     },
     "doc://com.apple.documentation/documentation/foundation/processes_and_threads": {
       "title": "Processes and Threads",
@@ -343,7 +330,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/operatingsystemversion/1418134-init",
         "doc://com.apple.documentation/documentation/foundation/operatingsystemversion/1410379-init"
-      ]
+      ],
+      "anchor": "2859511"
     },
     {
       "kind": "taskGroup",
@@ -352,7 +340,8 @@
         "doc://com.apple.documentation/documentation/foundation/operatingsystemversion/1414662-majorversion",
         "doc://com.apple.documentation/documentation/foundation/operatingsystemversion/1413801-minorversion",
         "doc://com.apple.documentation/documentation/foundation/operatingsystemversion/1415564-patchversion"
-      ]
+      ],
+      "anchor": "2859512"
     }
   ],
   "primaryContentSections": [
@@ -379,6 +368,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -386,10 +376,57 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo"
+            },
+            {
+              "type": "text",
+              "text": " property "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1410906-operatingsystemversion"
+            },
+            {
+              "type": "text",
+              "text": " to fetch an instance of this type. You can also pass this type to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1414876-isoperatingsystematleast"
+            },
+            {
+              "type": "text",
+              "text": " to determine whether the current operating system version is the same or later than the given value."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

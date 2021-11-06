@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Default "
+      "text": "A constant that represents the default "
     },
     {
       "type": "emphasis",
@@ -15,33 +15,7 @@
     },
     {
       "type": "text",
-      "text": " factorization (currently "
-    },
-    {
-      "type": "emphasis",
-      "inlineContent": [
-        {
-          "type": "text",
-          "text": "LDLᵀ"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "text": " with "
-    },
-    {
-      "type": "emphasis",
-      "inlineContent": [
-        {
-          "type": "text",
-          "text": "TPP"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "text": ")."
+      "text": " factorization."
     }
   ],
   "documentVersion": 0,
@@ -51,23 +25,21 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquesymbolicfactorization",
         "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t"
       ]
@@ -92,35 +64,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@EA@SparseFactorization_t@SparseFactorizationLDLT",
+    "parent": {
+      "title": "SparseFactorization_t"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -163,10 +143,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions": {
-      "title": "Sparse Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions": {
+      "title": "Sparse Matrix Factor Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -181,22 +161,14 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure that defines the factorization type."
+          "text": "Constants that define the factorization type."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions": {
-      "title": "Sparse Symbolic Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions": {
+      "title": "Sparse Symbolic Factorization Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -215,7 +187,134 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationldlt",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparsefactorization_t/sparsefactorizationldlt"
+      "url": "/documentation/accelerate/sparsefactorization_t/sparsefactorizationldlt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that represents the default "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "LDLᵀ"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " factorization."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationcholesky": {
+      "title": "SparseFactorizationCholesky",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationcholesky",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsefactorization_t/sparsefactorizationcholesky",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that represents Cholesky ("
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "LLᵀ"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ") factorization."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationldltunpivoted": {
+      "title": "SparseFactorizationLDLTUnpivoted",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationldltunpivoted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsefactorization_t/sparsefactorizationldltunpivoted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that represents Cholesky-like "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "LDLᵀ"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " factorization with only one-by-one pivots and no pivoting."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationldltsbk": {
+      "title": "SparseFactorizationLDLTSBK",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationldltsbk",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsefactorization_t/sparsefactorizationldltsbk",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that represents "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "LDLᵀ"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " factorization with Supernode-Bunch-Kaufman and static pivoting."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationldlttpp": {
+      "title": "SparseFactorizationLDLTTPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationldlttpp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsefactorization_t/sparsefactorizationldlttpp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that represents "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "LDLᵀ"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " factorization with full-threshold partial pivoting."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -225,6 +324,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationcholesky",
+        "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationldltunpivoted",
+        "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationldltsbk",
+        "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationldlttpp"
+      ],
+      "title": "Factorization Types for Symmetric Coefficient Matrices",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -241,6 +352,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -290,16 +402,19 @@
             },
             {
               "type": "text",
-              "text": " routine "
+              "text": " routines "
             },
             {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "_SYTRF()"
-                }
-              ]
+              "type": "codeVoice",
+              "code": "ssytrf()"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dsytrf()"
             },
             {
               "type": "text",
@@ -311,7 +426,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

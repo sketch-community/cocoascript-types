@@ -2,28 +2,12 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The mode to deal with input sources other than "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsconnection"
-    },
-    {
-      "type": "text",
-      "text": " objects."
+      "text": "The mode set to handle input sources other than connection objects."
     }
   ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/foundation",
-        "doc://com.apple.documentation/documentation/foundation/processes_and_threads",
-        "doc://com.apple.documentation/documentation/foundation/nsrunloop",
-        "doc://com.apple.documentation/documentation/foundation/nsrunloop/run_loop_modes"
-      ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/foundation",
@@ -52,35 +36,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@NSDefaultRunLoopMode",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -131,14 +120,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsrunloop/run_loop_modes": {
-      "title": "Run Loop Modes",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/run_loop_modes",
-      "url": "/documentation/foundation/nsrunloop/run_loop_modes",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsrunloopmode": {
       "title": "NSRunLoopMode",
       "type": "topic",
@@ -147,13 +128,75 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsrunloopmode"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsconnection": {
-      "title": "NSConnection",
+    "doc://com.apple.documentation/documentation/foundation/nsrunloopcommonmodes": {
+      "title": "NSRunLoopCommonModes",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsconnection",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloopcommonmodes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsconnection"
+      "url": "/documentation/foundation/nsrunloopcommonmodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A pseudo-mode that includes one or more other run loop modes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdefaultrunloopmode": {
+      "title": "NSDefaultRunLoopMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdefaultrunloopmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdefaultrunloopmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set to handle input sources other than connection objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nseventtrackingrunloopmode": {
+      "title": "NSEventTrackingRunLoopMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nseventtrackingrunloopmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nseventtrackingrunloopmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set when tracking events modally, such as a mouse-dragging loop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsmodalpanelrunloopmode": {
+      "title": "NSModalPanelRunLoopMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsmodalpanelrunloopmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsmodalpanelrunloopmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set when waiting for input from a modal panel, such as a save or open panel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitrackingrunloopmode": {
+      "title": "UITrackingRunLoopMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitrackingrunloopmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitrackingrunloopmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set while tracking in controls takes place."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -163,6 +206,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsrunloopcommonmodes",
+        "doc://com.apple.documentation/documentation/appkit/nseventtrackingrunloopmode",
+        "doc://com.apple.documentation/documentation/appkit/nsmodalpanelrunloopmode",
+        "doc://com.apple.documentation/documentation/uikit/uitrackingrunloopmode"
+      ],
+      "title": "System Run Loop Modes",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -201,6 +256,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -231,7 +287,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

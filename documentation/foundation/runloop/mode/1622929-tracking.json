@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The mode set while tracking in controls takes place. "
+      "text": "The mode set while tracking in controls takes place."
     }
   ],
   "documentVersion": 0,
@@ -42,20 +42,28 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UITrackingRunLoopMode",
+    "parent": {
+      "title": "RunLoop.Mode"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -73,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -157,6 +165,118 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1408609-common": {
+      "title": "common",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1408609-common",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/mode/1408609-common",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A pseudo-mode that includes one or more other run loop modes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "common"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1409732-default": {
+      "title": "default",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1409732-default",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/mode/1409732-default",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set to handle input sources other than connection objects."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "`default`"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking": {
+      "title": "eventTracking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/mode/1428765-eventtracking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set when tracking events modally, such as a mouse-dragging loop."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "eventTracking"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel": {
+      "title": "modalPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/mode/1428524-modalpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set when waiting for input from a modal panel, such as a save or open panel."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "modalPanel"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/runloop/mode/1622929-tracking": {
       "title": "tracking",
       "type": "topic",
@@ -167,7 +287,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The mode set while tracking in controls takes place. "
+          "text": "The mode set while tracking in controls takes place."
         }
       ],
       "fragments": [
@@ -193,6 +313,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1408609-common",
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1409732-default",
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428765-eventtracking",
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel"
+      ],
+      "title": "System Run Loop Modes",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -245,6 +377,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -273,7 +406,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseGetTranspose#$@SA@SparseOpaqueFactorization_Float#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,34 +135,6 @@
       "role": "symbol",
       "url": "/documentation/accelerate/sparseopaquefactorization_float"
     },
-    "doc://com.apple.documentation/documentation/accelerate/2865549-sparsegettranspose": {
-      "title": "SparseGetTranspose",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2865549-sparsegettranspose",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2865549-sparsegettranspose",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a transposed copy of the specified matrix of double-precision, floating-point values."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2868181-sparsegettranspose": {
-      "title": "SparseGetTranspose",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868181-sparsegettranspose",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2868181-sparsegettranspose",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a transposed copy of the specified matrix of single-precision, floating-point values."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/2868128-sparsegettranspose": {
       "title": "SparseGetTranspose",
       "type": "topic",
@@ -186,34 +163,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/2881903-sparsegettranspose": {
-      "title": "SparseGetTranspose",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881903-sparsegettranspose",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2881903-sparsegettranspose",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a transposed copy of the specified double-precision subfactor."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2881896-sparsegettranspose": {
-      "title": "SparseGetTranspose",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881896-sparsegettranspose",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2881896-sparsegettranspose",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a transposed copy of the specified single-precision subfactor."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -225,13 +174,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/2865549-sparsegettranspose",
-        "doc://com.apple.documentation/documentation/accelerate/2868181-sparsegettranspose",
-        "doc://com.apple.documentation/documentation/accelerate/2868128-sparsegettranspose",
-        "doc://com.apple.documentation/documentation/accelerate/2881903-sparsegettranspose",
-        "doc://com.apple.documentation/documentation/accelerate/2881896-sparsegettranspose"
+        "doc://com.apple.documentation/documentation/accelerate/2868128-sparsegettranspose"
       ],
-      "title": "Transposition ",
+      "title": "Factorization Transpose Functions",
       "generated": true
     }
   ],
@@ -275,6 +220,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -354,7 +300,7 @@
             },
             {
               "type": "text",
-              "text": ". As this is reference counted, it must be freed through a call to "
+              "text": ". Because this is a reference-counted factorization, you must free it through a call to "
             },
             {
               "type": "reference",
@@ -363,7 +309,16 @@
             },
             {
               "type": "text",
-              "text": " once it is no longer required. "
+              "text": " when you no longer need it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " "
             }
           ]
         }
@@ -371,7 +326,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

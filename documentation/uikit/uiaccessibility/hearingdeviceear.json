@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants that specify how a hearing device is being used."
+      "text": "Constants that specify how a user is using a hearing device."
     }
   ],
   "documentVersion": 0,
@@ -11,14 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
@@ -40,12 +40,12 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ]
     ]
   },
@@ -68,15 +68,23 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@UIAccessibilityHearingDeviceEar",
+    "parent": {
+      "title": "UIAccessibility"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -90,8 +98,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,10 +134,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -148,7 +156,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility"
+      "url": "/documentation/uikit/uiaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A namespace for accessibility symbols for UIKit apps."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -300,7 +314,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the element that is currently focused by the specified assistive technology."
+          "text": "Returns the accessibility element that is currently in focus by the specified assistive app."
         }
       ],
       "fragments": [
@@ -336,7 +350,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the current pairing status of MFi hearing aids."
+          "text": "The current pairing status of Made for iPhone hearing devices."
         }
       ],
       "fragments": [
@@ -364,7 +378,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that specify how a hearing device is being used."
+          "text": "Constants that specify how a user is using a hearing device."
         }
       ],
       "fragments": [
@@ -388,7 +402,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Warns users that application-specific gestures conflict with the system-defined Zoom accessibility gestures."
+          "text": "Warns users that app-specific gestures conflict with the system-defined Zoom accessibility gestures."
         }
       ],
       "fragments": [
@@ -460,7 +474,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Notifies the system that the app’s focus has changed to a new location."
+          "text": "Notifies the system when the app’s focus changes to a new location."
         }
       ],
       "fragments": [
@@ -502,50 +516,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor": {
-      "title": "shouldDifferentiateWithoutColor",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "shouldDifferentiateWithoutColor"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled": {
-      "title": "isVideoAutoplayEnabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "isVideoAutoplayEnabled"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -572,14 +542,16 @@
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/hearingdeviceear/1648475-left",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/hearingdeviceear/1648476-right",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/hearingdeviceear/1648474-both"
-      ]
+      ],
+      "anchor": "2920352"
     },
     {
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/hearingdeviceear/1649747-init"
-      ]
+      ],
+      "anchor": "2858713"
     }
   ],
   "seeAlsoSections": [
@@ -589,9 +561,7 @@
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648477-hearingdevicepairedear",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1624919-registergestureconflictwithzoom",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615186-requestguidedaccesssession",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1624921-zoomfocuschanged",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled"
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1624921-zoomfocuschanged"
       ],
       "title": "Convenience Functions",
       "generated": true
@@ -621,6 +591,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -628,7 +599,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

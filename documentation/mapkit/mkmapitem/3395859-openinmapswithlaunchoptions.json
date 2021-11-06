@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Opens the Maps app from a particular scene using the specified options."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,20 +34,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.2",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.2",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)MKMapItem(im)openInMapsWithLaunchOptions:fromScene:completionHandler:",
+    "parent": {
+      "title": "MKMapItem"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -145,6 +159,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/mapkit/mkmapitem/3395860-openmapswithitems",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens the Maps app from a particular scene using the specified map items and options."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -187,6 +207,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/mapkit/mkmapitem/3395859-openinmapswithlaunchoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens the Maps app from a particular scene using the specified options."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -355,14 +381,65 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "launchOptions",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A dictionary of launch options to pass to the Maps app."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "scene",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The scene where the user interaction takes place."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "completion",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A completion block the system calls that indicates whether the request was successful."
+                }
+              ]
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

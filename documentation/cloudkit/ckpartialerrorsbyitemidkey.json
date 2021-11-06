@@ -10,8 +10,7 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/cloudkit_constants"
+        "doc://com.apple.documentation/documentation/cloudkit"
       ]
     ]
   },
@@ -34,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@CKPartialErrorsByItemIDKey",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,14 +101,6 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/cloudkit_constants": {
-      "title": "CloudKit Constants",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cloudkit_constants",
-      "url": "/documentation/cloudkit/cloudkit_constants",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecordid": {
       "title": "CKRecordID",
       "type": "topic",
@@ -121,17 +117,31 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckpartialerrorsbyitemidkey": {
-      "title": "CKPartialErrorsByItemIDKey",
+    "doc://com.apple.documentation/documentation/cloudkit/ckerrordomain": {
+      "title": "CKErrorDomain",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckpartialerrorsbyitemidkey",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrordomain",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckpartialerrorsbyitemidkey",
+      "url": "/documentation/cloudkit/ckerrordomain",
       "abstract": [
         {
           "type": "text",
-          "text": "The key to retrieve partial errors.  "
+          "text": "The error domain for CloudKit errors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode": {
+      "title": "CKErrorCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerrorcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error codes that CloudKit returns."
         }
       ]
     },
@@ -149,45 +159,45 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorancestorrecordkey": {
-      "title": "CKRecordChangedErrorAncestorRecordKey",
+    "doc://com.apple.documentation/documentation/cloudkit/ckerroruserdidresetencrypteddatakey": {
+      "title": "CKErrorUserDidResetEncryptedDataKey",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorancestorrecordkey",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerroruserdidresetencrypteddatakey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecordchangederrorancestorrecordkey",
+      "url": "/documentation/cloudkit/ckerroruserdidresetencrypteddatakey",
       "abstract": [
         {
           "type": "text",
-          "text": "A key with a value that is the original version of the record."
+          "text": "The key that determines whether CloudKit deletes a record zone because of a user action."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorclientrecordkey": {
-      "title": "CKRecordChangedErrorClientRecordKey",
+    "doc://com.apple.documentation/documentation/cloudkit/ckpartialerrorsbyitemidkey": {
+      "title": "CKPartialErrorsByItemIDKey",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorclientrecordkey",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckpartialerrorsbyitemidkey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecordchangederrorclientrecordkey",
+      "url": "/documentation/cloudkit/ckpartialerrorsbyitemidkey",
       "abstract": [
         {
           "type": "text",
-          "text": "A key with a value that is the local version of the record."
+          "text": "The key to retrieve partial errors.  "
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorserverrecordkey": {
-      "title": "CKRecordChangedErrorServerRecordKey",
+    "doc://com.apple.documentation/documentation/cloudkit/record_changed_error_keys": {
+      "title": "Record Changed Error Keys",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorserverrecordkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecordchangederrorserverrecordkey",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_changed_error_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/cloudkit/record_changed_error_keys",
       "abstract": [
         {
           "type": "text",
-          "text": "A key with a value that is the server’s version of the record."
+          "text": "Constants that represent conflicting records in a save operation."
         }
       ]
     },
@@ -202,12 +212,13 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckerrordomain",
+        "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode",
         "doc://com.apple.documentation/documentation/cloudkit/ckerrorretryafterkey",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorancestorrecordkey",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorclientrecordkey",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorserverrecordkey"
+        "doc://com.apple.documentation/documentation/cloudkit/ckerroruserdidresetencrypteddatakey",
+        "doc://com.apple.documentation/documentation/cloudkit/record_changed_error_keys"
       ],
-      "title": "Error Keys",
+      "title": "Errors",
       "generated": true
     }
   ],
@@ -249,6 +260,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -288,7 +300,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

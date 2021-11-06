@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/coredata",
         "doc://com.apple.documentation/documentation/coredata/core_data_stack",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/deprecated_symbols"
       ]
     ]
   },
@@ -36,30 +37,40 @@
         "name": "iOS",
         "introducedAt": "3.0",
         "deprecatedAt": "8.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "deprecatedAt": "8.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
         "deprecatedAt": "10.10",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSPersistentStoreCoordinator(im)tryLock",
+    "parent": {
+      "title": "NSPersistentStoreCoordinator"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,6 +126,14 @@
           "text": "A coordinator that uses the model to help contexts and persistent stores communicate."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/deprecated_symbols",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468775-lock": {
       "title": "lock",
@@ -182,191 +201,27 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitoustransitiontypekey": {
-      "title": "NSPersistentStoreUbiquitousTransitionTypeKey",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier": {
+      "title": "importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitoustransitiontypekey",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstoreubiquitoustransitiontypekey"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoreswillchangenotification": {
-      "title": "NSPersistentStoreCoordinatorStoresWillChangeNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoreswillchangenotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinatorstoreswillchangenotification"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoresdidchangenotification": {
-      "title": "NSPersistentStoreCoordinatorStoresDidChangeNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoresdidchangenotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinatorstoresdidchangenotification"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorefileprotectionkey": {
-      "title": "NSPersistentStoreFileProtectionKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorefileprotectionkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorefileprotectionkey"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468915-metadataforpersistentstorewithur": {
-      "title": "metadataForPersistentStoreWithURL:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468915-metadataforpersistentstorewithur",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468915-metadataforpersistentstorewithur",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a dictionary that contains the metadata stored in the persistent store at the specified location."
+          "text": "Creates and populates a store with the external records found at a given URL."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "+ "
+          "text": "- "
         },
         {
           "kind": "identifier",
-          "text": "metadataForPersistentStoreWithURL:error:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstoredidimportubiquitouscontentchangesnotification": {
-      "title": "NSPersistentStoreDidImportUbiquitousContentChangesNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoredidimportubiquitouscontentchangesnotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstoredidimportubiquitouscontentchangesnotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posted after records are imported from the ubiquitous content store."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitoustransitiontype": {
-      "title": "NSPersistentStoreUbiquitousTransitionType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitoustransitiontype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstoreubiquitoustransitiontype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "These constants are used as the value corresponding to the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitoustransitiontypekey"
-        },
-        {
-          "type": "text",
-          "text": " in the user info dictionary of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoreswillchangenotification"
-        },
-        {
-          "type": "text",
-          "text": " and "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoresdidchangenotification"
-        },
-        {
-          "type": "text",
-          "text": " notifications to identify the type of event leading to a change."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468923-removeubiquitouscontentandpersis": {
-      "title": "removeUbiquitousContentAndPersistentStoreAtURL:options:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468923-removeubiquitouscontentandpersis",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468923-removeubiquitouscontentandpersis",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Deletes all ubiquitous content for all peers for the persistent store at a given URL and also delete the local store file. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "removeUbiquitousContentAndPersistentStoreAtURL:options:error:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468897-setmetadata": {
-      "title": "setMetadata:forPersistentStoreOfType:URL:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468897-setmetadata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468897-setmetadata",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the metadata for a given store."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "setMetadata:forPersistentStoreOfType:URL:error:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468804-metadataforpersistentstoreoftype": {
-      "title": "metadataForPersistentStoreOfType:URL:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468804-metadataforpersistentstoreoftype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468804-metadataforpersistentstoreoftype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a dictionary containing the metadata stored in the persistent store at a given URL."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "metadataForPersistentStoreOfType:URL:error:"
+          "text": "importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:"
         }
       ],
       "deprecated": true
@@ -396,29 +251,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/format_options_for_spotlight_external_record_files": {
-      "title": "Format Options for Spotlight External Record Files",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/format_options_for_spotlight_external_record_files",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/format_options_for_spotlight_external_record_files",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Specify values for the key "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorefileprotectionkey"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -430,17 +262,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468915-metadataforpersistentstorewithur",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstoredidimportubiquitouscontentchangesnotification",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitoustransitiontype",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468923-removeubiquitouscontentandpersis",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468897-setmetadata",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468804-metadataforpersistentstoreoftype",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468890-unlock",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468775-lock",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/format_options_for_spotlight_external_record_files"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468890-unlock"
       ],
-      "title": "Deprecated",
+      "title": "Deprecated Instance Methods",
       "generated": true
     }
   ],
@@ -476,6 +302,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -547,7 +374,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

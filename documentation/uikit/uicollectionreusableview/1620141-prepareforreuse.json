@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UICollectionReusableView(im)prepareForReuse",
+    "parent": {
+      "title": "UICollectionReusableView"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,6 +134,42 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicollectionviewcell"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionview/3801889-reconfigureitemsatindexpaths": {
+      "title": "reconfigureItemsAtIndexPaths:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3801889-reconfigureitemsatindexpaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionview/3801889-reconfigureitemsatindexpaths",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reconfigureItemsAtIndexPaths:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3801890-reconfigureitemswithidentifiers": {
+      "title": "reconfigureItemsWithIdentifiers:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3801890-reconfigureitemswithidentifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/nsdiffabledatasourcesnapshot/3801890-reconfigureitemswithidentifiers",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reconfigureItemsWithIdentifiers:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uicollectionreusableview/1620136-reuseidentifier": {
       "title": "reuseIdentifier",
@@ -214,6 +258,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -234,15 +279,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The default implementation of this method does nothing. However, when overriding this method, it is recommended that you call "
-            },
-            {
-              "type": "codeVoice",
-              "code": "super"
-            },
-            {
-              "type": "text",
-              "text": " anyway. Subclasses such as "
+              "text": "The default implementation of this method does nothing. Subclasses such as "
             },
             {
               "type": "reference",
@@ -251,7 +288,7 @@
             },
             {
               "type": "text",
-              "text": " override this method and use it to perform relevant actions. So if your subclass descends from "
+              "text": " override this method and use it to perform relevant actions. So, if your subclass descends from "
             },
             {
               "type": "reference",
@@ -260,7 +297,7 @@
             },
             {
               "type": "text",
-              "text": " or some other intermediate class, calling "
+              "text": " or another intermediate class, call "
             },
             {
               "type": "codeVoice",
@@ -268,7 +305,7 @@
             },
             {
               "type": "text",
-              "text": " ensures that your class gets the parent’s behavior."
+              "text": " to ensure that your class gets the parent’s behavior."
             }
           ]
         },
@@ -277,7 +314,50 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When a view is dequeued for use, this method is called before the corresponding dequeue method returns the view to your code. Subclasses can override this method and use it to reset properties to their default values and generally make the view ready to use again. You should not use this method to assign any new data to the view. That is the responsibility of your data source object."
+              "text": "When the collection view dequeues your view for use, it calls this method before the corresponding dequeue method returns the view to your code. Override this method in your subclass to reset properties to their default values and generally make the view ready to use again. Don’t use this method to assign any new data to the view; that’s the responsibility of your data source object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The collection view doesn’t call this method when you use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionview/3801889-reconfigureitemsatindexpaths"
+            },
+            {
+              "type": "text",
+              "text": " on "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UICollectionView"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesnapshot/3801890-reconfigureitemswithidentifiers"
+            },
+            {
+              "type": "text",
+              "text": " on "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSDiffableDataSourceSnapshot"
+            },
+            {
+              "type": "text",
+              "text": " to update the contents of an existing cell."
             }
           ]
         }
@@ -285,7 +365,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

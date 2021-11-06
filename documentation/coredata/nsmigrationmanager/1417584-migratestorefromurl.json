@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSMigrationManager(im)migrateStoreFromURL:type:options:withMappingModel:toDestinationURL:destinationType:destinationOptions:error:",
+    "parent": {
+      "title": "NSMigrationManager"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -168,6 +176,14 @@
       "role": "article",
       "url": "/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
     },
+    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/3747519-migratestore": {
+      "title": "migrateStore(from:type:options:mapping:to:type:options:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/3747519-migratestore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmigrationmanager/3747519-migratestore"
+    },
     "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417608-cancelmigrationwitherror": {
       "title": "cancelMigrationWithError:",
       "type": "topic",
@@ -256,30 +272,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417590-reset": {
-      "title": "reset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417590-reset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmigrationmanager/1417590-reset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Resets the association tables for the migration."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "reset"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -288,14 +280,33 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/3747519-migratestore"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
+      "title": "Related Documentation",
+      "generated": false,
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417590-reset",
         "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417608-cancelmigrationwitherror"
-      ],
-      "title": "Performing Migration Operations",
-      "generated": true
+      ]
     }
   ],
   "primaryContentSections": [
@@ -570,6 +581,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -929,7 +941,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

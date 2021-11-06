@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The result of a batch-update request, either the number of updated objects, the identifiers of the updated objects, or a status value."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSBatchUpdateResult(py)result",
+    "parent": {
+      "title": "NSBatchUpdateResult"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +134,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchupdateresult/1404946-result",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsbatchupdateresult/1404946-result"
+      "url": "/documentation/coredata/nsbatchupdateresult/1404946-result",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The result of a batch-update request, either the number of updated objects, the identifiers of the updated objects, or a status value."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsbatchupdateresult/1404900-resulttype": {
       "title": "resultType",
@@ -128,7 +148,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchupdateresult/1404900-resulttype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsbatchupdateresult/1404900-resulttype"
+      "url": "/documentation/coredata/nsbatchupdateresult/1404900-resulttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of result that Core Data returns from the request."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequestresulttype": {
       "title": "NSBatchUpdateRequestResultType",
@@ -136,7 +162,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequestresulttype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsbatchupdaterequestresulttype"
+      "url": "/documentation/coredata/nsbatchupdaterequestresulttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Result types for a batch-update request."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -144,16 +176,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -202,6 +224,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -212,7 +235,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

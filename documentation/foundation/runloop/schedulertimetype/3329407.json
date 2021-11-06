@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:SxsE1loiySbx_xtFZ::SYNTHESIZED::s:So9NSRunLoopC10FoundationE17SchedulerTimeTypeV",
+    "parent": {
+      "title": "RunLoop.SchedulerTimeType"
+    },
     "symbolKind": "opfunc",
     "fragments": [
       {
@@ -82,8 +90,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -302,6 +310,70 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358296-hashvalue": {
+      "title": "hashValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358296-hashvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/schedulertimetype/3358296-hashvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The computed hash value of the run loop scheduler time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "hashValue"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358295-hash": {
+      "title": "hash(into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358295-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/schedulertimetype/3358295-hash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hashes the essential components of the run loop schedule time by feeding them into the given hasher."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "hash"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "into"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Hasher)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -317,7 +389,9 @@
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329408",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329409",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329410",
-        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329411"
+        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3329411",
+        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358296-hashvalue",
+        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358295-hash"
       ],
       "title": "Comparing Scheduler Times",
       "generated": true
@@ -421,6 +495,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -527,7 +602,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

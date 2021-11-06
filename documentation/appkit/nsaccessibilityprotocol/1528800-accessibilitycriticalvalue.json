@@ -1,20 +1,24 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns the critical value for the level indicator."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/other_accessor_methods"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/other_accessor_methods"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
       ]
     ]
   },
@@ -38,15 +42,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Xcode",
         "introducedAt": "6.1",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibility(im)accessibilityCriticalValue",
+    "parent": {
+      "title": "NSAccessibilityProtocol"
+    },
     "symbolKind": "intfm",
     "fragments": [
       {
@@ -64,8 +71,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -90,10 +97,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -108,17 +115,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The complete list of properties and methods implemented by accessible elements."
+          "text": "The complete list of properties and methods for accessible elements."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/other_accessor_methods": {
-      "title": "Other Accessor Methods",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/other_accessor_methods",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/other_accessor_methods",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -128,305 +127,6 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532336-accessibilityactivationpoint": {
-      "title": "accessibilityActivationPoint()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532336-accessibilityactivationpoint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532336-accessibilityactivationpoint",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityActivationPoint"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSPoint"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530549-accessibilityallowedvalues": {
-      "title": "accessibilityAllowedValues()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530549-accessibilityallowedvalues",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1530549-accessibilityallowedvalues",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityAllowedValues"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [NSNumber]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529653-accessibilityapplicationfocusedu": {
-      "title": "accessibilityApplicationFocusedUIElement()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529653-accessibilityapplicationfocusedu",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1529653-accessibilityapplicationfocusedu",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityApplicationFocusedUIElement"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532886-accessibilitycancelbutton": {
-      "title": "accessibilityCancelButton()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532886-accessibilitycancelbutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532886-accessibilitycancelbutton",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityCancelButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524304-accessibilitychildren": {
-      "title": "accessibilityChildren()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524304-accessibilitychildren",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524304-accessibilitychildren",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityChildren"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/2870186-accessibilitychildreninnavigatio": {
-      "title": "accessibilityChildrenInNavigationOrder()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/2870186-accessibilitychildreninnavigatio",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/2870186-accessibilitychildreninnavigatio",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityChildrenInNavigationOrder"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [NSAccessibilityElementProtocol]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527246-accessibilityclearbutton": {
-      "title": "accessibilityClearButton()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527246-accessibilityclearbutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1527246-accessibilityclearbutton",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityClearButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528685-accessibilityclosebutton": {
-      "title": "accessibilityCloseButton()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528685-accessibilityclosebutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1528685-accessibilityclosebutton",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityCloseButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533326-accessibilitycolumncount": {
-      "title": "accessibilityColumnCount()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533326-accessibilitycolumncount",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1533326-accessibilitycolumncount",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityColumnCount"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Int"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531618-accessibilitycolumnheaderuieleme": {
-      "title": "accessibilityColumnHeaderUIElements()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531618-accessibilitycolumnheaderuieleme",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531618-accessibilitycolumnheaderuieleme",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityColumnHeaderUIElements"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524733-accessibilitycolumnindexrange": {
-      "title": "accessibilityColumnIndexRange()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524733-accessibilitycolumnindexrange",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524733-accessibilitycolumnindexrange",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityColumnIndexRange"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSRange"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530925-accessibilitycolumntitles": {
-      "title": "accessibilityColumnTitles()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530925-accessibilitycolumntitles",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1530925-accessibilitycolumntitles",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityColumnTitles"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535707-accessibilitycolumns": {
-      "title": "accessibilityColumns()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535707-accessibilitycolumns",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535707-accessibilitycolumns",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityColumns"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534322-accessibilitycontents": {
       "title": "accessibilityContents()",
       "type": "topic",
@@ -435,6 +135,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilityprotocol/1534322-accessibilitycontents",
       "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the contents of the current accessibility element."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -450,6 +156,35 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524675-setaccessibilitycontents": {
+      "title": "setAccessibilityContents(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524675-setaccessibilitycontents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1524675-setaccessibilitycontents",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the contents of the current accessibility element."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityContents"
+        },
+        {
+          "kind": "text",
+          "text": "([Any]?)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528800-accessibilitycriticalvalue": {
       "title": "accessibilityCriticalValue()",
       "type": "topic",
@@ -458,6 +193,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilityprotocol/1528800-accessibilitycriticalvalue",
       "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the critical value for the level indicator."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -473,37 +214,20 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/2870188-accessibilitycustomactions": {
-      "title": "accessibilityCustomActions()",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524649-setaccessibilitycriticalvalue": {
+      "title": "setAccessibilityCriticalValue(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/2870188-accessibilitycustomactions",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524649-setaccessibilitycriticalvalue",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/2870188-accessibilitycustomactions",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1524649-setaccessibilitycriticalvalue",
       "required": true,
-      "fragments": [
+      "abstract": [
         {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityCustomActions"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [NSAccessibilityCustomAction]?"
+          "type": "text",
+          "text": "Sets the critical value for the level indicator."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/2876352-accessibilitycustomrotors": {
-      "title": "accessibilityCustomRotors()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/2876352-accessibilitycustomrotors",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/2876352-accessibilitycustomrotors",
-      "required": true,
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -511,425 +235,11 @@
         },
         {
           "kind": "identifier",
-          "text": "accessibilityCustomRotors"
+          "text": "setAccessibilityCriticalValue"
         },
         {
           "kind": "text",
-          "text": "() -> [NSAccessibilityCustomRotor]"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535436-accessibilitydecrementbutton": {
-      "title": "accessibilityDecrementButton()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535436-accessibilitydecrementbutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535436-accessibilitydecrementbutton",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityDecrementButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535455-accessibilitydefaultbutton": {
-      "title": "accessibilityDefaultButton()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535455-accessibilitydefaultbutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535455-accessibilitydefaultbutton",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityDefaultButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524286-accessibilitydisclosedbyrow": {
-      "title": "accessibilityDisclosedByRow()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524286-accessibilitydisclosedbyrow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524286-accessibilitydisclosedbyrow",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityDisclosedByRow"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535320-accessibilitydisclosedrows": {
-      "title": "accessibilityDisclosedRows()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535320-accessibilitydisclosedrows",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535320-accessibilitydisclosedrows",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityDisclosedRows"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534402-accessibilitydisclosurelevel": {
-      "title": "accessibilityDisclosureLevel()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534402-accessibilitydisclosurelevel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534402-accessibilitydisclosurelevel",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityDisclosureLevel"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Int"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526890-accessibilitydocument": {
-      "title": "accessibilityDocument()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526890-accessibilitydocument",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526890-accessibilitydocument",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityDocument"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527011-accessibilityextrasmenubar": {
-      "title": "accessibilityExtrasMenuBar()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527011-accessibilityextrasmenubar",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1527011-accessibilityextrasmenubar",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityExtrasMenuBar"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531920-accessibilityfilename": {
-      "title": "accessibilityFilename()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531920-accessibilityfilename",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531920-accessibilityfilename",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityFilename"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524252-accessibilityfocusedwindow": {
-      "title": "accessibilityFocusedWindow()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524252-accessibilityfocusedwindow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524252-accessibilityfocusedwindow",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityFocusedWindow"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534958-accessibilityframe": {
-      "title": "accessibilityFrame()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534958-accessibilityframe",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534958-accessibilityframe",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityFrame"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSRect"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531211-accessibilityfullscreenbutton": {
-      "title": "accessibilityFullScreenButton()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531211-accessibilityfullscreenbutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531211-accessibilityfullscreenbutton",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityFullScreenButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534416-accessibilitygrowarea": {
-      "title": "accessibilityGrowArea()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534416-accessibilitygrowarea",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534416-accessibilitygrowarea",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityGrowArea"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532814-accessibilityhandles": {
-      "title": "accessibilityHandles()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532814-accessibilityhandles",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532814-accessibilityhandles",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityHandles"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527611-accessibilityheader": {
-      "title": "accessibilityHeader()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527611-accessibilityheader",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1527611-accessibilityheader",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityHeader"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531186-accessibilityhelp": {
-      "title": "accessibilityHelp()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531186-accessibilityhelp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531186-accessibilityhelp",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityHelp"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529852-accessibilityhorizontalscrollbar": {
-      "title": "accessibilityHorizontalScrollBar()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529852-accessibilityhorizontalscrollbar",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1529852-accessibilityhorizontalscrollbar",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityHorizontalScrollBar"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532237-accessibilityhorizontalunitdescr": {
-      "title": "accessibilityHorizontalUnitDescription()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532237-accessibilityhorizontalunitdescr",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532237-accessibilityhorizontalunitdescr",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityHorizontalUnitDescription"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527182-accessibilityhorizontalunits": {
-      "title": "accessibilityHorizontalUnits()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527182-accessibilityhorizontalunits",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1527182-accessibilityhorizontalunits",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityHorizontalUnits"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSAccessibilityUnits"
+          "text": "(Any?)"
         }
       ]
     },
@@ -941,6 +251,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilityprotocol/1527792-accessibilityidentifier",
       "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the accessibility element’s identity."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -956,37 +272,20 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529498-accessibilityincrementbutton": {
-      "title": "accessibilityIncrementButton()",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524536-setaccessibilityidentifier": {
+      "title": "setAccessibilityIdentifier(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529498-accessibilityincrementbutton",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524536-setaccessibilityidentifier",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1529498-accessibilityincrementbutton",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1524536-setaccessibilityidentifier",
       "required": true,
-      "fragments": [
+      "abstract": [
         {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityIncrementButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
+          "type": "text",
+          "text": "Sets the accessibility element’s identity."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527093-accessibilityindex": {
-      "title": "accessibilityIndex()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527093-accessibilityindex",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1527093-accessibilityindex",
-      "required": true,
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -994,241 +293,11 @@
         },
         {
           "kind": "identifier",
-          "text": "accessibilityIndex"
+          "text": "setAccessibilityIdentifier"
         },
         {
           "kind": "text",
-          "text": "() -> Int"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526307-accessibilityinsertionpointlinen": {
-      "title": "accessibilityInsertionPointLineNumber()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526307-accessibilityinsertionpointlinen",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526307-accessibilityinsertionpointlinen",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityInsertionPointLineNumber"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Int"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531952-accessibilitylabel": {
-      "title": "accessibilityLabel()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531952-accessibilitylabel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531952-accessibilitylabel",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityLabel"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533821-accessibilitylabeluielements": {
-      "title": "accessibilityLabelUIElements()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533821-accessibilitylabeluielements",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1533821-accessibilitylabeluielements",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityLabelUIElements"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530742-accessibilitylabelvalue": {
-      "title": "accessibilityLabelValue()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530742-accessibilitylabelvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1530742-accessibilitylabelvalue",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityLabelValue"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Float"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526168-accessibilitylinkeduielements": {
-      "title": "accessibilityLinkedUIElements()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526168-accessibilitylinkeduielements",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526168-accessibilitylinkeduielements",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityLinkedUIElements"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534068-accessibilitymainwindow": {
-      "title": "accessibilityMainWindow()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534068-accessibilitymainwindow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534068-accessibilitymainwindow",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityMainWindow"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526679-accessibilitymarkergroupuielemen": {
-      "title": "accessibilityMarkerGroupUIElement()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526679-accessibilitymarkergroupuielemen",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526679-accessibilitymarkergroupuielemen",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityMarkerGroupUIElement"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531557-accessibilitymarkertypedescripti": {
-      "title": "accessibilityMarkerTypeDescription()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531557-accessibilitymarkertypedescripti",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531557-accessibilitymarkertypedescripti",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityMarkerTypeDescription"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526825-accessibilitymarkeruielements": {
-      "title": "accessibilityMarkerUIElements()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526825-accessibilitymarkeruielements",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526825-accessibilitymarkeruielements",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityMarkerUIElements"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534808-accessibilitymarkervalues": {
-      "title": "accessibilityMarkerValues()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534808-accessibilitymarkervalues",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534808-accessibilitymarkervalues",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityMarkerValues"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
+          "text": "(String?)"
         }
       ]
     },
@@ -1240,6 +309,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilityprotocol/1527350-accessibilitymaxvalue",
       "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the maximum value for the accessibility element."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1255,14 +330,20 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526070-accessibilitymenubar": {
-      "title": "accessibilityMenuBar()",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527787-setaccessibilitymaxvalue": {
+      "title": "setAccessibilityMaxValue(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526070-accessibilitymenubar",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527787-setaccessibilitymaxvalue",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526070-accessibilitymenubar",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1527787-setaccessibilitymaxvalue",
       "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the maximum value for the accessibility element."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1270,11 +351,11 @@
         },
         {
           "kind": "identifier",
-          "text": "accessibilityMenuBar"
+          "text": "setAccessibilityMaxValue"
         },
         {
           "kind": "text",
-          "text": "() -> Any?"
+          "text": "(Any?)"
         }
       ]
     },
@@ -1286,6 +367,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilityprotocol/1533571-accessibilityminvalue",
       "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the minimum value for the accessibility element."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1301,37 +388,20 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534104-accessibilityminimizebutton": {
-      "title": "accessibilityMinimizeButton()",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525451-setaccessibilityminvalue": {
+      "title": "setAccessibilityMinValue(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534104-accessibilityminimizebutton",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525451-setaccessibilityminvalue",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534104-accessibilityminimizebutton",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1525451-setaccessibilityminvalue",
       "required": true,
-      "fragments": [
+      "abstract": [
         {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityMinimizeButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
+          "type": "text",
+          "text": "Sets the minimum value for the accessibility element."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533492-accessibilitynextcontents": {
-      "title": "accessibilityNextContents()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533492-accessibilitynextcontents",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1533492-accessibilitynextcontents",
-      "required": true,
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1339,34 +409,11 @@
         },
         {
           "kind": "identifier",
-          "text": "accessibilityNextContents"
+          "text": "setAccessibilityMinValue"
         },
         {
           "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524684-accessibilitynumberofcharacters": {
-      "title": "accessibilityNumberOfCharacters()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524684-accessibilitynumberofcharacters",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524684-accessibilitynumberofcharacters",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityNumberOfCharacters"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Int"
+          "text": "(Any?)"
         }
       ]
     },
@@ -1378,6 +425,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilityprotocol/1528909-accessibilityorientation",
       "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the orientation of the accessibility element."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1393,37 +446,20 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524427-accessibilityoverflowbutton": {
-      "title": "accessibilityOverflowButton()",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530228-setaccessibilityorientation": {
+      "title": "setAccessibilityOrientation(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524427-accessibilityoverflowbutton",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530228-setaccessibilityorientation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524427-accessibilityoverflowbutton",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1530228-setaccessibilityorientation",
       "required": true,
-      "fragments": [
+      "abstract": [
         {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityOverflowButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
+          "type": "text",
+          "text": "Sets the orientation of the accessibility element."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527401-accessibilityparent": {
-      "title": "accessibilityParent()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527401-accessibilityparent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1527401-accessibilityparent",
-      "required": true,
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1431,1437 +467,11 @@
         },
         {
           "kind": "identifier",
-          "text": "accessibilityParent"
+          "text": "setAccessibilityOrientation"
         },
         {
           "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529323-accessibilityplaceholdervalue": {
-      "title": "accessibilityPlaceholderValue()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529323-accessibilityplaceholdervalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1529323-accessibilityplaceholdervalue",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityPlaceholderValue"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526039-accessibilitypreviouscontents": {
-      "title": "accessibilityPreviousContents()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526039-accessibilitypreviouscontents",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526039-accessibilitypreviouscontents",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityPreviousContents"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534437-accessibilityproxy": {
-      "title": "accessibilityProxy()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534437-accessibilityproxy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534437-accessibilityproxy",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityProxy"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534217-accessibilityrole": {
-      "title": "accessibilityRole()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534217-accessibilityrole",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534217-accessibilityrole",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityRole"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSAccessibility.Role?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533769-accessibilityroledescription": {
-      "title": "accessibilityRoleDescription()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533769-accessibilityroledescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1533769-accessibilityroledescription",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityRoleDescription"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530170-accessibilityrowcount": {
-      "title": "accessibilityRowCount()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530170-accessibilityrowcount",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1530170-accessibilityrowcount",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityRowCount"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Int"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527418-accessibilityrowheaderuielements": {
-      "title": "accessibilityRowHeaderUIElements()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527418-accessibilityrowheaderuielements",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1527418-accessibilityrowheaderuielements",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityRowHeaderUIElements"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524347-accessibilityrowindexrange": {
-      "title": "accessibilityRowIndexRange()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524347-accessibilityrowindexrange",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524347-accessibilityrowindexrange",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityRowIndexRange"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSRange"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526702-accessibilityrows": {
-      "title": "accessibilityRows()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526702-accessibilityrows",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526702-accessibilityrows",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityRows"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532515-accessibilityrulermarkertype": {
-      "title": "accessibilityRulerMarkerType()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532515-accessibilityrulermarkertype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532515-accessibilityrulermarkertype",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityRulerMarkerType"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSAccessibilityRulerMarkerType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535051-accessibilitysearchbutton": {
-      "title": "accessibilitySearchButton()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535051-accessibilitysearchbutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535051-accessibilitysearchbutton",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySearchButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535216-accessibilitysearchmenu": {
-      "title": "accessibilitySearchMenu()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535216-accessibilitysearchmenu",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535216-accessibilitysearchmenu",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySearchMenu"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527860-accessibilityselectedcells": {
-      "title": "accessibilitySelectedCells()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527860-accessibilityselectedcells",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1527860-accessibilityselectedcells",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySelectedCells"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524672-accessibilityselectedchildren": {
-      "title": "accessibilitySelectedChildren()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524672-accessibilityselectedchildren",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524672-accessibilityselectedchildren",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySelectedChildren"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531750-accessibilityselectedcolumns": {
-      "title": "accessibilitySelectedColumns()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531750-accessibilityselectedcolumns",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531750-accessibilityselectedcolumns",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySelectedColumns"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535501-accessibilityselectedrows": {
-      "title": "accessibilitySelectedRows()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535501-accessibilityselectedrows",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535501-accessibilityselectedrows",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySelectedRows"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534449-accessibilityselectedtext": {
-      "title": "accessibilitySelectedText()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534449-accessibilityselectedtext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534449-accessibilityselectedtext",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySelectedText"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535616-accessibilityselectedtextrange": {
-      "title": "accessibilitySelectedTextRange()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535616-accessibilityselectedtextrange",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535616-accessibilityselectedtextrange",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySelectedTextRange"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSRange"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526269-accessibilityselectedtextranges": {
-      "title": "accessibilitySelectedTextRanges()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526269-accessibilityselectedtextranges",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526269-accessibilityselectedtextranges",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySelectedTextRanges"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [NSValue]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530309-accessibilityservesastitleforuie": {
-      "title": "accessibilityServesAsTitleForUIElements()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530309-accessibilityservesastitleforuie",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1530309-accessibilityservesastitleforuie",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityServesAsTitleForUIElements"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528598-accessibilitysharedcharacterrang": {
-      "title": "accessibilitySharedCharacterRange()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528598-accessibilitysharedcharacterrang",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1528598-accessibilitysharedcharacterrang",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySharedCharacterRange"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSRange"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535430-accessibilitysharedfocuselements": {
-      "title": "accessibilitySharedFocusElements()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535430-accessibilitysharedfocuselements",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535430-accessibilitysharedfocuselements",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySharedFocusElements"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526820-accessibilitysharedtextuielement": {
-      "title": "accessibilitySharedTextUIElements()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526820-accessibilitysharedtextuielement",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526820-accessibilitysharedtextuielement",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySharedTextUIElements"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531959-accessibilityshownmenu": {
-      "title": "accessibilityShownMenu()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531959-accessibilityshownmenu",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531959-accessibilityshownmenu",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityShownMenu"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535606-accessibilitysortdirection": {
-      "title": "accessibilitySortDirection()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535606-accessibilitysortdirection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535606-accessibilitysortdirection",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySortDirection"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSAccessibilitySortDirection"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525492-accessibilitysplitters": {
-      "title": "accessibilitySplitters()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525492-accessibilitysplitters",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1525492-accessibilitysplitters",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySplitters"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524569-accessibilitysubrole": {
-      "title": "accessibilitySubrole()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524569-accessibilitysubrole",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524569-accessibilitysubrole",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilitySubrole"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSAccessibility.Subrole?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532971-accessibilitytabs": {
-      "title": "accessibilityTabs()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532971-accessibilitytabs",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532971-accessibilitytabs",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityTabs"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533333-accessibilitytitle": {
-      "title": "accessibilityTitle()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533333-accessibilitytitle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1533333-accessibilitytitle",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityTitle"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526745-accessibilitytitleuielement": {
-      "title": "accessibilityTitleUIElement()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526745-accessibilitytitleuielement",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526745-accessibilitytitleuielement",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityTitleUIElement"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535554-accessibilitytoolbarbutton": {
-      "title": "accessibilityToolbarButton()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535554-accessibilitytoolbarbutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535554-accessibilitytoolbarbutton",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityToolbarButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534349-accessibilitytopleveluielement": {
-      "title": "accessibilityTopLevelUIElement()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534349-accessibilitytopleveluielement",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534349-accessibilitytopleveluielement",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityTopLevelUIElement"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525917-accessibilityurl": {
-      "title": "accessibilityURL()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525917-accessibilityurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1525917-accessibilityurl",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityURL"
-        },
-        {
-          "kind": "text",
-          "text": "() -> URL?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524278-accessibilityunitdescription": {
-      "title": "accessibilityUnitDescription()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524278-accessibilityunitdescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524278-accessibilityunitdescription",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityUnitDescription"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524396-accessibilityunits": {
-      "title": "accessibilityUnits()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524396-accessibilityunits",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524396-accessibilityunits",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityUnits"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSAccessibilityUnits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526882-accessibilityvalue": {
-      "title": "accessibilityValue()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526882-accessibilityvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526882-accessibilityvalue",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityValue"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530368-accessibilityvaluedescription": {
-      "title": "accessibilityValueDescription()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530368-accessibilityvaluedescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1530368-accessibilityvaluedescription",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityValueDescription"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526332-accessibilityverticalscrollbar": {
-      "title": "accessibilityVerticalScrollBar()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526332-accessibilityverticalscrollbar",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526332-accessibilityverticalscrollbar",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityVerticalScrollBar"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534533-accessibilityverticalunitdescrip": {
-      "title": "accessibilityVerticalUnitDescription()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534533-accessibilityverticalunitdescrip",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534533-accessibilityverticalunitdescrip",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityVerticalUnitDescription"
-        },
-        {
-          "kind": "text",
-          "text": "() -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532688-accessibilityverticalunits": {
-      "title": "accessibilityVerticalUnits()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532688-accessibilityverticalunits",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532688-accessibilityverticalunits",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityVerticalUnits"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSAccessibilityUnits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532361-accessibilityvisiblecells": {
-      "title": "accessibilityVisibleCells()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532361-accessibilityvisiblecells",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532361-accessibilityvisiblecells",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityVisibleCells"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526840-accessibilityvisiblecharacterran": {
-      "title": "accessibilityVisibleCharacterRange()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526840-accessibilityvisiblecharacterran",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526840-accessibilityvisiblecharacterran",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityVisibleCharacterRange"
-        },
-        {
-          "kind": "text",
-          "text": "() -> NSRange"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532655-accessibilityvisiblechildren": {
-      "title": "accessibilityVisibleChildren()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532655-accessibilityvisiblechildren",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532655-accessibilityvisiblechildren",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityVisibleChildren"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525283-accessibilityvisiblecolumns": {
-      "title": "accessibilityVisibleColumns()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525283-accessibilityvisiblecolumns",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1525283-accessibilityvisiblecolumns",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityVisibleColumns"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530946-accessibilityvisiblerows": {
-      "title": "accessibilityVisibleRows()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530946-accessibilityvisiblerows",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1530946-accessibilityvisiblerows",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityVisibleRows"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529734-accessibilitywarningvalue": {
-      "title": "accessibilityWarningValue()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529734-accessibilitywarningvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1529734-accessibilitywarningvalue",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityWarningValue"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531544-accessibilitywindow": {
-      "title": "accessibilityWindow()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531544-accessibilitywindow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531544-accessibilitywindow",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityWindow"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524628-accessibilitywindows": {
-      "title": "accessibilityWindows()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524628-accessibilitywindows",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524628-accessibilitywindows",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityWindows"
-        },
-        {
-          "kind": "text",
-          "text": "() -> [Any]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524715-accessibilityzoombutton": {
-      "title": "accessibilityZoomButton()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524715-accessibilityzoombutton",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524715-accessibilityzoombutton",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityZoomButton"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534033-isaccessibilityalternateuivisibl": {
-      "title": "isAccessibilityAlternateUIVisible()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534033-isaccessibilityalternateuivisibl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1534033-isaccessibilityalternateuivisibl",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityAlternateUIVisible"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532955-isaccessibilitydisclosed": {
-      "title": "isAccessibilityDisclosed()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532955-isaccessibilitydisclosed",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532955-isaccessibilitydisclosed",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityDisclosed"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528590-isaccessibilityedited": {
-      "title": "isAccessibilityEdited()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528590-isaccessibilityedited",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1528590-isaccessibilityedited",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityEdited"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530008-isaccessibilityelement": {
-      "title": "isAccessibilityElement()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530008-isaccessibilityelement",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1530008-isaccessibilityelement",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityElement"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532291-isaccessibilityenabled": {
-      "title": "isAccessibilityEnabled()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532291-isaccessibilityenabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1532291-isaccessibilityenabled",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityEnabled"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530685-isaccessibilityexpanded": {
-      "title": "isAccessibilityExpanded()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530685-isaccessibilityexpanded",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1530685-isaccessibilityexpanded",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityExpanded"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531249-isaccessibilityfocused": {
-      "title": "isAccessibilityFocused()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531249-isaccessibilityfocused",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531249-isaccessibilityfocused",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityFocused"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533936-isaccessibilityfrontmost": {
-      "title": "isAccessibilityFrontmost()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533936-isaccessibilityfrontmost",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1533936-isaccessibilityfrontmost",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityFrontmost"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524622-isaccessibilityhidden": {
-      "title": "isAccessibilityHidden()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524622-isaccessibilityhidden",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1524622-isaccessibilityhidden",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityHidden"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535661-isaccessibilitymain": {
-      "title": "isAccessibilityMain()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535661-isaccessibilitymain",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1535661-isaccessibilitymain",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityMain"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528692-isaccessibilityminimized": {
-      "title": "isAccessibilityMinimized()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528692-isaccessibilityminimized",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1528692-isaccessibilityminimized",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityMinimized"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526063-isaccessibilitymodal": {
-      "title": "isAccessibilityModal()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526063-isaccessibilitymodal",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1526063-isaccessibilitymodal",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityModal"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531983-isaccessibilityorderedbyrow": {
-      "title": "isAccessibilityOrderedByRow()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531983-isaccessibilityorderedbyrow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1531983-isaccessibilityorderedbyrow",
-      "required": true,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isAccessibilityOrderedByRow"
-        },
-        {
-          "kind": "text",
-          "text": "() -> Bool"
+          "text": "(NSAccessibilityOrientation)"
         }
       ]
     },
@@ -2873,6 +483,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilityprotocol/1534163-isaccessibilityprotectedcontent",
       "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that determines whether the accessibility element contains protected content."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -2888,14 +504,20 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1644707-isaccessibilityrequired": {
-      "title": "isAccessibilityRequired()",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525534-setaccessibilityprotectedcontent": {
+      "title": "setAccessibilityProtectedContent(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1644707-isaccessibilityrequired",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525534-setaccessibilityprotectedcontent",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/1644707-isaccessibilityrequired",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1525534-setaccessibilityprotectedcontent",
       "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets a Boolean value that determines whether the accessibility element contains protected content."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -2903,11 +525,11 @@
         },
         {
           "kind": "identifier",
-          "text": "isAccessibilityRequired"
+          "text": "setAccessibilityProtectedContent"
         },
         {
           "kind": "text",
-          "text": "() -> Bool"
+          "text": "(Bool)"
         }
       ]
     },
@@ -2919,6 +541,12 @@
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibilityprotocol/1533274-isaccessibilityselected",
       "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that determines whether the accessibility element is currently in a selected state."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -2934,6 +562,233 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534736-setaccessibilityselected": {
+      "title": "setAccessibilitySelected(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534736-setaccessibilityselected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1534736-setaccessibilityselected",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets a Boolean value that determines whether the accessibility element is currently in a selected state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilitySelected"
+        },
+        {
+          "kind": "text",
+          "text": "(Bool)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525917-accessibilityurl": {
+      "title": "accessibilityURL()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525917-accessibilityurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1525917-accessibilityurl",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the URL for the accessibility element."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityURL"
+        },
+        {
+          "kind": "text",
+          "text": "() -> URL?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534123-setaccessibilityurl": {
+      "title": "setAccessibilityURL(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534123-setaccessibilityurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1534123-setaccessibilityurl",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the URL for the accessibility element."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityURL"
+        },
+        {
+          "kind": "text",
+          "text": "(URL?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530368-accessibilityvaluedescription": {
+      "title": "accessibilityValueDescription()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530368-accessibilityvaluedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1530368-accessibilityvaluedescription",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the human-readable description of the accessibility element’s value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityValueDescription"
+        },
+        {
+          "kind": "text",
+          "text": "() -> String?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530944-setaccessibilityvaluedescription": {
+      "title": "setAccessibilityValueDescription(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530944-setaccessibilityvaluedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1530944-setaccessibilityvaluedescription",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the human-readable description of the accessibility element’s value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityValueDescription"
+        },
+        {
+          "kind": "text",
+          "text": "(String?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529734-accessibilitywarningvalue": {
+      "title": "accessibilityWarningValue()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529734-accessibilitywarningvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1529734-accessibilitywarningvalue",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the warning value for the level indicator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityWarningValue"
+        },
+        {
+          "kind": "text",
+          "text": "() -> Any?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528766-setaccessibilitywarningvalue": {
+      "title": "setAccessibilityWarningValue(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528766-setaccessibilitywarningvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1528766-setaccessibilitywarningvalue",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the warning value for the level indicator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityWarningValue"
+        },
+        {
+          "kind": "text",
+          "text": "(Any?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientation": {
+      "title": "NSAccessibilityOrientation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityorientation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the orientation of accessibility elements, such as scroll bars and split views."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibilityOrientation"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -2945,129 +800,30 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532336-accessibilityactivationpoint",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530549-accessibilityallowedvalues",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529653-accessibilityapplicationfocusedu",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532886-accessibilitycancelbutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524304-accessibilitychildren",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/2870186-accessibilitychildreninnavigatio",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527246-accessibilityclearbutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528685-accessibilityclosebutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533326-accessibilitycolumncount",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531618-accessibilitycolumnheaderuieleme",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524733-accessibilitycolumnindexrange",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530925-accessibilitycolumntitles",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535707-accessibilitycolumns",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534322-accessibilitycontents",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/2870188-accessibilitycustomactions",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/2876352-accessibilitycustomrotors",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535436-accessibilitydecrementbutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535455-accessibilitydefaultbutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524286-accessibilitydisclosedbyrow",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535320-accessibilitydisclosedrows",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534402-accessibilitydisclosurelevel",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526890-accessibilitydocument",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527011-accessibilityextrasmenubar",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531920-accessibilityfilename",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524252-accessibilityfocusedwindow",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534958-accessibilityframe",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531211-accessibilityfullscreenbutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534416-accessibilitygrowarea",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532814-accessibilityhandles",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527611-accessibilityheader",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531186-accessibilityhelp",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529852-accessibilityhorizontalscrollbar",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532237-accessibilityhorizontalunitdescr",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527182-accessibilityhorizontalunits",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524675-setaccessibilitycontents",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524649-setaccessibilitycriticalvalue",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527792-accessibilityidentifier",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529498-accessibilityincrementbutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527093-accessibilityindex",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526307-accessibilityinsertionpointlinen",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531952-accessibilitylabel",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533821-accessibilitylabeluielements",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530742-accessibilitylabelvalue",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526168-accessibilitylinkeduielements",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534068-accessibilitymainwindow",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526679-accessibilitymarkergroupuielemen",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531557-accessibilitymarkertypedescripti",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526825-accessibilitymarkeruielements",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534808-accessibilitymarkervalues",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524536-setaccessibilityidentifier",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527350-accessibilitymaxvalue",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526070-accessibilitymenubar",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527787-setaccessibilitymaxvalue",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533571-accessibilityminvalue",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534104-accessibilityminimizebutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533492-accessibilitynextcontents",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524684-accessibilitynumberofcharacters",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525451-setaccessibilityminvalue",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528909-accessibilityorientation",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524427-accessibilityoverflowbutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527401-accessibilityparent",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529323-accessibilityplaceholdervalue",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526039-accessibilitypreviouscontents",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534437-accessibilityproxy",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534217-accessibilityrole",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533769-accessibilityroledescription",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530170-accessibilityrowcount",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527418-accessibilityrowheaderuielements",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524347-accessibilityrowindexrange",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526702-accessibilityrows",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532515-accessibilityrulermarkertype",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535051-accessibilitysearchbutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535216-accessibilitysearchmenu",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527860-accessibilityselectedcells",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524672-accessibilityselectedchildren",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531750-accessibilityselectedcolumns",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535501-accessibilityselectedrows",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534449-accessibilityselectedtext",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535616-accessibilityselectedtextrange",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526269-accessibilityselectedtextranges",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530309-accessibilityservesastitleforuie",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528598-accessibilitysharedcharacterrang",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535430-accessibilitysharedfocuselements",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526820-accessibilitysharedtextuielement",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531959-accessibilityshownmenu",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535606-accessibilitysortdirection",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525492-accessibilitysplitters",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524569-accessibilitysubrole",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532971-accessibilitytabs",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533333-accessibilitytitle",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526745-accessibilitytitleuielement",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535554-accessibilitytoolbarbutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534349-accessibilitytopleveluielement",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525917-accessibilityurl",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524278-accessibilityunitdescription",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524396-accessibilityunits",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526882-accessibilityvalue",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530368-accessibilityvaluedescription",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526332-accessibilityverticalscrollbar",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534533-accessibilityverticalunitdescrip",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532688-accessibilityverticalunits",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532361-accessibilityvisiblecells",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526840-accessibilityvisiblecharacterran",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532655-accessibilityvisiblechildren",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525283-accessibilityvisiblecolumns",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530946-accessibilityvisiblerows",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529734-accessibilitywarningvalue",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531544-accessibilitywindow",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524628-accessibilitywindows",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524715-accessibilityzoombutton",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534033-isaccessibilityalternateuivisibl",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532955-isaccessibilitydisclosed",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528590-isaccessibilityedited",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530008-isaccessibilityelement",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532291-isaccessibilityenabled",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530685-isaccessibilityexpanded",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531249-isaccessibilityfocused",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533936-isaccessibilityfrontmost",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524622-isaccessibilityhidden",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535661-isaccessibilitymain",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528692-isaccessibilityminimized",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526063-isaccessibilitymodal",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531983-isaccessibilityorderedbyrow",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530228-setaccessibilityorientation",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534163-isaccessibilityprotectedcontent",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1644707-isaccessibilityrequired",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533274-isaccessibilityselected"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525534-setaccessibilityprotectedcontent",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1533274-isaccessibilityselected",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534736-setaccessibilityselected",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1525917-accessibilityurl",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534123-setaccessibilityurl",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530368-accessibilityvaluedescription",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1530944-setaccessibilityvaluedescription",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529734-accessibilitywarningvalue",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1528766-setaccessibilitywarningvalue",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityorientation"
       ],
-      "title": "Getter Methods",
+      "title": "Setting Content and Values",
       "generated": true
     }
   ],
@@ -3113,7 +869,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

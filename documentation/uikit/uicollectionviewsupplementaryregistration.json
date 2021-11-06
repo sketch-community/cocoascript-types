@@ -36,25 +36,30 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UICollectionViewSupplementaryRegistration",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -103,13 +108,13 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration#3624423": {
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration#3856040": {
       "title": "Listing 1",
       "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration#3624423",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration#3856040",
       "kind": "article",
       "role": "codeListing",
-      "url": "/documentation/uikit/uicollectionviewsupplementaryregistration#3624423"
+      "url": "/documentation/uikit/uicollectionviewsupplementaryregistration#3856040"
     },
     "doc://com.apple.documentation/documentation/uikit/uicollectionview/3600424-dequeueconfiguredreusablesupplem": {
       "title": "dequeueConfiguredReusableSupplementaryViewWithRegistration:forIndexPath:",
@@ -143,13 +148,13 @@
       "role": "symbol",
       "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3255142-supplementaryviewprovider"
     },
-    "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration#3624424": {
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration#3856039": {
       "title": "Listing 2",
       "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration#3624424",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration#3856039",
       "kind": "article",
       "role": "codeListing",
-      "url": "/documentation/uikit/uicollectionviewsupplementaryregistration#3624424"
+      "url": "/documentation/uikit/uicollectionviewsupplementaryregistration#3856039"
     },
     "doc://com.apple.documentation/documentation/uikit/uicollectionview/1618103-registerclass": {
       "title": "registerClass:forSupplementaryViewOfKind:withReuseIdentifier:",
@@ -198,6 +203,14 @@
           "text": "registerNib:forSupplementaryViewOfKind:withReuseIdentifier:"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasourcesupplementaryviewprovider": {
+      "title": "UICollectionViewDiffableDataSourceSupplementaryViewProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasourcesupplementaryviewprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasourcesupplementaryviewprovider"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -371,16 +384,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -399,7 +402,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration/3600452-registrationwithsupplementarycla",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration/3600453-registrationwithsupplementarynib",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistrationconfigurationhandler"
-      ]
+      ],
+      "anchor": "3624421"
     },
     {
       "kind": "taskGroup",
@@ -409,7 +413,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration/3600451-elementkind",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration/3600454-supplementaryclass",
         "doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration/3600455-supplementarynib"
-      ]
+      ],
+      "anchor": "3624420"
     }
   ],
   "seeAlsoSections": [
@@ -458,6 +463,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -494,16 +500,14 @@
         {
           "type": "codeListing",
           "code": [
-            "let headerRegistration = UICollectionView.SupplementaryRegistration",
-            "    <HeaderView>(elementKind: \"Header\") {",
-            "    supplementaryView, string, indexPath in",
-            "    supplementaryView.label.text = \"\\(string) for section \\(indexPath.section)\"",
-            "    supplementaryView.backgroundColor = .lightGray",
-            "}"
+            "UICollectionViewSupplementaryRegistration *headerRegistration = [UICollectionViewSupplementaryRegistration registrationWithSupplementaryClass:[HeaderView class] elementKind:@\"Header\" configurationHandler:^(HeaderView *supplementaryView, NSString *elementKind, NSIndexPath *indexPath) {",
+            "    supplementaryView.label.text = [NSString stringWithFormat:@\"%@ for section %ld\", elementKind, (long)indexPath.section];",
+            "    supplementaryView.backgroundColor = UIColor.lightGrayColor;",
+            "}];"
           ],
-          "syntax": "swift",
+          "syntax": "occ",
           "metadata": {
-            "anchor": "3624423",
+            "anchor": "3856040",
             "title": "Listing 1"
           }
         },
@@ -537,13 +541,13 @@
         {
           "type": "codeListing",
           "code": [
-            "dataSource.supplementaryViewProvider = { supplementaryView, elementKind, indexPath in",
-            "    return collectionView.dequeueConfiguredReusableSupplementary(using: headerRegistration,",
-            "                                                                 for: indexPath)"
+            "self.dataSource.supplementaryViewProvider = ^UICollectionReusableView *(UICollectionView *collectionView, NSString *elementKind, NSIndexPath *indexPath) {",
+            "    return [collectionView dequeueConfiguredReusableSupplementaryViewWithRegistration:headerRegistration forIndexPath:indexPath];",
+            "};"
           ],
-          "syntax": "swift",
+          "syntax": "occ",
           "metadata": {
-            "anchor": "3624424",
+            "anchor": "3856039",
             "title": "Listing 2"
           }
         },
@@ -570,7 +574,7 @@
             },
             {
               "type": "text",
-              "text": ". The registration occurs automatically when you pass the supplementary registration to "
+              "text": ". The registration occurs automatically when you pass the supplementary view registration to "
             },
             {
               "type": "reference",
@@ -584,6 +588,34 @@
           ]
         },
         {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Do not create your supplementary view registration inside a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasourcesupplementaryviewprovider"
+                },
+                {
+                  "type": "text",
+                  "text": " closure; doing so prevents reuse, and generates an exception in iOS 15 and higher. "
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
           "type": "paragraph",
           "inlineContent": []
         }
@@ -591,7 +623,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

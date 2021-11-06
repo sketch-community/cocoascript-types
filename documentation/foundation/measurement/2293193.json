@@ -2,15 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Compare two measurements of the same "
-    },
-    {
-      "type": "codeVoice",
-      "code": "Dimension"
-    },
-    {
-      "type": "text",
-      "text": "."
+      "text": "Returns a Boolean value that indicates whether two values are equal."
     }
   ],
   "documentVersion": 0,
@@ -43,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation11MeasurementV2eeoiySbACyqd__G_ACyqd_0_GtSo6NSUnitCRbd__AHRbd_0_r0_lFZ",
+    "parent": {
+      "title": "Measurement"
+    },
     "symbolKind": "opfunc",
     "fragments": [
       {
@@ -89,8 +89,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -163,6 +163,34 @@
       "role": "symbol",
       "url": "/documentation/swift/equatable/1539854"
     },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2293193": {
+      "title": "==(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293193",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2293193",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether two values are equal."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "== "
+        },
+        {
+          "kind": "text",
+          "text": "<LeftHandSideType, RightHandSideType>(Measurement<LeftHandSideType>, Measurement<RightHandSideType>) -> Bool"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/measurement/2883233": {
       "title": "!=(_:_:)",
       "type": "topic",
@@ -173,7 +201,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether two values are not equal."
+          "text": "Returns a Boolean value that indicates whether two values are unequal."
         }
       ],
       "fragments": [
@@ -191,17 +219,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2293057": {
-      "title": "*(_:_:)",
+    "doc://com.apple.documentation/documentation/foundation/measurement/2883205": {
+      "title": ">(_:_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293057",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2883205",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/measurement/2293057",
+      "url": "/documentation/foundation/measurement/2883205",
       "abstract": [
         {
           "type": "text",
-          "text": "Multiply a scalar value by a measurement."
+          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument."
         }
       ],
       "fragments": [
@@ -211,25 +239,25 @@
         },
         {
           "kind": "identifier",
-          "text": "* "
+          "text": "> "
         },
         {
           "kind": "text",
-          "text": "(Double, Measurement<UnitType>) -> Measurement<UnitType>"
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2293711": {
-      "title": "*(_:_:)",
+    "doc://com.apple.documentation/documentation/foundation/measurement/2882942": {
+      "title": ">=(_:_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293711",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2882942",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/measurement/2293711",
+      "url": "/documentation/foundation/measurement/2882942",
       "abstract": [
         {
           "type": "text",
-          "text": "Multiply a measurement by a scalar value."
+          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument."
         }
       ],
       "fragments": [
@@ -239,95 +267,11 @@
         },
         {
           "kind": "identifier",
-          "text": "* "
+          "text": ">= "
         },
         {
           "kind": "text",
-          "text": "(Measurement<UnitType>, Double) -> Measurement<UnitType>"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2895366": {
-      "title": "..<(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2895366",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2895366",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a partial range up to, but not including, its upper bound."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "..< "
-        },
-        {
-          "kind": "text",
-          "text": "(Measurement<UnitType>) -> PartialRangeUpTo<Measurement<UnitType>>"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2293011": {
-      "title": "/(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293011",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2293011",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Divide a scalar value by a measurement."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "/ "
-        },
-        {
-          "kind": "text",
-          "text": "(Double, Measurement<UnitType>) -> Measurement<UnitType>"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2293481": {
-      "title": "/(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293481",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2293481",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Divide a measurement by a scalar value."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "/ "
-        },
-        {
-          "kind": "text",
-          "text": "(Measurement<UnitType>, Double) -> Measurement<UnitType>"
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
         }
       ]
     },
@@ -395,98 +339,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2293193": {
-      "title": "==(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293193",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2293193",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Compare two measurements of the same "
-        },
-        {
-          "type": "codeVoice",
-          "code": "Dimension"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "== "
-        },
-        {
-          "kind": "text",
-          "text": "<LeftHandSideType, RightHandSideType>(Measurement<LeftHandSideType>, Measurement<RightHandSideType>) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2883205": {
-      "title": ">(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2883205",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2883205",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "> "
-        },
-        {
-          "kind": "text",
-          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2882942": {
-      "title": ">=(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2882942",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2882942",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": ">= "
-        },
-        {
-          "kind": "text",
-          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -509,17 +361,12 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/measurement/2883233",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2293057",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2293711",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2895366",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2293011",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2293481",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2293618",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2882914",
         "doc://com.apple.documentation/documentation/foundation/measurement/2883205",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2882942"
+        "doc://com.apple.documentation/documentation/foundation/measurement/2882942",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2293618",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2882914"
       ],
-      "title": "Operating on a Measurement",
+      "title": "Comparing Measurements",
       "generated": true
     }
   ],
@@ -590,7 +437,16 @@
             },
             {
               "kind": "text",
-              "text": "<LeftHandSideType>"
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation11MeasurementV2eeoiySbACyqd__G_ACyqd_0_GtSo6NSUnitCRbd__AHRbd_0_r0_lFZ16LeftHandSideTypeL_qd__mfp",
+              "text": "LeftHandSideType"
+            },
+            {
+              "kind": "text",
+              "text": ">"
             },
             {
               "kind": "text",
@@ -612,7 +468,16 @@
             },
             {
               "kind": "text",
-              "text": "<RightHandSideType>"
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation11MeasurementV2eeoiySbACyqd__G_ACyqd_0_GtSo6NSUnitCRbd__AHRbd_0_r0_lFZ17RightHandSideTypeL_qd_0_mfp",
+              "text": "RightHandSideType"
+            },
+            {
+              "kind": "text",
+              "text": ">"
             },
             {
               "kind": "text",
@@ -637,8 +502,13 @@
               "text": " "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation11MeasurementV2eeoiySbACyqd__G_ACyqd_0_GtSo6NSUnitCRbd__AHRbd_0_r0_lFZ16LeftHandSideTypeL_qd__mfp",
+              "text": "LeftHandSideType"
+            },
+            {
               "kind": "text",
-              "text": "LeftHandSideType : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -651,8 +521,13 @@
               "text": ", "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation11MeasurementV2eeoiySbACyqd__G_ACyqd_0_GtSo6NSUnitCRbd__AHRbd_0_r0_lFZ17RightHandSideTypeL_qd_0_mfp",
+              "text": "RightHandSideType"
+            },
+            {
               "kind": "text",
-              "text": "RightHandSideType : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -663,10 +538,47 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "lhs",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A value to compare."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rhs",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Another value to compare."
+                }
+              ]
+            }
           ]
         }
       ]
@@ -749,7 +661,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The name of the managed object model configuration used to create the persistent store."
+      "text": "The name of the managed object model configuration that creates the persistent store."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentStore(py)configurationName",
+    "parent": {
+      "title": "NSPersistentStore"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -128,34 +136,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506250-type": {
-      "title": "type",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506250-type",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstore/1506250-type",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The type string of the persistent store."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506226-persistentstorecoordinator": {
-      "title": "persistentStoreCoordinator",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506226-persistentstorecoordinator",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstore/1506226-persistentstorecoordinator",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The persistent store coordinator that loaded the persistent store."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506620-configurationname": {
       "title": "configurationName",
       "type": "topic",
@@ -166,7 +146,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the managed object model configuration used to create the persistent store."
+          "text": "The name of the managed object model configuration that creates the persistent store."
         }
       ]
     },
@@ -180,49 +160,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The options the store was initialized with."
+          "text": "The options that Core Data uses to create the store."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506700-url": {
-      "title": "URL",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506226-persistentstorecoordinator": {
+      "title": "persistentStoreCoordinator",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506700-url",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506226-persistentstorecoordinator",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstore/1506700-url",
+      "url": "/documentation/coredata/nspersistentstore/1506226-persistentstorecoordinator",
       "abstract": [
         {
           "type": "text",
-          "text": "The URL for the persistent store."
+          "text": "The persistent store coordinator that loads the persistent store."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506215-identifier": {
-      "title": "identifier",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506250-type": {
+      "title": "type",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506215-identifier",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506250-type",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstore/1506215-identifier",
+      "url": "/documentation/coredata/nspersistentstore/1506250-type",
       "abstract": [
         {
           "type": "text",
-          "text": "The unique identifier for the persistent store."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506183-readonly": {
-      "title": "readOnly",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506183-readonly",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstore/1506183-readonly",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the persistent store is read-only."
+          "text": "The type string of the persistent store."
         }
       ]
     },
@@ -251,15 +217,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506250-type",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506226-persistentstorecoordinator",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506821-options",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506700-url",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506215-identifier",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506183-readonly",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506226-persistentstorecoordinator",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506250-type",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstore/persistent_store_types"
       ],
-      "title": "Working with State Information",
+      "title": "Getting Store Configuration",
       "generated": true
     }
   ],
@@ -301,6 +264,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -311,7 +275,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

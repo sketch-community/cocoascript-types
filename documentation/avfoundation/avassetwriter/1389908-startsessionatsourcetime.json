@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initiates a sample-writing session for the output asset."
+      "text": "Starts an asset-writing session."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter(im)startSessionAtSourceTime:",
+    "parent": {
+      "title": "AVAssetWriter"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,31 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
+          "text": "An object that writes media data to a container file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting": {
+      "title": "startWriting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1386724-startwriting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the writer to start writing its output."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startWriting"
         }
       ]
     },
@@ -134,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Concludes a sample-writing session."
+          "text": "Finishes an asset-writing session."
         }
       ],
       "fragments": [
@@ -148,13 +180,29 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coremedia/cmtime": {
-      "title": "CMTime",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl": {
+      "title": "finishWritingWithCompletionHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmtime",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coremedia/cmtime"
+      "url": "/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Marks all unfinished inputs as finished and completes the writing of the output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "finishWritingWithCompletionHandler:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime": {
       "title": "startSessionAtSourceTime:",
@@ -166,7 +214,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initiates a sample-writing session for the output asset."
+          "text": "Starts an asset-writing session."
         }
       ],
       "fragments": [
@@ -180,6 +228,63 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/coremedia/cmtime": {
+      "title": "CMTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmtime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coremedia/cmtime"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387234-cancelwriting": {
+      "title": "cancelWriting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387234-cancelwriting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387234-cancelwriting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels the creation of the output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelWriting"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting": {
+      "title": "finishWriting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1426644-finishwriting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Completes the writing of the output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "finishWriting"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -191,9 +296,13 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387234-cancelwriting",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting"
       ],
-      "title": "Managing Session Time",
+      "title": "Managing Writing Sessions",
       "generated": true
     }
   ],
@@ -247,6 +356,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -290,16 +400,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Sequences of sample data appended to the asset writer inputs are considered to fall within “sample-writing sessions.” "
+              "text": "You must call this method after you call "
             },
             {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "You must call this method to begin one of these sessions."
-                }
-              ]
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting"
+            },
+            {
+              "type": "text",
+              "text": ", but before you append sample data to asset writer inputs."
             }
           ]
         },
@@ -308,46 +418,40 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Each writing session has a start time which, where allowed by the file format being written, defines the mapping from the timeline of source samples onto the file's timeline. In the case of the QuickTime movie file format, the first session begins at movie time 0, so a sample appended with timestamp T will be played at movie time (T-"
+              "text": "Each writing session has a start time that, where allowed by the file format you’re writing, defines the mapping from the timeline of source samples to the timeline of the written file. In the case of the QuickTime movie file format, the first session begins at movie time "
             },
             {
               "type": "codeVoice",
-              "code": "startTime"
+              "code": "0"
             },
             {
               "type": "text",
-              "text": "). Samples with timestamps before "
+              "text": ", so a sample you append with timestamp "
             },
             {
               "type": "codeVoice",
-              "code": "startTime"
+              "code": "T"
             },
             {
               "type": "text",
-              "text": " will still be added to the output media but will be edited out of the movie. If the earliest buffer for an input is later than "
+              "text": " plays at movie time ("
             },
             {
               "type": "codeVoice",
-              "code": "startTime"
+              "code": "T-startTime"
             },
             {
               "type": "text",
-              "text": ", an empty edit will be inserted to preserve synchronization between tracks of the output asset."
+              "text": "). The writer adds samples with timestamps earlier than the start time to the output file, but they don’t display during playback. If the earliest sample for an input has a timestamp later than the start time, the system inserts an empty edit to preserve synchronization between tracks of the output asset."
             }
           ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Special Considerations",
-          "anchor": "1677852"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "It is an error to invoke this method twice in a row without invoking "
+              "text": "To end a session, call "
             },
             {
               "type": "reference",
@@ -356,15 +460,54 @@
             },
             {
               "type": "text",
-              "text": ": in between."
+              "text": "or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl"
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An asset writer doesn’t support multiple sample-writing sessions. It’s an error to call "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime"
+                },
+                {
+                  "type": "text",
+                  "text": " a second time after calling "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INSearchForMediaIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,20 +116,6 @@
         {
           "type": "text",
           "text": "Search media intent attributes"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insearchformediaintent#3193540": {
-      "title": "Table 2",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchformediaintent#3193540",
-      "kind": "article",
-      "role": "table",
-      "url": "/documentation/sirikit/insearchformediaintent#3193540",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Siri phrases that trigger searching for media"
         }
       ]
     },
@@ -238,16 +229,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -264,7 +245,8 @@
       "title": "Initializing the Intent Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchformediaintent/3180152-initwithmediaitems"
-      ]
+      ],
+      "anchor": "3075865"
     },
     {
       "kind": "taskGroup",
@@ -272,7 +254,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchformediaintent/3180153-mediaitems",
         "doc://com.apple.documentation/documentation/sirikit/insearchformediaintent/3074295-mediasearch"
-      ]
+      ],
+      "anchor": "3075866"
     }
   ],
   "seeAlsoSections": [
@@ -319,6 +302,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -340,7 +324,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Siri creates an "
+              "text": "The system creates an "
             },
             {
               "type": "reference",
@@ -349,7 +333,7 @@
             },
             {
               "type": "text",
-              "text": " object when the user asks to search for a media item. The intent object contains the media for which to search."
+              "text": " object when the user asks Siri to search for a media item, or searches for a musician or band in Spotlight. "
             }
           ]
         },
@@ -358,7 +342,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "To handle this intent, the handler object in your Intents extension must adopt the "
+              "text": "To handle this intent, provide a handler that conforms to the "
             },
             {
               "type": "reference",
@@ -491,890 +475,12 @@
         {
           "type": "paragraph",
           "inlineContent": []
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Example Phrases",
-          "anchor": "3193541"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Users can ask Siri to search for media in a variety of ways. "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchformediaintent#3193540"
-            },
-            {
-              "type": "text",
-              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases."
-            }
-          ]
-        },
-        {
-          "type": "table",
-          "header": "row",
-          "rows": [
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Locale"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 1"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 2"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "en"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Find Drake on <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Show me Billie Eilish on <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "在<appName>上查找Drake"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "在<appName>上查看Billie Eilish"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_HK"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺<appName>入邊搵Drake"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺<appName>入邊搵Billie Eilish"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_TW"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "在<appName>上面尋找Drake"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "我想在<appName>上面看Billie Eilish"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "yue_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺<appName>入边揾Drake"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺<appName>入边揾Billie Eilish"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ar"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "da"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Find Drake på <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Vis mig Billie Eilish på <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "de"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Suche Drake auf <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Zeige mir Billie Eilish auf <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "es"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Busca Drake en <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Muéstrame Shakira en <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fi"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Etsi Drake <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Näytä Billie Eilish <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Cherche Drake sur <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Affiche-moi Billie Eilish sur <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "he"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "it"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Cerca Drake su <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Mostrami Billie Eilish su <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ja"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "<appName>でDrakeの曲を探して"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "<appName>でビリー·アイリッシュを探して"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ko"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "<appName>에서 Drake 찾아줘"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "<appName>에서 Billie Eilish 보여줘"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ms"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Carikan Drake pada <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Tunjukkan saya Billie Elish di <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nb"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Finn Drake i <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Vis meg Billie Eilish i <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nl"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Vind Drake op <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Toon me Billie Eilish op <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "pt"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Encontre Drake no <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Me mostra Ivete Sangalo no <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ru"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Найти Дрейк в VK"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Найди мне Атрура Пирожкова в Яндекс Музыке"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "sv"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Hitta Madonna på <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Visa mig Billie Eilish på <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "th"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "หา Drake บน <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "แสดง Billie Eilish บน <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "tr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "<appName>'de Drake bul"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "<appName>'de Billie Eilish göster"
-                    }
-                  ]
-                }
-              ]
-            ]
-          ],
-          "metadata": {
-            "anchor": "3193540",
-            "title": "Table 2",
-            "abstract": [
-              {
-                "type": "text",
-                "text": "Siri phrases that trigger searching for media"
-              }
-            ]
-          }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "In "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchformediaintent#3193540"
-            },
-            {
-              "type": "text",
-              "text": ", <appName> represents the name of the app whose Intents extension handles the request."
-            }
-          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

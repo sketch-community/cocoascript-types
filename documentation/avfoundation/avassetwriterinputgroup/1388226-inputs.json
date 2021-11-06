@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An array of inputs from which the asset writer receives media data."
+      "text": "The inputs with tracks that are mutually exclusive to each other for playback or processing."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInputGroup(py)inputs",
+    "parent": {
+      "title": "AVAssetWriterInputGroup"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A group of tracks in a mutually exclusive relationship."
+          "text": "A group of inputs with tracks that are mutually exclusive to each other for playback or processing."
         }
       ]
     },
@@ -140,20 +148,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avassetwriterinput"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput": {
-      "title": "defaultInput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The default input of the receiver."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1388226-inputs": {
       "title": "inputs",
       "type": "topic",
@@ -164,7 +158,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of inputs from which the asset writer receives media data."
+          "text": "The inputs with tracks that are mutually exclusive to each other for playback or processing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput": {
+      "title": "defaultInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The default input for the group."
         }
       ]
     },
@@ -181,7 +189,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput"
       ],
-      "title": "Getting the Asset Writer Input Group Settings",
+      "title": "Accessing the Inputs",
       "generated": true
     }
   ],
@@ -233,6 +241,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -242,7 +251,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

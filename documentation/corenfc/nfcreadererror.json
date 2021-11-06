@@ -33,20 +33,25 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@NFCReaderError",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -285,6 +290,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong": {
+      "title": "NFCReaderTransceiveErrorPacketTooLong",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The packet length exceeds the limit supported by the tag."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfctagcommandconfigurationerrorinvalidparameters": {
       "title": "NFCTagCommandConfigurationErrorInvalidParameters",
       "type": "topic",
@@ -355,6 +374,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorradiodisabled": {
+      "title": "NFCReaderErrorRadioDisabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorradiodisabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadererrorradiodisabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The NFC wireless radio on the device is disabled."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorsecurityviolation": {
       "title": "NFCReaderErrorSecurityViolation",
       "type": "topic",
@@ -368,22 +401,6 @@
           "text": "A security violation associated with the reader session has occurred."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorradiodisabled": {
-      "title": "NFCReaderErrorRadioDisabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorradiodisabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corenfc/nfcreadererror/nfcreadererrorradiodisabled"
-    },
-    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong": {
-      "title": "NFCReaderTransceiveErrorPacketTooLong",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong"
     },
     "doc://com.apple.documentation/documentation/corenfc/nfcreadererror": {
       "title": "NFCReaderError",
@@ -445,7 +462,8 @@
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadersessioninvalidationerrorsessiontimeout",
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadersessioninvalidationerrorsystemisbusy",
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadersessioninvalidationerrorusercanceled"
-      ]
+      ],
+      "anchor": "3219788"
     },
     {
       "kind": "taskGroup",
@@ -455,7 +473,8 @@
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcndefreadersessionerrortagsizetoosmall",
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcndefreadersessionerrortagupdatefailure",
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcndefreadersessionerrorzerolengthmessage"
-      ]
+      ],
+      "anchor": "3219785"
     },
     {
       "kind": "taskGroup",
@@ -465,15 +484,18 @@
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagconnectionlost",
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagnotconnected",
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagresponseerror",
-        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorsessioninvalidated"
-      ]
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorsessioninvalidated",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong"
+      ],
+      "anchor": "3219787"
     },
     {
       "kind": "taskGroup",
-      "title": "Tag Command Configuration Errors",
+      "title": "Tag Command Configuration Error",
       "identifiers": [
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfctagcommandconfigurationerrorinvalidparameters"
-      ]
+      ],
+      "anchor": "3219786"
     },
     {
       "kind": "taskGroup",
@@ -483,16 +505,10 @@
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorinvalidparameter",
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorinvalidparameterlength",
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorparameteroutofbound",
-        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorsecurityviolation"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Enumeration Cases",
-      "identifiers": [
         "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorradiodisabled",
-        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong"
-      ]
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadererrorsecurityviolation"
+      ],
+      "anchor": "2874449"
     }
   ],
   "seeAlsoSections": [
@@ -567,6 +583,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -574,7 +591,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

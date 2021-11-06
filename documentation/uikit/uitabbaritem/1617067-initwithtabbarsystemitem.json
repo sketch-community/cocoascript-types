@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates and returns a new item containing the specified system item."
+      "text": "Creates a tab bar item using a system-provided configuration."
     }
   ],
   "documentVersion": 0,
@@ -41,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITabBarItem(im)initWithTabBarSystemItem:tag:",
+    "parent": {
+      "title": "UITabBarItem"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,7 +120,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
     },
@@ -124,6 +132,22 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/uikit/uibaritem/1616412-title": {
+      "title": "title",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibaritem/1616412-title",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibaritem/1616412-title"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibaritem/1616415-image": {
+      "title": "image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibaritem/1616415-image",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibaritem/1616415-image"
+    },
     "doc://com.apple.documentation/documentation/uikit/uitabbarsystemitem": {
       "title": "UITabBarSystemItem",
       "type": "topic",
@@ -134,21 +158,41 @@
       "abstract": [
         {
           "type": "text",
-          "text": "System items that can be used on a tab bar."
+          "text": "Constants that represent the system tab bar items."
         }
       ]
     },
-    "devLink-1748769": {
-      "identifier": "devLink-1748769",
-      "type": "link",
-      "title": "Tab Bars",
-      "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/UIKitUICatalog/UITabBar.html#//apple_ref/doc/uid/TP40012857-UITabBar"
+    "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
+      "title": "NSInteger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsinteger"
     },
-    "devLink-1746611": {
-      "identifier": "devLink-1746611",
-      "type": "link",
-      "title": "View Controller Catalog for iOS",
-      "url": "https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewControllerCatalog/Introduction.html#//apple_ref/doc/uid/TP40011313"
+    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem": {
+      "title": "initWithTabBarSystemItem:tag:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a tab bar item using a system-provided configuration."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithTabBarSystemItem:tag:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617056-initwithtitle": {
       "title": "initWithTitle:image:tag:",
@@ -160,7 +204,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns a new item using the specified properties."
+          "text": "Creates a tab bar item that displays a title and an image."
         }
       ],
       "fragments": [
@@ -184,7 +228,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns a new item with the specified title, unselected image, and selected image."
+          "text": "Creates a tab bar item that toggles the image it displays when its selected state changes."
         }
       ],
       "fragments": [
@@ -198,38 +242,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
-      "title": "NSInteger",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsinteger",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsinteger"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem": {
-      "title": "initWithTabBarSystemItem:tag:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates and returns a new item containing the specified system item."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithTabBarSystemItem:tag:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617055-init": {
       "title": "init",
       "type": "topic",
@@ -240,7 +252,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the tab bar item to its default state."
+          "text": "Creates a tab bar item with a default configuration."
         }
       ],
       "fragments": [
@@ -261,6 +273,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uitabbaritem/1617071-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a tab bar item from a serialized instance."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -289,16 +307,8 @@
         "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617071-initwithcoder",
         "doc://com.apple.documentation/documentation/uikit/uitabbarsystemitem"
       ],
-      "title": "Initializing an Item",
+      "title": "Creating a Tab Bar Item",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "devLink-1748769",
-        "devLink-1746611"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -377,6 +387,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -397,7 +408,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The system item to use as the first item on the tab bar. One of the constants defined in "
+                  "text": "The preferred system item. For possible values, see "
                 },
                 {
                   "type": "reference",
@@ -406,7 +417,7 @@
                 },
                 {
                   "type": "text",
-                  "text": "."
+                  "text": ". "
                 }
               ]
             }
@@ -420,37 +431,9 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The receiver’s tag, an integer that you can use to identify bar item objects in your application."
+                  "text": "An integer you use to identify the object."
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "A newly initialized item containing the specified system item. The item’s target is "
-            },
-            {
-              "type": "codeVoice",
-              "code": "nil"
-            },
-            {
-              "type": "text",
-              "text": "."
             }
           ]
         }
@@ -470,7 +453,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This method returns a system-supplied tab bar item. The title and image properties of the returned item cannot be changed later."
+              "text": "You can’t change the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uibaritem/1616412-title"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uibaritem/1616415-image"
+            },
+            {
+              "type": "text",
+              "text": " properties of an item this method creates."
             }
           ]
         }
@@ -478,7 +479,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

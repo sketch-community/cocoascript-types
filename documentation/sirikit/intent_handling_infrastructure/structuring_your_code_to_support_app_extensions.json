@@ -1,0 +1,255 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Move your back-end services to a private framework so your app and app extensions can use them."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/structuring_your_code_to_support_app_extensions",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864027,
+  "kind": "article",
+  "metadata": {
+    "title": "Structuring Your Code to Support App Extensions",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/intent_handling_infrastructure/structuring_your_code_to_support_app_extensions"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/intent_handling_infrastructure/structuring_your_code_to_support_app_extensions"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure": {
+      "title": "Intent Handling Infrastructure",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure",
+      "url": "/documentation/sirikit/intent_handling_infrastructure",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/creating_an_intents_app_extension": {
+      "title": "Creating an Intents App Extension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/creating_an_intents_app_extension",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/intent_handling_infrastructure/creating_an_intents_app_extension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add and configure an Intents app extension in your Xcode project."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/structuring_your_code_to_support_app_extensions": {
+      "title": "Structuring Your Code to Support App Extensions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/structuring_your_code_to_support_app_extensions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/intent_handling_infrastructure/structuring_your_code_to_support_app_extensions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Move your back-end services to a private framework so your app and app extensions can use them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inextension": {
+      "title": "INExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inextension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inextension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The entry point for an Intents extension. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding": {
+      "title": "INIntentHandlerProviding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintenthandlerproviding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for dispatching intents to the custom objects that handle those intents. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/creating_an_intents_app_extension",
+        "doc://com.apple.documentation/documentation/sirikit/inextension",
+        "doc://com.apple.documentation/documentation/sirikit/inintenthandlerproviding"
+      ],
+      "title": "Intents App Extension",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An app extension is an agent that acts on behalf of your app, vending services or providing information to the system when asked. Because they extend your app’s behavior, app extensions often need access to the same back-end services and data that your app uses. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Lightweight extensions that don’t include most of your app’s code can respond to a user’s request more quickly. Long-running tasks like playing music or tracking a workout need to happen in your app. If necessary, you can resolve the parameters of an intent in an extension, then instruct SiriKit to launch your app for the final handling step. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your app and app extension share services, consider structuring your code in the following way: "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Implement your core services in a private shared framework."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " A private shared framework lets you place the code for accessing your services in one code module and use that code from multiple targets. Shared frameworks minimize the size of both executables and make testing easier by ensuring that each executable uses the same code path. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Use a shared container to store common resources."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Put relevant images and data files into a shared container so your app and app extension can use them. You enable shared container support in the Capabilities tab of each target."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

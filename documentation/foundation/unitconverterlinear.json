@@ -34,27 +34,32 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSUnitConverterLinear",
@@ -71,8 +76,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -131,6 +136,14 @@
       "role": "symbol",
       "url": "/documentation/foundation/unittemperature"
     },
+    "doc://com.apple.documentation/documentation/foundation/unitconverter/1823668-baseunitvalue": {
+      "title": "baseUnitValue(fromValue:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/unitconverter/1823668-baseunitvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/unitconverter/1823668-baseunitvalue"
+    },
     "doc://com.apple.documentation/documentation/foundation/unittemperature/1690766-kelvin": {
       "title": "kelvin",
       "type": "topic",
@@ -138,6 +151,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/unittemperature/1690766-kelvin"
+    },
+    "doc://com.apple.documentation/documentation/foundation/unitconverter/1823657-value": {
+      "title": "value(fromBaseUnitValue:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/unitconverter/1823657-value",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/unitconverter/1823657-value"
     },
     "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823683-coefficient": {
       "title": "coefficient",
@@ -149,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The coefficient used in the linear unit conversion calculation."
+          "text": "The coefficient to use in the linear unit conversion calculation."
         }
       ],
       "fragments": [
@@ -177,7 +198,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The constant used in the linear unit conversion calculation."
+          "text": "The constant to use in the linear unit conversion calculation."
         }
       ],
       "fragments": [
@@ -259,30 +280,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nssecurecoding"
     },
-    "doc://com.apple.documentation/documentation/swift/cvararg": {
-      "title": "CVarArg",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/cvararg"
-    },
-    "doc://com.apple.documentation/documentation/swift/equatable": {
-      "title": "Equatable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/equatable"
-    },
-    "doc://com.apple.documentation/documentation/swift/hashable": {
-      "title": "Hashable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/hashable"
-    },
     "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823611-init": {
       "title": "init(coefficient:)",
       "type": "topic",
@@ -293,7 +290,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the unit converter with the specified coefficient."
+          "text": "Initializes the unit converter with the coefficient you specify."
         }
       ],
       "fragments": [
@@ -322,6 +319,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/unitconverterlinear/1823577-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a unit converter with the coefficient and constant you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -395,9 +398,6 @@
       "title": "Conforms To",
       "type": "conformsTo",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/swift/cvararg",
-        "doc://com.apple.documentation/documentation/swift/equatable",
-        "doc://com.apple.documentation/documentation/swift/hashable",
         "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
       ]
     }
@@ -409,21 +409,17 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823683-coefficient",
         "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823598-constant"
-      ]
+      ],
+      "anchor": "1868116"
     },
     {
       "kind": "taskGroup",
       "title": "Creating Unit Converters",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823611-init"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Initializers",
-      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823611-init",
         "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823577-init"
-      ]
+      ],
+      "anchor": "1868122"
     }
   ],
   "seeAlsoSections": [
@@ -469,6 +465,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -499,7 +496,7 @@
             },
             {
               "type": "text",
-              "text": ", such that:"
+              "text": ", such that the following is true:"
             }
           ]
         },
@@ -512,17 +509,12 @@
                   "type": "paragraph",
                   "inlineContent": [
                     {
-                      "type": "strong",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "y"
-                        }
-                      ]
+                      "type": "codeVoice",
+                      "code": "y"
                     },
                     {
                       "type": "text",
-                      "text": " is the value in terms of the base unit of the dimension"
+                      "text": " is the value in terms of the base unit of the dimension."
                     }
                   ]
                 }
@@ -534,17 +526,12 @@
                   "type": "paragraph",
                   "inlineContent": [
                     {
-                      "type": "strong",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "m"
-                        }
-                      ]
+                      "type": "codeVoice",
+                      "code": "m"
                     },
                     {
                       "type": "text",
-                      "text": " is the known coefficient used for this unit's conversion"
+                      "text": " is the known coefficient to use for this unit's conversion."
                     }
                   ]
                 }
@@ -556,17 +543,12 @@
                   "type": "paragraph",
                   "inlineContent": [
                     {
-                      "type": "strong",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "x"
-                        }
-                      ]
+                      "type": "codeVoice",
+                      "code": "x"
                     },
                     {
                       "type": "text",
-                      "text": " is the value in terms of the unit on which this method is called"
+                      "text": " is the value in terms of the unit on which you call this method."
                     }
                   ]
                 }
@@ -578,17 +560,12 @@
                   "type": "paragraph",
                   "inlineContent": [
                     {
-                      "type": "strong",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "b"
-                        }
-                      ]
+                      "type": "codeVoice",
+                      "code": "b"
                     },
                     {
                       "type": "text",
-                      "text": " is the known constant used for this unit's conversion"
+                      "text": " is the known constant to use for this unit's conversion."
                     }
                   ]
                 }
@@ -683,7 +660,7 @@
             },
             {
               "type": "text",
-              "text": " unit defined by "
+              "text": " unit that "
             },
             {
               "type": "reference",
@@ -692,11 +669,12 @@
             },
             {
               "type": "text",
-              "text": ": The "
+              "text": " defines. The "
             },
             {
-              "type": "codeVoice",
-              "code": "baseUnitValueFromValue:"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/unitconverter/1823668-baseunitvalue"
             },
             {
               "type": "text",
@@ -709,7 +687,7 @@
             },
             {
               "type": "text",
-              "text": " using the formula "
+              "text": ", using the formula "
             },
             {
               "type": "codeVoice",
@@ -717,11 +695,12 @@
             },
             {
               "type": "text",
-              "text": ", and the "
+              "text": ". The "
             },
             {
-              "type": "codeVoice",
-              "code": "valueFromBaseUnitValue:"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/unitconverter/1823657-value"
             },
             {
               "type": "text",
@@ -729,7 +708,7 @@
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/foundation/unittemperature/1690842-fahrenheit"
             },
             {
@@ -814,7 +793,7 @@
             },
             {
               "type": "text",
-              "text": " equal "
+              "text": " equal to "
             },
             {
               "type": "codeVoice",
@@ -831,7 +810,7 @@
             },
             {
               "type": "text",
-              "text": " unit defined by "
+              "text": " unit "
             },
             {
               "type": "reference",
@@ -840,11 +819,12 @@
             },
             {
               "type": "text",
-              "text": ": The "
+              "text": " defines. The "
             },
             {
-              "type": "codeVoice",
-              "code": "baseUnitValueFromValue:"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/unitconverter/1823668-baseunitvalue"
             },
             {
               "type": "text",
@@ -856,11 +836,12 @@
             },
             {
               "type": "text",
-              "text": ", and the "
+              "text": ". The "
             },
             {
-              "type": "codeVoice",
-              "code": "valueFromBaseUnitValue:"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/unitconverter/1823657-value"
             },
             {
               "type": "text",
@@ -907,7 +888,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

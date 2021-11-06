@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A key encoding strategy that doesn't change key names during encoding."
+      "text": "A key encoding strategy that doesn’t change key names during encoding."
     }
   ],
   "documentVersion": 0,
@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "9.3",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation11JSONEncoderC19KeyEncodingStrategyO14useDefaultKeysyA2EmF",
+    "parent": {
+      "title": "JSONEncoder.KeyEncodingStrategy"
+    },
     "symbolKind": "enumelt",
     "fragments": [
       {
@@ -78,8 +86,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The values that determine how a type's coding keys are encoded as JSON keys."
+          "text": "The values that determine how to encode a type's coding keys as JSON keys."
         }
       ]
     },
@@ -144,7 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key encoding strategy that doesn't change key names during encoding."
+          "text": "A key encoding strategy that doesn’t change key names during encoding."
         }
       ],
       "fragments": [
@@ -231,6 +239,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -262,7 +271,7 @@
             },
             {
               "type": "text",
-              "text": " strategy is the strategy used if you don't specify one."
+              "text": " strategy is the strategy used if you don’t specify one."
             }
           ]
         },
@@ -304,7 +313,8 @@
               ]
             }
           ],
-          "style": "note"
+          "style": "note",
+          "name": "Note"
         },
         {
           "type": "paragraph",
@@ -314,7 +324,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,30 +35,35 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@INMediaReference",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -127,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A reference status that indicates the status of the media item is unknown."
+          "text": "Indicates that the media item is unknown."
         }
       ]
     },
@@ -141,7 +146,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A reference status that indicates the user is referencing the currently playing media item."
+          "text": "Indicates that the user is referring to the media item which is currently playing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inmediareference/inmediareferencemy": {
+      "title": "INMediaReferenceMy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inmediareference/inmediareferencemy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inmediareference/inmediareferencemy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates that the specified content belongs to the user."
         }
       ]
     },
@@ -311,11 +330,13 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Constants",
+      "title": "Getting the Reference Status",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inmediareference/inmediareferenceunknown",
-        "doc://com.apple.documentation/documentation/sirikit/inmediareference/inmediareferencecurrentlyplaying"
-      ]
+        "doc://com.apple.documentation/documentation/sirikit/inmediareference/inmediareferencecurrentlyplaying",
+        "doc://com.apple.documentation/documentation/sirikit/inmediareference/inmediareferencemy"
+      ],
+      "anchor": "3075858"
     }
   ],
   "seeAlsoSections": [
@@ -398,6 +419,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -407,7 +429,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

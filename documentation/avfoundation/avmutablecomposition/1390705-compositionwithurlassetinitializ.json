@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a new, empty, mutable composition."
+      "text": "Returns a new mutable composition that uses the specified initialization options."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMutableComposition(cm)compositionWithURLAssetInitializationOptions:",
+    "parent": {
+      "title": "AVMutableComposition"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable object used to create a new composition from existing assets."
+          "text": "An object that you use to create a new composition from existing assets."
         }
       ]
     },
@@ -146,7 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new, empty, mutable composition."
+          "text": "Returns a new mutable composition that uses the specified initialization options."
         }
       ],
       "fragments": [
@@ -170,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new, empty, mutable composition."
+          "text": "Returns a new mutable compostion."
         }
       ],
       "fragments": [
@@ -197,7 +205,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1495098-composition"
       ],
-      "title": "Creating a Mutable Composition",
+      "title": "Creating a Composition",
       "generated": true
     }
   ],
@@ -273,6 +281,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -295,37 +304,9 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The initialization options that the receiver should use when creating URL assets."
+                  "text": "The initialization options to use to create the composition."
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "An empty "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVMutableComposition"
-            },
-            {
-              "type": "text",
-              "text": " object."
             }
           ]
         }
@@ -333,7 +314,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

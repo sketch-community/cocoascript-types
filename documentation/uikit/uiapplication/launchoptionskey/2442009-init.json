@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a launch options key with the specified raw value."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -38,25 +44,33 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "7.1",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So29UIApplicationLaunchOptionsKeya8rawValueABSS_tcfc",
+    "parent": {
+      "title": "UIApplication.LaunchOptionsKey"
+    },
     "symbolKind": "structctr",
     "fragments": [
       {
@@ -78,8 +92,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,7 +144,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Keys used to access values in the launch options dictionary passed to your app at initialization time."
+          "text": "Keys you use to access values in the launch options dictionary that is passed to your app at initialization time."
         }
       ]
     },
@@ -149,6 +163,38 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/swift/string"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/2442009-init": {
+      "title": "init(rawValue:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/2442009-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/launchoptionskey/2442009-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a launch options key with the specified raw value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": String)"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -196,6 +242,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -204,7 +251,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

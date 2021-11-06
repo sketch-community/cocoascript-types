@@ -42,39 +42,49 @@
         "name": "iOS",
         "introducedAt": "4.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSOperationQueue(py)operationCount",
+    "parent": {
+      "title": "OperationQueue"
+    },
     "symbolKind": "instp",
     "fragments": [
       {
@@ -92,8 +102,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -293,34 +303,33 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/1415168-operations": {
-      "title": "operations",
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3172534-addbarrierblock": {
+      "title": "addBarrierBlock(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/1415168-operations",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3172534-addbarrierblock",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/1415168-operations",
+      "url": "/documentation/foundation/operationqueue/3172534-addbarrierblock",
       "abstract": [
         {
           "type": "text",
-          "text": "The operations currently in the queue. "
+          "text": "Invokes a block when the queue finishes all enqueued operations, and prevents subsequent operations from starting until the block has completed."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "var "
+          "text": "func "
         },
         {
           "kind": "identifier",
-          "text": "operations"
+          "text": "addBarrierBlock"
         },
         {
           "kind": "text",
-          "text": ": [Operation]"
+          "text": "(() -> Void)"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/operationqueue/1417849-cancelalloperations": {
       "title": "cancelAllOperations()",
@@ -360,7 +369,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Blocks the current thread until all of the receiver’s queued and executing operations finish executing."
+          "text": "Blocks the current thread until all the receiver’s queued and executing operations finish executing."
         }
       ],
       "fragments": [
@@ -378,6 +387,35 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/1415168-operations": {
+      "title": "operations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/1415168-operations",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/1415168-operations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The operations currently in the queue."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "operations"
+        },
+        {
+          "kind": "text",
+          "text": ": [Operation]"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -391,16 +429,16 @@
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -410,9 +448,10 @@
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1410704-addoperation",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1408358-addoperations",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1412949-addoperation",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/1415168-operations",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3172534-addbarrierblock",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/1417849-cancelalloperations",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/1407971-waituntilalloperationsarefinishe"
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/1407971-waituntilalloperationsarefinishe",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/1415168-operations"
       ],
       "title": "Managing Operations in the Queue",
       "generated": true
@@ -464,6 +503,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -521,7 +561,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

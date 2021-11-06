@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted when the user changes the preferred content size setting. "
+      "text": "A notification that posts when the user changes the preferred content size setting. "
     }
   ],
   "documentVersion": 0,
@@ -72,20 +72,28 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UIContentSizeCategoryDidChangeNotification",
+    "parent": {
+      "title": "UIContentSizeCategory"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -103,8 +111,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -165,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the preferred size of your content."
+          "text": "Constants that indicate the preferred size of your content."
         }
       ]
     },
@@ -243,25 +251,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key whose value is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
-        },
-        {
-          "type": "text",
-          "text": " object reflecting the new value of the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory"
-        },
-        {
-          "type": "text",
-          "text": " property. "
+          "text": "A key that reflects the new preferred content size."
         }
       ],
       "fragments": [
@@ -279,14 +269,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsstring": {
-      "title": "NSString",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsstring"
-    },
     "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory/1622948-didchangenotification": {
       "title": "didChangeNotification",
       "type": "topic",
@@ -297,7 +279,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the user changes the preferred content size setting. "
+          "text": "A notification that posts when the user changes the preferred content size setting. "
         }
       ],
       "fragments": [
@@ -328,7 +310,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicontentsizecategory/1623012-newvalueuserinfokey"
       ],
-      "title": "Size Change Notifications",
+      "title": "Font Size Change Notifications",
       "generated": true
     }
   ],
@@ -384,6 +366,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -438,7 +421,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

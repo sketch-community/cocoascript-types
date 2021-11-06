@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The expectation that a text input area specifies a one-time code for delivery over SMS."
+      "text": "A property that defines the content in a text-input area as a one-time code."
     }
   ],
   "documentVersion": 0,
@@ -53,25 +53,30 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UITextContentTypeOneTimeCode",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -154,77 +159,6 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/security/password_autofill/enabling_password_autofill_on_a_text_input_view": {
-      "title": "Enabling Password AutoFill on a Text Input View",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/security/password_autofill/enabling_password_autofill_on_a_text_input_view",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/security/password_autofill/enabling_password_autofill_on_a_text_input_view",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Make sure a text input view displays the correct AutoFill suggestions."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1649656-textcontenttype": {
-      "title": "textContentType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1649656-textcontenttype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitextinputtraits/1649656-textcontenttype",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The semantic meaning for a text input area."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitextcontenttypeusername": {
-      "title": "UITextContentTypeUsername",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextcontenttypeusername",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitextcontenttypeusername",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The expectation that a text input area specifies an account or login name."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitextcontenttypepassword": {
-      "title": "UITextContentTypePassword",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextcontenttypepassword",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitextcontenttypepassword",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The expectation that a text input area specifies a password."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitextcontenttypenewpassword": {
-      "title": "UITextContentTypeNewPassword",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextcontenttypenewpassword",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitextcontenttypenewpassword",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The expectation that a text input area specifies a new password."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uitextcontenttypeonetimecode": {
       "title": "UITextContentTypeOneTimeCode",
       "type": "topic",
@@ -235,7 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The expectation that a text input area specifies a one-time code for delivery over SMS."
+          "text": "A property that defines the content in a text-input area as a one-time code."
         }
       ]
     },
@@ -247,19 +181,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/security/password_autofill/enabling_password_autofill_on_a_text_input_view",
-        "doc://com.apple.documentation/documentation/uikit/uitextinputtraits/1649656-textcontenttype",
-        "doc://com.apple.documentation/documentation/uikit/uitextcontenttypeusername",
-        "doc://com.apple.documentation/documentation/uikit/uitextcontenttypepassword",
-        "doc://com.apple.documentation/documentation/uikit/uitextcontenttypenewpassword"
-      ],
-      "title": "Text Input Views",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -298,6 +219,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -306,7 +228,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

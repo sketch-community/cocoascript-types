@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSMergePolicy",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -247,21 +252,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Default policy for all managed object contexts."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep": {
-      "title": "mergeByPropertyObjectTrumpMergePolicy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A policy that merges conflicts between the persistent store's version of the object and the current in-memory version by individual property, with the external changes trumping in-memory changes."
+          "text": "The default merge policy for all managed object contexts."
         }
       ]
     },
@@ -275,7 +266,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A policy that merges conflicts between the persistent store's version of the object and the current in-memory version by individual property, with the in-memory changes trumping external changes."
+          "text": "A property-based merge policy that applies external changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep": {
+      "title": "mergeByPropertyObjectTrumpMergePolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A property-based merge policy that applies in-memory changes."
         }
       ]
     },
@@ -289,7 +294,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A policy that merges conflicts between the persistent store's version of the object and the current in-memory version by pushing the entire in-memory object to the persistent store."
+          "text": "A merge policy that overwrites the entire stored object."
         }
       ]
     },
@@ -303,7 +308,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A policy that merges conflicts between the persistent store's version of the object and the current in-memory version by discarding all state for the changed objects in conflict."
+          "text": "A merge policy that discards unsaved changes."
         }
       ]
     },
@@ -388,7 +393,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1506763-initwithmergetype",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1506675-mergetype"
-      ]
+      ],
+      "anchor": "1661203"
     },
     {
       "kind": "taskGroup",
@@ -397,19 +403,21 @@
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1506253-resolveconflicts",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1506678-resolveconstraintconflicts",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1506787-resolveoptimisticlockingversionc"
-      ]
+      ],
+      "anchor": "2902680"
     },
     {
       "kind": "taskGroup",
       "title": "Defining Merge Policies",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690612-errormergepolicy",
-        "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690609-mergebypropertystoretrumpmergepo",
+        "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690610-overwritemergepolicy",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690613-rollbackmergepolicy",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/merge_policies"
-      ]
+      ],
+      "anchor": "1673860"
     }
   ],
   "seeAlsoSections": [
@@ -457,6 +465,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -536,7 +545,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

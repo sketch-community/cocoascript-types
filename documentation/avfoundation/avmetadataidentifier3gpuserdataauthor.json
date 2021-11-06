@@ -1,14 +1,13 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An identifier that represents the author of the media."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier"
-      ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
@@ -37,35 +36,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@AVMetadataIdentifier3GPUserDataAuthor",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,10 +112,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem": {
-      "title": "AVMutableMetadataItem",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
-      "url": "/documentation/avfoundation/avmutablemetadataitem",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
+      "title": "AVMetadataItem",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
+      "url": "/documentation/avfoundation/avmetadataitem",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
@@ -124,21 +128,19 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmetadataidentifier"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
-      "title": "AVMetadataItem",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
-      "url": "/documentation/avfoundation/avmetadataitem",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdataalbumandtrack": {
       "title": "AVMetadataIdentifier3GPUserDataAlbumAndTrack",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdataalbumandtrack",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdataalbumandtrack"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdataalbumandtrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the text for the album and track titles."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdataauthor": {
       "title": "AVMetadataIdentifier3GPUserDataAuthor",
@@ -146,7 +148,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdataauthor",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdataauthor"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdataauthor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the author of the media."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatacollection": {
       "title": "AVMetadataIdentifier3GPUserDataCollection",
@@ -154,7 +162,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatacollection",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatacollection"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatacollection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the collection name for the media."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatacopyright": {
       "title": "AVMetadataIdentifier3GPUserDataCopyright",
@@ -162,7 +176,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatacopyright",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatacopyright"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatacopyright",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the copyright statement."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatadescription": {
       "title": "AVMetadataIdentifier3GPUserDataDescription",
@@ -170,7 +190,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatadescription",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatadescription"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatadescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the description for the media."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatagenre": {
       "title": "AVMetadataIdentifier3GPUserDataGenre",
@@ -178,7 +204,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatagenre",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatagenre"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatagenre",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the genre of the media."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatakeywordlist": {
       "title": "AVMetadataIdentifier3GPUserDataKeywordList",
@@ -186,7 +218,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatakeywordlist",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatakeywordlist"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatakeywordlist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the list of keywords for the media."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatalocation": {
       "title": "AVMetadataIdentifier3GPUserDataLocation",
@@ -194,7 +232,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatalocation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatalocation"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatalocation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the location information for the media."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatamediaclassification": {
       "title": "AVMetadataIdentifier3GPUserDataMediaClassification",
@@ -202,7 +246,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatamediaclassification",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatamediaclassification"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatamediaclassification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the classification of the media content."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatamediarating": {
       "title": "AVMetadataIdentifier3GPUserDataMediaRating",
@@ -210,7 +260,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatamediarating",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatamediarating"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatamediarating",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the rating of the media content."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdataperformer": {
       "title": "AVMetadataIdentifier3GPUserDataPerformer",
@@ -218,7 +274,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdataperformer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdataperformer"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdataperformer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents information about the performer."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatarecordingyear": {
       "title": "AVMetadataIdentifier3GPUserDataRecordingYear",
@@ -226,7 +288,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatarecordingyear",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatarecordingyear"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatarecordingyear",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the recording year for the media."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatathumbnail": {
       "title": "AVMetadataIdentifier3GPUserDataThumbnail",
@@ -234,7 +302,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatathumbnail",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatathumbnail"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatathumbnail",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the media thumbnail."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatatitle": {
       "title": "AVMetadataIdentifier3GPUserDataTitle",
@@ -242,7 +316,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatatitle",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatatitle"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatatitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the title for the media."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatauserrating": {
       "title": "AVMetadataIdentifier3GPUserDataUserRating",
@@ -250,7 +330,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatauserrating",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatauserrating"
+      "url": "/documentation/avfoundation/avmetadataidentifier3gpuserdatauserrating",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the user rating."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -320,6 +406,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -330,7 +417,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,19 +2,12 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The format identifier."
+      "text": "An identifier that represents the file format of the media content."
     }
   ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier"
-      ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
@@ -43,35 +36,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@AVMetadataCommonIdentifierFormat",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,10 +112,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem": {
-      "title": "AVMutableMetadataItem",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
-      "url": "/documentation/avfoundation/avmutablemetadataitem",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
+      "title": "AVMetadataItem",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
+      "url": "/documentation/avfoundation/avmetadataitem",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
@@ -130,14 +128,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmetadataidentifier"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
-      "title": "AVMetadataItem",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
-      "url": "/documentation/avfoundation/avmetadataitem",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifieraccessibilitydescription": {
       "title": "AVMetadataCommonIdentifierAccessibilityDescription",
       "type": "topic",
@@ -148,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The accessibility description identifier."
+          "text": "An identifier that represents the accessibility description for the media."
         }
       ]
     },
@@ -162,7 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The album name identifier."
+          "text": "An identifier that represents the name of the album."
         }
       ]
     },
@@ -176,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The artist identifier."
+          "text": "An identifier that represents the name of the artist."
         }
       ]
     },
@@ -190,7 +180,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The artwork identifier."
+          "text": "An identifier that represents an image relating to the album."
         }
       ]
     },
@@ -200,7 +190,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierassetidentifier",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadatacommonidentifierassetidentifier"
+      "url": "/documentation/avfoundation/avmetadatacommonidentifierassetidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the asset ID for the media."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierauthor": {
       "title": "AVMetadataCommonIdentifierAuthor",
@@ -212,7 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The author identifier."
+          "text": "An identifier that represents the name of the author."
         }
       ]
     },
@@ -226,7 +222,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The contributor identifier."
+          "text": "An identifier that represents the name of the contributor."
         }
       ]
     },
@@ -240,7 +236,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The copyrights identifier."
+          "text": "An identifier that represents the copyright statement."
         }
       ]
     },
@@ -254,7 +250,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The creation date identifier."
+          "text": "An identifier that represents the date of the original recording."
         }
       ]
     },
@@ -268,7 +264,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The creator identifier."
+          "text": "An identifier that represents the name of the creator."
         }
       ]
     },
@@ -282,7 +278,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The description identifier."
+          "text": "An identifier that represents the description of the media."
         }
       ]
     },
@@ -296,7 +292,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The format identifier."
+          "text": "An identifier that represents the file format of the media content."
         }
       ]
     },
@@ -310,7 +306,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The language identifier."
+          "text": "An identifier that represents the language of the text or lyrics spoken or sung in the audio."
         }
       ]
     },
@@ -324,7 +320,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The last modified date identifier."
+          "text": "An identifier that represents the last modification date of the media."
         }
       ]
     },
@@ -338,7 +334,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The location identifier."
+          "text": "An identifier that represents the location information for the media."
         }
       ]
     },
@@ -352,7 +348,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The make identifier."
+          "text": "An identifier that represents the name of the camera maker."
         }
       ]
     },
@@ -366,7 +362,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The model identifier."
+          "text": "An identifier that represents the name of the camera model."
         }
       ]
     },
@@ -380,7 +376,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The publisher identifier."
+          "text": "An identifier that represents the name of the publisher."
         }
       ]
     },
@@ -394,7 +390,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The relation identifier."
+          "text": "An identifier that represents the relation information for the media."
         }
       ]
     },
@@ -408,7 +404,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The software identifier."
+          "text": "An identifier that represents the name of the software used to create the media."
         }
       ]
     },
@@ -422,7 +418,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The source identifier."
+          "text": "An identifier that represents the source information for the media."
         }
       ]
     },
@@ -436,7 +432,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The subject identifier."
+          "text": "An identifier that represents the subject information for the media."
         }
       ]
     },
@@ -450,7 +446,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The title identifier."
+          "text": "An identifier that represents the title of the media."
         }
       ]
     },
@@ -464,7 +460,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type identifier."
+          "text": "An identifier that represents the media type."
         }
       ]
     },
@@ -545,6 +541,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -555,7 +552,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

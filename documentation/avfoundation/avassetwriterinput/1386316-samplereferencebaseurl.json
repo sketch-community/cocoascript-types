@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInput(py)sampleReferenceBaseURL",
+    "parent": {
+      "title": "AVAssetWriterInput"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -140,45 +148,31 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsurl"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385565-mediatype": {
-      "title": "mediaType",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment": {
+      "title": "preferredMediaChunkAlignment",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385565-mediatype",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1385565-mediatype",
+      "url": "/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
       "abstract": [
         {
           "type": "text",
-          "text": "The media type of the samples that are appendable to the input."
+          "text": "The boundary, in bytes, for aligning media chunks."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388406-outputsettings": {
-      "title": "outputSettings",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration": {
+      "title": "preferredMediaChunkDuration",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388406-outputsettings",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1388406-outputsettings",
+      "url": "/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
       "abstract": [
         {
           "type": "text",
-          "text": "The settings used for encoding the media appended to the output."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint": {
-      "title": "sourceFormatHint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A hint about the format of the buffers to appended."
+          "text": "The duration to use for each chunk of sample data in the output file."
         }
       ]
     },
@@ -196,6 +190,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation": {
+      "title": "mediaDataLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies how the input lays out and interleaves media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmediadatalocation": {
+      "title": "AVAssetWriterInputMediaDataLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmediadatalocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputmediadatalocation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that indicates how to lay out and interleave media data."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -204,24 +226,15 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385565-mediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388406-outputsettings",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmediadatalocation"
       ],
-      "title": "Inspecting a Writer Input",
+      "title": "Configuring Media Data Layout",
       "generated": true
     }
   ],
@@ -263,6 +276,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -284,7 +298,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property is only valid for file types that support writing sample references, such as QuickTime Movie files. If the value of this property can be resolved as an absolute URL, the sample locations written to the file when appending sample references will be relative to this URL. The URL must point to a location that is in a directory that is a parent of the sample reference location. "
+              "text": "This property is only valid for file types that support writing sample references, such as QuickTime files. If the system resolves the value of this property to an absolute URL, the sample references it appends are relative to this URL. The URL must point to a location that’s in a directory that’s a parent of the sample reference location. "
             }
           ]
         },
@@ -293,15 +307,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For example: setting the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "sampleReferenceBaseURL"
-            },
-            {
-              "type": "text",
-              "text": " property to "
+              "text": "For example, setting the value of this property to "
             },
             {
               "type": "codeVoice",
@@ -326,7 +332,7 @@
             },
             {
               "type": "text",
-              "text": " will cause the sample reference "
+              "text": " writes a sample reference of "
             },
             {
               "type": "codeVoice",
@@ -334,7 +340,7 @@
             },
             {
               "type": "text",
-              "text": " to be written to the movie."
+              "text": " to the movie."
             }
           ]
         }
@@ -342,7 +348,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

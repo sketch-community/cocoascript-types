@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates an FIR filter that can be used as a Wiener filter; single precision."
+      "text": "Solves a system of linear equations for a double-precision symmetric Toeplitz coefficient matrix."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@vDSP_wienerD",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,6 +119,54 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "link-media-3855534": {
+      "identifier": "link-media-3855534",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/1450592-vdsp_wienerd#3855534"
+    },
+    "media-3855534": {
+      "identifier": "media-3855534",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 245,
+            "height": 108
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5628bb4f9c/rendered2x-1624357090.png"
+        }
+      ],
+      "alt": "A mathematical formula that describes a matrix equation. A four-by-four matrix is multiplied by the four-element vector, f, equals a four-element matrix. The vector f contains unknown values.",
+      "title": "Figure 1"
+    },
+    "link-media-3855533": {
+      "identifier": "link-media-3855533",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/1450592-vdsp_wienerd#3855533"
+    },
+    "media-3855533": {
+      "identifier": "media-3855533",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 243,
+            "height": 93
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d9fcd96db7/rendered2x-1624357086.png"
+        }
+      ],
+      "alt": "A mathematical formula that describes a matrix equation. A four-by-four matrix is multiplied by the four-element vector, f, equals a four-element matrix. The vector f contains known values.",
+      "title": "Figure 2"
+    },
     "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener": {
       "title": "vDSP_wiener",
       "type": "topic",
@@ -124,9 +177,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an FIR filter that can be used as a Wiener filter; single precision."
+          "text": "Solves a system of linear equations for a single-precision symmetric Toeplitz coefficient matrix."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450592-vdsp_wienerd#3855532": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450592-vdsp_wienerd#3855532",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/1450592-vdsp_wienerd#3855532"
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp_length": {
       "title": "vDSP_Length",
@@ -146,7 +207,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an FIR filter that can be used as a Wiener filter; single precision."
+          "text": "Solves a system of linear equations for a double-precision symmetric Toeplitz coefficient matrix."
         }
       ]
     },
@@ -269,10 +330,117 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__L",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of elements in the output vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__A",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The diagonal values of the coefficient matrix. If you’re using this function to generate a Wiener filter, pass the autocorrelation of a given signal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__C",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The values of the RHS vector. If you’re using this function to generate a Wiener filter, pass the cross-correlation of signal and observation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__F",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The output vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__P",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The performance index that’s a measure of the error for each component of the signal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__Flag",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Not currently used, pass zero."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__Error",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The error flag. In the case of an error, the function populates the error flag with the pass in which the failure occurred."
+                }
+              ]
+            }
           ]
         }
       ]
@@ -291,48 +459,299 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This function is the same as "
+              "text": "Use this function to solve a system of simultaneous equations where the coefficient matrix is a symmetric Toeplitz matrix. A symmetric matrix is one that’s equal to its transpose, that is, a matrix that’s identical when swapping its row and column indices. A Toeplitz matrix is a matrix where each diagonal is constant."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows a matrix equation where the coefficient matrix is a symmetric Toeplitz matrix:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3855534",
+              "metadata": {
+                "anchor": "3855534",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function solves the equation and finds the values for the output vector, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "__F"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3855533",
+              "metadata": {
+                "anchor": "3855533",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the 4 x 4 coefficient matrix is symmetric, it contains four diagonal bands that you define using a four-element vector. The following code shows how to solve a system of linear equations using "
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener"
             },
             {
               "type": "text",
-              "text": ", except for the types of the "
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// The `coefficientMatrix` array contains the diagonal values of",
+            "// the symmetric Toeplitz coefficient matrix `a` in `a · f = c`.",
+            "let coefficientMatrix: [Double] = [15, 60, 3, 9]",
+            "",
+            "// The `constants` array contains the RHS `c` in `a · f = c`.",
+            "let constants: [Double] = [360, 564, 816, 510]",
+            "",
+            "var performanceIndex = [Double](repeating: 0,",
+            "                                count: constants.count)",
+            "var error = Int32(0)",
+            "",
+            "// On return, `result` contains the solution `f` in `a · f = c`.",
+            "let result = [Double](unsafeUninitializedCapacity: constants.count) {",
+            "    buffer, count in",
+            "    ",
+            "    vDSP_wienerD(vDSP_Length(constants.count),",
+            "                coefficientMatrix,",
+            "                constants,",
+            "                buffer.baseAddress!,",
+            "                &performanceIndex, 0,",
+            "                &error)",
+            "    ",
+            "    count = constants.count",
+            "}",
+            "",
+            "guard error == 0 else {",
+            "    fatalError(\"Solve failed at pass \\(error).\")",
+            "}",
+            "",
+            "// Prints `[1.9999999999999964, 3.9999999999999885,",
+            "//          6.0000000000000036, 8.000000000000002] ≈ [2, 4, 6, 8]`",
+            "print(result)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3855532",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that this function only works out-of-place."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typical methods for solving "
             },
             {
-              "type": "codeVoice",
-              "code": "A"
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
             },
             {
               "type": "text",
-              "text": ", "
+              "text": " equations in "
             },
             {
-              "type": "codeVoice",
-              "code": "C"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "codeVoice",
-              "code": "F"
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
             },
             {
               "type": "text",
-              "text": ", and "
+              "text": " unknowns have execution times proportional to "
             },
             {
-              "type": "codeVoice",
-              "code": "P"
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
+            },
+            {
+              "type": "superscript",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "3"
+                }
+              ]
             },
             {
               "type": "text",
-              "text": " parameters."
+              "text": ", and memory requirements proportional to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
+            },
+            {
+              "type": "superscript",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". By taking advantage of duplicate elements, the recursion method implemented by "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener"
+            },
+            {
+              "type": "text",
+              "text": " executes in a time proportional to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
+            },
+            {
+              "type": "superscript",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " and requires memory proportional to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". The Wiener-Levinson algorithm recursively builds a solution by computing the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "m+1"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " matrix solution from the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "m"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " matrix solution."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use the solution, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "F"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", as a Wiener filter."
             }
           ]
         }
@@ -340,7 +759,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

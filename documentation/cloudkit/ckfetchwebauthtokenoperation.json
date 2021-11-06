@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An operation that fetches the web authentication token for an API token."
+      "text": "An operation that creates an authentication token for use with CloudKit web services."
     }
   ],
   "documentVersion": 0,
@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.2",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.1",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKFetchWebAuthTokenOperation",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,6 +100,82 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "link-3742387": {
+      "title": "CloudKit Dashboard",
+      "type": "topic",
+      "identifier": "link-3742387",
+      "kind": "article",
+      "role": "link",
+      "url": "https://icloud.developer.apple.com"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/changing_access_controls_on_user_data": {
+      "title": "Changing Access Controls on User Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/changing_access_controls_on_user_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/changing_access_controls_on_user_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Restrict access to or remove restrictions from a user's data at their request."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1514980-fetchwebauthtokencompletionblock": {
+      "title": "fetchWebAuthTokenCompletionBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1514980-fetchwebauthtokencompletionblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchwebauthtokenoperation/1514980-fetchwebauthtokencompletionblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The block to execute when the operation finishes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperation": {
+      "title": "NSOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperation"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperation/1408085-completionblock": {
+      "title": "completionBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation/1408085-completionblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperation/1408085-completionblock"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsqualityofservice/nsqualityofservicedefault": {
+      "title": "NSQualityOfServiceDefault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsqualityofservice/nsqualityofservicedefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsqualityofservice/nsqualityofservicedefault"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperation/1413553-qualityofservice": {
+      "title": "qualityOfService",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation/1413553-qualityofservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperation/1413553-qualityofservice"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation#3742076": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation#3742076",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/ckfetchwebauthtokenoperation#3742076"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckdatabaseoperation": {
       "title": "CKDatabaseOperation",
@@ -166,17 +247,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1514980-fetchwebauthtokencompletionblock": {
-      "title": "fetchWebAuthTokenCompletionBlock",
+    "doc://com.apple.documentation/documentation/cloudkit/encrypting_user_data": {
+      "title": "Encrypting User Data",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1514980-fetchwebauthtokencompletionblock",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchwebauthtokenoperation/1514980-fetchwebauthtokencompletionblock",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/encrypting_user_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/encrypting_user_data",
       "abstract": [
         {
           "type": "text",
-          "text": "The block to execute when the operation finishes."
+          "text": "Deploy industry-standard security technologies using CloudKit encryption."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/providing_user_access_to_cloudkit_data": {
+      "title": "Providing User Access to CloudKit Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/providing_user_access_to_cloudkit_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/providing_user_access_to_cloudkit_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide users access to the data your app stores on their behalf."
         }
       ]
     },
@@ -190,7 +285,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An operation that fetches the web authentication token for an API token."
+          "text": "An operation that creates an authentication token for use with CloudKit web services."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/responding_to_requests_to_delete_data": {
+      "title": "Responding to Requests to Delete Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/responding_to_requests_to_delete_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/responding_to_requests_to_delete_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide options for users to delete their CloudKit data from your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/identifying_an_app_s_containers": {
+      "title": "Identifying an App's Containers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/identifying_an_app_s_containers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/identifying_an_app_s_containers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use Xcode's Project navigator to find the identifiers of active CloudKit containers."
         }
       ]
     },
@@ -200,16 +323,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -229,7 +342,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1515266-initwithapitoken",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/2715839-init"
-      ]
+      ],
+      "anchor": "1677141"
     },
     {
       "kind": "taskGroup",
@@ -237,7 +351,21 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1515095-apitoken",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1514980-fetchwebauthtokencompletionblock"
-      ]
+      ],
+      "anchor": "1677151"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/encrypting_user_data",
+        "doc://com.apple.documentation/documentation/cloudkit/providing_user_access_to_cloudkit_data",
+        "doc://com.apple.documentation/documentation/cloudkit/changing_access_controls_on_user_data",
+        "doc://com.apple.documentation/documentation/cloudkit/responding_to_requests_to_delete_data",
+        "doc://com.apple.documentation/documentation/cloudkit/identifying_an_app_s_containers"
+      ],
+      "title": "Privacy",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -274,6 +402,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -281,10 +410,199 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit web services provides an HTTP interface to fetch, create, update, and delete records, zones, and subscriptions. Each request you send requires an API token, which you configure in "
+            },
+            {
+              "type": "link",
+              "title": "CloudKit Dashboard",
+              "destination": "https://icloud.developer.apple.com"
+            },
+            {
+              "type": "text",
+              "text": ". You must create an API token for each container in each environment."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you want to send a request to an endpoint that requires an authenticated user, use this operation to fetch an authentication token. Append the authentication token, along with the API token, to the endpoint’s URL. That request then acts on behalf of the current user. Authentication tokens are short-lived and expire after a single use."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For an example of using a web authentication token with a CloudKit web service, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/changing_access_controls_on_user_data"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This operation executes the handlers you provide on an internal queue it manages. Your handlers must be capable of executing on a background queue. Tasks that need access to the main queue must redirect as appropriate."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The operation calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1514980-fetchwebauthtokencompletionblock"
+            },
+            {
+              "type": "text",
+              "text": " after it executes to provide the fetched token. Use the completion handler to perform housekeeping tasks for the operation. It should also manage any failures, whether due to an error or an explicit cancellation."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Because this class inherits from "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation"
+                },
+                {
+                  "type": "text",
+                  "text": ", you can also set the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation/1408085-completionblock"
+                },
+                {
+                  "type": "text",
+                  "text": " property. The operation calls both completion handlers if they’re both set."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit operations have a default QoS of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsqualityofservice/nsqualityofservicedefault"
+            },
+            {
+              "type": "text",
+              "text": ". Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation/1413553-qualityofservice"
+            },
+            {
+              "type": "text",
+              "text": " property to set a more appropriate QoS for the operation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example shows how to create the operation, configure its callbacks, and execute it in the user’s private database:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func fetchWebAuthToken(for apiToken: String, ",
+            "    completion: @escaping (Result<String, Error>) -> Void) {",
+            "    ",
+            "    // Create the operation using the API token",
+            "    // that the caller provides to the method.",
+            "    let operation = CKFetchWebAuthTokenOperation(apiToken: apiToken)",
+            "    ",
+            "    // If the operation fails, return the error to the caller.",
+            "    // Otherwise, return the fetched authentication token.",
+            "    operation.fetchWebAuthTokenCompletionBlock = { webToken, error in",
+            "        if let error = error {",
+            "            completion(.failure(error))",
+            "        } else {",
+            "            completion(.success(webToken!))",
+            "        }",
+            "    }",
+            "    ",
+            "    // Set an appropriate QoS and add the operation to the",
+            "    // private database's queue to execute it.",
+            "    operation.qualityOfService = .utility",
+            "    CKContainer.default().privateCloudDatabase.add(operation)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3742076",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

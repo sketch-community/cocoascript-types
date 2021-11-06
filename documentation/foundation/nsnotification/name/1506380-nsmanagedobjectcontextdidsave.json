@@ -50,30 +50,38 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@NSManagedObjectContextDidSaveNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -91,8 +99,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -191,34 +199,6 @@
       "role": "symbol",
       "url": "/documentation/coredata/nsmanagedobjectcontext/1506606-mergechanges"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid": {
-      "title": "NSManagedObjectContextObjectsDidChange",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A notification of changes made to managed objects associated with this context."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "NSManagedObjectContextObjectsDidChange"
-        },
-        {
-          "kind": "text",
-          "text": ": NSNotification.Name"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave": {
       "title": "NSManagedObjectContextDidSave",
       "type": "topic",
@@ -240,6 +220,34 @@
         {
           "kind": "identifier",
           "text": "NSManagedObjectContextDidSave"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid": {
+      "title": "NSManagedObjectContextObjectsDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification of changes made to managed objects associated with this context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSManagedObjectContextObjectsDidChange"
         },
         {
           "kind": "text",
@@ -275,173 +283,212 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey": {
-      "title": "NSInsertedObjectsKey",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468925-nspersistentstorecoordinatorstor": {
+      "title": "NSPersistentStoreCoordinatorStoresDidChange",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468925-nspersistentstorecoordinatorstor",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsinsertedobjectskey",
+      "url": "/documentation/foundation/nsnotification/name/1468925-nspersistentstorecoordinatorstor",
       "abstract": [
         {
           "type": "text",
-          "text": "A key for the set of objects that were inserted into the context."
+          "text": "A notification that posts when a coordinator adds, removes, or updates a persistent store."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "let "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "NSInsertedObjectsKey"
+          "text": "NSPersistentStoreCoordinatorStoresDidChange"
         },
         {
           "kind": "text",
-          "text": ": String"
+          "text": ": NSNotification.Name"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey": {
-      "title": "NSUpdatedObjectsKey",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468800-nspersistentstorecoordinatorstor": {
+      "title": "NSPersistentStoreCoordinatorStoresWillChange",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468800-nspersistentstorecoordinatorstor",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsupdatedobjectskey",
+      "url": "/documentation/foundation/nsnotification/name/1468800-nspersistentstorecoordinatorstor",
       "abstract": [
         {
           "type": "text",
-          "text": "A key for the set of objects that were updated."
+          "text": "A notification that posts immediately before the coordinator updates its collection of stores."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "let "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "NSUpdatedObjectsKey"
+          "text": "NSPersistentStoreCoordinatorStoresWillChange"
         },
         {
           "kind": "text",
-          "text": ": String"
+          "text": ": NSNotification.Name"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsdeletedobjectskey": {
-      "title": "NSDeletedObjectsKey",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468876-nspersistentstorecoordinatorwill": {
+      "title": "NSPersistentStoreCoordinatorWillRemoveStore",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsdeletedobjectskey",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468876-nspersistentstorecoordinatorwill",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsdeletedobjectskey",
+      "url": "/documentation/foundation/nsnotification/name/1468876-nspersistentstorecoordinatorwill",
       "abstract": [
         {
           "type": "text",
-          "text": "A key for the set of objects that were marked for deletion during the previous event. "
+          "text": "A notification that posts immediately before a coordinator removes a persistent store."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "let "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "NSDeletedObjectsKey"
+          "text": "NSPersistentStoreCoordinatorWillRemoveStore"
         },
         {
           "kind": "text",
-          "text": ": String"
+          "text": ": NSNotification.Name"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectskey": {
-      "title": "NSRefreshedObjectsKey",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3751987-nscoredatacorespotlightdelegatei": {
+      "title": "NSCoreDataCoreSpotlightDelegateIndexDidUpdate",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectskey",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3751987-nscoredatacorespotlightdelegatei",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsrefreshedobjectskey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A key for the set of objects that were refreshed but were not dirtied in the scope of this context."
-        }
-      ],
+      "url": "/documentation/foundation/nsnotification/name/3751987-nscoredatacorespotlightdelegatei",
       "fragments": [
         {
           "kind": "text",
-          "text": "let "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "NSRefreshedObjectsKey"
+          "text": "NSCoreDataCoreSpotlightDelegateIndexDidUpdate"
         },
         {
           "kind": "text",
-          "text": ": String"
+          "text": ": NSNotification.Name"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectskey": {
-      "title": "NSInvalidatedObjectsKey",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618796-nsmanagedobjectcontextdidmergech": {
+      "title": "NSManagedObjectContextDidMergeChangesObjectIDs",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectskey",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618796-nsmanagedobjectcontextdidmergech",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsinvalidatedobjectskey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A key for the set of objects that were invalidated."
-        }
-      ],
+      "url": "/documentation/foundation/nsnotification/name/3618796-nsmanagedobjectcontextdidmergech",
       "fragments": [
         {
           "kind": "text",
-          "text": "let "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "NSInvalidatedObjectsKey"
+          "text": "NSManagedObjectContextDidMergeChangesObjectIDs"
         },
         {
           "kind": "text",
-          "text": ": String"
+          "text": ": NSNotification.Name"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsinvalidatedallobjectskey": {
-      "title": "NSInvalidatedAllObjectsKey",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618797-nsmanagedobjectcontextdidsaveobj": {
+      "title": "NSManagedObjectContextDidSaveObjectIDs",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsinvalidatedallobjectskey",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618797-nsmanagedobjectcontextdidsaveobj",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsinvalidatedallobjectskey",
+      "url": "/documentation/foundation/nsnotification/name/3618797-nsmanagedobjectcontextdidsaveobj",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSManagedObjectContextDidSaveObjectIDs"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange": {
+      "title": "NSPersistentStoreRemoteChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange",
       "abstract": [
         {
           "type": "text",
-          "text": "A key that specifies that all objects in the context have been invalidated."
+          "text": "A notification that posts for all cross-process writes to a persistent store."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "let "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "NSInvalidatedAllObjectsKey"
+          "text": "NSPersistentStoreRemoteChange"
         },
         {
           "kind": "text",
-          "text": ": String"
+          "text": ": NSNotification.Name"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468792-nspersistentstoredidimportubiqui": {
+      "title": "NSPersistentStoreDidImportUbiquitousContentChanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468792-nspersistentstoredidimportubiqui",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1468792-nspersistentstoredidimportubiqui",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted after records are imported from the ubiquitous content store."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSPersistentStoreDidImportUbiquitousContentChanges"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -456,14 +503,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid",
         "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506816-nsmanagedobjectcontextwillsave",
-        "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey",
-        "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey",
-        "doc://com.apple.documentation/documentation/coredata/nsdeletedobjectskey",
-        "doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectskey",
-        "doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectskey",
-        "doc://com.apple.documentation/documentation/coredata/nsinvalidatedallobjectskey"
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468925-nspersistentstorecoordinatorstor",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468800-nspersistentstorecoordinatorstor",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468876-nspersistentstorecoordinatorwill",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3751987-nscoredatacorespotlightdelegatei",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618796-nsmanagedobjectcontextdidmergech",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618797-nsmanagedobjectcontextdidsaveobj",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468792-nspersistentstoredidimportubiqui"
       ],
-      "title": "Managing Notifications",
+      "title": "Core Data",
       "generated": true
     }
   ],
@@ -519,6 +568,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -608,7 +658,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

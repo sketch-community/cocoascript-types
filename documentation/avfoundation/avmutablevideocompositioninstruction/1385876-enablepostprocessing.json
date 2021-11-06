@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value that indicates whether post processing is required for the video composition instruction."
+      "text": "A Boolean value that indicates whether the instruction requires post processing."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVMutableVideoCompositionInstruction(py)enablePostProcessing",
+    "parent": {
+      "title": "AVMutableVideoCompositionInstruction"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -131,14 +139,6 @@
       "role": "symbol",
       "url": "/documentation/objectivec/yes"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction": {
-      "title": "AVVideoCompositionLayerInstruction",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositionlayerinstruction"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocompositioninstruction/1390236-backgroundcolor": {
       "title": "backgroundColor",
       "type": "topic",
@@ -163,16 +163,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of instances of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionlayerinstruction"
-        },
-        {
-          "type": "text",
-          "text": " that specify how video frames from source tracks should be layered and composed."
+          "text": "Instructions that specify how to layer and compose video frames from source tracks."
         }
       ]
     },
@@ -186,7 +177,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The time range during which the instruction is effective."
+          "text": "The time range to which the instruction applies."
         }
       ]
     },
@@ -200,7 +191,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether post processing is required for the video composition instruction."
+          "text": "A Boolean value that indicates whether the instruction requires post processing."
         }
       ]
     },
@@ -259,6 +250,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -315,7 +307,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

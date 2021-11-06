@@ -11,8 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types"
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers"
       ]
     ]
   },
@@ -35,40 +40,48 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:22UniformTypeIdentifiers6UTTypeV4gzipACvpZ",
+    "parent": {
+      "title": "UTType"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
         "kind": "text",
-        "text": "static let "
+        "text": "static var "
       },
       {
         "kind": "identifier",
@@ -81,8 +94,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,6 +120,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "url": "/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype": {
       "title": "UTType",
       "type": "topic",
@@ -115,10 +136,10 @@
       "role": "symbol",
       "url": "/documentation/uniformtypeidentifiers/uttype"
     },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types": {
-      "title": "System Declared Types",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types",
-      "url": "/documentation/uniformtypeidentifiers/uttype/system_declared_types",
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers",
+      "url": "/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -155,7 +176,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -183,7 +204,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -211,7 +232,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -239,11 +260,39 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
           "text": "bz2"
+        },
+        {
+          "kind": "text",
+          "text": ": UTType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3656325-applearchive": {
+      "title": "appleArchive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3656325-applearchive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uniformtypeidentifiers/uttype/3656325-applearchive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that represents an Apple archive of files and directories."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "appleArchive"
         },
         {
           "kind": "text",
@@ -264,9 +313,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551462-archive",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551605-zip",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551471-bz2"
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551471-bz2",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3656325-applearchive"
       ],
-      "title": "Compressed File Archive Types",
+      "title": "Compressed Archives",
       "generated": true
     }
   ],
@@ -289,7 +339,7 @@
             },
             {
               "kind": "keyword",
-              "text": "let"
+              "text": "var"
             },
             {
               "kind": "text",
@@ -308,10 +358,23 @@
               "preciseIdentifier": "s:22UniformTypeIdentifiers6UTTypeV",
               "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype",
               "text": "UTType"
+            },
+            {
+              "kind": "text",
+              "text": " { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " }"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -381,7 +444,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

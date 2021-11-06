@@ -1,0 +1,824 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A matrix of two columns and two rows that contains double-precision values."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/simd",
+        "doc://com.apple.documentation/documentation/accelerate/simd/double-precision_floating-point_matrices"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/simd_double2x2",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2868320,
+  "kind": "symbol",
+  "metadata": {
+    "title": "simd_double2x2",
+    "role": "symbol",
+    "roleHeading": "Structure",
+    "modules": [
+      {
+        "name": "simd"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.13",
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "4.0",
+        "current": "8.3"
+      }
+    ],
+    "externalID": "c:@T@simd_double2x2",
+    "symbolKind": "struct"
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/simd_double2x2"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/simd_double2x2"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd": {
+      "title": "simd",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd",
+      "url": "/documentation/accelerate/simd",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd/double-precision_floating-point_matrices": {
+      "title": "Double-Precision Floating-Point Matrices",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd/double-precision_floating-point_matrices",
+      "url": "/documentation/accelerate/simd/double-precision_floating-point_matrices",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/matrix_identity_double2x2": {
+      "title": "matrix_identity_double2x2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/matrix_identity_double2x2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/matrix_identity_double2x2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 2 x 2 identity matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd_double2x2/2868312-columns": {
+      "title": "columns",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd_double2x2/2868312-columns",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/simd_double2x2/2868312-columns",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The columns of the matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2896435-simd_matrix": {
+      "title": "simd_matrix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2896435-simd_matrix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2896435-simd_matrix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new matrix with the specified columns."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2896646-simd_matrix_from_rows": {
+      "title": "simd_matrix_from_rows",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2896646-simd_matrix_from_rows",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2896646-simd_matrix_from_rows",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new matrix with the specified rows."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2896682-simd_diagonal_matrix": {
+      "title": "simd_diagonal_matrix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2896682-simd_diagonal_matrix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2896682-simd_diagonal_matrix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new matrix with the specified vector on the main diagonal."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883546-simd_add": {
+      "title": "simd_add",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883546-simd_add",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883546-simd_add",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the sum of two matrices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883387-simd_sub": {
+      "title": "simd_sub",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883387-simd_sub",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883387-simd_sub",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the difference of two matrices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883575-matrix_scale": {
+      "title": "matrix_scale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883575-matrix_scale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883575-matrix_scale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a scalar value and a matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883509-simd_mul": {
+      "title": "simd_mul",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883509-simd_mul",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883509-simd_mul",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a scalar value and a 2 x 2 matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883525-simd_mul": {
+      "title": "simd_mul",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883525-simd_mul",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883525-simd_mul",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a two-element vector and a 2 x 2 matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2908940-matrix_multiply": {
+      "title": "matrix_multiply",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2908940-matrix_multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2908940-matrix_multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a two-element vector and a 2 x 2 matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883435-simd_mul": {
+      "title": "simd_mul",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883435-simd_mul",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883435-simd_mul",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a 2 x 2 matrix and a two-element vector. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2908902-matrix_multiply": {
+      "title": "matrix_multiply",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2908902-matrix_multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2908902-matrix_multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a 2 x 2 matrix and a two-element vector. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883567-simd_mul": {
+      "title": "simd_mul",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883567-simd_mul",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883567-simd_mul",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a 2 x 2 matrix and a 2 x 2 matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2908912-matrix_multiply": {
+      "title": "matrix_multiply",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2908912-matrix_multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2908912-matrix_multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a 2 x 2 matrix and a 2 x 2 matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883440-simd_mul": {
+      "title": "simd_mul",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883440-simd_mul",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883440-simd_mul",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a 3 x 2 matrix and a 2 x 3 matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2908968-matrix_multiply": {
+      "title": "matrix_multiply",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2908968-matrix_multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2908968-matrix_multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a 3 x 2 matrix and a 2 x 3 matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883391-simd_mul": {
+      "title": "simd_mul",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883391-simd_mul",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883391-simd_mul",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a 4 x 2 matrix and a 2 x 4 matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2908932-matrix_multiply": {
+      "title": "matrix_multiply",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2908932-matrix_multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2908932-matrix_multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the product of a 4 x 2 matrix and a 2 x 4 matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883369-simd_equal": {
+      "title": "simd_equal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883369-simd_equal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883369-simd_equal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns true if every element in a matrix is exactly equal to the corresponding element in a second matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883394-simd_almost_equal_elements": {
+      "title": "simd_almost_equal_elements",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883394-simd_almost_equal_elements",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883394-simd_almost_equal_elements",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns true if every element in a matrix is within a specified tolerance to the corresponding element in a second matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883597-simd_almost_equal_elements_relat": {
+      "title": "simd_almost_equal_elements_relative",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883597-simd_almost_equal_elements_relat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883597-simd_almost_equal_elements_relat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns true if every element in a matrix is within a specified double-precision relative tolerance to the corresponding element in a second matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883536-simd_determinant": {
+      "title": "simd_determinant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883536-simd_determinant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883536-simd_determinant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the determinant of the specified matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883443-simd_inverse": {
+      "title": "simd_inverse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883443-simd_inverse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883443-simd_inverse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the inverse of the specified matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883404-simd_linear_combination": {
+      "title": "simd_linear_combination",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883404-simd_linear_combination",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883404-simd_linear_combination",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the linear combination of two scalar values and two matrices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2883464-simd_transpose": {
+      "title": "simd_transpose",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2883464-simd_transpose",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2883464-simd_transpose"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/matrix_double2x2": {
+      "title": "matrix_double2x2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/matrix_double2x2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/matrix_double2x2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type alias for a double-precision 2 x 2 matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd_double2x2": {
+      "title": "simd_double2x2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd_double2x2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/simd_double2x2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A matrix of two columns and two rows that contains double-precision values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd_double2x3": {
+      "title": "simd_double2x3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd_double2x3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/simd_double2x3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A matrix of two columns and three rows that contains double-precision values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd_double2x4": {
+      "title": "simd_double2x4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd_double2x4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/simd_double2x4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A matrix of two columns and four rows that contains double-precision values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd_double3x2": {
+      "title": "simd_double3x2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd_double3x2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/simd_double3x2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A matrix of three columns and two rows that contains double-precision values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd_double3x3": {
+      "title": "simd_double3x3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd_double3x3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/simd_double3x3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A matrix of three columns and three rows that contains double-precision values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd_double3x4": {
+      "title": "simd_double3x4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd_double3x4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/simd_double3x4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A matrix of three columns and four rows that contains double-precision values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd_double4x2": {
+      "title": "simd_double4x2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd_double4x2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/simd_double4x2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A matrix of four columns and two rows that contains double-precision values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd_double4x3": {
+      "title": "simd_double4x3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd_double4x3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/simd_double4x3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A matrix of four columns and three rows that contains double-precision values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd_double4x4": {
+      "title": "simd_double4x4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd_double4x4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/simd_double4x4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A matrix of four columns and four rows that contains double-precision values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Matrix Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/matrix_identity_double2x2"
+      ],
+      "anchor": "3706578"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Matrix Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/simd_double2x2/2868312-columns"
+      ],
+      "anchor": "2869157"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Matrix Creation Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2896435-simd_matrix",
+        "doc://com.apple.documentation/documentation/accelerate/2896646-simd_matrix_from_rows",
+        "doc://com.apple.documentation/documentation/accelerate/2896682-simd_diagonal_matrix"
+      ],
+      "anchor": "2959679"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Math Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2883546-simd_add",
+        "doc://com.apple.documentation/documentation/accelerate/2883387-simd_sub",
+        "doc://com.apple.documentation/documentation/accelerate/2883575-matrix_scale"
+      ],
+      "anchor": "2959680"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Matrix-Scalar Multiplication Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2883509-simd_mul"
+      ],
+      "anchor": "3723435"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Matrix-Vector Multiplication Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2883525-simd_mul",
+        "doc://com.apple.documentation/documentation/accelerate/2908940-matrix_multiply",
+        "doc://com.apple.documentation/documentation/accelerate/2883435-simd_mul",
+        "doc://com.apple.documentation/documentation/accelerate/2908902-matrix_multiply"
+      ],
+      "anchor": "3723434"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Matrix-Matrix Multiplication Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2883567-simd_mul",
+        "doc://com.apple.documentation/documentation/accelerate/2908912-matrix_multiply",
+        "doc://com.apple.documentation/documentation/accelerate/2883440-simd_mul",
+        "doc://com.apple.documentation/documentation/accelerate/2908968-matrix_multiply",
+        "doc://com.apple.documentation/documentation/accelerate/2883391-simd_mul",
+        "doc://com.apple.documentation/documentation/accelerate/2908932-matrix_multiply"
+      ],
+      "anchor": "3723433"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Equality Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2883369-simd_equal",
+        "doc://com.apple.documentation/documentation/accelerate/2883394-simd_almost_equal_elements",
+        "doc://com.apple.documentation/documentation/accelerate/2883597-simd_almost_equal_elements_relat"
+      ],
+      "anchor": "2959681"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Determinant and Inverse Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2883536-simd_determinant",
+        "doc://com.apple.documentation/documentation/accelerate/2883443-simd_inverse"
+      ],
+      "anchor": "3709337"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Linear Combination Function",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2883404-simd_linear_combination"
+      ],
+      "anchor": "2959682"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Transpose Function",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2883464-simd_transpose"
+      ],
+      "anchor": "2959683"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Aliases",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/matrix_double2x2"
+      ],
+      "anchor": "3709365"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/simd_double2x3",
+        "doc://com.apple.documentation/documentation/accelerate/simd_double2x4",
+        "doc://com.apple.documentation/documentation/accelerate/simd_double3x2",
+        "doc://com.apple.documentation/documentation/accelerate/simd_double3x3",
+        "doc://com.apple.documentation/documentation/accelerate/simd_double3x4",
+        "doc://com.apple.documentation/documentation/accelerate/simd_double4x2",
+        "doc://com.apple.documentation/documentation/accelerate/simd_double4x3",
+        "doc://com.apple.documentation/documentation/accelerate/simd_double4x4"
+      ],
+      "title": "Matrix Structures",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "struct"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "simd_double2x2"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

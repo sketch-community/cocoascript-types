@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Keys used to access values in the launch options dictionary passed to your app at initialization time."
+      "text": "Keys you use to access values in the launch options dictionary that is passed to your app at initialization time."
     }
   ],
   "documentVersion": 0,
@@ -42,20 +42,28 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UIApplicationLaunchOptionsKey",
+    "parent": {
+      "title": "UIApplication"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -69,8 +77,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -343,35 +351,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623045-localnotification": {
-      "title": "localNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623045-localnotification",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplication/launchoptionskey/1623045-localnotification",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A key indicating that the app was launched to handle a local notification. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "localNotification"
-        },
-        {
-          "kind": "text",
-          "text": ": UIApplication.LaunchOptionsKey"
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623101-location": {
       "title": "location",
       "type": "topic",
@@ -596,6 +575,35 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623045-localnotification": {
+      "title": "localNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623045-localnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/launchoptionskey/1623045-localnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key indicating that the app was launched to handle a local notification. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "localNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": UIApplication.LaunchOptionsKey"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/2442009-init": {
       "title": "init(rawValue:)",
       "type": "topic",
@@ -603,6 +611,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiapplication/launchoptionskey/2442009-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a launch options key with the specified raw value."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -622,6 +636,28 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/3727305-eventattribution": {
+      "title": "eventAttribution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/3727305-eventattribution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/launchoptionskey/3727305-eventattribution",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "eventAttribution"
+        },
+        {
+          "kind": "text",
+          "text": ": UIApplication.LaunchOptionsKey"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey": {
       "title": "UIApplication.LaunchOptionsKey",
       "type": "topic",
@@ -632,7 +668,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Keys used to access values in the launch options dictionary passed to your app at initialization time."
+          "text": "Keys you use to access values in the launch options dictionary that is passed to your app at initialization time."
         }
       ],
       "fragments": [
@@ -646,43 +682,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching": {
-      "title": "applicationDidFinishLaunching(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the delegate when the app has finished launching. Don’t use. Instead, use "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "applicationDidFinishLaunching"
-        },
-        {
-          "kind": "text",
-          "text": "(UIApplication)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1622971-didfinishlaunchingnotification": {
       "title": "didFinishLaunchingNotification",
       "type": "topic",
@@ -693,7 +692,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted immediately after the app finishes launching."
+          "text": "A notification that posts immediately after the app finishes launching."
         }
       ],
       "fragments": [
@@ -734,13 +733,12 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Type Properties",
+      "title": "Accessing Launch Options",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623009-annotation",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1622965-bluetoothcentrals",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623116-bluetoothperipherals",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1648676-cloudkitsharemetadata",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623045-localnotification",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623101-location",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623129-newsstanddownloads",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1622967-remotenotification",
@@ -748,15 +746,26 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623064-sourceapplication",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1622996-url",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623113-useractivitydictionary",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1622954-useractivitytype"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1622954-useractivitytype",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/1623045-localnotification"
+      ],
+      "anchor": "2446892"
     },
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Creating a Launch Options Key",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/2442009-init"
-      ]
+      ],
+      "anchor": "2863557"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey/3727305-eventattribution"
+      ],
+      "anchor": "3728347"
     }
   ],
   "seeAlsoSections": [
@@ -764,7 +773,6 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1622971-didfinishlaunchingnotification"
       ],
       "title": "Initializing the App",
@@ -795,6 +803,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -815,7 +824,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "These keys are passed to the options dictionary passed to the "
+              "text": "These keys are passed to the options dictionary that is passed to the "
             },
             {
               "type": "reference",
@@ -833,7 +842,7 @@
             },
             {
               "type": "text",
-              "text": " methods of the app delegate "
+              "text": " methods of the app delegate. "
             }
           ]
         }
@@ -841,7 +850,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

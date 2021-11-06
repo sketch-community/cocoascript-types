@@ -43,30 +43,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSHTTPCookieStorage(im)getCookiesForTask:completionHandler:",
+    "parent": {
+      "title": "HTTPCookieStorage"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -92,8 +100,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -189,6 +197,22 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/swift/void"
+    },
+    "doc://com.apple.documentation/documentation/foundation/httpcookiestorage/1408517-getcookiesfor#3808340": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/httpcookiestorage/1408517-getcookiesfor#3808340",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/httpcookiestorage/1408517-getcookiesfor#3808340"
+    },
+    "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously": {
+      "title": "Calling Objective-C APIs Asynchronously",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/swift/calling_objective-c_apis_asynchronously"
     },
     "doc://com.apple.documentation/documentation/foundation/httpcookiestorage/1418390-cookies": {
       "title": "cookies",
@@ -447,6 +471,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -490,10 +515,66 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:"
+                }
+              ]
+            },
+            {
+              "type": "codeListing",
+              "code": [
+                "func cookies(for task: URLSessionTask) async -> [HTTPCookie]?"
+              ],
+              "syntax": "swift",
+              "metadata": {
+                "anchor": "3808340",
+                "title": "Listing 1"
+              }
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For information about concurrency and asynchronous code in Swift, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important",
+          "name": "Concurrency Note"
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

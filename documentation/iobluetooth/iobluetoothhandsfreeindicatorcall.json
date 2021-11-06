@@ -1,11 +1,18 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The command string you use to show an active call indicator on a phone."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/iobluetooth",
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants"
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/status_indicator_constants"
       ]
     ]
   },
@@ -28,20 +35,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
-      },
-      {
-        "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@IOBluetoothHandsFreeIndicatorCall",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -76,10 +78,18 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants": {
-      "title": "IOBluetooth Constants",
-      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants",
-      "url": "/documentation/iobluetooth/iobluetooth_constants",
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway": {
+      "title": "IOBluetoothHandsFreeAudioGateway",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/status_indicator_constants": {
+      "title": "Status Indicator Constants",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/status_indicator_constants",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/status_indicator_constants",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -92,6 +102,48 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorcall": {
+      "title": "IOBluetoothHandsFreeIndicatorCall",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorcall",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeindicatorcall",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The command string you use to show an active call indicator on a phone."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorcallheld": {
+      "title": "IOBluetoothHandsFreeIndicatorCallHeld",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorcallheld",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeindicatorcallheld",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The command string you use to show a call hold status indicator on a phone."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorcallsetup": {
+      "title": "IOBluetoothHandsFreeIndicatorCallSetup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorcallsetup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeindicatorcallsetup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The command string you use to show a call setup status indicator on a phone."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -100,6 +152,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorcallheld",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorcallsetup"
+      ],
+      "title": "Call Status",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -137,15 +199,89 @@
             }
           ],
           "platforms": [
-            "macOS",
-            "Mac Catalyst"
+            "macOS"
           ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The possible values for the call indicator are:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "0"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "No calls are active."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "1"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "A call is active."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Function to use to allocate any storage needed."
+      "text": "The function for allocating any necessary storage."
     }
   ],
   "documentVersion": 0,
@@ -12,15 +12,14 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions"
       ]
     ]
@@ -44,35 +43,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@SA@SparseSymbolicFactorOptions@FI@malloc",
+    "parent": {
+      "title": "SparseSymbolicFactorOptions"
+    },
     "symbolKind": "structp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,10 +122,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions": {
-      "title": "Sparse Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions": {
+      "title": "Sparse Matrix Factor Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -137,18 +144,10 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions": {
-      "title": "Sparse Symbolic Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions": {
+      "title": "Sparse Symbolic Factorization Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -163,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Function to use to free allocated storage."
+          "text": "The function for freeing allocated storage."
         }
       ]
     },
@@ -185,7 +184,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Flags controlling the computation."
+          "text": "The flags that control the computation."
         }
       ]
     },
@@ -203,20 +202,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror": {
-      "title": "reportError",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Function to use to report parameter errors."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868231-ordermethod": {
       "title": "orderMethod",
       "type": "topic",
@@ -227,7 +212,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Ordering algorithm to use."
+          "text": "The ordering algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order": {
+      "title": "order",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user-supplied array for ordering."
         }
       ]
     },
@@ -245,17 +244,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order": {
-      "title": "order",
+    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns": {
+      "title": "ignoreRowsAndColumns",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
+      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
       "abstract": [
         {
           "type": "text",
-          "text": "User-supplied array for ordering."
+          "text": "An array that contains row and column indices to ignore."
         }
       ]
     },
@@ -269,21 +268,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Function to use to allocate any storage needed."
+          "text": "The function for allocating any necessary storage."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns": {
-      "title": "ignoreRowsAndColumns",
+    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror": {
+      "title": "reportError",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
+      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
       "abstract": [
         {
           "type": "text",
-          "text": "An array containing row and column indices to ignore."
+          "text": "The function for reporting parameter errors."
         }
       ]
     },
@@ -300,12 +299,12 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868170-control",
         "doc://com.apple.documentation/documentation/accelerate/sparsecontrol_t",
-        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868231-ordermethod",
-        "doc://com.apple.documentation/documentation/accelerate/sparseorder_t",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
+        "doc://com.apple.documentation/documentation/accelerate/sparseorder_t",
+        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868237-free",
-        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns"
+        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror"
       ],
       "title": "Inspecting Symbolic Factor Options",
       "generated": true
@@ -357,6 +356,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -379,7 +379,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Size of space to allocate in bytes."
+                  "text": "The size of space to allocate in bytes."
                 }
               ]
             }
@@ -401,7 +401,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Pointer to newly allocated memory, or "
+              "text": "A pointer to newly allocated memory, or "
             },
             {
               "type": "codeVoice",
@@ -409,7 +409,7 @@
             },
             {
               "type": "text",
-              "text": " if allocation failed."
+              "text": " if allocation fails."
             }
           ]
         }
@@ -429,7 +429,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Memory is freed through the "
+              "text": "The system frees memory through the "
             },
             {
               "type": "reference",
@@ -446,7 +446,7 @@
             },
             {
               "type": "text",
-              "text": ", the system "
+              "text": ", the system uses "
             },
             {
               "type": "codeVoice",
@@ -454,7 +454,7 @@
             },
             {
               "type": "text",
-              "text": " is used."
+              "text": "."
             }
           ]
         }
@@ -462,7 +462,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

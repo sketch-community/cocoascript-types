@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So9NSRunLoopC10FoundationE17SchedulerTimeTypeV6StrideV",
+    "parent": {
+      "title": "RunLoop.SchedulerTimeType"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -78,8 +86,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -514,7 +522,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type used when evaluating integer literals."
+          "text": "The type for evaluating integer literals."
         }
       ],
       "fragments": [
@@ -538,7 +546,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The type used for expressing the stride’s magnitude."
+          "text": "The type for expressing the stride’s magnitude."
         }
       ],
       "fragments": [
@@ -1084,6 +1092,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3358291": {
+      "title": "==(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3358291",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/schedulertimetype/stride/3358291",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether two values are equal."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "== "
+        },
+        {
+          "kind": "text",
+          "text": "(RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride) -> Bool"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329443": {
       "title": ">(_:_:)",
       "type": "topic",
@@ -1147,6 +1183,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/runloop/schedulertimetype/stride/3358293-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a run loop scheduler time interval with data from an unarchiver."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -1173,6 +1215,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/runloop/schedulertimetype/stride/3358292-encode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encodes the run loop schedule time interval into the given encoder."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1193,84 +1241,6 @@
         {
           "kind": "text",
           "text": ": Encoder)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3516323": {
-      "title": "+=(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3516323",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/runloop/schedulertimetype/stride/3516323",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Adds two values and stores the result in the left-hand-side variable."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "+= "
-        },
-        {
-          "kind": "text",
-          "text": "(inout RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3516324": {
-      "title": "-=(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3516324",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/runloop/schedulertimetype/stride/3516324",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Subtracts the second value from the first and stores the difference in the left-hand-side variable."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "-= "
-        },
-        {
-          "kind": "text",
-          "text": "(inout RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3358291": {
-      "title": "==(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3358291",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/runloop/schedulertimetype/stride/3358291",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "== "
-        },
-        {
-          "kind": "text",
-          "text": "(RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride) -> Bool"
         }
       ]
     },
@@ -1411,7 +1381,8 @@
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329453-init",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329454-init",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329465-zero"
-      ]
+      ],
+      "anchor": "3330121"
     },
     {
       "kind": "taskGroup",
@@ -1422,7 +1393,8 @@
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329458-nanoseconds",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329462-seconds",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329463-seconds"
-      ]
+      ],
+      "anchor": "3330125"
     },
     {
       "kind": "taskGroup",
@@ -1431,7 +1403,8 @@
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/floatliteraltype",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/integerliteraltype",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/magnitude"
-      ]
+      ],
+      "anchor": "3330122"
     },
     {
       "kind": "taskGroup",
@@ -1439,7 +1412,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329455-magnitude",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329464-timeinterval"
-      ]
+      ],
+      "anchor": "3330120"
     },
     {
       "kind": "taskGroup",
@@ -1450,7 +1424,8 @@
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329434",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329436",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329439"
-      ]
+      ],
+      "anchor": "3330126"
     },
     {
       "kind": "taskGroup",
@@ -1465,7 +1440,8 @@
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329423",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329426",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329427"
-      ]
+      ],
+      "anchor": "3330129"
     },
     {
       "kind": "taskGroup",
@@ -1474,32 +1450,20 @@
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329416",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329441",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329442",
+        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3358291",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329443",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3329444"
-      ]
+      ],
+      "anchor": "3330123"
     },
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Encoding Scheduler Time Intervals",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3358293-init"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3358293-init",
         "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3358292-encode"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Operator Functions",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3516323",
-        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3516324",
-        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/stride/3358291"
-      ]
+      ],
+      "anchor": "3737842"
     }
   ],
   "seeAlsoSections": [
@@ -1556,6 +1520,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1566,7 +1531,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

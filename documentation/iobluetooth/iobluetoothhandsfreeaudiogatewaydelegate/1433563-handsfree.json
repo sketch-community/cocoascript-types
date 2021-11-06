@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Tells the delegate the connected Bluetooth hands-free phone or headset is redialing the last phone number."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,15 +34,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)IOBluetoothHandsFreeAudioGatewayDelegate(im)handsFree:redial:",
+    "parent": {
+      "title": "IOBluetoothHandsFreeAudioGatewayDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -77,7 +86,13 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods for receiving information about status changes for a connected Bluetooth hands-free phone or headset."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway": {
       "title": "IOBluetoothHandsFreeAudioGateway",
@@ -95,6 +110,56 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnumber"
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate/1433943-handsfree": {
+      "title": "handsFree:hangup:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate/1433943-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate/1433943-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the connected Bluetooth hands-free phone or headset is sending a hang-up signal."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:hangup:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate/1433563-handsfree": {
+      "title": "handsFree:redial:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate/1433563-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate/1433563-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the connected Bluetooth hands-free phone or headset is redialing the last phone number."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:redial:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -103,6 +168,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate/1433943-handsfree"
+      ],
+      "title": "Receiving Status Change Information",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -190,10 +264,50 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "device",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The audio gateway for the remote hands-free Bluetooth device."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "redial",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A number that indicates whether the device is attempting to redial. This value is always set to 1."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": []
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

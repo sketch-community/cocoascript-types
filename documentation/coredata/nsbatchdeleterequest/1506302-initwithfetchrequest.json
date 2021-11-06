@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a request that deletes the results of the specified fetch request."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSBatchDeleteRequest(im)initWithFetchRequest:",
+    "parent": {
+      "title": "NSBatchDeleteRequest"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A request to Core Data to do a batch delete of data in a persistent store without loading any data into memory."
+          "text": "A request that deletes objects in the SQLite persistent store without loading them into memory."
         }
       ]
     },
@@ -129,6 +143,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coredata/nsbatchdeleterequest/1506302-initwithfetchrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a request that deletes the results of the specified fetch request."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -147,6 +167,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coredata/nsbatchdeleterequest/1506746-initwithobjectids",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a request that deletes the managed objects with the specified identifiers."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -229,6 +255,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -236,10 +263,32 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "fetch",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The fetch request that identifies the managed objects to delete."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

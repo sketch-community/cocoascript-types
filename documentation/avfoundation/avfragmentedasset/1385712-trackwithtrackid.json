@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the track associated with a specified track identifier."
+      "text": "Returns a track that contains the specified identifier."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVFragmentedAsset(im)trackWithTrackID:",
+    "parent": {
+      "title": "AVFragmentedAsset"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An asset whose duration the system can extend without modifying its existing media data."
+          "text": "An asset with a duration that the system can extend without modifying its existing media data."
         }
       ]
     },
@@ -127,6 +135,24 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nil-2gl"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746532-loadtrackwithtrackid": {
+      "title": "loadTrackWithTrackID:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746532-loadtrackwithtrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfragmentedasset/3746532-loadtrackwithtrackid",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTrackWithTrackID:completionHandler:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avasset/1387953-tracks": {
       "title": "tracks",
@@ -162,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The collection of tracks contained by the asset."
+          "text": "The tracks an asset contains."
         }
       ]
     },
@@ -176,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the track associated with a specified track identifier."
+          "text": "Returns a track that contains the specified identifier."
         }
       ],
       "fragments": [
@@ -200,7 +226,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of asset tracks associated with an asset for the specified media type."
+          "text": "Returns tracks that present media of a specified type."
         }
       ],
       "fragments": [
@@ -224,7 +250,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of asset tracks associated with an asset for the specified characteristic."
+          "text": "Returns tracks that present media of a specified characteristic."
         }
       ],
       "fragments": [
@@ -313,6 +339,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -335,7 +362,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The track identifier of the requested fragmented asset track."
+                  "text": "The identifier of the track to return."
                 }
               ]
             }
@@ -357,7 +384,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The track associated with the track identifier, or "
+              "text": "A fragmented asset track, or "
             },
             {
               "type": "reference",
@@ -386,7 +413,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can call this method without blocking the current thread after you’ve asynchronously loaded the "
+              "text": "Apple discourages the use of this method in iOS 15, tvOS 15, and macOS 12 or later. Load a track asynchronously using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfragmentedasset/3746532-loadtrackwithtrackid"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You may call this method without blocking the current thread after you’ve asynchronously loaded the "
             },
             {
               "type": "reference",
@@ -398,12 +443,16 @@
               "text": " property."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

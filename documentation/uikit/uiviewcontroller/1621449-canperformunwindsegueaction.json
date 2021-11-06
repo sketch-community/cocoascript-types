@@ -37,30 +37,40 @@
         "name": "iOS",
         "introducedAt": "6.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)UIViewController(im)canPerformUnwindSegueAction:fromViewController:withSender:",
+    "parent": {
+      "title": "UIViewController"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -378,31 +388,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614624-prepareinterstitialads": {
-      "title": "prepareInterstitialAds",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614624-prepareinterstitialads",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/1614624-prepareinterstitialads",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Prepares the iAd framework to display interstitial ads, which may involve prefetching ad assets."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "prepareInterstitialAds"
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621465-presentmodalviewcontroller": {
       "title": "presentModalViewController:animated:",
       "type": "topic",
@@ -449,31 +434,6 @@
         {
           "kind": "identifier",
           "text": "presentMoviePlayerViewControllerAnimated:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614631-requestinterstitialadpresentatio": {
-      "title": "requestInterstitialAdPresentation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614631-requestinterstitialadpresentatio",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/1614631-requestinterstitialadpresentatio",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asks the framework to display an interstitial ad."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "requestInterstitialAdPresentation"
         }
       ],
       "deprecated": true
@@ -772,10 +732,8 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621369-dismissmodalviewcontrolleranimat",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1622345-dismissmovieplayerviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621448-viewcontrollerforunwindsegueacti",
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614624-prepareinterstitialads",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621465-presentmodalviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1622347-presentmovieplayerviewcontroller",
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614631-requestinterstitialadpresentatio",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621402-rotatingfooterview",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621412-rotatingheaderview",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621500-segueforunwindingtoviewcontrolle",
@@ -894,6 +852,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -1058,7 +1017,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -33,7 +33,7 @@
     },
     {
       "type": "text",
-      "text": " in place on a dense matrix of single-precision values."
+      "text": ", in place on a dense matrix of single-precision values."
     }
   ],
   "documentVersion": 0,
@@ -43,8 +43,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_multiplication_and_solve_functions"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions/subfactor_multiplication_functions"
       ]
     ]
   },
@@ -67,35 +67,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseMultiply#$@SA@SparseOpaqueSubfactor_Float#$@SA@DenseMatrix_Float#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -138,18 +143,18 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions": {
+      "title": "Subfactor Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/subfactor_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_multiplication_and_solve_functions": {
-      "title": "Subfactor Multiplication and Solve Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_multiplication_and_solve_functions",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_multiplication_and_solve_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions/subfactor_multiplication_functions": {
+      "title": "Subfactor Multiplication Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions/subfactor_multiplication_functions",
+      "url": "/documentation/accelerate/sparse_solvers/subfactor_functions/subfactor_multiplication_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -161,14 +166,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/accelerate/2881897-sparsecreatesubfactor"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float": {
-      "title": "SparseOpaqueSubfactor_Float",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparseopaquesubfactor_float"
     },
     "doc://com.apple.documentation/documentation/accelerate/densematrix_float": {
       "title": "DenseMatrix_Float",
@@ -204,18 +201,13 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": " = Subfactor * X"
+              "text": " = Subfactor * X, "
             }
           ]
         },
         {
           "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "codeVoice",
-              "code": " "
-            }
-          ]
+          "inlineContent": []
         },
         {
           "type": "text",
@@ -264,7 +256,7 @@
         },
         {
           "type": "text",
-          "text": " in place on a dense matrix of single-precision values."
+          "text": ", in place on a dense matrix of single-precision values."
         }
       ]
     },
@@ -387,7 +379,7 @@
             {
               "kind": "typeIdentifier",
               "preciseIdentifier": "c:@T@SparseOpaqueSubfactor_Float",
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float",
+              "identifier": "symbol-2881992",
               "text": "SparseOpaqueSubfactor_Float"
             },
             {
@@ -407,6 +399,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -429,7 +422,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The subfactor to multiply by, as returned by "
+                  "text": "The subfactor to multiply by, which "
                 },
                 {
                   "type": "reference",
@@ -438,7 +431,7 @@
                 },
                 {
                   "type": "text",
-                  "text": "."
+                  "text": " returns."
                 }
               ]
             }
@@ -465,7 +458,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ". On return it is overwritten with the matrix "
+                  "text": ". On return, the matrix "
                 },
                 {
                   "type": "emphasis",
@@ -478,7 +471,7 @@
                 },
                 {
                   "type": "text",
-                  "text": "."
+                  "text": " overwrites it. "
                 }
               ]
             }
@@ -488,7 +481,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

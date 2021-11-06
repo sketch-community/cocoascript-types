@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A structure that contains options that affect the numerical stage of a sparse factorization. "
+      "text": "A structure that contains options that affect the numerical stage of a sparse factorization."
     }
   ],
   "documentVersion": 0,
@@ -12,14 +12,13 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_refactor_functions"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions"
       ]
     ]
   },
@@ -42,35 +41,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@SparseNumericFactorOptions",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,26 +117,18 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions": {
-      "title": "Sparse Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions": {
+      "title": "Sparse Matrix Factor Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_refactor_functions": {
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions": {
       "title": "Sparse Refactor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_refactor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_refactor_functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_refactor_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -147,7 +143,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure that contains options that affect the numerical stage of a sparse factorization. "
+          "text": "A structure that contains options that affect the numerical stage of a sparse factorization."
         }
       ]
     },
@@ -169,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Pivot tolerance used by threshold partial pivoting."
+          "text": "The pivot tolerance that threshold partial pivoting uses."
         }
       ]
     },
@@ -207,7 +203,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "User-supplied array for scaling."
+          "text": "An array that scales the matrix before factorization."
         }
       ]
     },
@@ -221,7 +217,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Flags controlling the computation."
+          "text": "The flags that control the computation."
         }
       ]
     },
@@ -249,7 +245,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Scaling method to use."
+          "text": "The scaling method."
         }
       ]
     },
@@ -277,7 +273,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Zero tolerance used by some pivoting modes."
+          "text": "The zero tolerance that some pivoting modes use."
         }
       ]
     },
@@ -291,7 +287,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure that defines the factorization type."
+          "text": "Constants that define the factorization type."
         }
       ]
     },
@@ -306,34 +302,6 @@
         {
           "type": "text",
           "text": "A structure that contains options that affect the symbolic stage of a sparse factorization."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double": {
-      "title": "SparseOpaqueFactorization_Double",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparseopaquefactorization_double",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure representing the factorization of a matrix of double-precision, floating-point values."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float": {
-      "title": "SparseOpaqueFactorization_Float",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparseopaquefactorization_float",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure representing the factorization of a matrix of single-precision, floating-point values."
         }
       ]
     },
@@ -357,18 +325,17 @@
         "doc://com.apple.documentation/documentation/accelerate/sparsescaling_t",
         "doc://com.apple.documentation/documentation/accelerate/sparsenumericfactoroptions/2868089-pivottolerance",
         "doc://com.apple.documentation/documentation/accelerate/sparsenumericfactoroptions/2868003-zerotolerance"
-      ]
+      ],
+      "anchor": "2869132"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t",
-        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions",
-        "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double",
-        "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float"
+        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions"
       ],
-      "title": "Supporting Types",
+      "title": "Structures that Specify Factorization Type and Factorization Options ",
       "generated": true
     }
   ],
@@ -424,6 +391,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -451,7 +419,7 @@
             },
             {
               "type": "text",
-              "text": " allows for the following types of scaling to be performed:"
+              "text": " supports the following types of scaling:"
             }
           ]
         },
@@ -478,7 +446,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Default scaling—at present, "
+                      "text": "Default scaling — "
                     },
                     {
                       "type": "reference",
@@ -534,7 +502,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " is nonnull, otherwise no scaling."
+                      "text": " is nonnull; otherwise, no scaling."
                     }
                   ]
                 }
@@ -576,7 +544,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Note that "
+              "text": "Note that the system clamps "
             },
             {
               "type": "reference",
@@ -585,7 +553,7 @@
             },
             {
               "type": "text",
-              "text": " is clamped to range "
+              "text": " to range "
             },
             {
               "type": "codeVoice",
@@ -605,7 +573,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

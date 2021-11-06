@@ -1,0 +1,1148 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add and configure an extension to enable your location sharing app to access a user’s location in response to a request from another user."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corelocation",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/creating_a_location_push_service_extension",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3874111,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating a Location Push Service Extension",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Core Location"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/cllocationmanager/creating_a_location_push_service_extension"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corelocation/cllocationmanager/creating_a_location_push_service_extension"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corelocation": {
+      "title": "Core Location",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation",
+      "url": "/documentation/corelocation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager": {
+      "title": "CLLocationManager",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager",
+      "url": "/documentation/corelocation/cllocationmanager",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_location_push": {
+      "title": "com.apple.developer.location.push",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_location_push",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_developer_location_push",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables a location sharing app, with a user’s authorization, to query a user’s location in response to a location push from Apple Push Notification service (APNs)."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.developer.location.push"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications/registering_your_app_with_apns": {
+      "title": "Registering Your App with APNs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications/registering_your_app_with_apns",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/usernotifications/registering_your_app_with_apns"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services": {
+      "title": "Requesting Authorization for Location Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/requesting_authorization_for_location_services"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension": {
+      "title": "CLLocationPushServiceExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationpushserviceextension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that provides the entry point for the Location Push Service Extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager": {
+      "title": "locationManager:didUpdateLocations:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "locationManager:didUpdateLocations:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746837-startmonitoringlocationpusheswit": {
+      "title": "startMonitoringLocationPushesWithCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746837-startmonitoringlocationpusheswit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/3746837-startmonitoringlocationpusheswit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts monitoring for the delivery of Apple Push Notification service (APNs) location pushes, and provides a device-specific token for sending pushes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startMonitoringLocationPushesWithCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedalways": {
+      "title": "kCLAuthorizationStatusAuthorizedAlways",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedalways",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedalways"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension/3746846-didreceivelocationpushpayload": {
+      "title": "didReceiveLocationPushPayload:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension/3746846-didreceivelocationpushpayload",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationpushserviceextension/3746846-didreceivelocationpushpayload",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "didReceiveLocationPushPayload:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/protecting_the_user_s_privacy": {
+      "title": "Protecting the User’s Privacy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/protecting_the_user_s_privacy",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/uikit/protecting_the_user_s_privacy"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns": {
+      "title": "Establishing a Token-Based Connection to APNs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns": {
+      "title": "Sending Notification Requests to APNs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns"
+    },
+    "doc://com.apple.documentation/documentation/usernotifications/sending_push_notifications_using_command-line_tools": {
+      "title": "Sending Push Notifications Using Command-Line Tools",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/usernotifications/sending_push_notifications_using_command-line_tools",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/usernotifications/sending_push_notifications_using_command-line_tools"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization": {
+      "title": "requestAlwaysAuthorization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestAlwaysAuthorization"
+        }
+      ]
+    },
+    "link-3874113": {
+      "title": "request form",
+      "type": "topic",
+      "identifier": "link-3874113",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/contact/request/location-push-service-extension/"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/creating_a_location_push_service_extension": {
+      "title": "Creating a Location Push Service Extension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/creating_a_location_push_service_extension",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/cllocationmanager/creating_a_location_push_service_extension",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add and configure an extension to enable your location sharing app to access a user’s location in response to a request from another user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746838-stopmonitoringlocationpushes": {
+      "title": "stopMonitoringLocationPushes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746838-stopmonitoringlocationpushes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/3746838-stopmonitoringlocationpushes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Stop monitoring for Apple Push Notification service (APNs) location pushes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopMonitoringLocationPushes"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerrordomain": {
+      "title": "CLLocationPushServiceErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationpushserviceerrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The domain for Location Push Service Extension errors. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerror": {
+      "title": "CLLocationPushServiceError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationpushserviceerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Error codes the location manager returns if starting to monitor for location push notifications fails."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_location_push",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746837-startmonitoringlocationpusheswit",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746838-stopmonitoringlocationpushes",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerrordomain",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceerror"
+      ],
+      "title": "Monitoring Location Pushes",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Location Push Service Extension, available starting in iOS 15, is a power efficient way to query locations on iOS or iPadOS devices, even when your app isn’t running. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When your app includes a Location Push Service Extension, the system activates the extension when it receives an Apple Push Notification service (APNs) "
+            },
+            {
+              "type": "codeVoice",
+              "code": "location"
+            },
+            {
+              "type": "text",
+              "text": " push from your server. Your app must ask for and receive Always authorization ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedalways"
+            },
+            {
+              "type": "text",
+              "text": ") from the user before the extension can function. For more information about requesting Always authorization, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the user’s authorization, the extension can query the user’s location and process it according to your app’s purpose. Your server sends requests with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "location"
+            },
+            {
+              "type": "text",
+              "text": " push type to APNs. For more information about sending requests to APNs, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To use the Location Push Service Extension, your app must have the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_location_push"
+                },
+                {
+                  "type": "text",
+                  "text": " entitlement. Request this entitlement before implementing this service extension. To apply for the entitlement, log in to your developer account with an Account Holder role and fill out the "
+                },
+                {
+                  "type": "link",
+                  "title": "request form",
+                  "destination": "https://developer.apple.com/contact/request/location-push-service-extension/"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure Your Xcode Project",
+          "anchor": "3875671"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To include Location Push Service Extension in your app, use Xcode 13 or later. Configure the following entitlements, capabilities, and keys for your Xcode project:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the Location Push Server Extension entitlement key ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_location_push"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Enable your app to receive Apple Push Notification service (APNs) pushes by adding the Push Notifications capability. For more information, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/usernotifications/registering_your_app_with_apns"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configure the purpose strings your app provides for the location service authorization prompts. For more information, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add a Location Push Service Extension Target",
+          "anchor": "3875672"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Add a new target using the Location Push Service Extension template. "
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open your iOS app project in Xcode."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Choose File > New > Target."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select Location Push Service Extension from the iOS Application Extension group."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Next."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify the name of your extension and configure the language and other options."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Finish."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Xcode creates a subclass of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension"
+            },
+            {
+              "type": "text",
+              "text": " to get you started."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Implement Location Push Functionality",
+          "anchor": "3875675"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To support location push functionality, implement the following code in your extension, app, and server:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In your service extension, implement the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In your service extension, implement the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to handle the result of the location request, and process the location data received."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In your app, call "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746837-startmonitoringlocationpusheswit"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to receive an APNs token as "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Data"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", and send it to your server. Your server uses this token when it creates APNs pushes."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "From your server, request location information by sending a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "location"
+                    },
+                    {
+                      "type": "text",
+                      "text": " push request to APNs."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the user authorized your app with Always authorization ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus/kclauthorizationstatusauthorizedalways"
+            },
+            {
+              "type": "text",
+              "text": "), the system activates the service extension when it receives a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "location"
+            },
+            {
+              "type": "text",
+              "text": " push, and calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationpushserviceextension/3746846-didreceivelocationpushpayload"
+            },
+            {
+              "type": "text",
+              "text": ". Your app should ask the user for Always authorization at an appropriate time."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Protecting user privacy is important when handling location data. End-to-end encryption provides enhanced security if your app moves location data off the user’s device, including transmitting it to a server or to another user. For more information, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/protecting_the_user_s_privacy"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Send Location Push Requests From Your Server",
+          "anchor": "3875733"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a user requests the location of another user, your app sends the request to your server, which sends a location push request to APNs. Ensure that your APNs "
+            },
+            {
+              "type": "codeVoice",
+              "code": "POST"
+            },
+            {
+              "type": "text",
+              "text": " request contains the following fields for a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "location"
+            },
+            {
+              "type": "text",
+              "text": " push type:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "method"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "(Required) The value is "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "POST"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "path"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "(Required) The path to the device token. The value of this header is "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "/3/device/<device_token>"
+                      },
+                      {
+                        "type": "text",
+                        "text": ", where "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "<device_token>"
+                      },
+                      {
+                        "type": "text",
+                        "text": " is the hexadecimal identifier of the user’s device. Your app receives the token when it calls "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3746837-startmonitoringlocationpusheswit"
+                      },
+                      {
+                        "type": "text",
+                        "text": " to start monitoring location pushes."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "authorization"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "(Required for token-based authentication) The value of this header is "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "bearer <provider_token>"
+                      },
+                      {
+                        "type": "text",
+                        "text": ", where "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "<provider_token>"
+                      },
+                      {
+                        "type": "text",
+                        "text": " is the encrypted token that authorizes you to send notifications for the specified topic. For more information, see "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "apns-topic"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The topic is your app’s bundle ID with the suffix "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "\".location-query\""
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "apns-push-type"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "(Recommended) The value of this header is "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "location"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "apns-priority"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The priority of the notification. If you omit this header, APNs sets the notification priority to "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "10"
+                      },
+                      {
+                        "type": "text",
+                        "text": ". If a user initiates the location query, set this header to "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "10"
+                      },
+                      {
+                        "type": "text",
+                        "text": ". If your app’s server initiates the location query (for example, on a periodic interval) set this header to "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "5"
+                      },
+                      {
+                        "type": "text",
+                        "text": " to send the notification based on power considerations on the user’s device."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about sending APNs requests and using command-line tools to do so, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/usernotifications/sending_push_notifications_using_command-line_tools"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

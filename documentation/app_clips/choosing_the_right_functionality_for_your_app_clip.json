@@ -26,8 +26,8 @@
     "roleHeading": "Article"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -296,6 +296,24 @@
       "role": "symbol",
       "url": "/documentation/uikit/uidevice/1620059-identifierforvendor"
     },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization": {
+      "title": "requestWhenInUseAuthorization",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestWhenInUseAuthorization"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_pass-type-identifiers": {
       "title": "Pass Type IDs Entitlement",
       "type": "topic",
@@ -312,13 +330,29 @@
       "role": "link",
       "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/Apps.html#//apple_ref/doc/uid/TP40012195-CH6-SW3"
     },
-    "doc://com.apple.documentation/documentation/app_clips/making_data_available_to_the_app_clip_s_corresponding_app": {
-      "title": "Making Data Available to the App Clip’s Corresponding App",
+    "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app": {
+      "title": "Sharing Data Between Your App Clip and Your Full App",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/app_clips/making_data_available_to_the_app_clip_s_corresponding_app",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/app_clips/making_data_available_to_the_app_clip_s_corresponding_app"
+      "url": "/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsfaceidusagedescription": {
+      "title": "NSFaceIDUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsfaceidusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsfaceidusagedescription"
+    },
+    "doc://com.apple.documentation/documentation/localauthentication": {
+      "title": "Local Authentication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/localauthentication",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/localauthentication"
     },
     "doc://com.apple.documentation/documentation/foundation/nsurlsession": {
       "title": "NSURLSession",
@@ -420,6 +454,22 @@
       "role": "symbol",
       "url": "/documentation/authenticationservices/aswebauthenticationsessionrequest/3180411-callbackurlscheme"
     },
+    "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode#3681387": {
+      "title": "Keep Your App Clip Small in Size",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode#3681387",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/app_clips/creating_an_app_clip_with_xcode#3681387"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode": {
+      "title": "Creating an App Clip with Xcode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/creating_an_app_clip_with_xcode"
+    },
     "doc://com.apple.documentation/documentation/app_clips/choosing_the_right_functionality_for_your_app_clip": {
       "title": "Choosing the Right Functionality for Your App Clip",
       "type": "topic",
@@ -457,7 +507,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "App Clips come with limitations to ensure a fast launch, protect user privacy, and preserve resources. Before you create an App Clip, first review technology that’s available to App Clips and identify functionality that makes a great App Clip."
+              "text": "An App Clip is a lightweight version of your app that offers some of its functionality when and where it’s needed. It offers a focused feature set and is designed to launch instantly, protect user privacy, and preserve resources. As a result, an App Clip comes with some limitations. Before you create your App Clip, first review technology that’s available to App Clips and identify functionality that makes a great App Clip."
             }
           ]
         },
@@ -469,13 +519,31 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Your full app can have only one App Clip, and the full app must support all of the App Clip’s functionality. Additionally, App Clips must be small — no more than 10 MB — to launch instantly. If possible, keep your App Clip well below this limit."
+                  "text": "Your full app can have only one App Clip, and the full app must support all of the App Clip’s functionality. "
                 }
               ]
             }
           ],
           "style": "note",
           "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To ensure a fast launch experience, App Clips must be small — no more than 10 MB for the uncompressed App Clip binary. If possible, keep your App Clip well below this limit. For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode#3681387"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
         },
         {
           "level": 3,
@@ -825,7 +893,16 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "App Clips can’t request continuous location access. However, they may request the When In Use authorization, which resets automatically the next day at 4:00 a.m."
+                      "text": "App Clips can’t request continuous location access. However, you can call "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to request the When In Use authorization, which resets automatically the next day at 4:00 a.m."
                     }
                   ]
                 }
@@ -874,7 +951,7 @@
                     {
                       "type": "reference",
                       "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/app_clips/making_data_available_to_the_app_clip_s_corresponding_app"
+                      "identifier": "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app"
                     },
                     {
                       "type": "text",
@@ -891,7 +968,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In addition, App Clips can’t access:"
+              "text": "App Clips also come with limitations that help protect user data. They can’t access:"
             }
           ]
         },
@@ -940,6 +1017,33 @@
           ]
         },
         {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Additionally, you can’t use Face ID in your App Clip because the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsfaceidusagedescription"
+            },
+            {
+              "type": "text",
+              "text": " entitlement isn’t available to App Clips. However, you can use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/localauthentication"
+            },
+            {
+              "type": "text",
+              "text": " framework to authenticate users with Touch ID."
+            }
+          ]
+        },
+        {
           "level": 3,
           "type": "heading",
           "text": "Reserve Certain Functionality for Your Full App",
@@ -950,7 +1054,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "To preserve resources and help to protect user privacy, App Clips can’t perform background activity. For example, App Clip’s can’t make use of the following:"
+              "text": "To preserve resources and help to protect user privacy, App Clips can’t perform background activity. For example, App Clips can’t make use of the following:"
             }
           ]
         },
@@ -1228,7 +1332,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Note that App Clips may configure Wi-Fi networks using the "
+              "text": "Note that an App Clip may configure Wi-Fi networks using the "
             },
             {
               "type": "reference",
@@ -1237,7 +1341,7 @@
             },
             {
               "type": "text",
-              "text": ". Additionally, to connect to an authentication provider, App Clips may initialize an "
+              "text": ". Additionally, to connect to an authentication provider, it may initialize an "
             },
             {
               "type": "reference",
@@ -1276,7 +1380,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

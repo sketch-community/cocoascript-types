@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVContentKeyResponse(cm)contentKeyResponseWithClearKeyData:initializationVector:",
+    "parent": {
+      "title": "AVContentKeyResponse"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -182,7 +190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a new key response object with an encrypted key response data blob when FairPlay Streaming is the key delivery method."
+          "text": "Creates a content key response with an encrypted key response data blob when FairPlay Streaming is the key delivery method."
         }
       ],
       "fragments": [
@@ -193,6 +201,30 @@
         {
           "kind": "identifier",
           "text": "contentKeyResponseWithFairPlayStreamingKeyResponseData:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse/3088798-contentkeyresponsewithauthorizat": {
+      "title": "contentKeyResponseWithAuthorizationTokenData:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse/3088798-contentkeyresponsewithauthorizat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyresponse/3088798-contentkeyresponsewithauthorizat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a content key response with an authorization token."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "contentKeyResponseWithAuthorizationTokenData:"
         }
       ]
     },
@@ -207,7 +239,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse/2799183-contentkeyresponsewithfairplayst"
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse/2799183-contentkeyresponsewithfairplayst",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyresponse/3088798-contentkeyresponsewithauthorizat"
       ],
       "title": "Creating New Content Key Responses",
       "generated": true
@@ -297,6 +330,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -418,7 +452,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

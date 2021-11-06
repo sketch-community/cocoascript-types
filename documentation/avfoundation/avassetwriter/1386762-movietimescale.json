@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The asset-level time scale to use."
+      "text": "The time scale of the movie."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.3",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter(py)movieTimeScale",
+    "parent": {
+      "title": "AVAssetWriter"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -132,44 +140,6 @@
       "role": "symbol",
       "url": "/documentation/coremedia/cmtimescale"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings": {
-      "title": "canApplyOutputSettings:forMediaType:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value that indicates whether the specified output settings support a specified media type."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "canApplyOutputSettings:forMediaType:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata": {
-      "title": "metadata",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387974-metadata",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The collection of metadata written to the receiver's output file."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval": {
       "title": "movieFragmentInterval",
       "type": "topic",
@@ -180,7 +150,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The frequency at which to write movie fragments"
+          "text": "The interval at which to write movie fragments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb": {
+      "title": "initialMovieFragmentSequenceNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The sequence number of the initial movie fragment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments": {
+      "title": "producesCombinableFragments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the asset writer outputs movie fragments suitable for combining with others."
         }
       ]
     },
@@ -194,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A hint of the final duration of the file written for file types that support movie fragments."
+          "text": "A hint of the final duration of the output file."
         }
       ]
     },
@@ -208,21 +206,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset-level time scale to use."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse": {
-      "title": "shouldOptimizeForNetworkUse",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether to write the output file to make it more suitable for playback over a network."
+          "text": "The time scale of the movie."
         }
       ]
     },
@@ -237,13 +221,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint"
       ],
-      "title": "Configuring Output",
+      "title": "Configuring Fragment Output",
       "generated": true
     }
   ],
@@ -285,6 +268,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -306,23 +290,6 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For file types that contain a "
-            },
-            {
-              "type": "codeVoice",
-              "code": "moov"
-            },
-            {
-              "type": "text",
-              "text": " atom, such as QuickTime Movie files, specifies the asset-level time scale."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
               "text": "The default value is "
             },
             {
@@ -331,22 +298,16 @@
             },
             {
               "type": "text",
-              "text": ", which indicates that the asset writer will choose a convenient value, if applicable. "
+              "text": ", which indicates that the asset writer chooses an appropriate value, if applicable."
             }
           ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Special Considerations",
-          "anchor": "1677927"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "You cannot set the value after writing has started."
+              "text": "You can’t set this property value after writing starts."
             }
           ]
         }
@@ -354,7 +315,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

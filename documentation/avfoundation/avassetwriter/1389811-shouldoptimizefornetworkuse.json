@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter(py)shouldOptimizeForNetworkUse",
+    "parent": {
+      "title": "AVAssetWriter"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -132,38 +140,6 @@
       "role": "symbol",
       "url": "/documentation/objectivec/yes"
     },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings": {
-      "title": "canApplyOutputSettings:forMediaType:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value that indicates whether the specified output settings support a specified media type."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "canApplyOutputSettings:forMediaType:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata": {
       "title": "metadata",
       "type": "topic",
@@ -174,49 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The collection of metadata written to the receiver's output file."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval": {
-      "title": "movieFragmentInterval",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The frequency at which to write movie fragments"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint": {
-      "title": "overallDurationHint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A hint of the final duration of the file written for file types that support movie fragments."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale": {
-      "title": "movieTimeScale",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1386762-movietimescale",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The asset-level time scale to use."
+          "text": "An array of metadata items to write to the output file."
         }
       ]
     },
@@ -234,6 +168,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles": {
+      "title": "directoryForTemporaryFiles",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A directory to contain temporary files that the export process generates."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -245,11 +193,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles"
       ],
       "title": "Configuring Output",
       "generated": true
@@ -291,6 +236,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -312,7 +258,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When the value of this property is "
+              "text": "Setting this value to "
             },
             {
               "type": "reference",
@@ -321,40 +267,7 @@
             },
             {
               "type": "text",
-              "text": ", the writer writes the output file in such a way that playback can start after only a small amount of the file is downloaded."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The default value is "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-            },
-            {
-              "type": "text",
-              "text": "."
-            }
-          ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Special Considerations",
-          "anchor": "1677938"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "You cannot set the value after writing has started."
+              "text": " writes the output file in a form that enables a player to begin playing the media after downloading only a small portion of it."
             }
           ]
         }
@@ -362,7 +275,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

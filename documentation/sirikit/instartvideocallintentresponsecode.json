@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants indicating the status of the response.  "
+      "text": "Constants indicating the status of the response."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponse"
       ]
     ]
@@ -36,14 +36,21 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -51,8 +58,8 @@
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +94,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols": {
-      "title": "Deprecated Classes and Protocols",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
-      "url": "/documentation/sirikit/deprecated_classes_and_protocols",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -121,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "No response code was specified."
+          "text": "Your app can’t provide a more specific response."
         }
       ],
       "deprecated": true
@@ -136,7 +143,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You are ready to handle the intent. "
+          "text": "You’re ready to handle the intent."
         }
       ],
       "deprecated": true
@@ -151,7 +158,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Your extension is ready to transfer control to the app so that the call can be placed. "
+          "text": "Your extension is ready to transfer control to the app so that your app can place the call."
         }
       ],
       "deprecated": true
@@ -166,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You were unable to initiate the call.  "
+          "text": "You were unable to initiate the call."
         }
       ],
       "deprecated": true
@@ -181,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The user must launch your app to initiate the call. "
+          "text": "The user must launch your app to initiate the call."
         }
       ],
       "deprecated": true
@@ -211,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Your app's calling service is not currently available."
+          "text": "Your app’s calling service isn’t currently available."
         }
       ],
       "deprecated": true
@@ -226,7 +233,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The specified contact cannot be used. "
+          "text": "Your app can’t use the specified contact to place the call."
         }
       ],
       "deprecated": true
@@ -241,7 +248,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The specified number does not support video calls."
+          "text": "The specified number doesn’t support video calls."
         }
       ],
       "deprecated": true
@@ -271,7 +278,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the status of the response.  "
+          "text": "Constants indicating the status of the response."
         }
       ],
       "deprecated": true
@@ -298,7 +305,8 @@
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponsecode/instartvideocallintentresponsecodefailurecallingservicenotavailable",
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponsecode/instartvideocallintentresponsecodefailurecontactnotsupportedbyapp",
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponsecode/instartvideocallintentresponsecodefailureinvalidnumber"
-      ]
+      ],
+      "anchor": "1647121"
     }
   ],
   "seeAlsoSections": [
@@ -372,6 +380,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -379,7 +388,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

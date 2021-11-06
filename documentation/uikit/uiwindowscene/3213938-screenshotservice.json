@@ -51,25 +51,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIWindowScene(py)screenshotService",
+    "parent": {
+      "title": "UIWindowScene"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A specific type of scene that manages one or more windows for your app.  "
+          "text": "A scene that manages one or more windows for your app."
         }
       ]
     },
@@ -156,7 +164,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiscreenshotservice",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiscreenshotservice"
+      "url": "/documentation/uikit/uiscreenshotservice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that coordinates the creation of PDF screenshots of an app’s content."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiscreenshotservicedelegate": {
       "title": "UIScreenshotServiceDelegate",
@@ -188,16 +202,15 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiscreenshotservice"
+      ],
+      "title": "Providing a PDF Version of Your Scene",
+      "generated": true
     }
-  },
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -236,6 +249,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -291,7 +305,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

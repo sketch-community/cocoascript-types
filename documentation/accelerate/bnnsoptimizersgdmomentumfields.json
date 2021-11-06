@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@BNNSOptimizerSGDMomentumFields",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -245,20 +250,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerfunction": {
-      "title": "BNNSOptimizerFunction",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerfunction",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/bnnsoptimizerfunction",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure that contains optimizer functions."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerregularizationfunction": {
       "title": "BNNSOptimizerRegularizationFunction",
       "type": "topic",
@@ -287,6 +278,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizeradamwithclippingfields": {
+      "title": "BNNSOptimizerAdamWithClippingFields",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizeradamwithclippingfields",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsoptimizeradamwithclippingfields",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains the fields of an Adam or AdamW optimizer that optionally clips the gradient by value or by norm."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerrmspropfields": {
       "title": "BNNSOptimizerRMSPropFields",
       "type": "topic",
@@ -297,7 +302,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure that contains the fields of a root-mean-square prop (RMSProp) optimizer."
+          "text": "A structure that contains the fields of a root mean square propagation (RMSProp) optimizer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerrmspropwithclippingfields": {
+      "title": "BNNSOptimizerRMSPropWithClippingFields",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerrmspropwithclippingfields",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsoptimizerrmspropwithclippingfields",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains the fields of a root mean square propagation (RMSProp) optimizer that optionally clips the gradient by value or by norm."
         }
       ]
     },
@@ -312,6 +331,20 @@
         {
           "type": "text",
           "text": "A structure that contains the fields of a stochastic gradient descent (SGD) with momentum optimizer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizersgdmomentumwithclippingfields": {
+      "title": "BNNSOptimizerSGDMomentumWithClippingFields",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizersgdmomentumwithclippingfields",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsoptimizersgdmomentumwithclippingfields",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains the fields of a stochastic gradient descent (SGD) with momentum optimizer that optionally clips the gradient by value or by norm."
         }
       ]
     },
@@ -343,6 +376,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerfunction": {
+      "title": "BNNSOptimizerFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsoptimizerfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains optimizer functions."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -366,18 +413,22 @@
         "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizersgdmomentumfields/3547015-nesterov",
         "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizersgdmomentumfields/3547016-regularization_func",
         "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizersgdmomentumfields/3547018-sgd_momentum_variant"
-      ]
+      ],
+      "anchor": "3556044"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerfunction",
         "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerregularizationfunction",
         "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizeradamfields",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizeradamwithclippingfields",
         "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerrmspropfields",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerrmspropwithclippingfields",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizersgdmomentumwithclippingfields",
         "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizersgdmomentumvariant",
-        "doc://com.apple.documentation/documentation/accelerate/3546648-bnnsoptimizerstep"
+        "doc://com.apple.documentation/documentation/accelerate/3546648-bnnsoptimizerstep",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerfunction"
       ],
       "title": "Optimizer Layers",
       "generated": true
@@ -435,6 +486,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -445,7 +497,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

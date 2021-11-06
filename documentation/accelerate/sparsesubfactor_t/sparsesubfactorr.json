@@ -2,7 +2,33 @@
   "abstract": [
     {
       "type": "text",
-      "text": "R factor object, valid for QR and CholeskyAtA only."
+      "text": "An "
+    },
+    {
+      "type": "emphasis",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "R"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": " factor subfactor that’s valid for QR and Cholesky "
+    },
+    {
+      "type": "emphasis",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "AᵀA"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": " only."
     }
   ],
   "documentVersion": 0,
@@ -12,23 +38,7 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparsesubfactor_t"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/accelerate",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float",
-        "doc://com.apple.documentation/documentation/accelerate/sparsesubfactor_t"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/accelerate",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_double",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparsesubfactor_t"
       ]
     ]
@@ -52,35 +62,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@EA@SparseSubfactor_t@SparseSubfactorR",
+    "parent": {
+      "title": "SparseSubfactor_t"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -123,10 +141,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions": {
+      "title": "Subfactor Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/subfactor_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -141,25 +159,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Defines the subfactor of a factorization."
+          "text": "Constants that define the subfactor of a factorization."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float": {
-      "title": "SparseOpaqueSubfactor_Float",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float",
-      "url": "/documentation/accelerate/sparseopaquesubfactor_float",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_double": {
-      "title": "SparseOpaqueSubfactor_Double",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_double",
-      "url": "/documentation/accelerate/sparseopaquesubfactor_double",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -185,6 +187,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -195,7 +198,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

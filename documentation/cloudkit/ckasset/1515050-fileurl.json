@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKAsset(py)fileURL",
+    "parent": {
+      "title": "CKAsset"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,17 +115,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that represents a large file for a record."
+          "text": "An external file that belongs to a record."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsurl": {
-      "title": "NSURL",
+    "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerrorserverrecordchanged": {
+      "title": "CKErrorServerRecordChanged",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerrorserverrecordchanged",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsurl"
+      "url": "/documentation/cloudkit/ckerrorcode/ckerrorserverrecordchanged"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckasset/1515050-fileurl": {
       "title": "fileURL",
@@ -133,22 +141,36 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
+      "title": "nil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nil-2gl"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorserverrecordkey": {
+      "title": "CKRecordChangedErrorServerRecordKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorserverrecordkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordchangederrorserverrecordkey"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurl": {
+      "title": "NSURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurl"
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "primaryContentSections": [
@@ -189,6 +211,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -214,12 +237,76 @@
               "text": "After you create an asset, use the URL in this property to access the asset’s contents. The URL in this property is different from the one you specify when creating the asset."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If a modify operation fails with a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerrorserverrecordchanged"
+                },
+                {
+                  "type": "text",
+                  "text": " error, CloudKit doesn’t download assets for the copy of the server’s record it inserts into the error’s "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "userInfo"
+                },
+                {
+                  "type": "text",
+                  "text": " dictionary. In this scenario, "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset/1515050-fileurl"
+                },
+                {
+                  "type": "text",
+                  "text": " is "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl"
+                },
+                {
+                  "type": "text",
+                  "text": " for all of the record’s asset fields. You retrieve a copy of the server’s record from the dictionary using "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordchangederrorserverrecordkey"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

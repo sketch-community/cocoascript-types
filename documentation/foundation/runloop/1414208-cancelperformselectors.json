@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.2",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSRunLoop(im)cancelPerformSelectorsWithTarget:",
+    "parent": {
+      "title": "RunLoop"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -84,8 +92,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -183,6 +191,78 @@
         {
           "kind": "text",
           "text": ": Any?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/2091881-perform": {
+      "title": "perform(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/2091881-perform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/2091881-perform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules a block that the run loop invokes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "perform"
+        },
+        {
+          "kind": "text",
+          "text": "(() -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/2091880-perform": {
+      "title": "perform(inModes:block:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/2091880-perform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/2091880-perform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules a block that the run loop invokes when it’s running in any of the specified modes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "perform"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "inModes"
+        },
+        {
+          "kind": "text",
+          "text": ": [RunLoop.Mode], "
+        },
+        {
+          "kind": "identifier",
+          "text": "block"
+        },
+        {
+          "kind": "text",
+          "text": ": () -> Void)"
         }
       ]
     },
@@ -293,10 +373,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/runloop/2091881-perform",
+        "doc://com.apple.documentation/documentation/foundation/runloop/2091880-perform",
         "doc://com.apple.documentation/documentation/foundation/runloop/1409310-perform",
         "doc://com.apple.documentation/documentation/foundation/runloop/1418077-cancelperform"
       ],
-      "title": "Scheduling and Canceling Messages",
+      "title": "Scheduling and Canceling Tasks",
       "generated": true
     }
   ],
@@ -352,6 +434,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -413,7 +496,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

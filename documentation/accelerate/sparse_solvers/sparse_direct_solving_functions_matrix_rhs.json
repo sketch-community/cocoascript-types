@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Solve a system using a factored matrix."
+      "text": "Solve a system with a right-hand-side dense matrix using a factored sparse coefficient matrix."
     }
   ],
   "documentVersion": 0,
@@ -31,8 +31,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,20 +98,7 @@
         },
         {
           "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied double-precision factorization of "
+          "text": " using the supplied double-precision factorization of "
         },
         {
           "type": "emphasis",
@@ -151,20 +138,7 @@
         },
         {
           "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied single-precision factorization of "
+          "text": " using the supplied single-precision factorization of "
         },
         {
           "type": "emphasis",
@@ -198,26 +172,13 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "AX = B"
+              "text": "AX = B "
             }
           ]
         },
         {
           "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied double-precision factorization of "
+          "text": "using the supplied double-precision factorization of "
         },
         {
           "type": "emphasis",
@@ -257,20 +218,7 @@
         },
         {
           "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied single-precision factorization of "
+          "text": " using the supplied single-precision factorization of "
         },
         {
           "type": "emphasis",
@@ -310,20 +258,7 @@
         },
         {
           "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied double-precision factorization of "
+          "text": " using the supplied double-precision factorization of "
         },
         {
           "type": "emphasis",
@@ -336,7 +271,7 @@
         },
         {
           "type": "text",
-          "text": ", in place, and without any internal memory allocations."
+          "text": ", in place and without any internal memory allocations."
         }
       ]
     },
@@ -363,20 +298,7 @@
         },
         {
           "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied single-precision factorization of "
+          "text": " using the supplied single-precision factorization of "
         },
         {
           "type": "emphasis",
@@ -389,7 +311,7 @@
         },
         {
           "type": "text",
-          "text": ", in place, and without any internal memory allocations."
+          "text": ", in place and without any internal memory allocations. "
         }
       ]
     },
@@ -416,20 +338,7 @@
         },
         {
           "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied double-precision factorization of "
+          "text": " using the supplied double-precision factorization of "
         },
         {
           "type": "emphasis",
@@ -442,7 +351,7 @@
         },
         {
           "type": "text",
-          "text": ", and without any internal memory allocations."
+          "text": ", without any internal memory allocations."
         }
       ]
     },
@@ -469,20 +378,7 @@
         },
         {
           "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied single-precision factorization of "
+          "text": " using the supplied single-precision factorization of "
         },
         {
           "type": "emphasis",
@@ -495,7 +391,7 @@
         },
         {
           "type": "text",
-          "text": ", and without any internal memory allocations."
+          "text": ", without any internal memory allocations."
         }
       ]
     },
@@ -513,13 +409,41 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions": {
-      "title": "Sparse Factor Functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double": {
+      "title": "SparseOpaqueFactorization_Double",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseopaquefactorization_double",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that represents the factorization of a matrix of double-precision, floating-point values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float": {
+      "title": "SparseOpaqueFactorization_Float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseopaquefactorization_float",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that represents the factorization of a matrix of single-precision, floating-point values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions": {
+      "title": "Sparse Matrix Factor Functions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
       "abstract": [
         {
           "type": "text",
@@ -537,7 +461,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Solve a system using a factored matrix."
+          "text": "Solve a system with a right-hand-side dense matrix using a factored sparse coefficient matrix."
         }
       ]
     },
@@ -551,21 +475,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Solve a system for a dense vector."
+          "text": "Solve a system with a right-hand-side dense vector using a factored sparse coefficient matrix."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions": {
+      "title": "Sparse Symbolic Factorization Functions",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "abstract": [
         {
           "type": "text",
-          "text": "Work with symbolic factorizations, refactoring, and subfactors."
+          "text": "Calculate the symbolic factorization of a matrix, and solve systems using precalculated symbolic factorizations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions": {
+      "title": "Sparse Refactor Functions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_refactor_functions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recompute a factorization using the numerical data from a matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions": {
+      "title": "Subfactor Functions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/subfactor_functions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extract and work with subfactors."
         }
       ]
     },
@@ -580,39 +532,59 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Direct Solving Functions",
+      "title": "In-Place Direct Solving Functions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/2868160-sparsesolve",
-        "doc://com.apple.documentation/documentation/accelerate/2868188-sparsesolve",
-        "doc://com.apple.documentation/documentation/accelerate/2868219-sparsesolve",
-        "doc://com.apple.documentation/documentation/accelerate/2868242-sparsesolve"
-      ]
+        "doc://com.apple.documentation/documentation/accelerate/2868188-sparsesolve"
+      ],
+      "anchor": "2871509"
     },
     {
       "kind": "taskGroup",
-      "title": "Direct Solving Functions with User-Defined Workspace",
+      "title": "Out-of-Place Direct Solving Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2868219-sparsesolve",
+        "doc://com.apple.documentation/documentation/accelerate/2868242-sparsesolve"
+      ],
+      "anchor": "3702412"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "In-Place Direct Solving Functions with User-Defined Workspace",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/2868039-sparsesolve",
-        "doc://com.apple.documentation/documentation/accelerate/2868078-sparsesolve",
+        "doc://com.apple.documentation/documentation/accelerate/2868078-sparsesolve"
+      ],
+      "anchor": "2877886"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Out-of-Place Direct Solving Functions with User-Defined Workspace",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/2868173-sparsesolve",
         "doc://com.apple.documentation/documentation/accelerate/2868019-sparsesolve"
-      ]
+      ],
+      "anchor": "3702415"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double",
+        "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_direct_solving_functions_vector_rhs",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions"
       ],
-      "title": "Direct Sparse Solving Methods",
+      "title": "Solving Systems with Direct Sparse Methods",
       "generated": true
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

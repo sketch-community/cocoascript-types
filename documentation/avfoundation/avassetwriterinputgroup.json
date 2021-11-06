@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A group of tracks in a mutually exclusive relationship."
+      "text": "A group of inputs with tracks that are mutually exclusive to each other for playback or processing."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInputGroup",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,68 +114,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput": {
-      "title": "AVAssetWriterInput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
-      "title": "AVAssetWriter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup": {
-      "title": "addInputGroup:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addInputGroup:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup": {
-      "title": "AVMediaSelectionGroup",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmediaselectiongroup"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassettrack": {
-      "title": "AVAssetTrack",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassettrack"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin": {
       "title": "addTrackAssociationWithTrackOfInput:type:",
       "type": "topic",
@@ -189,6 +132,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup": {
+      "title": "AVMediaSelectionGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediaselectiongroup"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1426655-assetwriterinputgroupwithinputs": {
       "title": "assetWriterInputGroupWithInputs:defaultInput:",
       "type": "topic",
@@ -199,7 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes an instance of an asset writer input group."
+          "text": "Returns a new group for the asset writer inputs."
         }
       ],
       "fragments": [
@@ -223,7 +174,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an instance of an asset writer input group."
+          "text": "Creates a group for the asset writer inputs."
         }
       ],
       "fragments": [
@@ -237,20 +188,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput": {
-      "title": "defaultInput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The default input of the receiver."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1388226-inputs": {
       "title": "inputs",
       "type": "topic",
@@ -261,7 +198,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of inputs from which the asset writer receives media data."
+          "text": "The inputs with tracks that are mutually exclusive to each other for playback or processing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput": {
+      "title": "defaultInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The default input for the group."
         }
       ]
     },
@@ -293,17 +244,59 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
-      "title": "AVAssetWriterDelegate",
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color": {
+      "title": "Evaluating an App’s Video Color",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterdelegate",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
       "abstract": [
         {
           "type": "text",
-          "text": "A delegate protocol that defines the methods to implement to be an asset writer delegate."
+          "text": "Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant": {
+      "title": "AVOutputSettingsAssistant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingsassistant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that builds audio and video output settings dictionaries."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
+      "title": "AVAssetWriter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that writes media data to a container file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput": {
+      "title": "AVAssetWriterInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -317,7 +310,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+          "text": "An object that appends video samples to an asset writer input."
         }
       ]
     },
@@ -331,7 +324,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
+          "text": "An object that appends timed metadata groups to an asset writer input."
         }
       ]
     },
@@ -345,7 +338,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A group of tracks in a mutually exclusive relationship."
+          "text": "A group of inputs with tracks that are mutually exclusive to each other for playback or processing."
         }
       ]
     },
@@ -355,16 +348,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -380,19 +363,21 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Creating an Asset Writer Input Group",
+      "title": "Creating an Input Group",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1426655-assetwriterinputgroupwithinputs",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389502-initwithinputs"
-      ]
+      ],
+      "anchor": "3878750"
     },
     {
       "kind": "taskGroup",
-      "title": "Getting the Asset Writer Input Group Settings",
+      "title": "Accessing the Inputs",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1388226-inputs"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1388226-inputs",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput"
+      ],
+      "anchor": "1669717"
     }
   ],
   "seeAlsoSections": [
@@ -400,8 +385,9 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor"
@@ -444,6 +430,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -465,153 +452,44 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use this class to associate tracks corresponding to multiple "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput"
-            },
-            {
-              "type": "text",
-              "text": " instances as mutually exclusive to each other for playback or other processing.  "
+              "text": "Assets may contain multiple tracks of media that are mutually exclusive to each other when you play or process them. For example, an asset may contain multiple audio tracks for different spoken languages, but only one of them should play at a time. You use an input group to mark a collection of tracks as mutually exclusive to each other in the file the asset writer outputs."
             }
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "aside",
+          "content": [
             {
-              "type": "text",
-              "text": "For example, if you are creating an asset with multiple audio tracks using different spoken languages—and only one track should be played at a time—group the inputs corresponding to those tracks into a single instance of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriterInputGroup"
-            },
-            {
-              "type": "text",
-              "text": " and add the group to the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-            },
-            {
-              "type": "text",
-              "text": " instance using the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriter"
-            },
-            {
-              "type": "text",
-              "text": " method "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup"
-            },
-            {
-              "type": "text",
-              "text": ". If the output format supports mutually exclusive relationships among tracks, the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriter"
-            },
-            {
-              "type": "text",
-              "text": " marks the tracks as mutually exclusive to each other."
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "After associating several tracks by calling "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin"
+                },
+                {
+                  "type": "text",
+                  "text": ", you can examine the media selection options an asset writer outputs before it writes the file."
+                }
+              ]
             }
-          ]
+          ],
+          "style": "note",
+          "name": "Note"
         },
         {
           "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Because "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriterInputGroup"
-            },
-            {
-              "type": "text",
-              "text": " is a subclass of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup"
-            },
-            {
-              "type": "text",
-              "text": ", clients can examine the media selection options that are available on the output asset before writing the asset. Obtain the best results by examining the options of the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriterInputGroup"
-            },
-            {
-              "type": "text",
-              "text": " after associating the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput"
-            },
-            {
-              "type": "text",
-              "text": " instances of the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack"
-            },
-            {
-              "type": "text",
-              "text": " objects as appropriate using the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriterInput"
-            },
-            {
-              "type": "text",
-              "text": " method "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin"
-            },
-            {
-              "type": "text",
-              "text": " and by initializing each "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput"
-            },
-            {
-              "type": "text",
-              "text": " with a source format hint, where appropriate."
-            }
-          ]
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

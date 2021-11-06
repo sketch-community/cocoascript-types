@@ -5,13 +5,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate"
       ]
     ]
@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIPickerViewAccessibilityDelegate(im)pickerView:accessibilityAttributedUserInputLabelsForComponent:",
+    "parent": {
+      "title": "UIPickerViewAccessibilityDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -83,10 +91,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -145,6 +153,144 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsinteger"
     },
+    "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621052-pickerview": {
+      "title": "pickerView:accessibilityLabelForComponent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621052-pickerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipickerviewaccessibilitydelegate/1621052-pickerview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a string that identifies the picker view component."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pickerView:accessibilityLabelForComponent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/2865955-pickerview": {
+      "title": "pickerView:accessibilityAttributedLabelForComponent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/2865955-pickerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipickerviewaccessibilitydelegate/2865955-pickerview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an attributed string that identifies the picker view component."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pickerView:accessibilityAttributedLabelForComponent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621056-pickerview": {
+      "title": "pickerView:accessibilityHintForComponent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621056-pickerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipickerviewaccessibilitydelegate/1621056-pickerview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a string that describes the result of performing an action on the component."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pickerView:accessibilityHintForComponent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/2866017-pickerview": {
+      "title": "pickerView:accessibilityAttributedHintForComponent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/2866017-pickerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipickerviewaccessibilitydelegate/2866017-pickerview",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an attributed string that describes the result of performing an action on the specified component."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pickerView:accessibilityAttributedHintForComponent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197990-pickerview": {
+      "title": "pickerView:accessibilityAttributedUserInputLabelsForComponent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197990-pickerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipickerviewaccessibilitydelegate/3197990-pickerview",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pickerView:accessibilityAttributedUserInputLabelsForComponent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197991-pickerview": {
+      "title": "pickerView:accessibilityUserInputLabelsForComponent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197991-pickerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipickerviewaccessibilitydelegate/3197991-pickerview",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pickerView:accessibilityUserInputLabelsForComponent:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -153,6 +299,19 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621052-pickerview",
+        "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/2865955-pickerview",
+        "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621056-pickerview",
+        "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/2866017-pickerview",
+        "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197991-pickerview"
+      ],
+      "title": "Providing Descriptive Information",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -249,6 +408,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -256,7 +416,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

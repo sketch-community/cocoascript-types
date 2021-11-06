@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Identifies the large content viewer item for the specified interaction and location."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UILargeContentViewerInteractionDelegate(im)largeContentViewerInteraction:itemAtPoint:",
+    "parent": {
+      "title": "UILargeContentViewerInteractionDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -91,7 +105,31 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate"
+      "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that customizes the behavior of the large content viewer interactions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622533-pointinside": {
+      "title": "pointInside:withEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622533-pointinside",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622533-pointinside",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pointInside:withEvent:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem": {
       "title": "UILargeContentViewerItem",
@@ -117,6 +155,81 @@
       "role": "symbol",
       "url": "/documentation/coregraphics/cgpoint"
     },
+    "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183927-largecontentviewerinteraction": {
+      "title": "largeContentViewerInteraction:didEndOnItem:atPoint:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183927-largecontentviewerinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate/3183927-largecontentviewerinteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs an action when the large content viewer gesture ends at the location of the specified item."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "largeContentViewerInteraction:didEndOnItem:atPoint:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183928-largecontentviewerinteraction": {
+      "title": "largeContentViewerInteraction:itemAtPoint:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183928-largecontentviewerinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate/3183928-largecontentviewerinteraction",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the large content viewer item for the specified interaction and location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "largeContentViewerInteraction:itemAtPoint:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183929-viewcontrollerforlargecontentvie": {
+      "title": "viewControllerForLargeContentViewerInteraction:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183929-viewcontrollerforlargecontentvie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate/3183929-viewcontrollerforlargecontentvie",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies which view controller should display the large content viewer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "viewControllerForLargeContentViewerInteraction:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -125,6 +238,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183927-largecontentviewerinteraction",
+        "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate/3183929-viewcontrollerforlargecontentvie"
+      ],
+      "title": "Customizing Large Content Viewer Interactions",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -219,14 +342,80 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "interaction",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The large content viewer interaction that needs an item."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "point",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The point where the user’s interaction is taking place, in the coordinate space of the view that contains the interaction."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By default, UIKit finds the item for the interaction by calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622533-pointinside"
+            },
+            {
+              "type": "text",
+              "text": " recursively on your view hierarchy. If you’re not using views, implement this method to identify the item for an interaction at a given point."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

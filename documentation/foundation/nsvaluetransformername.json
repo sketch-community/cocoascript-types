@@ -43,35 +43,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSValueTransformerName",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -218,15 +223,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This value transformer returns an object created by attempting to unarchive the data in the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSData"
-        },
-        {
-          "type": "text",
-          "text": " object passed as the value. The archived object must be created using keyed archiving in order to be unarchived and archived with this transformer. "
+          "text": "The name of the value transformer that attempts to unarchive data stored inside a keyed archive in an object you provide."
         }
       ],
       "deprecated": true
@@ -291,15 +288,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "This value transformer returns an object created by attempting to unarchive the data in the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSData"
-        },
-        {
-          "type": "text",
-          "text": " object passed as the value."
+          "text": "The name of the value transformer that attempts to unarchive data from an object you provide."
         }
       ],
       "deprecated": true
@@ -310,7 +299,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nssecureunarchivefromdatatransformername",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nssecureunarchivefromdatatransformername"
+      "url": "/documentation/foundation/nssecureunarchivefromdatatransformername",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name of the value transformer that creates then returns an object by attempting to unarchive the data to a class that supports secure coding."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsvaluetransformer/1402018-setvaluetransformer": {
       "title": "setValueTransformer:forName:",
@@ -425,7 +420,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsnegatebooleantransformername",
         "doc://com.apple.documentation/documentation/foundation/nsunarchivefromdatatransformername",
         "doc://com.apple.documentation/documentation/foundation/nssecureunarchivefromdatatransformername"
-      ]
+      ],
+      "anchor": "1789328"
     }
   ],
   "seeAlsoSections": [
@@ -477,6 +473,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -487,7 +484,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

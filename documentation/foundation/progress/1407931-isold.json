@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Boolean value that indicates when the observed progress object invokes the publish method before you subscribe to it."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,10 +35,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(py)old",
+    "parent": {
+      "title": "Progress"
+    },
     "symbolKind": "instp",
     "fragments": [
       {
@@ -50,8 +59,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -104,9 +113,61 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
+          "text": "An object that conveys ongoing progress to the user for a specified task."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1418475-addsubscriber": {
+      "title": "addSubscriber(forFileURL:withPublishingHandler:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1418475-addsubscriber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1418475-addsubscriber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a file URL to hear about the progress of a file operation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "addSubscriber"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "forFileURL"
+        },
+        {
+          "kind": "text",
+          "text": ": URL, "
+        },
+        {
+          "kind": "identifier",
+          "text": "withPublishingHandler"
+        },
+        {
+          "kind": "text",
+          "text": ": Progress.PublishingHandler) -> Any"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/swift/true": {
+      "title": "true",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/true",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/true"
     },
     "doc://com.apple.documentation/documentation/swift/bool": {
       "title": "Bool",
@@ -116,6 +177,110 @@
       "role": "symbol",
       "url": "/documentation/swift/bool"
     },
+    "doc://com.apple.documentation/documentation/foundation/progress/1410457-removesubscriber": {
+      "title": "removeSubscriber(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1410457-removesubscriber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1410457-removesubscriber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a proxy progress object that the add subscriber method returns."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeSubscriber"
+        },
+        {
+          "kind": "text",
+          "text": "(Any)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1407931-isold": {
+      "title": "isOld",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1407931-isold",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1407931-isold",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates when the observed progress object invokes the publish method before you subscribe to it."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "isOld"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/publishinghandler": {
+      "title": "Progress.PublishingHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/publishinghandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/publishinghandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A block that the system calls when an observed progress object matches the subscription."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "Progress.PublishingHandler"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/unpublishinghandler": {
+      "title": "Progress.UnpublishingHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/unpublishinghandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/unpublishinghandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A block that the system calls when an observed progress object terminates the subscription."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "Progress.UnpublishingHandler"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -124,6 +289,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/progress/1418475-addsubscriber",
+        "doc://com.apple.documentation/documentation/foundation/progress/1410457-removesubscriber",
+        "doc://com.apple.documentation/documentation/foundation/progress/publishinghandler",
+        "doc://com.apple.documentation/documentation/foundation/progress/unpublishinghandler"
+      ],
+      "title": "Observing and Controlling File Progress by Other Processes",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -173,10 +350,105 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The publish and subscribe mechanism is generally "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "level-triggered"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", in that when you invoke "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1418475-addsubscriber"
+            },
+            {
+              "type": "text",
+              "text": ", the system invokes your block for every relevant published and unpublished progress object. Sometimes you need to implement "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "edge-triggered"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " behavior, in which you do something either exactly when new progress begins or not at all. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the example above, the Dock doesn’t animate file icons when this method returns "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/true"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There’s no reliable definition of "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "before"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " in this case, which involves multiple processes in a preemptively scheduled system. Don’t use this method for anything more important than best efforts at animating. It can be inaccurate due to processes coming and going from unpredictable user actions."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

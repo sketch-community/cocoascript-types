@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:SC11CKErrorCodeLeV16notAuthenticatedSoAAVvpZ",
+    "parent": {
+      "title": "CKError"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -80,8 +88,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,51 @@
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/code",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckerror/code"
+      "url": "/documentation/cloudkit/ckerror/code",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error codes that CloudKit returns."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "CKError.Code"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerror/3747482-accounttemporarilyunavailable": {
+      "title": "accountTemporarilyUnavailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/3747482-accounttemporarilyunavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerror/3747482-accounttemporarilyunavailable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An error that occurs when the user’s iCloud account is temporarily unavailable."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "accountTemporarilyUnavailable"
+        },
+        {
+          "kind": "text",
+          "text": ": CKError.Code"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325196-alreadyshared": {
       "title": "alreadyShared",
@@ -1114,6 +1166,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckerror/3747482-accounttemporarilyunavailable",
         "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325196-alreadyshared",
         "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325217-assetfilemodified",
         "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325214-assetfilenotfound",
@@ -1147,9 +1200,10 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325212-userdeletedzone",
         "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325220-zonebusy",
         "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325222-zonenotfound",
-        "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325224-resultstruncated"
+        "doc://com.apple.documentation/documentation/cloudkit/ckerror/2325224-resultstruncated",
+        "doc://com.apple.documentation/documentation/cloudkit/ckerror/code"
       ],
-      "title": "Accessing Error Codes",
+      "title": "Getting Error Codes",
       "generated": true
     }
   ],
@@ -1217,6 +1271,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1227,7 +1282,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

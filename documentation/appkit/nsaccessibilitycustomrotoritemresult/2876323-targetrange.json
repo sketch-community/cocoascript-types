@@ -1,17 +1,31 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A range that specifies the area of interest for text-based elements."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchparameters",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchparameters",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult"
       ]
     ]
@@ -35,15 +49,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSAccessibilityCustomRotorItemResult(py)targetRange",
+    "parent": {
+      "title": "NSAccessibilityCustomRotorItemResult"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -78,13 +95,45 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
+      "title": "NSAccessibility",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+      "url": "/documentation/appkit/nsaccessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor": {
+      "title": "NSAccessibilityCustomRotor",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotor",
+      "url": "/documentation/appkit/nsaccessibilitycustomrotor",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate": {
+      "title": "NSAccessibilityCustomRotorItemSearchDelegate",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate",
+      "url": "/documentation/appkit/nsaccessibilitycustomrotoritemsearchdelegate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchparameters": {
+      "title": "NSAccessibilityCustomRotorSearchParameters",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotorsearchparameters",
+      "url": "/documentation/appkit/nsaccessibilitycustomrotorsearchparameters",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult": {
       "title": "NSAccessibilityCustomRotorItemResult",
@@ -92,7 +141,13 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibilitycustomrotoritemresult"
+      "url": "/documentation/appkit/nsaccessibilitycustomrotoritemresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A target accessibility element that a custom rotor references."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -110,6 +165,62 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsrange"
     },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876335-targetelement": {
+      "title": "targetElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876335-targetelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876335-targetelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A target element that references an element to message for accessibility properties."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2890781-itemloadingtoken": {
+      "title": "itemLoadingToken",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2890781-itemloadingtoken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitycustomrotoritemresult/2890781-itemloadingtoken",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A token to determine which item to return."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876323-targetrange": {
+      "title": "targetRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876323-targetrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876323-targetrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A range that specifies the area of interest for text-based elements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876298-customlabel": {
+      "title": "customLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876298-customlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876298-customlabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A localized label to use instead of the default item label to describe the item result."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -118,6 +229,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876335-targetelement",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2890781-itemloadingtoken",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomrotoritemresult/2876298-customlabel"
+      ],
+      "title": "Identifying an Item Result",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -162,7 +284,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

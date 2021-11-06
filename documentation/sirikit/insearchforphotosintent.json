@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/photos"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSearchForPhotosIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,13 +100,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/photos": {
-      "title": "Photos",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
-      "url": "/documentation/sirikit/photos",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3876140": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3876140",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent#2279100": {
       "title": "Table 1",
@@ -109,28 +130,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent#2528245": {
-      "title": "Table 2",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent#2528245",
-      "kind": "article",
-      "role": "table",
-      "url": "/documentation/sirikit/insearchforphotosintent#2528245",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Siri phrases that trigger the searching of photos"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/invocabulary": {
-      "title": "INVocabulary",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/invocabulary"
-    },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent": {
       "title": "INSearchForPhotosIntent",
       "type": "topic",
@@ -143,7 +142,8 @@
           "type": "text",
           "text": "A request for the list of photos that match the specified criteria."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling": {
       "title": "INSearchForPhotosIntentHandling",
@@ -157,7 +157,8 @@
           "type": "text",
           "text": "The handler interface for searching the user’s photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponse": {
       "title": "INSearchForPhotosIntentResponse",
@@ -171,7 +172,8 @@
           "type": "text",
           "text": "Your app’s response to a search for photos intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotosdomainhandling": {
       "title": "INPhotosDomainHandling",
@@ -211,7 +213,8 @@
           "kind": "identifier",
           "text": "initWithDateCreated:locationCreated:albumName:searchTerms:includedAttributes:excludedAttributes:peopleInPhoto:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1639439-peopleinphoto": {
       "title": "peopleInPhoto",
@@ -225,7 +228,8 @@
           "type": "text",
           "text": "The people identified in the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638821-peopleinphotooperator": {
       "title": "peopleInPhotoOperator",
@@ -239,7 +243,8 @@
           "type": "text",
           "text": "The operator that defines how to search for people in the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638728-searchterms": {
       "title": "searchTerms",
@@ -253,7 +258,8 @@
           "type": "text",
           "text": "An array of terms to look for in the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1639233-searchtermsoperator": {
       "title": "searchTermsOperator",
@@ -267,7 +273,8 @@
           "type": "text",
           "text": "The operator that defines how to incorporate the search terms when performing the search."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1639043-datecreated": {
       "title": "dateCreated",
@@ -281,7 +288,8 @@
           "type": "text",
           "text": "The range of dates during which someone took the pictures."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638736-locationcreated": {
       "title": "locationCreated",
@@ -295,7 +303,8 @@
           "type": "text",
           "text": "The location where someone took the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638234-albumname": {
       "title": "albumName",
@@ -309,7 +318,8 @@
           "type": "text",
           "text": "The name of the album that contains the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638191-includedattributes": {
       "title": "includedAttributes",
@@ -323,7 +333,8 @@
           "type": "text",
           "text": "The attributes that must be present in the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638212-excludedattributes": {
       "title": "excludedAttributes",
@@ -337,7 +348,8 @@
           "type": "text",
           "text": "The attributes that must not be present in the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions": {
       "title": "INPhotoAttributeOptions",
@@ -351,21 +363,8 @@
           "type": "text",
           "text": "Constants indicating attributes of a photo."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos": {
-      "title": "Searching for Photos",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/sirikit/photos/searching_for_photos",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Use SiriKit to search for photos managed by your app."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -375,16 +374,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -401,7 +410,8 @@
       "title": "Creating the Intent Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638173-initwithdatecreated"
-      ]
+      ],
+      "anchor": "2279083"
     },
     {
       "kind": "taskGroup",
@@ -409,7 +419,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1639439-peopleinphoto",
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638821-peopleinphotooperator"
-      ]
+      ],
+      "anchor": "2279086"
     },
     {
       "kind": "taskGroup",
@@ -417,7 +428,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638728-searchterms",
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1639233-searchtermsoperator"
-      ]
+      ],
+      "anchor": "2279090"
     },
     {
       "kind": "taskGroup",
@@ -429,17 +441,17 @@
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638191-includedattributes",
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638212-excludedattributes",
         "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions"
-      ]
+      ],
+      "anchor": "2279094"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos",
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponse"
       ],
-      "title": "Search for Photos",
+      "title": "Photo Search",
       "generated": true
     }
   ],
@@ -477,6 +489,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -662,1275 +675,12 @@
               }
             ]
           }
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Example Phrases",
-          "anchor": "2279079"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Users can ask Siri to search for photos in a variety of ways. "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent#2528245"
-            },
-            {
-              "type": "text",
-              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases."
-            }
-          ]
-        },
-        {
-          "type": "table",
-          "header": "row",
-          "rows": [
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Locale"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 1"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 2"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "en"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Look for beach photos taken last summer in "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "打开"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "给我看上周末拍的照片"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "查看我上周末用<appName>拍的照片"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_HK"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "去"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "搵吓上個禮拜影嘅相"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "睇吓上禮拜用<appName>影嘅相"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_TW"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "找上週末拍的照片"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "搜尋上星期在海灘拍的<appName>相片"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "yue_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "去<appName>揾吓上个礼拜影嘅相"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "睇吓上礼拜用<appName>影嘅相"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ar"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "مستعملا "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " اعثر على صور أشجار"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "da"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "åben beans og vis mig billeder jeg tog på island sidste måned"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "vis mig billeder jeg tog i sidste weekend på island med photos proto"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "de"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Suche Fotos vom Strand von letztem Sommer in "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Suche meine Fotos aus Tokio auf "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "es"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Muéstrame las fotos que tomé en la playa el verano pasado usando "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Busca mis fotos de Tokio en "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fi"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Etsi viime kesänä otettuja rantakuvia "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "ssa"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Hae "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "n rantakuvia eiliseltä"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "affiche-moi les photos de plages de l'été dernier que j'ai prises avec "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Montre-moi avec "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " les photos de l'année dernière de la plage"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "he"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "באמצעות "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " תראה לי תמונות שצילמתי שבוע שעבר בסן חוזה"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "באמצעות "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " תראה את אלבום התמונות הוואי"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "it"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Cerca foto sulla spiaggia scattate la scorsa estate in "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Mostra le mie foto di Parigi in <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ja"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "で去年の夏に撮った写真を探して"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "去年の夏に撮った写真を"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "で見せて"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ko"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "에서 작년에 찍은 해변 사진 찾아줘"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "에서 올해 찍은 공원 사진 찾아줘"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ms"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Cari gambar yang saya ambil di Malaysia pada bulan ini dalam "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Tunjukkan foto yang saya ambil minggu lepas di KLCC dengan "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nb"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Finn bilder av strender fra i fjor i "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Finn bilder av mitt bryllup i Bergen med <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nl"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Zoek naar strand foto's die vorige zomer zijn genomen in "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Vind op <appName> foto's van mijn bruiloft in Breda"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "pt"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Procure fotos de praia que tirei semana passada no "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Acha as fotos de ontem à noite usando "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ru"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "С помощью "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " покажи мне фотографии которые я сделала в Санкт Петербурге на прошлой неделе"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Покажи мне фотографии которые я сделал на прошлых выходных в Исландии с помощью "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "sv"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Använd "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " och visa mig strandbilder från förra veckan"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Öppna "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " och visa mig bilder på hundar som jag tog förra månaden"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "th"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "แสดงรูปที่ฉันถ่ายเมื่อสัปดาห์ที่แล้วที่ San Jose ใน "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "หารูปถ่ายที่ทะเลปีที่แล้วใน <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "tr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "İstanbul'da geçen hafta "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "'la çektiğim fotoğrafları göster"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " kullanarak İstanbul'da geçen hafta çektiğim fotoğrafları göster"
-                    }
-                  ]
-                }
-              ]
-            ]
-          ],
-          "metadata": {
-            "anchor": "2528245",
-            "title": "Table 2",
-            "abstract": [
-              {
-                "type": "text",
-                "text": "Siri phrases that trigger the searching of photos"
-              }
-            ]
-          }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "In "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent#2528245"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "<appName>"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " represents the name of the app whose Intents extension initiates the search. If your app uses custom photo album names, photo tags, or contact names, you can tell Siri about those names using the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary"
-            },
-            {
-              "type": "text",
-              "text": " class."
-            }
-          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

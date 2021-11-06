@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,20 +34,31 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSetClimateSettingsInCarIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,13 +93,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent#2315116": {
       "title": "Table 1",
@@ -130,7 +149,8 @@
           "type": "text",
           "text": "A request to change the climate settings in a CarPlay-enabled vehicle."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling": {
       "title": "INSetClimateSettingsInCarIntentHandling",
@@ -144,7 +164,8 @@
           "type": "text",
           "text": "The handler interface for changing a vehicle’s climate control settings."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintentresponse": {
       "title": "INSetClimateSettingsInCarIntentResponse",
@@ -158,7 +179,8 @@
           "type": "text",
           "text": "Your app’s response to a set climate settings in car intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inintent": {
       "title": "INIntent",
@@ -190,7 +212,8 @@
           "kind": "identifier",
           "text": "initWithEnableFan:enableAirConditioner:enableClimateControl:enableAutoMode:airCirculationMode:fanSpeedIndex:fanSpeedPercentage:relativeFanSpeedSetting:temperature:relativeTemperatureSetting:climateZone:carName:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/2102611-initwithenablefan": {
       "title": "initWithEnableFan:enableAirConditioner:enableClimateControl:enableAutoMode:airCirculationMode:fanSpeedIndex:fanSpeedPercentage:relativeFanSpeedSetting:temperature:relativeTemperatureSetting:climateZone:",
@@ -229,7 +252,8 @@
           "type": "text",
           "text": "A name that identifies the user’s car."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649067-enableclimatecontrol": {
       "title": "enableClimateControl",
@@ -243,7 +267,8 @@
           "type": "text",
           "text": "A Boolean value indicating whether to turn on the climate control system."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649057-enableautomode": {
       "title": "enableAutoMode",
@@ -257,7 +282,8 @@
           "type": "text",
           "text": "A Boolean value indicating whether to enable automatic mode for the climate control system."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649051-aircirculationmode": {
       "title": "airCirculationMode",
@@ -271,7 +297,8 @@
           "type": "text",
           "text": "The air circulation mode for the climate control system."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649061-temperature": {
       "title": "temperature",
@@ -285,7 +312,8 @@
           "type": "text",
           "text": "The specific temperature to set for the climate control system."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649052-relativetemperaturesetting": {
       "title": "relativeTemperatureSetting",
@@ -299,7 +327,8 @@
           "type": "text",
           "text": "A relative temperature setting."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/2102612-climatezone": {
       "title": "climateZone",
@@ -313,7 +342,8 @@
           "type": "text",
           "text": "The seat position to have its climate settings modified."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649073-enablefan": {
       "title": "enableFan",
@@ -327,7 +357,8 @@
           "type": "text",
           "text": "A Boolean value indicating whether to turn on the cabin fan system."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649072-fanspeedindex": {
       "title": "fanSpeedIndex",
@@ -341,7 +372,8 @@
           "type": "text",
           "text": "An integer value indicating the desired fan speed position."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649064-fanspeedpercentage": {
       "title": "fanSpeedPercentage",
@@ -355,7 +387,8 @@
           "type": "text",
           "text": "A floating-point value indicating the requested fan speed specified as a percentage of the maximum speed."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649063-relativefanspeedsetting": {
       "title": "relativeFanSpeedSetting",
@@ -369,7 +402,8 @@
           "type": "text",
           "text": "A relative fan speed setting."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649054-enableairconditioner": {
       "title": "enableAirConditioner",
@@ -383,7 +417,8 @@
           "type": "text",
           "text": "A Boolean value indicating whether to turn on the air conditioner system."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -393,16 +428,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -420,14 +465,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/3019569-initwithenablefan",
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/2102611-initwithenablefan"
-      ]
+      ],
+      "anchor": "2315112"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Car Name",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/3019568-carname"
-      ]
+      ],
+      "anchor": "3019781"
     },
     {
       "kind": "taskGroup",
@@ -439,7 +486,8 @@
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649061-temperature",
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649052-relativetemperaturesetting",
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/2102612-climatezone"
-      ]
+      ],
+      "anchor": "2315113"
     },
     {
       "kind": "taskGroup",
@@ -449,14 +497,16 @@
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649072-fanspeedindex",
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649064-fanspeedpercentage",
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649063-relativefanspeedsetting"
-      ]
+      ],
+      "anchor": "2315114"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Air Conditioner Settings",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintent/1649054-enableairconditioner"
-      ]
+      ],
+      "anchor": "2315115"
     }
   ],
   "seeAlsoSections": [
@@ -465,7 +515,7 @@
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintentresponse"
       ],
-      "title": "Set Climate Settings in Car",
+      "title": "CarPlay Climate Settings",
       "generated": true
     }
   ],
@@ -503,6 +553,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -522,7 +573,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Automotive venders can add support for this intent to an Intents extension that they ship with their automotive apps. When the user asks Siri to change a setting related to the vehicle’s climate control, Siri creates an "
+              "text": "Automotive vendors can add support for this intent to an Intents extension that they ship with their automotive apps. When the user asks Siri to change a setting related to the vehicle’s climate control, Siri creates an "
             },
             {
               "type": "reference",
@@ -1559,7 +1610,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When managing CarPlay features, users do not need to include the name of the app in the phrases that they speak. Siri knows automatically when CarPlay is active and routes CarPlay-related intents to the app of the corresponding automotive vendor."
+              "text": "When managing CarPlay features, users don‘t need to include the name of the app in the phrases that they speak. Siri knows automatically when CarPlay is active and routes CarPlay-related intents to the app of the corresponding automotive vendor."
             }
           ]
         }
@@ -1567,7 +1618,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

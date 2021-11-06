@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A preset configuration used to configure writers."
+      "text": "A structure that defines preset configurations for an output settings assistant."
     }
   ],
   "documentVersion": 0,
@@ -12,6 +12,13 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant"
       ]
     ]
@@ -35,35 +42,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVOutputSettingsPreset",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,6 +126,14 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing": {
+      "title": "Sample-level Reading and Writing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
       "type": "topic",
@@ -132,21 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The output size of the video is 3840 x 2160 pixels and in HEVC format."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc1920x1080": {
-      "title": "AVOutputSettingsPresetHEVC1920x1080",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc1920x1080",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avoutputsettingspresethevc1920x1080",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output size of the video is 1920 x 1080 pixels and in HEVC format."
+          "text": "A preset for HEVC video at 3840 by 2160 pixels."
         }
       ]
     },
@@ -160,7 +166,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The output size of the video is 3840 x 2160 pixels and in HEVC with Alpha format."
+          "text": "A preset for HEVC with Alpha video at 3840 by 2160 pixels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc1920x1080": {
+      "title": "AVOutputSettingsPresetHEVC1920x1080",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc1920x1080",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingspresethevc1920x1080",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A preset for HEVC video at 1920 by 1080 pixels."
         }
       ]
     },
@@ -174,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The output size of the video is 1920 x 1080 pixels and in HEVC with Alpha format."
+          "text": "A preset for HEVC with Alpha video at 1920 by 1080 pixels."
         }
       ]
     },
@@ -188,7 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The output size of the video is 3840 x 2160 pixels."
+          "text": "A preset for H.264 video at 3840 by 2160 pixels."
         }
       ]
     },
@@ -202,7 +222,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The output size of the video is 1920 x 1080 pixels."
+          "text": "A preset for H.264 video at 1920 by 1080 pixels."
         }
       ]
     },
@@ -216,7 +236,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The output size of the video is 1280 x 720 pixels."
+          "text": "A preset for H.264 video at 1280 by 720 pixels."
         }
       ]
     },
@@ -230,7 +250,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The output size of the video is 960 x 540 pixels."
+          "text": "A preset for H.264 video at 960 by 540 pixels."
         }
       ]
     },
@@ -244,9 +264,18 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The output size of the video is 640 x 480 pixels."
+          "text": "A preset for H.264 video at 640 by 480 pixels."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc7680x4320": {
+      "title": "AVOutputSettingsPresetHEVC7680x4320",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc7680x4320",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingspresethevc7680x4320",
+      "beta": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387909-outputsettingsassistantwithprese": {
       "title": "outputSettingsAssistantWithPreset:",
@@ -258,7 +287,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes an output setting assistant with the given preset."
+          "text": "Returns a new output settings assistant for a preset configuration."
         }
       ],
       "fragments": [
@@ -272,6 +301,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset": {
+      "title": "AVOutputSettingsPreset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingspreset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines preset configurations for an output settings assistant."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1388118-availableoutputsettingspresets": {
       "title": "availableOutputSettingsPresets",
       "type": "topic",
@@ -282,7 +325,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the array of presets to use when creating an output settings assistant."
+          "text": "Returns an array of preset values to use to initialize an output settings assistant."
         }
       ],
       "fragments": [
@@ -296,20 +339,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset": {
-      "title": "AVOutputSettingsPreset",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avoutputsettingspreset",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A preset configuration used to configure writers."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -318,21 +347,48 @@
       "title": "Technologies"
     }
   },
+  "diffAvailability": {
+    "minor": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.1",
+        "13.2 beta 1"
+      ]
+    },
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
+    }
+  },
   "topicSections": [
     {
       "kind": "taskGroup",
       "title": "Presets",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc3840x2160",
-        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc1920x1080",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc3840x2160withalpha",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc1920x1080",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc1920x1080withalpha",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset3840x2160",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset1920x1080",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset1280x720",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset960x540",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset640x480"
-      ]
+      ],
+      "anchor": "2901747"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc7680x4320"
+      ],
+      "anchor": "3896841"
     }
   ],
   "seeAlsoSections": [
@@ -341,7 +397,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1387909-outputsettingsassistantwithprese",
         "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant/1388118-availableoutputsettingspresets"
       ],
-      "title": "Creating an Output Settings Assistant",
+      "title": "Creating an Assistant",
       "generated": true
     }
   ],
@@ -383,6 +439,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -393,7 +450,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

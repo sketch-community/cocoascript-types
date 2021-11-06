@@ -11,8 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations/deprecated_symbols"
+        "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols"
       ]
     ]
   },
@@ -36,35 +35,42 @@
         "name": "iOS",
         "introducedAt": "8.0",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "deprecatedAt": "10.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
         "deprecatedAt": "10.12",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
         "deprecatedAt": "3.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
@@ -72,8 +78,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,18 +114,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations": {
-      "title": "Record Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-      "url": "/documentation/cloudkit/record_operations",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations/deprecated_symbols": {
+    "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols": {
       "title": "Deprecated Symbols",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations/deprecated_symbols",
-      "url": "/documentation/cloudkit/record_operations/deprecated_symbols",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols",
+      "url": "/documentation/cloudkit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -333,6 +331,51 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation": {
+      "title": "CKFetchNotificationChangesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchnotificationchangesoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that retrieves unread notifications from a CloudKit container."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmarknotificationsreadoperation": {
+      "title": "CKMarkNotificationsReadOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmarknotificationsreadoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmarknotificationsreadoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that marks push notifications as read by your app."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation": {
+      "title": "CKModifyBadgeOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmodifybadgeoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that sets the value of the app icon’s badge. "
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -361,16 +404,6 @@
       ]
     }
   ],
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -388,7 +421,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation/1515224-initwithrecordzoneid",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation/2715828-init"
-      ]
+      ],
+      "anchor": "1666108"
     },
     {
       "kind": "taskGroup",
@@ -399,7 +433,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation/1515230-desiredkeys",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation/1514891-resultslimit",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation/1515322-morecoming"
-      ]
+      ],
+      "anchor": "1666142"
     },
     {
       "kind": "taskGroup",
@@ -408,7 +443,19 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation/1515155-recordchangedblock",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation/1515054-recordwithidwasdeletedblock",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation/1515267-fetchrecordchangescompletionbloc"
-      ]
+      ],
+      "anchor": "1666223"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/ckmarknotificationsreadoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation"
+      ],
+      "title": "Deprecated Classes",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -445,6 +492,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -519,7 +567,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

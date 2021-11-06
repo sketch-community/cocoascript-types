@@ -66,39 +66,49 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "2.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "2.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.4",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "9.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "2.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSString(im)initWithCStringNoCopy:length:freeWhenDone:",
+    "parent": {
+      "title": "NSString"
+    },
     "symbolKind": "instctr",
     "fragments": [
       {
@@ -115,7 +125,7 @@
       },
       {
         "kind": "text",
-        "text": ": UnsafeMutablePointer<Int8>, "
+        "text": ": UnsafeMutablePointer<CChar>, "
       },
       {
         "kind": "identifier",
@@ -136,8 +146,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -296,7 +306,7 @@
         },
         {
           "kind": "text",
-          "text": ": UnsafePointer<Int8>, "
+          "text": ": UnsafePointer<CChar>, "
         },
         {
           "kind": "identifier",
@@ -332,7 +342,7 @@
         },
         {
           "kind": "text",
-          "text": "(UnsafeMutablePointer<Int8>, "
+          "text": "(UnsafeMutablePointer<CChar>, "
         },
         {
           "kind": "identifier",
@@ -369,13 +379,13 @@
       "role": "symbol",
       "url": "/documentation/swift/unsafemutablepointer"
     },
-    "doc://com.apple.documentation/documentation/swift/int8": {
-      "title": "Int8",
+    "doc://com.apple.documentation/documentation/swift/cchar": {
+      "title": "CChar",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/int8",
+      "identifier": "doc://com.apple.documentation/documentation/swift/cchar",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/swift/int8"
+      "url": "/documentation/swift/cchar"
     },
     "doc://com.apple.documentation/documentation/swift/int": {
       "title": "Int",
@@ -425,7 +435,7 @@
         },
         {
           "kind": "text",
-          "text": ": UnsafePointer<Int8>) -> Any?"
+          "text": ": UnsafePointer<CChar>) -> Any?"
         }
       ],
       "deprecated": true
@@ -466,7 +476,7 @@
         },
         {
           "kind": "text",
-          "text": ": UnsafePointer<Int8>)"
+          "text": ": UnsafePointer<CChar>)"
         }
       ],
       "deprecated": true
@@ -503,7 +513,7 @@
         },
         {
           "kind": "text",
-          "text": ": UnsafePointer<Int8>, "
+          "text": ": UnsafePointer<CChar>, "
         },
         {
           "kind": "identifier",
@@ -552,7 +562,7 @@
         },
         {
           "kind": "text",
-          "text": ": UnsafePointer<Int8>, "
+          "text": ": UnsafePointer<CChar>, "
         },
         {
           "kind": "identifier",
@@ -601,7 +611,7 @@
         },
         {
           "kind": "text",
-          "text": ": UnsafeMutablePointer<Int8>, "
+          "text": ": UnsafeMutablePointer<CChar>, "
         },
         {
           "kind": "identifier",
@@ -929,7 +939,7 @@
         },
         {
           "kind": "text",
-          "text": "() -> UnsafePointer<Int8>?"
+          "text": "() -> UnsafePointer<CChar>?"
         }
       ],
       "deprecated": true
@@ -958,7 +968,7 @@
         },
         {
           "kind": "text",
-          "text": "() -> UnsafePointer<Int8>?"
+          "text": "() -> UnsafePointer<CChar>?"
         }
       ],
       "deprecated": true
@@ -1041,7 +1051,7 @@
         },
         {
           "kind": "text",
-          "text": "(UnsafeMutablePointer<Int8>)"
+          "text": "(UnsafeMutablePointer<CChar>)"
         }
       ],
       "deprecated": true
@@ -1095,7 +1105,7 @@
         },
         {
           "kind": "text",
-          "text": "(UnsafeMutablePointer<Int8>, "
+          "text": "(UnsafeMutablePointer<CChar>, "
         },
         {
           "kind": "identifier",
@@ -1405,9 +1415,9 @@
             },
             {
               "kind": "typeIdentifier",
-              "preciseIdentifier": "s:s4Int8V",
-              "identifier": "doc://com.apple.documentation/documentation/swift/int8",
-              "text": "Int8"
+              "preciseIdentifier": "s:s5CChara",
+              "identifier": "doc://com.apple.documentation/documentation/swift/cchar",
+              "text": "CChar"
             },
             {
               "kind": "text",
@@ -1631,7 +1641,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

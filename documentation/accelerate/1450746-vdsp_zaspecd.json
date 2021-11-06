@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Computes the autospectrum of complex double-precision vector."
+      "text": "Computes the autospectrum of a complex double-precision vector."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@vDSP_zaspecD",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,17 +119,17 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/1449691-vdsp_zaspec": {
-      "title": "vDSP_zaspec",
+    "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave": {
+      "title": "Finding the Component Frequencies in a Composite Sine Wave",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449691-vdsp_zaspec",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1449691-vdsp_zaspec",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
       "abstract": [
         {
           "type": "text",
-          "text": "Computes the autospectrum of complex single-precision vector."
+          "text": "Use 1D fast Fourier transform to compute the frequency components of a signal."
         }
       ]
     },
@@ -144,6 +149,20 @@
       "role": "symbol",
       "url": "/documentation/accelerate/vdsp_length"
     },
+    "doc://com.apple.documentation/documentation/accelerate/1449691-vdsp_zaspec": {
+      "title": "vDSP_zaspec",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449691-vdsp_zaspec",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449691-vdsp_zaspec",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes the autospectrum of a complex single-precision vector."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/1450746-vdsp_zaspecd": {
       "title": "vDSP_zaspecD",
       "type": "topic",
@@ -154,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Computes the autospectrum of complex double-precision vector."
+          "text": "Computes the autospectrum of a complex double-precision vector."
         }
       ]
     },
@@ -173,6 +192,13 @@
       ],
       "title": "Vector-to-Vector Spectra Computation",
       "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave"
+      ]
     }
   ],
   "primaryContentSections": [
@@ -239,10 +265,61 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__A",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A double-precision vector that contains the complex input values."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__C",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A double-precision vector that accumulates the real output values."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__N",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of elements."
+                }
+              ]
+            }
           ]
         }
       ]
@@ -261,32 +338,33 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This function is the same as "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449691-vdsp_zaspec"
-            },
+              "text": "This function computes the autospectrum of the complex input vector and adds the result to the existing real values in the output vector. The function returns the product of each input element and its complex conjugate. Each element-wise product is a real value that’s the sum of the squares of the real and imaginary parts."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
             {
               "type": "text",
-              "text": ", except for the types of vectors "
+              "text": "Because the function adds its result to the existing values in the output vector, the output vector must be initialized with known values or contain valid data from a previous operation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The input and output vectors must have a stride of "
             },
             {
               "type": "codeVoice",
-              "code": "A"
+              "code": "1"
             },
             {
               "type": "text",
-              "text": " and "
-            },
-            {
-              "type": "codeVoice",
-              "code": "C"
-            },
-            {
-              "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         }
@@ -294,7 +372,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

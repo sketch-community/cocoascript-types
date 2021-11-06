@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A closed polygon shape.  "
+      "text": "A closed polygon overlay.  "
     }
   ],
   "documentVersion": 0,
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)MKPolygon",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -280,7 +285,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A closed polygon shape.  "
+          "text": "A closed polygon overlay.  "
         }
       ]
     },
@@ -294,7 +299,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for a single polygon overlay.  "
+          "text": "The visual representation of a single polygon overlay.  "
         }
       ]
     },
@@ -308,7 +313,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A collection of multiple closed polygon shapes."
+          "text": "A collection of multiple closed polygon overlays."
         }
       ]
     },
@@ -322,7 +327,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for a multipolygon overlay. "
+          "text": "The visual representation of multiple polygon overlays. "
         }
       ]
     },
@@ -336,7 +341,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for a path-based overlay. "
+          "text": "The visual representation of a path-based overlay. "
         }
       ]
     },
@@ -346,16 +351,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -385,14 +380,16 @@
         "doc://com.apple.documentation/documentation/mapkit/mkpolygon/1451945-polygonwithpoints",
         "doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452497-polygonwithcoordinates",
         "doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452532-polygonwithcoordinates"
-      ]
+      ],
+      "anchor": "1657847"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Interior Polygons",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452521-interiorpolygons"
-      ]
+      ],
+      "anchor": "1657899"
     }
   ],
   "seeAlsoSections": [
@@ -441,6 +438,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -497,7 +495,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentStoreCoordinator(py)managedObjectModel",
+    "parent": {
+      "title": "NSPersistentStoreCoordinator"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -128,30 +136,6 @@
       "role": "symbol",
       "url": "/documentation/coredata/nsmanagedobjectmodel"
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468895-initwithmanagedobjectmodel": {
-      "title": "initWithManagedObjectModel:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468895-initwithmanagedobjectmodel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468895-initwithmanagedobjectmodel",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes the coordinator with a managed object model."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithManagedObjectModel:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468834-managedobjectmodel": {
       "title": "managedObjectModel",
       "type": "topic",
@@ -166,6 +150,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name": {
+      "title": "name",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/1468929-name",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The coordinator’s name."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores": {
+      "title": "persistentStores",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The persistent stores associated with the coordinator."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -177,9 +189,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468895-initwithmanagedobjectmodel"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores"
       ],
-      "title": "Initializing a Coordinator",
+      "title": "Managing the Coordinator’s Configuration",
       "generated": true
     }
   ],
@@ -221,6 +234,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -231,7 +245,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

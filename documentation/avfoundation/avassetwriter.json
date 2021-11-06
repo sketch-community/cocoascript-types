@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object used to write media data to a new file of a specified audiovisual container type."
+      "text": "An object that writes media data to a container file."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,46 +114,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetreader": {
-      "title": "AVAssetReader",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreader",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetreader"
-    },
-    "doc://com.apple.documentation/documentation/coremedia/cmsamplebuffer": {
-      "title": "CMSampleBuffer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmsamplebuffer",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/coremedia/cmsamplebuffer"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime": {
-      "title": "startSessionAtSourceTime:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initiates a sample-writing session for the output asset."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "startSessionAtSourceTime:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -167,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an asset writer for writing to the file identified by a given URL in a format specified by a given UTI."
+          "text": "Returns a new object that writes media data to a container file at the output URL."
         }
       ],
       "fragments": [
@@ -191,7 +156,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an asset writer for writing to the file identified by a given URL in a format specified by a given UTI."
+          "text": "Creates an object that writes media data to a container file at the output URL."
         }
       ],
       "fragments": [
@@ -212,6 +177,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an object that outputs segment data in a specified container format."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -220,6 +191,20 @@
         {
           "kind": "identifier",
           "text": "initWithContentType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs": {
+      "title": "inputs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388264-inputs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The inputs an asset writer contains."
         }
       ]
     },
@@ -233,7 +218,253 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media types you can add inputs to."
+          "text": "The media types the asset writer supports adding as inputs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings": {
+      "title": "canApplyOutputSettings:forMediaType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the output file format supports the output settings for a specific media type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canApplyOutputSettings:forMediaType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput": {
+      "title": "canAddInput:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387863-canaddinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the asset writer supports adding the input."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canAddInput:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput": {
+      "title": "addInput:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1390389-addinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an input to an asset writer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addInput:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups": {
+      "title": "inputGroups",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388432-inputgroups",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The input groups an asset writer contains."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386698-canaddinputgroup": {
+      "title": "canAddInputGroup:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386698-canaddinputgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1386698-canaddinputgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the asset writer supports adding the input group."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canAddInputGroup:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup": {
+      "title": "addInputGroup:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an input group to an asset writer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addInputGroup:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata": {
+      "title": "metadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387974-metadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of metadata items to write to the output file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse": {
+      "title": "shouldOptimizeForNetworkUse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether to write the output file to make it more suitable for playback over a network."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles": {
+      "title": "directoryForTemporaryFiles",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A directory to contain temporary files that the export process generates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval": {
+      "title": "movieFragmentInterval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interval at which to write movie fragments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb": {
+      "title": "initialMovieFragmentSequenceNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The sequence number of the initial movie fragment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments": {
+      "title": "producesCombinableFragments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the asset writer outputs movie fragments suitable for combining with others."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint": {
+      "title": "overallDurationHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A hint of the final duration of the output file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale": {
+      "title": "movieTimeScale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1386762-movietimescale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time scale of the movie."
         }
       ]
     },
@@ -261,17 +492,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting": {
-      "title": "finishWriting",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime": {
+      "title": "startSessionAtSourceTime:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1426644-finishwriting",
+      "url": "/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime",
       "abstract": [
         {
           "type": "text",
-          "text": "Completes the writing of the output file."
+          "text": "Starts an asset-writing session."
         }
       ],
       "fragments": [
@@ -281,10 +512,33 @@
         },
         {
           "kind": "identifier",
-          "text": "finishWriting"
+          "text": "startSessionAtSourceTime:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime": {
+      "title": "endSessionAtSourceTime:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Finishes an asset-writing session."
         }
       ],
-      "deprecated": true
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "endSessionAtSourceTime:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl": {
       "title": "finishWritingWithCompletionHandler:",
@@ -320,7 +574,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the writer to cancel writing."
+          "text": "Cancels the creation of the output file."
         }
       ],
       "fragments": [
@@ -334,47 +588,30 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl": {
-      "title": "outputURL",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting": {
+      "title": "finishWriting",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387731-outputurl",
+      "url": "/documentation/avfoundation/avassetwriter/1426644-finishwriting",
       "abstract": [
         {
           "type": "text",
-          "text": "The URL you direct output to."
+          "text": "Completes the writing of the output file."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype": {
-      "title": "outputFileType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
-      "abstract": [
+      ],
+      "fragments": [
         {
-          "type": "text",
-          "text": "The file format of the writer’s output."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390725-error": {
-      "title": "error",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390725-error",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1390725-error",
-      "abstract": [
+          "kind": "text",
+          "text": "- "
+        },
         {
-          "type": "text",
-          "text": "The description of the error that caused the failure."
+          "kind": "identifier",
+          "text": "finishWriting"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389335-status": {
       "title": "status",
@@ -386,7 +623,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The status of writing samples to the receiver's output file."
+          "text": "The status of writing samples to the output file."
         }
       ]
     },
@@ -400,263 +637,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The statuses indicating whether a writer can successfully write samples to its output file."
+          "text": "Values that indicate the state of an asset writer."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles": {
-      "title": "directoryForTemporaryFiles",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390725-error": {
+      "title": "error",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390725-error",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles",
+      "url": "/documentation/avfoundation/avassetwriter/1390725-error",
       "abstract": [
         {
           "type": "text",
-          "text": "A suitable directory for containing temporary files generated during the export process."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs": {
-      "title": "inputs",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1388264-inputs",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The asset writer inputs associated with the asset writer."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput": {
-      "title": "addInput:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1390389-addinput",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Adds an input to the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addInput:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput": {
-      "title": "canAddInput:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387863-canaddinput",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value that indicates whether the receiver can add a given input."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "canAddInput:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime": {
-      "title": "endSessionAtSourceTime:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Concludes a sample-writing session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "endSessionAtSourceTime:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings": {
-      "title": "canApplyOutputSettings:forMediaType:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value that indicates whether the specified output settings support a specified media type."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "canApplyOutputSettings:forMediaType:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata": {
-      "title": "metadata",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387974-metadata",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The collection of metadata written to the receiver's output file."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval": {
-      "title": "movieFragmentInterval",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The frequency at which to write movie fragments"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint": {
-      "title": "overallDurationHint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A hint of the final duration of the file written for file types that support movie fragments."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale": {
-      "title": "movieTimeScale",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1386762-movietimescale",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The asset-level time scale to use."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse": {
-      "title": "shouldOptimizeForNetworkUse",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether to write the output file to make it more suitable for playback over a network."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup": {
-      "title": "addInputGroup:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Adds an asset writer input group instance to the asset writer."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addInputGroup:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386698-canaddinputgroup": {
-      "title": "canAddInputGroup:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386698-canaddinputgroup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1386698-canaddinputgroup",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns whether the receiver can add an input group."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "canAddInputGroup:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups": {
-      "title": "inputGroups",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1388432-inputgroups",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array containing the asset writer input groups added to the asset writer."
+          "text": "An error object that describes an asset-writing failure."
         }
       ]
     },
@@ -666,31 +661,27 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546585-delegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3546585-delegate"
+      "url": "/documentation/avfoundation/avassetwriter/3546585-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A delegate object that responds to asset-writing events."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb": {
-      "title": "initialMovieFragmentSequenceNumber",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
+      "title": "AVAssetWriterDelegate",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime": {
-      "title": "initialSegmentStartTime",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile": {
-      "title": "outputFileTypeProfile",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile"
+      "url": "/documentation/avfoundation/avassetwriterdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A delegate protocol that defines the methods to implement to respond to asset-writing events."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval": {
       "title": "preferredOutputSegmentInterval",
@@ -698,15 +689,41 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval"
+      "url": "/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interval of output segments that you prefer."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments": {
-      "title": "producesCombinableFragments",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime": {
+      "title": "initialSegmentStartTime",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments"
+      "url": "/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The start time of the initial segment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile": {
+      "title": "outputFileTypeProfile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A profile for the output file type."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546586-flushsegment": {
       "title": "flushSegment",
@@ -715,6 +732,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avassetwriter/3546586-flushsegment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Closes the current segment and outputs it to a delegate method."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -723,6 +746,34 @@
         {
           "kind": "identifier",
           "text": "flushSegment"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl": {
+      "title": "outputURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387731-outputurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The location of the container file that the writer outputs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype": {
+      "title": "outputFileType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of container file that the writer outputs."
         }
       ]
     },
@@ -754,6 +805,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color": {
+      "title": "Evaluating an App’s Video Color",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant": {
+      "title": "AVOutputSettingsAssistant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingsassistant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that builds audio and video output settings dictionaries."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
       "title": "AVAssetWriter",
       "type": "topic",
@@ -764,21 +843,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
-      "title": "AVAssetWriterDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterdelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A delegate protocol that defines the methods to implement to be an asset writer delegate."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -792,7 +857,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -806,7 +871,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+          "text": "An object that appends video samples to an asset writer input."
         }
       ]
     },
@@ -820,7 +885,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
+          "text": "An object that appends timed metadata groups to an asset writer input."
         }
       ]
     },
@@ -834,7 +899,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A group of tracks in a mutually exclusive relationship."
+          "text": "A group of inputs with tracks that are mutually exclusive to each other for playback or processing."
         }
       ]
     },
@@ -844,16 +909,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -873,76 +928,98 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389201-initwithurl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype"
+      ],
+      "anchor": "3875622"
     },
     {
       "kind": "taskGroup",
-      "title": "Writing Data",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387234-cancelwriting",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390725-error",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389335-status",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterstatus",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Managing Inputs",
+      "title": "Configuring Inputs",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput"
+      ],
+      "anchor": "1669855"
     },
     {
       "kind": "taskGroup",
-      "title": "Managing Session Time",
+      "title": "Configuring Input Groups",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386698-canaddinputgroup",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup"
+      ],
+      "anchor": "1670005"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring Output",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles"
+      ],
+      "anchor": "1669936"
     },
     {
       "kind": "taskGroup",
-      "title": "Managing Asset Writer Input Groups",
+      "title": "Configuring Fragment Output",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386698-canaddinputgroup",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale"
+      ],
+      "anchor": "3655759"
     },
     {
       "kind": "taskGroup",
-      "title": "Configuring Fragments",
+      "title": "Managing Writing Sessions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387234-cancelwriting",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting"
+      ],
+      "anchor": "1669897"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inspecting Writing Status",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389335-status",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterstatus",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390725-error"
+      ],
+      "anchor": "3848846"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Segment Writing",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546585-delegate",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546586-flushsegment"
-      ]
+      ],
+      "anchor": "3848850"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Output Settings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype"
+      ],
+      "anchor": "3848848"
     }
   ],
   "seeAlsoSections": [
@@ -950,7 +1027,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor",
@@ -994,6 +1072,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -1015,100 +1094,30 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can get the media data for one or more assets from instances of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreader"
-            },
-            {
-              "type": "text",
-              "text": " or even from outside the AVFoundation API set. Send Media data to "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriter"
-            },
-            {
-              "type": "text",
-              "text": " for writing in the form of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coremedia/cmsamplebuffer"
-            },
-            {
-              "type": "text",
-              "text": ". Sequences of sample data appended to the asset writer inputs fall within “sample-writing sessions.” You must call "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime"
-            },
-            {
-              "type": "text",
-              "text": " to begin one of these sessions."
+              "text": "You use an asset writer to write media to file formats such as the QuickTime movie file format and MPEG-4 file format. An asset writer automatically supports interleaving media data from concurrent tracks for efficient playback and storage. It can reencode media samples it writes to the output file, and may also write collections of metadata to the output file."
             }
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "aside",
+          "content": [
             {
-              "type": "text",
-              "text": "Using "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriter"
-            },
-            {
-              "type": "text",
-              "text": ", you can optionally re-encode media samples while writing. You can also optionally write metadata collections to the output file. "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriter"
-            },
-            {
-              "type": "text",
-              "text": " automatically supports interleaving of media data for multiple concurrent tracks."
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An asset writer is a single-use object that writes one output file. Create multiple asset writer instances if your app requires writing multiple output files."
+                }
+              ]
             }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "You can only use a given instance of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriter"
-            },
-            {
-              "type": "text",
-              "text": " once to write to a single file. You must use a new instance of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriter"
-            },
-            {
-              "type": "text",
-              "text": " every time you write to a file."
-            }
-          ]
+          ],
+          "style": "important"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

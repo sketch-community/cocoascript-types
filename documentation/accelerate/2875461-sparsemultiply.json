@@ -57,35 +57,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseMultiply#f#$@SA@SparseMatrix_Float#$@SA@DenseVector_Float#S1_#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -135,6 +140,74 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-media-3703089": {
+      "identifier": "link-media-3703089",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/2875461-sparsemultiply#3703089"
+    },
+    "media-3703089": {
+      "identifier": "media-3703089",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 237,
+            "height": 92
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2a7e1a7515/rendered2x-1606929088.png"
+        }
+      ],
+      "alt": "A mathematical formula that describes the matrix multiplication, y equals alpha times A x. A scalar value multiplied by a four-by-four matrix multiplied by a four-element column matrix equals a four-element column matrix.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2875517-sparsemultiply": {
+      "title": "SparseMultiply",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875517-sparsemultiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2875517-sparsemultiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the multiply operation "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "y"
+            }
+          ]
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " = alpha * Ax "
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "on a vector of double-precision, floating-point values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2875461-sparsemultiply#3702341": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875461-sparsemultiply#3702341",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/2875461-sparsemultiply#3702341"
     },
     "doc://com.apple.documentation/documentation/accelerate/sparsematrix_float": {
       "title": "SparseMatrix_Float",
@@ -203,42 +276,6 @@
         {
           "type": "text",
           "text": " on a vector of single-precision, floating-point values."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2875517-sparsemultiply": {
-      "title": "SparseMultiply",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875517-sparsemultiply",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2875517-sparsemultiply",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Performs the multiply operation "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "y"
-            }
-          ]
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": " = alpha * Ax "
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": "on a vector of double-precision, floating-point values."
         }
       ]
     },
@@ -363,6 +400,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -385,7 +423,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The "
+                  "text": "The scalar value "
                 },
                 {
                   "type": "emphasis",
@@ -434,7 +472,42 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The matrix to multiply by."
+                  "text": "The sparse matrix "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " in "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "y"
+                    }
+                  ]
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": " = Ax"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": "."
                 }
               ]
             }
@@ -448,7 +521,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The vector "
+                  "text": "The dense vector "
                 },
                 {
                   "type": "emphasis",
@@ -461,7 +534,29 @@
                 },
                 {
                   "type": "text",
-                  "text": "."
+                  "text": " in "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "y"
+                    }
+                  ]
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": " = Ax"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": ".   "
                 }
               ]
             }
@@ -475,7 +570,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The vector "
+                  "text": "The dense vector "
                 },
                 {
                   "type": "emphasis",
@@ -488,17 +583,148 @@
                 },
                 {
                   "type": "text",
-                  "text": "."
+                  "text": " in "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "y"
+                    }
+                  ]
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": " = Ax"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": ".   "
                 }
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this function to multiply a scalar by a sparse matrix, and then by a dense vector. The following equation is an example of a scalar-matrix-vector multiplication where the matrix is sparse:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3703089",
+              "metadata": {
+                "anchor": "3703089",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Call "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/2875517-sparsemultiply"
+            },
+            {
+              "type": "text",
+              "text": " to calculate the result. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let rowCount = Int32(4)",
+            "let columnCount = Int32(4)",
+            "let blockCount = 4",
+            "let blockSize = UInt8(1)",
+            "let rowIndices: [Int32] = [0, 3, 0, 3]",
+            "let columnIndices: [Int32] = [0, 0, 3, 3]",
+            "let data: [Float] = [1.0, 4.0, 13.0, 16.0]",
+            "",
+            "/// The _A_ in _y = alpha * Ax_.",
+            "let A = SparseConvertFromCoordinate(rowCount, columnCount,",
+            "                                    blockCount, blockSize,",
+            "                                    SparseAttributes_t(),",
+            "                                    rowIndices, columnIndices,",
+            "                                    data)",
+            "defer {",
+            "    SparseCleanup(A)",
+            "}",
+            "",
+            "/// The values for _x_ in _y = alpha * Ax_.",
+            "var xValues: [Float] = [10.0, -1.0, -1.0, 10.0]",
+            "",
+            "let alpha: Float = 2.0",
+            "",
+            "/// The values for _y_ in _y = alpha * Ax_.",
+            "let yValues = [Float](unsafeUninitializedCapacity: xValues.count) {",
+            "    resultBuffer, count in",
+            "    ",
+            "    xValues.withUnsafeMutableBufferPointer { xValuesPtr in",
+            "        /// The _x_ in _y = alpha * Ax_.",
+            "        let x = DenseVector_Float(count: 4, ",
+            "                                  data: xValuesPtr.baseAddress!)",
+            "        ",
+            "        /// The _y_ in _y = alpha * Ax_.",
+            "        let y = DenseVector_Float(count: 4,",
+            "                                  data: resultBuffer.baseAddress!)",
+            "        ",
+            "        SparseMultiply(alpha, A, x, y)",
+            "    }",
+            "    ",
+            "    count = xValues.count",
+            "}",
+            "",
+            "/// On return, `yValues` contains:",
+            "///      `[ 280.0, 0.0, 0.0,  400.0 ]`"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3702341",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

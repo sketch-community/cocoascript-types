@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+      "text": "An object that appends video samples to an asset writer input."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInputPixelBufferAdaptor",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,14 +114,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpoolref": {
-      "title": "CVPixelBufferPoolRef",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpoolref",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corevideo/cvpixelbufferpoolref"
-    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -135,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new pixel buffer adaptor to receive pixel buffers for writing to the output file."
+          "text": "Returns a new pixel buffer adaptor that appends pixel buffers to write to the output file."
         }
       ],
       "fragments": [
@@ -183,7 +180,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Appends a pixel buffer to the receiver."
+          "text": "Appends a pixel buffer to the adaptor."
         }
       ],
       "fragments": [
@@ -197,20 +194,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387565-assetwriterinput": {
-      "title": "assetWriterInput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387565-assetwriterinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387565-assetwriterinput",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The asset writer input to which the adaptor should append pixel buffers."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool": {
       "title": "pixelBufferPool",
       "type": "topic",
@@ -221,7 +204,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A pixel buffer pool that vends and efficiently recycles pixel buffer objects that can be appended to the receiver."
+          "text": "A pool of pixel buffers to append to the adaptor’s input."
         }
       ]
     },
@@ -235,7 +218,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The pixel buffer attributes for the pixel buffers vended by the adaptor’s pixel buffer pool."
+          "text": "The attributes of the pixel buffers that the pool contains."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387565-assetwriterinput": {
+      "title": "assetWriterInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387565-assetwriterinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387565-assetwriterinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset writer input to which the adaptor appends pixel buffers."
         }
       ]
     },
@@ -267,6 +264,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color": {
+      "title": "Evaluating an App’s Video Color",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant": {
+      "title": "AVOutputSettingsAssistant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingsassistant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that builds audio and video output settings dictionaries."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
       "title": "AVAssetWriter",
       "type": "topic",
@@ -277,21 +302,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
-      "title": "AVAssetWriterDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterdelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A delegate protocol that defines the methods to implement to be an asset writer delegate."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -305,7 +316,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -319,7 +330,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+          "text": "An object that appends video samples to an asset writer input."
         }
       ]
     },
@@ -333,7 +344,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
+          "text": "An object that appends timed metadata groups to an asset writer input."
         }
       ]
     },
@@ -347,7 +358,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A group of tracks in a mutually exclusive relationship."
+          "text": "A group of inputs with tracks that are mutually exclusive to each other for playback or processing."
         }
       ]
     },
@@ -357,16 +368,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -386,23 +387,33 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1449096-assetwriterinputpixelbufferadapt",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1390639-initwithassetwriterinput"
-      ]
+      ],
+      "anchor": "1669299"
     },
     {
       "kind": "taskGroup",
-      "title": "Adding a Pixel Buffer",
+      "title": "Appending Pixel Buffers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1388102-appendpixelbuffer"
-      ]
+      ],
+      "anchor": "1669372"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing the Pool",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387829-sourcepixelbufferattributes"
+      ],
+      "anchor": "3873019"
     },
     {
       "kind": "taskGroup",
       "title": "Inspecting a Pixel Buffer Adaptor",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387565-assetwriterinput",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387829-sourcepixelbufferattributes"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387565-assetwriterinput"
+      ],
+      "anchor": "1669399"
     }
   ],
   "seeAlsoSections": [
@@ -410,8 +421,9 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup"
@@ -454,6 +466,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -475,24 +488,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Instances of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriterInputPixelBufferAdaptor"
-            },
-            {
-              "type": "text",
-              "text": " provide a "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferpoolref"
-            },
-            {
-              "type": "text",
-              "text": " that you can use to allocate pixel buffers for writing to the output file. Using the provided pixel buffer pool for buffer allocation is typically more efficient than appending pixel buffers allocated using a separate pool."
+              "text": "A pixel buffer adaptor provides a pixel buffer pool that you use to allocate pixel buffers to the output file. Using the provided pool for buffer allocation is typically more efficient than managing your own pool."
             }
           ]
         }
@@ -500,7 +496,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

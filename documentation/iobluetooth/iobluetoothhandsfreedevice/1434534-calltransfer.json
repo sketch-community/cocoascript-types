@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Ends all calls that are active or on hold, and accepts any waiting calls."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,15 +34,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)IOBluetoothHandsFreeDevice(im)callTransfer",
+    "parent": {
+      "title": "IOBluetoothHandsFreeDevice"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -77,7 +86,85 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object you use to manage phone calls on a connected Bluetooth hands-free phone or headset."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1430391-acceptcall": {
+      "title": "acceptCall",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1430391-acceptcall",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice/1430391-acceptcall",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Accepts an incoming call."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "acceptCall"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1432773-acceptcallonphone": {
+      "title": "acceptCallOnPhone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1432773-acceptcallonphone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice/1432773-acceptcallonphone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Accepts an incoming call and transfers the audio to the managed hands-free phone or headset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "acceptCallOnPhone"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1434534-calltransfer": {
+      "title": "callTransfer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1434534-calltransfer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice/1434534-calltransfer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Ends all calls that are active or on hold, and accepts any waiting calls."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "callTransfer"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -87,6 +174,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1430391-acceptcall",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1432773-acceptcallonphone"
+      ],
+      "title": "Accepting Calls",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -125,7 +222,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Executes the fetch request."
+      "text": "Executes the controller’s fetch request."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSFetchedResultsController(im)performFetch:",
+    "parent": {
+      "title": "NSFetchedResultsController"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -127,6 +135,22 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
+    "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622278-fetchedobjects": {
+      "title": "fetchedObjects",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622278-fetchedobjects",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsfetchedresultscontroller/1622278-fetchedobjects"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nserror": {
+      "title": "NSError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nserror"
+    },
     "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622282-initwithfetchrequest": {
       "title": "initWithFetchRequest:managedObjectContext:sectionNameKeyPath:cacheName:",
       "type": "topic",
@@ -151,46 +175,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622278-fetchedobjects": {
-      "title": "fetchedObjects",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622278-fetchedobjects",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsfetchedresultscontroller/1622278-fetchedobjects"
-    },
-    "link-3023437": {
-      "title": "Error Handling",
-      "type": "topic",
-      "identifier": "link-3023437",
-      "kind": "article",
-      "role": "link",
-      "url": "https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html"
-    },
-    "link-3023438": {
-      "title": "The Swift Programming Language",
-      "type": "topic",
-      "identifier": "link-3023438",
-      "kind": "article",
-      "role": "link",
-      "url": "https://docs.swift.org/swift-book/"
-    },
-    "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters": {
-      "title": "About Imported Cocoa Error Parameters",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nserror": {
-      "title": "NSError",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nserror"
-    },
     "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622305-performfetch": {
       "title": "performFetch:",
       "type": "topic",
@@ -201,7 +185,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Executes the fetch request."
+          "text": "Executes the controller’s fetch request."
         }
       ],
       "fragments": [
@@ -294,6 +278,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -316,7 +301,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "If the fetch is not successful, upon return contains an error object that describes the problem."
+                  "text": "An error object that includes a description of the problem if the fetch is unsuccessful."
                 }
               ]
             }
@@ -343,7 +328,7 @@
             },
             {
               "type": "text",
-              "text": " if the fetch executed successfully, otherwise "
+              "text": " if the fetch completes successfully; otherwise, "
             },
             {
               "type": "reference",
@@ -372,7 +357,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "After executing this method, you can access the receiver’s the fetched objects with the property "
+              "text": "After you execute this method, access the controller’s fetched objects using the "
             },
             {
               "type": "reference",
@@ -381,7 +366,7 @@
             },
             {
               "type": "text",
-              "text": "."
+              "text": " property."
             }
           ]
         },
@@ -393,136 +378,30 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "In Swift, this method returns "
+                  "text": "If you specify a value for the "
                 },
                 {
                   "type": "codeVoice",
-                  "code": "Void"
+                  "code": "sectionNameKeyPath"
                 },
                 {
                   "type": "text",
-                  "text": " and is marked with the "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "throws"
-                },
-                {
-                  "type": "text",
-                  "text": " keyword to indicate that it throws an error in cases of failure."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "You call this method in a "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "try"
-                },
-                {
-                  "type": "text",
-                  "text": " expression and handle any errors in the "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "catch"
-                },
-                {
-                  "type": "text",
-                  "text": " clauses of a "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "do"
-                },
-                {
-                  "type": "text",
-                  "text": " statement, as described in "
-                },
-                {
-                  "type": "link",
-                  "title": "Error Handling",
-                  "destination": "https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html"
-                },
-                {
-                  "type": "text",
-                  "text": " in "
-                },
-                {
-                  "type": "link",
-                  "title": "The Swift Programming Language",
-                  "destination": "https://docs.swift.org/swift-book/"
-                },
-                {
-                  "type": "text",
-                  "text": " and "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
-                },
-                {
-                  "type": "text",
-                  "text": "."
+                  "text": " parameter when you initialize the fetched results controller, the fetch request must include a sort descriptor for the corresponding key path; otherwise, the fetch fails."
                 }
               ]
             }
           ],
-          "style": "note",
-          "name": "Handling Errors in Swift:"
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Special Considerations",
-          "anchor": "1770567"
+          "style": "important"
         },
         {
           "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "This method returns "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-            },
-            {
-              "type": "text",
-              "text": " (and a suitable error in "
-            },
-            {
-              "type": "codeVoice",
-              "code": "error"
-            },
-            {
-              "type": "text",
-              "text": ") if the fetch request doesn’t include a sort descriptor that uses the section name key path specified in "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622282-initwithfetchrequest"
-            },
-            {
-              "type": "text",
-              "text": "."
-            }
-          ]
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

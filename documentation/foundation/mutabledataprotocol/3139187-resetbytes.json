@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Replaces the contents of the data buffer with zeros for the provided range."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -30,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "10.2",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation19MutableDataProtocolPAAE10resetBytes2inyqd___tSXRd__5BoundQyd__5IndexRtzlF",
+    "parent": {
+      "title": "MutableDataProtocol"
+    },
     "symbolKind": "intfm",
     "fragments": [
       {
@@ -84,8 +98,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,7 +138,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/mutabledataprotocol",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/mutabledataprotocol"
+      "url": "/documentation/foundation/mutabledataprotocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that provides consistent data access to the bytes underlying contiguous and noncontiguous mutable data buffers. "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/mutabledataprotocol/3139186-resetbytes": {
       "title": "resetBytes(in:)",
@@ -142,6 +162,22 @@
       "role": "symbol",
       "url": "/documentation/swift/rangeexpression"
     },
+    "doc://com.apple.documentation/documentation/swift/collection/2943866-index": {
+      "title": "Index",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/collection/2943866-index",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/collection/2943866-index"
+    },
+    "doc://com.apple.documentation/documentation/swift/rangeexpression/2894257-bound": {
+      "title": "Bound",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/rangeexpression/2894257-bound",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/rangeexpression/2894257-bound"
+    },
     "doc://com.apple.documentation/documentation/foundation/mutabledataprotocol/3139187-resetbytes": {
       "title": "resetBytes(in:)",
       "type": "topic",
@@ -149,6 +185,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/mutabledataprotocol/3139187-resetbytes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Replaces the contents of the data buffer with zeros for the provided range."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -239,7 +281,8 @@
               "text": ": "
             },
             {
-              "kind": "text",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation19MutableDataProtocolPAAE10resetBytes2inyqd___tSXRd__5BoundQyd__5IndexRtzlF1RL_qd__mfp",
               "text": "R"
             },
             {
@@ -255,8 +298,13 @@
               "text": " "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation19MutableDataProtocolPAAE10resetBytes2inyqd___tSXRd__5BoundQyd__5IndexRtzlF1RL_qd__mfp",
+              "text": "R"
+            },
+            {
               "kind": "text",
-              "text": "R : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -275,11 +323,37 @@
             },
             {
               "kind": "text",
-              "text": ".Index == R.Bound"
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sl5IndexQa",
+              "identifier": "doc://com.apple.documentation/documentation/swift/collection/2943866-index",
+              "text": "Index"
+            },
+            {
+              "kind": "text",
+              "text": " == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation19MutableDataProtocolPAAE10resetBytes2inyqd___tSXRd__5BoundQyd__5IndexRtzlF1RL_qd__mfp",
+              "text": "R"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:SX5BoundQa",
+              "identifier": "doc://com.apple.documentation/documentation/swift/rangeexpression/2894257-bound",
+              "text": "Bound"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -287,10 +361,32 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "range",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The range of bytes to replace with zeros."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

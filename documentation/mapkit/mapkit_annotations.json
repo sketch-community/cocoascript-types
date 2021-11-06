@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create annotations to add indicators and additional details for specific locations on a map."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -24,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -84,7 +90,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A string-based annotation that you apply to a specific map point."
+          "text": "A string-based piece of location-specific data that you apply to a specific point on a map."
         }
       ]
     },
@@ -114,7 +120,8 @@
           "type": "text",
           "text": "An annotation view that displays a pin image on the map.  "
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/mapkit/mkannotationview/decluttering_a_map_with_mapkit_annotation_clustering": {
       "title": "Decluttering a Map with MapKit Annotation Clustering",
@@ -154,7 +161,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Transform the user’s location displayed on a map into an informative description."
+          "text": "Transform the user’s location displayed on a map into an informative textual description by reverse geocoding."
         }
       ]
     },
@@ -168,7 +175,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An annotation that always reflects the user's current location on the map.  "
+          "text": "An annotation that reflects the user's current location on the map.  "
         }
       ]
     },
@@ -182,7 +189,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An annotation view that shows the user’s location with the default MapKit styling."
+          "text": "A configurable annotation that shows the user’s location using the default MapKit style."
         }
       ]
     },
@@ -228,41 +235,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/mapkit/mkoverlay": {
-      "title": "MKOverlay",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkoverlay",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An interface for associating content with a specific map region.  "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer": {
-      "title": "MKOverlayRenderer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkoverlayrenderer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The shared infrastructure used to draw overlays on the map surface. "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
       "title": "MapKit Annotations",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_annotations"
+      "url": "/documentation/mapkit/mapkit_annotations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create annotations to add indicators and additional details for specific locations on a map."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays": {
       "title": "MapKit Overlays",
@@ -270,7 +255,13 @@
       "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_overlays"
+      "url": "/documentation/mapkit/mapkit_overlays",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create overlays to highlight geographic regions or paths."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -278,16 +269,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "topicSections": [
@@ -299,7 +280,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkpointannotation",
         "doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview",
         "doc://com.apple.documentation/documentation/mapkit/mkpinannotationview"
-      ]
+      ],
+      "anchor": "2878662"
     },
     {
       "kind": "taskGroup",
@@ -307,7 +289,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkannotationview/decluttering_a_map_with_mapkit_annotation_clustering",
         "doc://com.apple.documentation/documentation/mapkit/mkclusterannotation"
-      ]
+      ],
+      "anchor": "2878665"
     },
     {
       "kind": "taskGroup",
@@ -316,17 +299,23 @@
         "doc://com.apple.documentation/documentation/mapkit/mkmapview/converting_a_user_s_location_to_a_descriptive_placemark",
         "doc://com.apple.documentation/documentation/mapkit/mkuserlocation",
         "doc://com.apple.documentation/documentation/mapkit/mkuserlocationview"
-      ]
+      ],
+      "anchor": "2878661"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Shared Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
+        "doc://com.apple.documentation/documentation/mapkit/mkannotation",
+        "doc://com.apple.documentation/documentation/mapkit/mkannotationview"
+      ],
+      "anchor": "3783153"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
-        "doc://com.apple.documentation/documentation/mapkit/mkannotation",
-        "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
-        "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
-        "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
         "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays"
       ],
       "title": "Annotations and Overlays",
@@ -334,7 +323,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

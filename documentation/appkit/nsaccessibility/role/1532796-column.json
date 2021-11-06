@@ -11,42 +11,44 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/roles"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/roles"
       ]
     ]
   },
@@ -69,10 +71,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.2",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSAccessibilityColumnRole",
+    "parent": {
+      "title": "NSAccessibility.Role"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -90,8 +95,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,10 +131,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -141,6 +146,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibility/role"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol": {
+      "title": "NSAccessibilityProtocol",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
       "title": "NSAccessibility",
@@ -157,22 +170,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol": {
-      "title": "NSAccessibilityProtocol",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
-      "url": "/documentation/appkit/nsaccessibilityprotocol",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/roles": {
-      "title": "Roles",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/roles",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/roles",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1524372-application": {
       "title": "application",
@@ -909,6 +906,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibility/role/1644579-menubaritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The menu bar item role."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1015,6 +1018,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsaccessibility/role/2890800-pagerole",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The page role."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1236,7 +1245,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The ruler row."
+          "text": "The ruler role."
         }
       ],
       "fragments": [
@@ -1264,7 +1273,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The ruler marker row."
+          "text": "The ruler marker role."
         }
       ],
       "fragments": [
@@ -1320,7 +1329,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The Scroll bar role."
+          "text": "The scroll bar role."
         }
       ],
       "fragments": [
@@ -1646,34 +1655,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1529224-unknown": {
-      "title": "unknown",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1529224-unknown",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/role/1529224-unknown",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object whose role is unknown."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "unknown"
-        },
-        {
-          "kind": "text",
-          "text": ": NSAccessibility.Role"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1525112-valueindicator": {
       "title": "valueIndicator",
       "type": "topic",
@@ -1723,6 +1704,34 @@
         {
           "kind": "identifier",
           "text": "window"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAccessibility.Role"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1529224-unknown": {
+      "title": "unknown",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1529224-unknown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/role/1529224-unknown",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object with an unknown role."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "unknown"
         },
         {
           "kind": "text",
@@ -1793,9 +1802,9 @@
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1533503-textarea",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1535848-textfield",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1528989-toolbar",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1529224-unknown",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1525112-valueindicator",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1528261-window"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1528261-window",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1529224-unknown"
       ],
       "title": "Roles",
       "generated": true
@@ -1859,7 +1868,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

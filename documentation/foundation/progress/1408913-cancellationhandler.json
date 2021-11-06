@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The block to invoke when progress is cancelled."
+      "text": "The block to invoke when canceling progress."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(py)cancellationHandler",
+    "parent": {
+      "title": "Progress"
+    },
     "symbolKind": "instp",
     "fragments": [
       {
@@ -76,8 +84,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,7 +138,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
+          "text": "An object that conveys ongoing progress to the user for a specified task."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1408913-cancellationhandler": {
+      "title": "cancellationHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1408913-cancellationhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1408913-cancellationhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The block to invoke when canceling progress."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancellationHandler"
+        },
+        {
+          "kind": "text",
+          "text": ": (() -> Void)?"
         }
       ]
     },
@@ -142,6 +178,118 @@
       "role": "symbol",
       "url": "/documentation/swift/void"
     },
+    "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount": {
+      "title": "totalUnitCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1410940-totalunitcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The total number of tracked units of work for the current progress."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "totalUnitCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Int64"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1407934-completedunitcount": {
+      "title": "completedUnitCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1407934-completedunitcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1407934-completedunitcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of completed units of work for the current job."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "completedUnitCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Int64"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1417251-localizeddescription": {
+      "title": "localizedDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1417251-localizeddescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1417251-localizeddescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A localized description of tracked progress for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "localizedDescription"
+        },
+        {
+          "kind": "text",
+          "text": ": String!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1412455-localizedadditionaldescription": {
+      "title": "localizedAdditionalDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1412455-localizedadditionaldescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1412455-localizedadditionaldescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A more specific localized description of tracked progress for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "localizedAdditionalDescription"
+        },
+        {
+          "kind": "text",
+          "text": ": String!"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/progress/1409348-iscancellable": {
       "title": "isCancellable",
       "type": "topic",
@@ -152,7 +300,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the receiver is tracking work that can be cancelled."
+          "text": "A Boolean value that indicates whether the receiver is tracking work that you can cancel."
         }
       ],
       "fragments": [
@@ -180,7 +328,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the receiver is tracking work that has been cancelled."
+          "text": "A Boolean value that Indicates whether the receiver is tracking canceled work."
         }
       ],
       "fragments": [
@@ -198,62 +346,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/progress/1413832-cancel": {
-      "title": "cancel()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1413832-cancel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progress/1413832-cancel",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Cancel progress tracking."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "cancel"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/progress/1408913-cancellationhandler": {
-      "title": "cancellationHandler",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1408913-cancellationhandler",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progress/1408913-cancellationhandler",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The block to invoke when progress is cancelled."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "cancellationHandler"
-        },
-        {
-          "kind": "text",
-          "text": ": (() -> Void)?"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/progress/1417421-ispausable": {
       "title": "isPausable",
       "type": "topic",
@@ -264,7 +356,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the receiver is tracking work that can be paused."
+          "text": "A Boolean value that indicates whether the receiver is tracking work that you can pause."
         }
       ],
       "fragments": [
@@ -292,7 +384,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the receiver is tracking work that has been paused."
+          "text": "A Boolean value that indicates whether the receiver is tracking paused work."
         }
       ],
       "fragments": [
@@ -310,34 +402,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/progress/1412377-pause": {
-      "title": "pause()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1412377-pause",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progress/1412377-pause",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Pause progress tracking."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "pause"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/progress/1412873-pausinghandler": {
       "title": "pausingHandler",
       "type": "topic",
@@ -348,7 +412,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The block to invoke when progress is paused."
+          "text": "The block to invoke when pausing progress."
         }
       ],
       "fragments": [
@@ -359,62 +423,6 @@
         {
           "kind": "identifier",
           "text": "pausingHandler"
-        },
-        {
-          "kind": "text",
-          "text": ": (() -> Void)?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/progress/1413616-resume": {
-      "title": "resume()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1413616-resume",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progress/1413616-resume",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Resume progress tracking."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "resume"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/progress/1410158-resuminghandler": {
-      "title": "resumingHandler",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1410158-resuminghandler",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progress/1410158-resuminghandler",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The block to invoke when progress is resumed."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "resumingHandler"
         },
         {
           "kind": "text",
@@ -433,17 +441,17 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount",
+        "doc://com.apple.documentation/documentation/foundation/progress/1407934-completedunitcount",
+        "doc://com.apple.documentation/documentation/foundation/progress/1417251-localizeddescription",
+        "doc://com.apple.documentation/documentation/foundation/progress/1412455-localizedadditionaldescription",
         "doc://com.apple.documentation/documentation/foundation/progress/1409348-iscancellable",
         "doc://com.apple.documentation/documentation/foundation/progress/1414454-iscancelled",
-        "doc://com.apple.documentation/documentation/foundation/progress/1413832-cancel",
         "doc://com.apple.documentation/documentation/foundation/progress/1417421-ispausable",
         "doc://com.apple.documentation/documentation/foundation/progress/1415495-ispaused",
-        "doc://com.apple.documentation/documentation/foundation/progress/1412377-pause",
-        "doc://com.apple.documentation/documentation/foundation/progress/1412873-pausinghandler",
-        "doc://com.apple.documentation/documentation/foundation/progress/1413616-resume",
-        "doc://com.apple.documentation/documentation/foundation/progress/1410158-resuminghandler"
+        "doc://com.apple.documentation/documentation/foundation/progress/1412873-pausinghandler"
       ],
-      "title": "Controlling Progress",
+      "title": "Reporting Progress",
       "generated": true
     }
   ],
@@ -509,6 +517,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -531,15 +540,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the receiver is a child of another progress object, the "
+              "text": "If the receiver is a suboperation of another progress object, the system invokes the "
             },
             {
-              "type": "codeVoice",
-              "code": "cancellationHandler"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1408913-cancellationhandler"
             },
             {
               "type": "text",
-              "text": " block will be invoked when the parent is cancelled."
+              "text": " block when canceling the containing progress object."
             }
           ]
         },
@@ -554,7 +564,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You are responsible for cancelling any work associated with the progress object."
+              "text": "You’re responsible for canceling any work for the progress object."
             }
           ]
         },
@@ -563,7 +573,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The cancellation handler may be invoked on any queue. If you must do work on a specific queue, you should dispatch to that queue from within the cancellation handler block."
+              "text": "You can invoke the cancellation handler on any queue. If you must do work on a specific queue, dispatch to that queue from within the cancellation handler block."
             }
           ]
         }
@@ -571,7 +581,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayer(im)playImmediatelyAtRate:",
+    "parent": {
+      "title": "AVPlayer"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A status that indicates whether playback is currently in progress, paused indefinitely, or suspended while waiting for appropriate network conditions."
+          "text": "A value that indicates whether playback is in progress, paused indefinitely, or waiting for network conditions to improve."
         }
       ]
     },
@@ -149,44 +157,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avplayeritemplaybackstallednotification"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate": {
-      "title": "rate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayer/1388846-rate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The current playback rate."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386726-play": {
-      "title": "play",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386726-play",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayer/1386726-play",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Begins playback of the current item."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "play"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643482-automaticallywaitstominimizestal": {
       "title": "automaticallyWaitsToMinimizeStalling",
@@ -226,7 +196,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The reasons the player is waiting begin or resume playback."
+          "text": "The reasons a player is waiting to begin or resume playback."
         }
       ]
     },
@@ -240,7 +210,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The player statuses indicating a playback rate change."
+          "text": "Constants that indicate the state of playback control."
         }
       ]
     },
@@ -287,14 +257,6 @@
       ],
       "title": "Configuring Automatic Waiting Behavior",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386726-play"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -345,6 +307,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -440,7 +403,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates a player layer to display the visual output of a specified player."
+      "text": "Creates a layer object to present the visual contents of a player’s current item."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerLayer(cm)playerLayerWithPlayer:",
+    "parent": {
+      "title": "AVPlayerLayer"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,12 +117,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avplayerlayer"
     },
-    "devLink-1999446": {
-      "identifier": "devLink-1999446",
-      "type": "link",
-      "title": "Media Playback Programming Guide",
-      "url": "https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/MediaPlaybackGuide/Contents/Resources/en.lproj/Introduction/Introduction.html#//apple_ref/doc/uid/TP40016757"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
       "title": "AVPlayer",
       "type": "topic",
@@ -133,7 +135,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a player layer to display the visual output of a specified player."
+          "text": "Creates a layer object to present the visual contents of a player’s current item."
         }
       ],
       "fragments": [
@@ -155,15 +157,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "devLink-1999446"
-      ]
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -224,6 +217,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -245,7 +239,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The player for which the player layer displays visual output."
+                  "text": "The player whose visual contents the layer presents."
                 }
               ]
             }
@@ -267,23 +261,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVPlayerLayer"
-            },
-            {
-              "type": "text",
-              "text": " object configured to display the visual output of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "player"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": "A layer that displays the visual output of the associated player."
             }
           ]
         }
@@ -303,15 +281,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can create arbitrary numbers of player layers with the same "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVPlayer"
-            },
-            {
-              "type": "text",
-              "text": " object, but you should limit the number of layers you create to avoid impacting playback performance."
+              "text": "You may create an arbitrary number of layers for the same player object."
             }
           ]
         }
@@ -319,7 +289,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a new predicate formed by AND-ing the predicates in a given array."
+      "text": "Returns a new predicate that you form using an AND operation on the predicates in a specified array."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSCompoundPredicate(cm)andPredicateWithSubpredicates:",
+    "parent": {
+      "title": "NSCompoundPredicate"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -146,7 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new predicate formed by AND-ing the predicates in a given array."
+          "text": "Returns a new predicate that you form using an AND operation on the predicates in a specified array."
         }
       ],
       "fragments": [
@@ -170,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new predicate formed by NOT-ing a given predicate."
+          "text": "Returns a new predicate that you form using a NOT operation on a specified predicate."
         }
       ],
       "fragments": [
@@ -194,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new predicate formed by OR-ing the predicates in a given array."
+          "text": "Returns a new predicate that you form using an OR operation on the predicates in a specified array."
         }
       ],
       "fragments": [
@@ -218,7 +226,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the receiver initialized to a given type using predicates from a given array."
+          "text": "Returns the receiver that a specified type initializes using predicates from a specified array."
         }
       ],
       "fragments": [
@@ -229,6 +237,30 @@
         {
           "kind": "identifier",
           "text": "initWithType:subpredicates:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscompoundpredicate/1417889-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscompoundpredicate/1417889-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscompoundpredicate/1417889-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a predicate by decoding from the coder you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
         }
       ]
     },
@@ -245,9 +277,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nscompoundpredicate/1409462-notpredicatewithsubpredicate",
         "doc://com.apple.documentation/documentation/foundation/nscompoundpredicate/1417873-orpredicatewithsubpredicates",
-        "doc://com.apple.documentation/documentation/foundation/nscompoundpredicate/1407744-initwithtype"
+        "doc://com.apple.documentation/documentation/foundation/nscompoundpredicate/1407744-initwithtype",
+        "doc://com.apple.documentation/documentation/foundation/nscompoundpredicate/1417889-initwithcoder"
       ],
-      "title": "Constructors",
+      "title": "Creating Compound Predicates",
       "generated": true
     },
     {
@@ -328,6 +361,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -447,7 +481,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

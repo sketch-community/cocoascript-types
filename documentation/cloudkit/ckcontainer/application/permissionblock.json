@@ -35,35 +35,57 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       },
       {
         "name": "Xcode",
         "introducedAt": "10.0",
-        "current": "12.3"
+        "deprecatedAt": "13.0",
+        "current": "13.2",
+        "deprecated": true
       }
     ],
     "externalID": "s:So11CKContainerC8CloudKitE11ApplicationO15PermissionBlocka",
+    "parent": {
+      "title": "CKContainer.Application"
+    },
     "symbolKind": "tdef",
     "fragments": [
       {
@@ -77,8 +99,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,13 +141,13 @@
       "role": "symbol",
       "url": "/documentation/cloudkit/ckcontainer/application"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckcontainer_application_permissionblock": {
-      "title": "CKContainer_Application_PermissionBlock",
+    "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/applicationpermissionblock": {
+      "title": "CKContainer.ApplicationPermissionBlock",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer_application_permissionblock",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/applicationpermissionblock",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckcontainer_application_permissionblock"
+      "url": "/documentation/cloudkit/ckcontainer/applicationpermissionblock"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/application/permissions": {
       "title": "CKContainer.Application.Permissions",
@@ -149,7 +171,8 @@
           "kind": "identifier",
           "text": "CKContainer.Application.Permissions"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/application/permissionblock": {
       "title": "CKContainer.Application.PermissionBlock",
@@ -173,7 +196,8 @@
           "kind": "identifier",
           "text": "CKContainer.Application.PermissionBlock"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/application/permissionstatus": {
       "title": "CKContainer.Application.PermissionStatus",
@@ -197,7 +221,8 @@
           "kind": "identifier",
           "text": "CKContainer.Application.PermissionStatus"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -264,13 +289,24 @@
             },
             {
               "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)CKContainer",
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer",
+              "text": "CKContainer"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
               "preciseIdentifier": "c:@T@CKApplicationPermissionBlock",
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer_application_permissionblock",
-              "text": "CKContainer_Application_PermissionBlock"
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/applicationpermissionblock",
+              "text": "ApplicationPermissionBlock"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -281,7 +317,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

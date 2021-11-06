@@ -25,7 +25,7 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs"
       ]
     ]
   },
@@ -48,35 +48,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseSolve#$@SA@SparseIterativeMethod#$@SA@SparseMatrix_Float#$@SA@DenseMatrix_Float#S2_#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,21 +124,45 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions": {
-      "title": "Iterative Sparse Solve Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
-      "url": "/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs": {
+      "title": "Sparse Iterative Solving Functions (Matrix RHS)",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/2873619-sparseconjugategradient": {
-      "title": "SparseConjugateGradient",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2873619-sparseconjugategradient",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2873619-sparseconjugategradient"
+    "link-media-3703918": {
+      "identifier": "link-media-3703918",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/2879246-sparsesolve#3703918"
+    },
+    "media-3703918": {
+      "identifier": "media-3703918",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 479,
+            "height": 167
+          },
+          "url": "https://docs-assets.developer.apple.com/published/28f1e78a83/rendered2x-1606991551.png"
+        }
+      ],
+      "alt": "A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-by-two matrix that equals a three-by-two matrix.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2879246-sparsesolve#3702458": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2879246-sparsesolve#3702458",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/2879246-sparsesolve#3702458"
     },
     "doc://com.apple.documentation/documentation/accelerate/sparseiterativestatus_t": {
       "title": "SparseIterativeStatus_t",
@@ -234,7 +263,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/2879243-sparsesolve"
       ],
-      "title": "Iterative Sparse Solve",
+      "title": "Iterative Sparse Solve Functions",
       "generated": true
     }
   ],
@@ -308,6 +337,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -330,16 +360,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The iterative method to use, e.g. "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/accelerate/2873619-sparseconjugategradient"
-                },
-                {
-                  "type": "text",
-                  "text": "."
+                  "text": "The iterative method."
                 }
               ]
             }
@@ -442,7 +463,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An "
+              "text": "A "
             },
             {
               "type": "reference",
@@ -451,7 +472,125 @@
             },
             {
               "type": "text",
-              "text": " enumeration representing the status of the iterative solve."
+              "text": " enumeration that represents the status of the iterative solve."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this function to solve a system of linear equations using a factored coefficient matrix. The following figure shows two systems of equations where the coefficient matrix is sparse:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3703918",
+              "metadata": {
+                "anchor": "3703918",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code solves this system using the least squares minimum residual method:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/// Create the coefficient matrix _A_.",
+            "let rowIndices: [Int32] =    [ 0,  1, 1,  2]",
+            "let columnIndices: [Int32] = [ 2,  0, 2,  1]",
+            "let aValues: [Float] =       [10, 20, 5, 50]",
+            "",
+            "let A = SparseConvertFromCoordinate(3, 3,",
+            "                                    4, 1,",
+            "                                    SparseAttributes_t(),",
+            "                                    rowIndices, columnIndices,",
+            "                                    aValues)",
+            "",
+            "defer {",
+            "    SparseCleanup(A)",
+            "}",
+            "",
+            "/// Create the right-hand-side matrix, _B_.",
+            "var bValues: [Float] = [30, 35, 100,",
+            "                        300, 350, 1000]",
+            "let n = bValues.count",
+            "",
+            "let xValues = [Float](unsafeUninitializedCapacity: n) {",
+            "    buffer, count in",
+            "    bValues.withUnsafeMutableBufferPointer { bPtr in",
+            "        let B = DenseMatrix_Float(rowCount: 3,",
+            "                                  columnCount: 2,",
+            "                                  columnStride: 3,",
+            "                                  attributes: SparseAttributes_t(),",
+            "                                  data: bPtr.baseAddress!)",
+            "        ",
+            "        let X = DenseMatrix_Float(rowCount: 3,",
+            "                                  columnCount: 2,",
+            "                                  columnStride: 3,",
+            "                                  attributes: SparseAttributes_t(),",
+            "                                  data: buffer.baseAddress!)",
+            "        ",
+            "        SparseSolve(SparseLSMR(),",
+            "                    A, B, X)",
+            "        ",
+            "        count = n",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3702458",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, x"
+            },
+            {
+              "type": "codeVoice",
+              "code": "Values"
+            },
+            {
+              "type": "text",
+              "text": " contains the values "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]"
+            },
+            {
+              "type": "text",
+              "text": "."
             }
           ]
         }
@@ -459,7 +598,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,0 +1,3559 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/data_formatting"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/formatstyle",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3766780,
+  "kind": "symbol",
+  "metadata": {
+    "title": "FormatStyle",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "12.0",
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "8.0",
+        "current": "8.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "13.0",
+        "current": "13.2"
+      }
+    ],
+    "externalID": "s:10Foundation11FormatStyleP",
+    "symbolKind": "intf",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "protocol "
+      },
+      {
+        "kind": "identifier",
+        "text": "FormatStyle"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/formatstyle"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data_formatting": {
+      "title": "Data Formatting",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data_formatting",
+      "url": "/documentation/foundation/data_formatting",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/swift/decodable": {
+      "title": "Decodable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/decodable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/decodable"
+    },
+    "doc://com.apple.documentation/documentation/swift/encodable": {
+      "title": "Encodable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/encodable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/encodable"
+    },
+    "doc://com.apple.documentation/documentation/swift/hashable": {
+      "title": "Hashable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/hashable"
+    },
+    "doc://com.apple.documentation/documentation/foundation/parseableformatstyle": {
+      "title": "ParseableFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parseableformatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatstyle": {
+      "title": "ByteCountFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/componentsformatstyle": {
+      "title": "Date.ComponentsFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/componentsformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/componentsformatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/formatstyle": {
+      "title": "Date.FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/iso8601formatstyle": {
+      "title": "Date.ISO8601FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/iso8601formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/iso8601formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/intervalformatstyle": {
+      "title": "Date.IntervalFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/intervalformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/intervalformatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/relativeformatstyle": {
+      "title": "Date.RelativeFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/relativeformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/relativeformatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle": {
+      "title": "FloatingPointFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/floatingpointformatstyle",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "FloatingPointFormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/currency": {
+      "title": "FloatingPointFormatStyle.Currency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/currency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/floatingpointformatstyle/currency"
+    },
+    "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/percent": {
+      "title": "FloatingPointFormatStyle.Percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/floatingpointformatstyle/percent"
+    },
+    "doc://com.apple.documentation/documentation/foundation/integerformatstyle": {
+      "title": "IntegerFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/integerformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/integerformatstyle",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "IntegerFormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/integerformatstyle/currency": {
+      "title": "IntegerFormatStyle.Currency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/integerformatstyle/currency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/integerformatstyle/currency"
+    },
+    "doc://com.apple.documentation/documentation/foundation/integerformatstyle/percent": {
+      "title": "IntegerFormatStyle.Percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/integerformatstyle/percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/integerformatstyle/percent"
+    },
+    "doc://com.apple.documentation/documentation/foundation/listformatstyle": {
+      "title": "ListFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/listformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/listformatstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type used to format lists of items with a separator and conjunction appropriate for a given locale."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "ListFormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/attributedstyle": {
+      "title": "PersonNameComponents.AttributedStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/attributedstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents/attributedstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/formatstyle": {
+      "title": "PersonNameComponents.FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents/formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/stringstyle": {
+      "title": "StringStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/stringstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/stringstyle",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "StringStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/attributedstyle": {
+      "title": "Date.AttributedStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/attributedstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/attributedstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle": {
+      "title": "Decimal.FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/decimal/formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/attributed": {
+      "title": "Decimal.FormatStyle.Attributed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/attributed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/decimal/formatstyle/attributed"
+    },
+    "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/currency": {
+      "title": "Decimal.FormatStyle.Currency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/currency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/decimal/formatstyle/currency"
+    },
+    "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/percent": {
+      "title": "Decimal.FormatStyle.Percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/decimal/formatstyle/percent"
+    },
+    "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/attributed": {
+      "title": "FloatingPointFormatStyle.Attributed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/attributed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/floatingpointformatstyle/attributed"
+    },
+    "doc://com.apple.documentation/documentation/foundation/integerformatstyle/attributed": {
+      "title": "IntegerFormatStyle.Attributed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/integerformatstyle/attributed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/integerformatstyle/attributed"
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/formatstyle": {
+      "title": "Measurement.FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/verbatimformatstyle": {
+      "title": "Date.VerbatimFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/verbatimformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/verbatimformatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/attributedstyle": {
+      "title": "Measurement.AttributedStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/attributedstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/attributedstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/bytecountformatstyle/attributed": {
+      "title": "ByteCountFormatStyle.Attributed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/bytecountformatstyle/attributed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/bytecountformatstyle/attributed"
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3766781-formatinput": {
+      "title": "FormatInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3766781-formatinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3766781-formatinput",
+      "required": true,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "associatedtype "
+        },
+        {
+          "kind": "identifier",
+          "text": "FormatInput"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3766782-formatoutput": {
+      "title": "FormatOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3766782-formatoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3766782-formatoutput",
+      "required": true,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "associatedtype "
+        },
+        {
+          "kind": "identifier",
+          "text": "FormatOutput"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3766785-format": {
+      "title": "format(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3766785-format",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3766785-format",
+      "required": true,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "format"
+        },
+        {
+          "kind": "text",
+          "text": "(Self.FormatInput) -> Self.FormatOutput"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3796524-locale": {
+      "title": "locale(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3796524-locale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3796524-locale",
+      "required": true,
+      "defaultImplementations": 1,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "locale"
+        },
+        {
+          "kind": "text",
+          "text": "(Locale) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3796532-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3796532-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3796532-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Decimal",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": Decimal.FormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3796535-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3796535-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3796535-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Decimal",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": Decimal.FormatStyle.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3796513-currency": {
+      "title": "currency(code:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3796513-currency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3796513-currency",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Decimal",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Currency",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "currency"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "code"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3796518-interval": {
+      "title": "interval",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3796518-interval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3796518-interval",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Date",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "IntervalFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "interval"
+        },
+        {
+          "kind": "text",
+          "text": ": Date.IntervalFormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3796519-iso8601": {
+      "title": "iso8601",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3796519-iso8601",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3796519-iso8601",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Date",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "ISO8601FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "iso8601"
+        },
+        {
+          "kind": "text",
+          "text": ": Date.ISO8601FormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3796538-timeduration": {
+      "title": "timeDuration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3796538-timeduration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3796538-timeduration",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Date",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "ComponentsFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "timeDuration"
+        },
+        {
+          "kind": "text",
+          "text": ": Date.ComponentsFormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3796520-list": {
+      "title": "list(memberStyle:type:width:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3796520-list",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3796520-list",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "list"
+        },
+        {
+          "kind": "text",
+          "text": "<MemberStyle, Base>("
+        },
+        {
+          "kind": "identifier",
+          "text": "memberStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": MemberStyle, "
+        },
+        {
+          "kind": "identifier",
+          "text": "type"
+        },
+        {
+          "kind": "text",
+          "text": ": ListFormatStyle<MemberStyle, Base>.ListType, "
+        },
+        {
+          "kind": "identifier",
+          "text": "width"
+        },
+        {
+          "kind": "text",
+          "text": ": ListFormatStyle<MemberStyle, Base>.Width) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3796522-list": {
+      "title": "list(type:width:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3796522-list",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3796522-list",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "list"
+        },
+        {
+          "kind": "text",
+          "text": "<Base>("
+        },
+        {
+          "kind": "identifier",
+          "text": "type"
+        },
+        {
+          "kind": "text",
+          "text": ": ListFormatStyle<StringStyle, Base>.ListType, "
+        },
+        {
+          "kind": "identifier",
+          "text": "width"
+        },
+        {
+          "kind": "text",
+          "text": ": ListFormatStyle<StringStyle, Base>.Width) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3798908-datetime": {
+      "title": "dateTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3798908-datetime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3798908-datetime",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Date",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateTime"
+        },
+        {
+          "kind": "text",
+          "text": ": Date.FormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870097-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870097-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870097-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "FloatingPointFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Double",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": FloatingPointFormatStyle<Double>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870098-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870098-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870098-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "FloatingPointFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Float",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": FloatingPointFormatStyle<Float>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870099-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870099-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870099-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "FloatingPointFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Float16",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": FloatingPointFormatStyle<Float16>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870100-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870100-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870100-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Int",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<Int>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870101-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870101-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870101-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "UInt",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<UInt>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870102-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870102-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870102-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Int8",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<Int8>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870103-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870103-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870103-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Int16",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<Int16>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870104-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870104-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870104-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Int32",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<Int32>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870105-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870105-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870105-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Int64",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<Int64>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870106-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870106-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870106-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "UInt8",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<UInt8>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870107-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870107-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870107-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "UInt16",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<UInt16>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870108-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870108-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870108-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "UInt32",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<UInt32>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870109-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870109-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870109-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "UInt64",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<UInt64>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870110-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870110-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870110-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "FloatingPointFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Double",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": FloatingPointFormatStyle<Double>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870111-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870111-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870111-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "FloatingPointFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Float",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": FloatingPointFormatStyle<Float>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870112-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870112-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870112-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "FloatingPointFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Float16",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": FloatingPointFormatStyle<Float16>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870113-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870113-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870113-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Int",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<Int>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870114-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870114-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870114-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "UInt",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<UInt>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870115-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870115-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870115-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Int8",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<Int8>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870116-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870116-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870116-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Int16",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<Int16>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870117-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870117-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870117-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Int32",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<Int32>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870118-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870118-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870118-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Int64",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<Int64>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870119-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870119-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870119-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "UInt8",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<UInt8>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870120-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870120-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870120-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "UInt16",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<UInt16>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870121-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870121-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870121-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "UInt32",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<UInt32>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870122-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870122-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870122-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "IntegerFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": "<",
+            "type": "codeVoice"
+          },
+          {
+            "code": "UInt64",
+            "type": "codeVoice"
+          },
+          {
+            "code": ">.",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": IntegerFormatStyle<UInt64>.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3867781-bytecount": {
+      "title": "byteCount(style:allowedUnits:spellsOutZero:includesActualByteCount:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3867781-bytecount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3867781-bytecount",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "ByteCountFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "byteCount"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "style"
+        },
+        {
+          "kind": "text",
+          "text": ": ByteCountFormatStyle.Style, "
+        },
+        {
+          "kind": "identifier",
+          "text": "allowedUnits"
+        },
+        {
+          "kind": "text",
+          "text": ": ByteCountFormatStyle.Units, "
+        },
+        {
+          "kind": "identifier",
+          "text": "spellsOutZero"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool, "
+        },
+        {
+          "kind": "identifier",
+          "text": "includesActualByteCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3798907-components": {
+      "title": "components(style:fields:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3798907-components",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3798907-components",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Date",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "ComponentsFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "components"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "style"
+        },
+        {
+          "kind": "text",
+          "text": ": Date.ComponentsFormatStyle.Style, "
+        },
+        {
+          "kind": "identifier",
+          "text": "fields"
+        },
+        {
+          "kind": "text",
+          "text": ": Set<Date.ComponentsFormatStyle.Field>?) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870093-currency": {
+      "title": "currency(code:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870093-currency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870093-currency",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "currency"
+        },
+        {
+          "kind": "text",
+          "text": "<Value>("
+        },
+        {
+          "kind": "identifier",
+          "text": "code"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870094-currency": {
+      "title": "currency(code:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870094-currency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870094-currency",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "currency"
+        },
+        {
+          "kind": "text",
+          "text": "<V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "code"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870095-measurement": {
+      "title": "measurement(width:usage:hidesScaleName:numberFormatStyle:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870095-measurement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870095-measurement",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "measurement"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "width"
+        },
+        {
+          "kind": "text",
+          "text": ": Measurement<UnitTemperature>.FormatStyle.UnitWidth, "
+        },
+        {
+          "kind": "identifier",
+          "text": "usage"
+        },
+        {
+          "kind": "text",
+          "text": ": MeasurementFormatUnitUsage<UnitTemperature>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "hidesScaleName"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool, "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberFormatStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": FloatingPointFormatStyle<Double>?) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3870096-measurement": {
+      "title": "measurement(width:usage:numberFormatStyle:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3870096-measurement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3870096-measurement",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "measurement"
+        },
+        {
+          "kind": "text",
+          "text": "<UnitType>("
+        },
+        {
+          "kind": "identifier",
+          "text": "width"
+        },
+        {
+          "kind": "text",
+          "text": ": Measurement<UnitType>.FormatStyle.UnitWidth, "
+        },
+        {
+          "kind": "identifier",
+          "text": "usage"
+        },
+        {
+          "kind": "text",
+          "text": ": MeasurementFormatUnitUsage<UnitType>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "numberFormatStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": FloatingPointFormatStyle<Double>?) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3798909-name": {
+      "title": "name(style:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3798909-name",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3798909-name",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "PersonNameComponents",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "name"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "style"
+        },
+        {
+          "kind": "text",
+          "text": ": PersonNameComponents.FormatStyle.Style) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle/3798910-relative": {
+      "title": "relative(presentation:unitsStyle:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle/3798910-relative",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle/3798910-relative",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Date",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "RelativeFormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "relative"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "presentation"
+        },
+        {
+          "kind": "text",
+          "text": ": Date.RelativeFormatStyle.Presentation, "
+        },
+        {
+          "kind": "identifier",
+          "text": "unitsStyle"
+        },
+        {
+          "kind": "text",
+          "text": ": Date.RelativeFormatStyle.UnitsStyle) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle": {
+      "title": "FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "FormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstylecapitalizationcontext": {
+      "title": "FormatStyleCapitalizationContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstylecapitalizationcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstylecapitalizationcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The capitalization formatting context used when formatting dates and times."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "FormatStyleCapitalizationContext"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/data_formatting/format_style_configurations": {
+      "title": "Format Style Configurations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data_formatting/format_style_configurations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/data_formatting/format_style_configurations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Collections of behaviors for traits like numeric precision, rounding, and scale, used for formatting and parsing numeric values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/swift/decodable",
+        "doc://com.apple.documentation/documentation/swift/encodable",
+        "doc://com.apple.documentation/documentation/swift/hashable"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Inherited By",
+      "type": "inheritedBy",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/parseableformatstyle"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforming Types",
+      "type": "conformingTypes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/bytecountformatstyle/attributed",
+        "doc://com.apple.documentation/documentation/foundation/date/attributedstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/componentsformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/iso8601formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/intervalformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/relativeformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/verbatimformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/attributed",
+        "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/currency",
+        "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/percent",
+        "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/attributed",
+        "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/currency",
+        "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/percent",
+        "doc://com.apple.documentation/documentation/foundation/measurement/formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/integerformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/integerformatstyle/attributed",
+        "doc://com.apple.documentation/documentation/foundation/integerformatstyle/currency",
+        "doc://com.apple.documentation/documentation/foundation/integerformatstyle/percent",
+        "doc://com.apple.documentation/documentation/foundation/listformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/measurement/attributedstyle",
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/attributedstyle",
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/stringstyle"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Declaring Input and Output Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3766781-formatinput",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3766782-formatoutput"
+      ],
+      "anchor": "3793380"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Performing Formatting",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3766785-format"
+      ],
+      "anchor": "3793384"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting Style Locale",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3796524-locale"
+      ],
+      "anchor": "3798526"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Applying Numeric Styles",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3796532-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3796535-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3796513-currency"
+      ],
+      "anchor": "3798524"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Applying Date Styles",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3796518-interval",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3796519-iso8601",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3796538-timeduration"
+      ],
+      "anchor": "3798511"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Applying List Styles",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3796520-list",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3796522-list"
+      ],
+      "anchor": "3798525"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3798908-datetime",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870097-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870098-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870099-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870100-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870101-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870102-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870103-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870104-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870105-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870106-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870107-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870108-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870109-number",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870110-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870111-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870112-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870113-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870114-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870115-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870116-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870117-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870118-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870119-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870120-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870121-percent",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870122-percent"
+      ],
+      "anchor": "3801006"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3867781-bytecount",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3798907-components",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870093-currency",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870094-currency",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870095-measurement",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3870096-measurement",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3798909-name",
+        "doc://com.apple.documentation/documentation/foundation/formatstyle/3798910-relative"
+      ],
+      "anchor": "3801007"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatstylecapitalizationcontext",
+        "doc://com.apple.documentation/documentation/foundation/integerformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/listformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/stringstyle",
+        "doc://com.apple.documentation/documentation/foundation/data_formatting/format_style_configurations"
+      ],
+      "title": "Data Formatting in Swift",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "FormatStyle"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

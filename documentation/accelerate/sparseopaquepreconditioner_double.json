@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@SparseOpaquePreconditioner_Double",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,7 +129,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function that should calculate "
+          "text": "A function that calculates "
         },
         {
           "type": "emphasis",
@@ -164,23 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The unaltered pointer "
-        },
-        {
-          "type": "codeVoice",
-          "code": "mem"
-        },
-        {
-          "type": "text",
-          "text": " passed as the first parameter of the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "apply"
-        },
-        {
-          "type": "text",
-          "text": " function."
+          "text": "The unaltered memory pointer that passes as the first parameter of the apply function. "
         }
       ]
     },
@@ -198,6 +187,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t": {
+      "title": "SparsePreconditioner_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsepreconditioner_t",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that define the preconditioner type."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/2873635-sparsecreatepreconditioner": {
       "title": "SparseCreatePreconditioner",
       "type": "topic",
@@ -208,7 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a preconditioner that can be applied quickly to the given matrix of double-precision values."
+          "text": "Creates a preconditioner for the specified matrix of double-precision values."
         }
       ]
     },
@@ -222,7 +225,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a preconditioner that can be applied quickly to the given matrix of single-precision values."
+          "text": "Creates a preconditioner for the specified matrix of single-precision values."
         }
       ]
     },
@@ -270,12 +273,14 @@
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double/2873624-apply",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double/2873532-mem",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double/2873598-type"
-      ]
+      ],
+      "anchor": "2874537"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t",
         "doc://com.apple.documentation/documentation/accelerate/2873635-sparsecreatepreconditioner",
         "doc://com.apple.documentation/documentation/accelerate/2873557-sparsecreatepreconditioner",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_float"
@@ -336,6 +341,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -346,7 +352,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

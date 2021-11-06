@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates a default configuration for a grouped list header or footer."
+      "text": "Creates the default configuration you use to style a grouped list header or footer."
     }
   ],
   "documentVersion": 0,
@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIBackgroundConfiguration(cm)listGroupedHeaderFooterConfiguration",
+    "parent": {
+      "title": "UIBackgroundConfiguration"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -67,6 +75,16 @@
       ],
       "paths": [
         "documentation/uikit/uibackgroundconfiguration/3600325-listgroupedheaderfooterconfigura"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uibackgroundconfiguration/3600325-listgroupedheaderfooter"
       ]
     }
   ],
@@ -109,6 +127,38 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewstyle/uitableviewstylegrouped": {
+      "title": "UITableViewStyleGrouped",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewstyle/uitableviewstylegrouped",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewstyle/uitableviewstylegrouped"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewstyle/uitableviewstyleinsetgrouped": {
+      "title": "UITableViewStyleInsetGrouped",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewstyle/uitableviewstyleinsetgrouped",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewstyle/uitableviewstyleinsetgrouped"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearancegrouped": {
+      "title": "UICollectionLayoutListAppearanceGrouped",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearancegrouped",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearancegrouped"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearanceinsetgrouped": {
+      "title": "UICollectionLayoutListAppearanceInsetGrouped",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearanceinsetgrouped",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearanceinsetgrouped"
+    },
     "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3600327-listplainheaderfooterconfigurati": {
       "title": "listPlainHeaderFooterConfiguration",
       "type": "topic",
@@ -119,7 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a default configuration for a plain list header or footer."
+          "text": "Creates the default configuration you use to style a plain list header or footer."
         }
       ],
       "fragments": [
@@ -143,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a default configuration for a grouped list header or footer."
+          "text": "Creates the default configuration you use to style a grouped list header or footer."
         }
       ],
       "fragments": [
@@ -167,7 +217,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a default configuration for a sidebar list header."
+          "text": "Creates the default configuration you use to style a sidebar list header."
         }
       ],
       "fragments": [
@@ -231,15 +281,131 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default configuration for a grouped list header or footer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create this configuration to update the styling for the background of a header or footer in a table view or collection view list. When you apply this configuration, the background of the header or footer matches the system default styling for a header or footer in a grouped list."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For an appearance consistent with system defaults, use this background configuration for a header or footer in these contexts:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A table view that you configure with the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewstyle/uitableviewstylegrouped"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewstyle/uitableviewstyleinsetgrouped"
+                    },
+                    {
+                      "type": "text",
+                      "text": " enumeration cases."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A a collection view list that you configure with the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearancegrouped"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearanceinsetgrouped"
+                },
+                {
+                  "type": "text",
+                  "text": " enumeration cases."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

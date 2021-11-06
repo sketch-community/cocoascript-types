@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Indicates that the strings to be compared have been preprocessed."
+      "text": "A predicate that indicates you’ve preprocessed the strings to compare."
     }
   ],
   "documentVersion": 0,
@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSComparisonPredicateOptions@NSNormalizedPredicateOption",
+    "parent": {
+      "title": "NSComparisonPredicateOptions"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,23 +133,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "These constants describe the possible types of string comparison for "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSComparisonPredicate"
-        },
-        {
-          "type": "text",
-          "text": ". These options are supported for "
-        },
-        {
-          "type": "codeVoice",
-          "code": "LIKE"
-        },
-        {
-          "type": "text",
-          "text": " as well as all of the equality/comparison operators."
+          "text": "Constants that describe the possible types of string comparison for comparison predicates."
         }
       ]
     },
@@ -173,6 +165,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -211,7 +204,7 @@
             },
             {
               "type": "text",
-              "text": ", and is intended as a performance optimization option."
+              "text": ", and is a performance optimization option."
             }
           ]
         },
@@ -244,7 +237,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

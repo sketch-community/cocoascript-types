@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A key indicating whether the spoken text is queued behind, or interrupts, existing spoken content. "
+      "text": "A key that indicates whether to queue an announcement behind existing speech or to interrupt it."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key"
       ],
@@ -25,14 +25,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/speech_attributes_for_attributed_strings"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/speech_attributes_for_attributed_strings"
       ],
@@ -72,25 +72,33 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@UIAccessibilitySpeechAttributeQueueAnnouncement",
+    "parent": {
+      "title": "NSAttributedString.Key"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -108,8 +116,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -144,10 +152,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -184,10 +192,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -247,6 +255,22 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsnumber"
+    },
+    "doc://com.apple.documentation/documentation/swift/true": {
+      "title": "true",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/true",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/true"
+    },
+    "doc://com.apple.documentation/documentation/swift/false": {
+      "title": "false",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/false",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/false"
     },
     "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/1534636-accessibilitymarkedmisspelled": {
       "title": "accessibilityMarkedMisspelled",
@@ -751,6 +775,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsattributedstring/key/2890748-accessibilityspeechipanotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates the pronunciation of a specific word or phrase, such as a proper name."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -776,7 +806,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating the language to use when speaking a string. "
+          "text": "A key that indicates the language to use when speaking a string. "
         }
       ],
       "fragments": [
@@ -804,7 +834,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating the pitch to apply to spoken content. "
+          "text": "A key that indicates the pitch to apply to spoken content. "
         }
       ],
       "fragments": [
@@ -832,7 +862,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating whether punctuation is spoken. "
+          "text": "A key that indicates whether to speak punctuation. "
         }
       ],
       "fragments": [
@@ -860,7 +890,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating whether the spoken text is queued behind, or interrupts, existing spoken content. "
+          "text": "A key that indicates whether to queue an announcement behind existing speech or to interrupt it."
         }
       ],
       "fragments": [
@@ -1255,6 +1285,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -1285,19 +1316,21 @@
             },
             {
               "type": "text",
-              "text": " object interpreted as a Boolean value. When the value is "
+              "text": " object that the system interprets as a Boolean value. When the value is "
             },
             {
-              "type": "codeVoice",
-              "code": "true"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/true"
             },
             {
               "type": "text",
-              "text": ", this announcement is queued behind existing speech. When the value is "
+              "text": ", the system queues the announcement behind existing speech. When the value is "
             },
             {
-              "type": "codeVoice",
-              "code": "false"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/swift/false"
             },
             {
               "type": "text",
@@ -1309,7 +1342,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,7 +1,20 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The behavior that specifies how a new scene joins a scene collection."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication",
+        "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions"
+      ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
@@ -22,6 +35,31 @@
         "doc://com.apple.documentation/documentation/uikit/app_and_environment",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene",
+        "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/windows_and_screens",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene",
+        "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/multitasking_on_ipad",
+        "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+        "doc://com.apple.documentation/documentation/uikit/uiscene",
         "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions"
       ]
     ]
@@ -44,16 +82,19 @@
     "platforms": [
       {
         "name": "Mac Catalyst",
-        "introducedAt": "10.14",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UISceneActivationRequestOptions(py)collectionJoinBehavior",
+    "parent": {
+      "title": "UISceneActivationRequestOptions"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,13 +137,13 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes": {
-      "title": "Scenes",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
-      "url": "/documentation/uikit/app_and_environment/scenes",
+    "doc://com.apple.documentation/documentation/uikit/uiapplication": {
+      "title": "UIApplication",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication",
+      "url": "/documentation/uikit/uiapplication",
       "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions": {
       "title": "UISceneActivationRequestOptions",
@@ -114,9 +155,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object containing information you want the system to use when activating the session associated with a scene.  "
+          "text": "An object that contains information you want the system to use when activating the session associated with a scene.  "
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes": {
+      "title": "Scenes",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/app_and_environment/scenes",
+      "url": "/documentation/uikit/app_and_environment/scenes",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/uikit/windows_and_screens": {
       "title": "Windows and Screens",
@@ -134,13 +183,35 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiscene": {
+      "title": "UIScene",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiscene",
+      "url": "/documentation/uikit/uiscene",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindowtabgroup": {
+      "title": "NSWindowTabGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowtabgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindowtabgroup"
+    },
     "doc://com.apple.documentation/documentation/uikit/uiscenecollectionjoinbehavior": {
       "title": "UISceneCollectionJoinBehavior",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiscenecollectionjoinbehavior",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiscenecollectionjoinbehavior"
+      "url": "/documentation/uikit/uiscenecollectionjoinbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of behaviors that specify how a new scene joins a scene collection. "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions/3623235-collectionjoinbehavior": {
       "title": "collectionJoinBehavior",
@@ -148,7 +219,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uisceneactivationrequestoptions/3623235-collectionjoinbehavior",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uisceneactivationrequestoptions/3623235-collectionjoinbehavior"
+      "url": "/documentation/uikit/uisceneactivationrequestoptions/3623235-collectionjoinbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The behavior that specifies how a new scene joins a scene collection."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -208,10 +285,39 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A scene collection is a group of scenes that display together. In apps built with Mac Catalyst, you use this behavior to add windows to an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowtabgroup"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

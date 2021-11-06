@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Called when it is time for you to hand off the call to your app. "
+      "text": "Provides information to hand off the call to your app."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintenthandling"
       ]
     ]
@@ -37,23 +37,33 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INStartVideoCallIntentHandling(im)handleStartVideoCall:completion:",
+    "parent": {
+      "title": "INStartVideoCallIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +98,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols": {
-      "title": "Deprecated Classes and Protocols",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
-      "url": "/documentation/sirikit/deprecated_classes_and_protocols",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -153,7 +163,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Called when it is time for you to hand off the call to your app. "
+          "text": "Provides information to hand off the call to your app."
         }
       ],
       "fragments": [
@@ -268,6 +278,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -287,7 +298,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The intent object containing details about the user’s request. The information in this object has already been resolved and confirmed by the user."
+                  "text": "The intent object containing details about the user’s request. The user has already resolved and confirmed the information in this object."
                 }
               ]
             }
@@ -368,7 +379,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use this method to turn control of the call over to your app. Perform any final checks and create a response object with the information needed to initiate the call in your app. Do not try to initiate the call directly from this method. When your response object contains the "
+              "text": "Use this method to turn control of the call over to your app. Perform any final checks and create a response object with the information needed to initiate the call in your app. Don’t try to initiate the call directly from this method. When your response object contains the "
             },
             {
               "type": "reference",
@@ -386,7 +397,7 @@
             },
             {
               "type": "text",
-              "text": " object from your response object. "
+              "text": " object from your response object."
             }
           ]
         }
@@ -394,7 +405,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

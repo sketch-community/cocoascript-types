@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An array of media characteristics that are essential to select when choosing media with a particular characteristic."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.14",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "5.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerMediaSelectionCriteria(py)principalMediaCharacteristics",
+    "parent": {
+      "title": "AVPlayerMediaSelectionCriteria"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -140,7 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of preferred languages in the order of desirability."
+          "text": "An array of language identifiers in preferred order."
         }
       ]
     },
@@ -154,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of preferred media characteristics in the order of desirability."
+          "text": "An array of media characteristics in preferred order."
         }
       ]
     },
@@ -164,7 +178,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria/3042658-principalmediacharacteristics",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayermediaselectioncriteria/3042658-principalmediacharacteristics"
+      "url": "/documentation/avfoundation/avplayermediaselectioncriteria/3042658-principalmediacharacteristics",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of media characteristics that are essential to select when choosing media with a particular characteristic."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -172,16 +192,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -242,6 +252,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -249,10 +260,58 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If no option matches the principal media characteristics, the system chooses the default option in the group as the best match."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When making automatic selections, a player item treats principal media characteristics as criteria that supersede language preferences and preferred media characteristics."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Use principal media characteristics with caution. It’s typical to support accessibility features using a combination of language preferences and preferred characteristics, and not using principal media characteristics."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

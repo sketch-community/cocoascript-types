@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The operations currently in the queue. "
+      "text": "The operations currently in the queue."
     }
   ],
   "documentVersion": 0,
@@ -42,44 +42,54 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSOperationQueue(py)operations",
+    "parent": {
+      "title": "NSOperationQueue"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -144,6 +154,30 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172534-addbarrierblock": {
+      "title": "addBarrierBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172534-addbarrierblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperationqueue/3172534-addbarrierblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invokes a block when the queue finishes all enqueued operations, and prevents subsequent operations from starting until the block has completed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addBarrierBlock:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsoperation": {
       "title": "NSOperation",
       "type": "topic",
@@ -168,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The operations currently in the queue. "
+          "text": "The operations currently in the queue."
         }
       ],
       "deprecated": true
@@ -253,21 +287,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415115-operationcount": {
-      "title": "operationCount",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415115-operationcount",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsoperationqueue/1415115-operationcount",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The number of operations currently in the queue."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1417849-cancelalloperations": {
       "title": "cancelAllOperations",
       "type": "topic",
@@ -302,7 +321,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Blocks the current thread until all of the receiver’s queued and executing operations finish executing."
+          "text": "Blocks the current thread until all the receiver’s queued and executing operations finish executing."
         }
       ],
       "fragments": [
@@ -316,6 +335,21 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415115-operationcount": {
+      "title": "operationCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415115-operationcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperationqueue/1415115-operationcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of operations currently in the queue."
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -324,15 +358,36 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "To avoid race conditions while accessing operations, use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172534-addbarrierblock"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1410704-addoperation",
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1408358-addoperations",
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1412949-addoperationwithblock",
-        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415115-operationcount",
+        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/3172534-addbarrierblock",
         "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1417849-cancelalloperations",
-        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1407971-waituntilalloperationsarefinishe"
+        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1407971-waituntilalloperationsarefinishe",
+        "doc://com.apple.documentation/documentation/foundation/nsoperationqueue/1415115-operationcount"
       ],
       "title": "Managing Operations in the Queue",
       "generated": true
@@ -394,6 +449,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -425,7 +481,7 @@
             },
             {
               "type": "text",
-              "text": " objects in the order in which they were added to the queue. This order does not necessarily reflect the order in which those operations will be executed."
+              "text": " objects in the order you added them to the queue. This order doesn’t necessarily reflect the order in which the queue invokes those operations."
             }
           ]
         },
@@ -434,7 +490,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can use this property to access the operations queued at any given moment. Operations remain queued until they finish their task. Therefore, the array may contain operations that are executing or waiting to be executed. The list may also contain operations that were executing when the array was initially retrieved but have subsequently finished. "
+              "text": "You can use this property to access the operations queued at any given moment. Operations remain queued until they finish their task. Therefore, the array may contain operations that are currently running or waiting to run. The list may also contain operations that were running when you retrieved the array but have subsequently finished. "
             }
           ]
         },
@@ -443,7 +499,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You may monitor changes to the value of this property using "
+              "text": "You can monitor changes to the value of this property using "
             },
             {
               "type": "link",
@@ -452,7 +508,7 @@
             },
             {
               "type": "text",
-              "text": ". Configure an observer to monitor the "
+              "text": " (KVO). Configure an observer to monitor the "
             },
             {
               "type": "reference",
@@ -469,7 +525,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

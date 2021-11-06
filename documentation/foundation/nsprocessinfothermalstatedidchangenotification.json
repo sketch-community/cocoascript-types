@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted when the thermal state of the system changes."
+      "text": "Posts when the thermal state of the system changes."
     }
   ],
   "documentVersion": 0,
@@ -41,35 +41,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10.3",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@NSProcessInfoThermalStateDidChangeNotification",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,11 +119,11 @@
     },
     "doc://com.apple.documentation/documentation/foundation/nsprocessinfo": {
       "title": "NSProcessInfo",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo",
-      "url": "/documentation/foundation/nsprocessinfo",
       "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo",
       "kind": "symbol",
-      "role": "symbol"
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprocessinfo"
     },
     "doc://com.apple.documentation/documentation/foundation/processes_and_threads": {
       "title": "Processes and Threads",
@@ -127,14 +132,6 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsnotificationname": {
-      "title": "NSNotificationName",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotificationname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsnotificationname"
     },
     "doc://com.apple.documentation/documentation/foundation/nsprocessinfothermalstatedidchangenotification": {
       "title": "NSProcessInfoThermalStateDidChangeNotification",
@@ -146,9 +143,25 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the thermal state of the system changes."
+          "text": "Posts when the thermal state of the system changes."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1417480-thermalstate": {
+      "title": "thermalState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1417480-thermalstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprocessinfo/1417480-thermalstate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotificationname": {
+      "title": "NSNotificationName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotificationname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotificationname"
     },
     "doc://com.apple.documentation/documentation/foundation/nsprocessinfopowerstatedidchangenotification": {
       "title": "NSProcessInfoPowerStateDidChangeNotification",
@@ -160,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the power state (Low Power Mode is enabled or disabled) of an iOS device changes. "
+          "text": "Posts when the power state of an iOS device changes. "
         }
       ]
     },
@@ -219,6 +232,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -244,12 +258,40 @@
               "text": "The notification object is an "
             },
             {
-              "type": "codeVoice",
-              "code": "NSProcessInfo"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo"
             },
             {
               "type": "text",
               "text": " instance."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To receive "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfothermalstatedidchangenotification"
+            },
+            {
+              "type": "text",
+              "text": ", you must access the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1417480-thermalstate"
+            },
+            {
+              "type": "text",
+              "text": " prior to registering for the notification."
             }
           ]
         }
@@ -257,7 +299,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

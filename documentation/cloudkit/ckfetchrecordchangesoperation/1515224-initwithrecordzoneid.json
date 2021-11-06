@@ -11,8 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations/deprecated_symbols",
+        "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation"
       ]
     ]
@@ -37,44 +36,54 @@
         "name": "iOS",
         "introducedAt": "8.0",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "deprecatedAt": "10.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
         "deprecatedAt": "10.12",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
         "deprecatedAt": "3.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CKFetchRecordChangesOperation(im)initWithRecordZoneID:previousServerChangeToken:",
+    "parent": {
+      "title": "CKFetchRecordChangesOperation"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,18 +118,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations": {
-      "title": "Record Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-      "url": "/documentation/cloudkit/record_operations",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations/deprecated_symbols": {
+    "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols": {
       "title": "Deprecated Symbols",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations/deprecated_symbols",
-      "url": "/documentation/cloudkit/record_operations/deprecated_symbols",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols",
+      "url": "/documentation/cloudkit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -330,6 +331,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -461,7 +463,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,10 +35,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@E@NSWorkspaceIconCreationOptions",
+    "parent": {
+      "title": "NSWorkspace"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -52,8 +55,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -225,6 +228,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsworkspace/iconcreationoptions/1531060-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes an icon creation option using the specified raw value."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -279,43 +288,6 @@
           "text": ": String) -> NSImage"
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1527879-icon": {
-      "title": "icon(forFileType:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1527879-icon",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace/1527879-icon",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an image containing the icon for files of the specified type. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "icon"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "forFileType"
-        },
-        {
-          "kind": "text",
-          "text": ": String) -> NSImage"
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525487-icon": {
       "title": "icon(forFiles:)",
@@ -438,21 +410,22 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsworkspace/iconcreationoptions/1529839-excludequickdrawelementsiconcrea",
         "doc://com.apple.documentation/documentation/appkit/nsworkspace/iconcreationoptions/1534955-exclude10_4elementsiconcreationo"
-      ]
+      ],
+      "anchor": "1594222"
     },
     {
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsworkspace/iconcreationoptions/1531060-init"
-      ]
+      ],
+      "anchor": "2863011"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/appkit/nsworkspace/1528158-icon",
-        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1527879-icon",
         "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525487-icon",
         "doc://com.apple.documentation/documentation/appkit/nsworkspace/3553230-icon",
         "doc://com.apple.documentation/documentation/appkit/nsworkspace/1529882-seticon"
@@ -520,7 +493,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

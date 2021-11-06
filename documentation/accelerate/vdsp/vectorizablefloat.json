@@ -40,35 +40,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Accelerate4vDSPO17VectorizableFloatV",
+    "parent": {
+      "title": "vDSP"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -82,8 +90,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -308,7 +316,8 @@
           "kind": "text",
           "text": "(OpaquePointer)"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat/3240803-destroysetup": {
       "title": "destroySetup(channelCount:biquadSetup:)",
@@ -446,7 +455,8 @@
           "kind": "text",
           "text": ": vDSP.DFTTransformType) -> OpaquePointer?"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat/3240806-transform": {
       "title": "transform(dftSetup:inputReal:inputImaginary:outputReal:outputImaginary:)",
@@ -508,7 +518,8 @@
           "kind": "text",
           "text": ": inout V)"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -535,7 +546,8 @@
       "title": "Type Aliases",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat/scalar"
-      ]
+      ],
+      "anchor": "3256668"
     },
     {
       "kind": "taskGroup",
@@ -548,7 +560,8 @@
         "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat/3240804-makebiquadsetup",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat/3240805-makedftsetup",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat/3240806-transform"
-      ]
+      ],
+      "anchor": "3256669"
     }
   ],
   "primaryContentSections": [
@@ -575,6 +588,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -585,7 +599,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

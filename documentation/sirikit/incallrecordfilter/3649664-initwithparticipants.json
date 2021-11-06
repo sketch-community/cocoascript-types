@@ -1,10 +1,17 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a filtered call record with the details about a call."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/voip_calling",
         "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter"
       ]
     ]
@@ -28,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INCallRecordFilter(im)initWithParticipants:callTypes:callCapability:",
+    "parent": {
+      "title": "INCallRecordFilter"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -80,6 +95,14 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
+      "title": "VoIP Calling",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+      "url": "/documentation/sirikit/voip_calling",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter": {
       "title": "INCallRecordFilter",
@@ -245,15 +268,111 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "participants",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The recipient of the user’s call request."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "callTypes",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The various call options that the user can request."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "callCapability",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An indicator of whether the call supports audio or video."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An initialized "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter"
+            },
+            {
+              "type": "text",
+              "text": " object or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " if the object could not be initialized. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

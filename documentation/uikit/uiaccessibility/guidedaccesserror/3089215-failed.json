@@ -5,7 +5,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror"
@@ -13,7 +13,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror"
@@ -56,20 +56,28 @@
       {
         "name": "iOS",
         "introducedAt": "12.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.2",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "10.2",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:SC23UIGuidedAccessErrorCodeLeV6failedSoAAVvpZ",
+    "parent": {
+      "title": "UIAccessibility.GuidedAccessError"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -87,8 +95,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,10 +121,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -193,6 +201,50 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/code"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed": {
+      "title": "failed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "failed"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibility.GuidedAccessError.Code"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied": {
+      "title": "permissionDenied",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "permissionDenied"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibility.GuidedAccessError.Code"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -201,6 +253,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied"
+      ],
+      "title": "Getting Error Information",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -275,6 +336,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -282,7 +344,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

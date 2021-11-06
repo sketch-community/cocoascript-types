@@ -35,25 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSNetService(im)getInputStream:outputStream:",
+    "parent": {
+      "title": "NetService"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -79,8 +97,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -227,7 +245,8 @@
           "kind": "text",
           "text": ": [String : Data]) -> Data"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1408164-dictionary": {
       "title": "dictionary(fromTXTRecord:)",
@@ -271,7 +290,8 @@
           "kind": "text",
           "text": ": Data) -> [String : Data]"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1408528-addresses": {
       "title": "addresses",
@@ -307,7 +327,8 @@
           "kind": "text",
           "text": ": [Data]?"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1414495-domain": {
       "title": "domain",
@@ -335,7 +356,8 @@
           "kind": "text",
           "text": ": String"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1414086-includespeertopeer": {
       "title": "includesPeerToPeer",
@@ -372,7 +394,8 @@
           "kind": "text",
           "text": ": Bool"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1418325-getinputstream": {
       "title": "getInputStream(_:outputStream:)",
@@ -408,7 +431,8 @@
           "kind": "text",
           "text": ": UnsafeMutablePointer<OutputStream?>?) -> Bool"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1409022-name": {
       "title": "name",
@@ -436,7 +460,8 @@
           "kind": "text",
           "text": ": String"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1416595-type": {
       "title": "type",
@@ -464,7 +489,8 @@
           "kind": "text",
           "text": ": String"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1417698-txtrecorddata": {
       "title": "txtRecordData()",
@@ -492,7 +518,8 @@
           "kind": "text",
           "text": "() -> Data?"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1410648-settxtrecord": {
       "title": "setTXTRecord(_:)",
@@ -520,7 +547,8 @@
           "kind": "text",
           "text": "(Data?) -> Bool"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1410296-delegate": {
       "title": "delegate",
@@ -548,7 +576,8 @@
           "kind": "text",
           "text": ": NetServiceDelegate?"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -556,6 +585,24 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "minor": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.1",
+        "13.2 beta 1"
+      ]
+    },
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
     }
   },
   "seeAlsoSections": [
@@ -682,6 +729,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -826,7 +874,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

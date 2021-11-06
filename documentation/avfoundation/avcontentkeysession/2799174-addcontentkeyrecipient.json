@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Tells the receiver that the specified recipient should have access to the decryption keys loaded with the session."
+      "text": "Tells the delegate that the specified recipient should have access to the decryption keys loaded with the session."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVContentKeySession(im)addContentKeyRecipient:",
+    "parent": {
+      "title": "AVContentKeySession"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to create and track decryption keys for media data."
+          "text": "An object that creates and tracks decryption keys for media data."
         }
       ]
     },
@@ -134,96 +142,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799164-setdelegate": {
-      "title": "setDelegate:queue:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799164-setdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799164-setdelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the receiver's delegate and indicates the dispatch queues used."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setDelegate:queue:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799191-delegate": {
-      "title": "delegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799191-delegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799191-delegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The delegate for the receiver."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate": {
-      "title": "AVContentKeySessionDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysessiondelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The protocol you implement to handle content key requests."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799178-delegatequeue": {
-      "title": "delegateQueue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799178-delegatequeue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799178-delegatequeue",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The dispatch queue that invokes delegate callbacks."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient": {
-      "title": "addContentKeyRecipient:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the receiver that the specified recipient should have access to the decryption keys loaded with the session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addContentKeyRecipient:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799192-contentkeyrecipients": {
       "title": "contentKeyRecipients",
       "type": "topic",
@@ -238,17 +156,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799180-processcontentkeyrequestwithiden": {
-      "title": "processContentKeyRequestWithIdentifier:initializationData:options:",
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient": {
+      "title": "addContentKeyRecipient:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799180-processcontentkeyrequestwithiden",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799180-processcontentkeyrequestwithiden",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the receiver to start loading the content decryption key with the specified identifier and initialization data."
+          "text": "Tells the delegate that the specified recipient should have access to the decryption keys loaded with the session."
         }
       ],
       "fragments": [
@@ -258,7 +176,31 @@
         },
         {
           "kind": "identifier",
-          "text": "processContentKeyRequestWithIdentifier:initializationData:options:"
+          "text": "addContentKeyRecipient:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient": {
+      "title": "removeContentKeyRecipient:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate to remove the specified recipient."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeContentKeyRecipient:"
         }
       ]
     },
@@ -273,15 +215,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799164-setdelegate",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799191-delegate",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessiondelegate",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799178-delegatequeue",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799192-contentkeyrecipients",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799180-processcontentkeyrequestwithiden"
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient"
       ],
-      "title": "Initializing the Content Key Request Process",
+      "title": "Managing Content Key Recipients",
       "generated": true
     }
   ],
@@ -347,6 +285,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -369,7 +308,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The content key recipient to be used for the session."
+                  "text": "The content key recipient to use for the session."
                 }
               ]
             }
@@ -391,7 +330,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Do not add a recipient to a session that has expired or had already begun to process media data."
+              "text": "Don’t add a recipient to a session that has expired or had already begun to process media data."
             }
           ]
         }
@@ -399,7 +338,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

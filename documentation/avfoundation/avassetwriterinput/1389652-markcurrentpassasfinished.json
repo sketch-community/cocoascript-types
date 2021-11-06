@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Instructs the receiver to analyze the appended media data and determine whether to improve the results by re-encoding certain segments."
+      "text": "Tells the input to analyze the appended media to determine whether it can improve the results by reencoding certain segments."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInput(im)markCurrentPassAsFinished",
+    "parent": {
+      "title": "AVAssetWriterInput"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -134,7 +142,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the input might perform multiple passes over appended media data."
+          "text": "A Boolean value that indicates whether the input may perform multiple passes over appended media data."
         }
       ]
     },
@@ -156,15 +164,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that describes the requirements, such as source time ranges to append or re-append, to the current pass."
+          "text": "An object that describes the requirements for the current pass."
         }
       ]
-    },
-    "devLink-1737690": {
-      "identifier": "devLink-1737690",
-      "type": "link",
-      "title": "Key-value observing",
-      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu": {
       "title": "respondToEachPassDescriptionOnQueue:usingBlock:",
@@ -176,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Instructs the receiver to invoke a client-supplied block whenever a new pass has begun."
+          "text": "Tells the input to invoke a callback whenever it begins a new pass."
         }
       ],
       "fragments": [
@@ -234,32 +236,6 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
-      "title": "AVAssetWriter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput": {
-      "title": "addInput:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1390389-addinput",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addInput:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting": {
       "title": "startWriting",
       "type": "topic",
@@ -288,7 +264,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for querying about the requirements of the current pass."
+          "text": "An object that defines the interface to query for the requirements of the current pass."
         }
       ]
     },
@@ -302,7 +278,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Instructs the receiver to analyze the appended media data and determine whether to improve the results by re-encoding certain segments."
+          "text": "Tells the input to analyze the appended media to determine whether it can improve the results by reencoding certain segments."
         }
       ],
       "fragments": [
@@ -326,35 +302,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the input should attempt to encode the source media data using multiple passes."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment": {
-      "title": "preferredMediaChunkAlignment",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The boundary, in bytes, for aligning media chunks."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration": {
-      "title": "preferredMediaChunkDuration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The duration used for each chunk of sample data in the output file."
+          "text": "A Boolean value that indicates whether the input attempts to encode the source media data using multiple passes."
         }
       ]
     },
@@ -373,8 +321,6 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpassdescription",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu"
       ],
       "title": "Performing Multiple-Pass Encoding",
@@ -413,6 +359,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -434,7 +381,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When the value of "
+              "text": "When the value of the "
             },
             {
               "type": "reference",
@@ -443,7 +390,7 @@
             },
             {
               "type": "text",
-              "text": " is "
+              "text": " property is "
             },
             {
               "type": "reference",
@@ -452,7 +399,7 @@
             },
             {
               "type": "text",
-              "text": ", call this method after you have appended all of your media data. After the receiver analyzes whether an additional pass is warranted, the value of "
+              "text": ", call this method after you append all of your media data. After the input determines if it warrants performing an additional pass, the value of "
             },
             {
               "type": "reference",
@@ -461,16 +408,7 @@
             },
             {
               "type": "text",
-              "text": " will change (usually asynchronously) to describe how to set up for the next pass. Although it is possible to use "
-            },
-            {
-              "type": "link",
-              "title": "Key-value observing",
-              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
-            },
-            {
-              "type": "text",
-              "text": " to determine when the value of "
+              "text": " changes (typically asynchronously) to describe how to set up for the next pass. Although it’s possible to use key-value observing to determine when the value of "
             },
             {
               "type": "reference",
@@ -479,7 +417,7 @@
             },
             {
               "type": "text",
-              "text": " has changed, it is typically more convenient to invoke "
+              "text": " changes, it’s typically more convenient to call the "
             },
             {
               "type": "reference",
@@ -488,7 +426,7 @@
             },
             {
               "type": "text",
-              "text": " in order to start the work for each pass."
+              "text": " method to start the work for each pass."
             }
           ]
         },
@@ -497,7 +435,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "After re-appending the media data for all of the time ranges of the new pass, call this method again to determine whether additional segments should be re-appended in another pass."
+              "text": "After reappending the media data for all of the time ranges of the new pass, call this method again to determine whether to reappend segments in another pass."
             }
           ]
         },
@@ -515,7 +453,7 @@
             },
             {
               "type": "text",
-              "text": ", meaning that "
+              "text": ", which means that you may call "
             },
             {
               "type": "reference",
@@ -524,16 +462,7 @@
             },
             {
               "type": "text",
-              "text": " can be invoked again for each new pass. The "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu"
-            },
-            {
-              "type": "text",
-              "text": " method provides a convenient way to consolidate these invocations in your code."
+              "text": " again for each new pass. This method provides a convenient way to consolidate these invocations in your code."
             }
           ]
         },
@@ -551,7 +480,7 @@
             },
             {
               "type": "text",
-              "text": " instead of this method. If the value of "
+              "text": ", instead of this method. If the value of "
             },
             {
               "type": "reference",
@@ -577,7 +506,7 @@
             },
             {
               "type": "text",
-              "text": " to tell the receiver to not expect any further media data."
+              "text": " to tell the input to not expect any further media data."
             }
           ]
         },
@@ -613,7 +542,7 @@
             },
             {
               "type": "text",
-              "text": " will immediately become "
+              "text": " immediately becomes "
             },
             {
               "type": "codeVoice",
@@ -626,46 +555,38 @@
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "aside",
+          "content": [
             {
-              "type": "text",
-              "text": "Before calling this method, you must ensure that the receiver is attached to an "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-            },
-            {
-              "type": "text",
-              "text": " instance via a prior call to "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput"
-            },
-            {
-              "type": "text",
-              "text": " and that "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting"
-            },
-            {
-              "type": "text",
-              "text": " has been called on the asset writer."
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Before calling this method, you must add the input to an asset writer and call the writer’s "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting"
+                },
+                {
+                  "type": "text",
+                  "text": " method."
+                }
+              ]
             }
-          ]
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

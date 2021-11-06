@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Default policy for all managed object contexts."
+      "text": "The default merge policy for all managed object contexts."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSMergePolicy(cpy)errorMergePolicy",
+    "parent": {
+      "title": "NSMergePolicy"
+    },
     "symbolKind": "cldata"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,6 +122,22 @@
       "role": "symbol",
       "url": "/documentation/coredata/nsmergepolicy"
     },
+    "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey": {
+      "title": "NSInsertedObjectsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsinsertedobjectskey"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey": {
+      "title": "NSUpdatedObjectsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsupdatedobjectskey"
+    },
     "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690612-errormergepolicy": {
       "title": "errorMergePolicy",
       "type": "topic",
@@ -124,21 +148,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Default policy for all managed object contexts."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep": {
-      "title": "mergeByPropertyObjectTrumpMergePolicy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A policy that merges conflicts between the persistent store's version of the object and the current in-memory version by individual property, with the external changes trumping in-memory changes."
+          "text": "The default merge policy for all managed object contexts."
         }
       ]
     },
@@ -152,7 +162,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A policy that merges conflicts between the persistent store's version of the object and the current in-memory version by individual property, with the in-memory changes trumping external changes."
+          "text": "A property-based merge policy that applies external changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep": {
+      "title": "mergeByPropertyObjectTrumpMergePolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A property-based merge policy that applies in-memory changes."
         }
       ]
     },
@@ -166,7 +190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A policy that merges conflicts between the persistent store's version of the object and the current in-memory version by pushing the entire in-memory object to the persistent store."
+          "text": "A merge policy that overwrites the entire stored object."
         }
       ]
     },
@@ -180,7 +204,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A policy that merges conflicts between the persistent store's version of the object and the current in-memory version by discarding all state for the changed objects in conflict."
+          "text": "A merge policy that discards unsaved changes."
         }
       ]
     },
@@ -209,8 +233,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690609-mergebypropertystoretrumpmergepo",
+        "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690610-overwritemergepolicy",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690613-rollbackmergepolicy",
         "doc://com.apple.documentation/documentation/coredata/nsmergepolicy/merge_policies"
@@ -257,6 +281,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -264,10 +289,56 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If a save fails because of conflicting objects, you can find the IDs of those objects in error’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userInfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey"
+            },
+            {
+              "type": "text",
+              "text": " keys to extract the object IDs."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

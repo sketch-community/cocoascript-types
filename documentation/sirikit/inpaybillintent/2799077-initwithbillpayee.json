@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintent"
       ]
     ]
@@ -35,25 +35,41 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INPayBillIntent(im)initWithBillPayee:fromAccount:transactionAmount:transactionScheduledDate:transactionNote:billType:dueDate:",
+    "parent": {
+      "title": "INPayBillIntent"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +104,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -106,9 +122,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A request to transfer of money to facilitate payment of a bill."
+          "text": "A request to transfer money to facilitate payment of a bill."
         }
       ]
+    },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaymentaccount": {
       "title": "INPaymentAccount",
@@ -180,7 +204,8 @@
           "kind": "identifier",
           "text": "initWithBillPayee:fromAccount:transactionAmount:transactionScheduledDate:transactionNote:billType:dueDate:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -190,6 +215,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -420,6 +465,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -440,7 +486,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The entity that receives the payment. The user must configure payees in advance using your app. The payee in this parameter should correspond to one of the user's known entities.  "
+                  "text": "The entity that receives the payment. The user must configure payees in advance using your app. The payee in this parameter should correspond to one of the user’s known entities. "
                 }
               ]
             }
@@ -477,7 +523,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The amount of money to transfer from the user's account to the bill payee. The object in this parameter may specify a numeric value or a relative value, such as the current balance due. For more information, see "
+                  "text": "The amount of money to transfer from the user’s account to the bill payee. The object in this parameter may specify a numeric value or a relative value, such as the current balance due. For more information, see "
                 },
                 {
                   "type": "reference",
@@ -528,7 +574,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The type of bill being paid. Use this parameter to categorize the type of bill. You should also save this information in your own system so that users can search for bill payments by type."
+                  "text": "The type of bill to pay. Use this parameter to categorize the type of bill. You should also save this information in your own system so that users can search for bill payments by type."
                 }
               ]
             }
@@ -542,7 +588,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The date by which payment must be made. When scheduling the bill payment, use this parameter to validate that the payment is not being made too late.    "
+                  "text": "The date by which the user must pay the bill. When scheduling the bill payment, use this parameter to validate that the payment isn’t too late."
                 }
               ]
             }
@@ -592,7 +638,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Normally, you do not create instances of this class yourself. Instead, SiriKit creates instances when the user asks to pay a bill. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths."
+              "text": "Normally, you don’t create instances of this class yourself. Instead, SiriKit creates instances when the user asks to pay a bill. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths."
             }
           ]
         }
@@ -600,7 +646,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

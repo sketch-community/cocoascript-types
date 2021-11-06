@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The status of the iterative solve."
+      "text": "Constants that define the status of the iterative solve."
     }
   ],
   "documentVersion": 0,
@@ -12,7 +12,13 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs"
       ]
     ]
   },
@@ -35,35 +41,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@SparseIterativeStatus_t",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,10 +117,18 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions": {
-      "title": "Iterative Sparse Solve Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
-      "url": "/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs": {
+      "title": "Sparse Iterative Solving Functions (Vector RHS)",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs": {
+      "title": "Sparse Iterative Solving Functions (Matrix RHS)",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -124,7 +143,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A status indicating that all solutions have converged."
+          "text": "A status that indicates the convergence of all solutions."
         }
       ]
     },
@@ -138,7 +157,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A status indicating that the problem is determined to be sufficiently ill-conditioned that convergence is unlikely."
+          "text": "A status that indicates the operation determines the problem is sufficiently ill-conditioned that convergence is unlikely."
         }
       ]
     },
@@ -152,7 +171,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A status indicating that an internal failure occurred."
+          "text": "A status that indicates an internal failure."
         }
       ]
     },
@@ -166,7 +185,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A status indicating that one or more solutions failed to converge in the maximum number of iterations."
+          "text": "A status that indicates a failure to converge one or more solutions in the maximum number of iterations."
         }
       ]
     },
@@ -180,21 +199,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A status indicating that there was an error with one or more parameters."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseiterativemethod": {
-      "title": "SparseIterativeMethod",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseiterativemethod",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparseiterativemethod",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Base type for all iterative methods. "
+          "text": "A status that indicates an error with one or more parameters."
         }
       ]
     },
@@ -208,21 +213,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The status of the iterative solve."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t": {
-      "title": "SparsePreconditioner_t",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsepreconditioner_t",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Options that define the preconditioner."
+          "text": "Constants that define the status of the iterative solve."
         }
       ]
     },
@@ -244,17 +235,8 @@
         "doc://com.apple.documentation/documentation/accelerate/sparseiterativestatus_t/sparseiterativeinternalerror",
         "doc://com.apple.documentation/documentation/accelerate/sparseiterativestatus_t/sparseiterativemaxiterations",
         "doc://com.apple.documentation/documentation/accelerate/sparseiterativestatus_t/sparseiterativeparametererror"
-      ]
-    }
-  ],
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/sparseiterativemethod",
-        "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t"
       ],
-      "title": "Supporting Types",
-      "generated": true
+      "anchor": "2877719"
     }
   ],
   "primaryContentSections": [
@@ -317,6 +299,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -327,7 +310,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

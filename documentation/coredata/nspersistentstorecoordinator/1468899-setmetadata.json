@@ -2,15 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Sets the metadata stored in the persistent store during the next save operation executed on it to "
-    },
-    {
-      "type": "codeVoice",
-      "code": "metadata"
-    },
-    {
-      "type": "text",
-      "text": "."
+      "text": "Adds metadata to the specified persistent store."
     }
   ],
   "documentVersion": 0,
@@ -43,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentStoreCoordinator(im)setMetadata:forPersistentStore:",
+    "parent": {
+      "title": "NSPersistentStoreCoordinator"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -186,7 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a dictionary that contains the metadata currently stored and that will be stored in a given persistent store."
+          "text": "Returns the metadata for the specified persistent store."
         }
       ],
       "fragments": [
@@ -224,6 +224,34 @@
       "role": "symbol",
       "url": "/documentation/coredata/nspersistentstore"
     },
+    "doc://com.apple.documentation/documentation/coredata/nsstoretypekey": {
+      "title": "NSStoreTypeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsstoretypekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsstoretypekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The metadata key that identifies the store type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsstoreuuidkey": {
+      "title": "NSStoreUUIDKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsstoreuuidkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsstoreuuidkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The metadata key that contains the store’s UUID."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468778-metadataforpersistentstoreoftype": {
       "title": "metadataForPersistentStoreOfType:URL:options:error:",
       "type": "topic",
@@ -231,6 +259,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coredata/nspersistentstorecoordinator/1468778-metadataforpersistentstoreoftype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns metadata for a specific type of persistent store at the provided location."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -249,6 +283,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coredata/nspersistentstorecoordinator/1468893-setmetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds metadata to a specific type of persistent store at the provided location."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -270,15 +310,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the metadata stored in the persistent store during the next save operation executed on it to "
-        },
-        {
-          "type": "codeVoice",
-          "code": "metadata"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Adds metadata to the specified persistent store."
         }
       ],
       "fragments": [
@@ -289,20 +321,6 @@
         {
           "kind": "identifier",
           "text": "setMetadata:forPersistentStore:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_metadata": {
-      "title": "Store Metadata",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_metadata",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/store_metadata",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Use metadata dictionary keys to identify the store type and UUID."
         }
       ]
     },
@@ -317,12 +335,13 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsstoretypekey",
+        "doc://com.apple.documentation/documentation/coredata/nsstoreuuidkey",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468778-metadataforpersistentstoreoftype",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468893-setmetadata",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468911-metadataforpersistentstore",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_metadata"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468911-metadataforpersistentstore"
       ],
-      "title": "Working with Metadata",
+      "title": "Managing Store Metadata",
       "generated": true
     },
     {
@@ -436,6 +455,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -541,7 +561,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIWindow(im)makeKeyWindow",
+    "parent": {
+      "title": "UIWindow"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Called automatically to inform the window that it has become the key window."
+          "text": "Tells the window that it’s the key window."
         }
       ],
       "fragments": [
@@ -144,7 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Called automatically to inform the window that it is no longer the key window."
+          "text": "Tells the window that it’s no longer the key window."
         }
       ],
       "fragments": [
@@ -192,7 +200,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the window is the key window for the app."
+          "text": "A Boolean value that indicates whether the window is the key window."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiwindow/3750931-canbecomekeywindow": {
+      "title": "canBecomeKeyWindow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiwindow/3750931-canbecomekeywindow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiwindow/3750931-canbecomekeywindow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the window can become the key window."
         }
       ]
     },
@@ -232,6 +254,7 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiwindow/1621612-keywindow",
+        "doc://com.apple.documentation/documentation/uikit/uiwindow/3750931-canbecomekeywindow",
         "doc://com.apple.documentation/documentation/uikit/uiwindow/1621601-makekeyandvisible",
         "doc://com.apple.documentation/documentation/uikit/uiwindow/1621596-becomekeywindow",
         "doc://com.apple.documentation/documentation/uikit/uiwindow/1621618-resignkeywindow"
@@ -272,6 +295,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -300,7 +324,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

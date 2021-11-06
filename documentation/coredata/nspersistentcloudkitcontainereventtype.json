@@ -1,11 +1,17 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The type of event in a persistent CloudKit container, either setup, import, or export."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/coredata",
-        "doc://com.apple.documentation/documentation/coredata/core_data_enumerations"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer"
       ]
     ]
   },
@@ -28,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSPersistentCloudKitContainerEventType",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -91,13 +102,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/coredata/core_data_enumerations": {
-      "title": "Core Data Enumerations",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_enumerations",
-      "url": "/documentation/coredata/core_data_enumerations",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer": {
+      "title": "NSPersistentCloudKitContainer",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer",
       "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
@@ -107,13 +118,19 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsinteger"
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeexport": {
-      "title": "NSPersistentCloudKitContainerEventTypeExport",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypesetup": {
+      "title": "NSPersistentCloudKitContainerEventTypeSetup",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeexport",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypesetup",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeexport"
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypesetup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An event the persistent CloudKit container generates when setting up a store."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeimport": {
       "title": "NSPersistentCloudKitContainerEventTypeImport",
@@ -121,15 +138,111 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeimport",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeimport"
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeimport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An event the persistent CloudKit container generates when importing records into a store."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypesetup": {
-      "title": "NSPersistentCloudKitContainerEventTypeSetup",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeexport": {
+      "title": "NSPersistentCloudKitContainerEventTypeExport",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypesetup",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeexport",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypesetup"
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeexport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An event the persistent CloudKit container generates when exporting managed objects from a store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent": {
+      "title": "NSPersistentCloudKitContainerEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainerevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents activity in a persistent CloudKit container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype": {
+      "title": "NSPersistentCloudKitContainerEventType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of event in a persistent CloudKit container, either setup, import, or export."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest": {
+      "title": "NSPersistentCloudKitContainerEventRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to fetch setup, import, or export events in a persistent CloudKit container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult": {
+      "title": "NSPersistentCloudKitContainerEventResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The result of a request to fetch persistent CloudKit container events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventchangednotification": {
+      "title": "NSPersistentCloudKitContainerEventChangedNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventchangednotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventchangednotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that contains details about an event in a persistent CloudKit container."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventuserinfokey": {
+      "title": "NSPersistentCloudKitContainerEventUserInfoKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventuserinfokey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainereventuserinfokey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user info dictionary key for the persistent CloudKit container event."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -142,12 +255,26 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Enumeration Cases",
+      "title": "Event Types",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeexport",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypesetup",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeimport",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypesetup"
-      ]
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventtype/nspersistentcloudkitcontainereventtypeexport"
+      ],
+      "anchor": "3729570"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventchangednotification",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventuserinfokey"
+      ],
+      "title": "Monitoring Container Events",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -212,6 +339,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -222,7 +350,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Specifies that arrays and dictionaries are created as mutable objects."
+      "text": "Specifies that arrays and dictionaries in the returned object are mutable."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSJSONReadingOptions@NSJSONReadingMutableContainers",
+    "parent": {
+      "title": "JSONSerialization.ReadingOptions"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -77,8 +85,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -137,21 +145,174 @@
       "role": "symbol",
       "url": "/documentation/foundation/jsonserialization/readingoptions"
     },
-    "doc://com.apple.documentation/documentation/foundation/jsonserialization/1415493-jsonobject": {
-      "title": "jsonObject(with:options:)",
+    "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/1417867-mutablecontainers": {
+      "title": "mutableContainers",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonserialization/1415493-jsonobject",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/1417867-mutablecontainers",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/jsonserialization/1415493-jsonobject"
+      "url": "/documentation/foundation/jsonserialization/readingoptions/1417867-mutablecontainers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that arrays and dictionaries in the returned object are mutable."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "mutableContainers"
+        },
+        {
+          "kind": "text",
+          "text": ": JSONSerialization.ReadingOptions"
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/foundation/jsonserialization/1418059-jsonobject": {
-      "title": "jsonObject(with:options:)",
+    "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/1414448-mutableleaves": {
+      "title": "mutableLeaves",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonserialization/1418059-jsonobject",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/1414448-mutableleaves",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/jsonserialization/1418059-jsonobject"
+      "url": "/documentation/foundation/jsonserialization/readingoptions/1414448-mutableleaves",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that leaf strings in the JSON object graph are mutable."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "mutableLeaves"
+        },
+        {
+          "kind": "text",
+          "text": ": JSONSerialization.ReadingOptions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/3081258-fragmentsallowed": {
+      "title": "fragmentsAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/3081258-fragmentsallowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/jsonserialization/readingoptions/3081258-fragmentsallowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the parser allows top-level objects that aren’t arrays or dictionaries."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "fragmentsAllowed"
+        },
+        {
+          "kind": "text",
+          "text": ": JSONSerialization.ReadingOptions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/3746916-json5allowed": {
+      "title": "json5Allowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/3746916-json5allowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/jsonserialization/readingoptions/3746916-json5allowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that reading serialized JSON data supports the JSON5 syntax."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "json5Allowed"
+        },
+        {
+          "kind": "text",
+          "text": ": JSONSerialization.ReadingOptions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/3746917-topleveldictionaryassumed": {
+      "title": "topLevelDictionaryAssumed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/3746917-topleveldictionaryassumed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/jsonserialization/readingoptions/3746917-topleveldictionaryassumed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the parser assumes the top level of the JSON data is a dictionary, even if it doesn’t begin and end with curly braces."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "topLevelDictionaryAssumed"
+        },
+        {
+          "kind": "text",
+          "text": ": JSONSerialization.ReadingOptions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/1416042-allowfragments": {
+      "title": "allowFragments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/1416042-allowfragments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/jsonserialization/readingoptions/1416042-allowfragments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A deprecated option that specifies that the parser should allow top-level objects that aren’t arrays or dictionaries."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "allowFragments"
+        },
+        {
+          "kind": "text",
+          "text": ": JSONSerialization.ReadingOptions"
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -161,6 +322,19 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/1414448-mutableleaves",
+        "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/3081258-fragmentsallowed",
+        "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/3746916-json5allowed",
+        "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/3746917-topleveldictionaryassumed",
+        "doc://com.apple.documentation/documentation/foundation/jsonserialization/readingoptions/1416042-allowfragments"
+      ],
+      "title": "Reading Options",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -225,6 +399,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -235,7 +410,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

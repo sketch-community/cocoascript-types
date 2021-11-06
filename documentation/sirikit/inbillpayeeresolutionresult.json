@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INBillPayeeResolutionResult",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +100,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -107,7 +120,8 @@
           "type": "text",
           "text": "A resolution result for the recipient of a bill payment."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbillpayee": {
       "title": "INBillPayee",
@@ -115,7 +129,14 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/inbillpayee",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inbillpayee"
+      "url": "/documentation/sirikit/inbillpayee",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The entity that receives the proceeds from a bill payment."
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult": {
       "title": "INIntentResolutionResult",
@@ -124,6 +145,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inintentresolutionresult"
+    },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult/2799319-successwithresolvedbillpayee": {
       "title": "successWithResolvedBillPayee:",
@@ -147,7 +176,8 @@
           "kind": "identifier",
           "text": "successWithResolvedBillPayee:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult/2799318-confirmationrequiredwithbillpaye": {
       "title": "confirmationRequiredWithBillPayeeToConfirm:",
@@ -171,7 +201,8 @@
           "kind": "identifier",
           "text": "confirmationRequiredWithBillPayeeToConfirm:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult/2799320-disambiguationwithbillpayeestodi": {
       "title": "disambiguationWithBillPayeesToDisambiguate:",
@@ -195,35 +226,23 @@
           "kind": "identifier",
           "text": "disambiguationWithBillPayeesToDisambiguate:"
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/sirikit/inaccounttyperesolutionresult": {
-      "title": "INAccountTypeResolutionResult",
+    "doc://com.apple.documentation/documentation/sirikit/inbilldetails": {
+      "title": "INBillDetails",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inaccounttyperesolutionresult",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inbilldetails",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inaccounttyperesolutionresult",
+      "url": "/documentation/sirikit/inbilldetails",
       "abstract": [
         {
           "type": "text",
-          "text": "A resolution result for account types."
+          "text": "The detailed information associated with a bill."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inbalancetyperesolutionresult": {
-      "title": "INBalanceTypeResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inbalancetyperesolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inbalancetyperesolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for balance types."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inbilltyperesolutionresult": {
       "title": "INBillTypeResolutionResult",
@@ -237,133 +256,8 @@
           "type": "text",
           "text": "A resolution result for the types of bills a user might pay."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/incurrencyamountresolutionresult": {
-      "title": "INCurrencyAmountResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/incurrencyamountresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/incurrencyamountresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for a currency amount associated with an intent."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inpaymentaccountresolutionresult": {
-      "title": "INPaymentAccountResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentaccountresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inpaymentaccountresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the user account that provides the funds to pay a bill."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inpaymentamountresolutionresult": {
-      "title": "INPaymentAmountResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentamountresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inpaymentamountresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the amount to pay for a bill."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inpaymentmethodresolutionresult": {
-      "title": "INPaymentMethodResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentmethodresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inpaymentmethodresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Describes the result of resolving a payment method."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inpaymentstatusresolutionresult": {
-      "title": "INPaymentStatusResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentstatusresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inpaymentstatusresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the payment status of a bill during a search."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inrequestpaymentcurrencyamountresolutionresult": {
-      "title": "INRequestPaymentCurrencyAmountResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestpaymentcurrencyamountresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inrequestpaymentcurrencyamountresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the currency amount associated with a payment request."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inrequestpaymentpayerresolutionresult": {
-      "title": "INRequestPaymentPayerResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestpaymentpayerresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inrequestpaymentpayerresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the person making the payment."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendpaymentcurrencyamountresolutionresult": {
-      "title": "INSendPaymentCurrencyAmountResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendpaymentcurrencyamountresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendpaymentcurrencyamountresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the currency amount to send to another user."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendpaymentpayeeresolutionresult": {
-      "title": "INSendPaymentPayeeResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendpaymentpayeeresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendpaymentpayeeresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the recipient of a payment."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/invisualcodetyperesolutionresult": {
       "title": "INVisualCodeTypeResolutionResult",
@@ -377,7 +271,8 @@
           "type": "text",
           "text": "A resolution result for the type of visual code used to exchange information."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -387,6 +282,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -405,27 +320,19 @@
         "doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult/2799319-successwithresolvedbillpayee",
         "doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult/2799318-confirmationrequiredwithbillpaye",
         "doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult/2799320-disambiguationwithbillpayeestodi"
-      ]
+      ],
+      "anchor": "2806320"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/inaccounttyperesolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/inbalancetyperesolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/inbilldetails",
+        "doc://com.apple.documentation/documentation/sirikit/inbillpayee",
         "doc://com.apple.documentation/documentation/sirikit/inbilltyperesolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/incurrencyamountresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/inpaymentaccountresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/inpaymentamountresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/inpaymentmethodresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/inpaymentstatusresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/inrequestpaymentcurrencyamountresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/inrequestpaymentpayerresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/insendpaymentcurrencyamountresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/insendpaymentpayeeresolutionresult",
         "doc://com.apple.documentation/documentation/sirikit/invisualcodetyperesolutionresult"
       ],
-      "title": "Resolution Results",
+      "title": "Bill Data Objects",
       "generated": true
     }
   ],
@@ -463,6 +370,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -518,7 +426,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

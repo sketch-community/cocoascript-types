@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The video track identifiers required to compose frames for this instruction."
+      "text": "The identifiers of the video tracks the instruction requires to compose frames."
     }
   ],
   "documentVersion": 0,
@@ -12,14 +12,14 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition",
         "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition",
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition",
         "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction"
       ]
     ]
@@ -44,30 +44,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)AVVideoCompositionInstruction(py)requiredSourceTrackIDs",
+    "parent": {
+      "title": "AVVideoCompositionInstruction"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,10 +118,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition": {
-      "title": "AVVideoComposition",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition",
-      "url": "/documentation/avfoundation/avvideocomposition",
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition": {
+      "title": "AVMutableVideoComposition",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition",
+      "url": "/documentation/avfoundation/avmutablevideocomposition",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
@@ -128,17 +136,25 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods you can implement to represent operations to be performed by a compositor."
+          "text": "A protocol that defines the interface for a video composition instruction."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition": {
-      "title": "AVMutableVideoComposition",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition",
-      "url": "/documentation/avfoundation/avmutablevideocomposition",
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition": {
+      "title": "AVVideoComposition",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition",
+      "url": "/documentation/avfoundation/avvideocomposition",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
+      "title": "nil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nil-2gl"
     },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
@@ -167,7 +183,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The track identifier of the video composition when a single source frame should be displayed for the duration of the instruction."
+          "text": "An identifier of a source track to pass through without compositing."
         }
       ]
     },
@@ -182,7 +198,22 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The video track identifiers required to compose frames for this instruction."
+          "text": "The identifiers of the video tracks the instruction requires to compose frames."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction/3750315-requiredsourcesampledatatrackids": {
+      "title": "requiredSourceSampleDataTrackIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction/3750315-requiredsourcesampledatatrackids",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/1386654-avvideocompositioninstruction/3750315-requiredsourcesampledatatrackids",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifiers of the sample data tracks the instruction requires to compose frames."
         }
       ]
     },
@@ -194,20 +225,11 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction/1389919-passthroughtrackid"
+        "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction/1389919-passthroughtrackid",
+        "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction/3750315-requiredsourcesampledatatrackids"
       ],
       "title": "Getting Track ID Settings",
       "generated": true
@@ -261,16 +283,46 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the value of this property is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl"
+            },
+            {
+              "type": "text",
+              "text": ", the instruction requires all source tracks for composition."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

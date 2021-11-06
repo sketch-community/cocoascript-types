@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "You are in the process of generating the code but are not yet finished."
+      "text": "You’re in the process of generating the code but aren’t yet finished."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/visual_codes",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/ingetvisualcodeintentresponse",
         "doc://com.apple.documentation/documentation/sirikit/ingetvisualcodeintentresponsecode"
       ]
@@ -36,25 +36,41 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:@E@INGetVisualCodeIntentResponseCode@INGetVisualCodeIntentResponseCodeInProgress",
+    "parent": {
+      "title": "INGetVisualCodeIntentResponseCode"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -89,10 +105,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/visual_codes": {
-      "title": "Visual Codes",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/visual_codes",
-      "url": "/documentation/sirikit/visual_codes",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -119,6 +135,14 @@
         }
       ]
     },
+    "link-3878691": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3878691",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -127,6 +151,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -143,6 +187,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -163,7 +208,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use this code during the handling phase to indicate that you received the request for a code but do not yet have the image to display for that code. You might use this code when getting the image requires communicating with your server and you have not yet received a confirmation from that server. "
+              "text": "Use this code during the handling phase to indicate that you received the request for a code but don’t yet have the image to display for that code. You might use this code when getting the image requires communicating with your server and you haven’t yet received a confirmation from that server. "
             }
           ]
         },
@@ -172,7 +217,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When handling an intent, you might want to first configure a timer to fire if your server does not return within a few seconds. Use your timer’s handler block to provide the in-progress response back to Siri."
+              "text": "When handling an intent, you might want to first configure a timer to fire if your server doesn’t return within a few seconds. Use your timer’s handler block to provide the in-progress response back to Siri."
             }
           ]
         }
@@ -180,7 +225,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

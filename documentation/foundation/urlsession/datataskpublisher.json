@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So12NSURLSessionC10FoundationE17DataTaskPublisherV",
+    "parent": {
+      "title": "URLSession"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -77,8 +85,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -121,7 +129,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that coordinates a group of related, network data-transfer tasks."
+          "text": "An object that coordinates a group of related, network data transfer tasks."
         }
       ]
     },
@@ -274,6 +282,28 @@
         {
           "kind": "text",
           "text": ": URLSession"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/3862179-values": {
+      "title": "values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/3862179-values",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsession/datataskpublisher/3862179-values",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "values"
+        },
+        {
+          "kind": "text",
+          "text": ": AsyncThrowingPublisher<URLSession.DataTaskPublisher>"
         }
       ]
     },
@@ -4028,14 +4058,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/output",
         "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/failure"
-      ]
+      ],
+      "anchor": "3330153"
     },
     {
       "kind": "taskGroup",
       "title": "Creating a Data Task Publisher",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/3329641-init"
-      ]
+      ],
+      "anchor": "3330152"
     },
     {
       "kind": "taskGroup",
@@ -4043,7 +4075,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/3329675-request",
         "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/3329679-session"
-      ]
+      ],
+      "anchor": "3330154"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/3862179-values"
+      ],
+      "anchor": "3864574"
     },
     {
       "kind": "taskGroup",
@@ -4145,7 +4186,8 @@
         "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/3329706-zip",
         "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/3334881-zip",
         "doc://com.apple.documentation/documentation/foundation/urlsession/datataskpublisher/3334882-zip"
-      ]
+      ],
+      "anchor": "3330024"
     }
   ],
   "seeAlsoSections": [
@@ -4183,6 +4225,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -4193,7 +4236,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

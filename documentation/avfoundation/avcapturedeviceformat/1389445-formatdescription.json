@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureDeviceFormat(py)formatDescription",
+    "parent": {
+      "title": "AVCaptureDeviceFormat"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,14 +134,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coremedia/cmformatdescriptionref"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput": {
-      "title": "AVCaptureOutput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcaptureoutput"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1388503-mediatype": {
       "title": "mediaType",
@@ -209,16 +209,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The list of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput"
-        },
-        {
-          "type": "text",
-          "text": " subclasses not allowed for capture with this format, if any."
+          "text": "The list of capture output subclasses not allowed for capture with this format, if any."
         }
       ]
     },
@@ -232,7 +223,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The highest resolution still image that can be produced by this format."
+          "text": "The highest resolution still image the system can produce for this format."
         }
       ]
     },
@@ -295,6 +286,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -315,7 +307,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Calling this method does not assume ownership of the returned "
+              "text": "Calling this method doesn’t assume ownership of the returned "
             },
             {
               "type": "reference",
@@ -332,7 +324,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

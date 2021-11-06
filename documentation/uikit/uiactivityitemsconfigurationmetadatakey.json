@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A structure that defines keys for the metadata associated with an activity items configuration."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -15,6 +21,20 @@
         "doc://com.apple.documentation/documentation/uikit/interprocess_communication",
         "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/interprocess_communication",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading"
       ]
     ]
   },
@@ -37,20 +57,25 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UIActivityItemsConfigurationMetadataKey",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -117,6 +142,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading": {
+      "title": "UIActivityItemsConfigurationReading",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationreading",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
       "type": "topic",
@@ -125,21 +158,41 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeymessagebody": {
-      "title": "UIActivityItemsConfigurationMetadataKeyMessageBody",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeymessagebody",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationmetadatakeymessagebody"
-    },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeytitle": {
       "title": "UIActivityItemsConfigurationMetadataKeyTitle",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeytitle",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationmetadatakeytitle"
+      "url": "/documentation/uikit/uiactivityitemsconfigurationmetadatakeytitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key for the title."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeymessagebody": {
+      "title": "UIActivityItemsConfigurationMetadataKeyMessageBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeymessagebody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationmetadatakeymessagebody",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key for the message body."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeylinkpresentationmetadata": {
+      "title": "UIActivityItemsConfigurationMetadataKeyLinkPresentationMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeylinkpresentationmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationmetadatakeylinkpresentationmetadata"
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368124-localobject": {
       "title": "localObject",
@@ -147,7 +200,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368124-localobject",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368124-localobject"
+      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368124-localobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A local object that represents the configuration."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368125-metadataprovider": {
       "title": "metadataProvider",
@@ -155,7 +214,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368125-metadataprovider",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368125-metadataprovider"
+      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368125-metadataprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A closure that provides metadata for the activity items."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368126-peritemmetadataprovider": {
       "title": "perItemMetadataProvider",
@@ -163,7 +228,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368126-peritemmetadataprovider",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368126-peritemmetadataprovider"
+      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368126-peritemmetadataprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A closure that provides metadata for each activity item."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368121-applicationactivitiesprovider": {
       "title": "applicationActivitiesProvider",
@@ -171,7 +242,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368121-applicationactivitiesprovider",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368121-applicationactivitiesprovider"
+      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368121-applicationactivitiesprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A closure that provides application acitivites for the activity items."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakey": {
       "title": "UIActivityItemsConfigurationMetadataKey",
@@ -179,7 +256,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationmetadatakey"
+      "url": "/documentation/uikit/uiactivityitemsconfigurationmetadatakey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines keys for the metadata associated with an activity items configuration."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -192,11 +275,20 @@
   "topicSections": [
     {
       "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeytitle",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeymessagebody"
+      ],
+      "anchor": "3678167"
+    },
+    {
+      "kind": "taskGroup",
       "title": "Type Properties",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeymessagebody",
-        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeytitle"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakeylinkpresentationmetadata"
+      ],
+      "anchor": "3858422"
     }
   ],
   "seeAlsoSections": [
@@ -249,6 +341,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -256,7 +349,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

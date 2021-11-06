@@ -27,31 +27,46 @@
     "platforms": [
       {
         "name": "iOS",
-        "introducedAt": "12.0",
-        "current": "14.3"
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
-        "introducedAt": "10.14",
-        "current": "11.1"
+        "introducedAt": "10.5",
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
-        "introducedAt": "12.0",
-        "current": "14.3"
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:@T@CIRAWFilterOption",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -189,7 +204,8 @@
           "type": "text",
           "text": " that uniquely describing a given decoder version. This string might not be suitable for user interface display.. "
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/cifilter": {
       "title": "CIFilter",
@@ -246,7 +262,8 @@
           "type": "text",
           "text": " is an expensive operation. If the optional scale factor is smaller than a certain value, additionally setting draft mode can improve image decoding speed without any perceivable loss of quality. However, turning on draft mode does not have any effect if the scale factor is not below this threshold."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
@@ -293,7 +310,8 @@
           "type": "text",
           "text": " object containing the set of input keys which may be used to affect the output image. (Depending on the input image type and the decoder version, some input keys may be unavailable.) This key is read-only."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputbaselineexposurekey": {
       "title": "kCIInputBaselineExposureKey",
@@ -316,7 +334,8 @@
           "type": "text",
           "text": " object containing a float that expresses the amount of baseline exposure applied to an image."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputboostkey": {
       "title": "kCIInputBoostKey",
@@ -363,7 +382,8 @@
           "type": "text",
           "text": ", which indicates full boost."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputboostshadowamountkey": {
       "title": "kCIInputBoostShadowAmountKey",
@@ -386,7 +406,8 @@
           "type": "text",
           "text": " object that specifies floating-point value. The value has no effect if the image used for initialization is not RAW."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputcolornoisereductionamountkey": {
       "title": "kCIInputColorNoiseReductionAmountKey",
@@ -400,7 +421,8 @@
           "type": "text",
           "text": "A key for the amount of noise reduction to apply to color data in the image."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputdecoderversionkey": {
       "title": "kCIInputDecoderVersionKey",
@@ -460,7 +482,8 @@
           "type": "text",
           "text": " the same across different versions of the operating system. Core Image, however, does not guarantee that  the same bits are produced across different versions of the operating system. That’s because the rounding behavior of floating-point arithmetic can vary due to differences in compilers or hardware. Note that this option has no effect if the image used for initialization is not RAW."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputdisablegamutmapkey": {
       "title": "kCIInputDisableGamutMapKey",
@@ -483,7 +506,8 @@
           "type": "text",
           "text": " object containing a Boolean value that determines whether or not to disable gamut mapping."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputenablechromaticnoisetrackingkey": {
       "title": "kCIInputEnableChromaticNoiseTrackingKey",
@@ -541,7 +565,17 @@
           "type": "text",
           "text": ". This option has no effect if the image used for initialization is not RAW."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreimage/kciinputenableedrmodekey": {
+      "title": "kCIInputEnableEDRModeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/kciinputenableedrmodekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/kciinputenableedrmodekey",
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputenablesharpeningkey": {
       "title": "kCIInputEnableSharpeningKey",
@@ -599,7 +633,8 @@
           "type": "text",
           "text": ". This option has no effect if the image used for initialization is not RAW."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputenablevendorlenscorrectionkey": {
       "title": "kCIInputEnableVendorLensCorrectionKey",
@@ -613,7 +648,8 @@
           "type": "text",
           "text": "A key for whether to automatically correct for image distortion from known lenses."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputignoreimageorientationkey": {
       "title": "kCIInputIgnoreImageOrientationKey",
@@ -645,7 +681,8 @@
           "type": "text",
           "text": ". An image is usually loaded in its proper orientation, as long as the associated metadata records its orientation. For special purposes you might want to load the image in its physical orientation. The exact meaning of \"physical orientation” is dependent on the specific image."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputimageorientationkey": {
       "title": "kCIInputImageOrientationKey",
@@ -684,7 +721,8 @@
           "type": "text",
           "text": " flag is set. You can change the orientation of the image by overriding this value. By changing this value you can rotate an image in 90-degree increments."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputlinearspacefilter": {
       "title": "kCIInputLinearSpaceFilter",
@@ -707,7 +745,8 @@
           "type": "text",
           "text": " object."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputlocaltonemapamountkey": {
       "title": "kCIInputLocalToneMapAmountKey",
@@ -716,7 +755,7 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coreimage/kciinputlocaltonemapamountkey",
-      "beta": true
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputluminancenoisereductionamountkey": {
       "title": "kCIInputLuminanceNoiseReductionAmountKey",
@@ -730,7 +769,8 @@
           "type": "text",
           "text": "A key for the amount of noise reduction to apply to luminance data in the image."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputmoireamountkey": {
       "title": "kCIInputMoireAmountKey",
@@ -753,7 +793,8 @@
           "type": "text",
           "text": " object containing a double that expresses the amount of moiré reduction applied to an image."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputneutralchromaticityxkey": {
       "title": "kCIInputNeutralChromaticityXKey",
@@ -776,7 +817,8 @@
           "type": "text",
           "text": " object.  You can query this value to get the current x value for neutral x, y."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputneutralchromaticityykey": {
       "title": "kCIInputNeutralChromaticityYKey",
@@ -799,7 +841,8 @@
           "type": "text",
           "text": " object.  You can query this value to get the current y value for neutral x, y."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputneutrallocationkey": {
       "title": "kCIInputNeutralLocationKey",
@@ -838,7 +881,8 @@
           "type": "text",
           "text": "). "
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputneutraltemperaturekey": {
       "title": "kCIInputNeutralTemperatureKey",
@@ -861,7 +905,8 @@
           "type": "text",
           "text": " object. You can query this value to get the current temperature value."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputneutraltintkey": {
       "title": "kCIInputNeutralTintKey",
@@ -884,7 +929,8 @@
           "type": "text",
           "text": " object. Use this key to set or fetch the temperature and tint values.  You can query this value to get the current tint value."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductionamountkey": {
       "title": "kCIInputNoiseReductionAmountKey",
@@ -923,7 +969,8 @@
           "type": "text",
           "text": ". The value has no effect if the image used for initialization is not RAW."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductioncontrastamountkey": {
       "title": "kCIInputNoiseReductionContrastAmountKey",
@@ -937,7 +984,8 @@
           "type": "text",
           "text": "A key for the amount of contrast enhancement to apply during noise reduction."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductiondetailamountkey": {
       "title": "kCIInputNoiseReductionDetailAmountKey",
@@ -951,7 +999,8 @@
           "type": "text",
           "text": "A key for the amount of detail enhancement to apply during noise reduction."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductionsharpnessamountkey": {
       "title": "kCIInputNoiseReductionSharpnessAmountKey",
@@ -965,7 +1014,8 @@
           "type": "text",
           "text": "A key for the amount of sharpness enhancement to apply during noise reduction."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kciinputscalefactorkey": {
       "title": "kCIInputScaleFactorKey",
@@ -1005,7 +1055,8 @@
           "type": "text",
           "text": "."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coreimage/kcioutputnativesizekey": {
       "title": "kCIOutputNativeSizeKey",
@@ -1028,7 +1079,17 @@
           "type": "text",
           "text": " object whose X and Y values are the image’s width and height. This key is read-only."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coreimage/kcipropertieskey": {
+      "title": "kCIPropertiesKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/kcipropertieskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/kcipropertieskey",
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -1036,24 +1097,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "minor": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
-      ]
-    },
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "topicSections": [
@@ -1070,6 +1113,7 @@
         "doc://com.apple.documentation/documentation/coreimage/kciinputdecoderversionkey",
         "doc://com.apple.documentation/documentation/coreimage/kciinputdisablegamutmapkey",
         "doc://com.apple.documentation/documentation/coreimage/kciinputenablechromaticnoisetrackingkey",
+        "doc://com.apple.documentation/documentation/coreimage/kciinputenableedrmodekey",
         "doc://com.apple.documentation/documentation/coreimage/kciinputenablesharpeningkey",
         "doc://com.apple.documentation/documentation/coreimage/kciinputenablevendorlenscorrectionkey",
         "doc://com.apple.documentation/documentation/coreimage/kciinputignoreimageorientationkey",
@@ -1089,8 +1133,10 @@
         "doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductionsharpnessamountkey",
         "doc://com.apple.documentation/documentation/coreimage/kciinputscalefactorkey",
         "doc://com.apple.documentation/documentation/coreimage/kcioutputnativesizekey",
+        "doc://com.apple.documentation/documentation/coreimage/kcipropertieskey",
         "doc://com.apple.documentation/documentation/coreimage/kcisupporteddecoderversionskey"
-      ]
+      ],
+      "anchor": "2999707"
     }
   ],
   "primaryContentSections": [
@@ -1131,6 +1177,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -1140,7 +1187,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

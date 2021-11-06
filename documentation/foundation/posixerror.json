@@ -35,32 +35,37 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation10POSIXErrorV",
@@ -77,8 +82,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -134,6 +139,54 @@
         {
           "kind": "identifier",
           "text": "POSIXError.Code"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/posixerror/3726563-init": {
+      "title": "init(_:userInfo:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/posixerror/3726563-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/posixerror/3726563-init",
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "(POSIXErrorCode, "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [String : Any])"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/posixerror/3726561-code": {
+      "title": "code",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/posixerror/3726561-code",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/posixerror/3726561-code",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "code"
+        },
+        {
+          "kind": "text",
+          "text": ": POSIXErrorCode"
         }
       ]
     },
@@ -222,6 +275,28 @@
         {
           "kind": "text",
           "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/posixerror/3726564-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/posixerror/3726564-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/posixerror/3726564-userinfo",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [String : Any]"
         }
       ]
     },
@@ -3209,6 +3284,36 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/posixerror/3726562-hash": {
+      "title": "hash(into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/posixerror/3726562-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/posixerror/3726562-hash",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "hash"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "into"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Hasher)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/posixerror/2946775": {
       "title": "!=(_:_:)",
       "type": "topic",
@@ -3230,6 +3335,28 @@
         {
           "kind": "identifier",
           "text": "!= "
+        },
+        {
+          "kind": "text",
+          "text": "(POSIXError, POSIXError) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/posixerror/3726560": {
+      "title": "==(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/posixerror/3726560",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/posixerror/3726560",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "== "
         },
         {
           "kind": "text",
@@ -3337,17 +3464,29 @@
       "title": "Type Aliases",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/posixerror/code"
-      ]
+      ],
+      "anchor": "2850624"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/posixerror/3726563-init"
+      ],
+      "anchor": "3728361"
     },
     {
       "kind": "taskGroup",
       "title": "Instance Properties",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/posixerror/3726561-code",
         "doc://com.apple.documentation/documentation/foundation/posixerror/2883160-errorcode",
         "doc://com.apple.documentation/documentation/foundation/posixerror/2883213-erroruserinfo",
         "doc://com.apple.documentation/documentation/foundation/posixerror/3236792-hashvalue",
-        "doc://com.apple.documentation/documentation/foundation/posixerror/2882927-localizeddescription"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/posixerror/2882927-localizeddescription",
+        "doc://com.apple.documentation/documentation/foundation/posixerror/3726564-userinfo"
+      ],
+      "anchor": "2887766"
     },
     {
       "kind": "taskGroup",
@@ -3460,14 +3599,25 @@
         "doc://com.apple.documentation/documentation/foundation/posixerror/2293103-ewouldblock",
         "doc://com.apple.documentation/documentation/foundation/posixerror/2293050-exdev",
         "doc://com.apple.documentation/documentation/foundation/posixerror/2883053-errordomain"
-      ]
+      ],
+      "anchor": "2850625"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/posixerror/3726562-hash"
+      ],
+      "anchor": "3728362"
     },
     {
       "kind": "taskGroup",
       "title": "Operator Functions",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/posixerror/2946775"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/posixerror/2946775",
+        "doc://com.apple.documentation/documentation/foundation/posixerror/3726560"
+      ],
+      "anchor": "2947452"
     }
   ],
   "seeAlsoSections": [
@@ -3505,6 +3655,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -3515,7 +3666,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

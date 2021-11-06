@@ -32,8 +32,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,23 +96,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 631,
-            "height": 182
-          },
-          "url": "https://docs-assets.developer.apple.com/published/3af17772d5/bb8dd6b2-adc4-4a4e-9beb-392df145ce01.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
-            "width": 631,
-            "height": 182
+            "width": 621,
+            "height": 170
           },
-          "url": "https://docs-assets.developer.apple.com/published/43fef7c879/84de5960-079d-48a5-ac7f-82ec305f4597.png"
+          "url": "https://docs-assets.developer.apple.com/published/dbdda44be2/cd-upload@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 621,
+            "height": 170
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7a69ff524e/cd-upload~dark@2x.png"
         }
       ],
       "alt": "Flow diagram showing the upload portion of a record’s lifecycle.",
@@ -146,23 +147,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 717,
-            "height": 175
-          },
-          "url": "https://docs-assets.developer.apple.com/published/adfa36ee2d/f93fd8be-69b2-46ce-b5d8-21febdc8644d.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
-            "width": 717,
-            "height": 175
+            "width": 705,
+            "height": 165
           },
-          "url": "https://docs-assets.developer.apple.com/published/d036f0cbab/51c2e174-1d62-4880-b34a-1dd6df4acdfc.png"
+          "url": "https://docs-assets.developer.apple.com/published/52cec64ffe/cd-download@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 705,
+            "height": 165
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f21f143f30/cd-download~dark@2x.png"
         }
       ],
       "alt": "Flow diagram showing the download portion of a record’s lifecycle.",
@@ -198,13 +200,13 @@
       "title": "Faulting and Uniquing",
       "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/FaultingandUniquing.html#//apple_ref/doc/uid/TP40001075-CH18"
     },
-    "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed": {
-      "title": "Accessing Data When the Store Has Changed",
+    "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_changes": {
+      "title": "Accessing Data When the Store Changes",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_changes",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/coredata/accessing_data_when_the_store_has_changed"
+      "url": "/documentation/coredata/accessing_data_when_the_store_changes"
     },
     "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes": {
       "title": "Consuming Relevant Store Changes",
@@ -226,23 +228,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
+            "dark",
+            "2x"
           ],
           "size": {
-            "width": 680,
-            "height": 386
+            "width": 735,
+            "height": 397
           },
-          "url": "https://docs-assets.developer.apple.com/published/986df2a3d6/f2c44f4f-ffa9-4077-a04e-9fc73cffa85e.png"
+          "url": "https://docs-assets.developer.apple.com/published/426f4a9c9e/renderedDark2x-1632824181.png"
         },
         {
           "traits": [
             "2x"
           ],
           "size": {
-            "width": 680,
-            "height": 386
+            "width": 735,
+            "height": 397
           },
-          "url": "https://docs-assets.developer.apple.com/published/701b431654/0e5cc891-c565-4b58-bbc7-47a35cc4599f.png"
+          "url": "https://docs-assets.developer.apple.com/published/ffb7e91f0c/rendered2x-1632824185.png"
         }
       ],
       "alt": "Screenshot showing passing the -com.apple.CoreData.CloudKitDebug 3 user default setting as a launch argument in the scheme editor.",
@@ -285,6 +288,14 @@
       "kind": "article",
       "role": "codeListing",
       "url": "/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/syncing_a_core_data_store_with_cloudkit#3221716"
+    },
+    "doc://com.apple.documentation/documentation/os/logging/viewing_log_messages": {
+      "title": "Viewing Log Messages",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/os/logging/viewing_log_messages",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/os/logging/viewing_log_messages"
     },
     "doc://com.apple.documentation/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit": {
       "title": "Setting Up Core Data with CloudKit",
@@ -422,7 +433,7 @@
             },
             {
               "type": "text",
-              "text": " instances. The objects synchronize with the CloudKit database and propagate to other devices logged into the same iCloud account, automatically. The tasks that send changes to the cloud and receive remote changes in the local store happen on the system in the background. You don’t need to add any code to your project to synchronize records across devices."
+              "text": " instances. The objects automatically synchronize with the CloudKit database and propagate to other devices logged into the same iCloud account. The tasks that send changes to the cloud and receive remote changes in the local store happen on the system in the background. You don’t need to add any code to your project to synchronize records across devices."
             }
           ]
         },
@@ -455,7 +466,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When the user makes a change on one device, Core Data uploads the change to CloudKit, before sending it to the user’s other devices."
+              "text": "When the user makes a change on one device, Core Data uploads the change to CloudKit before sending it to the user’s other devices."
             }
           ]
         },
@@ -495,7 +506,7 @@
             },
             {
               "type": "text",
-              "text": ". The system executes the task, creating the record and uploadling it to CloudKit."
+              "text": ". The system executes the task, creating the record and uploading it to CloudKit."
             }
           ]
         },
@@ -610,7 +621,7 @@
             },
             {
               "type": "text",
-              "text": " to a specific generation of store data. This allows the context to fulfill faults—placeholder objects whose values haven’t yet been fetched—that existed at the time the view loaded, even if the store changes underneath."
+              "text": " to a specific generation of store data. This allows the context to fulfill faults — placeholder objects whose values haven’t yet been fetched — that existed at the time the view loaded, even if the store changes underneath."
             }
           ]
         },
@@ -671,7 +682,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_has_changed"
+              "identifier": "doc://com.apple.documentation/documentation/coredata/accessing_data_when_the_store_changes"
             },
             {
               "type": "text",
@@ -922,8 +933,9 @@
               "text": "For more information about logging, see "
             },
             {
-              "type": "codeVoice",
-              "code": "Viewing Log Messages"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/os/logging/viewing_log_messages"
             },
             {
               "type": "text",
@@ -935,7 +947,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

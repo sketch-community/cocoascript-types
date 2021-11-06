@@ -2,24 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the "
-    },
-    {
-      "type": "codeVoice",
-      "code": "NSProgress"
-    },
-    {
-      "type": "text",
-      "text": " instance, if any, associated with the current thread by a previous invocation of "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1410103-becomecurrentwithpendingunitcoun"
-    },
-    {
-      "type": "text",
-      "text": "."
+      "text": "Returns the progress instance, if any."
     }
   ],
   "documentVersion": 0,
@@ -52,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(cm)currentProgress",
+    "parent": {
+      "title": "NSProgress"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -141,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the receiver as the current progress object of the current thread and specifies the portion of work to be performed by the next child progress object of the receiver."
+          "text": "Sets the progress object as the current object of the current thread, and assigns the amount of work for the next suboperation progress object to perform."
         }
       ],
       "fragments": [
@@ -152,6 +143,30 @@
         {
           "kind": "identifier",
           "text": "becomeCurrentWithPendingUnitCount:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/1412499-currentprogress": {
+      "title": "currentProgress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1412499-currentprogress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/1412499-currentprogress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the progress instance, if any."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "currentProgress"
         }
       ]
     },
@@ -173,47 +188,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsprogress/1412499-currentprogress": {
-      "title": "currentProgress",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1412499-currentprogress",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1412499-currentprogress",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSProgress"
-        },
-        {
-          "type": "text",
-          "text": " instance, if any, associated with the current thread by a previous invocation of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1410103-becomecurrentwithpendingunitcoun"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "currentProgress"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsprogress/1417260-addchild": {
       "title": "addChild:withPendingUnitCount:",
       "type": "topic",
@@ -224,7 +198,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Add a process object as a child of a progress tree. The inUnitCount indicates the expected work for the progress unit."
+          "text": "Adds a process object as a suboperation of a progress tree."
         }
       ],
       "fragments": [
@@ -238,6 +212,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/2865587-performascurrentwithpendingunitc": {
+      "title": "performAsCurrentWithPendingUnitCount:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/2865587-performascurrentwithpendingunitc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/2865587-performascurrentwithpendingunitc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the current thread’s progress object, executes the specified block, and increments the progress object by the specified units of work."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performAsCurrentWithPendingUnitCount:usingBlock:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsprogress/1407180-resigncurrent": {
       "title": "resignCurrent",
       "type": "topic",
@@ -248,25 +246,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Balance the most recent previous invocation of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1410103-becomecurrentwithpendingunitcoun"
-        },
-        {
-          "type": "text",
-          "text": " on the same thread by restoring the current progress object to what it was before "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1410103-becomecurrentwithpendingunitcoun"
-        },
-        {
-          "type": "text",
-          "text": " was invoked."
+          "text": "Restores the previous progress object to become the current progress object on the thread."
         }
       ],
       "fragments": [
@@ -293,9 +273,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsprogress/1410103-becomecurrentwithpendingunitcoun",
         "doc://com.apple.documentation/documentation/foundation/nsprogress/1417260-addchild",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/2865587-performascurrentwithpendingunitc",
         "doc://com.apple.documentation/documentation/foundation/nsprogress/1407180-resigncurrent"
       ],
-      "title": "Current Progress Object",
+      "title": "Accessing the Current Progress Object",
       "generated": true
     }
   ],
@@ -337,6 +318,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -359,15 +341,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The "
-            },
-            {
-              "type": "codeVoice",
-              "code": "NSProgress"
-            },
-            {
-              "type": "text",
-              "text": " instance associated with the current thread, if any."
+              "text": "The progress instance for the current thread, if any."
             }
           ]
         }
@@ -387,19 +361,39 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use this per-thread "
+              "text": "If you invoke "
             },
             {
-              "type": "codeVoice",
-              "code": "currentProgress"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1410103-becomecurrentwithpendingunitcoun"
             },
             {
               "type": "text",
-              "text": " value to allow code that performs work to report useful progress even when it is widely separated from the code that actually presents progress information to the user, without requiring layers of intervening code to pass around an "
+              "text": " on the current thread, this method returns the progress instance."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this per-thread "
             },
             {
-              "type": "codeVoice",
-              "code": "NSProgress"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1412499-currentprogress"
+            },
+            {
+              "type": "text",
+              "text": " value to allow code that performs work to report useful progress even when it’s widely separated from the code that actually presents progress information to the user, and without requiring layers of intervening code to pass around an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress"
             },
             {
               "type": "text",
@@ -412,7 +406,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When reporting progress, you typically work with a child progress object, created by calling "
+              "text": "To ensure that you report progress in known units of work, you typically work with a suboperation progress object that you create by calling "
             },
             {
               "type": "reference",
@@ -421,7 +415,7 @@
             },
             {
               "type": "text",
-              "text": ", to ensure that you report progress in known units of work."
+              "text": "."
             }
           ]
         }
@@ -429,7 +423,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

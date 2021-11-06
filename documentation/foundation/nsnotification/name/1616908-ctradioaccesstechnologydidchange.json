@@ -50,18 +50,28 @@
         "name": "iOS",
         "introducedAt": "7.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "deprecatedAt": "12.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:@CTRadioAccessTechnologyDidChangeNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -79,8 +89,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -187,92 +197,33 @@
       "role": "symbol",
       "url": "/documentation/coretelephony/cttelephonynetworkinfo/3024510-servicecurrentradioaccesstechnol"
     },
-    "doc://com.apple.documentation/documentation/coretelephony/cttelephonynetworkinfo/1616895-currentradioaccesstechnology": {
-      "title": "currentRadioAccessTechnology",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3024509-ctserviceradioaccesstechnologydi": {
+      "title": "CTServiceRadioAccessTechnologyDidChange",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coretelephony/cttelephonynetworkinfo/1616895-currentradioaccesstechnology",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3024509-ctserviceradioaccesstechnologydi",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coretelephony/cttelephonynetworkinfo/1616895-currentradioaccesstechnology",
+      "url": "/documentation/foundation/nsnotification/name/3024509-ctserviceradioaccesstechnologydi",
       "abstract": [
         {
           "type": "text",
-          "text": "The current radio access technology registered with the device."
+          "text": "A notification that posts when radio access technology changes."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "var "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "currentRadioAccessTechnology"
+          "text": "CTServiceRadioAccessTechnologyDidChange"
         },
         {
           "kind": "text",
-          "text": ": String?"
+          "text": ": NSNotification.Name"
         }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/coretelephony/cttelephonynetworkinfo/1616900-subscribercellularprovider": {
-      "title": "subscriberCellularProvider",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coretelephony/cttelephonynetworkinfo/1616900-subscribercellularprovider",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coretelephony/cttelephonynetworkinfo/1616900-subscribercellularprovider",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Information about the user’s cellular service provider."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "subscriberCellularProvider"
-        },
-        {
-          "kind": "text",
-          "text": ": CTCarrier?"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/coretelephony/cttelephonynetworkinfo/1616898-subscribercellularproviderdidupd": {
-      "title": "subscriberCellularProviderDidUpdateNotifier",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coretelephony/cttelephonynetworkinfo/1616898-subscribercellularproviderdidupd",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coretelephony/cttelephonynetworkinfo/1616898-subscribercellularproviderdidupd",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A block dispatched when the user’s cellular service provider information changes."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "subscriberCellularProviderDidUpdateNotifier"
-        },
-        {
-          "kind": "text",
-          "text": ": ((CTCarrier) -> Void)?"
-        }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1616908-ctradioaccesstechnologydidchange": {
       "title": "CTRadioAccessTechnologyDidChange",
@@ -314,11 +265,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coretelephony/cttelephonynetworkinfo/1616895-currentradioaccesstechnology",
-        "doc://com.apple.documentation/documentation/coretelephony/cttelephonynetworkinfo/1616900-subscribercellularprovider",
-        "doc://com.apple.documentation/documentation/coretelephony/cttelephonynetworkinfo/1616898-subscribercellularproviderdidupd"
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3024509-ctserviceradioaccesstechnologydi"
       ],
-      "title": "Deprecated",
+      "title": "Core Telephony",
       "generated": true
     }
   ],
@@ -373,7 +322,8 @@
             }
           ],
           "platforms": [
-            "iOS"
+            "iOS",
+            "iPadOS"
           ]
         }
       ]
@@ -427,7 +377,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

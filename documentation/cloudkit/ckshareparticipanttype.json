@@ -11,6 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant/deprecated_symbols"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare",
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant",
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant/deprecated_symbols"
@@ -37,35 +45,42 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "12.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
         "deprecatedAt": "10.14",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
         "deprecatedAt": "5.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
@@ -73,8 +88,8 @@
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,7 +111,7 @@
         }
       ],
       "paths": [
-        "documentation/cloudkit/ckshare_participant_participanttype"
+        "documentation/cloudkit/ckshare/participanttype"
       ]
     }
   ],
@@ -109,13 +124,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
-      "title": "CKShare",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
-      "url": "/documentation/cloudkit/ckshare",
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "url": "/documentation/cloudkit/shared_records",
       "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipant": {
       "title": "CKShareParticipant",
@@ -133,6 +148,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
+      "title": "CKShare",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+      "url": "/documentation/cloudkit/ckshare",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
       "type": "topic",
@@ -141,59 +164,59 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsinteger"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantroleowner": {
+    "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleowner": {
       "title": "CKShareParticipantRoleOwner",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantroleowner",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleowner",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/NULL/ckshareparticipantroleowner",
+      "url": "/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleowner",
       "abstract": [
         {
           "type": "text",
-          "text": "The role of an owner."
+          "text": "The participant is the share’s owner."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantroleprivateuser": {
+    "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleprivateuser": {
       "title": "CKShareParticipantRolePrivateUser",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantroleprivateuser",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleprivateuser",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/NULL/ckshareparticipantroleprivateuser",
+      "url": "/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleprivateuser",
       "abstract": [
         {
           "type": "text",
-          "text": "The role of a private user."
+          "text": "The participant has the private role."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantrolepublicuser": {
+    "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantrolepublicuser": {
       "title": "CKShareParticipantRolePublicUser",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantrolepublicuser",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantrolepublicuser",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/NULL/ckshareparticipantrolepublicuser",
+      "url": "/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantrolepublicuser",
       "abstract": [
         {
           "type": "text",
-          "text": "The role of a public user."
+          "text": "The participant has the public role."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantroleunknown": {
+    "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleunknown": {
       "title": "CKShareParticipantRoleUnknown",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantroleunknown",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleunknown",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/NULL/ckshareparticipantroleunknown",
+      "url": "/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleunknown",
       "abstract": [
         {
           "type": "text",
-          "text": "An unknown role."
+          "text": "The participant’s role is unknown."
         }
       ]
     },
@@ -300,15 +323,16 @@
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantroleowner",
-        "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantroleprivateuser",
-        "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantrolepublicuser",
-        "doc://com.apple.documentation/documentation/cloudkit/NULL/ckshareparticipantroleunknown",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleowner",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleprivateuser",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantrolepublicuser",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipantrole/ckshareparticipantroleunknown",
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipanttype/ckshareparticipanttypeunknown",
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipanttype/ckshareparticipanttypeowner",
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipanttype/ckshareparticipanttypeprivateuser",
         "doc://com.apple.documentation/documentation/cloudkit/ckshareparticipanttype/ckshareparticipanttypepublicuser"
-      ]
+      ],
+      "anchor": "1647580"
     }
   ],
   "seeAlsoSections": [
@@ -382,6 +406,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -392,7 +417,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

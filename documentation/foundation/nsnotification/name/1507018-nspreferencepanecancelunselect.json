@@ -48,10 +48,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.1",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSPreferencePaneCancelUnselectNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -69,8 +72,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -177,17 +180,17 @@
       "role": "symbol",
       "url": "/documentation/preferencepanes/nspreferencepaneunselectreply/unselectlater"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1638126-nspreferenceprefpaneisavailable": {
-      "title": "NSPreferencePrefPaneIsAvailable",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1507018-nspreferencepanecancelunselect": {
+      "title": "NSPreferencePaneCancelUnselect",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1638126-nspreferenceprefpaneisavailable",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1507018-nspreferencepanecancelunselect",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsnotification/name/1638126-nspreferenceprefpaneisavailable",
+      "url": "/documentation/foundation/nsnotification/name/1507018-nspreferencepanecancelunselect",
       "abstract": [
         {
           "type": "text",
-          "text": "Notifies observers that the system preferences app is available to display your preferences."
+          "text": "Notifies observers that the preference pane should not be deselected."
         }
       ],
       "fragments": [
@@ -197,7 +200,7 @@
         },
         {
           "kind": "identifier",
-          "text": "NSPreferencePrefPaneIsAvailable"
+          "text": "NSPreferencePaneCancelUnselect"
         },
         {
           "kind": "text",
@@ -226,34 +229,6 @@
         {
           "kind": "identifier",
           "text": "NSPreferencePaneDoUnselect"
-        },
-        {
-          "kind": "text",
-          "text": ": NSNotification.Name"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1507018-nspreferencepanecancelunselect": {
-      "title": "NSPreferencePaneCancelUnselect",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1507018-nspreferencepanecancelunselect",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsnotification/name/1507018-nspreferencepanecancelunselect",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Notifies observers that the preference pane should not be deselected."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "NSPreferencePaneCancelUnselect"
         },
         {
           "kind": "text",
@@ -317,6 +292,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1638126-nspreferenceprefpaneisavailable": {
+      "title": "NSPreferencePrefPaneIsAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1638126-nspreferenceprefpaneisavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1638126-nspreferenceprefpaneisavailable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Notifies observers that the system preferences app is available to display your preferences."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSPreferencePrefPaneIsAvailable"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -328,12 +331,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1638126-nspreferenceprefpaneisavailable",
         "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1507050-nspreferencepanedounselect",
         "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1638130-nspreferencepaneswitchtopane",
-        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1638128-nspreferencepaneupdatehelpmenu"
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1638128-nspreferencepaneupdatehelpmenu",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1638126-nspreferenceprefpaneisavailable"
       ],
-      "title": "Notifications",
+      "title": "PreferencePanes",
       "generated": true
     }
   ],
@@ -451,7 +454,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

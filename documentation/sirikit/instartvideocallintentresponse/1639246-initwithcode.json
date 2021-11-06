@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes the response object with the specified code and user activity object. "
+      "text": "Initializes the response object with the specified code and user activity object."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponse"
       ]
     ]
@@ -36,23 +36,33 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INStartVideoCallIntentResponse(im)initWithCode:userActivity:",
+    "parent": {
+      "title": "INStartVideoCallIntentResponse"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +97,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols": {
-      "title": "Deprecated Classes and Protocols",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
-      "url": "/documentation/sirikit/deprecated_classes_and_protocols",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -105,7 +115,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Your response to a start video call intent. "
+          "text": "A response to an intent to start a video call."
         }
       ]
     },
@@ -143,7 +153,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the response object with the specified code and user activity object. "
+          "text": "Initializes the response object with the specified code and user activity object."
         }
       ],
       "fragments": [
@@ -246,6 +256,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -288,7 +299,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The user activity object to use when launching your app. Provide an object if you want to add information that is specific to your app. If you specify "
+                  "text": "The user activity object to use when launching your app. Provide an object if you want to add information specific to your app. If you specify "
                 },
                 {
                   "type": "codeVoice",
@@ -296,7 +307,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ", the system automatically creates a user activity object for you, sets its type to the class name of the intent being handled, and fills it with an "
+                  "text": ", the system automatically creates a user activity object for you, sets its type to the class name of the intent you’re handling, and fills it with an "
                 },
                 {
                   "type": "reference",
@@ -343,7 +354,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

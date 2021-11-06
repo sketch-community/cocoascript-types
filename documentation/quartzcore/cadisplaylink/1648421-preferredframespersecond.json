@@ -34,25 +34,41 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CADisplayLink(py)preferredFramesPerSecond",
+    "parent": {
+      "title": "CADisplayLink"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,7 +113,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A timer object that allows your application to synchronize its drawing to the refresh rate of the display."
+          "text": "A timer object that allows your app to synchronize its drawing to the refresh rate of the display."
         }
       ]
     },
@@ -149,6 +165,49 @@
           "type": "text",
           "text": "The preferred frame rate for the display link callback."
         }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621229-paused": {
+      "title": "paused",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621229-paused",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cadisplaylink/1621229-paused",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the system suspends the display link’s notifications to the target."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621257-timestamp": {
+      "title": "timestamp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621257-timestamp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cadisplaylink/1621257-timestamp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time interval that represents when the last frame displayed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp": {
+      "title": "targetTimestamp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cadisplaylink/1648422-targettimestamp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time interval that represents when the next frame displays."
+        }
       ]
     },
     "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621231-frameinterval": {
@@ -166,48 +225,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621229-paused": {
-      "title": "paused",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621229-paused",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/quartzcore/cadisplaylink/1621229-paused",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that states whether the display link’s notifications to the target are suspended."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621257-timestamp": {
-      "title": "timestamp",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621257-timestamp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/quartzcore/cadisplaylink/1621257-timestamp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The time value associated with the last frame that was displayed."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp": {
-      "title": "targetTimestamp",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/quartzcore/cadisplaylink/1648422-targettimestamp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The time value associated with the next frame that was displayed."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -216,14 +233,24 @@
       "title": "Technologies"
     }
   },
+  "diffAvailability": {
+    "major": {
+      "change": "deprecated",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
+    }
+  },
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621292-duration",
-        "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621231-frameinterval",
         "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621229-paused",
         "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621257-timestamp",
-        "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp"
+        "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp",
+        "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621231-frameinterval"
       ],
       "title": "Configuring the Display Link",
       "generated": true
@@ -267,6 +294,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -287,7 +315,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When you specify a preferred frame rate for a display link, it notifies the target at a rate as close as possible based on the capabilities on the hardware and other tasks your game or app may be executing. The actual frame rate chosen is usually a factor of the maximum refresh rate of the screen to provide a consistent frame rate. For example, if the maximum refresh rate of the screen is "
+              "text": "When you specify a preferred frame rate for a display link, it notifies the target at a rate as close as possible based on the capabilities on the hardware and other tasks your game or app may be executing."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In iOS 15, frame rate availability can change due to the system factoring in the system policy and user preference — including low power mode, critical thermal state, and accessibility settings. The actual frame rate chosen is usually a factor of the maximum refresh rate of the screen to provide a consistent frame rate. For example, if the maximum refresh rate of the screen is "
             },
             {
               "type": "codeVoice",
@@ -295,7 +332,7 @@
             },
             {
               "type": "text",
-              "text": " frames per second, that is also the highest frame rate the display link sets as the actual frame rate. However, if you ask for a lower frame rate, the display link might choose "
+              "text": " frames per second, that’s also the highest frame rate the display link sets as the actual frame rate. However, if you ask for a lower frame rate, the display link might choose "
             },
             {
               "type": "codeVoice",
@@ -370,7 +407,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

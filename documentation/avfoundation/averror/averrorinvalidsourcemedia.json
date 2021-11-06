@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The operation could not complete because some source media could not be read."
+      "text": "The system couldn’t read the source media."
     }
   ],
   "documentVersion": 0,
@@ -11,8 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/media_playback_errors",
+        "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations",
         "doc://com.apple.documentation/documentation/avfoundation/averror"
       ]
     ]
@@ -36,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@AVError@AVErrorInvalidSourceMedia",
+    "parent": {
+      "title": "AVError"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -99,18 +106,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
-      "title": "Media Playback and Selection",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
-      "url": "/documentation/avfoundation/media_playback_and_selection",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/media_playback_errors": {
-      "title": "Media Playback Errors",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/media_playback_errors",
-      "url": "/documentation/avfoundation/media_playback_and_selection/media_playback_errors",
+    "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations": {
+      "title": "AVFoundation Enumerations",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations",
+      "url": "/documentation/avfoundation/avfoundation_enumerations",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -125,31 +124,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An enumeration of possible error codes encountered in AVCapture."
+          "text": "The enumerated error codes for framework operations."
         }
       ]
-    },
-    "devLink-1709440": {
-      "identifier": "devLink-1709440",
-      "type": "link",
-      "title": "AVAssetWriter",
-      "url": "https://developer.apple.com/library/archive/qa/qa1744/_index.html#//apple_ref/doc/uid/DTS40011134-CH1-ASSETWRITER"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetreader": {
-      "title": "AVAssetReader",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreader",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetreader"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession": {
-      "title": "AVAssetExportSession",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession"
     },
     "doc://com.apple.documentation/documentation/avfoundation/averror/averrorairplaycontrollerrequiresinternet": {
       "title": "AVErrorAirPlayControllerRequiresInternet",
@@ -161,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The AirPlay controller requires internet to function."
+          "text": "The AirPlay controller requires an internet connection to function."
         }
       ]
     },
@@ -175,7 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The AirPlay receiver requires internet to function."
+          "text": "The AirPlay receiver requires an internet connection to function."
         }
       ]
     },
@@ -189,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The application is not authorized to play media."
+          "text": "The app isn’t authorized to play media."
         }
       ]
     },
@@ -203,7 +180,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The user has denied this application permission for media capture."
+          "text": "The user denied this app permission to capture media."
         }
       ]
     },
@@ -217,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The source media can’t be added because it contains gaps."
+          "text": "The composition can’t add the source media because it contains gaps."
         }
       ]
     },
@@ -231,7 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The user is not authorized to play the media."
+          "text": "The user isn’t authorized to play the media."
         }
       ]
     },
@@ -245,7 +222,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The application is not authorized to open the media."
+          "text": "The app isn’t authorized to open the media."
         }
       ]
     },
@@ -259,7 +236,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Captured content is unavailable."
+          "text": "The captured content is unavailable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/averror/averrorcontentkeyrequestcancelled": {
+      "title": "AVErrorContentKeyRequestCancelled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averror/averrorcontentkeyrequestcancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/averror/averrorcontentkeyrequestcancelled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The app canceled a request to retrieve a content key."
         }
       ]
     },
@@ -273,7 +264,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Captured content couldn’t be updated."
+          "text": "The system couldn’t update the captured content."
         }
       ]
     },
@@ -301,7 +292,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The decoding of the source media failed."
+          "text": "The system failed to decode the media."
         }
       ]
     },
@@ -315,7 +306,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The decoder for the given media was not found."
+          "text": "The system can’t find a suitable decoder for the media."
         }
       ]
     },
@@ -329,7 +320,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The appropriate decoder is currently not available."
+          "text": "A suitable decoder for the media is temporarily available."
         }
       ]
     },
@@ -343,7 +334,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The device is already in use by another session."
+          "text": "Your app can’t access the device because another session is currently using it."
         }
       ]
     },
@@ -357,24 +348,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The device could not be opened because it is in use by another application."
+          "text": "Your app can’t access the device because another app is currently using it."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/averror/averrordeviceisnotavailableinbackground": {
-      "title": "AVErrorDeviceIsNotAvailableInBackground",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averror/averrordeviceisnotavailableinbackground",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/averror/averrordeviceisnotavailableinbackground",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "You attempted to start a capture session in the background, which is not allowed on iOS."
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/averror/averrordevicelockedforconfigurationbyanotherprocess": {
       "title": "AVErrorDeviceLockedForConfigurationByAnotherProcess",
@@ -386,7 +362,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You cannot change the settings for the device because another app process is controlling the device."
+          "text": "Your app can’t change device settings because another process currently controls the device."
         }
       ]
     },
@@ -400,7 +376,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The device could not be opened because it is not connected or turned on."
+          "text": "You app can’t access the device because it isn’t connected."
         }
       ]
     },
@@ -414,7 +390,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Recording stopped because the device was turned off or disconnected."
+          "text": "A previously connected device is no longer accessible."
         }
       ]
     },
@@ -428,7 +404,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Recording stopped because the disk is getting full."
+          "text": "Recording stopped because the disk is full."
         }
       ]
     },
@@ -456,7 +432,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The requested encoder was not found."
+          "text": "The requested encoder isn’t found."
         }
       ]
     },
@@ -470,7 +446,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The appropriate encoder is currently not available."
+          "text": "An appropriate encoder isn’t currently available."
         }
       ]
     },
@@ -484,7 +460,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The export was unable to finish successfully."
+          "text": "The requested export operation failed."
         }
       ]
     },
@@ -512,7 +488,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media resource does not contain all of the data required and cannot be loaded."
+          "text": "The system can’t load the requested media data."
         }
       ]
     },
@@ -526,7 +502,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "AVFoundation couldn’t parse the media."
+          "text": "The system can’t parse the media."
         }
       ]
     },
@@ -540,7 +516,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The file could not be created because a file with the same name already exists in the same location."
+          "text": "A file with the same name exists at the location and you can’t overwrite it."
         }
       ]
     },
@@ -554,7 +530,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media could not be opened because the file is damaged or not in a recognized format."
+          "text": "The file is corrupt or in an unrecognized format."
         }
       ]
     },
@@ -568,7 +544,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media could not be opened because it is not in a recognized format."
+          "text": "The system can’t open the file because it’s in an unrecognized format."
         }
       ]
     },
@@ -610,7 +586,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You cannot display the media because the iOS device is not capable of playing the content."
+          "text": "You can’t display the media because the device isn’t capable of playing the content."
         }
       ]
     },
@@ -638,7 +614,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You cannot add the source media because its duration in the destination is invalid."
+          "text": "You can’t add the source media because its duration in the destination is invalid."
         }
       ]
     },
@@ -680,7 +656,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The path extension of the URL was invalid."
+          "text": "The path extension of the output URL is invalid."
         }
       ]
     },
@@ -694,7 +670,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The operation could not complete because some source media could not be read."
+          "text": "The system couldn’t read the source media."
         }
       ]
     },
@@ -708,7 +684,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You attempted to perform a video composition operation that is not supported."
+          "text": "You attempted to present an unsupported video composition."
         }
       ]
     },
@@ -722,7 +698,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The depth data wasn’t properly structured."
+          "text": "The depth data isn’t properly structured."
         }
       ]
     },
@@ -736,7 +712,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Recording stopped because the maximum duration for the file was reached."
+          "text": "The recording stopped because it reached the file’s maximum duration."
         }
       ]
     },
@@ -750,7 +726,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Recording stopped because the maximum size for the file was reached."
+          "text": "The recording stopped because it reached the file’s maximum size."
         }
       ]
     },
@@ -764,7 +740,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Recording stopped because the maximum number of samples for the file was reached."
+          "text": "The recording stopped because it reached the file’s maximum number of samples."
         }
       ]
     },
@@ -778,7 +754,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The photo could not be taken because there are too many photo requests that haven’t completed yet."
+          "text": "Your app can’t take a photo because there are too many unfinished photo capture requests."
         }
       ]
     },
@@ -820,7 +796,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The operation could not be completed because media services became unavailable."
+          "text": "The system couldn’t perform the operation because media services were unavailable."
         }
       ]
     },
@@ -834,7 +810,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "No compatible external displays were found."
+          "text": "The system found no compatible external displays."
         }
       ]
     },
@@ -848,7 +824,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Recording failed because no data was received."
+          "text": "The recording failed because the system received no data."
         }
       ]
     },
@@ -862,7 +838,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "There is no image at that time in the media."
+          "text": "No image is available in the media at the indicated time."
         }
       ]
     },
@@ -890,7 +866,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset has no source track."
+          "text": "The asset doesn’t contain a source track."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/averror/averroroperationcancelled": {
+      "title": "AVErrorOperationCancelled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averror/averroroperationcancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/averror/averroroperationcancelled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The asset handled a request to cancel loading a property value asynchronously."
         }
       ]
     },
@@ -904,34 +894,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An interruption occurred while an "
-        },
-        {
-          "type": "link",
-          "title": "AVAssetWriter",
-          "destination": "https://developer.apple.com/library/archive/qa/qa1744/_index.html#//apple_ref/doc/uid/DTS40011134-CH1-ASSETWRITER"
-        },
-        {
-          "type": "text",
-          "text": ", "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreader"
-        },
-        {
-          "type": "text",
-          "text": " or "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession"
-        },
-        {
-          "type": "text",
-          "text": " was executing."
+          "text": "An interruption occurred while performing a reading or writing operation."
         }
       ]
     },
@@ -945,7 +908,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The user requested an unsupported operation."
+          "text": "The requested operation isn’t allowed."
         }
       ]
     },
@@ -959,7 +922,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You attempted to perform an operation with the asset that is not supported."
+          "text": "Your app attempted to perform an unsupported operation with the asset."
         }
       ]
     },
@@ -973,7 +936,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You attempted to perform an operation that’s not supported for the current preset."
+          "text": "Your app attempted to perform an unsupported operation for the current preset."
         }
       ]
     },
@@ -987,7 +950,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The operation could not be completed because there is not enough memory to process all of the media."
+          "text": "The operation couldn’t finish because there isn’t enough memory available to process the media."
         }
       ]
     },
@@ -1001,7 +964,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Movie file output on iOS supports only one recording at a time."
+          "text": "Your app attempted to start recording a movie file while an existing recording is underway."
         }
       ]
     },
@@ -1015,7 +978,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You attempted to perform an operation with the asset that attempted to follow a reference that was not allowed."
+          "text": "The current reference restrictions prevent the system from loading referenced media."
         }
       ]
     },
@@ -1043,7 +1006,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "There was an unexpected problem that prevented screen capture."
+          "text": "An unexpected problem occurred that prevented screen capture."
         }
       ]
     },
@@ -1071,7 +1034,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The HTTP server sending the media resource is not configured as expected."
+          "text": "The configuration of the HTTP server that streams the media resource isn’t correct."
         }
       ]
     },
@@ -1099,7 +1062,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You requested too many camera hardware resources."
+          "text": "Your app requested too many camera hardware resources."
         }
       ]
     },
@@ -1113,7 +1076,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Recording could not start because the session isn’t running."
+          "text": "The recording couldn’t start because the session isn’t running."
         }
       ]
     },
@@ -1127,7 +1090,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Recording stopped because it was interrupted."
+          "text": "The recording stopped because the system interrupted the audio session."
         }
       ]
     },
@@ -1155,7 +1118,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media data could not be decoded."
+          "text": "The system couldn’t decode the media data."
         }
       ]
     },
@@ -1169,7 +1132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reason for the error is unknown."
+          "text": "An unknown error occurred."
         }
       ]
     },
@@ -1183,7 +1146,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The device’s active format is not supported for the requested action."
+          "text": "The capture session doesn’t support the camera device’s active format."
         }
       ]
     },
@@ -1197,7 +1160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The user requested unsupported output settings."
+          "text": "Your app requested unsupported output settings."
         }
       ]
     },
@@ -1211,9 +1174,24 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The video compositor couldn’t composite frames."
+          "text": "The compositor couldn’t composite video frames."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/averror/averrordeviceisnotavailableinbackground": {
+      "title": "AVErrorDeviceIsNotAvailableInBackground",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/averror/averrordeviceisnotavailableinbackground",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/averror/averrordeviceisnotavailableinbackground",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "You attempted to start a capture session in the background, which isn’t allowed in iOS."
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -1234,6 +1212,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrorcontentisnotauthorized",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrorcontentisprotected",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrorcontentisunavailable",
+        "doc://com.apple.documentation/documentation/avfoundation/averror/averrorcontentkeyrequestcancelled",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrorcontentnotupdated",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrorcreatecontentkeyrequestfailed",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrordecodefailed",
@@ -1241,7 +1220,6 @@
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrordecodertemporarilyunavailable",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrordevicealreadyusedbyanothersession",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrordeviceinusebyanotherapplication",
-        "doc://com.apple.documentation/documentation/avfoundation/averror/averrordeviceisnotavailableinbackground",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrordevicelockedforconfigurationbyanotherprocess",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrordevicenotconnected",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrordevicewasdisconnected",
@@ -1278,6 +1256,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrornoimageattime",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrornolongerplayable",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrornosourcetrack",
+        "doc://com.apple.documentation/documentation/avfoundation/averror/averroroperationcancelled",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averroroperationinterrupted",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averroroperationnotallowed",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averroroperationnotsupportedforasset",
@@ -1298,7 +1277,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrorunknown",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrorunsupporteddeviceactiveformat",
         "doc://com.apple.documentation/documentation/avfoundation/averror/averrorunsupportedoutputsettings",
-        "doc://com.apple.documentation/documentation/avfoundation/averror/averrorvideocompositorfailed"
+        "doc://com.apple.documentation/documentation/avfoundation/averror/averrorvideocompositorfailed",
+        "doc://com.apple.documentation/documentation/avfoundation/averror/averrordeviceisnotavailableinbackground"
       ],
       "title": "Error Codes",
       "generated": true
@@ -1324,6 +1304,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1334,7 +1315,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

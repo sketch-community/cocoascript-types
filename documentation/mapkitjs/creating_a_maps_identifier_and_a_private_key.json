@@ -1,0 +1,579 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create a Maps Identifer and a private key before generating tokens for MapKit JS. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkitjs"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key",
+    "interfaceLanguage": "data"
+  },
+  "legacy_identifier": 3011339,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating a Maps Identifier and a Private Key",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "MapKit JS"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "data"
+        }
+      ],
+      "paths": [
+        "documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/mapkitjs": {
+      "title": "MapKit JS",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs",
+      "url": "/documentation/mapkitjs",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-3030148": {
+      "title": "developer.apple.com/account",
+      "type": "topic",
+      "identifier": "link-3030148",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/account"
+    },
+    "link-3030123": {
+      "title": "Certificates, Identifiers & Profiles",
+      "type": "topic",
+      "identifier": "link-3030123",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/account/ios/certificate"
+    },
+    "link-3030129": {
+      "title": "Certificates, Identifiers & Profiles",
+      "type": "topic",
+      "identifier": "link-3030129",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/account/ios/certificate"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js": {
+      "title": "Creating and Using Tokens with MapKit JS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sign JSON Web Tokens to use MapKit JS and debug common signing errors."
+        }
+      ]
+    },
+    "link-3011381": {
+      "title": "Revoke, edit, and download keys",
+      "type": "section",
+      "identifier": "link-3011381",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/developer-account/#/dev3a82eef1c?sub=deve86584d6a"
+    },
+    "link-3162211": {
+      "title": "Apple Developer Account",
+      "type": "topic",
+      "identifier": "link-3162211",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/account"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key": {
+      "title": "Creating a Maps Identifier and a Private Key",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a Maps Identifer and a private key before generating tokens for MapKit JS. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt": {
+      "title": "Debugging an Invalid JWT",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/debugging_an_invalid_jwt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inspect the JavaScript console logs, the token, and events to determine why a token is invalid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit": {
+      "title": "mapkit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The JavaScript API for embedding Apple maps on your website."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js",
+        "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "MapKit JS uses JSON Web Tokens (JWTs) to authenticate map initializations and other API requests. Before you can create a token, you need a Maps Identifer (i.e., Maps ID) and private key that is associated to a Maps ID. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Maps IDs and private keys can be created and associated through your "
+            },
+            {
+              "type": "link",
+              "title": "Apple Developer Account",
+              "destination": "https://developer.apple.com/account"
+            },
+            {
+              "type": "text",
+              "text": ". Once you have completed the steps to obtain these items you can construct a JSON Web Token and sign it with your private key, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Maps ID",
+          "anchor": "3011340"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A Maps ID is a string that you provide to identify a domain or environment that calls the MapKit JS API. Maps IDs use reverse-domain-style notation with three or four fields separated by a dot. The first field must be "
+            },
+            {
+              "type": "codeVoice",
+              "code": "maps"
+            },
+            {
+              "type": "text",
+              "text": "; the remainder or this string can be a name that's meaningful to you. For example, your string might look something like "
+            },
+            {
+              "type": "codeVoice",
+              "code": "maps.com.mywebsite"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "maps.com.mycompany.mywebsite"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create a Maps ID, follow these steps:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Go to "
+                    },
+                    {
+                      "type": "link",
+                      "title": "developer.apple.com/account",
+                      "destination": "https://developer.apple.com/account"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and login with your Apple Developer credentials. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": " Under "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Certificates, Identifiers & Profiles",
+                      "destination": "https://developer.apple.com/account/ios/certificate"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", select Maps IDs under Identifiers in the sidebar."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the upper-right corner, click the Add button (+), then click Continue."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Enter a string for the description. This could be your app name, team name, project name, or something that conveys context and is meaningful to you. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Enter a reverse-domain-style string for the identifier (for example, "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "maps.com.mycompany.mywebsite"
+                    },
+                    {
+                      "type": "text",
+                      "text": "), then click Continue."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Review the information, then click Register."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Done."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you have multiple environments, such as a development environment and a production environment, it’s a good practice to create separate Maps IDs and keys for each environment. That way if a key used in production becomes compromised, revoking it will not affect your UAT or test environments. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Obtain a MapKit JS Private Key",
+          "anchor": "3011341"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once you have created a Maps ID, the next steps are to create a private key, add the MapKit JS service to this key, and associate it with a Maps ID:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Certificates, Identifiers & Profiles",
+                      "destination": "https://developer.apple.com/account/ios/certificate"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", select All under Keys, then click the Add button (+) in the upper-right corner."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Under Key Description, enter a unique name for the key."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Under Key Services, select the checkbox next to MapKit JS, then click Continue. Note that if the MapKit JS checkbox is disabled, you have not created a Maps ID. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Configure next to the checkbox. On the next page, choose a Maps ID to associate to this key from the pop-up menu, then click Continue."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Review the key configuration, then click Confirm."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Optionally, click Download to download the key. The private key is available to download a single time. If the Download button is disabled, you previously downloaded the key."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Click Done. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After executing these steps you will have a private key that can be used to sign JWTs, and you can begin "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The private key is a shared secret between you and Apple. To keep your private key secure, do not put your private key in public facing client-side code, and do not share the key."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The private key doesn't expire, but you can revoke it. Revoking a key makes it invalid and affects calls to the MapKit JS API. If you lose a key or if someone else starts using your key, you should revoke it. See "
+            },
+            {
+              "type": "link",
+              "title": "Revoke, edit, and download keys",
+              "destination": "https://help.apple.com/developer-account/#/dev3a82eef1c?sub=deve86584d6a"
+            },
+            {
+              "type": "text",
+              "text": " for more information. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

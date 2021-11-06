@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The dictionary that contains partial error results."
+      "text": "The dictionary that contains errors that relate to individual record operations."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:SC11CKErrorCodeLeV8CloudKitE21partialErrorsByItemIDSDys11AnyHashableVs5Error_pGSgvp",
+    "parent": {
+      "title": "CKError"
+    },
     "symbolKind": "structp",
     "fragments": [
       {
@@ -80,8 +88,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,9 +124,33 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that describes an error that CloudKit returns."
+          "text": "A type that describes a CloudKit error."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/id": {
+      "title": "CKRecord.ID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/id",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord/id"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerror/3726326-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/3726326-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerror/3726326-userinfo"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckpartialerrorsbyitemidkey": {
+      "title": "CKPartialErrorsByItemIDKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckpartialerrorsbyitemidkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckpartialerrorsbyitemidkey"
     },
     "doc://com.apple.documentation/documentation/swift/anyhashable": {
       "title": "AnyHashable",
@@ -136,160 +168,6 @@
       "role": "symbol",
       "url": "/documentation/swift/error"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883253-errorcode": {
-      "title": "errorCode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883253-errorcode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckerror/2883253-errorcode",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The error’s code."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "errorCode"
-        },
-        {
-          "kind": "text",
-          "text": ": Int"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883255-errordomain": {
-      "title": "errorDomain",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883255-errordomain",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckerror/2883255-errordomain",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The error’s domain."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "errorDomain"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckerrordomain": {
-      "title": "CKErrorDomain",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrordomain",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckerrordomain",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The domain for CloudKit errors."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "let "
-        },
-        {
-          "kind": "identifier",
-          "text": "CKErrorDomain"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883252-localizeddescription": {
-      "title": "localizedDescription",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883252-localizeddescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckerror/2883252-localizeddescription",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The localized description of the error."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "localizedDescription"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883254-erroruserinfo": {
-      "title": "errorUserInfo",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883254-erroruserinfo",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckerror/2883254-erroruserinfo",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The dictionary that contains additional information about the error."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "errorUserInfo"
-        },
-        {
-          "kind": "text",
-          "text": ": [String : Any]"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckerror/record_changed_error_keys": {
-      "title": "Record Changed Error Keys",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/record_changed_error_keys",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/cloudkit/ckerror/record_changed_error_keys",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants that represent record change error keys."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckerror/2603999-partialerrorsbyitemid": {
       "title": "partialErrorsByItemID",
       "type": "topic",
@@ -300,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The dictionary that contains partial error results."
+          "text": "The dictionary that contains errors that relate to individual record operations."
         }
       ],
       "fragments": [
@@ -318,34 +196,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckerror/2299866-retryafterseconds": {
-      "title": "retryAfterSeconds",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/2299866-retryafterseconds",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckerror/2299866-retryafterseconds",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The number of seconds to wait before you retry the request."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "retryAfterSeconds"
-        },
-        {
-          "kind": "text",
-          "text": ": Double?"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -354,21 +204,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883253-errorcode",
-        "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883255-errordomain",
-        "doc://com.apple.documentation/documentation/cloudkit/ckerrordomain",
-        "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883252-localizeddescription",
-        "doc://com.apple.documentation/documentation/cloudkit/ckerror/2883254-erroruserinfo",
-        "doc://com.apple.documentation/documentation/cloudkit/ckerror/record_changed_error_keys",
-        "doc://com.apple.documentation/documentation/cloudkit/ckerror/2299866-retryafterseconds"
-      ],
-      "title": "Accessing Error Information",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -433,6 +268,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -440,10 +276,66 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This property’s value is a dictionary that maps an item ID to an error. The type of each ID depends on where the error occurs. For example, if you receive a partial error when modifying a record, the ID is an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/id"
+            },
+            {
+              "type": "text",
+              "text": " that corresponds to the record that CloudKit can’t modify."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The error’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/3726326-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary contains the same value as this property. You can access it using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckpartialerrorsbyitemidkey"
+            },
+            {
+              "type": "text",
+              "text": " key."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

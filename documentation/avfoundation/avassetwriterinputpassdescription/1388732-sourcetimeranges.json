@@ -37,30 +37,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInputPassDescription(py)sourceTimeRanges",
+    "parent": {
+      "title": "AVAssetWriterInputPassDescription"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -129,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for querying about the requirements of the current pass."
+          "text": "An object that defines the interface to query for the requirements of the current pass."
         }
       ]
     },
@@ -148,6 +156,24 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coremedia/cmtimerange"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput/1388890-resetforreadingtimeranges": {
+      "title": "resetForReadingTimeRanges:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput/1388890-resetforreadingtimeranges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetreaderoutput/1388890-resetforreadingtimeranges",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resetForReadingTimeRanges:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput": {
       "title": "AVAssetReaderOutput",
@@ -235,6 +261,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -256,7 +283,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Each array entry is an "
+              "text": "Each element in the array is an "
             },
             {
               "type": "reference",
@@ -265,7 +292,7 @@
             },
             {
               "type": "text",
-              "text": " object wrapping a "
+              "text": " object that wraps a "
             },
             {
               "type": "reference",
@@ -274,20 +301,21 @@
             },
             {
               "type": "text",
-              "text": " structure, representing one source time range. The value of this property is suitable for using as a parameter for the "
+              "text": " structure that represents one source time range. The value of this property is suitable to pass to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput/1388890-resetforreadingtimeranges"
+            },
+            {
+              "type": "text",
+              "text": " method of "
             },
             {
               "type": "reference",
               "isActive": true,
               "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput"
-            },
-            {
-              "type": "text",
-              "text": " method "
-            },
-            {
-              "type": "codeVoice",
-              "code": "resetForReadingTimeRanges:"
             },
             {
               "type": "text",
@@ -299,7 +327,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

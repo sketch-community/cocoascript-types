@@ -15,20 +15,7 @@
     },
     {
       "type": "text",
-      "text": " for "
-    },
-    {
-      "type": "emphasis",
-      "inlineContent": [
-        {
-          "type": "text",
-          "text": "X"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "text": ", using the supplied double-precision factorization of "
+      "text": " using the supplied double-precision factorization of "
     },
     {
       "type": "emphasis",
@@ -41,7 +28,7 @@
     },
     {
       "type": "text",
-      "text": ", in place, and without any internal memory allocations."
+      "text": ", in place and without any internal memory allocations."
     }
   ],
   "documentVersion": 0,
@@ -74,35 +61,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseSolve#$@SA@SparseOpaqueFactorization_Double#$@SA@DenseMatrix_Double#*v#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -152,6 +144,38 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-media-3703888": {
+      "identifier": "link-media-3703888",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/2868039-sparsesolve#3703888"
+    },
+    "media-3703888": {
+      "identifier": "media-3703888",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 479,
+            "height": 167
+          },
+          "url": "https://docs-assets.developer.apple.com/published/28f1e78a83/rendered2x-1606991551.png"
+        }
+      ],
+      "alt": "A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-by-two matrix that equals a three-by-two matrix.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2868039-sparsesolve#3702428": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868039-sparsesolve#3702428",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/2868039-sparsesolve#3702428"
     },
     "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationcholeskyata": {
       "title": "SparseFactorizationCholeskyAtA",
@@ -216,20 +240,7 @@
         },
         {
           "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied double-precision factorization of "
+          "text": " using the supplied double-precision factorization of "
         },
         {
           "type": "emphasis",
@@ -242,7 +253,7 @@
         },
         {
           "type": "text",
-          "text": ", in place, and without any internal memory allocations."
+          "text": ", in place and without any internal memory allocations."
         }
       ]
     },
@@ -269,20 +280,7 @@
         },
         {
           "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied single-precision factorization of "
+          "text": " using the supplied single-precision factorization of "
         },
         {
           "type": "emphasis",
@@ -295,113 +293,7 @@
         },
         {
           "type": "text",
-          "text": ", in place, and without any internal memory allocations."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2868173-sparsesolve": {
-      "title": "SparseSolve",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868173-sparsesolve",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2868173-sparsesolve",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Solves the system "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "AX = B"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied double-precision factorization of "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "A"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", and without any internal memory allocations."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2868019-sparsesolve": {
-      "title": "SparseSolve",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868019-sparsesolve",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2868019-sparsesolve",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Solves the system "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "AX = B"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": " for "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "X"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", using the supplied single-precision factorization of "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "A"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": ", and without any internal memory allocations."
+          "text": ", in place and without any internal memory allocations. "
         }
       ]
     },
@@ -416,11 +308,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/2868078-sparsesolve",
-        "doc://com.apple.documentation/documentation/accelerate/2868173-sparsesolve",
-        "doc://com.apple.documentation/documentation/accelerate/2868019-sparsesolve"
+        "doc://com.apple.documentation/documentation/accelerate/2868078-sparsesolve"
       ],
-      "title": "Direct Solving Functions with User-Defined Workspace",
+      "title": "In-Place Direct Solving Functions with User-Defined Workspace",
       "generated": true
     }
   ],
@@ -480,6 +370,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -502,7 +393,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Factorization of "
+                  "text": "The factorization of "
                 },
                 {
                   "type": "emphasis",
@@ -529,7 +420,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "On entry, the right-hand side, "
+                  "text": "On entry, the right-hand-side, "
                 },
                 {
                   "type": "emphasis",
@@ -581,7 +472,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ", then "
+                  "text": ", "
                 },
                 {
                   "type": "emphasis",
@@ -633,7 +524,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " is the number of right-hand sides to find solutions for."
+                  "text": " is the number of right-hand-sides to find solutions for."
                 }
               ]
             }
@@ -647,7 +538,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Scratch space of size "
+                  "text": "The scratch space of size "
                 },
                 {
                   "type": "reference",
@@ -700,6 +591,126 @@
           "inlineContent": [
             {
               "type": "text",
+              "text": "Use this function to solve a system of linear equations using a factored coefficient matrix. In cases where your code calls the function frequently, create and manage the workspace that the Sparse Solvers library uses and reuse it across function calls. Reusing a workspace prevents the Sparse Solvers library from allocating the temporary storage with each call."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following figure shows two systems of equations where the coefficient matrix is sparse:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3703888",
+              "metadata": {
+                "anchor": "3703888",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code solves this system with a QR factorization of the coefficient matrix:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/// Create the coefficient matrix _A_.",
+            "let rowIndices: [Int32] =    [ 0,  1, 1,  2]",
+            "let columnIndices: [Int32] = [ 2,  0, 2,  1]",
+            "let aValues: [Double] =      [10, 20, 5, 50]",
+            "",
+            "let A = SparseConvertFromCoordinate(3, 3,",
+            "                                    4, 1,",
+            "                                    SparseAttributes_t(),",
+            "                                    rowIndices, columnIndices,",
+            "                                    aValues)",
+            "",
+            "/// Factorize _A_.",
+            "let factorization = SparseFactor(SparseFactorizationQR, A)",
+            "",
+            "defer {",
+            "    SparseCleanup(A)",
+            "    SparseCleanup(factorization)",
+            "}",
+            "",
+            "/// Create the workspace.",
+            "let nrhs = Int(A.structure.columnCount)",
+            "let byteCount = factorization.solveWorkspaceRequiredStatic +",
+            "                    nrhs * factorization.solveWorkspaceRequiredPerRHS",
+            "let workspace = UnsafeMutableRawPointer.allocate(",
+            "    byteCount: byteCount,",
+            "    alignment: MemoryLayout<Double>.alignment)",
+            "defer {",
+            "    workspace.deallocate()",
+            "}",
+            "",
+            "/// Create the right-hand-side matrix, _B_.",
+            "var bValues: [Double] = [30, 35, 100,",
+            "                         300, 350, 1000]",
+            "",
+            "/// Solve the system.",
+            "bValues.withUnsafeMutableBufferPointer { bPtr in",
+            "    let XB = DenseMatrix_Double(rowCount: 3,",
+            "                                columnCount: 2,",
+            "                                columnStride: 3,",
+            "                                attributes: SparseAttributes_t(),",
+            "                                data: bPtr.baseAddress!)",
+            "    ",
+            "    SparseSolve(factorization, XB,",
+            "                workspace)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3702428",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "bValues"
+            },
+            {
+              "type": "text",
+              "text": " contains the values "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
               "text": "If the factorization is "
             },
             {
@@ -713,7 +724,7 @@
             },
             {
               "type": "text",
-              "text": " and the system is underdetermined, the solution of minimum norm "
+              "text": ", the function returns the solution of minimum norm "
             },
             {
               "type": "emphasis",
@@ -729,7 +740,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": " X "
+                  "text": " x "
                 }
               ]
             },
@@ -753,7 +764,7 @@
             },
             {
               "type": "text",
-              "text": " is returned."
+              "text": " for underdetermined systems."
             }
           ]
         },
@@ -775,7 +786,7 @@
             },
             {
               "type": "text",
-              "text": " and the system is overdetermined, the least squares solution argument "
+              "text": ", the function returns the least squares solution "
             },
             {
               "type": "emphasis",
@@ -797,12 +808,7 @@
             },
             {
               "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": " "
-                }
-              ]
+              "inlineContent": []
             },
             {
               "type": "emphasis",
@@ -842,7 +848,7 @@
             },
             {
               "type": "text",
-              "text": " is returned."
+              "text": " for overdetermined systems."
             }
           ]
         },
@@ -851,7 +857,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In the case of a factorization of type "
+              "text": "If the factorization is "
             },
             {
               "type": "reference",
@@ -860,7 +866,7 @@
             },
             {
               "type": "text",
-              "text": ", the factorization is in fact of "
+              "text": ", the factorization is of "
             },
             {
               "type": "emphasis",
@@ -891,7 +897,7 @@
             },
             {
               "type": "text",
-              "text": ", so the solution returned is for the system "
+              "text": ", and the solution that returns is for the system "
             },
             {
               "type": "emphasis",
@@ -930,7 +936,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

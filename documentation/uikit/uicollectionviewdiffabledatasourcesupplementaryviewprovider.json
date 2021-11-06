@@ -36,25 +36,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UICollectionViewDiffableDataSourceSupplementaryViewProvider",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -181,16 +186,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -276,6 +271,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -296,7 +292,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The collection view for which this supplementary view is being configured."
+                  "text": "The collection view to configure this supplementary view for. "
                 }
               ]
             }
@@ -310,7 +306,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The kind of supplementary view to provide. The value of this string is defined by the layout object that supports the supplementary view."
+                  "text": "The kind of supplementary view to provide. The layout object that supports the supplementary view defines the value of this string. "
                 }
               ]
             }
@@ -346,7 +342,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A configured supplementary view object, or "
+              "text": "A non-"
             },
             {
               "type": "codeVoice",
@@ -354,19 +350,15 @@
             },
             {
               "type": "text",
-              "text": " if no supplementary view can be generated for the specified element kind and index path."
+              "text": " configured supplementary view object. The supplementary view provider must return a valid view object to the collection view."
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

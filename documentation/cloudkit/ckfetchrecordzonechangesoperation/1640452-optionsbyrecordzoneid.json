@@ -11,8 +11,9 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation"
+        "doc://com.apple.documentation/documentation/cloudkit/remote_records",
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/deprecated_symbols"
       ]
     ]
   },
@@ -36,44 +37,54 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "12.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
         "deprecatedAt": "10.14",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
         "deprecatedAt": "5.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CKFetchRecordZoneChangesOperation(py)optionsByRecordZoneID",
+    "parent": {
+      "title": "CKFetchRecordZoneChangesOperation"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,10 +119,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations": {
-      "title": "Record Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-      "url": "/documentation/cloudkit/record_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/remote_records": {
+      "title": "Remote Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/remote_records",
+      "url": "/documentation/cloudkit/remote_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -130,19 +141,21 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/deprecated_symbols",
+      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/2980664-configurationsbyrecordzoneid": {
       "title": "configurationsByRecordZoneID",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/2980664-configurationsbyrecordzoneid",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation/2980664-configurationsbyrecordzoneid",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A dictionary of configurations for fetching change operations by zone identifier."
-        }
-      ]
+      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation/2980664-configurationsbyrecordzoneid"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoptions": {
       "title": "CKFetchRecordZoneChangesOptions",
@@ -150,14 +163,7 @@
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoptions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A configuration object that describes the information to fetch from a record zone."
-        }
-      ],
-      "deprecated": true
+      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoptions"
     },
     "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
       "title": "NSDictionary",
@@ -174,48 +180,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/cloudkit/ckrecordzoneid"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesconfiguration": {
-      "title": "CKFetchRecordZoneChangesConfiguration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesconfiguration",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchrecordzonechangesconfiguration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A configuration object that describes the information to fetch from a record zone."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640386-fetchallchanges": {
-      "title": "fetchAllChanges",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640386-fetchallchanges",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640386-fetchallchanges",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether to send repeated requests to the server."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640463-recordzoneids": {
-      "title": "recordZoneIDs",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640463-recordzoneids",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640463-recordzoneids",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The IDs of the record zones that contain the records to fetch."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640452-optionsbyrecordzoneid": {
       "title": "optionsByRecordZoneID",
@@ -258,29 +222,6 @@
           "text": " instead."
         }
       ]
-    }
-  ],
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/2980664-configurationsbyrecordzoneid",
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesconfiguration",
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640386-fetchallchanges",
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640463-recordzoneids",
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoptions"
-      ],
-      "title": "Configuring the Zone Change Operation",
-      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -341,6 +282,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -380,7 +322,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Boolean value that indicates whether or not to show the item in the large content viewer."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -30,20 +36,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UILargeContentViewerItem(py)showsLargeContentViewer",
+    "parent": {
+      "title": "UILargeContentViewerItem"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,7 +106,36 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentvieweritem"
+      "url": "/documentation/uikit/uilargecontentvieweritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods that provide details about how to display your custom content in the large content viewer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteraction": {
+      "title": "UILargeContentViewerInteraction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilargecontentviewerinteraction"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer": {
+      "title": "showsLargeContentViewer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether or not to show the item in the large content viewer."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -138,14 +181,44 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For this property to take effect, the item or an ancestor view must have a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteraction"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

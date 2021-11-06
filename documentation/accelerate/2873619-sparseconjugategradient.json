@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a conjugate gradient method."
+      "text": "Returns a conjugate gradient (CG) method."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseConjugateGradient#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,27 +119,13 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparseiterativemethod": {
-      "title": "SparseIterativeMethod",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseiterativemethod",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparseiterativemethod"
-    },
     "doc://com.apple.documentation/documentation/accelerate/2873536-sparsegmres": {
       "title": "SparseGMRES",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/accelerate/2873536-sparsegmres",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/2873536-sparsegmres",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a generalized minimal residual method with specified options."
-        }
-      ]
+      "url": "/documentation/accelerate/2873536-sparsegmres"
     },
     "doc://com.apple.documentation/documentation/accelerate/2875494-sparselsmr": {
       "title": "SparseLSMR",
@@ -142,13 +133,15 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/2875494-sparselsmr",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/2875494-sparselsmr",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a least squares minimum residual method with specified options."
-        }
-      ]
+      "url": "/documentation/accelerate/2875494-sparselsmr"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseiterativemethod": {
+      "title": "SparseIterativeMethod",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseiterativemethod",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseiterativemethod"
     },
     "doc://com.apple.documentation/documentation/accelerate/2873619-sparseconjugategradient": {
       "title": "SparseConjugateGradient",
@@ -160,7 +153,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a conjugate gradient method."
+          "text": "Returns a conjugate gradient (CG) method."
         }
       ]
     },
@@ -174,7 +167,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a conjugate gradient method with specified options."
+          "text": "Returns a conjugate gradient (CG) method with specified options."
         }
       ]
     },
@@ -188,63 +181,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Options for creating a conjugate gradient method."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2873539-sparsegmres": {
-      "title": "SparseGMRES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2873539-sparsegmres",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2873539-sparsegmres",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a generalized minimal residual method."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparsegmresoptions": {
-      "title": "SparseGMRESOptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsegmresoptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsegmresoptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Options for creating a generalized minimal residual method."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2875522-sparselsmr": {
-      "title": "SparseLSMR",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875522-sparselsmr",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2875522-sparselsmr",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a default least squares minimum residual method."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions": {
-      "title": "SparseLSMROptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparselsmroptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Options for creating a least squares minimum residual method."
+          "text": "Options for creating a conjugate gradient (CG) method."
         }
       ]
     },
@@ -260,15 +197,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/2873527-sparseconjugategradient",
-        "doc://com.apple.documentation/documentation/accelerate/sparsecgoptions",
-        "doc://com.apple.documentation/documentation/accelerate/2873539-sparsegmres",
-        "doc://com.apple.documentation/documentation/accelerate/2873536-sparsegmres",
-        "doc://com.apple.documentation/documentation/accelerate/sparsegmresoptions",
-        "doc://com.apple.documentation/documentation/accelerate/2875522-sparselsmr",
-        "doc://com.apple.documentation/documentation/accelerate/2875494-sparselsmr",
-        "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions"
+        "doc://com.apple.documentation/documentation/accelerate/sparsecgoptions"
       ],
-      "title": "Sparse Iterative Methods",
+      "title": "Sparse Iterative Methods for Symmetric Positive-Definite Coefficient Matrices",
       "generated": true
     }
   ],
@@ -310,6 +241,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -341,7 +273,7 @@
             },
             {
               "type": "text",
-              "text": " structure representing a default conjugate gradient method."
+              "text": " structure that represents a default conjugate gradient method."
             }
           ]
         }
@@ -387,7 +319,7 @@
             },
             {
               "type": "text",
-              "text": " is symmetric positive-definite. (The method may break down or fail to converge if "
+              "text": " is symmetric positive-definite. The method may break down or fail to converge if "
             },
             {
               "type": "emphasis",
@@ -400,7 +332,7 @@
             },
             {
               "type": "text",
-              "text": " is not positive-definite.)"
+              "text": " isn’t positive-definite."
             }
           ]
         },
@@ -418,7 +350,7 @@
             },
             {
               "type": "text",
-              "text": " instead. For rectangular or singular systems, use "
+              "text": ". For rectangular or singular systems, use "
             },
             {
               "type": "reference",
@@ -435,7 +367,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

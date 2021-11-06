@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Instructs the receiver to invoke a block repeatedly, at its convenience, to gather media data for writing to the output."
+      "text": "Tells the input to request media data, at its convenience, to write to the output file."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInput(im)requestMediaDataWhenReadyOnQueue:usingBlock:",
+    "parent": {
+      "title": "AVAssetWriterInput"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,9 +128,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput": {
+      "title": "AVAssetReaderOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetreaderoutput"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata": {
       "title": "readyForMoreMediaData",
@@ -134,7 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates the readiness of the input to accept more media data."
+          "text": "A Boolean value that indicates whether the input is ready to accept media data."
         }
       ]
     },
@@ -156,7 +172,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the writer it can't append more buffers to this input."
+          "text": "Marks the input as finished to indicate that you’re done appending samples to it."
         }
       ],
       "fragments": [
@@ -170,13 +186,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue#2555994": {
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue#3875712": {
       "title": "Listing 1",
       "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue#2555994",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue#3875712",
       "kind": "article",
       "role": "codeListing",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue#2555994"
+      "url": "/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue#3875712"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcaptureaudiodataoutput": {
       "title": "AVCaptureAudioDataOutput",
@@ -194,14 +210,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avcapturevideodataoutput"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput": {
-      "title": "AVAssetReaderOutput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetreaderoutput"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer": {
       "title": "appendSampleBuffer:",
       "type": "topic",
@@ -212,7 +220,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Appends samples to the receiver."
+          "text": "Appends a sample buffer to an input to write to the output file."
         }
       ],
       "fragments": [
@@ -226,22 +234,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime": {
-      "title": "expectsMediaDataInRealTime",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
     "doc://com.apple.documentation/documentation/dispatch/dispatch_queue_t": {
       "title": "dispatch_queue_t",
       "type": "topic",
@@ -249,6 +241,20 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/dispatch/dispatch_queue_t"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime": {
+      "title": "expectsMediaDataInRealTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the input tailors its processing for real-time sources."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue": {
       "title": "requestMediaDataWhenReadyOnQueue:usingBlock:",
@@ -260,7 +266,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Instructs the receiver to invoke a block repeatedly, at its convenience, to gather media data for writing to the output."
+          "text": "Tells the input to request media data, at its convenience, to write to the output file."
         }
       ],
       "fragments": [
@@ -285,11 +291,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390122-markasfinished"
       ],
-      "title": "Adding Media Samples",
+      "title": "Appending Media Samples",
       "generated": true
     }
   ],
@@ -379,6 +386,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -400,15 +408,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The queue on which "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "block"
-                },
-                {
-                  "type": "text",
-                  "text": " should be invoked."
+                  "text": "The queue on which the system invokes the callback."
                 }
               ]
             }
@@ -422,7 +422,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The block the input should invoke to obtain media data."
+                  "text": "A callback that the input invokes to retrieve additional media data."
                 }
               ]
             }
@@ -444,7 +444,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The block should append media data to the input either until the input’s "
+              "text": "Use this method when working with pull-style buffer sources, such as an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput"
+            },
+            {
+              "type": "text",
+              "text": ". The callback you provide appends media data to the input until its "
             },
             {
               "type": "reference",
@@ -462,7 +471,7 @@
             },
             {
               "type": "text",
-              "text": " or until there is no more media data to supply (at which point it may choose to mark the input as finished using "
+              "text": ", or when there’s no more media data to process (at which point you may mark the input as finished by calling its "
             },
             {
               "type": "reference",
@@ -471,51 +480,30 @@
             },
             {
               "type": "text",
-              "text": "). The block should then exit. After the block exits, if the input has not been marked as finished, once the input has processed the media data it has received and becomes ready for more media data again, it will invoke the block again in order to obtain more."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "A typical use of this method, with a block that supplies media data to an input while respecting the input’s "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata"
-            },
-            {
-              "type": "text",
-              "text": " property, might look like this:"
+              "text": " method). If you don’t mark the input as finished, after the input processes the media data and becomes ready for more, it invokes the callback again to append more data. The example below shows a typical callback implementation."
             }
           ]
         },
         {
           "type": "codeListing",
           "code": [
-            "[myAVAssetWriterInput requestMediaDataWhenReadyOnQueue:myInputSerialQueue usingBlock:^{",
-            "        while ([myAVAssetWriterInput isReadyForMoreMediaData])",
-            "        {",
-            "            CMSampleBufferRef nextSampleBuffer = [self copyNextSampleBufferToWrite];",
-            "            if (nextSampleBuffer)",
-            "            {",
-            "                [myAVAssetWriterInput appendSampleBuffer:nextSampleBuffer];",
-            "                CFRelease(nextSampleBuffer);",
-            "            }",
-            "            else",
-            "            {",
-            "                [myAVAssetWriterInput markAsFinished];",
-            "                break;",
-            "            }",
+            "assetWriterInput.requestMediaDataWhenReady(on: serialQueue) { [weak self] in",
+            "    guard let self = self else { return }",
+            "    while self.assetWriterInput.isReadyForMoreMediaData {",
+            "        // Copy the next sample buffer from source media.",
+            "        guard let nextSampleBuffer = copyNextSampleBufferToWrite() else {",
+            "            // Mark the input as finished.",
+            "            self.assetWriterInput.markAsFinished()",
+            "            break",
             "        }",
-            "    }];"
+            "        // Append the sample buffer to the input.",
+            "        self.assetWriterInput.append(nextSampleBuffer)",
+            "    }",
+            "}"
           ],
-          "syntax": "occ",
+          "syntax": "swift",
           "metadata": {
-            "anchor": "2555994",
+            "anchor": "3875712",
             "title": "Listing 1"
           }
         },
@@ -524,7 +512,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You should not use this method with a push-style buffer source, such as "
+              "text": "When working with push-style sources, such as an "
             },
             {
               "type": "reference",
@@ -542,25 +530,7 @@
             },
             {
               "type": "text",
-              "text": ", because such a combination will typically require intermediate queueing of buffers. Instead, this method is better suited to a pull-style buffer source such as an "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput"
-            },
-            {
-              "type": "text",
-              "text": " object."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "When using a push-style buffer source, it is generally better to immediately append each buffer to the asset writer input, directly as it is received using "
+              "text": ", append buffers directly to the asset writer input when you receive them using its "
             },
             {
               "type": "reference",
@@ -569,33 +539,19 @@
             },
             {
               "type": "text",
-              "text": ". Using this strategy, it is often possible to avoid having to queue up buffers in between the buffer source and the asset writer input. Note that many of these push-style buffer sources also produce buffers in real-time, in which case you should set "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime"
-            },
-            {
-              "type": "text",
-              "text": " to "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": " method. Using this method helps avoid having to queue up buffers in between the buffer source and the asset writer input."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

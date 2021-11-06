@@ -1,0 +1,629 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Implement Mac software updates without causing code-signing crashes."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/updating_mac_software",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3878120,
+  "kind": "article",
+  "metadata": {
+    "title": "Updating Mac Software",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/updating_mac_software"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/updating_mac_software"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/updating_mac_software#3894703": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/updating_mac_software#3894703",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/updating_mac_software#3894703"
+    },
+    "doc://com.apple.documentation/documentation/security/updating_mac_software#3894704": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/updating_mac_software#3894704",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/updating_mac_software#3894704"
+    },
+    "doc://com.apple.documentation/documentation/security/updating_mac_software#3878117": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/updating_mac_software#3878117",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/updating_mac_software#3878117"
+    },
+    "doc://com.apple.documentation/documentation/security/updating_mac_software#3878119": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/updating_mac_software#3878119",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/updating_mac_software#3878119"
+    },
+    "doc://com.apple.documentation/documentation/security/code_signing_services": {
+      "title": "Code Signing Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/code_signing_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/code_signing_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Examine and validate signed code running on the system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution": {
+      "title": "Notarizing macOS Software Before Distribution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Give users even more confidence in your macOS software by submitting it to Apple for notarization."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/preparing_your_app_to_work_with_pointer_authentication": {
+      "title": "Preparing Your App to Work with Pointer Authentication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/preparing_your_app_to_work_with_pointer_authentication",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/preparing_your_app_to_work_with_pointer_authentication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Test your app against the arm64e architecture to ensure that it works seamlessly with enhanced security features."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/app_sandbox": {
+      "title": "App Sandbox",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/app_sandbox",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/app_sandbox",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Restrict access to system resources and user data in macOS apps to contain damage if an app becomes compromised."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/hardened_runtime": {
+      "title": "Hardened Runtime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/hardened_runtime",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/hardened_runtime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage security protections and resource access for your macOS apps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/disabling_and_enabling_system_integrity_protection": {
+      "title": "Disabling and Enabling System Integrity Protection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/disabling_and_enabling_system_integrity_protection",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/disabling_and_enabling_system_integrity_protection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disable system protections only temporarily during development to test drivers, kernel extensions, and other low-level code."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/updating_mac_software": {
+      "title": "Updating Mac Software",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/updating_mac_software",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/updating_mac_software",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement Mac software updates without causing code-signing crashes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/code_signing_services",
+        "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution",
+        "doc://com.apple.documentation/documentation/security/preparing_your_app_to_work_with_pointer_authentication",
+        "doc://com.apple.documentation/documentation/security/app_sandbox",
+        "doc://com.apple.documentation/documentation/security/hardened_runtime",
+        "doc://com.apple.documentation/documentation/security/disabling_and_enabling_system_integrity_protection"
+      ],
+      "title": "Secure Code",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Many Mac software products include a software updater. For example:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An app might ask the user whether they want to download and install the latest version."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An enterprise IT department might install a daemon that updates the enterprise’s custom software each night."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you write a software updater in the simplest way, you run the risk of a hard-to-reproduce crash in the newly updated software. The symptoms of this problem are:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Some seemingly random part of the updated code crashes."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The associated crash report includes the message "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Code Signature Invalid"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The problem goes away when you restart the Mac."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Apple software-update mechanisms, such as the App Store updater, the Installer app, and the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "installer"
+                },
+                {
+                  "type": "text",
+                  "text": " command-line tool, aren’t susceptible to this code-signing crash."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Update Files that Include Signed Code",
+          "anchor": "3894705"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Imagine code that downloads an update for a command-line tool. The final step of that process might look like this:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "import System",
+            "import Darwin",
+            "",
+            "// Do not do this. Modifying signed code in place puts you at risk of a ",
+            "// code-signing crash.",
+            "",
+            "func updateToolBadly(at executablePath: String, with newContents: [UInt8]) throws {",
+            "    let fd = try FileDescriptor.open(executablePath, .writeOnly, options: [.truncate])",
+            "    defer {",
+            "        try! fd.close()",
+            "    }",
+            "    try fd.writeAll(newContents)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3894703",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This code is incorrect because it modifies the command-line tool’s executable file in place. macOS caches information about the code’s signature in the kernel. It doesn’t flush that cache when you modify the file’s contents. Modifying the file in place yields a mismatch between the file’s contents and the in-kernel cache, which can cause a hard-to-reproduce code-signing crash the next time you run the tool."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "While this example uses a command-line tool to demonstrate the issue, updating any file that contains signed code might trigger this code-signing crash. That includes executables, frameworks, dynamic libraries, and bundles."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To update a file that contains signed code without risking this crash, write the updated code to a temporary file and replace the existing file with that temporary one:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func updateTool(at executablePath: String, with newContents: [UInt8], temporaryPath: String) throws {",
+            "    do {",
+            "        let permissions: FilePermissions = [[.ownerReadWriteExecute, .groupReadExecute, .otherReadExecute]]",
+            "        let fd = try FileDescriptor.open(temporaryPath, .writeOnly, options: [.create], permissions: permissions)",
+            "        defer {",
+            "            try! fd.close()",
+            "        }",
+            "        try fd.writeAll(newContents)",
+            "    }",
+            "    let success = rename(temporaryPath, executablePath) >= 0",
+            "    guard success else { throw Errno(rawValue: errno) }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3894704",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using a temporary file eliminates the risk of a code-signing crash because the in-kernel cache is associated with the old file, which remains unmodified. The new file gets its own in-kernel cache, built from the contents of that new file."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Check Third-Party Software Updaters",
+          "anchor": "3878121"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you wrote the code for your software updater, use the techniques discussed above to identify and correct this potential code-signing issue. You can also check software updater code that you didn’t write by running "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ls"
+            },
+            {
+              "type": "text",
+              "text": " with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "-i"
+            },
+            {
+              "type": "text",
+              "text": " option before and after the update, to see whether the inode number changes. For example, imagine you’re installing an update using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "cp"
+            },
+            {
+              "type": "text",
+              "text": " and your want to update "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyTool"
+            },
+            {
+              "type": "text",
+              "text": " with a new version, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyTool-new"
+            },
+            {
+              "type": "text",
+              "text": ". Run the following, to test whether this exposes you to a code-signing crash:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% ls -i MyTool",
+            "78290841 MyTool",
+            "% cp MyTool-new MyTool",
+            "% ls -i MyTool  ",
+            "78290841 MyTool"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3878117",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that the inode number didn’t change, which indicates that "
+            },
+            {
+              "type": "codeVoice",
+              "code": "cp"
+            },
+            {
+              "type": "text",
+              "text": " modified the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyTool"
+            },
+            {
+              "type": "text",
+              "text": " file in place. This puts you at risk of a code-signing crash the next time you run "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyTool"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Now, repeat the test, but use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ditto"
+            },
+            {
+              "type": "text",
+              "text": " in place of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "cp"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% ls -i MyTool",
+            "78290841 MyTool",
+            "% ditto MyTool-new MyTool",
+            "% ls -i MyTool  ",
+            "78413900 MyTool"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3878119",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This time, the inode number changed. This change indicates that "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ditto"
+            },
+            {
+              "type": "text",
+              "text": " replaced the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyTool"
+            },
+            {
+              "type": "text",
+              "text": " file with an entirely new file, and thus avoided this potential code-signing crash."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

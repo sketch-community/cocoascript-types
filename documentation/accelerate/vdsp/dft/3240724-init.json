@@ -48,36 +48,58 @@
     "platforms": [
       {
         "name": "iOS",
-        "introducedAt": "14.0",
-        "current": "14.3"
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
-        "introducedAt": "10.9",
-        "current": "11.1"
+        "introducedAt": "10.15",
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
-        "introducedAt": "14.0",
-        "current": "14.3"
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
-        "introducedAt": "7.0",
-        "current": "7.2"
+        "introducedAt": "6.0",
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "deprecatedAt": "13.0",
+        "current": "13.2",
+        "deprecated": true
       }
     ],
     "externalID": "s:10Accelerate4vDSPO3DFTC8previous5count9direction13transformType02ofH0AEy_xGSgAL_SiAC25FourierTransformDirectionOAC012DFTTransformH0Oxmtcfc",
+    "parent": {
+      "title": "vDSP.DFT"
+    },
     "symbolKind": "instctr",
     "fragments": [
       {
@@ -131,8 +153,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -264,7 +286,16 @@
             },
             {
               "kind": "text",
-              "text": "<T>?"
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3DFTC1Txmfp",
+              "text": "T"
+            },
+            {
+              "kind": "text",
+              "text": ">?"
             },
             {
               "kind": "text",
@@ -357,8 +388,13 @@
               "text": ": "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3DFTC1Txmfp",
+              "text": "T"
+            },
+            {
               "kind": "text",
-              "text": "T.Type"
+              "text": ".Type"
             },
             {
               "kind": "text",
@@ -367,6 +403,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -377,7 +414,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

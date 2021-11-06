@@ -35,18 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -133,6 +133,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color": {
+      "title": "Evaluating an App’s Video Color",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant": {
+      "title": "AVOutputSettingsAssistant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingsassistant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that builds audio and video output settings dictionaries."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
       "title": "AVAssetWriter",
       "type": "topic",
@@ -143,21 +171,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
-      "title": "AVAssetWriterDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterdelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A delegate protocol that defines the methods to implement to be an asset writer delegate."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -171,7 +185,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -185,7 +199,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+          "text": "An object that appends video samples to an asset writer input."
         }
       ]
     },
@@ -199,7 +213,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
+          "text": "An object that appends timed metadata groups to an asset writer input."
         }
       ]
     },
@@ -213,14 +227,14 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A group of tracks in a mutually exclusive relationship."
+          "text": "A group of inputs with tracks that are mutually exclusive to each other for playback or processing."
         }
       ]
     },
     "https://docs-assets.developer.apple.com/published/4c5556112d/WritingFragmentedMPEG4FilesForHTTPLiveStreaming.zip": {
       "type": "download",
       "identifier": "https://docs-assets.developer.apple.com/published/4c5556112d/WritingFragmentedMPEG4FilesForHTTPLiveStreaming.zip",
-      "checksum": "9ace1f1d0a2390bfadd9ae92e85543388cbb243c797197fa43ff9f0c3645e3b1fa25a4fd1c608844ca39137f3ff35960fa74ee4d87c50696eeb54f0f354a1aba",
+      "checksum": "5074f60c509166106b48d74d708afb11ee78558199979ccc7c3484c33498c28909d280719e7205338095d433a5485320ef8f7953fb7dbc2112837716235cef90",
       "url": "https://docs-assets.developer.apple.com/published/4c5556112d/WritingFragmentedMPEG4FilesForHTTPLiveStreaming.zip"
     },
     "doc://com.apple.documentation/documentation/technologies": {
@@ -243,8 +257,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor",
@@ -407,7 +422,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

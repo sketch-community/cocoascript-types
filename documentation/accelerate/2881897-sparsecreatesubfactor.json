@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns an opaque object representing a subfactor of a factorization of a matrix of single-precision values."
+      "text": "Returns an opaque object that represents a subfactor of a factorization of a matrix of single-precision values."
     }
   ],
   "documentVersion": 0,
@@ -12,8 +12,7 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_extraction"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions"
       ]
     ]
   },
@@ -36,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseCreateSubfactor#$@EA@SparseSubfactor_t#$@SA@SparseOpaqueFactorization_Float#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,37 +111,21 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions": {
+      "title": "Subfactor Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/subfactor_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_extraction": {
-      "title": "Subfactor Extraction",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_extraction",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_extraction",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float": {
-      "title": "SparseOpaqueSubfactor_Float",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparseopaquesubfactor_float"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2881904-sparsecleanup": {
+    "doc://com.apple.documentation/documentation/accelerate/2881917-sparsecleanup": {
       "title": "SparseCleanup",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881904-sparsecleanup",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881917-sparsecleanup",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/2881904-sparsecleanup"
+      "url": "/documentation/accelerate/2881917-sparsecleanup"
     },
     "doc://com.apple.documentation/documentation/accelerate/sparsesubfactor_t": {
       "title": "SparseSubfactor_t",
@@ -145,7 +133,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesubfactor_t",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparsesubfactor_t"
+      "url": "/documentation/accelerate/sparsesubfactor_t",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that define the subfactor of a factorization."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float": {
       "title": "SparseOpaqueFactorization_Float",
@@ -157,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure representing the factorization of a matrix of single-precision, floating-point values."
+          "text": "A structure that represents the factorization of a matrix of single-precision, floating-point values."
         }
       ]
     },
@@ -171,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an opaque object representing a subfactor of a factorization of a matrix of double-precision values."
+          "text": "Returns an opaque object that represents a subfactor of a factorization of a matrix of double-precision values."
         }
       ]
     },
@@ -185,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure representing the factorization of a matrix of double-precision, floating-point values."
+          "text": "A structure that represents the factorization of a matrix of double-precision, floating-point values."
         }
       ]
     },
@@ -199,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an opaque object representing a subfactor of a factorization of a matrix of single-precision values."
+          "text": "Returns an opaque object that represents a subfactor of a factorization of a matrix of single-precision values."
         }
       ]
     },
@@ -214,6 +208,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/sparsesubfactor_t",
         "doc://com.apple.documentation/documentation/accelerate/2881911-sparsecreatesubfactor",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float"
@@ -234,7 +229,7 @@
             {
               "kind": "typeIdentifier",
               "preciseIdentifier": "c:@T@SparseOpaqueSubfactor_Float",
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float",
+              "identifier": "symbol-2881992",
               "text": "SparseOpaqueSubfactor_Float"
             },
             {
@@ -272,6 +267,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -308,7 +304,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The factorization from which to extract the subfactor."
+                  "text": "The factorization to extract the subfactor from."
                 }
               ]
             }
@@ -333,22 +329,21 @@
               "text": "A "
             },
             {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float"
+              "type": "codeVoice",
+              "code": "SparseOpaqueSubfactor_Float"
             },
             {
               "type": "text",
-              "text": " structure representing the subfactor. The resource must be freed through a call to "
+              "text": " structure that represents the subfactor. You must free the resource through a call to "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/2881904-sparsecleanup"
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/2881917-sparsecleanup"
             },
             {
               "type": "text",
-              "text": " once you are finished with the object."
+              "text": " after you finish with the object."
             }
           ]
         }
@@ -356,7 +351,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

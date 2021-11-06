@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A structure that specifies the types of activity item previews."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -15,6 +21,20 @@
         "doc://com.apple.documentation/documentation/uikit/interprocess_communication",
         "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/view_controllers",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/interprocess_communication",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityviewcontroller",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading"
       ]
     ]
   },
@@ -37,20 +57,25 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UIActivityItemsConfigurationPreviewIntent",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -117,6 +142,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading": {
+      "title": "UIActivityItemsConfigurationReading",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationreading",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
       "type": "topic",
@@ -131,7 +164,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationpreviewintentfullsize",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationpreviewintentfullsize"
+      "url": "/documentation/uikit/uiactivityitemsconfigurationpreviewintentfullsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A full-size preview image."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationpreviewintentthumbnail": {
       "title": "UIActivityItemsConfigurationPreviewIntentThumbnail",
@@ -139,7 +178,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationpreviewintentthumbnail",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationpreviewintentthumbnail"
+      "url": "/documentation/uikit/uiactivityitemsconfigurationpreviewintentthumbnail",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A thumbnail preview image."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368127-previewprovider": {
       "title": "previewProvider",
@@ -147,7 +192,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368127-previewprovider",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368127-previewprovider"
+      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368127-previewprovider",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A closure that provides previews for the activity items."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationpreviewintent": {
       "title": "UIActivityItemsConfigurationPreviewIntent",
@@ -155,7 +206,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationpreviewintent",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationpreviewintent"
+      "url": "/documentation/uikit/uiactivityitemsconfigurationpreviewintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that specifies the types of activity item previews."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -168,11 +225,12 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Type Properties",
+      "title": "Constants",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationpreviewintentfullsize",
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationpreviewintentthumbnail"
-      ]
+      ],
+      "anchor": "3678156"
     }
   ],
   "seeAlsoSections": [
@@ -222,6 +280,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -229,7 +288,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

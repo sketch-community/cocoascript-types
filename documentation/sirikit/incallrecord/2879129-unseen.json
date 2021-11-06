@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INCallRecord(py)unseen",
+    "parent": {
+      "title": "INCallRecord"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -206,22 +214,40 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727277-participants": {
+      "title": "participants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727277-participants",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecord/3727277-participants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The recipient of the user’s call request."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727276-iscalleridblocked": {
+      "title": "isCallerIdBlocked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727276-iscalleridblocked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecord/3727276-iscalleridblocked",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value indicating if user’s callerID is showing during a call."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -232,7 +258,9 @@
         "doc://com.apple.documentation/documentation/sirikit/incallcapability",
         "doc://com.apple.documentation/documentation/sirikit/incallrecord/2873324-datecreated",
         "doc://com.apple.documentation/documentation/sirikit/incallrecord/2879128-callduration",
-        "doc://com.apple.documentation/documentation/sirikit/incallrecord/3113793-numberofcalls"
+        "doc://com.apple.documentation/documentation/sirikit/incallrecord/3113793-numberofcalls",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727277-participants",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727276-iscalleridblocked"
       ],
       "title": "Getting the Call Details",
       "generated": true
@@ -276,6 +304,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -284,7 +313,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

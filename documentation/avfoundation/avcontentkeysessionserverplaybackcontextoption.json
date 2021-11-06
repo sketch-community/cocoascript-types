@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "12.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.2",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.14.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "12.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "5.2",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVContentKeySessionServerPlaybackContextOption",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Specifies the versions of the content protection protocol supported by the application."
+          "text": "Specifies the versions of the content protection protocols supported by the application."
         }
       ]
     },
@@ -146,25 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Specifies a nonce to be included in the secure server playback context (SPC) in order to prevent replay attacks."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk": {
-      "title": "invalidateAllPersistableContentKeysForApp:options:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "invalidateAllPersistableContentKeysForApp:options:completionHandler:"
+          "text": "Specifies a nonce to include in the secure server playback context (SPC) to prevent replay attacks."
         }
       ]
     },
@@ -175,6 +162,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invalidates the persistable content key and creates a secure server playback context (SPC) to verify the outcome of an invalidation request."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -183,6 +176,30 @@
         {
           "kind": "identifier",
           "text": "invalidatePersistableContentKey:options:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk": {
+      "title": "invalidateAllPersistableContentKeysForApp:options:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invalidates all of an app’s persistable content keys and creates a secure server playback context (SPC) to verify the outcome of an invalidation request. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "invalidateAllPersistableContentKeysForApp:options:completionHandler:"
         }
       ]
     },
@@ -215,14 +232,15 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoptionprotocolversions",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoptionserverchallenge"
-      ]
+      ],
+      "anchor": "3584042"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey"
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk"
       ],
       "title": "Invalidating Content Keys",
       "generated": true
@@ -266,6 +284,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -276,7 +295,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

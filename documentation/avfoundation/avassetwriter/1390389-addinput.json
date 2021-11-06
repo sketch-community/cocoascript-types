@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Adds an input to the receiver."
+      "text": "Adds an input to an asset writer."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter(im)addInput:",
+    "parent": {
+      "title": "AVAssetWriter"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,31 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput": {
-      "title": "canAddInput:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387863-canaddinput",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value that indicates whether the receiver can add a given input."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "canAddInput:"
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -166,7 +150,69 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset writer inputs associated with the asset writer."
+          "text": "The inputs an asset writer contains."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes": {
+      "title": "availableMediaTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388730-availablemediatypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The media types the asset writer supports adding as inputs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings": {
+      "title": "canApplyOutputSettings:forMediaType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the output file format supports the output settings for a specific media type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canApplyOutputSettings:forMediaType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput": {
+      "title": "canAddInput:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387863-canaddinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the asset writer supports adding the input."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canAddInput:"
         }
       ]
     },
@@ -180,7 +226,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Adds an input to the receiver."
+          "text": "Adds an input to an asset writer."
         }
       ],
       "fragments": [
@@ -206,9 +252,11 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput"
       ],
-      "title": "Managing Inputs",
+      "title": "Configuring Inputs",
       "generated": true
     }
   ],
@@ -266,6 +314,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -287,7 +336,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The asset writer input to be added."
+                  "text": "A compatible asset writer input to add."
                 }
               ]
             }
@@ -309,22 +358,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Inputs are created with a media type and output settings. These both must be compatible with the receiver."
-            }
-          ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Special Considerations",
-          "anchor": "1677826"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "You cannot add inputs after writing has started."
+              "text": "You can’t add inputs after asset writing begins."
             }
           ]
         }
@@ -332,7 +366,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted whenever a persistent store is removed from a persistent store coordinator."
+      "text": "A notification that posts immediately before a coordinator removes a persistent store."
     }
   ],
   "documentVersion": 0,
@@ -50,30 +50,38 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@NSPersistentStoreCoordinatorWillRemoveStoreNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -91,8 +99,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -191,13 +199,89 @@
       "role": "symbol",
       "url": "/documentation/coredata/nspersistentstore/1506731-willremove"
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/user_info_keys_for_store_change_notifications": {
-      "title": "User Info Keys for Store Change Notifications",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave": {
+      "title": "NSManagedObjectContextDidSave",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/user_info_keys_for_store_change_notifications",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/user_info_keys_for_store_change_notifications"
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that the context completed a save."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSManagedObjectContextDidSave"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid": {
+      "title": "NSManagedObjectContextObjectsDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification of changes made to managed objects associated with this context."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSManagedObjectContextObjectsDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506816-nsmanagedobjectcontextwillsave": {
+      "title": "NSManagedObjectContextWillSave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506816-nsmanagedobjectcontextwillsave",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1506816-nsmanagedobjectcontextwillsave",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that the context is about to save."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSManagedObjectContextWillSave"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468925-nspersistentstorecoordinatorstor": {
       "title": "NSPersistentStoreCoordinatorStoresDidChange",
@@ -209,7 +293,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever persistent stores are added to or removed from a persistent store coordinator, or when store UUIDs change."
+          "text": "A notification that posts when a coordinator adds, removes, or updates a persistent store."
         }
       ],
       "fragments": [
@@ -237,7 +321,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted before the list of open persistent stores changes."
+          "text": "A notification that posts immediately before the coordinator updates its collection of stores."
         }
       ],
       "fragments": [
@@ -265,7 +349,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever a persistent store is removed from a persistent store coordinator."
+          "text": "A notification that posts immediately before a coordinator removes a persistent store."
         }
       ],
       "fragments": [
@@ -283,6 +367,129 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3751987-nscoredatacorespotlightdelegatei": {
+      "title": "NSCoreDataCoreSpotlightDelegateIndexDidUpdate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3751987-nscoredatacorespotlightdelegatei",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3751987-nscoredatacorespotlightdelegatei",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSCoreDataCoreSpotlightDelegateIndexDidUpdate"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618796-nsmanagedobjectcontextdidmergech": {
+      "title": "NSManagedObjectContextDidMergeChangesObjectIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618796-nsmanagedobjectcontextdidmergech",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3618796-nsmanagedobjectcontextdidmergech",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSManagedObjectContextDidMergeChangesObjectIDs"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618797-nsmanagedobjectcontextdidsaveobj": {
+      "title": "NSManagedObjectContextDidSaveObjectIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618797-nsmanagedobjectcontextdidsaveobj",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3618797-nsmanagedobjectcontextdidsaveobj",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSManagedObjectContextDidSaveObjectIDs"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange": {
+      "title": "NSPersistentStoreRemoteChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that posts for all cross-process writes to a persistent store."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSPersistentStoreRemoteChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468792-nspersistentstoredidimportubiqui": {
+      "title": "NSPersistentStoreDidImportUbiquitousContentChanges",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468792-nspersistentstoredidimportubiqui",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1468792-nspersistentstoredidimportubiqui",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted after records are imported from the ubiquitous content store."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSPersistentStoreDidImportUbiquitousContentChanges"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -294,11 +501,18 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/user_info_keys_for_store_change_notifications",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1506816-nsmanagedobjectcontextwillsave",
         "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468925-nspersistentstorecoordinatorstor",
-        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468800-nspersistentstorecoordinatorstor"
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468800-nspersistentstorecoordinatorstor",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3751987-nscoredatacorespotlightdelegatei",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618796-nsmanagedobjectcontextdidmergech",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3618797-nsmanagedobjectcontextdidsaveobj",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1468792-nspersistentstoredidimportubiqui"
       ],
-      "title": "Adding, Removing, and Deleting Stores",
+      "title": "Core Data",
       "generated": true
     }
   ],
@@ -354,6 +568,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -401,7 +616,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

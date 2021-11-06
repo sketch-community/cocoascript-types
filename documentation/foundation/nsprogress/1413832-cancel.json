@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Cancel progress tracking."
+      "text": "Cancels progress tracking."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(im)cancel",
+    "parent": {
+      "title": "NSProgress"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
+          "text": "An object that conveys ongoing progress to the user for a specified task."
         }
       ]
     },
@@ -126,13 +134,7 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1408913-cancellationhandler",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1408913-cancellationhandler",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The block to invoke when progress is cancelled."
-        }
-      ]
+      "url": "/documentation/foundation/nsprogress/1408913-cancellationhandler"
     },
     "doc://com.apple.documentation/documentation/foundation/nsprogress/1414454-cancelled": {
       "title": "cancelled",
@@ -140,13 +142,7 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1414454-cancelled",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1414454-cancelled",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Indicates whether the receiver is tracking work that has been cancelled."
-        }
-      ]
+      "url": "/documentation/foundation/nsprogress/1414454-cancelled"
     },
     "doc://com.apple.documentation/documentation/objectivec/yes": {
       "title": "YES",
@@ -155,20 +151,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsprogress/1409348-cancellable": {
-      "title": "cancellable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1409348-cancellable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1409348-cancellable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Indicates whether the receiver is tracking work that can be cancelled."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsprogress/1413832-cancel": {
       "title": "cancel",
@@ -180,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Cancel progress tracking."
+          "text": "Cancels progress tracking."
         }
       ],
       "fragments": [
@@ -194,34 +176,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsprogress/1417421-pausable": {
-      "title": "pausable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1417421-pausable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1417421-pausable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Indicates whether the receiver is tracking work that can be paused."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsprogress/1415495-paused": {
-      "title": "paused",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1415495-paused",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1415495-paused",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Indicates whether the receiver is tracking work that has been paused."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsprogress/1412377-pause": {
       "title": "pause",
       "type": "topic",
@@ -232,7 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Pause progress tracking."
+          "text": "Pauses progress tracking."
         }
       ],
       "fragments": [
@@ -246,20 +200,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsprogress/1412873-pausinghandler": {
-      "title": "pausingHandler",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1412873-pausinghandler",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1412873-pausinghandler",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The block to invoke when progress is paused."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsprogress/1413616-resume": {
       "title": "resume",
       "type": "topic",
@@ -270,7 +210,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resume progress tracking."
+          "text": "Resumes progress tracking."
         }
       ],
       "fragments": [
@@ -294,7 +234,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The block to invoke when progress is resumed."
+          "text": "The block to invoke when progress resumes."
         }
       ]
     },
@@ -309,13 +249,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsprogress/1409348-cancellable",
-        "doc://com.apple.documentation/documentation/foundation/nsprogress/1414454-cancelled",
-        "doc://com.apple.documentation/documentation/foundation/nsprogress/1408913-cancellationhandler",
-        "doc://com.apple.documentation/documentation/foundation/nsprogress/1417421-pausable",
-        "doc://com.apple.documentation/documentation/foundation/nsprogress/1415495-paused",
         "doc://com.apple.documentation/documentation/foundation/nsprogress/1412377-pause",
-        "doc://com.apple.documentation/documentation/foundation/nsprogress/1412873-pausinghandler",
         "doc://com.apple.documentation/documentation/foundation/nsprogress/1413616-resume",
         "doc://com.apple.documentation/documentation/foundation/nsprogress/1410158-resuminghandler"
       ],
@@ -355,6 +289,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -377,7 +312,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This method invokes the block set for "
+              "text": "This method invokes the block for "
             },
             {
               "type": "reference",
@@ -413,7 +348,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the receiver has any children, those children will also be cancelled."
+              "text": "If the receiver has suboperations, the system cancels their progress as well. "
             }
           ]
         }
@@ -421,7 +356,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

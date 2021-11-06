@@ -1,11 +1,18 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The name of the caller."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/iobluetooth",
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants"
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants"
       ]
     ]
   },
@@ -28,20 +35,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
-      },
-      {
-        "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@IOBluetoothHandsFreeCallName",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -76,10 +78,18 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants": {
-      "title": "IOBluetooth Constants",
-      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetooth_constants",
-      "url": "/documentation/iobluetooth/iobluetooth_constants",
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate": {
+      "title": "IOBluetoothHandsFreeDeviceDelegate",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants": {
+      "title": "Current Call Information Constants",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -92,6 +102,48 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecallnumber": {
+      "title": "IOBluetoothHandsFreeCallNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecallnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreecallnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The caller’s phone number."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecalltype": {
+      "title": "IOBluetoothHandsFreeCallType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecalltype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreecalltype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the caller’s phone number."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecallname": {
+      "title": "IOBluetoothHandsFreeCallName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecallname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreecallname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name of the caller."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -100,6 +152,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecallnumber",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreecalltype"
+      ],
+      "title": "Remote Number Information",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -137,15 +199,14 @@
             }
           ],
           "platforms": [
-            "macOS",
-            "Mac Catalyst"
+            "macOS"
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

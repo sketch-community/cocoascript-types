@@ -1,0 +1,825 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A comparator that uses another sort comparator to provide the comparison of values at a key path."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/filters_and_sorting"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/keypathcomparator",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3802323,
+  "kind": "symbol",
+  "metadata": {
+    "title": "KeyPathComparator",
+    "role": "symbol",
+    "roleHeading": "Generic Structure",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "12.0",
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "8.0",
+        "current": "8.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "13.0",
+        "current": "13.2"
+      }
+    ],
+    "externalID": "s:10Foundation17KeyPathComparatorV",
+    "symbolKind": "struct",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "struct "
+      },
+      {
+        "kind": "identifier",
+        "text": "KeyPathComparator"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/keypathcomparator"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/filters_and_sorting": {
+      "title": "Filters and Sorting",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filters_and_sorting",
+      "url": "/documentation/foundation/filters_and_sorting",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/sortcomparator": {
+      "title": "SortComparator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/sortcomparator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/sortcomparator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A comparison algorithm for a specified type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "SortComparator"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802333-init": {
+      "title": "init(_:order:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802333-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802333-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a comparator using a key path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "<Value>(KeyPath<Compared, Value>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "order"
+        },
+        {
+          "kind": "text",
+          "text": ": SortOrder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802334-init": {
+      "title": "init(_:order:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802334-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802334-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a comparator using a key path to an optional property."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "<Value>(KeyPath<Compared, Value?>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "order"
+        },
+        {
+          "kind": "text",
+          "text": ": SortOrder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802329-init": {
+      "title": "init(_:comparator:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802329-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802329-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a comparator using a key path and a sort comparator to compare values at that key path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "<Value, Comparator>(KeyPath<Compared, Value>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "comparator"
+        },
+        {
+          "kind": "text",
+          "text": ": Comparator)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802330-init": {
+      "title": "init(_:comparator:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802330-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802330-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a comparator using a key path to an optional property and a sort comparator to compare values at that key path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "<Value, Comparator>(KeyPath<Compared, Value?>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "comparator"
+        },
+        {
+          "kind": "text",
+          "text": ": Comparator)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802331-init": {
+      "title": "init(_:comparator:order:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802331-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802331-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a comparator using a key path, a sort comparator to compare values at that key path, and a sort order that you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "<Value, Comparator>(KeyPath<Compared, Value>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "comparator"
+        },
+        {
+          "kind": "text",
+          "text": ": Comparator, "
+        },
+        {
+          "kind": "identifier",
+          "text": "order"
+        },
+        {
+          "kind": "text",
+          "text": ": SortOrder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802332-init": {
+      "title": "init(_:comparator:order:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802332-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802332-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a comparator using a key path to an optional value, a sort comparator to compare values at that key path, and a sort order that you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "<Value, Comparator>(KeyPath<Compared, Value?>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "comparator"
+        },
+        {
+          "kind": "text",
+          "text": ": Comparator, "
+        },
+        {
+          "kind": "identifier",
+          "text": "order"
+        },
+        {
+          "kind": "text",
+          "text": ": SortOrder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802326-compare": {
+      "title": "compare(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802326-compare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802326-compare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides the relative ordering of two items according to the ordering of the properties that the comparator’s key path references."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "compare"
+        },
+        {
+          "kind": "text",
+          "text": "(Compared, Compared) -> ComparisonResult"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802335-keypath": {
+      "title": "keyPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802335-keypath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802335-keypath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key path that the comparator uses to compare properties."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "let "
+        },
+        {
+          "kind": "identifier",
+          "text": "keyPath"
+        },
+        {
+          "kind": "text",
+          "text": ": PartialKeyPath<Compared>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802336-order": {
+      "title": "order",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802336-order",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802336-order",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The sort order that the comparator uses to compare properties."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "order"
+        },
+        {
+          "kind": "text",
+          "text": ": SortOrder"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802325": {
+      "title": "==(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802325",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802325",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether two key path comparators are equal."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "== "
+        },
+        {
+          "kind": "text",
+          "text": "(KeyPathComparator<Compared>, KeyPathComparator<Compared>) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802324": {
+      "title": "!=(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802324",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802324",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether two key path comparators are unequal."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "!= "
+        },
+        {
+          "kind": "text",
+          "text": "(KeyPathComparator<Compared>, KeyPathComparator<Compared>) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802327-hash": {
+      "title": "hash(into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802327-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802327-hash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hashes the essential components of the key path comparator by feeding them into the specified hash function."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "hash"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "into"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Hasher)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802328-hashvalue": {
+      "title": "hashValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802328-hashvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator/3802328-hashvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The hashed value of the key path comparator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "hashValue"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssortdescriptor": {
+      "title": "NSSortDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssortdescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssortdescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An immutable description of how to order a collection of objects according to a property common to all the objects."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSSortDescriptor"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/comparisonresult": {
+      "title": "ComparisonResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/comparisonresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/comparisonresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate sort order."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "ComparisonResult"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/sortdescriptor": {
+      "title": "SortDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/sortdescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/sortdescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A serializable description of how to sort numerics and strings."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "SortDescriptor"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/comparablecomparator": {
+      "title": "ComparableComparator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/comparablecomparator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/comparablecomparator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A comparator that compares types according to their conformance to the comparable protocol."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "ComparableComparator"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator": {
+      "title": "KeyPathComparator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A comparator that uses another sort comparator to provide the comparison of values at a key path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "KeyPathComparator"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/sortorder": {
+      "title": "SortOrder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/sortorder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/sortorder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The orderings that you can perform sorts with."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "SortOrder"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/sortcomparator"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Key Path Comparators",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802333-init",
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802334-init",
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802329-init",
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802330-init",
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802331-init",
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802332-init"
+      ],
+      "anchor": "3853070"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Using Key Path Comparators",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802326-compare"
+      ],
+      "anchor": "3853071"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Inspecting Key Path Comparators",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802335-keypath",
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802336-order"
+      ],
+      "anchor": "3853069"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Comparing Key Path Comparators",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802325",
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802324",
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802327-hash",
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator/3802328-hashvalue"
+      ],
+      "anchor": "3853068"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nssortdescriptor",
+        "doc://com.apple.documentation/documentation/foundation/comparisonresult",
+        "doc://com.apple.documentation/documentation/foundation/sortdescriptor",
+        "doc://com.apple.documentation/documentation/foundation/sortcomparator",
+        "doc://com.apple.documentation/documentation/foundation/comparablecomparator",
+        "doc://com.apple.documentation/documentation/foundation/sortorder"
+      ],
+      "title": "Sorting",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "struct"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "KeyPathComparator"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation17KeyPathComparatorV8Comparedxmfp",
+              "text": "Compared"
+            },
+            {
+              "kind": "text",
+              "text": ">"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

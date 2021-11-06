@@ -1,0 +1,524 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Inspect the JavaScript console logs, the token, and events to determine why a token is invalid."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkitjs"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt",
+    "interfaceLanguage": "data"
+  },
+  "legacy_identifier": 3740620,
+  "kind": "article",
+  "metadata": {
+    "title": "Debugging an Invalid JWT",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "MapKit JS"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "data"
+        }
+      ],
+      "paths": [
+        "documentation/mapkitjs/debugging_an_invalid_jwt"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/mapkitjs": {
+      "title": "MapKit JS",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs",
+      "url": "/documentation/mapkitjs",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js": {
+      "title": "Creating and Using Tokens with MapKit JS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sign JSON Web Tokens to use MapKit JS and debug common signing errors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt#3740624": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt#3740624",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkitjs/debugging_an_invalid_jwt#3740624"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit": {
+      "title": "mapkit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The JavaScript API for embedding Apple maps on your website."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt#3740623": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt#3740623",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkitjs/debugging_an_invalid_jwt#3740623"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/handling_initialization_events": {
+      "title": "Handling Initialization Events",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/handling_initialization_events",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/mapkit/handling_initialization_events"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key": {
+      "title": "Creating a Maps Identifier and a Private Key",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a Maps Identifer and a private key before generating tokens for MapKit JS. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt": {
+      "title": "Debugging an Invalid JWT",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/debugging_an_invalid_jwt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inspect the JavaScript console logs, the token, and events to determine why a token is invalid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key",
+        "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "MapKit JS requires a valid JSON Web Token (JWT) token to initialize the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit"
+            },
+            {
+              "type": "text",
+              "text": " object. If the JWT you provide isn’t valid, MapKit JS won’t initialize and doesn’t provide a valid map to the user. When MapKit JS fails to initialize, errors are available in the JavaScript console."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Identify Errors in the JavaScript Console",
+          "anchor": "3740628"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To diagnose this situation, first check your browser’s JavaScript console for messages that describe why your token may be invalid. Reasons why a token might be invalid include:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The token is missing required fields."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The token has all the required fields, but some values are incorrect. Verify that the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "kid"
+                    },
+                    {
+                      "type": "text",
+                      "text": " claim matches the key identifier used to sign the token, and that the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "iss"
+                    },
+                    {
+                      "type": "text",
+                      "text": " claim matches the 10-character Team ID for your Apple Developer Account."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The string provided within the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "origin"
+                    },
+                    {
+                      "type": "text",
+                      "text": " claim in your token doesn’t exactly match the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Origin"
+                    },
+                    {
+                      "type": "text",
+                      "text": " header passed by the browser. This string must match exactly, include the protocol ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "http"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "https"
+                    },
+                    {
+                      "type": "text",
+                      "text": "), trailing slashes, and so on."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The token has an issue date of more than a year ago. MapKit JS expects a maximum token lifespan of one year."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about the structure of MapKit-specific JWT, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Examine the Token",
+          "anchor": "3740622"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "MapKit JS considers a token with duplicate headers to be invalid. You can view headers of the token and check for duplicates by decoding the token at the command line. For example, the following command decodes the headers of a token:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% echo \"your-token-here\" | tr \".\" \"\\n\" | head -2 | base64 -D",
+            "",
+            "// Prints",
+            "// {\"typ\":\"JWT\",\"alg\":\"ES256\",\"kid\":\"KEY_ID\",\"kid\":\"KEY_ID\"}"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3740624",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the above output, you can see that the token has two "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kid"
+            },
+            {
+              "type": "text",
+              "text": " headers. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you find duplicate headers in your token, review the software that you used to create the key to remove any duplicate headers."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A token contains additional encrypted fields that aren’t decoded and made visible with the command above."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information on how to create a new token, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Inspect the Error Event on MapKit JS",
+          "anchor": "3740627"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The MapKit JS API rejects an otherwise valid token when your Apple Developer team exceeds the number of requests allowed. You can detect when your team exceeds the number of allowed requests by listening to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "error"
+            },
+            {
+              "type": "text",
+              "text": " event on the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit"
+            },
+            {
+              "type": "text",
+              "text": " object. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example adds an event listener to the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit"
+            },
+            {
+              "type": "text",
+              "text": " object and inspects the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " string to see if the emitted error lists too many requests."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "mapkit.init({ authorizationCallback: function(done) { done(\"your-token\"); }, ... });",
+            "mapkit.addEventListener(\"error\", function(event) {",
+            "    switch (event.status) {",
+            "    case \"Too Many Requests\":",
+            "        // Exceeded number of requests allowed.",
+            "        break;",
+            "    }",
+            "});"
+          ],
+          "syntax": "javascript",
+          "metadata": {
+            "anchor": "3740623",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about MapKit JS events, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/handling_initialization_events"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

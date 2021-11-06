@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "9.3",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation11JSONEncoderC19KeyEncodingStrategyO6customyAEs06CodingC0_pSaysAG_pGccAEmF",
+    "parent": {
+      "title": "JSONEncoder.KeyEncodingStrategy"
+    },
     "symbolKind": "enumelt",
     "fragments": [
       {
@@ -82,8 +90,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -134,7 +142,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The values that determine how a type's coding keys are encoded as JSON keys."
+          "text": "The values that determine how to encode a type's coding keys as JSON keys."
         }
       ]
     },
@@ -245,6 +253,18 @@
             },
             {
               "kind": "text",
+              "text": "_ "
+            },
+            {
+              "kind": "internalParam",
+              "text": "codingPath"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
               "text": "["
             },
             {
@@ -274,10 +294,33 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "custom",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A closure that provides the full path to the current encoding position, and returns a customized coding key."
+                }
+              ]
+            }
           ]
         }
       ]
@@ -296,7 +339,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The value associated with this case is a closure you use to choose the names of keys in the encoded JSON object. During encoding, the closure is called once for each key in the "
+              "text": "The value associated with this case is a closure you use to choose the names of keys in the encoded JSON object. During encoding, the closure executes once for each key in the "
             },
             {
               "type": "reference",
@@ -305,7 +348,7 @@
             },
             {
               "type": "text",
-              "text": " value being encoded. The closure is called along with an array of "
+              "text": " value. The closure receives an array of "
             },
             {
               "type": "reference",
@@ -314,7 +357,7 @@
             },
             {
               "type": "text",
-              "text": " instances representing the sequence of keys needed to reach the value being encoded."
+              "text": " instances representing the sequence of keys needed to reach the value the encoder is currently encoding."
             }
           ]
         },
@@ -466,7 +509,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Here's the JSON object that results from the custom encoding above:"
+              "text": "Here’s the JSON object that results from the custom encoding above:"
             }
           ]
         },
@@ -497,7 +540,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

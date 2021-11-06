@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The reasons the player is waiting begin or resume playback."
+      "text": "The reasons a player is waiting to begin or resume playback."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVPlayerWaitingReason",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The player is monitoring the playback buffer fill rate to determine if playback is likely to complete without interruptions."
+          "text": "The player is waiting because it’s monitoring the buffer’s fill rate to determine whether playback is likely to complete without interruptions."
         }
       ]
     },
@@ -146,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The player is waiting because there is no item to play."
+          "text": "The player is waiting because there’s no item to play."
         }
       ]
     },
@@ -160,7 +165,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The player is waiting for appropriate playback buffer conditions before starting playback."
+          "text": "The player is waiting for appropriate playback conditions before starting playback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingduringinterstitialeventreason": {
+      "title": "AVPlayerWaitingDuringInterstitialEventReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingduringinterstitialeventreason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerwaitingduringinterstitialeventreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The player is waiting for an interstitial event to complete."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingforcoordinatedplaybackreason": {
+      "title": "AVPlayerWaitingForCoordinatedPlaybackReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingforcoordinatedplaybackreason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerwaitingforcoordinatedplaybackreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The player is waiting for another participant in a coordinated playback session."
         }
       ]
     },
@@ -202,7 +235,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The reasons the player is waiting begin or resume playback."
+          "text": "The reasons a player is waiting to begin or resume playback."
         }
       ]
     },
@@ -216,7 +249,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A status that indicates whether playback is currently in progress, paused indefinitely, or suspended while waiting for appropriate network conditions."
+          "text": "A value that indicates whether playback is in progress, paused indefinitely, or waiting for network conditions to improve."
         }
       ]
     },
@@ -230,7 +263,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The player statuses indicating a playback rate change."
+          "text": "Constants that indicate the state of playback control."
         }
       ]
     },
@@ -273,8 +306,11 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingwhileevaluatingbufferingratereason",
         "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingwithnoitemtoplayreason",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingtominimizestallsreason"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingtominimizestallsreason",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingduringinterstitialeventreason",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingforcoordinatedplaybackreason"
+      ],
+      "anchor": "2901751"
     }
   ],
   "seeAlsoSections": [
@@ -328,6 +364,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -338,7 +375,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

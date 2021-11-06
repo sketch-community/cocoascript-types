@@ -12,14 +12,14 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition",
         "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition",
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition",
         "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction"
       ]
     ]
@@ -44,30 +44,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)AVVideoCompositionInstruction(py)timeRange",
+    "parent": {
+      "title": "AVVideoCompositionInstruction"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,13 +118,13 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition": {
-      "title": "AVVideoComposition",
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition": {
+      "title": "AVMutableVideoComposition",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition",
+      "url": "/documentation/avfoundation/avmutablevideocomposition",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition",
       "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition"
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction": {
       "title": "AVVideoCompositionInstruction",
@@ -128,31 +136,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods you can implement to represent operations to be performed by a compositor."
+          "text": "A protocol that defines the interface for a video composition instruction."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition": {
-      "title": "AVMutableVideoComposition",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition",
-      "url": "/documentation/avfoundation/avmutablevideocomposition",
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition": {
+      "title": "AVVideoComposition",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition",
+      "url": "/documentation/avfoundation/avvideocomposition",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1389211-instructions": {
-      "title": "instructions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1389211-instructions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocomposition/1389211-instructions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The video composition instructions."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/coremedia/cmtimerange": {
       "title": "CMTimeRange",
@@ -185,15 +179,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1389211-instructions"
-      ]
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -232,62 +217,17 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
           ]
         }
       ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "discussion",
-          "level": 2,
-          "text": "Discussion",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "See the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition"
-            },
-            {
-              "type": "text",
-              "text": " class "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocomposition/1389211-instructions"
-            },
-            {
-              "type": "text",
-              "text": " property for information on the requirements for the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "timeRanges"
-            },
-            {
-              "type": "text",
-              "text": " of instructions."
-            }
-          ]
-        }
-      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

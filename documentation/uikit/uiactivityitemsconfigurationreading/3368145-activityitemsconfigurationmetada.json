@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns the configuration for a particular item for the specified metadata key."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -37,20 +43,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIActivityItemsConfigurationReading(im)activityItemsConfigurationMetadataForItemAtIndex:key:",
+    "parent": {
+      "title": "UIActivityItemsConfigurationReading"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,7 +121,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationreading"
+      "url": "/documentation/uikit/uiactivityitemsconfigurationreading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of methods adopted by an object so that the object can act as an activity items configuration."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/interprocess_communication": {
       "title": "Interprocess Communication",
@@ -131,7 +151,93 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationmetadatakey"
+      "url": "/documentation/uikit/uiactivityitemsconfigurationmetadatakey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines keys for the metadata associated with an activity items configuration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368149-itemprovidersforactivityitemscon": {
+      "title": "itemProvidersForActivityItemsConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368149-itemprovidersforactivityitemscon",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368149-itemprovidersforactivityitemscon",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The item providers for the configuration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity": {
+      "title": "applicationActivitiesForActivityItemsConfiguration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The application activities, if any, for the configuration."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368144-activityitemsconfigurationmetada": {
+      "title": "activityItemsConfigurationMetadataForKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368144-activityitemsconfigurationmetada",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368144-activityitemsconfigurationmetada",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the configuration for the specified metadata key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "activityItemsConfigurationMetadataForKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368145-activityitemsconfigurationmetada": {
+      "title": "activityItemsConfigurationMetadataForItemAtIndex:key:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368145-activityitemsconfigurationmetada",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfigurationreading/3368145-activityitemsconfigurationmetada",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the configuration for a particular item for the specified metadata key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "activityItemsConfigurationMetadataForItemAtIndex:key:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -141,6 +247,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368149-itemprovidersforactivityitemscon",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationreading/3368144-activityitemsconfigurationmetada",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationmetadatakey"
+      ],
+      "title": "Managing the Configuration",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -217,6 +335,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -224,7 +343,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

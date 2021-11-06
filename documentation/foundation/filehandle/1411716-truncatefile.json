@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Truncates or extends the file represented by the receiver to a specified offset within the file and puts the file pointer at that position."
+      "text": "Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position."
     }
   ],
   "documentVersion": 0,
@@ -36,39 +36,49 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.4",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSFileHandle(im)truncateFileAtOffset:",
+    "parent": {
+      "title": "FileHandle"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -94,8 +104,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -152,6 +162,50 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3172532-truncate": {
+      "title": "truncate(atOffset:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3172532-truncate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3172532-truncate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "truncate"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "atOffset"
+        },
+        {
+          "kind": "text",
+          "text": ": UInt64)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception": {
+      "title": "fileHandleOperationException",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception"
+    },
     "doc://com.apple.documentation/documentation/swift/uint64": {
       "title": "UInt64",
       "type": "topic",
@@ -159,6 +213,34 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/swift/uint64"
+    },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3172525-close": {
+      "title": "close()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3172525-close",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3172525-close",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disallows further access to the represented file or communications channel and signals end of file on communications channels that permit writing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "close"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/filehandle/1413393-closefile": {
       "title": "closeFile()",
@@ -189,6 +271,34 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3172531-synchronize": {
+      "title": "synchronize()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3172531-synchronize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3172531-synchronize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Causes all in-memory data and attributes of the file represented by the file handle to write to permanent storage."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "synchronize"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/filehandle/1411016-synchronizefile": {
       "title": "synchronizeFile()",
       "type": "topic",
@@ -199,7 +309,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Causes all in-memory data and attributes of the file represented by the receiver to be written to permanent storage."
+          "text": "Causes all in-memory data and attributes of the file represented by the handle to write to permanent storage."
         }
       ],
       "fragments": [
@@ -228,7 +338,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Truncates or extends the file represented by the receiver to a specified offset within the file and puts the file pointer at that position."
+          "text": "Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position."
         }
       ],
       "fragments": [
@@ -263,29 +373,52 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3172532-truncate"
+        },
+        {
+          "type": "text",
+          "text": " to handle errors when truncating or extending the file."
+        }
+      ]
+    }
+  ],
   "diffAvailability": {
     "minor": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3172525-close",
         "doc://com.apple.documentation/documentation/foundation/filehandle/1413393-closefile",
-        "doc://com.apple.documentation/documentation/foundation/filehandle/1411016-synchronizefile"
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3172531-synchronize",
+        "doc://com.apple.documentation/documentation/foundation/filehandle/1411016-synchronizefile",
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3172532-truncate"
       ],
       "title": "Operating on a File",
       "generated": true
@@ -345,6 +478,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -367,7 +501,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The offset within the file that will mark the new end of the file."
+                  "text": "The offset within the file that marks the new end of the file."
                 }
               ]
             }
@@ -400,12 +534,36 @@
               "text": " is beyond the current end of file), the added characters are null bytes."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This method raises "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception"
+                },
+                {
+                  "type": "text",
+                  "text": " if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if the operation failed."
+                }
+              ]
+            }
+          ],
+          "style": "important"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

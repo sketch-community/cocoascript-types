@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Declare Uniform Type Identifiers to support your app’s proprietary data formats."
+      "text": "Declare uniform type identifiers to support your app’s proprietary data formats."
     }
   ],
   "documentVersion": 0,
@@ -31,8 +31,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -74,14 +74,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/bundleresources/information_property_list/utexportedtypedeclarations/uttypeidentifier"
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551524-json": {
-      "title": "json",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551524-json",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551524-json"
     },
     "doc://com.apple.documentation/documentation/bundleresources/information_property_list/utexportedtypedeclarations/uttypeconformsto": {
       "title": "UTTypeConformsTo",
@@ -147,6 +139,20 @@
       "role": "symbol",
       "url": "/documentation/bundleresources/information_property_list/utexportedtypedeclarations/uttypereferenceurl"
     },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Common system declared types."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/defining_file_and_data_types_for_your_app": {
       "title": "Defining File and Data Types for Your App",
       "type": "topic",
@@ -157,7 +163,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Declare Uniform Type Identifiers to support your app’s proprietary data formats."
+          "text": "Declare uniform type identifiers to support your app’s proprietary data formats."
         }
       ]
     },
@@ -169,6 +175,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "content",
@@ -201,7 +216,7 @@
             },
             {
               "type": "text",
-              "text": " file. For each type identify and select a unique identifier. Create a new identifier for exported types, or use an existing identifier for imported types. Then define conformance to system declared types and list any associated file extensions or MIME types."
+              "text": " file. For each type, identify and select a unique identifier. Create a new identifier for exported types, or use an existing identifier for imported types. Then define conformance to system-declared types and list any associated file extensions or MIME types."
             }
           ]
         },
@@ -216,7 +231,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When defining a type, you need to define it as an exported or imported type; this indicates if your app is the source of the type or supports using a type defined elsewhere, respectively."
+              "text": "When defining a type, you need to define it as an exported or imported type; this declaration indicates whether your app is the source of the type or if it supports using a type defined elsewhere, respectively. If your app uses a type that this framework provides, don’t redeclare it in your app’s bundle."
             }
           ]
         },
@@ -225,7 +240,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Define an exported type when your app is the canonical source of information for that type. For example, an app that uses it’s own proprietary document format should declare it as an exported type."
+              "text": "Define an exported type when your app is the canonical source of information for that type. For example, an app that uses its own proprietary document format should declare it as an exported type."
             }
           ]
         },
@@ -234,7 +249,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If your app uses a standard type, don’t redeclare it in your app’s bundle. However, if your app uses a type that’s defined by another app or is a proprietary file format not declared in the system types, you’ll need to define it as an imported type. When importing a type from another app, don’t declare your own identifier; instead use the same type identifier as the original."
+              "text": "Define an imported type if your app uses a type that another app defines or if it’s a proprietary file format the system doesn’t declare. When importing a type from another app, don’t declare your own identifier; instead, use the same type identifier as the original."
             }
           ]
         },
@@ -249,7 +264,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The identifiers you create for your app need to be unique. Start by using a reverse-DNS-format beginning with "
+              "text": "The identifiers you create for your app need to be unique. To ensure uniqueness, start by using a reverse DNS format beginning with "
             },
             {
               "type": "codeVoice",
@@ -257,7 +272,7 @@
             },
             {
               "type": "text",
-              "text": " to ensure uniqueness. While the system can support different type identifier strings with the same specification, the reverse isn’t true. The identifier must contain only alphanumeric characters ("
+              "text": ". Although the system supports different type identifier strings with the same specification, the reverse isn’t true. The identifier must contain only alphanumeric characters ("
             },
             {
               "type": "codeVoice",
@@ -325,7 +340,7 @@
             },
             {
               "type": "codeVoice",
-              "code": "com.company.greatAppDocument"
+              "code": "com.example.greatAppDocument"
             },
             {
               "type": "text",
@@ -333,7 +348,7 @@
             },
             {
               "type": "codeVoice",
-              "code": "com.company.greatApp-document"
+              "code": "com.example.greatApp-document"
             },
             {
               "type": "text",
@@ -374,7 +389,15 @@
                 },
                 {
                   "type": "text",
-                  "text": " or "
+                  "text": ", "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "dyn"
+                },
+                {
+                  "type": "text",
+                  "text": ", or "
                 },
                 {
                   "type": "codeVoice",
@@ -390,7 +413,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " for public domain or standard types. The prefix "
+                  "text": " for public domain or standard types. The framework reserves the prefix "
                 },
                 {
                   "type": "codeVoice",
@@ -398,7 +421,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " is reserved for types that the system generates dynamically when no other type is available, and the prefix "
+                  "text": " for types that it generates dynamically when no other type is available, and the prefix "
                 },
                 {
                   "type": "codeVoice",
@@ -406,7 +429,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " is reserved for types declared by Apple."
+                  "text": " for types that Apple declares."
                 }
               ]
             }
@@ -424,21 +447,11 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The type declaration can include a list of type identifiers to which the type conforms."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "For example, if your app uses a proprietary file format, and that format is based on "
+              "text": "The type declaration can include a list of type identifiers to which the type conforms. For example, if your app uses a proprietary file format based on "
             },
             {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551524-json"
+              "type": "codeVoice",
+              "code": "JSON"
             },
             {
               "type": "text",
@@ -476,7 +489,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When defining types for a document, make sure that it conforms to "
+              "text": "When defining a document type, make sure that it conforms to "
             },
             {
               "type": "codeVoice",
@@ -492,7 +505,7 @@
             },
             {
               "type": "text",
-              "text": " to ensure it can be represented in the Finder or Files app. If your type doesn’t conform to "
+              "text": " to ensure the Finder or Files app can represent it. If your type doesn’t conform to "
             },
             {
               "type": "codeVoice",
@@ -508,7 +521,7 @@
             },
             {
               "type": "text",
-              "text": ", the system can’t tell if an item on disk has that type."
+              "text": ", the system can’t tell if a stored item has that type."
             }
           ]
         },
@@ -517,7 +530,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If your type is a document, make sure that it conforms to "
+              "text": "For document types, conform to "
             },
             {
               "type": "codeVoice",
@@ -533,7 +546,7 @@
             },
             {
               "type": "text",
-              "text": ". This allows users to share your type over AirDrop."
+              "text": ". This conformance allows users to share your type over AirDrop."
             }
           ]
         },
@@ -558,7 +571,7 @@
             },
             {
               "type": "text",
-              "text": ". Choose the most specific subtype applicable to which to conform. These help the system determine how best to display files of your type in Spotlight, QuickLook, and other parts of the user interface."
+              "text": ". Conform your type to the most specific subtype applicable. Conforming to one or more functional types helps the system determine how best to display your app’s file types."
             }
           ]
         },
@@ -567,7 +580,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If you specify conformance to a a nonpublic type, make sure that type is also declared in your bundle."
+              "text": "If you specify conformance to a nonpublic type, make sure that you also declare that type in your bundle."
             }
           ]
         },
@@ -582,7 +595,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In addition to declaring the identifier, the type can define a user-readable string describing the type. The description can be localized. For example, you might use "
+              "text": "In addition to declaring the identifier, the type can define a user-readable string describing the type that you can also localize. For example, you might use "
             },
             {
               "type": "codeVoice",
@@ -599,7 +612,7 @@
             },
             {
               "type": "text",
-              "text": "  string in the "
+              "text": " string in the "
             },
             {
               "type": "codeVoice",
@@ -653,7 +666,7 @@
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/utexportedtypedeclarations/uttypetagspecification"
             },
             {
@@ -795,7 +808,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "array of dictionaries"
+                      "text": "Array of dictionaries"
                     }
                   ]
                 }
@@ -806,7 +819,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "An array of exported type declarations for identifiers owned by your app."
+                      "text": "An array of exported type declarations for identifiers your app owns."
                     }
                   ]
                 }
@@ -831,7 +844,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "array of dictionaries"
+                      "text": "Array of dictionaries"
                     }
                   ]
                 }
@@ -842,7 +855,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "An array of imported type declarations, typically types declared by another company or organization."
+                      "text": "An array of imported type declarations, typically types another company or organization declares."
                     }
                   ]
                 }
@@ -867,7 +880,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "string"
+                      "text": "String"
                     }
                   ]
                 }
@@ -878,7 +891,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "The identifier for the declared type. This is a required key for type declarations."
+                      "text": "The identifier for the declared type. This key is required for type declarations."
                     }
                   ]
                 }
@@ -903,7 +916,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "dictionary"
+                      "text": "Dictionary"
                     }
                   ]
                 }
@@ -939,7 +952,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "array of strings"
+                      "text": "Array of strings"
                     }
                   ]
                 }
@@ -975,7 +988,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "string"
+                      "text": "String"
                     }
                   ]
                 }
@@ -1019,7 +1032,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "string"
+                      "text": "String"
                     }
                   ]
                 }
@@ -1063,7 +1076,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

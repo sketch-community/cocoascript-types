@@ -1,0 +1,1597 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Handle common problems reported in the notarization log file, or that arise during ticket stapling."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3087726,
+  "kind": "article",
+  "metadata": {
+    "title": "Resolving Common Notarization Issues",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution": {
+      "title": "Notarizing macOS Software Before Distribution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087831": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087831",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087831"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087839": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087839",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087839"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561448": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561448",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561448"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087827": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087827",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087827"
+    },
+    "link-3562992": {
+      "title": "Developer ID Application certificate",
+      "type": "topic",
+      "identifier": "link-3562992",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/contact/kext"
+    },
+    "link-3087838": {
+      "title": "Manage Signing Certificates",
+      "type": "section",
+      "identifier": "link-3087838",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/xcode/mac/current/#/dev154b28f09"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3178139": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3178139",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3178139"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087834": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087834",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087834"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3859180": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3859180",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3859180"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087830": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087830",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087830"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087829": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087829",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087829"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation": {
+      "title": "Disable Library Validation Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation"
+    },
+    "link-3087832": {
+      "title": "Code Signing Changes in OS X Mavericks 10.9",
+      "type": "section",
+      "identifier": "link-3087832",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/archive/technotes/tn2206/_index.html#//apple_ref/doc/uid/DTS40007919-CH1-TNTAG20"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087835": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087835",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087835"
+    },
+    "link-3087837": {
+      "title": "Edit deployment info settings",
+      "type": "section",
+      "identifier": "link-3087837",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/xcode/mac/current/#/deve69552ee5"
+    },
+    "link-3087836": {
+      "title": "Enable hardened runtime (macOS)",
+      "type": "section",
+      "identifier": "link-3087836",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/xcode/mac/current/#/devf87a2ac8f"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087833": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087833",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087833"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087840": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087840",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087840"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow": {
+      "title": "Customizing the Notarization Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Notarize your app from the command line to handle special distribution cases."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087841": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087841",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087841"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561457": {
+      "title": "Listing 14",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561457",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561457"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561454": {
+      "title": "Listing 15",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561454",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561454"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561487": {
+      "title": "Listing 16",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561487",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561487"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561455": {
+      "title": "Listing 17",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561455",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3561455"
+    },
+    "link-media-3859182": {
+      "identifier": "link-media-3859182",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3859182"
+    },
+    "media-3859182": {
+      "identifier": "media-3859182",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 1000,
+            "height": 400
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0acf517dd3/renderedDark2x-1625952611.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 1000,
+            "height": 400
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0c578c02b8/rendered2x-1625952612.png"
+        }
+      ],
+      "alt": "A screenshot of the Xcode archive browser window containing one archive, called Overnight Text Editor. The details pane shows that the archive has the type Generic Xcode Archive.",
+      "title": "Figure 1"
+    },
+    "link-media-3859183": {
+      "identifier": "link-media-3859183",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3859183"
+    },
+    "media-3859183": {
+      "identifier": "media-3859183",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 655,
+            "height": 252
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2bbc95426a/rendered2x-1625952191.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 655,
+            "height": 252
+          },
+          "url": "https://docs-assets.developer.apple.com/published/99d06f0a55/renderedDark2x-1625952193.png"
+        }
+      ],
+      "alt": "A screenshot of a Finder window showing the contents of teh Overnight Text Editor archive bundle. The Products folder contains both an Applications folder with the app executable, and a Library folder with the TextIsAwesome framework. ",
+      "title": "Figure 2"
+    },
+    "link-media-3859181": {
+      "identifier": "link-media-3859181",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3859181"
+    },
+    "media-3859181": {
+      "identifier": "media-3859181",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 1022,
+            "height": 363
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cfac4a1478/rendered2x-1626304104.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 1022,
+            "height": 363
+          },
+          "url": "https://docs-assets.developer.apple.com/published/aeeff0f273/renderedDark2x-1626304111.png"
+        }
+      ],
+      "alt": "A screenshot of Xcode showing the build settings for the TextIsAwesome target of the Overnight Text Editor project. The Skip Install setting is highlighted, and set to a value of Yes.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087732": {
+      "title": "Check the Status of Your Request",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087732",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087732"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution#3087730": {
+      "title": "Notarize Your App Automatically as Part of the Distribution Process",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution#3087730",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution#3087730"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues": {
+      "title": "Resolving Common Notarization Issues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handle common problems reported in the notarization log file, or that arise during ticket stapling."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow"
+      ],
+      "title": "Notarization",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the Apple notary service encounters any problems while notarizing your app, it reports those errors in the log files, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087732"
+            },
+            {
+              "type": "text",
+              "text": ". Fix any problems reported by the service and notarize your app again."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Xcode automatically resolves many issues when you use the standard app distribution UI. For information about how to use this UI, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution#3087730"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Ensure a Valid Code Signature",
+          "anchor": "3087735"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before you can notarize an app, you must first code sign it. If you don’t, or if you make a modification to the bundle after signing, notarization fails with the following message:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "The signature of the binary is invalid."
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087831",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To debug signing issues for anything besides an installer package, use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "codesign"
+            },
+            {
+              "type": "text",
+              "text": " utility to test the signature:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% codesign -vvv --deep --strict /path/to/binary/or/bundle"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087839",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vvv"
+            },
+            {
+              "type": "text",
+              "text": " option to perform a verification with elevated verbosity. You use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "deep"
+            },
+            {
+              "type": "text",
+              "text": " option to ensure the utility checks nested code content. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "strict"
+            },
+            {
+              "type": "text",
+              "text": " option increases the restrictiveness of the validation to match that required by notarization. See the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "codesign"
+            },
+            {
+              "type": "text",
+              "text": " man page for more information about these options and how to interpret the output."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To debug signing issues with installer packages, use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "pkgutil"
+            },
+            {
+              "type": "text",
+              "text": " utility instead:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% pkgutil --check-signature /path/to/file.pkg"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3561448",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The utility’s output includes the strings “Signed with a trusted timestamp” and “1. Developer ID Installer:” for a properly signed installer. If the signature test fails, make sure you’re using a Developer ID Installer certificate, and that you use either the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "pkgutil"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "productbuild"
+            },
+            {
+              "type": "text",
+              "text": " utility during package creation, or the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "productsign"
+            },
+            {
+              "type": "text",
+              "text": " command to sign an existing installer. All of these command line utilities take the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sign"
+            },
+            {
+              "type": "text",
+              "text": " option, which includes a secure timestamp by default. See the man pages of the various utilities for more information about using each."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Apple no longer maintains the PackageMaker tool, which doesn’t support code signing. Migrate to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "pkgbuild"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "productbuild"
+                },
+                {
+                  "type": "text",
+                  "text": ", which incorporate most of the command line options that PackageMaker supported, or use a third-party utility that wraps "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "pkgbuild"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "productbuild"
+                },
+                {
+                  "type": "text",
+                  "text": " and supports signing."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use a Valid Developer ID Certificate",
+          "anchor": "3087721"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can only notarize apps that you sign with a Developer ID certificate. If you use any other certificate — like a Mac App Distribution certificate, or a self-signed certificate — notarization fails with the following message:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "The binary is not signed with a valid Developer ID certificate."
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087827",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Be sure to use the correct Developer ID certificate for the given target. When code signing items like Mach-O files, disk images, bundles, apps, command line tools, photos, and so on, sign with a Developer ID Application certificate. Sign installer packages with a Developer ID Installer certificate. Although distributing kernel extensions (kexts) is discouraged, you can use a "
+            },
+            {
+              "type": "link",
+              "title": "Developer ID Application certificate",
+              "destination": "https://developer.apple.com/contact/kext"
+            },
+            {
+              "type": "text",
+              "text": " that has the kext capability to do so."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn about managing your signing certificates in Xcode, see "
+            },
+            {
+              "type": "link",
+              "title": "Manage Signing Certificates",
+              "destination": "https://help.apple.com/xcode/mac/current/#/dev154b28f09"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Additionally, you can use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "spctl"
+            },
+            {
+              "type": "text",
+              "text": " utility to determine if the software to be notarized will run with the system policies currently in effect:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% spctl -vvv --assess --type exec /path/to/application"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3178139",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Add the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "raw"
+            },
+            {
+              "type": "text",
+              "text": " option to generate a more detailed output in the form of a property list."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Include a Secure Timestamp",
+          "anchor": "3087733"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By default, Xcode doesn’t include a secure timestamp as part of the app’s code signature during the build process. Instead, it adds a secure timestamp only during the archive (as of Xcode 10.2) and export workflows. If you use a custom export process, notarization might fail with the following message:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "The signature does not include a secure timestamp."
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087834",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this case, be sure to add a secure timestamp by adding the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "timestamp"
+            },
+            {
+              "type": "text",
+              "text": " option to your "
+            },
+            {
+              "type": "codeVoice",
+              "code": "OTHER_CODE_SIGN_FLAGS"
+            },
+            {
+              "type": "text",
+              "text": " build setting, or by using the option directly with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "codesign"
+            },
+            {
+              "type": "text",
+              "text": " utility if you sign manually, as described in the previous section."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Generating a secure timestamp requires internet access. macOS accepts only one secure timestamp server, namely "
+            },
+            {
+              "type": "codeVoice",
+              "code": "timestamp.apple.com"
+            },
+            {
+              "type": "text",
+              "text": ", which uses the follow address ranges:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "17.32.213.0/24",
+            "17.179.249.0/24",
+            "17.157.80.0/24"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3859180",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can check if a binary has a secure timestamp with the following command:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% codesign -dvv /path/to/binary/or/bundle"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087830",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dvv"
+            },
+            {
+              "type": "text",
+              "text": " option tells "
+            },
+            {
+              "type": "codeVoice",
+              "code": "codesign"
+            },
+            {
+              "type": "text",
+              "text": " to display information about the code at the given path with elevated verbosity. For a binary with a secure timestamp, the output of this command includes a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Timestamp"
+            },
+            {
+              "type": "text",
+              "text": " value with a corresponding date. Alternatively, the presence of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Signed Time"
+            },
+            {
+              "type": "text",
+              "text": " in the output indicates the binary doesn’t have a secure timestamp."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Avoid the Get-Task-Allow Entitlement",
+          "anchor": "3087731"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you create a new macOS project, Xcode automatically sets the target’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CODE_SIGN_INJECT_BASE_ENTITLEMENTS"
+            },
+            {
+              "type": "text",
+              "text": " build setting to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "YES"
+            },
+            {
+              "type": "text",
+              "text": ". This setting tells Xcode to add the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "com.apple.security.get-task-allow"
+            },
+            {
+              "type": "text",
+              "text": " entitlement to your app at build time. This entitlement facilitates debugging on a system that uses System Integrity Protection (SIP) by circumventing certain security checks."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "However, this poses a security risk for a shipping app, because it can allow an attacker to inject code at runtime. As a result, Xcode automatically strips the entitlement from your app when you export and sign it using the standard workflow. If you use a custom workflow and fail to remove the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "com.apple.security.get-task-allow"
+            },
+            {
+              "type": "text",
+              "text": " entitlement, notarization fails with the following message:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "The executable requests the com.apple.security.get-task-allow entitlement."
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087829",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To avoid receiving this error message, archive (as of Xcode 10.2) or export your app directly from Xcode, or set the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CODE_SIGN_INJECT_BASE_ENTITLEMENTS"
+            },
+            {
+              "type": "text",
+              "text": " build setting to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NO"
+            },
+            {
+              "type": "text",
+              "text": " before building your app for distribution. But only change the build setting when you’re done debugging and ready to distribute, because doing so makes it impossible to debug the binary on a system that uses System Integrity Protection."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To enable debugging a plug-in in the context of a host executable, the host can include the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "com.apple.security.get-task-allow"
+                },
+                {
+                  "type": "text",
+                  "text": " entitlement if it also includes the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation"
+                },
+                {
+                  "type": "text",
+                  "text": ". Don’t disable library validation for executables that don’t host plug-ins because library validation protects them from loading untrusted code."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use the macOS 10.9 SDK or Later",
+          "anchor": "3087723"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because of significant differences in the way code signing works prior to macOS 10.9 (see "
+            },
+            {
+              "type": "link",
+              "title": "Code Signing Changes in OS X Mavericks 10.9",
+              "destination": "https://developer.apple.com/library/archive/technotes/tn2206/_index.html#//apple_ref/doc/uid/DTS40007919-CH1-TNTAG20"
+            },
+            {
+              "type": "text",
+              "text": "), notarization only works for binaries linked against macOS 10.9 or later. If you use an older SDK, notarization fails and reports an issue with the following message:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "The binary uses an SDK older than the 10.9 SDK."
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087835",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using a newer SDK doesn’t affect your binary’s compatibility with earlier versions of macOS. Instead, version compatibility depends on the app’s deployment target, as described in "
+            },
+            {
+              "type": "link",
+              "title": "Edit deployment info settings",
+              "destination": "https://help.apple.com/xcode/mac/current/#/deve69552ee5"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enable the Hardened Runtime",
+          "anchor": "3087724"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Enable the hardened runtime capability as described in "
+            },
+            {
+              "type": "link",
+              "title": "Enable hardened runtime (macOS)",
+              "destination": "https://help.apple.com/xcode/mac/current/#/devf87a2ac8f"
+            },
+            {
+              "type": "text",
+              "text": ". This adds security restrictions to your app by default while allowing you to ask for specific exceptions as needed. If you don’t enable the hardened runtime, notarization fails and reports an issue with the following message:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "The executable does not have the hardened runtime enabled."
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087833",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Hardened runtime is available in the Capabilities pane of Xcode 10 or later, but you can enable the feature manually using earlier versions of Xcode, as long as you’re on macOS 10.13.6 or later. To do this, add the following option to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "OTHER_CODE_SIGN_FLAGS"
+            },
+            {
+              "type": "text",
+              "text": " build setting:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "--options=runtime"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087840",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you need exceptions, manually add the entitlements to your app’s entitlements file. If you enable hardened runtime manually using an earlier version of macOS, make sure that you also test your app running on macOS 10.14 or later."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You can notarize an app that you build with earlier versions of Xcode, but you must use Xcode 10 or later to actually perform the notarization. This is because the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "altool"
+                },
+                {
+                  "type": "text",
+                  "text": " utility, which you use to perform notarization, only supports notarization starting in Xcode 10. See "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Stapler Issues",
+          "anchor": "3087725"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can resolve a few common stapler issues by upgrading your tools. In particular, if you see "
+            },
+            {
+              "type": "codeVoice",
+              "code": "error -68"
+            },
+            {
+              "type": "text",
+              "text": " on macOS 10.13.x, you can resolve the issue by upgrading to macOS 10.14 or later. Alternatively, run the following command once to clear the Valid cache:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% sudo killall -9 trustd; sudo rm /Library/Keychains/crls/valid.sqlite3"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087841",
+            "title": "Listing 13"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you see "
+            },
+            {
+              "type": "codeVoice",
+              "code": "error -73"
+            },
+            {
+              "type": "text",
+              "text": " while using Xcode 10, you can resolve this issue by upgrading to Xcode 10.1 or later. Also, in this case, check to ensure that the disk image or flat installer package you’re notarizing is writable so you can attach the ticket to the package with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "stapler"
+            },
+            {
+              "type": "text",
+              "text": " utility."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "See the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "stapler"
+            },
+            {
+              "type": "text",
+              "text": " man page for a discussion of other exit codes."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Ensure Properly Formatted Entitlements",
+          "anchor": "3561456"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Command line tools and apps use entitlements to gain access to system resources and capabilities. The file that declares an app’s entitlements must be ASCII-encoded and must not include Unicode Byte Order Marks (BOMs). When using Xcode to code sign, Xcode ensures that the entitlements file is a well-formed XML property list with no extra characters. It also automatically converts entitlement files stored as binary property lists ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "bplist"
+            },
+            {
+              "type": "text",
+              "text": ") into properly-formed XML properly lists. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When using a custom workflow, use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "plutil"
+            },
+            {
+              "type": "text",
+              "text": " utility to ensure proper formatting of your entitlements file. This is especially true if you manually edit the file. Validate the formatting before passing your entitlements file as an argument to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "codesign"
+            },
+            {
+              "type": "text",
+              "text": " utility. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "convert"
+            },
+            {
+              "type": "text",
+              "text": " option converts the entitlements to an XML property list, and the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "lint"
+            },
+            {
+              "type": "text",
+              "text": " option verifies proper formatting:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% plutil -convert xml1 <Project_Name.entitlements>",
+            "% plutil -lint <Project_Name.entitlements>"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3561457",
+            "title": "Listing 14"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After code signing — but before notarizing — you can verify your app or command line tool has a properly formed XML entitlement property list:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% codesign -d --entitlements :- <path to signed .app or command-line tool>"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3561454",
+            "title": "Listing 15"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the output of this command contains the text "
+            },
+            {
+              "type": "codeVoice",
+              "code": "bplist00"
+            },
+            {
+              "type": "text",
+              "text": ", the executable has a binary property list, which the notary service will reject with an error message like:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "Embedded entitlements are invalid: syntax error near line 1"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3561487",
+            "title": "Listing 16"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Furthermore, starting in macOS 10.15.4, processes with malformed embedded entitlements no longer run and instead abort with a code signature validation error message:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "The signature could not be validated because AMFI could not load its entitlements for validation: entitlements cannot be parsed"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3561455",
+            "title": "Listing 17"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Notarize macOS Apps with External Dependencies",
+          "anchor": "3859184"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can only notarize macOS app targets in Xcode. You can’t use Xcode to notarize an Aggregate or Build System target, even if that target ultimately produces a Mac app. For archives of unsupported target types, the Archives organizer reports a Generic Xcode Archive:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3859182",
+              "metadata": {
+                "anchor": "3859182",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Even for a macOS target, the archive might be a Generic Xcode Archive if the app has dependencies with the Skip Install build setting set to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "No"
+            },
+            {
+              "type": "text",
+              "text": ". This setting causes the build system to place the dependency in its final install path within the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "xcarchive"
+            },
+            {
+              "type": "text",
+              "text": " file, changing what would otherwise be a macOS App Archive into a Generic Xcode Archive. The following screenshot shows the contents of an archive that has two folders inside its Products folder. The presence of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "TextIsAwesome.framework"
+            },
+            {
+              "type": "text",
+              "text": " bundle indicates that the framework target has Skip Install set to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "No"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3859183",
+              "metadata": {
+                "anchor": "3859183",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To ensure that archiving your macOS app target produces a macOS App Archive, set Skip Install to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Yes"
+            },
+            {
+              "type": "text",
+              "text": " for all of your app’s dependencies. For example, you can do this for the framework by editing the target’s build settings:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3859181",
+              "metadata": {
+                "anchor": "3859181",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you enable Skip Install on all dependencies, you can use the Xcode notarization interface to notarize your macOS app."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

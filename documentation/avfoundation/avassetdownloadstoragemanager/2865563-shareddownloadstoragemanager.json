@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a singleton instance of the shared storage manager."
+      "text": "Returns the shared storage manager instance."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetDownloadStorageManager(cm)sharedDownloadStorageManager",
+    "parent": {
+      "title": "AVAssetDownloadStorageManager"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,7 +122,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a singleton instance of the shared storage manager."
+          "text": "Returns the shared storage manager instance."
         }
       ],
       "fragments": [
@@ -174,6 +182,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -194,16 +203,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager"
-            },
-            {
-              "type": "text",
-              "text": " singleton object."
+              "text": "The download storage manager."
             }
           ]
         }
@@ -211,7 +211,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

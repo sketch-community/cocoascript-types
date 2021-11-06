@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/inbillpayee"
       ]
     ]
@@ -35,25 +35,41 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INBillPayee(im)initWithNickname:number:organizationName:",
+    "parent": {
+      "title": "INBillPayee"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +104,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -103,6 +119,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inbillpayee"
+    },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inspeakablestring": {
       "title": "INSpeakableString",
@@ -142,7 +166,8 @@
           "kind": "identifier",
           "text": "initWithNickname:number:organizationName:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -152,6 +177,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -266,6 +311,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -286,7 +332,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The nickname that the user assigned to this payee. This string may be displayed to the user and should not include account numbers or other potentially sensitive user information."
+                  "text": "The nickname that the user assigned to this payee. Siri may display this text to the user. Don’t include account numbers or other potentially sensitive user information."
                 }
               ]
             }
@@ -300,7 +346,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A string to help the user differentiate between similar accounts. Typically, you use this parameter to specify the last few digits of the user's account or an encoded version of the user's account number. Never specify the user's full account number.   "
+                  "text": "A string to help the user differentiate between similar accounts. Typically, you use this parameter to specify the last few digits of the user’s account or an encoded version of the user’s account number. Never specify the user’s full account number."
                 }
               ]
             }
@@ -314,7 +360,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The name of the organization receiving the payment. This string may be displayed to the user and should not include account numbers or other potentially sensitive user information."
+                  "text": "The name of the organization receiving the payment. Siri may display this text to the user. Don’t include account numbers or other potentially sensitive user information."
                 }
               ]
             }
@@ -373,7 +419,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,27 +34,32 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)NSProgressReporting",
@@ -71,8 +76,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -140,7 +145,7 @@
       ]
     },
     "doc://com.apple.documentation/documentation/foundation/progress#1661050": {
-      "title": "Creating a Tree of Progress Objects",
+      "title": "Reporting Progress for Multiple Operations",
       "type": "section",
       "identifier": "doc://com.apple.documentation/documentation/foundation/progress#1661050",
       "kind": "article",
@@ -157,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
+          "text": "An object that conveys ongoing progress to the user for a specified task."
         }
       ],
       "fragments": [
@@ -218,6 +223,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uidocument"
+    },
+    "doc://com.apple.documentation/documentation/webkit/wkdownload": {
+      "title": "WKDownload",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/webkit/wkdownload",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/webkit/wkdownload"
     },
     "doc://com.apple.documentation/documentation/appkit/nsfontassetrequest": {
       "title": "NSFontAssetRequest",
@@ -290,7 +303,8 @@
         "doc://com.apple.documentation/documentation/appkit/nsfontassetrequest",
         "doc://com.apple.documentation/documentation/foundation/operationqueue",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask",
-        "doc://com.apple.documentation/documentation/uikit/uidocument"
+        "doc://com.apple.documentation/documentation/uikit/uidocument",
+        "doc://com.apple.documentation/documentation/webkit/wkdownload"
       ]
     }
   ],
@@ -300,7 +314,8 @@
       "title": "Custom Class Progress",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/progressreporting/1412781-progress"
-      ]
+      ],
+      "anchor": "1673748"
     }
   ],
   "seeAlsoSections": [
@@ -336,6 +351,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -352,12 +368,6 @@
           "level": 2,
           "text": "Overview",
           "type": "heading"
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Creating the Progress Object",
-          "anchor": "1673740"
         },
         {
           "type": "paragraph",
@@ -405,26 +415,11 @@
           ]
         },
         {
-          "level": 3,
-          "type": "heading",
-          "text": "Updating the Progress Object",
-          "anchor": "1673742"
-        },
-        {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
               "text": "You are responsible for setting and updating the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/progressreporting"
-            },
-            {
-              "type": "text",
-              "text": " and "
             },
             {
               "type": "reference",
@@ -450,7 +445,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

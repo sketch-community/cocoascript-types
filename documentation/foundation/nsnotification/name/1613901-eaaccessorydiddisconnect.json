@@ -49,25 +49,33 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@EAAccessoryDidDisconnectNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -85,8 +93,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -175,27 +183,7 @@
       "identifier": "doc://com.apple.documentation/documentation/externalaccessory/eaaccessorykey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/externalaccessory/eaaccessorykey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A key that indicates the accessory object whose status changed. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "let "
-        },
-        {
-          "kind": "identifier",
-          "text": "EAAccessoryKey"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
+      "url": "/documentation/externalaccessory/eaaccessorykey"
     },
     "doc://com.apple.documentation/documentation/externalaccessory/eaaccessory": {
       "title": "EAAccessory",
@@ -211,27 +199,7 @@
       "identifier": "doc://com.apple.documentation/documentation/externalaccessory/eaaccessorymanager/1613873-registerforlocalnotifications",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/externalaccessory/eaaccessorymanager/1613873-registerforlocalnotifications",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Begins the delivery of accessory-related notifications to the current application."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "registerForLocalNotifications"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
+      "url": "/documentation/externalaccessory/eaaccessorymanager/1613873-registerforlocalnotifications"
     },
     "doc://com.apple.documentation/documentation/externalaccessory/eaaccessorydelegate/1613858-accessorydiddisconnect": {
       "title": "accessoryDidDisconnect(_:)",
@@ -240,34 +208,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/externalaccessory/eaaccessorydelegate/1613858-accessorydiddisconnect"
-    },
-    "doc://com.apple.documentation/documentation/externalaccessory/eaaccessorymanager/1613903-unregisterforlocalnotifications": {
-      "title": "unregisterForLocalNotifications()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/externalaccessory/eaaccessorymanager/1613903-unregisterforlocalnotifications",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/externalaccessory/eaaccessorymanager/1613903-unregisterforlocalnotifications",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Stops the delivery of accessory-related notifications to the current application."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "unregisterForLocalNotifications"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1613827-eaaccessorydidconnect": {
       "title": "EAAccessoryDidConnect",
@@ -325,34 +265,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/externalaccessory/eaaccessoryselectedkey": {
-      "title": "EAAccessorySelectedKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/externalaccessory/eaaccessoryselectedkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/externalaccessory/eaaccessoryselectedkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A key that indicates the accessory object that the user selected. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "let "
-        },
-        {
-          "kind": "identifier",
-          "text": "EAAccessorySelectedKey"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -364,13 +276,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/externalaccessory/eaaccessorymanager/1613873-registerforlocalnotifications",
-        "doc://com.apple.documentation/documentation/externalaccessory/eaaccessorymanager/1613903-unregisterforlocalnotifications",
-        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1613827-eaaccessorydidconnect",
-        "doc://com.apple.documentation/documentation/externalaccessory/eaaccessorykey",
-        "doc://com.apple.documentation/documentation/externalaccessory/eaaccessoryselectedkey"
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1613827-eaaccessorydidconnect"
       ],
-      "title": "Managing Connection Status Changes",
+      "title": "External Accessory",
       "generated": true
     }
   ],
@@ -426,6 +334,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -508,7 +417,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

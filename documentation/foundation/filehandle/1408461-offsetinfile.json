@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The position of the file pointer within the file represented by the receiver."
+      "text": "The position of the file pointer within the file represented by the file handle."
     }
   ],
   "documentVersion": 0,
@@ -36,39 +36,49 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.4",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSFileHandle(py)offsetInFile",
+    "parent": {
+      "title": "FileHandle"
+    },
     "symbolKind": "instp",
     "fragments": [
       {
@@ -86,8 +96,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -144,6 +154,42 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3516316-offset": {
+      "title": "offset()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516316-offset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3516316-offset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the position of the file pointer within the file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "offset"
+        },
+        {
+          "kind": "text",
+          "text": "() -> UInt64"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception": {
+      "title": "fileHandleOperationException",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception"
+    },
     "doc://com.apple.documentation/documentation/foundation/filehandle/1411311-seektoendoffile": {
       "title": "seekToEndOfFile()",
       "type": "topic",
@@ -154,7 +200,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Puts the file pointer at the end of the file referenced by the receiver and returns the new file offset."
+          "text": "Places the file pointer at the end of the file referenced by the file handle and returns the new file offset."
         }
       ],
       "fragments": [
@@ -228,7 +274,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The position of the file pointer within the file represented by the receiver."
+          "text": "The position of the file pointer within the file represented by the file handle."
         }
       ],
       "fragments": [
@@ -247,6 +293,70 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3516319-seektoend": {
+      "title": "seekToEnd()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516319-seektoend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3516319-seektoend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Places the file pointer at the end of the file referenced by the file handle and returns the new file offset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToEnd"
+        },
+        {
+          "kind": "text",
+          "text": "() -> UInt64"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3172530-seek": {
+      "title": "seek(toOffset:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3172530-seek",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3172530-seek",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the file pointer to the specified offset within the file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "seek"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "toOffset"
+        },
+        {
+          "kind": "text",
+          "text": ": UInt64)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -255,28 +365,51 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516316-offset"
+        },
+        {
+          "type": "text",
+          "text": " to handle errors when getting the file pointer’s position."
+        }
+      ]
+    }
+  ],
   "diffAvailability": {
     "minor": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3516316-offset",
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3516319-seektoend",
         "doc://com.apple.documentation/documentation/foundation/filehandle/1411311-seektoendoffile",
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3172530-seek",
         "doc://com.apple.documentation/documentation/foundation/filehandle/1412135-seek"
       ],
       "title": "Seeking Within a File",
@@ -329,6 +462,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -351,7 +485,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Raises an exception if the message is sent to a file handle representing a pipe or socket or if the file descriptor is closed."
+              "text": "Raises "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception"
+            },
+            {
+              "type": "text",
+              "text": " if called on a file handle representing a pipe or socket, or if the file descriptor is closed."
             }
           ]
         }
@@ -359,7 +502,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

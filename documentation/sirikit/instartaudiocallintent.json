@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -35,21 +35,28 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
@@ -57,8 +64,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -93,13 +100,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols": {
-      "title": "Deprecated Classes and Protocols",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
-      "url": "/documentation/sirikit/deprecated_classes_and_protocols",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent": {
+      "title": "INStartCallIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent"
     },
     "doc://com.apple.documentation/documentation/sirikit/instartaudiocallintent#2132397": {
       "title": "Table 1",
@@ -177,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Your app’s response to a start audio call intent. "
+          "text": "An app’s response to an intent to start an audio call."
         }
       ],
       "deprecated": true
@@ -221,6 +236,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/instartaudiocallintent/2873773-initwithdestinationtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an intent with the specified information."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -296,16 +317,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -323,7 +354,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartaudiocallintent/2873773-initwithdestinationtype",
         "doc://com.apple.documentation/documentation/sirikit/instartaudiocallintent/1638231-initwithcontacts"
-      ]
+      ],
+      "anchor": "2528196"
     },
     {
       "kind": "taskGroup",
@@ -331,7 +363,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartaudiocallintent/1638516-contacts",
         "doc://com.apple.documentation/documentation/sirikit/instartaudiocallintent/2873774-destinationtype"
-      ]
+      ],
+      "anchor": "2528199"
     }
   ],
   "seeAlsoSections": [
@@ -340,7 +373,7 @@
         "doc://com.apple.documentation/documentation/sirikit/instartaudiocallintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/instartaudiocallintentresponse"
       ],
-      "title": "Start an Audio Call",
+      "title": "Audio Call Initiation",
       "generated": true
     }
   ],
@@ -378,6 +411,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -407,7 +441,7 @@
             },
             {
               "type": "text",
-              "text": " objects when the user wants to place an audio call using your app. An audio call intent object contains the users to be called. It is up to you to match the information in this object to contacts in your app and to initiate the resulting call."
+              "text": " objects when the user wants to place an audio call using your app. An audio call intent object contains the users to call. Your intent handler matches the information in this object to contacts in your app and to initiate the resulting call."
             }
           ]
         },
@@ -434,7 +468,7 @@
             },
             {
               "type": "text",
-              "text": " protocol. Your handler should confirm the request and create an "
+              "text": " protocol. Use your handler to confirm the request and create an "
             },
             {
               "type": "reference",
@@ -443,7 +477,7 @@
             },
             {
               "type": "text",
-              "text": " object to indicate that it is possible to begin the call. Do not try to initiate calls directly from your Intents extension. SiriKit launches your app and passes it an "
+              "text": " object to indicate that it’s possible to begin the call. Don’t try to initiate calls directly from your Intents extension. SiriKit launches your app and passes it an "
             },
             {
               "type": "reference",
@@ -479,7 +513,7 @@
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         },
@@ -573,7 +607,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "If your app adopts CallKit, the system does not require an unlocked device. Instead, your app runs in the background and the system displays the in-call user interface on your app’s behalf."
+                      "text": "If your app adopts CallKit, the system doesn’t require an unlocked device. Instead, your app runs in the background and the system displays the in-call user interface on your app’s behalf."
                     }
                   ]
                 },
@@ -582,7 +616,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "If your app does not adopt CallKit, SiriKit prompts the user to unlock the device so that your app can be launched. If the device is already unlocked, SiriKit launches the app in the foreground."
+                      "text": "If your app doesn’t adopt CallKit, SiriKit prompts the user to unlock the device so that it can launch your app. If the device is already unlocked, SiriKit launches the app in the foreground."
                     }
                   ]
                 }
@@ -621,7 +655,7 @@
             },
             {
               "type": "text",
-              "text": " file. "
+              "text": " file."
             }
           ]
         },
@@ -645,7 +679,7 @@
             },
             {
               "type": "text",
-              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list is not exhaustive and Siri may recognize many other phrases."
+              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases."
             }
           ]
         },
@@ -1913,7 +1947,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

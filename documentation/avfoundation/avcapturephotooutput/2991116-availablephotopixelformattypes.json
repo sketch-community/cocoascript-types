@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So20AVCapturePhotoOutputC12AVFoundationE09availableB16PixelFormatTypesSays6UInt32VGvp",
+    "parent": {
+      "title": "AVCapturePhotoOutput"
+    },
     "symbolKind": "instp",
     "fragments": [
       {
@@ -71,8 +79,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +123,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A capture output for still image, Live Photo, and other photography workflows."
+          "text": "A capture output for still image, Live Photos, and other photography workflows."
         }
       ]
     },
@@ -205,13 +213,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2873950-supportedphotopixelformattypes": {
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3857741-supportedphotopixelformattypes": {
       "title": "supportedPhotoPixelFormatTypes(for:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2873950-supportedphotopixelformattypes",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3857741-supportedphotopixelformattypes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephotooutput/2873950-supportedphotopixelformattypes",
+      "url": "/documentation/avfoundation/avcapturephotooutput/3857741-supportedphotopixelformattypes",
       "abstract": [
         {
           "type": "text",
@@ -237,17 +245,17 @@
         },
         {
           "kind": "text",
-          "text": ": AVFileType) -> [NSNumber]"
+          "text": ": AVFileType) -> [OSType]"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2873921-supportedrawphotopixelformattype": {
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3858114-supportedrawphotopixelformattype": {
       "title": "supportedRawPhotoPixelFormatTypes(for:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2873921-supportedrawphotopixelformattype",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3858114-supportedrawphotopixelformattype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephotooutput/2873921-supportedrawphotopixelformattype",
+      "url": "/documentation/avfoundation/avcapturephotooutput/3858114-supportedrawphotopixelformattype",
       "abstract": [
         {
           "type": "text",
@@ -273,7 +281,7 @@
         },
         {
           "kind": "text",
-          "text": ": AVFileType) -> [NSNumber]"
+          "text": ": AVFileType) -> [OSType]"
         }
       ]
     },
@@ -303,8 +311,7 @@
           "kind": "text",
           "text": "(OSType) -> Bool"
         }
-      ],
-      "beta": true
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3697091-isbayerrawpixelformat": {
       "title": "isBayerRAWPixelFormat(_:)",
@@ -332,8 +339,7 @@
           "kind": "text",
           "text": "(OSType) -> Bool"
         }
-      ],
-      "beta": true
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -347,8 +353,8 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2991117-availablerawphotopixelformattype",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2873950-supportedphotopixelformattypes",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/2873921-supportedrawphotopixelformattype",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3857741-supportedphotopixelformattypes",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3858114-supportedrawphotopixelformattype",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3697090-isappleprorawpixelformat",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/3697091-isbayerrawpixelformat"
       ],
@@ -417,6 +423,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -518,7 +525,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

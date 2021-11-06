@@ -1,0 +1,1786 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Notarize your app from the command line to handle special distribution cases."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3087717,
+  "kind": "article",
+  "metadata": {
+    "title": "Customizing the Notarization Workflow",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution": {
+      "title": "Notarizing macOS Software Before Distribution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution"
+    },
+    "link-media-3563043": {
+      "identifier": "link-media-3563043",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3563043"
+    },
+    "media-3563043": {
+      "identifier": "media-3563043",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 735,
+            "height": 423
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cba0364678/3563043@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 735,
+            "height": 423
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9972c1321b/3563043~dark@2x.png"
+        }
+      ],
+      "alt": "Screenshot of Xcode's scheme editor showing an example of a post-actions script for the Archive action.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087755": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087755",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087755"
+    },
+    "link-media-3088613": {
+      "identifier": "link-media-3088613",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3088613"
+    },
+    "media-3088613": {
+      "identifier": "media-3088613",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 500,
+            "height": 220
+          },
+          "url": "https://docs-assets.developer.apple.com/published/34c2499810/3088613@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 500,
+            "height": 220
+          },
+          "url": "https://docs-assets.developer.apple.com/published/136fb1597b/3088613~dark@2x.png"
+        }
+      ],
+      "alt": "Getting the ExportOptions.plist file from Xcode.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087756": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087756",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087756"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/customizing_the_xcode_archive_process": {
+      "title": "Customizing the Xcode Archive Process",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/customizing_the_xcode_archive_process",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/customizing_the_xcode_archive_process",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Archive, export, and notarize your app in one step using Xcode post-action build scripts. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087720": {
+      "title": "Staple the Ticket to Your Distribution",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087720",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087720"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087749": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087749",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087749"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier": {
+      "title": "Notarizing Apps when Developing with Xcode 12 and Earlier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Upload your app to the Notary service and check the status of the notarization using older command line tools."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087780": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087780",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087780"
+    },
+    "link-3178134": {
+      "title": "Using app-specific passwords",
+      "type": "topic",
+      "identifier": "link-3178134",
+      "kind": "article",
+      "role": "link",
+      "url": "https://support.apple.com/en-us/HT204397"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087783": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087783",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087783"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3399157": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3399157",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3399157"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087781": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087781",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087781"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087782": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087782",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087782"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087806": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087806",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087806"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087805": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087805",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087805"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087807": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087807",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087807"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3835212": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3835212",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3835212"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087808": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087808",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087808"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087809": {
+      "title": "Listing 14",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087809",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087809"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues": {
+      "title": "Resolving Common Notarization Issues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handle common problems reported in the notarization log file, or that arise during ticket stapling."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087810": {
+      "title": "Listing 15",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087810",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087810"
+    },
+    "link-3872938": {
+      "title": "https://aws.amazon.com",
+      "type": "topic",
+      "identifier": "link-3872938",
+      "kind": "article",
+      "role": "link",
+      "url": "https://aws.amazon.com"
+    },
+    "link-3178138": {
+      "title": "System and network requirements",
+      "type": "section",
+      "identifier": "link-3178138",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/itc/transporteruserguide/#/apdATD1E112-D1E1A1303-D1E112A1126"
+    },
+    "link-3178135": {
+      "title": "Transporter User Guide",
+      "type": "section",
+      "identifier": "link-3178135",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/itc/transporteruserguide/#/"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit": {
+      "title": "CloudKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/cloudkit"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3178136": {
+      "title": "Listing 16",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3178136",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3178136"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3561577": {
+      "title": "Listing 17",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3561577",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3561577"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow": {
+      "title": "Customizing the Notarization Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Notarize your app from the command line to handle special distribution cases."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Xcode Archives",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/customizing_the_xcode_archive_process"
+      ],
+      "anchor": "3087748"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Legacy Tools",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier"
+      ],
+      "anchor": "3835195"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues"
+      ],
+      "title": "Notarization",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The easiest way to notarize your app is through the Xcode user interface, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution"
+            },
+            {
+              "type": "text",
+              "text": ". However, if you have a more complex scenario, you can use command line tools to manually notarize your app. This workflow can be useful in a number of cases, like when you need to:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Notarize software you’ve already shipped."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Notarize plug-ins for other software packages."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Notarize Xcode targets other than macOS app targets, including Aggregate and External Build System targets."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create complex distributions, like disk images or installer packages."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add the notarization process to a scripted build environment."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Export a Package for Notarization",
+          "anchor": "3087719"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To prepare an app for notarization, you must export the app from Xcode. Using Xcode, you can export your archived app by clicking Distribute App in the Organizer window. But in a scripted build environment, you use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "xcodebuild"
+            },
+            {
+              "type": "text",
+              "text": " utility to perform the export. Because export directly follows archiving, the archive’s post-action script is a convenient place to perform the export from. You can edit the post-action from the scheme editor in Xcode."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3563043",
+              "metadata": {
+                "anchor": "3563043",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The script begins by exporting the archive with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "xcodebuild"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "EXPORT_PATH=\"$TEMP_DIR/Export\"",
+            "/usr/bin/xcodebuild -exportArchive -archivePath \"$ARCHIVE_PATH\" -exportOptionsPlist \"$SRCROOT/ExportOptions.plist\" -exportPath \"$EXPORT_PATH\""
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087755",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You tell "
+            },
+            {
+              "type": "codeVoice",
+              "code": "xcodebuild"
+            },
+            {
+              "type": "text",
+              "text": " which archive to export using an environment variable automatically defined by Xcode, and provide a location for the output by defining the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "EXPORT_PATH"
+            },
+            {
+              "type": "text",
+              "text": " variable. Use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "exportOptionsPlist"
+            },
+            {
+              "type": "text",
+              "text": " option to indicate an options property list that configures the export operation. You typically obtain this file by exporting from Xcode just once. The export options file appears alongside the app in the export directory:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3088613",
+              "metadata": {
+                "anchor": "3088613",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alternatively, you can create a custom export options property list file with a text or property list editor."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For a complete list of keys you can use with "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "xcodebuild -exportOptionsPlist"
+                },
+                {
+                  "type": "text",
+                  "text": ", run "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "xcodebuild -help"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "tip"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because you can't upload the "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".app"
+            },
+            {
+              "type": "text",
+              "text": " bundle directly to the notary service, you’ll need to create a compressed archive containing the app:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "APP_PATH=\"$EXPORT_PATH/$PRODUCT_NAME.app\"",
+            "ZIP_PATH=\"$EXPORT_PATH/$PRODUCT_NAME.zip\"",
+            "",
+            "# Create a ZIP archive suitable for notarization.",
+            "/usr/bin/ditto -c -k --keepParent \"$APP_PATH\" \"$ZIP_PATH\"",
+            "",
+            "# As a convenience, open the export folder in Finder.",
+            "/usr/bin/open \"$EXPORT_PATH\""
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087756",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a detailed example that shows how to automate notarization using post-action scripts, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/customizing_the_xcode_archive_process"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alternatively, you can put apps, kernel extensions, and other software in a container, like a disk image, and notarize the container. The notary service accepts disk images (UDIF format), signed flat installer packages, and ZIP archives. It processes nested containers as well, like packages inside a disk image."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you distribute your software via a custom third-party installer, you need two rounds of notarization. First you notarize the installer’s payload (everything the installer will install). You then package the notarized (and stapled, as described in "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow#3087720"
+                },
+                {
+                  "type": "text",
+                  "text": ") items into the installer and notarize it as you would any other executable. If you use a network installer, separately notarize both the installer and the items it downloads."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Upload Your App to the Notarization Service",
+          "anchor": "3087734"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You upload your app for notarization using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " command line tool. Xcode 13 or later supports this tool, so if you have more than one version of Xcode installed on your Mac, be sure to use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "xcode-select"
+            },
+            {
+              "type": "text",
+              "text": " utility to choose an appropriate version:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% sudo xcode-select -s /path/to/Xcode13.app"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087749",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To notarize with an earlier version of Xcode, use the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "altool"
+                },
+                {
+                  "type": "text",
+                  "text": " command line tool instead, as described in "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "xcrun"
+            },
+            {
+              "type": "text",
+              "text": " to invoke the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " command with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "submit"
+            },
+            {
+              "type": "text",
+              "text": " option:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun notarytool submit OvernightTextEditor_11.6.8.zip",
+            "                   --keychain-profile \"AC_PASSWORD\"",
+            "                   --wait",
+            "                   --webhook \"https://example.com/notarization\""
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087780",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The notary service generates a ticket for the top-level file that you specify, as well as for each nested file. For example, if you submit a disk image that contains a signed installer package with an app bundle inside, the notarization service generates tickets for the disk image, installer package, and app bundle."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "wait"
+            },
+            {
+              "type": "text",
+              "text": " flag to tell "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " to exit only after the Notary service finishes processing the submission. This eliminates the need to poll the service for status. Use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "webhook"
+            },
+            {
+              "type": "text",
+              "text": " flag if you want to specify a URL for the service to access after processing the submission."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can add the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "apple-id"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "password"
+            },
+            {
+              "type": "text",
+              "text": " options to supply your App Store Connect credentials. Because App Store Connect now requires two-factor authentication (2FA) on all accounts, you must create an app-specific password for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": ", as described in "
+            },
+            {
+              "type": "link",
+              "title": "Using app-specific passwords",
+              "destination": "https://support.apple.com/en-us/HT204397"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alternatively, to avoid including your password as cleartext in a script, you can provide a reference to a keychain item, as shown in the example above. This assumes the keychain holds a keychain item named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AC_PASSWORD"
+            },
+            {
+              "type": "text",
+              "text": ". You can add a new keychain item for this purpose from the command line using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " utility:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun notarytool store-credentials \"AC_PASSWORD\"",
+            "               --apple-id \"AC_USERNAME\"",
+            "               --team-id <WWDRTeamID>",
+            "               --password <secret_2FA_password>"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087783",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To get the list of identifiers associated with a given Apple ID, if you need it, use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "list-providers"
+            },
+            {
+              "type": "text",
+              "text": " option:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun altool --list-providers -u \"AC_USERNAME\" -p <secret_2FA_password>"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3399157",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The output of that command includes a WWDRTeamID column that lists valid values for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "team-id"
+            },
+            {
+              "type": "text",
+              "text": " flag."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If notarization succeeds, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " prints a submission identifier:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "Successfully uploaded file. ",
+            " id: 2efe2717-52ef-43a5-96dc-0797e4ca1041",
+            " path: /Users/janea/Desktop/OvernightTextEditor_11.6.8.zip"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087781",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Save the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "id"
+            },
+            {
+              "type": "text",
+              "text": " value to use later when checking the status of your request. For more information about "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " and its options, see its manual page, or use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "help"
+            },
+            {
+              "type": "text",
+              "text": " option:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun notarytool --help"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087782",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Check the Status of Your Request",
+          "anchor": "3087732"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After uploading your app, the notarization process typically takes less than an hour. You can use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "history"
+            },
+            {
+              "type": "text",
+              "text": " command to inspect the status of all of your notarization requests:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun notarytool history --keychain-profile \"AC_PASSWORD\""
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087806",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "history"
+            },
+            {
+              "type": "text",
+              "text": " command retrieves the most recent submissions, and prints a table of results:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "Successfully received submission history.",
+            " history",
+            " --------------------------------------------------",
+            " createdDate: 2021-04-29T01:38:09.498Z",
+            " id: 2efe2717-52ef-43a5-96dc-0797e4ca1041",
+            " name: OvernightTextEditor_11.6.8.zip",
+            " status: Accepted",
+            " --------------------------------------------------",
+            " createdDate: 2021-04-23T17:44:54.761Z",
+            " id: cf0c235a-dad2-4c24-96eb-c876d4cb3a2d",
+            " name: OvernightTextEditor_11.6.7.zip",
+            " status: Accepted",
+            " --------------------------------------------------",
+            " createdDate: 2021-04-19T16:56:17.839Z",
+            " id: 38ce81cc-0bf7-454b-91ef-3f7395bf297b",
+            " name: OvernightTextEditor_11.6.7.zip",
+            " status: Invalid"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087805",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To obtain information about a particular submission, use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "info"
+            },
+            {
+              "type": "text",
+              "text": " command, and indicate the submission "
+            },
+            {
+              "type": "codeVoice",
+              "code": "id"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun notarytool info 2efe2717-52ef-43a5-96dc-0797e4ca1041 --keychain-profile \"AC_PASSWORD\""
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087807",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "info"
+            },
+            {
+              "type": "text",
+              "text": " command returns the same data listed in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "history"
+            },
+            {
+              "type": "text",
+              "text": " command, but for a single submission. To download a log file that contains any errors or warnings that occurred during notarization, use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "log"
+            },
+            {
+              "type": "text",
+              "text": " command:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun notarytool log 2efe2717-52ef-43a5-96dc-0797e4ca1041 --keychain-profile \"AC_PASSWORD\" developer_log.json"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835212",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "log"
+            },
+            {
+              "type": "text",
+              "text": " command downloads JSON-formatted data and saves it to the specified file:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "Successfully downloaded submission log",
+            " id: 2efe2717-52ef-43a5-96dc-0797e4ca1041",
+            " location: /Users/ravipatel/Desktop/developer_log.json"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087808",
+            "title": "Listing 13"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The file enumerates any issues that notarization found:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "{",
+            "    \"archiveFilename\": \"Overnight TextEditor.app\",",
+            "    \"issues\": [",
+            "        {",
+            "            \"message\": \"The signature of the binary is invalid.\",",
+            "            \"path\": \"Overnight TextEditor.app/Contents/MacOS/Overnight TextEditor\",",
+            "            \"severity\": \"error\"",
+            "        }",
+            "    ],",
+            "    \"jobId\": \"2EFE2717-52EF-43A5-96DC-0797E4CA1041\",",
+            "    \"logFormatVersion\": 1,",
+            "    \"status\": \"Invalid\",",
+            "    \"statusSummary\": \"Archive contains critical validation errors\",",
+            "    \"ticketContents\": null,",
+            "    \"uploadDate\": \"2021-04-19T16:56:17Z\"",
+            "}"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087809",
+            "title": "Listing 14"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Always check the log file, even if notarization succeeds, because it might contain warnings that you can fix prior to your next submission."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about how to deal with common problems, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Staple the Ticket to Your Distribution",
+          "anchor": "3087720"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Notarization produces a ticket that tells Gatekeeper that your app is notarized. After notarization completes, the next time any user attempts to run your app on macOS 10.14 or later, Gatekeeper finds the ticket online. This includes users who downloaded your app before notarization."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You should also attach the ticket to your software using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "stapler"
+            },
+            {
+              "type": "text",
+              "text": " tool, so that future distributions include the ticket. This ensures that Gatekeeper can find the ticket even when a network connection isn’t available. To attach a ticket to your app, bundle, disk image, or flat installer package, use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "stapler"
+            },
+            {
+              "type": "text",
+              "text": " tool:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun stapler staple \"Overnight TextEditor.app\""
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3087810",
+            "title": "Listing 15"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "While you can notarize a ZIP archive, you can’t staple to it directly. Instead, run "
+            },
+            {
+              "type": "codeVoice",
+              "code": "stapler"
+            },
+            {
+              "type": "text",
+              "text": " against each item that you added to the archive. Then create a new ZIP file containing the stapled items for distribution. Although tickets are created for standalone binaries, it’s not currently possible to staple tickets to them."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Ensure Your Build Server Has Network Access",
+          "anchor": "3178137"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To incorporate notarization into a custom workflow, your build server needs access to certain network resources."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " tool uses Amazon S3 Transfer Acceleration by default, which connects to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notary-submissions-prod.s3-accelerate.amazonaws.com"
+            },
+            {
+              "type": "text",
+              "text": ". Use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "no-s3-acceleration"
+            },
+            {
+              "type": "text",
+              "text": " flag during submission to use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notary-submissions-prod.s3.us-west-2.amazonaws.com"
+            },
+            {
+              "type": "text",
+              "text": " endpoint instead. You can find the range of Internet Protocol (IP) addresses used by Amazon S3 in the documentation on "
+            },
+            {
+              "type": "link",
+              "title": "https://aws.amazon.com",
+              "destination": "https://aws.amazon.com"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your network configuration doesn’t permit access to Amazon S3, use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " instead, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier"
+            },
+            {
+              "type": "text",
+              "text": ". That tool is a front end for the Transporter command line tool, so it uses the same IP address ranges and ports as that tool. See "
+            },
+            {
+              "type": "link",
+              "title": "System and network requirements",
+              "destination": "https://help.apple.com/itc/transporteruserguide/#/apdATD1E112-D1E1A1303-D1E112A1126"
+            },
+            {
+              "type": "text",
+              "text": " in the "
+            },
+            {
+              "type": "link",
+              "title": "Transporter User Guide",
+              "destination": "https://help.apple.com/itc/transporteruserguide/#/"
+            },
+            {
+              "type": "text",
+              "text": " for details."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "stapler"
+            },
+            {
+              "type": "text",
+              "text": " uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit"
+            },
+            {
+              "type": "text",
+              "text": " to download tickets, which requires access to the following IP address ranges, all on port 443:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "17.248.128.0/18",
+            "17.250.64.0/18",
+            "17.248.192.0/19"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3178136",
+            "title": "Listing 16"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Avoid Long Notarization Response Times and Size Limits",
+          "anchor": "3561440"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Notarization completes for most software within 5 minutes, and for 98 percent of software within 15 minutes. However, notarization can take longer under certain conditions. Help to avoid long response times by following a few rules:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Minimize the total number of files, even when the individual files are small."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Don’t save non-executable files in places that require code signatures, like "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "MyApp.app/Content/MacOS/"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Instead, save these files to a directory that doesn’t require a code signature, like "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "MyApp.app/Contents/Resources/"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Don’t submit corrupted disk images. You can verify the integrity of a disk image by running the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "hdiutil"
+                    },
+                    {
+                      "type": "text",
+                      "text": " utility:"
+                    }
+                  ]
+                },
+                {
+                  "type": "codeListing",
+                  "code": [
+                    "% hdiutil verify <image>"
+                  ],
+                  "syntax": "swift",
+                  "metadata": {
+                    "anchor": "3561577",
+                    "title": "Listing 17"
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": []
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Avoid heavily compressed disk images."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Avoid huge, non-executable data files, especially when they change often."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Limit notarizations to 75 per day."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For large uploads, try to exclude non-executable data from notarization. For example, if you use an installer package, you could move all your non-executable data into a folder next to a notarized installer package. Put both the data and the notarized installer package into a single disk image, and ship the disk image without notarization. For the best user experience, staple the notarization ticket to the installer package."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

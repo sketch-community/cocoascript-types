@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INSendMessageIntent(py)content",
+    "parent": {
+      "title": "INSendMessageIntent"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,6 +140,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype": {
+      "title": "outgoingMessageType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the message contents."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier": {
       "title": "conversationIdentifier",
       "type": "topic",
@@ -142,7 +164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The identifier associated with the conversation."
+          "text": "The identifier for the conversation."
         }
       ]
     },
@@ -198,24 +220,23 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The person or account that is sending the message."
+          "text": "The person or account that’s sending the message."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname": {
-      "title": "groupName",
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621862-attachments": {
+      "title": "attachments",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621862-attachments",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintent/1778199-groupname",
+      "url": "/documentation/sirikit/insendmessageintent/3621862-attachments",
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the group to receive the message."
+          "text": "Audio files to include in the message."
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -225,25 +246,16 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639316-recipients",
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866589-speakablegroupname",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639342-servicename",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639248-sender",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname"
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621862-attachments"
       ],
       "title": "Specifying Details About a Message",
       "generated": true
@@ -287,6 +299,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -295,7 +308,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

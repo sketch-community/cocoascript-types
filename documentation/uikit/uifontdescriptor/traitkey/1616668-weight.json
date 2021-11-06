@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The normalized font weight."
+      "text": "The numerical value that corresponds to a font face."
     }
   ],
   "documentVersion": 0,
@@ -44,25 +44,33 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@UIFontWeightTrait",
+    "parent": {
+      "title": "UIFontDescriptor.TraitKey"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -80,8 +88,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -156,6 +164,30 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnumber"
     },
+    "doc://com.apple.documentation/documentation/swiftui/font/weight/regular": {
+      "title": "regular",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swiftui/font/weight/regular",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swiftui/font/weight/regular"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifont/weight/1616692-ultralight": {
+      "title": "ultraLight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifont/weight/1616692-ultralight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifont/weight/1616692-ultralight"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsfont/weight/1469981-black": {
+      "title": "black",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsfont/weight/1469981-black",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsfont/weight/1469981-black"
+    },
     "doc://com.apple.documentation/documentation/uikit/uifont/weight": {
       "title": "UIFont.Weight",
       "type": "topic",
@@ -163,6 +195,22 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uifont/weight"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifontdescriptor/attributename/1616736-traits": {
+      "title": "traits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifontdescriptor/attributename/1616736-traits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifontdescriptor/attributename/1616736-traits"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifontdescriptor/traitkey/1616668-weight#3738160": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifontdescriptor/traitkey/1616668-weight#3738160",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uikit/uifontdescriptor/traitkey/1616668-weight#3738160"
     },
     "doc://com.apple.documentation/documentation/uikit/uifontdescriptor/traitkey/1616686-slant": {
       "title": "slant",
@@ -230,7 +278,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The normalized font weight."
+          "text": "The numerical value that corresponds to a font face."
         }
       ],
       "fragments": [
@@ -347,6 +395,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -393,7 +442,7 @@
             },
             {
               "type": "text",
-              "text": ". The value of "
+              "text": ",  where "
             },
             {
               "type": "codeVoice",
@@ -401,7 +450,59 @@
             },
             {
               "type": "text",
-              "text": " corresponds to the regular or medium font weight. You can also use a font weight constant to specify a particular weight; for a list of constants you can use, see "
+              "text": " corresponds to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swiftui/font/weight/regular"
+            },
+            {
+              "type": "text",
+              "text": " weight constant. The negative side of the value range indicates that the font is light or thin; the positive side means the font is heavier or bolder. For example, the font face "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifont/weight/1616692-ultralight"
+            },
+            {
+              "type": "text",
+              "text": " has the approximate value of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "-0.8"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsfont/weight/1469981-black"
+            },
+            {
+              "type": "text",
+              "text": " has the approximate value of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.62"
+            },
+            {
+              "type": "text",
+              "text": ". When providing a weight that doesn’t precisely match a font face in the family, the system locates an available face that represents the closest match."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use a font face constant to specify a weight; for a list of constants, see "
             },
             {
               "type": "reference",
@@ -413,12 +514,48 @@
               "text": "."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To access the weight of a font, first retrieve the font’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uifontdescriptor/attributename/1616736-traits"
+            },
+            {
+              "type": "text",
+              "text": " dictionary information:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let font = UIFont.systemFont(ofSize: 21, weight: .bold)",
+            "if let traits = font.fontDescriptor.object(forKey: .traits) as? [UIFontDescriptor.TraitKey: Any]{",
+            "    let weightValue = traits[.weight]",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3738160",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

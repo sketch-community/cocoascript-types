@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The battery power state of the device."
+      "text": "Constants that describe the battery power state of the device."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,23 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@UIDeviceBatteryState",
+    "parent": {
+      "title": "UIDevice"
+    },
     "symbolKind": "enum",
     "fragments": [
       {
@@ -57,8 +65,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -142,22 +150,6 @@
           "text": ": UIDevice.BatteryState"
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/swift/true": {
-      "title": "true",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/true",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/true"
-    },
-    "doc://com.apple.documentation/documentation/swift/false": {
-      "title": "false",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/false",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/false"
     },
     "doc://com.apple.documentation/documentation/swift/int": {
       "title": "Int",
@@ -301,25 +293,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value indicating whether battery monitoring is enabled ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/swift/true"
-        },
-        {
-          "type": "text",
-          "text": ") or not ("
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/swift/false"
-        },
-        {
-          "type": "text",
-          "text": ")."
+          "text": "A Boolean value that indicates whether battery monitoring is enabled."
         }
       ],
       "fragments": [
@@ -347,7 +321,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The battery power state of the device."
+          "text": "Constants that describe the battery power state of the device."
         }
       ],
       "fragments": [
@@ -378,7 +352,8 @@
         "doc://com.apple.documentation/documentation/uikit/uidevice/batterystate/unplugged",
         "doc://com.apple.documentation/documentation/uikit/uidevice/batterystate/charging",
         "doc://com.apple.documentation/documentation/uikit/uidevice/batterystate/full"
-      ]
+      ],
+      "anchor": "1626439"
     }
   ],
   "seeAlsoSections": [
@@ -426,6 +401,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -462,7 +438,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

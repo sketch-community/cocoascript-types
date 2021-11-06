@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,20 +34,31 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSetAudioSourceInCarIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,13 +93,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintent#2279081": {
       "title": "Table 1",
@@ -130,7 +149,8 @@
           "type": "text",
           "text": "A request to change the source of audio playback in a CarPlay-enabled vehicle."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintent/1648406-audiosource": {
       "title": "audioSource",
@@ -144,7 +164,8 @@
           "type": "text",
           "text": "The audio source to select."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintent/1648407-relativeaudiosourcereference": {
       "title": "relativeAudioSourceReference",
@@ -158,7 +179,8 @@
           "type": "text",
           "text": "The relative audio source to select."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintenthandling": {
       "title": "INSetAudioSourceInCarIntentHandling",
@@ -172,7 +194,8 @@
           "type": "text",
           "text": "The handler interface for changing a vehicle’s audio source."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponse": {
       "title": "INSetAudioSourceInCarIntentResponse",
@@ -186,7 +209,8 @@
           "type": "text",
           "text": "Your app’s response to a set audio source in car intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inintent": {
       "title": "INIntent",
@@ -218,7 +242,8 @@
           "kind": "identifier",
           "text": "initWithAudioSource:relativeAudioSourceReference:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -228,6 +253,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -244,7 +289,8 @@
       "title": "Initializing the Intent Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintent/1648409-initwithaudiosource"
-      ]
+      ],
+      "anchor": "2279066"
     },
     {
       "kind": "taskGroup",
@@ -252,7 +298,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintent/1648406-audiosource",
         "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintent/1648407-relativeaudiosourcereference"
-      ]
+      ],
+      "anchor": "2279072"
     }
   ],
   "seeAlsoSections": [
@@ -261,7 +308,7 @@
         "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponse"
       ],
-      "title": "Set Audio Source in Car",
+      "title": "CarPlay Audio Source",
       "generated": true
     }
   ],
@@ -299,6 +346,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -336,7 +384,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Users may select audio sources by name or by asking for the next or previous audio source that is available. When the user asks for an audio source by name, Siri populates the "
+              "text": "Users may select audio sources by name or by asking for the next or previous audio source that’s available. When the user asks for an audio source by name, Siri populates the "
             },
             {
               "type": "reference",
@@ -513,7 +561,7 @@
             },
             {
               "type": "text",
-              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn‘T exhaustive and Siri may recognize many other phrases."
+              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases."
             }
           ]
         },
@@ -1378,7 +1426,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When managing CarPlay features, users do not need to include the name of the app in the phrases that they speak. Siri knows automatically when CarPlay is active and routes CarPlay-related intents to the app of the corresponding automotive vendor."
+              "text": "When managing CarPlay features, users don’t need to include the name of the app in the phrases that they speak. Siri knows automatically when CarPlay is active and routes CarPlay-related intents to the app of the corresponding automotive vendor."
             }
           ]
         }
@@ -1386,7 +1434,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

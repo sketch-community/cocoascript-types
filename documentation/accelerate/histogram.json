@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Calculate and or manipulate an image's histogram."
+      "text": "Calculate or manipulate an image's histogram."
     }
   ],
   "documentVersion": 0,
@@ -36,8 +36,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -358,7 +358,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculates the histogram  a PlanarF image. "
+          "text": "Calculates the histogram of a PlanarF image."
         }
       ]
     },
@@ -372,7 +372,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculates a histogram for a Planar8 image."
+          "text": "Calculates the histogram of a Planar8 image."
         }
       ]
     },
@@ -432,6 +432,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/enhancing_image_contrast_with_histogram_manipulation": {
+      "title": "Enhancing Image Contrast with Histogram Manipulation ",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/enhancing_image_contrast_with_histogram_manipulation",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/enhancing_image_contrast_with_histogram_manipulation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enhance and adjust the contrast of an image with histogram equalization and contrast stretching."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/transform": {
       "title": "Transform",
       "type": "topic",
@@ -456,7 +470,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculate and or manipulate an image's histogram."
+          "text": "Calculate or manipulate an image's histogram."
         }
       ]
     },
@@ -481,7 +495,8 @@
         "doc://com.apple.documentation/documentation/accelerate/1545003-vimageendsincontraststretch_argb",
         "doc://com.apple.documentation/documentation/accelerate/1546610-vimageendsincontraststretch_plan",
         "doc://com.apple.documentation/documentation/accelerate/1544335-vimageendsincontraststretch_plan"
-      ]
+      ],
+      "anchor": "1681411"
     },
     {
       "kind": "taskGroup",
@@ -491,7 +506,8 @@
         "doc://com.apple.documentation/documentation/accelerate/1546860-vimageequalization_argb8888",
         "doc://com.apple.documentation/documentation/accelerate/1546654-vimageequalization_planarf",
         "doc://com.apple.documentation/documentation/accelerate/1545340-vimageequalization_planar8"
-      ]
+      ],
+      "anchor": "1681483"
     },
     {
       "kind": "taskGroup",
@@ -501,7 +517,8 @@
         "doc://com.apple.documentation/documentation/accelerate/1546963-vimagehistogramspecification_arg",
         "doc://com.apple.documentation/documentation/accelerate/1545709-vimagehistogramspecification_pla",
         "doc://com.apple.documentation/documentation/accelerate/1545851-vimagehistogramspecification_pla"
-      ]
+      ],
+      "anchor": "1681507"
     },
     {
       "kind": "taskGroup",
@@ -511,14 +528,16 @@
         "doc://com.apple.documentation/documentation/accelerate/1545743-vimagehistogramcalculation_argb8",
         "doc://com.apple.documentation/documentation/accelerate/1545392-vimagehistogramcalculation_plana",
         "doc://com.apple.documentation/documentation/accelerate/1544353-vimagehistogramcalculation_plana"
-      ]
+      ],
+      "anchor": "1652730"
     },
     {
       "kind": "taskGroup",
       "title": "Querying the Minimum Buffer Size",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/histogram/1807095-vimagegetminimumtempbuffersizefo"
-      ]
+      ],
+      "anchor": "1681567"
     }
   ],
   "seeAlsoSections": [
@@ -527,6 +546,7 @@
         "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
         "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images",
         "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage",
+        "doc://com.apple.documentation/documentation/accelerate/enhancing_image_contrast_with_histogram_manipulation",
         "doc://com.apple.documentation/documentation/accelerate/transform"
       ],
       "title": "Color and Tone Adjustment",
@@ -555,7 +575,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Histogram functions calculate image histograms or manipulate a histogram to modify an image. There are a number of reasons to apply histogram operations to an image. An image may not make full use of the possible range of intensity values—for example, most of its pixels may be fairly dark, making details difficult to see. Changing the image so that it has a more uniform histogram can improve contrast. Also, it may be easier to compare two images (with respect to texture or other aspects) if you change each histogram to match some standard histogram."
+              "text": "Histogram functions calculate image histograms or manipulate a histogram to modify an image. There are a number of reasons to apply histogram operations to an image. An image may not make full use of the possible range of intensity values—for example, most of its pixels may be fairly dark, making details difficult to see. Changing the image so that it has a more uniform histogram can improve contrast. Also, it may be easier to compare two images (with respect to texture or other aspects) if you change each histogram to match a standard histogram."
             }
           ]
         },
@@ -567,7 +587,7 @@
               "text": "Histogram operations are "
             },
             {
-              "type": "strong",
+              "type": "emphasis",
               "inlineContent": [
                 {
                   "type": "text",
@@ -599,8 +619,17 @@
                   "type": "paragraph",
                   "inlineContent": [
                     {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Contrast stretch"
+                        }
+                      ]
+                    },
+                    {
                       "type": "text",
-                      "text": "Contrast stretch transforms an image so that its intensity values stretch out along the full range of intensity values. It is best used on images in which all the pixels are concentrated in one area of the intensity spectrum, and intensity values outside that area are not represented."
+                      "text": " transforms an image so that its intensity values stretch out along the full range. It’s best used on images in which all the pixels are concentrated in one area of the intensity spectrum and intensity values outside that area aren’t represented."
                     }
                   ]
                 }
@@ -612,8 +641,17 @@
                   "type": "paragraph",
                   "inlineContent": [
                     {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Ends-in contrast stretch"
+                        }
+                      ]
+                    },
+                    {
                       "type": "text",
-                      "text": "Ends-in contrast stretch is a more complex version of the contrast stretch operation. These types of functions are best used on images that have some pixels at or near the lowest and highest values of the intensity spectrum, but whose histogram is still mainly concentrated in one area. The ends-in contrast stretch functions map all intensities less than or equal to a certain level to 0; all intensities greater than or equal to a certain level to 255; and perform a contrast stretch on all the values in between. The low and high levels are not defined directly by two given intensity values, but by percentages: the ends-in contrast stretch operation must find intensity levels such that a certain percent of pixels are below one of the intensity values, and a certain percent are above the other intensity value"
+                      "text": " is a more complex version of the contrast stretching operation. These functions are best used on images that have some pixels at or near the lowest and highest values of the intensity spectrum but whose histogram is still mainly concentrated in one area. The ends-in contrast stretching functions map all intensities less than or equal to a certain level to 0; all intensities greater than or equal to a certain level to 255; and perform a contrast stretch on all the values in between. The low and high levels aren’t defined directly by two given intensity values but by percentages: the ends-in contrast stretching operation must find intensity levels such that a certain percent of pixels are below one of the intensity values, and a certain percent are above the other intensity value"
                     }
                   ]
                 }
@@ -625,8 +663,17 @@
                   "type": "paragraph",
                   "inlineContent": [
                     {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Equalization"
+                        }
+                      ]
+                    },
+                    {
                       "type": "text",
-                      "text": "Equalization transforms an image so that it has a more uniform histogram. A truly uniform histogram is one in which each intensity level occurs with equal frequency. These functions approximate that histogram. "
+                      "text": " transforms an image so that it has a more uniform histogram. In a truly uniform histogram, which these functions approximate, each intensity level occurs with equal frequency. "
                     }
                   ]
                 }
@@ -638,8 +685,17 @@
                   "type": "paragraph",
                   "inlineContent": [
                     {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Histogram specification"
+                        }
+                      ]
+                    },
+                    {
                       "type": "text",
-                      "text": "Histogram specification transforms an image so that its histogram more closely resembles a given histogram."
+                      "text": " transforms an image so that its histogram more closely resembles a given histogram."
                     }
                   ]
                 }
@@ -651,7 +707,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

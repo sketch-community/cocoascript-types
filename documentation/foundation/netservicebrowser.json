@@ -34,22 +34,37 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.2",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSNetServiceBrowser",
@@ -66,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,7 +147,8 @@
           "kind": "identifier",
           "text": "NetServiceBrowser"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/swift/false": {
       "title": "false",
@@ -176,7 +192,8 @@
           "kind": "text",
           "text": "()"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1409776-schedule": {
       "title": "schedule(in:forMode:)",
@@ -220,7 +237,8 @@
           "kind": "text",
           "text": ": RunLoop.Mode)"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1411566-remove": {
       "title": "remove(from:forMode:)",
@@ -264,7 +282,8 @@
           "kind": "text",
           "text": ": RunLoop.Mode)"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1408718-searchforregistrationdomains": {
       "title": "searchForRegistrationDomains()",
@@ -292,7 +311,8 @@
           "kind": "text",
           "text": "()"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1417661-searchforbrowsabledomains": {
       "title": "searchForBrowsableDomains()",
@@ -320,7 +340,8 @@
           "kind": "text",
           "text": "()"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1417565-searchforservices": {
       "title": "searchForServices(ofType:inDomain:)",
@@ -364,7 +385,8 @@
           "kind": "text",
           "text": ": String)"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -373,30 +395,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject"
-    },
-    "doc://com.apple.documentation/documentation/swift/cvararg": {
-      "title": "CVarArg",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/cvararg"
-    },
-    "doc://com.apple.documentation/documentation/swift/equatable": {
-      "title": "Equatable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/equatable"
-    },
-    "doc://com.apple.documentation/documentation/swift/hashable": {
-      "title": "Hashable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/hashable"
     },
     "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1412947-init": {
       "title": "init()",
@@ -429,7 +427,8 @@
           "kind": "text",
           "text": "()"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1409380-delegate": {
       "title": "delegate",
@@ -457,7 +456,8 @@
           "kind": "text",
           "text": ": NetServiceBrowserDelegate?"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1413106-includespeertopeer": {
       "title": "includesPeerToPeer",
@@ -494,7 +494,8 @@
           "kind": "text",
           "text": ": Bool"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservicebrowserdelegate": {
       "title": "NetServiceBrowserDelegate",
@@ -528,6 +529,24 @@
       "title": "Technologies"
     }
   },
+  "diffAvailability": {
+    "minor": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.1",
+        "13.2 beta 1"
+      ]
+    },
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
+    }
+  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -535,16 +554,6 @@
       "type": "inheritsFrom",
       "identifiers": [
         "doc://com.apple.documentation/documentation/objectivec/nsobject"
-      ]
-    },
-    {
-      "kind": "relationships",
-      "title": "Conforms To",
-      "type": "conformsTo",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/swift/cvararg",
-        "doc://com.apple.documentation/documentation/swift/equatable",
-        "doc://com.apple.documentation/documentation/swift/hashable"
       ]
     }
   ],
@@ -554,7 +563,8 @@
       "title": "Creating Network Service Browsers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1412947-init"
-      ]
+      ],
+      "anchor": "1653714"
     },
     {
       "kind": "taskGroup",
@@ -562,7 +572,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1409380-delegate",
         "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1413106-includespeertopeer"
-      ]
+      ],
+      "anchor": "1653762"
     },
     {
       "kind": "taskGroup",
@@ -572,7 +583,8 @@
         "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1408718-searchforregistrationdomains",
         "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1417565-searchforservices",
         "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1414528-stop"
-      ]
+      ],
+      "anchor": "1653827"
     },
     {
       "kind": "taskGroup",
@@ -580,7 +592,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1409776-schedule",
         "doc://com.apple.documentation/documentation/foundation/netservicebrowser/1411566-remove"
-      ]
+      ],
+      "anchor": "1653925"
     }
   ],
   "seeAlsoSections": [
@@ -626,6 +639,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -770,7 +784,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

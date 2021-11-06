@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The list of "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput"
-    },
-    {
-      "type": "text",
-      "text": " subclasses not allowed for capture with this format, if any."
+      "text": "The list of capture output subclasses not allowed for capture with this format, if any."
     }
   ],
   "documentVersion": 0,
@@ -45,20 +36,28 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVCaptureDeviceFormat(py)unsupportedCaptureOutputClasses",
+    "parent": {
+      "title": "AVCaptureDeviceFormat"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -123,14 +122,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput": {
-      "title": "AVCaptureOutput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcaptureoutput"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1388503-mediatype": {
       "title": "mediaType",
       "type": "topic",
@@ -152,6 +143,14 @@
           "text": " active or supported format."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput": {
+      "title": "AVCaptureOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcaptureoutput"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturemoviefileoutput": {
       "title": "AVCaptureMovieFileOutput",
@@ -229,16 +228,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The list of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput"
-        },
-        {
-          "type": "text",
-          "text": " subclasses not allowed for capture with this format, if any."
+          "text": "The list of capture output subclasses not allowed for capture with this format, if any."
         }
       ]
     },
@@ -252,7 +242,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The highest resolution still image that can be produced by this format."
+          "text": "The highest resolution still image the system can produce for this format."
         }
       ]
     },
@@ -325,6 +315,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -362,7 +353,7 @@
             },
             {
               "type": "text",
-              "text": " subclasses that accept that media type. However, this is not always the case. For example, formats for high-resolution photo capture may not support the "
+              "text": " subclasses that accept that media type. However, this isn’t always the case. For example, formats for high-resolution photo capture may not support the "
             },
             {
               "type": "reference",
@@ -379,7 +370,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

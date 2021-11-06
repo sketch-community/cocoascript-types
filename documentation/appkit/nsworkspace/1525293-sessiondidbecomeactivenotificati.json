@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A notification that the workspace posts after a user session is switched in."
+      "text": "A notification that the workspace posts after a user session switches in."
     }
   ],
   "documentVersion": 0,
@@ -50,10 +50,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.3",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSWorkspaceSessionDidBecomeActiveNotification",
+    "parent": {
+      "title": "NSWorkspace"
+    },
     "symbolKind": "cldata",
     "fragments": [
       {
@@ -71,8 +74,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -163,6 +166,14 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnotification"
     },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525071-notificationcenter": {
+      "title": "notificationCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525071-notificationcenter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1525071-notificationcenter"
+    },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace/1528611-willlaunchapplicationnotificatio": {
       "title": "willLaunchApplicationNotification",
       "type": "topic",
@@ -201,7 +212,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when a new app has started up."
+          "text": "A notification that the workspace posts when a new app starts up."
         }
       ],
       "fragments": [
@@ -257,7 +268,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts after a user session is switched in."
+          "text": "A notification that the workspace posts after a user session switches in."
         }
       ],
       "fragments": [
@@ -285,7 +296,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts before a user session is switched out."
+          "text": "A notification that the workspace posts before a user session switches out."
         }
       ],
       "fragments": [
@@ -313,7 +324,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the Finder hid an app."
+          "text": "A notification that the workspace posts when the Finder hides an app."
         }
       ],
       "fragments": [
@@ -341,7 +352,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the Finder unhid an app."
+          "text": "A notification that the workspace posts when the Finder unhides an app."
         }
       ],
       "fragments": [
@@ -397,7 +408,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the Finder deactivated an app."
+          "text": "A notification that the workspace posts when the Finder deactivates an app."
         }
       ],
       "fragments": [
@@ -453,7 +464,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when a new device has been mounted."
+          "text": "A notification that the workspace posts when a new device mounts."
         }
       ],
       "fragments": [
@@ -593,7 +604,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the machine wakes from sleep."
+          "text": "A notification that the workspace posts when the device wakes from sleep."
         }
       ],
       "fragments": [
@@ -621,7 +632,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the user requests a logout or powers off the machine."
+          "text": "A notification that the workspace posts when the user requests a logout or powers off the device."
         }
       ],
       "fragments": [
@@ -649,7 +660,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts before the machine goes to sleep."
+          "text": "A notification that the workspace posts before the device goes to sleep."
         }
       ],
       "fragments": [
@@ -677,7 +688,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the machine’s screen goes to sleep."
+          "text": "A notification that the workspace posts when the device’s screen goes to sleep."
         }
       ],
       "fragments": [
@@ -705,7 +716,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A notification that the workspace posts when the machine’s screens wake."
+          "text": "A notification that the workspace posts when the device’s screens wake."
         }
       ],
       "fragments": [
@@ -973,7 +984,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This notification allows an app to re-enable some processing when a switched out session gets switched back in, for example. "
+              "text": "This notification allows an app to re-enable some processing, such as when a switched-out session switches back in."
             }
           ]
         },
@@ -991,7 +1002,7 @@
             },
             {
               "type": "text",
-              "text": " instance. The notification does not contain a "
+              "text": " instance. The notification doesn’t contain a "
             },
             {
               "type": "codeVoice",
@@ -1002,12 +1013,36 @@
               "text": " dictionary."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To receive this notification, use "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525071-notificationcenter"
+                },
+                {
+                  "type": "text",
+                  "text": " to register for it. If you use a different notification center to register, you won’t receive the notification."
+                }
+              ]
+            }
+          ],
+          "style": "important"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

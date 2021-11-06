@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The background color to apply to the badge."
+      "text": "The background color of the item’s badge."
     }
   ],
   "documentVersion": 0,
@@ -12,15 +12,13 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/views_and_controls",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations"
+        "doc://com.apple.documentation/documentation/uikit/uitabbaritem"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/view_controllers",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations"
+        "doc://com.apple.documentation/documentation/uikit/uitabbaritem"
       ]
     ]
   },
@@ -43,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITabBarItem(py)badgeColor",
+    "parent": {
+      "title": "UITabBarItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,17 +120,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations": {
-      "title": "Legacy Customizations",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations",
-      "url": "/documentation/uikit/uitabbaritem/legacy_customizations",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/uikit/view_controllers": {
       "title": "View Controllers",
@@ -133,6 +131,22 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
+      "title": "nil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nil-2gl"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/3173150-systemredcolor": {
+      "title": "systemRedColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/3173150-systemredcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicolor/3173150-systemredcolor"
     },
     "doc://com.apple.documentation/documentation/uikit/uicolor": {
       "title": "UIColor",
@@ -152,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text that is displayed in the upper-right corner of the item with a surrounding red oval."
+          "text": "The text that the item’s badge displays."
         }
       ]
     },
@@ -166,7 +180,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The background color to apply to the badge."
+          "text": "The background color of the item’s badge."
         }
       ]
     },
@@ -180,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Assigns custom text attributes to the badge text. "
+          "text": "Registers text attributes that the badge uses for the specified state."
         }
       ],
       "fragments": [
@@ -204,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Retrieves the custom text attributes associated with the item's badge text."
+          "text": "Returns the badge’s text attributes for the specified state."
         }
       ],
       "fragments": [
@@ -226,16 +240,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -243,7 +247,7 @@
         "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1648566-setbadgetextattributes",
         "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1648565-badgetextattributesforstate"
       ],
-      "title": "Configuring the Badge",
+      "title": "Configuring the Item’s Badge",
       "generated": true
     }
   ],
@@ -285,6 +289,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -305,7 +310,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If you do not specify a value for this property, the tab bar item uses a red background color for badges. "
+              "text": "The default value is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl"
+            },
+            {
+              "type": "text",
+              "text": ". If you don’t specify a value, the item uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/3173150-systemredcolor"
+            },
+            {
+              "type": "text",
+              "text": "."
             }
           ]
         }
@@ -313,7 +336,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

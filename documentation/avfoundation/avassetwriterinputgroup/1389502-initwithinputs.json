@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates an instance of an asset writer input group."
+      "text": "Creates a group for the asset writer inputs."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInputGroup(im)initWithInputs:defaultInput:",
+    "parent": {
+      "title": "AVAssetWriterInputGroup"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,41 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A group of tracks in a mutually exclusive relationship."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput": {
-      "title": "AVAssetWriterInput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
-      "title": "AVAssetWriter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup": {
-      "title": "addInputGroup:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addInputGroup:"
+          "text": "A group of inputs with tracks that are mutually exclusive to each other for playback or processing."
         }
       ]
     },
@@ -182,6 +156,22 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsarray": {
+      "title": "NSArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsarray"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput": {
+      "title": "AVAssetWriterInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1426655-assetwriterinputgroupwithinputs": {
       "title": "assetWriterInputGroupWithInputs:defaultInput:",
       "type": "topic",
@@ -192,7 +182,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and initializes an instance of an asset writer input group."
+          "text": "Returns a new group for the asset writer inputs."
         }
       ],
       "fragments": [
@@ -206,14 +196,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsarray": {
-      "title": "NSArray",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsarray"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1389502-initwithinputs": {
       "title": "initWithInputs:defaultInput:",
       "type": "topic",
@@ -224,7 +206,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an instance of an asset writer input group."
+          "text": "Creates a group for the asset writer inputs."
         }
       ],
       "fragments": [
@@ -251,7 +233,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup/1426655-assetwriterinputgroupwithinputs"
       ],
-      "title": "Creating an Asset Writer Input Group",
+      "title": "Creating an Input Group",
       "generated": true
     }
   ],
@@ -349,6 +331,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -370,16 +353,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "An array of "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput"
-                },
-                {
-                  "type": "text",
-                  "text": " instances to be grouped together."
+                  "text": "The inputs with tracks to arrange into a mutually exclusive group."
                 }
               ]
             }
@@ -393,46 +367,9 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The instance of "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput"
-                },
-                {
-                  "type": "text",
-                  "text": " to designate as the default input for the group."
+                  "text": "The group’s default input."
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "An initialized instance of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriterInputGroup"
-            },
-            {
-              "type": "text",
-              "text": "."
             }
           ]
         }
@@ -452,34 +389,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When the input group is added to an "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-            },
-            {
-              "type": "text",
-              "text": " instance using the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup"
-            },
-            {
-              "type": "text",
-              "text": " method, the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput"
-            },
-            {
-              "type": "text",
-              "text": " property "
+              "text": "When you add an input group to an asset writer, the system sets the default input’s "
             },
             {
               "type": "reference",
@@ -488,7 +398,7 @@
             },
             {
               "type": "text",
-              "text": " is automatically set to "
+              "text": " property value to "
             },
             {
               "type": "reference",
@@ -497,15 +407,7 @@
             },
             {
               "type": "text",
-              "text": " for "
-            },
-            {
-              "type": "codeVoice",
-              "code": "defaultInput"
-            },
-            {
-              "type": "text",
-              "text": " and "
+              "text": ", and the value of the other inputs in the group to "
             },
             {
               "type": "reference",
@@ -514,7 +416,7 @@
             },
             {
               "type": "text",
-              "text": " for all of the other inputs in the group."
+              "text": "."
             }
           ]
         }
@@ -522,7 +424,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,25 +35,41 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "deprecatedAt": "14.5",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "14.5",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "14.5",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "deprecatedAt": "7.3",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INCallRecord(im)initWithIdentifier:dateCreated:caller:callRecordType:callCapability:callDuration:unseen:",
+    "parent": {
+      "title": "INCallRecord"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -164,7 +180,8 @@
           "kind": "identifier",
           "text": "initWithIdentifier:dateCreated:caller:callRecordType:callCapability:callDuration:unseen:numberOfCalls:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/incallrecord/2881733-initwithidentifier": {
       "title": "initWithIdentifier:dateCreated:caller:callRecordType:callCapability:callDuration:unseen:",
@@ -188,6 +205,79 @@
           "kind": "identifier",
           "text": "initWithIdentifier:dateCreated:caller:callRecordType:callCapability:callDuration:unseen:"
         }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727273-initwithidentifier": {
+      "title": "initWithIdentifier:dateCreated:callRecordType:callCapability:callDuration:unseen:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727273-initwithidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecord/3727273-initwithidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a call record with the details about the call."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithIdentifier:dateCreated:callRecordType:callCapability:callDuration:unseen:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727274-initwithidentifier": {
+      "title": "initWithIdentifier:dateCreated:callRecordType:callCapability:callDuration:unseen:numberOfCalls:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727274-initwithidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecord/3727274-initwithidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a call record with the details about the call."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithIdentifier:dateCreated:callRecordType:callCapability:callDuration:unseen:numberOfCalls:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727275-initwithidentifier": {
+      "title": "initWithIdentifier:dateCreated:callRecordType:callCapability:callDuration:unseen:participants:numberOfCalls:isCallerIdBlocked:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727275-initwithidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecord/3727275-initwithidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a call record with the details about the call."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithIdentifier:dateCreated:callRecordType:callCapability:callDuration:unseen:participants:numberOfCalls:isCallerIdBlocked:"
+        }
       ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
@@ -201,7 +291,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/incallrecord/3113792-initwithidentifier"
+        "doc://com.apple.documentation/documentation/sirikit/incallrecord/3113792-initwithidentifier",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727273-initwithidentifier",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727274-initwithidentifier",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecord/3727275-initwithidentifier"
       ],
       "title": "Initializing a Call Record",
       "generated": true
@@ -433,6 +526,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -453,7 +547,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A unique string that you can use to identify the call in your app.  "
+                  "text": "A unique string that you can use to identify the call in your app. "
                 }
               ]
             }
@@ -523,7 +617,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The duration of the call, measured in seconds.  "
+                  "text": "The duration of the call, measured in seconds."
                 }
               ]
             }
@@ -537,7 +631,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A Boolean indicating whether the call was seen by the user."
+                  "text": "A Boolean indicating whether the user saw the call."
                 }
               ]
             }
@@ -584,7 +678,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

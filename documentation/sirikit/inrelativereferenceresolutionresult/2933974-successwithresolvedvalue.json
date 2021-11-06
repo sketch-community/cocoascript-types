@@ -1,11 +1,17 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates an object whose resolution involves the successful matching of the specified parameter."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult"
       ]
     ]
@@ -30,23 +36,33 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "11.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INRelativeReferenceResolutionResult(cm)successWithResolvedValue:",
+    "parent": {
+      "title": "INRelativeReferenceResolutionResult"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -71,10 +87,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -92,6 +108,14 @@
           "text": "A resolution result for a choice between the next or previous option."
         }
       ]
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inrelativereference": {
       "title": "INRelativeReference",
@@ -123,7 +147,8 @@
           "kind": "identifier",
           "text": "successWithResolvedRelativeReference:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult/1902363-confirmationrequiredwithrelative": {
       "title": "confirmationRequiredWithRelativeReferenceToConfirm:",
@@ -147,7 +172,8 @@
           "kind": "identifier",
           "text": "confirmationRequiredWithRelativeReferenceToConfirm:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult/2933974-successwithresolvedvalue": {
       "title": "successWithResolvedValue:",
@@ -156,6 +182,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inrelativereferenceresolutionresult/2933974-successwithresolvedvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an object whose resolution involves the successful matching of the specified parameter."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -175,6 +207,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inrelativereferenceresolutionresult/2933973-confirmationrequiredwithvaluetoc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an object whose resolution requires that the user must confirm the value before proceeding."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -195,6 +233,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -256,6 +314,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -263,7 +322,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

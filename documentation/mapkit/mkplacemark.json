@@ -10,7 +10,13 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/mapkit"
+        "doc://com.apple.documentation/documentation/mapkit",
+        "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkit",
+        "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations"
       ]
     ]
   },
@@ -33,35 +39,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)MKPlacemark",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,19 +107,29 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays": {
+      "title": "MapKit Overlays",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
+      "url": "/documentation/mapkit/mapkit_overlays",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
+      "title": "MapKit Annotations",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
+      "url": "/documentation/mapkit/mapkit_annotations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/mapkit/mkannotation": {
       "title": "MKAnnotation",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/mapkit/mkannotation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An interface for associating your content with a specific map location. "
-        }
-      ]
+      "url": "/documentation/mapkit/mkannotation"
     },
     "doc://com.apple.documentation/documentation/corelocation/clplacemark": {
       "title": "CLPlacemark",
@@ -200,35 +221,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The abbreviated country name."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkplacemark": {
-      "title": "MKPlacemark",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkplacemark",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A user-friendly description of a location on the map.  "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkannotationview": {
-      "title": "MKAnnotationView",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkannotationview",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The visual representation of one of your annotation objects.  "
+          "text": "The abbreviated country or region name."
         }
       ]
     },
@@ -260,21 +253,47 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
-      "title": "MapKit Annotations",
+    "doc://com.apple.documentation/documentation/mapkit/mkshape": {
+      "title": "MKShape",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_annotations"
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkshape",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkshape",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that defines the basic properties for all shape-based overlay objects."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays": {
-      "title": "MapKit Overlays",
+    "doc://com.apple.documentation/documentation/mapkit/mkmultipoint": {
+      "title": "MKMultiPoint",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_overlays"
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmultipoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmultipoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that defines the common behavior shared by open and closed polygon overlays.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkplacemark": {
+      "title": "MKPlacemark",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkplacemark",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user-friendly description of a location on the map.  "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -282,16 +301,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -320,27 +329,27 @@
         "doc://com.apple.documentation/documentation/mapkit/mkplacemark/2172460-initwithcoordinate",
         "doc://com.apple.documentation/documentation/mapkit/mkplacemark/2172461-initwithcoordinate",
         "doc://com.apple.documentation/documentation/mapkit/mkplacemark/1451895-initwithcoordinate"
-      ]
+      ],
+      "anchor": "1657865"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Placemark Attributes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkplacemark/1451952-countrycode"
-      ]
+      ],
+      "anchor": "1657891"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/mapkit/mkannotation",
-        "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
         "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
         "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
-        "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
-        "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays"
+        "doc://com.apple.documentation/documentation/mapkit/mkshape",
+        "doc://com.apple.documentation/documentation/mapkit/mkmultipoint"
       ],
-      "title": "Annotations and Overlays",
+      "title": "Shared Behavior",
       "generated": true
     }
   ],
@@ -378,6 +387,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -400,7 +410,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Placemark data includes information such as the country, state, city, and street address associated with the specified coordinate. A placemark is a concrete annotation object and conforms to the "
+              "text": "Placemark data includes information such as the country or region, state, city, and street address associated with the specified coordinate. A placemark is a concrete annotation object and conforms to the "
             },
             {
               "type": "reference",
@@ -417,7 +427,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

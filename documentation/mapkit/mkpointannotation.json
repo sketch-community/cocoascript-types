@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A string-based annotation that you apply to a specific map point."
+      "text": "A string-based piece of location-specific data that you apply to a specific point on a map."
     }
   ],
   "documentVersion": 0,
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)MKPointAnnotation",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,6 +120,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/mapkit/mkpointannotation/3235758-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a map annotation that shows a title string at a point on a map."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -200,7 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A string-based annotation that you apply to a specific map point."
+          "text": "A string-based piece of location-specific data that you apply to a specific point on a map."
         }
       ]
     },
@@ -230,7 +241,8 @@
           "type": "text",
           "text": "An annotation view that displays a pin image on the map.  "
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -258,14 +270,16 @@
         "doc://com.apple.documentation/documentation/mapkit/mkpointannotation/3235758-init",
         "doc://com.apple.documentation/documentation/mapkit/mkpointannotation/3235759-initwithcoordinate",
         "doc://com.apple.documentation/documentation/mapkit/mkpointannotation/3235760-initwithcoordinate"
-      ]
+      ],
+      "anchor": "3577530"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Annotation’s Location",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkpointannotation/1452620-coordinate"
-      ]
+      ],
+      "anchor": "1657863"
     }
   ],
   "seeAlsoSections": [
@@ -313,6 +327,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -342,7 +357,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

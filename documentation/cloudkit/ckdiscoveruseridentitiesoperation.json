@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An operation that fetches user identities."
+      "text": "An operation that uses the provided criteria to search for discoverable iCloud users."
     }
   ],
   "documentVersion": 0,
@@ -10,8 +10,7 @@
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/database_operations"
+        "doc://com.apple.documentation/documentation/cloudkit"
       ]
     ]
   },
@@ -34,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKDiscoverUserIdentitiesOperation",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,13 +101,77 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/database_operations": {
-      "title": "Database Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/database_operations",
-      "url": "/documentation/cloudkit/database_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399174-requestapplicationpermission": {
+      "title": "requestApplicationPermission:completionHandler:",
       "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399174-requestapplicationpermission",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckcontainer/1399174-requestapplicationpermission",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestApplicationPermission:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640500-discoveruseridentitiescompletion": {
+      "title": "discoverUserIdentitiesCompletionBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640500-discoveruseridentitiescompletion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640500-discoveruseridentitiescompletion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The block to execute when the operation finishes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperation": {
+      "title": "NSOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperation"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperation/1408085-completionblock": {
+      "title": "completionBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation/1408085-completionblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperation/1408085-completionblock"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsqualityofservice/nsqualityofservicedefault": {
+      "title": "NSQualityOfServiceDefault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsqualityofservice/nsqualityofservicedefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsqualityofservice/nsqualityofservicedefault"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperation/1413553-qualityofservice": {
+      "title": "qualityOfService",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation/1413553-qualityofservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperation/1413553-qualityofservice"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation#3742078": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation#3742078",
       "kind": "article",
-      "role": "collectionGroup"
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/ckdiscoveruseridentitiesoperation#3742078"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckoperation": {
       "title": "CKOperation",
@@ -189,17 +257,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640500-discoveruseridentitiescompletion": {
-      "title": "discoverUserIdentitiesCompletionBlock",
+    "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity": {
+      "title": "CKUserIdentity",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640500-discoveruseridentitiescompletion",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640500-discoveruseridentitiescompletion",
+      "url": "/documentation/cloudkit/ckuseridentity",
       "abstract": [
         {
           "type": "text",
-          "text": "The block to execute when the operation finishes."
+          "text": "The identity of a user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo": {
+      "title": "CKUserIdentityLookupInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckuseridentitylookupinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The criteria to use when searching for discoverable iCloud users."
         }
       ]
     },
@@ -213,7 +295,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An operation that fetches all discoverable user identities in the device’s Contacts."
+          "text": "An operation that uses the device’s contacts to search for discoverable iCloud users."
         }
       ]
     },
@@ -227,21 +309,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An operation that fetches user identities."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity": {
-      "title": "CKUserIdentity",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckuseridentity",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that represents a user’s identity."
+          "text": "An operation that uses the provided criteria to search for discoverable iCloud users."
         }
       ]
     },
@@ -251,16 +319,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -280,14 +338,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640525-init",
         "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640521-initwithuseridentitylookupinfos"
-      ]
+      ],
+      "anchor": "2557845"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring the Operation",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640450-useridentitylookupinfos"
-      ]
+      ],
+      "anchor": "2530655"
     },
     {
       "kind": "taskGroup",
@@ -295,16 +355,18 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640524-useridentitydiscoveredblock",
         "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640500-discoveruseridentitiescompletion"
-      ]
+      ],
+      "anchor": "2530648"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveralluseridentitiesoperation",
-        "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity"
+        "doc://com.apple.documentation/documentation/cloudkit/ckuseridentity",
+        "doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo",
+        "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveralluseridentitiesoperation"
       ],
-      "title": "User Identities",
+      "title": "User Discovery",
       "generated": true
     }
   ],
@@ -342,6 +404,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -349,10 +412,194 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this operation to discover one or more iCloud users that match identity information you provide, such as email addresses and phone numbers. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before CloudKit can return a user’s identity, you must ask for their permission by calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399174-requestapplicationpermission"
+            },
+            {
+              "type": "text",
+              "text": ". Do this as part of any onboarding where you can highlight the benefits of being discoverable within the context of your app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The operation executes the handlers you provide on an internal queue it manages. Your handlers must be capable of executing on a background queue. Tasks that need access to the main queue must redirect as appropriate."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The operation calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640500-discoveruseridentitiescompletion"
+            },
+            {
+              "type": "text",
+              "text": " after it executes and returns results. Use the completion handler to perform housekeeping tasks for the operation. It should also manage any failures, whether due to an error or an explicit cancellation."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Because this class inherits from "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation"
+                },
+                {
+                  "type": "text",
+                  "text": ", you can also set the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation/1408085-completionblock"
+                },
+                {
+                  "type": "text",
+                  "text": " property. The operation calls both completion handlers if they’re both set."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit operations have a default QoS of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsqualityofservice/nsqualityofservicedefault"
+            },
+            {
+              "type": "text",
+              "text": ". Operations with this service level are discretionary. The system schedules their execution at an optimal time according to battery level and network conditions, among other factors. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation/1413553-qualityofservice"
+            },
+            {
+              "type": "text",
+              "text": " property to set a more appropriate QoS for the operation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example shows how to create the operation, configure its callbacks, and execute it using the default container’s queue:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func fetchUserIdentities(withEmails emails: [String],",
+            "    completion: @escaping (Result<[CKUserIdentity], Error>) -> Void) {",
+            "    ",
+            "    var identities = [CKUserIdentity]()",
+            "",
+            "    // Convert the email addresses into instances of",
+            "    // CKUserIdentity.LookupInfo, which CloudKit uses",
+            "    // to discover identities.",
+            "    let lookupInfos =",
+            "        CKUserIdentity.LookupInfo.lookupInfos(withEmails: emails)",
+            "    ",
+            "    // Create the operation using the array of lookup objects.",
+            "    let operation = CKDiscoverUserIdentitiesOperation(",
+            "        userIdentityLookupInfos: lookupInfos)",
+            "    ",
+            "    // Cache the user identities as CloudKit discovers them.",
+            "    operation.userIdentityDiscoveredBlock = { userIdentity, _ in",
+            "        identities.append(userIdentity)",
+            "    }",
+            "    ",
+            "    // If the operation fails, return the error to the caller.",
+            "    // Otherwise, return the array of discovered user identities.",
+            "    operation.discoverUserIdentitiesCompletionBlock = { error in",
+            "        if let error = error {",
+            "            completion(.failure(error))",
+            "        } else {",
+            "            completion(.success(identities))",
+            "        }",
+            "    }",
+            "    ",
+            "    // Set an appropriate QoS and add the operation to the",
+            "    // default container's queue to execute it.",
+            "    operation.qualityOfService = .userInitiated",
+            "    CKContainer.default().add(operation)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3742078",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

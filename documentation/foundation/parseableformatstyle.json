@@ -1,0 +1,854 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A type that can convert a given input data type into a representation in an output type."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/data_formatting"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3787790,
+  "kind": "symbol",
+  "metadata": {
+    "title": "ParseableFormatStyle",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "Foundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "12.0",
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "8.0",
+        "current": "8.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "13.0",
+        "current": "13.2"
+      }
+    ],
+    "externalID": "s:10Foundation20ParseableFormatStyleP",
+    "symbolKind": "intf",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "protocol "
+      },
+      {
+        "kind": "identifier",
+        "text": "ParseableFormatStyle"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/foundation/parseableformatstyle"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/foundation": {
+      "title": "Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/foundation",
+      "url": "/documentation/foundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data_formatting": {
+      "title": "Data Formatting",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data_formatting",
+      "url": "/documentation/foundation/data_formatting",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/formatstyle": {
+      "title": "FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/formatstyle": {
+      "title": "Date.FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/iso8601formatstyle": {
+      "title": "Date.ISO8601FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/iso8601formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/iso8601formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle": {
+      "title": "FloatingPointFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/floatingpointformatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/currency": {
+      "title": "FloatingPointFormatStyle.Currency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/currency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/floatingpointformatstyle/currency"
+    },
+    "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/percent": {
+      "title": "FloatingPointFormatStyle.Percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/floatingpointformatstyle/percent"
+    },
+    "doc://com.apple.documentation/documentation/foundation/integerformatstyle": {
+      "title": "IntegerFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/integerformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/integerformatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/integerformatstyle/currency": {
+      "title": "IntegerFormatStyle.Currency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/integerformatstyle/currency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/integerformatstyle/currency"
+    },
+    "doc://com.apple.documentation/documentation/foundation/integerformatstyle/percent": {
+      "title": "IntegerFormatStyle.Percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/integerformatstyle/percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/integerformatstyle/percent"
+    },
+    "doc://com.apple.documentation/documentation/foundation/personnamecomponents/formatstyle": {
+      "title": "PersonNameComponents.FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/personnamecomponents/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/personnamecomponents/formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle": {
+      "title": "Decimal.FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/decimal/formatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/currency": {
+      "title": "Decimal.FormatStyle.Currency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/currency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/decimal/formatstyle/currency"
+    },
+    "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/percent": {
+      "title": "Decimal.FormatStyle.Percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/decimal/formatstyle/percent"
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/verbatimformatstyle": {
+      "title": "Date.VerbatimFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/verbatimformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/verbatimformatstyle"
+    },
+    "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3787792-parsestrategy": {
+      "title": "parseStrategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3787792-parsestrategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parseableformatstyle/3787792-parsestrategy",
+      "required": true,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "parseStrategy"
+        },
+        {
+          "kind": "text",
+          "text": ": Self.Strategy"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3787791-strategy": {
+      "title": "Strategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3787791-strategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parseableformatstyle/3787791-strategy",
+      "required": true,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "associatedtype "
+        },
+        {
+          "kind": "identifier",
+          "text": "Strategy"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3798924-datetime": {
+      "title": "dateTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3798924-datetime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parseableformatstyle/3798924-datetime",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Date",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "dateTime"
+        },
+        {
+          "kind": "text",
+          "text": ": Date.FormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3798925-iso8601": {
+      "title": "iso8601",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3798925-iso8601",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parseableformatstyle/3798925-iso8601",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Date",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "ISO8601FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "iso8601"
+        },
+        {
+          "kind": "text",
+          "text": ": Date.ISO8601FormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3796626-number": {
+      "title": "number",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3796626-number",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parseableformatstyle/3796626-number",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Decimal",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "number"
+        },
+        {
+          "kind": "text",
+          "text": ": Decimal.FormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3796629-percent": {
+      "title": "percent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3796629-percent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parseableformatstyle/3796629-percent",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Decimal",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Percent",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "percent"
+        },
+        {
+          "kind": "text",
+          "text": ": Decimal.FormatStyle.Percent"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3796617-currency": {
+      "title": "currency(code:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3796617-currency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parseableformatstyle/3796617-currency",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "Decimal",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "Currency",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "currency"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "code"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3856599-name": {
+      "title": "name(style:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3856599-name",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parseableformatstyle/3856599-name",
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "Self",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " is "
+          },
+          {
+            "code": "PersonNameComponents",
+            "type": "codeVoice"
+          },
+          {
+            "code": ".",
+            "type": "codeVoice"
+          },
+          {
+            "code": "FormatStyle",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "name"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "style"
+        },
+        {
+          "kind": "text",
+          "text": ": PersonNameComponents.FormatStyle.Style) -> Self"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/parseableformatstyle": {
+      "title": "ParseableFormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parseableformatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parseableformatstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that can convert a given input data type into a representation in an output type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "ParseableFormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/parsestrategy": {
+      "title": "ParseStrategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/parsestrategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/parsestrategy",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "ParseStrategy"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/floatingpointparsestrategy": {
+      "title": "FloatingPointParseStrategy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/floatingpointparsestrategy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/floatingpointparsestrategy",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "FloatingPointParseStrategy"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/formatstyle"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforming Types",
+      "type": "conformingTypes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/date/formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/iso8601formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/date/verbatimformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/currency",
+        "doc://com.apple.documentation/documentation/foundation/decimal/formatstyle/percent",
+        "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/currency",
+        "doc://com.apple.documentation/documentation/foundation/floatingpointformatstyle/percent",
+        "doc://com.apple.documentation/documentation/foundation/integerformatstyle",
+        "doc://com.apple.documentation/documentation/foundation/integerformatstyle/currency",
+        "doc://com.apple.documentation/documentation/foundation/integerformatstyle/percent",
+        "doc://com.apple.documentation/documentation/foundation/personnamecomponents/formatstyle"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Declaring Parse Strategy",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3787792-parsestrategy",
+        "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3787791-strategy"
+      ],
+      "anchor": "3793453"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3798924-datetime",
+        "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3798925-iso8601",
+        "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3796626-number",
+        "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3796629-percent"
+      ],
+      "anchor": "3798024"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3796617-currency",
+        "doc://com.apple.documentation/documentation/foundation/parseableformatstyle/3856599-name"
+      ],
+      "anchor": "3798025"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/parsestrategy",
+        "doc://com.apple.documentation/documentation/foundation/floatingpointparsestrategy"
+      ],
+      "title": "Data Parsing in Swift",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "ParseableFormatStyle"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

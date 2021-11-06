@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent"
       ]
     ]
@@ -35,20 +35,34 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSetProfileInCarIntent(im)initWithProfileNumber:profileName:defaultProfile:carName:",
+    "parent": {
+      "title": "INSetProfileInCarIntent"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -73,10 +87,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -94,6 +108,14 @@
           "text": "A request to change the user’s vehicle environment settings to the ones from the specified profile."
         }
       ]
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/foundation/nsnumber": {
       "title": "NSNumber",
@@ -141,7 +163,58 @@
           "kind": "identifier",
           "text": "initWithProfileNumber:profileName:defaultProfile:carName:"
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2726871-initwithprofilenumber": {
+      "title": "initWithProfileNumber:profileName:defaultProfile:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2726871-initwithprofilenumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetprofileincarintent/2726871-initwithprofilenumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes the intent object with the specified profile name and index information."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithProfileNumber:profileName:defaultProfile:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2102245-initwithprofilenumber": {
+      "title": "initWithProfileNumber:profileLabel:defaultProfile:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2102245-initwithprofilenumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insetprofileincarintent/2102245-initwithprofilenumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes the intent object with the specified profile name and index information."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithProfileNumber:profileLabel:defaultProfile:"
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -151,6 +224,36 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2726871-initwithprofilenumber",
+        "doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2102245-initwithprofilenumber"
+      ],
+      "title": "Initializing the Intent Object",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -295,6 +398,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -350,7 +454,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A Boolean value that indicates whether the profile should be made the default profile.  "
+                  "text": "A Boolean value that indicates whether the profile should become the default profile."
                 }
               ]
             }
@@ -422,7 +526,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

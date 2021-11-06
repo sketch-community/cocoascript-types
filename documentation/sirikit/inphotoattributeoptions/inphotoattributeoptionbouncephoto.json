@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/photos",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/photos",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent",
         "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions"
       ]
@@ -42,25 +42,41 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "5.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:@E@INPhotoAttributeOptions@INPhotoAttributeOptionBouncePhoto",
+    "parent": {
+      "title": "INPhotoAttributeOptions"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,10 +111,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/photos": {
-      "title": "Photos",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
-      "url": "/documentation/sirikit/photos",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -125,6 +141,14 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "link-3876140": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3876140",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+    },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionphoto": {
       "title": "INPhotoAttributeOptionPhoto",
       "type": "topic",
@@ -137,7 +161,8 @@
           "type": "text",
           "text": "A still image."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionbouncephoto": {
       "title": "INPhotoAttributeOptionBouncePhoto",
@@ -151,7 +176,8 @@
           "type": "text",
           "text": "A live photo edited with the bounce effect."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionburstphoto": {
       "title": "INPhotoAttributeOptionBurstPhoto",
@@ -165,7 +191,8 @@
           "type": "text",
           "text": "A burst-mode photo."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionhdrphoto": {
       "title": "INPhotoAttributeOptionHDRPhoto",
@@ -179,7 +206,8 @@
           "type": "text",
           "text": "An HDR photo."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionlivephoto": {
       "title": "INPhotoAttributeOptionLivePhoto",
@@ -193,7 +221,8 @@
           "type": "text",
           "text": "A live photo."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionlongexposurephoto": {
       "title": "INPhotoAttributeOptionLongExposurePhoto",
@@ -207,7 +236,8 @@
           "type": "text",
           "text": "A live photo edited with the long exxposure effect."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionloopphoto": {
       "title": "INPhotoAttributeOptionLoopPhoto",
@@ -221,7 +251,8 @@
           "type": "text",
           "text": "A live photo edited with the loop effect."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionsquarephoto": {
       "title": "INPhotoAttributeOptionSquarePhoto",
@@ -235,7 +266,8 @@
           "type": "text",
           "text": "A square photo."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionpanoramaphoto": {
       "title": "INPhotoAttributeOptionPanoramaPhoto",
@@ -249,7 +281,8 @@
           "type": "text",
           "text": "A panorama photo."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionportraitphoto": {
       "title": "INPhotoAttributeOptionPortraitPhoto",
@@ -263,7 +296,8 @@
           "type": "text",
           "text": "A portrait photo."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptiongif": {
       "title": "INPhotoAttributeOptionGIF",
@@ -277,7 +311,8 @@
           "type": "text",
           "text": "A Graphics Interchange Format image."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionflash": {
       "title": "INPhotoAttributeOptionFlash",
@@ -291,7 +326,8 @@
           "type": "text",
           "text": "A photo taken with a flash."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotoattributeoptions/inphotoattributeoptionselfie": {
       "title": "INPhotoAttributeOptionSelfie",
@@ -305,7 +341,8 @@
           "type": "text",
           "text": "A selfie."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -315,6 +352,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -355,6 +412,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -363,7 +421,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

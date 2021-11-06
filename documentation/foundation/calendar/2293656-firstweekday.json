@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The first weekday of the calendar."
+      "text": "The first day of the week for the calendar."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation8CalendarV12firstWeekdaySivp",
+    "parent": {
+      "title": "Calendar"
+    },
     "symbolKind": "structp",
     "fragments": [
       {
@@ -81,8 +89,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,6 +134,34 @@
         {
           "type": "text",
           "text": "A definition of the relationships between calendar units (such as eras, years, and weekdays) and absolute points in time, providing features for calculation and comparison of dates.   "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/calendar/2293656-firstweekday": {
+      "title": "firstWeekday",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293656-firstweekday",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/calendar/2293656-firstweekday",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The first day of the week for the calendar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "firstWeekday"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
         }
       ]
     },
@@ -190,34 +226,6 @@
         {
           "kind": "text",
           "text": ": Locale?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/calendar/2293656-firstweekday": {
-      "title": "firstWeekday",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293656-firstweekday",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/calendar/2293656-firstweekday",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The first weekday of the calendar."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "firstWeekday"
-        },
-        {
-          "kind": "text",
-          "text": ": Int"
         }
       ]
     },
@@ -531,6 +539,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -538,10 +547,56 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default value of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/calendar/2293656-firstweekday"
+            },
+            {
+              "type": "text",
+              "text": " varies by calendar and locale. Your app can reset this value."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The weekday units are one-based. For Gregorian and ISO 8601 calendars, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": " is Sunday."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

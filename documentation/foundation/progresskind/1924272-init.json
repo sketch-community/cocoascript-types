@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a new kind of progress using the specified string."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -30,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "7.1",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So14NSProgressKindayABSScfc",
+    "parent": {
+      "title": "ProgressKind"
+    },
     "symbolKind": "structctr",
     "fragments": [
       {
@@ -72,8 +86,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +134,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/progresskind"
+      "url": "/documentation/foundation/progresskind",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents the kind of progress."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/swift/string": {
       "title": "String",
@@ -130,6 +150,62 @@
       "role": "symbol",
       "url": "/documentation/swift/string"
     },
+    "doc://com.apple.documentation/documentation/foundation/progresskind/1924272-init": {
+      "title": "init(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind/1924272-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progresskind/1924272-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new kind of progress using the specified string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "(String)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progresskind/1779890-init": {
+      "title": "init(rawValue:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind/1779890-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progresskind/1779890-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new kind of progress using the raw value of a string you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": String)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -138,6 +214,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/progresskind/1779890-init"
+      ],
+      "title": "Creating Kinds of Progress",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -184,6 +269,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -191,10 +277,32 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "rawValue",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A string that represents the kind of progress."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

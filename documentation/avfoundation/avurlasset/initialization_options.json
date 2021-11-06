@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initialization options for use with "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl"
-    },
-    {
-      "type": "text",
-      "text": "."
+      "text": "Configuration options you use to initialize a URL asset."
     }
   ],
   "documentVersion": 0,
@@ -41,8 +32,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -93,44 +84,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl": {
-      "title": "URLAssetWithURL:options:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avurlasset/1508727-urlassetwithurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an asset that models the media resource found at the specified URL."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "URLAssetWithURL:options:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avurlassetpreferprecisedurationandtimingkey": {
-      "title": "AVURLAssetPreferPreciseDurationAndTimingKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlassetpreferprecisedurationandtimingkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avurlassetpreferprecisedurationandtimingkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the asset should provide accurate duration and precise random access by time."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avurlassetallowscellularaccesskey": {
       "title": "AVURLAssetAllowsCellularAccessKey",
       "type": "topic",
@@ -142,34 +95,6 @@
         {
           "type": "text",
           "text": "A Boolean value that indicates whether the system can make network requests on behalf of the asset when connected to a cellular network."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avurlassethttpcookieskey": {
-      "title": "AVURLAssetHTTPCookiesKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlassethttpcookieskey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avurlassethttpcookieskey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The HTTP cookies that a URL asset may send with HTTP requests."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avurlassetreferencerestrictionskey": {
-      "title": "AVURLAssetReferenceRestrictionsKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlassetreferencerestrictionskey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avurlassetreferencerestrictionskey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value that represents the restrictions used by the asset when resolving references to external media data."
         }
       ]
     },
@@ -201,6 +126,76 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avurlassetpreferprecisedurationandtimingkey": {
+      "title": "AVURLAssetPreferPreciseDurationAndTimingKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlassetpreferprecisedurationandtimingkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avurlassetpreferprecisedurationandtimingkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the asset should provide accurate duration and precise random access by time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avurlassethttpcookieskey": {
+      "title": "AVURLAssetHTTPCookiesKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlassethttpcookieskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avurlassethttpcookieskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The HTTP cookies that a URL asset may send with HTTP requests."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avurlassetreferencerestrictionskey": {
+      "title": "AVURLAssetReferenceRestrictionsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlassetreferencerestrictionskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avurlassetreferencerestrictionskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that represents the restrictions used by the asset when resolving references to external media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avurlassetshouldsupportaliasdatareferenceskey": {
+      "title": "AVURLAssetShouldSupportAliasDataReferencesKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlassetshouldsupportaliasdatareferenceskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avurlassetshouldsupportaliasdatareferenceskey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the system parses and resolves alias data references in the asset."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avurlasseturlrequestattributionkey": {
+      "title": "AVURLAssetURLRequestAttributionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasseturlrequestattributionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avurlasseturlrequestattributionkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that specifies the attribution of the URLs that this asset requests."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1385698-initwithurl": {
       "title": "initWithURL:options:",
       "type": "topic",
@@ -211,7 +206,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an asset that models the media resource found at the specified URL."
+          "text": "Creates an asset that models the media resource at the specified URL."
         }
       ],
       "fragments": [
@@ -225,6 +220,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl": {
+      "title": "URLAssetWithURL:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avurlasset/1508727-urlassetwithurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an asset that models the media resource found at the specified URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLAssetWithURL:options:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avurlasset/initialization_options": {
       "title": "Initialization Options",
       "type": "topic",
@@ -235,16 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initialization options for use with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Configuration options you use to initialize a URL asset."
         }
       ]
     },
@@ -261,13 +271,16 @@
       "kind": "taskGroup",
       "title": "Options",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avurlassetpreferprecisedurationandtimingkey",
         "doc://com.apple.documentation/documentation/avfoundation/avurlassetallowscellularaccesskey",
+        "doc://com.apple.documentation/documentation/avfoundation/avurlassetallowsconstrainednetworkaccesskey",
+        "doc://com.apple.documentation/documentation/avfoundation/avurlassetallowsexpensivenetworkaccesskey",
+        "doc://com.apple.documentation/documentation/avfoundation/avurlassetpreferprecisedurationandtimingkey",
         "doc://com.apple.documentation/documentation/avfoundation/avurlassethttpcookieskey",
         "doc://com.apple.documentation/documentation/avfoundation/avurlassetreferencerestrictionskey",
-        "doc://com.apple.documentation/documentation/avfoundation/avurlassetallowsconstrainednetworkaccesskey",
-        "doc://com.apple.documentation/documentation/avfoundation/avurlassetallowsexpensivenetworkaccesskey"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avurlassetshouldsupportaliasdatareferenceskey",
+        "doc://com.apple.documentation/documentation/avfoundation/avurlasseturlrequestattributionkey"
+      ],
+      "anchor": "1678913"
     }
   ],
   "seeAlsoSections": [
@@ -281,7 +294,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

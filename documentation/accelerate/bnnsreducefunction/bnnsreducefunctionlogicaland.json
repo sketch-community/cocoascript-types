@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A function for reduction that reduces a tensor to true if all elements are true."
+      "text": "A reduction function that reduces a tensor to true if all elements are true."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@EA@BNNSReduceFunction@BNNSReduceFunctionLogicalAnd",
+    "parent": {
+      "title": "BNNSReduceFunction"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that computes the index of the maximum value."
+          "text": "A reduction function that computes the index of the maximum value."
         }
       ]
     },
@@ -144,7 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that computes the index of the minimum value."
+          "text": "A reduction function that computes the index of the minimum value."
         }
       ]
     },
@@ -158,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that computes the sum of the absolute value of each element."
+          "text": "A reduction function that computes the sum of the absolute value of each element."
         }
       ]
     },
@@ -172,7 +180,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that reduces a tensor to true if all elements are true."
+          "text": "A reduction function that reduces a tensor to true if all elements are true."
         }
       ]
     },
@@ -200,7 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that reduces a tensor to true if any element is true."
+          "text": "A reduction function that reduces a tensor to true if any element is true."
         }
       ]
     },
@@ -228,7 +236,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that computes the maximum value."
+          "text": "A reduction function that computes the maximum value."
         }
       ]
     },
@@ -242,7 +250,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that computes the mean value."
+          "text": "A reduction function that computes the mean value."
         }
       ]
     },
@@ -256,7 +264,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that computes the mean value of nonzero elements."
+          "text": "A reduction function that computes the mean value of nonzero elements."
         }
       ]
     },
@@ -270,7 +278,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that computes the minimum value."
+          "text": "A reduction function that computes the minimum value."
         }
       ]
     },
@@ -284,7 +292,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that computes the sum of all values."
+          "text": "A reduction function that computes the sum of all values."
         }
       ]
     },
@@ -298,7 +306,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that computes the sum of the natural logarithm of all values."
+          "text": "A reduction function that computes the sum of the natural logarithm of all values."
         }
       ]
     },
@@ -312,7 +320,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A function for reduction that computes the sum of the square of all values."
+          "text": "A reduction function that computes the sum of the square of all values."
         }
       ]
     },
@@ -361,6 +369,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -371,7 +380,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

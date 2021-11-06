@@ -34,20 +34,28 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:SC7CLErrorLeV12CoreLocationE15alternateRegionSo8CLRegionCSgvp",
+    "parent": {
+      "title": "CLError"
+    },
     "symbolKind": "structp",
     "fragments": [
       {
@@ -65,8 +73,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -121,6 +129,34 @@
       "role": "symbol",
       "url": "/documentation/corelocation/clregion"
     },
+    "doc://com.apple.documentation/documentation/corelocation/clerror/2882749-errordomain": {
+      "title": "errorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clerror/2882749-errordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clerror/2882749-errordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error domain that the framework uses when issuing errors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "errorDomain"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corelocation/clerror/2882747-errorcode": {
       "title": "errorCode",
       "type": "topic",
@@ -131,7 +167,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A code for the error."
+          "text": "The error code the framework returns when location services fail."
         }
       ],
       "fragments": [
@@ -149,6 +185,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corelocation/clerror/3726353-code": {
+      "title": "code",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clerror/3726353-code",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clerror/3726353-code",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error code the framework returns when location services fail."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "code"
+        },
+        {
+          "kind": "text",
+          "text": ": Code"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corelocation/clerror/2882748-erroruserinfo": {
       "title": "errorUserInfo",
       "type": "topic",
@@ -159,7 +223,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Information about the error."
+          "text": "A dictionary the framework uses to provide information about an error."
         }
       ],
       "fragments": [
@@ -170,6 +234,34 @@
         {
           "kind": "identifier",
           "text": "errorUserInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [String : Any]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clerror/3726357-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clerror/3726357-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clerror/3726357-userinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary the framework uses to provide information about an error."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
         },
         {
           "kind": "text",
@@ -233,34 +325,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/clerror/2882749-errordomain": {
-      "title": "errorDomain",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/clerror/2882749-errordomain",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/clerror/2882749-errordomain",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A domain for the error."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "errorDomain"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -272,12 +336,14 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/corelocation/clerror/2882749-errordomain",
         "doc://com.apple.documentation/documentation/corelocation/clerror/2882747-errorcode",
+        "doc://com.apple.documentation/documentation/corelocation/clerror/3726353-code",
         "doc://com.apple.documentation/documentation/corelocation/clerror/2882748-erroruserinfo",
-        "doc://com.apple.documentation/documentation/corelocation/clerror/2882750-localizeddescription",
-        "doc://com.apple.documentation/documentation/corelocation/clerror/2882749-errordomain"
+        "doc://com.apple.documentation/documentation/corelocation/clerror/3726357-userinfo",
+        "doc://com.apple.documentation/documentation/corelocation/clerror/2882750-localizeddescription"
       ],
-      "title": "Error Information",
+      "title": "Error Characteristics",
       "generated": true
     }
   ],
@@ -331,6 +397,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -367,7 +434,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

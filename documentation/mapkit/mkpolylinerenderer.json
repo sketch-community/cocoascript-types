@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The visual representation for any polyline overlay object.  "
+      "text": "A visual representation of any polyline overlay object.  "
     }
   ],
   "documentVersion": 0,
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)MKPolylineRenderer",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -184,7 +189,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A shape consisting of one or more connected line segments. "
+          "text": "An open polygon overlay consisting of one or more connected line segments. "
         }
       ]
     },
@@ -198,21 +203,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A line-based shape that follows the contours of the Earth to create the shortest path between the specified points."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer": {
-      "title": "MKPolylineRenderer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkpolylinerenderer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The visual representation for any polyline overlay object.  "
+          "text": "An open polygon overlay made of line segments that follow the contours of the Earth to create the shortest path between the specified points."
         }
       ]
     },
@@ -230,6 +221,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer": {
+      "title": "MKPolylineRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkpolylinerenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A visual representation of any polyline overlay object.  "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/mapkit/mkmultipolylinerenderer": {
       "title": "MKMultiPolylineRenderer",
       "type": "topic",
@@ -240,7 +245,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for multiple polyline objects.  "
+          "text": "A visual representation of multiple polyline overlay objects.  "
         }
       ]
     },
@@ -254,7 +259,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for any polyline overlay object with a gradient."
+          "text": "A visual representation of any polyline overlay object with a gradient."
         }
       ]
     },
@@ -282,14 +287,16 @@
       "title": "Creating a Polyline Renderer",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer/1452074-initwithpolyline"
-      ]
+      ],
+      "anchor": "1657835"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Polyline Overlay",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer/1452465-polyline"
-      ]
+      ],
+      "anchor": "1657867"
     },
     {
       "kind": "taskGroup",
@@ -297,7 +304,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer/3573875-strokestart",
         "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer/3573874-strokeend"
-      ]
+      ],
+      "anchor": "3577517"
     }
   ],
   "seeAlsoSections": [
@@ -347,6 +355,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -376,7 +385,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

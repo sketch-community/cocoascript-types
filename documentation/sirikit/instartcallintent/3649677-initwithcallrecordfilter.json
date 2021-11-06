@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a start call intent object with the specified parameters."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INStartCallIntent(im)initWithCallRecordFilter:callRecordToCallBack:audioRoute:destinationType:contacts:callCapability:",
+    "parent": {
+      "title": "INStartCallIntent"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -104,6 +118,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/inperson": {
+      "title": "INPerson",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inperson"
+    },
     "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter": {
       "title": "INCallRecordFilter",
       "type": "topic",
@@ -144,14 +166,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
     },
-    "doc://com.apple.documentation/documentation/sirikit/inperson": {
-      "title": "INPerson",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inperson"
-    },
     "doc://com.apple.documentation/documentation/sirikit/incallcapability": {
       "title": "INCallCapability",
       "type": "topic",
@@ -159,6 +173,55 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/incallcapability"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3333283-initwithaudioroute": {
+      "title": "initWithAudioRoute:destinationType:contacts:recordTypeForRedialing:callCapability:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3333283-initwithaudioroute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3333283-initwithaudioroute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a start call intent object with the specified parameters."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithAudioRoute:destinationType:contacts:recordTypeForRedialing:callCapability:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter": {
+      "title": "initWithCallRecordFilter:callRecordToCallBack:audioRoute:destinationType:contacts:callCapability:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a start call intent object with the specified parameters."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCallRecordFilter:callRecordToCallBack:audioRoute:destinationType:contacts:callCapability:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -168,6 +231,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3333283-initwithaudioroute"
+      ],
+      "title": "Initializing the Intent Object",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -370,15 +442,145 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "callRecordFilter",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Filters specified by the user to redial a call."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "callRecordToCallBack",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Details about a call to redial a missed call."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "audioRoute",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The audio route for the call."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "destinationType",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The target type of the call to place."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "contacts",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An array of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson"
+                },
+                {
+                  "type": "text",
+                  "text": " objects representing the users to call."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "callCapability",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The type of call to place."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An initialized intent or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " if it couldn’t create the object."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

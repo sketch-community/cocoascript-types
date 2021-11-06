@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An integer error code used for debugging."
+      "text": "An integer error code for debugging."
     }
   ],
   "documentVersion": 0,
@@ -11,28 +11,28 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/accessibility_notifcations_and_error_codes"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/accessibility_notifcations_and_error_codes"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
       ]
     ]
   },
@@ -55,10 +55,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.2",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSAccessibilityErrorCodeExceptionInfo",
+    "parent": {
+      "title": "NSAccessibility"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -76,8 +79,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,29 +115,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
-      "title": "NSAccessibility",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility"
-    },
-    "doc://com.apple.documentation/documentation/accessibility": {
-      "title": "Accessibility",
-      "identifier": "doc://com.apple.documentation/documentation/accessibility",
-      "url": "/documentation/accessibility",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "collection"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol": {
       "title": "NSAccessibilityProtocol",
@@ -144,13 +131,27 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/accessibility_notifcations_and_error_codes": {
-      "title": "Accessibility Notifcations and Error Codes",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/accessibility_notifcations_and_error_codes",
-      "url": "/documentation/appkit/nsaccessibilityprotocol/accessibility_notifcations_and_error_codes",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
+      "title": "NSAccessibility",
       "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A namespace for accessibility symbols for AppKit apps. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accessibility": {
+      "title": "Accessibility",
+      "identifier": "doc://com.apple.documentation/documentation/accessibility",
+      "url": "/documentation/accessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
     },
     "doc://com.apple.documentation/documentation/foundation/nsnumber": {
       "title": "NSNumber",
@@ -167,6 +168,34 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/swift/string"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535929-errorcodeexceptioninfo": {
+      "title": "ErrorCodeExceptionInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1535929-errorcodeexceptioninfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/1535929-errorcodeexceptioninfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An integer error code for debugging."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "ErrorCodeExceptionInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -253,7 +282,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

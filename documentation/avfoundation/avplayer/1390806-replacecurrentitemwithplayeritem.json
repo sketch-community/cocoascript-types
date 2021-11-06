@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Replaces the current player item with a new player item."
+      "text": "Replaces the current item with a new item."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayer(im)replaceCurrentItemWithPlayerItem:",
+    "parent": {
+      "title": "AVPlayer"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,13 +120,7 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that provides the interface to control the player’s transport behavior."
-        }
-      ]
+      "url": "/documentation/avfoundation/avplayer"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387569-currentitem": {
       "title": "currentItem",
@@ -130,15 +132,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The player’s current player item."
+          "text": "The current player item."
         }
       ]
-    },
-    "devLink-1737690": {
-      "identifier": "devLink-1737690",
-      "type": "link",
-      "title": "Key-value observing",
-      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer": {
       "title": "AVQueuePlayer",
@@ -166,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Replaces the current player item with a new player item."
+          "text": "Replaces the current item with a new item."
         }
       ],
       "fragments": [
@@ -193,7 +189,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387569-currentitem"
       ],
-      "title": "Managing the Current Player Item",
+      "title": "Managing the Player Item",
       "generated": true
     }
   ],
@@ -251,6 +247,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -273,7 +270,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A player item."
+                  "text": "The player item to set as the player’s current item."
                 }
               ]
             }
@@ -295,15 +292,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The player item replacement occurs immediately and "
-            },
-            {
-              "type": "codeVoice",
-              "code": "item"
-            },
-            {
-              "type": "text",
-              "text": " becomes the player’s "
+              "text": "The player item replacement occurs immediately and the item becomes the player’s "
             },
             {
               "type": "reference",
@@ -317,33 +306,6 @@
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "You can use "
-            },
-            {
-              "type": "link",
-              "title": "Key-value observing",
-              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
-            },
-            {
-              "type": "text",
-              "text": " to observe changes to the player’s "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387569-currentitem"
-            },
-            {
-              "type": "text",
-              "text": " property."
-            }
-          ]
-        },
-        {
           "type": "aside",
           "content": [
             {
@@ -351,7 +313,16 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "This method is not intended for use with "
+                  "text": "You can only call this method on instances of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+                },
+                {
+                  "type": "text",
+                  "text": ". Calling it on an instance of "
                 },
                 {
                   "type": "reference",
@@ -360,33 +331,18 @@
                 },
                 {
                   "type": "text",
-                  "text": ". If the player is initialized with multiple items this method throws an exception."
+                  "text": " results in the system throwing an exception."
                 }
               ]
             }
           ],
           "style": "important"
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Special Considerations",
-          "anchor": "1919542"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The new item must have the same compositor as the item it replaces, or have no compositor."
-            }
-          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

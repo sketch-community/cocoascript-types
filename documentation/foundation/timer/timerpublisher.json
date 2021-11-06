@@ -41,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So7NSTimerC10FoundationE14TimerPublisherC",
+    "parent": {
+      "title": "Timer"
+    },
     "symbolKind": "cl",
     "fragments": [
       {
@@ -83,8 +91,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -366,6 +374,50 @@
         {
           "kind": "text",
           "text": ": TimeInterval?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3862172-values": {
+      "title": "values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3862172-values",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/timer/timerpublisher/3862172-values",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "values"
+        },
+        {
+          "kind": "text",
+          "text": ": AsyncThrowingPublisher<Timer.TimerPublisher>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3862173-values": {
+      "title": "values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3862173-values",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/timer/timerpublisher/3862173-values",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "values"
+        },
+        {
+          "kind": "text",
+          "text": ": AsyncPublisher<Timer.TimerPublisher>"
         }
       ]
     },
@@ -3546,14 +3598,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/failure",
         "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/output"
-      ]
+      ],
+      "anchor": "3330010"
     },
     {
       "kind": "taskGroup",
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3329520-init"
-      ]
+      ],
+      "anchor": "3330011"
     },
     {
       "kind": "taskGroup",
@@ -3563,8 +3617,11 @@
         "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3334863-mode",
         "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3334864-options",
         "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3334865-runloop",
-        "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3334867-tolerance"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3334867-tolerance",
+        "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3862172-values",
+        "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3862173-values"
+      ],
+      "anchor": "3378933"
     },
     {
       "kind": "taskGroup",
@@ -3680,7 +3737,8 @@
         "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3329588-zip",
         "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3334870-zip",
         "doc://com.apple.documentation/documentation/foundation/timer/timerpublisher/3334871-zip"
-      ]
+      ],
+      "anchor": "3330012"
     }
   ],
   "seeAlsoSections": [
@@ -3724,6 +3782,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -3734,7 +3793,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

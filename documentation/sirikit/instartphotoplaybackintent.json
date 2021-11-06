@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/photos"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INStartPhotoPlaybackIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +100,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/photos": {
-      "title": "Photos",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
-      "url": "/documentation/sirikit/photos",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -109,28 +122,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent#2528207": {
-      "title": "Table 2",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent#2528207",
-      "kind": "article",
-      "role": "table",
-      "url": "/documentation/sirikit/instartphotoplaybackintent#2528207",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Siri phrases that trigger the starting of a slideshow"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/invocabulary": {
-      "title": "INVocabulary",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/invocabulary"
-    },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent": {
       "title": "INStartPhotoPlaybackIntent",
       "type": "topic",
@@ -143,7 +134,8 @@
           "type": "text",
           "text": "A request to search for photos and initiate a slideshow with the results."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintenthandling": {
       "title": "INStartPhotoPlaybackIntentHandling",
@@ -157,7 +149,8 @@
           "type": "text",
           "text": "The handler interface for searching the user’s photos and the playback of the results."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintentresponse": {
       "title": "INStartPhotoPlaybackIntentResponse",
@@ -171,7 +164,8 @@
           "type": "text",
           "text": "Your app’s response to a start photo playback intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inphotosdomainhandling": {
       "title": "INPhotosDomainHandling",
@@ -180,6 +174,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inphotosdomainhandling"
+    },
+    "link-3876140": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3876140",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inintent": {
       "title": "INIntent",
@@ -211,7 +213,8 @@
           "kind": "identifier",
           "text": "initWithDateCreated:locationCreated:albumName:searchTerms:includedAttributes:excludedAttributes:peopleInPhoto:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638564-peopleinphoto": {
       "title": "peopleInPhoto",
@@ -225,7 +228,8 @@
           "type": "text",
           "text": "The people in the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638623-peopleinphotooperator": {
       "title": "peopleInPhotoOperator",
@@ -239,7 +243,8 @@
           "type": "text",
           "text": "The operator that defines how to search for people in the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639186-searchterms": {
       "title": "searchTerms",
@@ -253,7 +258,8 @@
           "type": "text",
           "text": "An array of terms to look for in the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639393-searchtermsoperator": {
       "title": "searchTermsOperator",
@@ -267,7 +273,8 @@
           "type": "text",
           "text": "The operator that defines how to incorporate the search terms when performing the search."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638645-datecreated": {
       "title": "dateCreated",
@@ -281,7 +288,8 @@
           "type": "text",
           "text": "The range of dates during which someone took the pictures."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638879-locationcreated": {
       "title": "locationCreated",
@@ -295,7 +303,8 @@
           "type": "text",
           "text": "The location where someone took the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639239-albumname": {
       "title": "albumName",
@@ -309,7 +318,8 @@
           "type": "text",
           "text": "The name of the album that contains the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638591-includedattributes": {
       "title": "includedAttributes",
@@ -323,7 +333,8 @@
           "type": "text",
           "text": "The attributes that must be present in the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638754-excludedattributes": {
       "title": "excludedAttributes",
@@ -337,7 +348,8 @@
           "type": "text",
           "text": "The attributes that must not be present in the photos."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -347,16 +359,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -373,7 +395,8 @@
       "title": "Creating the Intent Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638354-initwithdatecreated"
-      ]
+      ],
+      "anchor": "2279042"
     },
     {
       "kind": "taskGroup",
@@ -381,7 +404,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638564-peopleinphoto",
         "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638623-peopleinphotooperator"
-      ]
+      ],
+      "anchor": "2279044"
     },
     {
       "kind": "taskGroup",
@@ -389,7 +413,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639186-searchterms",
         "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639393-searchtermsoperator"
-      ]
+      ],
+      "anchor": "2279045"
     },
     {
       "kind": "taskGroup",
@@ -400,7 +425,8 @@
         "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639239-albumname",
         "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638591-includedattributes",
         "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638754-excludedattributes"
-      ]
+      ],
+      "anchor": "2279046"
     }
   ],
   "seeAlsoSections": [
@@ -409,7 +435,7 @@
         "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintentresponse"
       ],
-      "title": "Start Photo Playback",
+      "title": "Photo Playback",
       "generated": true
     }
   ],
@@ -447,6 +473,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -632,1221 +659,12 @@
               }
             ]
           }
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Example Phrases",
-          "anchor": "2279041"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Users can ask Siri to start a slideshow in a variety of ways. "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent#2528207"
-            },
-            {
-              "type": "text",
-              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list is not exhaustive and Siri may recognize many other phrases."
-            }
-          ]
-        },
-        {
-          "type": "table",
-          "header": "row",
-          "rows": [
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Locale"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 1"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 2"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "en"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Start a slideshow in "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "去"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "搜索相册"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "自动播放<appName>上的照片"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_HK"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "去"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "搵吓上個禮拜影嘅相"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "去微信搵吓上個禮拜影嘅相"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_TW"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用<appName>搜尋照片"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用<appName>搜尋上星期的照片"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "yue_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "去<appName>揾吓上个礼拜影嘅相"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "去微信揾吓上个礼拜影嘅相"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ar"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "بدء عرض الشرائح في "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "da"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Vis et diasshow med mit album sommer i Spanien i <appName>"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Afspil slideshow med mine katter billeder via <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "de"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Zeige eine Diashow mit "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Starte eine Diavorführung mit "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "es"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Inicia una presentación de diapositivas con "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Pon una secuencia de diapositivas de mis fotos de "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fi"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Aloita kuvaesitys "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "ssa"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Aloita "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " kuvaesitys"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Lance un diaporama avec "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Démarre un diaporama sur "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "he"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "תתחיל מצגת של אלבום המועדפים שלי באמצעות "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "תתחיל מצגת באמצעות "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "it"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Fai partire uno slideshow con "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Inizia una presentazione di foto con <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ja"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "でスライドショーを開始"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "のスライドショーを開始"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ko"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "에서 슬라이드 쇼 시작해"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "에서 슬라이드 쇼 해"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ms"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Mulakan tayangan slaid album kucing saya dengan "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Tayangkan slaid percutian dengan "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nb"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Start et slideshow med  "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Vis lysbildeserien i <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nl"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Start een diavoorstelling in"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Speel een slideshow in <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "pt"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Começar uma apresentação de slides no "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Inicie uma apresentação de slides no "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ru"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Сделай результаты как слайдшоу в "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Покажи как слайдшоу в "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "sv"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "starta ett bildspel av mina favoritalbum i "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Visa ett bildspel i <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "th"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "เล่นสไลด์โชว์ใน "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "เล่นสไลด์โชว์บน <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "tr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " kullanarak fovoriler albümümü slayt sunusu yap"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Favoriler albümümü "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " slayt sunusu yap"
-                    }
-                  ]
-                }
-              ]
-            ]
-          ],
-          "metadata": {
-            "anchor": "2528207",
-            "title": "Table 2",
-            "abstract": [
-              {
-                "type": "text",
-                "text": "Siri phrases that trigger the starting of a slideshow"
-              }
-            ]
-          }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "In "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent#2528207"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "<appName>"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " represents the name of the app whose Intents extension performs the search and initiates the slideshow. If your app uses custom photo album names, photo tags, or contact names, you can tell Siri about those names using the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary"
-            },
-            {
-              "type": "text",
-              "text": " class."
-            }
-          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

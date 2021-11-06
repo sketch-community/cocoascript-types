@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@BNNSFilterType",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,6 +110,20 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsarithmetic": {
+      "title": "BNNSArithmetic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsarithmetic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsfiltertype/bnnsarithmetic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An arithmetic filter."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsconvolution": {
       "title": "BNNSConvolution",
       "type": "topic",
@@ -116,6 +135,20 @@
         {
           "type": "text",
           "text": "A convolution filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnstransposedconvolution": {
+      "title": "BNNSTransposedConvolution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnstransposedconvolution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsfiltertype/bnnstransposedconvolution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A transposed convolution filter."
         }
       ]
     },
@@ -189,13 +222,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnstransposedconvolution": {
-      "title": "BNNSTransposedConvolution",
+    "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsquantization": {
+      "title": "BNNSQuantization",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnstransposedconvolution",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsquantization",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/bnnsfiltertype/bnnstransposedconvolution"
+      "url": "/documentation/accelerate/bnnsfiltertype/bnnsquantization",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A quantization filter."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype": {
       "title": "BNNSFilterType",
@@ -239,6 +278,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/3746610-bnnsfusedfilterapplymultiinputba": {
+      "title": "BNNSFusedFilterApplyMultiInputBatch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3746610-bnnsfusedfilterapplymultiinputba",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3746610-bnnsfusedfilterapplymultiinputba",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applies a multiple-input fused filter to a set of input objects, writing the result to a set of output objects."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/3546641-bnnsfusedfilterapplybackwardbatc": {
       "title": "BNNSFusedFilterApplyBackwardBatch",
       "type": "topic",
@@ -250,6 +303,20 @@
         {
           "type": "text",
           "text": "Applies a fused filter backward to generate input gradients."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3746609-bnnsfusedfilterapplybackwardmult": {
+      "title": "BNNSFusedFilterApplyBackwardMultiInputBatch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3746609-bnnsfusedfilterapplybackwardmult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3746609-bnnsfusedfilterapplybackwardmult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applies a multiple-input fused filter backward to generate input gradients."
         }
       ]
     },
@@ -266,20 +333,17 @@
       "kind": "taskGroup",
       "title": "Layer Constants",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsarithmetic",
         "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsconvolution",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnstransposedconvolution",
         "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsfullyconnected",
         "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsbatchnorm",
         "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsgroupnorm",
         "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsinstancenorm",
-        "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnslayernorm"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Constants",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnstransposedconvolution"
-      ]
+        "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnslayernorm",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype/bnnsquantization"
+      ],
+      "anchor": "3568487"
     }
   ],
   "seeAlsoSections": [
@@ -287,7 +351,9 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/3546626-bnnsfiltercreatefusedlayer",
         "doc://com.apple.documentation/documentation/accelerate/3546642-bnnsfusedfilterapplybatch",
-        "doc://com.apple.documentation/documentation/accelerate/3546641-bnnsfusedfilterapplybackwardbatc"
+        "doc://com.apple.documentation/documentation/accelerate/3746610-bnnsfusedfilterapplymultiinputba",
+        "doc://com.apple.documentation/documentation/accelerate/3546641-bnnsfusedfilterapplybackwardbatc",
+        "doc://com.apple.documentation/documentation/accelerate/3746609-bnnsfusedfilterapplybackwardmult"
       ],
       "title": "Fused Layers",
       "generated": true
@@ -353,6 +419,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -363,7 +430,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

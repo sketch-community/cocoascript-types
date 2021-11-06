@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)AVContentKeyRecipient",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,21 +130,22 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the receiver requires decryption keys for media data to enable processing."
+          "text": "A Boolean value that indicates whether the recipient requires decryption keys for media data to enable processing."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799171-expire": {
-      "title": "expire",
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient/3726101-contentkeysession": {
+      "title": "contentKeySession:didProvideContentKey:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799171-expire",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient/3726101-contentkeysession",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799171-expire",
+      "url": "/documentation/avfoundation/avcontentkeyrecipient/3726101-contentkeysession",
+      "required": false,
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the receiver that the session expired as the result of normal, intentional processes."
+          "text": "Tells the recipient that a content key is available."
         }
       ],
       "fragments": [
@@ -149,31 +155,21 @@
         },
         {
           "kind": "identifier",
-          "text": "expire"
+          "text": "contentKeySession:didProvideContentKey:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient": {
-      "title": "removeContentKeyRecipient:",
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799192-contentkeyrecipients": {
+      "title": "contentKeyRecipients",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799192-contentkeyrecipients",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799192-contentkeyrecipients",
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the receiver to remove the specified recipient."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "removeContentKeyRecipient:"
+          "text": "An array of content key recipients."
         }
       ]
     },
@@ -191,6 +187,54 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient": {
+      "title": "addContentKeyRecipient:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the specified recipient should have access to the decryption keys loaded with the session."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addContentKeyRecipient:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient": {
+      "title": "removeContentKeyRecipient:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate to remove the specified recipient."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeContentKeyRecipient:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -204,17 +248,20 @@
       "kind": "taskGroup",
       "title": "Verifying Decryption Key Requirements",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient/2799194-mayrequirecontentkeysformediadat"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient/2799194-mayrequirecontentkeysformediadat",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient/3726101-contentkeysession"
+      ],
+      "anchor": "2922715"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799171-expire",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799192-contentkeyrecipients",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient",
         "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient"
       ],
-      "title": "Ending a Content Key Request Process",
+      "title": "Managing Content Key Recipients",
       "generated": true
     }
   ],
@@ -242,6 +289,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -252,7 +300,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -14,6 +14,13 @@
         "doc://com.apple.documentation/documentation/foundation/url_loading_system",
         "doc://com.apple.documentation/documentation/foundation/urlsession",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/urlsessiontask",
+        "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate"
       ]
     ]
   },
@@ -36,27 +43,32 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSURLSessionTaskMetrics",
@@ -73,8 +85,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -129,6 +141,14 @@
       "title": "URLSessionTaskDelegate",
       "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate",
       "url": "/documentation/foundation/urlsessiontaskdelegate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiontask": {
+      "title": "URLSessionTask",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontask",
+      "url": "/documentation/foundation/urlsessiontask",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
@@ -220,30 +240,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject"
-    },
-    "doc://com.apple.documentation/documentation/swift/cvararg": {
-      "title": "CVarArg",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/cvararg"
-    },
-    "doc://com.apple.documentation/documentation/swift/equatable": {
-      "title": "Equatable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/equatable"
-    },
-    "doc://com.apple.documentation/documentation/swift/hashable": {
-      "title": "Hashable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/hashable"
     },
     "doc://com.apple.documentation/documentation/foundation/urlsessiontaskmetrics/1643240-init": {
       "title": "init()",
@@ -345,24 +341,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/foundation/urlsessiontaskmetrics/domainresolutionprotocol": {
-      "title": "URLSessionTaskMetrics.DomainResolutionProtocol",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontaskmetrics/domainresolutionprotocol",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/urlsessiontaskmetrics/domainresolutionprotocol",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "enum "
-        },
-        {
-          "kind": "identifier",
-          "text": "URLSessionTaskMetrics.DomainResolutionProtocol"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate/1643148-urlsession": {
       "title": "urlSession(_:task:didFinishCollecting:)",
       "type": "topic",
@@ -423,16 +401,6 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/objectivec/nsobject"
       ]
-    },
-    {
-      "kind": "relationships",
-      "title": "Conforms To",
-      "type": "conformsTo",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/swift/cvararg",
-        "doc://com.apple.documentation/documentation/swift/equatable",
-        "doc://com.apple.documentation/documentation/swift/hashable"
-      ]
     }
   ],
   "topicSections": [
@@ -441,7 +409,8 @@
       "title": "Creating Task Metrics",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/urlsessiontaskmetrics/1643240-init"
-      ]
+      ],
+      "anchor": "2940120"
     },
     {
       "kind": "taskGroup",
@@ -451,21 +420,16 @@
         "doc://com.apple.documentation/documentation/foundation/urlsessiontasktransactionmetrics",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontaskmetrics/1643169-taskinterval",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontaskmetrics/1643136-redirectcount"
-      ]
+      ],
+      "anchor": "1844930"
     },
     {
       "kind": "taskGroup",
       "title": "Type Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/urlsessiontaskmetrics/3240626-new"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Enumerations",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/urlsessiontaskmetrics/domainresolutionprotocol"
-      ]
+      ],
+      "anchor": "3256506"
     }
   ],
   "seeAlsoSections": [
@@ -511,6 +475,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -568,7 +533,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

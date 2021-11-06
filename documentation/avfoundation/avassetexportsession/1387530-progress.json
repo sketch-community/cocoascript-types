@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The progress of the export on a scale from 0 to 1."
+      "text": "A value that indicates the progress of the export."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetExportSession(py)progress",
+    "parent": {
+      "title": "AVAssetExportSession"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,21 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that transcodes the contents of an asset source object to create an output of the form described by a specified export preset."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress": {
-      "title": "progress",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1387530-progress",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The progress of the export on a scale from 0 to 1."
+          "text": "An object that transcodes the contents of an asset in a format that you specify using an export preset."
         }
       ]
     },
@@ -143,6 +137,48 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus": {
+      "title": "AVAssetExportSessionStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsessionstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the state of an export session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress": {
+      "title": "progress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1387530-progress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the progress of the export."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error": {
+      "title": "error",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportsession/1385936-error",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An optional error object."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -154,9 +190,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error"
       ],
-      "title": "Getting Export Status",
+      "title": "Determining Export Status",
       "generated": true
     }
   ],
@@ -196,6 +234,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -217,23 +256,19 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A value of "
+              "text": "The value of this property ranges from "
             },
             {
               "type": "codeVoice",
-              "code": "0"
+              "code": "0.0"
             },
             {
               "type": "text",
-              "text": " means the export has not yet begun, "
+              "text": " to "
             },
             {
               "type": "codeVoice",
-              "code": "1"
-            },
-            {
-              "type": "text",
-              "text": " means the export is complete."
+              "code": "1.0."
             }
           ]
         }
@@ -241,7 +276,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

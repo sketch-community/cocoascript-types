@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSRunLoop(im)limitDateForMode:",
+    "parent": {
+      "title": "NSRunLoop"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,14 +128,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsrunloop/run_loop_modes": {
-      "title": "Run Loop Modes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/run_loop_modes",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/foundation/nsrunloop/run_loop_modes"
-    },
     "doc://com.apple.documentation/documentation/corefoundation/cfrunloop": {
       "title": "CFRunLoop",
       "type": "topic",
@@ -150,7 +150,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloopmode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsrunloopmode"
+      "url": "/documentation/foundation/nsrunloopmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modes that a run loop operates in."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsrunloop/1412291-currentrunloop": {
       "title": "currentRunLoop",
@@ -328,6 +334,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -353,9 +360,8 @@
                   "text": "The run loop mode to search. You may specify custom modes or use one of the modes listed in "
                 },
                 {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/run_loop_modes"
+                  "type": "codeVoice",
+                  "code": "Run Loop Modes"
                 },
                 {
                   "type": "text",
@@ -417,7 +423,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

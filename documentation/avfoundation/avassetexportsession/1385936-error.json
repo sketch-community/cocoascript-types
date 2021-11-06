@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Describes the error that occurred. "
+      "text": "An optional error object."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetExportSession(py)error",
+    "parent": {
+      "title": "AVAssetExportSession"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that transcodes the contents of an asset source object to create an output of the form described by a specified export preset."
+          "text": "An object that transcodes the contents of an asset in a format that you specify using an export preset."
         }
       ]
     },
@@ -131,6 +139,14 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avassetexportsessionstatus/avassetexportsessionstatuscancelled"
     },
+    "doc://com.apple.documentation/documentation/foundation/nserror": {
+      "title": "NSError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nserror"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status": {
       "title": "status",
       "type": "topic",
@@ -145,59 +161,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti": {
-      "title": "exportAsynchronouslyWithCompletionHandler:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus": {
+      "title": "AVAssetExportSessionStatus",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
+      "url": "/documentation/avfoundation/avassetexportsessionstatus",
       "abstract": [
         {
           "type": "text",
-          "text": "Starts the asynchronous execution of an export session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "exportAsynchronouslyWithCompletionHandler:"
+          "text": "Values that indicate the state of an export session."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nserror": {
-      "title": "NSError",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress": {
+      "title": "progress",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nserror"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387794-cancelexport": {
-      "title": "cancelExport",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387794-cancelexport",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1387794-cancelexport",
+      "url": "/documentation/avfoundation/avassetexportsession/1387530-progress",
       "abstract": [
         {
           "type": "text",
-          "text": "Cancels the execution of an export session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "cancelExport"
+          "text": "A value that indicates the progress of the export."
         }
       ]
     },
@@ -211,99 +199,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Describes the error that occurred. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus": {
-      "title": "AVAssetExportSessionStatus",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsessionstatus",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A set of statuses used for relaying the state of an export session."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength": {
-      "title": "estimatedOutputFileLength",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The estimated size, in bytes, of the exported file."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622332-maxduration": {
-      "title": "maxDuration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622332-maxduration",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1622332-maxduration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Provides an estimate of the maximum duration of the exported media."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl": {
-      "title": "estimateMaximumDurationWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously starts estimating the maximum duration of the export based on the asset, preset, and file length limit associated with the export session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "estimateMaximumDurationWithCompletionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp": {
-      "title": "estimateOutputFileLengthWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously starts estimating the output file length of the export based on the asset, preset, and time range associated with the export session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "estimateOutputFileLengthWithCompletionHandler:"
+          "text": "An optional error object."
         }
       ]
     },
@@ -315,36 +211,15 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387794-cancelexport",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622332-maxduration",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387530-progress"
       ],
-      "title": "Exporting Media",
+      "title": "Determining Export Status",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -385,6 +260,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -406,7 +282,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property describes the error if the export status is "
+              "text": "The default value of this property is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ". The export session sets it to an error object if its status changes to "
             },
             {
               "type": "reference",
@@ -424,14 +308,6 @@
             },
             {
               "type": "text",
-              "text": ". If there is no error to report, the value of this property is "
-            },
-            {
-              "type": "codeVoice",
-              "code": "nil"
-            },
-            {
-              "type": "text",
               "text": "."
             }
           ]
@@ -440,7 +316,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

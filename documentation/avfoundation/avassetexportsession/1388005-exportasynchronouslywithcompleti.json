@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetExportSession(im)exportAsynchronouslyWithCompletionHandler:",
+    "parent": {
+      "title": "AVAssetExportSession"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,35 +119,31 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that transcodes the contents of an asset source object to create an output of the form described by a specified export preset."
+          "text": "An object that transcodes the contents of an asset in a format that you specify using an export preset."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status": {
-      "title": "status",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti": {
+      "title": "exportAsynchronouslyWithCompletionHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1390528-status",
+      "url": "/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
       "abstract": [
         {
           "type": "text",
-          "text": "The status of the export session."
+          "text": "Starts the asynchronous execution of an export session."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error": {
-      "title": "error",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1385936-error",
-      "abstract": [
+      ],
+      "fragments": [
         {
-          "type": "text",
-          "text": "Describes the error that occurred. "
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "exportAsynchronouslyWithCompletionHandler:"
         }
       ]
     },
@@ -167,130 +171,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389970-outputurl": {
-      "title": "outputURL",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389970-outputurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1389970-outputurl"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti": {
-      "title": "exportAsynchronouslyWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Starts the asynchronous execution of an export session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "exportAsynchronouslyWithCompletionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus": {
-      "title": "AVAssetExportSessionStatus",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsessionstatus",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A set of statuses used for relaying the state of an export session."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength": {
-      "title": "estimatedOutputFileLength",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The estimated size, in bytes, of the exported file."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622332-maxduration": {
-      "title": "maxDuration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622332-maxduration",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/1622332-maxduration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Provides an estimate of the maximum duration of the exported media."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl": {
-      "title": "estimateMaximumDurationWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously starts estimating the maximum duration of the export based on the asset, preset, and file length limit associated with the export session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "estimateMaximumDurationWithCompletionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp": {
-      "title": "estimateOutputFileLengthWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asynchronously starts estimating the output file length of the export based on the asset, preset, and time range associated with the export session."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "estimateOutputFileLengthWithCompletionHandler:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -302,23 +182,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387794-cancelexport",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1622332-maxduration",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387794-cancelexport"
       ],
       "title": "Exporting Media",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -381,6 +248,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -402,124 +270,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A block that is invoked when writing is complete or in the event of writing failure. "
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "discussion",
-          "level": 2,
-          "text": "Discussion",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "This method starts an asynchronous export operation and returns immediately. "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390528-status"
-            },
-            {
-              "type": "text",
-              "text": " signals the terminal state of the export session, and if a failure occurs, "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385936-error"
-            },
-            {
-              "type": "text",
-              "text": " describes the problem."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "If internal preparation for export fails, "
-            },
-            {
-              "type": "codeVoice",
-              "code": "handler"
-            },
-            {
-              "type": "text",
-              "text": " is invoked synchronously. The handler may also be called asynchronously, after the method returns, in the following cases:"
-            }
-          ]
-        },
-        {
-          "type": "orderedList",
-          "items": [
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "If a failure occurs during the export, including failures of loading, re-encoding, or writing media data to the output."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "If "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387794-cancelexport"
-                    },
-                    {
-                      "type": "text",
-                      "text": " is invoked."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "After the export session succeeds, having completely written its output to the "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1389970-outputurl"
-                    },
-                    {
-                      "type": "text",
-                      "text": "."
-                    }
-                  ]
+                  "text": "A callback the system invokes when it finishes successfully, or in the event of writing failure."
                 }
               ]
             }
@@ -529,7 +280,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "9.3",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation11JSONDecoderC19KeyDecodingStrategyO20convertFromSnakeCaseyA2EmF",
+    "parent": {
+      "title": "JSONDecoder.KeyDecodingStrategy"
+    },
     "symbolKind": "enumelt",
     "fragments": [
       {
@@ -78,8 +86,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The values that determine how a type's coding keys are decoded from JSON keys."
+          "text": "The values that determine how to decode a type’s coding keys from JSON keys."
         }
       ]
     },
@@ -240,7 +248,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key decoding strategy that doesn't change key names during decoding."
+          "text": "A key decoding strategy that doesn’t change key names during decoding."
         }
       ],
       "fragments": [
@@ -302,6 +310,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -375,10 +384,6 @@
         },
         {
           "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
@@ -409,7 +414,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Remove all underscores that aren't at the very start or end of the string."
+                      "text": "Remove all underscores that aren’t at the very start or end of the string."
                     }
                   ]
                 }
@@ -429,10 +434,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         },
         {
           "type": "paragraph",
@@ -550,7 +551,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " strategy can't infer capitalization for acronyms or initialisms such as WYSIWYG or URI. The example above shows how the automatic conversion differs from the conversion you might expect: "
+                  "text": " strategy can’t infer capitalization for acronyms or initialisms such as WYSIWYG or URI. The example above shows how the automatic conversion differs from the conversion you might expect: "
                 },
                 {
                   "type": "codeVoice",
@@ -580,11 +581,8 @@
               ]
             }
           ],
-          "style": "note"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
+          "style": "note",
+          "name": "Note"
         },
         {
           "type": "paragraph",
@@ -599,7 +597,7 @@
             },
             {
               "type": "text",
-              "text": " structure are converted from snake-case when decoded as keys in a JSON object."
+              "text": " structure convert from snake-case when decoded as keys in a JSON object."
             }
           ]
         },
@@ -642,7 +640,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

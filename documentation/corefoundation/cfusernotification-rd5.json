@@ -1,0 +1,1238 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification-rd5",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1666469,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CFUserNotification",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfusernotification"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfusernotification-rd5"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534528-cfusernotificationcreate": {
+      "title": "CFUserNotificationCreate(_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534528-cfusernotificationcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534528-cfusernotificationcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a CFUserNotification object and displays its notification dialog on screen."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationCreate"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, CFTimeInterval, CFOptionFlags, UnsafeMutablePointer<Int32>!, CFDictionary!) -> CFUserNotification!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/dialog_description_keys": {
+      "title": "Dialog Description Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/dialog_description_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfusernotification/dialog_description_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys used in a user notification’s description dictionary, which describes the contents of the notification dialog to display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534477-cfusernotificationreceiverespons": {
+      "title": "CFUserNotificationReceiveResponse(_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534477-cfusernotificationreceiverespons",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534477-cfusernotificationreceiverespons",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Waits for the user to respond to a notification or for the notification to time out."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationReceiveResponse"
+        },
+        {
+          "kind": "text",
+          "text": "(CFUserNotification!, CFTimeInterval, UnsafeMutablePointer<CFOptionFlags>!) -> Int32"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534507-cfusernotificationcreaterunloops": {
+      "title": "CFUserNotificationCreateRunLoopSource(_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534507-cfusernotificationcreaterunloops",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534507-cfusernotificationcreaterunloops",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a run loop source for a user notification."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationCreateRunLoopSource"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, CFUserNotification!, CFUserNotificationCallBack!, CFIndex) -> CFRunLoopSource!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534478-cfusernotificationdisplaynotice": {
+      "title": "CFUserNotificationDisplayNotice(_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534478-cfusernotificationdisplaynotice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534478-cfusernotificationdisplaynotice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Displays a user notification dialog that does not need a user response."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationDisplayNotice"
+        },
+        {
+          "kind": "text",
+          "text": "(CFTimeInterval, CFOptionFlags, CFURL!, CFURL!, CFURL!, CFString!, CFString!, CFString!) -> Int32"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534496-cfusernotificationdisplayalert": {
+      "title": "CFUserNotificationDisplayAlert(_:_:_:_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534496-cfusernotificationdisplayalert",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534496-cfusernotificationdisplayalert",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Displays a user notification dialog and waits for a user response."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationDisplayAlert"
+        },
+        {
+          "kind": "text",
+          "text": "(CFTimeInterval, CFOptionFlags, CFURL!, CFURL!, CFURL!, CFString!, CFString!, CFString!, CFString!, CFString!, UnsafeMutablePointer<CFOptionFlags>!) -> Int32"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534499-cfusernotificationcancel": {
+      "title": "CFUserNotificationCancel(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534499-cfusernotificationcancel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534499-cfusernotificationcancel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels a user notification dialog."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationCancel"
+        },
+        {
+          "kind": "text",
+          "text": "(CFUserNotification!) -> Int32"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534480-cfusernotificationcheckboxchecke": {
+      "title": "CFUserNotificationCheckBoxChecked(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534480-cfusernotificationcheckboxchecke",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534480-cfusernotificationcheckboxchecke",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a flag used to set or test a checkbox’s state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationCheckBoxChecked"
+        },
+        {
+          "kind": "text",
+          "text": "(CFIndex) -> CFOptionFlags"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534500-cfusernotificationgetresponsedic": {
+      "title": "CFUserNotificationGetResponseDictionary(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534500-cfusernotificationgetresponsedic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534500-cfusernotificationgetresponsedic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the dictionary containing all the text field values from a dismissed notification dialog."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationGetResponseDictionary"
+        },
+        {
+          "kind": "text",
+          "text": "(CFUserNotification!) -> CFDictionary!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534517-cfusernotificationgetresponseval": {
+      "title": "CFUserNotificationGetResponseValue(_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534517-cfusernotificationgetresponseval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534517-cfusernotificationgetresponseval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extracts the values of the text fields from a dismissed notification dialog."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationGetResponseValue"
+        },
+        {
+          "kind": "text",
+          "text": "(CFUserNotification!, CFString!, CFIndex) -> CFString!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534522-cfusernotificationgettypeid": {
+      "title": "CFUserNotificationGetTypeID()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534522-cfusernotificationgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534522-cfusernotificationgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type identifier for the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CFUserNotification"
+        },
+        {
+          "type": "text",
+          "text": " opaque type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationGetTypeID"
+        },
+        {
+          "kind": "text",
+          "text": "() -> CFTypeID"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534520-cfusernotificationpopupselection": {
+      "title": "CFUserNotificationPopUpSelection(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534520-cfusernotificationpopupselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534520-cfusernotificationpopupselection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a flag used to set the selected element of a pop-up menu."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationPopUpSelection"
+        },
+        {
+          "kind": "text",
+          "text": "(CFIndex) -> CFOptionFlags"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534532-cfusernotificationsecuretextfiel": {
+      "title": "CFUserNotificationSecureTextField(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534532-cfusernotificationsecuretextfiel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534532-cfusernotificationsecuretextfiel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a flag used to set the secure state of a text field."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationSecureTextField"
+        },
+        {
+          "kind": "text",
+          "text": "(CFIndex) -> CFOptionFlags"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1534529-cfusernotificationupdate": {
+      "title": "CFUserNotificationUpdate(_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534529-cfusernotificationupdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1534529-cfusernotificationupdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates a displayed user notification dialog with new user interface information."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationUpdate"
+        },
+        {
+          "kind": "text",
+          "text": "(CFUserNotification!, CFTimeInterval, CFOptionFlags, CFDictionary!) -> Int32"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotificationcallback": {
+      "title": "CFUserNotificationCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotificationcallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfusernotificationcallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Callback invoked when an asynchronous user notification dialog is dismissed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotificationCallBack"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotification": {
+      "title": "CFUserNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfusernotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a user notification object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFUserNotification"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/1534483-alert_levels": {
+      "title": "Alert Levels",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/1534483-alert_levels",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfusernotification/1534483-alert_levels",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags identifying the seriousness of a user notification."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/1534504-response_codes": {
+      "title": "Response Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/1534504-response_codes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfusernotification/1534504-response_codes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Response codes identifying the button that was pressed to dismiss a notification dialog."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/1534481-button_flags": {
+      "title": "Button Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/1534481-button_flags",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfusernotification/1534481-button_flags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags that alter the display of buttons in a user notification dialog."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocator-s29": {
+      "title": "CFAllocator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocator-s29",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfallocator-s29"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfarray-s28": {
+      "title": "CFArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfarray-s28",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfarray-s28"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring-s1s": {
+      "title": "CFAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring-s1s",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfattributedstring-s1s"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbag-s1l": {
+      "title": "CFBag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbag-s1l",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbag-s1l"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap-s11": {
+      "title": "CFBinaryHeap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap-s11",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbinaryheap-s11"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbitvector-s0t": {
+      "title": "CFBitVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbitvector-s0t",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbitvector-s0t"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p": {
+      "title": "CFBoolean",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfboolean-s0p"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbundle-s0a": {
+      "title": "CFBundle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbundle-s0a",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbundle-s0a"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcalendar-s01": {
+      "title": "CFCalendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcalendar-s01",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfcalendar-s01"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset-rvm": {
+      "title": "CFCharacterSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset-rvm",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfcharacterset-rvm"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9": {
+      "title": "CFData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdata-rv9"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdate-rv5": {
+      "title": "CFDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdate-rv5",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdate-rv5"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter-rv6": {
+      "title": "CFDateFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter-rv6",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdateformatter-rv6"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum": {
+      "title": "CFDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdictionary-rum"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cferror-ru8": {
+      "title": "CFError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cferror-ru8",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cferror-ru8"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor-ru3": {
+      "title": "CFFileDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor-ru3",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cffiledescriptor-ru3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The CFFileDescriptor provides an opaque type to monitor file descriptors for read and write activity via CFRunLoop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj": {
+      "title": "CFLocale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cflocale-rsj"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmachport-rsc": {
+      "title": "CFMachPort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmachport-rsc",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmachport-rsc"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmessageport-rs2": {
+      "title": "CFMessagePort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmessageport-rs2",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmessageport-rs2"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray-rrk": {
+      "title": "CFMutableArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray-rrk",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablearray-rrk"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring-rqp": {
+      "title": "CFMutableAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring-rqp",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutableattributedstring-rqp"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag-rqn": {
+      "title": "CFMutableBag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag-rqn",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablebag-rqn"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector-rqf": {
+      "title": "CFMutableBitVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector-rqf",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablebitvector-rqf"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset-rq3": {
+      "title": "CFMutableCharacterSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset-rq3",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablecharacterset-rq3"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata-rps": {
+      "title": "CFMutableData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata-rps",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutabledata-rps"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary-rpl": {
+      "title": "CFMutableDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary-rpl",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutabledictionary-rpl"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutableset-rpe": {
+      "title": "CFMutableSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutableset-rpe",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutableset-rpe"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring-rn7": {
+      "title": "CFMutableString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring-rn7",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablestring-rn7"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter-rkv": {
+      "title": "CFNotificationCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter-rkv",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnotificationcenter-rkv"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnull-rkr": {
+      "title": "CFNull",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnull-rkr",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnull-rkr"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd": {
+      "title": "CFNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnumber-rjd"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter-rjs": {
+      "title": "CFNumberFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter-rjs",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnumberformatter-rjs"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfplugin-rip": {
+      "title": "CFPlugIn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfplugin-rip",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfplugin-rip"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance-rja": {
+      "title": "CFPlugInInstance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance-rja",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfplugininstance-rja"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist-rif": {
+      "title": "CFPropertyList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist-rif",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfpropertylist-rif"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfreadstream-ri6": {
+      "title": "CFReadStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfreadstream-ri6",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfreadstream-ri6"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht": {
+      "title": "CFRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloop-rht"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver-ri3": {
+      "title": "CFRunLoopObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver-ri3",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloopobserver-ri3"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource-rhr": {
+      "title": "CFRunLoopSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource-rhr",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloopsource-rhr"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer-rhk": {
+      "title": "CFRunLoopTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer-rhk",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunlooptimer-rhk"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfset-rgt": {
+      "title": "CFSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfset-rgt",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfset-rgt"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocket-rg7": {
+      "title": "CFSocket",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocket-rg7",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfsocket-rg7"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh": {
+      "title": "CFString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfstring-rfh"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8": {
+      "title": "CFStringTokenizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfstringtokenizer-rf8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "CFStringTokenizer allows you to tokenize strings into words, sentences or paragraphs in a language-neutral way. It supports languages such as Japanese and Chinese that do not delimit words by spaces, as well as de-compounding German compounds. You can obtain Latin transcription for tokens. It also provides language identification API."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftimezone-rec": {
+      "title": "CFTimeZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftimezone-rec",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftimezone-rec"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftree-rds": {
+      "title": "CFTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftree-rds",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftree-rds"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftype": {
+      "title": "CFType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftype",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftype"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfurl-rd7": {
+      "title": "CFURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurl-rd7",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfurl-rd7"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotification-rd5": {
+      "title": "CFUserNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification-rd5",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfusernotification-rd5"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfuuid-rci": {
+      "title": "CFUUID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfuuid-rci",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfuuid-rci"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfwritestream-rc8": {
+      "title": "CFWriteStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfwritestream-rc8",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfwritestream-rc8"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode-rbu": {
+      "title": "CFXMLNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode-rbu",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmlnode-rbu"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser-rc1": {
+      "title": "CFXMLParser",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser-rc1",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmlparser-rc1"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmltree-rbh": {
+      "title": "CFXMLTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmltree-rbh",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmltree-rbh"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "CFUserNotification Miscellaneous Functions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1534499-cfusernotificationcancel",
+        "doc://com.apple.documentation/documentation/corefoundation/1534480-cfusernotificationcheckboxchecke",
+        "doc://com.apple.documentation/documentation/corefoundation/1534528-cfusernotificationcreate",
+        "doc://com.apple.documentation/documentation/corefoundation/1534507-cfusernotificationcreaterunloops",
+        "doc://com.apple.documentation/documentation/corefoundation/1534496-cfusernotificationdisplayalert",
+        "doc://com.apple.documentation/documentation/corefoundation/1534478-cfusernotificationdisplaynotice",
+        "doc://com.apple.documentation/documentation/corefoundation/1534500-cfusernotificationgetresponsedic",
+        "doc://com.apple.documentation/documentation/corefoundation/1534517-cfusernotificationgetresponseval",
+        "doc://com.apple.documentation/documentation/corefoundation/1534522-cfusernotificationgettypeid",
+        "doc://com.apple.documentation/documentation/corefoundation/1534520-cfusernotificationpopupselection",
+        "doc://com.apple.documentation/documentation/corefoundation/1534477-cfusernotificationreceiverespons",
+        "doc://com.apple.documentation/documentation/corefoundation/1534532-cfusernotificationsecuretextfiel",
+        "doc://com.apple.documentation/documentation/corefoundation/1534529-cfusernotificationupdate"
+      ],
+      "anchor": "1666528"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfusernotificationcallback"
+      ],
+      "anchor": "1666746"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfusernotification"
+      ],
+      "anchor": "1666794"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/1534483-alert_levels",
+        "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/1534504-response_codes",
+        "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/1534481-button_flags",
+        "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/dialog_description_keys"
+      ],
+      "anchor": "1666831"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocator-s29",
+        "doc://com.apple.documentation/documentation/corefoundation/cfarray-s28",
+        "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring-s1s",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbag-s1l",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap-s11",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbitvector-s0t",
+        "doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbundle-s0a",
+        "doc://com.apple.documentation/documentation/corefoundation/cfcalendar-s01",
+        "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset-rvm",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdate-rv5",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter-rv6",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum",
+        "doc://com.apple.documentation/documentation/corefoundation/cferror-ru8",
+        "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor-ru3",
+        "doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmachport-rsc",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmessageport-rs2",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray-rrk",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring-rqp",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag-rqn",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector-rqf",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset-rq3",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata-rps",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary-rpl",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutableset-rpe",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring-rn7",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter-rkv",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnull-rkr",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter-rjs",
+        "doc://com.apple.documentation/documentation/corefoundation/cfplugin-rip",
+        "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance-rja",
+        "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist-rif",
+        "doc://com.apple.documentation/documentation/corefoundation/cfreadstream-ri6",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver-ri3",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource-rhr",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer-rhk",
+        "doc://com.apple.documentation/documentation/corefoundation/cfset-rgt",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocket-rg7",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8",
+        "doc://com.apple.documentation/documentation/corefoundation/cftimezone-rec",
+        "doc://com.apple.documentation/documentation/corefoundation/cftree-rds",
+        "doc://com.apple.documentation/documentation/corefoundation/cftype",
+        "doc://com.apple.documentation/documentation/corefoundation/cfurl-rd7",
+        "doc://com.apple.documentation/documentation/corefoundation/cfuuid-rci",
+        "doc://com.apple.documentation/documentation/corefoundation/cfwritestream-rc8",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode-rbu",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser-rc1",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmltree-rbh"
+      ],
+      "title": "Opaque Types",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CFUserNotification"
+            },
+            {
+              "type": "text",
+              "text": " object presents a simple dialog on the screen and optionally receives feedback from the user. The contents of the dialog can include a header, a message, an icon, text fields, a pop-up button, radio buttons or checkboxes, and up to three ordinary buttons. Use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CFUserNotification"
+            },
+            {
+              "type": "text",
+              "text": " in processes that do not otherwise have user interfaces, but may need occasional interaction with the user."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You create a user notification with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534528-cfusernotificationcreate"
+            },
+            {
+              "type": "text",
+              "text": " function. You pass in a dictionary whose keys describe the items to place into the dialog. (See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification/dialog_description_keys"
+            },
+            {
+              "type": "text",
+              "text": " for the list of keys.) A set of flags passed to the function determines, among other things, whether secure text fields are used (such as for password fields), whether radio buttons or checkboxes are used, and which of these buttons are checked by default. You can also specify a timeout for the dialog, in which case the dialog cancels itself if the user does not respond in the allotted time period."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A user notification displays its dialog as soon as it is created. If any reply is required, it may be awaited in one of two ways: either synchronously, using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534477-cfusernotificationreceiverespons"
+            },
+            {
+              "type": "text",
+              "text": ", or asynchronously, using a run loop source created with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534507-cfusernotificationcreaterunloops"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534477-cfusernotificationreceiverespons"
+            },
+            {
+              "type": "text",
+              "text": " has a timeout parameter that determines how long it will block (zero meaning indefinitely) and it may be called as many times as necessary until a response arrives. If a user notification has not yet received a response, it may be updated with new information or it may be cancelled. User notifications may not be reused."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "CFUserNotification"
+            },
+            {
+              "type": "text",
+              "text": " provides two convenience functions, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534478-cfusernotificationdisplaynotice"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1534496-cfusernotificationdisplayalert"
+            },
+            {
+              "type": "text",
+              "text": ", to display very basic dialogs that either require no response from the user or require only a single button to be pressed, respectively."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

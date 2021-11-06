@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value that indicates if the sample has redundant coding."
+      "text": "A Boolean value that determines whether the sample has redundant coding."
     }
   ],
   "documentVersion": 0,
@@ -48,17 +48,45 @@
     ],
     "platforms": [
       {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "8.0",
+        "current": "8.3"
       }
     ],
     "externalID": "c:@SA@AVSampleCursorDependencyInfo@FI@sampleHasRedundantCoding",
+    "parent": {
+      "title": "AVSampleCursorDependencyInfo"
+    },
     "symbolKind": "structp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -141,35 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates of the sample knows if it has redundant coding."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385665-sampleindicateswhetheritdependso": {
-      "title": "sampleIndicatesWhetherItDependsOnOthers",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385665-sampleindicateswhetheritdependso",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avsamplecursordependencyinfo/1385665-sampleindicateswhetheritdependso",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates of the sample knows if it depends on other samples."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385857-sampledependsonothers": {
-      "title": "sampleDependsOnOthers",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385857-sampledependsonothers",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avsamplecursordependencyinfo/1385857-sampledependsonothers",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates if the sample depends on other samples."
+          "text": "A Boolean value that determines whether the sample indicates that it has redundant coding."
         }
       ]
     },
@@ -183,7 +183,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates if the sample knows if other samples depend on it."
+          "text": "A Boolean value that determines whether the sample indicates if other samples depend on it."
         }
       ]
     },
@@ -197,7 +197,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates if the sample has dependent samples."
+          "text": "A Boolean value that determines whether the sample has dependent samples."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385665-sampleindicateswhetheritdependso": {
+      "title": "sampleIndicatesWhetherItDependsOnOthers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385665-sampleindicateswhetheritdependso",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplecursordependencyinfo/1385665-sampleindicateswhetheritdependso",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the sample indicates that it depends on other samples."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385857-sampledependsonothers": {
+      "title": "sampleDependsOnOthers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385857-sampledependsonothers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplecursordependencyinfo/1385857-sampledependsonothers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the sample depends on other samples."
         }
       ]
     },
@@ -211,7 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates if the sample has redundant coding."
+          "text": "A Boolean value that determines whether the sample has redundant coding."
         }
       ]
     },
@@ -226,10 +254,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385665-sampleindicateswhetheritdependso",
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385857-sampledependsonothers",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1386214-sampleindicateswhetherithasdepen",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1388086-samplehasdependentsamples",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385665-sampleindicateswhetheritdependso",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1385857-sampledependsonothers",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursordependencyinfo/1386186-sampleindicateswhetherithasredun"
       ],
       "title": "Dependency Information",
@@ -263,7 +291,12 @@
             }
           ],
           "platforms": [
-            "macOS"
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
           ]
         }
       ]
@@ -307,7 +340,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

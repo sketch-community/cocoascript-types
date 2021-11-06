@@ -49,10 +49,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.3",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@ABPeoplePickerNameSelectionDidChangeNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -70,8 +73,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -153,6 +156,90 @@
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458497-abdatabasechanged": {
+      "title": "abDatabaseChanged",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458497-abdatabasechanged",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1458497-abdatabasechanged",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when this process has changed the Address Book database."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "abDatabaseChanged"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458671-abdatabasechangedexternally": {
+      "title": "abDatabaseChangedExternally",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458671-abdatabasechangedexternally",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1458671-abdatabasechangedexternally",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a process other than the current one has changed the Address Book database."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "abDatabaseChangedExternally"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458299-abpeoplepickerdisplayedpropertyd": {
+      "title": "ABPeoplePickerDisplayedPropertyDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458299-abpeoplepickerdisplayedpropertyd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1458299-abpeoplepickerdisplayedpropertyd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the displayed property in the record list is changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "ABPeoplePickerDisplayedPropertyDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458530-abpeoplepickergroupselectiondidc": {
       "title": "ABPeoplePickerGroupSelectionDidChange",
@@ -238,34 +325,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458299-abpeoplepickerdisplayedpropertyd": {
-      "title": "ABPeoplePickerDisplayedPropertyDidChange",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458299-abpeoplepickerdisplayedpropertyd",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsnotification/name/1458299-abpeoplepickerdisplayedpropertyd",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posted when the displayed property in the record list is changed."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "ABPeoplePickerDisplayedPropertyDidChange"
-        },
-        {
-          "kind": "text",
-          "text": ": NSNotification.Name"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -277,11 +336,13 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458497-abdatabasechanged",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458671-abdatabasechangedexternally",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458299-abpeoplepickerdisplayedpropertyd",
         "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458530-abpeoplepickergroupselectiondidc",
-        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458721-abpeoplepickervalueselectiondidc",
-        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458299-abpeoplepickerdisplayedpropertyd"
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458721-abpeoplepickervalueselectiondidc"
       ],
-      "title": "Notifications",
+      "title": "AddressBook",
       "generated": true
     }
   ],
@@ -343,7 +404,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

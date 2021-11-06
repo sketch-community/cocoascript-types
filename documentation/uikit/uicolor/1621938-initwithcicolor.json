@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/drawing",
-        "doc://com.apple.documentation/documentation/uikit/uicolor"
+        "doc://com.apple.documentation/documentation/uikit/uicolor",
+        "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation"
       ]
     ]
   },
@@ -35,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIColor(im)initWithCIColor:",
+    "parent": {
+      "title": "UIColor"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -103,6 +112,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicolor"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation": {
+      "title": "Color Creation",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation",
+      "url": "/documentation/uikit/uicolor/color_creation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/coreimage/cicolor": {
       "title": "CIColor",
@@ -170,7 +187,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a color object using the specified Quartz color reference. "
+          "text": "Creates a color object using the specified Quartz color reference."
         }
       ],
       "fragments": [
@@ -194,7 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a color object using the specified Quartz color reference. "
+          "text": "Creates a color object using the specified Quartz color reference."
         }
       ],
       "fragments": [
@@ -218,7 +235,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a color object that has the same color space and component values as the receiver, but has the specified alpha component. "
+          "text": "Creates a color object that has the same color space and component values as the receiver, but has the specified alpha component."
         }
       ],
       "fragments": [
@@ -312,6 +329,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -362,7 +380,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

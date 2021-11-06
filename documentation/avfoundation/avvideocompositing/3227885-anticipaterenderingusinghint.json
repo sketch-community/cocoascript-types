@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)AVVideoCompositing(im)anticipateRenderingUsingHint:",
+    "parent": {
+      "title": "AVVideoCompositing"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -163,60 +171,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged": {
-      "title": "renderContextChanged:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Notifies the custom compositor that a composition will switch to a different render context."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "renderContextChanged:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext": {
-      "title": "AVVideoCompositionRenderContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositionrendercontext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that defines the context within which custom compositors render new output pixel buffers."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes": {
-      "title": "supportsWideColorSourceFrames",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the client can handle frames that contain wide color properties."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227885-anticipaterenderingusinghint": {
       "title": "anticipateRenderingUsingHint:",
       "type": "topic",
@@ -278,13 +232,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227886-prerollforrenderingusinghint",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrenderhint"
       ],
-      "title": "Render Context Settings",
+      "title": "Preparing to Render Frames",
       "generated": true
     }
   ],
@@ -342,6 +293,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -483,7 +435,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

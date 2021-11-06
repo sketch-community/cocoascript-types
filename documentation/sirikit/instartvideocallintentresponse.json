@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Your response to a start video call intent. "
+      "text": "A response to an intent to start a video call."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -35,14 +35,21 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -50,8 +57,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -86,13 +93,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols": {
-      "title": "Deprecated Classes and Protocols",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
-      "url": "/documentation/sirikit/deprecated_classes_and_protocols",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse": {
+      "title": "INStartCallIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintentresponse"
     },
     "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponse": {
       "title": "INStartVideoCallIntentResponse",
@@ -104,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Your response to a start video call intent. "
+          "text": "A response to an intent to start a video call."
         }
       ],
       "deprecated": true
@@ -119,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A request to start a video call with one or more users. "
+          "text": "A request to start a video call with one or more users."
         }
       ],
       "deprecated": true
@@ -201,7 +216,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the response object with the specified code and user activity object. "
+          "text": "Initializes the response object with the specified code and user activity object."
         }
       ],
       "fragments": [
@@ -241,7 +256,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants indicating the status of the response.  "
+          "text": "Constants indicating the status of the response."
         }
       ],
       "deprecated": true
@@ -254,6 +269,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -270,7 +305,8 @@
       "title": "Initializing the Response Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponse/1639246-initwithcode"
-      ]
+      ],
+      "anchor": "2528180"
     },
     {
       "kind": "taskGroup",
@@ -278,7 +314,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponse/1823493-code",
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponsecode"
-      ]
+      ],
+      "anchor": "2528184"
     }
   ],
   "seeAlsoSections": [
@@ -287,7 +324,7 @@
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintent"
       ],
-      "title": "Start a Video Call",
+      "title": "Video Call Initiation",
       "generated": true
     }
   ],
@@ -325,6 +362,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -362,7 +400,7 @@
             },
             {
               "type": "text",
-              "text": " object. When it is time to call the user, SiriKit launches your app and delivers the "
+              "text": " object. When it’s time to call the user, SiriKit launches your app and delivers the "
             },
             {
               "type": "reference",
@@ -416,7 +454,7 @@
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         }
@@ -424,7 +462,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

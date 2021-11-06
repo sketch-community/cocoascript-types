@@ -35,32 +35,51 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "deprecatedAt": "13.0",
+        "current": "13.2",
+        "deprecated": true
       }
     ],
     "externalID": "s:10Accelerate17vDSP_DFTFunctionsP",
@@ -77,8 +96,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -175,7 +194,8 @@
           "kind": "text",
           "text": "(OpaquePointer)"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp_dftfunctions/3241166-makedftsetup": {
       "title": "makeDFTSetup(previous:count:direction:transformType:)",
@@ -230,7 +250,8 @@
           "kind": "text",
           "text": ": vDSP.DFTTransformType) -> OpaquePointer?"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp_dftfunctions/3241167-transform": {
       "title": "transform(dftSetup:inputReal:inputImaginary:outputReal:outputImaginary:)",
@@ -293,7 +314,8 @@
           "kind": "text",
           "text": ": inout V)"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp_dftfunctions": {
       "title": "vDSP_DFTFunctions",
@@ -317,7 +339,8 @@
           "kind": "identifier",
           "text": "vDSP_DFTFunctions"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp_floatingpointdiscretefouriertransformable": {
       "title": "vDSP_FloatingPointDiscreteFourierTransformable",
@@ -341,7 +364,8 @@
           "kind": "identifier",
           "text": "vDSP_FloatingPointDiscreteFourierTransformable"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp_fouriertransformfunctions": {
       "title": "vDSP_FourierTransformFunctions",
@@ -416,7 +440,8 @@
       "title": "Associated Types",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/vdsp_dftfunctions/3241164-scalar"
-      ]
+      ],
+      "anchor": "3256676"
     },
     {
       "kind": "taskGroup",
@@ -425,7 +450,8 @@
         "doc://com.apple.documentation/documentation/accelerate/vdsp_dftfunctions/3241165-destroysetup",
         "doc://com.apple.documentation/documentation/accelerate/vdsp_dftfunctions/3241166-makedftsetup",
         "doc://com.apple.documentation/documentation/accelerate/vdsp_dftfunctions/3241167-transform"
-      ]
+      ],
+      "anchor": "3256677"
     }
   ],
   "seeAlsoSections": [
@@ -463,6 +489,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -473,7 +500,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "6.0.1",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation8CalendarV11nextWeekend13startingAfter5start8interval9directionSbAA4DateV_AJzSdzAC15SearchDirectionOtF",
+    "parent": {
+      "title": "Calendar"
+    },
     "symbolKind": "structm",
     "fragments": [
       {
@@ -113,8 +121,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -689,6 +697,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -754,24 +763,20 @@
           "type": "paragraph",
           "inlineContent": [
             {
+              "type": "codeVoice",
+              "code": "false"
+            },
+            {
               "type": "text",
-              "text": "A "
+              "text": " if the calendar and locale do not have the concept of a weekend, otherwise "
             },
             {
               "type": "codeVoice",
-              "code": "DateInterval"
+              "code": "true"
             },
             {
               "type": "text",
-              "text": ", or "
-            },
-            {
-              "type": "codeVoice",
-              "code": "nil"
-            },
-            {
-              "type": "text",
-              "text": " if the weekend could not be found."
+              "text": "."
             }
           ]
         }
@@ -824,7 +829,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants that describe the list’s header mode."
+      "text": "Constants that describe the list’s footer mode."
     }
   ],
   "documentVersion": 0,
@@ -38,25 +38,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:5UIKit35UICollectionLayoutListConfigurationV10FooterModeO",
+    "parent": {
+      "title": "UICollectionLayoutListConfiguration"
+    },
     "symbolKind": "enum",
     "fragments": [
       {
@@ -70,8 +78,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -191,6 +199,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/footermode/3600919",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operator for checking whether two footer modes are equal."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -213,6 +227,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/footermode/3600918",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operator for checking whether two footer modes are unequal."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -235,6 +255,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/footermode/3600920-hash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hashes the essential components of the footer mode by feeding them into the hasher."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -265,6 +291,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/footermode/3600921-hashvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The hash value."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -370,7 +402,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that describe the list’s header mode."
+          "text": "Constants that describe the list’s footer mode."
         }
       ],
       "fragments": [
@@ -381,6 +413,34 @@
         {
           "kind": "identifier",
           "text": "UICollectionLayoutListConfiguration.FooterMode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3751731-headertoppadding": {
+      "title": "headerTopPadding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3751731-headertoppadding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutlistconfiguration/3751731-headertoppadding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The amount of padding above each section header. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "headerTopPadding"
+        },
+        {
+          "kind": "text",
+          "text": ": CGFloat?"
         }
       ]
     },
@@ -399,7 +459,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/footermode/none",
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/footermode/supplementary"
-      ]
+      ],
+      "anchor": "3618428"
     },
     {
       "kind": "taskGroup",
@@ -409,7 +470,8 @@
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/footermode/3600918",
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/footermode/3600920-hash",
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/footermode/3600921-hashvalue"
-      ]
+      ],
+      "anchor": "3618433"
     }
   ],
   "seeAlsoSections": [
@@ -417,7 +479,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3600935-headermode",
         "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3600934-footermode",
-        "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/headermode"
+        "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/headermode",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistconfiguration/3751731-headertoppadding"
       ],
       "title": "Configuring Headers and Footers",
       "generated": true
@@ -457,6 +520,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -465,7 +529,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

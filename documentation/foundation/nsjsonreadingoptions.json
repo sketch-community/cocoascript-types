@@ -2,25 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Options used when creating Foundation objects from JSON data—see "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1415493-jsonobjectwithdata"
-    },
-    {
-      "type": "text",
-      "text": " and "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1418059-jsonobjectwithstream"
-    },
-    {
-      "type": "text",
-      "text": "."
+      "text": "Options used when creating Foundation objects from JSON data."
     }
   ],
   "documentVersion": 0,
@@ -53,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSJSONReadingOptions",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -139,6 +126,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsjsonserialization/1415493-jsonobjectwithdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Foundation object from given JSON data."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -157,6 +150,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsjsonserialization/1418059-jsonobjectwithstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Foundation object from JSON data in a given stream."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -186,7 +185,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Specifies that arrays and dictionaries are created as mutable objects."
+          "text": "Specifies that arrays and dictionaries in the returned object are mutable."
         }
       ]
     },
@@ -200,15 +199,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Specifies that leaf strings in the JSON object graph are created as instances of "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSMutableString"
-        },
+          "text": "Specifies that leaf strings in the JSON object graph are mutable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingfragmentsallowed": {
+      "title": "NSJSONReadingFragmentsAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingfragmentsallowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsjsonreadingoptions/nsjsonreadingfragmentsallowed",
+      "abstract": [
         {
           "type": "text",
-          "text": "."
+          "text": "Specifies that the parser allows top-level objects that aren’t arrays or dictionaries."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingjson5allowed": {
+      "title": "NSJSONReadingJSON5Allowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingjson5allowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsjsonreadingoptions/nsjsonreadingjson5allowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that reading serialized JSON data supports the JSON5 syntax."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingtopleveldictionaryassumed": {
+      "title": "NSJSONReadingTopLevelDictionaryAssumed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingtopleveldictionaryassumed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsjsonreadingoptions/nsjsonreadingtopleveldictionaryassumed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the parser assumes the top level of the JSON data is a dictionary, even if it doesn’t begin and end with curly braces."
         }
       ]
     },
@@ -222,34 +255,24 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Specifies that the parser should allow top-level objects that are not an instance of "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSArray"
-        },
-        {
-          "type": "text",
-          "text": " or "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSDictionary"
-        },
-        {
-          "type": "text",
-          "text": ". "
+          "text": "A deprecated option that specifies that the parser should allow top-level objects that aren’t arrays or dictionaries."
         }
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingfragmentsallowed": {
-      "title": "NSJSONReadingFragmentsAllowed",
+    "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions": {
+      "title": "NSJSONReadingOptions",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingfragmentsallowed",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsjsonreadingoptions/nsjsonreadingfragmentsallowed"
+      "url": "/documentation/foundation/nsjsonreadingoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options used when creating Foundation objects from JSON data."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -262,19 +285,26 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Constants",
+      "title": "Reading Options",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingmutablecontainers",
         "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingmutableleaves",
+        "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingfragmentsallowed",
+        "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingjson5allowed",
+        "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingtopleveldictionaryassumed",
         "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingallowfragments"
-      ]
-    },
+      ],
+      "anchor": "1593711"
+    }
+  ],
+  "seeAlsoSections": [
     {
-      "kind": "taskGroup",
-      "title": "Type Properties",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions/nsjsonreadingfragmentsallowed"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1415493-jsonobjectwithdata",
+        "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1418059-jsonobjectwithstream"
+      ],
+      "title": "Creating a JSON Object",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -339,6 +369,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -346,10 +377,48 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use these options when parsing JSON with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1415493-jsonobjectwithdata"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1418059-jsonobjectwithstream"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

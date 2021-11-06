@@ -35,32 +35,37 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation10CocoaErrorV",
@@ -77,8 +82,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,6 +123,32 @@
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726496-init": {
+      "title": "init(_:userInfo:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726496-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/cocoaerror/3726496-init",
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "(Code, "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [String : Any])"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/cocoaerror/2300160-affectedobjects": {
       "title": "affectedObjects",
@@ -160,6 +191,28 @@
         {
           "kind": "text",
           "text": ": [AnyObject]?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726494-code": {
+      "title": "code",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726494-code",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/cocoaerror/3726494-code",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "code"
+        },
+        {
+          "kind": "text",
+          "text": ": Code"
         }
       ]
     },
@@ -643,6 +696,28 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/cocoaerror/3738174-underlyingerrors": {
+      "title": "underlyingErrors",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/cocoaerror/3738174-underlyingerrors",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/cocoaerror/3738174-underlyingerrors",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "underlyingErrors"
+        },
+        {
+          "kind": "text",
+          "text": ": [Error]"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/cocoaerror/2293461-url": {
       "title": "url",
       "type": "topic",
@@ -668,6 +743,28 @@
         {
           "kind": "text",
           "text": ": URL?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726497-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726497-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/cocoaerror/3726497-userinfo",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [String : Any]"
         }
       ]
     },
@@ -5325,6 +5422,36 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726495-hash": {
+      "title": "hash(into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726495-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/cocoaerror/3726495-hash",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "hash"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "into"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Hasher)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/cocoaerror/2895358-error": {
       "title": "error(_:userInfo:url:)",
       "type": "topic",
@@ -5384,6 +5511,28 @@
         {
           "kind": "identifier",
           "text": "!= "
+        },
+        {
+          "kind": "text",
+          "text": "(CocoaError, CocoaError) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726492": {
+      "title": "==(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726492",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/cocoaerror/3726492",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "== "
         },
         {
           "kind": "text",
@@ -5512,10 +5661,19 @@
   "topicSections": [
     {
       "kind": "taskGroup",
+      "title": "Initializers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726496-init"
+      ],
+      "anchor": "3728368"
+    },
+    {
+      "kind": "taskGroup",
       "title": "Instance Properties",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2300160-affectedobjects",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2300187-affectedstores",
+        "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726494-code",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2883226-errorcode",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2883115-erroruserinfo",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2293319-filepath",
@@ -5537,12 +5695,15 @@
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2300191-persistentstoresaveconflicts",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2293492-stringencoding",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2293034-underlying",
+        "doc://com.apple.documentation/documentation/foundation/cocoaerror/3738174-underlyingerrors",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2293461-url",
+        "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726497-userinfo",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2300192-validationkey",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2300157-validationobject",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2300180-validationpredicate",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2300189-validationvalue"
-      ]
+      ],
+      "anchor": "2850616"
     },
     {
       "kind": "taskGroup",
@@ -5752,28 +5913,41 @@
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2293597-xpcconnectioninterrupted",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2293178-xpcconnectioninvalid",
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2293710-xpcconnectionreplyinvalid"
-      ]
+      ],
+      "anchor": "2850617"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726495-hash"
+      ],
+      "anchor": "3728369"
     },
     {
       "kind": "taskGroup",
       "title": "Type Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/2895358-error"
-      ]
+      ],
+      "anchor": "2901534"
     },
     {
       "kind": "taskGroup",
       "title": "Operator Functions",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/cocoaerror/2946830"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/cocoaerror/2946830",
+        "doc://com.apple.documentation/documentation/foundation/cocoaerror/3726492"
+      ],
+      "anchor": "2947275"
     },
     {
       "kind": "taskGroup",
       "title": "Structures",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/cocoaerror/code"
-      ]
+      ],
+      "anchor": "2872731"
     }
   ],
   "seeAlsoSections": [
@@ -5811,6 +5985,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -5821,7 +5996,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

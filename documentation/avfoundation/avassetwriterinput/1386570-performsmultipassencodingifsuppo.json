@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value that indicates whether the input should attempt to encode the source media data using multiple passes."
+      "text": "A Boolean value that indicates whether the input attempts to encode the source media data using multiple passes."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInput(py)performsMultiPassEncodingIfSupported",
+    "parent": {
+      "title": "AVAssetWriterInput"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,31 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished": {
-      "title": "markCurrentPassAsFinished",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Instructs the receiver to analyze the appended media data and determine whether to improve the results by re-encoding certain segments."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "markCurrentPassAsFinished"
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -158,7 +142,31 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that describes the requirements, such as source time ranges to append or re-append, to the current pass."
+          "text": "An object that describes the requirements for the current pass."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished": {
+      "title": "markCurrentPassAsFinished",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the input to analyze the appended media to determine whether it can improve the results by reencoding certain segments."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "markCurrentPassAsFinished"
         }
       ]
     },
@@ -186,14 +194,6 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
-      "title": "AVAssetWriter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting": {
       "title": "startWriting",
       "type": "topic",
@@ -212,6 +212,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles": {
+      "title": "directoryForTemporaryFiles",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses": {
       "title": "canPerformMultiplePasses",
       "type": "topic",
@@ -222,7 +230,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the input might perform multiple passes over appended media data."
+          "text": "A Boolean value that indicates whether the input may perform multiple passes over appended media data."
         }
       ]
     },
@@ -244,7 +252,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for querying about the requirements of the current pass."
+          "text": "An object that defines the interface to query for the requirements of the current pass."
         }
       ]
     },
@@ -258,35 +266,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the input should attempt to encode the source media data using multiple passes."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment": {
-      "title": "preferredMediaChunkAlignment",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The boundary, in bytes, for aligning media chunks."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration": {
-      "title": "preferredMediaChunkDuration",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The duration used for each chunk of sample data in the output file."
+          "text": "A Boolean value that indicates whether the input attempts to encode the source media data using multiple passes."
         }
       ]
     },
@@ -300,7 +280,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Instructs the receiver to invoke a client-supplied block whenever a new pass has begun."
+          "text": "Tells the input to invoke a callback whenever it begins a new pass."
         }
       ],
       "fragments": [
@@ -329,8 +309,6 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpassdescription",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu"
       ],
       "title": "Performing Multiple-Pass Encoding",
@@ -373,6 +351,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -394,16 +373,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The asset writer input may be able to achieve higher quality and/or lower data rate by performing multiple passes over the source media.  It does this by analyzing the media data that has been appended and re-encoding certain segments with different parameters.  In order to do this re-encoding, the media data for these segments must be appended again.  See "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished"
-            },
-            {
-              "type": "text",
-              "text": " and the property "
+              "text": "An asset writer input may be able to achieve higher quality and lower data rate by performing multiple passes over the source media. It does this by analyzing the media data it appends and reencodes certain segments with different parameters. To perform the reencoding, you must append the media data for the segments again. See the "
             },
             {
               "type": "reference",
@@ -412,7 +382,16 @@
             },
             {
               "type": "text",
-              "text": " for the mechanism by which the input nominates segments for re-appending."
+              "text": " property and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished"
+            },
+            {
+              "type": "text",
+              "text": " method for the means by which the input nominates segments to reappend."
             }
           ]
         },
@@ -439,15 +418,7 @@
             },
             {
               "type": "text",
-              "text": " for other inputs attached to the same "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriter"
-            },
-            {
-              "type": "text",
-              "text": " may be "
+              "text": " for other inputs attached to the same asset writer may be "
             },
             {
               "type": "reference",
@@ -456,16 +427,16 @@
             },
             {
               "type": "text",
-              "text": " more often and/or for longer periods of time.  In particular, the value of "
+              "text": " more often and for longer periods of time. In particular, the value of "
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata"
             },
             {
               "type": "text",
-              "text": " for inputs that do not (or cannot) perform multiple passes may start out as "
+              "text": " for inputs that don’t perform multiple passes may start as "
             },
             {
               "type": "reference",
@@ -474,16 +445,7 @@
             },
             {
               "type": "text",
-              "text": " after the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-            },
-            {
-              "type": "text",
-              "text": " method "
+              "text": " after calling the method asset writer’s "
             },
             {
               "type": "reference",
@@ -492,7 +454,7 @@
             },
             {
               "type": "text",
-              "text": " has been called and may not change to "
+              "text": " method, and may not change to "
             },
             {
               "type": "reference",
@@ -501,7 +463,7 @@
             },
             {
               "type": "text",
-              "text": " until after all multi-pass inputs have completed their final pass."
+              "text": " until after all multipass inputs complete their final pass."
             }
           ]
         },
@@ -519,24 +481,16 @@
             },
             {
               "type": "text",
-              "text": ", the input may store data in one or more temporary files before writing compressed samples to the output file.  Use the "
+              "text": ", the input may store data in one or more temporary files before writing compressed samples to the output file. Use the asset writer’s "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles"
             },
             {
               "type": "text",
-              "text": " property "
-            },
-            {
-              "type": "codeVoice",
-              "code": "directoryForTemporaryFiles"
-            },
-            {
-              "type": "text",
-              "text": " if you need to control the location of temporary file writing."
+              "text": " property if you need to specify the location of temporary file writing."
             }
           ]
         },
@@ -554,7 +508,7 @@
             },
             {
               "type": "text",
-              "text": ", meaning that no additional analysis will occur and no segments will be re-encoded.  Not all asset writer input configurations (for example, inputs configured with certain media types or to use certain encoders) can benefit from performing multiple passes over the source media.  To determine whether the selected encoder can perform multiple passes, query the value of "
+              "text": ", which means that no additional analysis occurs and it doesn’t reencode segments. Not all asset writer input configurations benefit from performing multiple passes over the source media. To determine whether the selected encoder can perform multiple passes, query the value of "
             },
             {
               "type": "reference",
@@ -577,91 +531,83 @@
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "aside",
+          "content": [
             {
-              "type": "text",
-              "text": "It is an error to set this property to "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": " when the value for "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime"
-            },
-            {
-              "type": "text",
-              "text": " is "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": ".  It is also an error for an asset writer to contain an input with this property set to "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": " when any of its other inputs have a value of "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": " for "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "It’s an error to set this property value to "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                },
+                {
+                  "type": "text",
+                  "text": " when the value for "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime"
+                },
+                {
+                  "type": "text",
+                  "text": " is "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                },
+                {
+                  "type": "text",
+                  "text": ". It’s also an error for an asset writer to contain inputs with this property set to "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                },
+                {
+                  "type": "text",
+                  "text": " when any of its other inputs have a value of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                },
+                {
+                  "type": "text",
+                  "text": " for "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
             }
-          ]
+          ],
+          "style": "important"
         },
         {
           "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "This property cannot be set after writing on the receiver's "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-            },
-            {
-              "type": "text",
-              "text": " has started."
-            }
-          ]
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The highest quality, most computationally expensive pitch algorithm."
+      "text": "A highest-quality time pitch algorithm that’s suitable for music."
     }
   ],
   "documentVersion": 0,
@@ -33,9 +33,16 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
-        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
-        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats",
-        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats/time_pitch_algorithm_settings"
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine",
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats",
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats/time_pitch_algorithm_settings"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfaudio",
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine",
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats",
+        "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats/time_pitch_algorithm_settings"
       ]
     ]
   },
@@ -58,35 +65,40 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@AVAudioTimePitchAlgorithmSpectral",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -177,29 +189,37 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine": {
-      "title": "AVAudioEngine",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
-      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+    "doc://com.apple.documentation/documentation/avfaudio/audio_engine": {
+      "title": "Audio Engine",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine",
+      "url": "/documentation/avfaudio/audio_engine",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats": {
+    "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats": {
       "title": "Audio Settings and Formats",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats",
-      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats",
+      "url": "/documentation/avfaudio/audio_engine/audio_settings_and_formats",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats/time_pitch_algorithm_settings": {
+    "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats/time_pitch_algorithm_settings": {
       "title": "Time Pitch Algorithm Settings",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats/time_pitch_algorithm_settings",
-      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats/time_pitch_algorithm_settings",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/audio_engine/audio_settings_and_formats/time_pitch_algorithm_settings",
+      "url": "/documentation/avfaudio/audio_engine/audio_settings_and_formats/time_pitch_algorithm_settings",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfaudio": {
+      "title": "AVFAudio",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio",
+      "url": "/documentation/avfaudio",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -247,6 +267,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -269,7 +290,23 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This algorithm is suitable for music. It uses a variable rate from 1/32 to 32."
+              "text": "This is the most computationally intensive, and uses a variable rate from "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1/32"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "32"
+            },
+            {
+              "type": "text",
+              "text": "."
             }
           ]
         }
@@ -277,7 +314,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

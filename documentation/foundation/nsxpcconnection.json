@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSXPCConnection",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -756,7 +761,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsxpccoder"
+      "url": "/documentation/foundation/nsxpccoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A coder that encodes and decodes objects that your app sends over an XPC connection."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -764,16 +775,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -803,7 +804,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsxpcconnection/1418074-initwithmachservicename",
         "doc://com.apple.documentation/documentation/foundation/nsxpcconnectionoptions",
         "doc://com.apple.documentation/documentation/foundation/nsxpcconnection/1416370-initwithservicename"
-      ]
+      ],
+      "anchor": "1662042"
     },
     {
       "kind": "taskGroup",
@@ -814,7 +816,8 @@
         "doc://com.apple.documentation/documentation/foundation/1448136-nserror_codes/nsxpcconnectionreplyinvalid",
         "doc://com.apple.documentation/documentation/foundation/1448136-nserror_codes/nsxpcconnectionerrorminimum",
         "doc://com.apple.documentation/documentation/foundation/1448136-nserror_codes/nsxpcconnectionerrormaximum"
-      ]
+      ],
+      "anchor": "1674231"
     },
     {
       "kind": "taskGroup",
@@ -832,7 +835,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsxpcconnection/1411472-remoteobjectinterface",
         "doc://com.apple.documentation/documentation/foundation/nsxpcconnection/1411031-remoteobjectproxy",
         "doc://com.apple.documentation/documentation/foundation/nsxpcconnection/1413751-servicename"
-      ]
+      ],
+      "anchor": "2857609"
     },
     {
       "kind": "taskGroup",
@@ -844,14 +848,16 @@
         "doc://com.apple.documentation/documentation/foundation/nsxpcconnection/3172583-schedulesendbarrierblock",
         "doc://com.apple.documentation/documentation/foundation/nsxpcconnection/1410778-suspend",
         "doc://com.apple.documentation/documentation/foundation/nsxpcconnection/2879410-synchronousremoteobjectproxywith"
-      ]
+      ],
+      "anchor": "2857610"
     },
     {
       "kind": "taskGroup",
       "title": "Type Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsxpcconnection/3172582-currentconnection"
-      ]
+      ],
+      "anchor": "3173229"
     }
   ],
   "seeAlsoSections": [
@@ -899,6 +905,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -929,7 +936,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

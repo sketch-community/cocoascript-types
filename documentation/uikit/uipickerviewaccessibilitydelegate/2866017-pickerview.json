@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate"
       ]
     ]
@@ -41,20 +41,28 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UIPickerViewAccessibilityDelegate(im)pickerView:accessibilityAttributedHintForComponent:",
+    "parent": {
+      "title": "UIPickerViewAccessibilityDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -89,10 +97,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -257,6 +265,44 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197990-pickerview": {
+      "title": "pickerView:accessibilityAttributedUserInputLabelsForComponent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197990-pickerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipickerviewaccessibilitydelegate/3197990-pickerview",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pickerView:accessibilityAttributedUserInputLabelsForComponent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197991-pickerview": {
+      "title": "pickerView:accessibilityUserInputLabelsForComponent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197991-pickerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uipickerviewaccessibilitydelegate/3197991-pickerview",
+      "required": false,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pickerView:accessibilityUserInputLabelsForComponent:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -270,7 +316,9 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621052-pickerview",
         "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/2865955-pickerview",
-        "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621056-pickerview"
+        "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621056-pickerview",
+        "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197990-pickerview",
+        "doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197991-pickerview"
       ],
       "title": "Providing Descriptive Information",
       "generated": true
@@ -362,6 +410,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -481,7 +530,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

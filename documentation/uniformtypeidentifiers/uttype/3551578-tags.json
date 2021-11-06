@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the tag specification dictionary of this type."
+      "text": "The tag specification dictionary of this type."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:22UniformTypeIdentifiers6UTTypeV4tagsSDyAA10UTTagClassVSaySSGGvp",
+    "parent": {
+      "title": "UTType"
+    },
     "symbolKind": "structp",
     "fragments": [
       {
@@ -80,8 +88,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure that represents a type of data to load, send or receive."
+          "text": "A structure that represents a type of data to load, send, or receive."
         }
       ]
     },
@@ -136,6 +144,38 @@
       "role": "codeListing",
       "url": "/documentation/uniformtypeidentifiers/uttype/3551578-tags#3589346"
     },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttagclass/3551447-mimetype": {
+      "title": "mimeType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttagclass/3551447-mimetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uniformtypeidentifiers/uttagclass/3551447-mimetype"
+    },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttagclass/3551442-filenameextension": {
+      "title": "filenameExtension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttagclass/3551442-filenameextension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uniformtypeidentifiers/uttagclass/3551442-filenameextension"
+    },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551534-mpeg": {
+      "title": "mpeg",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551534-mpeg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uniformtypeidentifiers/uttype/3551534-mpeg"
+    },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551578-tags#3879953": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551578-tags#3879953",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/uniformtypeidentifiers/uttype/3551578-tags#3879953"
+    },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551552-preferredfilenameextension": {
       "title": "preferredFilenameExtension",
       "type": "topic",
@@ -146,7 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the preferred filename extension for this type."
+          "text": "The preferred filename extension for this type."
         }
       ],
       "fragments": [
@@ -174,7 +214,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the preferred MIME type for this type."
+          "text": "The preferred MIME type for this type."
         }
       ],
       "fragments": [
@@ -218,7 +258,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the tag specification dictionary of this type."
+          "text": "The tag specification dictionary of this type."
         }
       ],
       "fragments": [
@@ -318,6 +358,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -340,7 +381,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Uniform Type Identifiers don’t store tag information for nonstandard tag classes, they normalize string values into arrays that contain those strings. For example, a tag with values of:"
+              "text": "Uniform Type Identifiers don’t store tag information for nonstandard tag classes. Identifiers normalize string values into arrays that contain those strings. For example, a tag specification dictionary with values of:"
             }
           ]
         },
@@ -385,7 +426,63 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "To get the preferred filename extension or MIME type, use "
+              "text": "Use the tag class "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttagclass/3551447-mimetype"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttagclass/3551442-filenameextension"
+            },
+            {
+              "type": "text",
+              "text": " to retrieve the list of supporting MIME types or filename extensions for your type. For example, the following example retrieves a list of the filename extensions for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551534-mpeg"
+            },
+            {
+              "type": "text",
+              "text": " type:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let MPEGextensions = UTType.mpeg.tags[.filenameExtension]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879953",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Types that have no tags for the requested tag class return a nil, not an empty array."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To get the preferred filename extension or MIME type, use the tag class "
             },
             {
               "type": "reference",
@@ -406,16 +503,12 @@
               "text": ", respectively."
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An encapsulation of content for an app."
+      "text": "A conduit to your app’s databases."
     }
   ],
   "documentVersion": 0,
@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKContainer",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -404,7 +409,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that represent the status of a permission "
+          "text": "Constants that represent the status of a permission."
         }
       ]
     },
@@ -773,7 +778,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An encapsulation of content for an app."
+          "text": "A conduit to your app’s databases."
         }
       ]
     },
@@ -787,21 +792,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A conduit for accessing and performing operations on the data of an app container."
+          "text": "A collection of record zones and subscriptions."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/database_operations": {
-      "title": "Database Operations",
+    "doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup": {
+      "title": "CKOperationGroup",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/database_operations",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/cloudkit/database_operations",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckoperationgroup",
       "abstract": [
         {
           "type": "text",
-          "text": "Operations for looking up users and configuring the app icon’s badge."
+          "text": "An explicit association between two or more operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordvalue": {
+      "title": "CKRecordValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The protocol that provides strong type-checking for objects that the CloudKit framework stores on the server."
         }
       ]
     },
@@ -811,16 +830,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -840,7 +849,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399189-defaultcontainer",
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399193-containerwithidentifier"
-      ]
+      ],
+      "anchor": "1666300"
     },
     {
       "kind": "taskGroup",
@@ -850,14 +860,16 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399166-publicclouddatabase",
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1640408-sharedclouddatabase",
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1640475-databasewithdatabasescope"
-      ]
+      ],
+      "anchor": "1666349"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Container’s Identifier",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399182-containeridentifier"
-      ]
+      ],
+      "anchor": "1666410"
     },
     {
       "kind": "taskGroup",
@@ -865,7 +877,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399180-accountstatuswithcompletionhandl",
         "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus"
-      ]
+      ],
+      "anchor": "1666446"
     },
     {
       "kind": "taskGroup",
@@ -876,14 +889,16 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckapplicationpermissions",
         "doc://com.apple.documentation/documentation/cloudkit/ckapplicationpermissionblock",
         "doc://com.apple.documentation/documentation/cloudkit/ckapplicationpermissionstatus"
-      ]
+      ],
+      "anchor": "1666484"
     },
     {
       "kind": "taskGroup",
       "title": "Performing Operations on the Container",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399215-addoperation"
-      ]
+      ],
+      "anchor": "1666551"
     },
     {
       "kind": "taskGroup",
@@ -899,7 +914,8 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399191-fetchuserrecordidwithcompletionh",
         "doc://com.apple.documentation/documentation/cloudkit/ckcurrentuserdefaultname",
         "doc://com.apple.documentation/documentation/cloudkit/ckownerdefaultname"
-      ]
+      ],
+      "anchor": "1666586"
     },
     {
       "kind": "taskGroup",
@@ -907,7 +923,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399160-fetchalllonglivedoperationidswit",
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399164-fetchlonglivedoperationwithid"
-      ]
+      ],
+      "anchor": "1682585"
     },
     {
       "kind": "taskGroup",
@@ -916,16 +933,18 @@
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/2113666-fetchsharemetadatawithurl",
         "doc://com.apple.documentation/documentation/cloudkit/ckcontainer/2113667-acceptsharemetadata",
         "doc://com.apple.documentation/documentation/cloudkit/ckaccountchangednotification"
-      ]
+      ],
+      "anchor": "3640583"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckdatabase",
-        "doc://com.apple.documentation/documentation/cloudkit/database_operations"
+        "doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecordvalue"
       ],
-      "title": "Database Management",
+      "title": "Core Objects",
       "generated": true
     }
   ],
@@ -963,6 +982,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1278,7 +1298,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVMutableVideoComposition(py)colorPrimaries",
+    "parent": {
+      "title": "AVMutableVideoComposition"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -197,7 +205,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods you can implement to represent operations to be performed by a compositor."
+          "text": "A protocol that defines the interface for a video composition instruction."
         }
       ]
     },
@@ -226,20 +234,6 @@
         {
           "type": "text",
           "text": "The custom compositor class to use."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming": {
-      "title": "sourceTrackIDForFrameTiming",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value that indicates whether frame timing for the video composition is derived from the source's asset track."
         }
       ]
     },
@@ -293,16 +287,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -313,7 +297,6 @@
         "doc://com.apple.documentation/documentation/avfoundation/1386654-avvideocompositioninstruction",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1390395-animationtool",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1390649-customvideocompositorclass",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643237-colortransferfunction",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643231-colorycbcrmatrix"
       ],
@@ -359,6 +342,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -413,7 +397,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

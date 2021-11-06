@@ -41,20 +41,28 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSFileManager(im)getFileProviderServicesForItemAtURL:completionHandler:",
+    "parent": {
+      "title": "FileManager"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -88,8 +96,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -211,7 +219,7 @@
       "url": "/documentation/foundation/nsxpcconnection/1411031-remoteobjectproxy"
     },
     "doc://com.apple.documentation/documentation/foundation/filemanager/2915262-getfileproviderservicesforitem#2934439": {
-      "title": "Listing 1",
+      "title": "Listing 2",
       "type": "section",
       "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/2915262-getfileproviderservicesforitem#2934439",
       "kind": "article",
@@ -231,6 +239,22 @@
       "kind": "article",
       "role": "subsection",
       "url": "/documentation/foundation/nsfileproviderservice#2934440"
+    },
+    "doc://com.apple.documentation/documentation/foundation/filemanager/2915262-getfileproviderservicesforitem#3808375": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filemanager/2915262-getfileproviderservicesforitem#3808375",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/foundation/filemanager/2915262-getfileproviderservicesforitem#3808375"
+    },
+    "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously": {
+      "title": "Calling Objective-C APIs Asynchronously",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/swift/calling_objective-c_apis_asynchronously"
     },
     "doc://com.apple.documentation/documentation/foundation/nsfileproviderservicename": {
       "title": "NSFileProviderServiceName",
@@ -468,6 +492,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -603,6 +628,51 @@
           "level": 2,
           "text": "Discussion",
           "type": "heading"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:"
+                }
+              ]
+            },
+            {
+              "type": "codeListing",
+              "code": [
+                "func fileProviderServicesForItem(at url: URL) async throws -> [NSFileProviderServiceName : NSFileProviderService]"
+              ],
+              "syntax": "swift",
+              "metadata": {
+                "anchor": "3808375",
+                "title": "Listing 1"
+              }
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For information about concurrency and asynchronous code in Swift, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important",
+          "name": "Concurrency Note"
         },
         {
           "type": "paragraph",
@@ -843,7 +913,7 @@
           "syntax": "swift",
           "metadata": {
             "anchor": "2934439",
-            "title": "Listing 1",
+            "title": "Listing 2",
             "abstract": [
               {
                 "type": "text",
@@ -874,7 +944,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

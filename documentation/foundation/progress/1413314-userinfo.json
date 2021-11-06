@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A dictionary of arbitrary values associated with the receiver."
+      "text": "A dictionary of arbitrary values for the receiver."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(py)userInfo",
+    "parent": {
+      "title": "Progress"
+    },
     "symbolKind": "instp",
     "fragments": [
       {
@@ -76,8 +84,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
+          "text": "An object that conveys ongoing progress to the user for a specified task."
         }
       ]
     },
@@ -144,16 +152,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Set a value in the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1413314-userinfo"
-        },
-        {
-          "type": "text",
-          "text": " dictionary."
+          "text": "Sets a value in the user info dictionary."
         }
       ],
       "fragments": [
@@ -179,31 +178,59 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/progress/1413314-userinfo": {
-      "title": "userInfo",
+    "doc://com.apple.documentation/documentation/foundation/progresskind#1788183": {
+      "title": "Recognizing Kinds of Progress",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind#1788183",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/foundation/progresskind#1788183"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progressuserinfokey#2881029": {
+      "title": "Using General Keys",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progressuserinfokey#2881029",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/foundation/progressuserinfokey#2881029"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progressuserinfokey#2143079": {
+      "title": "Using File Operation Keys",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progressuserinfokey#2143079",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/foundation/progressuserinfokey#2143079"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind#1973894": {
+      "title": "Recognizing Kinds of File Operations",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind#1973894",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/foundation/progress/fileoperationkind#1973894"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progresskind": {
+      "title": "ProgressKind",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1413314-userinfo",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/progress/1413314-userinfo",
+      "url": "/documentation/foundation/progresskind",
       "abstract": [
         {
           "type": "text",
-          "text": "A dictionary of arbitrary values associated with the receiver."
+          "text": "An object that represents the kind of progress."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "var "
+          "text": "struct "
         },
         {
           "kind": "identifier",
-          "text": "userInfo"
-        },
-        {
-          "kind": "text",
-          "text": ": [ProgressUserInfoKey : Any]"
+          "text": "ProgressKind"
         }
       ]
     },
@@ -213,35 +240,31 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/progressuserinfokey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/progressuserinfokey"
-    },
-    "doc://com.apple.documentation/documentation/foundation/progress/1412871-isindeterminate": {
-      "title": "isIndeterminate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1412871-isindeterminate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progress/1412871-isindeterminate",
+      "url": "/documentation/foundation/progressuserinfokey",
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the tracked progress is indeterminate."
+          "text": "Keys for the user info dictionary that affect the autogenerated localized additional description string."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "var "
+          "text": "struct "
         },
         {
           "kind": "identifier",
-          "text": "isIndeterminate"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
+          "text": "ProgressUserInfoKey"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind": {
+      "title": "Progress.FileOperationKind",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/fileoperationkind"
     },
     "doc://com.apple.documentation/documentation/foundation/progress/1416139-kind": {
       "title": "kind",
@@ -253,7 +276,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A string identifying the kind of progress being made."
+          "text": "An object that represents the kind of progress for the progress object."
         }
       ],
       "fragments": [
@@ -271,6 +294,90 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/progress/2895395-estimatedtimeremaining": {
+      "title": "estimatedTimeRemaining",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/2895395-estimatedtimeremaining",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/2895395-estimatedtimeremaining",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the estimated amount of time remaining to complete the progress."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "estimatedTimeRemaining"
+        },
+        {
+          "kind": "text",
+          "text": ": TimeInterval?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/2895181-throughput": {
+      "title": "throughput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/2895181-throughput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/2895181-throughput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that represents the speed of data processing, in bytes per second."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "throughput"
+        },
+        {
+          "kind": "text",
+          "text": ": Int?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1413314-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1413314-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1413314-userinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary of arbitrary values for the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [ProgressUserInfoKey : Any]"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -282,11 +389,14 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/progress/1412871-isindeterminate",
         "doc://com.apple.documentation/documentation/foundation/progress/1416139-kind",
-        "doc://com.apple.documentation/documentation/foundation/progress/1407537-setuserinfoobject"
+        "doc://com.apple.documentation/documentation/foundation/progress/2895395-estimatedtimeremaining",
+        "doc://com.apple.documentation/documentation/foundation/progress/2895181-throughput",
+        "doc://com.apple.documentation/documentation/foundation/progress/1407537-setuserinfoobject",
+        "doc://com.apple.documentation/documentation/foundation/progresskind",
+        "doc://com.apple.documentation/documentation/foundation/progressuserinfokey"
       ],
-      "title": "Progress Information",
+      "title": "Inspecting Progress Information",
       "generated": true
     }
   ],
@@ -352,6 +462,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -392,7 +503,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Some entries have meanings that are recognized by the "
+              "text": "Some entries have meanings that the "
             },
             {
               "type": "codeVoice",
@@ -400,35 +511,39 @@
             },
             {
               "type": "text",
-              "text": " class itself—see "
+              "text": " class recognizes. For more information, see "
             },
             {
-              "type": "codeVoice",
-              "code": "General progress user info dictionary keys"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "codeVoice",
-              "code": "Progress kinds"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind#1788183"
             },
             {
               "type": "text",
               "text": ", "
             },
             {
-              "type": "codeVoice",
-              "code": "File operation user info dictionary keys"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progressuserinfokey#2881029"
             },
             {
               "type": "text",
-              "text": ", and "
+              "text": ", "
             },
             {
-              "type": "codeVoice",
-              "code": "File operation kinds"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progressuserinfokey#2143079"
+            },
+            {
+              "type": "text",
+              "text": ", and  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind#1973894"
             },
             {
               "type": "text",
@@ -440,7 +555,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

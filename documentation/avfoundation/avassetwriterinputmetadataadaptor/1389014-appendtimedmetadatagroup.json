@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Appends a timed metadata group to the receiver."
+      "text": "Appends a timed metadata group to the adaptor."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInputMetadataAdaptor(im)appendTimedMetadataGroup:",
+    "parent": {
+      "title": "AVAssetWriterInputMetadataAdaptor"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,59 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup": {
-      "title": "AVTimedMetadataGroup",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avtimedmetadatagroup"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
-      "title": "AVAssetWriter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput": {
-      "title": "addInput:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1390389-addinput",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addInput:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting": {
-      "title": "startWriting",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1386724-startwriting",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "startWriting"
+          "text": "An object that appends timed metadata groups to an asset writer input."
         }
       ]
     },
@@ -192,13 +148,31 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1386633-assetwriterinput": {
-      "title": "assetWriterInput",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting": {
+      "title": "startWriting",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1386633-assetwriterinput",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputmetadataadaptor/1386633-assetwriterinput"
+      "url": "/documentation/avfoundation/avassetwriter/1386724-startwriting",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startWriting"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup": {
+      "title": "AVTimedMetadataGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avtimedmetadatagroup"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389014-appendtimedmetadatagroup": {
       "title": "appendTimedMetadataGroup:",
@@ -210,7 +184,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Appends a timed metadata group to the receiver."
+          "text": "Appends a timed metadata group to the adaptor."
         }
       ],
       "fragments": [
@@ -286,6 +260,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -307,7 +282,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The timed metadata group to be appended."
+                  "text": "The timed metadata group to append."
                 }
               ]
             }
@@ -334,7 +309,7 @@
             },
             {
               "type": "text",
-              "text": " if the append was successful; otherwise, "
+              "text": " if the adaptor appends the group; otherwise, "
             },
             {
               "type": "reference",
@@ -343,24 +318,7 @@
             },
             {
               "type": "text",
-              "text": ". If the append fails the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1386633-assetwriterinput"
-            },
-            {
-              "type": "text",
-              "text": " instance's "
-            },
-            {
-              "type": "codeVoice",
-              "code": "error"
-            },
-            {
-              "type": "text",
-              "text": " property will contain more information about the failure."
+              "text": "."
             }
           ]
         }
@@ -380,84 +338,47 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The timing of the metadata items in the output asset will correspond to the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "timeRange"
-            },
-            {
-              "type": "text",
-              "text": "  of the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup"
-            },
-            {
-              "type": "text",
-              "text": ", regardless of the values of the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "time"
-            },
-            {
-              "type": "text",
-              "text": " and "
-            },
-            {
-              "type": "codeVoice",
-              "code": "duration"
-            },
-            {
-              "type": "text",
-              "text": " properties of the individual metadata items."
+              "text": "The timing of metadata items in the output asset correspond to the time range of the timed metadata group, regardless of the values of their individual time and duration properties."
             }
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "aside",
+          "content": [
             {
-              "type": "text",
-              "text": "Before calling this method, you must ensure that the input that underlies the receiver is attached to an "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-            },
-            {
-              "type": "text",
-              "text": " instance by a prior call to "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput"
-            },
-            {
-              "type": "text",
-              "text": " and that "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting"
-            },
-            {
-              "type": "text",
-              "text": " has been invoked on the asset writer."
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Only call this method after you’ve attached the related input to the asset writer and called its "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting"
+                },
+                {
+                  "type": "text",
+                  "text": " method."
+                }
+              ]
             }
-          ]
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

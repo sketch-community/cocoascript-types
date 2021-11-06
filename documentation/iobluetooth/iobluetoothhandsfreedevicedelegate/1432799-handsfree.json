@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Tells the delegate the call setup signal strength indicator of the connected Bluetooth hands-free phone or headset has changed."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,15 +34,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)IOBluetoothHandsFreeDeviceDelegate(im)handsFree:signalStrength:",
+    "parent": {
+      "title": "IOBluetoothHandsFreeDeviceDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -77,7 +86,21 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods for receiving status change updates and information about a connected Bluetooth hands-free phone or headset."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorsignal": {
+      "title": "IOBluetoothHandsFreeIndicatorSignal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorsignal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeindicatorsignal"
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice": {
       "title": "IOBluetoothHandsFreeDevice",
@@ -95,6 +118,181 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnumber"
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429223-handsfree": {
+      "title": "handsFree:callSetupMode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429223-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429223-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the call setup indicator of the connected Bluetooth hands-free phone or headset has changed. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:callSetupMode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431339-handsfree": {
+      "title": "handsFree:isCallActive:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431339-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431339-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the active call indicator of the connected Bluetooth hands-free phone or headset has changed. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:isCallActive:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433100-handsfree": {
+      "title": "handsFree:isServiceAvailable:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433100-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433100-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the service level indicator of the connected Bluetooth hands-free phone or headset has changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:isServiceAvailable:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432799-handsfree": {
+      "title": "handsFree:signalStrength:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432799-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432799-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the call setup signal strength indicator of the connected Bluetooth hands-free phone or headset has changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:signalStrength:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree": {
+      "title": "handsFree:callHoldState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the call held indicator of the connected Bluetooth hands-free phone or headset has changed. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:callHoldState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree": {
+      "title": "handsFree:isRoaming:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the roaming indicator of the connected Bluetooth hands-free phone or headset has changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:isRoaming:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree": {
+      "title": "handsFree:batteryCharge:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the battery level indicator of the connected Bluetooth hands-free phone or headset has changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:batteryCharge:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -103,6 +301,20 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429223-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431339-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433100-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree"
+      ],
+      "title": "Receiving Status Indicator Changes",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -190,10 +402,55 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "device",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The connected Bluetooth hands-free phone or headset."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "signalStrength",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The new value of the signal strength indicator. For possible values, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeindicatorsignal"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

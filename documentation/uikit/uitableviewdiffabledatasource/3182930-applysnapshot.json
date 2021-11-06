@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes. "
+      "text": "Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes. "
     }
   ],
   "documentVersion": 0,
@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITableViewDiffableDataSource(im)applySnapshot:animatingDifferences:",
+    "parent": {
+      "title": "UITableViewDiffableDataSource"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -177,7 +185,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes. "
+          "text": "Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes. "
         }
       ],
       "fragments": [
@@ -201,7 +209,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler. "
+          "text": "Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes and executing a completion handler. "
         }
       ],
       "fragments": [
@@ -212,6 +220,54 @@
         {
           "kind": "identifier",
           "text": "applySnapshot:animatingDifferences:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource/3801895-applysnapshotusingreloaddata": {
+      "title": "applySnapshotUsingReloadData:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource/3801895-applysnapshotusingreloaddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdiffabledatasource/3801895-applysnapshotusingreloaddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applySnapshotUsingReloadData:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource/3801896-applysnapshotusingreloaddata": {
+      "title": "applySnapshotUsingReloadData:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource/3801896-applysnapshotusingreloaddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdiffabledatasource/3801896-applysnapshotusingreloaddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes, optionally executing a completion handler. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applySnapshotUsingReloadData:completion:"
         }
       ]
     },
@@ -242,6 +298,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource/3182935-snapshot",
         "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource/3356326-applysnapshot",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource/3801895-applysnapshotusingreloaddata",
+        "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource/3801896-applysnapshotusingreloaddata",
         "doc://com.apple.documentation/documentation/uikit/uitableviewdiffabledatasource/3182931-defaultrowanimation"
       ],
       "title": "Updating Data",
@@ -342,6 +400,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -362,7 +421,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The snapshot reflecting the new state of the data in the table view."
+                  "text": "The snapshot that reflects the new state of the data in the table view."
                 }
               ]
             }
@@ -385,33 +444,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ", the diffable data source computes the difference between the table view’s current state and the new state in the snapshot, which is an O("
-                },
-                {
-                  "type": "emphasis",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "n"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "text": ") operation, where "
-                },
-                {
-                  "type": "emphasis",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "n"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "text": " is the number of items in the snapshot. The differences in the UI between the current state and new state are animated. If "
+                  "text": ", the system animates the updates to the table view. If "
                 },
                 {
                   "type": "reference",
@@ -420,7 +453,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ", the table view UI is set to the new state without any animations, with no additional overhead for computing a diff. Any ongoing item animations are interrupted and the table view’s content is reloaded immediately."
+                  "text": ", the system doesn’t animate the updates to the table view. "
                 }
               ]
             }
@@ -442,7 +475,42 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "It’s safe to call this method from a background queue, but you must do so consistently in your app. Always call this method exclusively from the main queue or from a background queue."
+              "text": "The diffable data source computes the difference between the table view’s current state and the new state in the applied snapshot, which is an O("
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "n"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ") operation, where "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "n"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is the number of items in the snapshot. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can safely call this method from a background queue, but you must do so consistently in your app. Always call this method exclusively from the main queue or from a background queue."
             }
           ]
         }
@@ -450,7 +518,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

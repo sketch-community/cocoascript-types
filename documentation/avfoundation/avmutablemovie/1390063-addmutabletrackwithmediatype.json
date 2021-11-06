@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMutableMovie(im)addMutableTrackWithMediaType:copySettingsFromTrack:options:",
+    "parent": {
+      "title": "AVMutableMovie"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable object that represents the audiovisual containers that conform to a QuickTime- or ISO-based media file format."
+          "text": "A mutable object that represents an audiovisual container that conforms to the QuickTime movie file format or a related format like MPEG-4."
         }
       ]
     },
@@ -154,6 +162,30 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1388669-mutabletrackcompatiblewithtrack": {
+      "title": "mutableTrackCompatibleWithTrack:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1388669-mutabletrackcompatiblewithtrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablemovie/1388669-mutabletrackcompatiblewithtrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides a reference to a track from a mutable movie into which you can insert any time range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "mutableTrackCompatibleWithTrack:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1390063-addmutabletrackwithmediatype": {
       "title": "addMutableTrackWithMediaType:copySettingsFromTrack:options:",
@@ -227,116 +259,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1387739-tracks": {
-      "title": "tracks",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1387739-tracks",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemovie/1387739-tracks",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of tracks in a mutable movie."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1389467-trackwithtrackid": {
-      "title": "trackWithTrackID:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1389467-trackwithtrackid",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemovie/1389467-trackwithtrackid",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A mutable movie track representing the track with the specified track identifier."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "trackWithTrackID:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1388547-trackswithmediacharacteristic": {
-      "title": "tracksWithMediaCharacteristic:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1388547-trackswithmediacharacteristic",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemovie/1388547-trackswithmediacharacteristic",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of mutable movie tracks that match the specified media characteristic."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "tracksWithMediaCharacteristic:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1390443-trackswithmediatype": {
-      "title": "tracksWithMediaType:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1390443-trackswithmediatype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemovie/1390443-trackswithmediatype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of mutable movie tracks that match the specified media type."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "tracksWithMediaType:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1388669-mutabletrackcompatiblewithtrack": {
-      "title": "mutableTrackCompatibleWithTrack:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1388669-mutabletrackcompatiblewithtrack",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablemovie/1388669-mutabletrackcompatiblewithtrack",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Provides a reference to a track from a mutable movie into which any time range can be inserted."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "mutableTrackCompatibleWithTrack:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -348,15 +270,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1388669-mutabletrackcompatiblewithtrack",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1389215-addmutabletrackscopyingsettingsf",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1386735-removetrack",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1387739-tracks",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1389467-trackwithtrackid",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1388547-trackswithmediacharacteristic",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1390443-trackswithmediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1388669-mutabletrackcompatiblewithtrack"
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablemovie/1386735-removetrack"
       ],
-      "title": "Modifying Tracks",
+      "title": "Managing Tracks",
       "generated": true
     }
   ],
@@ -494,6 +412,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -599,7 +518,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A type that represents XML property lists."
+      "text": "A type that represents an XML property list."
     }
   ],
   "documentVersion": 0,
@@ -11,8 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types"
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers"
       ]
     ]
   },
@@ -35,40 +40,48 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:22UniformTypeIdentifiers6UTTypeV15xmlPropertyListACvpZ",
+    "parent": {
+      "title": "UTType"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
         "kind": "text",
-        "text": "static let "
+        "text": "static var "
       },
       {
         "kind": "identifier",
@@ -81,8 +94,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,6 +120,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "url": "/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype": {
       "title": "UTType",
       "type": "topic",
@@ -115,10 +136,10 @@
       "role": "symbol",
       "url": "/documentation/uniformtypeidentifiers/uttype"
     },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types": {
-      "title": "System Declared Types",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types",
-      "url": "/documentation/uniformtypeidentifiers/uttype/system_declared_types",
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers",
+      "url": "/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -139,398 +160,6 @@
       "role": "symbol",
       "url": "/documentation/uniformtypeidentifiers/uttypepropertylist"
     },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551485-delimitedtext": {
-      "title": "delimitedText",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551485-delimitedtext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551485-delimitedtext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A base type that represents text containing delimited values."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "delimitedText"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551477-commaseparatedtext": {
-      "title": "commaSeparatedText",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551477-commaseparatedtext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551477-commaseparatedtext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents text containing comma-separated values."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "commaSeparatedText"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551577-tabseparatedtext": {
-      "title": "tabSeparatedText",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551577-tabseparatedtext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551577-tabseparatedtext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents text containing tab-separated values."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "tabSeparatedText"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551592-utf8tabseparatedtext": {
-      "title": "utf8TabSeparatedText",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551592-utf8tabseparatedtext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551592-utf8tabseparatedtext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents UTF-8–encoded text containing tab-separated values."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "utf8TabSeparatedText"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551563-rtf": {
-      "title": "rtf",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551563-rtf",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551563-rtf",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents rich text format data."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "rtf"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551601-xml": {
-      "title": "xml",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551601-xml",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551601-xml",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents generic XML data."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "xml"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551604-yaml": {
-      "title": "yaml",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551604-yaml",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551604-yaml",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents Yet Another Markup Language data."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "yaml"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551524-json": {
-      "title": "json",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551524-json",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551524-json",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents JavaScript object notation (JSON) data."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "json"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551555-propertylist": {
-      "title": "propertyList",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551555-propertylist",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551555-propertylist",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A base type that represents property lists."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "propertyList"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551602-xmlpropertylist": {
-      "title": "xmlPropertyList",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551602-xmlpropertylist",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551602-xmlpropertylist",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents XML property lists."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "xmlPropertyList"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551467-binarypropertylist": {
-      "title": "binaryPropertyList",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551467-binarypropertylist",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551467-binarypropertylist",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents binary property lists."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "binaryPropertyList"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551593-vcard": {
-      "title": "vCard",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551593-vcard",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551593-vcard",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents vCard files."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "vCard"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551547-pkcs12": {
-      "title": "pkcs12",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551547-pkcs12",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551547-pkcs12",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents Public Key Cryptography Standard (PKCS) 12 data."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "pkcs12"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551600-x509certificate": {
-      "title": "x509Certificate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551600-x509certificate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551600-x509certificate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents X.509 certificates."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "x509Certificate"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -539,27 +168,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551485-delimitedtext",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551477-commaseparatedtext",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551577-tabseparatedtext",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551592-utf8tabseparatedtext",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551563-rtf",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551601-xml",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551604-yaml",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551524-json",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551555-propertylist",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551467-binarypropertylist",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551593-vcard",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551547-pkcs12",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551600-x509certificate"
-      ],
-      "title": "Common Data Interchange Formats",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -579,7 +187,7 @@
             },
             {
               "kind": "keyword",
-              "text": "let"
+              "text": "var"
             },
             {
               "kind": "text",
@@ -598,10 +206,23 @@
               "preciseIdentifier": "s:22UniformTypeIdentifiers6UTTypeV",
               "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype",
               "text": "UTType"
+            },
+            {
+              "kind": "text",
+              "text": " { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " }"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -667,7 +288,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

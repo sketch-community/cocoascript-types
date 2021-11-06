@@ -1,0 +1,694 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Inform Siri when your app’s shortcuts may be useful to the user."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2985642,
+  "kind": "article",
+  "metadata": {
+    "title": "Defining Relevant Shortcuts for the Siri Watch Face",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Intents"
+      },
+      {
+        "name": "IntentsUI"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/sirikit": {
+      "title": "SiriKit",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit",
+      "url": "/documentation/sirikit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support": {
+      "title": "Watch and Widget Support",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support",
+      "url": "/documentation/sirikit/watch_and_widget_support",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintent": {
+      "title": "INIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintent"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inshortcut": {
+      "title": "INShortcut",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inshortcut",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inshortcut"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutrole": {
+      "title": "INRelevantShortcutRole",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutrole",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelevantshortcutrole"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/3017321-shortcutrole": {
+      "title": "shortcutRole",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/3017321-shortcutrole",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelevantshortcut/3017321-shortcutrole"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face#3030273": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face#3030273",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face#3030273"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/2993344-relevanceproviders": {
+      "title": "relevanceProviders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/2993344-relevanceproviders",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelevantshortcut/2993344-relevanceproviders"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face#3030271": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face#3030271",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face#3030271"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indailyroutinerelevanceprovider": {
+      "title": "INDailyRoutineRelevanceProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indailyroutinerelevanceprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indailyroutinerelevanceprovider"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indaterelevanceprovider": {
+      "title": "INDateRelevanceProvider",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indaterelevanceprovider",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indaterelevanceprovider"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indailyroutinesituation/indailyroutinesituationevening": {
+      "title": "INDailyRoutineSituationEvening",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indailyroutinesituation/indailyroutinesituationevening",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indailyroutinesituation/indailyroutinesituationevening"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts": {
+      "title": "Donating Shortcuts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/donating_shortcuts"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore/2993348-defaultstore": {
+      "title": "defaultStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore/2993348-defaultstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelevantshortcutstore/2993348-defaultstore"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore/2993349-setrelevantshortcuts": {
+      "title": "setRelevantShortcuts:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore/2993349-setrelevantshortcuts",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelevantshortcutstore/2993349-setrelevantshortcuts",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setRelevantShortcuts:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face#3030276": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face#3030276",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face#3030276"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut": {
+      "title": "INRelevantShortcut",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelevantshortcut",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines a shortcut and its relevance to the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face": {
+      "title": "Defining Relevant Shortcuts for the Siri Watch Face",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/watch_and_widget_support/defining_relevant_shortcuts_for_the_siri_watch_face",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inform Siri when your app’s shortcuts may be useful to the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore": {
+      "title": "INRelevantShortcutStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrelevantshortcutstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that saves relevant shortcuts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut",
+        "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Siri watch face can suggest shortcuts to the user based on a situation, time of day, or location. You determine which actions in your app are pertinent to the user and may be something they’d like to do in the future, such as starting a workout when arriving at a gym. Your app tells Siri about these actions by specifying them as relevant shortcuts."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An iOS app can set relevant shortcuts and display them on the Siri watch face, whether it has a companion watchOS app or not. If a watchOS app and its iOS companion both set relevant shortcuts, the Siri watch face uses the list of shortcuts set most recently across either app."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Relevant Shortcut",
+          "anchor": "3030269"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To let Siri know about relevant shortcuts for your app, start by creating an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent"
+            },
+            {
+              "type": "text",
+              "text": " with a system-provided or custom intent, or an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " object for each action. Next, create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inshortcut"
+            },
+            {
+              "type": "text",
+              "text": " object for each intent and user activity. Use the shortcut to create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutrole"
+            },
+            {
+              "type": "text",
+              "text": " object, and set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/3017321-shortcutrole"
+            },
+            {
+              "type": "text",
+              "text": " to provide a hint to Siri as to the purpose of the shortcut: to perform an action or display information."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Add an intent to the list of suggestions. To create",
+            "// a shortcut from an intent, the intent must be valid.",
+            "if let shortcut = INShortcut(intent: startWorkoutIntent) {",
+            "",
+            "    let relevantShortcut = INRelevantShortcut(shortcut: shortcut)",
+            "    relevantShortcut.shortcutRole = INRelevantShortcutRole.action",
+            "",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3030273",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Relevance Providers",
+          "anchor": "3030268"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To give Siri a hint about when to suggest the shortcut to the user, add one or more providers to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut/2993344-relevanceproviders"
+            },
+            {
+              "type": "text",
+              "text": " property on the relevant shortcut. Relevance providers let you specify parameters such as a particular situation, date, time, and location that indicate the shortcut may be relevant to the user. For example, you can instruct Siri to suggest starting a workout when the user arrives at the gym."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Add an intent to the list of suggestions. To create",
+            "// a shortcut from an intent, the intent must be valid.",
+            "if let shortcut = INShortcut(intent: startWorkoutIntent) {",
+            "",
+            "    let relevantShortcut = INRelevantShortcut(shortcut: shortcut)",
+            "    relevantShortcut.shortcutRole = INRelevantShortcutRole.action",
+            "",
+            "    // Create a location provider for Apple Park Fitness Center.",
+            "    let location = CLLocationCoordinate2D(latitude: 37.336_971, longitude: -122.013_050)",
+            "    let region = CLCircularRegion(center: location, radius: 0.1, identifier: \"Apple Park Fitness Center\")",
+            "    let locationProvider = INLocationRelevanceProvider(region: region)",
+            "    relevantShortcut.relevanceProviders = [locationProvider]",
+            "",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3030271",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Don't combine an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/indailyroutinerelevanceprovider"
+            },
+            {
+              "type": "text",
+              "text": " for a time-based situation with an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/indaterelevanceprovider"
+            },
+            {
+              "type": "text",
+              "text": ", like "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/indailyroutinesituation/indailyroutinesituationevening"
+            },
+            {
+              "type": "text",
+              "text": " and 8 p.m.; the outcome can be unpredictable. Instead, provide multiple relevant shortcuts for each scenario, that is, provide a relevant shortcut for "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/indailyroutinesituation/indailyroutinesituationevening"
+            },
+            {
+              "type": "text",
+              "text": " and a second one for 8 p.m."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Applying multiple locations relevance providers to a relevant shortcut creates similar problems. Instead, provide a relevant shortcut for each location."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Your app should donate an intent or user activity as a shortcut each time the user performs an action in your app, even when your app provides the shortcut as a relevant shortcut. The donation helps the system determine when it should suggest the relevant shortcut to the user. For more information about donations, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/sirikit/donating_shortcuts"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set Relevant Shortcuts",
+          "anchor": "3030275"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Continue creating the relevant shortcuts for your app, storing each one in an array. After you've created and stored the shortcuts, inform Siri of the relevant shortcuts by using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore/2993348-defaultstore"
+            },
+            {
+              "type": "text",
+              "text": " relevant shortcut store to call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore/2993349-setrelevantshortcuts"
+            },
+            {
+              "type": "text",
+              "text": ", passing in the array of relevant shortcuts. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var relevantShortcuts:[INRelevantShortcut] = []",
+            "",
+            "// Add an intent to the list of suggestions. To create",
+            "// a shortcut from an intent, the intent must be valid.",
+            "if let shortcut = INShortcut(intent: startWorkoutIntent) {",
+            "",
+            "    let relevantShortcut = INRelevantShortcut(shortcut: shortcut)",
+            "    relevantShortcut.shortcutRole = INRelevantShortcutRole.action",
+            "",
+            "    // Create a location provider for Apple Park Fitness Center.",
+            "    let location = CLLocationCoordinate2D(latitude: 37.336_971, longitude: -122.013_050)",
+            "    let region = CLCircularRegion(center: location, radius: 0.1, identifier: \"Apple Park Fitness Center\")",
+            "    let locationProvider = INLocationRelevanceProvider(region: region)",
+            "    relevantShortcut.relevanceProviders = [locationProvider]",
+            "",
+            "    relevantShortcuts.append(relevantShortcut)",
+            "}",
+            "",
+            "INRelevantShortcutStore.default.setRelevantShortcuts(relevantShortcuts) { (error) in",
+            "    if let error = error {",
+            "        print(\"Failed to set relevant shortcuts. \\(error))\")",
+            "    } else {",
+            "        print(\"Relevant shortcuts set.\")",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3030276",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Replace Relevant Shortcuts",
+          "anchor": "3030274"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There isn't a way to add relevant shortcuts to the list already set by your app. Instead, you must replace the list by following the same steps previously mentioned: "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Gather the actions (as user activities or intents) and create an array of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcut"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Pass the array to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore/2993349-setrelevantshortcuts"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you've completed these steps, the new set of relevant shortcuts takes the place of the previous one. If you want to delete all relevant shortcuts defined by your app, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrelevantshortcutstore/2993349-setrelevantshortcuts"
+            },
+            {
+              "type": "text",
+              "text": ", passing in an empty array."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Replace the list when your app needs to add or remove a relevant shortcut. It isn't necessary to replace the list more than once a day, and resubmitting the same set of relevant shortcuts more often provides no benefits. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

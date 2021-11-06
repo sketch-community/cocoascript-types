@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value that indicates whether route detection is enabled."
+      "text": "A Boolean value that indicates whether you’ve enabled route detection."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13.2",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVRouteDetector(py)routeDetectionEnabled",
+    "parent": {
+      "title": "AVRouteDetector"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,29 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that detects the presences of media playback routes."
+          "text": "An object that detects available media playback routes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915762-routedetectionenabled": {
+      "title": "routeDetectionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915762-routedetectionenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avroutedetector/2915762-routedetectionenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether you’ve enabled route detection."
         }
       ]
     },
@@ -125,21 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether more playback routes than the local playback route have been detected."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915762-routedetectionenabled": {
-      "title": "routeDetectionEnabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915762-routedetectionenabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avroutedetector/2915762-routedetectionenabled",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether route detection is enabled."
+          "text": "A Boolean value that indicates whether the object detects more than one playback route."
         }
       ]
     },
@@ -153,16 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The values of "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avroutedetector/2915760-multipleroutesdetected"
-        },
-        {
-          "type": "text",
-          "text": " changed."
+          "text": "A notification the system posts when changes occur to its detected routes."
         }
       ]
     },
@@ -220,6 +227,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -244,8 +252,9 @@
               "text": "The default value is "
             },
             {
-              "type": "codeVoice",
-              "code": "NO"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
             },
             {
               "type": "text",
@@ -261,7 +270,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Route detection significantly increases power consumption and must be turned off when it's no longer needed."
+                  "text": "Enabling route detection significantly increases power consumption. Turn it off when you no longer need it."
                 }
               ]
             }
@@ -273,7 +282,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

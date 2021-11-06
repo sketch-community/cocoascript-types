@@ -1,11 +1,18 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A style that uses a numeric style to describe relative dates, such as “1 day ago” or “in 3 weeks”."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/foundation",
-        "doc://com.apple.documentation/documentation/foundation/foundation_enumerations",
+        "doc://com.apple.documentation/documentation/foundation/data_formatting",
+        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter",
         "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle"
       ]
     ]
@@ -29,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSRelativeDateTimeFormatterStyle@NSRelativeDateTimeFormatterStyleNumeric",
+    "parent": {
+      "title": "NSRelativeDateTimeFormatterStyle"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -92,13 +107,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/foundation/foundation_enumerations": {
-      "title": "Foundation Enumerations",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/foundation_enumerations",
-      "url": "/documentation/foundation/foundation_enumerations",
+    "doc://com.apple.documentation/documentation/foundation/data_formatting": {
+      "title": "Data Formatting",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data_formatting",
+      "url": "/documentation/foundation/data_formatting",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter": {
+      "title": "NSRelativeDateTimeFormatter",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter",
+      "url": "/documentation/foundation/nsrelativedatetimeformatter",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle": {
       "title": "NSRelativeDateTimeFormatterStyle",
@@ -106,7 +129,41 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsrelativedatetimeformatterstyle"
+      "url": "/documentation/foundation/nsrelativedatetimeformatterstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that represents the style to use when formatting relative dates, such as “1 week ago” or “last week”."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle/nsrelativedatetimeformatterstylenamed": {
+      "title": "NSRelativeDateTimeFormatterStyleNamed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle/nsrelativedatetimeformatterstylenamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrelativedatetimeformatterstyle/nsrelativedatetimeformatterstylenamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A style that uses named styles to describe relative dates, such as “yesterday”, “last week”, or “next week”."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle/nsrelativedatetimeformatterstylenumeric": {
+      "title": "NSRelativeDateTimeFormatterStyleNumeric",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle/nsrelativedatetimeformatterstylenumeric",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrelativedatetimeformatterstyle/nsrelativedatetimeformatterstylenumeric",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A style that uses a numeric style to describe relative dates, such as “1 day ago” or “in 3 weeks”."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -116,6 +173,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle/nsrelativedatetimeformatterstylenamed"
+      ],
+      "title": "Formatting Dates and Times",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -136,6 +202,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -146,7 +213,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

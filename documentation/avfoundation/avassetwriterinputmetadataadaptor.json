@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
+      "text": "An object that appends timed metadata groups to an asset writer input."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,35 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInputMetadataAdaptor",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,6 +114,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup": {
+      "title": "AVTimedMetadataGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avtimedmetadatagroup"
+    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -116,30 +129,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389706-initwithassetwriterinput": {
-      "title": "initWithAssetWriterInput:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389706-initwithassetwriterinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389706-initwithassetwriterinput",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes a new timed metadata group adaptor to receive timed metadata groups to write to an output file."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithAssetWriterInput:"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1449094-assetwriterinputmetadataadaptorw": {
       "title": "assetWriterInputMetadataAdaptorWithAssetWriterInput:",
@@ -151,7 +140,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a new timed metadata group adaptor to receive timed metadata groups to write to an output file."
+          "text": "Returns a new metadata adaptor to append timed metadata groups to write to an output file."
         }
       ],
       "fragments": [
@@ -165,6 +154,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389706-initwithassetwriterinput": {
+      "title": "initWithAssetWriterInput:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389706-initwithassetwriterinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389706-initwithassetwriterinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a metadata group adaptor to append timed metadata groups to write to an output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithAssetWriterInput:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389014-appendtimedmetadatagroup": {
       "title": "appendTimedMetadataGroup:",
       "type": "topic",
@@ -175,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Appends a timed metadata group to the receiver."
+          "text": "Appends a timed metadata group to the adaptor."
         }
       ],
       "fragments": [
@@ -199,7 +212,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset writer input to append timed metadata groups to."
+          "text": "The input for the metadata adaptor."
         }
       ]
     },
@@ -231,6 +244,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color": {
+      "title": "Evaluating an App’s Video Color",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant": {
+      "title": "AVOutputSettingsAssistant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingsassistant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that builds audio and video output settings dictionaries."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
       "title": "AVAssetWriter",
       "type": "topic",
@@ -241,21 +282,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
-      "title": "AVAssetWriterDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterdelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A delegate protocol that defines the methods to implement to be an asset writer delegate."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -269,7 +296,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -283,7 +310,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+          "text": "An object that appends video samples to an asset writer input."
         }
       ]
     },
@@ -297,7 +324,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
+          "text": "An object that appends timed metadata groups to an asset writer input."
         }
       ]
     },
@@ -311,7 +338,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A group of tracks in a mutually exclusive relationship."
+          "text": "A group of inputs with tracks that are mutually exclusive to each other for playback or processing."
         }
       ]
     },
@@ -336,25 +363,28 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Creating Input Metadata Adaptors",
+      "title": "Creating an Input Metadata Adaptor",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389706-initwithassetwriterinput",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1449094-assetwriterinputmetadataadaptorw"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1449094-assetwriterinputmetadataadaptorw",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389706-initwithassetwriterinput"
+      ],
+      "anchor": "1669303"
     },
     {
       "kind": "taskGroup",
-      "title": "Appending Timed Metadata Groups",
+      "title": "Appending Timed Metadata",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389014-appendtimedmetadatagroup"
-      ]
+      ],
+      "anchor": "1669329"
     },
     {
       "kind": "taskGroup",
-      "title": "Getting the Input",
+      "title": "Accessing the Input",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor/1386633-assetwriterinput"
-      ]
+      ],
+      "anchor": "1669348"
     }
   ],
   "seeAlsoSections": [
@@ -362,8 +392,9 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup"
@@ -406,16 +437,46 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use a metadata adaptor to append track-level metadata, packaged as instances of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup"
+            },
+            {
+              "type": "text",
+              "text": ", to an asset writer input."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

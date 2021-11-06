@@ -36,30 +36,40 @@
         "name": "iOS",
         "introducedAt": "13.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "deprecatedAt": "14.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
         "deprecatedAt": "7.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INStartCallIntent(im)initWithAudioRoute:destinationType:contacts:recordTypeForRedialing:callCapability:",
+    "parent": {
+      "title": "INStartCallIntent"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -189,6 +199,30 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter": {
+      "title": "initWithCallRecordFilter:callRecordToCallBack:audioRoute:destinationType:contacts:callCapability:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a start call intent object with the specified parameters."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCallRecordFilter:callRecordToCallBack:audioRoute:destinationType:contacts:callCapability:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -197,6 +231,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter"
+      ],
+      "title": "Initializing the Intent Object",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -365,6 +408,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -436,7 +480,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The type of record that should be referenced for redialing a past call."
+                  "text": "The category of past call record contact information used for redialing."
                 }
               ]
             }
@@ -508,7 +552,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

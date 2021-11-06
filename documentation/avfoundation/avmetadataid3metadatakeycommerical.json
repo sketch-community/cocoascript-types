@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "COMR commercial frame."
+      "text": "A key that represents the commerical frame."
     }
   ],
   "documentVersion": 0,
@@ -37,35 +37,42 @@
         "name": "iOS",
         "introducedAt": "4.0",
         "deprecatedAt": "9.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "deprecatedAt": "9.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
         "deprecatedAt": "10.11",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "9.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "2.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
@@ -73,8 +80,8 @@
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -133,6 +140,20 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmetadatakey"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommercial": {
+      "title": "AVMetadataID3MetadataKeyCommercial",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommercial",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataid3metadatakeycommercial",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that represents the commercial details for the media."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyalbumsortorder": {
       "title": "AVMetadataID3MetadataKeyAlbumSortOrder",
       "type": "topic",
@@ -143,7 +164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TSOA album sort order."
+          "text": "A key that represents how to sort the album."
         }
       ]
     },
@@ -157,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TALB album/movie/show title."
+          "text": "A key that represents the title of the recording."
         }
       ]
     },
@@ -171,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "APIC attached picture."
+          "text": "A key that represents an image relating to the audio file."
         }
       ]
     },
@@ -185,7 +206,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "AENC audio encryption."
+          "text": "A key that represents the encryption details of the audio stream."
         }
       ]
     },
@@ -199,7 +220,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "ASPI audio seek point index."
+          "text": "A key that represents the list of seek points within the audio file."
         }
       ]
     },
@@ -213,7 +234,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TPE2 band/orchestra/accompaniment."
+          "text": "A key that represents additional information about the performers in the recording."
         }
       ]
     },
@@ -227,7 +248,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TBPM BPM (beats per minute)."
+          "text": "A key that represents the beats per minute of the audio."
         }
       ]
     },
@@ -241,38 +262,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "COMM comments."
+          "text": "A key that represents additional text information for the media."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommercial": {
-      "title": "AVMetadataID3MetadataKeyCommercial",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommercial",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataid3metadatakeycommercial",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "COMR commercial frame."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommerical": {
-      "title": "AVMetadataID3MetadataKeyCommerical",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommerical",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataid3metadatakeycommerical",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "COMR commercial frame."
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommercialinformation": {
       "title": "AVMetadataID3MetadataKeyCommercialInformation",
@@ -284,7 +276,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "WCOM commercial information."
+          "text": "A key that represents the webpage containing purchasing information."
         }
       ]
     },
@@ -298,7 +290,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TCOM composer."
+          "text": "A key that represents the name of the composer."
         }
       ]
     },
@@ -312,7 +304,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TPE3 conductor/performer refinement."
+          "text": "A key that represents the name of the conductor."
         }
       ]
     },
@@ -326,7 +318,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TIT1 content group description."
+          "text": "A key that indicates the sound belongs to a larger category of sounds or music."
         }
       ]
     },
@@ -340,7 +332,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TCON content type."
+          "text": "A key that represents the media content type."
         }
       ]
     },
@@ -354,7 +346,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TCOP copyright message."
+          "text": "A key that represents the copyright statement."
         }
       ]
     },
@@ -368,7 +360,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "WCOP copyright/legal information."
+          "text": "A key that represents the webpage describing the terms of use and ownership."
         }
       ]
     },
@@ -382,7 +374,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TDAT date."
+          "text": "A key that represents the date for the recording."
         }
       ]
     },
@@ -396,7 +388,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TENC encoded by."
+          "text": "A key that represents the person or organization responsible for encoding the media."
         }
       ]
     },
@@ -410,7 +402,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TSSE software/hardware and settings used for encoding."
+          "text": "A key that represents the software or hardware and settings used for encoding."
         }
       ]
     },
@@ -424,7 +416,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TDEN encoding time."
+          "text": "A key that represents the encoding time of the audio."
         }
       ]
     },
@@ -438,7 +430,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "ENCR encryption method registration."
+          "text": "A key that represents the encryption method used."
         }
       ]
     },
@@ -452,7 +444,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "EQUA equalization."
+          "text": "A key that represents the equalization curve within the audio file."
         }
       ]
     },
@@ -466,7 +458,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "EQU2 equalization (2)."
+          "text": "A key that represents the equalization curve within the audio file."
         }
       ]
     },
@@ -480,7 +472,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "ETCO event timing codes."
+          "text": "A key that represents the timing codes used for synchronization with key events in a song or sound."
         }
       ]
     },
@@ -494,7 +486,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TOWN file owner/licensee."
+          "text": "A key that represents the name of the owner or licensee of the file and it’s contents."
         }
       ]
     },
@@ -508,7 +500,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TFLT file type."
+          "text": "A key that represents the file type of the audio."
         }
       ]
     },
@@ -522,7 +514,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "GEOB general encapsulated object."
+          "text": "A key that represents the details of a file."
         }
       ]
     },
@@ -536,7 +528,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "GRID group identification registration."
+          "text": "A key that represents the grouping of distinct frames."
         }
       ]
     },
@@ -550,7 +542,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TKEY initial key."
+          "text": "A key that represents the musical key in which the sound starts."
         }
       ]
     },
@@ -564,7 +556,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TSRC ISRC (international standard recording code)."
+          "text": "A key that represents the international standard recording code."
         }
       ]
     },
@@ -578,7 +570,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TRSN internet radio station name."
+          "text": "A key that represents the name of the internet radio station streaming the audio."
         }
       ]
     },
@@ -592,7 +584,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TRSO internet radio station owner."
+          "text": "A key that represents the name of the owner of the internet radio station streaming the audio."
         }
       ]
     },
@@ -606,7 +598,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "IPLS involved people list. "
+          "text": "A key that represents the list of names of contributors to the media."
         }
       ]
     },
@@ -620,7 +612,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TIPL involved people list."
+          "text": "A key that represents the list of names of contributors to the media."
         }
       ]
     },
@@ -634,7 +626,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TLAN language(s)."
+          "text": "A key that represents the language of the text or lyrics spoken or sung in the audio."
         }
       ]
     },
@@ -648,7 +640,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TPE1 lead performer(s)/Soloist(s)."
+          "text": "A key that represents the main artist of the recording."
         }
       ]
     },
@@ -662,7 +654,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TLEN length."
+          "text": "A key that represents the length of the audio file in milliseconds."
         }
       ]
     },
@@ -676,7 +668,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "LINK linked information."
+          "text": "A key that represents the link information from an ID3 tag that might reside in another audio file or alone in a binary file."
         }
       ]
     },
@@ -690,21 +682,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TEXT lyricist/text writer."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeympeglocationlookuptable": {
-      "title": "AVMetadataID3MetadataKeyMPEGLocationLookupTable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeympeglocationlookuptable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataid3metadatakeympeglocationlookuptable",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "MLLT MPEG location lookup table."
+          "text": "A key that represents the writer(s) of the text or lyrics in the recording."
         }
       ]
     },
@@ -718,7 +696,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TMED media type."
+          "text": "A key that represents which media the sound originated from."
         }
       ]
     },
@@ -732,7 +710,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TPE4 interpreted, remixed, or otherwise modified by."
+          "text": "A key that represents the people behind a remix and similar interpretations of another existing piece."
         }
       ]
     },
@@ -746,7 +724,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TMOO mood."
+          "text": "A key that represents the mood of the audio."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeympeglocationlookuptable": {
+      "title": "AVMetadataID3MetadataKeyMPEGLocationLookupTable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeympeglocationlookuptable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataid3metadatakeympeglocationlookuptable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that represents the lookup table used to increase performance and accuracy of jumps within an MPEG audio file."
         }
       ]
     },
@@ -760,7 +752,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "MCDI music CD identifier."
+          "text": "A key that represents the ID used to identify the CD in databases such as the Compact Disc Database."
         }
       ]
     },
@@ -774,7 +766,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TMCL musician credits list."
+          "text": "A key that represents the mapping between an instrument and the musician that played it."
         }
       ]
     },
@@ -788,7 +780,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "WOAR official artist/performer webpage."
+          "text": "A key that represents the artist’s official webpage."
         }
       ]
     },
@@ -802,7 +794,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "WOAF official audio file webpage."
+          "text": "A key that represents the official webpage for the audio file."
         }
       ]
     },
@@ -816,7 +808,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "WOAS official audio source webpage."
+          "text": "A key that represents the official webpage for the source of the audio file."
         }
       ]
     },
@@ -830,7 +822,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "WORS official Internet radio station homepage."
+          "text": "A key that represents the official homepage of the internet radio station."
         }
       ]
     },
@@ -844,7 +836,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "WPUB publishers official webpage."
+          "text": "A key that represents the official webpage for the publisher."
         }
       ]
     },
@@ -858,7 +850,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TOAL original album/movie/show title."
+          "text": "A key that represents the title of the original recording or source of sound."
         }
       ]
     },
@@ -872,7 +864,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TOPE original artist(s)/performer(s)."
+          "text": "A key that represents the performer(s) of the original recording."
         }
       ]
     },
@@ -886,7 +878,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TOFN original filename."
+          "text": "A key that represents the original filename for the recording."
         }
       ]
     },
@@ -900,7 +892,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TOLY original lyricist(s)/text writer(s)."
+          "text": "A key that represents the text writer(s) of the original recording."
         }
       ]
     },
@@ -914,7 +906,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TDOR original release time."
+          "text": "A key that represents the release time for the original recording."
         }
       ]
     },
@@ -928,7 +920,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TORY original release year."
+          "text": "A key that represents the release year for the original recording."
         }
       ]
     },
@@ -942,7 +934,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "OWNE ownership frame."
+          "text": "A key that represents the transaction details indicating proof of ownership if signed."
         }
       ]
     },
@@ -956,7 +948,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TPOS part of a set."
+          "text": "A key that represents the part of a set the audio came from."
         }
       ]
     },
@@ -970,7 +962,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "WPAY payment."
+          "text": "A key that represents the webpage that handles the process of paying for the audio file."
         }
       ]
     },
@@ -984,7 +976,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TSOP performer sort order."
+          "text": "A key that represents the performer sort order."
         }
       ]
     },
@@ -998,7 +990,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "PCNT play counter."
+          "text": "A key that represents the play count of the audio file."
         }
       ]
     },
@@ -1012,7 +1004,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TDLY playlist delay."
+          "text": "A key that represents the number of milliseconds of silence between every song in a playlist."
         }
       ]
     },
@@ -1026,7 +1018,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "POPM popularimeter."
+          "text": "A key that represents the rating for the audio file."
         }
       ]
     },
@@ -1040,7 +1032,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "POSS position synchronisation frame."
+          "text": "A key that represents the time offset of the first frame in the stream."
         }
       ]
     },
@@ -1054,7 +1046,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "PRIV private frame."
+          "text": "A key that represents the information from a software producer that its program uses."
         }
       ]
     },
@@ -1068,7 +1060,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TPRO produced notice."
+          "text": "A key that represents the produced notice."
         }
       ]
     },
@@ -1082,7 +1074,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TPUB publisher."
+          "text": "A key that represents the name of the label or publisher."
         }
       ]
     },
@@ -1096,7 +1088,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "RBUF recommended buffer size."
+          "text": "A key that represents the buffer size the server recommends."
         }
       ]
     },
@@ -1110,7 +1102,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TRDA recording dates."
+          "text": "A key that represents additional recording dates that complement year, date, and time keys."
         }
       ]
     },
@@ -1124,7 +1116,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TDRC recording time."
+          "text": "A key that represents the recording time."
         }
       ]
     },
@@ -1138,7 +1130,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "RVAD relative volume adjustment."
+          "text": "A key that represents the increase or decrease of volume on each channel while the file plays."
         }
       ]
     },
@@ -1152,7 +1144,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "RVA2 relative volume adjustment (2)."
+          "text": "A key that represents the increase or decrease of volume on each channel while the file plays."
         }
       ]
     },
@@ -1166,7 +1158,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TDRL release time."
+          "text": "A key that represents the time of the first release."
         }
       ]
     },
@@ -1180,7 +1172,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "RVRB reverb."
+          "text": "A key that represents the adjustments to echoes of different kinds."
         }
       ]
     },
@@ -1194,7 +1186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "SEEK seek frame."
+          "text": "A key that represents the location of other tags in a file or stream."
         }
       ]
     },
@@ -1208,7 +1200,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TSST set subtitle."
+          "text": "A key that represents the set subtitle the track belongs to."
         }
       ]
     },
@@ -1222,7 +1214,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "SIGN signature frame."
+          "text": "A key that represents the group of frames to sign."
         }
       ]
     },
@@ -1236,7 +1228,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TSIZ size."
+          "text": "A key that represents the size of the audio file in bytes."
         }
       ]
     },
@@ -1250,7 +1242,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TIT3 subtitle/description refinement."
+          "text": "A key that represents the information relating to the contents title."
         }
       ]
     },
@@ -1264,7 +1256,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "SYLT synchronized lyric/text."
+          "text": "A key that represents the words in the audio file as text in sync with the audio."
         }
       ]
     },
@@ -1278,7 +1270,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "SYTC synchronized tempo codes."
+          "text": "A key that represents the tempo codes used for a more accurate description of the tempo of a musical piece."
         }
       ]
     },
@@ -1292,7 +1284,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TDTG tagging time."
+          "text": "A key that represents the time of tagging."
         }
       ]
     },
@@ -1306,7 +1298,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "USER terms of use."
+          "text": "A key that represents the brief description of the terms of use and ownership of the file."
         }
       ]
     },
@@ -1320,7 +1312,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TIME time."
+          "text": "A key that represents the time for the recording."
         }
       ]
     },
@@ -1334,7 +1326,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TIT2 title/songname/content description."
+          "text": "A key that represents the name of the piece."
         }
       ]
     },
@@ -1348,7 +1340,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TSOT title sort order."
+          "text": "A key that represents the title sort order."
         }
       ]
     },
@@ -1362,7 +1354,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TRCK track number/position in set."
+          "text": "A key that represents the order number of the audio file."
         }
       ]
     },
@@ -1376,7 +1368,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "UFID unique file identifier."
+          "text": "A key that represents the identifier used to indicate the audio file in a database."
         }
       ]
     },
@@ -1390,7 +1382,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "USLT unsynchronized lyric/text transcription."
+          "text": "A key that represents the lyrics of the song or a text transcription of other vocal activities."
         }
       ]
     },
@@ -1404,7 +1396,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TXXX user defined text information frame."
+          "text": "A key that represents the user text information frame."
         }
       ]
     },
@@ -1418,7 +1410,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "WXXX user defined URL link frame."
+          "text": "A key that represents the user webpage frame."
         }
       ]
     },
@@ -1432,9 +1424,24 @@
       "abstract": [
         {
           "type": "text",
-          "text": "TYER year."
+          "text": "A key that represents the year of the recording."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommerical": {
+      "title": "AVMetadataID3MetadataKeyCommerical",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommerical",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataid3metadatakeycommerical",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that represents the commerical frame."
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -1444,6 +1451,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommercial"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -1486,10 +1513,10 @@
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeylength",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeylink",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeylyricist",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeympeglocationlookuptable",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeymediatype",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeymodifiedby",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeymood",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeympeglocationlookuptable",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeymusiccdidentifier",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeymusiciancreditslist",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyofficialartistwebpage",
@@ -1582,6 +1609,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1592,7 +1620,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

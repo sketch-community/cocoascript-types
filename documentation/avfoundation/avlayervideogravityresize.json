@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The video should be stretched to fill the layer’s bounds."
+      "text": "The video stretches to fill the layer’s bounds."
     }
   ],
   "documentVersion": 0,
@@ -20,13 +20,6 @@
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer",
-        "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayer",
         "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity"
       ]
     ]
@@ -50,30 +43,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@AVLayerVideoGravityResize",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -140,14 +138,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
-      "title": "AVPlayer",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
-      "url": "/documentation/avfoundation/avplayer",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravityresize": {
       "title": "AVLayerVideoGravityResize",
       "type": "topic",
@@ -158,7 +148,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The video should be stretched to fill the layer’s bounds."
+          "text": "The video stretches to fill the layer’s bounds."
         }
       ]
     },
@@ -172,7 +162,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The player should preserve the video’s aspect ratio and fit the video within the layer’s bounds."
+          "text": "The video preserves its aspect ratio and fits it within the layer’s bounds."
         }
       ]
     },
@@ -186,7 +176,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The player should preserve the video’s aspect ratio and fill the layer’s bounds."
+          "text": "The video preserves its aspect ratio and fills the layer’s bounds."
         }
       ]
     },
@@ -204,7 +194,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravityresizeaspect",
         "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravityresizeaspectfill"
       ],
-      "title": "Video Gravity Options",
+      "title": "Video Gravities",
       "generated": true
     }
   ],
@@ -246,6 +236,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -255,7 +246,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

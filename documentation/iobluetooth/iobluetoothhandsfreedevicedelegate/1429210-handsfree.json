@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Tells the delegate there’s an incoming call on the connected Bluetooth hands-free phone or headset."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,15 +34,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)IOBluetoothHandsFreeDeviceDelegate(im)handsFree:incomingCallFrom:",
+    "parent": {
+      "title": "IOBluetoothHandsFreeDeviceDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -77,7 +86,13 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods for receiving status change updates and information about a connected Bluetooth hands-free phone or headset."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice": {
       "title": "IOBluetoothHandsFreeDevice",
@@ -95,6 +110,70 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree": {
+      "title": "handsFree:incomingCallFrom:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate there’s an incoming call on the connected Bluetooth hands-free phone or headset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:incomingCallFrom:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree": {
+      "title": "handsFree:currentCall:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends the delegate information about the current call."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:currentCall:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants": {
+      "title": "Current Call Information Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Get information about a phone call on a hands-free Bluetooth device."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -103,6 +182,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants"
+      ],
+      "title": "Receiving Call Status",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -190,10 +279,46 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "device",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The connected Bluetooth hands-free phone or headset."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "number",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The phone number of the caller."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

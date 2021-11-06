@@ -2,27 +2,12 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The replacements for any proxy objects in the nib file. The value for this key is an "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary"
-    },
-    {
-      "type": "text",
-      "text": " object. The keys of the dictionary are the names of any proxy objects in the nib file, and the value for each key is the actual object to use in place of the proxy."
+      "text": "The replacements for any proxy objects in the nib file. "
     }
   ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/resource_management",
-        "doc://com.apple.documentation/documentation/uikit/uinib"
-      ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
@@ -51,25 +36,30 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UINibExternalObjects",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -136,45 +126,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsdictionary"
     },
-    "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner": {
-      "title": "instantiateWithOwner:options:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uinib/1614137-instantiatewithowner",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Unarchives and instantiates the in-memory contents of the receiver’s nib file, creating a distinct object tree and set of top level objects."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "instantiateWithOwner:options:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uinibproxiedobjectskey": {
-      "title": "UINibProxiedObjectsKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uinibproxiedobjectskey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uinibproxiedobjectskey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "In iOS 2.x, the value for this key is a dictionary that contains the runtime replacement objects for any proxy objects used in the nib file. In this dictionary, the keys are the names associated with the proxy objects and the values are the actual objects from your code that should be used in their place. "
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uinibexternalobjects": {
       "title": "UINibExternalObjects",
       "type": "topic",
@@ -185,16 +136,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The replacements for any proxy objects in the nib file. The value for this key is an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary"
-        },
-        {
-          "type": "text",
-          "text": " object. The keys of the dictionary are the names of any proxy objects in the nib file, and the value for each key is the actual object to use in place of the proxy."
+          "text": "The replacements for any proxy objects in the nib file. "
         }
       ]
     },
@@ -206,17 +148,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner",
-        "doc://com.apple.documentation/documentation/uikit/uinibproxiedobjectskey",
-        "doc://com.apple.documentation/documentation/uikit/uiniboptionskey"
-      ],
-      "title": "Retrieving Objects from the Nib File",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -255,15 +186,45 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The value for this key is an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdictionary"
+            },
+            {
+              "type": "text",
+              "text": " object. The keys of the dictionary are the names of any proxy objects in the nib file, and the value for each key is the actual object to use in place of the proxy."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSMigrationManager(im)reset",
+    "parent": {
+      "title": "NSMigrationManager"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,17 +128,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417584-migratestorefromurl": {
-      "title": "migrateStoreFromURL:type:options:withMappingModel:toDestinationURL:destinationType:destinationOptions:error:",
+    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417608-cancelmigrationwitherror": {
+      "title": "cancelMigrationWithError:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417584-migratestorefromurl",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417608-cancelmigrationwitherror",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsmigrationmanager/1417584-migratestorefromurl",
+      "url": "/documentation/coredata/nsmigrationmanager/1417608-cancelmigrationwitherror",
       "abstract": [
         {
           "type": "text",
-          "text": "Migrates the store at a given source URL to the store at a given destination URL, performing all of the mappings specified in a given mapping model."
+          "text": "Cancels the migration with a given error."
         }
       ],
       "fragments": [
@@ -140,7 +148,7 @@
         },
         {
           "kind": "identifier",
-          "text": "migrateStoreFromURL:type:options:withMappingModel:toDestinationURL:destinationType:destinationOptions:error:"
+          "text": "cancelMigrationWithError:"
         }
       ]
     },
@@ -168,30 +176,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417608-cancelmigrationwitherror": {
-      "title": "cancelMigrationWithError:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417608-cancelmigrationwitherror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmigrationmanager/1417608-cancelmigrationwitherror",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Cancels the migration with a given error."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "cancelMigrationWithError:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -203,10 +187,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417584-migratestorefromurl",
         "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417608-cancelmigrationwitherror"
       ],
-      "title": "Performing Migration Operations",
+      "title": "Aborting a Migration",
       "generated": true
     }
   ],
@@ -242,6 +225,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -272,7 +256,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

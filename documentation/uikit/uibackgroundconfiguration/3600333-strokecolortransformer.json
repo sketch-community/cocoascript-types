@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIBackgroundConfiguration(py)strokeColorTransformer",
+    "parent": {
+      "title": "UIBackgroundConfiguration"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -63,6 +71,16 @@
       "traits": [
         {
           "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uibackgroundconfiguration/3600333-strokecolortransformer"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
         }
       ],
       "paths": [
@@ -108,14 +126,6 @@
           "text": "A configuration that describes a specific background appearance. "
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3600769-strokecolor": {
-      "title": "strokeColor",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3600769-strokecolor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibackgroundconfiguration/3600769-strokecolor"
     },
     "doc://com.apple.documentation/documentation/uikit/uiconfigurationcolortransformer": {
       "title": "UIConfigurationColorTransformer",
@@ -327,22 +337,40 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3750760-image": {
+      "title": "image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3750760-image",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibackgroundconfiguration/3750760-image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The image displayed in the view’s background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3750761-imagecontentmode": {
+      "title": "imageContentMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3750761-imagecontentmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uibackgroundconfiguration/3750761-imagecontentmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A property that determines the layout of a background image in a view when its bounds change."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -359,7 +387,9 @@
         "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3600332-strokecolor",
         "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3600331-resolvedstrokecolorfortintcolor",
         "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3600335-strokewidth",
-        "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3600334-strokeoutset"
+        "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3600334-strokeoutset",
+        "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3750760-image",
+        "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3750761-imagecontentmode"
       ],
       "title": "Customizing the Background",
       "generated": true
@@ -403,6 +433,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -434,9 +465,8 @@
               "text": ", the configuration uses "
             },
             {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3600769-strokecolor"
+              "type": "codeVoice",
+              "code": "strokeColor"
             },
             {
               "type": "text",
@@ -448,7 +478,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

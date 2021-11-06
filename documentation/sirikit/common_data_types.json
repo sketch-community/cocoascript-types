@@ -33,8 +33,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -79,7 +79,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The information about a user involved in a SiriKit interaction."
+          "text": "The information about a user participating in a SiriKit interaction."
         }
       ]
     },
@@ -237,17 +237,131 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/ininteraction": {
-      "title": "INInteraction",
+    "doc://com.apple.documentation/documentation/sirikit/inobject": {
+      "title": "INObject",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/ininteraction",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inobject",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/ininteraction",
+      "url": "/documentation/sirikit/inobject",
       "abstract": [
         {
           "type": "text",
-          "text": "An interaction between the user and your app involving an intent object."
+          "text": "A representation of a custom intent parameter or response property."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inobjectcollection": {
+      "title": "INObjectCollection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inobjectcollection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inobjectcollection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inobjectsection": {
+      "title": "INObjectSection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inobjectsection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inobjectsection"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers": {
+      "title": "Dispatching Intents to Handlers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/dispatching_intents_to_handlers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide SiriKit with an intent handler capable of handling a given intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents": {
+      "title": "Resolving and Handling Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/resolving_and_handling_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve, confirm, and handle user requests for your app’s services."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintent": {
+      "title": "INIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to fulfill in your app or Intents extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintentresponse": {
+      "title": "INIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your response to an intent object. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure": {
+      "title": "Intent Handling Infrastructure",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/intent_handling_infrastructure",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify required permissions and provide handlers for the intents your app supports, and configure app extensions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents": {
+      "title": "Providing Hands-Free App Control with Intents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/sirikit/providing_hands-free_app_control_with_intents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve, confirm, and handle intents without an extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/resolution_results": {
+      "title": "Resolution Results",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolution_results",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/sirikit/resolution_results",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolve common types of data like strings and dates into specific values that your app recognizes."
         }
       ]
     },
@@ -265,34 +379,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/common_resolution_results": {
-      "title": "Common Resolution Results",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/common_resolution_results",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/sirikit/common_resolution_results",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Resolve common types of data like strings and dates into specific values that your app recognizes."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/intent_class_identifiers": {
-      "title": "Intent Class Identifiers",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_class_identifiers",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/sirikit/intent_class_identifiers",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Identify intents specified by user notifications."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -302,12 +388,20 @@
     }
   },
   "diffAvailability": {
+    "minor": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.1",
+        "13.2 beta 1"
+      ]
+    },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -319,14 +413,16 @@
         "doc://com.apple.documentation/documentation/sirikit/inperson",
         "doc://com.apple.documentation/documentation/sirikit/inpersonhandle",
         "doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabel"
-      ]
+      ],
+      "anchor": "2863942"
     },
     {
       "kind": "taskGroup",
       "title": "Images",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inimage"
-      ]
+      ],
+      "anchor": "2864100"
     },
     {
       "kind": "taskGroup",
@@ -334,7 +430,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inspeakablestring",
         "doc://com.apple.documentation/documentation/sirikit/inspeakable"
-      ]
+      ],
+      "anchor": "2864103"
     },
     {
       "kind": "taskGroup",
@@ -342,7 +439,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/incurrencyamount",
         "doc://com.apple.documentation/documentation/sirikit/inpricerange"
-      ]
+      ],
+      "anchor": "2864099"
     },
     {
       "kind": "taskGroup",
@@ -350,36 +448,53 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/indatecomponentsrange",
         "doc://com.apple.documentation/documentation/sirikit/inrecurrencerule"
-      ]
+      ],
+      "anchor": "2864101"
     },
     {
       "kind": "taskGroup",
       "title": "Logical",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inconditionaloperator"
-      ]
+      ],
+      "anchor": "2864102"
     },
     {
       "kind": "taskGroup",
       "title": "Files",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/infile"
-      ]
+      ],
+      "anchor": "3219794"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Custom Objects",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inobject",
+        "doc://com.apple.documentation/documentation/sirikit/inobjectcollection",
+        "doc://com.apple.documentation/documentation/sirikit/inobjectsection"
+      ],
+      "anchor": "3783231"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/ininteraction",
-        "doc://com.apple.documentation/documentation/sirikit/common_resolution_results",
-        "doc://com.apple.documentation/documentation/sirikit/intent_class_identifiers"
+        "doc://com.apple.documentation/documentation/sirikit/dispatching_intents_to_handlers",
+        "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
+        "doc://com.apple.documentation/documentation/sirikit/inintent",
+        "doc://com.apple.documentation/documentation/sirikit/inintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure",
+        "doc://com.apple.documentation/documentation/sirikit/providing_hands-free_app_control_with_intents",
+        "doc://com.apple.documentation/documentation/sirikit/resolution_results"
       ],
-      "title": "Common Objects",
+      "title": "Intents",
       "generated": true
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

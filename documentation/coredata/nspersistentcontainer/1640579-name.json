@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The name of this persistent container. (read-only)"
+      "text": "The container’s name."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentContainer(py)name",
+    "parent": {
+      "title": "NSPersistentContainer"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -136,44 +144,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions": {
-      "title": "persistentStoreDescriptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The persistent store descriptions used to create the persistent stores referenced by this persistent container."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti": {
-      "title": "loadPersistentStoresWithCompletionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Instructs the persistent container to load the persistent stores."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "loadPersistentStoresWithCompletionHandler:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640561-managedobjectmodel": {
       "title": "managedObjectModel",
       "type": "topic",
@@ -184,7 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The model associated with this persistent container. (read-only)"
+          "text": "The container’s managed object model."
         }
       ]
     },
@@ -198,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of this persistent container. (read-only)"
+          "text": "The container’s name."
         }
       ]
     },
@@ -212,7 +182,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The persistent store coordinator associated with this persistent container. (read-only)"
+          "text": "The container’s persistent store coordinator."
         }
       ]
     },
@@ -227,12 +197,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640561-managedobjectmodel",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator"
       ],
-      "title": "Configuring a Container",
+      "title": "Getting the Container’s Configuration",
       "generated": true
     }
   ],
@@ -274,6 +242,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -322,7 +291,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

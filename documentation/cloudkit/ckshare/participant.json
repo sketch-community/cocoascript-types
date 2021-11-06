@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A reference to the user who accepts a shared record."
+      "text": "An object that describes a user’s participation in a share."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records"
       ]
     ]
   },
@@ -34,30 +40,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKShareParticipant",
+    "parent": {
+      "title": "CKShare"
+    },
     "symbolKind": "cl",
     "fragments": [
       {
@@ -71,8 +85,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,6 +121,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "url": "/documentation/cloudkit/shared_records",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
       "title": "CKShare",
       "type": "topic",
@@ -117,7 +139,67 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A reference to a share record."
+          "text": "A specialized record type that manages a collection of shared records."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation": {
+      "title": "CKAcceptSharesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckacceptsharesoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640453-participants": {
+      "title": "participants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640453-participants",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/1640453-participants"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller": {
+      "title": "UICloudSharingController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicloudsharingcontroller"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation": {
+      "title": "CKFetchShareParticipantsOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchshareparticipantsoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640494-publicpermission": {
+      "title": "publicPermission",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640494-publicpermission",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/1640494-publicpermission",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The permission for anyone with access to the share’s URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "publicPermission"
+        },
+        {
+          "kind": "text",
+          "text": ": CKShare.ParticipantPermission"
         }
       ]
     },
@@ -145,30 +227,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nscopying"
     },
-    "doc://com.apple.documentation/documentation/swift/cvararg": {
-      "title": "CVarArg",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/cvararg"
-    },
-    "doc://com.apple.documentation/documentation/swift/equatable": {
-      "title": "Equatable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/equatable"
-    },
-    "doc://com.apple.documentation/documentation/swift/hashable": {
-      "title": "Hashable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/hashable"
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/1640395-acceptancestatus": {
       "title": "acceptanceStatus",
       "type": "topic",
@@ -193,7 +251,7 @@
         },
         {
           "kind": "text",
-          "text": ": CKShare_Participant_AcceptanceStatus"
+          "text": ": CKShare.ParticipantAcceptanceStatus"
         }
       ]
     },
@@ -207,7 +265,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A type that represents the status of the participant accepting access."
+          "text": "A type that represents the acceptance status of the participant."
         }
       ],
       "fragments": [
@@ -219,15 +277,16 @@
           "kind": "identifier",
           "text": "CKShare.Participant.AcceptanceStatus"
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare_participant_acceptancestatus": {
-      "title": "CKShare_Participant_AcceptanceStatus",
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantacceptancestatus": {
+      "title": "CKShare.ParticipantAcceptanceStatus",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare_participant_acceptancestatus",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantacceptancestatus",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckshare_participant_acceptancestatus",
+      "url": "/documentation/cloudkit/ckshare/participantacceptancestatus",
       "abstract": [
         {
           "type": "text",
@@ -241,7 +300,7 @@
         },
         {
           "kind": "identifier",
-          "text": "CKShare_Participant_AcceptanceStatus"
+          "text": "CKShare.ParticipantAcceptanceStatus"
         }
       ]
     },
@@ -297,7 +356,7 @@
         },
         {
           "kind": "text",
-          "text": ": CKShare_Participant_Permission"
+          "text": ": CKShare.ParticipantPermission"
         }
       ]
     },
@@ -322,6 +381,31 @@
         {
           "kind": "identifier",
           "text": "CKShare.Participant.Permission"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantpermission": {
+      "title": "CKShare.ParticipantPermission",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantpermission",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/participantpermission",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that represent the permissions to grant to a share participant."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "CKShare.ParticipantPermission"
         }
       ]
     },
@@ -349,7 +433,7 @@
         },
         {
           "kind": "text",
-          "text": ": CKShare_Participant_Role"
+          "text": ": CKShare.ParticipantRole"
         }
       ]
     },
@@ -375,19 +459,20 @@
           "kind": "identifier",
           "text": "CKShare.Participant.Role"
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare_participant_permission": {
-      "title": "CKShare_Participant_Permission",
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantrole": {
+      "title": "CKShare.ParticipantRole",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare_participant_permission",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantrole",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckshare_participant_permission",
+      "url": "/documentation/cloudkit/ckshare/participantrole",
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that represent the permissions to grant to a share participant."
+          "text": "Constants that represent the role of a share’s participant."
         }
       ],
       "fragments": [
@@ -397,7 +482,7 @@
         },
         {
           "kind": "identifier",
-          "text": "CKShare_Participant_Permission"
+          "text": "CKShare.ParticipantRole"
         }
       ]
     },
@@ -407,33 +492,11 @@
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/deprecated_symbols",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/cloudkit/ckshare/participant/deprecated_symbols"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640494-publicpermission": {
-      "title": "publicPermission",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640494-publicpermission",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckshare/1640494-publicpermission",
+      "url": "/documentation/cloudkit/ckshare/participant/deprecated_symbols",
       "abstract": [
         {
           "type": "text",
-          "text": "The permission for anyone with access to the share’s URL."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "publicPermission"
-        },
-        {
-          "kind": "text",
-          "text": ": CKShare_Participant_Permission"
+          "text": "Review unsupported symbols and their replacements."
         }
       ]
     },
@@ -503,7 +566,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A reference to the user who accepts a shared record."
+          "text": "An object that describes a user’s participation in a share."
         }
       ],
       "fragments": [
@@ -539,9 +602,6 @@
       "title": "Conforms To",
       "type": "conformsTo",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/swift/cvararg",
-        "doc://com.apple.documentation/documentation/swift/equatable",
-        "doc://com.apple.documentation/documentation/swift/hashable",
         "doc://com.apple.documentation/documentation/foundation/nscopying",
         "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
       ]
@@ -550,37 +610,42 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Accessing the Participant Acceptance Status",
+      "title": "Accessing the Participant’s Status",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/1640395-acceptancestatus",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/acceptancestatus",
-        "doc://com.apple.documentation/documentation/cloudkit/ckshare_participant_acceptancestatus"
-      ]
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantacceptancestatus"
+      ],
+      "anchor": "3640581"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Participant's Identity",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/1640488-useridentity"
-      ]
+      ],
+      "anchor": "2530635"
     },
     {
       "kind": "taskGroup",
-      "title": "Acessing the Participant's Permission Level",
+      "title": "Managing the Participant's Capabilites",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/1640433-permission",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/permission",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantpermission",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/2980667-role",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/role",
-        "doc://com.apple.documentation/documentation/cloudkit/ckshare_participant_permission"
-      ]
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantrole"
+      ],
+      "anchor": "3640584"
     },
     {
       "kind": "taskGroup",
       "title": "Deprecated",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/deprecated_symbols"
-      ]
+      ],
+      "anchor": "3693890"
     }
   ],
   "seeAlsoSections": [
@@ -628,6 +693,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -635,10 +701,191 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Participants are a key element of sharing in CloudKit. A participant provides information about an iCloud user and their participation in a share, including their identity, acceptance status, permissions, and role."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The acceptance status determines the participant’s visibilty of the shared records. Statuses are: "
+            },
+            {
+              "type": "codeVoice",
+              "code": "pending"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "accepted"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "removed"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "unknown"
+            },
+            {
+              "type": "text",
+              "text": ". If the status is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "pending"
+            },
+            {
+              "type": "text",
+              "text": ", use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckacceptsharesoperation"
+            },
+            {
+              "type": "text",
+              "text": " to accept the share. Upon acceptance, CloudKit makes the shared records available in the participant’s shared database. The records remain accessible for as long as the participant’s status is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "accepted"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You don’t create participants. Use the share’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640453-participants"
+            },
+            {
+              "type": "text",
+              "text": " property to access its existing participants. Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicloudsharingcontroller"
+            },
+            {
+              "type": "text",
+              "text": " to manage the share’s participants and their permissions. Alternatively, you can generate participants using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation"
+            },
+            {
+              "type": "text",
+              "text": ". Participants must have an active iCloud account."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Anyone with the URL of a public share can become a participant in that share. Participants of a public share assume the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "publicUser"
+            },
+            {
+              "type": "text",
+              "text": " role. For private shares, the owner manages the participants. An owner is any participant with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "owner"
+            },
+            {
+              "type": "text",
+              "text": " role. A participant of a private share can’t accept the share unless the owner adds them first. Private share participants assume the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "privateUser"
+            },
+            {
+              "type": "text",
+              "text": " role. CloudKit removes any pending participants if the owner changes the share’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/1640494-publicpermission"
+            },
+            {
+              "type": "text",
+              "text": ". CloudKit removes all participants if the new permission is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "none"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Participants with write permissions can modify or delete any record that you include in the share. However, only the owner can delete a shared hierarchy’s root record. If a participant attempts to delete the share, CloudKit removes the participant. The share remains active for all other participants."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

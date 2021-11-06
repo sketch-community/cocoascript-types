@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates and returns a new item using the specified properties."
+      "text": "Creates a tab bar item that displays a title and an image."
     }
   ],
   "documentVersion": 0,
@@ -41,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITabBarItem(im)initWithTitle:image:tag:",
+    "parent": {
+      "title": "UITabBarItem"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,7 +120,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
     },
@@ -123,6 +131,14 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
+      "title": "nil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nil-2gl"
     },
     "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617072-selectedimage": {
       "title": "selectedImage",
@@ -139,60 +155,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiimagerenderingmode/uiimagerenderingmodealwaysoriginal"
-    },
-    "devLink-1734462": {
-      "identifier": "devLink-1734462",
-      "type": "link",
-      "title": "Temporary Views",
-      "url": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/MobileHIG/Alerts.html#//apple_ref/doc/uid/TP40006556-CH14"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem": {
-      "title": "initWithTabBarSystemItem:tag:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates and returns a new item containing the specified system item."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithTabBarSystemItem:tag:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617066-initwithtitle": {
-      "title": "initWithTitle:image:selectedImage:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617066-initwithtitle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitabbaritem/1617066-initwithtitle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates and returns a new item with the specified title, unselected image, and selected image."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithTitle:image:selectedImage:"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
@@ -218,6 +180,30 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsinteger"
     },
+    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem": {
+      "title": "initWithTabBarSystemItem:tag:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a tab bar item using a system-provided configuration."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithTabBarSystemItem:tag:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617056-initwithtitle": {
       "title": "initWithTitle:image:tag:",
       "type": "topic",
@@ -228,7 +214,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns a new item using the specified properties."
+          "text": "Creates a tab bar item that displays a title and an image."
         }
       ],
       "fragments": [
@@ -242,6 +228,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617066-initwithtitle": {
+      "title": "initWithTitle:image:selectedImage:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617066-initwithtitle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitabbaritem/1617066-initwithtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a tab bar item that toggles the image it displays when its selected state changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithTitle:image:selectedImage:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617055-init": {
       "title": "init",
       "type": "topic",
@@ -252,7 +262,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the tab bar item to its default state."
+          "text": "Creates a tab bar item with a default configuration."
         }
       ],
       "fragments": [
@@ -273,6 +283,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uitabbaritem/1617071-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a tab bar item from a serialized instance."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -294,7 +310,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "System items that can be used on a tab bar."
+          "text": "Constants that represent the system tab bar items."
         }
       ]
     },
@@ -315,7 +331,7 @@
         "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617071-initwithcoder",
         "doc://com.apple.documentation/documentation/uikit/uitabbarsystemitem"
       ],
-      "title": "Initializing an Item",
+      "title": "Creating a Tab Bar Item",
       "generated": true
     }
   ],
@@ -429,6 +445,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -449,15 +466,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The item’s title. If "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "nil"
-                },
-                {
-                  "type": "text",
-                  "text": ", a title is not displayed."
+                  "text": "The item’s title."
                 }
               ]
             }
@@ -471,15 +480,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The item’s image. If "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "nil"
-                },
-                {
-                  "type": "text",
-                  "text": ", an image is not displayed."
+                  "text": "The item’s source image."
                 }
               ]
             }
@@ -493,29 +494,9 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The receiver’s tag, an integer that you can use to identify bar item objects in your application."
+                  "text": "An integer you use to identify the object."
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Newly initialized item with the specified properties."
             }
           ]
         }
@@ -535,7 +516,24 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The images displayed on the tab bar item are derived from "
+              "text": "Use "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl"
+            },
+            {
+              "type": "text",
+              "text": " for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "title"
+            },
+            {
+              "type": "text",
+              "text": " or "
             },
             {
               "type": "codeVoice",
@@ -543,7 +541,16 @@
             },
             {
               "type": "text",
-              "text": ". You can specify a different source image for the selected image using the "
+              "text": " to not display that element."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By default, the item displays the same image regardless of its selected state. To display a different image for the selected state, set its "
             },
             {
               "type": "reference",
@@ -552,16 +559,7 @@
             },
             {
               "type": "text",
-              "text": " property. "
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "By default, the actual unselected and selected images are automatically created from the alpha values in the source images. To prevent system coloring, provide images with "
+              "text": " property. The item creates the images it displays from the alpha values in the source images. To prevent system tinting, use images with the "
             },
             {
               "type": "reference",
@@ -570,25 +568,7 @@
             },
             {
               "type": "text",
-              "text": ". "
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "If the image is too large to fit on the tab bar, it is clipped to fit. The size of a tab bar image is typically 60 x 60 pixels. See "
-            },
-            {
-              "type": "link",
-              "title": "Temporary Views",
-              "destination": "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/MobileHIG/Alerts.html#//apple_ref/doc/uid/TP40006556-CH14"
-            },
-            {
-              "type": "text",
-              "text": " for more information about tab bar icons. "
+              "text": " rendering mode. The item clips any image that’s larger than its bounds."
             }
           ]
         }
@@ -596,7 +576,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

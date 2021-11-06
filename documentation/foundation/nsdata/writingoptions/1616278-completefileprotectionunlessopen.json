@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A hint to set the content protection attribute of the file when writing it out."
+      "text": "An option to allow the file to be accessible while the device is unlocked or the file is already open."
     }
   ],
   "documentVersion": 0,
@@ -37,30 +37,38 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSDataWritingOptions@NSDataWritingFileProtectionCompleteUnlessOpen",
+    "parent": {
+      "title": "NSData.WritingOptions"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -78,8 +86,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -218,6 +226,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -240,7 +249,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In this case, the file cannot be opened for reading or writing when the device is locked, although new files can be created with this class. If one of these files is open when the device is locked, reading and writing are still allowed. "
+              "text": "In this case, your app cannot open the file to read it or write to it when the device is locked, but your app can create new files with this class. If one of these files is open when the device is locked, your app can read and write to the opened file."
             }
           ]
         }
@@ -248,7 +257,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

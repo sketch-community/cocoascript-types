@@ -11,8 +11,9 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation"
+        "doc://com.apple.documentation/documentation/cloudkit/remote_records",
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/deprecated_symbols"
       ]
     ]
   },
@@ -36,44 +37,54 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "12.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
         "deprecatedAt": "10.14",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
         "deprecatedAt": "5.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CKFetchRecordZoneChangesOperation(im)initWithRecordZoneIDs:optionsByRecordZoneID:",
+    "parent": {
+      "title": "CKFetchRecordZoneChangesOperation"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,10 +119,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations": {
-      "title": "Record Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-      "url": "/documentation/cloudkit/record_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/remote_records": {
+      "title": "Remote Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/remote_records",
+      "url": "/documentation/cloudkit/remote_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -129,6 +140,14 @@
           "text": "An operation that fetches record zone changes."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/deprecated_symbols",
+      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/3126513-init": {
       "title": "init(recordZoneIDs:configurationsByRecordZoneID:)",
@@ -176,55 +195,14 @@
       "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoptions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoptions"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/2980665-initwithrecordzoneids": {
-      "title": "initWithRecordZoneIDs:configurationsByRecordZoneID:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/2980665-initwithrecordzoneids",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation/2980665-initwithrecordzoneids",
+      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoptions",
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an operation for fetching record zone changes."
+          "text": "A configuration object that describes the information to fetch from a record zone."
         }
       ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithRecordZoneIDs:configurationsByRecordZoneID:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/2715840-init": {
-      "title": "init",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/2715840-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation/2715840-init",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates an empty fetch record zone changes operation."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "init"
-        }
-      ]
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640509-initwithrecordzoneids": {
       "title": "initWithRecordZoneIDs:optionsByRecordZoneID:",
@@ -282,10 +260,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/2980665-initwithrecordzoneids",
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation/2715840-init"
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoptions"
       ],
-      "title": "Creating a Zone Change Operation",
+      "title": "Deprecated Methods",
       "generated": true
     }
   ],
@@ -403,6 +380,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -478,7 +456,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

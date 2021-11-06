@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value that indicates whether the first video frame has been made ready for display for the current item of the associated player."
+      "text": "A Boolean value that indicates whether the first video frame of the player’s current item is ready for display."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerLayer(py)readyForDisplay",
+    "parent": {
+      "title": "AVPlayerLayer"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that manages a player’s visual output."
+          "text": "An object that presents the visual contents of a player object."
         }
       ]
     },
@@ -139,12 +147,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avplayer/1387569-currentitem"
     },
-    "devLink-1737690": {
-      "identifier": "devLink-1737690",
-      "type": "link",
-      "title": "Key-value observing",
-      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1389748-readyfordisplay": {
       "title": "readyForDisplay",
       "type": "topic",
@@ -155,63 +157,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the first video frame has been made ready for display for the current item of the associated player."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1385745-videorect": {
-      "title": "videoRect",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1385745-videorect",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer/1385745-videorect",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The current size and position of the video image as displayed within the receiver's bounds."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1388915-videogravity": {
-      "title": "videoGravity",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1388915-videogravity",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer/1388915-videogravity",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value that specifies how the video is displayed within a player layer’s bounds."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity": {
-      "title": "AVLayerVideoGravity",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avlayervideogravity",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value that defines how the video is displayed within a layer’s bounds rectangle."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1390055-pixelbufferattributes": {
-      "title": "pixelBufferAttributes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1390055-pixelbufferattributes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer/1390055-pixelbufferattributes",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The client requirements for the visual output displayed in the player layer during playback."
+          "text": "A Boolean value that indicates whether the first video frame of the player’s current item is ready for display."
         }
       ]
     },
@@ -223,18 +169,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1385745-videorect",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1388915-videogravity",
-        "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1390055-pixelbufferattributes"
-      ],
-      "title": "Configuring the Display Behavior",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -271,6 +205,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -292,7 +227,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use this property as an indicator of when best to show or animate-in a player layer into view. A player layer may be displayed, or made visible, while this property is "
+              "text": "Use this property to determine when to show or animate a player layer into view. You can display a player layer while this property value is "
             },
             {
               "type": "reference",
@@ -301,7 +236,7 @@
             },
             {
               "type": "text",
-              "text": ", however the layer will not have any user-visible content until the value becomes "
+              "text": ", but the layer doesn’t present any content until the value becomes "
             },
             {
               "type": "reference",
@@ -328,7 +263,7 @@
             },
             {
               "type": "text",
-              "text": " for a player’s "
+              "text": " for a player when its "
             },
             {
               "type": "reference",
@@ -337,7 +272,7 @@
             },
             {
               "type": "text",
-              "text": " whose asset contains no enabled video tracks."
+              "text": " contains no enabled video tracks."
             }
           ]
         },
@@ -346,16 +281,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property is key value observable using "
-            },
-            {
-              "type": "link",
-              "title": "Key-value observing",
-              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": "This property is key-value observable."
             }
           ]
         }
@@ -363,7 +289,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

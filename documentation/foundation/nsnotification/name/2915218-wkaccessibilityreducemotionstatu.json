@@ -26,7 +26,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/watchkit",
-        "doc://com.apple.documentation/documentation/watchkit/storyboard_elements",
+        "doc://com.apple.documentation/documentation/watchkit/storyboard_support",
         "doc://com.apple.documentation/documentation/watchkit/wkinterfacecontroller"
       ]
     ]
@@ -50,10 +50,13 @@
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@WKAccessibilityReduceMotionStatusDidChangeNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -71,8 +74,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -147,10 +150,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/watchkit/storyboard_elements": {
-      "title": "Storyboard Elements",
-      "identifier": "doc://com.apple.documentation/documentation/watchkit/storyboard_elements",
-      "url": "/documentation/watchkit/storyboard_elements",
+    "doc://com.apple.documentation/documentation/watchkit/storyboard_support": {
+      "title": "Storyboard Support",
+      "identifier": "doc://com.apple.documentation/documentation/watchkit/storyboard_support",
+      "url": "/documentation/watchkit/storyboard_support",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -170,34 +173,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/watchkit/2915219-wkaccessibilityisreducemotionena"
-    },
-    "doc://com.apple.documentation/documentation/watchkit/wkaccessibilityvoiceoverstatuschanged": {
-      "title": "WKAccessibilityVoiceOverStatusChanged",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/watchkit/wkaccessibilityvoiceoverstatuschanged",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/watchkit/wkaccessibilityvoiceoverstatuschanged",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posted by WatchKit when VoiceOver starts or stops. This notification does not include a parameter."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "let "
-        },
-        {
-          "kind": "identifier",
-          "text": "WKAccessibilityVoiceOverStatusChanged"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsnotification/name/2915218-wkaccessibilityreducemotionstatu": {
       "title": "WKAccessibilityReduceMotionStatusDidChange",
@@ -227,6 +202,93 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1628202-wkaudiofileplayeritemdidplaytoen": {
+      "title": "WKAudioFilePlayerItemDidPlayToEndTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1628202-wkaudiofileplayeritemdidplaytoen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1628202-wkaudiofileplayeritemdidplaytoen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that the item has played successfully to its end."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "WKAudioFilePlayerItemDidPlayToEndTime"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1628255-wkaudiofileplayeritemfailedtopla": {
+      "title": "WKAudioFilePlayerItemFailedToPlayToEndTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1628255-wkaudiofileplayeritemfailedtopla",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1628255-wkaudiofileplayeritemfailedtopla",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that the item failed to play to its end."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "WKAudioFilePlayerItemFailedToPlayToEndTime"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1628183-wkaudiofileplayeritemtimejumped": {
+      "title": "WKAudioFilePlayerItemTimeJumped",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1628183-wkaudiofileplayeritemtimejumped",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1628183-wkaudiofileplayeritemtimejumped",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that the item’s current time has changed discontinuously. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "WKAudioFilePlayerItemTimeJumped"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -238,9 +300,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/watchkit/wkaccessibilityvoiceoverstatuschanged"
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1628202-wkaudiofileplayeritemdidplaytoen",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1628255-wkaudiofileplayeritemfailedtopla",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1628183-wkaudiofileplayeritemtimejumped"
       ],
-      "title": "Notifications",
+      "title": "WatchKit",
       "generated": true
     }
   ],
@@ -340,7 +404,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Use options dictionary keys to specify store behavior and characteristics."
+      "text": "The keys to use with options dictionaries to specify store behavior and characteristics."
     }
   ],
   "documentVersion": 0,
@@ -32,8 +32,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -99,72 +99,6 @@
         {
           "kind": "identifier",
           "text": "URLForUbiquityContainerIdentifier:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468860-addpersistentstorewithtype": {
-      "title": "addPersistentStoreWithType:configuration:URL:options:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468860-addpersistentstorewithtype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468860-addpersistentstorewithtype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Adds a new persistent store of a specified type at a given location."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addPersistentStoreWithType:configuration:URL:options:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468927-migratepersistentstore": {
-      "title": "migratePersistentStore:toURL:options:withType:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468927-migratepersistentstore",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468927-migratepersistentstore",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Moves a persistent store to a new location, changing the storage type if necessary."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "migratePersistentStore:toURL:options:withType:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier": {
-      "title": "importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:"
         }
       ]
     },
@@ -252,6 +186,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorefileprotectionkey": {
+      "title": "NSPersistentStoreFileProtectionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorefileprotectionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorefileprotectionkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Key to represent the protection class for the persistent store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstoreforcedestroyoption": {
+      "title": "NSPersistentStoreForceDestroyOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstoreforcedestroyoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstoreforcedestroyoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A flag that indicates the coordinator destroys the store file even if the operation might be unsafe, overriding locks, if necessary."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coredata/nsexternalrecordsdirectoryoption": {
       "title": "NSExternalRecordsDirectoryOption",
       "type": "topic",
@@ -296,20 +258,6 @@
         }
       ],
       "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorefileprotectionkey": {
-      "title": "NSPersistentStoreFileProtectionKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorefileprotectionkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorefileprotectionkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Key to represent the protection class for the persistent store."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitouscontentnamekey": {
       "title": "NSPersistentStoreUbiquitousContentNameKey",
@@ -426,17 +374,17 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1640556-addpersistentstorewithdescriptio": {
-      "title": "addPersistentStoreWithDescription:completionHandler:",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468895-initwithmanagedobjectmodel": {
+      "title": "initWithManagedObjectModel:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1640556-addpersistentstorewithdescriptio",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468895-initwithmanagedobjectmodel",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1640556-addpersistentstorewithdescriptio",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/1468895-initwithmanagedobjectmodel",
       "abstract": [
         {
           "type": "text",
-          "text": "Adds a new persistent store of a specified description."
+          "text": "Creates a persistent store coordinator with the specified managed object model."
         }
       ],
       "fragments": [
@@ -446,179 +394,7 @@
         },
         {
           "kind": "identifier",
-          "text": "addPersistentStoreWithDescription:completionHandler:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468858-seturl": {
-      "title": "setURL:forPersistentStore:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468858-seturl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468858-seturl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the URL for a given persistent store."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setURL:forPersistentStore:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore": {
-      "title": "removePersistentStore:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Removes a given persistent store."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "removePersistentStore:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468888-destroypersistentstoreaturl": {
-      "title": "destroyPersistentStoreAtURL:withType:options:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468888-destroypersistentstoreaturl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468888-destroypersistentstoreaturl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Deletes (or truncates) the target persistent store in accordance with the store class' requirements."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "destroyPersistentStoreAtURL:withType:options:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores": {
-      "title": "persistentStores",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The persistent stores associated with the coordinator."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468824-persistentstoreforurl": {
-      "title": "persistentStoreForURL:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468824-persistentstoreforurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468824-persistentstoreforurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the persistent store for the specified URL. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "persistentStoreForURL:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468865-urlforpersistentstore": {
-      "title": "URLForPersistentStore:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468865-urlforpersistentstore",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468865-urlforpersistentstore",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the URL for a given persistent store."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "URLForPersistentStore:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468917-replacepersistentstoreaturl": {
-      "title": "replacePersistentStoreAtURL:destinationOptions:withPersistentStoreFromURL:sourceOptions:storeType:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468917-replacepersistentstoreaturl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468917-replacepersistentstoreaturl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Replace the destination persistent store with the source store."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "replacePersistentStoreAtURL:destinationOptions:withPersistentStoreFromURL:sourceOptions:storeType:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name": {
-      "title": "name",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468929-name",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Name of the coordinator."
+          "text": "initWithManagedObjectModel:"
         }
       ]
     },
@@ -632,7 +408,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Use options dictionary keys to specify store behavior and characteristics."
+          "text": "The keys to use with options dictionaries to specify store behavior and characteristics."
         }
       ]
     },
@@ -655,89 +431,39 @@
         "doc://com.apple.documentation/documentation/coredata/nssqlitepragmasoption",
         "doc://com.apple.documentation/documentation/coredata/nssqliteanalyzeoption",
         "doc://com.apple.documentation/documentation/coredata/nssqlitemanualvacuumoption",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorefileprotectionkey",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstoreforcedestroyoption"
+      ],
+      "anchor": "1679727"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deprecated",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsexternalrecordsdirectoryoption",
         "doc://com.apple.documentation/documentation/coredata/nsexternalrecordextensionoption",
         "doc://com.apple.documentation/documentation/coredata/nsexternalrecordsfileformatoption",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorefileprotectionkey",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitouscontentnamekey",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitouscontenturlkey",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitouspeertokenoption",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreremoveubiquitousmetadataoption",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstoreubiquitouscontaineridentifierkey",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorerebuildfromubiquitouscontentoption"
-      ]
+      ],
+      "anchor": "3729883"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468860-addpersistentstorewithtype",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1640556-addpersistentstorewithdescriptio",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468858-seturl",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468888-destroypersistentstoreaturl",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468927-migratepersistentstore",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468824-persistentstoreforurl",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468865-urlforpersistentstore",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468917-replacepersistentstoreaturl",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468895-initwithmanagedobjectmodel"
       ],
-      "title": "Configuring Persistent Stores",
+      "title": "Creating a Coordinator",
       "generated": true
     }
   ],
-  "primaryContentSections": [
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "overview",
-          "level": 2,
-          "text": "Overview",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Keys for the options dictionary used in "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468860-addpersistentstorewithtype"
-            },
-            {
-              "type": "text",
-              "text": ",  "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468927-migratepersistentstore"
-            },
-            {
-              "type": "text",
-              "text": ", and "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier"
-            },
-            {
-              "type": "text",
-              "text": "."
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

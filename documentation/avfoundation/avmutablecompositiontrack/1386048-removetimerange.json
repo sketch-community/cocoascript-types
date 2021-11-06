@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Removes a specified time range from the receiver."
+      "text": "Removes a time range of media from a composition track."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMutableCompositionTrack(im)removeTimeRange:",
+    "parent": {
+      "title": "AVMutableCompositionTrack"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable track in a composition object that you use to insert, remove, and scale track segments without affecting their low-level representation."
+          "text": "A mutable track in a composition that you use to insert, remove, and scale track segments without affecting their low-level representation."
         }
       ]
     },
@@ -128,6 +136,20 @@
       "role": "symbol",
       "url": "/documentation/coremedia/cmtimerange"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments": {
+      "title": "segments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The track segments that a composition track contains."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389483-insertemptytimerange": {
       "title": "insertEmptyTimeRange:",
       "type": "topic",
@@ -138,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Adds or extends an empty time range within the receiver."
+          "text": "Adds or extends an empty time range within the track."
         }
       ],
       "fragments": [
@@ -162,7 +184,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Inserts a time range of a source track into a track of a composition."
+          "text": "Inserts a time range of media from a source track into a composition track."
         }
       ],
       "fragments": [
@@ -210,7 +232,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Removes a specified time range from the receiver."
+          "text": "Removes a time range of media from a composition track."
         }
       ],
       "fragments": [
@@ -234,7 +256,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Changes the duration of a time range in the receiver."
+          "text": "Changes the duration of a time range of the track."
         }
       ],
       "fragments": [
@@ -245,20 +267,6 @@
         {
           "kind": "identifier",
           "text": "scaleTimeRange:toDuration:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments": {
-      "title": "segments",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The track segments from a composition track."
         }
       ]
     },
@@ -273,11 +281,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389483-insertemptytimerange",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390691-inserttimerange",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388212-scaletimerange",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments"
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388212-scaletimerange"
       ],
       "title": "Managing Time Ranges",
       "generated": true
@@ -333,6 +341,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -355,29 +364,9 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The time range to be removed."
+                  "text": "The time range to remove."
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "discussion",
-          "level": 2,
-          "text": "Discussion",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Removing a time range does not cause the track to be removed from the composition. Instead it removes or truncates track segments that intersect with the time range."
             }
           ]
         }
@@ -385,7 +374,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

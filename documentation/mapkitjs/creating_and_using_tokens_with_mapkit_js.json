@@ -1,0 +1,837 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Sign JSON Web Tokens to use MapKit JS and debug common signing errors."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkitjs"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js",
+    "interfaceLanguage": "data"
+  },
+  "legacy_identifier": 3138210,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating and Using Tokens with MapKit JS",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "MapKit JS"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "data"
+        }
+      ],
+      "paths": [
+        "documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/mapkitjs": {
+      "title": "MapKit JS",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs",
+      "url": "/documentation/mapkitjs",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit": {
+      "title": "mapkit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The JavaScript API for embedding Apple maps on your website."
+        }
+      ]
+    },
+    "link-3740616": {
+      "title": "Apple Developer account",
+      "type": "topic",
+      "identifier": "link-3740616",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/account"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3138208": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3138208",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3138208"
+    },
+    "link-3150488": {
+      "title": "JSON Web Token (JWT) specification",
+      "type": "topic",
+      "identifier": "link-3150488",
+      "kind": "article",
+      "role": "link",
+      "url": "https://tools.ietf.org/html/rfc7519"
+    },
+    "link-3740617": {
+      "title": "JWT.io",
+      "type": "topic",
+      "identifier": "link-3740617",
+      "kind": "article",
+      "role": "link",
+      "url": "https://jwt.io"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3145037": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3145037",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3145037"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/2974045-init": {
+      "title": "init",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/2974045-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/2974045-init"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2980159-authorizationcallback": {
+      "title": "authorizationCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2980159-authorizationcallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkitinitoptions/2980159-authorizationcallback"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2978217-language": {
+      "title": "language",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2978217-language",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkitinitoptions/2978217-language"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3145029": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3145029",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3145029"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3145028": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3145028",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js#3145028"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key": {
+      "title": "Creating a Maps Identifier and a Private Key",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a Maps Identifer and a private key before generating tokens for MapKit JS. "
+        }
+      ]
+    },
+    "link-3740614": {
+      "title": "Create a Token",
+      "type": "topic",
+      "identifier": "link-3740614",
+      "kind": "article",
+      "role": "link",
+      "url": "https://maps.developer.apple.com/token-maker"
+    },
+    "link-3740615": {
+      "title": "MapKit JS Dashboard",
+      "type": "topic",
+      "identifier": "link-3740615",
+      "kind": "article",
+      "role": "link",
+      "url": "https://maps.developer.apple.com/"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js": {
+      "title": "Creating and Using Tokens with MapKit JS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/creating_and_using_tokens_with_mapkit_js",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sign JSON Web Tokens to use MapKit JS and debug common signing errors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt": {
+      "title": "Debugging an Invalid JWT",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/debugging_an_invalid_jwt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inspect the JavaScript console logs, the token, and events to determine why a token is invalid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key",
+        "doc://com.apple.documentation/documentation/mapkitjs/debugging_an_invalid_jwt",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "MapKit JS uses a signed JSON Web Token (JWT) to authenticate map initializations and other API requests, such as requests to retrieve directions or execute a search. To use a JWT with MapKit JS you must have an Apple Developer account and obtain a Maps ID and a private key as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use a static, long-lived token or generate a signed token using the private key. To get a long-lived token, use the "
+            },
+            {
+              "type": "link",
+              "title": "Create a Token",
+              "destination": "https://maps.developer.apple.com/token-maker"
+            },
+            {
+              "type": "text",
+              "text": " tool at the "
+            },
+            {
+              "type": "link",
+              "title": "MapKit JS Dashboard",
+              "destination": "https://maps.developer.apple.com/"
+            },
+            {
+              "type": "text",
+              "text": " site. To generate a signed token, use the Key ID and development Team ID to construct a token, then sign the token with your private key to use it with MapKit JS."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After getting or creating a token, confirm the success of the token authorization."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Token to Use MapKit JS",
+          "anchor": "3138206"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "MapKit JS requires a JWT to initialize "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit"
+            },
+            {
+              "type": "text",
+              "text": ". A JWT has two sections, a header and a payload. The header describes the token and the cryptographic operations applied to the payload. The payload contains a set of cryptographically signed claims."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Construct a token with these required fields in the header:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "alg"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — The algorithm you use to encrypt the token. Use the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "ES256"
+                    },
+                    {
+                      "type": "text",
+                      "text": " algorithm to encrypt your token."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "kid"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — A 10-character key identifier that provides the ID of the private key that you obtain from your Apple Developer account."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "typ"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — A type parameter that you set to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "”JWT”"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the payload section of the token, include the following claims:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "iss"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — The issuer of the token. This is a 10-character Team ID obtained from your Apple Developer account."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "iat"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — The Issued At registered claim key. The value of this claim indicates the token creation time, in terms of the number of seconds since UNIX Epoch, in UTC."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "exp"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — The Expiration Time registered claim key. The value of this claim indicates when the token expires, in terms of the number of seconds since UNIX Epoch, in UTC."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "origin"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — An optional claim that constrains the token to a specific website or domain. The value of this claim is a fully qualified domain that matches the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Origin"
+                    },
+                    {
+                      "type": "text",
+                      "text": " header passed by a browser. Use the asterisk character ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "*"
+                    },
+                    {
+                      "type": "text",
+                      "text": ") in the domain to match multiple origin values. Don’t include a trailing slash as part of the origin claim."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To locate your Team ID, sign in to your "
+            },
+            {
+              "type": "link",
+              "title": "Apple Developer account",
+              "destination": "https://developer.apple.com/account"
+            },
+            {
+              "type": "text",
+              "text": ", and click Membership in the sidebar. Your Team ID appears in the Membership information section under the team name. Generate your token by signing it with you private key."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When decoded, a token for use with MapKit JS has the following format:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "{",
+            "    \"alg\": \"ES256\",",
+            "    \"kid\": \"ABC123DEFG\",",
+            "    \"typ\": \"JWT\"",
+            "}",
+            "{",
+            "    \"iss\": \"DEF123GHIJ\",",
+            "    \"iat\": 1437179036,",
+            "    \"exp\": 1493298100,",
+            "    \"origin\": \"https://*.mywebsite.org\"",
+            "}"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3138208",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn more about JWT, see the "
+            },
+            {
+              "type": "link",
+              "title": "JSON Web Token (JWT) specification",
+              "destination": "https://tools.ietf.org/html/rfc7519"
+            },
+            {
+              "type": "text",
+              "text": ". You can find a collection of libraries for generating signed tokens at "
+            },
+            {
+              "type": "link",
+              "title": "JWT.io",
+              "destination": "https://jwt.io"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide a Signed Token to Initialize MapKit JS",
+          "anchor": "3138220"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To start using tokens with MapKit JS, first link to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "mapkit.js"
+            },
+            {
+              "type": "text",
+              "text": " in your webpage:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<script src=\"https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js\"></script>"
+          ],
+          "syntax": "javascript",
+          "metadata": {
+            "anchor": "3145037",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Then in your JavaScript, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/2974045-init"
+            },
+            {
+              "type": "text",
+              "text": " function to initialize the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit"
+            },
+            {
+              "type": "text",
+              "text": " object. Pass an object to the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/2974045-init"
+            },
+            {
+              "type": "text",
+              "text": " function that includes a required "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2980159-authorizationcallback"
+            },
+            {
+              "type": "text",
+              "text": " function, and an optional "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2978217-language"
+            },
+            {
+              "type": "text",
+              "text": " property.  MapKit JS invokes the function you provide during initialization to retrieve a signed token."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "MapKit JS monitors the token, and calls the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2980159-authorizationcallback"
+            },
+            {
+              "type": "text",
+              "text": " function as needed to retrieve a new token. For example, if MapKit JS detects an expired token, it attempts to asynchronously retrieve a new one by calling your "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2980159-authorizationcallback"
+            },
+            {
+              "type": "text",
+              "text": " function. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can set "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2980159-authorizationcallback"
+            },
+            {
+              "type": "text",
+              "text": " to a function that returns a new token, or to a function that returns a token as a string. Set "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2980159-authorizationcallback"
+            },
+            {
+              "type": "text",
+              "text": " to a function that returns a new token if you want to use short-lived tokens provided from your server. Expose a service endpoint that returns a new signed token and sign tokens on your server. Within your "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2980159-authorizationcallback"
+            },
+            {
+              "type": "text",
+              "text": " function, call the service endpoint, then call the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "done()"
+            },
+            {
+              "type": "text",
+              "text": " function with the result."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "mapkit.init({",
+            "    authorizationCallback: function(done) {",
+            "        fetch(\"/gettoken\")",
+            "            .then(res => res.text())",
+            "            .then(done);",
+            "    },",
+            "    language: \"es\"",
+            "});"
+          ],
+          "syntax": "javascript",
+          "metadata": {
+            "anchor": "3145029",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Setting "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkitinitoptions/2980159-authorizationcallback"
+            },
+            {
+              "type": "text",
+              "text": " to a function that returns a token as a string is useful for local development, or if you want to use a long-lived token with MapKit JS. Sign a token locally on your development machine with an expiration, then use the token directly in your code. The following example shows initializing the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit"
+            },
+            {
+              "type": "text",
+              "text": " object with a token:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "mapkit.init({",
+            "    authorizationCallback: function(done) {",
+            "        done(\"your-token-string-here\");",
+            "    },",
+            "    language: \"es\"",
+            "});"
+          ],
+          "syntax": "javascript",
+          "metadata": {
+            "anchor": "3145028",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Whether using a short- or long-lived token, set the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "origin"
+            },
+            {
+              "type": "text",
+              "text": " claim to prevent others from reusing your signed token."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "MapKit JS constrains the lifetime of tokens it accepts to a maximum of one year, regardless of the token’s expiration. If you embed a long-lived token directly into your content, remember to replace it with a new one within a year."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

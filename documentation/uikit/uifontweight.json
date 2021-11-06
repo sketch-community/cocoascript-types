@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants that represent standard font weights."
+      "text": "Constants that represent standard typeface styles."
     }
   ],
   "documentVersion": 0,
@@ -48,30 +48,35 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@UIFontWeight",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -161,6 +166,14 @@
           "text": "systemFontOfSize:weight:"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifont/1619040-familynames": {
+      "title": "familyNames",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifont/1619040-familynames",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifont/1619040-familynames"
     },
     "doc://com.apple.documentation/documentation/coregraphics/cgfloat": {
       "title": "CGFloat",
@@ -344,7 +357,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that represent standard font weights."
+          "text": "Constants that represent standard typeface styles."
         }
       ]
     },
@@ -466,14 +479,16 @@
         "doc://com.apple.documentation/documentation/uikit/uifontweightbold",
         "doc://com.apple.documentation/documentation/uikit/uifontweightheavy",
         "doc://com.apple.documentation/documentation/uikit/uifontweightblack"
-      ]
+      ],
+      "anchor": "2901696"
     },
     {
       "kind": "taskGroup",
       "title": "Balancing the Appearance of Symbols and Text",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/3294271-uiimagesymbolweightforfontweight"
-      ]
+      ],
+      "anchor": "3530886"
     }
   ],
   "seeAlsoSections": [
@@ -528,6 +543,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -549,7 +565,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The following constants represent font weights that can be used as values for "
+              "text": "Use system-defined constants as interchangeable values for "
             },
             {
               "type": "reference",
@@ -558,7 +574,7 @@
             },
             {
               "type": "text",
-              "text": ". You can also use these constants to specify the weight parameter in "
+              "text": ". Each constant corresponds to a different value that indicates the weight of a font. Use these constants to specify the weight parameter in "
             },
             {
               "type": "reference",
@@ -567,9 +583,42 @@
             },
             {
               "type": "text",
-              "text": ". Most fonts don't include variants in all these font weights."
+              "text": ". When providing a weight that doesn’t precisely match a font face in the family, the system locates a face that most closely matches the request."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Font "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uifont/1619040-familynames"
+                },
+                {
+                  "type": "text",
+                  "text": " don’t include all system-defined font constants."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         },
         {
           "type": "paragraph",
@@ -579,7 +628,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

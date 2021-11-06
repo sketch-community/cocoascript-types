@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted before the list of open persistent stores changes."
+      "text": "A notification that posts immediately before the coordinator updates its collection of stores."
     }
   ],
   "documentVersion": 0,
@@ -42,35 +42,40 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@NSPersistentStoreCoordinatorStoresWillChangeNotification",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -163,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever persistent stores are added to or removed from a persistent store coordinator, or when store UUIDs change."
+          "text": "A notification that posts when a coordinator adds, removes, or updates a persistent store."
         }
       ]
     },
@@ -193,7 +198,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted before the list of open persistent stores changes."
+          "text": "A notification that posts immediately before the coordinator updates its collection of stores."
         }
       ]
     },
@@ -207,7 +212,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever a persistent store is removed from a persistent store coordinator."
+          "text": "A notification that posts immediately before a coordinator removes a persistent store."
         }
       ]
     },
@@ -226,7 +231,7 @@
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoresdidchangenotification",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorwillremovestorenotification"
       ],
-      "title": "Adding, Removing, and Deleting Stores",
+      "title": "Receiving Store Notifications",
       "generated": true
     }
   ],
@@ -268,6 +273,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -307,7 +313,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

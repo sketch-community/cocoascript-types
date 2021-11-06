@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An unspecified message format."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@INOutgoingMessageType@INOutgoingMessageTypeUnknown",
+    "parent": {
+      "title": "INOutgoingMessageType"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,7 +110,55 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inoutgoingmessagetype"
+      "url": "/documentation/sirikit/inoutgoingmessagetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the message."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessagetext": {
+      "title": "INOutgoingMessageTypeOutgoingMessageText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessagetext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessagetext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Plain text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio": {
+      "title": "INOutgoingMessageTypeOutgoingMessageAudio",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An audio recording."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeunknown": {
+      "title": "INOutgoingMessageTypeUnknown",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeunknown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeunknown",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An unspecified message format."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -106,6 +168,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessagetext",
+        "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio"
+      ],
+      "title": "Message Types",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -126,6 +198,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -134,7 +207,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

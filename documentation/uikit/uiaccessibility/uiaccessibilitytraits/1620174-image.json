@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The accessibility element should be treated as an image."
+      "text": "The accessibility element behaves like an image."
     }
   ],
   "documentVersion": 0,
@@ -11,14 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits"
@@ -26,7 +26,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits"
       ],
@@ -39,8 +39,16 @@
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits"
@@ -59,45 +67,8 @@
         "doc://com.apple.documentation/documentation/foundation/object_runtime",
         "doc://com.apple.documentation/documentation/objectivec/nsobject",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/foundation",
-        "doc://com.apple.documentation/documentation/foundation/object_runtime",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/objectivec",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/foundation",
-        "doc://com.apple.documentation/documentation/foundation/object_runtime",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits"
       ]
     ]
   },
@@ -120,25 +91,33 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@UIAccessibilityTraitImage",
+    "parent": {
+      "title": "UIAccessibilityTraits"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -156,8 +135,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -192,10 +171,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -264,14 +243,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits": {
-      "title": "Accessibility Traits",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits",
-      "url": "/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -322,6 +293,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -343,7 +315,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This trait can be combined with the button or link traits."
+              "text": "You can combine this trait with the button or link traits."
             }
           ]
         }
@@ -351,7 +323,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

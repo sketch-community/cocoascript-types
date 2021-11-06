@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a Boolean value that indicates whether the user has turned on Reduce Motion and the Prefer Cross-Fade Transitions accessibility setting."
+      "text": "A Boolean value that indicates whether the Reduce Motion and the Prefer Cross-Fade Transitions settings are in an enabled state."
     }
   ],
   "documentVersion": 0,
@@ -11,14 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
@@ -40,12 +40,12 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ]
     ]
   },
@@ -68,20 +68,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@F@UIAccessibilityPrefersCrossFadeTransitions",
+    "parent": {
+      "title": "UIAccessibility"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -99,8 +107,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -135,10 +143,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -157,7 +165,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility"
+      "url": "/documentation/uikit/uiaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A namespace for accessibility symbols for UIKit apps."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -217,7 +231,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled AssistiveTouch."
+          "text": "A Boolean value that indicates whether AssistiveTouch is in an enabled state."
         }
       ],
       "fragments": [
@@ -235,118 +249,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615187-isvoiceoverrunning": {
-      "title": "isVoiceOverRunning",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615187-isvoiceoverrunning",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1615187-isvoiceoverrunning",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled VoiceOver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "isVoiceOverRunning"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615131-isswitchcontrolrunning": {
-      "title": "isSwitchControlRunning",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615131-isswitchcontrolrunning",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1615131-isswitchcontrolrunning",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled Switch Control. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "isSwitchControlRunning"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615103-isshaketoundoenabled": {
-      "title": "isShakeToUndoEnabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615103-isshaketoundoenabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1615103-isshaketoundoenabled",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Shake to Undo setting."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "isShakeToUndoEnabled"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615112-isclosedcaptioningenabled": {
-      "title": "isClosedCaptioningEnabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615112-isclosedcaptioningenabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1615112-isclosedcaptioningenabled",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Closed Captions + SDH setting."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "isClosedCaptioningEnabled"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615156-isboldtextenabled": {
       "title": "isBoldTextEnabled",
       "type": "topic",
@@ -357,7 +259,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Bold Text setting. "
+          "text": "A Boolean value that indicates whether the Bold Text setting is in an enabled state. "
         }
       ],
       "fragments": [
@@ -375,6 +277,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615112-isclosedcaptioningenabled": {
+      "title": "isClosedCaptioningEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615112-isclosedcaptioningenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615112-isclosedcaptioningenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the Closed Captions + SDH setting is in an enabled state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "isClosedCaptioningEnabled"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615087-isdarkersystemcolorsenabled": {
       "title": "isDarkerSystemColorsEnabled",
       "type": "topic",
@@ -385,7 +315,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Increase Contrast setting."
+          "text": "A Boolean value that indicates whether the Increase Contrast setting is in an enabled state."
         }
       ],
       "fragments": [
@@ -413,7 +343,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Grayscale option in the Color Filters setting."
+          "text": "A Boolean value that indicates whether the Color Filters and the Grayscale settings are in an enabled state."
         }
       ],
       "fragments": [
@@ -441,7 +371,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled Guided Access."
+          "text": "A Boolean value that indicates whether the Guided Access setting is in an enabled state."
         }
       ],
       "fragments": [
@@ -469,7 +399,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Classic Invert setting."
+          "text": "A Boolean value that indicates whether the Classic Invert setting is in an enabled state."
         }
       ],
       "fragments": [
@@ -497,7 +427,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Mono Audio setting."
+          "text": "A Boolean value that indicates whether the Mono Audio setting is in an enabled state."
         }
       ],
       "fragments": [
@@ -515,6 +445,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3131973-isonoffswitchlabelsenabled": {
+      "title": "isOnOffSwitchLabelsEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3131973-isonoffswitchlabelsenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/3131973-isonoffswitchlabelsenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the On/Off Labels setting is in an enabled state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "isOnOffSwitchLabelsEnabled"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615133-isreducemotionenabled": {
       "title": "isReduceMotionEnabled",
       "type": "topic",
@@ -525,7 +483,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Reduce Motion setting."
+          "text": "A Boolean value that indicates whether the Reduce Motion setting is in an enabled state."
         }
       ],
       "fragments": [
@@ -553,7 +511,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Reduce Transparency setting."
+          "text": "A Boolean value that indicates whether the Reduce Transparency setting is in an enabled state."
         }
       ],
       "fragments": [
@@ -571,6 +529,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615103-isshaketoundoenabled": {
+      "title": "isShakeToUndoEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615103-isshaketoundoenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615103-isshaketoundoenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the Shake to Undo setting is in an enabled state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "isShakeToUndoEnabled"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615109-isspeakscreenenabled": {
       "title": "isSpeakScreenEnabled",
       "type": "topic",
@@ -581,7 +567,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Speak Screen setting."
+          "text": "A Boolean value that indicates whether the Speak Screen setting is in an enabled state."
         }
       ],
       "fragments": [
@@ -609,7 +595,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the Speak Selection setting. "
+          "text": "A Boolean value that indicates whether the Speak Selection setting is in an enabled state. "
         }
       ],
       "fragments": [
@@ -627,17 +613,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3131973-isonoffswitchlabelsenabled": {
-      "title": "isOnOffSwitchLabelsEnabled",
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615131-isswitchcontrolrunning": {
+      "title": "isSwitchControlRunning",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3131973-isonoffswitchlabelsenabled",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615131-isswitchcontrolrunning",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/3131973-isonoffswitchlabelsenabled",
+      "url": "/documentation/uikit/uiaccessibility/1615131-isswitchcontrolrunning",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled the On/Off Labels setting."
+          "text": "A Boolean value that indicates whether the Switch Control setting is in an enabled state. "
         }
       ],
       "fragments": [
@@ -647,7 +633,91 @@
         },
         {
           "kind": "identifier",
-          "text": "isOnOffSwitchLabelsEnabled"
+          "text": "isSwitchControlRunning"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled": {
+      "title": "isVideoAutoplayEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the Auto-Play Video Previews setting is in an enabled state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "isVideoAutoplayEnabled"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615187-isvoiceoverrunning": {
+      "title": "isVoiceOverRunning",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615187-isvoiceoverrunning",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615187-isvoiceoverrunning",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether VoiceOver is in an enabled state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "isVoiceOverRunning"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor": {
+      "title": "shouldDifferentiateWithoutColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the Differentiate Without Color setting is in an enabled state.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "shouldDifferentiateWithoutColor"
         },
         {
           "kind": "text",
@@ -665,7 +735,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that indicates whether the user has turned on the Button Shapes accessibility setting."
+          "text": "A Boolean value that indicates whether the Button Shapes setting is in an enabled state."
         }
       ],
       "fragments": [
@@ -693,7 +763,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that indicates whether the user has turned on Reduce Motion and the Prefer Cross-Fade Transitions accessibility setting."
+          "text": "A Boolean value that indicates whether the Reduce Motion and the Prefer Cross-Fade Transitions settings are in an enabled state."
         }
       ],
       "fragments": [
@@ -723,21 +793,23 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648479-isassistivetouchrunning",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615187-isvoiceoverrunning",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615131-isswitchcontrolrunning",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615103-isshaketoundoenabled",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615112-isclosedcaptioningenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615156-isboldtextenabled",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615112-isclosedcaptioningenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615087-isdarkersystemcolorsenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615189-isgrayscaleenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615173-isguidedaccessenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615167-isinvertcolorsenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615123-ismonoaudioenabled",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3131973-isonoffswitchlabelsenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615133-isreducemotionenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615074-isreducetransparencyenabled",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615103-isshaketoundoenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615109-isspeakscreenenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615154-isspeakselectionenabled",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3131973-isonoffswitchlabelsenabled",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615131-isswitchcontrolrunning",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615187-isvoiceoverrunning",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3618943-buttonshapesenabled"
       ],
       "title": "Capabilities",
@@ -798,6 +870,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -806,7 +879,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

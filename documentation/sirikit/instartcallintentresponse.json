@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INStartCallIntentResponse",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -241,6 +246,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason": {
+      "title": "INStartCallCallRecordToCallBackUnsupportedReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reason why your app can’t use a record to call a person back."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -265,7 +284,8 @@
       "title": "Initializing the Response Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse/3165954-initwithcode"
-      ]
+      ],
+      "anchor": "3167065"
     },
     {
       "kind": "taskGroup",
@@ -273,16 +293,18 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse/3165953-code",
         "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponsecode"
-      ]
+      ],
+      "anchor": "3167066"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling",
-        "doc://com.apple.documentation/documentation/sirikit/instartcallintent"
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason"
       ],
-      "title": "Start a Call",
+      "title": "Starting a Call",
       "generated": true
     }
   ],
@@ -320,6 +342,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -420,7 +443,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

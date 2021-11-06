@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates an object to manage phone calls on a hands-free Bluetooth device."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,15 +34,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)IOBluetoothHandsFreeDevice(im)initWithDevice:delegate:",
+    "parent": {
+      "title": "IOBluetoothHandsFreeDevice"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -77,7 +86,21 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object you use to manage phone calls on a connected Bluetooth hands-free phone or headset."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate": {
+      "title": "IOBluetoothHandsFreeDeviceDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate"
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice": {
       "title": "IOBluetoothDevice",
@@ -86,6 +109,30 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/iobluetooth/iobluetoothdevice"
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1428834-initwithdevice": {
+      "title": "initWithDevice:delegate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1428834-initwithdevice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevice/1428834-initwithdevice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an object to manage phone calls on a hands-free Bluetooth device."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithDevice:delegate:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -176,10 +223,55 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "device",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A Bluetooth device."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "delegate",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A delegate that conforms to the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate"
+                },
+                {
+                  "type": "text",
+                  "text": " protocol."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

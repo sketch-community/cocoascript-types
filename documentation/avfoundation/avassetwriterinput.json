@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A writer used to append media samples to a single track of an asset writer's output file."
+      "text": "An object that appends media samples to a track in an asset writer’s output file."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInput",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,14 +114,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref": {
-      "title": "CMSampleBufferRef",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coremedia/cmsamplebufferref"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata": {
       "title": "readyForMoreMediaData",
       "type": "topic",
@@ -127,65 +124,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates the readiness of the input to accept more media data."
+          "text": "A Boolean value that indicates whether the input is ready to accept media data."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetreader": {
-      "title": "AVAssetReader",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreader",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetreader"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue": {
-      "title": "requestMediaDataWhenReadyOnQueue:usingBlock:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Instructs the receiver to invoke a block repeatedly, at its convenience, to gather media data for writing to the output."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "requestMediaDataWhenReadyOnQueue:usingBlock:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput": {
-      "title": "AVCaptureOutput",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcaptureoutput"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -205,7 +146,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new writer input object initialized with the specified media type and output settings. "
+          "text": "Returns a new input to append sample buffers of the specified type to the output file."
         }
       ],
       "fragments": [
@@ -219,30 +160,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype": {
-      "title": "assetWriterInputWithMediaType:outputSettings:sourceFormatHint:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a new writer input object initialized with the specified media type, output settings, and source format hint. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "assetWriterInputWithMediaType:outputSettings:sourceFormatHint:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385912-initwithmediatype": {
       "title": "initWithMediaType:outputSettings:",
       "type": "topic",
@@ -253,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initialize a writer input object with the specified media type and output settings."
+          "text": "Creates an input to append sample buffers of the specified type to the output file."
         }
       ],
       "fragments": [
@@ -267,6 +184,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype": {
+      "title": "assetWriterInputWithMediaType:outputSettings:sourceFormatHint:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new input that appends sample buffers of the specified type and format hint to the output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "assetWriterInputWithMediaType:outputSettings:sourceFormatHint:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype": {
       "title": "initWithMediaType:outputSettings:sourceFormatHint:",
       "type": "topic",
@@ -277,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initialize a writer input object with the specified media type, output settings, and source hint."
+          "text": "Creates an input that appends sample buffers of the specified type and format hint to the output file."
         }
       ],
       "fragments": [
@@ -291,79 +232,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings": {
-      "title": "Video Settings",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387437-naturalsize": {
+      "title": "naturalSize",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetwriterinput/video_settings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Define output image and video formats by using the key and value constants."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer": {
-      "title": "appendSampleBuffer:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387437-naturalsize",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
+      "url": "/documentation/avfoundation/avassetwriterinput/1387437-naturalsize",
       "abstract": [
         {
           "type": "text",
-          "text": "Appends samples to the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "appendSampleBuffer:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390122-markasfinished": {
-      "title": "markAsFinished",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390122-markasfinished",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1390122-markasfinished",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the writer it can't append more buffers to this input."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "markAsFinished"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386328-metadata": {
-      "title": "metadata",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386328-metadata",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1386328-metadata",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The collection of track-level metadata to associate with the asset and for carriage in the output file."
+          "text": "The natural display dimensions of the output’s visual media."
         }
       ]
     },
@@ -377,63 +256,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The transform specified in the output file as the preferred transformation of the visual media data for display purposes."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale": {
-      "title": "mediaTimeScale",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Specifies the media time scale to be used."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime": {
-      "title": "expectsMediaDataInRealTime",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the input should tailor its processing of media data for real-time sources."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled": {
-      "title": "marksOutputTrackAsEnabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns whether the receiver’s track is enabled."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387437-naturalsize": {
-      "title": "naturalSize",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387437-naturalsize",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387437-naturalsize",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Size specified in the output file as the natural dimensions of the visual media data for display."
+          "text": "The transform to use for display of the output’s visual media."
         }
       ]
     },
@@ -447,125 +270,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The preferred volume level for storing in the output file."
+          "text": "The volume to prefer for playback of the output’s audio data."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin": {
-      "title": "addTrackAssociationWithTrackOfInput:type:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale": {
+      "title": "mediaTimeScale",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin",
+      "url": "/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale",
       "abstract": [
         {
           "type": "text",
-          "text": "Associates the track corresponding to the specified input with the track corresponding with the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addTrackAssociationWithTrackOfInput:type:"
+          "text": "The time scale of the track in the output file."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko": {
-      "title": "canAddTrackAssociationWithTrackOfInput:type:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled": {
+      "title": "marksOutputTrackAsEnabled",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko",
+      "url": "/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled",
       "abstract": [
         {
           "type": "text",
-          "text": "Validates the association between the tracks and their corresponding pair of inputs."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "canAddTrackAssociationWithTrackOfInput:type:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385565-mediatype": {
-      "title": "mediaType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385565-mediatype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1385565-mediatype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The media type of the samples that are appendable to the input."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388406-outputsettings": {
-      "title": "outputSettings",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388406-outputsettings",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1388406-outputsettings",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The settings used for encoding the media appended to the output."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint": {
-      "title": "sourceFormatHint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A hint about the format of the buffers to appended."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl": {
-      "title": "sampleReferenceBaseURL",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The base URL sample references are relative to."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390768-extendedlanguagetag": {
-      "title": "extendedLanguageTag",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390768-extendedlanguagetag",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1390768-extendedlanguagetag",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Language tag to associate with the track corresponding to the receiver"
+          "text": "A Boolean value that indicates whether to enable a track in the output for playback and processing."
         }
       ]
     },
@@ -579,87 +312,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Language to associate with the track corresponding to the receiver."
+          "text": "The language code of the input’s track."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses": {
-      "title": "canPerformMultiplePasses",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390768-extendedlanguagetag": {
+      "title": "extendedLanguageTag",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390768-extendedlanguagetag",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses",
+      "url": "/documentation/avfoundation/avassetwriterinput/1390768-extendedlanguagetag",
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the input might perform multiple passes over appended media data."
+          "text": "The extended language for the input’s track."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription": {
-      "title": "currentPassDescription",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386328-metadata": {
+      "title": "metadata",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386328-metadata",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription",
+      "url": "/documentation/avfoundation/avassetwriterinput/1386328-metadata",
       "abstract": [
         {
           "type": "text",
-          "text": "An object that describes the requirements, such as source time ranges to append or re-append, to the current pass."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpassdescription": {
-      "title": "AVAssetWriterInputPassDescription",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpassdescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputpassdescription",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that defines an interface for querying about the requirements of the current pass."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished": {
-      "title": "markCurrentPassAsFinished",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Instructs the receiver to analyze the appended media data and determine whether to improve the results by re-encoding certain segments."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "markCurrentPassAsFinished"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo": {
-      "title": "performsMultiPassEncodingIfSupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the input should attempt to encode the source media data using multiple passes."
+          "text": "The track-level metadata to write to the output."
         }
       ]
     },
@@ -687,31 +368,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The duration used for each chunk of sample data in the output file."
+          "text": "The duration to use for each chunk of sample data in the output file."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu": {
-      "title": "respondToEachPassDescriptionOnQueue:usingBlock:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl": {
+      "title": "sampleReferenceBaseURL",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu",
+      "url": "/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl",
       "abstract": [
         {
           "type": "text",
-          "text": "Instructs the receiver to invoke a client-supplied block whenever a new pass has begun."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "respondToEachPassDescriptionOnQueue:usingBlock:"
+          "text": "The base URL sample references are relative to."
         }
       ]
     },
@@ -725,7 +396,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Specifies where to lay out the media data and whether to interleave the media data as the main media data."
+          "text": "Specifies how the input lays out and interleaves media data."
         }
       ]
     },
@@ -739,7 +410,287 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value indicating how to lay out different media data and whether to interleave that media data."
+          "text": "A structure that indicates how to lay out and interleave media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko": {
+      "title": "canAddTrackAssociationWithTrackOfInput:type:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether it’s valid to associate another input’s track with this input’s track."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canAddTrackAssociationWithTrackOfInput:type:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin": {
+      "title": "addTrackAssociationWithTrackOfInput:type:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an association between input tracks."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addTrackAssociationWithTrackOfInput:type:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime": {
+      "title": "expectsMediaDataInRealTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the input tailors its processing for real-time sources."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue": {
+      "title": "requestMediaDataWhenReadyOnQueue:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the input to request media data, at its convenience, to write to the output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestMediaDataWhenReadyOnQueue:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer": {
+      "title": "appendSampleBuffer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Appends a sample buffer to an input to write to the output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "appendSampleBuffer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390122-markasfinished": {
+      "title": "markAsFinished",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390122-markasfinished",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1390122-markasfinished",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Marks the input as finished to indicate that you’re done appending samples to it."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "markAsFinished"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses": {
+      "title": "canPerformMultiplePasses",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the input may perform multiple passes over appended media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription": {
+      "title": "currentPassDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that describes the requirements for the current pass."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpassdescription": {
+      "title": "AVAssetWriterInputPassDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpassdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputpassdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines the interface to query for the requirements of the current pass."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished": {
+      "title": "markCurrentPassAsFinished",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the input to analyze the appended media to determine whether it can improve the results by reencoding certain segments."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "markCurrentPassAsFinished"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo": {
+      "title": "performsMultiPassEncodingIfSupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the input attempts to encode the source media data using multiple passes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu": {
+      "title": "respondToEachPassDescriptionOnQueue:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the input to invoke a callback whenever it begins a new pass."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "respondToEachPassDescriptionOnQueue:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385565-mediatype": {
+      "title": "mediaType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385565-mediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1385565-mediatype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The media type of the samples that the input accepts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388406-outputsettings": {
+      "title": "outputSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388406-outputsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1388406-outputsettings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The settings to use for encoding media data you append to the output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint": {
+      "title": "sourceFormatHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A hint about the format of the sample buffers to append to the input."
         }
       ]
     },
@@ -771,6 +722,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color": {
+      "title": "Evaluating an App’s Video Color",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant": {
+      "title": "AVOutputSettingsAssistant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingsassistant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that builds audio and video output settings dictionaries."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
       "title": "AVAssetWriter",
       "type": "topic",
@@ -781,21 +760,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
-      "title": "AVAssetWriterDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterdelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A delegate protocol that defines the methods to implement to be an asset writer delegate."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -809,7 +774,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -823,7 +788,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+          "text": "An object that appends video samples to an asset writer input."
         }
       ]
     },
@@ -837,7 +802,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
+          "text": "An object that appends timed metadata groups to an asset writer input."
         }
       ]
     },
@@ -851,7 +816,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A group of tracks in a mutually exclusive relationship."
+          "text": "A group of inputs with tracks that are mutually exclusive to each other for playback or processing."
         }
       ]
     },
@@ -861,16 +826,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -886,63 +841,76 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Creating an Asset Writer Input Instance",
+      "title": "Creating an Input",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449070-assetwriterinputwithmediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385912-initwithmediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype"
+      ],
+      "anchor": "1669695"
     },
     {
       "kind": "taskGroup",
-      "title": "Adding Media Samples",
+      "title": "Configuring Presentation",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390122-markasfinished",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Configuring a Writer Input",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386328-metadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390183-transform",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387437-naturalsize",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389949-preferredvolume"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390183-transform",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389949-preferredvolume",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled"
+      ],
+      "anchor": "3853067"
     },
     {
       "kind": "taskGroup",
-      "title": "Managing Track Associations",
+      "title": "Configuring Language Support",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388507-languagecode",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390768-extendedlanguagetag"
+      ],
+      "anchor": "3853065"
     },
     {
       "kind": "taskGroup",
-      "title": "Inspecting a Writer Input",
+      "title": "Configuring Metadata",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385565-mediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388406-outputsettings",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386328-metadata"
+      ],
+      "anchor": "1669799"
     },
     {
       "kind": "taskGroup",
-      "title": "Managing Language Settings",
+      "title": "Configuring Media Data Layout",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390768-extendedlanguagetag",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388507-languagecode"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmediadatalocation"
+      ],
+      "anchor": "2882470"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Track Associations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin"
+      ],
+      "anchor": "1669880"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Appending Media Samples",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390122-markasfinished"
+      ],
+      "anchor": "1669746"
     },
     {
       "kind": "taskGroup",
@@ -953,18 +921,19 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpassdescription",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu"
-      ]
+      ],
+      "anchor": "1678086"
     },
     {
       "kind": "taskGroup",
-      "title": "Specifying Media Data Layout",
+      "title": "Inspecting an Input",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmediadatalocation"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385565-mediatype",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388406-outputsettings",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint"
+      ],
+      "anchor": "1669917"
     }
   ],
   "seeAlsoSections": [
@@ -972,8 +941,9 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup"
@@ -1016,6 +986,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -1037,41 +1008,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriterInput"
-            },
-            {
-              "type": "text",
-              "text": " object can append media samples packaged as "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref"
-            },
-            {
-              "type": "text",
-              "text": " objects, or collections of metadata, to a single track of the output file of an AVAssetWriter object."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "When there are multiple inputs, "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriter"
-            },
-            {
-              "type": "text",
-              "text": " tries to write media data in an ideal interleaving pattern for efficiency in storage and playback. Each of its inputs signals its readiness to receive media data for writing according to that pattern via the value of "
+              "text": "Create an asset writer input to write a single track of media, and optional track-level metadata, to the output file. To write multiple concurrent tracks with ideal interleaving of media data, observe the value of the "
             },
             {
               "type": "reference",
@@ -1080,198 +1017,7 @@
             },
             {
               "type": "text",
-              "text": ". If "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata"
-            },
-            {
-              "type": "text",
-              "text": " is "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": ", an input can accept additional media data while maintaining appropriate interleaving. You can only append media data to an input while its "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata"
-            },
-            {
-              "type": "text",
-              "text": " property is "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": ". "
-            }
-          ]
-        },
-        {
-          "type": "unorderedList",
-          "items": [
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "If you’re writing media data from a non-real-time source, such as an instance of "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": false,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreader"
-                    },
-                    {
-                      "type": "text",
-                      "text": ", you should hold off on generating or obtaining more media data to append to an input when the value of "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": false,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata"
-                    },
-                    {
-                      "type": "text",
-                      "text": " is "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": false,
-                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-                    },
-                    {
-                      "type": "text",
-                      "text": ". To help with control of the supply of non-real-time media data, you can use "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue"
-                    },
-                    {
-                      "type": "text",
-                      "text": " to specify a block that the input should invoke whenever it’s ready to append input."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "If you’re writing media data from a real-time source such as an "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureoutput"
-                    },
-                    {
-                      "type": "text",
-                      "text": " object, you should set the input’s "
-                    },
-                    {
-                      "type": "codeVoice",
-                      "code": "expectsMediaDataInRealTime"
-                    },
-                    {
-                      "type": "text",
-                      "text": " property to "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": false,
-                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-                    },
-                    {
-                      "type": "text",
-                      "text": " to ensure to calculate the value of "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": false,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata"
-                    },
-                    {
-                      "type": "text",
-                      "text": " appropriately. When "
-                    },
-                    {
-                      "type": "codeVoice",
-                      "code": "expectsMediaDataInRealTime"
-                    },
-                    {
-                      "type": "text",
-                      "text": " is "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": false,
-                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-                    },
-                    {
-                      "type": "text",
-                      "text": ", "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": false,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata"
-                    },
-                    {
-                      "type": "text",
-                      "text": " will become "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": false,
-                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-                    },
-                    {
-                      "type": "text",
-                      "text": " only when the input cannot process media samples as quickly as they are provided by the client. If "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": false,
-                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata"
-                    },
-                    {
-                      "type": "text",
-                      "text": " becomes "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": false,
-                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-                    },
-                    {
-                      "type": "text",
-                      "text": " for a real-time source, the client may need to drop samples or consider reducing the data rate of appended samples."
-                    }
-                  ]
-                }
-              ]
+              "text": " property of each input."
             }
           ]
         },
@@ -1280,52 +1026,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The value of "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata"
-            },
-            {
-              "type": "text",
-              "text": " will often change from "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-            },
-            {
-              "type": "text",
-              "text": " to "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": " asynchronously while processing and writing previously-supplied media data to the output. It is possible for all of an asset writer’s inputs temporarily to return "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-            },
-            {
-              "type": "text",
-              "text": " for "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": "You can use an asset writer input to create tracks in a QuickTime movie file that aren’t self-contained, and instead reference sample data that exists in another file."
             }
           ]
         }
@@ -1333,7 +1034,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

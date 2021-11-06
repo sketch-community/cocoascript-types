@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Boolean value that indicates whether the layer needs to flush its state to continue decoding frames."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVSampleBufferDisplayLayer(py)requiresFlushToResumeDecoding",
+    "parent": {
+      "title": "AVSampleBufferDisplayLayer"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,6 +123,56 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrenderingstatus/avqueuedsamplebufferrenderingstatusfailed": {
+      "title": "AVQueuedSampleBufferRenderingStatusFailed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrenderingstatus/avqueuedsamplebufferrenderingstatusfailed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avqueuedsamplebufferrenderingstatus/avqueuedsamplebufferrenderingstatusfailed"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrenderingstatus/avqueuedsamplebufferrenderingstatusunknown": {
+      "title": "AVQueuedSampleBufferRenderingStatusUnknown",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrenderingstatus/avqueuedsamplebufferrenderingstatusunknown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avqueuedsamplebufferrenderingstatus/avqueuedsamplebufferrenderingstatusunknown"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer/1385692-flush": {
+      "title": "flush",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer/1385692-flush",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferdisplaylayer/1385692-flush",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "flush"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayerrequiresflushtoresumedecodingdidchangenotification": {
+      "title": "AVSampleBufferDisplayLayerRequiresFlushToResumeDecodingDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayerrequiresflushtoresumedecodingdidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferdisplaylayerrequiresflushtoresumedecodingdidchangenotification"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer/1387778-requestmediadatawhenreadyonqueue": {
       "title": "requestMediaDataWhenReadyOnQueue:usingBlock:",
       "type": "topic",
@@ -153,7 +217,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer/3563946-requiresflushtoresumedecoding",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avsamplebufferdisplaylayer/3563946-requiresflushtoresumedecoding"
+      "url": "/documentation/avfoundation/avsamplebufferdisplaylayer/3563946-requiresflushtoresumedecoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the layer needs to flush its state to continue decoding frames."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer/1388557-stoprequestingmediadata": {
       "title": "stopRequestingMediaData",
@@ -234,16 +304,109 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When an app enters a state where use of video decoder resources isn’t permissible, the value of this property changes to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " and the display layer’s status changes to a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrenderingstatus/avqueuedsamplebufferrenderingstatusfailed"
+            },
+            {
+              "type": "text",
+              "text": " state."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To resume rendering sample buffers using the display layer after this property’s value is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ", apps must first reset the display layer’s status to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrenderingstatus/avqueuedsamplebufferrenderingstatusunknown"
+            },
+            {
+              "type": "text",
+              "text": ", which you do by calling the layer’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer/1385692-flush"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This property isn’t key-value observable. Instead, observe changes to this property value by observing notifications of type "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayerrequiresflushtoresumedecodingdidchangenotification"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

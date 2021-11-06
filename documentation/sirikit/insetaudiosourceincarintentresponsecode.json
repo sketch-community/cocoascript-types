@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponse"
       ]
     ]
@@ -35,20 +35,31 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:@T@INSetAudioSourceInCarIntentResponseCode",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -83,10 +94,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -98,6 +109,14 @@
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
@@ -117,9 +136,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A response code indicating that the status was not specified."
+          "text": "A response code indicating that the status isn’t specified."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode/insetaudiosourceincarintentresponsecodeready": {
       "title": "INSetAudioSourceInCarIntentResponseCodeReady",
@@ -131,9 +151,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You are ready to handle the intent."
+          "text": "You’re ready to handle the intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode/insetaudiosourceincarintentresponsecodeinprogress": {
       "title": "INSetAudioSourceInCarIntentResponseCodeInProgress",
@@ -145,9 +166,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You are in the process of handling the intent."
+          "text": "You’re in the process of handling the intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode/insetaudiosourceincarintentresponsecodesuccess": {
       "title": "INSetAudioSourceInCarIntentResponseCodeSuccess",
@@ -161,7 +183,8 @@
           "type": "text",
           "text": "You successfully handled the intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode/insetaudiosourceincarintentresponsecodefailure": {
       "title": "INSetAudioSourceInCarIntentResponseCodeFailure",
@@ -175,7 +198,8 @@
           "type": "text",
           "text": "You were unable to change the audio source."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode/insetaudiosourceincarintentresponsecodefailurerequiringapplaunch": {
       "title": "INSetAudioSourceInCarIntentResponseCodeFailureRequiringAppLaunch",
@@ -189,7 +213,8 @@
           "type": "text",
           "text": "The user must launch your app to change the audio source."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponse/1833289-code": {
       "title": "code",
@@ -203,7 +228,8 @@
           "type": "text",
           "text": "The code indicating whether you successfully handled the intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode": {
       "title": "INSetAudioSourceInCarIntentResponseCode",
@@ -217,7 +243,8 @@
           "type": "text",
           "text": "Constants indicating the state of the response."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -227,6 +254,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -238,7 +285,8 @@
         "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode/insetaudiosourceincarintentresponsecodesuccess",
         "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode/insetaudiosourceincarintentresponsecodefailure",
         "doc://com.apple.documentation/documentation/sirikit/insetaudiosourceincarintentresponsecode/insetaudiosourceincarintentresponsecodefailurerequiringapplaunch"
-      ]
+      ],
+      "anchor": "1650341"
     }
   ],
   "seeAlsoSections": [
@@ -312,6 +360,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -319,7 +368,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

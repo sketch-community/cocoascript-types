@@ -35,30 +35,40 @@
         "name": "iOS",
         "introducedAt": "7.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
         "deprecatedAt": "11.0",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CLLocationManager(im)startRangingBeaconsInRegion:",
+    "parent": {
+      "title": "CLLocationManager"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -143,38 +153,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/clbeaconregion": {
-      "title": "CLBeaconRegion",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/clbeaconregion",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/clbeaconregion"
-    },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423804-requeststateforregion": {
-      "title": "requestStateForRegion:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423804-requeststateforregion",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/cllocationmanager/1423804-requeststateforregion",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Retrieves the state of a region asynchronously. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "requestStateForRegion:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3240607-startrangingbeaconssatisfyingcon": {
       "title": "startRangingBeaconsSatisfyingConstraint:",
       "type": "topic",
@@ -196,6 +174,38 @@
         {
           "kind": "identifier",
           "text": "startRangingBeaconsSatisfyingConstraint:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clbeaconregion": {
+      "title": "CLBeaconRegion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clbeaconregion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clbeaconregion"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423804-requeststateforregion": {
+      "title": "requestStateForRegion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423804-requeststateforregion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/1423804-requeststateforregion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the state of a region asynchronously."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestStateForRegion:"
         }
       ]
     },
@@ -310,6 +320,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3240607-startrangingbeaconssatisfyingcon"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -378,6 +408,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -446,7 +477,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates a new mutable video composition with the specified asset properties."
+      "text": "Creates a mutable video composition with the specified asset properties."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVMutableVideoComposition(cm)videoCompositionWithPropertiesOfAsset:",
+    "parent": {
+      "title": "AVMutableVideoComposition"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -207,7 +215,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a new mutable video composition with the specified asset properties."
+          "text": "Creates a mutable video composition with the specified asset properties."
         }
       ],
       "fragments": [
@@ -218,6 +226,30 @@
         {
           "kind": "identifier",
           "text": "videoCompositionWithPropertiesOfAsset:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof": {
+      "title": "videoCompositionWithPropertiesOfAsset:prototypeInstruction:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a mutable video composition with the specified asset properties and a prototype video composition instruction."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "videoCompositionWithPropertiesOfAsset:prototypeInstruction:"
         }
       ]
     },
@@ -245,24 +277,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof": {
-      "title": "videoCompositionWithPropertiesOfAsset:prototypeInstruction:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "videoCompositionWithPropertiesOfAsset:prototypeInstruction:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -275,8 +289,8 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1519720-videocomposition",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1387006-videocompositionwithasset",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof"
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/3200159-videocompositionwithpropertiesof",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1387006-videocompositionwithasset"
       ],
       "title": "Creating a Video Composition",
       "generated": true
@@ -342,6 +356,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -430,7 +445,7 @@
             },
             {
               "type": "text",
-              "text": " has instructions that respect the spatial properties and time ranges of the specified asset's video tracks."
+              "text": " has instructions that respect the spatial properties and time ranges of the specified asset’s video tracks."
             }
           ]
         },
@@ -471,7 +486,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " among the asset's video tracks. If the "
+                      "text": " among the asset’s video tracks. If the "
                     },
                     {
                       "type": "reference",
@@ -480,7 +495,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " of all of the asset's video tracks is 0, a default framerate of 30fps is used."
+                      "text": " of all of the asset’s video tracks is 0, a default framerate of 30fps is used."
                     }
                   ]
                 }
@@ -538,7 +553,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " will be set to a value that encompasses all of the asset's video tracks."
+                      "text": " will be set to a value that encompasses all of the asset’s video tracks."
                     }
                   ]
                 }
@@ -602,7 +617,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

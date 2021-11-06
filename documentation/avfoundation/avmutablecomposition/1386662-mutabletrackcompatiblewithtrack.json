@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a track in the receiver into which any time range of a given asset track can be inserted."
+      "text": "Returns a composition track into which you can insert any time range of the specified asset track."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMutableComposition(im)mutableTrackCompatibleWithTrack:",
+    "parent": {
+      "title": "AVMutableComposition"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable object used to create a new composition from existing assets."
+          "text": "An object that you use to create a new composition from existing assets."
         }
       ]
     },
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Adds an empty track to the receiver."
+          "text": "Adds an empty track to a composition."
         }
       ],
       "fragments": [
@@ -162,6 +170,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
+      "title": "AVAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack": {
       "title": "AVMutableCompositionTrack",
       "type": "topic",
@@ -178,44 +194,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avassettrack"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1389937-tracks": {
-      "title": "tracks",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1389937-tracks",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecomposition/1389937-tracks",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of mutable composition tracks contained by the composition."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386818-removetrack": {
-      "title": "removeTrack:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386818-removetrack",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecomposition/1386818-removetrack",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Removes a specified track from the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "removeTrack:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386662-mutabletrackcompatiblewithtrack": {
       "title": "mutableTrackCompatibleWithTrack:",
       "type": "topic",
@@ -226,7 +204,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a track in the receiver into which any time range of a given asset track can be inserted."
+          "text": "Returns a composition track into which you can insert any time range of the specified asset track."
         }
       ],
       "fragments": [
@@ -240,17 +218,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1390074-trackwithtrackid": {
-      "title": "trackWithTrackID:",
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386818-removetrack": {
+      "title": "removeTrack:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1390074-trackwithtrackid",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386818-removetrack",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecomposition/1390074-trackwithtrackid",
+      "url": "/documentation/avfoundation/avmutablecomposition/1386818-removetrack",
       "abstract": [
         {
           "type": "text",
-          "text": "Provides a composition track associated with the specified track ID."
+          "text": "Removes a specified track from the composition."
         }
       ],
       "fragments": [
@@ -260,55 +238,7 @@
         },
         {
           "kind": "identifier",
-          "text": "trackWithTrackID:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic": {
-      "title": "tracksWithMediaCharacteristic:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Provides the composition tracks of the specified media characteristic associated with an asset."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "tracksWithMediaCharacteristic:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1385724-trackswithmediatype": {
-      "title": "tracksWithMediaType:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1385724-trackswithmediatype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecomposition/1385724-trackswithmediatype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Provides the composition tracks of the specified media type associated with an asset."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "tracksWithMediaType:"
+          "text": "removeTrack:"
         }
       ]
     },
@@ -323,12 +253,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1389937-tracks",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1387601-addmutabletrackwithmediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386818-removetrack",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1390074-trackwithtrackid",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1385724-trackswithmediatype"
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386818-removetrack"
       ],
       "title": "Managing Tracks",
       "generated": true
@@ -394,6 +320,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -416,7 +343,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "An AVAssetTrack from which a time range may be inserted."
+                  "text": "The asset track to find a composition track for."
                 }
               ]
             }
@@ -438,15 +365,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A mutable track in the receiver into which any time range of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "track"
-            },
-            {
-              "type": "text",
-              "text": " can be inserted. If no such track is available, the returns "
+              "text": "A mutable composition track, of "
             },
             {
               "type": "codeVoice",
@@ -454,7 +373,7 @@
             },
             {
               "type": "text",
-              "text": "."
+              "text": " if a compatible track isn’t available."
             }
           ]
         }
@@ -474,7 +393,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For best performance, you should keep the number of tracks of a composition should be kept to a minimum, corresponding to the number for which media data must be presented in parallel. If you want to present media data of the same type serially, even from multiple assets, you should use a single track of that media type. You use this method to identify a suitable existing target track for an insertion."
+              "text": "To optimize performance, limit the number of tracks to only what you need to present media data in parallel. To present media data of the same type serially, even from multiple assets, use a single track of that media type. You use this method to identify a suitable existing target track for an insertion."
             }
           ]
         },
@@ -483,7 +402,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If there is no compatible track available, you can create a new track of the same media type as "
+              "text": "If there’s no compatible track available, you can create a new track of the same media type as "
             },
             {
               "type": "codeVoice",
@@ -509,7 +428,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This method is similar to "
+              "text": "This method is the counterpart to "
             },
             {
               "type": "reference",
@@ -518,15 +437,16 @@
             },
             {
               "type": "text",
-              "text": " ("
+              "text": " on "
             },
             {
-              "type": "codeVoice",
-              "code": "AVAsset"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
             },
             {
               "type": "text",
-              "text": ")."
+              "text": "."
             }
           ]
         }
@@ -534,7 +454,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

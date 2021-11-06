@@ -36,8 +36,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,7 +109,7 @@
           "url": "https://docs-assets.developer.apple.com/published/ab65d5da7e/c41e023a-7bac-4588-ad1a-12b711a27dfc.png"
         }
       ],
-      "alt": "Example of an unsymmetric sparse matrix, empty cells represent zeros.",
+      "alt": "A four-by-three unsymmetric sparse matrix that has three empty cells.",
       "title": "Figure 1"
     },
     "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices#2878822": {
@@ -127,6 +127,14 @@
       "kind": "article",
       "role": "codeListing",
       "url": "/documentation/accelerate/creating_sparse_matrices#2878821"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure": {
+      "title": "SparseMatrixStructure",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsematrixstructure"
     },
     "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t": {
       "title": "SparseAttributes_t",
@@ -181,7 +189,7 @@
           "url": "https://docs-assets.developer.apple.com/published/ab65d5da7e/bf49da70-548f-405e-9362-95f2c57e4626.png"
         }
       ],
-      "alt": "Example of a symmetric sparse matrix, empty cells represent zeros.",
+      "alt": "A four-by-four symmetric sparse matrix that has four empty cells.",
       "title": "Figure 2"
     },
     "link-media-2904626": {
@@ -205,8 +213,16 @@
           "url": "https://docs-assets.developer.apple.com/published/ab65d5da7e/36c0bf34-e018-496e-ac86-fadc4d02206a.png"
         }
       ],
-      "alt": "Example of a symmetric sparse matrix, excluded values in gray.",
+      "alt": "A four-by-four symmetric sparse matrix that has four empty cells and four values that appear in a lighter color",
       "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure/2879299-attributes": {
+      "title": "attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure/2879299-attributes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsematrixstructure/2879299-attributes"
     },
     "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices#2878835": {
       "title": "Listing 5",
@@ -223,6 +239,14 @@
       "kind": "article",
       "role": "codeListing",
       "url": "/documentation/accelerate/creating_sparse_matrices#2878838"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure/2879307-blocksize": {
+      "title": "blockSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure/2879307-blocksize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsematrixstructure/2879307-blocksize"
     },
     "link-media-2904625": {
       "identifier": "link-media-2904625",
@@ -245,7 +269,7 @@
           "url": "https://docs-assets.developer.apple.com/published/ab65d5da7e/530d9d6a-31b2-465f-81fc-9566a0777d09.png"
         }
       ],
-      "alt": "Example of an unsymmetric sparse matrix with a block size of 3.",
+      "alt": "A nine-by-nine unsymmetric sparse matrix that has three rows of three blocks each.",
       "title": "Figure 4"
     },
     "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices#2878853": {
@@ -291,20 +315,6 @@
         {
           "type": "text",
           "text": "Create sparse matrices for factorization and solving systems."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods": {
-      "title": "Implementing Iterative Methods",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/accelerate/implementing_iterative_methods",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Use iterative methods to solve large problems faster and with a lower memory overhead than with direct methods.  "
         }
       ]
     },
@@ -361,7 +371,6 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
@@ -386,7 +395,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In the Accelerate framework, Sparse Solvers stores sparse matrices using Compressed Sparse Column (CSC) format. CSC stores a matrix as a series of column vectors where the nonzero entries are specified as "
+              "text": "In the Accelerate framework, the Sparse Solvers library stores sparse matrices using the compressed sparse column (CSC) format. CSC stores a matrix as a series of column vectors that specify the nonzero entries as "
             },
             {
               "type": "codeVoice",
@@ -394,7 +403,7 @@
             },
             {
               "type": "text",
-              "text": " pairs and the zero entries are omitted. "
+              "text": " pairs and omit the zero entries. "
             }
           ]
         },
@@ -403,7 +412,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Routines are provided to convert matrices from other formats to CSC. For more information, see "
+              "text": "The Accelerate framework provides routines to convert matrices from other formats to CSC. For more information, see "
             },
             {
               "type": "reference",
@@ -421,7 +430,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The Accelerate framework supports unsymmetric and symmetric sparse matrices, each of which can also be blocked. "
+              "text": "The Accelerate framework supports unsymmetric and symmetric sparse matrices, each of which can also be block matrices. "
             }
           ]
         },
@@ -531,7 +540,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " can be either unsymmetric or symmetric and is broken into sections called blocks. The blocks along the diagonal of a symmetrical block matrix must, themselves, be symmetrical."
+                      "text": " can be either unsymmetric or symmetric, and consists of sections called blocks. The blocks along the diagonal of a symmetric block matrix must, themselves, be symmetrical."
                     }
                   ]
                 }
@@ -576,16 +585,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": " "
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The first step in creating a matrix is to create two arrays that store the row indices and corresponding values:"
+              "text": " The first step in creating a matrix is to create two arrays that store the row indices and corresponding values."
             }
           ]
         },
@@ -667,11 +667,12 @@
             },
             {
               "type": "text",
-              "text": ", are used to create a "
+              "text": ", create a "
             },
             {
-              "type": "codeVoice",
-              "code": "SparseMatrixStructure"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure"
             },
             {
               "type": "text",
@@ -684,7 +685,7 @@
             },
             {
               "type": "text",
-              "text": " instance specify an unsymmetric matrix:"
+              "text": " instance specify an unsymmetric matrix."
             }
           ]
         },
@@ -713,7 +714,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "With the structure and values defined, you can create a "
+              "text": "After defining the structure and values, you can create a "
             },
             {
               "type": "reference",
@@ -722,7 +723,7 @@
             },
             {
               "type": "text",
-              "text": " instance:"
+              "text": " instance."
             }
           ]
         },
@@ -789,7 +790,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Because it is symmetric, the values in the upper triangle of the matrix are redundant and should be excluded from the data passed to the "
+              "text": "Because it’s symmetric, the values in the upper triangle of the matrix are redundant, so you need to exclude them from the data that passes to the "
             },
             {
               "type": "reference",
@@ -861,15 +862,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In this case, the "
+              "text": "In the following example, the "
             },
             {
-              "type": "codeVoice",
-              "code": "attributes"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure/2879299-attributes"
             },
             {
               "type": "text",
-              "text": " parameter allows you to specify that the matrix is symmetric and the items in the values array are derived from the lower triangle:"
+              "text": " parameter allows you to specify that the matrix is symmetric and the items in the values array derive from the lower triangle:"
             }
           ]
         },
@@ -899,14 +901,10 @@
         },
         {
           "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "The "
+              "text": "You create the "
             },
             {
               "type": "reference",
@@ -915,7 +913,7 @@
             },
             {
               "type": "text",
-              "text": " instance is created using the structure created above and the values from the lower triangle of the matrix:"
+              "text": " instance using the structure from the code example above and the values from the lower triangle of the matrix."
             }
           ]
         },
@@ -962,24 +960,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can create sparse matrices that are "
+              "text": "You can create block sparse matrices "
             },
             {
               "type": "emphasis",
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "blocked—"
+                  "text": "— "
                 }
               ]
             },
             {
               "type": "text",
-              "text": "separated into blocks that contain multiple values—defining a "
+              "text": "that is, a matrix that consists of blocks that contain multiple values — by defining a "
             },
             {
-              "type": "codeVoice",
-              "code": "blockSize"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure/2879307-blocksize"
             },
             {
               "type": "text",
@@ -1014,15 +1013,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The following example shows the code required to create a sparse matrix with the structure and values shown above. The block size of 3 is specified in the "
+              "text": "The following example shows the code to create a sparse matrix with the structure and values above. The "
             },
             {
-              "type": "codeVoice",
-              "code": "SparseMatrixStructure"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure"
             },
             {
               "type": "text",
-              "text": ". The values for each block are concatenated in column-major order."
+              "text": " specifies a block size of 3. The values for each block concatenate in column-major order."
             }
           ]
         },
@@ -1087,7 +1087,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -47,25 +47,33 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INPerson(im)initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:",
+    "parent": {
+      "title": "INPerson"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,7 +126,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The information about a user involved in a SiriKit interaction."
+          "text": "The information about a user participating in a SiriKit interaction."
         }
       ]
     },
@@ -177,6 +185,44 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inimage"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inperson/3801702-initwithpersonhandle": {
+      "title": "initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:isMe:suggestionType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/3801702-initwithpersonhandle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inperson/3801702-initwithpersonhandle",
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:isMe:suggestionType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inperson/3552225-initwithpersonhandle": {
+      "title": "initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:relationship:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/3552225-initwithpersonhandle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inperson/3552225-initwithpersonhandle",
+      "abstract": [],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:relationship:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/sirikit/inperson/2138319-initwithpersonhandle": {
       "title": "initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:",
@@ -250,81 +296,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/inperson/1638494-initwithhandle": {
-      "title": "initWithHandle:displayName:contactIdentifier:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/1638494-initwithhandle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inperson/1638494-initwithhandle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes a person object with the specified display name and contact information."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithHandle:displayName:contactIdentifier:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inperson/1639010-initwithhandle": {
-      "title": "initWithHandle:nameComponents:contactIdentifier:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/1639010-initwithhandle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inperson/1639010-initwithhandle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes a person object with the specified display name and contact information."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithHandle:nameComponents:contactIdentifier:"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inperson/1638508-initwithhandle": {
-      "title": "initWithHandle:nameComponents:displayName:image:contactIdentifier:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inperson/1638508-initwithhandle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inperson/1638508-initwithhandle",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes a person object with the specified name and contact information."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithHandle:nameComponents:displayName:image:contactIdentifier:"
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -336,11 +307,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/inperson/3801702-initwithpersonhandle",
+        "doc://com.apple.documentation/documentation/sirikit/inperson/3552225-initwithpersonhandle",
         "doc://com.apple.documentation/documentation/sirikit/inperson/2976230-initwithpersonhandle",
-        "doc://com.apple.documentation/documentation/sirikit/inperson/2138310-initwithpersonhandle",
-        "doc://com.apple.documentation/documentation/sirikit/inperson/1638494-initwithhandle",
-        "doc://com.apple.documentation/documentation/sirikit/inperson/1639010-initwithhandle",
-        "doc://com.apple.documentation/documentation/sirikit/inperson/1638508-initwithhandle"
+        "doc://com.apple.documentation/documentation/sirikit/inperson/2138310-initwithpersonhandle"
       ],
       "title": "Initializing a Person Object",
       "generated": true
@@ -550,6 +520,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -570,7 +541,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A string containing information that your app uses to identify the user. You can create a person handle from an email address, phone number, or account name associated with the user."
+                  "text": "A string that contains information your app uses to identify the user. You can create a person handle from an email address, phone number, or account name associated with the user."
                 }
               ]
             }
@@ -679,7 +650,7 @@
             },
             {
               "type": "text",
-              "text": " if the object could not be created. "
+              "text": " if initialization fails."
             }
           ]
         }
@@ -755,7 +726,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

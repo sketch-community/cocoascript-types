@@ -34,31 +34,49 @@
     "platforms": [
       {
         "name": "iOS",
-        "introducedAt": "6.0",
-        "current": "14.3"
+        "introducedAt": "7.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)AVAssetResourceLoadingRequest(im)streamingContentKeyRequestDataForApp:contentIdentifier:options:error:",
+    "parent": {
+      "title": "AVAssetResourceLoadingRequest"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +129,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that encapsulates information about a resource request issued by a resource loader object."
+          "text": "An object that encapsulates information about a resource request from a resource loader object."
         }
       ]
     },
@@ -183,7 +201,8 @@
           "type": "text",
           "text": "Specifies whether the content key request requires a persistable key to be returned from the key vendor."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1386220-request": {
       "title": "request",
@@ -235,7 +254,8 @@
           "kind": "identifier",
           "text": "streamingContentKeyRequestDataForApp:contentIdentifier:options:error:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1623676-persistentcontentkeyfromkeyvendo": {
       "title": "persistentContentKeyFromKeyVendorResponse:options:error:",
@@ -259,7 +279,8 @@
           "kind": "identifier",
           "text": "persistentContentKeyFromKeyVendorResponse:options:error:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequest/1390340-contentinformationrequest": {
       "title": "contentInformationRequest",
@@ -317,7 +338,8 @@
       "title": "Configuration Options",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetresourceloadingrequeststreamingcontentkeyrequestrequirespersistentkey"
-      ]
+      ],
+      "anchor": "3698273"
     }
   ],
   "seeAlsoSections": [
@@ -510,6 +532,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -706,7 +729,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

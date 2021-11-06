@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The player is paused."
+      "text": "A state that indicates the player paused playback indefinitely."
     }
   ],
   "documentVersion": 0,
@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@AVPlayerTimeControlStatus@AVPlayerTimeControlStatusPaused",
+    "parent": {
+      "title": "AVPlayerTimeControlStatus"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,25 +133,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The player statuses indicating a playback rate change."
+          "text": "Constants that indicate the state of playback control."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate": {
-      "title": "rate",
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386591-setrate": {
+      "title": "setRate:time:atHostTime:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386591-setrate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayer/1388846-rate"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause": {
-      "title": "pause",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayer/1387895-pause",
+      "url": "/documentation/avfoundation/avplayer/1386591-setrate",
       "fragments": [
         {
           "kind": "text",
@@ -151,7 +151,67 @@
         },
         {
           "kind": "identifier",
-          "text": "pause"
+          "text": "setRate:time:atHostTime:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643480-playimmediatelyatrate": {
+      "title": "playImmediatelyAtRate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643480-playimmediatelyatrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1643480-playimmediatelyatrate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "playImmediatelyAtRate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatuspaused": {
+      "title": "AVPlayerTimeControlStatusPaused",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatuspaused",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatuspaused",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A state that indicates the player paused playback indefinitely."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatuswaitingtoplayatspecifiedrate": {
+      "title": "AVPlayerTimeControlStatusWaitingToPlayAtSpecifiedRate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatuswaitingtoplayatspecifiedrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatuswaitingtoplayatspecifiedrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A state that indicates that the player is waiting for network conditions to improve before it can start or resume playback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatusplaying": {
+      "title": "AVPlayerTimeControlStatusPlaying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatusplaying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatusplaying",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A state that indicates that the player is currently playing media."
         }
       ]
     },
@@ -163,6 +223,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatuswaitingtoplayatspecifiedrate",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus/avplayertimecontrolstatusplaying"
+      ],
+      "title": "Status Values",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -183,6 +253,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -205,41 +276,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This state is entered when the playback "
+              "text": "In this state, the player pauses indefinitely and doesn’t resume playback until you call its play method. You can also resume playback if the player has sufficent data to start playback by calling the player’s "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386591-setrate"
             },
             {
               "type": "text",
-              "text": " changes to a value of"
-            },
-            {
-              "type": "codeVoice",
-              "code": " 0.0"
-            },
-            {
-              "type": "text",
-              "text": ". This change could be the result of calling "
+              "text": " or "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643480-playimmediatelyatrate"
             },
             {
               "type": "text",
-              "text": " or explicitly changing the playback rate, but could also occur due to an external event such as an iOS interruption. In this state, playback is paused indefinitely and will not begin again until the playback rate changes to a value greater than "
-            },
-            {
-              "type": "codeVoice",
-              "code": "0.0"
-            },
-            {
-              "type": "text",
-              "text": " and sufficient media data has been buffered for playback to proceed."
+              "text": " method with a nonzero rate value."
             }
           ]
         }
@@ -247,7 +302,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

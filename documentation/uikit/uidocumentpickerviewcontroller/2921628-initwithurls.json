@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes and returns a document picker that can export or move the given documents."
+      "text": "Creates and returns a document picker that can export or move the specified documents."
     }
   ],
   "documentVersion": 0,
@@ -36,23 +36,33 @@
         "name": "iOS",
         "introducedAt": "11.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "14.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)UIDocumentPickerViewController(im)initWithURLs:inMode:",
+    "parent": {
+      "title": "UIDocumentPickerViewController"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -117,6 +127,54 @@
       "role": "symbol",
       "url": "/documentation/uikit/uidocumentbrowserviewcontroller"
     },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566730-initforexportingurls": {
+      "title": "initForExportingURLs:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566730-initforexportingurls",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentpickerviewcontroller/3566730-initforexportingurls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns a document picker that can export the types of documents you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initForExportingURLs:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566731-initforexportingurls": {
+      "title": "initForExportingURLs:asCopy:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566731-initforexportingurls",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentpickerviewcontroller/3566731-initforexportingurls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns a document picker that can export or copy the types of documents you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initForExportingURLs:asCopy:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uidocumentpickermode/uidocumentpickermodeexporttoservice": {
       "title": "UIDocumentPickerModeExportToService",
       "type": "topic",
@@ -157,6 +215,78 @@
       "role": "symbol",
       "url": "/documentation/uikit/uidocumentpickermode"
     },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618686-initwithcoder": {
+      "title": "initWithCoder:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618686-initwithcoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentpickerviewcontroller/1618686-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an initialized object from data in a specified unarchiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCoder:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566732-initforopeningcontenttypes": {
+      "title": "initForOpeningContentTypes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566732-initforopeningcontenttypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentpickerviewcontroller/3566732-initforopeningcontenttypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns a document picker that can open the types of documents you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initForOpeningContentTypes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566733-initforopeningcontenttypes": {
+      "title": "initForOpeningContentTypes:asCopy:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566733-initforopeningcontenttypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uidocumentpickerviewcontroller/3566733-initforopeningcontenttypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns a document picker that can open or copy the types of documents you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initForOpeningContentTypes:asCopy:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618678-initwithdocumenttypes": {
       "title": "initWithDocumentTypes:inMode:",
       "type": "topic",
@@ -167,7 +297,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns a document picker that can import or open the given file types."
+          "text": "Creates and returns a document picker that can open or copy the specified file types."
         }
       ],
       "fragments": [
@@ -192,7 +322,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns a document picker that can export or move the given document."
+          "text": "Initializes and returns a document picker that can export or copy the specified document."
         }
       ],
       "fragments": [
@@ -217,7 +347,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes and returns a document picker that can export or move the given documents."
+          "text": "Creates and returns a document picker that can export or move the specified documents."
         }
       ],
       "fragments": [
@@ -232,30 +362,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618686-initwithcoder": {
-      "title": "initWithCoder:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618686-initwithcoder",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uidocumentpickerviewcontroller/1618686-initwithcoder",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an object initialized from data in a given unarchiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithCoder:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -264,12 +370,45 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566730-initforexportingurls"
+        },
+        {
+          "type": "text",
+          "text": " or "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566731-initforexportingurls"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618686-initwithcoder",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566730-initforexportingurls",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566731-initforexportingurls",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566732-initforopeningcontenttypes",
+        "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/3566733-initforopeningcontenttypes",
         "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618678-initwithdocumenttypes",
-        "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618684-initwithurl",
-        "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618686-initwithcoder"
+        "doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618684-initwithurl"
       ],
       "title": "Creating a Document Picker",
       "generated": true
@@ -365,6 +504,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -384,7 +524,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "An array of documents to be exported or moved."
+                  "text": "An array of documents that the document picked exports or moves."
                 }
               ]
             },
@@ -504,7 +644,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

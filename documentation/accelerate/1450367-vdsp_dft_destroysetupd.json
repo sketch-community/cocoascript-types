@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Releases a double-precision setup object."
+      "text": "Releases a double-precision setup structure."
     }
   ],
   "documentVersion": 0,
@@ -40,35 +40,40 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@vDSP_DFT_DestroySetupD",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,6 +124,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_dft_setupd": {
+      "title": "vDSP_DFT_SetupD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_dft_setupd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_dft_setupd"
+    },
     "doc://com.apple.documentation/documentation/accelerate/1450791-vdsp_dft_destroysetup": {
       "title": "vDSP_DFT_DestroySetup",
       "type": "topic",
@@ -129,144 +142,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Releases a single-precision setup object."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/1449812-vdsp_dft_executed": {
-      "title": "vDSP_DFT_ExecuteD",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449812-vdsp_dft_executed",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1449812-vdsp_dft_executed",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Calculates the discrete double-precision Fourier transform for a vector."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/1450538-vdsp_dft_execute": {
-      "title": "vDSP_DFT_Execute",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450538-vdsp_dft_execute",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1450538-vdsp_dft_execute",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Calculates the discrete single-precision Fourier transform for a vector."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/1450016-vdsp_dct_execute": {
-      "title": "vDSP_DCT_Execute",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450016-vdsp_dct_execute",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1450016-vdsp_dct_execute"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/1450061-vdsp_dft_zop_createsetup": {
-      "title": "vDSP_DFT_zop_CreateSetup",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450061-vdsp_dft_zop_createsetup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1450061-vdsp_dft_zop_createsetup",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a data structure for use with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/1450538-vdsp_dft_execute"
-        },
-        {
-          "type": "text",
-          "text": " or "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/1450016-vdsp_dct_execute"
-        },
-        {
-          "type": "text",
-          "text": " to perform a complex-to-complex discrete Fourier transform, forward or inverse."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/1450730-vdsp_dft_zop_createsetupd": {
-      "title": "vDSP_DFT_zop_CreateSetupD",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450730-vdsp_dft_zop_createsetupd",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1450730-vdsp_dft_zop_createsetupd",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a data structure for use with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/1449812-vdsp_dft_executed"
-        },
-        {
-          "type": "text",
-          "text": " to perform a double-precision, complex-to-complex discrete Fourier transform, forward or inverse."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/1449739-vdsp_dft_zrop_createsetup": {
-      "title": "vDSP_DFT_zrop_CreateSetup",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449739-vdsp_dft_zrop_createsetup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1449739-vdsp_dft_zrop_createsetup",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a data structure for use with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/1450538-vdsp_dft_execute"
-        },
-        {
-          "type": "text",
-          "text": " to perform a single-precision discrete Fourier transform, forward (real to complex) or inverse (complex to real)."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/1449790-vdsp_dft_zrop_createsetupd": {
-      "title": "vDSP_DFT_zrop_CreateSetupD",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449790-vdsp_dft_zrop_createsetupd",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1449790-vdsp_dft_zrop_createsetupd",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a data structure for use with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/1449812-vdsp_dft_executed"
-        },
-        {
-          "type": "text",
-          "text": " to perform a double-precision discrete Fourier transform, forward (real to complex) or inverse (complex to real)."
+          "text": "Releases a single-precision setup structure."
         }
       ]
     },
@@ -280,7 +156,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Releases a double-precision setup object."
+          "text": "Releases a double-precision setup structure."
         }
       ]
     },
@@ -295,15 +171,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/1450061-vdsp_dft_zop_createsetup",
-        "doc://com.apple.documentation/documentation/accelerate/1450730-vdsp_dft_zop_createsetupd",
-        "doc://com.apple.documentation/documentation/accelerate/1449739-vdsp_dft_zrop_createsetup",
-        "doc://com.apple.documentation/documentation/accelerate/1449790-vdsp_dft_zrop_createsetupd",
-        "doc://com.apple.documentation/documentation/accelerate/1450791-vdsp_dft_destroysetup",
-        "doc://com.apple.documentation/documentation/accelerate/1450538-vdsp_dft_execute",
-        "doc://com.apple.documentation/documentation/accelerate/1449812-vdsp_dft_executed"
+        "doc://com.apple.documentation/documentation/accelerate/1450791-vdsp_dft_destroysetup"
       ],
-      "title": "Discrete Fourier Transforms",
+      "title": "DFT Cleanup",
       "generated": true
     }
   ],
@@ -335,6 +205,7 @@
             {
               "kind": "typeIdentifier",
               "preciseIdentifier": "c:@T@vDSP_DFT_SetupD",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_dft_setupd",
               "text": "vDSP_DFT_SetupD"
             },
             {
@@ -344,10 +215,33 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__Setup",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The setup structure to destroy."
+                }
+              ]
+            }
           ]
         }
       ]
@@ -366,41 +260,31 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This function is called exactly like "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/1450791-vdsp_dft_destroysetup"
-            },
-            {
-              "type": "text",
-              "text": " except for the type of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "Setup"
-            },
-            {
-              "type": "text",
-              "text": ". Use it to destroy a setup used with "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449812-vdsp_dft_executed"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": "Destroying a setup with shared data is safe; this function only releases memory that’s not needed by other undestroyed setups."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This function isn’t fully thread-safe. You must not call this function concurrently with any function that uses the setup structure or any other setup structure that shares its underlying storage."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,35 +34,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "9.3",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:SQsE2neoiySbx_xtFZ::SYNTHESIZED::s:SC11CKErrorCodeLeV",
+    "parent": {
+      "title": "CKError"
+    },
     "symbolKind": "opfunc",
     "fragments": [
       {
@@ -80,8 +88,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -122,6 +130,34 @@
       "role": "symbol",
       "url": "/documentation/swift/bool"
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerror/3726321": {
+      "title": "==(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/3726321",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerror/3726321",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether two errors are equal."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "== "
+        },
+        {
+          "kind": "text",
+          "text": "(CKError, CKError) -> Bool"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/cloudkit/ckerror/2946935": {
       "title": "!=(_:_:)",
       "type": "topic",
@@ -158,6 +194,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckerror/3726321"
+      ],
+      "title": "Comparing Errors",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -236,6 +281,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -258,7 +304,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A value to compare."
+                  "text": "An error to compare."
                 }
               ]
             }
@@ -272,7 +318,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Another value to compare."
+                  "text": "Another error to compare."
                 }
               ]
             }
@@ -282,7 +328,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

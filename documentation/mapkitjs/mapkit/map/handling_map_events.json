@@ -1,0 +1,1251 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Handle events that a map object dispatches."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkitjs",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/handling_map_events",
+    "interfaceLanguage": "data"
+  },
+  "legacy_identifier": 2993301,
+  "kind": "article",
+  "metadata": {
+    "title": "Handling Map Events",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "MapKit JS"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "data"
+        }
+      ],
+      "paths": [
+        "documentation/mapkitjs/mapkit/map/handling_map_events"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/mapkitjs": {
+      "title": "MapKit JS",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs",
+      "url": "/documentation/mapkitjs",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit": {
+      "title": "mapkit",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+      "url": "/documentation/mapkitjs/mapkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map": {
+      "title": "Map",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map",
+      "url": "/documentation/mapkitjs/mapkit/map",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/maptypes": {
+      "title": "mapkit.Map.MapTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/maptypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/map/maptypes"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation": {
+      "title": "mapkit.Annotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay": {
+      "title": "mapkit.Overlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/overlay"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/coordinate": {
+      "title": "mapkit.Coordinate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/coordinate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/coordinate"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973823-coordinate": {
+      "title": "coordinate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973823-coordinate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation/2973823-coordinate"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973942-showsuserlocation": {
+      "title": "showsUserLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973942-showsuserlocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/map/2973942-showsuserlocation"
+    },
+    "doc://com.apple.documentation/documentation/webkit/domevent/1537146-preventdefault": {
+      "title": "preventDefault()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/webkit/domevent/1537146-preventdefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/webkit/domevent/1537146-preventdefault"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973916-convertpointonpagetocoordinate": {
+      "title": "convertPointOnPageToCoordinate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973916-convertpointonpagetocoordinate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/map/2973916-convertpointonpagetocoordinate"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/handling_map_events": {
+      "title": "Handling Map Events",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/handling_map_events",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/mapkit/map/handling_map_events",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Handle events that a map object dispatches."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973907-addeventlistener": {
+      "title": "addEventListener",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973907-addeventlistener",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/map/2973907-addeventlistener",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an event listener to handle events triggered by user interactions and  the framework."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973927-removeeventlistener": {
+      "title": "removeEventListener",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973927-removeeventlistener",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/map/2973927-removeeventlistener",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes an event listener."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973907-addeventlistener",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973927-removeeventlistener"
+      ],
+      "title": "Handling Map Events",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "MapKit JS uses events that developers can implement to hook into points in the life cycle of the map and user interactions. Your code can respond to events by registering an event listener. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Events have a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "target"
+            },
+            {
+              "type": "text",
+              "text": " property. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "target"
+            },
+            {
+              "type": "text",
+              "text": " of an event is the object dispatching that event. When you add an event listener on a map, the target is the map itself. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "select"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "deselect"
+            },
+            {
+              "type": "text",
+              "text": " events have an annotation or overlay property that reports the selected or deselected item. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "single-tap"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "double-tap"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "long-press"
+            },
+            {
+              "type": "text",
+              "text": " events have "
+            },
+            {
+              "type": "codeVoice",
+              "code": "pointOnPage"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "domEvents"
+            },
+            {
+              "type": "text",
+              "text": " properties that provide more data about the user interactions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Event listeners receive a single argument that is an event object. The event objects are similar to native event objects though calls to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "event.preventDefault()"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "event.stopPropagation()"
+            },
+            {
+              "type": "text",
+              "text": " don’t halt some actions that trigger these events. Scrolling, zooming, and panning, as well as zooming or rotating after a long press, provide methods to halt or prevent interaction."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Map Display Events",
+          "anchor": "2993299"
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "region-change-start"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The map’s visible region is about to change."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "region-change-end"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The map’s visible region finished changing."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "rotation-start"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The map’s rotation is about to change."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "rotation-end"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The map’s rotation finished changing."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "scroll-start"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The map is about to scroll as a result of user interaction."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "scroll-end"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The map finished scrolling as a result of user interaction."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "zoom-start"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The map is about to zoom as a result of user interaction."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "zoom-end"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The map finished zooming as a result of user interaction."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "map-type-change"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "A program event or a user interaction has caused the map’s "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "type"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/maptypes"
+                      },
+                      {
+                        "type": "text",
+                        "text": ") to change."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Annotation and Overlay Events",
+          "anchor": "2993300"
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "select"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The user selected an annotation or an overlay. The event has either an "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "annotation"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation"
+                      },
+                      {
+                        "type": "text",
+                        "text": ") property or an "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "overlay"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay"
+                      },
+                      {
+                        "type": "text",
+                        "text": ") property, containing the selected annotation or overlay, respectively."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "deselect"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The user deselected an annotation or an overlay. The event has either an "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "annotation"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation"
+                      },
+                      {
+                        "type": "text",
+                        "text": ") property or an "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "overlay"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay"
+                      },
+                      {
+                        "type": "text",
+                        "text": ") property, containing the previously selected annotation or overlay, respectively."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "drag-start"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The user is starting to drag an annotation. The event has one property "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "annotation"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation"
+                      },
+                      {
+                        "type": "text",
+                        "text": "), the dragged annotation."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "dragging"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The user is dragging an annotation. The event has two properties. The first is an "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "annotation"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation"
+                      },
+                      {
+                        "type": "text",
+                        "text": ") property, containing the dragged annotation. The second is a "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "coordinate"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/coordinate"
+                      },
+                      {
+                        "type": "text",
+                        "text": ") property, containing the current coordinate of the annotation. This "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "coordinate"
+                      },
+                      {
+                        "type": "text",
+                        "text": " property is different from the annotation’s own "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973823-coordinate"
+                      },
+                      {
+                        "type": "text",
+                        "text": " property, which doesn’t update until the drag finishes."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "drag-end"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The user finished dragging an annotation. The event has one property "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "annotation"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation"
+                      },
+                      {
+                        "type": "text",
+                        "text": "), the dragged annotation."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "User Location Events",
+          "anchor": "2993302"
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "user-location-change"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "MapKit JS sends this event when "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973942-showsuserlocation"
+                      },
+                      {
+                        "type": "text",
+                        "text": " is "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "true"
+                      },
+                      {
+                        "type": "text",
+                        "text": " and the map acquires the user’s location, or after an automatic update. The event has two properties. The first is a "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "coordinate"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/coordinate"
+                      },
+                      {
+                        "type": "text",
+                        "text": ") property, containing the current location. The second is a "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "timestamp"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "Date"
+                      },
+                      {
+                        "type": "text",
+                        "text": ") property, containing the time corresponding to the location acquisition."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "user-location-error"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "MapKit JS was unable to acquire the user’s location. The event has two properties. The first property is "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "code"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "Integer"
+                      },
+                      {
+                        "type": "text",
+                        "text": "), indicating why location acquisition failed. The second is a "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "message"
+                      },
+                      {
+                        "type": "text",
+                        "text": " ("
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "String"
+                      },
+                      {
+                        "type": "text",
+                        "text": ") property, containing a human-readable string for the developer. This message isn’t for display to the user."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Since this feature implements HTML 5’s geolocation API, the error codes mirror that API’s error codes with one additional MapKit JS-specific error code:"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "codeVoice",
+                        "code": "Error.PERMISSION_DENIED (1)"
+                      },
+                      {
+                        "type": "text",
+                        "text": " — The user refused permission to obtain location information."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "codeVoice",
+                        "code": "Error.POSITION_UNAVAILABLE (2)"
+                      },
+                      {
+                        "type": "text",
+                        "text": " — The geolocation API returned an error."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "codeVoice",
+                        "code": "Error.TIMEOUT (3)"
+                      },
+                      {
+                        "type": "text",
+                        "text": " — The operation timed out without acquiring the location."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "codeVoice",
+                        "code": "Error.MAPKIT_NOT_INITIALIZED (4)"
+                      },
+                      {
+                        "type": "text",
+                        "text": " — The system hasn’t initialized MapKit JS."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Map Interaction Events",
+          "anchor": "3580989"
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "single-tap"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "A single tap occurred on the map outside  an annotation or an overlay. If the user had previously selected an annotation or an overlay when a single tap occurs on the map, MapKit JS deselects the annotation or the overlay and dispatches a single-tap event."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "double-tap"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "A double tap occurred on the map without zooming the map."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "long-press"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "A long press occurred on the map outside an annotation. A long press may be the beginning of a panning or pinching gesture on the map. You can prevent the gesture from starting by calling the "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/webkit/domevent/1537146-preventdefault"
+                      },
+                      {
+                        "type": "text",
+                        "text": " method of the event. Annotations must be draggable to dispatch long-press events."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The event object that map interaction events return has the following two properties:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "pointOnPage"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "A DOM point with the coordinates "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "(x,"
+                      },
+                      {
+                        "type": "text",
+                        "text": " "
+                      },
+                      {
+                        "type": "codeVoice",
+                        "code": "y)"
+                      },
+                      {
+                        "type": "text",
+                        "text": " of the event on the page. You can use this property to derive a coordinate on the map using "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973916-convertpointonpagetocoordinate"
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "codeVoice",
+                    "code": "domEvents"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "An array of DOM event objects listing the pertinent low-level events that led to the recognized gesture. You can inspect these and tailor the code to react according to the additional low-level events, such as modifier keys for the events."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

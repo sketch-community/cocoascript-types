@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates a color object using the named asset that is compatible with the specified trait collection."
+      "text": "Creates a color object using the named asset that’s compatible with the specified trait collection."
     }
   ],
   "documentVersion": 0,
@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/drawing",
-        "doc://com.apple.documentation/documentation/uikit/uicolor"
+        "doc://com.apple.documentation/documentation/uikit/uicolor",
+        "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation"
       ]
     ]
   },
@@ -35,30 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
-      },
-      {
-        "name": "watchOS",
-        "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIColor(cm)colorNamed:inBundle:compatibleWithTraitCollection:",
+    "parent": {
+      "title": "UIColor"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,6 +112,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicolor"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation": {
+      "title": "Color Creation",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation",
+      "url": "/documentation/uikit/uicolor/color_creation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
@@ -239,7 +251,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a color object using the specified opacity and grayscale values. "
+          "text": "Creates a color object using the specified opacity and grayscale values."
         }
       ],
       "fragments": [
@@ -359,7 +371,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a color object using the named asset that is compatible with the specified trait collection."
+          "text": "Creates a color object using the named asset that’s compatible with the specified trait collection."
         }
       ],
       "fragments": [
@@ -518,9 +530,9 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
-            "tvOS",
-            "watchOS"
+            "tvOS"
           ]
         }
       ]
@@ -567,7 +579,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The trait collection that specifies the gamut to use when selecting the color. "
+                  "text": "The trait collection that specifies the gamut to use when selecting the color."
                 }
               ]
             }
@@ -597,7 +609,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

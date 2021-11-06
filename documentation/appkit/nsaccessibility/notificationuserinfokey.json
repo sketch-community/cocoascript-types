@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The key used in the user info dictionary for notifications."
+      "text": "The key in the user info dictionary for a notification."
     }
   ],
   "documentVersion": 0,
@@ -11,26 +11,40 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions"
       ]
     ]
   },
@@ -53,10 +67,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@T@NSAccessibilityNotificationUserInfoKey",
+    "parent": {
+      "title": "NSAccessibility"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -70,8 +87,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,29 +123,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
-      "title": "NSAccessibility",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility"
-    },
-    "doc://com.apple.documentation/documentation/accessibility": {
-      "title": "Accessibility",
-      "identifier": "doc://com.apple.documentation/documentation/accessibility",
-      "url": "/documentation/accessibility",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "collection"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol": {
       "title": "NSAccessibilityProtocol",
@@ -138,13 +139,35 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notification/1524251-layoutchanged": {
-      "title": "layoutChanged",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
+      "title": "NSAccessibility",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notification/1524251-layoutchanged",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/notification/1524251-layoutchanged"
+      "url": "/documentation/appkit/nsaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A namespace for accessibility symbols for AppKit apps. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accessibility": {
+      "title": "Accessibility",
+      "identifier": "doc://com.apple.documentation/documentation/accessibility",
+      "url": "/documentation/accessibility",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions": {
+      "title": "Accessibility Functions",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+      "url": "/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/swift/equatable": {
       "title": "Equatable",
@@ -170,38 +193,6 @@
       "role": "symbol",
       "url": "/documentation/swift/rawrepresentable"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/2899676-init": {
-      "title": "init(rawValue:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/2899676-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/notificationuserinfokey/2899676-init",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a new notification object with a specified name and object."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "rawValue"
-        },
-        {
-          "kind": "text",
-          "text": ": String)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1528310-announcement": {
       "title": "announcement",
       "type": "topic",
@@ -212,7 +203,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The announcement, as a localized string."
+          "text": "The announcement as a localized string."
         }
       ],
       "fragments": [
@@ -223,6 +214,34 @@
         {
           "kind": "identifier",
           "text": "announcement"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAccessibility.NotificationUserInfoKey"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1534944-uielements": {
+      "title": "uiElements",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1534944-uielements",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/notificationuserinfokey/1534944-uielements",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of elements for the notification."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "uiElements"
         },
         {
           "kind": "text",
@@ -258,31 +277,155 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1534944-uielements": {
-      "title": "uiElements",
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel": {
+      "title": "NSAccessibilityPriorityLevel",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1534944-uielements",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/notificationuserinfokey/1534944-uielements",
+      "url": "/documentation/appkit/nsaccessibilityprioritylevel",
       "abstract": [
         {
           "type": "text",
-          "text": "An array of elements that are associated with the notification."
+          "text": "A data type for notification priority levels."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "enum "
         },
         {
           "kind": "identifier",
-          "text": "uiElements"
+          "text": "NSAccessibilityPriorityLevel"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/2899676-init": {
+      "title": "init(rawValue:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/2899676-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/notificationuserinfokey/2899676-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new notification object with a specified name and object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
         },
         {
           "kind": "text",
-          "text": ": NSAccessibility.NotificationUserInfoKey"
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": String)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/action": {
+      "title": "NSAccessibility.Action",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/action",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/action",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe types of actions. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.Action"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/annotationattributekey": {
+      "title": "NSAccessibility.AnnotationAttributeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/annotationattributekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/annotationattributekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys for annotation attributes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.AnnotationAttributeKey"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/attribute": {
+      "title": "NSAccessibility.Attribute",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/attribute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/attribute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe attributes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.Attribute"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/fontattributekey": {
+      "title": "NSAccessibility.FontAttributeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/fontattributekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/fontattributekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys for font attributes. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.FontAttributeKey"
         }
       ]
     },
@@ -320,7 +463,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key used in the user info dictionary for notifications."
+          "text": "The key in the user info dictionary for a notification."
         }
       ],
       "fragments": [
@@ -331,6 +474,174 @@
         {
           "kind": "identifier",
           "text": "NSAccessibility.NotificationUserInfoKey"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/orientationvalue": {
+      "title": "NSAccessibility.OrientationValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/orientationvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/orientationvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the orientation of user interface elements, such as scroll bars and split views."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.OrientationValue"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/parameterizedattribute": {
+      "title": "NSAccessibility.ParameterizedAttribute",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/parameterizedattribute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/parameterizedattribute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that describe parameterized attributes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.ParameterizedAttribute"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role": {
+      "title": "NSAccessibility.Role",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/role",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that describe types of objects that accessibility elements represent."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.Role"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/rulermarkertypevalue": {
+      "title": "NSAccessibility.RulerMarkerTypeValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/rulermarkertypevalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/rulermarkertypevalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that describe ruler marker types."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.RulerMarkerTypeValue"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/rulerunitvalue": {
+      "title": "NSAccessibility.RulerUnitValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/rulerunitvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/rulerunitvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the unit values of a ruler or layout area."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.RulerUnitValue"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/sortdirectionvalue": {
+      "title": "NSAccessibility.SortDirectionValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/sortdirectionvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/sortdirectionvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that indicate the sort direction of a column."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.SortDirectionValue"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/subrole": {
+      "title": "NSAccessibility.Subrole",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/subrole",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibility/subrole",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that describe specialized object subtypes that accessibility elements represent."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAccessibility.Subrole"
         }
       ]
     },
@@ -357,31 +668,41 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Constants",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/2899676-init"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1528310-announcement",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1534944-uielements",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1531038-priority",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprioritylevel"
+      ],
+      "anchor": "3666052"
     },
     {
       "kind": "taskGroup",
-      "title": "Type Properties",
+      "title": "Initializers",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1528310-announcement",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1531038-priority",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1534944-uielements"
-      ]
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/2899676-init"
+      ],
+      "anchor": "3666058"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/2899676-init",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1534944-uielements",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1528310-announcement",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notificationuserinfokey/1531038-priority",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notification"
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/action",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/annotationattributekey",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/attribute",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/fontattributekey",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notification",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/orientationvalue",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/parameterizedattribute",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/rulermarkertypevalue",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/rulerunitvalue",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/sortdirectionvalue",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/subrole"
       ],
-      "title": "Managing Notifications",
+      "title": "Using Accessibility Types",
       "generated": true
     }
   ],
@@ -412,39 +733,10 @@
           ]
         }
       ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "overview",
-          "level": 2,
-          "text": "Overview",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The value is an array of elements that is associated with the notification. For example, a "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/notification/1524251-layoutchanged"
-            },
-            {
-              "type": "text",
-              "text": " should include an array of elements that have been added or changed using this key."
-            }
-          ]
-        }
-      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

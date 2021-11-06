@@ -42,23 +42,33 @@
         "name": "iOS",
         "introducedAt": "5.0",
         "deprecatedAt": "7.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "deprecatedAt": "7.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)UITabBarItem(im)finishedUnselectedImage",
+    "parent": {
+      "title": "UITabBarItem"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -101,7 +111,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
     },
@@ -151,8 +161,7 @@
           "kind": "identifier",
           "text": "finishedSelectedImage"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617063-setfinishedselectedimage": {
       "title": "setFinishedSelectedImage:withFinishedUnselectedImage:",
@@ -176,8 +185,7 @@
           "kind": "identifier",
           "text": "setFinishedSelectedImage:withFinishedUnselectedImage:"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiimage": {
       "title": "UIImage",
@@ -186,31 +194,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiimage"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617053-finishedunselectedimage": {
-      "title": "finishedUnselectedImage",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617053-finishedunselectedimage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitabbaritem/1617053-finishedunselectedimage",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the finished unselected image."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "finishedUnselectedImage"
-        }
-      ],
-      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -251,12 +234,12 @@
   ],
   "seeAlsoSections": [
     {
+      "title": "Related Documentation",
+      "generated": false,
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617051-finishedselectedimage",
         "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617063-setfinishedselectedimage"
-      ],
-      "title": "Managing the Finished Selected Image",
-      "generated": true
+      ]
     }
   ],
   "primaryContentSections": [
@@ -297,6 +280,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -324,7 +308,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

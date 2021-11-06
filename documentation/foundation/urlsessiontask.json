@@ -34,27 +34,32 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSURLSessionTask",
@@ -71,8 +76,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,50 +120,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1410569-priority": {
-      "title": "priority",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1410569-priority",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/urlsessiontask/1410569-priority",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The relative priority at which you’d like a host to handle the task, specified as a floating point value between "
-        },
-        {
-          "type": "codeVoice",
-          "code": "0.0"
-        },
-        {
-          "type": "text",
-          "text": " (lowest priority) and "
-        },
-        {
-          "type": "codeVoice",
-          "code": "1.0"
-        },
-        {
-          "type": "text",
-          "text": " (highest priority)."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "priority"
-        },
-        {
-          "kind": "text",
-          "text": ": Float"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/urlsessiontask": {
       "title": "URLSessionTask",
       "type": "topic",
@@ -193,7 +154,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that coordinates a group of related, network data-transfer tasks."
+          "text": "An object that coordinates a group of related, network data transfer tasks."
         }
       ],
       "fragments": [
@@ -307,6 +268,50 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1410569-priority": {
+      "title": "priority",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1410569-priority",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiontask/1410569-priority",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The relative priority at which you’d like a host to handle the task, specified as a floating point value between "
+        },
+        {
+          "type": "codeVoice",
+          "code": "0.0"
+        },
+        {
+          "type": "text",
+          "text": " (lowest priority) and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "1.0"
+        },
+        {
+          "type": "text",
+          "text": " (highest priority)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "priority"
+        },
+        {
+          "kind": "text",
+          "text": ": Float"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -330,30 +335,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nscopying"
-    },
-    "doc://com.apple.documentation/documentation/swift/cvararg": {
-      "title": "CVarArg",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/cvararg"
-    },
-    "doc://com.apple.documentation/documentation/swift/equatable": {
-      "title": "Equatable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/equatable"
-    },
-    "doc://com.apple.documentation/documentation/swift/hashable": {
-      "title": "Hashable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/hashable"
     },
     "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1411591-cancel": {
       "title": "cancel()",
@@ -822,6 +803,86 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiontask/3735881-prefersincrementaldelivery": {
+      "title": "prefersIncrementalDelivery",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontask/3735881-prefersincrementaldelivery",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiontask/3735881-prefersincrementaldelivery",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether to deliver a partial response body in increments."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "prefersIncrementalDelivery"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiontask/3746977-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontask/3746977-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiontask/3746977-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A delegate specific to the task."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "delegate"
+        },
+        {
+          "kind": "text",
+          "text": ": URLSessionTaskDelegate?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate": {
+      "title": "URLSessionTaskDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessiontaskdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that defines methods that URL session instances call on their delegates to handle task-level events."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLSessionTaskDelegate"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/urlsessiontask/2873414-countofbytesclientexpectstorecei": {
       "title": "countOfBytesClientExpectsToReceive",
       "type": "topic",
@@ -913,6 +974,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/urlsessiontask/3240624-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes an empty URL sesson task."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -932,6 +999,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/urlsessiontask/3240625-new",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new URL session task."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -984,9 +1057,6 @@
       "title": "Conforms To",
       "type": "conformsTo",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/swift/cvararg",
-        "doc://com.apple.documentation/documentation/swift/equatable",
-        "doc://com.apple.documentation/documentation/swift/hashable",
         "doc://com.apple.documentation/documentation/foundation/nscopying",
         "doc://com.apple.documentation/documentation/foundation/progressreporting"
       ]
@@ -1004,7 +1074,8 @@
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/state",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1410569-priority",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/url_session_task_priority"
-      ]
+      ],
+      "anchor": "1660369"
     },
     {
       "kind": "taskGroup",
@@ -1016,7 +1087,8 @@
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1411534-countofbytesexpectedtosend",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1410444-countofbytessent",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontransfersizeunknown"
-      ]
+      ],
+      "anchor": "1660482"
     },
     {
       "kind": "taskGroup",
@@ -1028,7 +1100,25 @@
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1409798-taskdescription",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1411231-taskidentifier",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/1408145-error"
-      ]
+      ],
+      "anchor": "1660538"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Determining Task Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessiontask/3735881-prefersincrementaldelivery"
+      ],
+      "anchor": "3848927"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Using a Task-Specific Delegate",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessiontask/3746977-delegate",
+        "doc://com.apple.documentation/documentation/foundation/urlsessiontaskdelegate"
+      ],
+      "anchor": "3848926"
     },
     {
       "kind": "taskGroup",
@@ -1038,21 +1128,17 @@
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/2873401-countofbytesclientexpectstosend",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontransfersizeunknown",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/2873413-earliestbegindate"
-      ]
+      ],
+      "anchor": "2919275"
     },
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Deprecated",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/urlsessiontask/3240624-init"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Type Methods",
-      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessiontask/3240624-init",
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask/3240625-new"
-      ]
+      ],
+      "anchor": "3848925"
     }
   ],
   "seeAlsoSections": [
@@ -1099,6 +1185,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1363,7 +1450,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

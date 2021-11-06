@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintenthandling"
       ]
     ]
@@ -35,25 +35,41 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INTransferMoneyIntentHandling(im)resolveTransactionAmountForTransferMoney:withCompletion:",
+    "parent": {
+      "title": "INTransferMoneyIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +104,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -110,13 +126,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/inpaymentamount": {
-      "title": "INPaymentAmount",
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentamount",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inpaymentamount"
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintent/2868056-transactionamount": {
       "title": "transactionAmount",
@@ -125,6 +141,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/intransfermoneyintent/2868056-transactionamount"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpaymentamount": {
+      "title": "INPaymentAmount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpaymentamount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpaymentamount"
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintent": {
       "title": "INTransferMoneyIntent",
@@ -153,7 +177,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resovles the user account that is the source of the funds."
+          "text": "Resolves the user account that’s the source of the funds."
         }
       ],
       "fragments": [
@@ -165,7 +189,8 @@
           "kind": "identifier",
           "text": "resolveFromAccountForTransferMoney:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintenthandling/2868069-resolvetoaccountfortransfermoney": {
       "title": "resolveToAccountForTransferMoney:withCompletion:",
@@ -178,7 +203,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resolves the user account that is the destination of the funds."
+          "text": "Resolves the user account that’s the destination of the funds."
         }
       ],
       "fragments": [
@@ -190,7 +215,8 @@
           "kind": "identifier",
           "text": "resolveToAccountForTransferMoney:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintenthandling/2868055-resolvetransactionamountfortrans": {
       "title": "resolveTransactionAmountForTransferMoney:withCompletion:",
@@ -215,7 +241,8 @@
           "kind": "identifier",
           "text": "resolveTransactionAmountForTransferMoney:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintenthandling/2868070-resolvetransactionscheduleddatef": {
       "title": "resolveTransactionScheduledDateForTransferMoney:withCompletion:",
@@ -240,7 +267,8 @@
           "kind": "identifier",
           "text": "resolveTransactionScheduledDateForTransferMoney:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintenthandling/2868066-resolvetransactionnotefortransfe": {
       "title": "resolveTransactionNoteForTransferMoney:withCompletion:",
@@ -265,7 +293,8 @@
           "kind": "identifier",
           "text": "resolveTransactionNoteForTransferMoney:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -275,6 +304,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -379,6 +428,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -399,7 +449,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The intent object containing details of the user's request. Use this object to get the initial information, if any, provided by the user. "
+                  "text": "The intent object containing details of the user’s request. Use this object to get the initial information, if any, provided by the user. "
                 }
               ]
             }
@@ -445,7 +495,7 @@
                           },
                           {
                             "type": "text",
-                            "text": " object containing the amount to be transferred. This parameter must not be "
+                            "text": " object containing the amount to transfer. This parameter must not be "
                           },
                           {
                             "type": "codeVoice",
@@ -453,7 +503,7 @@
                           },
                           {
                             "type": "text",
-                            "text": ". "
+                            "text": "."
                           }
                         ]
                       }
@@ -489,7 +539,7 @@
             },
             {
               "type": "text",
-              "text": " property of the intent contains information about how much the user wants to transfer. Return a successful resolution if you are able to transfer the specified amount. If the amount exceeds the maximum or minimum amount allowed by your app, return an adjusted amount and ask for confirmation."
+              "text": " property of the intent contains information about how much the user wants to transfer. Return a successful resolution if you’re able to transfer the specified amount. If the amount exceeds the maximum or minimum amount allowed by your app, return an adjusted amount and ask for confirmation."
             }
           ]
         }
@@ -497,7 +547,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

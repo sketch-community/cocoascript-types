@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initialize a writer input object with the specified media type and output settings."
+      "text": "Creates an input to append sample buffers of the specified type to the output file."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInput(im)initWithMediaType:outputSettings:",
+    "parent": {
+      "title": "AVAssetWriterInput"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,147 +128,25 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants": {
-      "title": "AVFoundation Constants",
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant": {
+      "title": "AVOutputSettingsAssistant",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avfoundation_constants"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats": {
-      "title": "Audio Settings and Formats",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats"
-    },
-    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref": {
-      "title": "CVPixelBufferRef",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corevideo/cvpixelbufferref"
+      "url": "/documentation/avfoundation/avoutputsettingsassistant"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput": {
-      "title": "addInput:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1390389-addinput",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addInput:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
-      "title": "AVAssetWriter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avfiletypequicktimemovie": {
-      "title": "AVFileTypeQuickTimeMovie",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypequicktimemovie",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avfiletypequicktimemovie"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype": {
-      "title": "initWithMediaType:outputSettings:sourceFormatHint:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initialize a writer input object with the specified media type, output settings, and source hint."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithMediaType:outputSettings:sourceFormatHint:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediatypeaudio": {
-      "title": "AVMediaTypeAudio",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediatypeaudio",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmediatypeaudio"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avencoderaudioqualitykey": {
-      "title": "AVEncoderAudioQualityKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avencoderaudioqualitykey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avencoderaudioqualitykey"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avsamplerateconverteraudioqualitykey": {
-      "title": "AVSampleRateConverterAudioQualityKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplerateconverteraudioqualitykey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avsamplerateconverteraudioqualitykey"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avformatidkey": {
+    "doc://com.apple.documentation/documentation/avfaudio/avformatidkey": {
       "title": "AVFormatIDKey",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avformatidkey",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avformatidkey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avformatidkey"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avsampleratekey": {
-      "title": "AVSampleRateKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsampleratekey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avsampleratekey"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avnumberofchannelskey": {
-      "title": "AVNumberOfChannelsKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avnumberofchannelskey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avnumberofchannelskey"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avchannellayoutkey": {
-      "title": "AVChannelLayoutKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avchannellayoutkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avchannellayoutkey"
+      "url": "/documentation/avfaudio/avformatidkey"
     },
     "doc://com.apple.documentation/documentation/coreaudiotypes/1572096-audio_data_format_identifiers/kaudioformatlinearpcm": {
       "title": "kAudioFormatLinearPCM",
@@ -278,21 +164,45 @@
       "role": "symbol",
       "url": "/documentation/coreaudiotypes/1572096-audio_data_format_identifiers/kaudioformatapplelossless"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avencoderbitdepthhintkey": {
+    "doc://com.apple.documentation/documentation/avfaudio/avencoderbitdepthhintkey": {
       "title": "AVEncoderBitDepthHintKey",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avencoderbitdepthhintkey",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avencoderbitdepthhintkey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avencoderbitdepthhintkey"
+      "url": "/documentation/avfaudio/avencoderbitdepthhintkey"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediatypevideo": {
-      "title": "AVMediaTypeVideo",
+    "doc://com.apple.documentation/documentation/avfaudio/avsampleratekey": {
+      "title": "AVSampleRateKey",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediatypevideo",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avsampleratekey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmediatypevideo"
+      "url": "/documentation/avfaudio/avsampleratekey"
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/avnumberofchannelskey": {
+      "title": "AVNumberOfChannelsKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avnumberofchannelskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfaudio/avnumberofchannelskey"
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/avchannellayoutkey": {
+      "title": "AVChannelLayoutKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avchannellayoutkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfaudio/avchannellayoutkey"
+    },
+    "doc://com.apple.documentation/documentation/avfaudio/avsamplerateconverteraudioqualitykey": {
+      "title": "AVSampleRateConverterAudioQualityKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avsamplerateconverteraudioqualitykey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfaudio/avsamplerateconverteraudioqualitykey"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avvideocodeckey": {
       "title": "AVVideoCodecKey",
@@ -318,22 +228,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avvideoheightkey"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocodech264": {
-      "title": "AVVideoCodecH264",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocodech264",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocodech264"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocodecjpeg": {
-      "title": "AVVideoCodecJPEG",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocodecjpeg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocodecjpeg"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avvideoscalingmodekey": {
       "title": "AVVideoScalingModeKey",
       "type": "topic",
@@ -349,6 +243,38 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avvideoscalingmodefit"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfiletypequicktimemovie": {
+      "title": "AVFileTypeQuickTimeMovie",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypequicktimemovie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfiletypequicktimemovie"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype": {
+      "title": "initWithMediaType:outputSettings:sourceFormatHint:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an input that appends sample buffers of the specified type and format hint to the output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithMediaType:outputSettings:sourceFormatHint:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmediatype": {
       "title": "AVMediaType",
@@ -384,7 +310,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new writer input object initialized with the specified media type and output settings. "
+          "text": "Returns a new input to append sample buffers of the specified type to the output file."
         }
       ],
       "fragments": [
@@ -398,30 +324,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype": {
-      "title": "assetWriterInputWithMediaType:outputSettings:sourceFormatHint:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a new writer input object initialized with the specified media type, output settings, and source format hint. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "assetWriterInputWithMediaType:outputSettings:sourceFormatHint:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1385912-initwithmediatype": {
       "title": "initWithMediaType:outputSettings:",
       "type": "topic",
@@ -432,7 +334,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initialize a writer input object with the specified media type and output settings."
+          "text": "Creates an input to append sample buffers of the specified type to the output file."
         }
       ],
       "fragments": [
@@ -446,17 +348,27 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings": {
-      "title": "Video Settings",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype": {
+      "title": "assetWriterInputWithMediaType:outputSettings:sourceFormatHint:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/avfoundation/avassetwriterinput/video_settings",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
       "abstract": [
         {
           "type": "text",
-          "text": "Define output image and video formats by using the key and value constants."
+          "text": "Returns a new input that appends sample buffers of the specified type and format hint to the output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "assetWriterInputWithMediaType:outputSettings:sourceFormatHint:"
         }
       ]
     },
@@ -473,10 +385,9 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449070-assetwriterinputwithmediatype",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype"
       ],
-      "title": "Creating an Asset Writer Input Instance",
+      "title": "Creating an Input",
       "generated": true
     }
   ],
@@ -578,6 +489,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -599,16 +511,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The media type of the samples to be accepted by the input object. For a list of media types, see "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants"
-                },
-                {
-                  "type": "text",
-                  "text": ". "
+                  "text": "The media type of the samples the input accepts."
                 }
               ]
             }
@@ -622,73 +525,18 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Specify a dictionary containing the settings used for encoding the media appended to the output. You may pass "
+                  "text": "The settings to use for encoding the media you append to the output. Create an output settings dictionary manually, or use "
                 },
                 {
-                  "type": "codeVoice",
-                  "code": "nil"
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant"
                 },
                 {
                   "type": "text",
-                  "text": " for this parameter if you do not want the appended samples to be re-encoded."
+                  "text": " to create preset-based settings."
                 }
               ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "Audio output settings keys are defined in "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats"
-                },
-                {
-                  "type": "text",
-                  "text": ". Video output settings keys are defined in "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_constants"
-                },
-                {
-                  "type": "text",
-                  "text": ". Video output settings with keys from "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref"
-                },
-                {
-                  "type": "text",
-                  "text": " are not currently supported."
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "An initialized writer input object that can accept samples of the specified media type and write them to the output file."
             }
           ]
         }
@@ -708,33 +556,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Each new input accepts data for a new track of the asset writer’s output file. You add an input to an asset writer using the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVAssetWriter"
-            },
-            {
-              "type": "text",
-              "text": " method "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput"
-            },
-            {
-              "type": "text",
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Passing "
+              "text": "If you’re appending samples that are already in an acceptable compressed format, pass a value of "
             },
             {
               "type": "codeVoice",
@@ -742,16 +564,7 @@
             },
             {
               "type": "text",
-              "text": " for output settings instructs the input to pass through appended samples, doing no processing before they are written to the output file.  This is useful if, for example, you are appending buffers that are already in a desirable compressed format.  However, if not writing to a QuickTime Movie file (i.e. the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-            },
-            {
-              "type": "text",
-              "text": " was initialized with a file type other than "
+              "text": " for the output settings to pass the buffers to the output unaltered. However, if you’re not writing to a QuickTime movie file, an asset writer only supports passing through a restricted set of media types and subtypes. To pass through media data to files with a type other than "
             },
             {
               "type": "reference",
@@ -760,33 +573,7 @@
             },
             {
               "type": "text",
-              "text": "), "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-            },
-            {
-              "type": "text",
-              "text": " only supports passing through a restricted set of media types and subtypes.  In order to pass through media data to files other than "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypequicktimemovie"
-            },
-            {
-              "type": "text",
-              "text": ", a non-"
-            },
-            {
-              "type": "codeVoice",
-              "code": "NULL"
-            },
-            {
-              "type": "text",
-              "text": " format hint must be provided using "
+              "text": ", pass a nonnull format hint using the "
             },
             {
               "type": "reference",
@@ -795,186 +582,214 @@
             },
             {
               "type": "text",
-              "text": " instead of this method."
+              "text": " instead."
             }
           ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configuring Audio Settings",
+          "anchor": "3853145"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "When the "
-            },
+              "text": "You must fully specify the audio settings dictionary when using this initializer, which means you must provide values for the following keys:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
             {
-              "type": "codeVoice",
-              "code": "mediaType"
-            },
-            {
-              "type": "text",
-              "text": " parameter is "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediatypeaudio"
-            },
-            {
-              "type": "text",
-              "text": ", the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "outputSettings"
-            },
-            {
-              "type": "text",
-              "text": " dictionary does not support the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avencoderaudioqualitykey"
-            },
-            {
-              "type": "text",
-              "text": " and "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplerateconverteraudioqualitykey"
-            },
-            {
-              "type": "text",
-              "text": " keys. When using this method, an audio settings dictionary must be fully specified, meaning that it must contain the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avformatidkey"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsampleratekey"
-            },
-            {
-              "type": "text",
-              "text": ", and "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avnumberofchannelskey"
-            },
-            {
-              "type": "text",
-              "text": " keys. If no other channel layout information is available, a value of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "1"
-            },
-            {
-              "type": "text",
-              "text": " for the "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avnumberofchannelskey"
-            },
-            {
-              "type": "text",
-              "text": " key results in mono output and a value of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "2"
-            },
-            {
-              "type": "text",
-              "text": " results in stereo output. If the "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avnumberofchannelskey"
-            },
-            {
-              "type": "text",
-              "text": " key specifies a value greater than 2, the dictionary must also specify a value for the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avchannellayoutkey"
-            },
-            {
-              "type": "text",
-              "text": " key. For audio using the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coreaudiotypes/1572096-audio_data_format_identifiers/kaudioformatlinearpcm"
-            },
-            {
-              "type": "text",
-              "text": " format, include all relevant "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVLinearPCM"
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
+              "content": [
                 {
-                  "type": "text",
-                  "text": "*"
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avformatidkey"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". The identifier of the audio format. For "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coreaudiotypes/1572096-audio_data_format_identifiers/kaudioformatlinearpcm"
+                    },
+                    {
+                      "type": "text",
+                      "text": " format, you must include values for all relevant keys with a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "AVLinearPCM"
+                    },
+                    {
+                      "type": "text",
+                      "text": " prefix, and for "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coreaudiotypes/1572096-audio_data_format_identifiers/kaudioformatapplelossless"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", you must specify a value for "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avencoderbitdepthhintkey"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
                 }
               ]
             },
             {
-              "type": "codeVoice",
-              "code": "Key"
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avsampleratekey"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". The sample rate of the audio. Common values are "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "44100"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "48000"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
             },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avnumberofchannelskey"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". If no other channel layout information is available, specifying a value of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    },
+                    {
+                      "type": "text",
+                      "text": " results in mono output and a value of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "2"
+                    },
+                    {
+                      "type": "text",
+                      "text": " results in stereo output. If "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avnumberofchannelskey"
+                    },
+                    {
+                      "type": "text",
+                      "text": " specifies a channel count greater than "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "2"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", the dictionary must also specify a value for "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfaudio/avchannellayoutkey"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The system doesn’t support specifying a value for "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfaudio/avsamplerateconverteraudioqualitykey"
+                },
+                {
+                  "type": "text",
+                  "text": " in audio output settings."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configuring Video Settings",
+          "anchor": "3853146"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
             {
               "type": "text",
-              "text": " keys. For the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coreaudiotypes/1572096-audio_data_format_identifiers/kaudioformatapplelossless"
-            },
-            {
-              "type": "text",
-              "text": " format, include the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avencoderbitdepthhintkey"
-            },
-            {
-              "type": "text",
-              "text": " keys. To avoid specifying values for each of those keys, use the "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype"
-            },
-            {
-              "type": "text",
-              "text": " method instead."
+              "text": "A video output settings dictionary must request a compressed video format, which means that the value you specify must follow the rules for compressed video output."
             }
           ]
         },
@@ -983,40 +798,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "mediaType"
-            },
-            {
-              "type": "text",
-              "text": " parameter is "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediatypevideo"
-            },
-            {
-              "type": "text",
-              "text": ", the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "outputSettings"
-            },
-            {
-              "type": "text",
-              "text": " dictionary must request a compressed video format. This means that the values specified in the dictionary must follow the rules for compressed video output, as described in "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVVideoSettings.h"
-            },
-            {
-              "type": "text",
-              "text": ". When using this initializer, a video settings dictionary must be fully specified, meaning that it must contain the following keys: "
+              "text": "You must fully specify the video settings dictionary when using this initializer, which means you must provide values for the following keys "
             },
             {
               "type": "reference",
@@ -1034,7 +816,7 @@
             },
             {
               "type": "text",
-              "text": ", and "
+              "text": ", "
             },
             {
               "type": "reference",
@@ -1043,16 +825,7 @@
             },
             {
               "type": "text",
-              "text": ". To avoid specifying values for each of those keys, use the "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype"
-            },
-            {
-              "type": "text",
-              "text": " method."
+              "text": "."
             }
           ]
         },
@@ -1064,43 +837,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "On iOS, the only values currently supported for the "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocodeckey"
-                },
-                {
-                  "type": "text",
-                  "text": " key are "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocodech264"
-                },
-                {
-                  "type": "text",
-                  "text": " and "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocodecjpeg"
-                },
-                {
-                  "type": "text",
-                  "text": ". The "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocodech264"
-                },
-                {
-                  "type": "text",
-                  "text": " value is not supported on iPhone 3G. For the "
+                  "text": "Specifying a "
                 },
                 {
                   "type": "reference",
@@ -1109,7 +846,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " key, the value "
+                  "text": " value of "
                 },
                 {
                   "type": "reference",
@@ -1118,19 +855,23 @@
                 },
                 {
                   "type": "text",
-                  "text": " value is not supported."
+                  "text": " results in an error."
                 }
               ]
             }
           ],
           "style": "note",
           "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

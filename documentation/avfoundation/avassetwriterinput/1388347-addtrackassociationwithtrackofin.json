@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Associates the track corresponding to the specified input with the track corresponding with the receiver."
+      "text": "Adds an association between input tracks."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInput(im)addTrackAssociationWithTrackOfInput:type:",
+    "parent": {
+      "title": "AVAssetWriterInput"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,29 +126,13 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avassetwriterinput"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsinvalidargumentexception": {
-      "title": "NSInvalidArgumentException",
+    "doc://com.apple.documentation/documentation/foundation/nsstring": {
+      "title": "NSString",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsinvalidargumentexception",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsinvalidargumentexception"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
-      "title": "AVAssetWriter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypetimecode": {
-      "title": "AVTrackAssociationTypeTimecode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypetimecode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avtrackassociationtypetimecode"
+      "url": "/documentation/foundation/nsstring"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko": {
       "title": "canAddTrackAssociationWithTrackOfInput:type:",
@@ -152,7 +144,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Validates the association between the tracks and their corresponding pair of inputs."
+          "text": "Determines whether it’s valid to associate another input’s track with this input’s track."
         }
       ],
       "fragments": [
@@ -166,14 +158,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsstring": {
-      "title": "NSString",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsstring"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin": {
       "title": "addTrackAssociationWithTrackOfInput:type:",
       "type": "topic",
@@ -184,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Associates the track corresponding to the specified input with the track corresponding with the receiver."
+          "text": "Adds an association between input tracks."
         }
       ],
       "fragments": [
@@ -211,7 +195,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko"
       ],
-      "title": "Managing Track Associations",
+      "title": "Configuring Track Associations",
       "generated": true
     }
   ],
@@ -299,6 +283,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -320,15 +305,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The instance of "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "AVAssetWriterInput"
-                },
-                {
-                  "type": "text",
-                  "text": " with a corresponding track to associate with track corresponding with the receiver."
+                  "text": "The input that contains the track to associate with this input’s track."
                 }
               ]
             }
@@ -342,16 +319,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The type of track association to add. Common track association types, such as "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypetimecode"
-                },
-                {
-                  "type": "text",
-                  "text": " are defined in Track Association Types."
+                  "text": "The type of track association to add."
                 }
               ]
             }
@@ -373,49 +341,24 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the type of association requires tracks of specific media types that don't match the media types of the inputs, or if the output file type does not support track associations, an "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nsinvalidargumentexception"
-            },
-            {
-              "type": "text",
-              "text": " is raised."
+              "text": "The system raises an error if the association type requires tracks of a media type that doesn’t match the input’s type, or if the output file type doesn’t support track associations."
             }
           ]
         },
         {
-          "type": "aside",
-          "content": [
+          "type": "paragraph",
+          "inlineContent": [
             {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "Track associations cannot be added after writing on the receiver's "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-                },
-                {
-                  "type": "text",
-                  "text": " instance has started."
-                }
-              ]
+              "type": "text",
+              "text": "You can’t add track associations after writing starts."
             }
-          ],
-          "style": "note",
-          "name": "Note"
+          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

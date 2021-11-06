@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The key in the metadata dictionary to identify the store type."
+      "text": "The metadata key that identifies the store type."
     }
   ],
   "documentVersion": 0,
@@ -12,8 +12,7 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/coredata",
         "doc://com.apple.documentation/documentation/coredata/core_data_stack",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_metadata"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator"
       ]
     ]
   },
@@ -36,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@NSStoreTypeKey",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,14 +119,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_metadata": {
-      "title": "Store Metadata",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_metadata",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/store_metadata",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
       "type": "topic",
@@ -130,6 +126,130 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsstoretypekey": {
+      "title": "NSStoreTypeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsstoretypekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsstoretypekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The metadata key that identifies the store type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsstoreuuidkey": {
+      "title": "NSStoreUUIDKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsstoreuuidkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsstoreuuidkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The metadata key that contains the store’s UUID."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468778-metadataforpersistentstoreoftype": {
+      "title": "metadataForPersistentStoreOfType:URL:options:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468778-metadataforpersistentstoreoftype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/1468778-metadataforpersistentstoreoftype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns metadata for a specific type of persistent store at the provided location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "metadataForPersistentStoreOfType:URL:options:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468893-setmetadata": {
+      "title": "setMetadata:forPersistentStoreOfType:URL:options:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468893-setmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/1468893-setmetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds metadata to a specific type of persistent store at the provided location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "setMetadata:forPersistentStoreOfType:URL:options:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468911-metadataforpersistentstore": {
+      "title": "metadataForPersistentStore:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468911-metadataforpersistentstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/1468911-metadataforpersistentstore",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the metadata for the specified persistent store."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "metadataForPersistentStore:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468899-setmetadata": {
+      "title": "setMetadata:forPersistentStore:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468899-setmetadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/1468899-setmetadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds metadata to the specified persistent store."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setMetadata:forPersistentStore:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -139,6 +259,19 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsstoreuuidkey",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468778-metadataforpersistentstoreoftype",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468893-setmetadata",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468911-metadataforpersistentstore",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468899-setmetadata"
+      ],
+      "title": "Managing Store Metadata",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -177,6 +310,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -187,7 +321,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

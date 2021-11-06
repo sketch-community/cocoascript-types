@@ -41,35 +41,40 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@vImageConverter_CreateWithCGColorConversionInfo",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -216,16 +221,6 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 680,
-            "height": 257
-          },
-          "url": "https://docs-assets.developer.apple.com/published/dc4e913a7c/original-1587741927.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
@@ -309,6 +304,20 @@
         {
           "type": "text",
           "text": "Learn the fundamentals of the convert-any-to-any function by converting a CMYK image to an RGB image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/conversion/converting_chroma-subsampled_images": {
+      "title": "Converting Chroma-Subsampled Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/conversion/converting_chroma-subsampled_images",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/conversion/converting_chroma-subsampled_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create vImage buffers with the correct dimensions to convert to and from images with subsampled chroma information."
         }
       ]
     },
@@ -478,6 +487,7 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow",
+        "doc://com.apple.documentation/documentation/accelerate/conversion/converting_chroma-subsampled_images",
         "doc://com.apple.documentation/documentation/accelerate/1399134-vimageconvert_anytoany",
         "doc://com.apple.documentation/documentation/accelerate/vimageconverterref",
         "doc://com.apple.documentation/documentation/accelerate/1399114-vimageconverter_createwithcgimag",
@@ -611,6 +621,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -799,29 +810,6 @@
               "text": "."
             }
           ]
-        },
-        {
-          "type": "aside",
-          "content": [
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "The source and destination color spaces must have the same number of channels."
-                }
-              ]
-            }
-          ],
-          "style": "important"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         },
         {
           "level": 3,
@@ -1029,7 +1017,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An abstract class that defines the common behavior shared by polygon and polyline overlays.  "
+      "text": "An abstract class that defines the common behavior shared by open and closed polygon overlays.  "
     }
   ],
   "documentVersion": 0,
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)MKMultiPoint",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -240,6 +245,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/mapkit/mkoverlay": {
+      "title": "MKOverlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkoverlay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface for associating content with a specific map region.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer": {
+      "title": "MKOverlayRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkoverlayrenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The shared infrastructure used to draw overlays on the map surface. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/mapkit/mkmultipoint": {
       "title": "MKMultiPoint",
       "type": "topic",
@@ -250,7 +283,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class that defines the common behavior shared by polygon and polyline overlays.  "
+          "text": "An abstract class that defines the common behavior shared by open and closed polygon overlays.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkplacemark": {
+      "title": "MKPlacemark",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkplacemark",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user-friendly description of a location on the map.  "
         }
       ]
     },
@@ -281,20 +328,25 @@
         "doc://com.apple.documentation/documentation/mapkit/mkmultipoint/1452179-pointcount",
         "doc://com.apple.documentation/documentation/mapkit/mkmultipoint/3571236-locationatpointindex",
         "doc://com.apple.documentation/documentation/mapkit/mkmultipoint/3571237-locationsatpointindexes"
-      ]
+      ],
+      "anchor": "1657925"
     },
     {
       "kind": "taskGroup",
       "title": "Getting Coordinate Values",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkmultipoint/1451911-getcoordinates"
-      ]
+      ],
+      "anchor": "1657976"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/mapkit/mkshape"
+        "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
+        "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
+        "doc://com.apple.documentation/documentation/mapkit/mkshape",
+        "doc://com.apple.documentation/documentation/mapkit/mkplacemark"
       ],
       "title": "Shared Behavior",
       "generated": true
@@ -334,6 +386,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -381,7 +434,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

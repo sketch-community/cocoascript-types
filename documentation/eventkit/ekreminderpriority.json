@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The event's priority."
+      "text": "The priority of the reminder."
     }
   ],
   "documentVersion": 0,
@@ -34,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@EKReminderPriority",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,21 +113,33 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsuinteger"
     },
+    "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritynone": {
+      "title": "EKReminderPriorityNone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritynone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekreminderpriority/ekreminderprioritynone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reminder has no priority set."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderpriorityhigh": {
       "title": "EKReminderPriorityHigh",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderpriorityhigh",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekreminderpriority/ekreminderpriorityhigh"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritylow": {
-      "title": "EKReminderPriorityLow",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritylow",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekreminderpriority/ekreminderprioritylow"
+      "url": "/documentation/eventkit/ekreminderpriority/ekreminderpriorityhigh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reminder is high priority."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritymedium": {
       "title": "EKReminderPriorityMedium",
@@ -130,15 +147,27 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritymedium",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekreminderpriority/ekreminderprioritymedium"
+      "url": "/documentation/eventkit/ekreminderpriority/ekreminderprioritymedium",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reminder is medium priority."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritynone": {
-      "title": "EKReminderPriorityNone",
+    "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritylow": {
+      "title": "EKReminderPriorityLow",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritynone",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritylow",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekreminderpriority/ekreminderprioritynone"
+      "url": "/documentation/eventkit/ekreminderpriority/ekreminderprioritylow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reminder is low priority."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority": {
       "title": "EKReminderPriority",
@@ -150,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The event's priority."
+          "text": "The priority of the reminder."
         }
       ]
     },
@@ -160,7 +189,13 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507173-priority",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekreminder/1507173-priority"
+      "url": "/documentation/eventkit/ekreminder/1507173-priority",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reminder's priority."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507558-startdatecomponents": {
       "title": "startDateComponents",
@@ -231,11 +266,12 @@
       "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritynone",
         "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderpriorityhigh",
-        "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritylow",
         "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritymedium",
-        "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritynone"
-      ]
+        "doc://com.apple.documentation/documentation/eventkit/ekreminderpriority/ekreminderprioritylow"
+      ],
+      "anchor": "3712339"
     }
   ],
   "seeAlsoSections": [
@@ -313,6 +349,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -322,7 +359,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

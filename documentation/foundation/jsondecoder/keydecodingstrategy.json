@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The values that determine how a type's coding keys are decoded from JSON keys."
+      "text": "The values that determine how to decode a type’s coding keys from JSON keys."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "9.3",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation11JSONDecoderC19KeyDecodingStrategyO",
+    "parent": {
+      "title": "JSONDecoder"
+    },
     "symbolKind": "enum",
     "fragments": [
       {
@@ -77,8 +85,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -129,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key decoding strategy that doesn't change key names during decoding."
+          "text": "A key decoding strategy that doesn’t change key names during decoding."
         }
       ],
       "fragments": [
@@ -205,7 +213,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that determines how a type's coding keys are decoded from JSON keys."
+          "text": "A value that determines how to decode a type’s coding keys from JSON keys."
         }
       ],
       "fragments": [
@@ -233,7 +241,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The values that determine how a type's coding keys are decoded from JSON keys."
+          "text": "The values that determine how to decode a type’s coding keys from JSON keys."
         }
       ],
       "fragments": [
@@ -275,6 +283,62 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/jsondecoder/3766916-allowsjson5": {
+      "title": "allowsJSON5",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsondecoder/3766916-allowsjson5",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/jsondecoder/3766916-allowsjson5",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that decoding supports the JSON5 syntax."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "allowsJSON5"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/jsondecoder/3766917-assumestopleveldictionary": {
+      "title": "assumesTopLevelDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsondecoder/3766917-assumestopleveldictionary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/jsondecoder/3766917-assumestopleveldictionary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that decoding assumes the top level of the JSON data is a dictionary, even if it doesn’t begin and end with braces."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "assumesTopLevelDictionary"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -290,21 +354,25 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/jsondecoder/keydecodingstrategy/convertfromsnakecase",
         "doc://com.apple.documentation/documentation/foundation/jsondecoder/keydecodingstrategy/usedefaultkeys"
-      ]
+      ],
+      "anchor": "2950685"
     },
     {
       "kind": "taskGroup",
       "title": "Custom Decoding",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/jsondecoder/keydecodingstrategy/custom"
-      ]
+      ],
+      "anchor": "2950686"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/jsondecoder/2949119-keydecodingstrategy",
-        "doc://com.apple.documentation/documentation/foundation/jsondecoder/2895340-userinfo"
+        "doc://com.apple.documentation/documentation/foundation/jsondecoder/2895340-userinfo",
+        "doc://com.apple.documentation/documentation/foundation/jsondecoder/3766916-allowsjson5",
+        "doc://com.apple.documentation/documentation/foundation/jsondecoder/3766917-assumestopleveldictionary"
       ],
       "title": "Customizing Decoding",
       "generated": true
@@ -344,6 +412,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -383,7 +452,8 @@
               ]
             }
           ],
-          "style": "note"
+          "style": "note",
+          "name": "Note"
         },
         {
           "type": "paragraph",
@@ -393,7 +463,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

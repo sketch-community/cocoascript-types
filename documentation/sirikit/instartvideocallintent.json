@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A request to start a video call with one or more users. "
+      "text": "A request to start a video call with one or more users."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -35,14 +35,21 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -50,8 +57,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -86,13 +93,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols": {
-      "title": "Deprecated Classes and Protocols",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_classes_and_protocols",
-      "url": "/documentation/sirikit/deprecated_classes_and_protocols",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent": {
+      "title": "INStartCallIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent"
     },
     "doc://com.apple.documentation/documentation/sirikit/instartvideocallintent#2421664": {
       "title": "Table 1",
@@ -155,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Your response to a start video call intent. "
+          "text": "A response to an intent to start a video call."
         }
       ],
       "deprecated": true
@@ -227,7 +242,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The users to call. "
+          "text": "The users to call."
         }
       ],
       "deprecated": true
@@ -242,7 +257,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A request to start a video call with one or more users. "
+          "text": "A request to start a video call with one or more users."
         }
       ],
       "deprecated": true
@@ -255,16 +270,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -281,14 +306,16 @@
       "title": "Initializing the Intent Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintent/1638541-initwithcontacts"
-      ]
+      ],
+      "anchor": "2528197"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Recipients of the Call",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintent/1639126-contacts"
-      ]
+      ],
+      "anchor": "2528202"
     }
   ],
   "seeAlsoSections": [
@@ -297,7 +324,7 @@
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/instartvideocallintentresponse"
       ],
-      "title": "Start a Video Call",
+      "title": "Video Call Initiation",
       "generated": true
     }
   ],
@@ -335,6 +362,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -362,7 +390,7 @@
             },
             {
               "type": "text",
-              "text": " objects to let you know when the user wants to place a video call using your app. A video call intent object contains the users to be called. It is up to you to match the information in this object to contacts in your app and to initiate the resulting call."
+              "text": " objects to let you know when the user wants to place a video call using your app. A video call intent object contains the users to include in the call. It’s up to you to match the information in this object to contacts in your app and to initiate the resulting call."
             }
           ]
         },
@@ -389,7 +417,7 @@
             },
             {
               "type": "text",
-              "text": " protocol. Your handler should confirm the request and create an "
+              "text": " protocol. Your handler confirms the request and creates an "
             },
             {
               "type": "reference",
@@ -398,7 +426,7 @@
             },
             {
               "type": "text",
-              "text": " object to indicate that it is possible to begin the call. Do not try to initiate calls directly from your Intents extension. SiriKit launches your app and passes it an "
+              "text": " object to indicate that it’s possible to begin the call. Don’t try to initiate calls directly from your Intents extension. SiriKit launches your app and passes it an "
             },
             {
               "type": "reference",
@@ -416,7 +444,7 @@
             },
             {
               "type": "text",
-              "text": " object in the user activity object with this intent. For calls initiated through Siri, the interaction object also includes the response provided by your Intents extension.)"
+              "text": " object in the user activity object with this intent. For calls initiated through Siri, the interaction object also includes the response provided by your Intents extension."
             }
           ]
         },
@@ -434,7 +462,7 @@
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         },
@@ -528,7 +556,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "If your app adopts CallKit, the system does not require an unlocked device. Instead, your app runs in the background and the system displays the in-call user interface on your app’s behalf."
+                      "text": "If your app adopts CallKit, the system doesn’t require an unlocked device. Instead, your app runs in the background and the system displays the in-call user interface on your app’s behalf."
                     }
                   ]
                 },
@@ -537,7 +565,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "If your app does not adopt CallKit, SiriKit prompts the user to unlock the device so that your app can be launched. If the device is already unlocked, SiriKit launches the app in the foreground."
+                      "text": "If your app doesn’t adopt CallKit, SiriKit prompts the user to unlock the device so that it can launch your app. If the device is already unlocked, SiriKit launches the app in the foreground."
                     }
                   ]
                 }
@@ -600,7 +628,7 @@
             },
             {
               "type": "text",
-              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list is not exhaustive and Siri may recognize many other phrases."
+              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases."
             }
           ]
         },
@@ -1789,7 +1817,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

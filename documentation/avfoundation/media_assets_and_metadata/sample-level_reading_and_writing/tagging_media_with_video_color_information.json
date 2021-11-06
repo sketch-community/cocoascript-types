@@ -33,8 +33,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -131,13 +131,13 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avvideocolorpropertieskey"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings/setting_color_properties_for_a_specific_resolution": {
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings/setting_color_properties_for_a_specific_resolution": {
       "title": "Setting Color Properties for a Specific Resolution",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings/setting_color_properties_for_a_specific_resolution",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings/setting_color_properties_for_a_specific_resolution",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/avfoundation/avassetwriterinput/video_settings/setting_color_properties_for_a_specific_resolution"
+      "url": "/documentation/avfoundation/avcapturephotosettings/video_settings/setting_color_properties_for_a_specific_resolution"
     },
     "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667275": {
       "title": "Listing 1",
@@ -383,6 +383,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color": {
+      "title": "Evaluating an App’s Video Color",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant": {
+      "title": "AVOutputSettingsAssistant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avoutputsettingsassistant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that builds audio and video output settings dictionaries."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
       "title": "AVAssetWriter",
       "type": "topic",
@@ -393,21 +421,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
-      "title": "AVAssetWriterDelegate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterdelegate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A delegate protocol that defines the methods to implement to be an asset writer delegate."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -421,7 +435,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+          "text": "An object that appends video samples to an asset writer input."
         }
       ]
     },
@@ -435,7 +449,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
+          "text": "An object that appends timed metadata groups to an asset writer input."
         }
       ]
     },
@@ -449,7 +463,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A group of tracks in a mutually exclusive relationship."
+          "text": "A group of inputs with tracks that are mutually exclusive to each other for playback or processing."
         }
       ]
     },
@@ -465,8 +479,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/evaluating_an_app_s_video_color",
+        "doc://com.apple.documentation/documentation/avfoundation/avoutputsettingsassistant",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor",
@@ -830,7 +845,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings/setting_color_properties_for_a_specific_resolution"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/video_settings/setting_color_properties_for_a_specific_resolution"
             },
             {
               "type": "text",
@@ -940,8 +955,17 @@
           "code": [
             "let writer = <# Your AVAssetWriter object #>",
             "",
-            "let colorPropertySettings = [AVVideoColorPrimariesKey: AVVideoColorPrimaries_ITU_R_709_2, AVVideoYCbCrMatrixKey: AVVideoTransferFunction_ITU_R_709_2, AVVideoTransferFunctionKey: AVVideoYCbCrMatrix_ITU_R_709_2]",
-            "let compressionSettings = [AVVideoCodecKey : AVVideoCodecType.h264, AVVideoWidthKey : 1920, AVVideoHeightKey : 1080, AVVideoColorPropertiesKey: colorPropertySettings] as [String : Any]",
+            "let colorPropertySettings = [",
+            "    AVVideoColorPrimariesKey: AVVideoColorPrimaries_ITU_R_709_2,",
+            "    AVVideoYCbCrMatrixKey: AVVideoTransferFunction_ITU_R_709_2,",
+            "    AVVideoTransferFunctionKey: AVVideoYCbCrMatrix_ITU_R_709_2",
+            "]",
+            "let compressionSettings: [String : Any] = [",
+            "    AVVideoCodecKey : AVVideoCodecType.h264,",
+            "    AVVideoWidthKey : 1920,",
+            "    AVVideoHeightKey : 1080,",
+            "    AVVideoColorPropertiesKey: colorPropertySettings",
+            "]",
             "",
             "let input = AVAssetWriterInput(mediaType: .video, outputSettings: compressionSettings)",
             "",
@@ -1049,8 +1073,7 @@
             "let videoComposition = AVMutableVideoComposition() ",
             "videoComposition.colorPrimaries = AVVideoColorPrimaries_P3_D65 ",
             "videoComposition.colorTransferFunction = AVVideoTransferFunction_ITU_R_709_2 ",
-            "videoComposition.colorYCbCrMatrix = AVVideoYCbCrMatrix_ITU_R_709_2",
-            ""
+            "videoComposition.colorYCbCrMatrix = AVVideoYCbCrMatrix_ITU_R_709_2"
           ],
           "syntax": "swift",
           "metadata": {
@@ -1128,8 +1151,7 @@
             "CVBufferSetAttachment(pixelBuffer, kCVImageBufferColorPrimariesKey, kCVImageBufferColorPrimaries_P3_D65, kCVAttachmentMode_ShouldPropagate)",
             "CVBufferSetAttachment(pixelBuffer, kCVImageBufferTransferFunctionKey, kCVImageBufferTransferFunction_ITU_R_709_2, kCVAttachmentMode_ShouldPropagate)",
             "CVBufferSetAttachment(pixelBuffer, kCVImageBufferYCbCrMatrixKey, kCVImageBufferYCbCrMatrix_ITU_R_709_2, kCVAttachmentMode_ShouldPropagate)",
-            "writerAdaptor.append(pixelBuffer, withPresentationTime: PTS)",
-            ""
+            "writerAdaptor.append(pixelBuffer, withPresentationTime: PTS)"
           ],
           "syntax": "swift",
           "metadata": {
@@ -1241,8 +1263,7 @@
             "let asset = <# Your AVAsset #>",
             "self.asset.tracks(withMediaType: .video).forEach { assetTracks in",
             "    ",
-            "    let formatDescriptions =",
-            "        assetTracks.formatDescriptions as! [CMFormatDescription]",
+            "    let formatDescriptions =  assetTracks.formatDescriptions as! [CMFormatDescription]",
             "    for (_, formatDesc) in formatDescriptions.enumerated() {",
             "        ",
             "        guard let colorPrimaries =",
@@ -1302,14 +1323,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         },
         {
           "type": "paragraph",
@@ -1374,26 +1387,18 @@
           "type": "codeListing",
           "code": [
             "let asset = <# Your AVAsset #>",
-            "let wideGamutTracks = asset.tracks( withMediaCharacteristic:AVMediaCharacteristicUsesWideGamutColorSpace)",
+            "let wideGamutTracks = asset.tracks(withMediaCharacteristic: .usesWideGamutColorSpace)",
             "if wideGamutTracks.count > 0 {",
             "    // Use wide color aware processing.",
-            "} else { ",
+            "} else {",
             "    // Use Rec 709 processing.",
-            "} "
+            "}"
           ],
           "syntax": "swift",
           "metadata": {
             "anchor": "3667298",
             "title": "Listing 5"
           }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         },
         {
           "level": 3,
@@ -1447,22 +1452,14 @@
         {
           "type": "codeListing",
           "code": [
-            "let allowWideColorSettings = [AVVideoAllowWideColorKey:true]",
-            "let readerOutput = AVAssetReaderOutput(outputSettings:allowWideColorSettings) "
+            "let allowWideColorSettings = [AVVideoAllowWideColorKey: true]",
+            "let readerOutput = AVAssetReaderOutput(outputSettings: allowWideColorSettings) "
           ],
           "syntax": "swift",
           "metadata": {
             "anchor": "3667296",
             "title": "Listing 6"
           }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         },
         {
           "level": 3,
@@ -1518,7 +1515,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

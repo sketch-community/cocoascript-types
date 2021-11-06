@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Schedules a block that the run loop invokes."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSRunLoop(im)performBlock:",
+    "parent": {
+      "title": "RunLoop"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -70,8 +84,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -136,6 +150,218 @@
       "role": "symbol",
       "url": "/documentation/swift/void"
     },
+    "doc://com.apple.documentation/documentation/foundation/runloop/2091881-perform": {
+      "title": "perform(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/2091881-perform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/2091881-perform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules a block that the run loop invokes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "perform"
+        },
+        {
+          "kind": "text",
+          "text": "(() -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/2091880-perform": {
+      "title": "perform(inModes:block:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/2091880-perform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/2091880-perform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules a block that the run loop invokes when it’s running in any of the specified modes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "perform"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "inModes"
+        },
+        {
+          "kind": "text",
+          "text": ": [RunLoop.Mode], "
+        },
+        {
+          "kind": "identifier",
+          "text": "block"
+        },
+        {
+          "kind": "text",
+          "text": ": () -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/1409310-perform": {
+      "title": "perform(_:target:argument:order:modes:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/1409310-perform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/1409310-perform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules the sending of a message on the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "perform"
+        },
+        {
+          "kind": "text",
+          "text": "(Selector, "
+        },
+        {
+          "kind": "identifier",
+          "text": "target"
+        },
+        {
+          "kind": "text",
+          "text": ": Any, "
+        },
+        {
+          "kind": "identifier",
+          "text": "argument"
+        },
+        {
+          "kind": "text",
+          "text": ": Any?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "order"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "modes"
+        },
+        {
+          "kind": "text",
+          "text": ": [RunLoop.Mode])"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/1418077-cancelperform": {
+      "title": "cancelPerform(_:target:argument:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/1418077-cancelperform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/1418077-cancelperform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels the sending of a previously scheduled message."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelPerform"
+        },
+        {
+          "kind": "text",
+          "text": "(Selector, "
+        },
+        {
+          "kind": "identifier",
+          "text": "target"
+        },
+        {
+          "kind": "text",
+          "text": ": Any, "
+        },
+        {
+          "kind": "identifier",
+          "text": "argument"
+        },
+        {
+          "kind": "text",
+          "text": ": Any?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/1414208-cancelperformselectors": {
+      "title": "cancelPerformSelectors(withTarget:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/1414208-cancelperformselectors",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/1414208-cancelperformselectors",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels all outstanding ordered performs scheduled with a given target."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelPerformSelectors"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "withTarget"
+        },
+        {
+          "kind": "text",
+          "text": ": Any)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -144,6 +370,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/runloop/2091880-perform",
+        "doc://com.apple.documentation/documentation/foundation/runloop/1409310-perform",
+        "doc://com.apple.documentation/documentation/foundation/runloop/1418077-cancelperform",
+        "doc://com.apple.documentation/documentation/foundation/runloop/1414208-cancelperformselectors"
+      ],
+      "title": "Scheduling and Canceling Tasks",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -210,6 +448,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -217,10 +456,32 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "block",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A block that the run loop invokes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

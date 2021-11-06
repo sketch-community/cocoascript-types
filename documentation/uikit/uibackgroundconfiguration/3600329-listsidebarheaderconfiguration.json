@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates a default configuration for a sidebar list header."
+      "text": "Creates the default configuration you use to style a sidebar list header."
     }
   ],
   "documentVersion": 0,
@@ -36,20 +36,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIBackgroundConfiguration(cm)listSidebarHeaderConfiguration",
+    "parent": {
+      "title": "UIBackgroundConfiguration"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -62,6 +70,16 @@
       ],
       "paths": [
         "documentation/uikit/uibackgroundconfiguration/3600329-listsidebarheaderconfiguration"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/uikit/uibackgroundconfiguration/3600329-listsidebarheader"
       ]
     }
   ],
@@ -104,6 +122,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearancesidebar": {
+      "title": "UICollectionLayoutListAppearanceSidebar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearancesidebar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearancesidebar"
+    },
     "doc://com.apple.documentation/documentation/uikit/uibackgroundconfiguration/3600327-listplainheaderfooterconfigurati": {
       "title": "listPlainHeaderFooterConfiguration",
       "type": "topic",
@@ -114,7 +140,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a default configuration for a plain list header or footer."
+          "text": "Creates the default configuration you use to style a plain list header or footer."
         }
       ],
       "fragments": [
@@ -138,7 +164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a default configuration for a grouped list header or footer."
+          "text": "Creates the default configuration you use to style a grouped list header or footer."
         }
       ],
       "fragments": [
@@ -162,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a default configuration for a sidebar list header."
+          "text": "Creates the default configuration you use to style a sidebar list header."
         }
       ],
       "fragments": [
@@ -226,14 +252,73 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default configuration for a sidebar list header."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create this configuration to update the styling for the background of a header or footer in a table view or collection view list. When you apply this configuration, the background of the header or footer matches the system default styling for a header or footer in a sidebar list."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For an appearance consistent with system defaults, use this background configuration for a header or footer in a collection view list that you configure with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionlayoutlistappearance/uicollectionlayoutlistappearancesidebar"
+            },
+            {
+              "type": "text",
+              "text": " enumeration case."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

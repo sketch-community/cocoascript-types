@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns by reference a date representation of a given string and the range of the string used, and returns a Boolean value that indicates whether the string could be parsed."
+      "text": "Returns by reference a date representation of a specified string and its date range, as well as a Boolean value that indicates whether the system can parse the string."
     }
   ],
   "documentVersion": 0,
@@ -41,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSDateFormatter(im)getObjectValue:forString:range:error:",
+    "parent": {
+      "title": "NSDateFormatter"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -134,22 +142,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
-    },
     "link-3023437": {
       "title": "Error Handling",
       "type": "topic",
@@ -174,6 +166,22 @@
       "role": "article",
       "url": "/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
     },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsdateformatter/1409994-datefromstring": {
       "title": "dateFromString:",
       "type": "topic",
@@ -184,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a date representation of a given string interpreted using the receiver’s current settings."
+          "text": "Returns a date representation of a specified string that the system interprets using the receiver’s current settings."
         }
       ],
       "fragments": [
@@ -256,7 +264,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a string representation of a given date formatted using the receiver’s current settings."
+          "text": "Returns a string representation of a specified date that the system formats using the receiver’s current settings."
         }
       ],
       "fragments": [
@@ -280,7 +288,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a string representation of a given date, formatted for the current locale using the specified date and time styles."
+          "text": "Returns a string representation of a specified date, that the system formats for the current locale using the specified date and time styles."
         }
       ],
       "fragments": [
@@ -304,7 +312,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns by reference a date representation of a given string and the range of the string used, and returns a Boolean value that indicates whether the string could be parsed."
+          "text": "Returns by reference a date representation of a specified string and its date range, as well as a Boolean value that indicates whether the system can parse the string."
         }
       ],
       "fragments": [
@@ -526,6 +534,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -785,7 +794,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

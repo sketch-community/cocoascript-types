@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates and returns the searchable attributes for the referenced managed object."
+      "text": "Returns the searchable attributes for the specified managed object."
     }
   ],
   "documentVersion": 0,
@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSCoreDataCoreSpotlightDelegate(im)attributeSetForObject:",
+    "parent": {
+      "title": "NSCoreDataCoreSpotlightDelegate"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +123,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A delegate that supports Core Spotlight integration."
+          "text": "A set of methods that enable integration with Core Spotlight."
         }
       ]
     },
@@ -127,6 +135,22 @@
       "role": "symbol",
       "url": "/documentation/corespotlight/cssearchableitemattributeset"
     },
+    "doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506784-indexedbyspotlight": {
+      "title": "indexedBySpotlight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506784-indexedbyspotlight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspropertydescription/1506784-indexedbyspotlight"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
+      "title": "nil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nil-2gl"
+    },
     "doc://com.apple.documentation/documentation/coredata/nsmanagedobject": {
       "title": "NSManagedObject",
       "type": "topic",
@@ -134,54 +158,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coredata/nsmanagedobject"
-    },
-    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897202-domainidentifier": {
-      "title": "domainIdentifier",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897202-domainidentifier",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/2897202-domainidentifier",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Identifies the Core Spotlight domain."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "domainIdentifier"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897199-indexname": {
-      "title": "indexName",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897199-indexname",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/2897199-indexname",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Provides a name for the Core Spotlight index."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "indexName"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897197-attributesetforobject": {
       "title": "attributeSetForObject:",
@@ -193,7 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns the searchable attributes for the referenced managed object."
+          "text": "Returns the searchable attributes for the specified managed object."
         }
       ],
       "fragments": [
@@ -204,6 +180,78 @@
         {
           "kind": "identifier",
           "text": "attributeSetForObject:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751982-deletespotlightindexwithcompleti": {
+      "title": "deleteSpotlightIndexWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751982-deletespotlightindexwithcompleti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/3751982-deletespotlightindexwithcompleti",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes all searchable items from the configured index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteSpotlightIndexWithCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751985-startspotlightindexing": {
+      "title": "startSpotlightIndexing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751985-startspotlightindexing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/3751985-startspotlightindexing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts the indexing of the store’s entities."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startSpotlightIndexing"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751986-stopspotlightindexing": {
+      "title": "stopSpotlightIndexing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751986-stopspotlightindexing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/3751986-stopspotlightindexing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Stops the indexing of the store’s entities."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopSpotlightIndexing"
         }
       ]
     },
@@ -218,10 +266,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897202-domainidentifier",
-        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897199-indexname"
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751982-deletespotlightindexwithcompleti",
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751985-startspotlightindexing",
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751986-stopspotlightindexing"
       ],
-      "title": "Searching",
+      "title": "Managing the Index",
       "generated": true
     }
   ],
@@ -285,8 +334,60 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "object",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The managed object to index."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset"
+            },
+            {
+              "type": "text",
+              "text": " that provides the searchable item’s attributes. "
+            }
           ]
         }
       ]
@@ -301,11 +402,44 @@
           "type": "heading"
         },
         {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you enable "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506784-indexedbyspotlight"
+                },
+                {
+                  "type": "text",
+                  "text": " on a property description that describes a relationship, you must override this method and return the necessary set of attributes. Core Data doesn’t automatically infer indexable information for relationships."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "Override to return nil if you don’t want the object in the index."
+              "text": "The prevent Core Spotlight from indexing a specific managed object, override this method and return "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl"
+            },
+            {
+              "type": "text",
+              "text": " for that object."
             }
           ]
         }
@@ -313,7 +447,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

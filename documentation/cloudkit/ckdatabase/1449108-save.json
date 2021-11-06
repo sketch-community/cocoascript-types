@@ -34,30 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKDatabase(im)saveRecordZone:completionHandler:",
+    "parent": {
+      "title": "CKDatabase"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -83,8 +91,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -129,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A conduit for accessing and performing operations on the data of an app container."
+          "text": "A collection of record zones and subscriptions."
         }
       ]
     },
@@ -148,6 +156,22 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/cloudkit/ckmodifyrecordzonesoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449108-save#3808198": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckdatabase/1449108-save#3808198",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/ckdatabase/1449108-save#3808198"
+    },
+    "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously": {
+      "title": "Calling Objective-C APIs Asynchronously",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/swift/calling_objective-c_apis_asynchronously"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecordzone": {
       "title": "CKRecordZone",
@@ -464,6 +488,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -516,6 +541,51 @@
           "level": 2,
           "text": "Discussion",
           "type": "heading"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:"
+                }
+              ]
+            },
+            {
+              "type": "codeListing",
+              "code": [
+                "func save(_ zone: CKRecordZone) async throws -> CKRecordZone"
+              ],
+              "syntax": "swift",
+              "metadata": {
+                "anchor": "3808198",
+                "title": "Listing 1"
+              }
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For information about concurrency and asynchronous code in Swift, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important",
+          "name": "Concurrency Note"
         },
         {
           "type": "paragraph",
@@ -606,7 +676,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

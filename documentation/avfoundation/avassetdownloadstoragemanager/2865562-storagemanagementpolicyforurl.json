@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetDownloadStorageManager(im)storageManagementPolicyForURL:",
+    "parent": {
+      "title": "AVAssetDownloadStorageManager"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,7 +114,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A manager of policies used to automatically purge downloaded assets."
+          "text": "An object that manages policies to automatically purge downloaded assets."
         }
       ]
     },
@@ -125,30 +133,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsurl"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy": {
-      "title": "setStorageManagementPolicy:forURL:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the storage policy for the downloaded asset."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setStorageManagementPolicy:forURL:"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865562-storagemanagementpolicyforurl": {
       "title": "storageManagementPolicyForURL:",
@@ -171,6 +155,30 @@
         {
           "kind": "identifier",
           "text": "storageManagementPolicyForURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy": {
+      "title": "setStorageManagementPolicy:forURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadstoragemanager/2865557-setstoragemanagementpolicy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets a storage policy for the downloaded asset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setStorageManagementPolicy:forURL:"
         }
       ]
     },
@@ -251,6 +259,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -293,16 +302,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanagementpolicy"
-            },
-            {
-              "type": "text",
-              "text": " object that defines the management policy for a downloaded asset. This value is "
+              "text": "The storage management policy for the asset, or "
             },
             {
               "type": "codeVoice",
@@ -310,7 +310,7 @@
             },
             {
               "type": "text",
-              "text": " if a storage management policy was never set."
+              "text": " if one isn’t set."
             }
           ]
         }
@@ -318,7 +318,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

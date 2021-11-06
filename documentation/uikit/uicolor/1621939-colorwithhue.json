@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/drawing",
-        "doc://com.apple.documentation/documentation/uikit/uicolor"
+        "doc://com.apple.documentation/documentation/uikit/uicolor",
+        "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation"
       ]
     ]
   },
@@ -35,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)UIColor(cm)colorWithHue:saturation:brightness:alpha:",
+    "parent": {
+      "title": "UIColor"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,6 +107,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uicolor"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation": {
+      "title": "Color Creation",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation",
+      "url": "/documentation/uikit/uicolor/color_creation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/uikit/uicolor/1621931-initwithhue": {
       "title": "initWithHue:saturation:brightness:alpha:",
@@ -237,7 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a color object using the specified opacity and grayscale values. "
+          "text": "Creates a color object using the specified opacity and grayscale values."
         }
       ],
       "fragments": [
@@ -333,7 +350,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a color object using the named asset that is compatible with the specified trait collection."
+          "text": "Creates a color object using the named asset that’s compatible with the specified trait collection."
         }
       ],
       "fragments": [
@@ -506,6 +523,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -527,7 +545,31 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The hue value of the color object. On applications linked for iOS 10 or later, the color is specified in an extended color space, and the input value is never clamped. On earlier versions of iOS, hue values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as 1.0."
+                  "text": "The hue value of the color object. On applications linked for iOS 10 or later, the color is specified in an extended color space, and the input value is never clamped. On earlier versions of iOS, hue values below "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0.0"
+                },
+                {
+                  "type": "text",
+                  "text": " are interpreted as 0.0, and values above "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "1.0"
+                },
+                {
+                  "type": "text",
+                  "text": " are interpreted as "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "1.0"
+                },
+                {
+                  "type": "text",
+                  "text": "."
                 }
               ]
             }
@@ -541,7 +583,39 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The saturation value of the color object. On applications linked for iOS 10 or later, the color is specified in an extended color space, and the input value is never clamped. On earlier versions of iOS, saturation values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as 1.0."
+                  "text": "The saturation value of the color object. On applications linked for iOS 10 or later, the color is specified in an extended color space, and the input value is never clamped. On earlier versions of iOS, saturation values below "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0.0"
+                },
+                {
+                  "type": "text",
+                  "text": " are interpreted as "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0.0"
+                },
+                {
+                  "type": "text",
+                  "text": ", and values above "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "1.0"
+                },
+                {
+                  "type": "text",
+                  "text": " are interpreted as "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "1.0"
+                },
+                {
+                  "type": "text",
+                  "text": "."
                 }
               ]
             }
@@ -555,7 +629,39 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The brightness value of the color object. On applications linked for iOS 10 or later, the color is specified in an extended color space, and the input value is never clamped. On earlier versions of iOS, brightness values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as 1.0."
+                  "text": "The brightness value of the color object. On applications linked for iOS 10 or later, the color is specified in an extended color space, and the input value is never clamped. On earlier versions of iOS, brightness values below "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0.0"
+                },
+                {
+                  "type": "text",
+                  "text": " are interpreted as "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0.0"
+                },
+                {
+                  "type": "text",
+                  "text": ", and values above "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "1.0"
+                },
+                {
+                  "type": "text",
+                  "text": " are interpreted as "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "1.0"
+                },
+                {
+                  "type": "text",
+                  "text": "."
                 }
               ]
             }
@@ -569,7 +675,55 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The opacity value of the color object, specified as a value from 0.0 to 1.0. Alpha values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as 1.0"
+                  "text": "The opacity value of the color object, specified as a value from "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0.0"
+                },
+                {
+                  "type": "text",
+                  "text": " to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "1.0"
+                },
+                {
+                  "type": "text",
+                  "text": ". Alpha values below "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0.0 "
+                },
+                {
+                  "type": "text",
+                  "text": "are interpreted as "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0.0"
+                },
+                {
+                  "type": "text",
+                  "text": ", and values above "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "1.0"
+                },
+                {
+                  "type": "text",
+                  "text": " are interpreted as "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "1.0"
+                },
+                {
+                  "type": "text",
+                  "text": "."
                 }
               ]
             }
@@ -599,7 +753,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

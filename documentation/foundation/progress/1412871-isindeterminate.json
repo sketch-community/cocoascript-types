@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Indicates whether the tracked progress is indeterminate."
+      "text": "A Boolean value that indicates whether the tracked progress is indeterminate."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(py)indeterminate",
+    "parent": {
+      "title": "Progress"
+    },
     "symbolKind": "instp",
     "fragments": [
       {
@@ -76,8 +84,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,13 +134,7 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/progress",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/progress",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
-        }
-      ]
+      "url": "/documentation/foundation/progress"
     },
     "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount": {
       "title": "totalUnitCount",
@@ -149,34 +151,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/progress/1407934-completedunitcount"
-    },
-    "doc://com.apple.documentation/documentation/foundation/progress/1413314-userinfo": {
-      "title": "userInfo",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1413314-userinfo",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progress/1413314-userinfo",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A dictionary of arbitrary values associated with the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "userInfo"
-        },
-        {
-          "kind": "text",
-          "text": ": [ProgressUserInfoKey : Any]"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/swift/bool": {
       "title": "Bool",
@@ -196,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the tracked progress is indeterminate."
+          "text": "A Boolean value that indicates whether the tracked progress is indeterminate."
         }
       ],
       "fragments": [
@@ -214,17 +188,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/progress/1416139-kind": {
-      "title": "kind",
+    "doc://com.apple.documentation/documentation/foundation/progress/1408579-fractioncompleted": {
+      "title": "fractionCompleted",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1416139-kind",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1408579-fractioncompleted",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/progress/1416139-kind",
+      "url": "/documentation/foundation/progress/1408579-fractioncompleted",
       "abstract": [
         {
           "type": "text",
-          "text": "A string identifying the kind of progress being made."
+          "text": "The fraction of the overall work that the progress object completes, including work from its suboperations."
         }
       ],
       "fragments": [
@@ -234,56 +208,39 @@
         },
         {
           "kind": "identifier",
-          "text": "kind"
+          "text": "fractionCompleted"
         },
         {
           "kind": "text",
-          "text": ": ProgressKind?"
+          "text": ": Double"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/progress/1407537-setuserinfoobject": {
-      "title": "setUserInfoObject(_:forKey:)",
+    "doc://com.apple.documentation/documentation/foundation/progress/2865603-isfinished": {
+      "title": "isFinished",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1407537-setuserinfoobject",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/2865603-isfinished",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/progress/1407537-setuserinfoobject",
+      "url": "/documentation/foundation/progress/2865603-isfinished",
       "abstract": [
         {
           "type": "text",
-          "text": "Set a value in the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1413314-userinfo"
-        },
-        {
-          "type": "text",
-          "text": " dictionary."
+          "text": "A Boolean value that indicates the progress object is complete."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "func "
+          "text": "var "
         },
         {
           "kind": "identifier",
-          "text": "setUserInfoObject"
+          "text": "isFinished"
         },
         {
           "kind": "text",
-          "text": "(Any?, "
-        },
-        {
-          "kind": "identifier",
-          "text": "forKey"
-        },
-        {
-          "kind": "text",
-          "text": ": ProgressUserInfoKey)"
+          "text": ": Bool"
         }
       ]
     },
@@ -298,11 +255,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/progress/1416139-kind",
-        "doc://com.apple.documentation/documentation/foundation/progress/1407537-setuserinfoobject",
-        "doc://com.apple.documentation/documentation/foundation/progress/1413314-userinfo"
+        "doc://com.apple.documentation/documentation/foundation/progress/1408579-fractioncompleted",
+        "doc://com.apple.documentation/documentation/foundation/progress/2865603-isfinished"
       ],
-      "title": "Progress Information",
+      "title": "Observing Progress",
       "generated": true
     }
   ],
@@ -352,6 +308,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -374,7 +331,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Progress is indeterminate when the value of both "
+              "text": "Progress is indeterminate when the values of both "
             },
             {
               "type": "reference",
@@ -404,12 +361,13 @@
               "text": "By default, "
             },
             {
-              "type": "codeVoice",
-              "code": "NSProgress"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress"
             },
             {
               "type": "text",
-              "text": " is KVO-compliant for this property, sending notifications on the same thread that updates the property."
+              "text": " is KVO-compliant for this property. It sends notifications on the same thread that updates the property."
             }
           ]
         }
@@ -417,7 +375,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

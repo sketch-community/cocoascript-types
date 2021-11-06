@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSearchForBillsIntentResponse",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +100,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -107,7 +120,8 @@
           "type": "text",
           "text": "Your app’s response to a request to a search for bills."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintent": {
       "title": "INSearchForBillsIntent",
@@ -121,7 +135,8 @@
           "type": "text",
           "text": "A request for the list of bills matching the specified criteria."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling/2798977-confirmsearchforbills": {
       "title": "confirmSearchForBills:completion:",
@@ -171,7 +186,16 @@
           "type": "text",
           "text": "The handler interface for searching for bills associated with the user."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inintentresponse": {
       "title": "INIntentResponse",
@@ -203,7 +227,8 @@
           "kind": "identifier",
           "text": "initWithCode:userActivity:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponse/2799216-code": {
       "title": "code",
@@ -217,7 +242,8 @@
           "type": "text",
           "text": "The code indicating whether you successfully handled the intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponsecode": {
       "title": "INSearchForBillsIntentResponseCode",
@@ -231,7 +257,8 @@
           "type": "text",
           "text": "Constants indicating the state of the response."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponse/2799221-bills": {
       "title": "bills",
@@ -245,7 +272,8 @@
           "type": "text",
           "text": "The bills found during the search."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -255,16 +283,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -281,7 +319,8 @@
       "title": "Initializing the Response Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponse/2799219-initwithcode"
-      ]
+      ],
+      "anchor": "2806283"
     },
     {
       "kind": "taskGroup",
@@ -289,14 +328,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponse/2799216-code",
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponsecode"
-      ]
+      ],
+      "anchor": "2826079"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Search Results",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintentresponse/2799221-bills"
-      ]
+      ],
+      "anchor": "2806284"
     }
   ],
   "seeAlsoSections": [
@@ -305,7 +346,7 @@
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/insearchforbillsintent"
       ],
-      "title": "Search for Bills",
+      "title": "Bill Search",
       "generated": true
     }
   ],
@@ -343,6 +384,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -434,7 +476,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

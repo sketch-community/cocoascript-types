@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a new instance by decoding from the given decoder."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "9.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation11MeasurementV4fromACyxGs7Decoder_p_tKcfc",
+    "parent": {
+      "title": "Measurement"
+    },
     "symbolKind": "structctr",
     "fragments": [
       {
@@ -79,8 +93,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -151,6 +165,86 @@
       "role": "symbol",
       "url": "/documentation/swift/decodable/2894081-init"
     },
+    "doc://com.apple.documentation/documentation/foundation/measurement/1924149-init": {
+      "title": "init(value:unit:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/1924149-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/1924149-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "Measurement"
+        },
+        {
+          "type": "text",
+          "text": " given a specified value and unit."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "value"
+        },
+        {
+          "kind": "text",
+          "text": ": Double, "
+        },
+        {
+          "kind": "identifier",
+          "text": "unit"
+        },
+        {
+          "kind": "text",
+          "text": ": UnitType)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2908869-init": {
+      "title": "init(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2908869-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2908869-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new instance by decoding from the given decoder."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Decoder)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -167,6 +261,15 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/swift/decodable"
       ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/measurement/1924149-init"
+      ],
+      "title": "Creating a Measurement",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -219,6 +322,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -226,10 +330,52 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "decoder",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The decoder to read data from."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This initializer throws an error if reading from the decoder fails, or if the data read is corrupted or otherwise invalid."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

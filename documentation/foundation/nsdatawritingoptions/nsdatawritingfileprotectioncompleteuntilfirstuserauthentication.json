@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A hint to set the content protection attribute of the file when writing it out."
+      "text": "An option to allow the file to be accessible after a user first unlocks the device."
     }
   ],
   "documentVersion": 0,
@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSDataWritingOptions@NSDataWritingFileProtectionCompleteUntilFirstUserAuthentication",
+    "parent": {
+      "title": "NSDataWritingOptions"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -165,6 +173,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -187,7 +196,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In this case, the file can be read or written to while the device is locked, but while it is booting up, they have protection equivalent to "
+              "text": "In this case, the app can read or write to the file while the device is unlocked, but while it’s booting up, the file has the protection equivalent to "
             },
             {
               "type": "reference",
@@ -204,7 +213,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

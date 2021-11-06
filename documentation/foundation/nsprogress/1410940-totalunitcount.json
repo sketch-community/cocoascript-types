@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The total number of units of work tracked for the current progress."
+      "text": "The total number of tracked units of work for the current progress."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(py)totalUnitCount",
+    "parent": {
+      "title": "NSProgress"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,13 +120,31 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsprogress",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
-        }
-      ]
+      "url": "/documentation/foundation/nsprogress"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogresskindfile": {
+      "title": "NSProgressKindFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogresskindfile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogresskindfile"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogressfiletotalcountkey": {
+      "title": "NSProgressFileTotalCountKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogressfiletotalcountkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogressfiletotalcountkey"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogressfilecompletedcountkey": {
+      "title": "NSProgressFileCompletedCountKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogressfilecompletedcountkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogressfilecompletedcountkey"
     },
     "doc://com.apple.documentation/documentation/foundation/nsprogress/1417251-localizeddescription": {
       "title": "localizedDescription",
@@ -130,7 +156,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A localized description of progress tracked by the receiver."
+          "text": "A localized description of tracked progress for the receiver."
         }
       ]
     },
@@ -144,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A more specific localized description of progress tracked by the receiver."
+          "text": "A more specific localized description of tracked progress for the receiver."
         }
       ]
     },
@@ -158,7 +184,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The fraction of the overall work completed by this progress object, including work done by any children it may have."
+          "text": "The fraction of the overall work that the progress object completes, including work from its suboperations."
         }
       ]
     },
@@ -172,7 +198,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The total number of units of work tracked for the current progress."
+          "text": "The total number of tracked units of work for the current progress."
         }
       ]
     },
@@ -186,7 +212,91 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The number of units of work for the current job that have already been completed."
+          "text": "The number of completed units of work for the current job."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/1409348-cancellable": {
+      "title": "cancellable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1409348-cancellable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/1409348-cancellable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver is tracking work that you can cancel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/1414454-cancelled": {
+      "title": "cancelled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1414454-cancelled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/1414454-cancelled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that Indicates whether the receiver is tracking canceled work."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/1408913-cancellationhandler": {
+      "title": "cancellationHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1408913-cancellationhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/1408913-cancellationhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The block to invoke when canceling progress."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/1417421-pausable": {
+      "title": "pausable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1417421-pausable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/1417421-pausable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver is tracking work that you can pause."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/1415495-paused": {
+      "title": "paused",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1415495-paused",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/1415495-paused",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver is tracking paused work."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/1412873-pausinghandler": {
+      "title": "pausingHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1412873-pausinghandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/1412873-pausinghandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The block to invoke when pausing progress."
         }
       ]
     },
@@ -203,7 +313,13 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsprogress/1407934-completedunitcount",
         "doc://com.apple.documentation/documentation/foundation/nsprogress/1417251-localizeddescription",
-        "doc://com.apple.documentation/documentation/foundation/nsprogress/1412455-localizedadditionaldescription"
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/1412455-localizedadditionaldescription",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/1409348-cancellable",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/1414454-cancelled",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/1408913-cancellationhandler",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/1417421-pausable",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/1415495-paused",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/1412873-pausinghandler"
       ],
       "title": "Reporting Progress",
       "generated": true
@@ -252,6 +368,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -277,32 +394,36 @@
               "text": "For an "
             },
             {
-              "type": "codeVoice",
-              "code": "NSProgress"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress"
             },
             {
               "type": "text",
               "text": " with a kind of "
             },
             {
-              "type": "codeVoice",
-              "code": "NSProgressKindFile"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogresskindfile"
             },
             {
               "type": "text",
-              "text": ", the unit of this property is bytes while the "
+              "text": ", the unit of this property is bytes, and the "
             },
             {
-              "type": "codeVoice",
-              "code": "NSProgressFileTotalCountKey"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogressfiletotalcountkey"
             },
             {
               "type": "text",
               "text": " and "
             },
             {
-              "type": "codeVoice",
-              "code": "NSProgressFileCompletedCountKey"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogressfilecompletedcountkey"
             },
             {
               "type": "text",
@@ -314,7 +435,7 @@
             },
             {
               "type": "text",
-              "text": " dictionary are used for the overall count of files. "
+              "text": " dictionary report the overall count of files. "
             }
           ]
         },
@@ -326,12 +447,13 @@
               "text": "For any other kind of "
             },
             {
-              "type": "codeVoice",
-              "code": "NSProgress"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress"
             },
             {
               "type": "text",
-              "text": ", the unit of measurement does not matter as long as it is consistent. The values may be reported to the user in the "
+              "text": ", the unit of measurement doesn’t matter as long as it’s consistent. You can report the values to the user in the "
             },
             {
               "type": "reference",
@@ -357,7 +479,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

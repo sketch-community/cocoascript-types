@@ -35,8 +35,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -81,20 +81,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/1450016-vdsp_dct_execute": {
-      "title": "vDSP_DCT_Execute",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450016-vdsp_dct_execute",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1450016-vdsp_dct_execute",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Calculates the discrete single-precision cosine transform for a vector."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise": {
       "title": "Signal Extraction from Noise",
       "type": "topic",
@@ -133,16 +119,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a data structure for use with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/1450016-vdsp_dct_execute"
-        },
+          "text": "Builds a data structure that contains precalculated data to perform a discrete cosine transform."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_dct_type": {
+      "title": "vDSP_DCT_Type",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_dct_type",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_dct_type",
+      "abstract": [
         {
           "type": "text",
-          "text": " to perform a single-precision, discrete cosine transform."
+          "text": "Constants that indicate the type for a discrete cosine transform."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450016-vdsp_dct_execute": {
+      "title": "vDSP_DCT_Execute",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450016-vdsp_dct_execute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450016-vdsp_dct_execute",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the discrete cosine transform for a vector."
         }
       ]
     },
@@ -156,7 +161,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Apply biquadratic filters to single- and multi-channel data. "
+          "text": "Apply biquadratic filters to single-channel and multichannel data. "
         }
       ]
     },
@@ -189,15 +194,18 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise",
         "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp"
-      ]
+      ],
+      "anchor": "3261980"
     },
     {
       "kind": "taskGroup",
       "title": "Discrete Cosine Transforms",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/1449930-vdsp_dct_createsetup",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_dct_type",
         "doc://com.apple.documentation/documentation/accelerate/1450016-vdsp_dct_execute"
       ],
+      "anchor": "1659003",
       "discussion": {
         "kind": "content",
         "content": [
@@ -225,7 +233,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

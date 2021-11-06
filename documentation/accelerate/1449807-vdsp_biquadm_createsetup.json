@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Builds a data structure that contains precalculated single-precision data for use by multichannel cascaded biquad IIR filter functions."
+      "text": "Builds a data structure that contains precalculated data for use by a single-precision, multichannel cascaded biquadratic filter function."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@vDSP_biquadm_CreateSetup",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,21 +119,35 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/1449807-vdsp_biquadm_createsetup#2557706": {
+    "doc://com.apple.documentation/documentation/accelerate/1449807-vdsp_biquadm_createsetup#3855772": {
       "title": "Listing 1",
       "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449807-vdsp_biquadm_createsetup#2557706",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449807-vdsp_biquadm_createsetup#3855772",
       "kind": "article",
       "role": "codeListing",
-      "url": "/documentation/accelerate/1449807-vdsp_biquadm_createsetup#2557706"
+      "url": "/documentation/accelerate/1449807-vdsp_biquadm_createsetup#3855772"
     },
-    "doc://com.apple.documentation/documentation/kernel/1579970-vdsp_biquadm_destroysetup": {
+    "doc://com.apple.documentation/documentation/accelerate/1449745-vdsp_biquadm_destroysetup": {
       "title": "vDSP_biquadm_DestroySetup",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/kernel/1579970-vdsp_biquadm_destroysetup",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449745-vdsp_biquadm_destroysetup",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/kernel/1579970-vdsp_biquadm_destroysetup"
+      "url": "/documentation/accelerate/1449745-vdsp_biquadm_destroysetup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadm_setup": {
+      "title": "vDSP_biquadm_Setup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadm_setup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_biquadm_setup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A data structure that contains precalculated data for use by a single-precision, multichannel cascaded biquadratic filter function."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp_length": {
       "title": "vDSP_Length",
@@ -148,7 +167,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Builds a data structure that contains precalculated single-precision data for use by multichannel cascaded biquad IIR filter functions."
+          "text": "Builds a data structure that contains precalculated data for use by a single-precision, multichannel cascaded biquadratic filter function."
         }
       ]
     },
@@ -162,7 +181,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Builds a data structure that contains precalculated double-precision data for use by multichannel cascaded biquad IIR filter functions."
+          "text": "Builds a data structure that contains precalculated data for use by a double-precision, multichannel cascaded biquadratic filter function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadm_setupd": {
+      "title": "vDSP_biquadm_SetupD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadm_setupd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_biquadm_setupd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A data structure that contains precalculated data for use by a double-precision, multichannel cascaded biquadratic filter function."
         }
       ]
     },
@@ -177,7 +210,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/1449719-vdsp_biquadm_createsetupd"
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadm_setup",
+        "doc://com.apple.documentation/documentation/accelerate/1449719-vdsp_biquadm_createsetupd",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadm_setupd"
       ],
       "title": "Creating a Multichannel Biquadratic IIR Setup",
       "generated": true
@@ -195,6 +230,7 @@
             {
               "kind": "typeIdentifier",
               "preciseIdentifier": "c:@T@vDSP_biquadm_Setup",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadm_setup",
               "text": "vDSP_biquadm_Setup"
             },
             {
@@ -248,6 +284,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -263,14 +300,14 @@
       ],
       "parameters": [
         {
-          "name": "__coeffs",
+          "name": "__Coefficients",
           "content": [
             {
               "type": "paragraph",
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Array of double-precision real coefficients. Its length should be 5 times the number of sections in the biquad filter."
+                  "text": "The input array that contains the double-precision filter coefficients. The number of elements in the coefficients array must be five times the number of sections in the biquad filter."
                 }
               ]
             }
@@ -284,21 +321,21 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The number of sections in the biquad filter.  The same number of sections is used for each channel, so only one value is specified."
+                  "text": "The number of sections in the biquad filter."
                 }
               ]
             }
           ]
         },
         {
-          "name": "__N",
+          "name": "__N  ",
           "content": [
             {
               "type": "paragraph",
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The number of input/output channels."
+                  "text": "The number of input-output channels."
                 }
               ]
             }
@@ -320,15 +357,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Pointer to an allocated and initialized struct of type "
-            },
-            {
-              "type": "codeVoice",
-              "code": "vDSP_biquadm_SetupStruct"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": "A pointer to an allocated and initialized biquadratic filter object."
             }
           ]
         }
@@ -348,15 +377,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This function constructs and returns a biquad IIR filter object from the coefficients specified by the array pointed to by "
-            },
-            {
-              "type": "codeVoice",
-              "code": "coeffs"
-            },
-            {
-              "type": "text",
-              "text": ".  It initializes the internal state of the setup object such that all delay elements used are set to zero."
+              "text": "This function constructs and returns a biquadratic filter object from the coefficients that you specify. This function initializes the internal state of the setup object with all delay elements set to zero."
             }
           ]
         },
@@ -365,7 +386,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This array of coefficients is laid out by channel, followed by section.  Each set of 5 coefficients specific to a given channel and section is specified with the 3 feedforward coefficients first, followed by the 2 feedback coefficients."
+              "text": "You define the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "__Coefficients"
+            },
+            {
+              "type": "text",
+              "text": " array as a series of sections with each containing a set of five coefficients. Specify the order of the coefficients as three feedforward coefficients followed by two feedback coefficients."
             }
           ]
         },
@@ -374,88 +403,38 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For example, the array could be constructed as follows ("
-            },
-            {
-              "type": "codeVoice",
-              "code": "b0"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "codeVoice",
-              "code": "b1"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "codeVoice",
-              "code": "b2"
-            },
-            {
-              "type": "text",
-              "text": " are the feedforward coefficients and "
-            },
-            {
-              "type": "codeVoice",
-              "code": "a1"
-            },
-            {
-              "type": "text",
-              "text": " and "
-            },
-            {
-              "type": "codeVoice",
-              "code": "a2"
-            },
-            {
-              "type": "text",
-              "text": " are the feedback coefficients such that the difference equation relating the input "
-            },
-            {
-              "type": "codeVoice",
-              "code": "x[n]"
-            },
-            {
-              "type": "text",
-              "text": " to the output "
-            },
-            {
-              "type": "codeVoice",
-              "code": "y[n]"
-            },
-            {
-              "type": "text",
-              "text": " could be expressed as "
-            },
-            {
-              "type": "codeVoice",
-              "code": "y[n] = b0*x[n] + b1*x[n-1] + b2*x[n-2] - a1*y[n-1] - a2*y[n-2]"
-            },
-            {
-              "type": "text",
-              "text": " as shown in the pseudocode below:"
+              "text": "The following code shows an example of creating a biquad setup object that contains two sections:"
             }
           ]
         },
         {
           "type": "codeListing",
           "code": [
-            "for (vDSP_Length i = 0; i < sections; i++)",
-            "  for (vDSP_Length j = 0; j < channels; j++)",
-            "    A[i*channels*5 + j*5 + 0] = (double)b0_for_section_i_and_channel_j;",
-            "    A[i*channels*5 + j*5 + 1] = (double)b1_for_section_i_and_channel_j;",
-            "    A[i*channels*5 + j*5 + 2] = (double)b2_for_section_i_and_channel_j;",
-            "    A[i*channels*5 + j*5 + 3] = (double)a1_for_section_i_and_channel_j;",
-            "    A[i*channels*5 + j*5 + 4] = (double)a2_for_section_i_and_channel_j;"
+            "let section0 = (b0: 0.984764420,",
+            "                b1: -1.969528840,",
+            "                b2: 0.984764420,",
+            "                a1: -1.969331359,",
+            "                a2: 0.969726321)",
+            "",
+            "let section1 = (b0: 0.984764420,",
+            "                b1: -1.969528840,",
+            "                b2: 0.984764420,",
+            "                a1: -1.955243388,",
+            "                a2: 0.969726321)",
+            "",
+            "let sectionCount = vDSP_Length(2)",
+            "let channelCount = vDSP_Length(1)",
+            "",
+            "let setup = vDSP_biquadm_CreateSetup([",
+            "    section0.b0, section0.b1, section0.b2, section0.a1, section0.a2,",
+            "    section1.b0, section1.b1, section1.b2, section1.a1, section1.a2",
+            "],",
+            "                                     sectionCount,",
+            "                                     channelCount)"
           ],
-          "syntax": "occ",
+          "syntax": "swift",
           "metadata": {
-            "anchor": "2557706",
+            "anchor": "3855772",
             "title": "Listing 1"
           }
         },
@@ -464,16 +443,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This function allocates memory for its own use; the allocated memory can be freed by the "
+              "text": "This function allocates memory for its own use. You must call the "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/kernel/1579970-vdsp_biquadm_destroysetup"
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449745-vdsp_biquadm_destroysetup"
             },
             {
               "type": "text",
-              "text": " function."
+              "text": " function to free the allocated memory."
             }
           ]
         }
@@ -481,7 +460,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -11,8 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
-        "doc://com.apple.documentation/documentation/sirikit/inpreferences"
+        "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure"
       ]
     ]
   },
@@ -35,30 +34,35 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@INSiriAuthorizationStatus",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -93,21 +97,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes": {
-      "title": "Intents and Related Classes",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/intents_and_related_classes",
-      "url": "/documentation/sirikit/intents_and_related_classes",
+    "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure": {
+      "title": "Intent Handling Infrastructure",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure",
+      "url": "/documentation/sirikit/intent_handling_infrastructure",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inpreferences": {
-      "title": "INPreferences",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpreferences",
-      "url": "/documentation/sirikit/inpreferences",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/sirikit/inpreferences/1829429-requestsiriauthorization": {
       "title": "requestSiriAuthorization:",
@@ -116,12 +112,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inpreferences/1829429-requestsiriauthorization",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Requests authorization to use Siri services. "
-        }
-      ],
       "fragments": [
         {
           "kind": "text",
@@ -206,29 +196,36 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/inpreferences/1829430-siriauthorizationstatus": {
-      "title": "siriAuthorizationStatus",
+    "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/requesting_authorization_to_use_siri": {
+      "title": "Requesting Authorization to Use Siri",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpreferences/1829430-siriauthorizationstatus",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inpreferences/1829430-siriauthorizationstatus",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/requesting_authorization_to_use_siri",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/intent_handling_infrastructure/requesting_authorization_to_use_siri",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the current authorization status of your app."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "siriAuthorizationStatus"
+          "text": "Request permission from the user for Siri and Maps to communicate with your app or Intents app extension."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_siri": {
+      "title": "Siri Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_siri",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_developer_siri",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app handles Siri requests."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.developer.siri",
+      "ideTitle": "Siri Entitlement"
     },
     "doc://com.apple.documentation/documentation/sirikit/insiriauthorizationstatus": {
       "title": "INSiriAuthorizationStatus",
@@ -241,6 +238,20 @@
         {
           "type": "text",
           "text": "Constants indicating the authorization status of your Intents extension."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inpreferences": {
+      "title": "INPreferences",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inpreferences",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inpreferences",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The preferences and authorization related to using SiriKit.  "
         }
       ]
     },
@@ -261,16 +272,18 @@
         "doc://com.apple.documentation/documentation/sirikit/insiriauthorizationstatus/insiriauthorizationstatusrestricted",
         "doc://com.apple.documentation/documentation/sirikit/insiriauthorizationstatus/insiriauthorizationstatusdenied",
         "doc://com.apple.documentation/documentation/sirikit/insiriauthorizationstatus/insiriauthorizationstatusauthorized"
-      ]
+      ],
+      "anchor": "1833591"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/inpreferences/1829429-requestsiriauthorization",
-        "doc://com.apple.documentation/documentation/sirikit/inpreferences/1829430-siriauthorizationstatus"
+        "doc://com.apple.documentation/documentation/sirikit/intent_handling_infrastructure/requesting_authorization_to_use_siri",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_developer_siri",
+        "doc://com.apple.documentation/documentation/sirikit/inpreferences"
       ],
-      "title": "Managing the App’s Authorization",
+      "title": "Authorization",
       "generated": true
     }
   ],
@@ -336,6 +349,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -345,7 +359,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

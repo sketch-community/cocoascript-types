@@ -11,14 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
@@ -40,12 +40,12 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ]
     ]
   },
@@ -68,20 +68,28 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@F@UIAccessibilityConvertPathToScreenCoordinates",
+    "parent": {
+      "title": "UIAccessibility"
+    },
     "symbolKind": "structcm",
     "fragments": [
       {
@@ -107,8 +115,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -143,10 +151,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -165,7 +173,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility"
+      "url": "/documentation/uikit/uiaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A namespace for accessibility symbols for UIKit apps."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -223,42 +237,6 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiview"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615145-converttoscreencoordinates": {
-      "title": "convertToScreenCoordinates(_:in:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615145-converttoscreencoordinates",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1615145-converttoscreencoordinates",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Converts the specified rectangle from view coordinates to screen coordinates."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "convertToScreenCoordinates"
-        },
-        {
-          "kind": "text",
-          "text": "(CGRect, "
-        },
-        {
-          "kind": "identifier",
-          "text": "in"
-        },
-        {
-          "kind": "text",
-          "text": ": UIView) -> CGRect"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615139-converttoscreencoordinates": {
       "title": "convertToScreenCoordinates(_:in:)",
       "type": "topic",
@@ -292,6 +270,42 @@
         {
           "kind": "text",
           "text": ": UIView) -> UIBezierPath"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615145-converttoscreencoordinates": {
+      "title": "convertToScreenCoordinates(_:in:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615145-converttoscreencoordinates",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615145-converttoscreencoordinates",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts the specified rectangle from view coordinates to screen coordinates."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "convertToScreenCoordinates"
+        },
+        {
+          "kind": "text",
+          "text": "(CGRect, "
+        },
+        {
+          "kind": "identifier",
+          "text": "in"
+        },
+        {
+          "kind": "text",
+          "text": ": UIView) -> CGRect"
         }
       ]
     },
@@ -406,6 +420,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -522,7 +537,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

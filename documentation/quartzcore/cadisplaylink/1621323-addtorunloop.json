@@ -34,25 +34,33 @@
       {
         "name": "iOS",
         "introducedAt": "3.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.1",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)CADisplayLink(im)addToRunLoop:forMode:",
+    "parent": {
+      "title": "CADisplayLink"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,9 +105,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A timer object that allows your application to synchronize its drawing to the refresh rate of the display."
+          "text": "A timer object that allows your app to synchronize its drawing to the refresh rate of the display."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop": {
+      "title": "NSRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop"
     },
     "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621293-invalidate": {
       "title": "invalidate",
@@ -124,14 +140,6 @@
           "text": "invalidate"
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsrunloop": {
-      "title": "NSRunLoop",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsrunloop"
     },
     "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621325-removefromrunloop": {
       "title": "removeFromRunLoop:forMode:",
@@ -287,6 +295,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -321,16 +330,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The mode in which to add the display link to the run loop. You may specify a custom mode or use one of the modes listed in "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop"
-                },
-                {
-                  "type": "text",
-                  "text": "."
+                  "text": "The mode in which to add the display link to the run loop."
                 }
               ]
             }
@@ -352,7 +352,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can associate a display link with multiple input modes. While the run loop is executing in a mode you have specified, the display link notifies the target when new frames are required."
+              "text": "You can associate a display link with multiple input modes. While the run loop is executing in a mode you specify, the display link notifies the target when the system requires new frames."
             }
           ]
         },
@@ -361,7 +361,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The run loop retains the display link. To remove the display link from all run loops, send an "
+              "text": "You can specify a custom mode or use one of the modes listed in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The run loop retains the display link. To remove the display link from all run loops, call "
             },
             {
               "type": "reference",
@@ -370,7 +388,7 @@
             },
             {
               "type": "text",
-              "text": " message to the display link."
+              "text": "."
             }
           ]
         }
@@ -378,7 +396,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

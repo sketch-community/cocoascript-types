@@ -2,25 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The key for an "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
-    },
-    {
-      "type": "text",
-      "text": " object containing a "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrect"
-    },
-    {
-      "type": "text",
-      "text": " that identifies the ending frame rectangle of the keyboard in screen coordinates. The frame rectangle reflects the current orientation of the device. "
+      "text": "A user info key to retrieve the keyboard’s frame at the end of its animation."
     }
   ],
   "documentVersion": 0,
@@ -59,15 +41,23 @@
       {
         "name": "iOS",
         "introducedAt": "3.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.2",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UIKeyboardFrameEndUserInfoKey",
+    "parent": {
+      "title": "UIResponder"
+    },
     "symbolKind": "cldata",
     "fragments": [
       {
@@ -85,8 +75,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -174,38 +164,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coregraphics/cgrect"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
-      "title": "NSNumber",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsnumber"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiview/animationcurve": {
-      "title": "UIView.AnimationCurve",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/animationcurve",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiview/animationcurve"
-    },
-    "doc://com.apple.documentation/documentation/swift/true": {
-      "title": "true",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/true",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/true"
-    },
-    "doc://com.apple.documentation/documentation/swift/false": {
-      "title": "false",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/false",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/false"
     },
     "doc://com.apple.documentation/documentation/swift/string": {
       "title": "String",
@@ -393,25 +351,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key for an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object containing a "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/animationcurve"
-        },
-        {
-          "type": "text",
-          "text": " constant that defines how the keyboard will be animated onto or off the screen."
+          "text": "A user info key to retrieve the animation curve that the system uses to animate the keyboard onto or off the screen."
         }
       ],
       "fragments": [
@@ -439,24 +379,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key for an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object containing a "
-        },
-        {
-          "type": "codeVoice",
-          "code": "double"
-        },
-        {
-          "type": "text",
-          "text": " that identifies the duration of the animation in seconds."
+          "text": "A user info key to retrieve the duration of the keyboard animation in seconds."
         }
       ],
       "fragments": [
@@ -484,34 +407,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key for an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object containing a Boolean that identifies whether the keyboard belongs to the current app. With multitasking on iPad, all visible apps are notified when the keyboard appears and disappears. The value of this key is "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/swift/true"
-        },
-        {
-          "type": "text",
-          "text": " for the app that caused the keyboard to appear and "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/swift/false"
-        },
-        {
-          "type": "text",
-          "text": " for any other apps.  "
+          "text": "A user info key to retrieve a Boolean value that indicates whether the keyboard belongs to the current app."
         }
       ],
       "fragments": [
@@ -539,25 +435,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key for an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
-        },
-        {
-          "type": "text",
-          "text": " object containing a "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrect"
-        },
-        {
-          "type": "text",
-          "text": " that identifies the starting frame rectangle of the keyboard in screen coordinates. The frame rectangle reflects the current orientation of the device.  "
+          "text": "A user info key to retrieve the keyboard’s frame at the beginning of its animation."
         }
       ],
       "fragments": [
@@ -585,25 +463,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key for an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
-        },
-        {
-          "type": "text",
-          "text": " object containing a "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrect"
-        },
-        {
-          "type": "text",
-          "text": " that identifies the ending frame rectangle of the keyboard in screen coordinates. The frame rectangle reflects the current orientation of the device. "
+          "text": "A user info key to retrieve the keyboard’s frame at the end of its animation."
         }
       ],
       "fragments": [
@@ -689,14 +549,57 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The value for this key is an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
+            },
+            {
+              "type": "text",
+              "text": " object containing a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgrect"
+            },
+            {
+              "type": "text",
+              "text": " that identifies the frame rectangle of the keyboard in screen coordinates after animating the keyboard. The frame rectangle reflects the current orientation of the device."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

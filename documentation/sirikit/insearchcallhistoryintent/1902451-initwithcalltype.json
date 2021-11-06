@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent"
       ]
     ]
@@ -36,30 +36,40 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "11.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
         "deprecatedAt": "4.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSearchCallHistoryIntent(im)initWithCallType:dateCreated:recipient:callCapabilities:",
+    "parent": {
+      "title": "INSearchCallHistoryIntent"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -94,10 +104,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
-      "title": "VoIP Calling",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
-      "url": "/documentation/sirikit/voip_calling",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -110,29 +120,13 @@
       "role": "symbol",
       "url": "/documentation/sirikit/insearchcallhistoryintent"
     },
-    "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2879133-initwithdatecreated": {
-      "title": "initWithDateCreated:recipient:callCapabilities:callTypes:unseen:",
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2879133-initwithdatecreated",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insearchcallhistoryintent/2879133-initwithdatecreated",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes the search call history intent object with the specified search criteria."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithDateCreated:recipient:callCapabilities:callTypes:unseen:"
-        }
-      ]
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/incallcapabilityoptions": {
       "title": "INCallCapabilityOptions",
@@ -165,6 +159,31 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inperson"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2879133-initwithdatecreated": {
+      "title": "initWithDateCreated:recipient:callCapabilities:callTypes:unseen:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2879133-initwithdatecreated",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insearchcallhistoryintent/2879133-initwithdatecreated",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes the search call history intent object with the specified search criteria."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithDateCreated:recipient:callCapabilities:callTypes:unseen:"
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1902451-initwithcalltype": {
       "title": "initWithCallType:dateCreated:recipient:callCapabilities:",
@@ -205,16 +224,16 @@
       "inlineContent": [
         {
           "type": "text",
-          "text": "Use "
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
         },
         {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2879133-initwithdatecreated"
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
         },
         {
           "type": "text",
-          "text": " instead."
+          "text": "."
         }
       ]
     }
@@ -364,6 +383,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -412,7 +432,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The person who received the call. Match the information in this parameter against the user's contacts. "
+                  "text": "The person who received the call. Match the information in this parameter against the user’s contacts. "
                 }
               ]
             }
@@ -486,7 +506,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Normally, you do not create instances of this class yourself. Instead, Siri creates instances when the user asks to search their call history. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths."
+              "text": "Normally, you don’t create instances of this class yourself. Instead, Siri creates instances when the user asks to search their call history. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths."
             }
           ]
         }
@@ -494,7 +514,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

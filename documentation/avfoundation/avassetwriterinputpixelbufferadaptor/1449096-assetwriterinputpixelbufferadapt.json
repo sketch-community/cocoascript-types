@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a new pixel buffer adaptor to receive pixel buffers for writing to the output file."
+      "text": "Returns a new pixel buffer adaptor that appends pixel buffers to write to the output file."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInputPixelBufferAdaptor(cm)assetWriterInputPixelBufferAdaptorWithAssetWriterInput:sourcePixelBufferAttributes:",
+    "parent": {
+      "title": "AVAssetWriterInputPixelBufferAdaptor"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,9 +118,25 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+          "text": "An object that appends video samples to an asset writer input."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediatypevideo": {
+      "title": "AVMediaTypeVideo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediatypevideo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediatypevideo"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
+      "title": "nil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nil-2gl"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput": {
       "title": "AVAssetWriterInput",
@@ -148,7 +172,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new pixel buffer adaptor to receive pixel buffers for writing to the output file."
+          "text": "Returns a new pixel buffer adaptor that appends pixel buffers to write to the output file."
         }
       ],
       "fragments": [
@@ -305,6 +329,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -326,7 +351,16 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The asset writer input to which the receiver should append pixel buffers."
+                  "text": "An asset writer input that accepts "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediatypevideo"
+                },
+                {
+                  "type": "text",
+                  "text": " as its media type. "
                 }
               ]
             },
@@ -335,32 +369,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Currently, only asset writer inputs that accept media data of type "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "AVMediaTypeVideo"
-                },
-                {
-                  "type": "text",
-                  "text": " can be used to initialize a pixel buffer adaptor."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "It is an error to pass a sample buffer input that is already attached to another instance of "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "AVAssetWriterInputPixelBufferAdaptor"
-                },
-                {
-                  "type": "text",
-                  "text": "."
+                  "text": "The system raises an error if you specify an input that’s already connected to a pixel buffer adaptor."
                 }
               ]
             }
@@ -374,41 +383,16 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The attributes of pixel buffers that will be vended by the input's CVPixelBufferPool."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "Pixel buffer attributes keys for the pixel buffer pool are defined in "
+                  "text": "A dictionary that describes the attributes of pixel buffers that the input’s pixel buffer pool vends. If your app doesn’t need a pixel buffer pool for allocating buffers, set this value to "
                 },
                 {
-                  "type": "codeVoice",
-                  "code": "<CoreVideo/CVPixelBuffer.h>"
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl"
                 },
                 {
                   "type": "text",
-                  "text": ". To take advantage of the improved efficiency of appending buffers created from the adaptor’s pixel buffer pool, you should specify pixel buffer attributes that most closely accommodate the source format of the video frames being appended."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "Pass "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "nil"
-                },
-                {
-                  "type": "text",
-                  "text": " if you do not need a pixel buffer pool for allocating buffers."
+                  "text": "."
                 }
               ]
             }
@@ -450,39 +434,23 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "To specify the pixel format type, the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "pixelBufferAttributes"
-            },
-            {
-              "type": "text",
-              "text": " dictionary should contain a value for kCVPixelBufferPixelFormatTypeKey. For example, use "
-            },
-            {
-              "type": "codeVoice",
-              "code": "[NSNumber numberWithInt:kCVPixelFormatType_32BGRA]"
-            },
-            {
-              "type": "text",
-              "text": " for 8-bit-per-channel BGRA, or use "
-            },
-            {
-              "type": "codeVoice",
-              "code": "[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange]"
-            },
-            {
-              "type": "text",
-              "text": " for 2-plane YCbCr."
+              "text": "To take advantage of the efficiency of appending buffers created from the adaptor’s pixel buffer pool, specify pixel buffer attributes that most closely accommodate the format of the buffers you append."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

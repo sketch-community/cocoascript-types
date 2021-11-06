@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent"
       ]
     ]
@@ -35,25 +35,41 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSearchCallHistoryIntent(py)dateCreated",
+    "parent": {
+      "title": "INSearchCallHistoryIntent"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +104,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
-      "title": "VoIP Calling",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
-      "url": "/documentation/sirikit/voip_calling",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -109,6 +125,14 @@
           "text": "A request to list the calls matching the specified criteria."
         }
       ]
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/indatecomponentsrange": {
       "title": "INDateComponentsRange",
@@ -130,7 +154,8 @@
           "type": "text",
           "text": "The range of dates associated with the call records."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2866200-calltypes": {
       "title": "callTypes",
@@ -144,7 +169,8 @@
           "type": "text",
           "text": "The types of calls to search."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1638944-calltype": {
       "title": "callType",
@@ -156,7 +182,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The call type. "
+          "text": "The call type."
         }
       ],
       "deprecated": true
@@ -173,21 +199,8 @@
           "type": "text",
           "text": "The audio-video capabilities of the call."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/incallcapabilityoptions": {
-      "title": "INCallCapabilityOptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallcapabilityoptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/incallcapabilityoptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants indicating the capabilities of the call."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2879132-unseen": {
       "title": "unseen",
@@ -201,7 +214,8 @@
           "type": "text",
           "text": "A Boolean value that indicates whether the user has seen the call yet."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -211,23 +225,32 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2866200-calltypes",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1638944-calltype",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/1639273-callcapabilities",
-        "doc://com.apple.documentation/documentation/sirikit/incallcapabilityoptions",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent/2879132-unseen"
       ],
       "title": "Getting the Call History Details",
@@ -272,6 +295,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -300,7 +324,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Filter a single-channel signal with a cascade of biquadratric sections."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -25,8 +31,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -69,6 +75,62 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/accelerate/1450374-vdsp_biquad_createsetup": {
+      "title": "vDSP_biquad_CreateSetup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450374-vdsp_biquad_createsetup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450374-vdsp_biquad_createsetup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Builds a data structure that contains precalculated data for use by a single-precision cascaded biquadratic filter function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450239-vdsp_biquad_createsetupd": {
+      "title": "vDSP_biquad_CreateSetupD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450239-vdsp_biquad_createsetupd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450239-vdsp_biquad_createsetupd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Builds a data structure that contains precalculated data for use by a double-precision cascaded biquadratic filter function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_biquad_setup": {
+      "title": "vDSP_biquad_Setup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquad_setup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_biquad_setup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A data structure that contains precalculated data for use by the single-precision cascaded biquad IIR filter function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_biquad_setupd": {
+      "title": "vDSP_biquad_SetupD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquad_setupd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_biquad_setupd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A data structure that contains precalculated data for use by the double-precision cascaded biquad IIR filter function."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/1450838-vdsp_biquad": {
       "title": "vDSP_biquad",
       "type": "topic",
@@ -83,43 +145,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/1450374-vdsp_biquad_createsetup": {
-      "title": "vDSP_biquad_CreateSetup",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450374-vdsp_biquad_createsetup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1450374-vdsp_biquad_createsetup",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Builds a data structure that contains precalculated data for use by the single-precision cascaded biquad IIR filter function "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/1450838-vdsp_biquad"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/1450239-vdsp_biquad_createsetupd": {
-      "title": "vDSP_biquad_CreateSetupD",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450239-vdsp_biquad_createsetupd",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/1450239-vdsp_biquad_createsetupd",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Builds a data structure that contains precalculated data for use by double-precision cascaded biquad IIR filter functions."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/1450359-vdsp_biquadd": {
       "title": "vDSP_biquadD",
       "type": "topic",
@@ -131,6 +156,34 @@
         {
           "type": "text",
           "text": "Applies a double-precision single-channel biquad IIR filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3746732-vdsp_biquad_setcoefficientssingl": {
+      "title": "vDSP_biquad_SetCoefficientsSingle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3746732-vdsp_biquad_setcoefficientssingl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3746732-vdsp_biquad_setcoefficientssingl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the filter coefficients of the specified single-precision, single-channel biquad filter setup object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3746731-vdsp_biquad_setcoefficientsdoubl": {
+      "title": "vDSP_biquad_SetCoefficientsDouble",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3746731-vdsp_biquad_setcoefficientsdoubl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3746731-vdsp_biquad_setcoefficientsdoubl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the filter coefficients of the specified double-precision, single-channel biquad filter setup object."
         }
       ]
     },
@@ -190,7 +243,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Apply biquadratic filters to single- and multi-channel data. "
+          "text": "Apply biquadratic filters to single-channel and multichannel data. "
         }
       ]
     },
@@ -200,7 +253,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/single-channel_biquadratic_iir_filters",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/vdsp/single-channel_biquadratic_iir_filters"
+      "url": "/documentation/accelerate/vdsp/single-channel_biquadratic_iir_filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter a single-channel signal with a cascade of biquadratric sections."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters": {
       "title": "Multichannel Biquadratic IIR Filters",
@@ -208,7 +267,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters"
+      "url": "/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter a multichannel signal with a cascade of biquadratric sections."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/finite_impulse_response_filters": {
       "title": "Finite Impulse Response Filters",
@@ -216,7 +281,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/finite_impulse_response_filters",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/vdsp/finite_impulse_response_filters"
+      "url": "/documentation/accelerate/vdsp/finite_impulse_response_filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform finite impulse response filtering with decimation and antialiasing on vectors of real or complex values."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/recursive_filters": {
       "title": "Recursive Filters",
@@ -224,7 +295,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/recursive_filters",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/vdsp/recursive_filters"
+      "url": "/documentation/accelerate/vdsp/recursive_filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform two-pole two-zero recursive filtering on a vector."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -240,8 +317,11 @@
       "title": "Creating a Single-Channel Biquadratic IIR Setup",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/1450374-vdsp_biquad_createsetup",
-        "doc://com.apple.documentation/documentation/accelerate/1450239-vdsp_biquad_createsetupd"
-      ]
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_biquad_setup",
+        "doc://com.apple.documentation/documentation/accelerate/1450239-vdsp_biquad_createsetupd",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_biquad_setupd"
+      ],
+      "anchor": "1659590"
     },
     {
       "kind": "taskGroup",
@@ -249,7 +329,17 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/1450838-vdsp_biquad",
         "doc://com.apple.documentation/documentation/accelerate/1450359-vdsp_biquadd"
-      ]
+      ],
+      "anchor": "2958731"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Setting Coefficients",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/3746732-vdsp_biquad_setcoefficientssingl",
+        "doc://com.apple.documentation/documentation/accelerate/3746731-vdsp_biquad_setcoefficientsdoubl"
+      ],
+      "anchor": "3780331"
     },
     {
       "kind": "taskGroup",
@@ -257,7 +347,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/1450168-vdsp_biquad_destroysetup",
         "doc://com.apple.documentation/documentation/accelerate/1450640-vdsp_biquad_destroysetupd"
-      ]
+      ],
+      "anchor": "2958732"
     }
   ],
   "seeAlsoSections": [
@@ -330,7 +421,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

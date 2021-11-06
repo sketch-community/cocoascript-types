@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The scheduler time type the operation queue uses."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -35,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So16NSOperationQueueC10FoundationE17SchedulerTimeTypeV",
+    "parent": {
+      "title": "OperationQueue"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -77,8 +91,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -188,6 +202,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/operationqueue/schedulertimetype/3362954-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an operation queue scheduler time with the given date."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -199,32 +219,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362955-init": {
-      "title": "init(from:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362955-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362955-init",
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "from"
-        },
-        {
-          "kind": "text",
-          "text": ": Decoder)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362949-date": {
       "title": "date",
       "type": "topic",
@@ -232,6 +226,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/operationqueue/schedulertimetype/3362949-date",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The date this type represents."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -247,28 +247,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362953-hashvalue": {
-      "title": "hashValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362953-hashvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362953-hashvalue",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "hashValue"
-        },
-        {
-          "kind": "text",
-          "text": ": Int"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362948-advanced": {
       "title": "advanced(by:)",
       "type": "topic",
@@ -276,6 +254,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/operationqueue/schedulertimetype/3362948-advanced",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates an operation queue scheduler time by advancing the scheduler time type’s date by the given interval."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -306,6 +290,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/operationqueue/schedulertimetype/3362950-distance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The distance to another operation queue scheduler time."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -329,63 +319,27 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362951-encode": {
-      "title": "encode(to:)",
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/stride": {
+      "title": "OperationQueue.SchedulerTimeType.Stride",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362951-encode",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/stride",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362951-encode",
-      "fragments": [
+      "url": "/documentation/foundation/operationqueue/schedulertimetype/stride",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "encode"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "to"
-        },
-        {
-          "kind": "text",
-          "text": ": Encoder)"
+          "type": "text",
+          "text": "The interval by which operation queue times advance."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362952-hash": {
-      "title": "hash(into:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362952-hash",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362952-hash",
+      ],
       "fragments": [
         {
           "kind": "text",
-          "text": "func "
+          "text": "struct "
         },
         {
           "kind": "identifier",
-          "text": "hash"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "into"
-        },
-        {
-          "kind": "text",
-          "text": ": inout Hasher)"
+          "text": "OperationQueue.SchedulerTimeType.Stride"
         }
       ]
     },
@@ -408,90 +362,6 @@
         {
           "kind": "text",
           "text": "(OperationQueue.SchedulerTimeType, OperationQueue.SchedulerTimeType) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362879": {
-      "title": "...(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362879",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362879",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a partial range extending upward from a lower bound."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "... "
-        },
-        {
-          "kind": "text",
-          "text": "(OperationQueue.SchedulerTimeType) -> PartialRangeFrom<OperationQueue.SchedulerTimeType>"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362882": {
-      "title": "...(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362882",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362882",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a partial range up to, and including, its upper bound."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "... "
-        },
-        {
-          "kind": "text",
-          "text": "(OperationQueue.SchedulerTimeType) -> PartialRangeThrough<OperationQueue.SchedulerTimeType>"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362885": {
-      "title": "...(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362885",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362885",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a closed range that contains both of its bounds."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "... "
-        },
-        {
-          "kind": "text",
-          "text": "(OperationQueue.SchedulerTimeType, OperationQueue.SchedulerTimeType) -> ClosedRange<OperationQueue.SchedulerTimeType>"
         }
       ]
     },
@@ -691,13 +561,427 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/stride": {
-      "title": "OperationQueue.SchedulerTimeType.Stride",
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362879": {
+      "title": "...(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/stride",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362879",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/schedulertimetype/stride",
+      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362879",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a partial range extending upward from a lower bound."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "... "
+        },
+        {
+          "kind": "text",
+          "text": "(OperationQueue.SchedulerTimeType) -> PartialRangeFrom<OperationQueue.SchedulerTimeType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362882": {
+      "title": "...(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362882",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362882",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a partial range up to, and including, its upper bound."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "... "
+        },
+        {
+          "kind": "text",
+          "text": "(OperationQueue.SchedulerTimeType) -> PartialRangeThrough<OperationQueue.SchedulerTimeType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362885": {
+      "title": "...(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362885",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362885",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a closed range that contains both of its bounds."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "... "
+        },
+        {
+          "kind": "text",
+          "text": "(OperationQueue.SchedulerTimeType, OperationQueue.SchedulerTimeType) -> ClosedRange<OperationQueue.SchedulerTimeType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362953-hashvalue": {
+      "title": "hashValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362953-hashvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362953-hashvalue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "hashValue"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362952-hash": {
+      "title": "hash(into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362952-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362952-hash",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "hash"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "into"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Hasher)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362955-init": {
+      "title": "init(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362955-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362955-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a scheduler time type using data in an unarchiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Decoder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362951-encode": {
+      "title": "encode(to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362951-encode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/schedulertimetype/3362951-encode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encodes a scheduler time type to an archiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "encode"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Encoder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule": {
+      "title": "schedule(after:tolerance:options:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329365-schedule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the action at some time after the specified date, optionally taking into account tolerance if possible."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "schedule"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "after"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType, "
+        },
+        {
+          "kind": "identifier",
+          "text": "tolerance"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType.Stride, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerOptions?, () -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329364-schedule": {
+      "title": "schedule(after:interval:tolerance:options:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329364-schedule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329364-schedule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the action at some time after the specified date, at the specified frequency, optionally taking into account tolerance if possible."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "schedule"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "after"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType, "
+        },
+        {
+          "kind": "identifier",
+          "text": "interval"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType.Stride, "
+        },
+        {
+          "kind": "identifier",
+          "text": "tolerance"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType.Stride, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerOptions?, () -> Void) -> Cancellable"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329366-schedule": {
+      "title": "schedule(options:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329366-schedule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329366-schedule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the action at the next possible opportunity."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "schedule"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerOptions?, () -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now": {
+      "title": "now",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329363-now",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The operation queue’s definition of the current moment in time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "now"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance": {
+      "title": "minimumTolerance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329362-minimumtolerance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The minimum tolerance the dispatch queue scheduler allows."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "minimumTolerance"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType.Stride"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype": {
+      "title": "OperationQueue.SchedulerTimeType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/schedulertimetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scheduler time type the operation queue uses."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -705,7 +989,31 @@
         },
         {
           "kind": "identifier",
-          "text": "OperationQueue.SchedulerTimeType.Stride"
+          "text": "OperationQueue.SchedulerTimeType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions": {
+      "title": "OperationQueue.SchedulerOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/scheduleroptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that defines options the operation queue accepts."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "OperationQueue.SchedulerOptions"
         }
       ]
     },
@@ -741,53 +1049,65 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Creating Scheduler Time Types",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362954-init",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362955-init"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362954-init"
+      ],
+      "anchor": "3368593"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Managing Scheduler Time Type Properties",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362949-date",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362953-hashvalue"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362948-advanced",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362950-distance",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362951-encode",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362952-hash"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/stride"
+      ],
+      "anchor": "3368594"
     },
     {
       "kind": "taskGroup",
-      "title": "Operator Functions",
+      "title": "Comparing Scheduler Time Types",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362878",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362879",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362882",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362885",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362887",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362890",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362892",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362893",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362894",
         "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362895",
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362896"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362896",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362879",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362882",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362885",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362953-hashvalue",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362952-hash"
+      ],
+      "anchor": "3737979"
     },
     {
       "kind": "taskGroup",
-      "title": "Structures",
+      "title": "Encoding Scheduler Time Types",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/stride"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362955-init",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/3362951-encode"
+      ],
+      "anchor": "3737980"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329364-schedule",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329366-schedule",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions"
+      ],
+      "title": "Scheduling Operations",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -814,6 +1134,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -824,7 +1145,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

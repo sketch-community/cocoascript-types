@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates an change object that represents inserting or removing an object from an ordered collection at a specific index. "
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -39,35 +45,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSOrderedCollectionChange(cm)changeWithObject:type:index:",
+    "parent": {
+      "title": "NSOrderedCollectionChange"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -148,6 +162,102 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsuinteger"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152179-initwithobject": {
+      "title": "initWithObject:type:index:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152179-initwithobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsorderedcollectionchange/3152179-initwithobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a change object that represents inserting or removing an object from an ordered collection at a specific index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithObject:type:index:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152180-initwithobject": {
+      "title": "initWithObject:type:index:associatedIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152180-initwithobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsorderedcollectionchange/3152180-initwithobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a change object that represents inserting, removing, or moving an object from an ordered collection at a specific index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithObject:type:index:associatedIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152176-changewithobject": {
+      "title": "changeWithObject:type:index:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152176-changewithobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsorderedcollectionchange/3152176-changewithobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an change object that represents inserting or removing an object from an ordered collection at a specific index. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "changeWithObject:type:index:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152177-changewithobject": {
+      "title": "changeWithObject:type:index:associatedIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152177-changewithobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsorderedcollectionchange/3152177-changewithobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an change object that represents inserting or removing an object from an ordered collection at a specific index, matched with an associated location that infers a move within the collection. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "changeWithObject:type:index:associatedIndex:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -156,6 +266,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152179-initwithobject",
+        "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152180-initwithobject",
+        "doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange/3152177-changewithobject"
+      ],
+      "title": "Creating a Change",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -270,6 +391,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -277,10 +399,80 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "anObject",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An object to be removed or inserted by the change."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "type",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The type of change"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "index",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The index location within an ordered collection where the change applies."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An object that represents an indexed change to an ordered collection and references the object to be inserted or removed."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

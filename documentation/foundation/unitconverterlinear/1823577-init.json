@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a unit converter with the coefficient and constant you specify."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSUnitConverterLinear(im)initWithCoefficient:constant:",
+    "parent": {
+      "title": "UnitConverterLinear"
+    },
     "symbolKind": "instctr",
     "fragments": [
       {
@@ -82,8 +96,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -148,6 +162,78 @@
       "role": "symbol",
       "url": "/documentation/swift/double"
     },
+    "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823611-init": {
+      "title": "init(coefficient:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823611-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/unitconverterlinear/1823611-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes the unit converter with the coefficient you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "coefficient"
+        },
+        {
+          "kind": "text",
+          "text": ": Double)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823577-init": {
+      "title": "init(coefficient:constant:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823577-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/unitconverterlinear/1823577-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a unit converter with the coefficient and constant you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "coefficient"
+        },
+        {
+          "kind": "text",
+          "text": ": Double, "
+        },
+        {
+          "kind": "identifier",
+          "text": "constant"
+        },
+        {
+          "kind": "text",
+          "text": ": Double)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -156,6 +242,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/unitconverterlinear/1823611-init"
+      ],
+      "title": "Creating Unit Converters",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -212,6 +307,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -219,10 +315,46 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "coefficient",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The coefficient used in the linear unit conversion calculation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "constant",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The constant used in the linear unit conversion calculation."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

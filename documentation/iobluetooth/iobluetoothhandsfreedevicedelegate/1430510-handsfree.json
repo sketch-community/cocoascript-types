@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Tells the delegate there’s an incoming text message."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,15 +34,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)IOBluetoothHandsFreeDeviceDelegate(im)handsFree:incomingSMS:",
+    "parent": {
+      "title": "IOBluetoothHandsFreeDeviceDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -77,7 +86,27 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of optional methods for receiving status change updates and information about a connected Bluetooth hands-free phone or headset."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants": {
+      "title": "SMS Dictionary Key Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Read the parts of an SMS message."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice": {
       "title": "IOBluetoothHandsFreeDevice",
@@ -95,6 +124,31 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsdictionary"
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree": {
+      "title": "handsFree:incomingSMS:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate there’s an incoming text message."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:incomingSMS:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -103,6 +157,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants"
+      ],
+      "title": "Receiving SMS Information",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -190,10 +253,55 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "device",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The connected Bluetooth hands-free phone or headset."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sms",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A dictionary containing the incoming SMS message. For dictionary keys, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/photos"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSearchForPhotosIntentResponse",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +100,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/photos": {
-      "title": "Photos",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
-      "url": "/documentation/sirikit/photos",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -107,7 +120,8 @@
           "type": "text",
           "text": "Your app’s response to a search for photos intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent": {
       "title": "INSearchForPhotosIntent",
@@ -121,7 +135,8 @@
           "type": "text",
           "text": "A request for the list of photos that match the specified criteria."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling/1638989-confirmsearchforphotos": {
       "title": "confirmSearchForPhotos:completion:",
@@ -171,7 +186,16 @@
           "type": "text",
           "text": "The handler interface for searching the user’s photos."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "link-3876140": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3876140",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inintentresponse": {
       "title": "INIntentResponse",
@@ -203,7 +227,8 @@
           "kind": "identifier",
           "text": "initWithCode:userActivity:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponse/1833286-code": {
       "title": "code",
@@ -217,7 +242,8 @@
           "type": "text",
           "text": "The code indicating whether you successfully handled the intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponsecode": {
       "title": "INSearchForPhotosIntentResponseCode",
@@ -231,7 +257,8 @@
           "type": "text",
           "text": "Constants indicating the status of the response."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponse/1639111-searchresultscount": {
       "title": "searchResultsCount",
@@ -245,21 +272,8 @@
           "type": "text",
           "text": "The number of photos that match the search parameters."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos": {
-      "title": "Searching for Photos",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos",
-      "kind": "article",
-      "role": "sampleCode",
-      "url": "/documentation/sirikit/photos/searching_for_photos",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Use SiriKit to search for photos managed by your app."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -269,16 +283,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -295,7 +319,8 @@
       "title": "Initializing the Response Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponse/1638236-initwithcode"
-      ]
+      ],
+      "anchor": "2279067"
     },
     {
       "kind": "taskGroup",
@@ -303,24 +328,25 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponse/1833286-code",
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponsecode"
-      ]
+      ],
+      "anchor": "2539032"
     },
     {
       "kind": "taskGroup",
       "title": "Accessing the Response Details",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintentresponse/1639111-searchresultscount"
-      ]
+      ],
+      "anchor": "2279069"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/photos/searching_for_photos",
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent"
       ],
-      "title": "Search for Photos",
+      "title": "Photo Search",
       "generated": true
     }
   ],
@@ -358,6 +384,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -449,7 +476,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

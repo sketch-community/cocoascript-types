@@ -39,27 +39,32 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProcessInfo",
@@ -76,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -127,62 +132,6 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/foundation/processinfo/1410906-operatingsystemversion": {
-      "title": "operatingSystemVersion",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1410906-operatingsystemversion",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/processinfo/1410906-operatingsystemversion",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The version of the operating system on which the process is executing."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "operatingSystemVersion"
-        },
-        {
-          "kind": "text",
-          "text": ": OperatingSystemVersion"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/processinfo/1414876-isoperatingsystematleast": {
-      "title": "isOperatingSystemAtLeast(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1414876-isoperatingsystematleast",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/processinfo/1414876-isoperatingsystematleast",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the version of the operating system on which the process is executing is the same or later than the given version."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "isOperatingSystemAtLeast"
-        },
-        {
-          "kind": "text",
-          "text": "(OperatingSystemVersion) -> Bool"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/foundation/processinfo/1415995-beginactivity": {
       "title": "beginActivity(options:reason:)",
@@ -346,7 +295,7 @@
       "url": "/documentation/foundation/processinfo/activityoptions/1415541-latencycritical"
     },
     "doc://com.apple.documentation/documentation/foundation/processinfo#1651129": {
-      "title": "Sudden Termination",
+      "title": "Support Sudden Termination",
       "type": "section",
       "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo#1651129",
       "kind": "article",
@@ -360,6 +309,34 @@
       "kind": "article",
       "role": "codeListing",
       "url": "/documentation/foundation/processinfo#2555785"
+    },
+    "doc://com.apple.documentation/documentation/foundation/processinfo/1417402-disableautomatictermination": {
+      "title": "disableAutomaticTermination(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1417402-disableautomatictermination",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/processinfo/1417402-disableautomatictermination",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disables automatic termination for the application."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "disableAutomaticTermination"
+        },
+        {
+          "kind": "text",
+          "text": "(String)"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/processinfo#2555791": {
       "title": "Listing 3",
@@ -433,6 +410,14 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nssupportssuddentermination": {
+      "title": "NSSupportsSuddenTermination",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nssupportssuddentermination",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nssupportssuddentermination"
+    },
     "doc://com.apple.documentation/documentation/swift/true": {
       "title": "true",
       "type": "topic",
@@ -465,34 +450,6 @@
       "role": "codeListing",
       "url": "/documentation/foundation/processinfo#2555793"
     },
-    "doc://com.apple.documentation/documentation/foundation/processinfo/1410656-thermalstatedidchangenotificatio": {
-      "title": "thermalStateDidChangeNotification",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1410656-thermalstatedidchangenotificatio",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/processinfo/1410656-thermalstatedidchangenotificatio",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Posted when the thermal state of the system changes."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "class let "
-        },
-        {
-          "kind": "identifier",
-          "text": "thermalStateDidChangeNotification"
-        },
-        {
-          "kind": "text",
-          "text": ": NSNotification.Name"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/processinfo/1417480-thermalstate": {
       "title": "thermalState",
       "type": "topic",
@@ -518,6 +475,34 @@
         {
           "kind": "text",
           "text": ": ProcessInfo.ThermalState"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/processinfo/1410656-thermalstatedidchangenotificatio": {
+      "title": "thermalStateDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1410656-thermalstatedidchangenotificatio",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/processinfo/1410656-thermalstatedidchangenotificatio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posts when the thermal state of the system changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class let "
+        },
+        {
+          "kind": "identifier",
+          "text": "thermalStateDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
         }
       ]
     },
@@ -612,30 +597,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject"
-    },
-    "doc://com.apple.documentation/documentation/swift/cvararg": {
-      "title": "CVarArg",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/cvararg"
-    },
-    "doc://com.apple.documentation/documentation/swift/equatable": {
-      "title": "Equatable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/equatable"
-    },
-    "doc://com.apple.documentation/documentation/swift/hashable": {
-      "title": "Hashable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/hashable"
     },
     "doc://com.apple.documentation/documentation/foundation/processinfo/1415596-arguments": {
       "title": "arguments",
@@ -889,34 +850,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/processinfo/1417402-disableautomatictermination": {
-      "title": "disableAutomaticTermination(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1417402-disableautomatictermination",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/processinfo/1417402-disableautomatictermination",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Disables automatic termination for the application."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "disableAutomaticTermination"
-        },
-        {
-          "kind": "text",
-          "text": "(String)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/processinfo/1409422-enableautomatictermination": {
       "title": "enableAutomaticTermination(_:)",
       "type": "topic",
@@ -1001,6 +934,90 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/processinfo/1408730-operatingsystemversionstring": {
+      "title": "operatingSystemVersionString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1408730-operatingsystemversionstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/processinfo/1408730-operatingsystemversionstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A string containing the version of the operating system on which the process is executing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "operatingSystemVersionString"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/processinfo/1410906-operatingsystemversion": {
+      "title": "operatingSystemVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1410906-operatingsystemversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/processinfo/1410906-operatingsystemversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The version of the operating system on which the process is executing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "operatingSystemVersion"
+        },
+        {
+          "kind": "text",
+          "text": ": OperatingSystemVersion"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/processinfo/1414876-isoperatingsystematleast": {
+      "title": "isOperatingSystemAtLeast(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1414876-isoperatingsystematleast",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/processinfo/1414876-isoperatingsystematleast",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the version of the operating system on which the process is executing is the same or later than the given version."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "isOperatingSystemAtLeast"
+        },
+        {
+          "kind": "text",
+          "text": "(OperatingSystemVersion) -> Bool"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/processinfo/1407388-operatingsystemname": {
       "title": "operatingSystemName()",
       "type": "topic",
@@ -1029,34 +1046,6 @@
         }
       ],
       "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/foundation/processinfo/1408730-operatingsystemversionstring": {
-      "title": "operatingSystemVersionString",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1408730-operatingsystemversionstring",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/processinfo/1408730-operatingsystemversionstring",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A string containing the version of the operating system on which the process is executing."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "operatingSystemVersionString"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/foundation/processinfo/1415622-processorcount": {
       "title": "processorCount",
@@ -1252,25 +1241,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Operating system version structure used with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1410906-operatingsystemversion"
-        },
-        {
-          "type": "text",
-          "text": " and "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1414876-isoperatingsystematleast"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "A structure that contains version information about the currently executing operating system, including major, minor, and patch version numbers."
         }
       ],
       "fragments": [
@@ -1367,7 +1338,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the power state (Low Power Mode is enabled or disabled) of an iOS device changes. "
+          "text": "Posts when the power state of an iOS device changes. "
         }
       ],
       "fragments": [
@@ -1425,16 +1396,6 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/objectivec/nsobject"
       ]
-    },
-    {
-      "kind": "relationships",
-      "title": "Conforms To",
-      "type": "conformsTo",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/swift/cvararg",
-        "doc://com.apple.documentation/documentation/swift/equatable",
-        "doc://com.apple.documentation/documentation/swift/hashable"
-      ]
     }
   ],
   "topicSections": [
@@ -1443,7 +1404,8 @@
       "title": "Getting the Process Information Agent",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/processinfo/1408734-processinfo"
-      ]
+      ],
+      "anchor": "1651144"
     },
     {
       "kind": "taskGroup",
@@ -1456,7 +1418,8 @@
         "doc://com.apple.documentation/documentation/foundation/processinfo/3608556-isiosapponmac",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1415929-processidentifier",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1416428-processname"
-      ]
+      ],
+      "anchor": "1651168"
     },
     {
       "kind": "taskGroup",
@@ -1465,6 +1428,7 @@
         "doc://com.apple.documentation/documentation/foundation/processinfo/1643193-username",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1643199-fullusername"
       ],
+      "anchor": "1844434",
       "abstract": [
         {
           "type": "text",
@@ -1491,7 +1455,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/processinfo/1412841-disablesuddentermination",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1409836-enablesuddentermination"
-      ]
+      ],
+      "anchor": "1651231"
     },
     {
       "kind": "taskGroup",
@@ -1500,19 +1465,21 @@
         "doc://com.apple.documentation/documentation/foundation/processinfo/1417402-disableautomatictermination",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1409422-enableautomatictermination",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1407578-automaticterminationsupportenabl"
-      ]
+      ],
+      "anchor": "1651267"
     },
     {
       "kind": "taskGroup",
       "title": "Getting Host Information",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/processinfo/1417236-hostname",
-        "doc://com.apple.documentation/documentation/foundation/processinfo/1416341-operatingsystem",
-        "doc://com.apple.documentation/documentation/foundation/processinfo/1407388-operatingsystemname",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1408730-operatingsystemversionstring",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1410906-operatingsystemversion",
-        "doc://com.apple.documentation/documentation/foundation/processinfo/1414876-isoperatingsystematleast"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/processinfo/1414876-isoperatingsystematleast",
+        "doc://com.apple.documentation/documentation/foundation/processinfo/1416341-operatingsystem",
+        "doc://com.apple.documentation/documentation/foundation/processinfo/1407388-operatingsystemname"
+      ],
+      "anchor": "1651308"
     },
     {
       "kind": "taskGroup",
@@ -1522,7 +1489,8 @@
         "doc://com.apple.documentation/documentation/foundation/processinfo/1408184-activeprocessorcount",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1408211-physicalmemory",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1414553-systemuptime"
-      ]
+      ],
+      "anchor": "1651376"
     },
     {
       "kind": "taskGroup",
@@ -1532,21 +1500,24 @@
         "doc://com.apple.documentation/documentation/foundation/processinfo/1411321-endactivity",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1418048-performactivity",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1617030-performexpiringactivity"
-      ]
+      ],
+      "anchor": "1651427"
     },
     {
       "kind": "taskGroup",
       "title": "Getting the Thermal State",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/processinfo/1417480-thermalstate"
-      ]
+      ],
+      "anchor": "1651460"
     },
     {
       "kind": "taskGroup",
       "title": "Determining Whether Low Power Mode is Enabled",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/processinfo/1617047-islowpowermodeenabled"
-      ]
+      ],
+      "anchor": "1651476"
     },
     {
       "kind": "taskGroup",
@@ -1556,7 +1527,8 @@
         "doc://com.apple.documentation/documentation/foundation/processinfo/activityoptions",
         "doc://com.apple.documentation/documentation/foundation/processinfo/thermalstate",
         "doc://com.apple.documentation/documentation/foundation/processinfo/1552984-anonymous"
-      ]
+      ],
+      "anchor": "1651495"
     },
     {
       "kind": "taskGroup",
@@ -1564,7 +1536,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/processinfo/1410656-thermalstatedidchangenotificatio",
         "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1617322-nsprocessinfopowerstatedidchange"
-      ]
+      ],
+      "anchor": "1679580"
     }
   ],
   "seeAlsoSections": [
@@ -1610,6 +1583,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1641,7 +1615,7 @@
             },
             {
               "type": "text",
-              "text": " object, known as a "
+              "text": " object known as a "
             },
             {
               "type": "emphasis",
@@ -1654,16 +1628,7 @@
             },
             {
               "type": "text",
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The process information agent can return information such as arguments, environment variables, host name, and process name. The "
+              "text": " that can return information such as arguments, environment variables, host name, and process name. The "
             },
             {
               "type": "reference",
@@ -1672,7 +1637,7 @@
             },
             {
               "type": "text",
-              "text": " class method returns the shared agent for the current process—that is, the process whose object sent the message. For example, the following line returns the "
+              "text": " class method returns the shared agent for the current process. For example, the following line returns the "
             },
             {
               "type": "reference",
@@ -1688,7 +1653,7 @@
         {
           "type": "codeListing",
           "code": [
-            "let processName = NSProcessInfo.processInfo().processName"
+            "let processName = ProcessInfo.processInfo.processName"
           ],
           "syntax": "swift",
           "metadata": {
@@ -1740,7 +1705,7 @@
             },
             {
               "type": "text",
-              "text": " method, which returns an enum constant identifying the operating system on which the process is executing."
+              "text": " method, which returns an enumeration constant identifying the operating system on which the process is executing."
             }
           ]
         },
@@ -1754,7 +1719,7 @@
             },
             {
               "type": "text",
-              "text": " objects attempt to interpret environment variables and command-line arguments in the user's default C string encoding if they cannot be converted to Unicode as UTF-8 strings. If neither the Unicode nor C string conversion works, these values are ignored by the "
+              "text": " objects attempt to interpret environment variables and command-line arguments in the user’s default C string encoding if they can’t convert to Unicode as UTF-8 strings. If neither the Unicode nor C string conversion works, the "
             },
             {
               "type": "reference",
@@ -1763,14 +1728,14 @@
             },
             {
               "type": "text",
-              "text": " object."
+              "text": " object ignores these values."
             }
           ]
         },
         {
           "level": 3,
           "type": "heading",
-          "text": "Managing Activities",
+          "text": "Manage Activities",
           "anchor": "1651116"
         },
         {
@@ -1847,7 +1812,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In response to creating an activity, the system will disable some or all of the heuristics so your application can finish quickly while still providing responsive behavior if the user needs it."
+              "text": "In response to creating an activity, the system disables some or all of the heuristics so your application can finish quickly while still providing responsive behavior if the user needs it."
             }
           ]
         },
@@ -1856,12 +1821,12 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You use activities when your application is performing a long-running operation. If the activity can take different amounts of time (for example, calculating the next move in a chess game), it should use this API. This will ensure correct behavior when the amount of data or the capabilities of the user's computer varies. You should put your activity into one of two major categories:"
+              "text": "You use activities when your application performs a long-running operation. If the activity can take different amounts of time (for example, calculating the next move in a chess game), it should use this API to ensure correct behavior when the amount of data or the capabilities of the user’s computer varies. Activities fall into two major categories:"
             }
           ]
         },
         {
-          "type": "orderedList",
+          "type": "unorderedList",
           "items": [
             {
               "content": [
@@ -1873,13 +1838,13 @@
                       "inlineContent": [
                         {
                           "type": "text",
-                          "text": "User initiated:"
+                          "text": "User-initiated"
                         }
                       ]
                     },
                     {
                       "type": "text",
-                      "text": " These are finite length activities that the user has explicitly started. Examples include exporting or downloading a user specified file."
+                      "text": " activities are explicitly started by the user. Examples include exporting or downloading a user-specified file."
                     }
                   ]
                 }
@@ -1895,13 +1860,13 @@
                       "inlineContent": [
                         {
                           "type": "text",
-                          "text": "Background:"
+                          "text": "Background"
                         }
                       ]
                     },
                     {
                       "type": "text",
-                      "text": " These are finite length activities that are part of the normal operation of your application but are not explicitly started by the user. Examples include autosaving, indexing, and automatic downloading of files."
+                      "text": " activities perform the normal operations of your application and aren’t explicitly started by the user. Examples include autosaving, indexing, and automatic downloading of files."
                     }
                   ]
                 }
@@ -1914,7 +1879,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In addition, if your application requires high priority I/O, you can include the "
+              "text": "In addition, if your application requires high priority input/output (I/O), you can include the "
             },
             {
               "type": "reference",
@@ -1931,7 +1896,7 @@
             },
             {
               "type": "text",
-              "text": "). You should only use this flag for activities like audio or video recording that really do require high priority."
+              "text": "). You should only use this flag for activities like audio or video recording that require high priority I/O."
             }
           ]
         },
@@ -1940,7 +1905,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If your activity takes place synchronously inside an event callback on the main thread, you do not need to use this API."
+              "text": "If your activity takes place synchronously inside an event callback on the main thread, you don’t need to use this API."
             }
           ]
         },
@@ -1949,7 +1914,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Be aware that failing to end these activities for an extended period of time can have significant negative impacts to the performance of your user's computer, so be sure to use only the minimum amount of time required. User preferences may override your application’s request."
+              "text": "Be aware that failing to end these activities for an extended period of time can have significant negative impacts on the performance of your user’s computer, so be sure to use only the minimum amount of time required. User preferences may override your application’s request."
             }
           ]
         },
@@ -1967,16 +1932,18 @@
             },
             {
               "type": "text",
-              "text": "). For example:"
+              "text": "). For example, the following code brackets the work to protect it from sudden termination:"
             }
           ]
         },
         {
           "type": "codeListing",
           "code": [
-            "let activity = NSProcessInfo.processInfo().beginActivityWithOptions(.AutomaticTerminationDisabled, reason: \"Good Reason\")",
-            "// Perform some work",
-            "NSProcessInfo.processInfo().endActivity(activity)"
+            "let activity = ProcessInfo.processInfo.beginActivity(",
+            "    options: .automaticTerminationDisabled, ",
+            "    reason: \"Good Reason\")",
+            "// Perform some work.",
+            "ProcessInfo.processInfo.endActivity(activity)"
           ],
           "syntax": "swift",
           "metadata": {
@@ -1986,19 +1953,32 @@
         },
         {
           "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "is equivalent to:"
+              "text": "The above example is equivalent to the following code, which uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1417402-disableautomatictermination"
+            },
+            {
+              "type": "text",
+              "text": " method:"
             }
           ]
         },
         {
           "type": "codeListing",
           "code": [
-            "NSProcessInfo.processInfo().disableAutomaticTermination(\"Good Reason\")",
-            "// Perform some work",
-            "NSProcessInfo.processInfo().enableAutomaticTermination(\"Good Reason\")"
+            "ProcessInfo.processInfo.disableAutomaticTermination(\"Good Reason\")",
+            "// Perform some work.",
+            "ProcessInfo.processInfo.enableAutomaticTermination(\"Good Reason\")"
           ],
           "syntax": "swift",
           "metadata": {
@@ -2011,7 +1991,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Because this API returns an object, it may be easier to pair begins and ends than when using the automatic termination API—if the object is deallocated before the "
+              "text": "Because this API returns an object, it may be easier to pair begins and ends than when using the automatic termination API. If your app deallocates the object before the "
             },
             {
               "type": "reference",
@@ -2020,7 +2000,7 @@
             },
             {
               "type": "text",
-              "text": " call, the activity will be automatically ended."
+              "text": " call, the activity ends automatically."
             }
           ]
         },
@@ -2029,7 +2009,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This API also provides a mechanism to disable system-wide idle sleep and display idle sleep. These can have a large impact on the user experience, so be sure not to forget to end activities that disable sleep (including "
+              "text": "This API also provides a mechanism to disable system-wide idle sleep and display idle sleep. These can have a large impact on the user experience, so be careful to end activities that disable sleep (including "
             },
             {
               "type": "reference",
@@ -2045,7 +2025,7 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Sudden Termination",
+          "text": "Support Sudden Termination",
           "anchor": "1651129"
         },
         {
@@ -2062,7 +2042,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Your application can enable this capability on a global basis and then manually override its availability during actions that could cause data corruption or a poor user experience by allowing sudden termination. Alternately, your application can just manually enable and disable this functionality. "
+              "text": "Your application can enable this capability on a global basis and then manually override its availability during actions that could cause data corruption or a poor user experience by allowing sudden termination. "
             }
           ]
         },
@@ -2071,7 +2051,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The methods "
+              "text": "Alternatively, your application can manually enable and disable this functionality. Creating a process assigns a counter that indicates if the process is safe to terminate. You decrement and increment the counter using the methods "
             },
             {
               "type": "reference",
@@ -2089,15 +2069,15 @@
             },
             {
               "type": "text",
-              "text": " decrement or increment, respectively, a counter whose value is "
+              "text": ". A value of "
             },
             {
               "type": "codeVoice",
-              "code": "1"
+              "code": "0"
             },
             {
               "type": "text",
-              "text": " when the process is first created. When the counter's value is 0 the application is considered to be safely killable and may be killed by the system without any notification or event being sent to the process first."
+              "text": " enables the system to terminate the process without first sending a notification or event."
             }
           ]
         },
@@ -2106,15 +2086,32 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Your application can support sudden termination upon launch by adding a key to the application’s Info.plist. If the "
+              "text": "Your application can support sudden termination upon launch by adding a key to the application’s "
             },
             {
               "type": "codeVoice",
-              "code": "NSSupportsSuddenTermination"
+              "code": "Info.plist"
             },
             {
               "type": "text",
-              "text": " key exists in the Info.plist and has a value of "
+              "text": " file. If the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nssupportssuddentermination"
+            },
+            {
+              "type": "text",
+              "text": " key exists in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " file and has a value of "
             },
             {
               "type": "reference",
@@ -2123,7 +2120,7 @@
             },
             {
               "type": "text",
-              "text": ", it is the equivalent of calling "
+              "text": ", it’s the equivalent of calling "
             },
             {
               "type": "reference",
@@ -2132,7 +2129,7 @@
             },
             {
               "type": "text",
-              "text": " during your application launch. This renders the application process killable right away. You can still override this behavior by invoking "
+              "text": " during your application launch. This allows the system to terminate the process immediately. You can still override this behavior by invoking "
             },
             {
               "type": "reference",
@@ -2150,7 +2147,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Typically, you disable sudden termination whenever your application defers work that must be done before the application terminates. If, for example, your application defers writing data to disk, and sudden termination is enabled, you should bracket the sensitive operations with a call to "
+              "text": "Typically, you disable sudden termination whenever your app defers work that the app must complete before it terminates. If, for example, your app defers writing data to disk and enables sudden termination, you should bracket the sensitive operations with a call to "
             },
             {
               "type": "reference",
@@ -2177,7 +2174,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In agents or daemon executables that don't depend on AppKit you can manually invoke "
+              "text": "In agents or daemon executables that don’t depend on AppKit, you can manually invoke "
             },
             {
               "type": "reference",
@@ -2214,7 +2211,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " temporarily disables sudden termination to prevent process killing between the time at which a default has been set and the time at which the preferences file including that default has been written to disk."
+                      "text": " temporarily disables sudden termination to prevent the process from terminating between the time at which it sets the default and the time at which it writes the preferences file — including that default — to disk."
                     }
                   ]
                 }
@@ -2232,7 +2229,16 @@
                     },
                     {
                       "type": "text",
-                      "text": " temporarily disables sudden termination to prevent process killing between the time at which the user has made a change to a document and the time at which the user's change has been written to disk."
+                      "text": " temporarily disables sudden termination to prevent the process from terminating between the time at which the user has made a change to a document and the time at which "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/appkit/nsdocument"
+                    },
+                    {
+                      "type": "text",
+                      "text": " writes the user's change to disk."
                     }
                   ]
                 }
@@ -2268,7 +2274,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Do not attempt to invoke or override "
+                  "text": "Don’t attempt to invoke or override "
                 },
                 {
                   "type": "codeVoice",
@@ -2276,35 +2282,35 @@
                 },
                 {
                   "type": "text",
-                  "text": " (a private method) in your application. It is there just for this debugging purpose, and may disappear at any time. "
+                  "text": " (a private method) in your application. It’s there for this debugging purpose and may disappear at any time."
                 }
               ]
             }
           ],
           "style": "note",
-          "name": "Debugging tip"
+          "name": "Tip"
         },
         {
           "level": 3,
           "type": "heading",
-          "text": "Thermal State and App Performance in macOS",
+          "text": "Monitor Thermal State to Adjust App Performance",
           "anchor": "1651138"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "text",
-              "text": "In macOS, use the current thermal state to determine if your app should reduce system usage. In macOS 10.10.3 and later, you can register for the "
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Thermal state"
+                }
+              ]
             },
             {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1410656-thermalstatedidchangenotificatio"
-            },
-            {
               "type": "text",
-              "text": " to be notified when the thermal state changes. Use "
+              "text": " indicates the level of heat generated by logic components as they run apps. As the thermal state increases, the system decreases heat by reducing the speed of the processors. Optimize your app’s performance by monitoring the thermal state and reducing system usage as the thermal state increases. Query the current state with "
             },
             {
               "type": "reference",
@@ -2313,7 +2319,16 @@
             },
             {
               "type": "text",
-              "text": " to query the current state. Your app should reduce system usage at higher thermal states. For recommended actions, see "
+              "text": " to determine if your app needs to reduce system usage. You can register the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/processinfo/1410656-thermalstatedidchangenotificatio"
+            },
+            {
+              "type": "text",
+              "text": " for notifications of a change in thermal state. For recommended actions, see "
             },
             {
               "type": "reference",
@@ -2330,7 +2345,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

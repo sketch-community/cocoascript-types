@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Called when you need to resolve the name of the group receiving the message."
+      "text": "Resolves the name of the group receiving the message."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,40 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "11.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
         "deprecatedAt": "4.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INSendMessageIntentHandling(im)resolveGroupNameForSendMessage:withCompletion:",
+    "parent": {
+      "title": "INSendMessageIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,6 +134,24 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend": {
+      "title": "resolveSpeakableGroupNameForSendMessage:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveSpeakableGroupNameForSendMessage:withCompletion:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageintent": {
       "title": "INSendMessageIntent",
       "type": "topic",
@@ -140,81 +168,6 @@
       "role": "symbol",
       "url": "/documentation/sirikit/instringresolutionresult"
     },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1638459-resolverecipientsforsendmessage": {
-      "title": "resolveRecipientsForSendMessage:completion:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1638459-resolverecipientsforsendmessage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintenthandling/1638459-resolverecipientsforsendmessage",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Resolves the user’s input when it is not clear who are the recipients of the message."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "resolveRecipientsForSendMessage:completion:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1902359-resolvecontentforsendmessage": {
-      "title": "resolveContentForSendMessage:withCompletion:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1902359-resolvecontentforsendmessage",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintenthandling/1902359-resolvecontentforsendmessage",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Resolves the contents of the message."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "resolveContentForSendMessage:withCompletion:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend": {
-      "title": "resolveSpeakableGroupNameForSendMessage:withCompletion:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Resolves the name of the group receiving the message."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "resolveSpeakableGroupNameForSendMessage:withCompletion:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1902356-resolverecipientsforsendmessage": {
       "title": "resolveRecipientsForSendMessage:withCompletion:",
       "type": "topic",
@@ -226,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Called when you need to resolve the recipients of the message."
+          "text": "Resolves the recipients of the message."
         }
       ],
       "fragments": [
@@ -252,7 +205,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Called when you need to resolve the name of the group receiving the message."
+          "text": "Resolves the name of the group receiving the message."
         }
       ],
       "fragments": [
@@ -275,15 +228,32 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1638459-resolverecipientsforsendmessage",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1902359-resolvecontentforsendmessage",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1902356-resolverecipientsforsendmessage"
       ],
-      "title": "Resolving the Intent Parameters",
+      "title": "Deprecated Methods",
       "generated": true
     }
   ],
@@ -379,6 +349,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -480,7 +451,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

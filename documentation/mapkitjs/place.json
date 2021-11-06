@@ -1,0 +1,961 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A place object returned from a geocoder lookup, reverse lookup, or a fetch request for points of interest."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkitjs",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/mapkitjs/place",
+    "interfaceLanguage": "data"
+  },
+  "legacy_identifier": 2991255,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Place",
+    "role": "symbol",
+    "roleHeading": "Structure",
+    "modules": [
+      {
+        "name": "MapKit JS"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "MapKit JS",
+        "introducedAt": "5.0",
+        "current": "5.55"
+      }
+    ],
+    "externalID": "struct/Place",
+    "symbolKind": "struct"
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "data"
+        }
+      ],
+      "paths": [
+        "documentation/mapkitjs/place"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/mapkitjs": {
+      "title": "MapKit JS",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs",
+      "url": "/documentation/mapkitjs",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit": {
+      "title": "mapkit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/geocoderresponse": {
+      "title": "GeocoderResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/geocoderresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/geocoderresponse"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/searchresponse": {
+      "title": "SearchResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/searchresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/searchresponse"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/pointsofinterestsearchresponse": {
+      "title": "PointsOfInterestSearchResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/pointsofinterestsearchresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/pointsofinterestsearchresponse"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/2991259-name": {
+      "title": "name",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/2991259-name",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/2991259-name",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name of the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/2991258-formattedaddress": {
+      "title": "formattedAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/2991258-formattedaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/2991258-formattedaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The address of the place, formatted using its conventions of its country or region."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585990-areasofinterest": {
+      "title": "areasOfInterest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585990-areasofinterest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585990-areasofinterest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Common names of the area in which the place resides."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585911-pointofinterestcategory": {
+      "title": "pointOfInterestCategory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585911-pointofinterestcategory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585911-pointofinterestcategory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The category of the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585998-thoroughfare": {
+      "title": "thoroughfare",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585998-thoroughfare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585998-thoroughfare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The street name at the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585997-subthoroughfare": {
+      "title": "subThoroughfare",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585997-subthoroughfare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585997-subthoroughfare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number on the street at the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585993-fullthoroughfare": {
+      "title": "fullThoroughfare",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585993-fullthoroughfare",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585993-fullthoroughfare",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A combination of thoroughfare and subthoroughfare."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585995-postcode": {
+      "title": "postCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585995-postcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585995-postcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The postal code of the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585994-locality": {
+      "title": "locality",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585994-locality",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585994-locality",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The city of the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585996-sublocality": {
+      "title": "subLocality",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585996-sublocality",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585996-sublocality",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name of the area within the locality."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585992-dependentlocalities": {
+      "title": "dependentLocalities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585992-dependentlocalities",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585992-dependentlocalities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Common names for the local area or neighborhood of the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585988-administrativearea": {
+      "title": "administrativeArea",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585988-administrativearea",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585988-administrativearea",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The state or province of the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585989-administrativeareacode": {
+      "title": "administrativeAreaCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585989-administrativeareacode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585989-administrativeareacode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The short code for the state or area."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/3585991-country": {
+      "title": "country",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/3585991-country",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/3585991-country",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The country or region of the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/2991257-countrycode": {
+      "title": "countryCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/2991257-countrycode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/2991257-countrycode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The country or region associated with the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/2991256-coordinate": {
+      "title": "coordinate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/2991256-coordinate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/2991256-coordinate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The latitude and longitude for the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place/2991260-region": {
+      "title": "region",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place/2991260-region",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place/2991260-region",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The geographic region associated with the place."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/place": {
+      "title": "Place",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/place",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/place",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A place object returned from a geocoder lookup, reverse lookup, or a fetch request for points of interest."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "minor": {
+      "change": "modified",
+      "platform": "MapKit JS",
+      "versions": [
+        "5.49",
+        "5.55"
+      ]
+    },
+    "major": {
+      "change": "modified",
+      "platform": "MapKit JS",
+      "versions": [
+        "5.0",
+        "5.55"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Place Name and Category",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/place/2991259-name",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/2991258-formattedaddress",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585990-areasofinterest",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585911-pointofinterestcategory"
+      ],
+      "anchor": "3002068"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Street Address",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585998-thoroughfare",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585997-subthoroughfare",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585993-fullthoroughfare",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585995-postcode"
+      ],
+      "anchor": "3002067"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "City and District Address",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585994-locality",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585996-sublocality",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585992-dependentlocalities",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585988-administrativearea",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585989-administrativeareacode"
+      ],
+      "anchor": "3595408"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Country Address",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/place/3585991-country",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/2991257-countrycode"
+      ],
+      "anchor": "3595410"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Location",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/place/2991256-coordinate",
+        "doc://com.apple.documentation/documentation/mapkitjs/place/2991260-region"
+      ],
+      "anchor": "3595409"
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "data"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "dictionary"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "Place"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "name"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "cl/mapkit",
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+              "text": "mapkit"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "Coordinate"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "coordinate"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "formattedAddress"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "cl/mapkit",
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+              "text": "mapkit"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "CoordinateRegion"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "region"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "countryCode"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "cl/mapkit",
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+              "text": "mapkit"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "PointOfInterestCategory"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "pointOfInterestCategory"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "? "
+            },
+            {
+              "kind": "identifier",
+              "text": "country"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "? "
+            },
+            {
+              "kind": "identifier",
+              "text": "administrativeArea"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "? "
+            },
+            {
+              "kind": "identifier",
+              "text": "administrativeAreaCode"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "? "
+            },
+            {
+              "kind": "identifier",
+              "text": "locality"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "? "
+            },
+            {
+              "kind": "identifier",
+              "text": "postCode"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "? "
+            },
+            {
+              "kind": "identifier",
+              "text": "subLocality"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "? "
+            },
+            {
+              "kind": "identifier",
+              "text": "thoroughfare"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "? "
+            },
+            {
+              "kind": "identifier",
+              "text": "subThoroughfare"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "? "
+            },
+            {
+              "kind": "identifier",
+              "text": "fullThoroughfare"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "[]? "
+            },
+            {
+              "kind": "identifier",
+              "text": "areasOfInterest"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    "
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "string"
+            },
+            {
+              "kind": "text",
+              "text": "[]? "
+            },
+            {
+              "kind": "identifier",
+              "text": "dependentLocalities"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "};"
+            }
+          ],
+          "platforms": [
+            "MapKit JS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/geocoderresponse"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/searchresponse"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/pointsofinterestsearchresponse"
+            },
+            {
+              "type": "text",
+              "text": " return places."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

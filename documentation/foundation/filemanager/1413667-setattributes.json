@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Sets the attributes of the specified file or directory. "
+      "text": "Sets the attributes of the specified file or directory."
     }
   ],
   "documentVersion": 0,
@@ -41,30 +41,38 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSFileManager(im)setAttributes:ofItemAtPath:error:",
+    "parent": {
+      "title": "FileManager"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -90,8 +98,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -462,7 +470,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sets the attributes of the specified file or directory. "
+          "text": "Sets the attributes of the specified file or directory."
         }
       ],
       "fragments": [
@@ -608,6 +616,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -829,7 +838,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "As in the POSIX standard, the app either must own the file or directory or must be running as superuser for attribute changes to take effect. The method attempts to make all changes specified in attributes and ignores any rejection of an attempted modification. If the last component of the path is a symbolic link it is traversed."
+              "text": "As in the POSIX standard, the app either must own the file or directory or must be running as superuser for attribute changes to take effect. The method attempts to make all changes specified in attributes and ignores any rejection of an attempted modification. If the last component of the path is a symbolic link, the system traverses it."
             }
           ]
         },
@@ -838,7 +847,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The "
+              "text": "You must initialize the "
             },
             {
               "type": "reference",
@@ -847,7 +856,7 @@
             },
             {
               "type": "text",
-              "text": " value must be initialized with the code representing the POSIX file-permissions bit pattern. "
+              "text": " value with the code representing the POSIX file-permissions bit pattern. The system sets "
             },
             {
               "type": "reference",
@@ -865,7 +874,7 @@
             },
             {
               "type": "text",
-              "text": " will only be heeded when "
+              "text": " only when "
             },
             {
               "type": "codeVoice",
@@ -973,7 +982,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

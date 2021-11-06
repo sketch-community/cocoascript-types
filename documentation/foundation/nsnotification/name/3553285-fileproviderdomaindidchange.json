@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A notification that posts when a file provider’s domain changes."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -38,10 +44,13 @@
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSFileProviderDomainDidChange",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -59,8 +68,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -127,6 +136,86 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnotification"
     },
+    "doc://com.apple.documentation/documentation/fileprovider/nsfileprovidermanager/2882045-getdomainswithcompletionhandler": {
+      "title": "getDomainsWithCompletionHandler(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/fileprovider/nsfileprovidermanager/2882045-getdomainswithcompletionhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/fileprovider/nsfileprovidermanager/2882045-getdomainswithcompletionhandler"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3553285-fileproviderdomaindidchange": {
+      "title": "fileProviderDomainDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3553285-fileproviderdomaindidchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3553285-fileproviderdomaindidchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that posts when a file provider’s domain changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileProviderDomainDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3727812-fileprovidermaterializedsetdidch": {
+      "title": "fileProviderMaterializedSetDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3727812-fileprovidermaterializedsetdidch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3727812-fileprovidermaterializedsetdidch",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileProviderMaterializedSetDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3727813-fileproviderpendingsetdidchange": {
+      "title": "fileProviderPendingSetDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3727813-fileproviderpendingsetdidchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3727813-fileproviderpendingsetdidchange",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileProviderPendingSetDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -135,6 +224,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3727812-fileprovidermaterializedsetdidch",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3727813-fileproviderpendingsetdidchange"
+      ],
+      "title": "File Provider",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -190,10 +289,48 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system only posts this notification after the first call to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/fileprovider/nsfileprovidermanager/2882045-getdomainswithcompletionhandler"
+            },
+            {
+              "type": "text",
+              "text": ". After receiving this notification, call "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/fileprovider/nsfileprovidermanager/2882045-getdomainswithcompletionhandler"
+            },
+            {
+              "type": "text",
+              "text": " again to determine what the changes are."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The modes that describe a buffer request."
+      "text": "The modes in which a sample buffer generator processes a request."
     }
   ],
   "documentVersion": 0,
@@ -11,12 +11,8 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations"
       ]
     ]
   },
@@ -37,17 +33,42 @@
     ],
     "platforms": [
       {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "8.0",
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVSampleBufferRequestMode",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,6 +103,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest": {
       "title": "AVSampleBufferRequest",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest",
@@ -89,14 +118,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations": {
-      "title": "AVFoundation Enumerations",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations",
-      "url": "/documentation/avfoundation/avfoundation_enumerations",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
@@ -116,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The sample data is loaded as soon as possible."
+          "text": "A mode that indicates that sample buffer creation requests load data as soon as possible."
         }
       ]
     },
@@ -130,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The sample data is scheduled to load with a deadline."
+          "text": "A mode that indicates that sample buffer creation requests load data according to a scheduled deadline."
         }
       ]
     },
@@ -140,7 +161,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeopportunistic",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeopportunistic"
+      "url": "/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeopportunistic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mode that indicates that opportunistic sample buffer creation requests load data as soon as possible."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest/1386442-direction": {
       "title": "direction",
@@ -222,7 +249,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The modes that describe a buffer request."
+          "text": "The modes in which a sample buffer generator processes a request."
         }
       ]
     },
@@ -282,15 +309,10 @@
       "title": "Mode Scheduling",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeimmediate",
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodescheduled"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Enumeration Cases",
-      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodescheduled",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeopportunistic"
-      ]
+      ],
+      "anchor": "1603617"
     }
   ],
   "seeAlsoSections": [
@@ -370,14 +392,19 @@
             }
           ],
           "platforms": [
-            "macOS"
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates an interaction object with the specified delegate."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UILargeContentViewerInteraction(im)initWithDelegate:",
+    "parent": {
+      "title": "UILargeContentViewerInteraction"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -91,7 +105,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteraction",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uilargecontentviewerinteraction"
+      "url": "/documentation/uikit/uilargecontentviewerinteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interaction that enables a gesture to present the large content viewer for cases when supporting the largest dynamic type sizes isn’t appropriate."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate": {
       "title": "UILargeContentViewerInteractionDelegate",
@@ -100,6 +120,48 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uilargecontentviewerinteractiondelegate"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/2891013-addinteraction": {
+      "title": "addInteraction:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/2891013-addinteraction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/2891013-addinteraction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addInteraction:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteraction/3183925-initwithdelegate": {
+      "title": "initWithDelegate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteraction/3183925-initwithdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilargecontentviewerinteraction/3183925-initwithdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an interaction object with the specified delegate."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithDelegate:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -171,14 +233,75 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "delegate",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An object that implements the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/uikit/uilargecontentviewerinteractiondelegate"
+                },
+                {
+                  "type": "text",
+                  "text": " protocol."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add the interaction to a view, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/2891013-addinteraction"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

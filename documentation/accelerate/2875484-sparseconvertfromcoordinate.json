@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a sparse matrix of single-precision, floating-point values created from the individual coordinate format arrays."
+      "text": "Returns a sparse matrix of single-precision values from individual coordinate format arrays."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseConvertFromCoordinate#I#I#L#c#$@SA@SparseAttributes_t#*1I#S1_#*1f#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,6 +119,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868203-triangle": {
+      "title": "triangle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868203-triangle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseattributes_t/2868203-triangle"
+    },
     "doc://com.apple.documentation/documentation/accelerate/sparsematrix_float": {
       "title": "SparseMatrix_Float",
       "type": "topic",
@@ -122,21 +135,13 @@
       "role": "symbol",
       "url": "/documentation/accelerate/sparsematrix_float"
     },
-    "doc://com.apple.documentation/documentation/accelerate/2875534-sparsecleanup": {
+    "doc://com.apple.documentation/documentation/accelerate/2875479-sparsecleanup": {
       "title": "SparseCleanup",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875534-sparsecleanup",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875479-sparsecleanup",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/2875534-sparsecleanup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868203-triangle": {
-      "title": "triangle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868203-triangle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparseattributes_t/2868203-triangle"
+      "url": "/documentation/accelerate/2875479-sparsecleanup"
     },
     "doc://com.apple.documentation/documentation/kernel/uint8_t": {
       "title": "uint8_t",
@@ -178,7 +183,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a sparse matrix of double-precision, floating-point values created from the individual coordinate format arrays."
+          "text": "Returns a sparse matrix of double-precision values from individual coordinate format arrays."
         }
       ]
     },
@@ -192,7 +197,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a sparse matrix of single-precision, floating-point values created from the individual coordinate format arrays."
+          "text": "Returns a sparse matrix of single-precision values from individual coordinate format arrays."
         }
       ]
     },
@@ -206,7 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a sparse matrix of double-precision, floating-point values created from the individual coordinate format arrays, without any internal memory allocations."
+          "text": "Returns a sparse matrix of double-precision values from individual coordinate format arrays, without any internal memory allocations."
         }
       ]
     },
@@ -220,7 +225,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a sparse matrix of single-precision, floating-point values created from the individual coordinate format arrays, without any internal memory allocations."
+          "text": "Returns a sparse matrix of single-precision values from individual coordinate format arrays, without any internal memory allocations."
         }
       ]
     },
@@ -366,6 +371,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -388,7 +394,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Number of rows in the structure."
+                  "text": "The number of rows in the structure."
                 }
               ]
             }
@@ -402,7 +408,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Number of columns in the structure."
+                  "text": "The number of columns in the structure."
                 }
               ]
             }
@@ -416,7 +422,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Number of blocks in the matrix."
+                  "text": "The number of blocks in the matrix."
                 }
               ]
             }
@@ -430,7 +436,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Block size for data storage on both input and output."
+                  "text": "The block size for data storage on both input and output."
                 }
               ]
             }
@@ -444,7 +450,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Attributes of the matrix to create. The matrix will be forced to conform to the specified attributes by copying or dropping elements as needed."
+                  "text": "The attributes of the matrix to create. The conversion forces the matrix to conform to the specified attributes by copying or dropping elements as necessary."
                 }
               ]
             }
@@ -458,7 +464,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Row indices of the matrix structure."
+                  "text": "The row indices of the matrix structure."
                 }
               ]
             }
@@ -472,7 +478,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Column indices of the matrix structure."
+                  "text": "The column indices of the matrix structure."
                 }
               ]
             }
@@ -486,7 +492,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Contents of the structurally nonzero (block) matrix elements."
+                  "text": "The contents of the structurally nonzero (block) matrix elements."
                 }
               ]
             }
@@ -517,16 +523,16 @@
             },
             {
               "type": "text",
-              "text": " object. When you are done with this matrix, release the memory that has been allocated by calling "
+              "text": " object. After you finish using a sparse matrix, call "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/2875534-sparsecleanup"
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/2875479-sparsecleanup"
             },
             {
               "type": "text",
-              "text": " on it."
+              "text": " to release its references to any memory that the Sparse Solvers library allocates. "
             }
           ]
         }
@@ -546,7 +552,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Out-of-range entries are dropped and duplicate entries are summed."
+              "text": "The conversion drops out-of-range entries, and sums duplicate entries."
             }
           ]
         },
@@ -555,7 +561,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For symmetric matrices, entries are accepted in either triangle. If they are in the \"wrong\" triangle, as specified by "
+              "text": "You may supply entries in either triangle for symmetric matrices. The conversion transposes entries in the triangle that "
             },
             {
               "type": "reference",
@@ -564,7 +570,7 @@
             },
             {
               "type": "text",
-              "text": ", they are transposed. If an entry is already present, they are treated as duplicates and summed."
+              "text": " doesn’t specify, and sums duplicate entries."
             }
           ]
         },
@@ -573,7 +579,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For triangular matrices, entries in the \"wrong\" triangle as specified by "
+              "text": "For triangular matrices, the conversion drops entries in the triangle that "
             },
             {
               "type": "reference",
@@ -582,7 +588,7 @@
             },
             {
               "type": "text",
-              "text": " are treated as out-of-range and are dropped."
+              "text": " doesn’t specify."
             }
           ]
         },
@@ -594,7 +600,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

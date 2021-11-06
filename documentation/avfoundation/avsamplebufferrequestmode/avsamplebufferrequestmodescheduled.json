@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The sample data is scheduled to load with a deadline."
+      "text": "A mode that indicates that sample buffer creation requests load data according to a scheduled deadline."
     }
   ],
   "documentVersion": 0,
@@ -11,13 +11,8 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest",
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode"
       ]
     ]
@@ -39,17 +34,45 @@
     ],
     "platforms": [
       {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "8.0",
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@AVSampleBufferRequestMode@AVSampleBufferRequestModeScheduled",
+    "parent": {
+      "title": "AVSampleBufferRequestMode"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -84,6 +107,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest": {
       "title": "AVSampleBufferRequest",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest",
@@ -102,33 +133,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The modes that describe a buffer request."
+          "text": "The modes in which a sample buffer generator processes a request."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations": {
-      "title": "AVFoundation Enumerations",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations",
-      "url": "/documentation/avfoundation/avfoundation_enumerations",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest/1385790-overridetime": {
-      "title": "overrideTime",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest/1385790-overridetime",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avsamplebufferrequest/1385790-overridetime"
-    },
-    "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref": {
-      "title": "CMSampleBufferRef",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coremedia/cmsamplebufferref"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeimmediate": {
       "title": "AVSampleBufferRequestModeImmediate",
@@ -140,7 +147,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The sample data is loaded as soon as possible."
+          "text": "A mode that indicates that sample buffer creation requests load data as soon as possible."
         }
       ]
     },
@@ -154,7 +161,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The sample data is scheduled to load with a deadline."
+          "text": "A mode that indicates that sample buffer creation requests load data according to a scheduled deadline."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeopportunistic": {
+      "title": "AVSampleBufferRequestModeOpportunistic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeopportunistic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeopportunistic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mode that indicates that opportunistic sample buffer creation requests load data as soon as possible."
         }
       ]
     },
@@ -169,7 +190,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeimmediate"
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeimmediate",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestmode/avsamplebufferrequestmodeopportunistic"
       ],
       "title": "Mode Scheduling",
       "generated": true
@@ -194,52 +216,19 @@
             }
           ],
           "platforms": [
-            "macOS"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "discussion",
-          "level": 2,
-          "text": "Discussion",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "The scheduled deadline is equal to the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest/1385790-overridetime"
-            },
-            {
-              "type": "text",
-              "text": " property if it is set; otherwise the deadline is based on the DTS or PTS time of the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref"
-            },
-            {
-              "type": "text",
-              "text": "."
-            }
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted whenever the display profile for the screen containing the window changes."
+      "text": "A notification that the screen containing the window changed."
     }
   ],
   "documentVersion": 0,
@@ -50,10 +50,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSWindowDidChangeScreenProfileNotification",
+    "parent": {
+      "title": "NSWindow"
+    },
     "symbolKind": "cldata",
     "fragments": [
       {
@@ -71,8 +74,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -185,14 +188,6 @@
       "role": "symbol",
       "url": "/documentation/swift/true"
     },
-    "doc://com.apple.documentation/documentation/appkit/nswindow/1419577-update": {
-      "title": "update()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419577-update",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nswindow/1419577-update"
-    },
     "doc://com.apple.documentation/documentation/appkit/nswindow/1419370-didbecomekeynotification": {
       "title": "didBecomeKeyNotification",
       "type": "topic",
@@ -203,15 +198,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object becomes the key window."
+          "text": "A notification that the window object became the key window."
         }
       ],
       "fragments": [
@@ -239,15 +226,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object becomes the main window."
+          "text": "A notification that the window object became the main window."
         }
       ],
       "fragments": [
@@ -275,15 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever a portion of an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object’s frame moves onto or off of a screen."
+          "text": "A notification that a portion of the window object’s frame moved onto or off of a screen."
         }
       ],
       "fragments": [
@@ -311,7 +282,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever the display profile for the screen containing the window changes."
+          "text": "A notification that the screen containing the window changed."
         }
       ],
       "fragments": [
@@ -339,15 +310,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object is deminimized."
+          "text": "A notification that the window is no longer minimized."
         }
       ],
       "fragments": [
@@ -375,15 +338,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object closes an attached sheet."
+          "text": "A notification that the window object closed an attached sheet."
         }
       ],
       "fragments": [
@@ -411,7 +366,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted after the user resizes a window."
+          "text": "A notification that the user resized the window object."
         }
       ],
       "fragments": [
@@ -439,15 +394,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever a portion of a nonretained "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object is exposed, whether by being ordered in front of other windows or by other windows being removed from in front of it."
+          "text": "A notification that a window exposed a portion of its nonretained content."
         }
       ],
       "fragments": [
@@ -475,15 +422,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object is minimized."
+          "text": "A notification that the window object minimized."
         }
       ],
       "fragments": [
@@ -511,15 +450,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object is moved."
+          "text": "A notification that the window object moved."
         }
       ],
       "fragments": [
@@ -547,15 +478,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object resigns its status as key window."
+          "text": "A notification that the window object resigned its status as key window."
         }
       ],
       "fragments": [
@@ -583,15 +506,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object resigns its status as main window."
+          "text": "A notification that the window object resigned its status as main window."
         }
       ],
       "fragments": [
@@ -619,15 +534,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object’s size changes."
+          "text": "A notification that the window object size changed."
         }
       ],
       "fragments": [
@@ -655,24 +562,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object receives an "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419577-update"
-        },
-        {
-          "type": "text",
-          "text": " message."
+          "text": "A notification that the window object received an update message."
         }
       ],
       "fragments": [
@@ -700,15 +590,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object is about to open a sheet."
+          "text": "A notification that the window object is about to open a sheet."
         }
       ],
       "fragments": [
@@ -736,15 +618,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object is about to close."
+          "text": "A notification that the window object is about to close."
         }
       ],
       "fragments": [
@@ -772,15 +646,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object is about to be minimized."
+          "text": "A notification that the window object is about to minimize."
         }
       ],
       "fragments": [
@@ -808,15 +674,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSWindow"
-        },
-        {
-          "type": "text",
-          "text": " object is about to move."
+          "text": "A notification that the window object is about to move."
         }
       ],
       "fragments": [
@@ -844,7 +702,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted before the user resizes a window."
+          "text": "A notification that the user is about to resize the window."
         }
       ],
       "fragments": [
@@ -872,7 +730,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the window will enter full screen mode."
+          "text": "A notification that the window will enter full-screen mode."
         }
       ],
       "fragments": [
@@ -900,7 +758,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the window entered full screen mode."
+          "text": "A notification that the window entered full-screen mode."
         }
       ],
       "fragments": [
@@ -928,7 +786,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the window will exit full screen mode."
+          "text": "A notification that the window object will exit full-screen mode."
         }
       ],
       "fragments": [
@@ -956,7 +814,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the window did exit full screen mode."
+          "text": "A notification that the window object exited full-screen mode."
         }
       ],
       "fragments": [
@@ -984,7 +842,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the window will enter version browser mode."
+          "text": "A notification that the window object will enter version browser mode."
         }
       ],
       "fragments": [
@@ -1012,7 +870,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the window will enter version browser mode."
+          "text": "A notification that the window object entered version browser mode."
         }
       ],
       "fragments": [
@@ -1040,7 +898,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the window will exit version browser mode."
+          "text": "A notification that the window object will exit version browser mode."
         }
       ],
       "fragments": [
@@ -1068,7 +926,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the window did exit version browser mode."
+          "text": "A notification that the window object exited version browser mode."
         }
       ],
       "fragments": [
@@ -1096,7 +954,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the window backing properties change."
+          "text": "A notification that the window object backing properties changed."
         }
       ],
       "fragments": [
@@ -1124,7 +982,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the window’s occlusion state changes."
+          "text": "A notification that the window object’s occlusion state changed."
         }
       ],
       "fragments": [
@@ -1253,14 +1111,10 @@
         },
         {
           "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "This notification is sent only if the value of "
+              "text": "NSWindow sends this notification only if the value of "
             },
             {
               "type": "reference",
@@ -1278,13 +1132,40 @@
             },
             {
               "type": "text",
-              "text": ". This notification may be sent when a majority of the window is moved to a different screen (whose profile is also different from the previous screen) or when the ColorSync profile for the current screen changes. "
+              "text": ", and in the following situations:"
             }
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": []
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When most of the window moves to a screen whose profile is different from the previous screen"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When the ColorSync profile for the current screen changes"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -1299,7 +1180,7 @@
             },
             {
               "type": "text",
-              "text": " object whose profile changed. This notification does not contain a "
+              "text": " object whose profile changed. This notification doesn’t contain a "
             },
             {
               "type": "codeVoice",
@@ -1315,7 +1196,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

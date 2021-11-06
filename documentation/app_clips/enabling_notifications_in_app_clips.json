@@ -26,8 +26,8 @@
     "roleHeading": "Article"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -90,23 +90,24 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 972,
-            "height": 410
-          },
-          "url": "https://docs-assets.developer.apple.com/published/1d5f9441c5/original-1595291482.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
-            "width": 972,
-            "height": 410
+            "width": 960,
+            "height": 412
           },
-          "url": "https://docs-assets.developer.apple.com/published/16a84613b2/rendered2x-1595291483.png"
+          "url": "https://docs-assets.developer.apple.com/published/2413920d37/3663318@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 960,
+            "height": 412
+          },
+          "url": "https://docs-assets.developer.apple.com/published/dd856bac24/3663318~dark@2x.png"
         }
       ],
       "alt": "An Info.plist file with the entry that allows the App Clip to send notifications for a short time.",
@@ -176,13 +177,13 @@
       "role": "symbol",
       "url": "/documentation/usernotifications/unnotificationcontent/3235764-targetcontentidentifier"
     },
-    "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience": {
-      "title": "Configuring Your App Clip’s Launch Experience",
+    "doc://com.apple.documentation/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip": {
+      "title": "Configuring the Launch Experience of Your App Clip",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/app_clips/configuring_your_app_clip_s_launch_experience"
+      "url": "/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip"
     },
     "doc://com.apple.documentation/documentation/usernotifications/setting_up_a_remote_notification_server/generating_a_remote_notification": {
       "title": "Generating a Remote Notification",
@@ -199,6 +200,14 @@
       "kind": "article",
       "role": "article",
       "url": "/documentation/usernotifications/scheduling_a_notification_locally_from_your_app"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations": {
+      "title": "Responding to Invocations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/responding_to_invocations"
     },
     "doc://com.apple.documentation/documentation/app_clips/enabling_notifications_in_app_clips": {
       "title": "Enabling Notifications in App Clips",
@@ -237,9 +246,33 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Some App Clips may need to schedule or receive notifications to provide value. Consider an App Clip that allows users to order food for delivery: By sending notifications, the App Clip informs the user about an upcoming delivery. If notifications are important for your App Clip’s functionality, enable it to schedule or receive notifications for up to 8 hours after each launch. Additionally, if you create an App Clip for multiple businesses, be sure to make changes to your notification payloads."
+              "text": "Some App Clips may need to schedule or receive notifications to provide value. Consider an App Clip that allows users to order food for delivery: By sending notifications, the App Clip informs the user about an upcoming delivery. If notifications are important for the functionality provided by your App Clip, enable it to schedule or receive notifications for up to 8 hours after each launch. Additionally, if you create an App Clip for multiple businesses, be sure to make changes to your notification payloads."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If a user returns to a previously launched App Clip from a notification, the App Clip launches without an invocation URL. You must handle this scenario in both your App Clip and your full app. For more information on invocations, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/app_clips/responding_to_invocations"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
         },
         {
           "level": 3,
@@ -406,7 +439,7 @@
             "center.getNotificationSettings { (settings) in {",
             "    if settings.authorizationStatus == .ephemeral {",
             "",
-            "        // The user didn't disable notifications in the App Clip card.",
+            "        // The user didn’t disable notifications in the App Clip card.",
             "        // Add code for scheduling or receiving notifications here.",
             "        return",
             "    }",
@@ -630,7 +663,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_your_app_clip_s_launch_experience"
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/configuring_the_launch_experience_of_your_app_clip"
             },
             {
               "type": "text",
@@ -660,7 +693,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

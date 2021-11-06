@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Removes a given persistent store."
+      "text": "Removes the specified persistent store from the coordinator."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentStoreCoordinator(im)removePersistentStore:error:",
+    "parent": {
+      "title": "NSPersistentStoreCoordinator"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,22 +128,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
-    },
     "link-3023437": {
       "title": "Error Handling",
       "type": "topic",
@@ -160,6 +152,22 @@
       "role": "article",
       "url": "/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
     },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
+    },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468927-migratepersistentstore": {
       "title": "migratePersistentStore:toURL:options:withType:error:",
       "type": "topic",
@@ -170,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Moves a persistent store to a new location, changing the storage type if necessary."
+          "text": "Changes the location and, if necessary, the store type of the specified persistent store."
         }
       ],
       "fragments": [
@@ -194,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Adds a new persistent store of a specified type at a given location."
+          "text": "Adds a specific type of persistent store at the provided location."
         }
       ],
       "fragments": [
@@ -234,7 +242,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Adds a new persistent store of a specified description."
+          "text": "Creates a persistent store using the provided description and adds it to the coordinator."
         }
       ],
       "fragments": [
@@ -248,54 +256,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468858-seturl": {
-      "title": "setURL:forPersistentStore:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468858-seturl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468858-seturl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the URL for a given persistent store."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setURL:forPersistentStore:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore": {
-      "title": "removePersistentStore:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Removes a given persistent store."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "removePersistentStore:error:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468888-destroypersistentstoreaturl": {
       "title": "destroyPersistentStoreAtURL:withType:options:error:",
       "type": "topic",
@@ -306,7 +266,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Deletes (or truncates) the target persistent store in accordance with the store class' requirements."
+          "text": "Deletes a specific type of persistent store at the provided location."
         }
       ],
       "fragments": [
@@ -320,31 +280,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores": {
-      "title": "persistentStores",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore": {
+      "title": "removePersistentStore:error:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore",
       "abstract": [
         {
           "type": "text",
-          "text": "The persistent stores associated with the coordinator."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468824-persistentstoreforurl": {
-      "title": "persistentStoreForURL:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468824-persistentstoreforurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468824-persistentstoreforurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the persistent store for the specified URL. "
+          "text": "Removes the specified persistent store from the coordinator."
         }
       ],
       "fragments": [
@@ -354,31 +300,7 @@
         },
         {
           "kind": "identifier",
-          "text": "persistentStoreForURL:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468865-urlforpersistentstore": {
-      "title": "URLForPersistentStore:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468865-urlforpersistentstore",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468865-urlforpersistentstore",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the URL for a given persistent store."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "URLForPersistentStore:"
+          "text": "removePersistentStore:error:"
         }
       ]
     },
@@ -392,7 +314,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Replace the destination persistent store with the source store."
+          "text": "Replaces one persistent store with another."
         }
       ],
       "fragments": [
@@ -403,34 +325,6 @@
         {
           "kind": "identifier",
           "text": "replacePersistentStoreAtURL:destinationOptions:withPersistentStoreFromURL:sourceOptions:storeType:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name": {
-      "title": "name",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468929-name",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Name of the coordinator."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_options": {
-      "title": "Store Options",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_options",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/store_options",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Use options dictionary keys to specify store behavior and characteristics."
         }
       ]
     },
@@ -447,17 +341,11 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468860-addpersistentstorewithtype",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1640556-addpersistentstorewithdescriptio",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468858-seturl",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468888-destroypersistentstoreaturl",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468927-migratepersistentstore",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468824-persistentstoreforurl",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468865-urlforpersistentstore",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468917-replacepersistentstoreaturl",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_options"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468917-replacepersistentstoreaturl"
       ],
-      "title": "Configuring Persistent Stores",
+      "title": "Managing Stores",
       "generated": true
     }
   ],
@@ -553,6 +441,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -744,7 +633,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

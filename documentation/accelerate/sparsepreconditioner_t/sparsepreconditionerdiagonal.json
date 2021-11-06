@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A diagonal (Jacobi) preconditioner."
+      "text": "A Jacobi preconditioner."
     }
   ],
   "documentVersion": 0,
@@ -13,13 +13,6 @@
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners",
-        "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/accelerate",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t"
       ]
     ]
@@ -43,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@EA@SparsePreconditioner_t@SparsePreconditionerDiagonal",
+    "parent": {
+      "title": "SparsePreconditioner_t"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,17 +133,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Options that define the preconditioner."
+          "text": "Constants that define the preconditioner type."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions": {
-      "title": "Iterative Sparse Solve Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
-      "url": "/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagonal": {
+      "title": "SparsePreconditionerDiagonal",
       "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagonal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagonal"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -168,6 +169,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -189,47 +191,13 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "text",
-              "text": "Applies "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "y = D⁻¹x"
-                }
-              ]
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagonal"
             },
             {
               "type": "text",
-              "text": ", where "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "D"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " is the matrix containing only the diagonal elements of "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "A"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": ". It provides a simple preconditioner for CG and GMRES methods."
+              "text": " provides a simple preconditioner for conjugate gradient (CG) and generalized minimal residual (GMRES) methods."
             }
           ]
         }
@@ -237,7 +205,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

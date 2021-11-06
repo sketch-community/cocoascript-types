@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The category of past call record contact information that should be used for redialing."
+      "text": "The category of past call record contact information used for redialing."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,40 @@
         "name": "iOS",
         "introducedAt": "13.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "deprecatedAt": "14.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
         "deprecatedAt": "7.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INStartCallIntent(py)recordTypeForRedialing",
+    "parent": {
+      "title": "INStartCallIntent"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,7 +136,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The category of past call record contact information that should be used for redialing."
+          "text": "The category of past call record contact information used for redialing."
         }
       ],
       "deprecated": true
@@ -203,6 +213,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649675-callrecordfilter": {
+      "title": "callRecordFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649675-callrecordfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3649675-callrecordfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filters specified by the user to redial a call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback": {
+      "title": "callRecordToCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3649676-callrecordtocallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Details about a call to redial a missed call."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/sirikit/incallaudioroute": {
       "title": "INCallAudioRoute",
       "type": "topic",
@@ -232,6 +270,8 @@
         "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165943-contacts",
         "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165944-destinationtype",
         "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3197610-audioroute",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649675-callrecordfilter",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback",
         "doc://com.apple.documentation/documentation/sirikit/incallaudioroute"
       ],
       "title": "Getting the Call Details",
@@ -276,6 +316,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -314,7 +355,7 @@
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         }
@@ -322,7 +363,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

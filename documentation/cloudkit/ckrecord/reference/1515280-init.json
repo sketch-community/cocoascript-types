@@ -11,6 +11,11 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/reference"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/reference"
       ]
@@ -35,30 +40,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKReference(im)initWithRecordID:action:",
+    "parent": {
+      "title": "CKRecord.Reference"
+    },
     "symbolKind": "instctr",
     "fragments": [
       {
@@ -83,13 +96,13 @@
       },
       {
         "kind": "text",
-        "text": ": CKRecord_Reference_Action)"
+        "text": ": CKRecord.ReferenceAction)"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,14 +137,6 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
-      "title": "CKRecord",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord"
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecord/reference": {
       "title": "CKRecord.Reference",
       "type": "topic",
@@ -142,9 +147,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that describes a many-to-one relationship between records in a database."
+          "text": "A relationship between two records in a record zone."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
+      "title": "CKRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord"
     },
     "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
       "title": "nil",
@@ -154,21 +167,21 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nil-2gl"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecord_reference_action/deleteself": {
-      "title": "CKRecord_Reference_Action.deleteSelf",
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/referenceaction/deleteself": {
+      "title": "CKRecord.ReferenceAction.deleteSelf",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord_reference_action/deleteself",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/referenceaction/deleteself",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord_reference_action/deleteself"
+      "url": "/documentation/cloudkit/ckrecord/referenceaction/deleteself"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecord_reference_action": {
-      "title": "CKRecord_Reference_Action",
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/referenceaction": {
+      "title": "CKRecord.ReferenceAction",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord_reference_action",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/referenceaction",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord_reference_action"
+      "url": "/documentation/cloudkit/ckrecord/referenceaction"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecord/id": {
       "title": "CKRecord.ID",
@@ -214,7 +227,7 @@
         },
         {
           "kind": "text",
-          "text": ": CKRecord_Reference_Action)"
+          "text": ": CKRecord.ReferenceAction)"
         }
       ]
     },
@@ -254,7 +267,7 @@
         },
         {
           "kind": "text",
-          "text": ": CKRecord_Reference_Action)"
+          "text": ": CKRecord.ReferenceAction)"
         }
       ]
     },
@@ -280,7 +293,8 @@
           "kind": "identifier",
           "text": "CKRecord.Reference.Action"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -355,9 +369,19 @@
             },
             {
               "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)CKRecord",
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+              "text": "CKRecord"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
               "preciseIdentifier": "c:@E@CKReferenceAction",
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord_reference_action",
-              "text": "CKRecord_Reference_Action"
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/referenceaction",
+              "text": "ReferenceAction"
             },
             {
               "kind": "text",
@@ -366,6 +390,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -416,7 +441,7 @@
                 {
                   "type": "reference",
                   "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord_reference_action/deleteself"
+                  "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/referenceaction/deleteself"
                 },
                 {
                   "type": "text",
@@ -433,7 +458,7 @@
                 {
                   "type": "reference",
                   "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord_reference_action"
+                  "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/referenceaction"
                 },
                 {
                   "type": "text",
@@ -513,7 +538,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

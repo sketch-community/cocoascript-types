@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Publishes the progress object for other processes to observe it."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,10 +35,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(im)publish",
+    "parent": {
+      "title": "Progress"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -50,8 +59,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -100,11 +109,109 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/progress",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/progress",
+      "url": "/documentation/foundation/progress"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progressuserinfokey/1408815-fileurlkey": {
+      "title": "fileURLKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progressuserinfokey/1408815-fileurlkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progressuserinfokey/1408815-fileurlkey"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1418475-addsubscriber": {
+      "title": "addSubscriber(forFileURL:withPublishingHandler:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1418475-addsubscriber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1418475-addsubscriber"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1417251-localizeddescription": {
+      "title": "localizedDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1417251-localizeddescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1417251-localizeddescription"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1412871-isindeterminate": {
+      "title": "isIndeterminate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1412871-isindeterminate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1412871-isindeterminate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1408579-fractioncompleted": {
+      "title": "fractionCompleted",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1408579-fractioncompleted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1408579-fractioncompleted"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progresskind/1409141-file": {
+      "title": "file",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind/1409141-file",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progresskind/1409141-file"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1416782-publish": {
+      "title": "publish()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1416782-publish",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1416782-publish",
       "abstract": [
         {
           "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
+          "text": "Publishes the progress object for other processes to observe it."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "publish"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1413268-unpublish": {
+      "title": "unpublish()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1413268-unpublish",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1413268-unpublish",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a progress object from publication, making it unobservable by other processes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "unpublish"
+        },
+        {
+          "kind": "text",
+          "text": "()"
         }
       ]
     },
@@ -116,6 +223,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/progress/1413268-unpublish"
+      ],
+      "title": "Reporting Progress to Other Processes",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -147,10 +263,156 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Entries in the user info dictionary determine whether another process can discover the progress object to observe it, and how it does that. For example, a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progressuserinfokey/1408815-fileurlkey"
+            },
+            {
+              "type": "text",
+              "text": " entry makes a progress object discoverable by corresponding invokers of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1418475-addsubscriber"
+            },
+            {
+              "type": "text",
+              "text": ". The system constrains access to the published progress URL with your app sandbox. If you can’t see the file due to the app’s sandbox restrictions, you can’t observe the progress on it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you make a progress object observable by other processes, you must ensure that at least "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1417251-localizeddescription"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1412871-isindeterminate"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1408579-fractioncompleted"
+            },
+            {
+              "type": "text",
+              "text": " always work when you send proxies of your progress object in other processes. You make "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1412871-isindeterminate"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1408579-fractioncompleted"
+            },
+            {
+              "type": "text",
+              "text": " work by accurately setting the total and completed unit counts of the progress. You make "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1417251-localizeddescription"
+            },
+            {
+              "type": "text",
+              "text": " work by setting the value of the kind property to something valid, like "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind/1409141-file"
+            },
+            {
+              "type": "text",
+              "text": ", and then fulfilling the requirements for that kind of progress."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can instead set the value of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1417251-localizeddescription"
+            },
+            {
+              "type": "text",
+              "text": " directly, but that’s not perfectly reliable because other processes might be using a different localization than yours."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can publish an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress"
+            },
+            {
+              "type": "text",
+              "text": " one time only."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,17 +1,23 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A handler to perform for the action."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction"
       ]
     ]
@@ -35,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIAccessibilityCustomAction(py)actionHandler",
+    "parent": {
+      "title": "UIAccessibilityCustomAction"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +102,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -106,7 +120,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A custom action to be performed on an accessible object. "
+          "text": "A custom action to perform on an accessible object. "
         }
       ]
     },
@@ -118,13 +132,103 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620501-target": {
+      "title": "target",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620501-target",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/1620501-target",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object that performs the action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620498-selector": {
+      "title": "selector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620498-selector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/1620498-selector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The method that performs the action. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler": {
       "title": "UIAccessibilityCustomActionHandler",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibilitycustomactionhandler"
+      "url": "/documentation/uikit/uiaccessibilitycustomactionhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A closure type that defines a handler to perform for an action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620502-name": {
+      "title": "name",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620502-name",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/1620502-name",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The localized name of the action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/2865932-attributedname": {
+      "title": "attributedName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/2865932-attributedname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/2865932-attributedname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The localized name of the action as an attributed string."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650217-image": {
+      "title": "image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650217-image",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/3650217-image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An image that represents the action in assistive apps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler": {
+      "title": "actionHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A handler to perform for the action."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -134,16 +238,20 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620502-name",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/2865932-attributedname",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650217-image",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620501-target",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620498-selector",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomactionhandler"
+      ],
+      "title": "Accessing the Action Parameters",
+      "generated": true
     }
-  },
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -182,15 +290,54 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you set this property, the system chooses this action handler over the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620501-target"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620498-selector"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

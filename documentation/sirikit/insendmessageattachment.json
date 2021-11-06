@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A file to include in a message."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INSendMessageAttachment",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -89,6 +100,28 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio": {
+      "title": "INOutgoingMessageTypeOutgoingMessageAudio",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment": {
+      "title": "INSendMessageAttachment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageattachment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A file to include in a message."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -104,6 +137,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/insendmessageattachment/3621860-attachmentwithaudiomessagefile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a message attachment with an audio file."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -121,7 +160,13 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment/3621861-audiomessagefile",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageattachment/3621861-audiomessagefile"
+      "url": "/documentation/sirikit/insendmessageattachment/3621861-audiomessagefile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The attachment’s recorded message."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling": {
       "title": "INSendMessageIntentHandling",
@@ -165,13 +210,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment": {
-      "title": "INSendMessageAttachment",
+    "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype": {
+      "title": "INOutgoingMessageType",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insendmessageattachment"
+      "url": "/documentation/sirikit/inoutgoingmessagetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the message."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -179,16 +230,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -204,17 +245,19 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Creating an Audio Attachment",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment/3621860-attachmentwithaudiomessagefile"
-      ]
+      ],
+      "anchor": "3184197"
     },
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Accessing the Message File",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment/3621861-audiomessagefile"
-      ]
+      ],
+      "anchor": "3175480"
     }
   ],
   "seeAlsoSections": [
@@ -222,9 +265,10 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/insendmessageintent",
-        "doc://com.apple.documentation/documentation/sirikit/insendmessageintentresponse"
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype"
       ],
-      "title": "Send a Message",
+      "title": "Sending a Message",
       "generated": true
     }
   ],
@@ -262,15 +306,54 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the type of a message is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio"
+            },
+            {
+              "type": "text",
+              "text": ", the intent includes the audio recording as an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

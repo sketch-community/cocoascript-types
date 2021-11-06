@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Make large-scale mathematical computations and image calculations, optimized for high performance and low-energy consumption."
+      "text": "Make large-scale mathematical computations and image calculations, optimized for high performance and low energy consumption."
     }
   ],
   "documentVersion": 0,
@@ -17,43 +17,55 @@
     "url": "doc://com.apple.documentation/documentation/accelerate",
     "interfaceLanguage": "occ"
   },
-  "legacy_identifier": 1612872,
+  "legacy_identifier": 3741518,
   "kind": "symbol",
   "metadata": {
     "title": "Accelerate",
     "role": "collection",
-    "roleHeading": "Framework",
+    "modules": [
+      {
+        "name": "Accelerate"
+      },
+      {
+        "name": "simd"
+      }
+    ],
     "platforms": [
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.3",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
-        "introducedAt": "4.0",
-        "current": "7.2"
+        "introducedAt": "2.0",
+        "current": "8.3"
       }
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -154,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS)."
+          "text": "Perform common linear algebra operations with Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS)."
         }
       ]
     },
@@ -497,7 +509,7 @@
       ]
     },
     "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic": {
-      "title": "Using vDSP for Vector-based Arithmetic",
+      "title": "Using vDSP for Vector-Based Arithmetic",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
       "kind": "article",
@@ -521,6 +533,20 @@
         {
           "type": "text",
           "text": "Reduce the sample rate of a signal, by specifying a decimation factor and applying a custom antialiasing filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/data_packing_for_fourier_transforms": {
+      "title": "Data Packing for Fourier Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/data_packing_for_fourier_transforms",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/data_packing_for_fourier_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how vDSP packs frequency-domain data produced by Fourier transform routines."
         }
       ]
     },
@@ -548,7 +574,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Optimize fast Fourier transform (FFT) performance with vDSP’s fixed-length interleaved FFT routines."
+          "text": "Optimize discrete Fourier transform (DFT) performance with vDSP’s interleaved DFT routines."
         }
       ]
     },
@@ -786,7 +812,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Apply biquadratic filters to single- and multi-channel data. "
+          "text": "Apply biquadratic filters to single-channel and multichannel data. "
         }
       ]
     },
@@ -1014,6 +1040,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/enhancing_image_contrast_with_histogram_manipulation": {
+      "title": "Enhancing Image Contrast with Histogram Manipulation ",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/enhancing_image_contrast_with_histogram_manipulation",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/enhancing_image_contrast_with_histogram_manipulation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enhance and adjust the contrast of an image with histogram equalization and contrast stretching."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/transform": {
       "title": "Transform",
       "type": "topic",
@@ -1038,7 +1078,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculate and or manipulate an image's histogram."
+          "text": "Calculate or manipulate an image's histogram."
         }
       ]
     },
@@ -1053,20 +1093,6 @@
         {
           "type": "text",
           "text": "Create sparse matrices for factorization and solving systems."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods": {
-      "title": "Implementing Iterative Methods",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/accelerate/implementing_iterative_methods",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Use iterative methods to solve large problems faster and with a lower memory overhead than with direct methods.  "
         }
       ]
     },
@@ -1126,6 +1152,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/solving_systems_of_linear_equations_with_lapack": {
+      "title": "Solving Systems of Linear Equations with LAPACK",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/solving_systems_of_linear_equations_with_lapack",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/solving_systems_of_linear_equations_with_lapack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Select the optimal LAPACK routine to solve a system of linear equations."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method": {
       "title": "Finding an Interpolating Polynomial Using the Vandermonde Method",
       "type": "topic",
@@ -1150,7 +1190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Approximates the definite integral of a function over a finite or infinite interval."
+          "text": "Approximate the definite integral of a function over a finite or infinite interval."
         }
       ]
     },
@@ -1170,16 +1210,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -1187,7 +1217,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/training_a_neural_network_to_recognize_digits",
         "doc://com.apple.documentation/documentation/accelerate/bnns"
-      ]
+      ],
+      "anchor": "3403152"
     },
     {
       "kind": "taskGroup",
@@ -1199,7 +1230,8 @@
         "doc://com.apple.documentation/documentation/accelerate/decompressing_and_extracting_an_archived_directory",
         "doc://com.apple.documentation/documentation/accelerate/compressing_and_saving_a_string_to_the_file_system",
         "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string"
-      ]
+      ],
+      "anchor": "3635469"
     },
     {
       "kind": "taskGroup",
@@ -1209,7 +1241,8 @@
         "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_files_with_stream_compression",
         "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters",
         "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_files_with_swift_stream_compression"
-      ]
+      ],
+      "anchor": "3401586"
     },
     {
       "kind": "taskGroup",
@@ -1225,7 +1258,8 @@
         "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
         "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
         "doc://com.apple.documentation/documentation/accelerate/vimage"
-      ]
+      ],
+      "anchor": "3401576"
     },
     {
       "kind": "taskGroup",
@@ -1236,12 +1270,14 @@
         "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
         "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation",
         "doc://com.apple.documentation/documentation/accelerate/vdsp"
-      ]
+      ],
+      "anchor": "3401577"
     },
     {
       "kind": "taskGroup",
       "title": "Fourier and Cosine Transforms",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/data_packing_for_fourier_transforms",
         "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
         "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data",
         "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
@@ -1251,7 +1287,8 @@
         "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms",
         "doc://com.apple.documentation/documentation/accelerate/discrete_fourier_transforms",
         "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms"
-      ]
+      ],
+      "anchor": "3401575"
     },
     {
       "kind": "taskGroup",
@@ -1261,7 +1298,8 @@
         "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
         "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage",
         "doc://com.apple.documentation/documentation/accelerate/core_video_interoperability"
-      ]
+      ],
+      "anchor": "3401571"
     },
     {
       "kind": "taskGroup",
@@ -1272,7 +1310,8 @@
         "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions",
         "doc://com.apple.documentation/documentation/accelerate/rotating_a_cube_by_transforming_its_vertices",
         "doc://com.apple.documentation/documentation/accelerate/simd"
-      ]
+      ],
+      "anchor": "3401572"
     },
     {
       "kind": "taskGroup",
@@ -1281,7 +1320,8 @@
         "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp",
         "doc://com.apple.documentation/documentation/accelerate/biquadratic_iir_filters",
         "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms"
-      ]
+      ],
+      "anchor": "3401574"
     },
     {
       "kind": "taskGroup",
@@ -1293,7 +1333,8 @@
         "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
         "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
         "doc://com.apple.documentation/documentation/accelerate/conversion"
-      ]
+      ],
+      "anchor": "3401580"
     },
     {
       "kind": "taskGroup",
@@ -1302,7 +1343,8 @@
         "doc://com.apple.documentation/documentation/accelerate/resampling_in_vimage",
         "doc://com.apple.documentation/documentation/accelerate/reducing_artifacts_in_resampled_images",
         "doc://com.apple.documentation/documentation/accelerate/image_shearing"
-      ]
+      ],
+      "anchor": "3401582"
     },
     {
       "kind": "taskGroup",
@@ -1312,7 +1354,8 @@
         "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect",
         "doc://com.apple.documentation/documentation/accelerate/convolution",
         "doc://com.apple.documentation/documentation/accelerate/morphology"
-      ]
+      ],
+      "anchor": "3401578"
     },
     {
       "kind": "taskGroup",
@@ -1321,50 +1364,57 @@
         "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
         "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images",
         "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage",
+        "doc://com.apple.documentation/documentation/accelerate/enhancing_image_contrast_with_histogram_manipulation",
         "doc://com.apple.documentation/documentation/accelerate/transform",
         "doc://com.apple.documentation/documentation/accelerate/histogram"
-      ]
+      ],
+      "anchor": "3401581"
     },
     {
       "kind": "taskGroup",
       "title": "Sparse Matrices",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices",
-        "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers"
-      ]
+      ],
+      "anchor": "3401587"
     },
     {
       "kind": "taskGroup",
       "title": "Arithmetic and Transcendental Functions",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/veclib"
-      ]
+      ],
+      "anchor": "3403150"
     },
     {
       "kind": "taskGroup",
       "title": "Linear Algebra",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/solving_systems_of_linear_equations_with_lapack",
         "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method",
         "doc://com.apple.documentation/documentation/accelerate/blas"
-      ]
+      ],
+      "anchor": "3403151"
     },
     {
       "kind": "taskGroup",
       "title": "Definite Integration",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/quadrature"
-      ]
+      ],
+      "anchor": "3403153"
     },
     {
       "kind": "taskGroup",
       "title": "Reference",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/accelerate_enumerations"
-      ]
+      ],
+      "anchor": "3745190"
     }
   ],
   "primaryContentSections": [
@@ -1387,106 +1437,140 @@
           ]
         },
         {
-          "type": "unorderedList",
+          "type": "termList",
           "items": [
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnns"
-                    },
-                    {
-                      "type": "text",
-                      "text": ". Subroutines for constructing and running neural networks for both training and inference."
-                    }
-                  ]
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/accelerate/bnns"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Subroutines for constructing and running neural networks for both training and inference."
+                      }
+                    ]
+                  }
+                ]
+              }
             },
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage"
-                    },
-                    {
-                      "type": "text",
-                      "text": ". A wide range of image-processing functions, including Core Graphics and Core Video interoperation, format conversion, and image manipulation."
-                    }
-                  ]
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "A wide range of image-processing functions, including Core Graphics and Core Video interoperation, format conversion, and image manipulation."
+                      }
+                    ]
+                  }
+                ]
+              }
             },
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp"
-                    },
-                    {
-                      "type": "text",
-                      "text": ". Digital signal processing functions, including 1D and 2D fast Fourier transforms, biquadratic filtering, vector and matrix arithmetic, convolution, and type conversion."
-                    }
-                  ]
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Digital signal processing functions, including 1D and 2D fast Fourier transforms, biquadratic filtering, vector and matrix arithmetic, convolution, and type conversion."
+                      }
+                    ]
+                  }
+                ]
+              }
             },
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/accelerate/veclib/vforce"
-                    },
-                    {
-                      "type": "text",
-                      "text": ". Functions for performing arithmetic and transcendental functions on vectors."
-                    }
-                  ]
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/accelerate/veclib/vforce"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Functions for performing arithmetic and transcendental functions on vectors."
+                      }
+                    ]
+                  }
+                ]
+              }
             },
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers"
-                    },
-                    {
-                      "type": "text",
-                      "text": ", "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/accelerate/blas"
-                    },
-                    {
-                      "type": "text",
-                      "text": ", and LAPACK. Libraries for performing linear algebra on sparse and dense matrices."
-                    }
-                  ]
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers"
+                  },
+                  {
+                    "type": "text",
+                    "text": ", "
+                  },
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/accelerate/blas"
+                  },
+                  {
+                    "type": "text",
+                    "text": ", and LAPACK"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Libraries for performing linear algebra on sparse and dense matrices."
+                      }
+                    ]
+                  }
+                ]
+              }
             }
           ]
         },
@@ -1500,67 +1584,89 @@
           ]
         },
         {
-          "type": "unorderedList",
+          "type": "termList",
           "items": [
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/applearchive"
-                    },
-                    {
-                      "type": "text",
-                      "text": ". A framework for performing multithreaded lossless compression of directories, files, and data."
-                    }
-                  ]
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/applearchive"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "A framework for performing multithreaded lossless compression of directories, files, and data."
+                      }
+                    ]
+                  }
+                ]
+              }
             },
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/compression"
-                    },
-                    {
-                      "type": "text",
-                      "text": ". Algorithms for lossless data compression that support LZFSE, LZ4, LZMA, and ZLIB algorithms."
-                    }
-                  ]
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/compression"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Algorithms for lossless data compression that support LZFSE, LZ4, LZMA, and ZLIB algorithms."
+                      }
+                    ]
+                  }
+                ]
+              }
             },
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd"
-                    },
-                    {
-                      "type": "text",
-                      "text": ". A module for performing computations on small vectors and matrices."
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "reference",
+                    "isActive": true,
+                    "identifier": "doc://com.apple.documentation/documentation/accelerate/simd"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "A module for performing computations on small vectors and matrices."
+                      }
+                    ]
+                  }
+                ]
+              }
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         },
         {
           "type": "paragraph",
@@ -1574,7 +1680,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

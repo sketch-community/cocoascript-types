@@ -1,0 +1,938 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Values identifying the capture device’s type."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/discoverysession"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 2361531,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AVCaptureDevice.DeviceType",
+    "role": "symbol",
+    "roleHeading": "Structure",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.15",
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "14.0",
+        "current": "15.2"
+      }
+    ],
+    "externalID": "c:@T@AVCaptureDeviceType",
+    "parent": {
+      "title": "AVCaptureDevice"
+    },
+    "symbolKind": "struct",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "struct "
+      },
+      {
+        "kind": "identifier",
+        "text": "AVCaptureDevice.DeviceType"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avcapturedevicetype"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avcapturedevice/devicetype"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture": {
+      "title": "Cameras and Media Capture",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+      "url": "/documentation/avfoundation/cameras_and_media_capture",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice": {
+      "title": "AVCaptureDevice",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A device that provides input (such as audio or video) for capture sessions and offers controls for hardware-specific capture features."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/discoverysession": {
+      "title": "AVCaptureDevice.DiscoverySession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/discoverysession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/discoverysession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A query for finding and monitoring available capture devices."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "AVCaptureDevice.DiscoverySession"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2361508-default": {
+      "title": "default(_:for:position:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2361508-default",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/2361508-default",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the default device for the specified device type, media type, and position."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "`default`"
+        },
+        {
+          "kind": "text",
+          "text": "(AVCaptureDevice.DeviceType, "
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": AVMediaType?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "position"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.Position) -> AVCaptureDevice?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype": {
+      "title": "AVCaptureDevice.DeviceType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values identifying the capture device’s type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "AVCaptureDevice.DeviceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2727142-builtindualcamera": {
+      "title": "builtInDualCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2727142-builtindualcamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/2727142-builtindualcamera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A combination of wide-angle and telephoto cameras that creates a capture device."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "builtInDualCamera"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.DeviceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/swift/equatable": {
+      "title": "Equatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/equatable"
+    },
+    "doc://com.apple.documentation/documentation/swift/hashable": {
+      "title": "Hashable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/hashable"
+    },
+    "doc://com.apple.documentation/documentation/swift/rawrepresentable": {
+      "title": "RawRepresentable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/rawrepresentable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/rawrepresentable"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2360755-init": {
+      "title": "init(rawValue:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2360755-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/2360755-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype"
+        },
+        {
+          "type": "text",
+          "text": " value from its string representation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": String)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3377620-builtindualwidecamera": {
+      "title": "builtInDualWideCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3377620-builtindualwidecamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/3377620-builtindualwidecamera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A device that consists of two cameras of fixed focal length, one ultrawide angle and one wide angle."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "builtInDualWideCamera"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.DeviceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3377621-builtintriplecamera": {
+      "title": "builtInTripleCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3377621-builtintriplecamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/3377621-builtintriplecamera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A device that consists of three cameras of fixed focal length, one ultrawide angle, one wide angle, and one telephoto."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "builtInTripleCamera"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.DeviceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361449-builtinwideanglecamera": {
+      "title": "builtInWideAngleCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361449-builtinwideanglecamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/2361449-builtinwideanglecamera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A built-in wide-angle camera."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "builtInWideAngleCamera"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.DeviceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3377622-builtinultrawidecamera": {
+      "title": "builtInUltraWideCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3377622-builtinultrawidecamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/3377622-builtinultrawidecamera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A built-in camera with a shorter focal length than that of a wide-angle camera."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "builtInUltraWideCamera"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.DeviceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361478-builtintelephotocamera": {
+      "title": "builtInTelephotoCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361478-builtintelephotocamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/2361478-builtintelephotocamera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A built-in camera device with a longer focal length than a wide-angle camera."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "builtInTelephotoCamera"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.DeviceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2933376-builtintruedepthcamera": {
+      "title": "builtInTrueDepthCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2933376-builtintruedepthcamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/2933376-builtintruedepthcamera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A combination of cameras and other sensors that creates a capture device capable of photo, video, and depth capture. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "builtInTrueDepthCamera"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.DeviceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361521-builtinmicrophone": {
+      "title": "builtInMicrophone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361521-builtinmicrophone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/2361521-builtinmicrophone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A built-in microphone."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "builtInMicrophone"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.DeviceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3081649-externalunknown": {
+      "title": "externalUnknown",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3081649-externalunknown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/3081649-externalunknown",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An unknown external device type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "externalUnknown"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.DeviceType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361496-builtinduocamera": {
+      "title": "builtInDuoCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361496-builtinduocamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/devicetype/2361496-builtinduocamera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Equivalent to "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2727142-builtindualcamera"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "builtInDuoCamera"
+        },
+        {
+          "kind": "text",
+          "text": ": AVCaptureDevice.DeviceType"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1388904-init": {
+      "title": "init(uniqueID:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1388904-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/1388904-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the device with a given ID."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "?("
+        },
+        {
+          "kind": "identifier",
+          "text": "uniqueID"
+        },
+        {
+          "kind": "text",
+          "text": ": String)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386589-default": {
+      "title": "default(for:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386589-default",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/1386589-default",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the default device used to capture data of a given media type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "`default`"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": AVMediaType) -> AVCaptureDevice?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/position": {
+      "title": "AVCaptureDevice.Position",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/position",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/position",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the physical position of a capture device."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "AVCaptureDevice.Position"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1389018-avcapturedevicewasconnected": {
+      "title": "AVCaptureDeviceWasConnected",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1389018-avcapturedevicewasconnected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1389018-avcapturedevicewasconnected",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the system posts when a new capture device becomes available."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "AVCaptureDeviceWasConnected"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1387782-avcapturedevicewasdisconnected": {
+      "title": "AVCaptureDeviceWasDisconnected",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1387782-avcapturedevicewasdisconnected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1387782-avcapturedevicewasdisconnected",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification the system posts when an existing device becomes unavailable."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "AVCaptureDeviceWasDisconnected"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386237-devices": {
+      "title": "devices()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386237-devices",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/1386237-devices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of the available capture devices on the system."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "devices"
+        },
+        {
+          "kind": "text",
+          "text": "() -> [AVCaptureDevice]"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1390520-devices": {
+      "title": "devices(for:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1390520-devices",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/1390520-devices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of the devices able to capture data of a given media type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class func "
+        },
+        {
+          "kind": "identifier",
+          "text": "devices"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "for"
+        },
+        {
+          "kind": "text",
+          "text": ": AVMediaType) -> [AVCaptureDevice]"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/swift/equatable",
+        "doc://com.apple.documentation/documentation/swift/hashable",
+        "doc://com.apple.documentation/documentation/swift/rawrepresentable"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Initializers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2360755-init"
+      ],
+      "anchor": "2859778"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Capture Device Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2727142-builtindualcamera",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3377620-builtindualwidecamera",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3377621-builtintriplecamera",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361449-builtinwideanglecamera",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3377622-builtinultrawidecamera",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361478-builtintelephotocamera",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2933376-builtintruedepthcamera",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361521-builtinmicrophone",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/3081649-externalunknown",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/devicetype/2361496-builtinduocamera"
+      ],
+      "anchor": "2362929"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1388904-init",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386589-default",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2361508-default",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/position",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/discoverysession",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1389018-avcapturedevicewasconnected",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1387782-avcapturedevicewasdisconnected",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1386237-devices",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1390520-devices"
+      ],
+      "title": "Discovering Devices",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "struct"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "DeviceType"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the device type with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2361508-default"
+            },
+            {
+              "type": "text",
+              "text": " method and the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/discoverysession"
+            },
+            {
+              "type": "text",
+              "text": " class."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

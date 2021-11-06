@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Indicates whether the tracked progress is indeterminate."
+      "text": "A Boolean value that indicates whether the tracked progress is indeterminate."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(py)indeterminate",
+    "parent": {
+      "title": "NSProgress"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,13 +120,7 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsprogress",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
-        }
-      ]
+      "url": "/documentation/foundation/nsprogress"
     },
     "doc://com.apple.documentation/documentation/foundation/nsprogress/1410940-totalunitcount": {
       "title": "totalUnitCount",
@@ -136,20 +138,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsprogress/1407934-completedunitcount"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsprogress/1413314-userinfo": {
-      "title": "userInfo",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1413314-userinfo",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1413314-userinfo",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A dictionary of arbitrary values associated with the receiver."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/foundation/nsprogress/1412871-indeterminate": {
       "title": "indeterminate",
       "type": "topic",
@@ -160,54 +148,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the tracked progress is indeterminate."
+          "text": "A Boolean value that indicates whether the tracked progress is indeterminate."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsprogress/1416139-kind": {
-      "title": "kind",
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/1408579-fractioncompleted": {
+      "title": "fractionCompleted",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1416139-kind",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1408579-fractioncompleted",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1416139-kind",
+      "url": "/documentation/foundation/nsprogress/1408579-fractioncompleted",
       "abstract": [
         {
           "type": "text",
-          "text": "A string identifying the kind of progress being made."
+          "text": "The fraction of the overall work that the progress object completes, including work from its suboperations."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsprogress/1407537-setuserinfoobject": {
-      "title": "setUserInfoObject:forKey:",
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/2865603-finished": {
+      "title": "finished",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1407537-setuserinfoobject",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/2865603-finished",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsprogress/1407537-setuserinfoobject",
+      "url": "/documentation/foundation/nsprogress/2865603-finished",
       "abstract": [
         {
           "type": "text",
-          "text": "Set a value in the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/1413314-userinfo"
-        },
-        {
-          "type": "text",
-          "text": " dictionary."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "setUserInfoObject:forKey:"
+          "text": "A Boolean value that indicates the progress object is complete."
         }
       ]
     },
@@ -222,11 +191,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsprogress/1416139-kind",
-        "doc://com.apple.documentation/documentation/foundation/nsprogress/1407537-setuserinfoobject",
-        "doc://com.apple.documentation/documentation/foundation/nsprogress/1413314-userinfo"
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/1408579-fractioncompleted",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/2865603-finished"
       ],
-      "title": "Progress Information",
+      "title": "Observing Progress",
       "generated": true
     }
   ],
@@ -266,6 +234,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -288,7 +257,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Progress is indeterminate when the value of both "
+              "text": "Progress is indeterminate when the values of both "
             },
             {
               "type": "reference",
@@ -318,12 +287,13 @@
               "text": "By default, "
             },
             {
-              "type": "codeVoice",
-              "code": "NSProgress"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress"
             },
             {
               "type": "text",
-              "text": " is KVO-compliant for this property, sending notifications on the same thread that updates the property."
+              "text": " is KVO-compliant for this property. It sends notifications on the same thread that updates the property."
             }
           ]
         }
@@ -331,7 +301,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

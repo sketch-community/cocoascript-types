@@ -33,35 +33,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@CLError",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -186,7 +191,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constan that indicates the heading could not be determined."
+          "text": "A constant that indicates the location manager can’t determine the heading."
         }
       ]
     },
@@ -200,7 +205,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates ranging is disabled. "
+          "text": "A constant that indicates ranging is disabled."
         }
       ]
     },
@@ -214,7 +219,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates a general ranging error occurred. "
+          "text": "A constant that indicates a general ranging error occurred."
         }
       ]
     },
@@ -242,7 +247,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates a registered region cannot be monitored. "
+          "text": "A constant that indicates the location manager failed to monitor a registered region."
         }
       ]
     },
@@ -256,7 +261,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates Core Location could not initialize the region monitoring feature immediately."
+          "text": "A constant that indicates Core Location failed to initialize the region monitoring feature."
         }
       ]
     },
@@ -270,7 +275,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates Core Location will deliver events but they may be delayed. "
+          "text": "A constant that indicates Core Location will deliver events but they may be delayed."
         }
       ]
     },
@@ -284,7 +289,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates the geocode request was canceled. "
+          "text": "A constant that indicates the geocode request was canceled."
         }
       ]
     },
@@ -298,7 +303,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates the geocode request yielded no result. "
+          "text": "A constant that indicates the geocode request yielded no result."
         }
       ]
     },
@@ -312,7 +317,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates the geocode request yielded a partial result. "
+          "text": "A constant that indicates the geocode request yielded a partial result."
         }
       ]
     },
@@ -326,7 +331,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates the location manager did not enter deferred mode for an unknown reason."
+          "text": "A constant that indicates the location manager didn’t enter deferred mode for an unknown reason."
         }
       ]
     },
@@ -354,7 +359,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates deferred mode isn’t supported for the requested accuracy. "
+          "text": "A constant that indicates deferred mode isn’t supported for the requested accuracy."
         }
       ]
     },
@@ -368,7 +373,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A constant that indicates deferred mode doesn’t support distance filters. "
+          "text": "A constant that indicates deferred mode doesn’t support distance filters."
         }
       ]
     },
@@ -400,20 +405,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey": {
-      "title": "kCLErrorUserInfoAlternateRegionKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corelocation/kclerroruserinfoalternateregionkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A key in the user information dictionary of an error relating to a delayed region monitoring response. "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/corelocation/kclerrordomain": {
       "title": "kCLErrorDomain",
       "type": "topic",
@@ -425,6 +416,20 @@
         {
           "type": "text",
           "text": "The domain for Core Location errors. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey": {
+      "title": "kCLErrorUserInfoAlternateRegionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/kclerroruserinfoalternateregionkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key in the user information dictionary of an error relating to a delayed region monitoring response. "
         }
       ]
     },
@@ -448,7 +453,8 @@
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrorheadingfailure",
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrorrangingunavailable",
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrorrangingfailure"
-      ]
+      ],
+      "anchor": "1611140"
     },
     {
       "kind": "taskGroup",
@@ -458,7 +464,8 @@
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrorregionmonitoringfailure",
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrorregionmonitoringsetupdelayed",
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrorregionmonitoringresponsedelayed"
-      ]
+      ],
+      "anchor": "3582784"
     },
     {
       "kind": "taskGroup",
@@ -467,7 +474,8 @@
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrorgeocodecanceled",
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrorgeocodefoundnoresult",
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrorgeocodefoundpartialresult"
-      ]
+      ],
+      "anchor": "3582782"
     },
     {
       "kind": "taskGroup",
@@ -478,14 +486,15 @@
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrordeferredaccuracytoolow",
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrordeferreddistancefiltered",
         "doc://com.apple.documentation/documentation/corelocation/clerror/kclerrordeferrednotupdatinglocation"
-      ]
+      ],
+      "anchor": "3582783"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey",
-        "doc://com.apple.documentation/documentation/corelocation/kclerrordomain"
+        "doc://com.apple.documentation/documentation/corelocation/kclerrordomain",
+        "doc://com.apple.documentation/documentation/corelocation/kclerroruserinfoalternateregionkey"
       ],
       "title": "Errors",
       "generated": true
@@ -553,6 +562,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -609,7 +619,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

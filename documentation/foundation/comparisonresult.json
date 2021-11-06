@@ -34,27 +34,32 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSComparisonResult",
@@ -71,8 +76,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -205,7 +210,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An immutable description of how to order a collection of objects based on a property common to all the objects."
+          "text": "An immutable description of how to order a collection of objects according to a property common to all the objects."
         }
       ],
       "fragments": [
@@ -243,6 +248,126 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/sortdescriptor": {
+      "title": "SortDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/sortdescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/sortdescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A serializable description of how to sort numerics and strings."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "SortDescriptor"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/sortcomparator": {
+      "title": "SortComparator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/sortcomparator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/sortcomparator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A comparison algorithm for a specified type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "SortComparator"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/comparablecomparator": {
+      "title": "ComparableComparator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/comparablecomparator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/comparablecomparator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A comparator that compares types according to their conformance to the comparable protocol."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "ComparableComparator"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/keypathcomparator": {
+      "title": "KeyPathComparator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/keypathcomparator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/keypathcomparator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A comparator that uses another sort comparator to provide the comparison of values at a key path."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "KeyPathComparator"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/sortorder": {
+      "title": "SortOrder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/sortorder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/sortorder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The orderings that you can perform sorts with."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "SortOrder"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -259,13 +384,19 @@
         "doc://com.apple.documentation/documentation/foundation/comparisonresult/orderedascending",
         "doc://com.apple.documentation/documentation/foundation/comparisonresult/orderedsame",
         "doc://com.apple.documentation/documentation/foundation/comparisonresult/ordereddescending"
-      ]
+      ],
+      "anchor": "1604199"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nssortdescriptor"
+        "doc://com.apple.documentation/documentation/foundation/nssortdescriptor",
+        "doc://com.apple.documentation/documentation/foundation/sortdescriptor",
+        "doc://com.apple.documentation/documentation/foundation/sortcomparator",
+        "doc://com.apple.documentation/documentation/foundation/comparablecomparator",
+        "doc://com.apple.documentation/documentation/foundation/keypathcomparator",
+        "doc://com.apple.documentation/documentation/foundation/sortorder"
       ],
       "title": "Sorting",
       "generated": true
@@ -313,6 +444,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -343,7 +475,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

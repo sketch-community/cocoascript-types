@@ -34,21 +34,28 @@
         "name": "iOS",
         "introducedAt": "5.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "deprecatedAt": "12.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
         "deprecatedAt": "10.14",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -56,8 +63,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -322,16 +329,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -356,21 +353,24 @@
       "title": "Naming the Effect",
       "identifiers": [
         "doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1489038-label"
-      ]
+      ],
+      "anchor": "1664436"
     },
     {
       "kind": "taskGroup",
       "title": "Preparing the Effect for Rendering",
       "identifiers": [
         "doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1488887-preparetodraw"
-      ]
+      ],
+      "anchor": "1664454"
     },
     {
       "kind": "taskGroup",
       "title": "Drawing the Skybox",
       "identifiers": [
         "doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1488843-draw"
-      ]
+      ],
+      "anchor": "1664482"
     },
     {
       "kind": "taskGroup",
@@ -381,14 +381,16 @@
         "doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1488891-xsize",
         "doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1489024-ysize",
         "doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1488976-zsize"
-      ]
+      ],
+      "anchor": "1664504"
     },
     {
       "kind": "taskGroup",
       "title": "Setting the Skybox Transform",
       "identifiers": [
         "doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1489015-transform"
-      ]
+      ],
+      "anchor": "1664558"
     }
   ],
   "seeAlsoSections": [
@@ -436,6 +438,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "tvOS"
           ]
@@ -527,7 +530,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

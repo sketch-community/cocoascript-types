@@ -50,20 +50,28 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@NEDNSProxyConfigurationDidChangeNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -81,8 +89,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -173,6 +181,90 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1406656-nefilterconfigurationdidchange": {
+      "title": "NEFilterConfigurationDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1406656-nefilterconfigurationdidchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1406656-nefilterconfigurationdidchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted after the filter configuration stored in the Network Extension preferences changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NEFilterConfigurationDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1406509-nevpnconfigurationchange": {
+      "title": "NEVPNConfigurationChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1406509-nevpnconfigurationchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1406509-nevpnconfigurationchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted after the VPN configuration stored in the Network Extension preferences changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NEVPNConfigurationChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1406683-nevpnstatusdidchange": {
+      "title": "NEVPNStatusDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1406683-nevpnstatusdidchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1406683-nevpnstatusdidchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the status of the VPN connection changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NEVPNStatusDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsnotification/name/2880182-nednsproxyconfigurationdidchange": {
       "title": "NEDNSProxyConfigurationDidChange",
       "type": "topic",
@@ -201,6 +293,28 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3552339-nednssettingsconfigurationdidcha": {
+      "title": "NEDNSSettingsConfigurationDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3552339-nednssettingsconfigurationdidcha",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3552339-nednssettingsconfigurationdidcha",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "NEDNSSettingsConfigurationDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -209,6 +323,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1406656-nefilterconfigurationdidchange",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1406509-nevpnconfigurationchange",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1406683-nevpnstatusdidchange",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3552339-nednssettingsconfigurationdidcha"
+      ],
+      "title": "NetworkExtension",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -261,6 +387,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -269,7 +396,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

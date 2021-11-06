@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Sends data followed by an optional success message to a connected Bluetooth hands-free phone or headset."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,15 +34,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)IOBluetoothHandsFreeAudioGateway(im)sendResponse:withOK:",
+    "parent": {
+      "title": "IOBluetoothHandsFreeAudioGateway"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -77,7 +86,13 @@
       "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway"
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that sends data to a connected Bluetooth hands-free phone or headset and processes commands from it."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
@@ -87,6 +102,102 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434911-sendresponse": {
+      "title": "sendResponse:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434911-sendresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434911-sendresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends data followed by a success message to a connected Bluetooth hands-free phone or headset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sendResponse:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434547-sendresponse": {
+      "title": "sendResponse:withOK:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434547-sendresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434547-sendresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends data followed by an optional success message to a connected Bluetooth hands-free phone or headset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sendResponse:withOK:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429059-sendokresponse": {
+      "title": "sendOKResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429059-sendokresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429059-sendokresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends a success message to a connected Bluetooth hands-free phone or headset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sendOKResponse"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429231-processatcommand": {
+      "title": "processATCommand:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429231-processatcommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429231-processatcommand",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Processes a command from a connected Bluetooth hands-free phone or headset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "processATCommand:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -95,6 +206,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434911-sendresponse",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429059-sendokresponse",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429231-processatcommand"
+      ],
+      "title": "Sending and Receiving Commands",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -176,10 +298,62 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "response",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A string containing the data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "withOK",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "true"
+                },
+                {
+                  "type": "text",
+                  "text": ", send an "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "OK"
+                },
+                {
+                  "type": "text",
+                  "text": " message after sending the response."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

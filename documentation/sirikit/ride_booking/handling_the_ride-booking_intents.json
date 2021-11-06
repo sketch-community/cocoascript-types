@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Understand how Siri and Maps generate ride-booking intents and learn tips about how to handle those intents."
+      "text": "Support the different intent-handling sequences for booking rides with Shortcuts or Maps."
     }
   ],
   "documentVersion": 0,
@@ -35,8 +35,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -79,14 +79,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent": {
-      "title": "INRequestRideIntent",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inrequestrideintent"
-    },
     "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent": {
       "title": "INListRideOptionsIntent",
       "type": "topic",
@@ -94,6 +86,28 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inlistrideoptionsintent"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options": {
+      "title": "Generating a List of Ride Options",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generate ride options for Maps to display to the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent": {
+      "title": "INRequestRideIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrequestrideintent"
     },
     "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintent": {
       "title": "INGetRideStatusIntent",
@@ -135,19 +149,21 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options": {
-      "title": "Generating a List of Ride Options",
+    "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents": {
+      "title": "Resolving and Handling Intents",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents",
       "kind": "article",
       "role": "article",
-      "url": "/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Generate ride options for Maps to display to the user."
-        }
-      ]
+      "url": "/documentation/sirikit/resolving_and_handling_intents"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inrequestrideintenthandling": {
+      "title": "INRequestRideIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inrequestrideintenthandling"
     },
     "doc://com.apple.documentation/documentation/sirikit/ride_booking/handling_the_ride-booking_intents": {
       "title": "Handling the Ride-Booking Intents",
@@ -159,7 +175,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Understand how Siri and Maps generate ride-booking intents and learn tips about how to handle those intents."
+          "text": "Support the different intent-handling sequences for booking rides with Shortcuts or Maps."
         }
       ]
     },
@@ -192,7 +208,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options",
         "doc://com.apple.documentation/documentation/sirikit/ingetridestatusintentresponseobserver/providing_live_status_updates"
-      ]
+      ],
+      "anchor": "2865106"
     }
   ],
   "seeAlsoSections": [
@@ -200,7 +217,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/ride_booking/booking_rides_with_sirikit"
       ],
-      "title": "First Steps",
+      "title": "Essentials",
       "generated": true
     }
   ],
@@ -228,265 +245,74 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A ride-booking Intents app extension must be able to provide a list of available vehicles, details about the cost of each ride, and status updates for any booked rides. It must also facilitate financial transactions associated with any rides and communicate any relevant information to your ride booking service."
+              "text": "A ride-booking Intents app extension provides a list of available vehicles, details about the cost of each ride, and status updates for any booked rides. It also facilitates financial transactions associated with any rides and communicates any relevant information to your ride booking service. Shortcuts and Maps handle ride booking differently, and your extension must be able to support both flows."
             }
           ]
         },
         {
           "level": 3,
           "type": "heading",
-          "text": "Understanding the Ride-Booking Process",
-          "anchor": "2865105"
+          "text": "Book Rides from Maps",
+          "anchor": "3866865"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "Siri and Maps handle ride booking differently, and your extension must be able to support both flows. With Siri, users request a ride verbally, and expects your Intents app extension to fill in any required details that the user doesn’t provide. With Maps, users specify information such as the start and end points of their route directly using the Maps interface. Siri and Maps deliver different intents to your extension and call different methods due to these differences."
+              "text": "With Maps, users specify information such as the start and end points of their route directly using the Maps interface. Then Maps sends an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent"
+            },
+            {
+              "type": "text",
+              "text": " object that describes the user’s trip to your Intents app extension. Provide ride options available for the user’s requested trip. For more information about providing effective ride options, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/ride_booking/generating_a_list_of_ride_options"
+            },
+            {
+              "type": "text",
+              "text": ". After the user selects one of your ride options, Maps sends an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent"
+            },
+            {
+              "type": "text",
+              "text": " object to your Intents app extension to handle. Use the information in this object to book the ride."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "When you handle a ride-booking intent from Maps, there isn’t a resolve or confirm step. Instead, Maps validates the user’s origin and destination before sending intents to your Intents app extension."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
         },
         {
           "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "In Siri, the ride-booking flow is as follows:"
-            }
-          ]
-        },
-        {
-          "type": "orderedList",
-          "items": [
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "The user asks Siri to book a ride."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Siri sends an "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent"
-                    },
-                    {
-                      "type": "text",
-                      "text": " object to your Intents app extension."
-                    }
-                  ]
-                },
-                {
-                  "type": "orderedList",
-                  "items": [
-                    {
-                      "content": [
-                        {
-                          "type": "paragraph",
-                          "inlineContent": [
-                            {
-                              "type": "text",
-                              "text": "Siri asks your extension to resolve the intent parameters, prompting the user as needed to provide additional information."
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "content": [
-                        {
-                          "type": "paragraph",
-                          "inlineContent": [
-                            {
-                              "type": "text",
-                              "text": "Siri asks your extension to confirm the intent."
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "content": [
-                        {
-                          "type": "paragraph",
-                          "inlineContent": [
-                            {
-                              "type": "text",
-                              "text": "Upon successful confirmation, Siri asks you to book the ride."
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "In Maps, the ride-booking flow is as follows:"
-            }
-          ]
-        },
-        {
-          "type": "orderedList",
-          "items": [
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "The user enters a destination on the map."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "The user taps the Directions button to view the route, and optionally changes the starting point or destination."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "The user selects Ride from the list of transportation options. (If there’s an installed Intents app extension supporting ride booking but it’s not enabled, Maps prompts the user to enable it. Maps also displays a list of App store apps that support ride booking). "
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Maps sends an "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlistrideoptionsintent"
-                    },
-                    {
-                      "type": "text",
-                      "text": " object to your Intents app extension. (Maps only asks you to handle the intent. You don’t have to resolve parameters or confirm the intent. On success, your response should include the appropriate ride options to display to the user)."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Maps displays your ride options to the user. "
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "When the user selects one of your rides, Maps sends an "
-                    },
-                    {
-                      "type": "reference",
-                      "isActive": true,
-                      "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent"
-                    },
-                    {
-                      "type": "text",
-                      "text": " object to your Intents app extension. "
-                    }
-                  ]
-                },
-                {
-                  "type": "orderedList",
-                  "items": [
-                    {
-                      "content": [
-                        {
-                          "type": "paragraph",
-                          "inlineContent": [
-                            {
-                              "type": "text",
-                              "text": "Maps may ask your extension to confirm the intent."
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "content": [
-                        {
-                          "type": "paragraph",
-                          "inlineContent": [
-                            {
-                              "type": "text",
-                              "text": "Upon successful confirmation, Maps asks your extension to book the ride. "
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "When the user asks for the status of a ride using Siri, Siri sends a single "
+              "text": "Maps may send the same "
             },
             {
               "type": "reference",
@@ -495,7 +321,7 @@
             },
             {
               "type": "text",
-              "text": " object to your Intents app extension. Maps may send this same intent to your Intents app extension multiple times after booking is complete. Maps may also call the "
+              "text": " object to your Intents app extension multiple times after booking is complete. Maps may also call the "
             },
             {
               "type": "reference",
@@ -518,14 +344,52 @@
           ]
         },
         {
+          "level": 3,
+          "type": "heading",
+          "text": "Book Rides from Shortcuts and Siri Suggestions",
+          "anchor": "3866866"
+        },
+        {
           "type": "paragraph",
-          "inlineContent": []
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Shortcuts and Siri Suggestions send your Intents app extension "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintent"
+            },
+            {
+              "type": "text",
+              "text": " objects to resolve, confirm, and handle. For more details about this sequence, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/resolving_and_handling_intents"
+            },
+            {
+              "type": "text",
+              "text": ". Implement the methods in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inrequestrideintenthandling"
+            },
+            {
+              "type": "text",
+              "text": " protocol to prompt the user for additional information and confirm the details of their trip."
+            }
+          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

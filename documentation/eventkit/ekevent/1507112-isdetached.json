@@ -34,30 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)EKEvent(py)isDetached",
+    "parent": {
+      "title": "EKEvent"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -102,7 +110,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A class that represents an event added to a calendar."
+          "text": "A class that represents an event in a calendar."
         }
       ]
     },
@@ -260,7 +268,13 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507349-birthdaycontactidentifier",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekevent/1507349-birthdaycontactidentifier"
+      "url": "/documentation/eventkit/ekevent/1507349-birthdaycontactidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The contact identifier of the person for this birthday event."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekevent/1507185-structuredlocation": {
       "title": "structuredLocation",
@@ -268,7 +282,13 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507185-structuredlocation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekevent/1507185-structuredlocation"
+      "url": "/documentation/eventkit/ekevent/1507185-structuredlocation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The event's location with a potential geocoordinate."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekevent/1615845-birthdaypersonid": {
       "title": "birthdayPersonID",
@@ -365,6 +385,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -403,7 +424,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

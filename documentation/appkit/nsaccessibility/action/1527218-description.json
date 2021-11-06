@@ -11,40 +11,42 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/action"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/action"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/action"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibility/action"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos"
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions"
       ]
     ]
   },
@@ -67,10 +69,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@F@NSAccessibilityActionDescription",
+    "parent": {
+      "title": "NSAccessibility.Action"
+    },
     "symbolKind": "structp",
     "fragments": [
       {
@@ -88,8 +93,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,21 +129,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction": {
-      "title": "NSAccessibilityCustomAction",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilitycustomaction",
-      "url": "/documentation/appkit/nsaccessibilitycustomaction",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibility/action": {
       "title": "NSAccessibility.Action",
@@ -146,7 +143,21 @@
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/action",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/action"
+      "url": "/documentation/appkit/nsaccessibility/action",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe types of actions. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol": {
+      "title": "NSAccessibilityProtocol",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibility": {
       "title": "NSAccessibility",
@@ -163,6 +174,14 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions": {
+      "title": "Accessibility Functions",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+      "url": "/documentation/appkit/accessibility_for_appkit/accessibility_functions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/swift/string": {
       "title": "String",
@@ -200,471 +219,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1529733-post": {
-      "title": "post(element:notification:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1529733-post",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1529733-post",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sends a notification to any observing assistive applications."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "post"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "element"
-        },
-        {
-          "kind": "text",
-          "text": ": Any, "
-        },
-        {
-          "kind": "identifier",
-          "text": "notification"
-        },
-        {
-          "kind": "text",
-          "text": ": NSAccessibility.Notification)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534572-post": {
-      "title": "post(element:notification:userInfo:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534572-post",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1534572-post",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sends a notification and an optional "
-        },
-        {
-          "type": "codeVoice",
-          "code": "userInfo"
-        },
-        {
-          "type": "text",
-          "text": " dictionary to any observing assistive applications."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "post"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "element"
-        },
-        {
-          "kind": "text",
-          "text": ": Any, "
-        },
-        {
-          "kind": "identifier",
-          "text": "notification"
-        },
-        {
-          "kind": "text",
-          "text": ": NSAccessibility.Notification, "
-        },
-        {
-          "kind": "identifier",
-          "text": "userInfo"
-        },
-        {
-          "kind": "text",
-          "text": ": [NSAccessibility.NotificationUserInfoKey : Any]?)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534397-raisebadargumentexception": {
-      "title": "raiseBadArgumentException(_:_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534397-raisebadargumentexception",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1534397-raisebadargumentexception",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Raises an error if the parameter is the wrong type or has an illegal value"
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "raiseBadArgumentException"
-        },
-        {
-          "kind": "text",
-          "text": "(Any!, NSAccessibility.Attribute!, Any!)"
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1534948-description": {
-      "title": "description(with:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1534948-description",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/role/1534948-description",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a standard description for a role and subrole."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "description"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "with"
-        },
-        {
-          "kind": "text",
-          "text": ": NSAccessibility.Subrole?) -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1530313-description": {
-      "title": "description(for:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1530313-description",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/role/1530313-description",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a standard role description for a user interface element."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "description"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "for"
-        },
-        {
-          "kind": "text",
-          "text": ": Any) -> String?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1533132-setmaycontainprotectedcontent": {
-      "title": "setMayContainProtectedContent(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1533132-setmaycontainprotectedcontent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1533132-setmaycontainprotectedcontent",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets whether the app may have protected content."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "setMayContainProtectedContent"
-        },
-        {
-          "kind": "text",
-          "text": "(Bool) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1524571-unignoredchildren": {
-      "title": "unignoredChildren(from:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1524571-unignoredchildren",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1524571-unignoredchildren",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a list of unignored accessibility objects, descending the hierarchy if necessary."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "unignoredChildren"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "from"
-        },
-        {
-          "kind": "text",
-          "text": ": [Any]) -> [Any]"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1528850-unignoredchildrenforonlychild": {
-      "title": "unignoredChildrenForOnlyChild(from:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1528850-unignoredchildrenforonlychild",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1528850-unignoredchildrenforonlychild",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a list of unignored accessibility objects, descending the hierarchy if necessary."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "unignoredChildrenForOnlyChild"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "from"
-        },
-        {
-          "kind": "text",
-          "text": ": Any) -> [Any]"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1533530-unignoreddescendant": {
-      "title": "unignoredDescendant(of:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1533530-unignoreddescendant",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1533530-unignoreddescendant",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an unignored accessibility object, descending the hierarchy if necessary."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "unignoredDescendant"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "of"
-        },
-        {
-          "kind": "text",
-          "text": ": Any) -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1531456-unignoredancestor": {
-      "title": "unignoredAncestor(of:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1531456-unignoredancestor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1531456-unignoredancestor",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an unignored accessibility object, ascending the hierarchy if necessary."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "unignoredAncestor"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "of"
-        },
-        {
-          "kind": "text",
-          "text": ": Any) -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1528628-screenrect": {
-      "title": "screenRect(fromView:rect:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1528628-screenrect",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1528628-screenrect",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the frame in screen coordinates."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "screenRect"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "fromView"
-        },
-        {
-          "kind": "text",
-          "text": ": NSView, "
-        },
-        {
-          "kind": "identifier",
-          "text": "rect"
-        },
-        {
-          "kind": "text",
-          "text": ": NSRect) -> NSRect"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534336-screenpoint": {
-      "title": "screenPoint(fromView:point:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534336-screenpoint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsaccessibility/1534336-screenpoint",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the point in screen coordinates."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "screenPoint"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "fromView"
-        },
-        {
-          "kind": "text",
-          "text": ": NSView, "
-        },
-        {
-          "kind": "identifier",
-          "text": "point"
-        },
-        {
-          "kind": "text",
-          "text": ": NSPoint) -> NSPoint"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -673,26 +227,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1529733-post",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534572-post",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534397-raisebadargumentexception",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1534948-description",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/role/1530313-description",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1533132-setmaycontainprotectedcontent",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1524571-unignoredchildren",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1528850-unignoredchildrenforonlychild",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1533530-unignoreddescendant",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1531456-unignoredancestor",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1528628-screenrect",
-        "doc://com.apple.documentation/documentation/appkit/nsaccessibility/1534336-screenpoint"
-      ],
-      "title": "Convenience Functions",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -777,7 +311,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

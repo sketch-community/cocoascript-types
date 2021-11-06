@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A QuickTime movie with Apple ProRes 422 video and LPCM audio."
+      "text": "A preset to export a QuickTime movie with Apple ProRes 422 video and LPCM audio."
     }
   ],
   "documentVersion": 0,
@@ -13,7 +13,7 @@
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets"
       ]
     ]
   },
@@ -34,17 +34,32 @@
     ],
     "platforms": [
       {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:@AVAssetExportPresetAppleProRes422LPCM",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,10 +110,10 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices": {
-      "title": "Export Preset Names for Apple Devices",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_names_for_apple_devices",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets": {
+      "title": "Export Presets",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets",
+      "url": "/documentation/avfoundation/avassetexportsession/export_presets",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -111,104 +126,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vcellular": {
-      "title": "AVAssetExportPresetAppleM4VCellular",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vcellular",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresetapplem4vcellular",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A format suitable for playing on Apple devices when streamed over a cellular network."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vipod": {
-      "title": "AVAssetExportPresetAppleM4ViPod",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vipod",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresetapplem4vipod",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A format suitable for playing on an iPod."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4v480psd": {
-      "title": "AVAssetExportPresetAppleM4V480pSD",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4v480psd",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresetapplem4v480psd",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A 480p Standard Definition format suitable for playing on Apple devices."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vappletv": {
-      "title": "AVAssetExportPresetAppleM4VAppleTV",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vappletv",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresetapplem4vappletv",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A format suitable for playing on AppleTV."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vwifi": {
-      "title": "AVAssetExportPresetAppleM4VWiFi",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vwifi",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresetapplem4vwifi",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A format suitable for playing on Apple devices when streamed over a WiFi network."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4v720phd": {
-      "title": "AVAssetExportPresetAppleM4V720pHD",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4v720phd",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresetapplem4v720phd",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A 720p High Definition format suitable for playing on Apple devices."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4v1080phd": {
-      "title": "AVAssetExportPresetAppleM4V1080pHD",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4v1080phd",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresetapplem4v1080phd",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A 1080p High Definition format suitable for playing on Apple devices."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetappleprores422lpcm": {
       "title": "AVAssetExportPresetAppleProRes422LPCM",
       "type": "topic",
@@ -219,7 +136,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A QuickTime movie with Apple ProRes 422 video and LPCM audio."
+          "text": "A preset to export a QuickTime movie with Apple ProRes 422 video and LPCM audio."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetappleprores4444lpcm": {
+      "title": "AVAssetExportPresetAppleProRes4444LPCM",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetappleprores4444lpcm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetexportpresetappleprores4444lpcm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A preset to export a QuickTime movie with Apple ProRes 4444 video and LPCM audio."
         }
       ]
     },
@@ -231,18 +162,22 @@
       "title": "Technologies"
     }
   },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
+    }
+  },
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vcellular",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vipod",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4v480psd",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vappletv",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4vwifi",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4v720phd",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetapplem4v1080phd"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetappleprores4444lpcm"
       ],
-      "title": "Device Format",
+      "title": "Apple ProRes Presets",
       "generated": true
     }
   ],
@@ -283,14 +218,17 @@
             }
           ],
           "platforms": [
-            "macOS"
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst"
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

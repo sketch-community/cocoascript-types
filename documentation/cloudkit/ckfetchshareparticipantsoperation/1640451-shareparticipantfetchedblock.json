@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The block to execute as the operation fetches individual participants."
+      "text": "The block to execute as the operation generates individual participants."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/share_operations",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation"
       ]
     ]
@@ -35,35 +35,55 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CKFetchShareParticipantsOperation(py)shareParticipantFetchedBlock",
+    "parent": {
+      "title": "CKFetchShareParticipantsOperation"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,10 +118,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/share_operations": {
-      "title": "Share Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/share_operations",
-      "url": "/documentation/cloudkit/share_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "url": "/documentation/cloudkit/shared_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -116,7 +136,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An operation that fetches a share’s participants."
+          "text": "An operation that converts user identities into share participants."
         }
       ]
     },
@@ -146,9 +166,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The block to execute as the operation fetches individual participants."
+          "text": "The block to execute as the operation generates individual participants."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation/1640529-fetchshareparticipantscompletion": {
       "title": "fetchShareParticipantsCompletionBlock",
@@ -172,22 +193,12 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckfetchshareparticipantsoperation/1640529-fetchshareparticipantscompletion"
       ],
-      "title": "Processing the Fetch Share Participants Results",
+      "title": "Processing the Operation’s Results",
       "generated": true
     }
   ],
@@ -237,6 +248,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -282,7 +294,7 @@
                     "inlineContent": [
                       {
                         "type": "text",
-                        "text": "The participant that the operation fetches."
+                        "text": "The participant that the operation generates."
                       }
                     ]
                   }
@@ -296,7 +308,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The operation executes this block once for each participant in the "
+              "text": "The operation executes this block once for each item of user data in the "
             },
             {
               "type": "reference",
@@ -322,7 +334,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

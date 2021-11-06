@@ -1,0 +1,763 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Configure and respond to overlays to make them interactive."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkitjs",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlays"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays",
+    "interfaceLanguage": "data"
+  },
+  "legacy_identifier": 3637202,
+  "kind": "article",
+  "metadata": {
+    "title": "Adding Interactivity to Overlays",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "MapKit JS"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "data"
+        }
+      ],
+      "paths": [
+        "documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/mapkitjs": {
+      "title": "MapKit JS",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs",
+      "url": "/documentation/mapkitjs",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit": {
+      "title": "mapkit",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+      "url": "/documentation/mapkitjs/mapkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlays": {
+      "title": "Overlays",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlays",
+      "url": "/documentation/mapkitjs/mapkit/overlays",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2973997-enabled": {
+      "title": "enabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2973997-enabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/overlay/2973997-enabled"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2974002-visible": {
+      "title": "visible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2974002-visible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/overlay/2974002-visible"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/style/2974022-fillopacity": {
+      "title": "fillOpacity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/style/2974022-fillopacity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/style/2974022-fillopacity"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/style/2974031-strokeopacity": {
+      "title": "strokeOpacity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/style/2974031-strokeopacity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/style/2974031-strokeopacity"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays#3637638": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays#3637638",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays#3637638"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2974000-selected": {
+      "title": "selected",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2974000-selected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/overlay/2974000-selected"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map": {
+      "title": "mapkit.Map",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/map"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/2974042-addeventlistener": {
+      "title": "addEventListener",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/2974042-addeventlistener",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/2974042-addeventlistener"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/2974047-removeeventlistener": {
+      "title": "removeEventListener",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/2974047-removeeventlistener",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/2974047-removeeventlistener"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973828-enabled": {
+      "title": "enabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973828-enabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation/2973828-enabled"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay": {
+      "title": "mapkit.Overlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/overlay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract base object that defines the methods and attributes for map overlays."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays#3637636": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays#3637636",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays#3637636"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/handling_map_events": {
+      "title": "Handling Map Events",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/handling_map_events",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/mapkit/map/handling_map_events"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays": {
+      "title": "Adding Interactivity to Overlays",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/mapkit/overlays/adding_interactivity_to_overlays",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure and respond to overlays to make them interactive."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/style": {
+      "title": "mapkit.Style",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/style",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/style",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of observable attributes for overlays, including color and opacity of stroke and fill, and line styles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/circleoverlay": {
+      "title": "mapkit.CircleOverlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/circleoverlay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/circleoverlay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A circular overlay with a configurable radius that centers on a specific geographic coordinate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/polylineoverlay": {
+      "title": "mapkit.PolylineOverlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/polylineoverlay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/polylineoverlay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An overlay of connected line segments that do not form a closed shape."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/polygonoverlay": {
+      "title": "mapkit.PolygonOverlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/polygonoverlay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/polygonoverlay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An overlay made up of one or more points that forms a closed shape."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/overlayoptions": {
+      "title": "OverlayOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/overlayoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/overlayoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary of options that determines an overlay's data, and indicates whether it is visible, in an enabled state, and in a selected state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/style",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/circleoverlay",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/polylineoverlay",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/polygonoverlay",
+        "doc://com.apple.documentation/documentation/mapkitjs/overlayoptions"
+      ],
+      "title": "Overlays",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use overlays to make specific areas of your map interactive. To enable interactivity, configure the map, create an overlay, and add an event listener to receive events when a user selects or deselects the overlay."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Overlay",
+          "anchor": "3637639"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A map instance emits "
+            },
+            {
+              "type": "codeVoice",
+              "code": "select"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "deselect"
+            },
+            {
+              "type": "text",
+              "text": " events from overlays when a user selects and deselects the overlay, respectively. To configure an overlay so that a map emits these events, add it to the map and ensure that the overlay:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Has the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2973997-enabled"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property set to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "true"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Has the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2974002-visible"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property set to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "true"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Is not so small that MapKit JS can’t draw it"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Appears at least partially within the visible map rectangle"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Additionally, the shape must have one of the following settings:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A fill color that is not "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "null"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", that enables the overlay to receive a tap, or"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A stroke color that is not "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "null"
+                    },
+                    {
+                      "type": "text",
+                      "text": " with a line width greater than "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    },
+                    {
+                      "type": "text",
+                      "text": " that enables a tap on the shape’s outline."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To make an overlay transparent and selectable, don’t change the overlay "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2974002-visible"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "false"
+            },
+            {
+              "type": "text",
+              "text": ". Instead, set the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "opacity"
+            },
+            {
+              "type": "text",
+              "text": " of the overlay’s style "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/style/2974022-fillopacity"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/style/2974031-strokeopacity"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": ". For example:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "regionOverlay.style.fillOpacity = 0",
+            "rectangle.style.strokeOpacity = 0"
+          ],
+          "syntax": "javascript",
+          "metadata": {
+            "anchor": "3637638",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add an Event Listener to Respond to Map Events",
+          "anchor": "3637637"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user taps or clicks the overlay, MapKit JS changes the overlay’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2974000-selected"
+            },
+            {
+              "type": "text",
+              "text": " property and propagates an event from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map"
+            },
+            {
+              "type": "text",
+              "text": " object. Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/2974042-addeventlistener"
+            },
+            {
+              "type": "text",
+              "text": " to receive events from the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map"
+            },
+            {
+              "type": "text",
+              "text": " object when the user selects an overlay. To stop receiving events, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/2974047-removeeventlistener"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Because MapKit JS places annotations on top of overlays, the user can inadvertently select the annotation when an annotation and an overlay are both visible. To keep an annotation visible and allow the selection of the overlay, set the annotation’s "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973828-enabled"
+                },
+                {
+                  "type": "text",
+                  "text": " property to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "false"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "tip"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "MapKit JS emits a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "select"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "deselect"
+            },
+            {
+              "type": "text",
+              "text": " event when the overlay’s "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay/2974000-selected"
+            },
+            {
+              "type": "text",
+              "text": " property changes. Each event that originates from an overlay has an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "overlay"
+            },
+            {
+              "type": "text",
+              "text": " property, which is the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/overlay"
+            },
+            {
+              "type": "text",
+              "text": " object whose state changes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example shows the logging of a message when the user selects an overlay on the map:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "map.addEventListener('select', function(event) {",
+            "    if (event.overlay)",
+            "        console.log(\"You selected an overlay.\");",
+            "});"
+          ],
+          "syntax": "javascript",
+          "metadata": {
+            "anchor": "3637636",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/handling_map_events"
+            },
+            {
+              "type": "text",
+              "text": " for a list of map events."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

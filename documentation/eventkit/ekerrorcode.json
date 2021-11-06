@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Values that are returned as the error code property of an NSError object."
+      "text": "Error codes for EventKit errors."
     }
   ],
   "documentVersion": 0,
@@ -33,30 +33,35 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@EKErrorCode",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -109,7 +114,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The event is not mutable and cannot be saved or deleted."
+          "text": "The event isn't mutable and you can’t save or delete it."
         }
       ]
     },
@@ -123,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The event is not associated with a calendar."
+          "text": "The event isn't associated with a calendar."
         }
       ]
     },
@@ -193,7 +198,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The calendar is read-only and cannot have events added to it."
+          "text": "The calendar is read-only and you can’t add events to it."
         }
       ]
     },
@@ -277,7 +282,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The event cannot be moved because it is an invite."
+          "text": "You can’t move the event because it’s an invitation."
         }
       ]
     },
@@ -291,7 +296,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An invalid span was passed when saving or deleting."
+          "text": "The system encountered an invalid span during a save or deletion. "
         }
       ]
     },
@@ -305,7 +310,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The calendar cannot be saved with no source set."
+          "text": "You can’t save the calendar without setting a source first. "
         }
       ]
     },
@@ -319,7 +324,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The calendar cannot be moved to another source."
+          "text": "You can’t move the calendar to another source. "
         }
       ]
     },
@@ -333,7 +338,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The calendar is immutable and cannot be modified or deleted."
+          "text": "The calendar is immutable and you can’t modify or delete it. "
         }
       ]
     },
@@ -347,7 +352,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The source doesn’t allow calendars to be added or deleted."
+          "text": "The source doesn’t allow you to add or delete calendars. "
         }
       ]
     },
@@ -375,7 +380,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The source to which this calendar belongs does not support structured locations."
+          "text": "The source to which this calendar belongs doesn't support structured locations."
         }
       ]
     },
@@ -403,7 +408,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The source does not allow geofences on alarms."
+          "text": "The source doesn't allow geofences on alarms."
         }
       ]
     },
@@ -417,7 +422,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The calendar does not allow events to be added."
+          "text": "The calendar doesn’t allow you to add events. "
         }
       ]
     },
@@ -431,7 +436,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The calendar does not allow reminders to be added."
+          "text": "The calendar doesn’t allow you to add reminders. "
         }
       ]
     },
@@ -445,7 +450,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The source does not allow calendars supporting reminder entity types."
+          "text": "The source doesn't allow calendars supporting reminder entity types."
         }
       ]
     },
@@ -459,7 +464,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The source does not allow calendars supporting event entity types."
+          "text": "The source doesn't allow calendars supporting event entity types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorpriorityisinvalid": {
+      "title": "EKErrorPriorityIsInvalid",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorpriorityisinvalid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekerrorcode/ekerrorpriorityisinvalid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The priority number for the reminder is invalid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorinvalidentitytype": {
+      "title": "EKErrorInvalidEntityType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorinvalidentitytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekerrorcode/ekerrorinvalidentitytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The entity type is invalid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorprocedurealarmsnotmutable": {
+      "title": "EKErrorProcedureAlarmsNotMutable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorprocedurealarmsnotmutable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekerrorcode/ekerrorprocedurealarmsnotmutable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "You can’t create or modify procedure alarms. "
         }
       ]
     },
@@ -469,23 +516,13 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerroreventstorenotauthorized",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerroreventstorenotauthorized"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorinvalidentitytype": {
-      "title": "EKErrorInvalidEntityType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorinvalidentitytype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerrorinvalidentitytype"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorlast": {
-      "title": "EKErrorLast",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorlast",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerrorlast"
+      "url": "/documentation/eventkit/ekerrorcode/ekerroreventstorenotauthorized",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user hasn't authorized your app to access events or reminders."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorosnotsupported": {
       "title": "EKErrorOSNotSupported",
@@ -493,23 +530,13 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorosnotsupported",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerrorosnotsupported"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorpriorityisinvalid": {
-      "title": "EKErrorPriorityIsInvalid",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorpriorityisinvalid",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerrorpriorityisinvalid"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorprocedurealarmsnotmutable": {
-      "title": "EKErrorProcedureAlarmsNotMutable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorprocedurealarmsnotmutable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerrorprocedurealarmsnotmutable"
+      "url": "/documentation/eventkit/ekerrorcode/ekerrorosnotsupported",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The action isn't supported on the current operating system."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorinvalidinvitereplycalendar": {
       "title": "EKErrorInvalidInviteReplyCalendar",
@@ -517,23 +544,13 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorinvalidinvitereplycalendar",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerrorinvalidinvitereplycalendar"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationcollectionmismatch": {
-      "title": "EKErrorNotificationCollectionMismatch",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationcollectionmismatch",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerrornotificationcollectionmismatch"
-    },
-    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationsavedwithoutcollection": {
-      "title": "EKErrorNotificationSavedWithoutCollection",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationsavedwithoutcollection",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerrornotificationsavedwithoutcollection"
+      "url": "/documentation/eventkit/ekerrorcode/ekerrorinvalidinvitereplycalendar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The calendar is invalid or nil."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationscollectionflagnotset": {
       "title": "EKErrorNotificationsCollectionFlagNotSet",
@@ -541,7 +558,13 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationscollectionflagnotset",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerrornotificationscollectionflagnotset"
+      "url": "/documentation/eventkit/ekerrorcode/ekerrornotificationscollectionflagnotset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The notification collection doesn't have the notifications collection flag."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorsourcemismatch": {
       "title": "EKErrorSourceMismatch",
@@ -549,7 +572,63 @@
       "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorsourcemismatch",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/eventkit/ekerrorcode/ekerrorsourcemismatch"
+      "url": "/documentation/eventkit/ekerrorcode/ekerrorsourcemismatch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The object's source doesn't match its container's source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationcollectionmismatch": {
+      "title": "EKErrorNotificationCollectionMismatch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationcollectionmismatch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekerrorcode/ekerrornotificationcollectionmismatch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The notification collection that contains this notification doesn’t match the collection the system is trying to save. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationsavedwithoutcollection": {
+      "title": "EKErrorNotificationSavedWithoutCollection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationsavedwithoutcollection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekerrorcode/ekerrornotificationsavedwithoutcollection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The notification can’t save because you haven’t added it to a notification collection and saved the collection first. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorlast": {
+      "title": "EKErrorLast",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorlast",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekerrorcode/ekerrorlast",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This error is for internal use. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorreminderalarmcontainsemailorurl": {
+      "title": "EKErrorReminderAlarmContainsEmailOrUrl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorreminderalarmcontainsemailorurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekerrorcode/ekerrorreminderalarmcontainsemailorurl"
     },
     "doc://com.apple.documentation/documentation/eventkit/ekerrorcode": {
       "title": "EKErrorCode",
@@ -561,7 +640,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Values that are returned as the error code property of an NSError object."
+          "text": "Error codes for EventKit errors."
         }
       ]
     },
@@ -575,7 +654,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "String that identifies the EventKit error domain."
+          "text": "A string that identifies the EventKit error domain."
         }
       ]
     },
@@ -617,25 +696,28 @@
         "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorcalendardoesnotallowevents",
         "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorcalendardoesnotallowreminders",
         "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorsourcedoesnotallowreminders",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorsourcedoesnotallowevents"
-      ]
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorsourcedoesnotallowevents",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorpriorityisinvalid",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorinvalidentitytype",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorprocedurealarmsnotmutable",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerroreventstorenotauthorized",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorosnotsupported",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorinvalidinvitereplycalendar",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationscollectionflagnotset",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorsourcemismatch",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationcollectionmismatch",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationsavedwithoutcollection",
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorlast"
+      ],
+      "anchor": "3712338"
     },
     {
       "kind": "taskGroup",
       "title": "Enumeration Cases",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerroreventstorenotauthorized",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorinvalidentitytype",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorlast",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorosnotsupported",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorpriorityisinvalid",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorprocedurealarmsnotmutable",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorinvalidinvitereplycalendar",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationcollectionmismatch",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationsavedwithoutcollection",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrornotificationscollectionflagnotset",
-        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorsourcemismatch"
-      ]
+        "doc://com.apple.documentation/documentation/eventkit/ekerrorcode/ekerrorreminderalarmcontainsemailorurl"
+      ],
+      "anchor": "3758574"
     }
   ],
   "seeAlsoSections": [
@@ -709,6 +791,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
@@ -718,7 +801,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

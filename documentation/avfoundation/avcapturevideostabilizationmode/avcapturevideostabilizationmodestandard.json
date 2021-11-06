@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Video should be stabilized using the standard video stabilization algorithm introduced in iOS 5.0."
+      "text": "A video stabilization mode that uses the standard algorithm."
     }
   ],
   "documentVersion": 0,
@@ -37,20 +37,28 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@AVCaptureVideoStabilizationMode@AVCaptureVideoStabilizationModeStandard",
+    "parent": {
+      "title": "AVCaptureVideoStabilizationMode"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,7 +127,77 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that describe the modes of video stabilization supported by the device's format."
+          "text": "Constants that describe the video stabilization modes that the device and format support."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeoff": {
+      "title": "AVCaptureVideoStabilizationModeOff",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeoff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeoff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mode that doesn’t stablize video capture."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodestandard": {
+      "title": "AVCaptureVideoStabilizationModeStandard",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodestandard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodestandard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A video stabilization mode that uses the standard algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematic": {
+      "title": "AVCaptureVideoStabilizationModeCinematic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A video stabilization mode that uses the cinematic stabilization algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematicextended": {
+      "title": "AVCaptureVideoStabilizationModeCinematicExtended",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematicextended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematicextended",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A video stabilization mode that uses the extended cinematic stabilization algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeauto": {
+      "title": "AVCaptureVideoStabilizationModeAuto",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeauto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeauto",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The system chooses most appropriate video stabilization mode for the device and format."
         }
       ]
     },
@@ -131,6 +209,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeoff",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematic",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematicextended",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeauto"
+      ],
+      "title": "Stabilization Modes",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -151,6 +241,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -170,7 +261,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Standard video stabilization has a reduced field of view.  Enabling video stabilization may introduce additional latency into the video capture pipeline."
+              "text": "Standard video stabilization has a reduced field of view. Enabling video stabilization may introduce additional latency into the video capture pipeline."
             }
           ]
         }
@@ -178,7 +269,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

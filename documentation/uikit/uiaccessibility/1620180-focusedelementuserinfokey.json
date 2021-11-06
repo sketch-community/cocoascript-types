@@ -1,18 +1,24 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The element currently in focus by the assistive app."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
@@ -34,23 +40,35 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_dictionary_keys"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_dictionary_keys"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_dictionary_keys"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_dictionary_keys"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/objectivec",
         "doc://com.apple.documentation/documentation/objectivec/nsobject",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_dictionary_keys"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -58,7 +76,7 @@
         "doc://com.apple.documentation/documentation/foundation/object_runtime",
         "doc://com.apple.documentation/documentation/objectivec/nsobject",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_dictionary_keys"
       ]
     ]
   },
@@ -81,25 +99,33 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@UIAccessibilityFocusedElementKey",
+    "parent": {
+      "title": "UIAccessibility"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -117,8 +143,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -153,10 +179,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -175,7 +201,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility"
+      "url": "/documentation/uikit/uiaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A namespace for accessibility symbols for UIKit apps."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -217,10 +249,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys": {
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_dictionary_keys": {
       "title": "Notification Dictionary Keys",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys",
-      "url": "/documentation/objectivec/nsobject/uiaccessibility/notification_dictionary_keys",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_dictionary_keys",
+      "url": "/documentation/uikit/accessibility_for_uikit/notification_dictionary_keys",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -233,28 +265,6 @@
       "role": "symbol",
       "url": "/documentation/swift/string"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620180-focusedelementuserinfokey": {
-      "title": "focusedElementUserInfoKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620180-focusedelementuserinfokey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1620180-focusedelementuserinfokey",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "focusedElementUserInfoKey"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620183-announcementstringvalueuserinfok": {
       "title": "announcementStringValueUserInfoKey",
       "type": "topic",
@@ -265,7 +275,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The text of the announcement that finished."
+          "text": "The text of the announcement."
         }
       ],
       "fragments": [
@@ -293,7 +303,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates whether the announcement was successfully made."
+          "text": "A Boolean value that indicates whether the announcement is successful."
         }
       ],
       "fragments": [
@@ -311,13 +321,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620189-assistivetechnologyuserinfokey": {
-      "title": "assistiveTechnologyUserInfoKey",
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620180-focusedelementuserinfokey": {
+      "title": "focusedElementUserInfoKey",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620189-assistivetechnologyuserinfokey",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620180-focusedelementuserinfokey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1620189-assistivetechnologyuserinfokey",
+      "url": "/documentation/uikit/uiaccessibility/1620180-focusedelementuserinfokey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The element currently in focus by the assistive app."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -325,7 +341,7 @@
         },
         {
           "kind": "identifier",
-          "text": "assistiveTechnologyUserInfoKey"
+          "text": "focusedElementUserInfoKey"
         },
         {
           "kind": "text",
@@ -340,6 +356,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiaccessibility/1620196-unfocusedelementuserinfokey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The element previously in focus by the assistive app. "
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -348,6 +370,34 @@
         {
           "kind": "identifier",
           "text": "unfocusedElementUserInfoKey"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620189-assistivetechnologyuserinfokey": {
+      "title": "assistiveTechnologyUserInfoKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620189-assistivetechnologyuserinfokey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1620189-assistivetechnologyuserinfokey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifier of the assistive app."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "assistiveTechnologyUserInfoKey"
         },
         {
           "kind": "text",
@@ -368,8 +418,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620183-announcementstringvalueuserinfok",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620209-announcementwassuccessfuluserinf",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620189-assistivetechnologyuserinfokey",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620196-unfocusedelementuserinfokey"
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620196-unfocusedelementuserinfokey",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620189-assistivetechnologyuserinfokey"
       ],
       "title": "Notification Keys",
       "generated": true
@@ -417,6 +467,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -426,7 +477,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

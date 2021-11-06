@@ -1,10 +1,17 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A resolution result for the redial capabilities of a missed call."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/sirikit"
+        "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/voip_calling"
       ]
     ]
   },
@@ -27,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INStartCallCallRecordToCallBackResolutionResult",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -80,13 +92,61 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
+      "title": "VoIP Calling",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+      "url": "/documentation/sirikit/voip_calling",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecord": {
+      "title": "INCallRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecord"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902445-notrequired": {
+      "title": "notRequired",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902445-notrequired",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintentresolutionresult/1902445-notrequired",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "notRequired"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult": {
+      "title": "INIntentResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintentresolutionresult"
+    },
     "doc://com.apple.documentation/documentation/sirikit/incallrecordresolutionresult": {
       "title": "INCallRecordResolutionResult",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordresolutionresult",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/incallrecordresolutionresult"
+      "url": "/documentation/sirikit/incallrecordresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the details of a call."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult/3649671-initwithcallrecordresolutionresu": {
       "title": "initWithCallRecordResolutionResult:",
@@ -95,6 +155,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult/3649671-initwithcallrecordresolutionresu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an object whose resolution involves successfully redialing a call."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -113,6 +179,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult/3649672-unsupportedforreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a result that requires the user to confirm the request, because your app is unable to support the current request."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -121,6 +193,104 @@
         {
           "kind": "identifier",
           "text": "unsupportedForReason:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordtyperesolutionresult": {
+      "title": "INCallRecordTypeResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordtyperesolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordtyperesolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the types of calls that your app handled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incalldestinationtyperesolutionresult": {
+      "title": "INCallDestinationTypeResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incalldestinationtyperesolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incalldestinationtyperesolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the destination type of a call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallcapabilityresolutionresult": {
+      "title": "INCallCapabilityResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallcapabilityresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallcapabilityresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the call capability for the call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptionsresolutionresult": {
+      "title": "INCallRecordTypeOptionsResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptionsresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordtypeoptionsresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the call types to include in a search."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallcontactresolutionresult": {
+      "title": "INStartCallContactResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallcontactresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallcontactresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the contact for the call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallcallcapabilityresolutionresult": {
+      "title": "INStartCallCallCapabilityResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallcallcapabilityresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallcallcapabilityresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the call capability for the call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult": {
+      "title": "INStartCallCallRecordToCallBackResolutionResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A resolution result for the redial capabilities of a missed call."
         }
       ]
     },
@@ -148,14 +318,31 @@
       "title": "Initializers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult/3649671-initwithcallrecordresolutionresu"
-      ]
+      ],
+      "anchor": "3745184"
     },
     {
       "kind": "taskGroup",
       "title": "Type Methods",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult/3649672-unsupportedforreason"
-      ]
+      ],
+      "anchor": "3745185"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordtyperesolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/incalldestinationtyperesolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/incallcapabilityresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptionsresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallcontactresolutionresult",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallcallcapabilityresolutionresult"
+      ],
+      "title": "Resolution Results",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -192,15 +379,101 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You return an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "INStartCallCallRecordToCallBackResolutionResult"
+            },
+            {
+              "type": "text",
+              "text": " object when resolving parameters containing an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecord"
+            },
+            {
+              "type": "text",
+              "text": " value. Use the creation method that best reflects your ability to resolve the parameter successfully. The resolved value can be different from the original "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecord"
+            },
+            {
+              "type": "text",
+              "text": ". This flexibility allows app extensions to apply business logic constraints."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902445-notrequired"
+            },
+            {
+              "type": "text",
+              "text": " to continue with a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " value. For additional resolution operators, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

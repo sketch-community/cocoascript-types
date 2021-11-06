@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Asks the delegate for progress updates for the aggregate download task."
+      "text": "Tells the delegate that the aggregate down task loaded a new time range."
     }
   ],
   "documentVersion": 0,
@@ -36,25 +36,33 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)AVAssetDownloadDelegate(im)URLSession:aggregateAssetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:forMediaSelection:",
+    "parent": {
+      "title": "AVAssetDownloadDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +123,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Methods you can implement to handle download-related events."
+          "text": "A protocol that defines the methods to implement to respond to asset-download events."
         }
       ]
     },
@@ -126,14 +134,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/coremedia/cmtimerange"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsvalue": {
-      "title": "NSValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsvalue"
     },
     "doc://com.apple.documentation/documentation/foundation/nsurlsession": {
       "title": "NSURLSession",
@@ -159,6 +159,14 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsvalue": {
+      "title": "NSValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsvalue"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmediaselection": {
       "title": "AVMediaSelection",
       "type": "topic",
@@ -167,18 +175,18 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmediaselection"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1845200-urlsession": {
-      "title": "URLSession:assetDownloadTask:didFinishDownloadingToURL:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897241-urlsession": {
+      "title": "URLSession:aggregateAssetDownloadTask:willDownloadToURL:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1845200-urlsession",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897241-urlsession",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloaddelegate/1845200-urlsession",
+      "url": "/documentation/avfoundation/avassetdownloaddelegate/2897241-urlsession",
       "required": false,
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the delegate a download task has finished downloading a requested asset."
+          "text": "Tells the delegate the final location of the asset when the download completes."
         }
       ],
       "fragments": [
@@ -188,82 +196,7 @@
         },
         {
           "kind": "identifier",
-          "text": "URLSession:assetDownloadTask:didFinishDownloadingToURL:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1621019-urlsession": {
-      "title": "URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1621019-urlsession",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloaddelegate/1621019-urlsession",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asks the delegate to provide progress updates during the downlaod task."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "URLSession:assetDownloadTask:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1621023-urlsession": {
-      "title": "URLSession:assetDownloadTask:didResolveMediaSelection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1621023-urlsession",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloaddelegate/1621023-urlsession",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the delegate the media selection for the download is fully resolved, including any automatic selections."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "URLSession:assetDownloadTask:didResolveMediaSelection:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897211-urlsession": {
-      "title": "URLSession:aggregateAssetDownloadTask:didCompleteForMediaSelection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897211-urlsession",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloaddelegate/2897211-urlsession",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the delegate a child download task has completed."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "URLSession:aggregateAssetDownloadTask:didCompleteForMediaSelection:"
+          "text": "URLSession:aggregateAssetDownloadTask:willDownloadToURL:"
         }
       ]
     },
@@ -278,7 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Asks the delegate for progress updates for the aggregate download task."
+          "text": "Tells the delegate that the aggregate down task loaded a new time range."
         }
       ],
       "fragments": [
@@ -292,18 +225,18 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897241-urlsession": {
-      "title": "URLSession:aggregateAssetDownloadTask:willDownloadToURL:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897211-urlsession": {
+      "title": "URLSession:aggregateAssetDownloadTask:didCompleteForMediaSelection:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897241-urlsession",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897211-urlsession",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloaddelegate/2897241-urlsession",
+      "url": "/documentation/avfoundation/avassetdownloaddelegate/2897211-urlsession",
       "required": false,
       "abstract": [
         {
           "type": "text",
-          "text": "Asks the delegate for the location this asset will be downloaded to."
+          "text": "Tells the delegate that a child task finished downloading a media selection."
         }
       ],
       "fragments": [
@@ -313,7 +246,7 @@
         },
         {
           "kind": "identifier",
-          "text": "URLSession:aggregateAssetDownloadTask:willDownloadToURL:"
+          "text": "URLSession:aggregateAssetDownloadTask:didCompleteForMediaSelection:"
         }
       ]
     },
@@ -328,13 +261,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1845200-urlsession",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1621019-urlsession",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1621023-urlsession",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897211-urlsession",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897241-urlsession"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897241-urlsession",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/2897211-urlsession"
       ],
-      "title": "Responding to Task Changes",
+      "title": "Responding to Aggregate Download Events",
       "generated": true
     }
   ],
@@ -544,6 +474,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -578,7 +509,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The download task that is being updated."
+                  "text": "The download task that loaded a new time range."
                 }
               ]
             }
@@ -601,7 +532,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " indicating the time range loaded since the last time this method was called."
+                  "text": " value that indicates the time range the task loaded since the last call to this method."
                 }
               ]
             }
@@ -624,16 +555,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " structs wrapped as "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
-                },
-                {
-                  "type": "text",
-                  "text": " objects indicating all of the time ranges loaded so far by this download task."
+                  "text": " values that indicate the time ranges the task has downloaded so far."
                 }
               ]
             }
@@ -656,7 +578,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " indicating the complete time range that is expected to be loaded when the download is complete."
+                  "text": " value that indicates the expected duration of the downloaded asset."
                 }
               ]
             }
@@ -670,7 +592,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The media selection containing additional media date loaded for offline use."
+                  "text": "The media selection the task is downloading."
                 }
               ]
             }
@@ -680,7 +602,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

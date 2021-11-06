@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Directions suitable for public transportation."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -36,30 +42,38 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@MKDirectionsTransportType@MKDirectionsTransportTypeTransit",
+    "parent": {
+      "title": "MKDirectionsTransportType"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,6 +138,62 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypeautomobile": {
+      "title": "MKDirectionsTransportTypeAutomobile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypeautomobile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypeautomobile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Directions suitable for use while driving."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypewalking": {
+      "title": "MKDirectionsTransportTypeWalking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypewalking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypewalking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Directions suitable for a pedestrian."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypetransit": {
+      "title": "MKDirectionsTransportTypeTransit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypetransit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypetransit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Directions suitable for public transportation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypeany": {
+      "title": "MKDirectionsTransportTypeAny",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypeany",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypeany",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Directions suitable for any transportation option."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -132,6 +202,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypeautomobile",
+        "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypewalking",
+        "doc://com.apple.documentation/documentation/mapkit/mkdirectionstransporttype/mkdirectionstransporttypeany"
+      ],
+      "title": "Transport Types",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -152,6 +233,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -173,7 +255,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Directions suitable for public transportation."
+              "text": "This type is only supported for estimating time of arrival."
             }
           ]
         }
@@ -181,7 +263,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

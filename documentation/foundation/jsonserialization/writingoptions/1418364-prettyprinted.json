@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The writing option that uses white space and indentation to make the output more readable."
+      "text": "Specifies that the output uses white space and indentation to make the resulting data more readable."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSJSONWritingOptions@NSJSONWritingPrettyPrinted",
+    "parent": {
+      "title": "JSONSerialization.WritingOptions"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -77,8 +85,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -144,6 +152,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/jsonserialization/writingoptions/3081259-fragmentsallowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the parser should allow top-level objects that aren’t arrays or dictionaries."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -169,7 +183,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The writing option that uses white space and indentation to make the output more readable."
+          "text": "Specifies that the output uses white space and indentation to make the resulting data more readable."
         }
       ],
       "fragments": [
@@ -197,7 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The writing option that sorts keys in lexicographic order."
+          "text": "Specifies that the output sorts keys in lexicographic order."
         }
       ],
       "fragments": [
@@ -222,6 +236,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/jsonserialization/writingoptions/3081260-withoutescapingslashes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the output doesn’t prefix slash characters with escape characters."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -234,38 +254,6 @@
         {
           "kind": "text",
           "text": ": JSONSerialization.WritingOptions"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/jsonserialization/writingoptions/1417127-init": {
-      "title": "init(rawValue:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonserialization/writingoptions/1417127-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/jsonserialization/writingoptions/1417127-init",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a set of JSON formatting options from an integer that represents those options."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "rawValue"
-        },
-        {
-          "kind": "text",
-          "text": ": UInt)"
         }
       ]
     },
@@ -282,8 +270,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/jsonserialization/writingoptions/3081259-fragmentsallowed",
         "doc://com.apple.documentation/documentation/foundation/jsonserialization/writingoptions/2888322-sortedkeys",
-        "doc://com.apple.documentation/documentation/foundation/jsonserialization/writingoptions/3081260-withoutescapingslashes",
-        "doc://com.apple.documentation/documentation/foundation/jsonserialization/writingoptions/1417127-init"
+        "doc://com.apple.documentation/documentation/foundation/jsonserialization/writingoptions/3081260-withoutescapingslashes"
       ],
       "title": "Formatting JSON",
       "generated": true
@@ -353,6 +340,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -375,7 +363,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If this option is not set, the most compact possible JSON representation is generated."
+              "text": "If this option isn’t set, the serialization generates the most compact possible JSON representation."
             }
           ]
         }
@@ -383,7 +371,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

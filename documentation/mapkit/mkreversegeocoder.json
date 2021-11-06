@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Provides services for converting a map coordinate (specified as a latitude/longitude pair) into information about that coordinate, such as the country, city, or street.  "
+      "text": "Provides services for converting a map coordinate (specified as a latitude/longitude pair) into information about that coordinate, such as the country or region, city, or street.  "
     }
   ],
   "documentVersion": 0,
@@ -35,14 +35,21 @@
         "name": "iOS",
         "introducedAt": "3.0",
         "deprecatedAt": "5.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "deprecatedAt": "5.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
@@ -50,8 +57,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -267,7 +274,8 @@
       "title": "Initializing the Reverse Geocoder",
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618471-initwithcoordinate"
-      ]
+      ],
+      "anchor": "1657829"
     },
     {
       "kind": "taskGroup",
@@ -276,7 +284,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618478-delegate",
         "doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618477-coordinate",
         "doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618481-placemark"
-      ]
+      ],
+      "anchor": "1657857"
     },
     {
       "kind": "taskGroup",
@@ -285,7 +294,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618480-start",
         "doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618474-querying",
         "doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618479-cancel"
-      ]
+      ],
+      "anchor": "1657896"
     }
   ],
   "primaryContentSections": [
@@ -322,6 +332,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -469,7 +480,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

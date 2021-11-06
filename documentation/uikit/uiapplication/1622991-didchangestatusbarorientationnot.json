@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/app_and_environment",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication"
+        "doc://com.apple.documentation/documentation/uikit/uiapplication",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/deprecated_symbols"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -51,18 +52,28 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:@UIApplicationDidChangeStatusBarOrientationNotification",
+    "parent": {
+      "title": "UIApplication"
+    },
     "symbolKind": "cldata",
     "fragments": [
       {
@@ -80,8 +91,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -137,6 +148,14 @@
           "text": "The centralized point of control and coordination for apps running in iOS. "
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/deprecated_symbols",
+      "url": "/documentation/uikit/uiapplication/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/foundation": {
       "title": "Foundation",
@@ -395,6 +414,93 @@
         {
           "kind": "text",
           "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1623047-beginignoringinteractionevents": {
+      "title": "beginIgnoringInteractionEvents()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1623047-beginignoringinteractionevents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1623047-beginignoringinteractionevents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the receiver to suspend the handling of touch-related events."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "beginIgnoringInteractionEvents"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622938-endignoringinteractionevents": {
+      "title": "endIgnoringInteractionEvents()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622938-endignoringinteractionevents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1622938-endignoringinteractionevents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the receiver to resume the handling of touch-related events."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "endIgnoringInteractionEvents"
+        },
+        {
+          "kind": "text",
+          "text": "()"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/2097536-isignoringinteractionevents": {
+      "title": "isIgnoringInteractionEvents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/2097536-isignoringinteractionevents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/2097536-isignoringinteractionevents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver is ignoring events initiated by touches on the screen."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "isIgnoringInteractionEvents"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
         }
       ],
       "deprecated": true
@@ -1225,6 +1331,35 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622924-keywindow": {
+      "title": "keyWindow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622924-keywindow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1622924-keywindow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The app's key window."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "keyWindow"
+        },
+        {
+          "kind": "text",
+          "text": ": UIWindow?"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -1236,6 +1371,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623047-beginignoringinteractionevents",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622938-endignoringinteractionevents",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/2097536-isignoringinteractionevents",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623100-setminimumbackgroundfetchinterva",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623014-statusbarorientationanimationdur",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623018-didchangestatusbarframenotificat",
@@ -1265,9 +1403,10 @@
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1622939-setstatusbarorientation",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623026-statusbarorientation",
         "doc://com.apple.documentation/documentation/uikit/uiapplication/1623010-registerforremotenotifications",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623075-enabledremotenotificationtypes"
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/1623075-enabledremotenotificationtypes",
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/1622924-keywindow"
       ],
-      "title": "Deprecated Symbols",
+      "title": "Deprecated",
       "generated": true
     }
   ],
@@ -1323,6 +1462,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -1393,7 +1533,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

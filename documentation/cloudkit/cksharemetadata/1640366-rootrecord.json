@@ -11,8 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/share_operations",
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+        "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare",
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata"
       ]
     ]
@@ -36,35 +42,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKShareMetadata(py)rootRecord",
+    "parent": {
+      "title": "CKShareMetadata"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -99,21 +113,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/share_operations": {
-      "title": "Share Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/share_operations",
-      "url": "/documentation/cloudkit/share_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "url": "/documentation/cloudkit/shared_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation": {
-      "title": "CKFetchShareMetadataOperation",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation",
-      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata": {
       "title": "CKShareMetadata",
@@ -125,9 +131,41 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that decribes a shared record’s metadata."
+          "text": "An object that describes a shared record’s metadata."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
+      "title": "CKShare",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+      "url": "/documentation/cloudkit/ckshare",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord": {
+      "title": "shouldFetchRootRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys": {
+      "title": "rootRecordDesiredKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
       "title": "CKRecord",
@@ -136,6 +174,20 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/cloudkit/ckrecord"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/3793709-hierarchicalrootrecordid": {
+      "title": "hierarchicalRootRecordID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/3793709-hierarchicalrootrecordid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/cksharemetadata/3793709-hierarchicalrootrecordid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The record ID of the shared hierarchy’s root record. "
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640366-rootrecord": {
       "title": "rootRecord",
@@ -163,7 +215,8 @@
           "type": "text",
           "text": "The record ID of the share’s root record. "
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -173,19 +226,10 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/3793709-hierarchicalrootrecordid",
         "doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640410-rootrecordid"
       ],
       "title": "Accessing the Root Record",
@@ -230,6 +274,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -237,10 +282,88 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This property contains the root record of the shared record hierarchy if you set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord"
+            },
+            {
+              "type": "text",
+              "text": " property of the operation that fetches the metadata to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ". You can specify which fields CloudKit returns by setting the same operation’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The operation ignores the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchsharemetadataoperation/3003362-rootrecorddesiredkeys"
+            },
+            {
+              "type": "text",
+              "text": " properties when fetching a shared record zone’s metadata because, unlike a shared record hierarchy, a record zone doesn’t have a nominated root record."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

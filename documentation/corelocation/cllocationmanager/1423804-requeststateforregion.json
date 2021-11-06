@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Retrieves the state of a region asynchronously. "
+      "text": "Retrieves the state of a region asynchronously."
     }
   ],
   "documentVersion": 0,
@@ -34,25 +34,33 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)CLLocationManager(im)requestStateForRegion:",
+    "parent": {
+      "title": "CLLocationManager"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -81,11 +89,11 @@
   "references": {
     "doc://com.apple.documentation/documentation/corelocation": {
       "title": "Core Location",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation",
-      "url": "/documentation/corelocation",
       "type": "topic",
-      "kind": "symbol",
-      "role": "collection"
+      "identifier": "doc://com.apple.documentation/documentation/corelocation",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/corelocation"
     },
     "doc://com.apple.documentation/documentation/corelocation/cllocationmanager": {
       "title": "CLLocationManager",
@@ -119,13 +127,21 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/mapkit": {
-      "title": "MapKit",
+    "doc://com.apple.documentation/documentation/corelocation/clcircularregion": {
+      "title": "CLCircularRegion",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit",
-      "kind": "article",
-      "role": "collection",
-      "url": "/documentation/mapkit"
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clcircularregion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clcircularregion"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/clbeaconregion": {
+      "title": "CLBeaconRegion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/clbeaconregion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/clbeaconregion"
     },
     "doc://com.apple.documentation/documentation/corelocation/clregion": {
       "title": "CLRegion",
@@ -145,7 +161,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Retrieves the state of a region asynchronously. "
+          "text": "Retrieves the state of a region asynchronously."
         }
       ],
       "fragments": [
@@ -362,6 +378,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -387,11 +404,29 @@
                 {
                   "type": "reference",
                   "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/mapkit"
+                  "identifier": "doc://com.apple.documentation/documentation/corelocation"
                 },
                 {
                   "type": "text",
-                  "text": ". You cannot use this method to determine the state of custom regions you define yourself. "
+                  "text": ", such as "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corelocation/clcircularregion"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corelocation/clbeaconregion"
+                },
+                {
+                  "type": "text",
+                  "text": ". You can’t use this method to determine the state of custom regions you define yourself."
                 }
               ]
             }
@@ -439,7 +474,7 @@
             },
             {
               "type": "text",
-              "text": " parameter contains an unknown type of region object, this method does nothing. "
+              "text": " parameter contains an unknown type of region object, this method does nothing."
             }
           ]
         }
@@ -447,7 +482,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

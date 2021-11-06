@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentHistoryChangeRequest",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,6 +118,48 @@
       "role": "symbol",
       "url": "/documentation/coredata/nspersistentstorerequest"
     },
+    "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/3240593-fetchrequest": {
+      "title": "fetchRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/3240593-fetchrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistenthistorychangerequest/3240593-fetchrequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The specified fetch request, when retrieving history."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892341-resulttype": {
+      "title": "resultType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892341-resulttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistenthistorychangerequest/2892341-resulttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of result that this request returns."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892342-token": {
+      "title": "token",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892342-token",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nspersistenthistorychangerequest/2892342-token",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The specified token, when retrieving history defined by a token."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892339-fetchhistoryafterdate": {
       "title": "fetchHistoryAfterDate:",
       "type": "topic",
@@ -161,20 +208,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892342-token": {
-      "title": "token",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892342-token",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistenthistorychangerequest/2892342-token",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The specified token, when retrieving history defined by a token."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892344-fetchhistoryaftertransaction": {
       "title": "fetchHistoryAfterTransaction:",
       "type": "topic",
@@ -220,20 +253,6 @@
         {
           "kind": "identifier",
           "text": "fetchHistoryWithFetchRequest:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/3240593-fetchrequest": {
-      "title": "fetchRequest",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/3240593-fetchrequest",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistenthistorychangerequest/3240593-fetchrequest",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The specified fetch request, when retrieving history."
         }
       ]
     },
@@ -309,20 +328,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892341-resulttype": {
-      "title": "resultType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892341-resulttype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistenthistorychangerequest/2892341-resulttype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The type of result that this request returns."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest": {
       "title": "NSPersistentHistoryChangeRequest",
       "type": "topic",
@@ -359,16 +364,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -382,15 +377,31 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Retrieving History",
+      "title": "Configuring the Request",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/3240593-fetchrequest",
+        "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892341-resulttype"
+      ],
+      "anchor": "3786734"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Token",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892342-token"
+      ],
+      "anchor": "3786735"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Fetching History",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892339-fetchhistoryafterdate",
         "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892337-fetchhistoryaftertoken",
-        "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892342-token",
         "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892344-fetchhistoryaftertransaction",
-        "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/3240592-fetchhistorywithfetchrequest",
-        "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/3240593-fetchrequest"
-      ]
+        "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/3240592-fetchhistorywithfetchrequest"
+      ],
+      "anchor": "3521071"
     },
     {
       "kind": "taskGroup",
@@ -399,14 +410,8 @@
         "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892338-deletehistorybeforedate",
         "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892340-deletehistorybeforetoken",
         "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892345-deletehistorybeforetransaction"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892341-resulttype"
-      ]
+      ],
+      "anchor": "3521072"
     }
   ],
   "seeAlsoSections": [
@@ -452,6 +457,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -462,7 +468,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

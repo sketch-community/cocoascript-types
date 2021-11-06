@@ -1,0 +1,941 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Combining multiple annotations into a single clustered annotation."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkitjs",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotations"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotations/about_annotation_clustering",
+    "interfaceLanguage": "data"
+  },
+  "legacy_identifier": 2993576,
+  "kind": "article",
+  "metadata": {
+    "title": "About Annotation Clustering",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "MapKit JS"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "data"
+        }
+      ],
+      "paths": [
+        "documentation/mapkitjs/mapkit/annotations/about_annotation_clustering"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/mapkitjs": {
+      "title": "MapKit JS",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs",
+      "url": "/documentation/mapkitjs",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit": {
+      "title": "mapkit",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit",
+      "url": "/documentation/mapkitjs/mapkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotations": {
+      "title": "Annotations",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotations",
+      "url": "/documentation/mapkitjs/mapkit/annotations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973912-annotations": {
+      "title": "annotations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973912-annotations",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/map/2973912-annotations"
+    },
+    "link-media-3118383": {
+      "identifier": "link-media-3118383",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/mapkitjs/mapkit/annotations/about_annotation_clustering#3118383"
+    },
+    "media-3118383": {
+      "identifier": "media-3118383",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 600,
+            "height": 401
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d43bedf14b/3118383@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 600,
+            "height": 401
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9567db8d36/3118383~dark@2x.png"
+        }
+      ],
+      "alt": "Map showing annotations A, B, C, D, and E.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Map with five annotations"
+        }
+      ]
+    },
+    "link-media-3118380": {
+      "identifier": "link-media-3118380",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/mapkitjs/mapkit/annotations/about_annotation_clustering#3118380"
+    },
+    "media-3118380": {
+      "identifier": "media-3118380",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 600,
+            "height": 401
+          },
+          "url": "https://docs-assets.developer.apple.com/published/3e27d2ade0/3118380@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 600,
+            "height": 401
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9ab66ac9f3/3118380~dark@2x.png"
+        }
+      ],
+      "alt": "Map showing a cluster annotation Q, and annotations D and E.",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Zoomed out map with one cluster annotation and two individual annotations"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973823-coordinate": {
+      "title": "coordinate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973823-coordinate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation/2973823-coordinate"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2991317-clusteringidentifier": {
+      "title": "clusteringIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2991317-clusteringidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation/2991317-clusteringidentifier"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973826-draggable": {
+      "title": "draggable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973826-draggable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation/2973826-draggable"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotations/about_annotation_clustering#3118388": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotations/about_annotation_clustering#3118388",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/mapkitjs/mapkit/annotations/about_annotation_clustering#3118388"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973835-title": {
+      "title": "title",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973835-title",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation/2973835-title"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973834-subtitle": {
+      "title": "subtitle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973834-subtitle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation/2973834-subtitle"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/markerannotation/2978331-glyphtext": {
+      "title": "glyphText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/markerannotation/2978331-glyphtext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/markerannotation/2978331-glyphtext"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2991318-memberannotations": {
+      "title": "memberAnnotations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2991318-memberannotations",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation/2991318-memberannotations"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2991319-annotationforcluster": {
+      "title": "annotationForCluster",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2991319-annotationforcluster",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/map/2991319-annotationforcluster"
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotations/about_annotation_clustering": {
+      "title": "About Annotation Clustering",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotations/about_annotation_clustering",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/mapkitjs/mapkit/annotations/about_annotation_clustering",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combining multiple annotations into a single clustered annotation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation": {
+      "title": "mapkit.Annotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The base annotation object, used for creating custom annotations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/annotationcalloutdelegate": {
+      "title": "AnnotationCalloutDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/annotationcalloutdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/annotationcalloutdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for customizing the behavior and appearance of an annotation callout."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/collisionmode": {
+      "title": "mapkit.Annotation.CollisionMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/collisionmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation/collisionmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate whether an annotation collides and how to interpret the collision-frame rectangle of an annotation view."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/displaypriority": {
+      "title": "mapkit.Annotation.DisplayPriority",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/displaypriority",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkitjs/mapkit/annotation/displaypriority",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constant values used to provide a hint the map uses to prioritize displaying annotations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation",
+        "doc://com.apple.documentation/documentation/mapkitjs/annotationcalloutdelegate",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/collisionmode",
+        "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/displaypriority"
+      ],
+      "title": "Annotations",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Annotations display coordinate-specific data on a map, typically in the form of markers or images. To declutter annotation-heavy maps, MapKit JS supports "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "annotation clustering"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". As the user zooms out on a map that contains annotations, MapKit JS groups individual annotations into a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "cluster annotation "
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "if they collide and if they share the same "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2991317-clusteringidentifier"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The cluster annotation's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2991318-memberannotations"
+            },
+            {
+              "type": "text",
+              "text": " property lists the individual annotations contained in the cluster. By default, a cluster annotation's marker displays its member count."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "MapKit JS creates cluster annotations automatically. Although you can't instantiate a cluster annotation, you can customize the look of cluster annotations by providing a delegate method, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2991319-annotationforcluster"
+            },
+            {
+              "type": "text",
+              "text": ", to the map. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Understand the Annotations Arrays",
+          "anchor": "3118384"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Although visible on a map, cluster annotations are not members of the map's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973912-annotations"
+            },
+            {
+              "type": "text",
+              "text": " array. The annotations that make up the cluster do belong to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/map/2973912-annotations"
+            },
+            {
+              "type": "text",
+              "text": " array, however, even if they are not individually visible on the map. For example, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "link-media-3118383"
+            },
+            {
+              "type": "text",
+              "text": " shows a map with annotations A, B, C, D, and E."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3118383",
+              "metadata": {
+                "anchor": "3118383",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Map with five annotations"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the user zooms out so A, B, and C overlap on the map, the annotations combine to create cluster annotation Q, as in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "link-media-3118380"
+            },
+            {
+              "type": "text",
+              "text": ".  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3118380",
+              "metadata": {
+                "anchor": "3118380",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Zoomed out map with one cluster annotation and two individual annotations"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The map now displays annotations Q, D, and E. The resulting annotation arrays are:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "Q.memberAnnotations = [A, B, C];"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "map.annotations = [A, B, C, D, E];"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set Cluster Annotation Properties",
+          "anchor": "3118379"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " Cluster annotations have the same properties as other annotations, but some values cannot be set, including "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973823-coordinate"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2991317-clusteringidentifier"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973826-draggable"
+            },
+            {
+              "type": "text",
+              "text": ". Other values have specific defaults as shown in the following table."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Property"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Default for Clustering"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973835-title"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "title"
+                    },
+                    {
+                      "type": "text",
+                      "text": " of the member annotation with the highest priority"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The annotation title text."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973834-subtitle"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "\"+N more\", where N + 1 is the number of member annotations"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The annotation subtitle text."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973823-coordinate"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The average of the member annotation coordinates"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "This annotation's coordinate. The coordinate of a cluster annotation is automatically set to the average of all of the contained member annotation coordinates. This value cannot be changed; therefore, a cluster annotation can never be dragged."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/markerannotation/2978331-glyphtext"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "N + 1 (the number of member annotations)"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The annotation glyph text."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2973826-draggable"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "false"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Determines whether the user may drag this annotation. This property cannot be modified."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2991318-memberannotations"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "n/a"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A flat array containing all annotations that are grouped together by this cluster. Only cluster annotations have a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "memberAnnotations"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property. This property cannot be modified."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/mapkitjs/mapkit/annotation/2991317-clusteringidentifier"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "null"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A shared identifier for all of the member annotations. An annotation must have a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "clusteringIdentifier"
+                    },
+                    {
+                      "type": "text",
+                      "text": " in order to be clustered."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3118388",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

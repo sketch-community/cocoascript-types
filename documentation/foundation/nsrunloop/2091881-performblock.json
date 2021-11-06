@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Schedules a block that the run loop invokes."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSRunLoop(im)performBlock:",
+    "parent": {
+      "title": "NSRunLoop"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,6 +128,126 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091881-performblock": {
+      "title": "performBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091881-performblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop/2091881-performblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules a block that the run loop invokes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091880-performinmodes": {
+      "title": "performInModes:block:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091880-performinmodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop/2091880-performinmodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules a block that the run loop invokes when it’s running in any of the specified modes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performInModes:block:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop/1409310-performselector": {
+      "title": "performSelector:target:argument:order:modes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/1409310-performselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop/1409310-performselector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Schedules the sending of a message on the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performSelector:target:argument:order:modes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop/1418077-cancelperformselector": {
+      "title": "cancelPerformSelector:target:argument:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/1418077-cancelperformselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop/1418077-cancelperformselector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels the sending of a previously scheduled message."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelPerformSelector:target:argument:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrunloop/1414208-cancelperformselectorswithtarget": {
+      "title": "cancelPerformSelectorsWithTarget:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrunloop/1414208-cancelperformselectorswithtarget",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrunloop/1414208-cancelperformselectorswithtarget",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels all outstanding ordered performs scheduled with a given target."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelPerformSelectorsWithTarget:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -122,6 +256,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsrunloop/2091880-performinmodes",
+        "doc://com.apple.documentation/documentation/foundation/nsrunloop/1409310-performselector",
+        "doc://com.apple.documentation/documentation/foundation/nsrunloop/1418077-cancelperformselector",
+        "doc://com.apple.documentation/documentation/foundation/nsrunloop/1414208-cancelperformselectorswithtarget"
+      ],
+      "title": "Scheduling and Canceling Tasks",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -182,6 +328,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -189,10 +336,32 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "block",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A block that the run loop invokes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

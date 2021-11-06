@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns whether the receiver can add an input group."
+      "text": "Determines whether the asset writer supports adding the input group."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter(im)canAddInputGroup:",
+    "parent": {
+      "title": "AVAssetWriter"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,45 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype": {
-      "title": "outputFileType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387349-outputfiletype"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup": {
-      "title": "AVAssetWriterInputGroup",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputgroup"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups": {
-      "title": "inputGroups",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1388432-inputgroups",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array containing the asset writer input groups added to the asset writer."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -170,27 +140,33 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup": {
-      "title": "addInputGroup:",
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup": {
+      "title": "AVAssetWriterInputGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputgroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups": {
+      "title": "inputGroups",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388432-inputgroups",
       "abstract": [
         {
           "type": "text",
-          "text": "Adds an asset writer input group instance to the asset writer."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addInputGroup:"
+          "text": "The input groups an asset writer contains."
         }
       ]
     },
@@ -204,7 +180,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns whether the receiver can add an input group."
+          "text": "Determines whether the asset writer supports adding the input group."
         }
       ],
       "fragments": [
@@ -215,6 +191,30 @@
         {
           "kind": "identifier",
           "text": "canAddInputGroup:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup": {
+      "title": "addInputGroup:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an input group to an asset writer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addInputGroup:"
         }
       ]
     },
@@ -229,10 +229,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1385643-addinputgroup"
       ],
-      "title": "Managing Asset Writer Input Groups",
+      "title": "Configuring Input Groups",
       "generated": true
     }
   ],
@@ -290,6 +290,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -311,7 +312,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The asset writer input group to be added."
+                  "text": "The asset writer input group to add."
                 }
               ]
             }
@@ -338,24 +339,7 @@
             },
             {
               "type": "text",
-              "text": " if the receiver can add the "
-            },
-            {
-              "type": "codeVoice",
-              "code": "inputGroup"
-            },
-            {
-              "type": "text",
-              "text": " to "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388432-inputgroups"
-            },
-            {
-              "type": "text",
-              "text": " otherwise "
+              "text": " if you can add the input group to the asset writer; otherwise "
             },
             {
               "type": "reference",
@@ -384,25 +368,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If "
+              "text": "This method returns "
             },
             {
               "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype"
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
             },
             {
               "type": "text",
-              "text": " specifies a container format that does not support mutually exclusive relationships among tracks, or if the specified instance of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup"
-            },
-            {
-              "type": "text",
-              "text": " contains inputs with media types that cannot be related, the group cannot be added."
+              "text": " if the asset writer’s output file type doesn’t support mutually exclusive relationships among tracks, or if the input group contains inputs with media types that you can’t relate."
             }
           ]
         }
@@ -410,7 +385,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

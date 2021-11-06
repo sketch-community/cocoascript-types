@@ -12,15 +12,14 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions"
       ]
     ]
@@ -44,35 +43,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@SparseOrder_t",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,10 +119,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions": {
-      "title": "Sparse Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions": {
+      "title": "Sparse Matrix Factor Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -131,35 +135,13 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions": {
+      "title": "Sparse Symbolic Factorization Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions": {
-      "title": "Sparse Symbolic Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order": {
-      "title": "order",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "User-supplied array for ordering."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/kernel/uint8_t": {
       "title": "uint8_t",
@@ -179,7 +161,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Default ordering."
+          "text": "The default ordering."
         }
       ]
     },
@@ -193,16 +175,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "User-supplied ordering, or identity if "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order"
-        },
-        {
-          "type": "text",
-          "text": " is null."
+          "text": "The user-supplied ordering, or identity if the order parameter is null."
         }
       ]
     },
@@ -216,7 +189,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "AMD ordering."
+          "text": "Approximate minimum degree (AMD) ordering."
         }
       ]
     },
@@ -230,7 +203,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "METIS Nested Dissection ordering."
+          "text": "METIS nested dissection ordering."
         }
       ]
     },
@@ -244,7 +217,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Column AMD ordering for "
+          "text": "The column AMD ordering for "
         },
         {
           "type": "emphasis",
@@ -257,7 +230,7 @@
         },
         {
           "type": "text",
-          "text": ". "
+          "text": "."
         }
       ]
     },
@@ -271,7 +244,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Flags controlling the computation."
+          "text": "The flags that control the computation."
         }
       ]
     },
@@ -289,20 +262,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror": {
-      "title": "reportError",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Function to use to report parameter errors."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868231-ordermethod": {
       "title": "orderMethod",
       "type": "topic",
@@ -313,7 +272,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Ordering algorithm to use."
+          "text": "The ordering algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order": {
+      "title": "order",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user-supplied array for ordering."
         }
       ]
     },
@@ -331,6 +304,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns": {
+      "title": "ignoreRowsAndColumns",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array that contains row and column indices to ignore."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc": {
       "title": "malloc",
       "type": "topic",
@@ -341,7 +328,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Function to use to allocate any storage needed."
+          "text": "The function for allocating any necessary storage."
         }
       ]
     },
@@ -355,21 +342,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Function to use to free allocated storage."
+          "text": "The function for freeing allocated storage."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns": {
-      "title": "ignoreRowsAndColumns",
+    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror": {
+      "title": "reportError",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
+      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
       "abstract": [
         {
           "type": "text",
-          "text": "An array containing row and column indices to ignore."
+          "text": "The function for reporting parameter errors."
         }
       ]
     },
@@ -391,7 +378,8 @@
         "doc://com.apple.documentation/documentation/accelerate/sparseorder_t/sparseorderamd",
         "doc://com.apple.documentation/documentation/accelerate/sparseorder_t/sparseordermetis",
         "doc://com.apple.documentation/documentation/accelerate/sparseorder_t/sparseordercolamd"
-      ]
+      ],
+      "anchor": "2877713"
     }
   ],
   "seeAlsoSections": [
@@ -399,12 +387,12 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868170-control",
         "doc://com.apple.documentation/documentation/accelerate/sparsecontrol_t",
-        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868231-ordermethod",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
+        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868237-free",
-        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns"
+        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror"
       ],
       "title": "Inspecting Symbolic Factor Options",
       "generated": true
@@ -472,6 +460,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -494,7 +483,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The column and row ordering used when eliminating variables in a sparse factorization has a significant influence on the size of the resulting factors and the amount of work required to calculate them. Minimizing the size or work required is an NP-complete problem, so only heuristics are implemented in this library."
+              "text": "The column and row ordering you use when eliminating variables in a sparse factorization has a significant influence on the size of the resulting factors and the amount of work necessary to calculate them. Minimizing the size or the amount of work is an NP-complete problem, so the system only implements heuristics in this library."
             }
           ]
         },
@@ -503,7 +492,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Approximate Minimum Degree (AMD) based orderings tend to be fast and provide good quality for small matrices. Conversely, nested dissection-based orderings (such as METIS) are normally considerably slower to compute, but provide better quality orderings for larger problems, and expose more parallelism during the factorization. Use AMD unless the problem is very large (millions of rows and columns), or you will perform many repeated factorizations. If you are uncertain, try both and see which gives better performance for your usage."
+              "text": "Approximate minimum degree (AMD)-based orderings tend to be fast and provide good quality for small matrices. Conversely, nested dissection-based orderings, such as METIS, are usually considerably slower to compute, but provide better quality orderings for larger problems, and expose more parallelism during the factorization. Use AMD unless the problem is very large (millions of rows and columns) to avoid performing many repeated factorizations. If you’re uncertain, try both and see which gives better performance for your usage."
             }
           ]
         },
@@ -512,7 +501,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "AMD and METIS provide good orderings for symmetric matrices. They can be used  for QR factorizations, but this involves forming "
+              "text": "AMD and METIS provide good orderings for symmetric matrices. You can use them for QR factorizations, but that involves forming "
             },
             {
               "type": "emphasis",
@@ -543,7 +532,7 @@
             },
             {
               "type": "text",
-              "text": " explicitly, which is expensive. Column AMD (COLAMD), on the other hand, finds an ordering for "
+              "text": " explicitly, which is expensive. Alternatively, column AMD (COLAMD) finds an ordering for "
             },
             {
               "type": "emphasis",
@@ -587,7 +576,7 @@
             },
             {
               "type": "text",
-              "text": ". For this reason, COLAMD cannot be used for symmetric factorizations.   "
+              "text": ". For this reason, you can’t use COLAMD for symmetric factorizations.   "
             }
           ]
         }
@@ -595,7 +584,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

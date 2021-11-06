@@ -1,0 +1,588 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add the App Groups capability and make data stored in your App Clip available to its corresponding app."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/app_clips"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3587143,
+  "kind": "article",
+  "metadata": {
+    "title": "Sharing Data Between Your App Clip and Your Full App",
+    "role": "article",
+    "roleHeading": "Article"
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/app_clips": {
+      "title": "App Clips",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips",
+      "url": "/documentation/app_clips",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1412643-containerurlforsecurityapplicati": {
+      "title": "containerURLForSecurityApplicationGroupIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1412643-containerurlforsecurityapplicati",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1412643-containerurlforsecurityapplicati",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "containerURLForSecurityApplicationGroupIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstring/1417341-writetourl": {
+      "title": "writeToURL:atomically:encoding:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring/1417341-writetourl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstring/1417341-writetourl",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "writeToURL:atomically:encoding:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstring/1414463-initwithcontentsofurl": {
+      "title": "initWithContentsOfURL:encoding:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring/1414463-initwithcontentsofurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstring/1414463-initwithcontentsofurl",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithContentsOfURL:encoding:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuserdefaults": {
+      "title": "NSUserDefaults",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuserdefaults",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuserdefaults"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3599732": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3599732",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3599732"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3599731": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3599731",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3599731"
+    },
+    "doc://com.apple.documentation/documentation/sign_in_with_apple": {
+      "title": "Sign in with Apple",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sign_in_with_apple",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/sign_in_with_apple"
+    },
+    "doc://com.apple.documentation/documentation/authenticationservices/asauthorizationappleidcredential": {
+      "title": "ASAuthorizationAppleIDCredential",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/authenticationservices/asauthorizationappleidcredential",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/authenticationservices/asauthorizationappleidcredential"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3632924": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3632924",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3632924"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3632923": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3632923",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app#3632923"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/recommending_your_app_to_app_clip_users": {
+      "title": "Recommending Your App to App Clip Users",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/recommending_your_app_to_app_clip_users",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/recommending_your_app_to_app_clip_users",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display an overlay in your App Clip to recommend your app to users."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app": {
+      "title": "Sharing Data Between Your App Clip and Your Full App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/sharing_data_between_your_app_clip_and_your_full_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add the App Groups capability and make data stored in your App Clip available to its corresponding app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/app_clips/recommending_your_app_to_app_clip_users"
+      ],
+      "title": "App Clip to Full App Transition",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When users of your App Clip install your full app, the full app replaces the App Clip and receives all invocations in its place. It’s important you provide a good user experience to users who have become familiar with the App Clip and are now starting to use the full app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Show information in the app that the user entered when they used the App Clip."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Make downloaded data available to the app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Don’t require users to log in to their account again."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Share Data Between the App Clip and the App",
+          "anchor": "3599728"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your App Clip can make its data accessible to its corresponding app by storing data in a shared container. The full app can then access this data when it replaces the App Clip, providing a positive user experience."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To store data in a shared container:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add the App Groups capability to targets for both the App Clip and the full app."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For both targets, add the same app group to the capability; for example, "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "group.exampleApp.appClipMigration"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add code to your App Clip target that obtains the URL of the shared container using "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1412643-containerurlforsecurityapplicati"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and store data using this URL; for example, by using "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring/1417341-writetourl"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In your full app’s code, use the same function to obtain the URL of the shared container and access its content; for example, by using "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring/1414463-initwithcontentsofurl"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to a shared container, the App Clip can also store information in a shared "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuserdefaults"
+            },
+            {
+              "type": "text",
+              "text": " instance that’s accessible to the full app. The following code uses the configured app group to create the shared "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UserDefaults"
+            },
+            {
+              "type": "text",
+              "text": " instance and store a string:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let sharedUserDefaults = UserDefaults(suiteName: \"group.exampleApp.appClipMigration\") else {",
+            "    // Error handling",
+            "}",
+            "sharedUserDefaults.set(\"A sample string\", forKey: \"sharedText\")"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3599732",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When users install the full app, it can access the shared user defaults. For example, to access the string stored in the previous code:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let sharedUserDefaults = UserDefaults(suiteName: \"group.exampleApp.appClipDataMigration\") else {",
+            "    // Error handling",
+            "}",
+            "guard let migratedData = sharedUserDefaults.string(forKey: \"sharedText\") else { return }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3599731",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To preserve user privacy across apps and App Clips, an App Clip can only share its data with its corresponding app. In addition, you can’t make information the App Clip stores in the keychain accessible to its corresponding full app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Don’t store sensitive user information, such as passwords, in a shared app container or in user defaults. However, if your App Clip requires people to log in to an account to offer its functionality, you likely want to offer a seamless upgrade experience to the full app. In this case, you might store an API key, hashed user ID, or similarly anonymized identifier in the shared app container or in user defaults. Then, you can use the identifier when the user launches the full app to offer a more seamless upgrade experience that doesn’t require them to again log in."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Offer Sign in with Apple",
+          "anchor": "3599736"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "App Clips may use any technology to allow users to sign in to their account or create one. However, if your App Clip requires users to log in to an account, consider offering "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sign_in_with_apple"
+            },
+            {
+              "type": "text",
+              "text": ". In addition to helping provide a simple, secure, and privacy-preserving account creation and sign-in experience, it offers a positive experience when a user starts using the full app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you offer Sign in with Apple and create a shared data container, create a user experience that doesn’t require users to log in again when they start using the full app. The following code stores the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/authenticationservices/asauthorizationappleidcredential"
+            },
+            {
+              "type": "text",
+              "text": " in a shared "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuserdefaults"
+            },
+            {
+              "type": "text",
+              "text": " instance:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let groupUserDefaults = UserDefaults(suiteName: \"group.com.example.appClipDataMigration\")",
+            "guard let credential = authorization.credential as ASAuthorizationAppleIDCredential else { return }",
+            "groupUserDefaults?.set(credential.user, forKey: \"SavedUserID\")"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3632924",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the app’s code, retrieve the stored Apple ID authorization credential and use it to sign in the user:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let provider = ASAuthorizationAppleIDProvider()",
+            "let groupUserDefaults = UserDefaults(suiteName: \"group.com.example.appClipDataMigration\")",
+            "let user = groupUserDefaults?.get(\"SavedUserID\")",
+            "provider.getCredentialState(forUserID: user) { state, error in",
+            "    if state == .authorized {",
+            "        readFavoriteSmoothies(user)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3632923",
+            "title": "Listing 4"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

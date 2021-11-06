@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The result returned when executing a batch delete request."
+      "text": "An object that describes the result of a batch delete request."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSBatchDeleteResult",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,7 +124,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchdeleteresult/1404922-result",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsbatchdeleteresult/1404922-result"
+      "url": "/documentation/coredata/nsbatchdeleteresult/1404922-result",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The value the request returns after it executes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsbatchdeleteresult/1404941-resulttype": {
       "title": "resultType",
@@ -127,7 +138,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchdeleteresult/1404941-resulttype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsbatchdeleteresult/1404941-resulttype"
+      "url": "/documentation/coredata/nsbatchdeleteresult/1404941-resulttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data type of the request’s result value."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype": {
       "title": "NSBatchDeleteRequestResultType",
@@ -135,7 +152,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsbatchdeleterequestresulttype"
+      "url": "/documentation/coredata/nsbatchdeleterequestresulttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The types of result a batch delete request can provide when it executes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequest": {
       "title": "NSBatchDeleteRequest",
@@ -147,7 +170,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A request to Core Data to do a batch delete of data in a persistent store without loading any data into memory."
+          "text": "A request that deletes objects in the SQLite persistent store without loading them into memory."
         }
       ]
     },
@@ -161,7 +184,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The result returned when executing a batch delete request."
+          "text": "An object that describes the result of a batch delete request."
         }
       ]
     },
@@ -171,16 +194,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -196,12 +209,13 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Accessing Results",
+      "title": "Accessing the Result",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsbatchdeleteresult/1404922-result",
         "doc://com.apple.documentation/documentation/coredata/nsbatchdeleteresult/1404941-resulttype",
         "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype"
-      ]
+      ],
+      "anchor": "2860933"
     }
   ],
   "seeAlsoSections": [
@@ -247,6 +261,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -257,7 +272,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

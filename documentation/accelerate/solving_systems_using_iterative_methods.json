@@ -36,8 +36,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -163,22 +163,8 @@
           "url": "https://docs-assets.developer.apple.com/published/ab65d5da7e/e141fd08-c867-46cd-9b4b-e5d09376990f.png"
         }
       ],
-      "alt": "Equation to solve using the iterative method Least Squares Minimum Residual (LSMR).",
+      "alt": "A mathematical equation that consists of a four-by-three matrix with three empty elements multiplied by the four-element vector of unknown values, x, that equals a four-element vector of known values.",
       "title": "Figure 1"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods": {
-      "title": "Implementing Iterative Methods",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/accelerate/implementing_iterative_methods",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Use iterative methods to solve large problems faster and with a lower memory overhead than with direct methods.  "
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods": {
       "title": "Solving Systems Using Direct Methods",
@@ -234,7 +220,6 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices",
-        "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
         "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers"
@@ -258,20 +243,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The code discussed here solves the following equation by using the iterative method "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "Least Squares Minimum Residual"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " (LSMR) to find the solution to this equation:"
+              "text": "The code in this article solves the following equation by using the iterative method of least squares minimum residual (LSMR) to find the solution."
             }
           ]
         },
@@ -306,7 +278,7 @@
             },
             {
               "type": "text",
-              "text": " refers to the 4 x 3 matrix, and "
+              "text": " refers to the four-by-three matrix, and "
             },
             {
               "type": "emphasis",
@@ -367,7 +339,7 @@
             },
             {
               "type": "text",
-              "text": " is overdetermined (it has more rows than columns), for most right-hand sides there will not be an exact solution. In this case, it is normally required to find the closest solution, in the sense that it minimizes the 2-norm of the error. That is, it solves the optimization "
+              "text": " is an overdetermined matrix (it has more rows than columns), for most right-hand-sides there isn’t an exact solution. In this case, you usually find the closest solution, in the sense that it minimizes the 2-norm of the error. That is, it solves the optimization "
             },
             {
               "type": "emphasis",
@@ -398,7 +370,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You could solve this problem through a direct method such as Sparse QR; however, for some problems, a faster method that provides a \"good enough\" solution is the iterative method LSMR. Unlike direct methods that factorize the matrix "
+              "text": "You could solve this problem through a direct method, such as sparse QR; however, for some problems, a faster method that provides an adequate solution is the iterative method LSMR. Unlike direct methods that factorize the matrix "
             },
             {
               "type": "emphasis",
@@ -464,7 +436,7 @@
             },
             {
               "type": "text",
-              "text": ", and is hence problem specific. For least-squares problems, just using a diagonal matrix with entries equal to the 2-norm of each column is often sufficient, and is the method discussed here."
+              "text": ", and is thereby problem-specific. For least-squares problems, just using a diagonal matrix with entries equal to the 2-norm of each column is often sufficient, and is the method that this article covers."
             }
           ]
         },
@@ -473,7 +445,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Although you do not need the matrix explicitly to use iterative methods, the Accelerate framework offers the ability to supply a matrix explicitly if it is available, reducing the code required. The example takes advantage of this ability. "
+              "text": "Although you don’t need the matrix explicitly to use iterative methods, the Accelerate framework offers the ability to supply a matrix explicitly if it’s available, reducing the required code. The example above takes advantage of this ability. "
             }
           ]
         },
@@ -488,7 +460,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use the code below—which is discussed in detail in "
+              "text": "Use the code below — which "
             },
             {
               "type": "reference",
@@ -497,7 +469,7 @@
             },
             {
               "type": "text",
-              "text": "—to define the unsymmetric matrix "
+              "text": " covers in detail — to define the unsymmetric matrix "
             },
             {
               "type": "emphasis",
@@ -562,7 +534,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You define the right-hand-side and solution vectors as arrays wrapped in flexible data types. The initial values of "
+              "text": "You define the right-hand-side and solution vectors as arrays that you wrap in flexible data types. The sparse solve function uses the initial values of "
             },
             {
               "type": "emphasis",
@@ -575,7 +547,7 @@
             },
             {
               "type": "text",
-              "text": " are used as an initial guess of the solution. If no good estimate is known, initialize all the values to zero:"
+              "text": " as an initial guess of the solution. If you don’t have a good estimate, initialize all the values to zero."
             }
           ]
         },
@@ -605,7 +577,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "With the matrix and vectors created, you are ready to perform the full LSMR iteration and iterate over the results in "
+              "text": "After creating the matrix and vectors, you’re ready to perform the full LSMR iteration and iterate over the results in "
             },
             {
               "type": "emphasis",
@@ -676,7 +648,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You should get this output: "
+              "text": "The output is: "
             },
             {
               "type": "codeVoice",
@@ -692,7 +664,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

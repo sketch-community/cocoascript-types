@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the header view associated with the specified section."
+      "text": "Returns the header view for the specified section."
     }
   ],
   "documentVersion": 0,
@@ -36,20 +36,28 @@
       {
         "name": "iOS",
         "introducedAt": "6.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "6.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITableView(im)headerViewForSection:",
+    "parent": {
+      "title": "UITableView"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -75,8 +83,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -137,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A view that presents data using rows arranged in a single column."
+          "text": "A view that presents data using rows in a single column."
         }
       ]
     },
@@ -167,7 +175,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the table cell at the specified index path."
+          "text": "Returns the table cell at the index path you specify."
         }
       ],
       "fragments": [
@@ -203,7 +211,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the header view associated with the specified section."
+          "text": "Returns the header view for the specified section."
         }
       ],
       "fragments": [
@@ -239,7 +247,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the footer view associated with the specified section."
+          "text": "Returns the footer view for the specified section."
         }
       ],
       "fragments": [
@@ -275,7 +283,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an index path representing the row and section of a given table-view cell."
+          "text": "Returns an index path that represents the row and section of a specified table-view cell."
         }
       ],
       "fragments": [
@@ -311,7 +319,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an index path identifying the row and section at the given point."
+          "text": "Returns an index path that identifies the row and section at the specified point."
         }
       ],
       "fragments": [
@@ -347,7 +355,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of index paths, each representing a row enclosed by a given rectangle."
+          "text": "Returns an array of index paths, each representing a row that the specified rectangle encloses."
         }
       ],
       "fragments": [
@@ -516,6 +524,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -574,7 +583,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

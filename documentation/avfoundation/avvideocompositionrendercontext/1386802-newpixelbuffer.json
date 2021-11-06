@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVVideoCompositionRenderContext(im)newPixelBuffer",
+    "parent": {
+      "title": "AVVideoCompositionRenderContext"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,9 +128,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines the context within which custom compositors render new output pixel buffers."
+          "text": "An object that defines the context in which custom compositors render pixel buffers."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref": {
+      "title": "CVPixelBufferRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/cvpixelbufferref"
     },
     "doc://com.apple.documentation/documentation/corevideo/kcvimagebuffercleanaperturekey": {
       "title": "kCVImageBufferCleanApertureKey",
@@ -147,14 +163,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/corevideo/1535816-cvbufferrelease"
-    },
-    "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref": {
-      "title": "CVPixelBufferRef",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/corevideo/cvpixelbufferref"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext/1386802-newpixelbuffer": {
       "title": "newPixelBuffer",
@@ -222,6 +230,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -290,7 +299,7 @@
             },
             {
               "type": "text",
-              "text": " attachments are set to match the current composition processor properties. You are responsible for calling "
+              "text": " attachments are set to match the current composition processor properties. You’re responsible for calling "
             },
             {
               "type": "reference",
@@ -307,7 +316,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

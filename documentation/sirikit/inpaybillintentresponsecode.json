@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse"
       ]
     ]
@@ -35,25 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:@T@INPayBillIntentResponseCode",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +101,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -103,6 +116,14 @@
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
+    },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
@@ -124,7 +145,8 @@
           "type": "text",
           "text": "The response didn’t specify a response code."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode/inpaybillintentresponsecodeready": {
       "title": "INPayBillIntentResponseCodeReady",
@@ -136,9 +158,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You are ready to handle the intent."
+          "text": "You’re ready to handle the intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode/inpaybillintentresponsecodeinprogress": {
       "title": "INPayBillIntentResponseCodeInProgress",
@@ -150,9 +173,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "You have received the payment details and are in the process of scheduling the transaction."
+          "text": "You’ve received the payment details and are in the process of scheduling the transaction."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode/inpaybillintentresponsecodesuccess": {
       "title": "INPayBillIntentResponseCodeSuccess",
@@ -166,7 +190,8 @@
           "type": "text",
           "text": "You successfully scheduled the transaction."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode/inpaybillintentresponsecodefailure": {
       "title": "INPayBillIntentResponseCodeFailure",
@@ -180,7 +205,8 @@
           "type": "text",
           "text": "You were unable to schedule the transaction."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode/inpaybillintentresponsecodefailurerequiringapplaunch": {
       "title": "INPayBillIntentResponseCodeFailureRequiringAppLaunch",
@@ -194,7 +220,8 @@
           "type": "text",
           "text": "The user must launch your app to schedule the transaction."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode/inpaybillintentresponsecodefailurecredentialsunverified": {
       "title": "INPayBillIntentResponseCodeFailureCredentialsUnverified",
@@ -208,7 +235,8 @@
           "type": "text",
           "text": "The transaction failed because you were unable to verify the credentials of the user or the payee."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode/inpaybillintentresponsecodefailureinsufficientfunds": {
       "title": "INPayBillIntentResponseCodeFailureInsufficientFunds",
@@ -220,9 +248,10 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The transaction failed because the user’s account did not contain sufficient funds."
+          "text": "The transaction failed because the user’s account didn’t contain sufficient funds."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse/2799031-code": {
       "title": "code",
@@ -236,7 +265,8 @@
           "type": "text",
           "text": "The code indicating whether you successfully handled the intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode": {
       "title": "INPayBillIntentResponseCode",
@@ -250,7 +280,8 @@
           "type": "text",
           "text": "Constants indicating the state of the response."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -260,6 +291,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -273,7 +324,8 @@
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode/inpaybillintentresponsecodefailurerequiringapplaunch",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode/inpaybillintentresponsecodefailurecredentialsunverified",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponsecode/inpaybillintentresponsecodefailureinsufficientfunds"
-      ]
+      ],
+      "anchor": "2806346"
     }
   ],
   "seeAlsoSections": [
@@ -347,6 +399,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -355,7 +408,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

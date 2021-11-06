@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes a spotlight delegate with the specified description and managed object model."
+      "text": "Creates a Core Spotlight delegate with the specified store description and managed object model."
     }
   ],
   "documentVersion": 0,
@@ -36,25 +36,41 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSCoreDataCoreSpotlightDelegate(im)initForStoreWithDescription:model:",
+    "parent": {
+      "title": "NSCoreDataCoreSpotlightDelegate"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +131,31 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A delegate that supports Core Spotlight integration."
+          "text": "A set of methods that enable integration with Core Spotlight."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751984-initforstorewithdescription": {
+      "title": "initForStoreWithDescription:coordinator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751984-initforstorewithdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/3751984-initforstorewithdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a Core Spotlight delegate with the specified store description and coordinator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initForStoreWithDescription:coordinator:"
         }
       ]
     },
@@ -145,7 +185,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a spotlight delegate with the specified description and managed object model."
+          "text": "Creates a Core Spotlight delegate with the specified store description and managed object model."
         }
       ],
       "fragments": [
@@ -157,7 +197,8 @@
           "kind": "identifier",
           "text": "initForStoreWithDescription:model:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -167,6 +208,35 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751984-initforstorewithdescription"
+        },
+        {
+          "type": "text",
+          "text": " instead."
+        }
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751984-initforstorewithdescription"
+      ],
+      "title": "Creating a Core Spotlight Delegate",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -251,15 +321,52 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "description",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An object that describes the persistent store that contains the entities to index."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "model",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The managed object model that contains the definitions of the entities to index."
+                }
+              ]
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

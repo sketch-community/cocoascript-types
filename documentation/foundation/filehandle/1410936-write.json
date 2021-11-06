@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Synchronously writes the specified data to the receiver."
+      "text": "Writes the specified data synchronously to the file handle."
     }
   ],
   "documentVersion": 0,
@@ -36,39 +36,49 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.4",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSFileHandle(im)writeData:",
+    "parent": {
+      "title": "FileHandle"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -86,8 +96,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -144,6 +154,50 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3516320-write": {
+      "title": "write(contentsOf:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516320-write",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3516320-write",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Writes the specified data synchronously to the file handle."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "write"
+        },
+        {
+          "kind": "text",
+          "text": "<T>("
+        },
+        {
+          "kind": "identifier",
+          "text": "contentsOf"
+        },
+        {
+          "kind": "text",
+          "text": ": T)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception": {
+      "title": "fileHandleOperationException",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception"
+    },
     "doc://com.apple.documentation/documentation/foundation/filehandle/1411463-availabledata": {
       "title": "availableData",
       "type": "topic",
@@ -182,7 +236,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Synchronously reads data up to the specified number of bytes."
+          "text": "Reads data synchronously up to the specified number of bytes."
         }
       ],
       "fragments": [
@@ -218,7 +272,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Synchronously reads the available data up to the end of file or maximum number of bytes."
+          "text": "Reads the available data synchronously up to the end of file or maximum number of bytes."
         }
       ],
       "fragments": [
@@ -254,7 +308,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Synchronously writes the specified data to the receiver."
+          "text": "Writes the specified data synchronously to the file handle."
         }
       ],
       "fragments": [
@@ -281,25 +335,52 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516320-write"
+        },
+        {
+          "type": "text",
+          "text": " to handle errors when writing data to the file handle."
+        }
+      ]
+    }
+  ],
   "diffAvailability": {
     "minor": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
   "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3516320-write"
+      ],
+      "title": "Writing to a File Handle",
+      "generated": true
+    },
     {
       "title": "Related Documentation",
       "generated": false,
@@ -364,6 +445,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -386,7 +468,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The data to be written."
+                  "text": "The data to write to the file handle."
                 }
               ]
             }
@@ -408,15 +490,39 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the receiver is a file, writing takes place at the file pointer’s current position. After it writes the data, the method advances the file pointer by the number of bytes written. This method raises an exception if the file descriptor is closed or is not valid, if the receiver represents an unconnected pipe or socket endpoint, if no free space is left on the file system, or if any other writing error occurs."
+              "text": "If the handle represents a file, writing takes place at the file pointer’s current position. After it writes the data, the method advances the file pointer by the number of bytes written. "
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This method raises "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception"
+                },
+                {
+                  "type": "text",
+                  "text": " if the file descriptor is closed or isn’t valid, if the handle represents an unconnected pipe or socket endpoint, if there isn’t any free space on the file system, or if any other writing error occurs."
+                }
+              ]
+            }
+          ],
+          "style": "important"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

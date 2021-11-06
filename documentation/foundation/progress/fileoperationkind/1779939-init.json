@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a new kind of file operation using the raw value of a string you specify."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -30,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So27NSProgressFileOperationKinda8rawValueABSS_tcfc",
+    "parent": {
+      "title": "Progress.FileOperationKind"
+    },
     "symbolKind": "structctr",
     "fragments": [
       {
@@ -80,8 +94,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,45 +146,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "When tracking file operations with the progress "
-        },
-        {
-          "type": "text",
-          "text": " set to "
-        },
-        {
-          "type": "text",
-          "text": ", you must provide a value for the "
-        },
-        {
-          "type": "text",
-          "text": " in the user info dictionary. There are four possible values."
+          "text": "The kind of file operation."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/progress/1416139-kind": {
-      "title": "kind",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1416139-kind",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progress/1416139-kind"
-    },
-    "doc://com.apple.documentation/documentation/foundation/progresskind/1409141-file": {
-      "title": "file",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind/1409141-file",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progresskind/1409141-file"
-    },
-    "doc://com.apple.documentation/documentation/foundation/progressuserinfokey/1408097-fileoperationkindkey": {
-      "title": "fileOperationKindKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progressuserinfokey/1408097-fileoperationkindkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progressuserinfokey/1408097-fileoperationkindkey"
     },
     "doc://com.apple.documentation/documentation/swift/string": {
       "title": "String",
@@ -180,6 +158,62 @@
       "role": "symbol",
       "url": "/documentation/swift/string"
     },
+    "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1924142-init": {
+      "title": "init(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1924142-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/fileoperationkind/1924142-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new kind of file operation using the specified string."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "(String)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1779939-init": {
+      "title": "init(rawValue:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1779939-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/fileoperationkind/1779939-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new kind of file operation using the raw value of a string you specify."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": String)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -188,6 +222,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1924142-init"
+      ],
+      "title": "Creating Kinds of File Operation",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -226,6 +269,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -233,10 +277,32 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "rawValue",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A string that represents the kind of file operation."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

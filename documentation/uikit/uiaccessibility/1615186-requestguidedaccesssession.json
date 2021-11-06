@@ -11,14 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
@@ -40,12 +40,12 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos"
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit"
       ]
     ]
   },
@@ -68,20 +68,28 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@F@UIAccessibilityRequestGuidedAccessSession",
+    "parent": {
+      "title": "UIAccessibility"
+    },
     "symbolKind": "structcm",
     "fragments": [
       {
@@ -115,8 +123,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -151,10 +159,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -173,7 +181,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility"
+      "url": "/documentation/uikit/uiaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A namespace for accessibility symbols for UIKit apps."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -241,7 +255,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether the user has enabled Guided Access."
+          "text": "A Boolean value that indicates whether the Guided Access setting is in an enabled state."
         }
       ],
       "fragments": [
@@ -274,122 +288,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/swift/void"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615119-focusedelement": {
-      "title": "focusedElement(using:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615119-focusedelement",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1615119-focusedelement",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the element that is currently focused by the specified assistive technology."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "focusedElement"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "using"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibility.AssistiveTechnologyIdentifier?) -> Any?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648477-hearingdevicepairedear": {
-      "title": "hearingDevicePairedEar",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648477-hearingdevicepairedear",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1648477-hearingdevicepairedear",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the current pairing status of MFi hearing aids."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "hearingDevicePairedEar"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibility.HearingDeviceEar"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/hearingdeviceear": {
-      "title": "UIAccessibility.HearingDeviceEar",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/hearingdeviceear",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/hearingdeviceear",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants that specify how a hearing device is being used."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "struct "
-        },
-        {
-          "kind": "identifier",
-          "text": "UIAccessibility.HearingDeviceEar"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1624919-registergestureconflictwithzoom": {
-      "title": "registerGestureConflictWithZoom()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1624919-registergestureconflictwithzoom",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1624919-registergestureconflictwithzoom",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Warns users that application-specific gestures conflict with the system-defined Zoom accessibility gestures."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "registerGestureConflictWithZoom"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615186-requestguidedaccesssession": {
       "title": "requestGuidedAccessSession(enabled:completionHandler:)",
@@ -435,17 +333,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1624921-zoomfocuschanged": {
-      "title": "zoomFocusChanged(zoomType:toFrame:in:)",
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3089195-configureforguidedaccess": {
+      "title": "configureForGuidedAccess(features:enabled:completionHandler:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1624921-zoomfocuschanged",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3089195-configureforguidedaccess",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/1624921-zoomfocuschanged",
+      "url": "/documentation/uikit/uiaccessibility/3089195-configureforguidedaccess",
       "abstract": [
         {
           "type": "text",
-          "text": "Notifies the system that the app’s focus has changed to a new location."
+          "text": "Enables or disables the specified accessibility features while using Guided Access."
         }
       ],
       "fragments": [
@@ -455,7 +353,7 @@
         },
         {
           "kind": "identifier",
-          "text": "zoomFocusChanged"
+          "text": "configureForGuidedAccess"
         },
         {
           "kind": "text",
@@ -463,71 +361,87 @@
         },
         {
           "kind": "identifier",
-          "text": "zoomType"
+          "text": "features"
         },
         {
           "kind": "text",
-          "text": ": UIAccessibility.ZoomType, "
+          "text": ": UIGuidedAccessAccessibilityFeature, "
         },
         {
           "kind": "identifier",
-          "text": "toFrame"
+          "text": "enabled"
         },
         {
           "kind": "text",
-          "text": ": CGRect, "
+          "text": ": Bool, "
         },
         {
           "kind": "identifier",
-          "text": "in"
+          "text": "completionHandler"
         },
         {
           "kind": "text",
-          "text": ": UIView)"
+          "text": ": (Bool, Error?) -> Void)"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor": {
-      "title": "shouldDifferentiateWithoutColor",
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1621153-guidedaccessrestrictionstate": {
+      "title": "guidedAccessRestrictionState(forIdentifier:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1621153-guidedaccessrestrictionstate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor",
+      "url": "/documentation/uikit/uiaccessibility/1621153-guidedaccessrestrictionstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the restriction state for the specified guided access restriction."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static var "
+          "text": "static func "
         },
         {
           "kind": "identifier",
-          "text": "shouldDifferentiateWithoutColor"
+          "text": "guidedAccessRestrictionState"
         },
         {
           "kind": "text",
-          "text": ": Bool"
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "forIdentifier"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> UIAccessibility.GuidedAccessRestrictionState"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled": {
-      "title": "isVideoAutoplayEnabled",
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccessrestrictionstate": {
+      "title": "UIAccessibility.GuidedAccessRestrictionState",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccessrestrictionstate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccessrestrictionstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe the state of a restriction, either allow or deny."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static var "
+          "text": "enum "
         },
         {
           "kind": "identifier",
-          "text": "isVideoAutoplayEnabled"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
+          "text": "UIAccessibility.GuidedAccessRestrictionState"
         }
       ]
     },
@@ -542,15 +456,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615119-focusedelement",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648477-hearingdevicepairedear",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/hearingdeviceear",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1624919-registergestureconflictwithzoom",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1624921-zoomfocuschanged",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043553-shoulddifferentiatewithoutcolor",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238036-isvideoautoplayenabled"
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3089195-configureforguidedaccess",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1621153-guidedaccessrestrictionstate",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccessrestrictionstate"
       ],
-      "title": "Convenience Functions",
+      "title": "Guided Access",
       "generated": true
     },
     {
@@ -663,6 +573,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -808,7 +719,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

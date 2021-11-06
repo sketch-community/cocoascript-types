@@ -37,23 +37,33 @@
         "name": "iOS",
         "introducedAt": "3.0",
         "deprecatedAt": "7.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "deprecatedAt": "7.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)UIViewController(py)wantsFullScreenLayout",
+    "parent": {
+      "title": "UIViewController"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -185,21 +195,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614606-candisplaybannerads": {
-      "title": "canDisplayBannerAds",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614606-candisplaybannerads",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/1614606-candisplaybannerads",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A boolean value that indicates whether the view controller is configured to display banner ads."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1619323-contentsizeforviewinpopover": {
       "title": "contentSizeForViewInPopover",
       "type": "topic",
@@ -230,36 +225,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614670-interstitialpresentationpolicy": {
-      "title": "interstitialPresentationPolicy",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614670-interstitialpresentationpolicy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/1614670-interstitialpresentationpolicy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Determines whether interstitials should be presented at all and whether the framework or app should manage the presentation."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614640-displayingbannerad": {
-      "title": "displayingBannerAd",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614640-displayingbannerad",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/1614640-displayingbannerad",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A boolean value that indicates whether the view controller is displaying a banner ad."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1619312-modalinpopover": {
       "title": "modalInPopover",
       "type": "topic",
@@ -271,21 +236,6 @@
         {
           "type": "text",
           "text": "A Boolean value indicating whether the view controller should be presented modally by a popover."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614630-presentingfullscreenad": {
-      "title": "presentingFullScreenAd",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614630-presentingfullscreenad",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/1614630-presentingfullscreenad",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A boolean value that indicates whether the view controller is displaying a full-screen ad."
         }
       ],
       "deprecated": true
@@ -305,21 +255,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614605-originalcontentview": {
-      "title": "originalContentView",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614605-originalcontentview",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/1614605-originalcontentview",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The originally configured content view of the view controller before banner ads were enabled."
-        }
-      ],
-      "deprecated": true
-    },
     "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621420-searchdisplaycontroller": {
       "title": "searchDisplayController",
       "type": "topic",
@@ -331,21 +266,6 @@
         {
           "type": "text",
           "text": "The search display controller associated with the view controller."
-        }
-      ],
-      "deprecated": true
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614627-shouldpresentinterstitialad": {
-      "title": "shouldPresentInterstitialAd",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614627-shouldpresentinterstitialad",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiviewcontroller/1614627-shouldpresentinterstitialad",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns whether an interstitial ad should be displayed."
         }
       ],
       "deprecated": true
@@ -423,17 +343,11 @@
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621408-previewactionitems",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621372-automaticallyadjustsscrollviewin",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621504-bottomlayoutguide",
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614606-candisplaybannerads",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1619323-contentsizeforviewinpopover",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621373-interfaceorientation",
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614670-interstitialpresentationpolicy",
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614640-displayingbannerad",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1619312-modalinpopover",
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614630-presentingfullscreenad",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621479-modalviewcontroller",
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614605-originalcontentview",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621420-searchdisplaycontroller",
-        "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1614627-shouldpresentinterstitialad",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621367-toplayoutguide"
       ],
       "title": "Properties",
@@ -476,6 +390,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -557,7 +472,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

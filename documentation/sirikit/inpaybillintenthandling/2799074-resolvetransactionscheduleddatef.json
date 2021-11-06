@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Resolves the date on which the payment will occur."
+      "text": "Resolves the date for the payment to occur."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling"
       ]
     ]
@@ -35,25 +35,41 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INPayBillIntentHandling(im)resolveTransactionScheduledDateForPayBill:withCompletion:",
+    "parent": {
+      "title": "INPayBillIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +104,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -109,6 +125,14 @@
           "text": "The handler interface for paying a bill using money from the user’s account."
         }
       ]
+    },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent": {
       "title": "INPayBillIntent",
@@ -149,7 +173,8 @@
           "kind": "identifier",
           "text": "resolveBillPayeeForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799065-resolvebilltypeforpaybill": {
       "title": "resolveBillTypeForPayBill:withCompletion:",
@@ -174,7 +199,8 @@
           "kind": "identifier",
           "text": "resolveBillTypeForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799069-resolvefromaccountforpaybill": {
       "title": "resolveFromAccountForPayBill:withCompletion:",
@@ -199,7 +225,8 @@
           "kind": "identifier",
           "text": "resolveFromAccountForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799076-resolvetransactionamountforpaybi": {
       "title": "resolveTransactionAmountForPayBill:withCompletion:",
@@ -224,7 +251,8 @@
           "kind": "identifier",
           "text": "resolveTransactionAmountForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799068-resolveduedateforpaybill": {
       "title": "resolveDueDateForPayBill:withCompletion:",
@@ -249,7 +277,8 @@
           "kind": "identifier",
           "text": "resolveDueDateForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799074-resolvetransactionscheduleddatef": {
       "title": "resolveTransactionScheduledDateForPayBill:withCompletion:",
@@ -262,7 +291,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resolves the date on which the payment will occur."
+          "text": "Resolves the date for the payment to occur."
         }
       ],
       "fragments": [
@@ -274,7 +303,8 @@
           "kind": "identifier",
           "text": "resolveTransactionScheduledDateForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799078-resolvetransactionnoteforpaybill": {
       "title": "resolveTransactionNoteForPayBill:withCompletion:",
@@ -299,7 +329,8 @@
           "kind": "identifier",
           "text": "resolveTransactionNoteForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -309,6 +340,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -415,6 +466,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -435,7 +487,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The intent object containing details of the user's request. Use this object to get the initial information, if any, provided by the user. "
+                  "text": "The intent object containing details of the user’s request. Use this object to get the initial information, if any, provided by the user. "
                 }
               ]
             }
@@ -472,7 +524,7 @@
                         "inlineContent": [
                           {
                             "type": "text",
-                            "text": "The resolution object containing your proposed resolution. For successful resolutions, create a resolution object whose value is the date range during which payment will be made. This parameter must not be "
+                            "text": "The resolution object containing your proposed resolution. For successful resolutions, create a resolution object whose value is the date range of the payment’s schedule. This parameter must not be "
                           },
                           {
                             "type": "codeVoice",
@@ -480,7 +532,7 @@
                           },
                           {
                             "type": "text",
-                            "text": ". "
+                            "text": "."
                           }
                         ]
                       }
@@ -507,7 +559,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Implement this method to resolve the date on which to transfer money from the user’s account to the payee. The user can optionally specify a date on which to schedule payment. If the user does not specify a date, assume that the user wants to pay the bill immediately. Do not check to see if the scheduled date occurs before the bill’s due date. Instead, use this method only to identify the date on which you can perform the transaction. "
+              "text": "Implement this method to resolve the date on which to transfer money from the user’s account to the payee. The user can optionally specify a date on which to schedule payment. If the user doesn’t specify a date, assume that the user wants to pay the bill immediately. Don’t check to see if the scheduled date occurs before the bill’s due date. Instead, use this method only to identify the date on which you can perform the transaction. "
             }
           ]
         },
@@ -516,7 +568,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Return a successful resolution if you are able to schedule the transaction on the date requested by the user, or if you are able to schedule the transaction immediately. If the user-specified date falls on a banking holiday or on a date when you would be unable to schedule the transaction, suggest a different date and ask the user for confirmation or use a disambiguation resolution to ask the user to select from two or three alternative dates."
+              "text": "Return a successful resolution if you’re able to schedule the transaction on the date requested by the user, or if you’re able to schedule the transaction immediately. If the user-specified date falls on a banking holiday or on a date when you’d be unable to schedule the transaction, suggest a different date and ask the user for confirmation or use a disambiguation resolution to ask the user to select from two or three alternative dates."
             }
           ]
         }
@@ -524,7 +576,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

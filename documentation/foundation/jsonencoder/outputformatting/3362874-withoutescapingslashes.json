@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The output formatting option specifies that the output doesn’t prefix slash characters with escape characters."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -30,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation11JSONEncoderC16OutputFormattingV22withoutEscapingSlashesAEvpZ",
+    "parent": {
+      "title": "JSONEncoder.OutputFormatting"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -76,8 +90,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,6 +140,90 @@
       "role": "symbol",
       "url": "/documentation/foundation/jsonencoder/outputformatting"
     },
+    "doc://com.apple.documentation/documentation/foundation/jsonencoder/outputformatting/2919679-prettyprinted": {
+      "title": "prettyPrinted",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonencoder/outputformatting/2919679-prettyprinted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/jsonencoder/outputformatting/2919679-prettyprinted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The output formatting option that uses ample white space and indentation to make output easy to read."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "prettyPrinted"
+        },
+        {
+          "kind": "text",
+          "text": ": JSONEncoder.OutputFormatting"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/jsonencoder/outputformatting/2919670-sortedkeys": {
+      "title": "sortedKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonencoder/outputformatting/2919670-sortedkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/jsonencoder/outputformatting/2919670-sortedkeys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The output formatting option that sorts keys in lexicographic order."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "sortedKeys"
+        },
+        {
+          "kind": "text",
+          "text": ": JSONEncoder.OutputFormatting"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/jsonencoder/outputformatting/3362874-withoutescapingslashes": {
+      "title": "withoutEscapingSlashes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/jsonencoder/outputformatting/3362874-withoutescapingslashes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/jsonencoder/outputformatting/3362874-withoutescapingslashes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The output formatting option specifies that the output doesn’t prefix slash characters with escape characters."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "withoutEscapingSlashes"
+        },
+        {
+          "kind": "text",
+          "text": ": JSONEncoder.OutputFormatting"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -134,6 +232,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/jsonencoder/outputformatting/2919679-prettyprinted",
+        "doc://com.apple.documentation/documentation/foundation/jsonencoder/outputformatting/2919670-sortedkeys"
+      ],
+      "title": "Formatting Output",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -186,6 +294,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -196,7 +305,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Passes a request to the persistent store without affecting the contents of the managed object context and returns a persistent store result."
+      "text": "Passes a request to the persistent store without affecting the contents of the managed object context, and returns a persistent store result."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSManagedObjectContext(im)executeRequest:error:",
+    "parent": {
+      "title": "NSManagedObjectContext"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -76,8 +84,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object space that you use to manipulate and track changes to managed objects."
+          "text": "An object space to manipulate and track changes to managed objects."
         }
       ]
     },
@@ -160,7 +168,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of objects that meet the criteria specified by a given fetch request."
+          "text": "Returns an array of objects that meet the criteria of the specified fetch request."
         }
       ],
       "fragments": [
@@ -178,6 +186,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1948986-fetch": {
+      "title": "fetch(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1948986-fetch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1948986-fetch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of items of the specified type that meet the fetch request’s critieria."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "fetch"
+        },
+        {
+          "kind": "text",
+          "text": "<T>(NSFetchRequest<T>) -> [T]"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506868-count": {
       "title": "count(for:)",
       "type": "topic",
@@ -188,15 +224,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the number of objects a given fetch request would have returned if it had been passed to "
-        },
-        {
-          "type": "codeVoice",
-          "code": "executeFetchRequest:error:"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Returns the number of objects the specified request fetches when it executes."
         }
       ],
       "fragments": [
@@ -232,7 +260,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the object for a specified ID, if the object is registered with the context."
+          "text": "Returns the managed object with the specified ID from the context."
         }
       ],
       "fragments": [
@@ -268,7 +296,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an object for a specified ID even if the object needs to be fetched."
+          "text": "Returns the managed object with the specified ID, even if the context needs to fetch it."
         }
       ],
       "fragments": [
@@ -304,7 +332,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the object for the specified ID or nil if the object does not exist."
+          "text": "Returns the managed object with the specified ID."
         }
       ],
       "fragments": [
@@ -340,7 +368,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The set of objects registered with the context."
+          "text": "The set of registered managed objects in the context."
         }
       ],
       "fragments": [
@@ -368,7 +396,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the number of objects a given fetch request would have returned."
+          "text": "Returns a count of the objects the specified request fetches when it executes."
         }
       ],
       "fragments": [
@@ -404,7 +432,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Passes a request to the persistent store without affecting the contents of the managed object context and returns a persistent store result."
+          "text": "Passes a request to the persistent store without affecting the contents of the managed object context, and returns a persistent store result."
         }
       ],
       "fragments": [
@@ -422,34 +450,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1948986-fetch": {
-      "title": "fetch(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1948986-fetch",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmanagedobjectcontext/1948986-fetch",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an array of objects that meet the criteria specified by a given fetch request."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "fetch"
-        },
-        {
-          "kind": "text",
-          "text": "<T>(NSFetchRequest<T>) -> [T]"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506217-refreshallobjects": {
       "title": "refreshAllObjects()",
       "type": "topic",
@@ -460,7 +460,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Refreshes all currently registered objects that are associated with this context."
+          "text": "Refreshes all of the registered managed objects in the context."
         }
       ],
       "fragments": [
@@ -518,13 +518,13 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506672-fetch",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1948986-fetch",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506868-count",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506789-registeredobject",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506197-object",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506686-existingobject",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506493-registeredobjects",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1948985-count",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1948986-fetch",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506217-refreshallobjects",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506290-retainsregisteredobjects"
       ],
@@ -600,6 +600,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -610,7 +611,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

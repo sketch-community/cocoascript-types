@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter(im)startWriting",
+    "parent": {
+      "title": "AVAssetWriter"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -150,7 +158,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initiates a sample-writing session for the output asset."
+          "text": "Starts an asset-writing session."
         }
       ],
       "fragments": [
@@ -170,13 +178,7 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389335-status",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1389335-status",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The status of writing samples to the receiver's output file."
-        }
-      ]
+      "url": "/documentation/avfoundation/avassetwriter/1389335-status"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390725-error": {
       "title": "error",
@@ -184,13 +186,7 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390725-error",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1390725-error",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The description of the error that caused the failure."
-        }
-      ]
+      "url": "/documentation/avfoundation/avassetwriter/1390725-error"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting": {
       "title": "startWriting",
@@ -216,17 +212,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting": {
-      "title": "finishWriting",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime": {
+      "title": "endSessionAtSourceTime:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1426644-finishwriting",
+      "url": "/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime",
       "abstract": [
         {
           "type": "text",
-          "text": "Completes the writing of the output file."
+          "text": "Finishes an asset-writing session."
         }
       ],
       "fragments": [
@@ -236,10 +232,9 @@
         },
         {
           "kind": "identifier",
-          "text": "finishWriting"
+          "text": "endSessionAtSourceTime:"
         }
-      ],
-      "deprecated": true
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl": {
       "title": "finishWritingWithCompletionHandler:",
@@ -275,7 +270,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the writer to cancel writing."
+          "text": "Cancels the creation of the output file."
         }
       ],
       "fragments": [
@@ -289,61 +284,30 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl": {
-      "title": "outputURL",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting": {
+      "title": "finishWriting",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387731-outputurl",
+      "url": "/documentation/avfoundation/avassetwriter/1426644-finishwriting",
       "abstract": [
         {
           "type": "text",
-          "text": "The URL you direct output to."
+          "text": "Completes the writing of the output file."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype": {
-      "title": "outputFileType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
-      "abstract": [
+      ],
+      "fragments": [
         {
-          "type": "text",
-          "text": "The file format of the writer’s output."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterstatus": {
-      "title": "AVAssetWriterStatus",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterstatus",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterstatus",
-      "abstract": [
+          "kind": "text",
+          "text": "- "
+        },
         {
-          "type": "text",
-          "text": "The statuses indicating whether a writer can successfully write samples to its output file."
+          "kind": "identifier",
+          "text": "finishWriting"
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles": {
-      "title": "directoryForTemporaryFiles",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A suitable directory for containing temporary files generated during the export process."
-        }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -356,25 +320,14 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387234-cancelwriting",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387731-outputurl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387349-outputfiletype",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390725-error",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389335-status",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterstatus",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting"
       ],
-      "title": "Writing Data",
+      "title": "Managing Writing Sessions",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -409,6 +362,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -435,7 +389,7 @@
             },
             {
               "type": "text",
-              "text": " if writing can be started, otherwise "
+              "text": " if writing starts successfully; otherwise "
             },
             {
               "type": "reference",
@@ -464,7 +418,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You must call this method after all inputs have added and other configuration properties have been set to tell the receiver to prepare for writing. After invoking this method, you can start writing sessions using "
+              "text": "You must call this method after you configure the writer and add its inputs to prepare the object to write data. After you call this method, your app can start writing sessions by calling "
             },
             {
               "type": "reference",
@@ -473,7 +427,7 @@
             },
             {
               "type": "text",
-              "text": " and can write media samples using the methods provided by each of the writer’s inputs."
+              "text": " and can write media samples using the methods that the asset writer’s inputs provide."
             }
           ]
         },
@@ -482,7 +436,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The "
+              "text": "If writing fails to start, this method returns "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": ". In this case, check the values of the "
             },
             {
               "type": "reference",
@@ -491,7 +454,7 @@
             },
             {
               "type": "text",
-              "text": " property signals the terminal state of the asset reader, and if a failure occurs, "
+              "text": " and "
             },
             {
               "type": "reference",
@@ -500,15 +463,19 @@
             },
             {
               "type": "text",
-              "text": " describes the failure."
+              "text": " properties to determine the reason for the failure."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

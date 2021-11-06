@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Resolves whether you can search for calls that the user has not yet seen."
+      "text": "Resolves whether you can search for calls that the user hasn’t yet seen."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintenthandling"
       ]
     ]
@@ -35,25 +35,41 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INSearchCallHistoryIntentHandling(im)resolveUnseenForSearchCallHistory:withCompletion:",
+    "parent": {
+      "title": "INSearchCallHistoryIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +104,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
-      "title": "VoIP Calling",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
-      "url": "/documentation/sirikit/voip_calling",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -109,6 +125,14 @@
           "text": "The handler interface for searching the user’s call history."
         }
       ]
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintent": {
       "title": "INSearchCallHistoryIntent",
@@ -149,7 +173,8 @@
           "kind": "identifier",
           "text": "resolveCallTypesForSearchCallHistory:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintenthandling/1902447-resolvecalltypeforsearchcallhist": {
       "title": "resolveCallTypeForSearchCallHistory:withCompletion:",
@@ -200,7 +225,8 @@
           "kind": "identifier",
           "text": "resolveRecipientForSearchCallHistory:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintenthandling/1902448-resolvedatecreatedforsearchcallh": {
       "title": "resolveDateCreatedForSearchCallHistory:withCompletion:",
@@ -225,7 +251,8 @@
           "kind": "identifier",
           "text": "resolveDateCreatedForSearchCallHistory:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchcallhistoryintenthandling/2879131-resolveunseenforsearchcallhistor": {
       "title": "resolveUnseenForSearchCallHistory:withCompletion:",
@@ -238,7 +265,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resolves whether you can search for calls that the user has not yet seen."
+          "text": "Resolves whether you can search for calls that the user hasn’t yet seen."
         }
       ],
       "fragments": [
@@ -250,7 +277,8 @@
           "kind": "identifier",
           "text": "resolveUnseenForSearchCallHistory:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -260,6 +288,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -364,6 +412,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -421,7 +470,7 @@
                         "inlineContent": [
                           {
                             "type": "text",
-                            "text": "The object containing the details of your proposed resolution. For successful resolutions, create a resolution result that contains whether you can search for calls that are currently unseen by the user.  "
+                            "text": "The object containing the details of your proposed resolution. For successful resolutions, create a resolution result that contains whether you can search for calls that are currently unseen by the user."
                           }
                         ]
                       }
@@ -448,7 +497,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Implement this method to let SiriKit know whether you can search for unseen calls. Disambiguation and prompting the user for more information is not supported. Your implementation should provide a successful resolution with the requested value."
+              "text": "Implement this method to let SiriKit know whether you can search for unseen calls. Disambiguation and prompting the user for more information isn’t supported. Your implementation should provide a successful resolution with the requested value."
             }
           ]
         }
@@ -456,7 +505,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

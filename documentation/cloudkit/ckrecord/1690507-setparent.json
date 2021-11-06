@@ -34,30 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKRecord(im)setParentReferenceFromRecord:",
+    "parent": {
+      "title": "CKRecord"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -75,8 +83,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -129,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that describes a many-to-one relationship between records in a database."
+          "text": "A relationship between two records in a record zone."
         }
       ],
       "fragments": [
@@ -143,13 +151,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckrecord_reference_action/none": {
-      "title": "CKRecord_Reference_Action.none",
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/referenceaction/none": {
+      "title": "CKRecord.ReferenceAction.none",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord_reference_action/none",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/referenceaction/none",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckrecord_reference_action/none"
+      "url": "/documentation/cloudkit/ckrecord/referenceaction/none"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent": {
       "title": "parent",
@@ -161,7 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A reference to the parent record of this record."
+          "text": "A reference to the record’s parent record."
         }
       ],
       "fragments": [
@@ -300,8 +308,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640378-share",
-        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690508-setparent",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/reference",
+        "doc://com.apple.documentation/documentation/cloudkit/ckrecord/1690508-setparent",
         "doc://com.apple.documentation/documentation/cloudkit/ckrecord/systemfieldkey"
       ],
       "title": "Sharing Records",
@@ -366,6 +374,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -432,7 +441,7 @@
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord_reference_action/none"
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/referenceaction/none"
             },
             {
               "type": "text",
@@ -444,7 +453,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

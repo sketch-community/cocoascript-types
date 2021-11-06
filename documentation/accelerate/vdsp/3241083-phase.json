@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Calculates the double-precision elementwise phase values, in radians, of the supplied complex vector."
+      "text": "Calculates the double-precision element-wise phase values, in radians, of the supplied complex vector."
     }
   ],
   "documentVersion": 0,
@@ -41,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Accelerate4vDSPO5phase_6resultySo21DSPDoubleSplitComplexV_xztAA0A13MutableBufferRzSd7ElementRtzlFZ",
+    "parent": {
+      "title": "vDSP"
+    },
     "symbolKind": "enumcm",
     "fragments": [
       {
@@ -95,8 +103,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -167,6 +175,14 @@
       "role": "symbol",
       "url": "/documentation/accelerate/acceleratemutablebuffer"
     },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer/3240653-element": {
+      "title": "Element",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer/3240653-element",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratebuffer/3240653-element"
+    },
     "doc://com.apple.documentation/documentation/swift/double": {
       "title": "Double",
       "type": "topic",
@@ -185,7 +201,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculates the single-precision elementwise phase values, in radians, of the supplied complex vector."
+          "text": "Calculates the single-precision element-wise phase values, in radians, of the supplied complex vector."
         }
       ],
       "fragments": [
@@ -221,7 +237,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculates the double-precision elementwise phase values, in radians, of the supplied complex vector."
+          "text": "Calculates the double-precision element-wise phase values, in radians, of the supplied complex vector."
         }
       ],
       "fragments": [
@@ -257,7 +273,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculates the single-precision elementwise phase values, in radians, of the supplied complex vector using the specified stride."
+          "text": "Calculates the single-precision element-wise phase values, in radians, of the supplied complex vector using the specified stride."
         }
       ],
       "fragments": [
@@ -285,7 +301,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculates the double-precision elementwise phase values, in radians, of the supplied complex vector using the specified stride."
+          "text": "Calculates the double-precision element-wise phase values, in radians, of the supplied complex vector using the specified stride."
         }
       ],
       "fragments": [
@@ -407,7 +423,8 @@
               "text": " "
             },
             {
-              "kind": "text",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO5phase_6resultySo21DSPDoubleSplitComplexV_xztAA0A13MutableBufferRzSd7ElementRtzlFZ1VL_xmfp",
               "text": "V"
             },
             {
@@ -423,8 +440,13 @@
               "text": " "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO5phase_6resultySo21DSPDoubleSplitComplexV_xztAA0A13MutableBufferRzSd7ElementRtzlFZ1VL_xmfp",
+              "text": "V"
+            },
+            {
               "kind": "text",
-              "text": "V : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -437,8 +459,23 @@
               "text": ", "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO5phase_6resultySo21DSPDoubleSplitComplexV_xztAA0A13MutableBufferRzSd7ElementRtzlFZ1VL_xmfp",
+              "text": "V"
+            },
+            {
               "kind": "text",
-              "text": "V.Element == "
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP7ElementQa",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer/3240653-element",
+              "text": "Element"
+            },
+            {
+              "kind": "text",
+              "text": " == "
             },
             {
               "kind": "typeIdentifier",
@@ -449,6 +486,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -459,7 +497,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

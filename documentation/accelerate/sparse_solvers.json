@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -66,14 +66,6 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/accelerate/blas": {
-      "title": "BLAS",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/blas",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/accelerate/blas"
-    },
     "doc://com.apple.documentation/documentation/swift/double": {
       "title": "Double",
       "type": "topic",
@@ -89,12 +81,15 @@
       "kind": "article",
       "role": "table",
       "url": "/documentation/accelerate/sparse_solvers#2882599",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Dense and sparse Cholesky factorization requirements"
-        }
-      ]
+      "abstract": []
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers#3702526": {
+      "title": "Table 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers#3702526",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/accelerate/sparse_solvers#3702526"
     },
     "link-media-2904627": {
       "identifier": "link-media-2904627",
@@ -117,7 +112,7 @@
           "url": "https://docs-assets.developer.apple.com/published/67710ae997/f7696e9f-9788-432e-bb39-4e6ff6302f2a.png"
         }
       ],
-      "alt": "Image of a sparse matrix.",
+      "alt": "A linear graph that depicts a plotted sparse matrix.",
       "title": "Figure 1"
     },
     "link-3021061": {
@@ -240,48 +235,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_matrix_multiplication": {
-      "title": "Sparse Matrix and Dense Matrix Multiplication",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_matrix_multiplication",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_matrix_multiplication",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Multiply matrices."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_vector_multiplication": {
-      "title": "Sparse Matrix and Dense Vector Multiplication",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_vector_multiplication",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_vector_multiplication",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Multiply vectors."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/transposition": {
-      "title": "Transposition",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/transposition",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/transposition",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Transpose matrices, factorizations, and subfactors."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods": {
       "title": "Solving Systems Using Direct Methods",
       "type": "topic",
@@ -296,13 +249,41 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions": {
-      "title": "Sparse Factor Functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double": {
+      "title": "SparseOpaqueFactorization_Double",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseopaquefactorization_double",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that represents the factorization of a matrix of double-precision, floating-point values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float": {
+      "title": "SparseOpaqueFactorization_Float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseopaquefactorization_float",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that represents the factorization of a matrix of single-precision, floating-point values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions": {
+      "title": "Sparse Matrix Factor Functions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
       "abstract": [
         {
           "type": "text",
@@ -320,7 +301,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Solve a system using a factored matrix."
+          "text": "Solve a system with a right-hand-side dense matrix using a factored sparse coefficient matrix."
         }
       ]
     },
@@ -334,35 +315,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Solve a system for a dense vector."
+          "text": "Solve a system with a right-hand-side dense vector using a factored sparse coefficient matrix."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions": {
+      "title": "Sparse Symbolic Factorization Functions",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "abstract": [
         {
           "type": "text",
-          "text": "Work with symbolic factorizations, refactoring, and subfactors."
+          "text": "Calculate the symbolic factorization of a matrix, and solve systems using precalculated symbolic factorizations."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods": {
-      "title": "Implementing Iterative Methods",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions": {
+      "title": "Sparse Refactor Functions",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions",
       "kind": "article",
-      "role": "article",
-      "url": "/documentation/accelerate/implementing_iterative_methods",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_refactor_functions",
       "abstract": [
         {
           "type": "text",
-          "text": "Use iterative methods to solve large problems faster and with a lower memory overhead than with direct methods.  "
+          "text": "Recompute a factorization using the numerical data from a matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions": {
+      "title": "Subfactor Functions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/subfactor_functions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extract and work with subfactors."
         }
       ]
     },
@@ -380,45 +375,31 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners": {
-      "title": "Preconditioners",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs": {
+      "title": "Sparse Iterative Solving Functions (Matrix RHS)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/preconditioners",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs",
       "abstract": [
         {
           "type": "text",
-          "text": "Create preconditioners for iterative solves. "
+          "text": "Solve a system with a right-hand-side dense matrix using iterative methods."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods": {
-      "title": "Sparse Iterative Methods",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs": {
+      "title": "Sparse Iterative Solving Functions (Vector RHS)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs",
       "abstract": [
         {
           "type": "text",
-          "text": "Select a suitable iterative method to solve a system. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions": {
-      "title": "Iterative Sparse Solve Functions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Solve a system using an iterative method."
+          "text": "Solve a system with a right-hand-side dense vector using iterative methods."
         }
       ]
     },
@@ -433,6 +414,76 @@
         {
           "type": "text",
           "text": "Perform a single iteration of the specified iterative method."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods": {
+      "title": "Sparse Iterative Methods",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Select a suitable iterative method to solve a system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners": {
+      "title": "Preconditioners",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/preconditioners",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create preconditioners for iterative solves."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_matrix_multiplication": {
+      "title": "Sparse Matrix and Dense Matrix Multiplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_matrix_multiplication",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_matrix_multiplication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiply sparse and dense matrices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_vector_multiplication": {
+      "title": "Sparse Matrix and Dense Vector Multiplication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_vector_multiplication",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_vector_multiplication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiply sparse matrices and dense vectors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/transposition": {
+      "title": "Transposition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/transposition",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers/transposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transpose matrices, factorizations, and subfactors."
         }
       ]
     },
@@ -489,69 +540,78 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Sparse Matrices",
+      "title": "Creating Sparse Matrices",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices",
         "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double",
         "doc://com.apple.documentation/documentation/accelerate/sparsematrix_float",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/conversion_from_other_formats"
-      ]
+      ],
+      "anchor": "2871498"
     },
     {
       "kind": "taskGroup",
-      "title": "Dense Matrices and Vectors",
+      "title": "Creating Dense Matrices and Dense Vectors",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/densematrix_double",
         "doc://com.apple.documentation/documentation/accelerate/densematrix_float",
         "doc://com.apple.documentation/documentation/accelerate/densevector_double",
         "doc://com.apple.documentation/documentation/accelerate/densevector_float"
-      ]
+      ],
+      "anchor": "2877059"
     },
     {
       "kind": "taskGroup",
-      "title": "Operations",
+      "title": "Solving Systems with Direct Sparse Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
+        "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double",
+        "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_direct_solving_functions_matrix_rhs",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_direct_solving_functions_vector_rhs",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/subfactor_functions"
+      ],
+      "anchor": "2873298"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Solving Systems with Iterative Sparse Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_matrix_rhs",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_solving_functions_vector_rhs",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterate_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners"
+      ],
+      "anchor": "2872800"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Multiplying and Transposing Sparse Matrices",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_matrix_multiplication",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_and_dense_vector_multiplication",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/transposition"
-      ]
+      ],
+      "anchor": "2877512"
     },
     {
       "kind": "taskGroup",
-      "title": "Direct Sparse Solving Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_direct_solving_functions_matrix_rhs",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_direct_solving_functions_vector_rhs",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Iterative Sparse Solving Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
-        "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/preconditioners",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterative_methods",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/iterative_sparse_solve_functions",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterate_functions"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Memory Management",
+      "title": "Retaining and Releasing Resources",
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/memory_management"
-      ]
+      ],
+      "anchor": "2871505"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices",
-        "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays"
@@ -575,7 +635,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Sparse Solvers in the Accelerate framework handle the solution of systems of equations where the coefficient matrix is sparse, that is, most of the entries in the matrix are zero."
+              "text": "The Sparse Solvers library in the Accelerate framework handles the solution of systems of equations where the coefficient matrix is sparse. That is, most of the entries in the matrix are zero. The Sparse Solvers library provides a sparse counterpart to the dense factorizations and linear solvers that LAPACK provides."
             }
           ]
         },
@@ -584,7 +644,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Many problems in science and technology require the solution of large systems of simultaneous equations. When these equations are linear, they are normally represented as the matrix equation "
+              "text": "Many problems in science and technology require the solution of large systems of simultaneous equations. When these equations are linear, you usually represent them as the matrix equation "
             },
             {
               "type": "emphasis",
@@ -597,7 +657,7 @@
             },
             {
               "type": "text",
-              "text": " (and even when the equations are nonlinear, the problem is often solved as a sequence of linear approximations)."
+              "text": ". Even when the equations are nonlinear, you often solve the problem as a sequence of linear approximations."
             }
           ]
         },
@@ -635,127 +695,6 @@
         {
           "level": 3,
           "type": "heading",
-          "text": "Solution Approaches Offered by Accelerate",
-          "anchor": "2882595"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Accelerate offers two different solution approaches:"
-            }
-          ]
-        },
-        {
-          "type": "unorderedList",
-          "items": [
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "strong",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "Direct methods"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " perform a factorization such as Cholesky ("
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "A = LLᵀ"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": ") or QR. These methods provide a fast and accurate black-box solution."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "strong",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "Iterative methods"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " find an approximate solution requiring only repeated multiplication by "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "A"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " or "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "Aᵀ"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": ". Although they require less memory than direct methods, and can be faster for very large problems, they typically require problem-specific preconditioners to be effective. "
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Just as Sparse "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/blas"
-            },
-            {
-              "type": "text",
-              "text": " provides a sparse counterpart to dense BLAS, Sparse Solvers in the Accelerate framework provide a sparse counterpart to the dense factorizations provided by LAPACK."
-            }
-          ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
           "text": "Sparse Matrices",
           "anchor": "2882598"
         },
@@ -764,20 +703,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In the simplest case, a matrix "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "A"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " is stored as a 2D dense array of floating point values, and routines from BLAS, LAPACK, and other similar libraries are used to manipulate matrices and solve equations. However, such algorithms normally require "
+              "text": "Routines from libraries such as BLAS and LAPACK work with matrices that you store as a 2D dense array of floating point values. However, the algorithms you use to manipulate matrices and solve equations normally require "
             },
             {
               "type": "emphasis",
@@ -829,7 +755,7 @@
             },
             {
               "type": "text",
-              "text": " operations and, as a result, scaling to a large "
+              "text": " operations. As a result, scaling to a large "
             },
             {
               "type": "emphasis",
@@ -851,20 +777,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The key to avoiding the expense of these algorithms is taking advantage of the fact that in many real-world applications, most of the entries in "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "A"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " are zero. Such matrices are said to be "
+              "text": "To avoid the expense of these algorithms, you can leverage the fact that in many real-world applications, matrices can contain many entries that are zero. Such matrices are called "
             },
             {
               "type": "emphasis",
@@ -904,75 +817,97 @@
           ]
         },
         {
-          "type": "unorderedList",
+          "type": "termList",
           "items": [
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "strong",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "Incomplete data sets"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " (for example, each user buys only a small fraction of the products from a retailer)"
-                    }
-                  ]
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "strong",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Sparse data sets"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "For example, each user buys only a small fraction of the products from a retailer."
+                      }
+                    ]
+                  }
+                ]
+              }
             },
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "strong",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "Limited connectivity"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " (for example, most people on social networks are connected only to a tiny proportion of the entire user base)"
-                    }
-                  ]
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "strong",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Limited connectivity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "For example, most people on social networks only connect to a tiny proportion of the entire user base."
+                      }
+                    ]
+                  }
+                ]
+              }
             },
             {
-              "content": [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "strong",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "Physical properties"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " (for example, points on structural meshes only connect to locally adjacent points)."
-                    }
-                  ]
-                }
-              ]
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "strong",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Physical properties"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "For example, points on structural meshes only connect to locally adjacent points."
+                      }
+                    ]
+                  }
+                ]
+              }
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         },
         {
           "type": "paragraph",
@@ -986,7 +921,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "O(tau*n)"
+                  "text": "O(𝜏*n)"
                 }
               ]
             },
@@ -999,7 +934,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "O(tau*n"
+                  "text": "O(𝜏*n"
                 }
               ]
             },
@@ -1012,7 +947,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": ")"
+                  "text": "),"
                 }
               ]
             },
@@ -1025,7 +960,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "tau"
+                  "text": "𝜏"
                 }
               ]
             },
@@ -1075,16 +1010,7 @@
             },
             {
               "type": "text",
-              "text": " entries per column. "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers#2882599"
-            },
-            {
-              "type": "text",
-              "text": " shows the number of floating point operations (1 Tflop is 10¹² floating point operations) and the memory required to perform Cholesky factorization on that matrix."
+              "text": " entries per column. The following table shows the number of floating point operations (1 Tflop is 10¹² floating point operations) and the memory necessary to perform Cholesky factorization on that matrix."
             }
           ]
         },
@@ -1196,12 +1122,7 @@
           "metadata": {
             "anchor": "2882599",
             "title": "Table 1",
-            "abstract": [
-              {
-                "type": "text",
-                "text": "Dense and sparse Cholesky factorization requirements"
-              }
-            ]
+            "abstract": []
           }
         },
         {
@@ -1211,12 +1132,326 @@
         {
           "type": "paragraph",
           "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Solution Approaches",
+          "anchor": "2882595"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Accelerate framework offers two solution approaches:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Direct methods"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " perform a factorization such as Cholesky ("
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "A = LLᵀ"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ") or QR. These methods provide a fast and accurate opaque solution."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Iterative methods"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " find an approximate solution requiring only repeated multiplication by "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "A"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Aᵀ"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ". Although they require less memory than direct methods, and can be faster for very large problems, they typically require problem-specific preconditioners to be effective. "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following table summarizes the differences between direct methods and iterative methods:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "both",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": []
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Direct methods"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Iterative methods"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Ease of use"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Simple"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Complex"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Accuracy"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Machine precision"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Square root of machine precision"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Speed"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Fast for small problems"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Quite fast for larger problems"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Fastest for large problems, but only with a suitable problem-specific preconditioner"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Memory requirements"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "High"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Low"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3702526",
+            "title": "Table 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In contrast to direct methods, iterative methods provide a way for expert users to find approximate solutions faster using less memory. You can also use iterative methods when forming the explicit matrix is prohibitively expensive, but performing matrix-vector multiplications is performant. However, to achieve these gains, you need to select an appropriate preconditioner (an operator that approximates the inverse of A) that’s specific to your problem. It’s best to try a direct method before trying to use iterative methods."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

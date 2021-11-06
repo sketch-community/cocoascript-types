@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
       ]
     ]
@@ -42,10 +42,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibility(im)accessibilityLayoutPointForScreenPoint:",
+    "parent": {
+      "title": "NSAccessibilityProtocol"
+    },
     "symbolKind": "intfm",
     "fragments": [
       {
@@ -71,8 +74,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,10 +110,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -125,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The complete list of properties and methods implemented by accessible elements."
+          "text": "The complete list of properties and methods for accessible elements."
         }
       ]
     },
@@ -144,6 +147,296 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nspoint"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532814-accessibilityhandles": {
+      "title": "accessibilityHandles()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532814-accessibilityhandles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1532814-accessibilityhandles",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the drag handle elements for the layout item element."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityHandles"
+        },
+        {
+          "kind": "text",
+          "text": "() -> [Any]?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531694-setaccessibilityhandles": {
+      "title": "setAccessibilityHandles(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531694-setaccessibilityhandles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1531694-setaccessibilityhandles",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the drag handle accessibility elements for the layout item element."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityHandles"
+        },
+        {
+          "kind": "text",
+          "text": "([Any]?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527182-accessibilityhorizontalunits": {
+      "title": "accessibilityHorizontalUnits()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527182-accessibilityhorizontalunits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1527182-accessibilityhorizontalunits",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the units that the layout area uses for horizontal values."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityHorizontalUnits"
+        },
+        {
+          "kind": "text",
+          "text": "() -> NSAccessibilityUnits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529493-setaccessibilityhorizontalunits": {
+      "title": "setAccessibilityHorizontalUnits(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529493-setaccessibilityhorizontalunits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1529493-setaccessibilityhorizontalunits",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the units that the layout area uses for horizontal values."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityHorizontalUnits"
+        },
+        {
+          "kind": "text",
+          "text": "(NSAccessibilityUnits)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532237-accessibilityhorizontalunitdescr": {
+      "title": "accessibilityHorizontalUnitDescription()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532237-accessibilityhorizontalunitdescr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1532237-accessibilityhorizontalunitdescr",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the description of the layout area’s horizontal units."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityHorizontalUnitDescription"
+        },
+        {
+          "kind": "text",
+          "text": "() -> String?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535922-setaccessibilityhorizontalunitde": {
+      "title": "setAccessibilityHorizontalUnitDescription(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535922-setaccessibilityhorizontalunitde",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1535922-setaccessibilityhorizontalunitde",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the description of the layout area’s horizontal units."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityHorizontalUnitDescription"
+        },
+        {
+          "kind": "text",
+          "text": "(String?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532688-accessibilityverticalunits": {
+      "title": "accessibilityVerticalUnits()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532688-accessibilityverticalunits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1532688-accessibilityverticalunits",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the units that the layout area uses for vertical values."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityVerticalUnits"
+        },
+        {
+          "kind": "text",
+          "text": "() -> NSAccessibilityUnits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529019-setaccessibilityverticalunits": {
+      "title": "setAccessibilityVerticalUnits(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529019-setaccessibilityverticalunits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1529019-setaccessibilityverticalunits",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the units that the layout area uses for vertical values."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityVerticalUnits"
+        },
+        {
+          "kind": "text",
+          "text": "(NSAccessibilityUnits)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534533-accessibilityverticalunitdescrip": {
+      "title": "accessibilityVerticalUnitDescription()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534533-accessibilityverticalunitdescrip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1534533-accessibilityverticalunitdescrip",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the description of the layout area’s vertical units. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityVerticalUnitDescription"
+        },
+        {
+          "kind": "text",
+          "text": "() -> String?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532607-setaccessibilityverticalunitdesc": {
+      "title": "setAccessibilityVerticalUnitDescription(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532607-setaccessibilityverticalunitdesc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1532607-setaccessibilityverticalunitdesc",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the description of the layout area’s vertical units. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityVerticalUnitDescription"
+        },
+        {
+          "kind": "text",
+          "text": "(String?)"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526401-accessibilitylayoutpoint": {
       "title": "accessibilityLayoutPoint(forScreenPoint:)",
@@ -304,6 +597,16 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532814-accessibilityhandles",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1531694-setaccessibilityhandles",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527182-accessibilityhorizontalunits",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529493-setaccessibilityhorizontalunits",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532237-accessibilityhorizontalunitdescr",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535922-setaccessibilityhorizontalunitde",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532688-accessibilityverticalunits",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1529019-setaccessibilityverticalunits",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1534533-accessibilityverticalunitdescrip",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532607-setaccessibilityverticalunitdesc",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535016-accessibilitylayoutsize",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524668-accessibilityscreenpoint",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1526114-accessibilityscreensize"
@@ -420,7 +723,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -37,8 +37,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,6 +118,7 @@
           "url": "https://docs-assets.developer.apple.com/published/67710ae997/818cbdb0-293d-4785-8058-d9c86222a360.png"
         }
       ],
+      "alt": "A four-by-four symmetric sparse matrix with four empty cells.",
       "title": "Figure 1"
     },
     "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays#2880950": {
@@ -214,20 +215,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods": {
-      "title": "Implementing Iterative Methods",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/accelerate/implementing_iterative_methods",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Use iterative methods to solve large problems faster and with a lower memory overhead than with direct methods.  "
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods": {
       "title": "Solving Systems Using Direct Methods",
       "type": "topic",
@@ -282,7 +269,6 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices",
-        "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
         "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers"
@@ -306,21 +292,9 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In some cases—for example, if you are reading matrix values from a file—you may find it easier to create sparse matrix objects from coordinate format arrays. This approach requires three separate arrays: one containing the column indexes, another containing the row indexes, and a third containing the values. Each array contains the same number of items."
+              "text": "In some cases—for example, if you’re reading matrix values from a file—you may find it easier to create sparse matrix objects from coordinate format arrays. This approach requires three separate arrays: one containing the column indexes, another containing the row indexes, and a third containing the values. Each array contains the same number of items."
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         },
         {
           "level": 3,
@@ -355,7 +329,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Because this sparse matrix is symmetric, you can define it with the arrays shown below that describe its lower triangle. For example, the value "
+              "text": "Because this sparse matrix is symmetric, you can define it with the arrays below that describe its lower triangle. For example, the value "
             },
             {
               "type": "codeVoice",
@@ -382,10 +356,6 @@
         },
         {
           "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
@@ -397,7 +367,7 @@
             },
             {
               "type": "text",
-              "text": " parameter, you can specify that the matrix is symmetric and the items in the values array are derived from the lower triangle."
+              "text": " parameter, you can specify that the matrix is symmetric and the items in the values array derive from the lower triangle."
             }
           ]
         },
@@ -464,7 +434,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The block element is ignored and is not included in the returned matrix if the coordinates "
+              "text": "The system ignores the block element and doesn’t include it in the returned matrix if the coordinates "
             },
             {
               "type": "codeVoice",
@@ -569,7 +539,7 @@
             },
             {
               "type": "text",
-              "text": ", any entries in the wrong triangle are transposed and summed into the block at "
+              "text": ", the system transposes any entries in the wrong triangle and sums them into the block at "
             },
             {
               "type": "codeVoice",
@@ -577,7 +547,7 @@
             },
             {
               "type": "text",
-              "text": " if one is present."
+              "text": ", if one is present."
             }
           ]
         },
@@ -586,7 +556,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In all cases, if any duplicate coordinates are present, the elements are summed and replaced with a single entry."
+              "text": "In all cases, if any duplicate coordinates are present, the system sums the elements and replaces them with a single entry."
             }
           ]
         },
@@ -603,7 +573,7 @@
             },
             {
               "type": "text",
-              "text": " greater than 1. The matrix described has "
+              "text": " greater than 1. The described matrix has "
             },
             {
               "type": "codeVoice",
@@ -627,7 +597,7 @@
             },
             {
               "type": "text",
-              "text": ", there is a structurally nonzero block at block position "
+              "text": ", there’s a structurally nonzero block at block position "
             },
             {
               "type": "codeVoice",
@@ -643,7 +613,7 @@
             },
             {
               "type": "text",
-              "text": ". The block's values are interpreted as the elements of a dense column-major matrix with "
+              "text": ". The system interprets the block’s values as the elements of a dense column-major matrix with "
             },
             {
               "type": "codeVoice",
@@ -660,7 +630,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "There are two variants of each converter. One variant allocates its own workspace internally and also allocates space for the resulting sparse matrix. The other requires you to pass storage for the new matrix and a separate workspace for precise control over allocations."
+              "text": "There are two variants of each converter. One variant allocates its own workspace internally, and also allocates space for the resulting sparse matrix. The other requires you to pass storage for the new matrix, and a separate workspace for precise control over allocations."
             }
           ]
         },
@@ -691,7 +661,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The block element is ignored and is not included in the returned matrix if the coordinates "
+              "text": "The system ignores the block element and doesn’t include it in the returned matrix if the coordinates "
             },
             {
               "type": "codeVoice",
@@ -796,7 +766,7 @@
             },
             {
               "type": "text",
-              "text": ", any entries in the wrong triangle are transposed and summed into the block at "
+              "text": ", the system transposes any entries in the wrong triangle and sums them into the block at "
             },
             {
               "type": "codeVoice",
@@ -804,7 +774,7 @@
             },
             {
               "type": "text",
-              "text": " if one is present."
+              "text": ", if one is present."
             }
           ]
         },
@@ -813,7 +783,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In all cases, if any duplicate coordinates are present, the elements are summed and replaced with a single entry."
+              "text": "In all cases, if any duplicate coordinates are present, the system sums the elements and replaces them with a single entry."
             }
           ]
         },
@@ -830,7 +800,7 @@
             },
             {
               "type": "text",
-              "text": " greater than 1. The matrix described has "
+              "text": " greater than 1. The described matrix has "
             },
             {
               "type": "codeVoice",
@@ -854,7 +824,7 @@
             },
             {
               "type": "text",
-              "text": ", there is a structurally nonzero block at block position "
+              "text": ", there’s a structurally nonzero block at block position "
             },
             {
               "type": "codeVoice",
@@ -870,7 +840,7 @@
             },
             {
               "type": "text",
-              "text": ". The block's values are interpreted as the elements of a dense column-major matrix with "
+              "text": ". The system interprets the block’s values as the elements of a dense column-major matrix with "
             },
             {
               "type": "codeVoice",
@@ -909,7 +879,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "There are two variants of each converter. One variant allocates its own workspace internally and also allocates space for the resulting sparse matrix:"
+              "text": "There are two variants of each converter. One variant allocates its own workspace internally, and also allocates space for the resulting sparse matrix:"
             }
           ]
         },
@@ -956,14 +926,10 @@
         },
         {
           "type": "paragraph",
-          "inlineContent": []
-        },
-        {
-          "type": "paragraph",
           "inlineContent": [
             {
               "type": "text",
-              "text": "The other requires you to pass storage for the new matrix and a separate workspace for precise control over allocations:"
+              "text": "The other requires you to pass storage for the new matrix, and a separate workspace for precise control over allocations:"
             }
           ]
         },
@@ -1032,7 +998,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

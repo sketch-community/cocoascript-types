@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted immediately after the app finishes launching."
+      "text": "A notification that posts immediately after the app finishes launching."
     }
   ],
   "documentVersion": 0,
@@ -57,20 +57,28 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UIApplicationDidFinishLaunchingNotification",
+    "parent": {
+      "title": "UIApplication"
+    },
     "symbolKind": "cldata",
     "fragments": [
       {
@@ -88,8 +96,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -226,42 +234,6 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiapplication/launchoptionskey/1623045-localnotification"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
-      "title": "application(_:didFinishLaunchingWithOptions:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationdelegate/1622921-application",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the delegate that the launch process is almost done and the app is almost ready to run."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "application"
-        },
-        {
-          "kind": "text",
-          "text": "(UIApplication, "
-        },
-        {
-          "kind": "identifier",
-          "text": "didFinishLaunchingWithOptions"
-        },
-        {
-          "kind": "text",
-          "text": ": [UIApplication.LaunchOptionsKey : Any]?) -> Bool"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application": {
       "title": "application(_:willFinishLaunchingWithOptions:)",
       "type": "topic",
@@ -298,6 +270,42 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
+      "title": "application(_:didFinishLaunchingWithOptions:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate that the launch process is almost done and the app is almost ready to run."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "application"
+        },
+        {
+          "kind": "text",
+          "text": "(UIApplication, "
+        },
+        {
+          "kind": "identifier",
+          "text": "didFinishLaunchingWithOptions"
+        },
+        {
+          "kind": "text",
+          "text": ": [UIApplication.LaunchOptionsKey : Any]?) -> Bool"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey": {
       "title": "UIApplication.LaunchOptionsKey",
       "type": "topic",
@@ -308,7 +316,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Keys used to access values in the launch options dictionary passed to your app at initialization time."
+          "text": "Keys you use to access values in the launch options dictionary that is passed to your app at initialization time."
         }
       ],
       "fragments": [
@@ -322,43 +330,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching": {
-      "title": "applicationDidFinishLaunching(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the delegate when the app has finished launching. Don’t use. Instead, use "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "applicationDidFinishLaunching"
-        },
-        {
-          "kind": "text",
-          "text": "(UIApplication)"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiapplication/1622971-didfinishlaunchingnotification": {
       "title": "didFinishLaunchingNotification",
       "type": "topic",
@@ -369,7 +340,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted immediately after the app finishes launching."
+          "text": "A notification that posts immediately after the app finishes launching."
         }
       ],
       "fragments": [
@@ -400,8 +371,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623032-application",
         "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
-        "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey",
-        "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching"
+        "doc://com.apple.documentation/documentation/uikit/uiapplication/launchoptionskey"
       ],
       "title": "Initializing the App",
       "generated": true
@@ -459,6 +429,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -547,7 +518,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

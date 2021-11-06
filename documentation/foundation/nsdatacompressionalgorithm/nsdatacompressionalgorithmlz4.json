@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The LZ4 compression algorithm, recommended for fast compression."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -37,35 +43,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSDataCompressionAlgorithm@NSDataCompressionAlgorithmLZ4",
+    "parent": {
+      "title": "NSDataCompressionAlgorithm"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -122,7 +136,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsdatacompressionalgorithm"
+      "url": "/documentation/foundation/nsdatacompressionalgorithm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An algorithm that indicates how to compress or decompress data."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsdata": {
       "title": "NSData",
@@ -132,6 +152,62 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlz4": {
+      "title": "NSDataCompressionAlgorithmLZ4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlz4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlz4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The LZ4 compression algorithm, recommended for fast compression."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlzfse": {
+      "title": "NSDataCompressionAlgorithmLZFSE",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlzfse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlzfse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The LZFSE compression algorithm, recommended for use on Apple platforms."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlzma": {
+      "title": "NSDataCompressionAlgorithmLZMA",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlzma",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlzma",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The LZMA compression algorithm, recommended for high-compression ratio."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmzlib": {
+      "title": "NSDataCompressionAlgorithmZlib",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmzlib",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmzlib",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The zlib compression algorithm, recommended for cross-platform compression."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -140,6 +216,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlzfse",
+        "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmlzma",
+        "doc://com.apple.documentation/documentation/foundation/nsdatacompressionalgorithm/nsdatacompressionalgorithmzlib"
+      ],
+      "title": "Algorithms",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -156,6 +243,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -166,7 +254,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

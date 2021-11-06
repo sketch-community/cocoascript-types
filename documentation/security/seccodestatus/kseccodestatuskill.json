@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The code wants to be killed (terminated) if it ever loses its validity."
+      "text": "The code wants to be terminated if it ever loses its validity."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@E@SecCodeStatus@kSecCodeStatusKill",
+    "parent": {
+      "title": "SecCodeStatus"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -146,7 +149,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This bit can not be cleared on running code; it can only be set. Running code that has the kill flag set is guaranteed to be valid, because if it were invalid it would have been terminated."
+              "text": "This bit can not be cleared on running code; it can only be set. Running code that has this flag set is guaranteed to be valid, because if it were invalid it would have been terminated."
             }
           ]
         }
@@ -154,7 +157,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

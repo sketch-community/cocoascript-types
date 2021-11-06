@@ -36,15 +36,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.2",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:6AppKit34NSCollectionViewDiffableDataSourceC12ItemProvidera",
+    "parent": {
+      "title": "NSCollectionViewDiffableDataSource"
+    },
     "symbolKind": "tdef",
     "fragments": [
       {
@@ -58,8 +61,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -131,30 +134,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nscollectionviewitem"
-    },
-    "doc://com.apple.documentation/documentation/appkit/nscollectionviewdiffabledatasource/3395788-init": {
-      "title": "init()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nscollectionviewdiffabledatasource/3395788-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nscollectionviewdiffabledatasource/3395788-init",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a diffable data source."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/appkit/nscollectionviewdiffabledatasource/3395789-init": {
       "title": "init(collectionView:itemProvider:)",
@@ -231,7 +210,6 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nscollectionviewdiffabledatasource/3395788-init",
         "doc://com.apple.documentation/documentation/appkit/nscollectionviewdiffabledatasource/3395789-init"
       ],
       "title": "Creating a Diffable Data Source",
@@ -263,7 +241,25 @@
             },
             {
               "kind": "text",
-              "text": "<SectionIdentifierType, ItemIdentifierType>."
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:6AppKit34NSCollectionViewDiffableDataSourceC21SectionIdentifierTypexmfp",
+              "text": "SectionIdentifierType"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:6AppKit34NSCollectionViewDiffableDataSourceC18ItemIdentifierTypeq_mfp",
+              "text": "ItemIdentifierType"
+            },
+            {
+              "kind": "text",
+              "text": ">."
             },
             {
               "kind": "identifier",
@@ -294,7 +290,8 @@
               "text": ", "
             },
             {
-              "kind": "text",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:6AppKit34NSCollectionViewDiffableDataSourceC18ItemIdentifierTypeq_mfp",
               "text": "ItemIdentifierType"
             },
             {
@@ -332,7 +329,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The collection view for which this item is being configured."
+                  "text": "The collection view to configure this item for."
                 }
               ]
             }
@@ -360,7 +357,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The identifier of the data item associated with this item.  "
+                  "text": "The identifier of the data item for this item.  "
                 }
               ]
             }
@@ -382,7 +379,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A configured item object."
+              "text": "A non-"
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " configured item object. The item provider must return a valid item object to the collection view. "
             }
           ]
         }
@@ -390,7 +395,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@DenseVector_Double",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,14 +110,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer/3240658-withunsafemutablebufferpointer": {
-      "title": "withUnsafeMutableBufferPointer(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer/3240658-withunsafemutablebufferpointer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/acceleratemutablebuffer/3240658-withunsafemutablebufferpointer"
-    },
     "doc://com.apple.documentation/documentation/accelerate/densevector_double": {
       "title": "DenseVector_Double",
       "type": "topic",
@@ -126,6 +123,14 @@
           "text": "A structure that contains a dense vector of double-precision, floating-point values."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer/3240658-withunsafemutablebufferpointer": {
+      "title": "withUnsafeMutableBufferPointer(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer/3240658-withunsafemutablebufferpointer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratemutablebuffer/3240658-withunsafemutablebufferpointer"
     },
     "doc://com.apple.documentation/documentation/accelerate/densevector_double#2877073": {
       "title": "Listing 1",
@@ -220,7 +225,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/densevector_double/2868009-count",
         "doc://com.apple.documentation/documentation/accelerate/densevector_double/2868193-data"
-      ]
+      ],
+      "anchor": "2877619"
     }
   ],
   "seeAlsoSections": [
@@ -230,7 +236,7 @@
         "doc://com.apple.documentation/documentation/accelerate/densematrix_float",
         "doc://com.apple.documentation/documentation/accelerate/densevector_float"
       ],
-      "title": "Dense Matrices and Vectors",
+      "title": "Creating Dense Matrices and Dense Vectors",
       "generated": true
     }
   ],
@@ -286,6 +292,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -302,6 +309,63 @@
           "level": 2,
           "text": "Overview",
           "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You typically use dense vectors to represent the unknowns vector, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "x"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", and the right-hand-side vector, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "b"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", in the matrix equation "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Ax = b."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " A "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/densevector_double"
+            },
+            {
+              "type": "text",
+              "text": " structure provides a pointer to its underlying data and a count of its number of elements."
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -326,7 +390,7 @@
             },
             {
               "type": "text",
-              "text": " structure is valid only during the execution of the closure. Do not store or return the structure for later use."
+              "text": " structure is valid only during the execution of the closure. Don’t store or return the structure for later use."
             }
           ]
         },
@@ -362,7 +426,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

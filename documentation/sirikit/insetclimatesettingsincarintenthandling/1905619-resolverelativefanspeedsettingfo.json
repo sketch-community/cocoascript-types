@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling"
       ]
     ]
@@ -35,20 +35,34 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INSetClimateSettingsInCarIntentHandling(im)resolveRelativeFanSpeedSettingForSetClimateSettingsInCar:withCompletion:",
+    "parent": {
+      "title": "INSetClimateSettingsInCarIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -83,10 +97,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -104,6 +118,14 @@
           "text": "The handler interface for changing a vehicle’s climate control settings."
         }
       ]
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inrelativesetting": {
       "title": "INRelativeSetting",
@@ -152,7 +174,8 @@
           "kind": "identifier",
           "text": "resolveEnableFanForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/1905614-resolveenableairconditionerforse": {
       "title": "resolveEnableAirConditionerForSetClimateSettingsInCar:withCompletion:",
@@ -165,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resovles whether you can enable the air conditioner."
+          "text": "Resolves whether you can enable the air conditioner."
         }
       ],
       "fragments": [
@@ -177,7 +200,8 @@
           "kind": "identifier",
           "text": "resolveEnableAirConditionerForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/1905609-resolveenableclimatecontrolforse": {
       "title": "resolveEnableClimateControlForSetClimateSettingsInCar:withCompletion:",
@@ -202,7 +226,8 @@
           "kind": "identifier",
           "text": "resolveEnableClimateControlForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/1905617-resolveenableautomodeforsetclima": {
       "title": "resolveEnableAutoModeForSetClimateSettingsInCar:withCompletion:",
@@ -227,7 +252,8 @@
           "kind": "identifier",
           "text": "resolveEnableAutoModeForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/1905621-resolveaircirculationmodeforsetc": {
       "title": "resolveAirCirculationModeForSetClimateSettingsInCar:withCompletion:",
@@ -252,7 +278,8 @@
           "kind": "identifier",
           "text": "resolveAirCirculationModeForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/1905633-resolvefanspeedindexforsetclimat": {
       "title": "resolveFanSpeedIndexForSetClimateSettingsInCar:withCompletion:",
@@ -277,7 +304,8 @@
           "kind": "identifier",
           "text": "resolveFanSpeedIndexForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/1905607-resolvefanspeedpercentageforsetc": {
       "title": "resolveFanSpeedPercentageForSetClimateSettingsInCar:withCompletion:",
@@ -302,7 +330,8 @@
           "kind": "identifier",
           "text": "resolveFanSpeedPercentageForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/1905619-resolverelativefanspeedsettingfo": {
       "title": "resolveRelativeFanSpeedSettingForSetClimateSettingsInCar:withCompletion:",
@@ -327,7 +356,8 @@
           "kind": "identifier",
           "text": "resolveRelativeFanSpeedSettingForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/1905630-resolvetemperatureforsetclimates": {
       "title": "resolveTemperatureForSetClimateSettingsInCar:withCompletion:",
@@ -352,7 +382,8 @@
           "kind": "identifier",
           "text": "resolveTemperatureForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/1905623-resolverelativetemperaturesettin": {
       "title": "resolveRelativeTemperatureSettingForSetClimateSettingsInCar:withCompletion:",
@@ -377,7 +408,8 @@
           "kind": "identifier",
           "text": "resolveRelativeTemperatureSettingForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/2102613-resolveclimatezoneforsetclimates": {
       "title": "resolveClimateZoneForSetClimateSettingsInCar:withCompletion:",
@@ -402,7 +434,8 @@
           "kind": "identifier",
           "text": "resolveClimateZoneForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetclimatesettingsincarintenthandling/3019570-resolvecarnameforsetclimatesetti": {
       "title": "resolveCarNameForSetClimateSettingsInCar:withCompletion:",
@@ -427,7 +460,8 @@
           "kind": "identifier",
           "text": "resolveCarNameForSetClimateSettingsInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -437,6 +471,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -548,6 +602,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -613,7 +668,7 @@
                           },
                           {
                             "type": "text",
-                            "text": " value that you intend to use. If the intent does not apply to this setting, return a result that indicates the value is not required."
+                            "text": " value that you intend to use. If the intent doesn’t apply to this setting, return a result that indicates the value isn’t required."
                           }
                         ]
                       }
@@ -648,7 +703,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A type that represents a collection of contiguous parts that make up the type conforming to a data protocol."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "10.2",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation12DataProtocolP7RegionsQa",
+    "parent": {
+      "title": "DataProtocol"
+    },
     "symbolKind": "intftdef",
     "fragments": [
       {
@@ -71,8 +85,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -121,6 +135,39 @@
       "role": "symbol",
       "url": "/documentation/swift/bidirectionalcollection"
     },
+    "doc://com.apple.documentation/documentation/foundation/dataprotocol/3139157-regions": {
+      "title": "Regions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dataprotocol/3139157-regions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dataprotocol/3139157-regions",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that represents a collection of contiguous parts that make up the type conforming to a data protocol."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "associatedtype "
+        },
+        {
+          "kind": "identifier",
+          "text": "Regions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/swift/sequence/2908099-element": {
+      "title": "Element",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/sequence/2908099-element",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/sequence/2908099-element"
+    },
     "doc://com.apple.documentation/documentation/foundation/contiguousbytes": {
       "title": "ContiguousBytes",
       "type": "topic",
@@ -128,6 +175,43 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/contiguousbytes"
+    },
+    "doc://com.apple.documentation/documentation/swift/collection/1641276-subsequence": {
+      "title": "SubSequence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/collection/1641276-subsequence",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/collection/1641276-subsequence"
+    },
+    "doc://com.apple.documentation/documentation/foundation/dataprotocol/3139175-regions": {
+      "title": "regions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/dataprotocol/3139175-regions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/dataprotocol/3139175-regions",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of buffers that make up the whole of the type conforming to a data protocol. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "regions"
+        },
+        {
+          "kind": "text",
+          "text": ": Self.Regions"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -137,6 +221,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/dataprotocol/3139175-regions"
+      ],
+      "title": "Accessing Backing Storage",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -187,7 +280,27 @@
             },
             {
               "kind": "text",
-              "text": ".Regions.Element : "
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation12DataProtocolP7RegionsQa",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dataprotocol/3139157-regions",
+              "text": "Regions"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:ST7ElementQa",
+              "identifier": "doc://com.apple.documentation/documentation/swift/sequence/2908099-element",
+              "text": "Element"
+            },
+            {
+              "kind": "text",
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -206,7 +319,27 @@
             },
             {
               "kind": "text",
-              "text": ".Regions.Element : "
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation12DataProtocolP7RegionsQa",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dataprotocol/3139157-regions",
+              "text": "Regions"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:ST7ElementQa",
+              "identifier": "doc://com.apple.documentation/documentation/swift/sequence/2908099-element",
+              "text": "Element"
+            },
+            {
+              "kind": "text",
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -225,7 +358,37 @@
             },
             {
               "kind": "text",
-              "text": ".Regions.Element.SubSequence : "
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation12DataProtocolP7RegionsQa",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/dataprotocol/3139157-regions",
+              "text": "Regions"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:ST7ElementQa",
+              "identifier": "doc://com.apple.documentation/documentation/swift/sequence/2908099-element",
+              "text": "Element"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sl11SubSequenceQa",
+              "identifier": "doc://com.apple.documentation/documentation/swift/collection/1641276-subsequence",
+              "text": "SubSequence"
+            },
+            {
+              "kind": "text",
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -236,6 +399,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -246,7 +410,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

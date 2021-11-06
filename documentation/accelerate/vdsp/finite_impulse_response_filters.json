@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Perform finite impulse response filtering with decimation and antialiasing on vectors of real or complex values."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -25,8 +31,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -79,7 +85,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an FIR filter that can be used as a Wiener filter; single precision."
+          "text": "Solves a system of linear equations for a single-precision symmetric Toeplitz coefficient matrix."
         }
       ]
     },
@@ -93,7 +99,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an FIR filter that can be used as a Wiener filter; single precision."
+          "text": "Solves a system of linear equations for a double-precision symmetric Toeplitz coefficient matrix."
         }
       ]
     },
@@ -177,7 +183,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Apply biquadratic filters to single- and multi-channel data. "
+          "text": "Apply biquadratic filters to single-channel and multichannel data. "
         }
       ]
     },
@@ -187,7 +193,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/single-channel_biquadratic_iir_filters",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/vdsp/single-channel_biquadratic_iir_filters"
+      "url": "/documentation/accelerate/vdsp/single-channel_biquadratic_iir_filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter a single-channel signal with a cascade of biquadratric sections."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters": {
       "title": "Multichannel Biquadratic IIR Filters",
@@ -195,7 +207,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters"
+      "url": "/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter a multichannel signal with a cascade of biquadratric sections."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/finite_impulse_response_filters": {
       "title": "Finite Impulse Response Filters",
@@ -203,7 +221,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/finite_impulse_response_filters",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/vdsp/finite_impulse_response_filters"
+      "url": "/documentation/accelerate/vdsp/finite_impulse_response_filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform finite impulse response filtering with decimation and antialiasing on vectors of real or complex values."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/recursive_filters": {
       "title": "Recursive Filters",
@@ -211,7 +235,13 @@
       "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/recursive_filters",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/vdsp/recursive_filters"
+      "url": "/documentation/accelerate/vdsp/recursive_filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform two-pole two-zero recursive filtering on a vector."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -228,7 +258,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener",
         "doc://com.apple.documentation/documentation/accelerate/1450592-vdsp_wienerd"
-      ]
+      ],
+      "anchor": "2958305"
     },
     {
       "kind": "taskGroup",
@@ -237,7 +268,8 @@
         "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation",
         "doc://com.apple.documentation/documentation/accelerate/1449946-vdsp_desamp",
         "doc://com.apple.documentation/documentation/accelerate/1450133-vdsp_desampd"
-      ]
+      ],
+      "anchor": "2958300"
     },
     {
       "kind": "taskGroup",
@@ -245,7 +277,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/1449891-vdsp_zrdesamp",
         "doc://com.apple.documentation/documentation/accelerate/1449934-vdsp_zrdesampd"
-      ]
+      ],
+      "anchor": "2958302"
     }
   ],
   "seeAlsoSections": [
@@ -261,7 +294,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

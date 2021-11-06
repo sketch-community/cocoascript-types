@@ -35,25 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSNetService(im)publishWithOptions:",
+    "parent": {
+      "title": "NetService"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -79,8 +97,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -165,7 +183,8 @@
           "kind": "text",
           "text": "()"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1414390-publish": {
       "title": "publish(options:)",
@@ -201,7 +220,8 @@
           "kind": "text",
           "text": ": NetService.Options)"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1506204-resolve": {
       "title": "resolve()",
@@ -266,7 +286,8 @@
           "kind": "text",
           "text": ": TimeInterval)"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1409816-port": {
       "title": "port",
@@ -294,7 +315,8 @@
           "kind": "text",
           "text": ": Int"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1411486-startmonitoring": {
       "title": "startMonitoring()",
@@ -322,7 +344,8 @@
           "kind": "text",
           "text": "()"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1408827-stop": {
       "title": "stop()",
@@ -350,7 +373,8 @@
           "kind": "text",
           "text": "()"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/netservice/1413861-stopmonitoring": {
       "title": "stopMonitoring()",
@@ -378,7 +402,8 @@
           "kind": "text",
           "text": "()"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -386,6 +411,24 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "minor": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.1",
+        "13.2 beta 1"
+      ]
+    },
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
     }
   },
   "seeAlsoSections": [
@@ -463,6 +506,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -523,7 +567,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

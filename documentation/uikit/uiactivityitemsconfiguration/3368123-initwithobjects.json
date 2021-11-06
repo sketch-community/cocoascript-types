@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Initializes and returns an activity items configuration with the specified objects."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -37,20 +43,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIActivityItemsConfiguration(im)initWithObjects:",
+    "parent": {
+      "title": "UIActivityItemsConfiguration"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -139,24 +153,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsitemproviderwriting"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368122-initwithitemproviders": {
-      "title": "initWithItemProviders:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368122-initwithitemproviders",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368122-initwithitemproviders",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithItemProviders:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368123-initwithobjects": {
       "title": "initWithObjects:",
       "type": "topic",
@@ -164,6 +160,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityitemsconfiguration/3368123-initwithobjects",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes and returns an activity items configuration with the specified objects."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -175,21 +177,27 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368179-activityitemsconfigurationwithit": {
-      "title": "activityItemsConfigurationWithItemProviders:",
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368122-initwithitemproviders": {
+      "title": "initWithItemProviders:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368179-activityitemsconfigurationwithit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368122-initwithitemproviders",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368179-activityitemsconfigurationwithit",
+      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368122-initwithitemproviders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes and returns an activity items configuration with the specified item providers."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
-          "text": "+ "
+          "text": "- "
         },
         {
           "kind": "identifier",
-          "text": "activityItemsConfigurationWithItemProviders:"
+          "text": "initWithItemProviders:"
         }
       ]
     },
@@ -200,6 +208,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiactivityitemsconfiguration/3368180-activityitemsconfigurationwithob",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an activity items configuration with the specified objects."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -208,6 +222,30 @@
         {
           "kind": "identifier",
           "text": "activityItemsConfigurationWithObjects:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368179-activityitemsconfigurationwithit": {
+      "title": "activityItemsConfigurationWithItemProviders:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368179-activityitemsconfigurationwithit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368179-activityitemsconfigurationwithit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an activity items configuration with the specified item providers."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "activityItemsConfigurationWithItemProviders:"
         }
       ]
     },
@@ -223,8 +261,8 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368122-initwithitemproviders",
-        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368179-activityitemsconfigurationwithit",
-        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368180-activityitemsconfigurationwithob"
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368180-activityitemsconfigurationwithob",
+        "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368179-activityitemsconfigurationwithit"
       ],
       "title": "Creating an Activity Items Configuration",
       "generated": true
@@ -302,6 +340,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -309,7 +348,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

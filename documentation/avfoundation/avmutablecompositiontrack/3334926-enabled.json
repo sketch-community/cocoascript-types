@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Boolean value that indicates whether the tracks is in an enabled state."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVMutableCompositionTrack(py)enabled",
+    "parent": {
+      "title": "AVMutableCompositionTrack"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable track in a composition object that you use to insert, remove, and scale track segments without affecting their low-level representation."
+          "text": "A mutable track in a composition that you use to insert, remove, and scale track segments without affecting their low-level representation."
         }
       ]
     },
@@ -115,7 +129,27 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3334926-enabled",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecompositiontrack/3334926-enabled"
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/3334926-enabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the tracks is in an enabled state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale": {
+      "title": "naturalTimeScale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time scale in which you can perform time-based operations without extra numerical conversion."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1387192-languagecode": {
       "title": "languageCode",
@@ -145,20 +179,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale": {
-      "title": "naturalTimeScale",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The time scale in which time values for the track can be operated upon without extraneous numerical conversion."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388304-preferredtransform": {
       "title": "preferredTransform",
       "type": "topic",
@@ -183,7 +203,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The preferred volume of the audible media data."
+          "text": "The volume the track prefers for its audible media data."
         }
       ]
     },
@@ -198,9 +218,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1387192-languagecode",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388866-extendedlanguagetag",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388304-preferredtransform",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388649-preferredvolume"
       ],
@@ -244,6 +264,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -253,7 +274,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

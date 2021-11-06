@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/shortcut_management"
+        "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui"
       ]
     ]
   },
@@ -34,20 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "12.0",
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)INUIAddVoiceShortcutViewController",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,10 +92,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/shortcut_management": {
-      "title": "Shortcut Management",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/shortcut_management",
-      "url": "/documentation/sirikit/shortcut_management",
+    "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui": {
+      "title": "Shortcut-Related UI",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/shortcut-related_ui",
+      "url": "/documentation/sirikit/shortcut-related_ui",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -161,6 +171,14 @@
       "role": "symbol",
       "url": "/documentation/uikit/uiviewcontroller"
     },
+    "doc://com.apple.documentation/documentation/appkit/nsviewcontroller": {
+      "title": "NSViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsviewcontroller"
+    },
     "doc://com.apple.documentation/documentation/sirikit/inuiaddvoiceshortcutviewcontroller/2999415-initwithshortcut": {
       "title": "initWithShortcut:",
       "type": "topic",
@@ -221,22 +239,13 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
       "title": "Inherits From",
       "type": "inheritsFrom",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsviewcontroller",
         "doc://com.apple.documentation/documentation/uikit/uiviewcontroller"
       ]
     }
@@ -247,7 +256,8 @@
       "title": "Creating an Add Shortcut View Controller",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inuiaddvoiceshortcutviewcontroller/2999415-initwithshortcut"
-      ]
+      ],
+      "anchor": "2980385"
     },
     {
       "kind": "taskGroup",
@@ -255,7 +265,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/inuiaddvoiceshortcutviewcontroller/2968467-delegate",
         "doc://com.apple.documentation/documentation/sirikit/inuiaddvoiceshortcutviewcontrollerdelegate"
-      ]
+      ],
+      "anchor": "2980384"
     }
   ],
   "seeAlsoSections": [
@@ -301,7 +312,40 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        },
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "INUIAddVoiceShortcutViewController"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSViewController",
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nsviewcontroller",
+              "text": "NSViewController"
+            }
+          ],
+          "platforms": [
+            "macOS"
           ]
         }
       ]
@@ -443,7 +487,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

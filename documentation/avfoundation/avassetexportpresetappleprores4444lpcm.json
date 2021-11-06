@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A QuickTime movie with Apple ProRes 4444 video and LPCM audio."
+      "text": "A preset to export a QuickTime movie with Apple ProRes 4444 video and LPCM audio."
     }
   ],
   "documentVersion": 0,
@@ -13,7 +13,7 @@
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
         "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets"
       ]
     ]
   },
@@ -34,17 +34,32 @@
     ],
     "platforms": [
       {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:@AVAssetExportPresetAppleProRes4444LPCM",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -95,10 +110,10 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size": {
-      "title": "Export Preset Names for QuickTime Files of a Given Size",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size",
-      "url": "/documentation/avfoundation/avassetexportsession/export_preset_names_for_quicktime_files_of_a_given_size",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets": {
+      "title": "Export Presets",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/export_presets",
+      "url": "/documentation/avfoundation/avassetexportsession/export_presets",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -111,157 +126,17 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset640x480": {
-      "title": "AVAssetExportPreset640x480",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetappleprores422lpcm": {
+      "title": "AVAssetExportPresetAppleProRes422LPCM",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset640x480",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetappleprores422lpcm",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpreset640x480",
+      "url": "/documentation/avfoundation/avassetexportpresetappleprores422lpcm",
       "abstract": [
         {
           "type": "text",
-          "text": "The output uses H.264 video compression at 640 x 480 pixels."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset960x540": {
-      "title": "AVAssetExportPreset960x540",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset960x540",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpreset960x540",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output uses H.264 video compression at 960 x 540 pixels."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset1280x720": {
-      "title": "AVAssetExportPreset1280x720",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset1280x720",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpreset1280x720",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output uses H.264 video compression at 1280 x 720 pixels."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset1920x1080": {
-      "title": "AVAssetExportPreset1920x1080",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset1920x1080",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpreset1920x1080",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output uses H.264 video compression at 1920 x 1080 pixels."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset3840x2160": {
-      "title": "AVAssetExportPreset3840x2160",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset3840x2160",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpreset3840x2160",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output uses H.264 video compression at 3840 x 2160 pixels."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc1920x1080": {
-      "title": "AVAssetExportPresetHEVC1920x1080",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc1920x1080",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresethevc1920x1080",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output uses HEVC video compression at 1920 x 1080 pixels."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc3840x2160": {
-      "title": "AVAssetExportPresetHEVC3840x2160",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc3840x2160",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresethevc3840x2160",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output uses HEVC video compression at 3840 x 2160 pixels."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc1920x1080withalpha": {
-      "title": "AVAssetExportPresetHEVC1920x1080WithAlpha",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc1920x1080withalpha",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresethevc1920x1080withalpha",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output uses HEVC video compression at 1920 x 1080 pixels with alpha."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc3840x2160withalpha": {
-      "title": "AVAssetExportPresetHEVC3840x2160WithAlpha",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc3840x2160withalpha",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresethevc3840x2160withalpha",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output uses HEVC video compression at 3840 x 2160 pixels with alpha."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevchighestquality": {
-      "title": "AVAssetExportPresetHEVCHighestQuality",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevchighestquality",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresethevchighestquality",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output uses the highest applicable video quality and HEVC video compression."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevchighestqualitywithalpha": {
-      "title": "AVAssetExportPresetHEVCHighestQualityWithAlpha",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevchighestqualitywithalpha",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetexportpresethevchighestqualitywithalpha",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The output uses the highest applicable video quality and HEVC video compression with alpha."
+          "text": "A preset to export a QuickTime movie with Apple ProRes 422 video and LPCM audio."
         }
       ]
     },
@@ -275,7 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A QuickTime movie with Apple ProRes 4444 video and LPCM audio."
+          "text": "A preset to export a QuickTime movie with Apple ProRes 4444 video and LPCM audio."
         }
       ]
     },
@@ -287,22 +162,22 @@
       "title": "Technologies"
     }
   },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
+    }
+  },
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset640x480",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset960x540",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset1280x720",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset1920x1080",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpreset3840x2160",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc1920x1080",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc3840x2160",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc1920x1080withalpha",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevc3840x2160withalpha",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevchighestquality",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresethevchighestqualitywithalpha"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetexportpresetappleprores422lpcm"
       ],
-      "title": "Export Size",
+      "title": "Apple ProRes Presets",
       "generated": true
     }
   ],
@@ -343,14 +218,17 @@
             }
           ],
           "platforms": [
-            "macOS"
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst"
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

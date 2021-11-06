@@ -5,13 +5,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/uikit/uiguidedaccesserrorcode"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/uikit/uiguidedaccesserrorcode"
       ]
     ]
@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "12.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.2",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@UIGuidedAccessErrorCode@UIGuidedAccessErrorPermissionDenied",
+    "parent": {
+      "title": "UIGuidedAccessErrorCode"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -83,10 +91,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -97,7 +105,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiguidedaccesserrorcode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiguidedaccesserrorcode"
+      "url": "/documentation/uikit/uiguidedaccesserrorcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Error codes for Guided Access."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -107,6 +121,22 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiguidedaccesserrorcode/uiguidedaccesserrorfailed": {
+      "title": "UIGuidedAccessErrorFailed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiguidedaccesserrorcode/uiguidedaccesserrorfailed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiguidedaccesserrorcode/uiguidedaccesserrorfailed"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiguidedaccesserrorcode/uiguidedaccesserrorpermissiondenied": {
+      "title": "UIGuidedAccessErrorPermissionDenied",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiguidedaccesserrorcode/uiguidedaccesserrorpermissiondenied",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiguidedaccesserrorcode/uiguidedaccesserrorpermissiondenied"
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -115,6 +145,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiguidedaccesserrorcode/uiguidedaccesserrorfailed"
+      ],
+      "title": "Errors",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -131,6 +170,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -138,7 +178,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

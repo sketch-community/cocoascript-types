@@ -1,18 +1,24 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A Guided Access error."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
@@ -52,20 +58,28 @@
       {
         "name": "iOS",
         "introducedAt": "12.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.2",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "10.2",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:SC23UIGuidedAccessErrorCodeLeV",
+    "parent": {
+      "title": "UIAccessibility"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -79,8 +93,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,10 +119,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -127,7 +141,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility"
+      "url": "/documentation/uikit/uiaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A namespace for accessibility symbols for UIKit apps."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -168,6 +188,72 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed": {
+      "title": "failed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "failed"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibility.GuidedAccessError.Code"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied": {
+      "title": "permissionDenied",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "permissionDenied"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibility.GuidedAccessError.Code"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain": {
+      "title": "errorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "errorDomain"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089211-errorcode": {
       "title": "errorCode",
@@ -235,72 +321,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain": {
-      "title": "errorDomain",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "errorDomain"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed": {
-      "title": "failed",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "failed"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibility.GuidedAccessError.Code"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied": {
-      "title": "permissionDenied",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "permissionDenied"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibility.GuidedAccessError.Code"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089210": {
       "title": "!=(_:_:)",
       "type": "topic",
@@ -329,6 +349,226 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727734-init": {
+      "title": "init(_:userInfo:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727734-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3727734-init",
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "(Code, "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [String : Any])"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727731-code": {
+      "title": "code",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727731-code",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3727731-code",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "code"
+        },
+        {
+          "kind": "text",
+          "text": ": Code"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727733-hashvalue": {
+      "title": "hashValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727733-hashvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3727733-hashvalue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "hashValue"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727735-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727735-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3727735-userinfo",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [String : Any]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727732-hash": {
+      "title": "hash(into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727732-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3727732-hash",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "hash"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "into"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Hasher)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727730": {
+      "title": "==(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727730",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/3727730",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "== "
+        },
+        {
+          "kind": "text",
+          "text": "(UIAccessibility.GuidedAccessError, UIAccessibility.GuidedAccessError) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/code": {
+      "title": "UIAccessibility.GuidedAccessError.Code",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/code",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror/code",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Error codes for Guided Access."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "UIAccessibility.GuidedAccessError.Code"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror": {
+      "title": "UIAccessibility.GuidedAccessError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/guidedaccesserror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Guided Access error."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "UIAccessibility.GuidedAccessError"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3089100-guidedaccesserrordomain": {
+      "title": "guidedAccessErrorDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3089100-guidedaccesserrordomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/3089100-guidedaccesserrordomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A string that identifies the Guided Access error domain."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "guidedAccessErrorDomain"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -340,28 +580,82 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
+      "title": "Getting Error Information",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089211-errorcode",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089214-erroruserinfo",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089216-localizeddescription"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied"
+      ],
+      "anchor": "3089525"
     },
     {
       "kind": "taskGroup",
-      "title": "Type Properties",
+      "title": "Accessing Error Codes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089212-errordomain",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089215-failed",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089217-permissiondenied"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089211-errorcode",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089214-erroruserinfo",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089216-localizeddescription"
+      ],
+      "anchor": "3089524"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Comparing Guided Access Errors",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089210"
+      ],
+      "anchor": "3680777"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727734-init"
+      ],
+      "anchor": "3728974"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727731-code",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727733-hashvalue",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727735-userinfo"
+      ],
+      "anchor": "3682248"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727732-hash"
+      ],
+      "anchor": "3728975"
     },
     {
       "kind": "taskGroup",
       "title": "Operator Functions",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3089210"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/3727730"
+      ],
+      "anchor": "3089526"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Enumerations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/guidedaccesserror/code"
+      ],
+      "anchor": "3712850"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3089100-guidedaccesserrordomain"
+      ],
+      "title": "Errors",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -388,6 +682,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -395,7 +690,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

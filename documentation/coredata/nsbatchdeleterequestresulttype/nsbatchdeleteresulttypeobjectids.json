@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns an array of the deleted managed objects’ identifiers."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -7,6 +13,13 @@
         "doc://com.apple.documentation/documentation/coredata",
         "doc://com.apple.documentation/documentation/coredata/batch_processing",
         "doc://com.apple.documentation/documentation/coredata/nsbatchdeleteresult",
+        "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/coredata",
+        "doc://com.apple.documentation/documentation/coredata/batch_processing",
+        "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequest",
         "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype"
       ]
     ]
@@ -30,35 +43,43 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSBatchDeleteRequestResultType@NSBatchDeleteResultTypeObjectIDs",
+    "parent": {
+      "title": "NSBatchDeleteRequestResultType"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,7 +136,63 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsbatchdeleterequestresulttype"
+      "url": "/documentation/coredata/nsbatchdeleterequestresulttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The types of result a batch delete request can provide when it executes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequest": {
+      "title": "NSBatchDeleteRequest",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequest",
+      "url": "/documentation/coredata/nsbatchdeleterequest",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypecount": {
+      "title": "NSBatchDeleteResultTypeCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypecount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypecount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the number of managed objects the request deletes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypeobjectids": {
+      "title": "NSBatchDeleteResultTypeObjectIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypeobjectids",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypeobjectids",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of the deleted managed objects’ identifiers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypestatusonly": {
+      "title": "NSBatchDeleteResultTypeStatusOnly",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypestatusonly",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypestatusonly",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates if the request succeeds."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -125,6 +202,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypecount",
+        "doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequestresulttype/nsbatchdeleteresulttypestatusonly"
+      ],
+      "title": "Result Types",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -145,6 +232,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -155,7 +243,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

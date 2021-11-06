@@ -2,24 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates and returns an "
-    },
-    {
-      "type": "codeVoice",
-      "code": "NSProgress"
-    },
-    {
-      "type": "text",
-      "text": " instance, initialized using "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1409133-init"
-    },
-    {
-      "type": "text",
-      "text": "."
+      "text": "Creates and returns a progress instance."
     }
   ],
   "documentVersion": 0,
@@ -52,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(cm)progressWithTotalUnitCount:",
+    "parent": {
+      "title": "Progress"
+    },
     "symbolKind": "instctr",
     "fragments": [
       {
@@ -97,8 +88,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -147,61 +138,15 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/progress",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/progress",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
-        }
-      ]
+      "url": "/documentation/foundation/progress"
     },
-    "doc://com.apple.documentation/documentation/foundation/progress/1409133-init": {
-      "title": "init(parent:userInfo:)",
+    "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount": {
+      "title": "totalUnitCount",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1409133-init",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/progress/1409133-init",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Initializes a newly allocated "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSProgress"
-        },
-        {
-          "type": "text",
-          "text": " instance."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "parent"
-        },
-        {
-          "kind": "text",
-          "text": ": Progress?, "
-        },
-        {
-          "kind": "identifier",
-          "text": "userInfo"
-        },
-        {
-          "kind": "text",
-          "text": ": [ProgressUserInfoKey : Any]?)"
-        }
-      ]
+      "url": "/documentation/foundation/progress/1410940-totalunitcount"
     },
     "doc://com.apple.documentation/documentation/foundation/progress/1407934-completedunitcount": {
       "title": "completedUnitCount",
@@ -253,32 +198,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSProgress"
-        },
-        {
-          "type": "text",
-          "text": " instance attached to the specified parent with the "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount"
-        },
-        {
-          "type": "text",
-          "text": " set to "
-        },
-        {
-          "type": "codeVoice",
-          "code": "portionOfParentTotalUnitCount"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Creates a progress instance for the specified progress object with a unit count that’s a portion of the containing object’s total unit count."
         }
       ],
       "fragments": [
@@ -316,14 +236,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount": {
-      "title": "totalUnitCount",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/progress/1410940-totalunitcount"
-    },
     "doc://com.apple.documentation/documentation/swift/int64": {
       "title": "Int64",
       "type": "topic",
@@ -331,6 +243,46 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/swift/int64"
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/1409133-init": {
+      "title": "init(parent:userInfo:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1409133-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/1409133-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new progress instance."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "parent"
+        },
+        {
+          "kind": "text",
+          "text": ": Progress?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [ProgressUserInfoKey : Any]?)"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/progress/1410951-discreteprogress": {
       "title": "discreteProgress(totalUnitCount:)",
@@ -342,41 +294,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSProgress"
-        },
-        {
-          "type": "text",
-          "text": " instance with the specified "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount"
-        },
-        {
-          "type": "text",
-          "text": " that is not part of any existing progress tree. The instance is initialized using "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1409133-init"
-        },
-        {
-          "type": "text",
-          "text": " with the parent set to "
-        },
-        {
-          "type": "codeVoice",
-          "code": "nil"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Creates and returns a progress instance with the specified unit count that isn’t part of any existing progress tree."
         }
       ],
       "fragments": [
@@ -412,24 +330,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSProgress"
-        },
-        {
-          "type": "text",
-          "text": " instance, initialized using "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1409133-init"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "Creates and returns a progress instance."
         }
       ],
       "fragments": [
@@ -516,6 +417,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -538,7 +440,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The total number of units of work to be carried out."
+                  "text": "The total number of units of work to assign to the progress instance."
                 }
               ]
             }
@@ -560,15 +462,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The initializer is passed the current progress object, if there is one, and the value of the "
+              "text": "If a current progress object exists, the initializer uses it to set the value of the "
             },
             {
-              "type": "codeVoice",
-              "code": "totalUnitCount"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1410940-totalunitcount"
             },
             {
               "type": "text",
-              "text": " property is set. "
+              "text": " property. "
             }
           ]
         },
@@ -577,7 +480,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In many cases you can simply precede code that does a substantial amount of work with an invocation of this method, then repeatedly set the "
+              "text": "In many cases, you can precede code that does a substantial amount of work with an invocation of this method, then repeatedly set the "
             },
             {
               "type": "reference",
@@ -607,8 +510,9 @@
               "text": "You can invoke this method on one thread and then message the returned "
             },
             {
-              "type": "codeVoice",
-              "code": "NSProgress"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress"
             },
             {
               "type": "text",
@@ -621,7 +525,7 @@
             },
             {
               "type": "text",
-              "text": ". In that block you can invoke methods like "
+              "text": ". In that block, you can invoke methods like "
             },
             {
               "type": "reference",
@@ -643,7 +547,7 @@
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1407934-completedunitcount"
             },
             {
@@ -652,12 +556,12 @@
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1414454-iscancelled"
             },
             {
               "type": "text",
-              "text": " properties as work is carried out."
+              "text": " properties as your app finishes its work."
             }
           ]
         }
@@ -665,7 +569,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

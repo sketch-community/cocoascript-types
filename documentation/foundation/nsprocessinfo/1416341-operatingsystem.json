@@ -42,44 +42,54 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "8.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "8.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.10",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "9.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "2.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSProcessInfo(im)operatingSystem",
+    "parent": {
+      "title": "NSProcessInfo"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -206,6 +216,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1408730-operatingsystemversionstring": {
+      "title": "operatingSystemVersionString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1408730-operatingsystemversionstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprocessinfo/1408730-operatingsystemversionstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A string containing the version of the operating system on which the process is executing."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1416341-operatingsystem": {
       "title": "operatingSystem",
       "type": "topic",
@@ -256,20 +280,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1408730-operatingsystemversionstring": {
-      "title": "operatingSystemVersionString",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1408730-operatingsystemversionstring",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprocessinfo/1408730-operatingsystemversionstring",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A string containing the version of the operating system on which the process is executing."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -311,10 +321,10 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1417236-hostname",
-        "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1407388-operatingsystemname",
         "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1408730-operatingsystemversionstring",
         "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1410906-operatingsystemversion",
-        "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1414876-isoperatingsystematleastversion"
+        "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1414876-isoperatingsystematleastversion",
+        "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1407388-operatingsystemname"
       ],
       "title": "Getting Host Information",
       "generated": true
@@ -354,6 +364,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -401,7 +412,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

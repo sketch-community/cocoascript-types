@@ -11,8 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types"
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers"
       ]
     ]
   },
@@ -35,40 +40,48 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:22UniformTypeIdentifiers6UTTypeV10javaScriptACvpZ",
+    "parent": {
+      "title": "UTType"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
         "kind": "text",
-        "text": "static let "
+        "text": "static var "
       },
       {
         "kind": "identifier",
@@ -81,8 +94,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,6 +120,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "url": "/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype": {
       "title": "UTType",
       "type": "topic",
@@ -115,10 +136,10 @@
       "role": "symbol",
       "url": "/documentation/uniformtypeidentifiers/uttype"
     },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types": {
-      "title": "System Declared Types",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types",
-      "url": "/documentation/uniformtypeidentifiers/uttype/system_declared_types",
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers",
+      "url": "/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -139,258 +160,6 @@
       "role": "symbol",
       "url": "/documentation/uniformtypeidentifiers/uttypeexecutable"
     },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551569-sourcecode": {
-      "title": "sourceCode",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551569-sourcecode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551569-sourcecode",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A base type that represents source code of any programming language."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "sourceCode"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551463-assemblylanguagesource": {
-      "title": "assemblyLanguageSource",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551463-assemblylanguagesource",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551463-assemblylanguagesource",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents assembly language source code."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "assemblyLanguageSource"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551472-cheader": {
-      "title": "cHeader",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551472-cheader",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551472-cheader",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents a C header file."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "cHeader"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551475-csource": {
-      "title": "cSource",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551475-csource",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551475-csource",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents a C source code file."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "cSource"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551473-cplusplusheader": {
-      "title": "cPlusPlusHeader",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551473-cplusplusheader",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551473-cplusplusheader",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents a C++ header file."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "cPlusPlusHeader"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551474-cplusplussource": {
-      "title": "cPlusPlusSource",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551474-cplusplussource",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551474-cplusplussource",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents a C++ source code file."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "cPlusPlusSource"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551539-objectivecplusplussource": {
-      "title": "objectiveCPlusPlusSource",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551539-objectivecplusplussource",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551539-objectivecplusplussource",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents an Objective-C++ source code file."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "objectiveCPlusPlusSource"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551540-objectivecsource": {
-      "title": "objectiveCSource",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551540-objectivecsource",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551540-objectivecsource",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents an Objective-C source code file."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "objectiveCSource"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551574-swiftsource": {
-      "title": "swiftSource",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551574-swiftsource",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551574-swiftsource",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents a Swift source code file."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "swiftSource"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551567-script": {
       "title": "script",
       "type": "topic",
@@ -407,7 +176,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -435,7 +204,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -463,7 +232,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -491,7 +260,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -519,11 +288,39 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
           "text": "osaScriptBundle"
+        },
+        {
+          "kind": "text",
+          "text": ": UTType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3750150-makefile": {
+      "title": "makefile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3750150-makefile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uniformtypeidentifiers/uttype/3750150-makefile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that represents a Makefile."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "makefile"
         },
         {
           "kind": "text",
@@ -541,13 +338,13 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A base type that represents shell scripts."
+          "text": "A base type that represents a shell script."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -575,7 +372,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -603,7 +400,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -631,7 +428,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -659,7 +456,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -682,26 +479,18 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551569-sourcecode",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551463-assemblylanguagesource",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551472-cheader",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551475-csource",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551473-cplusplusheader",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551474-cplusplussource",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551539-objectivecplusplussource",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551540-objectivecsource",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551574-swiftsource",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551567-script",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551457-applescript",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551541-osascript",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551542-osascriptbundle",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3750150-makefile",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551568-shellscript",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551556-pythonscript",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551565-rubyscript",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551545-perlscript",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551546-phpscript"
       ],
-      "title": "Common Programming Language Source Files",
+      "title": "Scripted Programming Language Sources",
       "generated": true
     }
   ],
@@ -724,7 +513,7 @@
             },
             {
               "kind": "keyword",
-              "text": "let"
+              "text": "var"
             },
             {
               "kind": "text",
@@ -743,10 +532,23 @@
               "preciseIdentifier": "s:22UniformTypeIdentifiers6UTTypeV",
               "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype",
               "text": "UTType"
+            },
+            {
+              "kind": "text",
+              "text": " { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " }"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -812,7 +614,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns whether the scanner view is using the advanced display mode."
+      "text": "The property that determines whether the scanner view uses the advanced display mode."
     }
   ],
   "documentVersion": 0,
@@ -35,15 +35,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)IKScannerDeviceView(py)hasDisplayModeAdvanced",
+    "parent": {
+      "title": "IKScannerDeviceView"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,27 +115,29 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504506-hasdisplaymodesimple": {
-      "title": "hasDisplayModeSimple",
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504506-hasdisplaymodesimple",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/quartz/ikscannerdeviceview/1504506-hasdisplaymodesimple",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns whether the scanner view is using the simple display mode."
-        }
-      ]
+      "url": "/documentation/objectivec/yes"
     },
-    "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate": {
-      "title": "IKScannerDeviceViewDelegate",
+    "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdisplaymode/ikscannerdeviceviewdisplaymodesimple": {
+      "title": "IKScannerDeviceViewDisplayModeSimple",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdisplaymode/ikscannerdeviceviewdisplaymodesimple",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/quartz/ikscannerdeviceviewdelegate"
+      "url": "/documentation/quartz/ikscannerdeviceviewdisplaymode/ikscannerdeviceviewdisplaymodesimple"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
     },
     "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504321-mode": {
       "title": "mode",
@@ -148,6 +153,36 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdisplaymode/ikscannerdeviceviewdisplaymodeadvanced": {
+      "title": "IKScannerDeviceViewDisplayModeAdvanced",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdisplaymode/ikscannerdeviceviewdisplaymodeadvanced",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikscannerdeviceviewdisplaymode/ikscannerdeviceviewdisplaymodeadvanced"
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504506-hasdisplaymodesimple": {
+      "title": "hasDisplayModeSimple",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504506-hasdisplaymodesimple",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikscannerdeviceview/1504506-hasdisplaymodesimple",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The property that determines whether the scanner view uses the simple display mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate": {
+      "title": "IKScannerDeviceViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartz/ikscannerdeviceviewdelegate"
+    },
     "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1503437-hasdisplaymodeadvanced": {
       "title": "hasDisplayModeAdvanced",
       "type": "topic",
@@ -158,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns whether the scanner view is using the advanced display mode."
+          "text": "The property that determines whether the scanner view uses the advanced display mode."
         }
       ]
     },
@@ -176,7 +211,7 @@
         "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504321-mode",
         "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504506-hasdisplaymodesimple"
       ],
-      "title": "Display Mode of the Device View",
+      "title": "Setting the Device View’s Display Mode",
       "generated": true
     }
   ],
@@ -219,10 +254,145 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you create an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "IKScannerDeviceView"
+            },
+            {
+              "type": "text",
+              "text": " object programmatically and want to use the advanced display mode, do the following:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set this property to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdisplaymode/ikscannerdeviceviewdisplaymodesimple"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504321-mode"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdisplaymode/ikscannerdeviceviewdisplaymodeadvanced"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default value for this property is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

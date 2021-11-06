@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Tells the receiver that the session expired as the result of normal, intentional processes."
+      "text": "Tells the delegate that the session expired as the result of normal, intentional processes."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVContentKeySession(im)expire",
+    "parent": {
+      "title": "AVContentKeySession"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to create and track decryption keys for media data."
+          "text": "An object that creates and tracks decryption keys for media data."
         }
       ]
     },
@@ -130,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the receiver that the session expired as the result of normal, intentional processes."
+          "text": "Tells the delegate that the session expired as the result of normal, intentional processes."
         }
       ],
       "fragments": [
@@ -144,17 +152,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient": {
-      "title": "removeContentKeyRecipient:",
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2887476-makesecuretokenforexpirationdate": {
+      "title": "makeSecureTokenForExpirationDateOfPersistableContentKey:completionHandler:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2887476-makesecuretokenforexpirationdate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
+      "url": "/documentation/avfoundation/avcontentkeysession/2887476-makesecuretokenforexpirationdate",
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the receiver to remove the specified recipient."
+          "text": "Creates a secure server playback context that the client sends to the key server to get an expiration date for the given persistable content key data."
         }
       ],
       "fragments": [
@@ -164,21 +172,45 @@
         },
         {
           "kind": "identifier",
-          "text": "removeContentKeyRecipient:"
+          "text": "makeSecureTokenForExpirationDateOfPersistableContentKey:completionHandler:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient": {
-      "title": "AVContentKeyRecipient",
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont": {
+      "title": "renewExpiringResponseDataForContentKeyRequest:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeyrecipient",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont",
       "abstract": [
         {
           "type": "text",
-          "text": "A protocol for requiring decryption keys for media data."
+          "text": "Tells the delegate that previously provided response data for a content key request is about to expire."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "renewExpiringResponseDataForContentKeyRequest:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799189-contentprotectionsessionidentifi": {
+      "title": "contentProtectionSessionIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799189-contentprotectionsessionidentifi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799189-contentprotectionsessionidentifi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifier for the current content protection session."
         }
       ]
     },
@@ -193,10 +225,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient"
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2887476-makesecuretokenforexpirationdate",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799208-renewexpiringresponsedataforcont",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799189-contentprotectionsessionidentifi"
       ],
-      "title": "Ending a Content Key Request Process",
+      "title": "Managing Expiration",
       "generated": true
     }
   ],
@@ -232,6 +265,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -242,7 +276,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

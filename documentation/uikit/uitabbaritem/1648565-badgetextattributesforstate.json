@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Retrieves the custom text attributes associated with the item's badge text."
+      "text": "Returns the badge’s text attributes for the specified state."
     }
   ],
   "documentVersion": 0,
@@ -12,15 +12,13 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/views_and_controls",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations"
+        "doc://com.apple.documentation/documentation/uikit/uitabbaritem"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/view_controllers",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations"
+        "doc://com.apple.documentation/documentation/uikit/uitabbaritem"
       ]
     ]
   },
@@ -43,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITabBarItem(im)badgeTextAttributesForState:",
+    "parent": {
+      "title": "UITabBarItem"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,17 +120,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations": {
-      "title": "Legacy Customizations",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations",
-      "url": "/documentation/uikit/uitabbaritem/legacy_customizations",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/uikit/view_controllers": {
       "title": "View Controllers",
@@ -134,6 +132,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstringkey": {
+      "title": "NSAttributedStringKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstringkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstringkey"
+    },
     "doc://com.apple.documentation/documentation/uikit/uicontrolstate": {
       "title": "UIControlState",
       "type": "topic",
@@ -142,20 +148,6 @@
       "role": "symbol",
       "url": "/documentation/uikit/uicontrolstate"
     },
-    "devLink-1742708": {
-      "identifier": "devLink-1742708",
-      "type": "link",
-      "title": "Character Attributes",
-      "url": "https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/CustomTextProcessing/CustomTextProcessing.html#//apple_ref/doc/uid/TP40009542-CH4-SW24"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsattributedstring": {
-      "title": "NSAttributedString",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsattributedstring"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
       "title": "NSDictionary",
       "type": "topic",
@@ -163,14 +155,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsdictionary"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsattributedstringkey": {
-      "title": "NSAttributedStringKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstringkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsattributedstringkey"
     },
     "doc://com.apple.documentation/documentation/objectivec/id": {
       "title": "id",
@@ -190,7 +174,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Text that is displayed in the upper-right corner of the item with a surrounding red oval."
+          "text": "The text that the item’s badge displays."
         }
       ]
     },
@@ -204,7 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The background color to apply to the badge."
+          "text": "The background color of the item’s badge."
         }
       ]
     },
@@ -218,7 +202,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Assigns custom text attributes to the badge text. "
+          "text": "Registers text attributes that the badge uses for the specified state."
         }
       ],
       "fragments": [
@@ -242,7 +226,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Retrieves the custom text attributes associated with the item's badge text."
+          "text": "Returns the badge’s text attributes for the specified state."
         }
       ],
       "fragments": [
@@ -271,7 +255,7 @@
         "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1648567-badgecolor",
         "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1648566-setbadgetextattributes"
       ],
-      "title": "Configuring the Badge",
+      "title": "Configuring the Item’s Badge",
       "generated": true
     }
   ],
@@ -351,6 +335,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -371,7 +356,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The state that uses the badge text. The possible values are described in "
+                  "text": "The item’s state. For possible values, see "
                 },
                 {
                   "type": "reference",
@@ -392,9 +377,9 @@
       "kind": "content",
       "content": [
         {
-          "anchor": "return_value",
+          "anchor": "discussion",
           "level": 2,
-          "text": "Return Value",
+          "text": "Discussion",
           "type": "heading"
         },
         {
@@ -402,25 +387,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The attributed string attributes applied to the badge for the specified state. For a list of attributes, see "
-            },
-            {
-              "type": "link",
-              "title": "Character Attributes",
-              "destination": "https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/CustomTextProcessing/CustomTextProcessing.html#//apple_ref/doc/uid/TP40009542-CH4-SW24"
-            },
-            {
-              "type": "text",
-              "text": " in "
+              "text": "Use this method to retrieve the attributes the item applies to its badge’s value for the specified state. For a list of attributes, see "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstringkey"
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         }
@@ -428,7 +404,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

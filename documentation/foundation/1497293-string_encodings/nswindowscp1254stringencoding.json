@@ -42,35 +42,43 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@Ea@NSASCIIStringEncoding@NSWindowsCP1254StringEncoding",
+    "parent": {
+      "title": "String Encodings"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,7 +127,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings",
       "kind": "symbol",
       "role": "containerSymbol",
-      "url": "/documentation/foundation/1497293-string_encodings"
+      "url": "/documentation/foundation/1497293-string_encodings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants for encoding standards used when converting raw data to and from string representations."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
@@ -137,6 +151,76 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1250stringencoding": {
+      "title": "NSWindowsCP1250StringEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1250stringencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/1497293-string_encodings/nswindowscp1250stringencoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Microsoft Windows codepage 1250; equivalent to WinLatin2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1251stringencoding": {
+      "title": "NSWindowsCP1251StringEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1251stringencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/1497293-string_encodings/nswindowscp1251stringencoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Microsoft Windows codepage 1251, encoding Cyrillic characters; equivalent to AdobeStandardCyrillic font encoding."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1252stringencoding": {
+      "title": "NSWindowsCP1252StringEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1252stringencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/1497293-string_encodings/nswindowscp1252stringencoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Microsoft Windows codepage 1252; equivalent to WinLatin1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1253stringencoding": {
+      "title": "NSWindowsCP1253StringEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1253stringencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/1497293-string_encodings/nswindowscp1253stringencoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Microsoft Windows codepage 1253, encoding Greek characters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1254stringencoding": {
+      "title": "NSWindowsCP1254StringEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1254stringencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/1497293-string_encodings/nswindowscp1254stringencoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Microsoft Windows codepage 1254, encoding Turkish characters."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -145,6 +229,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1250stringencoding",
+        "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1251stringencoding",
+        "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1252stringencoding",
+        "doc://com.apple.documentation/documentation/foundation/1497293-string_encodings/nswindowscp1253stringencoding"
+      ],
+      "title": "Windows Code Page Encodings",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -165,6 +261,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -175,7 +272,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

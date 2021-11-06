@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Multiplies a matrix by a vector (single precision)."
+      "text": "Multiplies a single-precision matrix by a vector."
     }
   ],
   "documentVersion": 0,
@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.2",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@cblas_sgemv",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -185,7 +190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Multiplies a matrix by a vector (single precision)."
+          "text": "Multiplies a single-precision matrix by a vector."
         }
       ]
     },
@@ -828,6 +833,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -974,7 +980,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The size of the first dimention of matrix "
+                  "text": "The size of the first dimension of matrix "
                 },
                 {
                   "type": "codeVoice",
@@ -982,19 +988,27 @@
                 },
                 {
                   "type": "text",
-                  "text": "; if you are passing a matrix "
+                  "text": ". For a matrix "
                 },
                 {
                   "type": "codeVoice",
-                  "code": "A[m][n]"
+                  "code": "A[M][N]"
                 },
                 {
                   "type": "text",
-                  "text": ", the value should be "
+                  "text": " that uses column-major ordering, the value is the number of rows "
                 },
                 {
                   "type": "codeVoice",
-                  "code": "m"
+                  "code": "M"
+                },
+                {
+                  "type": "text",
+                  "text": ". For a matrix that uses row-major ordering, the value is the number of columns "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "N"
                 },
                 {
                   "type": "text",
@@ -1042,7 +1056,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " is 7, every 7th element is used."
+                  "text": " is 7, every seventh element is used."
                 }
               ]
             }
@@ -1092,7 +1106,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Stride within Y. For example, if incY is 7, every 7th element is used."
+                  "text": "Stride within Y. For example, if incY is 7, every seventh element is used."
                 }
               ]
             }
@@ -1117,8 +1131,13 @@
               "text": "This function multiplies "
             },
             {
-              "type": "codeVoice",
-              "code": "A * X"
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A * X"
+                }
+              ]
             },
             {
               "type": "text",
@@ -1179,8 +1198,58 @@
           "type": "paragraph",
           "inlineContent": [
             {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Y ← αAX + βY"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "or"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Y ← αA"
+                }
+              ]
+            },
+            {
+              "type": "superscript",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "T"
+                }
+              ]
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "X + βY"
+                }
+              ]
+            },
+            {
               "type": "codeVoice",
-              "code": "Y←αAX + βY"
+              "code": ""
             }
           ]
         },
@@ -1205,7 +1274,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

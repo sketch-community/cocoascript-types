@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An error that an App Clip’s activation payload returns."
+      "text": "An error that an App Clip activation payload returns."
     }
   ],
   "documentVersion": 0,
@@ -34,17 +34,22 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:SC28APActivationPayloadErrorCodeLeV",
@@ -61,8 +66,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -189,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The domain for all errors related to an App Clip’s activation payload."
+          "text": "The domain for all errors related to the activation payload of an App Clip."
         }
       ],
       "fragments": [
@@ -217,7 +222,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The provided URL doesn’t match the App Clip’s registered URL."
+          "text": "The provided URL doesn’t match the invocation URL you registered for the App Clip."
         }
       ],
       "fragments": [
@@ -245,7 +250,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The user denied location access, or the source of the App Clip’s invocation wasn’t an NFC tag or visual code."
+          "text": "The user denied location access, or the source of the App Clip invocation wasn’t an NFC tag or visual code."
         }
       ],
       "fragments": [
@@ -273,7 +278,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Error codes an App Clip’s activation payload returns."
+          "text": "Error codes that an App Clip activation payload returns."
         }
       ],
       "fragments": [
@@ -287,6 +292,158 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727386-init": {
+      "title": "init(_:userInfo:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727386-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/app_clips/apactivationpayloaderror/3727386-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an App Clip activation payload error code."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "(Code, "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [String : Any])"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727383-code": {
+      "title": "code",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727383-code",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/app_clips/apactivationpayloaderror/3727383-code",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An integer value that represents the code."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "code"
+        },
+        {
+          "kind": "text",
+          "text": ": Code"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727387-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727387-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/app_clips/apactivationpayloaderror/3727387-userinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary of additional information."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "userInfo"
+        },
+        {
+          "kind": "text",
+          "text": ": [String : Any]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727385-hashvalue": {
+      "title": "hashValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727385-hashvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/app_clips/apactivationpayloaderror/3727385-hashvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The hashed value of the error."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "hashValue"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727384-hash": {
+      "title": "hash(into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727384-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/app_clips/apactivationpayloaderror/3727384-hash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hashes the essential components of the error by feeding them into a hasher."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "hash"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "into"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Hasher)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3580362": {
       "title": "!=(_:_:)",
       "type": "topic",
@@ -297,7 +454,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether two values are not equal."
+          "text": "Returns a Boolean value that indicates whether two values are not equal."
         }
       ],
       "fragments": [
@@ -308,6 +465,34 @@
         {
           "kind": "identifier",
           "text": "!= "
+        },
+        {
+          "kind": "text",
+          "text": "(APActivationPayloadError, APActivationPayloadError) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727382": {
+      "title": "==(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727382",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/app_clips/apactivationpayloaderror/3727382",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether two values are equal."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "== "
         },
         {
           "kind": "text",
@@ -353,7 +538,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An error that an App Clip’s activation payload returns."
+          "text": "An error that an App Clip activation payload returns."
         }
       ],
       "fragments": [
@@ -384,7 +569,8 @@
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3580366-erroruserinfo",
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3580367-localizeddescription",
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3580365-errordomain"
-      ]
+      ],
+      "anchor": "3587150"
     },
     {
       "kind": "taskGroup",
@@ -393,14 +579,22 @@
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3580363-doesnotmatch",
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3585118-disallowed",
         "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/code"
-      ]
+      ],
+      "anchor": "3581387"
     },
     {
       "kind": "taskGroup",
-      "title": "Operator Functions",
+      "title": "Protocol Support",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3580362"
-      ]
+        "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727386-init",
+        "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727383-code",
+        "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727387-userinfo",
+        "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727385-hashvalue",
+        "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727384-hash",
+        "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3580362",
+        "doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderror/3727382"
+      ],
+      "anchor": "3581388"
     }
   ],
   "seeAlsoSections": [
@@ -436,6 +630,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -443,7 +638,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

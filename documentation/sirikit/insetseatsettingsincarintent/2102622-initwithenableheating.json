@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent"
       ]
     ]
@@ -36,23 +36,33 @@
         "name": "iOS",
         "introducedAt": "10.0",
         "deprecatedAt": "12.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "12.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSetSeatSettingsInCarIntent(im)initWithEnableHeating:enableCooling:enableMassage:seat:level:relativeLevelSetting:",
+    "parent": {
+      "title": "INSetSeatSettingsInCarIntent"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -77,10 +87,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -98,6 +108,14 @@
           "text": "A request to change the seat-related settings in a CarPlay-enabled vehicle."
         }
       ]
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/foundation/nsnumber": {
       "title": "NSNumber",
@@ -145,7 +163,8 @@
           "kind": "identifier",
           "text": "initWithEnableHeating:enableCooling:enableMassage:seat:level:relativeLevelSetting:carName:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetseatsettingsincarintent/2102622-initwithenableheating": {
       "title": "initWithEnableHeating:enableCooling:enableMassage:seat:level:relativeLevelSetting:",
@@ -180,6 +199,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -385,6 +424,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -412,7 +452,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " if you do not want to modify this setting."
+                  "text": " if you don’t want to modify this setting."
                 }
               ]
             }
@@ -434,7 +474,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " if you do not want to modify this setting."
+                  "text": " if you don’t want to modify this setting."
                 }
               ]
             }
@@ -456,7 +496,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " if you do not want to modify this setting."
+                  "text": " if you don’t want to modify this setting."
                 }
               ]
             }
@@ -492,7 +532,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " if you do not want to use this parameter to make the change. "
+                  "text": " if you don’t want to use this parameter to make the change. "
                 }
               ]
             }
@@ -514,7 +554,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " if you do not want to use this parameter to make the change. "
+                  "text": " if you don’t want to use this parameter to make the change."
                 }
               ]
             }
@@ -564,7 +604,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Normally, you do not create instances of this class yourself. Instead, Siri creates instances when the user asks to change the vehicle’s seat settings. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths. Your test code should modify the settings for only one system at a time."
+              "text": "Normally, you don’t create instances of this class yourself. Instead, Siri creates instances when the user asks to change the vehicle’s seat settings. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths. Your test code should modify the settings for only one system at a time."
             }
           ]
         }
@@ -572,7 +612,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

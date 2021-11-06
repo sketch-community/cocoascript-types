@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The error that caused looping to fail."
+      "text": "An error that describes the reason looping failed."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerLooper(py)error",
+    "parent": {
+      "title": "AVPlayerLooper"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that simplifies the playing of looping media content using a queue player."
+          "text": "An object that loops media content using a queue player."
         }
       ]
     },
@@ -121,13 +129,7 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177060-status",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlooper/2177060-status",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A status indicating the loopers ability to be used for looping playback."
-        }
-      ]
+      "url": "/documentation/avfoundation/avplayerlooper/2177060-status"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus/avplayerlooperstatusfailed": {
       "title": "AVPlayerLooperStatusFailed",
@@ -145,34 +147,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nserror"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/1643648-loopcount": {
-      "title": "loopCount",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/1643648-loopcount",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlooper/1643648-loopcount",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The number of times the specified player item has been played."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus": {
-      "title": "AVPlayerLooperStatus",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlooperstatus",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The statuses that indicate whether a looper can successfully perform looping playback."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177064-error": {
       "title": "error",
       "type": "topic",
@@ -183,7 +157,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The error that caused looping to fail."
+          "text": "An error that describes the reason looping failed."
         }
       ]
     },
@@ -195,17 +169,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/1643648-loopcount",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177060-status",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus"
-      ],
-      "title": "Observing Looper State",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -244,6 +207,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -265,7 +229,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the looper’s "
+              "text": "The value of this property is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " unless the looper’s "
             },
             {
               "type": "reference",
@@ -283,33 +255,7 @@
             },
             {
               "type": "text",
-              "text": ", this value will be an "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nserror"
-            },
-            {
-              "type": "text",
-              "text": " you can use to determine the reason the reason looping could not be performed. If the receiver's status is not "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus/avplayerlooperstatusfailed"
-            },
-            {
-              "type": "text",
-              "text": ", the value of this property is "
-            },
-            {
-              "type": "codeVoice",
-              "code": "nil"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": ". If this occurs, this property value contains an error object that provides the details of the error that prevented looping."
             }
           ]
         }
@@ -317,7 +263,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

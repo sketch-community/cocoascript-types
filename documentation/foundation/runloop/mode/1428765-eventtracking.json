@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A run loop should be set to this mode when tracking events modally, such as a mouse-dragging loop."
+      "text": "The mode set when tracking events modally, such as a mouse-dragging loop."
     }
   ],
   "documentVersion": 0,
@@ -42,10 +42,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:@NSEventTrackingRunLoopMode",
+    "parent": {
+      "title": "RunLoop.Mode"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -63,8 +66,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -147,327 +150,59 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428485-nextevent": {
-      "title": "nextEvent(matching:until:inMode:dequeue:)",
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1408609-common": {
+      "title": "common",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428485-nextevent",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1408609-common",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428485-nextevent",
+      "url": "/documentation/foundation/runloop/mode/1408609-common",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the next event matching a given mask, or "
-        },
-        {
-          "type": "codeVoice",
-          "code": "nil"
-        },
-        {
-          "type": "text",
-          "text": " if no such event is found before a specified expiration date."
+          "text": "A pseudo-mode that includes one or more other run loop modes."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "func "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "nextEvent"
+          "text": "common"
         },
         {
           "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "matching"
-        },
-        {
-          "kind": "text",
-          "text": ": NSEvent.EventTypeMask, "
-        },
-        {
-          "kind": "identifier",
-          "text": "until"
-        },
-        {
-          "kind": "text",
-          "text": ": Date?, "
-        },
-        {
-          "kind": "identifier",
-          "text": "inMode"
-        },
-        {
-          "kind": "text",
-          "text": ": RunLoop.Mode, "
-        },
-        {
-          "kind": "identifier",
-          "text": "dequeue"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool) -> NSEvent?"
+          "text": ": RunLoop.Mode"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428652-discardevents": {
-      "title": "discardEvents(matching:before:)",
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1409732-default": {
+      "title": "default",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428652-discardevents",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1409732-default",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428652-discardevents",
+      "url": "/documentation/foundation/runloop/mode/1409732-default",
       "abstract": [
         {
           "type": "text",
-          "text": "Removes all events matching the given mask and generated before the specified event."
+          "text": "The mode set to handle input sources other than connection objects."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "func "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "discardEvents"
+          "text": "`default`"
         },
         {
           "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "matching"
-        },
-        {
-          "kind": "text",
-          "text": ": NSEvent.EventTypeMask, "
-        },
-        {
-          "kind": "identifier",
-          "text": "before"
-        },
-        {
-          "kind": "text",
-          "text": ": NSEvent?)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428668-currentevent": {
-      "title": "currentEvent",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428668-currentevent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428668-currentevent",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The last event object that the app retrieved from the event queue."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "currentEvent"
-        },
-        {
-          "kind": "text",
-          "text": ": NSEvent?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428759-isrunning": {
-      "title": "isRunning",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428759-isrunning",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428759-isrunning",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether the main event loop is running."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "isRunning"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428631-run": {
-      "title": "run()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428631-run",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428631-run",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Starts the main event loop."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "run"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428771-finishlaunching": {
-      "title": "finishLaunching()",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428771-finishlaunching",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428771-finishlaunching",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Activates the app, opens any files specified by the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "NSOpen"
-        },
-        {
-          "type": "text",
-          "text": " user default, and unhighlights the app’s icon."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "finishLaunching"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428473-stop": {
-      "title": "stop(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428473-stop",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428473-stop",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Stops the main event loop."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "stop"
-        },
-        {
-          "kind": "text",
-          "text": "(Any?)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428359-sendevent": {
-      "title": "sendEvent(_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428359-sendevent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428359-sendevent",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Dispatches an event to other objects."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "sendEvent"
-        },
-        {
-          "kind": "text",
-          "text": "(NSEvent)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsapplication/1428710-postevent": {
-      "title": "postEvent(_:atStart:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsapplication/1428710-postevent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsapplication/1428710-postevent",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Adds a given event to the receiver’s event queue."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "postEvent"
-        },
-        {
-          "kind": "text",
-          "text": "(NSEvent, "
-        },
-        {
-          "kind": "identifier",
-          "text": "atStart"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool)"
+          "text": ": RunLoop.Mode"
         }
       ]
     },
@@ -481,7 +216,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A run loop should be set to this mode when tracking events modally, such as a mouse-dragging loop."
+          "text": "The mode set when tracking events modally, such as a mouse-dragging loop."
         }
       ],
       "fragments": [
@@ -492,6 +227,62 @@
         {
           "kind": "identifier",
           "text": "eventTracking"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel": {
+      "title": "modalPanel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/mode/1428524-modalpanel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set when waiting for input from a modal panel, such as a save or open panel."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "modalPanel"
+        },
+        {
+          "kind": "text",
+          "text": ": RunLoop.Mode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/mode/1622929-tracking": {
+      "title": "tracking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/mode/1622929-tracking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/mode/1622929-tracking",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mode set while tracking in controls takes place."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "tracking"
         },
         {
           "kind": "text",
@@ -510,17 +301,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428485-nextevent",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428652-discardevents",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428668-currentevent",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428759-isrunning",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428631-run",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428771-finishlaunching",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428473-stop",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428359-sendevent",
-        "doc://com.apple.documentation/documentation/appkit/nsapplication/1428710-postevent"
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1408609-common",
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1409732-default",
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1428524-modalpanel",
+        "doc://com.apple.documentation/documentation/foundation/runloop/mode/1622929-tracking"
       ],
-      "title": "Managing the Event Loop",
+      "title": "System Run Loop Modes",
       "generated": true
     }
   ],
@@ -582,7 +368,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

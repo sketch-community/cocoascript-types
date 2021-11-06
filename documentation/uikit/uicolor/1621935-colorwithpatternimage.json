@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates a color object using the specified image. "
+      "text": "Creates a color object using the specified image."
     }
   ],
   "documentVersion": 0,
@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/drawing",
-        "doc://com.apple.documentation/documentation/uikit/uicolor"
+        "doc://com.apple.documentation/documentation/uikit/uicolor",
+        "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation"
       ]
     ]
   },
@@ -35,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)UIColor(cm)colorWithPatternImage:",
+    "parent": {
+      "title": "UIColor"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -99,6 +108,14 @@
       "role": "symbol",
       "url": "/documentation/uikit/uicolor"
     },
+    "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation": {
+      "title": "Color Creation",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicolor/color_creation",
+      "url": "/documentation/uikit/uicolor/color_creation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/coregraphics/1455334-cgcontextsetpatternphase": {
       "title": "CGContextSetPatternPhase",
       "type": "topic",
@@ -117,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a color object using the specified image object. "
+          "text": "Creates a color object using the specified image object."
         }
       ],
       "fragments": [
@@ -149,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates a color object using the specified image. "
+          "text": "Creates a color object using the specified image."
         }
       ],
       "fragments": [
@@ -240,6 +257,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
@@ -261,7 +279,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The image to use when creating the pattern color. "
+                  "text": "The image to use when creating the pattern color."
                 }
               ]
             }
@@ -303,7 +321,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can use pattern colors to set the fill or stroke color just as you would a solid color. During drawing, the image in the pattern color is tiled as necessary to cover the given area. "
+              "text": "You can use pattern colors to set the fill or stroke color just as you’d a solid color. During drawing, the image in the pattern color is tiled as necessary to cover the given area. "
             }
           ]
         },
@@ -321,7 +339,7 @@
             },
             {
               "type": "text",
-              "text": " function to change the phase. "
+              "text": " function to change the phase."
             }
           ]
         }
@@ -329,7 +347,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.5",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSMigrationManager(py)sourceModel",
+    "parent": {
+      "title": "NSMigrationManager"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -180,6 +188,34 @@
       "role": "symbol",
       "url": "/documentation/coredata/nsmanagedobjectmodel"
     },
+    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417578-destinationcontext": {
+      "title": "destinationContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417578-destinationcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmigrationmanager/1417578-destinationcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The managed object context the migration manager uses for writing the destination persistent store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417576-sourcecontext": {
+      "title": "sourceContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417576-sourcecontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmigrationmanager/1417576-sourcecontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The managed object context the migration manager uses for reading the source persistent store."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417592-sourcemodel": {
       "title": "sourceModel",
       "type": "topic",
@@ -191,30 +227,6 @@
         {
           "type": "text",
           "text": "The source model for the migration manager."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417596-sourceentityforentitymapping": {
-      "title": "sourceEntityForEntityMapping:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417596-sourceentityforentitymapping",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmigrationmanager/1417596-sourceentityforentitymapping",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the entity description for the source entity of a given entity mapping."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "sourceEntityForEntityMapping:"
         }
       ]
     },
@@ -242,45 +254,27 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417576-sourcecontext": {
-      "title": "sourceContext",
+    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417596-sourceentityforentitymapping": {
+      "title": "sourceEntityForEntityMapping:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417576-sourcecontext",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417596-sourceentityforentitymapping",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nsmigrationmanager/1417576-sourcecontext",
+      "url": "/documentation/coredata/nsmigrationmanager/1417596-sourceentityforentitymapping",
       "abstract": [
         {
           "type": "text",
-          "text": "The managed object context the migration manager uses for reading the source persistent store."
+          "text": "Returns the entity description for the source entity of a given entity mapping."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417578-destinationcontext": {
-      "title": "destinationContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417578-destinationcontext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmigrationmanager/1417578-destinationcontext",
-      "abstract": [
+      ],
+      "fragments": [
         {
-          "type": "text",
-          "text": "The managed object context the migration manager uses for writing the destination persistent store."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417588-userinfo": {
-      "title": "userInfo",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417588-userinfo",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nsmigrationmanager/1417588-userinfo",
-      "abstract": [
+          "kind": "text",
+          "text": "- "
+        },
         {
-          "type": "text",
-          "text": "The user info for the migration manager."
+          "kind": "identifier",
+          "text": "sourceEntityForEntityMapping:"
         }
       ]
     },
@@ -295,15 +289,14 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417600-mappingmodel",
-        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417610-destinationmodel",
-        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417596-sourceentityforentitymapping",
-        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417598-destinationentityforentitymappin",
-        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417576-sourcecontext",
         "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417578-destinationcontext",
-        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417588-userinfo"
+        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417610-destinationmodel",
+        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417600-mappingmodel",
+        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417576-sourcecontext",
+        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417598-destinationentityforentitymappin",
+        "doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417596-sourceentityforentitymapping"
       ],
-      "title": "Getting Information About a Migration Manager",
+      "title": "Getting the Manager’s Configuration",
       "generated": true
     },
     {
@@ -352,6 +345,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -362,7 +356,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

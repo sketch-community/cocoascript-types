@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The priorities used to determine when a downloaded asset is purged."
+      "text": "Constants that define eviction priorities for a storage management policy."
     }
   ],
   "documentVersion": 0,
@@ -13,12 +13,6 @@
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
         "doc://com.apple.documentation/documentation/avfoundation/avmutableassetdownloadstoragemanagementpolicy"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanagementpolicy"
       ]
     ]
   },
@@ -41,25 +35,30 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@AVAssetDownloadedAssetEvictionPriority",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,14 +109,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanagementpolicy": {
-      "title": "AVAssetDownloadStorageManagementPolicy",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanagementpolicy",
-      "url": "/documentation/avfoundation/avassetdownloadstoragemanagementpolicy",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
       "type": "topic",
@@ -136,7 +127,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset will be the first to be purged."
+          "text": "The default eviction priority."
         }
       ]
     },
@@ -150,7 +141,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset will be the last to be purged."
+          "text": "An eviction priority that indicates that this asset is important and the system should evict lower-priority assets first."
         }
       ]
     },
@@ -192,7 +183,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The priorities used to determine when a downloaded asset is purged."
+          "text": "Constants that define eviction priorities for a storage management policy."
         }
       ]
     },
@@ -211,7 +202,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadedassetevictionprioritydefault",
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadedassetevictionpriorityimportant"
-      ]
+      ],
+      "anchor": "3031025"
     }
   ],
   "seeAlsoSections": [
@@ -262,6 +254,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -270,7 +263,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

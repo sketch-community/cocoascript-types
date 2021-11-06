@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Writes the specified data synchronously to the file handle."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.4",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.4",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.2",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So12NSFileHandleC10FoundationE5write10contentsOfyx_tKAC12DataProtocolRzlF",
+    "parent": {
+      "title": "FileHandle"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -83,8 +97,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -131,6 +145,98 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/1411463-availabledata": {
+      "title": "availableData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/1411463-availabledata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/1411463-availabledata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data currently available in the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "availableData"
+        },
+        {
+          "kind": "text",
+          "text": ": Data"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3516317-read": {
+      "title": "read(upToCount:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516317-read",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3516317-read",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads data synchronously up to the specified number of bytes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "read"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "upToCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Int) -> Data?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3516318-readtoend": {
+      "title": "readToEnd()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516318-readtoend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3516318-readtoend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads the available data synchronously up to the end of file or maximum number of bytes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "readToEnd"
+        },
+        {
+          "kind": "text",
+          "text": "() -> Data?"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/dataprotocol": {
       "title": "DataProtocol",
       "type": "topic",
@@ -138,6 +244,71 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/dataprotocol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3516320-write": {
+      "title": "write(contentsOf:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516320-write",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3516320-write",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Writes the specified data synchronously to the file handle."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "write"
+        },
+        {
+          "kind": "text",
+          "text": "<T>("
+        },
+        {
+          "kind": "identifier",
+          "text": "contentsOf"
+        },
+        {
+          "kind": "text",
+          "text": ": T)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/1410936-write": {
+      "title": "write(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/1410936-write",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/1410936-write",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Writes the specified data synchronously to the file handle."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "write"
+        },
+        {
+          "kind": "text",
+          "text": "(Data)"
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -147,6 +318,24 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/filehandle/1410936-write"
+      ],
+      "title": "Writing to a File Handle",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/filehandle/1411463-availabledata",
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3516317-read",
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3516318-readtoend"
+      ]
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -198,7 +387,8 @@
               "text": ": "
             },
             {
-              "kind": "text",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:So12NSFileHandleC10FoundationE5write10contentsOfyx_tKAC12DataProtocolRzlF1TL_xmfp",
               "text": "T"
             },
             {
@@ -222,8 +412,13 @@
               "text": " "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:So12NSFileHandleC10FoundationE5write10contentsOfyx_tKAC12DataProtocolRzlF1TL_xmfp",
+              "text": "T"
+            },
+            {
               "kind": "text",
-              "text": "T : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -234,6 +429,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -241,10 +437,52 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "data",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The data to write to the file handle."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the handle represents a file, writing takes place at the file pointer’s current position. After it writes the data, the method advances the file pointer by the number of bytes written. This method throws an error if the file descriptor is closed or isn’t valid, if the handle represents an unconnected pipe or socket endpoint, if there isn’t any free space on the file system, or if any other writing error occurs. "
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

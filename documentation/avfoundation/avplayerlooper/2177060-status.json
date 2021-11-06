@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A status indicating the loopers ability to be used for looping playback."
+      "text": "A status that indicates the object’s ability to loop playback."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerLooper(py)status",
+    "parent": {
+      "title": "AVPlayerLooper"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,21 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that simplifies the playing of looping media content using a queue player."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177060-status": {
-      "title": "status",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177060-status",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlooper/2177060-status",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A status indicating the loopers ability to be used for looping playback."
+          "text": "An object that loops media content using a queue player."
         }
       ]
     },
@@ -145,20 +139,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avplayerlooperstatus/avplayerlooperstatuscancelled"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177064-error": {
-      "title": "error",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177064-error",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlooper/2177064-error",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The error that caused looping to fail."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus": {
       "title": "AVPlayerLooperStatus",
       "type": "topic",
@@ -169,7 +149,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The statuses that indicate whether a looper can successfully perform looping playback."
+          "text": "Status constants that indicate whether a looper can successfully perform looping playback."
         }
       ]
     },
@@ -183,7 +163,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The number of times the specified player item has been played."
+          "text": "The number of times the object played the media."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177060-status": {
+      "title": "status",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177060-status",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlooper/2177060-status",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A status that indicates the object’s ability to loop playback."
         }
       ]
     },
@@ -199,10 +193,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/1643648-loopcount",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177064-error"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus"
       ],
-      "title": "Observing Looper State",
+      "title": "Observing Looping State",
       "generated": true
     }
   ],
@@ -244,6 +237,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -265,16 +259,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177060-status"
-            },
-            {
-              "type": "text",
-              "text": " indicates whether the looper is ready for looping playback. When the value of this property is "
+              "text": "When the value of this property is "
             },
             {
               "type": "reference",
@@ -292,25 +277,7 @@
             },
             {
               "type": "text",
-              "text": ", the looper can no longer be used for playback and a new instance needs to be created if you would like to begin looping again. If the status is "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus/avplayerlooperstatusfailed"
-            },
-            {
-              "type": "text",
-              "text": ", you can check the value of the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper/2177064-error"
-            },
-            {
-              "type": "text",
-              "text": " property to determine the nature of the failure."
+              "text": ", you can no longer use the looper for playback. You need to create a new instance to begin looping again."
             }
           ]
         },
@@ -327,7 +294,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

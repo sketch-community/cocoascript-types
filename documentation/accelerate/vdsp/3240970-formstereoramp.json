@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Populates a double-precision vector with stereo monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
+      "text": "Populates two single-precision vectors that contain stereo monotonically incrementing or decrementing values multiplied by two source vectors."
     }
   ],
   "documentVersion": 0,
@@ -41,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Accelerate4vDSPO14formStereoRamp16withInitialValue13multiplyingBy_9increment7results_ySdz_xxSdq_zq_ztAA0A6BufferRzAA0a7MutableM0R_Sd7ElementRtzSdAKRt_r0_lFZ",
+    "parent": {
+      "title": "vDSP"
+    },
     "symbolKind": "enumcm",
     "fragments": [
       {
@@ -119,8 +127,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -175,22 +183,22 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240970-formstereoramp#3362295": {
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240970-formstereoramp#3732278": {
       "title": "Listing 1",
       "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240970-formstereoramp#3362295",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240970-formstereoramp#3732278",
       "kind": "article",
       "role": "codeListing",
-      "url": "/documentation/accelerate/vdsp/3240970-formstereoramp#3362295"
+      "url": "/documentation/accelerate/vdsp/3240970-formstereoramp#3732278"
     },
-    "link-media-3362305": {
-      "identifier": "link-media-3362305",
+    "link-media-3732281": {
+      "identifier": "link-media-3732281",
       "type": "link",
       "title": "Figure 1",
-      "url": "/documentation/accelerate/vdsp/3240970-formstereoramp#3362305"
+      "url": "/documentation/accelerate/vdsp/3240970-formstereoramp#3732281"
     },
-    "media-3362305": {
-      "identifier": "media-3362305",
+    "media-3732281": {
+      "identifier": "media-3732281",
       "type": "image",
       "variants": [
         {
@@ -201,23 +209,23 @@
             "width": 680,
             "height": 325
           },
-          "url": "https://docs-assets.developer.apple.com/published/2330707c8f/102fdf54-394e-4e1c-886a-3bec09f5c169.png"
+          "url": "https://docs-assets.developer.apple.com/published/916e5cd253/rendered2x-1611915840.png"
         }
       ],
-      "alt": "Visualization of sine wave.",
+      "alt": "A graphic shows two sine waves. The first sine wave appears as a solid line and the second sine wave appears as a dashed line. The first sine wave and has a higher freqency and a higher amplitude than the second sine wave. ",
       "title": "Figure 1"
     },
-    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240969-formramp": {
-      "title": "formRamp(withInitialValue:multiplyingBy:increment:result:)",
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240971-formstereoramp": {
+      "title": "formStereoRamp(withInitialValue:multiplyingBy:_:increment:results:_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240969-formramp",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240971-formstereoramp",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/vdsp/3240969-formramp",
+      "url": "/documentation/accelerate/vdsp/3240971-formstereoramp",
       "abstract": [
         {
           "type": "text",
-          "text": "Populates a single-precision vector with monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
+          "text": "Populates two single-precision vectors that contain stereo monotonically incrementing or decrementing values multiplied by two source vectors."
         }
       ],
       "fragments": [
@@ -227,7 +235,7 @@
         },
         {
           "kind": "identifier",
-          "text": "formRamp"
+          "text": "formStereoRamp"
         },
         {
           "kind": "text",
@@ -247,7 +255,7 @@
         },
         {
           "kind": "text",
-          "text": ": U, "
+          "text": ": U, U, "
         },
         {
           "kind": "identifier",
@@ -259,30 +267,30 @@
         },
         {
           "kind": "identifier",
-          "text": "result"
+          "text": "results"
         },
         {
           "kind": "text",
-          "text": ": inout V)"
+          "text": ": inout V, inout V)"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240970-formstereoramp#3362297": {
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240970-formstereoramp#3732285": {
       "title": "Listing 2",
       "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240970-formstereoramp#3362297",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240970-formstereoramp#3732285",
       "kind": "article",
       "role": "codeListing",
-      "url": "/documentation/accelerate/vdsp/3240970-formstereoramp#3362297"
+      "url": "/documentation/accelerate/vdsp/3240970-formstereoramp#3732285"
     },
-    "link-media-3362301": {
-      "identifier": "link-media-3362301",
+    "link-media-3732280": {
+      "identifier": "link-media-3732280",
       "type": "link",
       "title": "Figure 2",
-      "url": "/documentation/accelerate/vdsp/3240970-formstereoramp#3362301"
+      "url": "/documentation/accelerate/vdsp/3240970-formstereoramp#3732280"
     },
-    "media-3362301": {
-      "identifier": "media-3362301",
+    "media-3732280": {
+      "identifier": "media-3732280",
       "type": "image",
       "variants": [
         {
@@ -293,10 +301,10 @@
             "width": 680,
             "height": 325
           },
-          "url": "https://docs-assets.developer.apple.com/published/e620cc32ae/f7fac60a-1dd3-42d4-bc1f-fe1ca7db2e0c.png"
+          "url": "https://docs-assets.developer.apple.com/published/1b347feb5b/rendered2x-1611915846.png"
         }
       ],
-      "alt": "Visualization of generated vector.",
+      "alt": "A graphic shows two sine waves. The first sine wave appears as a solid line and the second sine wave appears as a dashed line. The first sine wave and has a higher freqency and a higher amplitude than the second sine wave.  Both sine waves are tapered, that is, they begin on the left with a very low amplitude and their amplitudes ramp up towards the right of the image.",
       "title": "Figure 2"
     },
     "doc://com.apple.documentation/documentation/swift/double": {
@@ -322,6 +330,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/accelerate/acceleratemutablebuffer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer/3240653-element": {
+      "title": "Element",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer/3240653-element",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratebuffer/3240653-element"
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/3241092-ramp": {
       "title": "ramp(withInitialValue:multiplyingBy:increment:)",
@@ -437,7 +453,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a double-precision vector that contains stereo monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
+          "text": "Returns two double-precision vectors that contain stereo monotonically incrementing or decrementing values multiplied by two source vectors. "
         }
       ],
       "fragments": [
@@ -505,7 +521,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a single-precision vector that contains stereo monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
+          "text": "Returns two single-precision vectors that contain stereo monotonically incrementing or decrementing values multiplied by two source vectors."
         }
       ],
       "fragments": [
@@ -623,6 +639,66 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240969-formramp": {
+      "title": "formRamp(withInitialValue:multiplyingBy:increment:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240969-formramp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240969-formramp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Populates a single-precision vector with monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "formRamp"
+        },
+        {
+          "kind": "text",
+          "text": "<U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "withInitialValue"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Float, "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiplyingBy"
+        },
+        {
+          "kind": "text",
+          "text": ": U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "increment"
+        },
+        {
+          "kind": "text",
+          "text": ": Float, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/3240970-formstereoramp": {
       "title": "formStereoRamp(withInitialValue:multiplyingBy:_:increment:results:_:)",
       "type": "topic",
@@ -633,7 +709,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Populates a double-precision vector with stereo monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
+          "text": "Populates two single-precision vectors that contain stereo monotonically incrementing or decrementing values multiplied by two source vectors."
         }
       ],
       "fragments": [
@@ -672,66 +748,6 @@
         {
           "kind": "text",
           "text": ": Double, "
-        },
-        {
-          "kind": "identifier",
-          "text": "results"
-        },
-        {
-          "kind": "text",
-          "text": ": inout V, inout V)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240971-formstereoramp": {
-      "title": "formStereoRamp(withInitialValue:multiplyingBy:_:increment:results:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240971-formstereoramp",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/vdsp/3240971-formstereoramp",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Populates a single-precision vector with stereo monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "formStereoRamp"
-        },
-        {
-          "kind": "text",
-          "text": "<U, V>("
-        },
-        {
-          "kind": "identifier",
-          "text": "withInitialValue"
-        },
-        {
-          "kind": "text",
-          "text": ": inout Float, "
-        },
-        {
-          "kind": "identifier",
-          "text": "multiplyingBy"
-        },
-        {
-          "kind": "text",
-          "text": ": U, U, "
-        },
-        {
-          "kind": "identifier",
-          "text": "increment"
-        },
-        {
-          "kind": "text",
-          "text": ": Float, "
         },
         {
           "kind": "identifier",
@@ -1100,7 +1116,8 @@
               "text": ": "
             },
             {
-              "kind": "text",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO14formStereoRamp16withInitialValue13multiplyingBy_9increment7results_ySdz_xxSdq_zq_ztAA0A6BufferRzAA0a7MutableM0R_Sd7ElementRtzSdAKRt_r0_lFZ1UL_xmfp",
               "text": "U"
             },
             {
@@ -1124,7 +1141,8 @@
               "text": ": "
             },
             {
-              "kind": "text",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO14formStereoRamp16withInitialValue13multiplyingBy_9increment7results_ySdz_xxSdq_zq_ztAA0A6BufferRzAA0a7MutableM0R_Sd7ElementRtzSdAKRt_r0_lFZ1UL_xmfp",
               "text": "U"
             },
             {
@@ -1174,7 +1192,8 @@
               "text": " "
             },
             {
-              "kind": "text",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO14formStereoRamp16withInitialValue13multiplyingBy_9increment7results_ySdz_xxSdq_zq_ztAA0A6BufferRzAA0a7MutableM0R_Sd7ElementRtzSdAKRt_r0_lFZ1VL_q_mfp",
               "text": "V"
             },
             {
@@ -1206,7 +1225,8 @@
               "text": " "
             },
             {
-              "kind": "text",
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO14formStereoRamp16withInitialValue13multiplyingBy_9increment7results_ySdz_xxSdq_zq_ztAA0A6BufferRzAA0a7MutableM0R_Sd7ElementRtzSdAKRt_r0_lFZ1VL_q_mfp",
               "text": "V"
             },
             {
@@ -1222,8 +1242,13 @@
               "text": " "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO14formStereoRamp16withInitialValue13multiplyingBy_9increment7results_ySdz_xxSdq_zq_ztAA0A6BufferRzAA0a7MutableM0R_Sd7ElementRtzSdAKRt_r0_lFZ1UL_xmfp",
+              "text": "U"
+            },
+            {
               "kind": "text",
-              "text": "U : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -1236,8 +1261,13 @@
               "text": ", "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO14formStereoRamp16withInitialValue13multiplyingBy_9increment7results_ySdz_xxSdq_zq_ztAA0A6BufferRzAA0a7MutableM0R_Sd7ElementRtzSdAKRt_r0_lFZ1VL_q_mfp",
+              "text": "V"
+            },
+            {
               "kind": "text",
-              "text": "V : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -1250,8 +1280,23 @@
               "text": ", "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO14formStereoRamp16withInitialValue13multiplyingBy_9increment7results_ySdz_xxSdq_zq_ztAA0A6BufferRzAA0a7MutableM0R_Sd7ElementRtzSdAKRt_r0_lFZ1UL_xmfp",
+              "text": "U"
+            },
+            {
               "kind": "text",
-              "text": "U.Element == "
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP7ElementQa",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer/3240653-element",
+              "text": "Element"
+            },
+            {
+              "kind": "text",
+              "text": " == "
             },
             {
               "kind": "typeIdentifier",
@@ -1264,8 +1309,23 @@
               "text": ", "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO14formStereoRamp16withInitialValue13multiplyingBy_9increment7results_ySdz_xxSdq_zq_ztAA0A6BufferRzAA0a7MutableM0R_Sd7ElementRtzSdAKRt_r0_lFZ1VL_q_mfp",
+              "text": "V"
+            },
+            {
               "kind": "text",
-              "text": "V.Element == "
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP7ElementQa",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer/3240653-element",
+              "text": "Element"
+            },
+            {
+              "kind": "text",
+              "text": " == "
             },
             {
               "kind": "typeIdentifier",
@@ -1276,6 +1336,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1312,7 +1373,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The input vector that's multiplied by the ramp function."
+                  "text": "The first input vector that's multiplied by the ramp function."
                 }
               ]
             }
@@ -1326,7 +1387,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The input vector that's multiplied by the ramp function."
+                  "text": "The second input vector that's multiplied by the ramp function."
                 }
               ]
             }
@@ -1354,7 +1415,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The array to overwrite with the generated ramp."
+                  "text": "The array to overwrite with the first generated ramp."
                 }
               ]
             }
@@ -1368,7 +1429,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The array to overwrite with the generated ramp."
+                  "text": "The array to overwrite with the second generated ramp."
                 }
               ]
             }
@@ -1390,7 +1451,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The functions in this group function populate a vector, by multiplying the values in an input vector with the corresponding values of a ramp."
+              "text": "Use this function to populate two vectors by multiplying the values in two input vectors with the corresponding values of a ramp."
             }
           ]
         },
@@ -1399,11 +1460,19 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For example, the following code fills the array "
+              "text": "For example, the following code fills the arrays "
             },
             {
               "type": "codeVoice",
-              "code": "i"
+              "code": "multiplierOne"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "multiplierTwo"
             },
             {
               "type": "text",
@@ -1416,13 +1485,17 @@
           "code": [
             "let n = vDSP_Length(1024)",
             "",
-            "let i: [Float] = (0 ..< n).map {",
-            "    return sin(Float($0) / 20)  ",
+            "let multiplierOne: [Double] = (0 ..< n).map {",
+            "    return sin(Double($0) / 20) * 2",
+            "}",
+            "",
+            "let multiplierTwo: [Double] = (0 ..< n).map {",
+            "    return sin(Double($0) / 40)",
             "}"
           ],
           "syntax": "swift",
           "metadata": {
-            "anchor": "3362295",
+            "anchor": "3732278",
             "title": "Listing 1"
           }
         },
@@ -1435,11 +1508,19 @@
             },
             {
               "type": "codeVoice",
-              "code": "i"
+              "code": "multiplierOne"
             },
             {
               "type": "text",
-              "text": ":"
+              "text": ", as a solid line, and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "multiplierTwo"
+            },
+            {
+              "type": "text",
+              "text": ", as a dashed line:"
             }
           ]
         },
@@ -1448,9 +1529,9 @@
           "inlineContent": [
             {
               "type": "image",
-              "identifier": "media-3362305",
+              "identifier": "media-3732281",
               "metadata": {
-                "anchor": "3362305",
+                "anchor": "3732281",
                 "title": "Figure 1"
               }
             }
@@ -1461,11 +1542,19 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use "
+              "text": "Pass "
             },
             {
               "type": "codeVoice",
-              "code": "i"
+              "code": "multiplierOne"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "multiplierTwo"
             },
             {
               "type": "text",
@@ -1481,8 +1570,8 @@
             },
             {
               "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240969-formramp"
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240971-formstereoramp"
             },
             {
               "type": "text",
@@ -1493,20 +1582,22 @@
         {
           "type": "codeListing",
           "code": [
-            "var start: Float = 0",
-            "let step: Float = 0.1",
+            "var start: Double = 0",
+            "let step: Double = 0.1",
             "",
-            "var o = [Float](repeating: 0,",
-            "                        count: Int(n))",
+            "var resultOne = [Double](repeating: 0,",
+            "                         count: Int(n))",
+            "var resultTwo = [Double](repeating: 0,",
+            "                         count: Int(n))",
             "",
-            "vDSP.formRamp(withInitialValue: &start,",
-            "                  multiplyingBy: i,",
-            "                  increment: step,",
-            "                  result: &o)"
+            "vDSP.formStereoRamp(withInitialValue: &start,",
+            "                    multiplyingBy: multiplierOne, multiplierTwo,",
+            "                    increment: step,",
+            "                    results: &resultOne, &resultTwo)"
           ],
           "syntax": "swift",
           "metadata": {
-            "anchor": "3362297",
+            "anchor": "3732285",
             "title": "Listing 2"
           }
         },
@@ -1515,15 +1606,23 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "On return, the output vector, "
+              "text": "On return, the output vectors, "
             },
             {
               "type": "codeVoice",
-              "code": "o"
+              "code": "results.firstOutput"
             },
             {
               "type": "text",
-              "text": ", contains a ramped-sine wave:"
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "results.secondOutput"
+            },
+            {
+              "type": "text",
+              "text": ", contain ramped-sine waves. The figure below shows the first output as a solid line and the second output as a dashed line:"
             }
           ]
         },
@@ -1532,9 +1631,9 @@
           "inlineContent": [
             {
               "type": "image",
-              "identifier": "media-3362301",
+              "identifier": "media-3732280",
               "metadata": {
-                "anchor": "3362301",
+                "anchor": "3732280",
                 "title": "Figure 2"
               }
             }
@@ -1548,7 +1647,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

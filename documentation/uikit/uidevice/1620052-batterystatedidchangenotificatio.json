@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted when battery state changes."
+      "text": "A notification that posts when battery state changes."
     }
   ],
   "documentVersion": 0,
@@ -50,15 +50,23 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UIDeviceBatteryStateDidChangeNotification",
+    "parent": {
+      "title": "UIDevice"
+    },
     "symbolKind": "cldata",
     "fragments": [
       {
@@ -76,8 +84,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -126,13 +134,7 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uidevice",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uidevice",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A representation of the current device."
-        }
-      ]
+      "url": "/documentation/uikit/uidevice"
     },
     "doc://com.apple.documentation/documentation/foundation": {
       "title": "Foundation",
@@ -216,7 +218,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the battery level changes."
+          "text": "A notification that posts when the battery level changes."
         }
       ],
       "fragments": [
@@ -244,7 +246,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when battery state changes."
+          "text": "A notification that posts when battery state changes."
         }
       ],
       "fragments": [
@@ -272,7 +274,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the orientation of the device changes."
+          "text": "A notification that posts when the orientation of the device changes."
         }
       ],
       "fragments": [
@@ -300,7 +302,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when the state of the proximity sensor changes."
+          "text": "A notification that posts when the state of the proximity sensor changes."
         }
       ],
       "fragments": [
@@ -333,7 +335,7 @@
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620025-orientationdidchangenotification",
         "doc://com.apple.documentation/documentation/uikit/uidevice/1620046-proximitystatedidchangenotificat"
       ],
-      "title": "Notifications",
+      "title": "Managing Notifications",
       "generated": true
     }
   ],
@@ -389,6 +391,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -452,7 +455,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

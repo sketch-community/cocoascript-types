@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the factorization of a sparse matrix of double-precision values corresponding to the supplied symbolic factorization using specified options."
+      "text": "Returns the factorization of a sparse matrix of double-precision values that corresponds to the supplied symbolic factorization using user-defined workspace and factor storage."
     }
   ],
   "documentVersion": 0,
@@ -12,8 +12,7 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/functions_with_user-defined_workspace"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions"
       ]
     ]
   },
@@ -36,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseFactor#$@SA@SparseOpaqueSymbolicFactorization#$@SA@SparseMatrix_Double#$@SA@SparseNumericFactorOptions#*v#S3_#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,29 +111,13 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions": {
+      "title": "Sparse Symbolic Factorization Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/functions_with_user-defined_workspace": {
-      "title": "Functions with User-Defined Workspace",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/functions_with_user-defined_workspace",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/functions_with_user-defined_workspace",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc": {
-      "title": "malloc",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc"
     },
     "doc://com.apple.documentation/documentation/accelerate/2868245-sparsefactor": {
       "title": "SparseFactor",
@@ -141,7 +129,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the factorization of a sparse matrix of double-precision values corresponding to the supplied symbolic factorization using specified options."
+          "text": "Returns the factorization of a sparse matrix of double-precision values that corresponds to the supplied symbolic factorization using user-defined workspace and factor storage."
         }
       ]
     },
@@ -168,6 +156,54 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/accelerate/sparseopaquefactorization_double"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2879298-sparsefactor": {
+      "title": "SparseFactor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2879298-sparsefactor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2879298-sparsefactor"
+    },
+    "link-media-3703945": {
+      "identifier": "link-media-3703945",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/2868245-sparsefactor#3703945"
+    },
+    "media-3703945": {
+      "identifier": "media-3703945",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 400,
+            "height": 76
+          },
+          "url": "https://docs-assets.developer.apple.com/published/81f556d5e8/rendered2x-1606991249.png"
+        }
+      ],
+      "alt": "A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2868245-sparsefactor#3703946": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868245-sparsefactor#3703946",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/2868245-sparsefactor#3703946"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc": {
+      "title": "malloc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc"
     },
     "doc://com.apple.documentation/documentation/accelerate/sparseopaquesymbolicfactorization": {
       "title": "SparseOpaqueSymbolicFactorization",
@@ -203,7 +239,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the factorization of a sparse matrix of single-precision values corresponding to the supplied symbolic factorization using specified options."
+          "text": "Returns the factorization of a sparse matrix of single-precision values that corresponds to the supplied symbolic factorization using user-defined workspace and factor storage. "
         }
       ]
     },
@@ -220,7 +256,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/2868085-sparsefactor"
       ],
-      "title": "Matrix Factorizations with User-Defined Workspace",
+      "title": "Matrix Factorizations Using Precalculated Symbolic Factorization with User-Defined Workspace",
       "generated": true
     }
   ],
@@ -300,6 +336,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -322,7 +359,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A symbolic factorization, as returned by a call of the form "
+                  "text": "A symbolic factorization that returns by calling "
                 },
                 {
                   "type": "reference",
@@ -359,7 +396,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Numeric factor options, for example for example pivoting parameters."
+                  "text": "The numeric factor options, such as pivoting parameters."
                 }
               ]
             }
@@ -373,7 +410,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A pointer to space used to store the factorization of size at least "
+                  "text": "A pointer to space for storing the factorization of size at least "
                 },
                 {
                   "type": "reference",
@@ -382,7 +419,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " bytes. This storage should not be altered by the user during the lifetime of the return value."
+                  "text": " bytes. Don’t alter this storage during the lifetime of the return value."
                 }
               ]
             }
@@ -405,7 +442,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " bytes. This workspace may be reused or destroyed by the user as soon as the function returns."
+                  "text": " bytes. You can reuse or deallocate the workspace storage after the function returns."
                 }
               ]
             }
@@ -436,7 +473,7 @@
             },
             {
               "type": "text",
-              "text": " structure representing the matrix factorization."
+              "text": " structure that represents the matrix factorization."
             }
           ]
         }
@@ -456,6 +493,126 @@
           "inlineContent": [
             {
               "type": "text",
+              "text": "Use this function to solve a system of linear equations using a symbolic factorization that "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/2879298-sparsefactor"
+            },
+            {
+              "type": "text",
+              "text": " creates. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3703945",
+              "metadata": {
+                "anchor": "3703945",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code creates the workspace and factor storage that this function requires, and solves this system with a QR factorization of the coefficient matrix:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/// Define the sparsity pattern of the coefficient matrix.",
+            "let rowIndices: [Int32] =    [ 0, 1, 1, 2]",
+            "let columnIndices: [Int32] = [ 2, 0, 2, 1]",
+            "",
+            "/// Create the double-precision coefficient matrix _A_.",
+            "let aValues: [Double] = [10, 20, 5, 50]",
+            "let A = SparseConvertFromCoordinate(3, 3,",
+            "                                    4, 1,",
+            "                                    SparseAttributes_t(),",
+            "                                    rowIndices, columnIndices,",
+            "                                    aValues)",
+            "",
+            "/// Compute the symbolic factorization from the structure of the coefficient matrix.",
+            "let structure = A.structure",
+            "let symbolicFactorization = SparseFactor(SparseFactorizationQR,",
+            "                                         structure)",
+            "",
+            "/// Create the workspace.",
+            "let workspace = UnsafeMutableRawPointer.allocate(",
+            "    byteCount: symbolicFactorization.workspaceSize_Double,",
+            "    alignment: MemoryLayout<Double>.alignment)",
+            "defer {",
+            "    workspace.deallocate()",
+            "}",
+            "",
+            "/// Create the factor storage.",
+            "let factorStorage = UnsafeMutableRawPointer.allocate(",
+            "    byteCount: symbolicFactorization.factorSize_Double,",
+            "    alignment: MemoryLayout<Double>.alignment)",
+            "defer {",
+            "    factorStorage.deallocate()",
+            "}",
+            "",
+            "/// Factorize _A_ using the symbolic factorization.",
+            "let factorization = SparseFactor(symbolicFactorization, A,",
+            "                                 SparseNumericFactorOptions(),",
+            "                                 factorStorage, workspace)",
+            "",
+            "/// Solve _Ax = b_ in place.",
+            "var b0Values: [Double] = [30, 35, 100]",
+            "b0Values.withUnsafeMutableBufferPointer { bPtr in",
+            "    let xb = DenseVector_Double(count: 3,",
+            "                                data: bPtr.baseAddress!)",
+            "    ",
+            "    SparseSolve(factorization, xb)",
+            "}",
+            "",
+            "SparseCleanup(A)",
+            "SparseCleanup(factorization)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3703946",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "bValues"
+            },
+            {
+              "type": "text",
+              "text": " contains the values "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[1.0, 2.0, 3.0]."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
               "text": "Note that internal memory allocations may occur in the case of pivoted factorizations that result in delayed pivots. If you require closer control over memory allocations, supply a "
             },
             {
@@ -465,7 +622,7 @@
             },
             {
               "type": "text",
-              "text": " function that implements the required behavior, or use an alternative non-pivoted factorization returns. Note that if "
+              "text": " function that implements the required behavior, or use an alternative that nonpivoted factorization returns. Note that if "
             },
             {
               "type": "reference",
@@ -482,7 +639,7 @@
             },
             {
               "type": "text",
-              "text": " the factorization will abort immediately."
+              "text": ", the factorization aborts immediately."
             }
           ]
         }
@@ -490,7 +647,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

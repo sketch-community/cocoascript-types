@@ -33,15 +33,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.2",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)IOBluetoothRFCOMMChannel",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -91,6 +91,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsportdelegate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstreamdelegate": {
+      "title": "NSStreamDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstreamdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstreamdelegate"
     },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1428722-closechannel": {
       "title": "closeChannel",
@@ -476,6 +484,56 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1500152-write": {
+      "title": "write:length:sleep:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1500152-write",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothrfcommchannel/1500152-write",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends a block of data in the channel syncronously."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "write:length:sleep:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1500141-writesimple": {
+      "title": "writeSimple:length:sleep:bytesSent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1500141-writesimple",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothrfcommchannel/1500141-writesimple",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends a block of data in the channel."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "writeSimple:length:sleep:bytesSent:"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430146-registerforchannelopennotificati": {
       "title": "registerForChannelOpenNotifications:selector:",
       "type": "topic",
@@ -594,7 +652,8 @@
       "title": "Conforms To",
       "type": "conformsTo",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsportdelegate"
+        "doc://com.apple.documentation/documentation/foundation/nsportdelegate",
+        "doc://com.apple.documentation/documentation/foundation/nsstreamdelegate"
       ]
     }
   ],
@@ -618,8 +677,11 @@
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430417-setdelegate",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1431119-setserialparameters",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430167-writeasync",
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1434633-writesync"
-      ]
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1434633-writesync",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1500152-write",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1500141-writesimple"
+      ],
+      "anchor": "2855782"
     },
     {
       "kind": "taskGroup",
@@ -629,7 +691,8 @@
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1431566-registerforchannelopennotificati",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430561-withobjectid",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1433571-withrfcommchannelref"
-      ]
+      ],
+      "anchor": "2855783"
     }
   ],
   "primaryContentSections": [
@@ -692,7 +755,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

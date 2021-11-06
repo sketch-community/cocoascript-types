@@ -1,14 +1,13 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An identifier that represents the person or organization responsible for encoding the media."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier"
-      ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
@@ -37,35 +36,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@AVMetadataIdentifieriTunesMetadataEncodedBy",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,10 +112,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem": {
-      "title": "AVMutableMetadataItem",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
-      "url": "/documentation/avfoundation/avmutablemetadataitem",
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
+      "title": "AVMetadataItem",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
+      "url": "/documentation/avfoundation/avmetadataitem",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
@@ -124,21 +128,19 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmetadataidentifier"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
-      "title": "AVMetadataItem",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
-      "url": "/documentation/avfoundation/avmetadataitem",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataaccountkind": {
       "title": "AVMetadataIdentifieriTunesMetadataAccountKind",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataaccountkind",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataaccountkind"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataaccountkind",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the kind of iTunes account."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataacknowledgement": {
       "title": "AVMetadataIdentifieriTunesMetadataAcknowledgement",
@@ -146,7 +148,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataacknowledgement",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataacknowledgement"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataacknowledgement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the acknowledgement information in iTunes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataalbum": {
       "title": "AVMetadataIdentifieriTunesMetadataAlbum",
@@ -158,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the album."
+          "text": "An identifier that represents the name of the album in iTunes."
         }
       ]
     },
@@ -172,7 +180,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the album artist."
+          "text": "An identifier that represents the artist for the album."
         }
       ]
     },
@@ -182,7 +190,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataappleid",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataappleid"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataappleid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents an Apple ID."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataarranger": {
       "title": "AVMetadataIdentifieriTunesMetadataArranger",
@@ -194,7 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the arranger."
+          "text": "An identifier that represents the name of the arranger."
         }
       ]
     },
@@ -204,7 +218,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataartdirector",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataartdirector"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataartdirector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the name of the art director."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataartist": {
       "title": "AVMetadataIdentifieriTunesMetadataArtist",
@@ -212,7 +232,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataartist",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataartist"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataartist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the name of the artist."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataartistid": {
       "title": "AVMetadataIdentifieriTunesMetadataArtistID",
@@ -220,7 +246,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataartistid",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataartistid"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataartistid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the ID for an artist."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataauthor": {
       "title": "AVMetadataIdentifieriTunesMetadataAuthor",
@@ -232,7 +264,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the author."
+          "text": "An identifier that represents the name of the author."
         }
       ]
     },
@@ -246,7 +278,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The beats per minute (BPM) of the track."
+          "text": "An identifier that represents the beats per minute of a track in iTunes."
         }
       ]
     },
@@ -260,7 +292,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the composer."
+          "text": "An identifier that represents the name of the composer."
         }
       ]
     },
@@ -274,7 +306,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the conductor."
+          "text": "An identifier that represents the name of the conductor."
         }
       ]
     },
@@ -288,7 +320,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The content rating."
+          "text": "An identifier that represents the content rating in iTunes."
         }
       ]
     },
@@ -302,7 +334,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The copyright statement."
+          "text": "An identifier that represents the copyright statement in iTunes."
         }
       ]
     },
@@ -312,7 +344,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatacoverart",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatacoverart"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatacoverart",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents an album cover image."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatacredits": {
       "title": "AVMetadataIdentifieriTunesMetadataCredits",
@@ -320,7 +358,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatacredits",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatacredits"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatacredits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the credits for the source content."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadescription": {
       "title": "AVMetadataIdentifieriTunesMetadataDescription",
@@ -328,7 +372,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadescription",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatadescription"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatadescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the description information in iTunes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadirector": {
       "title": "AVMetadataIdentifieriTunesMetadataDirector",
@@ -340,7 +390,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the director."
+          "text": "An identifier that represents the name of the director."
         }
       ]
     },
@@ -350,7 +400,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadisccompilation",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatadisccompilation"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatadisccompilation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents whether an album is a compilation of tracks in iTunes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadiscnumber": {
       "title": "AVMetadataIdentifieriTunesMetadataDiscNumber",
@@ -358,15 +414,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadiscnumber",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatadiscnumber"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataeq": {
-      "title": "AVMetadataIdentifieriTunesMetadataEQ",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataeq",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataeq"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatadiscnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the disc number of a multi-CD album in iTunes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataencodedby": {
       "title": "AVMetadataIdentifieriTunesMetadataEncodedBy",
@@ -374,7 +428,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataencodedby",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataencodedby"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataencodedby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the person or organization responsible for encoding the media."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataencodingtool": {
       "title": "AVMetadataIdentifieriTunesMetadataEncodingTool",
@@ -382,7 +442,27 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataencodingtool",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataencodingtool"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataencodingtool",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the software or hardware and settings used for encoding."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataeq": {
+      "title": "AVMetadataIdentifieriTunesMetadataEQ",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataeq",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataeq",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the equalizer preset option in iTunes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataexecproducer": {
       "title": "AVMetadataIdentifieriTunesMetadataExecProducer",
@@ -394,7 +474,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the executive producer."
+          "text": "An identifier that represents the name of the executive producer."
         }
       ]
     },
@@ -404,7 +484,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatagenreid",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatagenreid"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatagenreid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the genre ID."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatagrouping": {
       "title": "AVMetadataIdentifieriTunesMetadataGrouping",
@@ -412,7 +498,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatagrouping",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatagrouping"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatagrouping",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents additional grouping information for an album."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatalinernotes": {
       "title": "AVMetadataIdentifieriTunesMetadataLinerNotes",
@@ -420,7 +512,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatalinernotes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatalinernotes"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatalinernotes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the digital booklet for an album."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatalyrics": {
       "title": "AVMetadataIdentifieriTunesMetadataLyrics",
@@ -428,7 +526,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatalyrics",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatalyrics"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatalyrics",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the lyrics in the recording."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataonlineextras": {
       "title": "AVMetadataIdentifieriTunesMetadataOnlineExtras",
@@ -436,7 +540,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataonlineextras",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataonlineextras"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataonlineextras",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the extra materials for an album."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataoriginalartist": {
       "title": "AVMetadataIdentifieriTunesMetadataOriginalArtist",
@@ -448,7 +558,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the original artist."
+          "text": "An identifier that represents the name of the original artist."
         }
       ]
     },
@@ -462,7 +572,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the performer."
+          "text": "An identifier that represents the name of the performer."
         }
       ]
     },
@@ -472,7 +582,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataphonogramrights",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataphonogramrights"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataphonogramrights",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the phonogram rights statement."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataplaylistid": {
       "title": "AVMetadataIdentifieriTunesMetadataPlaylistID",
@@ -480,7 +596,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataplaylistid",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataplaylistid"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadataplaylistid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the playlist ID."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatapredefinedgenre": {
       "title": "AVMetadataIdentifieriTunesMetadataPredefinedGenre",
@@ -488,7 +610,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatapredefinedgenre",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatapredefinedgenre"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatapredefinedgenre",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the predefined genre."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataproducer": {
       "title": "AVMetadataIdentifieriTunesMetadataProducer",
@@ -500,7 +628,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the producer."
+          "text": "An identifier that represents the name of the producer."
         }
       ]
     },
@@ -514,7 +642,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the publisher."
+          "text": "An identifier that represents the name of the publisher."
         }
       ]
     },
@@ -528,7 +656,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the record company."
+          "text": "An identifier that represents the name of the record company."
         }
       ]
     },
@@ -538,7 +666,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatareleasedate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatareleasedate"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatareleasedate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the release date for the original recording."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatasoloist": {
       "title": "AVMetadataIdentifieriTunesMetadataSoloist",
@@ -550,7 +684,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the soloist."
+          "text": "An identifier that represents the name of the soloist."
         }
       ]
     },
@@ -560,7 +694,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatasongid",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatasongid"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatasongid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the song ID."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatasongname": {
       "title": "AVMetadataIdentifieriTunesMetadataSongName",
@@ -572,7 +712,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the song."
+          "text": "An identifier that represents the name of the song in iTunes."
         }
       ]
     },
@@ -586,7 +726,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The name of the sound engineer."
+          "text": "An identifier that represents the name of the sound engineer."
         }
       ]
     },
@@ -596,7 +736,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatathanks",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatathanks"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatathanks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the thanks statement in iTunes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatatracknumber": {
       "title": "AVMetadataIdentifieriTunesMetadataTrackNumber",
@@ -604,7 +750,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatatracknumber",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatatracknumber"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatatracknumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the order number in iTunes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatatracksubtitle": {
       "title": "AVMetadataIdentifieriTunesMetadataTrackSubTitle",
@@ -612,7 +764,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatatracksubtitle",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatatracksubtitle"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatatracksubtitle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the information relating to the contents title."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatausercomment": {
       "title": "AVMetadataIdentifieriTunesMetadataUserComment",
@@ -620,7 +778,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatausercomment",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatausercomment"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatausercomment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents a user comment regarding the content."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatausergenre": {
       "title": "AVMetadataIdentifieriTunesMetadataUserGenre",
@@ -628,7 +792,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatausergenre",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatausergenre"
+      "url": "/documentation/avfoundation/avmetadataidentifieritunesmetadatausergenre",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An identifier that represents the genre set by a user in iTunes."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -662,8 +832,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadirector",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadisccompilation",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadiscnumber",
-        "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataeq",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataencodingtool",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataeq",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataexecproducer",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatagenreid",
         "doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatagrouping",
@@ -731,6 +901,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -741,7 +912,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

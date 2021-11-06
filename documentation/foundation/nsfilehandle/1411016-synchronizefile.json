@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Causes all in-memory data and attributes of the file represented by the receiver to be written to permanent storage."
+      "text": "Causes all in-memory data and attributes of the file represented by the handle to write to permanent storage."
     }
   ],
   "documentVersion": 0,
@@ -36,44 +36,54 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.4",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSFileHandle(im)synchronizeFile",
+    "parent": {
+      "title": "NSFileHandle"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,6 +140,62 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror": {
+      "title": "synchronizeAndReturnError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Causes all in-memory data and attributes of the file represented by the file handle to write to permanent storage."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "synchronizeAndReturnError:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandleoperationexception": {
+      "title": "NSFileHandleOperationException",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandleoperationexception",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandleoperationexception"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172525-closeandreturnerror": {
+      "title": "closeAndReturnError:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172525-closeandreturnerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172525-closeandreturnerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disallows further access to the represented file or communications channel and signals end of file on communications channels that permit writing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "closeAndReturnError:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413393-closefile": {
       "title": "closeFile",
       "type": "topic",
@@ -165,7 +231,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Causes all in-memory data and attributes of the file represented by the receiver to be written to permanent storage."
+          "text": "Causes all in-memory data and attributes of the file represented by the handle to write to permanent storage."
         }
       ],
       "fragments": [
@@ -180,6 +246,30 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172532-truncateatoffset": {
+      "title": "truncateAtOffset:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172532-truncateatoffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172532-truncateatoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "truncateAtOffset:error:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset": {
       "title": "truncateFileAtOffset:",
       "type": "topic",
@@ -190,7 +280,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Truncates or extends the file represented by the receiver to a specified offset within the file and puts the file pointer at that position."
+          "text": "Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position."
         }
       ],
       "fragments": [
@@ -213,10 +303,33 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror"
+        },
+        {
+          "type": "text",
+          "text": " to handle errors when synchronizing the file."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172525-closeandreturnerror",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1413393-closefile",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172531-synchronizeandreturnerror",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172532-truncateatoffset",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411716-truncatefileatoffset"
       ],
       "title": "Operating on a File",
@@ -255,6 +368,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -277,15 +391,39 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This method should be invoked by programs that require the file to always be in a known state. An invocation of this method does not return until memory is flushed."
+              "text": "Programs that require the file to always be in a known state should call this method. An invocation of this method doesn’t return until memory is flushed."
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This method raises "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandleoperationexception"
+                },
+                {
+                  "type": "text",
+                  "text": " if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if the operation failed."
+                }
+              ]
+            }
+          ],
+          "style": "important"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

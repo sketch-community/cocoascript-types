@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The client requirements for the visual output displayed in the player layer during playback."
+      "text": "The attributes of the visual output that displays in the player layer during playback."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVPlayerLayer(py)pixelBufferAttributes",
+    "parent": {
+      "title": "AVPlayerLayer"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that manages a player’s visual output."
+          "text": "An object that presents the visual contents of a player object."
         }
       ]
     },
@@ -131,62 +139,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1389748-readyfordisplay": {
-      "title": "readyForDisplay",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1389748-readyfordisplay",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer/1389748-readyfordisplay",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the first video frame has been made ready for display for the current item of the associated player."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1385745-videorect": {
-      "title": "videoRect",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1385745-videorect",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer/1385745-videorect",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The current size and position of the video image as displayed within the receiver's bounds."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1388915-videogravity": {
-      "title": "videoGravity",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1388915-videogravity",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayerlayer/1388915-videogravity",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value that specifies how the video is displayed within a player layer’s bounds."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity": {
-      "title": "AVLayerVideoGravity",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avlayervideogravity",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A value that defines how the video is displayed within a layer’s bounds rectangle."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1390055-pixelbufferattributes": {
       "title": "pixelBufferAttributes",
       "type": "topic",
@@ -197,7 +149,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The client requirements for the visual output displayed in the player layer during playback."
+          "text": "The attributes of the visual output that displays in the player layer during playback."
         }
       ]
     },
@@ -209,28 +161,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1389748-readyfordisplay",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1385745-videorect",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer/1388915-videogravity",
-        "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity"
-      ],
-      "title": "Configuring the Display Behavior",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -287,6 +217,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -308,15 +239,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property can be used to customize the format of the pixel buffers vended to the player layer. This property is not intended for general use and is not needed for most uses of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVPlayerLayer"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": "Use this property to customize the format of the pixel buffers that the player layer vends."
             }
           ]
         }
@@ -324,7 +247,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

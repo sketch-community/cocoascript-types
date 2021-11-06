@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The abbreviated country name."
+      "text": "The abbreviated country or region name."
     }
   ],
   "documentVersion": 0,
@@ -11,6 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/mapkit",
+        "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
+        "doc://com.apple.documentation/documentation/mapkit/mkplacemark"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/mapkit",
+        "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
         "doc://com.apple.documentation/documentation/mapkit/mkplacemark"
       ]
     ]
@@ -34,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)MKPlacemark(py)countryCode",
+    "parent": {
+      "title": "MKPlacemark"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,6 +112,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays": {
+      "title": "MapKit Overlays",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
+      "url": "/documentation/mapkit/mapkit_overlays",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/mapkit/mkplacemark": {
       "title": "MKPlacemark",
       "type": "topic",
@@ -110,6 +133,14 @@
           "text": "A user-friendly description of a location on the map.  "
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
+      "title": "MapKit Annotations",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
+      "url": "/documentation/mapkit/mapkit_annotations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
@@ -129,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The abbreviated country name."
+          "text": "The abbreviated country or region name."
         }
       ]
     },
@@ -139,16 +170,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "primaryContentSections": [
@@ -189,6 +210,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -211,7 +233,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This string is the standard abbreviation used to refer to the country. For example, if the placemark location was Apple’s headquarters, the value for this property would be the string “US”. "
+              "text": "This string is the standard abbreviation used to refer to the country or region. For example, if the placemark location was Apple’s headquarters, the value for this property would be the string “US”. "
             }
           ]
         }
@@ -219,7 +241,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

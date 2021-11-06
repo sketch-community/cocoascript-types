@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create overlays to highlight geographic regions or paths."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -24,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -70,7 +76,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A circular overlay with a configurable radius and centered on a specific geographic coordinate. "
+          "text": "A circular overlay with a configurable radius that you center on a geographic coordinate. "
         }
       ]
     },
@@ -84,7 +90,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for a circular overlay. "
+          "text": "The visual representation of a circular overlay. "
         }
       ]
     },
@@ -98,7 +104,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A closed polygon shape.  "
+          "text": "A closed polygon overlay.  "
         }
       ]
     },
@@ -112,7 +118,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for a single polygon overlay.  "
+          "text": "The visual representation of a single polygon overlay.  "
         }
       ]
     },
@@ -126,7 +132,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A collection of multiple closed polygon shapes."
+          "text": "A collection of multiple closed polygon overlays."
         }
       ]
     },
@@ -140,7 +146,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for a multipolygon overlay. "
+          "text": "The visual representation of multiple polygon overlays. "
         }
       ]
     },
@@ -154,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for a path-based overlay. "
+          "text": "The visual representation of a path-based overlay. "
         }
       ]
     },
@@ -168,7 +174,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A shape consisting of one or more connected line segments. "
+          "text": "An open polygon overlay consisting of one or more connected line segments. "
         }
       ]
     },
@@ -182,21 +188,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A line-based shape that follows the contours of the Earth to create the shortest path between the specified points."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer": {
-      "title": "MKPolylineRenderer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkpolylinerenderer",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The visual representation for any polyline overlay object.  "
+          "text": "An open polygon overlay made of line segments that follow the contours of the Earth to create the shortest path between the specified points."
         }
       ]
     },
@@ -214,6 +206,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer": {
+      "title": "MKPolylineRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkpolylinerenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A visual representation of any polyline overlay object.  "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/mapkit/mkmultipolylinerenderer": {
       "title": "MKMultiPolylineRenderer",
       "type": "topic",
@@ -224,7 +230,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for multiple polyline objects.  "
+          "text": "A visual representation of multiple polyline overlay objects.  "
         }
       ]
     },
@@ -238,7 +244,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The visual representation for any polyline overlay object with a gradient."
+          "text": "A visual representation of any polyline overlay object with a gradient."
         }
       ]
     },
@@ -252,7 +258,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An overlay that covers an area of the map with bitmap tiles. "
+          "text": "An overlay that covers an area of the map with tiles of bitmap images. "
         }
       ]
     },
@@ -267,76 +273,6 @@
         {
           "type": "text",
           "text": "The renderer for a tile overlay that handles the drawing of bitmap images on the map surface.   "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkshape": {
-      "title": "MKShape",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkshape",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkshape",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An abstract class that defines the basic properties for all shape-based overlay objects."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkmultipoint": {
-      "title": "MKMultiPoint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmultipoint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkmultipoint",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An abstract class that defines the common behavior shared by polygon and polyline overlays.  "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkplacemark": {
-      "title": "MKPlacemark",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkplacemark",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A user-friendly description of a location on the map.  "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkannotation": {
-      "title": "MKAnnotation",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotation",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkannotation",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An interface for associating your content with a specific map location. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/mapkit/mkannotationview": {
-      "title": "MKAnnotationView",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/mapkit/mkannotationview",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The visual representation of one of your annotation objects.  "
         }
       ]
     },
@@ -368,13 +304,61 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/mapkit/mkshape": {
+      "title": "MKShape",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkshape",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkshape",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that defines the basic properties for all shape-based overlay objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmultipoint": {
+      "title": "MKMultiPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmultipoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmultipoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class that defines the common behavior shared by open and closed polygon overlays.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkplacemark": {
+      "title": "MKPlacemark",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkplacemark",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A user-friendly description of a location on the map.  "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations": {
       "title": "MapKit Annotations",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_annotations"
+      "url": "/documentation/mapkit/mapkit_annotations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create annotations to add indicators and additional details for specific locations on a map."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays": {
       "title": "MapKit Overlays",
@@ -382,7 +366,13 @@
       "identifier": "doc://com.apple.documentation/documentation/mapkit/mapkit_overlays",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/mapkit/mapkit_overlays"
+      "url": "/documentation/mapkit/mapkit_overlays",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create overlays to highlight geographic regions or paths."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -392,16 +382,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "topicSections": [
     {
       "kind": "taskGroup",
@@ -409,7 +389,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkcircle",
         "doc://com.apple.documentation/documentation/mapkit/mkcirclerenderer"
-      ]
+      ],
+      "anchor": "2878657"
     },
     {
       "kind": "taskGroup",
@@ -420,7 +401,8 @@
         "doc://com.apple.documentation/documentation/mapkit/mkmultipolygon",
         "doc://com.apple.documentation/documentation/mapkit/mkmultipolygonrenderer",
         "doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer"
-      ]
+      ],
+      "anchor": "2878658"
     },
     {
       "kind": "taskGroup",
@@ -428,11 +410,12 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mkpolyline",
         "doc://com.apple.documentation/documentation/mapkit/mkgeodesicpolyline",
-        "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer",
         "doc://com.apple.documentation/documentation/mapkit/mkmultipolyline",
+        "doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer",
         "doc://com.apple.documentation/documentation/mapkit/mkmultipolylinerenderer",
         "doc://com.apple.documentation/documentation/mapkit/mkgradientpolylinerenderer"
-      ]
+      ],
+      "anchor": "2878659"
     },
     {
       "kind": "taskGroup",
@@ -440,25 +423,25 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/mapkit/mktileoverlay",
         "doc://com.apple.documentation/documentation/mapkit/mktileoverlayrenderer"
-      ]
+      ],
+      "anchor": "2878656"
     },
     {
       "kind": "taskGroup",
       "title": "Shared Behavior",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
+        "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
         "doc://com.apple.documentation/documentation/mapkit/mkshape",
-        "doc://com.apple.documentation/documentation/mapkit/mkmultipoint"
-      ]
+        "doc://com.apple.documentation/documentation/mapkit/mkmultipoint",
+        "doc://com.apple.documentation/documentation/mapkit/mkplacemark"
+      ],
+      "anchor": "2878660"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/mapkit/mkplacemark",
-        "doc://com.apple.documentation/documentation/mapkit/mkannotation",
-        "doc://com.apple.documentation/documentation/mapkit/mkannotationview",
-        "doc://com.apple.documentation/documentation/mapkit/mkoverlay",
-        "doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer",
         "doc://com.apple.documentation/documentation/mapkit/mapkit_annotations"
       ],
       "title": "Annotations and Overlays",
@@ -466,7 +449,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

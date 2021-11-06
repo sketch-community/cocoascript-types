@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A semi-opaque type representing symbolic matrix factorization."
+      "text": "A semi-opaque type that represents symbolic matrix factorization."
     }
   ],
   "documentVersion": 0,
@@ -12,8 +12,7 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions"
       ]
     ]
   },
@@ -36,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@SparseOpaqueSymbolicFactorization",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,18 +111,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions": {
-      "title": "Sparse Symbolic Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions": {
+      "title": "Sparse Symbolic Factorization Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -199,7 +195,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Pointer to private internal representation of symbolic factor."
+          "text": "A pointer to a private internal representation of the symbolic factor."
         }
       ]
     },
@@ -213,7 +209,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure that defines the factorization type."
+          "text": "Constants that define the factorization type."
         }
       ]
     },
@@ -389,7 +385,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A semi-opaque type representing symbolic matrix factorization."
+          "text": "A semi-opaque type that represents symbolic matrix factorization."
         }
       ]
     },
@@ -425,7 +421,8 @@
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquesymbolicfactorization/2868350-type",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquesymbolicfactorization/2868355-factorization",
         "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t"
-      ]
+      ],
+      "anchor": "2868834"
     },
     {
       "kind": "taskGroup",
@@ -440,7 +437,8 @@
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquesymbolicfactorization/2879480-workspacesize_float",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquesymbolicfactorization/2879479-factorsize_double",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquesymbolicfactorization/2879481-factorsize_float"
-      ]
+      ],
+      "anchor": "2877831"
     }
   ],
   "seeAlsoSections": [
@@ -505,6 +503,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -527,7 +526,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Represents a symbolic matrix factorization (i.e. the pattern of the factors without the values). A single symbolic factorization may be the basis for multiple numerical factorizations of matrices with the same pattern but different nonzero values."
+              "text": "Represents a symbolic matrix factorization (that is, the pattern of the factors without the values). A single symbolic factorization may be the basis for multiple numerical factorizations of matrices with the same pattern but different nonzero values."
             }
           ]
         },
@@ -545,7 +544,7 @@
             },
             {
               "type": "text",
-              "text": " function to free resources held by these objects. The internal factorization pointer is reference counted, so it is safe to destroy this object even if numeric factorizations exist that still depend on it."
+              "text": " function to free resources that these objects hold. The system reference-counts the internal factorize pointer, so it’s safe to destroy this object even if numeric factorizations exist that still depend on it."
             }
           ]
         }
@@ -553,7 +552,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

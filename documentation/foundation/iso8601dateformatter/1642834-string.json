@@ -41,30 +41,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSISO8601DateFormatter(cm)stringFromDate:timeZone:formatOptions:",
+    "parent": {
+      "title": "ISO8601DateFormatter"
+    },
     "symbolKind": "clm",
     "fragments": [
       {
@@ -106,8 +114,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -466,6 +474,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -580,9 +589,10 @@
             "let formatter = ISO8601DateFormatter()",
             "string = formatter.string(from: date)",
             " ",
-            "let GMT = TimeZone(abbreviation: \"GMT\")",
-            "let options: ISO8601DateFormatOptions = [.withInternetDateTime, .withDashSeparatorInDate, .withColonSeparatorInTime, .withTimeZone]",
-            "string = ISO8601DateFormatter.string(from: date, timeZone: GMT, formatOptions: options)"
+            "if let GMT = TimeZone(abbreviation: \"GMT\") {",
+            "    let options: ISO8601DateFormatter.Options = [.withInternetDateTime, .withDashSeparatorInDate, .withColonSeparatorInTime, .withTimeZone]",
+            "    string = ISO8601DateFormatter.string(from: date, timeZone: GMT, formatOptions: options)",
+            "}"
           ],
           "syntax": "swift",
           "metadata": {
@@ -594,7 +604,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

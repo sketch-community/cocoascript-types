@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A mask that contains the OR combination of the accessibility traits that best characterize an accessibility element."
+      "text": "Constants that describe how an accessibility element behaves."
     }
   ],
   "documentVersion": 0,
@@ -11,14 +11,14 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
@@ -40,13 +40,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility"
       ],
       [
@@ -83,25 +83,33 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@UIAccessibilityTraits",
+    "parent": {
+      "title": "UIAccessibility"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -115,8 +123,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -151,10 +159,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -173,7 +181,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility"
+      "url": "/documentation/uikit/uiaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A namespace for accessibility symbols for UIKit apps."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -247,35 +261,339 @@
       "role": "symbol",
       "url": "/documentation/swift/rawrepresentable"
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/2993329-init": {
-      "title": "init(rawValue:)",
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620179-none": {
+      "title": "none",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/2993329-init",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620179-none",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/2993329-init",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620179-none",
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a new accessibility traits structure using a unsigned integer."
+          "text": "The accessibility element has no traits."
         }
       ],
       "fragments": [
         {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
           "kind": "text",
-          "text": "("
+          "text": "static var "
         },
         {
           "kind": "identifier",
-          "text": "rawValue"
+          "text": "none"
         },
         {
           "kind": "text",
-          "text": ": UInt64)"
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620194-button": {
+      "title": "button",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620194-button",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620194-button",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element behaves like a button."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "button"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620178-link": {
+      "title": "link",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620178-link",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620178-link",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element behaves like a link."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "link"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620174-image": {
+      "title": "image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620174-image",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620174-image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element behaves like an image."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "image"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620199-searchfield": {
+      "title": "searchField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620199-searchfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620199-searchfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element behaves like a search field."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "searchField"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620182-keyboardkey": {
+      "title": "keyboardKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620182-keyboardkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620182-keyboardkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element behaves like a keyboard key."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "keyboardKey"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620206-statictext": {
+      "title": "staticText",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620206-statictext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620206-statictext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element behaves like static text that can't change."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "staticText"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620170-header": {
+      "title": "header",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620170-header",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620170-header",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element is a header that divides content into sections, such as the title of a navigation bar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "header"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1648592-tabbar": {
+      "title": "tabBar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1648592-tabbar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1648592-tabbar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element behaves like a tab bar."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "tabBar"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620185-summaryelement": {
+      "title": "summaryElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620185-summaryelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620185-summaryelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element provides summary information when the app starts."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "summaryElement"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620197-selected": {
+      "title": "selected",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620197-selected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620197-selected",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element is currently in a selected state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "selected"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620208-notenabled": {
+      "title": "notEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620208-notenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620208-notenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element isn't in an enabled state and doesn't respond to user interaction."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "notEnabled"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
         }
       ]
     },
@@ -335,420 +653,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620194-button": {
-      "title": "button",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620194-button",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620194-button",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element should be treated as a button."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "button"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620205-causespageturn": {
-      "title": "causesPageTurn",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620205-causespageturn",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620205-causespageturn",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element should cause an automatic page turn when VoiceOver finishes reading the text within it."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "causesPageTurn"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620170-header": {
-      "title": "header",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620170-header",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620170-header",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element is a header that divides content into sections, such as the title of a navigation bar."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "header"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620174-image": {
-      "title": "image",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620174-image",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620174-image",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element should be treated as an image."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "image"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620182-keyboardkey": {
-      "title": "keyboardKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620182-keyboardkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620182-keyboardkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element behaves as a keyboard key."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "keyboardKey"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620178-link": {
-      "title": "link",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620178-link",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620178-link",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element should be treated as a link."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "link"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620179-none": {
-      "title": "none",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620179-none",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620179-none",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element has no traits."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "none"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620208-notenabled": {
-      "title": "notEnabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620208-notenabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620208-notenabled",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element is not enabled and does not respond to user interaction."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "notEnabled"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620204-playssound": {
-      "title": "playsSound",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620204-playssound",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620204-playssound",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element plays its own sound when activated."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "playsSound"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620199-searchfield": {
-      "title": "searchField",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620199-searchfield",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620199-searchfield",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element should be treated as a search field."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "searchField"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620197-selected": {
-      "title": "selected",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620197-selected",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620197-selected",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element is currently selected."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "selected"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620173-startsmediasession": {
-      "title": "startsMediaSession",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620173-startsmediasession",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620173-startsmediasession",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element starts a media session when it is activated."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "startsMediaSession"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620206-statictext": {
-      "title": "staticText",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620206-statictext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620206-statictext",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element should be treated as static text that cannot change."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "staticText"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620185-summaryelement": {
-      "title": "summaryElement",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620185-summaryelement",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620185-summaryelement",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The accessibility element provides summary information when the application starts."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "summaryElement"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1648592-tabbar": {
-      "title": "tabBar",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1648592-tabbar",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1648592-tabbar",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static var "
-        },
-        {
-          "kind": "identifier",
-          "text": "tabBar"
-        },
-        {
-          "kind": "text",
-          "text": ": UIAccessibilityTraits"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620187-updatesfrequently": {
       "title": "updatesFrequently",
       "type": "topic",
@@ -777,6 +681,90 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620205-causespageturn": {
+      "title": "causesPageTurn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620205-causespageturn",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620205-causespageturn",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element causes an automatic page turn when VoiceOver finishes reading the text within it."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "causesPageTurn"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620204-playssound": {
+      "title": "playsSound",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620204-playssound",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620204-playssound",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element plays its own sound when the user activates it."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "playsSound"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620173-startsmediasession": {
+      "title": "startsMediaSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620173-startsmediasession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620173-startsmediasession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The accessibility element starts a media session when the user activates it."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "startsMediaSession"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibilityTraits"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/arrayliteralelement": {
       "title": "UIAccessibilityTraits.ArrayLiteralElement",
       "type": "topic",
@@ -784,6 +772,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/arrayliteralelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The type of the elements of an array literal."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -802,6 +796,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/element",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The element type of the option set."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -813,17 +813,147 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits": {
-      "title": "Accessibility Traits",
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/2993329-init": {
+      "title": "init(rawValue:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/2993329-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/uiaccessibilitytraits/2993329-init",
       "abstract": [
         {
           "type": "text",
-          "text": "Tell an assistive application how an accessibility element behaves or should be treated by setting these accessibility traits"
+          "text": "Creates a new accessibility traits structure using an unsigned integer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "rawValue"
+        },
+        {
+          "kind": "text",
+          "text": ": UInt64)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615141-isaccessibilityelement": {
+      "title": "isAccessibilityElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615141-isaccessibilityelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615141-isaccessibilityelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the element is an accessibility element that an assistive app can access."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "isAccessibilityElement"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615181-accessibilitylabel": {
+      "title": "accessibilityLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615181-accessibilitylabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615181-accessibilitylabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A succinct label in a localized string that identifies the accessibility element."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityLabel"
+        },
+        {
+          "kind": "text",
+          "text": ": String?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615117-accessibilityvalue": {
+      "title": "accessibilityValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615117-accessibilityvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615117-accessibilityvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A localized string that contains the value of the accessibility element."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityValue"
+        },
+        {
+          "kind": "text",
+          "text": ": String?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615093-accessibilityhint": {
+      "title": "accessibilityHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615093-accessibilityhint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1615093-accessibilityhint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A localized string that contains a brief description of the result of performing an action on the accessibility element."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityHint"
+        },
+        {
+          "kind": "text",
+          "text": ": String?"
         }
       ]
     },
@@ -837,7 +967,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The combination of accessibility traits that best characterize the accessibility element. "
+          "text": "The combination of accessibility traits that best characterizes the accessibility element. "
         }
       ],
       "fragments": [
@@ -865,7 +995,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mask that contains the OR combination of the accessibility traits that best characterize an accessibility element."
+          "text": "Constants that describe how an accessibility element behaves."
         }
       ],
       "fragments": [
@@ -876,174 +1006,6 @@
         {
           "kind": "identifier",
           "text": "UIAccessibilityTraits"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/1649788-accessibilitycustomrotors": {
-      "title": "accessibilityCustomRotors",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1649788-accessibilitycustomrotors",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsobject/1649788-accessibilitycustomrotors",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An array of custom rotors for the current element."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityCustomRotors"
-        },
-        {
-          "kind": "text",
-          "text": ": [UIAccessibilityCustomRotor]?"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615080-accessibilityelementshidden": {
-      "title": "accessibilityElementsHidden",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615080-accessibilityelementshidden",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsobject/1615080-accessibilityelementshidden",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether the accessibility elements contained within this accessibility element are hidden."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityElementsHidden"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/1534050-accessibilitynotifieswhendestroy": {
-      "title": "accessibilityNotifiesWhenDestroyed",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1534050-accessibilitynotifieswhendestroy",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsobject/1534050-accessibilitynotifieswhendestroy",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether a custom accessibility object sends a notification when its corresponding UI element is destroyed."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityNotifiesWhenDestroyed"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/3043551-accessibilityrespondstouserinter": {
-      "title": "accessibilityRespondsToUserInteraction",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/3043551-accessibilityrespondstouserinter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsobject/3043551-accessibilityrespondstouserinter",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether the element performs an action based on user interaction."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityRespondsToUserInteraction"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615089-accessibilityviewismodal": {
-      "title": "accessibilityViewIsModal",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615089-accessibilityviewismodal",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsobject/1615089-accessibilityviewismodal",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether VoiceOver should ignore the elements within views that are siblings of the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "accessibilityViewIsModal"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren": {
-      "title": "shouldGroupAccessibilityChildren",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value indicating whether VoiceOver should group together the elements that are children of the receiver, regardless of their positions on the screen."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "shouldGroupAccessibilityChildren"
-        },
-        {
-          "kind": "text",
-          "text": ": Bool"
         }
       ]
     },
@@ -1071,34 +1033,28 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Initializer",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/2993329-init"
-      ]
-    },
-    {
-      "kind": "taskGroup",
       "title": "Constants",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620179-none",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620194-button",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620178-link",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620174-image",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620199-searchfield",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620182-keyboardkey",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620206-statictext",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620170-header",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1648592-tabbar",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620185-summaryelement",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620197-selected",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620208-notenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620177-adjustable",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620172-allowsdirectinteraction",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620194-button",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620187-updatesfrequently",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620205-causespageturn",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620170-header",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620174-image",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620182-keyboardkey",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620178-link",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620179-none",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620208-notenabled",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620204-playssound",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620199-searchfield",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620197-selected",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620173-startsmediasession",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620206-statictext",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620185-summaryelement",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1648592-tabbar",
-        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620187-updatesfrequently"
-      ]
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620173-startsmediasession"
+      ],
+      "anchor": "3523975"
     },
     {
       "kind": "taskGroup",
@@ -1106,22 +1062,28 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/arrayliteralelement",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/element"
-      ]
+      ],
+      "anchor": "3523981"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Initializer",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/uiaccessibilitytraits/2993329-init"
+      ],
+      "anchor": "3523976"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility/accessibility_traits",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615202-accessibilitytraits",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/1649788-accessibilitycustomrotors",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615080-accessibilityelementshidden",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/1534050-accessibilitynotifieswhendestroy",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/3043551-accessibilityrespondstouserinter",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615089-accessibilityviewismodal",
-        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren"
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615141-isaccessibilityelement",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615181-accessibilitylabel",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615117-accessibilityvalue",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615093-accessibilityhint",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/1615202-accessibilitytraits"
       ],
-      "title": "Configuring Behavior",
+      "title": "Supporting Basic Accessibility",
       "generated": true
     }
   ],
@@ -1149,16 +1111,41 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS",
             "watchOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Set these traits to tell an assistive app how an accessibility element behaves or how to treat it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

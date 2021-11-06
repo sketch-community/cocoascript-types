@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The maximum number of frames per second of which the screen is capable."
+      "text": "The maximum number of frames per second a screen can render."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIScreen(py)maximumFramesPerSecond",
+    "parent": {
+      "title": "UIScreen"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -152,7 +160,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The maximum number of frames per second of which the screen is capable."
+          "text": "The maximum number of frames per second a screen can render."
         }
       ]
     },
@@ -211,6 +219,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -231,15 +240,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "On iOS the maximum number of frames per second is typically "
+              "text": "In iOS, the value of this property can be up to "
             },
             {
               "type": "codeVoice",
-              "code": "60"
+              "code": "120"
             },
             {
               "type": "text",
-              "text": ". "
+              "text": " for devices with ProMotion displays."
             }
           ]
         },
@@ -248,15 +257,19 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "For tvOS devices, this value can vary based on the hardware capabilities of an attached screen or the user-selected resolution on Apple TV."
+              "text": "In tvOS, the value of this property depends on the hardware capabilities of the attached screen and the user’s selected resolution on Apple TV."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

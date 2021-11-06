@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSRunLoop(im)runMode:beforeDate:",
+    "parent": {
+      "title": "RunLoop"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -92,8 +100,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -159,14 +167,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/swift/false"
-    },
-    "doc://com.apple.documentation/documentation/foundation/runloop/run_loop_modes": {
-      "title": "Run Loop Modes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/run_loop_modes",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/foundation/runloop/run_loop_modes"
     },
     "doc://com.apple.documentation/documentation/foundation/runloop/1415778-run": {
       "title": "run(until:)",
@@ -451,6 +451,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -476,9 +477,8 @@
                   "text": "The mode in which to run. You may specify custom modes or use one of the modes listed in "
                 },
                 {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/run_loop_modes"
+                  "type": "codeVoice",
+                  "code": "Run Loop Modes"
                 },
                 {
                   "type": "text",
@@ -593,7 +593,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

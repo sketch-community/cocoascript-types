@@ -11,22 +11,8 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
-        "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
-        "doc://com.apple.documentation/documentation/uikit/1619233-control_characters"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
-        "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
-        "doc://com.apple.documentation/documentation/uikit/1619233-control_characters"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/textkit",
         "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate",
         "doc://com.apple.documentation/documentation/uikit/1619233-control_characters"
       ],
@@ -60,30 +46,40 @@
         "name": "iOS",
         "introducedAt": "7.0",
         "deprecatedAt": "9.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "deprecatedAt": "9.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "9.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:@Ea@NSControlCharacterZeroAdvancementAction@NSControlCharacterLineBreakAction",
+    "parent": {
+      "title": "Control Characters"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,13 +114,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts": {
-      "title": "Text Display and Fonts",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_display_and_fonts",
-      "url": "/documentation/uikit/text_display_and_fonts",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
+      "title": "NSLayoutManager",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
+      "url": "/documentation/uikit/nslayoutmanager",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/uikit/nslayoutmanagerdelegate": {
       "title": "NSLayoutManagerDelegate",
@@ -147,14 +151,6 @@
           "text": "Constants that describe actions for control characters. "
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/nslayoutmanager": {
-      "title": "NSLayoutManager",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/nslayoutmanager",
-      "url": "/documentation/uikit/nslayoutmanager",
-      "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/appkit": {
       "title": "AppKit",
@@ -200,6 +196,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -208,7 +205,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

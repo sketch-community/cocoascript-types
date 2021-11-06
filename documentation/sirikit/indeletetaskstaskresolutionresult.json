@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INDeleteTasksTaskResolutionResult",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +100,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
-      "title": "Lists and Notes",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
-      "url": "/documentation/sirikit/lists_and_notes",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -107,7 +120,8 @@
           "type": "text",
           "text": "A resolution result for deleting tasks."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskunsupportedreason": {
       "title": "INDeleteTasksTaskUnsupportedReason",
@@ -121,7 +135,8 @@
           "type": "text",
           "text": "Constants that indicate the reason the app can’t support the delete task request."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult": {
       "title": "INIntentResolutionResult",
@@ -137,13 +152,7 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/intaskresolutionresult",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/intaskresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for a single task within a task list."
-        }
-      ]
+      "url": "/documentation/sirikit/intaskresolutionresult"
     },
     "doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskresolutionresult/3141711-initwithtaskresolutionresult": {
       "title": "initWithTaskResolutionResult:",
@@ -167,7 +176,8 @@
           "kind": "identifier",
           "text": "initWithTaskResolutionResult:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskresolutionresult/3141712-unsupportedforreason": {
       "title": "unsupportedForReason:",
@@ -191,35 +201,53 @@
           "kind": "identifier",
           "text": "unsupportedForReason:"
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/sirikit/inaddtaskstargettasklistresolutionresult": {
-      "title": "INAddTasksTargetTaskListResolutionResult",
+    "doc://com.apple.documentation/documentation/sirikit/indeletetasksintenthandling": {
+      "title": "INDeleteTasksIntentHandling",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inaddtaskstargettasklistresolutionresult",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indeletetasksintenthandling",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inaddtaskstargettasklistresolutionresult",
+      "url": "/documentation/sirikit/indeletetasksintenthandling",
       "abstract": [
         {
           "type": "text",
-          "text": "A resolution result that adds tasks to a target task list."
+          "text": "An interface that handles requests to delete tasks from a task list."
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/sirikit/inaddtaskstemporaleventtriggerresolutionresult": {
-      "title": "INAddTasksTemporalEventTriggerResolutionResult",
+    "doc://com.apple.documentation/documentation/sirikit/indeletetasksintent": {
+      "title": "INDeleteTasksIntent",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inaddtaskstemporaleventtriggerresolutionresult",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indeletetasksintent",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inaddtaskstemporaleventtriggerresolutionresult",
+      "url": "/documentation/sirikit/indeletetasksintent",
       "abstract": [
         {
           "type": "text",
-          "text": "A resolution result for a temporal event trigger."
+          "text": "A request to delete one or more tasks."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/indeletetasksintentresponse": {
+      "title": "INDeleteTasksIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/indeletetasksintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/indeletetasksintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your response to a request to delete tasks."
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/indeletetaskstasklistresolutionresult": {
       "title": "INDeleteTasksTaskListResolutionResult",
@@ -232,188 +260,6 @@
         {
           "type": "text",
           "text": "A resolution result for deleting task lists."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/indatesearchtyperesolutionresult": {
-      "title": "INDateSearchTypeResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/indatesearchtyperesolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/indatesearchtyperesolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the types of dates supported by a search."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inlocationsearchtyperesolutionresult": {
-      "title": "INLocationSearchTypeResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inlocationsearchtyperesolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inlocationsearchtyperesolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for location-based searches."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/innoteresolutionresult": {
-      "title": "INNoteResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/innoteresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/innoteresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for notes."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/innotecontentresolutionresult": {
-      "title": "INNoteContentResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/innotecontentresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/innotecontentresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the content of notes."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/innotebookitemtyperesolutionresult": {
-      "title": "INNotebookItemTypeResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/innotebookitemtyperesolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/innotebookitemtyperesolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the type of items to look for during a search of notes and tasks."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insettaskattributetemporaleventtriggerresolutionresult": {
-      "title": "INSetTaskAttributeTemporalEventTriggerResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insettaskattributetemporaleventtriggerresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insettaskattributetemporaleventtriggerresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for a temporal event trigger."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insnoozetaskstaskresolutionresult": {
-      "title": "INSnoozeTasksTaskResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insnoozetaskstaskresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insnoozetaskstaskresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for snoozing a task."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/inspatialeventtriggerresolutionresult": {
-      "title": "INSpatialEventTriggerResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inspatialeventtriggerresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inspatialeventtriggerresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the location-based trigger associated with a task."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/intasklistresolutionresult": {
-      "title": "INTaskListResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/intasklistresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/intasklistresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for a list of tasks."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/intaskstatusresolutionresult": {
-      "title": "INTaskStatusResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/intaskstatusresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/intaskstatusresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the status of a task."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggerresolutionresult": {
-      "title": "INTemporalEventTriggerResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggerresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/intemporaleventtriggerresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the time-based trigger associated with a task."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/intaskpriorityresolutionresult": {
-      "title": "INTaskPriorityResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/intaskpriorityresolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/intaskpriorityresolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the priority associated with a task."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/innotecontenttyperesolutionresult": {
-      "title": "INNoteContentTypeResolutionResult",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/innotecontenttyperesolutionresult",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/innotecontenttyperesolutionresult",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A resolution result for the type of data contained in notes."
         }
       ],
       "deprecated": true
@@ -444,31 +290,19 @@
         "doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskresolutionresult/3141711-initwithtaskresolutionresult",
         "doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskresolutionresult/3141712-unsupportedforreason",
         "doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskunsupportedreason"
-      ]
+      ],
+      "anchor": "3144219"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/inaddtaskstargettasklistresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/inaddtaskstemporaleventtriggerresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/indeletetaskstasklistresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/indatesearchtyperesolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/inlocationsearchtyperesolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/innoteresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/innotecontentresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/innotebookitemtyperesolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/insettaskattributetemporaleventtriggerresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/insnoozetaskstaskresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/inspatialeventtriggerresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/intasklistresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/intaskresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/intaskstatusresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggerresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/intaskpriorityresolutionresult",
-        "doc://com.apple.documentation/documentation/sirikit/innotecontenttyperesolutionresult"
+        "doc://com.apple.documentation/documentation/sirikit/indeletetasksintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/indeletetasksintent",
+        "doc://com.apple.documentation/documentation/sirikit/indeletetasksintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/indeletetaskstasklistresolutionresult"
       ],
-      "title": "Resolution Results",
+      "title": "Task Deletion",
       "generated": true
     }
   ],
@@ -506,6 +340,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -570,7 +405,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

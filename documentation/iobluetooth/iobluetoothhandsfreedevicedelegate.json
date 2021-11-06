@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A set of optional methods for receiving status change updates and information about a connected Bluetooth hands-free phone or headset."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -27,15 +33,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)IOBluetoothHandsFreeDeviceDelegate",
     "symbolKind": "intf"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -78,44 +84,6 @@
       "role": "symbol",
       "url": "/documentation/iobluetooth/iobluetoothhandsfreedelegate"
     },
-    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree": {
-      "title": "handsFree:batteryCharge:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "handsFree:batteryCharge:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree": {
-      "title": "handsFree:callHoldState:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "handsFree:callHoldState:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429223-handsfree": {
       "title": "handsFree:callSetupMode:",
       "type": "topic",
@@ -124,6 +92,12 @@
       "role": "symbol",
       "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429223-handsfree",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the call setup indicator of the connected Bluetooth hands-free phone or headset has changed. "
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -135,63 +109,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree": {
-      "title": "handsFree:currentCall:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "handsFree:currentCall:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree": {
-      "title": "handsFree:incomingCallFrom:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "handsFree:incomingCallFrom:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree": {
-      "title": "handsFree:incomingSMS:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "handsFree:incomingSMS:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431339-handsfree": {
       "title": "handsFree:isCallActive:",
       "type": "topic",
@@ -200,6 +117,12 @@
       "role": "symbol",
       "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431339-handsfree",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the active call indicator of the connected Bluetooth hands-free phone or headset has changed. "
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -211,25 +134,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree": {
-      "title": "handsFree:isRoaming:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "handsFree:isRoaming:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433100-handsfree": {
       "title": "handsFree:isServiceAvailable:",
       "type": "topic",
@@ -238,6 +142,12 @@
       "role": "symbol",
       "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433100-handsfree",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the service level indicator of the connected Bluetooth hands-free phone or headset has changed."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -249,25 +159,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree": {
-      "title": "handsFree:ringAttempt:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree",
-      "required": false,
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "handsFree:ringAttempt:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432799-handsfree": {
       "title": "handsFree:signalStrength:",
       "type": "topic",
@@ -276,6 +167,12 @@
       "role": "symbol",
       "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432799-handsfree",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the call setup signal strength indicator of the connected Bluetooth hands-free phone or headset has changed."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -287,6 +184,184 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree": {
+      "title": "handsFree:callHoldState:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the call held indicator of the connected Bluetooth hands-free phone or headset has changed. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:callHoldState:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree": {
+      "title": "handsFree:isRoaming:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the roaming indicator of the connected Bluetooth hands-free phone or headset has changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:isRoaming:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree": {
+      "title": "handsFree:batteryCharge:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the battery level indicator of the connected Bluetooth hands-free phone or headset has changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:batteryCharge:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree": {
+      "title": "handsFree:incomingCallFrom:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate there’s an incoming call on the connected Bluetooth hands-free phone or headset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:incomingCallFrom:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree": {
+      "title": "handsFree:currentCall:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends the delegate information about the current call."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:currentCall:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants": {
+      "title": "Current Call Information Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Get information about a phone call on a hands-free Bluetooth device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree": {
+      "title": "handsFree:incomingSMS:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate there’s an incoming text message."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:incomingSMS:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants": {
+      "title": "SMS Dictionary Key Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Read the parts of an SMS message."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430067-handsfree": {
       "title": "handsFree:subscriberNumber:",
       "type": "topic",
@@ -295,6 +370,12 @@
       "role": "symbol",
       "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430067-handsfree",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the subscriber number of a call."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -306,6 +387,31 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree": {
+      "title": "handsFree:ringAttempt:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the phone is ringing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handsFree:ringAttempt:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433815-handsfree": {
       "title": "handsFree:unhandledResultCode:",
       "type": "topic",
@@ -314,6 +420,12 @@
       "role": "symbol",
       "url": "/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433815-handsfree",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the delegate the phone sent an unknown code."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -346,22 +458,46 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Instance Methods",
+      "title": "Receiving Status Indicator Changes",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree",
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429223-handsfree",
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree",
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree",
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431339-handsfree",
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433100-handsfree",
-        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432799-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree"
+      ],
+      "anchor": "3710311"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Receiving Call Status",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/current_call_information_constants"
+      ],
+      "anchor": "3710312"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Receiving SMS Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/sms_dictionary_key_constants"
+      ],
+      "anchor": "3710304"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Receiving Other Information",
+      "identifiers": [
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430067-handsfree",
+        "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree",
         "doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433815-handsfree"
-      ]
+      ],
+      "anchor": "3710290"
     }
   ],
   "primaryContentSections": [
@@ -394,7 +530,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

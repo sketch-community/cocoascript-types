@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Asks the delegate for a view object to display in the header of the specified section of the table view."
+      "text": "Asks the delegate for a view to display in the header of the specified section of the table view."
     }
   ],
   "documentVersion": 0,
@@ -44,25 +44,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UITableViewDelegate(im)tableView:viewForHeaderInSection:",
+    "parent": {
+      "title": "UITableViewDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -135,6 +143,32 @@
       "role": "symbol",
       "url": "/documentation/uikit/uitableview"
     },
+    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614855-tableview": {
+      "title": "tableView:heightForHeaderInSection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614855-tableview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableviewdelegate/1614855-tableview",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tableView:heightForHeaderInSection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614863-sectionheaderheight": {
+      "title": "sectionHeaderHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614863-sectionheaderheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614863-sectionheaderheight"
+    },
     "doc://com.apple.documentation/documentation/uikit/uilabel": {
       "title": "UILabel",
       "type": "topic",
@@ -150,24 +184,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uiimageview"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614967-tableview": {
-      "title": "tableView:heightForFooterInSection:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614967-tableview",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitableviewdelegate/1614967-tableview",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "tableView:heightForFooterInSection:"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiview": {
       "title": "UIView",
@@ -196,7 +212,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Asks the delegate for a view object to display in the header of the specified section of the table view."
+          "text": "Asks the delegate for a view to display in the header of the specified section of the table view."
         }
       ],
       "fragments": [
@@ -221,7 +237,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Asks the delegate for a view object to display in the footer of the specified section of the table view."
+          "text": "Asks the delegate for a view to display in the footer of the specified section of the table view."
         }
       ],
       "fragments": [
@@ -390,6 +406,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -446,7 +463,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The view object to display at the top of the specified section "
+              "text": "A "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiimageview"
+            },
+            {
+              "type": "text",
+              "text": ", or custom view to display at the top of the specified section."
             }
           ]
         }
@@ -466,42 +501,37 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use this method to return a "
+              "text": "If you implement this method but don’t implement "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel"
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614855-tableview"
             },
             {
               "type": "text",
-              "text": ", "
+              "text": ", the table view calculates the height automatically, or uses the value of "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uiimageview"
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614863-sectionheaderheight"
             },
             {
               "type": "text",
-              "text": ", or custom view for your header. If you implement this method, you must also implement the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614967-tableview"
-            },
-            {
-              "type": "text",
-              "text": " method to specify the height of your custom view."
+              "text": " if set. "
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

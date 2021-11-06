@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The capture device is on the back of the unit."
+      "text": "A value that indicates a capture device is on the back side of an iOS device."
     }
   ],
   "documentVersion": 0,
@@ -18,6 +18,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/arkit",
+        "doc://com.apple.documentation/documentation/arkit/configuration_objects",
         "doc://com.apple.documentation/documentation/arkit/arconfiguration",
         "doc://com.apple.documentation/documentation/arkit/arvideoformat",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition"
@@ -43,25 +44,33 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@AVCaptureDevicePosition@AVCaptureDevicePositionBack",
+    "parent": {
+      "title": "AVCaptureDevicePosition"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -122,7 +131,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants to specify the position of a capture device."
+          "text": "Constants that indicate the physical position of a capture device."
         }
       ]
     },
@@ -133,6 +142,14 @@
       "type": "topic",
       "kind": "symbol",
       "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/arkit/configuration_objects": {
+      "title": "Configuration Objects",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/configuration_objects",
+      "url": "/documentation/arkit/configuration_objects",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/arkit/arconfiguration": {
       "title": "ARConfiguration",
@@ -150,6 +167,48 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionfront": {
+      "title": "AVCaptureDevicePositionFront",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionfront",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionfront",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates a capture device is on the front side of an iOS device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionback": {
+      "title": "AVCaptureDevicePositionBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates a capture device is on the back side of an iOS device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionunspecified": {
+      "title": "AVCaptureDevicePositionUnspecified",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionunspecified",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionunspecified",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates the capture device’s position isn’t specified."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -158,6 +217,16 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionfront",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceposition/avcapturedevicepositionunspecified"
+      ],
+      "title": "Positions",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -178,15 +247,36 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This position is the subject-facing side of an iOS device."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

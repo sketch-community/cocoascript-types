@@ -1,11 +1,17 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Indicates there are no specified schema options."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/coredata",
-        "doc://com.apple.documentation/documentation/coredata/core_data_enumerations",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer",
         "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions"
       ]
     ]
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSPersistentCloudKitContainerSchemaInitializationOptions@NSPersistentCloudKitContainerSchemaInitializationOptionsNone",
+    "parent": {
+      "title": "NSPersistentCloudKitContainerSchemaInitializationOptions"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,13 +96,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/coredata/core_data_enumerations": {
-      "title": "Core Data Enumerations",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/core_data_enumerations",
-      "url": "/documentation/coredata/core_data_enumerations",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer": {
+      "title": "NSPersistentCloudKitContainer",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer",
+      "url": "/documentation/coredata/nspersistentcloudkitcontainer",
       "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions": {
       "title": "NSPersistentCloudKitContainerSchemaInitializationOptions",
@@ -96,7 +110,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions"
+      "url": "/documentation/coredata/nspersistentcloudkitcontainerschemainitializationoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options that control the behavior when promoting the container’s schema to CloudKit."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -126,6 +146,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -136,7 +157,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

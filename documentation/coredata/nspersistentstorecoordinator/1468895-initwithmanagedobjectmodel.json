@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes the coordinator with a managed object model."
+      "text": "Creates a persistent store coordinator with the specified managed object model."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSPersistentStoreCoordinator(im)initWithManagedObjectModel:",
+    "parent": {
+      "title": "NSPersistentStoreCoordinator"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -138,7 +146,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the coordinator with a managed object model."
+          "text": "Creates a persistent store coordinator with the specified managed object model."
         }
       ],
       "fragments": [
@@ -152,17 +160,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468834-managedobjectmodel": {
-      "title": "managedObjectModel",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_options": {
+      "title": "Store Options",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468834-managedobjectmodel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/1468834-managedobjectmodel",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_options",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/store_options",
       "abstract": [
         {
           "type": "text",
-          "text": "The coordinator’s managed object model."
+          "text": "The keys to use with options dictionaries to specify store behavior and characteristics."
         }
       ]
     },
@@ -177,9 +185,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468834-managedobjectmodel"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/store_options"
       ],
-      "title": "Initializing a Coordinator",
+      "title": "Creating a Coordinator",
       "generated": true
     }
   ],
@@ -237,6 +245,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -297,7 +306,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

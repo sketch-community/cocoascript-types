@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The expectation that a text input area specifies an account or login name."
+      "text": "A property that defines the content in a text input area as an account or login name."
     }
   ],
   "documentVersion": 0,
@@ -13,14 +13,14 @@
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/keyboards_and_input",
         "doc://com.apple.documentation/documentation/uikit/uitextinputtraits",
-        "doc://com.apple.documentation/documentation/uikit/uitextcontenttype"
+        "doc://com.apple.documentation/documentation/security/password_autofill"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/keyboards_and_input",
         "doc://com.apple.documentation/documentation/uikit/uitextinputtraits",
-        "doc://com.apple.documentation/documentation/security/password_autofill"
+        "doc://com.apple.documentation/documentation/uikit/uitextcontenttype"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
@@ -53,25 +53,30 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UITextContentTypeUsername",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -122,14 +127,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/uikit/uitextcontenttype": {
-      "title": "UITextContentType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextcontenttype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uitextcontenttype"
-    },
     "doc://com.apple.documentation/documentation/security/password_autofill": {
       "title": "Password AutoFill",
       "identifier": "doc://com.apple.documentation/documentation/security/password_autofill",
@@ -137,6 +134,14 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitextcontenttype": {
+      "title": "UITextContentType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitextcontenttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitextcontenttype"
     },
     "doc://com.apple.documentation/documentation/security": {
       "title": "Security",
@@ -193,7 +198,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The expectation that a text input area specifies an account or login name."
+          "text": "A property that defines the content in a text input area as an account or login name."
         }
       ]
     },
@@ -207,7 +212,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The expectation that a text input area specifies a password."
+          "text": "A property that defines the content in a text input area as a password."
         }
       ]
     },
@@ -221,7 +226,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The expectation that a text input area specifies a new password."
+          "text": "A property that defines the content in a text input area as a new password."
         }
       ]
     },
@@ -235,7 +240,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The expectation that a text input area specifies a one-time code for delivery over SMS."
+          "text": "A property that defines the content in a text-input area as a one-time code."
         }
       ]
     },
@@ -298,6 +303,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -306,7 +312,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

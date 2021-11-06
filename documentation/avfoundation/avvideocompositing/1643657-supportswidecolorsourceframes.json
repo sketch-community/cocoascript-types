@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value that indicates whether the client can handle frames that contain wide color properties."
+      "text": "A Boolean value that indicates whether the compositor handles source frames that contains wide color properties."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)AVVideoCompositing(py)supportsWideColorSourceFrames",
+    "parent": {
+      "title": "AVVideoCompositing"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,42 +123,48 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged": {
-      "title": "renderContextChanged:",
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1388610-sourcepixelbufferattributes": {
+      "title": "sourcePixelBufferAttributes",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1388610-sourcepixelbufferattributes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged",
+      "url": "/documentation/avfoundation/avvideocompositing/1388610-sourcepixelbufferattributes",
       "required": true,
       "abstract": [
         {
           "type": "text",
-          "text": "Notifies the custom compositor that a composition will switch to a different render context."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "renderContextChanged:"
+          "text": "The pixel buffer attributes that the compositor accepts for source frames."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext": {
-      "title": "AVVideoCompositionRenderContext",
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor": {
+      "title": "requiredPixelBufferAttributesForRenderContext",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositionrendercontext",
+      "url": "/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor",
+      "required": true,
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines the context within which custom compositors render new output pixel buffers."
+          "text": "The pixel buffer attributes that the compositor requires for pixel buffers that it creates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3626026-supportshdrsourceframes": {
+      "title": "supportsHDRSourceFrames",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3626026-supportshdrsourceframes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideocompositing/3626026-supportshdrsourceframes",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the compositor handles source frames that contain high dynamic range (HDR) properties."
         }
       ]
     },
@@ -165,71 +179,22 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the client can handle frames that contain wide color properties."
+          "text": "A Boolean value that indicates whether the compositor handles source frames that contains wide color properties."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227885-anticipaterenderingusinghint": {
-      "title": "anticipateRenderingUsingHint:",
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3750314-canconformcolorofsourceframes": {
+      "title": "canConformColorOfSourceFrames",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227885-anticipaterenderingusinghint",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3750314-canconformcolorofsourceframes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositing/3227885-anticipaterenderingusinghint",
+      "url": "/documentation/avfoundation/avvideocompositing/3750314-canconformcolorofsourceframes",
       "required": false,
       "abstract": [
         {
           "type": "text",
-          "text": "Informs a custom video compositor about upcoming rendering requests."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "anticipateRenderingUsingHint:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227886-prerollforrenderingusinghint": {
-      "title": "prerollForRenderingUsingHint:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227886-prerollforrenderingusinghint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositing/3227886-prerollforrenderingusinghint",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells a custom video compositor to perform any work in the prerolling phase."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "prerollForRenderingUsingHint:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrenderhint": {
-      "title": "AVVideoCompositionRenderHint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrenderhint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositionrenderhint",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Information about upcoming composition requests, such as composition start time and end time."
+          "text": "A Boolean value that indicates whether the compositor conforms the color space of source frames to the composition color space."
         }
       ]
     },
@@ -244,13 +209,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227885-anticipaterenderingusinghint",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227886-prerollforrenderingusinghint",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrenderhint"
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1388610-sourcepixelbufferattributes",
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor",
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3626026-supportshdrsourceframes",
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3750314-canconformcolorofsourceframes"
       ],
-      "title": "Render Context Settings",
+      "title": "Inspecting Processing Requirements",
       "generated": true
     }
   ],
@@ -290,6 +254,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -299,7 +264,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/coredata",
         "doc://com.apple.documentation/documentation/coredata/core_data_stack",
-        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext"
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext",
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/deprecated_symbols"
       ]
     ]
   },
@@ -36,30 +37,40 @@
         "name": "iOS",
         "introducedAt": "3.0",
         "deprecatedAt": "8.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "deprecatedAt": "8.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.4",
         "deprecatedAt": "10.10",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSManagedObjectContext(im)tryLock",
+    "parent": {
+      "title": "NSManagedObjectContext"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,9 +123,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object space that you use to manipulate and track changes to managed objects."
+          "text": "An object space to manipulate and track changes to managed objects."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/deprecated_symbols",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/objectivec/yes": {
       "title": "YES",
@@ -182,6 +201,25 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506673-init": {
+      "title": "init",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506673-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nsmanagedobjectcontext/1506673-init",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "init"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506497-trylock": {
       "title": "tryLock",
       "type": "topic",
@@ -218,10 +256,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506673-init",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506853-lock",
         "doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506839-unlock"
       ],
-      "title": "Deprecated",
+      "title": "Deprecated Instance Methods",
       "generated": true
     }
   ],
@@ -257,6 +296,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -319,7 +359,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

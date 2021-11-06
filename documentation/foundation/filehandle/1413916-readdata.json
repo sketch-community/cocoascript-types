@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Synchronously reads data up to the specified number of bytes."
+      "text": "Reads data synchronously up to the specified number of bytes."
     }
   ],
   "documentVersion": 0,
@@ -36,39 +36,49 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.4",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSFileHandle(im)readDataOfLength:",
+    "parent": {
+      "title": "FileHandle"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -94,8 +104,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -160,6 +170,50 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsdata"
     },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3516317-read": {
+      "title": "read(upToCount:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516317-read",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3516317-read",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads data synchronously up to the specified number of bytes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "read"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "upToCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Int) -> Data?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception": {
+      "title": "fileHandleOperationException",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception"
+    },
     "doc://com.apple.documentation/documentation/foundation/filehandle/1411463-availabledata": {
       "title": "availableData",
       "type": "topic",
@@ -198,7 +252,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Synchronously reads the available data up to the end of file or maximum number of bytes."
+          "text": "Reads the available data synchronously up to the end of file or maximum number of bytes."
         }
       ],
       "fragments": [
@@ -233,6 +287,34 @@
       "role": "symbol",
       "url": "/documentation/foundation/data"
     },
+    "doc://com.apple.documentation/documentation/foundation/filehandle/3516318-readtoend": {
+      "title": "readToEnd()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516318-readtoend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/filehandle/3516318-readtoend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads the available data synchronously up to the end of file or maximum number of bytes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "readToEnd"
+        },
+        {
+          "kind": "text",
+          "text": "() -> Data?"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/filehandle/1413916-readdata": {
       "title": "readData(ofLength:)",
       "type": "topic",
@@ -243,7 +325,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Synchronously reads data up to the specified number of bytes."
+          "text": "Reads data synchronously up to the specified number of bytes."
         }
       ],
       "fragments": [
@@ -278,21 +360,41 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/filehandle/3516317-read"
+        },
+        {
+          "type": "text",
+          "text": " to handle errors when reading data from the file handle."
+        }
+      ]
+    }
+  ],
   "diffAvailability": {
     "minor": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -300,9 +402,11 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/filehandle/1411463-availabledata",
-        "doc://com.apple.documentation/documentation/foundation/filehandle/1411490-readdatatoendoffile"
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3516318-readtoend",
+        "doc://com.apple.documentation/documentation/foundation/filehandle/1411490-readdatatoendoffile",
+        "doc://com.apple.documentation/documentation/foundation/filehandle/3516317-read"
       ],
-      "title": "Reading from a File Handle",
+      "title": "Reading from a File Handle Synchronously",
       "generated": true
     }
   ],
@@ -366,6 +470,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -388,7 +493,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The number of bytes to read from the receiver."
+                  "text": "The number of bytes to read from the file handle."
                 }
               ]
             }
@@ -447,7 +552,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "If the receiver is a file, this method returns the data obtained by reading "
+              "text": "If the handle represents a file, this method returns the data obtained by reading "
             },
             {
               "type": "codeVoice",
@@ -463,7 +568,7 @@
             },
             {
               "type": "text",
-              "text": " bytes are not available, this method returns the data from the current file pointer to the end of the file. If the receiver is a communications channel, the method reads up to "
+              "text": " bytes aren’t available, this method returns the data from the current file pointer to the end of the file. If the handle represents a communications channel, the method reads up to "
             },
             {
               "type": "codeVoice",
@@ -479,23 +584,39 @@
             },
             {
               "type": "text",
-              "text": " object if the file is positioned at the end of the file or if an end-of-file indicator is returned on a communications channel. This method raises  "
-            },
-            {
-              "type": "codeVoice",
-              "code": "NSFileHandleOperationException"
-            },
-            {
-              "type": "text",
-              "text": " if attempts to determine the file-handle type fail or if attempts to read from the file or channel fail."
+              "text": " object if the handle is at the file’s end or if the communications channel returns an end-of-file indicator. "
             }
           ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This method raises "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsexceptionname/1415432-filehandleoperationexception"
+                },
+                {
+                  "type": "text",
+                  "text": " if attempts to determine the file-handle type fail or if attempts to read from the file or channel fail."
+                }
+              ]
+            }
+          ],
+          "style": "important"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

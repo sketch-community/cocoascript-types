@@ -1,0 +1,1534 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/cfsocket-rg7",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1666567,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CFSocket",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfsocket"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfsocket-rg7"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocket#2556091": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocket#2556091",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/corefoundation/cfsocket#2556091"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543527-cfsocketcreate": {
+      "title": "CFSocketCreate(_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543527-cfsocketcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543527-cfsocketcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a CFSocket object of a specified protocol and type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketCreate"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, Int32, Int32, Int32, CFOptionFlags, CFSocketCallBack!, UnsafePointer<CFSocketContext>!) -> CFSocket!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542862-cfsocketcreatewithsocketsignatur": {
+      "title": "CFSocketCreateWithSocketSignature(_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542862-cfsocketcreatewithsocketsignatur",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542862-cfsocketcreatewithsocketsignatur",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a CFSocket object using information from a CFSocketSignature structure."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketCreateWithSocketSignature"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, UnsafePointer<CFSocketSignature>!, CFOptionFlags, CFSocketCallBack!, UnsafePointer<CFSocketContext>!) -> CFSocket!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543295-cfsocketcreatewithnative": {
+      "title": "CFSocketCreateWithNative(_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543295-cfsocketcreatewithnative",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543295-cfsocketcreatewithnative",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a CFSocket object for a pre-existing native socket."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketCreateWithNative"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, CFSocketNativeHandle, CFOptionFlags, CFSocketCallBack!, UnsafePointer<CFSocketContext>!) -> CFSocket!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542283-cfsocketcreateconnectedtosockets": {
+      "title": "CFSocketCreateConnectedToSocketSignature(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542283-cfsocketcreateconnectedtosockets",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542283-cfsocketcreateconnectedtosockets",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a CFSocket object and opens a connection to a remote socket."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketCreateConnectedToSocketSignature"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, UnsafePointer<CFSocketSignature>!, CFOptionFlags, CFSocketCallBack!, UnsafePointer<CFSocketContext>!, CFTimeInterval) -> CFSocket!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542740-cfsocketcreaterunloopsource": {
+      "title": "CFSocketCreateRunLoopSource(_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542740-cfsocketcreaterunloopsource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542740-cfsocketcreaterunloopsource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a CFRunLoopSource object for a CFSocket object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketCreateRunLoopSource"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, CFSocket!, CFIndex) -> CFRunLoopSource!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543356-cfrunloopaddsource": {
+      "title": "CFRunLoopAddSource(_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543356-cfrunloopaddsource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543356-cfrunloopaddsource"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543414-cfsocketsenddata": {
+      "title": "CFSocketSendData(_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543414-cfsocketsenddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543414-cfsocketsenddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sends data over a CFSocket object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketSendData"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!, CFData!, CFData!, CFTimeInterval) -> CFSocketError"
+        }
+      ]
+    },
+    "devLink-1695500": {
+      "identifier": "devLink-1695500",
+      "type": "link",
+      "title": "Threading Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i"
+    },
+    "devLink-1720248": {
+      "identifier": "devLink-1720248",
+      "type": "link",
+      "title": "CFNetwork Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001132"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543303-cfsocketcopyaddress": {
+      "title": "CFSocketCopyAddress(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543303-cfsocketcopyaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543303-cfsocketcopyaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the local address of a CFSocket object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketCopyAddress"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!) -> CFData!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542819-cfsocketcopypeeraddress": {
+      "title": "CFSocketCopyPeerAddress(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542819-cfsocketcopypeeraddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542819-cfsocketcopypeeraddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the remote address to which a CFSocket object is connected."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketCopyPeerAddress"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!) -> CFData!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542983-cfsocketdisablecallbacks": {
+      "title": "CFSocketDisableCallBacks(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542983-cfsocketdisablecallbacks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542983-cfsocketdisablecallbacks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disables the callback function of a CFSocket object for certain types of socket activity."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketDisableCallBacks"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!, CFOptionFlags)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543029-cfsocketenablecallbacks": {
+      "title": "CFSocketEnableCallBacks(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543029-cfsocketenablecallbacks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543029-cfsocketenablecallbacks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables the callback function of a CFSocket object for certain types of socket activity."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketEnableCallBacks"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!, CFOptionFlags)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1541549-cfsocketgetcontext": {
+      "title": "CFSocketGetContext(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1541549-cfsocketgetcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1541549-cfsocketgetcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the context information for a CFSocket object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketGetContext"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!, UnsafeMutablePointer<CFSocketContext>!)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543617-cfsocketgetnative": {
+      "title": "CFSocketGetNative(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543617-cfsocketgetnative",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543617-cfsocketgetnative",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the native socket associated with a CFSocket object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketGetNative"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!) -> CFSocketNativeHandle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543754-cfsocketgetsocketflags": {
+      "title": "CFSocketGetSocketFlags(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543754-cfsocketgetsocketflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543754-cfsocketgetsocketflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns flags that control certain behaviors of a CFSocket object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketGetSocketFlags"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!) -> CFOptionFlags"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542729-cfsocketsetaddress": {
+      "title": "CFSocketSetAddress(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542729-cfsocketsetaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542729-cfsocketsetaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Binds a local address to a CFSocket object and configures it for listening."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketSetAddress"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!, CFData!) -> CFSocketError"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543135-cfsocketsetsocketflags": {
+      "title": "CFSocketSetSocketFlags(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543135-cfsocketsetsocketflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543135-cfsocketsetsocketflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets flags that control certain behaviors of a CFSocket object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketSetSocketFlags"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!, CFOptionFlags)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542331-cfsocketconnecttoaddress": {
+      "title": "CFSocketConnectToAddress(_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542331-cfsocketconnecttoaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542331-cfsocketconnecttoaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens a connection to a remote socket."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketConnectToAddress"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!, CFData!, CFTimeInterval) -> CFSocketError"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542549-cfsocketgettypeid": {
+      "title": "CFSocketGetTypeID()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542549-cfsocketgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542549-cfsocketgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type identifier for the CFSocket opaque type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketGetTypeID"
+        },
+        {
+          "kind": "text",
+          "text": "() -> CFTypeID"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1542010-cfsocketinvalidate": {
+      "title": "CFSocketInvalidate(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542010-cfsocketinvalidate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1542010-cfsocketinvalidate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invalidates a CFSocket object, stopping it from sending or receiving any more messages."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketInvalidate"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1543588-cfsocketisvalid": {
+      "title": "CFSocketIsValid(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543588-cfsocketisvalid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1543588-cfsocketisvalid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether a CFSocket object is valid and able to send or receive messages."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketIsValid"
+        },
+        {
+          "kind": "text",
+          "text": "(CFSocket!) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocketcallback": {
+      "title": "CFSocketCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocketcallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfsocketcallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Callback invoked when certain types of activity takes place on a CFSocket object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketCallBack"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocketcontext": {
+      "title": "CFSocketContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocketcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfsocketcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains program-defined data and callbacks with which you can configure a CFSocket object’s behavior."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketContext"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocketnativehandle": {
+      "title": "CFSocketNativeHandle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocketnativehandle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfsocketnativehandle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type for the platform-specific native socket handle."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketNativeHandle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocket": {
+      "title": "CFSocket",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocket",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfsocket",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a CFSocket object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocket"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocketsignature": {
+      "title": "CFSocketSignature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocketsignature",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfsocketsignature",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that fully specifies the communication protocol and connection address of a CFSocket object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketSignature"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocketcallbacktype": {
+      "title": "CFSocketCallBackType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocketcallbacktype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfsocketcallbacktype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Types of socket activity that can cause the callback function of a CFSocket object to be called."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketCallBackType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocket/1560944-cfsocket_flags": {
+      "title": "CFSocket Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocket/1560944-cfsocket_flags",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfsocket/1560944-cfsocket_flags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags that can be set on a CFSocket object to control its behavior."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocketerror": {
+      "title": "CFSocketError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocketerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfsocketerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Error codes for many CFSocket functions."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFSocketError"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocator-s29": {
+      "title": "CFAllocator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocator-s29",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfallocator-s29"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfarray-s28": {
+      "title": "CFArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfarray-s28",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfarray-s28"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring-s1s": {
+      "title": "CFAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring-s1s",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfattributedstring-s1s"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbag-s1l": {
+      "title": "CFBag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbag-s1l",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbag-s1l"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap-s11": {
+      "title": "CFBinaryHeap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap-s11",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbinaryheap-s11"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbitvector-s0t": {
+      "title": "CFBitVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbitvector-s0t",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbitvector-s0t"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p": {
+      "title": "CFBoolean",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfboolean-s0p"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbundle-s0a": {
+      "title": "CFBundle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbundle-s0a",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbundle-s0a"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcalendar-s01": {
+      "title": "CFCalendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcalendar-s01",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfcalendar-s01"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset-rvm": {
+      "title": "CFCharacterSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset-rvm",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfcharacterset-rvm"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9": {
+      "title": "CFData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdata-rv9"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdate-rv5": {
+      "title": "CFDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdate-rv5",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdate-rv5"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter-rv6": {
+      "title": "CFDateFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter-rv6",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdateformatter-rv6"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum": {
+      "title": "CFDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdictionary-rum"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cferror-ru8": {
+      "title": "CFError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cferror-ru8",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cferror-ru8"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor-ru3": {
+      "title": "CFFileDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor-ru3",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cffiledescriptor-ru3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The CFFileDescriptor provides an opaque type to monitor file descriptors for read and write activity via CFRunLoop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj": {
+      "title": "CFLocale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cflocale-rsj"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmachport-rsc": {
+      "title": "CFMachPort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmachport-rsc",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmachport-rsc"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmessageport-rs2": {
+      "title": "CFMessagePort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmessageport-rs2",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmessageport-rs2"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray-rrk": {
+      "title": "CFMutableArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray-rrk",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablearray-rrk"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring-rqp": {
+      "title": "CFMutableAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring-rqp",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutableattributedstring-rqp"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag-rqn": {
+      "title": "CFMutableBag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag-rqn",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablebag-rqn"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector-rqf": {
+      "title": "CFMutableBitVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector-rqf",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablebitvector-rqf"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset-rq3": {
+      "title": "CFMutableCharacterSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset-rq3",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablecharacterset-rq3"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata-rps": {
+      "title": "CFMutableData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata-rps",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutabledata-rps"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary-rpl": {
+      "title": "CFMutableDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary-rpl",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutabledictionary-rpl"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutableset-rpe": {
+      "title": "CFMutableSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutableset-rpe",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutableset-rpe"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring-rn7": {
+      "title": "CFMutableString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring-rn7",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablestring-rn7"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter-rkv": {
+      "title": "CFNotificationCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter-rkv",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnotificationcenter-rkv"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnull-rkr": {
+      "title": "CFNull",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnull-rkr",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnull-rkr"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd": {
+      "title": "CFNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnumber-rjd"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter-rjs": {
+      "title": "CFNumberFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter-rjs",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnumberformatter-rjs"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfplugin-rip": {
+      "title": "CFPlugIn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfplugin-rip",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfplugin-rip"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance-rja": {
+      "title": "CFPlugInInstance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance-rja",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfplugininstance-rja"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist-rif": {
+      "title": "CFPropertyList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist-rif",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfpropertylist-rif"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfreadstream-ri6": {
+      "title": "CFReadStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfreadstream-ri6",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfreadstream-ri6"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht": {
+      "title": "CFRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloop-rht"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver-ri3": {
+      "title": "CFRunLoopObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver-ri3",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloopobserver-ri3"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource-rhr": {
+      "title": "CFRunLoopSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource-rhr",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloopsource-rhr"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer-rhk": {
+      "title": "CFRunLoopTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer-rhk",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunlooptimer-rhk"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfset-rgt": {
+      "title": "CFSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfset-rgt",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfset-rgt"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocket-rg7": {
+      "title": "CFSocket",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocket-rg7",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfsocket-rg7"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh": {
+      "title": "CFString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfstring-rfh"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8": {
+      "title": "CFStringTokenizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfstringtokenizer-rf8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "CFStringTokenizer allows you to tokenize strings into words, sentences or paragraphs in a language-neutral way. It supports languages such as Japanese and Chinese that do not delimit words by spaces, as well as de-compounding German compounds. You can obtain Latin transcription for tokens. It also provides language identification API."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftimezone-rec": {
+      "title": "CFTimeZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftimezone-rec",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftimezone-rec"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftree-rds": {
+      "title": "CFTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftree-rds",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftree-rds"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftype": {
+      "title": "CFType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftype",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftype"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfurl-rd7": {
+      "title": "CFURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurl-rd7",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfurl-rd7"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotification-rd5": {
+      "title": "CFUserNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification-rd5",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfusernotification-rd5"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfuuid-rci": {
+      "title": "CFUUID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfuuid-rci",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfuuid-rci"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfwritestream-rc8": {
+      "title": "CFWriteStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfwritestream-rc8",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfwritestream-rc8"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode-rbu": {
+      "title": "CFXMLNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode-rbu",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmlnode-rbu"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser-rc1": {
+      "title": "CFXMLParser",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser-rc1",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmlparser-rc1"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmltree-rbh": {
+      "title": "CFXMLTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmltree-rbh",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmltree-rbh"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Sockets",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1543527-cfsocketcreate",
+        "doc://com.apple.documentation/documentation/corefoundation/1542283-cfsocketcreateconnectedtosockets",
+        "doc://com.apple.documentation/documentation/corefoundation/1543295-cfsocketcreatewithnative",
+        "doc://com.apple.documentation/documentation/corefoundation/1542862-cfsocketcreatewithsocketsignatur"
+      ],
+      "anchor": "1666620"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Sockets",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1543303-cfsocketcopyaddress",
+        "doc://com.apple.documentation/documentation/corefoundation/1542819-cfsocketcopypeeraddress",
+        "doc://com.apple.documentation/documentation/corefoundation/1542983-cfsocketdisablecallbacks",
+        "doc://com.apple.documentation/documentation/corefoundation/1543029-cfsocketenablecallbacks",
+        "doc://com.apple.documentation/documentation/corefoundation/1541549-cfsocketgetcontext",
+        "doc://com.apple.documentation/documentation/corefoundation/1543617-cfsocketgetnative",
+        "doc://com.apple.documentation/documentation/corefoundation/1543754-cfsocketgetsocketflags",
+        "doc://com.apple.documentation/documentation/corefoundation/1542729-cfsocketsetaddress",
+        "doc://com.apple.documentation/documentation/corefoundation/1543135-cfsocketsetsocketflags"
+      ],
+      "anchor": "1666702"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Using Sockets",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1542331-cfsocketconnecttoaddress",
+        "doc://com.apple.documentation/documentation/corefoundation/1542740-cfsocketcreaterunloopsource",
+        "doc://com.apple.documentation/documentation/corefoundation/1542549-cfsocketgettypeid",
+        "doc://com.apple.documentation/documentation/corefoundation/1542010-cfsocketinvalidate",
+        "doc://com.apple.documentation/documentation/corefoundation/1543588-cfsocketisvalid",
+        "doc://com.apple.documentation/documentation/corefoundation/1543414-cfsocketsenddata"
+      ],
+      "anchor": "1666854"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocketcallback"
+      ],
+      "anchor": "1666955"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocketcontext",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocketnativehandle",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocket",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocketsignature"
+      ],
+      "anchor": "1666978"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocketcallbacktype",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocket/1560944-cfsocket_flags",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocketerror"
+      ],
+      "anchor": "1667128"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocator-s29",
+        "doc://com.apple.documentation/documentation/corefoundation/cfarray-s28",
+        "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring-s1s",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbag-s1l",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap-s11",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbitvector-s0t",
+        "doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbundle-s0a",
+        "doc://com.apple.documentation/documentation/corefoundation/cfcalendar-s01",
+        "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset-rvm",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdate-rv5",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter-rv6",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum",
+        "doc://com.apple.documentation/documentation/corefoundation/cferror-ru8",
+        "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor-ru3",
+        "doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmachport-rsc",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmessageport-rs2",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray-rrk",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring-rqp",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag-rqn",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector-rqf",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset-rq3",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata-rps",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary-rpl",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutableset-rpe",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring-rn7",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter-rkv",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnull-rkr",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter-rjs",
+        "doc://com.apple.documentation/documentation/corefoundation/cfplugin-rip",
+        "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance-rja",
+        "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist-rif",
+        "doc://com.apple.documentation/documentation/corefoundation/cfreadstream-ri6",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver-ri3",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource-rhr",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer-rhk",
+        "doc://com.apple.documentation/documentation/corefoundation/cfset-rgt",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8",
+        "doc://com.apple.documentation/documentation/corefoundation/cftimezone-rec",
+        "doc://com.apple.documentation/documentation/corefoundation/cftree-rds",
+        "doc://com.apple.documentation/documentation/corefoundation/cftype",
+        "doc://com.apple.documentation/documentation/corefoundation/cfurl-rd7",
+        "doc://com.apple.documentation/documentation/corefoundation/cfusernotification-rd5",
+        "doc://com.apple.documentation/documentation/corefoundation/cfuuid-rci",
+        "doc://com.apple.documentation/documentation/corefoundation/cfwritestream-rc8",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode-rbu",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser-rc1",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmltree-rbh"
+      ],
+      "title": "Opaque Types",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1695500",
+        "devLink-1720248"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A CFSocket is a communications channel implemented with a BSD socket."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For most uses of this API, you will need to include three headers:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "#import <CoreFoundation/CoreFoundation.h> #include <sys/socket.h> #include <netinet/in.h>"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2556091",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CFSocket can be created from scratch with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543527-cfsocketcreate"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542862-cfsocketcreatewithsocketsignatur"
+            },
+            {
+              "type": "text",
+              "text": ". CFSocket objects can also be created to wrap an existing BSD socket by calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543295-cfsocketcreatewithnative"
+            },
+            {
+              "type": "text",
+              "text": ". Finally, you can create a CFSocket and connect simultaneously to a remote host by calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542283-cfsocketcreateconnectedtosockets"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To listen for messages, you need to create a run loop source with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1542740-cfsocketcreaterunloopsource"
+            },
+            {
+              "type": "text",
+              "text": " and add it to a run loop with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543356-cfrunloopaddsource"
+            },
+            {
+              "type": "text",
+              "text": ". You can select the types of socket activities, such as connection attempts or data arrivals, that cause the source to fire and invoke your CFSocket’s callback function. To send data, you store the data in a CFData and call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1543414-cfsocketsenddata"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Unlike Mach and message ports, sockets support communication over a network."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

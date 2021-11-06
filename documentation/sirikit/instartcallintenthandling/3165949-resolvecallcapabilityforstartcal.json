@@ -35,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)INStartCallIntentHandling(im)resolveCallCapabilityForStartCall:withCompletion:",
+    "parent": {
+      "title": "INStartCallIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -187,7 +195,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resovles the destination of the call."
+          "text": "Resolves the destination of the call."
         }
       ],
       "fragments": [
@@ -198,6 +206,31 @@
         {
           "kind": "identifier",
           "text": "resolveDestinationTypeForStartCall:withCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst": {
+      "title": "resolveCallRecordToCallBackForStartCall:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolves the redial of a missed call."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveCallRecordToCallBackForStartCall:withCompletion:"
         }
       ]
     },
@@ -213,7 +246,8 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3165950-resolvecontactsforstartcall",
-        "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3165951-resolvedestinationtypeforstartca"
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3165951-resolvedestinationtypeforstartca",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling/3649678-resolvecallrecordtocallbackforst"
       ],
       "title": "Resolving the Intent Parameters",
       "generated": true
@@ -311,6 +345,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -403,7 +438,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

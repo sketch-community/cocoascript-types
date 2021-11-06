@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns the size, in bytes, required for a call to the single-precision sparse iterate method"
+      "text": "Returns the size in bytes necessary for a call to the single-precision sparse iterate method."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseGetStateSize_Float#$@SA@SparseIterativeMethod#b#I#I#I#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,22 +119,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
-    },
     "doc://com.apple.documentation/documentation/kernel/size_t": {
       "title": "size_t",
       "type": "topic",
@@ -156,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the size, in bytes, required for a call to the double-precision sparse iterate method."
+          "text": "Returns the size in bytes necessary for a call to the double-precision sparse iterate method."
         }
       ]
     },
@@ -170,7 +159,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the size, in bytes, required for a call to the single-precision sparse iterate method"
+          "text": "Returns the size in bytes necessary for a call to the single-precision sparse iterate method."
         }
       ]
     },
@@ -187,7 +176,7 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/2873610-sparsegetstatesize_double"
       ],
-      "title": "Sparse Iterate",
+      "title": "Functions that Calculate Iterate State Size",
       "generated": true
     }
   ],
@@ -263,6 +252,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -285,7 +275,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Method for which to return required state space size."
+                  "text": "The method to return required state space size for."
                 }
               ]
             }
@@ -298,22 +288,24 @@
               "type": "paragraph",
               "inlineContent": [
                 {
-                  "type": "reference",
-                  "isActive": false,
-                  "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                  "type": "text",
+                  "text": "Set to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "true"
                 },
                 {
                   "type": "text",
-                  "text": " if a preconditioner will be supplied, "
+                  "text": " if your subsequent calls to "
                 },
                 {
-                  "type": "reference",
-                  "isActive": false,
-                  "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
+                  "type": "codeVoice",
+                  "code": "SparseIterate"
                 },
                 {
                   "type": "text",
-                  "text": " otherwise."
+                  "text": " use a preconditioner."
                 }
               ]
             }
@@ -327,7 +319,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Number of entries in right-hand-side (rows in matrix "
+                  "text": "The number of rows in matrix "
                 },
                 {
                   "type": "emphasis",
@@ -340,7 +332,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ")."
+                  "text": "."
                 }
               ]
             }
@@ -354,7 +346,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Number of variables to solve for (columns in matrix "
+                  "text": "The number of columns in matrix "
                 },
                 {
                   "type": "emphasis",
@@ -367,7 +359,7 @@
                 },
                 {
                   "type": "text",
-                  "text": ")."
+                  "text": ". "
                 }
               ]
             }
@@ -381,7 +373,33 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "Number of right-hand-sides to be solved for."
+                  "text": "The number of columns in matrices"
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": " B"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "X"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": "."
                 }
               ]
             }
@@ -403,7 +421,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Size of state space required, in bytes."
+              "text": "The size of the required state space, in bytes."
             }
           ]
         }
@@ -411,7 +429,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

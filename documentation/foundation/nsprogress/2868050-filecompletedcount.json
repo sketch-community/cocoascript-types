@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The number of completed files for a file progress object."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSProgress(py)fileCompletedCount",
+    "parent": {
+      "title": "NSProgress"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -96,13 +110,7 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsprogress",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
-        }
-      ]
+      "url": "/documentation/foundation/nsprogress"
     },
     "doc://com.apple.documentation/documentation/foundation/nsnumber": {
       "title": "NSNumber",
@@ -112,6 +120,76 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnumber"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/2865625-fileoperationkind": {
+      "title": "fileOperationKind",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/2865625-fileoperationkind",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/2865625-fileoperationkind",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The kind of file operation for the progress object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/2865663-fileurl": {
+      "title": "fileURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/2865663-fileurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/2865663-fileurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A URL that represents the file for the current progress object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/2868045-filetotalcount": {
+      "title": "fileTotalCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/2868045-filetotalcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/2868045-filetotalcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The total number of files for a file progress object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogress/2868050-filecompletedcount": {
+      "title": "fileCompletedCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress/2868050-filecompletedcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogress/2868050-filecompletedcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of completed files for a file progress object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsprogressfileoperationkind": {
+      "title": "NSProgressFileOperationKind",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogressfileoperationkind",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsprogressfileoperationkind",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The kind of file operation."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -120,6 +198,18 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/2865625-fileoperationkind",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/2865663-fileurl",
+        "doc://com.apple.documentation/documentation/foundation/nsprogress/2868045-filetotalcount",
+        "doc://com.apple.documentation/documentation/foundation/nsprogressfileoperationkind"
+      ],
+      "title": "Inspecting File Operation Progress Information",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -158,6 +248,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -165,10 +256,60 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the current progress is operating on a set of files, set this property to the number of completed files in the operation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If present, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsprogress"
+            },
+            {
+              "type": "text",
+              "text": " presents additional information in its localized description by setting a value in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userInfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

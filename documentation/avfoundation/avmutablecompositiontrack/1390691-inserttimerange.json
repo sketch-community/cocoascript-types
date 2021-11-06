@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Inserts a time range of a source track into a track of a composition."
+      "text": "Inserts a time range of media from a source track into a composition track."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMutableCompositionTrack(im)insertTimeRange:ofTrack:atTime:error:",
+    "parent": {
+      "title": "AVMutableCompositionTrack"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,25 +124,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable track in a composition object that you use to insert, remove, and scale track segments without affecting their low-level representation."
+          "text": "A mutable track in a composition that you use to insert, remove, and scale track segments without affecting their low-level representation."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388212-scaletimerange": {
       "title": "scaleTimeRange:toDuration:",
@@ -146,7 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Changes the duration of a time range in the receiver."
+          "text": "Changes the duration of a time range of the track."
         }
       ],
       "fragments": [
@@ -157,54 +149,6 @@
         {
           "kind": "identifier",
           "text": "scaleTimeRange:toDuration:"
-        }
-      ]
-    },
-    "link-3023437": {
-      "title": "Error Handling",
-      "type": "topic",
-      "identifier": "link-3023437",
-      "kind": "article",
-      "role": "link",
-      "url": "https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html"
-    },
-    "link-3023438": {
-      "title": "The Swift Programming Language",
-      "type": "topic",
-      "identifier": "link-3023438",
-      "kind": "article",
-      "role": "link",
-      "url": "https://docs.swift.org/swift-book/"
-    },
-    "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters": {
-      "title": "About Imported Cocoa Error Parameters",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges": {
-      "title": "insertTimeRanges:ofTracks:atTime:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Inserts the time ranges of multiple source tracks into a track of a composition."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "insertTimeRanges:ofTracks:atTime:error:"
         }
       ]
     },
@@ -240,6 +184,20 @@
       "role": "symbol",
       "url": "/documentation/foundation/nserror"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments": {
+      "title": "segments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The track segments that a composition track contains."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389483-insertemptytimerange": {
       "title": "insertEmptyTimeRange:",
       "type": "topic",
@@ -250,7 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Adds or extends an empty time range within the receiver."
+          "text": "Adds or extends an empty time range within the track."
         }
       ],
       "fragments": [
@@ -274,7 +232,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Inserts a time range of a source track into a track of a composition."
+          "text": "Inserts a time range of media from a source track into a composition track."
         }
       ],
       "fragments": [
@@ -288,6 +246,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges": {
+      "title": "insertTimeRanges:ofTracks:atTime:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts the time ranges of multiple source tracks into a track of a composition."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertTimeRanges:ofTracks:atTime:error:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1386048-removetimerange": {
       "title": "removeTimeRange:",
       "type": "topic",
@@ -298,7 +280,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Removes a specified time range from the receiver."
+          "text": "Removes a time range of media from a composition track."
         }
       ],
       "fragments": [
@@ -309,20 +291,6 @@
         {
           "kind": "identifier",
           "text": "removeTimeRange:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments": {
-      "title": "segments",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The track segments from a composition track."
         }
       ]
     },
@@ -337,11 +305,11 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389483-insertemptytimerange",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges",
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1386048-removetimerange",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388212-scaletimerange",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments"
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388212-scaletimerange"
       ],
       "title": "Managing Time Ranges",
       "generated": true
@@ -491,6 +459,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -513,7 +482,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The time range of the track you insert."
+                  "text": "The time range of media in the source track to add."
                 }
               ]
             }
@@ -527,7 +496,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The source track to be inserted."
+                  "text": "The source asset track that contains the media to add."
                 }
               ]
             }
@@ -541,97 +510,9 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The time at which the composition track presents "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "track"
-                },
-                {
-                  "type": "text",
-                  "text": ". You may pass "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "kCMTimeInvalid"
-                },
-                {
-                  "type": "text",
-                  "text": " to append the time range to the end of the track."
+                  "text": "A start time within the composition track to insert the time range."
                 }
               ]
-            }
-          ]
-        },
-        {
-          "name": "error",
-          "content": [
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "If the composition track doesn’t successfully insert "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "track"
-                },
-                {
-                  "type": "text",
-                  "text": ", this error contains an "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "NSError"
-                },
-                {
-                  "type": "text",
-                  "text": " object that describes the problem."
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
-            },
-            {
-              "type": "text",
-              "text": " if the composition track successfully inserted "
-            },
-            {
-              "type": "codeVoice",
-              "code": "track"
-            },
-            {
-              "type": "text",
-              "text": ", otherwise "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/objectivec/no"
-            },
-            {
-              "type": "text",
-              "text": "."
             }
           ]
         }
@@ -651,7 +532,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "By default, the composition track presents the inserted track’s time range at its natural duration and rate. You can scale it to a different duration (so it’s presented at a different rate) using "
+              "text": "The time range you insert presents at its natural duration and rate. If necessary, you can scale it to a different duration by calling the "
             },
             {
               "type": "reference",
@@ -660,116 +541,15 @@
             },
             {
               "type": "text",
-              "text": "."
+              "text": " method."
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Insertion might fail if, for example, the asset you try to insert is copy-protected."
-            }
-          ]
-        },
-        {
-          "type": "aside",
-          "content": [
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "In Swift, this method returns "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "Void"
-                },
-                {
-                  "type": "text",
-                  "text": " and the framework marks it with the "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "throws"
-                },
-                {
-                  "type": "text",
-                  "text": " keyword to indicate that it throws an error in cases of failure."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "Call this method in a "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "try"
-                },
-                {
-                  "type": "text",
-                  "text": " expression and handle any errors in the "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "catch"
-                },
-                {
-                  "type": "text",
-                  "text": " clauses of a "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "do"
-                },
-                {
-                  "type": "text",
-                  "text": " statement, as described in "
-                },
-                {
-                  "type": "link",
-                  "title": "Error Handling",
-                  "destination": "https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html"
-                },
-                {
-                  "type": "text",
-                  "text": " in "
-                },
-                {
-                  "type": "link",
-                  "title": "The Swift Programming Language",
-                  "destination": "https://docs.swift.org/swift-book/"
-                },
-                {
-                  "type": "text",
-                  "text": " and "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
-                },
-                {
-                  "type": "text",
-                  "text": "."
-                }
-              ]
-            }
-          ],
-          "style": "note",
-          "name": "Handling Errors in Swift:"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

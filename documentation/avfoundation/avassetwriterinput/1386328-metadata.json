@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The collection of track-level metadata to associate with the asset and for carriage in the output file."
+      "text": "The track-level metadata to write to the output."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInput(py)metadata",
+    "parent": {
+      "title": "AVAssetWriterInput"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,17 +128,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
-      "title": "AVMetadataItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmetadataitem"
     },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
@@ -139,6 +139,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
+      "title": "AVMetadataItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386328-metadata": {
       "title": "metadata",
@@ -150,91 +158,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The collection of track-level metadata to associate with the asset and for carriage in the output file."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390183-transform": {
-      "title": "transform",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390183-transform",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1390183-transform",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The transform specified in the output file as the preferred transformation of the visual media data for display purposes."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale": {
-      "title": "mediaTimeScale",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Specifies the media time scale to be used."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime": {
-      "title": "expectsMediaDataInRealTime",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the input should tailor its processing of media data for real-time sources."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled": {
-      "title": "marksOutputTrackAsEnabled",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns whether the receiver’s track is enabled."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387437-naturalsize": {
-      "title": "naturalSize",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387437-naturalsize",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387437-naturalsize",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Size specified in the output file as the natural dimensions of the visual media data for display."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389949-preferredvolume": {
-      "title": "preferredVolume",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389949-preferredvolume",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1389949-preferredvolume",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The preferred volume level for storing in the output file."
+          "text": "The track-level metadata to write to the output."
         }
       ]
     },
@@ -246,20 +170,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390183-transform",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387437-naturalsize",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389949-preferredvolume"
-      ],
-      "title": "Configuring a Writer Input",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -308,6 +218,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -329,25 +240,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The array contains "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem"
-            },
-            {
-              "type": "text",
-              "text": " objects representing the collection of track-level metadata for writing to the output file."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "You cannot set this property after writing has started."
+              "text": "You can’t set this property after writing starts."
             }
           ]
         }
@@ -355,7 +248,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

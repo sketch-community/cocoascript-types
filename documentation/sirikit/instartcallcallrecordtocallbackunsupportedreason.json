@@ -1,11 +1,17 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A reason why your app can’t use a record to call a person back."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/sirikit_enumerations"
+        "doc://com.apple.documentation/documentation/sirikit/voip_calling"
       ]
     ]
   },
@@ -28,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@INStartCallCallRecordToCallBackUnsupportedReason",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -81,10 +92,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/sirikit_enumerations": {
-      "title": "SiriKit Enumerations",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/sirikit_enumerations",
-      "url": "/documentation/sirikit/sirikit_enumerations",
+    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
+      "title": "VoIP Calling",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+      "url": "/documentation/sirikit/voip_calling",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -103,7 +114,69 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason/instartcallcallrecordtocallbackunsupportedreasonnomatchingcall",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason/instartcallcallrecordtocallbackunsupportedreasonnomatchingcall"
+      "url": "/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason/instartcallcallrecordtocallbackunsupportedreasonnomatchingcall",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reason indicating that no call record matches the intent’s parameter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling": {
+      "title": "INStartCallIntentHandling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintenthandling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An interface that handles requests to start audio and video calls."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent": {
+      "title": "INStartCallIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A request to start an audio or video call with one or more users."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse": {
+      "title": "INStartCallIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a start call intent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason": {
+      "title": "INStartCallCallRecordToCallBackUnsupportedReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reason why your app can’t use a record to call a person back."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -116,10 +189,22 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Enumeration Cases",
+      "title": "Reasons",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason/instartcallcallrecordtocallbackunsupportedreasonnomatchingcall"
-      ]
+      ],
+      "anchor": "3650644"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse"
+      ],
+      "title": "Starting a Call",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -184,6 +269,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -192,7 +278,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

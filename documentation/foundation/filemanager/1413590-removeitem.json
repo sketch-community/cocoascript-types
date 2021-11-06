@@ -41,30 +41,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSFileManager(im)removeItemAtURL:error:",
+    "parent": {
+      "title": "FileManager"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -90,8 +98,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -156,22 +164,6 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/swift/true": {
-      "title": "true",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/true",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/true"
-    },
-    "doc://com.apple.documentation/documentation/swift/false": {
-      "title": "false",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/false",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/false"
-    },
     "doc://com.apple.documentation/documentation/foundation/filemanagerdelegate/1411918-filemanager": {
       "title": "fileManager(_:shouldRemoveItemAt:)",
       "type": "topic",
@@ -187,6 +179,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/filemanagerdelegate/1412994-filemanager"
+    },
+    "doc://com.apple.documentation/documentation/swift/true": {
+      "title": "true",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/true",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/true"
     },
     "doc://com.apple.documentation/documentation/foundation/filemanagerdelegate/1408660-filemanager": {
       "title": "fileManager(_:shouldProceedAfterError:removingItemAt:)",
@@ -212,29 +212,13 @@
       "role": "symbol",
       "url": "/documentation/foundation/filemanager/1411577-url"
     },
-    "link-3023437": {
-      "title": "Error Handling",
+    "doc://com.apple.documentation/documentation/swift/false": {
+      "title": "false",
       "type": "topic",
-      "identifier": "link-3023437",
-      "kind": "article",
-      "role": "link",
-      "url": "https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html"
-    },
-    "link-3023438": {
-      "title": "The Swift Programming Language",
-      "type": "topic",
-      "identifier": "link-3023438",
-      "kind": "article",
-      "role": "link",
-      "url": "https://docs.swift.org/swift-book/"
-    },
-    "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters": {
-      "title": "About Imported Cocoa Error Parameters",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters",
-      "kind": "article",
-      "role": "article",
-      "url": "/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
+      "identifier": "doc://com.apple.documentation/documentation/swift/false",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/false"
     },
     "doc://com.apple.documentation/documentation/foundation/filemanager/1414306-trashitem": {
       "title": "trashItem(at:resultingItemURL:)",
@@ -595,6 +579,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -617,15 +602,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "A file URL specifying the file or directory to remove. If the URL specifies a directory, the contents of that directory are recursively removed. You may specify "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "nil"
-                },
-                {
-                  "type": "text",
-                  "text": " for this parameter."
+                  "text": "A file URL specifying the file or directory to remove. If the URL specifies a directory, the contents of that directory are recursively removed."
                 }
               ]
             }
@@ -781,104 +758,12 @@
               "text": " method to old versions."
             }
           ]
-        },
-        {
-          "type": "aside",
-          "content": [
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "In Swift, this method returns "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "Void"
-                },
-                {
-                  "type": "text",
-                  "text": " and is marked with the "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "throws"
-                },
-                {
-                  "type": "text",
-                  "text": " keyword to indicate that it throws an error in cases of failure."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "You call this method in a "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "try"
-                },
-                {
-                  "type": "text",
-                  "text": " expression and handle any errors in the "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "catch"
-                },
-                {
-                  "type": "text",
-                  "text": " clauses of a "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "do"
-                },
-                {
-                  "type": "text",
-                  "text": " statement, as described in "
-                },
-                {
-                  "type": "link",
-                  "title": "Error Handling",
-                  "destination": "https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html"
-                },
-                {
-                  "type": "text",
-                  "text": " in "
-                },
-                {
-                  "type": "link",
-                  "title": "The Swift Programming Language",
-                  "destination": "https://docs.swift.org/swift-book/"
-                },
-                {
-                  "type": "text",
-                  "text": " and "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
-                },
-                {
-                  "type": "text",
-                  "text": "."
-                }
-              ]
-            }
-          ],
-          "style": "note",
-          "name": "Handling Errors in Swift:"
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

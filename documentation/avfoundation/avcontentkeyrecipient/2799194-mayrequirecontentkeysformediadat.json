@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A Boolean value that indicates whether the receiver requires decryption keys for media data to enable processing."
+      "text": "A Boolean value that indicates whether the recipient requires decryption keys for media data to enable processing."
     }
   ],
   "documentVersion": 0,
@@ -37,35 +37,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)AVContentKeyRecipient(py)mayRequireContentKeysForMediaDataProcessing",
+    "parent": {
+      "title": "AVContentKeyRecipient"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,11 +118,11 @@
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession": {
       "title": "AVContentKeySession",
-      "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession",
+      "url": "/documentation/avfoundation/avcontentkeysession",
+      "type": "topic",
       "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession"
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient": {
       "title": "AVContentKeyRecipient",
@@ -130,13 +138,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799191-delegate": {
-      "title": "delegate",
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799191-delegate",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799191-delegate"
+      "url": "/documentation/objectivec/yes"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient/2799194-mayrequirecontentkeysformediadat": {
       "title": "mayRequireContentKeysForMediaDataProcessing",
@@ -149,7 +157,32 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the receiver requires decryption keys for media data to enable processing."
+          "text": "A Boolean value that indicates whether the recipient requires decryption keys for media data to enable processing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient/3726101-contentkeysession": {
+      "title": "contentKeySession:didProvideContentKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient/3726101-contentkeysession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeyrecipient/3726101-contentkeysession",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the recipient that a content key is available."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "contentKeySession:didProvideContentKey:"
         }
       ]
     },
@@ -161,6 +194,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrecipient/3726101-contentkeysession"
+      ],
+      "title": "Verifying Decryption Key Requirements",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -197,6 +239,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -219,45 +262,24 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When the value of this property is "
-            },
-            {
-              "type": "codeVoice",
-              "code": "YES"
-            },
-            {
-              "type": "text",
-              "text": ", adding the receiver to an "
+              "text": "When the value is "
             },
             {
               "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession"
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
             },
             {
               "type": "text",
-              "text": " object allows the receiver to employ the session's existing keys. It also enables the handling of new key requests by the content key session's "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799191-delegate"
-            },
-            {
-              "type": "text",
-              "text": "."
+              "text": ", adding the recipient to a content key session allows the recipient to use the session’s existing keys. It also enables handling of new key requests by the session’s delegate object."
             }
           ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

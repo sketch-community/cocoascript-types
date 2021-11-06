@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The offset of the sample in the segment."
+      "text": "The offset of a sample in the segment."
     }
   ],
   "documentVersion": 0,
@@ -13,6 +13,7 @@
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avassetsegmentreport",
         "doc://com.apple.documentation/documentation/avfoundation/avassetsegmenttrackreport",
@@ -39,30 +40,38 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetSegmentReportSampleInformation(py)offset",
+    "parent": {
+      "title": "AVAssetSegmentReportSampleInformation"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,6 +122,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
+      "title": "AVAssetWriter",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
+      "url": "/documentation/avfoundation/avassetwriter",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
       "title": "AVAssetWriterDelegate",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
@@ -147,7 +164,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that provides information on a sample in a track."
+          "text": "An object that provides information about sample data in a track."
         }
       ]
     },
@@ -169,7 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The presentation timestamp (PTS) of the sample."
+          "text": "The presentation timestamp (PTS) of a sample."
         }
       ]
     },
@@ -183,7 +200,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The offset of the sample in the segment."
+          "text": "The offset of a sample in the segment."
         }
       ]
     },
@@ -197,7 +214,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The length of the sample."
+          "text": "The length of the sample data."
         }
       ]
     },
@@ -211,7 +228,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates whether the sample is a sync sample."
+          "text": "A Boolean value that indicates whether the sample is a key frame."
         }
       ]
     },
@@ -272,6 +289,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -281,7 +299,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

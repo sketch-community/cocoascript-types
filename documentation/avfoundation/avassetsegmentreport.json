@@ -13,6 +13,7 @@
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate"
       ]
     ]
@@ -36,30 +37,35 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetSegmentReport",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,13 +116,21 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
+      "title": "AVAssetWriter",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
+      "url": "/documentation/avfoundation/avassetwriter",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
       "title": "AVAssetWriterDelegate",
-      "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
+      "url": "/documentation/avfoundation/avassetwriterdelegate",
+      "type": "topic",
       "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterdelegate"
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate/3546593-assetwriter": {
       "title": "assetWriter:didOutputSegmentData:segmentType:segmentReport:",
@@ -129,7 +143,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A method the system invokes when segment data is output."
+          "text": "Tells the delegate that the asset writer output segment data and a report."
         }
       ],
       "fragments": [
@@ -171,7 +185,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetsegmenttype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetsegmenttype"
+      "url": "/documentation/avfoundation/avassetsegmenttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that define the type of a segment."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetsegmentreport/3546571-trackreports": {
       "title": "trackReports",
@@ -183,7 +203,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The array of segment track report objects."
+          "text": "The reports for the segment’s track data."
         }
       ]
     },
@@ -197,7 +217,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A class that provides information on a track in segment data."
+          "text": "An object that provides information on a track in segment data."
         }
       ]
     },
@@ -212,7 +232,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A method the system invokes when segment data is output."
+          "text": "Tells the delegate that the asset writer output segment data."
         }
       ],
       "fragments": [
@@ -248,16 +268,6 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -277,7 +287,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetsegmenttype",
         "doc://com.apple.documentation/documentation/avfoundation/avassetsegmentreport/3546571-trackreports",
         "doc://com.apple.documentation/documentation/avfoundation/avassetsegmenttrackreport"
-      ]
+      ],
+      "anchor": "3655756"
     }
   ],
   "seeAlsoSections": [
@@ -286,7 +297,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate/3546592-assetwriter",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate/3546593-assetwriter"
       ],
-      "title": "Responding to Output",
+      "title": "Responding to Segment Output",
       "generated": true
     }
   ],
@@ -324,6 +335,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -345,16 +357,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You receive an instance of this type through the "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate"
-            },
-            {
-              "type": "text",
-              "text": " method, "
+              "text": "You receive a segment report through the "
             },
             {
               "type": "reference",
@@ -363,7 +366,7 @@
             },
             {
               "type": "text",
-              "text": "."
+              "text": " delegate method."
             }
           ]
         }
@@ -371,7 +374,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -34,30 +34,45 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.2",
-        "current": "11.1"
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSNetServiceBrowser",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,7 +127,8 @@
           "type": "text",
           "text": "A network service browser that finds published services on a network using multicast DNS."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/objectivec/no": {
       "title": "NO",
@@ -152,7 +168,8 @@
           "kind": "identifier",
           "text": "stop"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1409776-scheduleinrunloop": {
       "title": "scheduleInRunLoop:forMode:",
@@ -176,7 +193,8 @@
           "kind": "identifier",
           "text": "scheduleInRunLoop:forMode:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1411566-removefromrunloop": {
       "title": "removeFromRunLoop:forMode:",
@@ -200,7 +218,8 @@
           "kind": "identifier",
           "text": "removeFromRunLoop:forMode:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1408718-searchforregistrationdomains": {
       "title": "searchForRegistrationDomains",
@@ -224,7 +243,8 @@
           "kind": "identifier",
           "text": "searchForRegistrationDomains"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1417661-searchforbrowsabledomains": {
       "title": "searchForBrowsableDomains",
@@ -248,7 +268,8 @@
           "kind": "identifier",
           "text": "searchForBrowsableDomains"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1417565-searchforservicesoftype": {
       "title": "searchForServicesOfType:inDomain:",
@@ -272,7 +293,8 @@
           "kind": "identifier",
           "text": "searchForServicesOfType:inDomain:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
@@ -313,7 +335,8 @@
           "kind": "identifier",
           "text": "init"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1409380-delegate": {
       "title": "delegate",
@@ -327,7 +350,8 @@
           "type": "text",
           "text": "The delegate object for this instance."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1413106-includespeertopeer": {
       "title": "includesPeerToPeer",
@@ -350,7 +374,8 @@
           "type": "text",
           "text": ", by default."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1807244-searchforalldomains": {
       "title": "searchForAllDomains",
@@ -404,7 +429,8 @@
       "title": "Creating Network Service Browsers",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1412947-init"
-      ]
+      ],
+      "anchor": "1653714"
     },
     {
       "kind": "taskGroup",
@@ -412,7 +438,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1409380-delegate",
         "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1413106-includespeertopeer"
-      ]
+      ],
+      "anchor": "1653762"
     },
     {
       "kind": "taskGroup",
@@ -423,7 +450,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1807244-searchforalldomains",
         "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1417565-searchforservicesoftype",
         "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1414528-stop"
-      ]
+      ],
+      "anchor": "1653827"
     },
     {
       "kind": "taskGroup",
@@ -431,7 +459,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1409776-scheduleinrunloop",
         "doc://com.apple.documentation/documentation/foundation/nsnetservicebrowser/1411566-removefromrunloop"
-      ]
+      ],
+      "anchor": "1653925"
     }
   ],
   "seeAlsoSections": [
@@ -477,6 +506,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -621,7 +651,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

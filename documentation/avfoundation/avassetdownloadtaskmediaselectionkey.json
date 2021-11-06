@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The key used by the options dictionary indicating the media selection for a new download selection."
+      "text": "A key that indicates which media selection to download."
     }
   ],
   "documentVersion": 0,
@@ -13,7 +13,14 @@
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/2897242-aggregateassetdownloadtaskwithur"
       ]
     ]
   },
@@ -36,25 +43,30 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@AVAssetDownloadTaskMediaSelectionKey",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,49 +117,29 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration": {
-      "title": "Download Task Configuration",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration",
-      "url": "/documentation/avfoundation/avassetdownloadurlsession/download_task_configuration",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset": {
       "title": "assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:",
-      "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset",
-      "kind": "symbol",
-      "role": "symbol",
       "url": "/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "assetDownloadTaskWithURLAsset:assetTitle:assetArtworkData:options:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1621023-urlsession": {
-      "title": "URLSession:assetDownloadTask:didResolveMediaSelection:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1621023-urlsession",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/2897242-aggregateassetdownloadtaskwithur": {
+      "title": "aggregateAssetDownloadTaskWithURLAsset:mediaSelections:assetTitle:assetArtworkData:options:",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/2897242-aggregateassetdownloadtaskwithur",
+      "url": "/documentation/avfoundation/avassetdownloadurlsession/2897242-aggregateassetdownloadtaskwithur",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediaselection": {
+      "title": "AVMediaSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselection",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloaddelegate/1621023-urlsession",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "URLSession:assetDownloadTask:didResolveMediaSelection:"
-        }
-      ]
+      "url": "/documentation/avfoundation/avmediaselection"
     },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
@@ -156,20 +148,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionkey": {
-      "title": "AVAssetDownloadTaskMediaSelectionKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionkey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloadtaskmediaselectionkey",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The key used by the options dictionary indicating the media selection for a new download selection."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredmediabitratekey": {
       "title": "AVAssetDownloadTaskMinimumRequiredMediaBitrateKey",
@@ -181,7 +159,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key used by the options dictionary indicating the lowest media bitrate to be used that is greater than or equal to this value."
+          "text": "A key that indicates the minimum bit rate of the variant to download."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey": {
+      "title": "AVAssetDownloadTaskMinimumRequiredPresentationSizeKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates the minimum presentation size of the variant to download."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionkey": {
+      "title": "AVAssetDownloadTaskMediaSelectionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtaskmediaselectionkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates which media selection to download."
         }
       ]
     },
@@ -195,17 +201,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The key that indicates whether media selection prefers multichannel playback."
+          "text": "A key that indicates whether the task downloads media selections with support for multichannel playback, when available."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey": {
-      "title": "AVAssetDownloadTaskMinimumRequiredPresentationSizeKey",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskprefershdrkey": {
       "title": "AVAssetDownloadTaskPrefersHDRKey",
@@ -213,7 +211,27 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskprefershdrkey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetdownloadtaskprefershdrkey"
+      "url": "/documentation/avfoundation/avassetdownloadtaskprefershdrkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates whether the task downloads HDR instead of SDR video, when available."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskpreferslosslessaudiokey": {
+      "title": "AVAssetDownloadTaskPrefersLosslessAudioKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskpreferslosslessaudiokey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtaskpreferslosslessaudiokey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates whether the task downloads media selections in lossless audio format, when available."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -227,11 +245,12 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredmediabitratekey",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionprefersmultichannelkey",
         "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskminimumrequiredpresentationsizekey",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskprefershdrkey"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskmediaselectionprefersmultichannelkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskprefershdrkey",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtaskpreferslosslessaudiokey"
       ],
-      "title": "Download Options",
+      "title": "Option Keys",
       "generated": true
     }
   ],
@@ -273,6 +292,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -293,33 +313,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A key used by the options dictionary passed to the "
+              "text": "By default, a download task automatically retrieves all of an asset’s media selections. To download a specific media selection, provide an "
             },
             {
               "type": "reference",
               "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset"
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselection"
             },
             {
               "type": "text",
-              "text": ". The "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVMediaSelection"
-            },
-            {
-              "type": "text",
-              "text": " for this download is obtained using the download delegate’s "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloaddelegate/1621023-urlsession"
-            },
-            {
-              "type": "text",
-              "text": " method."
+              "text": " object for this key."
             }
           ]
         }
@@ -327,7 +330,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

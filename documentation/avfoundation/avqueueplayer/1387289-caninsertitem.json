@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVQueuePlayer(im)canInsertItem:afterItem:",
+    "parent": {
+      "title": "AVQueuePlayer"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,17 +124,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A player used to play a number of items in sequence."
+          "text": "An object that plays a sequence of player items."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
-      "title": "AVPlayerItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avplayeritem"
     },
     "doc://com.apple.documentation/documentation/objectivec/yes": {
       "title": "YES",
@@ -143,6 +143,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/no"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer/1390539-items": {
       "title": "items",
@@ -178,7 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Ends playback of the current item and initiates playback of the next item in the player’s queue."
+          "text": "Ends playback of the current item and starts playback of the next item in the player’s queue."
         }
       ],
       "fragments": [
@@ -393,6 +401,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -415,16 +424,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
-                },
-                {
-                  "type": "text",
-                  "text": " object to test."
+                  "text": "The player item to insert."
                 }
               ]
             }
@@ -438,7 +438,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The player item to follow in the queue. Pass "
+                  "text": "The player item in the queue to follow. Pass "
                 },
                 {
                   "type": "codeVoice",
@@ -446,15 +446,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " to test whether "
-                },
-                {
-                  "type": "codeVoice",
-                  "code": "item"
-                },
-                {
-                  "type": "text",
-                  "text": " can be appended to the queue."
+                  "text": " to test if you can append the item to the queue."
                 }
               ]
             }
@@ -518,7 +510,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Adding the same item to a player at more than one position in the queue is not supported."
+              "text": "Adding the same item to a player at more than one position in the queue isn’t supported."
             }
           ]
         }
@@ -526,7 +518,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

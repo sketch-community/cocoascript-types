@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INTransferMoneyIntentResponse",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +100,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -107,7 +120,8 @@
           "type": "text",
           "text": "Your app’s response to a request to transfer money."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintenthandling/2868057-confirmtransfermoney": {
       "title": "confirmTransferMoney:completion:",
@@ -153,6 +167,14 @@
       "role": "symbol",
       "url": "/documentation/sirikit/inpaybillintenthandling"
     },
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+    },
     "doc://com.apple.documentation/documentation/sirikit/inintentresponse": {
       "title": "INIntentResponse",
       "type": "topic",
@@ -183,7 +205,8 @@
           "kind": "identifier",
           "text": "initWithCode:userActivity:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868337-code": {
       "title": "code",
@@ -197,7 +220,8 @@
           "type": "text",
           "text": "The code indicating whether you successfully handled the intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponsecode": {
       "title": "INTransferMoneyIntentResponseCode",
@@ -211,7 +235,8 @@
           "type": "text",
           "text": "Constants indicating the state of the response."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868343-fromaccount": {
       "title": "fromAccount",
@@ -225,7 +250,8 @@
           "type": "text",
           "text": "The user account providing the funds."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868335-toaccount": {
       "title": "toAccount",
@@ -239,7 +265,8 @@
           "type": "text",
           "text": "The user account receiving the funds."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868336-transactionamount": {
       "title": "transactionAmount",
@@ -253,7 +280,8 @@
           "type": "text",
           "text": "The amount of money to transfer between accounts."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868340-transactionscheduleddate": {
       "title": "transactionScheduledDate",
@@ -267,7 +295,8 @@
           "type": "text",
           "text": "The date on which the transfer is to occur."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868331-transactionnote": {
       "title": "transactionNote",
@@ -281,7 +310,8 @@
           "type": "text",
           "text": "Notes to include with the transaction."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2919431-transferfee": {
       "title": "transferFee",
@@ -295,7 +325,8 @@
           "type": "text",
           "text": "The fee charged for performing the transaction."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintenthandling": {
       "title": "INTransferMoneyIntentHandling",
@@ -309,7 +340,8 @@
           "type": "text",
           "text": "The handler interface for transferring money between accounts."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintent": {
       "title": "INTransferMoneyIntent",
@@ -323,7 +355,8 @@
           "type": "text",
           "text": "A request to transfer money between two accounts."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -333,16 +366,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -359,7 +402,8 @@
       "title": "Initializing the Response Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868342-initwithcode"
-      ]
+      ],
+      "anchor": "2869165"
     },
     {
       "kind": "taskGroup",
@@ -367,7 +411,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868337-code",
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponsecode"
-      ]
+      ],
+      "anchor": "2880786"
     },
     {
       "kind": "taskGroup",
@@ -375,7 +420,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868343-fromaccount",
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868335-toaccount"
-      ]
+      ],
+      "anchor": "2880787"
     },
     {
       "kind": "taskGroup",
@@ -385,7 +431,8 @@
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868340-transactionscheduleddate",
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868331-transactionnote",
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2919431-transferfee"
-      ]
+      ],
+      "anchor": "2869166"
     }
   ],
   "seeAlsoSections": [
@@ -394,7 +441,7 @@
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/intransfermoneyintent"
       ],
-      "title": "Transfer Money",
+      "title": "Money Transfers",
       "generated": true
     }
   ],
@@ -432,6 +479,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -514,7 +562,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

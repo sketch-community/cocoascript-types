@@ -53,39 +53,49 @@
         "name": "iOS",
         "introducedAt": "4.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "deprecatedAt": "14.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.6",
         "deprecatedAt": "11.0",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "14.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "7.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:@NSURLTypeIdentifierKey",
+    "parent": {
+      "title": "URLResourceKey"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -103,8 +113,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -178,14 +188,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsurl/1408208-setresourcevalues"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
-      "title": "NSNumber",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsnumber"
     },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
@@ -624,16 +626,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Key for determining whether the resource is excluded from all backups of app data, returned as a Boolean "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object (read-write)."
+          "text": "A key for indicating whether the system excludes the resource from all backups of app data."
         }
       ],
       "fragments": [
@@ -1344,16 +1337,16 @@
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -1438,6 +1431,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1448,7 +1442,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

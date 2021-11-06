@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/database_operations"
+        "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols"
       ]
     ]
   },
@@ -35,35 +35,42 @@
         "name": "iOS",
         "introducedAt": "8.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "deprecatedAt": "11.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
         "deprecatedAt": "10.13",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
         "deprecatedAt": "4.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
@@ -71,8 +78,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,10 +114,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/database_operations": {
-      "title": "Database Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/database_operations",
-      "url": "/documentation/cloudkit/database_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols",
+      "url": "/documentation/cloudkit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -211,6 +218,51 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation": {
+      "title": "CKFetchRecordChangesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchrecordchangesoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that reports on the changed and deleted records in the specified record zone."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation": {
+      "title": "CKFetchNotificationChangesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchnotificationchangesoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that retrieves unread notifications from a CloudKit container."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmarknotificationsreadoperation": {
+      "title": "CKMarkNotificationsReadOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmarknotificationsreadoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmarknotificationsreadoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that marks push notifications as read by your app."
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation": {
       "title": "CKModifyBadgeOperation",
       "type": "topic",
@@ -251,21 +303,35 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation/1391678-init",
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation/1391676-initwithbadgevalue"
-      ]
+      ],
+      "anchor": "1666074"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring the Operation",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation/1391674-badgevalue"
-      ]
+      ],
+      "anchor": "1666109"
     },
     {
       "kind": "taskGroup",
       "title": "Processing the Results",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation/1391682-modifybadgecompletionblock"
-      ]
+      ],
+      "anchor": "1666145"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/ckmarknotificationsreadoperation"
+      ],
+      "title": "Deprecated Classes",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -302,6 +368,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -350,7 +417,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

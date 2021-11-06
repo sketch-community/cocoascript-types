@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INStartCallIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,28 +113,6 @@
           "text": "Start call intent attributes"
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/instartcallintent#3191639": {
-      "title": "Table 2",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent#3191639",
-      "kind": "article",
-      "role": "table",
-      "url": "/documentation/sirikit/instartcallintent#3191639",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Siri phrases that trigger the start of a call"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/invocabulary": {
-      "title": "INVocabulary",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/invocabulary"
     },
     "doc://com.apple.documentation/documentation/sirikit/instartcallintent": {
       "title": "INStartCallIntent",
@@ -222,6 +205,30 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter": {
+      "title": "initWithCallRecordFilter:callRecordToCallBack:audioRoute:destinationType:contacts:callCapability:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a start call intent object with the specified parameters."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCallRecordFilter:callRecordToCallBack:audioRoute:destinationType:contacts:callCapability:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165942-callcapability": {
       "title": "callCapability",
       "type": "topic",
@@ -288,10 +295,38 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The category of past call record contact information that should be used for redialing."
+          "text": "The category of past call record contact information used for redialing."
         }
       ],
       "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649675-callrecordfilter": {
+      "title": "callRecordFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649675-callrecordfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3649675-callrecordfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filters specified by the user to redial a call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback": {
+      "title": "callRecordToCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/instartcallintent/3649676-callrecordtocallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Details about a call to redial a missed call."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/sirikit/incallaudioroute": {
       "title": "INCallAudioRoute",
@@ -307,39 +342,19 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter": {
-      "title": "initWithCallRecordFilter:callRecordToCallBack:audioRoute:destinationType:contacts:callCapability:",
+    "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason": {
+      "title": "INStartCallCallRecordToCallBackUnsupportedReason",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter",
-      "fragments": [
+      "url": "/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithCallRecordFilter:callRecordToCallBack:audioRoute:destinationType:contacts:callCapability:"
+          "type": "text",
+          "text": "A reason why your app can’t use a record to call a person back."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649675-callrecordfilter": {
-      "title": "callRecordFilter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649675-callrecordfilter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/instartcallintent/3649675-callrecordfilter"
-    },
-    "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback": {
-      "title": "callRecordToCallBack",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/instartcallintent/3649676-callrecordtocallback"
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -347,16 +362,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -374,8 +379,10 @@
       "kind": "taskGroup",
       "title": "Initializing the Intent Object",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3333283-initwithaudioroute"
-      ]
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3333283-initwithaudioroute",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter"
+      ],
+      "anchor": "3167062"
     },
     {
       "kind": "taskGroup",
@@ -386,32 +393,21 @@
         "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3165944-destinationtype",
         "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3197610-audioroute",
         "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3333284-recordtypeforredialing",
-        "doc://com.apple.documentation/documentation/sirikit/incallaudioroute"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Initializers",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649677-initwithcallrecordfilter"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649675-callrecordfilter",
-        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback"
-      ]
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintent/3649676-callrecordtocallback",
+        "doc://com.apple.documentation/documentation/sirikit/incallaudioroute"
+      ],
+      "anchor": "3167063"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/instartcallintenthandling",
-        "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse"
+        "doc://com.apple.documentation/documentation/sirikit/instartcallintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackunsupportedreason"
       ],
-      "title": "Start a Call",
+      "title": "Starting a Call",
       "generated": true
     }
   ],
@@ -449,6 +445,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -643,1325 +640,12 @@
               }
             ]
           }
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Example Phrases",
-          "anchor": "3191640"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Users can ask Siri to search for calls in a variety of ways. "
-            },
-            {
-              "type": "reference",
-              "isActive": false,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent#3191639"
-            },
-            {
-              "type": "text",
-              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases."
-            }
-          ]
-        },
-        {
-          "type": "table",
-          "header": "row",
-          "rows": [
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Locale"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 1"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Example 2"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "en"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Call Andrew on "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": []
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "打电话给13800123455"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用QQ打视频电话给小白"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_HK"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "打電話比小明"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "打電話比Jeffrey"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "zh_TW"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "打電話"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "用<appName>打電話給小明"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "yue_CN"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺<appName>打电话比小明"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "喺<appName>打电话比Jeffrey"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ar"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "اتصل ب رنا عبر "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "اتصال على محمد عن طريق "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "da"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Ring til Peter med "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "via fyi lav et opkald til john"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "de"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Ruf Thomas mit "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " an"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Rufe Thomas an mit "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "es"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Llámale a Sandra por "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Llamar a Juan con "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fi"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Soita "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "lla Antille"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Pirauta Annalle "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "lla"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "fr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Contacte Jean avec "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Appelle Halim sur "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "he"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "תתקשרי למשה ב"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "תתקשרי למשה באמצעות "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "it"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Chiama Riccardo usando "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Chiama Riccardo con <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ja"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "で花子に電話"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "花子に"
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "で電話"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ko"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "을 사용해서 충헌이한테 전화해"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": "로 충헌한테 전화해"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ms"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Telefon Alham menggunakan "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Buat panggilan "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " ke Sherly"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nb"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Ring Petter med "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Ring med "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " til Stian"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "nl"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Bel Jan via "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Telefoneer naar Marie met "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "pt"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Ligar pro Rafael utilizando "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Liga para Maria no "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "ru"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Позвони Илье с помощью "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "А ты можешь позвонить Анне по "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "sv"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Använd "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " och ring upp Johan"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Ring ett "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " samtal till Lisen"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "th"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "โทรหาวิภาวีโดยใช้ "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "โทรหามีนาด้วย <appName>"
-                    }
-                  ]
-                }
-              ]
-            ],
-            [
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "tr"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Hasan'ı "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " ile ara"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "type": "paragraph",
-                  "inlineContent": [
-                    {
-                      "type": "text",
-                      "text": "Halim'i "
-                    },
-                    {
-                      "type": "emphasis",
-                      "inlineContent": [
-                        {
-                          "type": "text",
-                          "text": "<appName>"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "text": " üzerinden ara"
-                    }
-                  ]
-                }
-              ]
-            ]
-          ],
-          "metadata": {
-            "anchor": "3191639",
-            "title": "Table 2",
-            "abstract": [
-              {
-                "type": "text",
-                "text": "Siri phrases that trigger the start of a call"
-              }
-            ]
-          }
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "In "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/instartcallintent#3191639"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "<appName>"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " represents the name of the app whose Intents extension initiates the call. If your app uses custom names for contacts, you can tell Siri about those names using the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/sirikit/invocabulary"
-            },
-            {
-              "type": "text",
-              "text": " class."
-            }
-          ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,16 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Key for determining whether the resource is excluded from all backups of app data, returned as a Boolean "
-    },
-    {
-      "type": "reference",
-      "isActive": false,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-    },
-    {
-      "type": "text",
-      "text": " object (read-write)."
+      "text": "A key for indicating whether the system excludes the resource from all backups of app data."
     }
   ],
   "documentVersion": 0,
@@ -45,35 +36,40 @@
       {
         "name": "iOS",
         "introducedAt": "5.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.8",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@NSURLIsExcludedFromBackupKey",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -427,16 +423,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Key for determining whether the resource is excluded from all backups of app data, returned as a Boolean "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object (read-write)."
+          "text": "A key for indicating whether the system excludes the resource from all backups of app data."
         }
       ]
     },
@@ -939,6 +926,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -961,7 +949,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can use this property to exclude cache and other app support files which are not needed in a backup. Some operations commonly made to user documents cause this property to be reset to "
+              "text": "The value of this key is a read-write Boolean "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+            },
+            {
+              "type": "text",
+              "text": " object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this property to exclude cache and other app support files that aren’t necessary in a backup. Set this property each time you save a file because some common file operations cause this property to reset to "
             },
             {
               "type": "codeVoice",
@@ -969,7 +975,7 @@
             },
             {
               "type": "text",
-              "text": "; consequently, do not use this property on user documents."
+              "text": "."
             }
           ]
         }
@@ -977,7 +983,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

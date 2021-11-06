@@ -49,15 +49,23 @@
       {
         "name": "iOS",
         "introducedAt": "3.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@MPMediaLibraryDidChangeNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -75,8 +83,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -159,59 +167,47 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/mediaplayer/mpmedialibrary/1621272-begingeneratinglibrarychangenoti": {
-      "title": "beginGeneratingLibraryChangeNotifications()",
+    "doc://com.apple.documentation/documentation/mediaplayer/mpmovieplayerplaybackdidfinishreasonuserinfokey": {
+      "title": "MPMoviePlayerPlaybackDidFinishReasonUserInfoKey",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpmedialibrary/1621272-begingeneratinglibrarychangenoti",
+      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpmovieplayerplaybackdidfinishreasonuserinfokey",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/mediaplayer/mpmedialibrary/1621272-begingeneratinglibrarychangenoti",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Asks the media library to turn on notifications for whenever the library changes."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "beginGeneratingLibraryChangeNotifications"
-        },
-        {
-          "kind": "text",
-          "text": "()"
-        }
-      ]
+      "url": "/documentation/mediaplayer/mpmovieplayerplaybackdidfinishreasonuserinfokey"
     },
-    "doc://com.apple.documentation/documentation/mediaplayer/mpmedialibrary/1621271-endgeneratinglibrarychangenotifi": {
-      "title": "endGeneratingLibraryChangeNotifications()",
+    "doc://com.apple.documentation/documentation/mediaplayer/mpmovieplayercontroller/fullscreen_notification_keys": {
+      "title": "Fullscreen Notification Keys",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpmedialibrary/1621271-endgeneratinglibrarychangenotifi",
+      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpmovieplayercontroller/fullscreen_notification_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/mediaplayer/mpmovieplayercontroller/fullscreen_notification_keys"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/2815063-mpmusicplayercontrollerqueuedidc": {
+      "title": "MPMusicPlayerControllerQueueDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/2815063-mpmusicplayercontrollerqueuedidc",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/mediaplayer/mpmedialibrary/1621271-endgeneratinglibrarychangenotifi",
+      "url": "/documentation/foundation/nsnotification/name/2815063-mpmusicplayercontrollerqueuedidc",
       "abstract": [
         {
           "type": "text",
-          "text": "Asks the media library to turn off notifications for whenever the library changes."
+          "text": "Indicates the music player’s queue changed."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "func "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "endGeneratingLibraryChangeNotifications"
+          "text": "MPMusicPlayerControllerQueueDidChange"
         },
         {
           "kind": "text",
-          "text": "()"
+          "text": ": NSNotification.Name"
         }
       ]
     },
@@ -243,33 +239,815 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/mediaplayer/mpmedialibrary/1621279-lastmodifieddate": {
-      "title": "lastModifiedDate",
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1616250-mpmediaplaybackispreparedtoplayd": {
+      "title": "MPMediaPlaybackIsPreparedToPlayDidChange",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpmedialibrary/1621279-lastmodifieddate",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1616250-mpmediaplaybackispreparedtoplayd",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/mediaplayer/mpmedialibrary/1621279-lastmodifieddate",
+      "url": "/documentation/foundation/nsnotification/name/1616250-mpmediaplaybackispreparedtoplayd",
       "abstract": [
         {
           "type": "text",
-          "text": "The calendar date on which the media library was last modified."
+          "text": "Indicates that the prepared to play status of the media player has changed."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "var "
+          "text": "static let "
         },
         {
           "kind": "identifier",
-          "text": "lastModifiedDate"
+          "text": "MPMediaPlaybackIsPreparedToPlayDidChange"
         },
         {
           "kind": "text",
-          "text": ": Date"
+          "text": ": NSNotification.Name"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1624257-mpmusicplayercontrollernowplayin": {
+      "title": "MPMusicPlayerControllerNowPlayingItemDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1624257-mpmusicplayercontrollernowplayin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1624257-mpmusicplayercontrollernowplayin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the currently playing media item has changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMusicPlayerControllerNowPlayingItemDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1624162-mpmusicplayercontrollerplaybacks": {
+      "title": "MPMusicPlayerControllerPlaybackStateDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1624162-mpmusicplayercontrollerplaybacks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1624162-mpmusicplayercontrollerplaybacks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the playback state changes programmatically or by user action."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMusicPlayerControllerPlaybackStateDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1624238-mpmusicplayercontrollervolumedid": {
+      "title": "MPMusicPlayerControllerVolumeDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1624238-mpmusicplayercontrollervolumedid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1624238-mpmusicplayercontrollervolumedid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the audio playback volume for the music player has changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMusicPlayerControllerVolumeDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620881-mpmoviedurationavailable": {
+      "title": "MPMovieDurationAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620881-mpmoviedurationavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620881-mpmoviedurationavailable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the duration of a movie has been determined. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMovieDurationAvailable"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620825-mpmoviemediatypesavailable": {
+      "title": "MPMovieMediaTypesAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620825-mpmoviemediatypesavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620825-mpmoviemediatypesavailable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the available media types in a movie are determined. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMovieMediaTypesAvailable"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620842-mpmovienaturalsizeavailable": {
+      "title": "MPMovieNaturalSizeAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620842-mpmovienaturalsizeavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620842-mpmovienaturalsizeavailable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the natural frame size of a movie is first determined or subsequently changes. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMovieNaturalSizeAvailable"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620816-mpmovieplayerdidenterfullscreen": {
+      "title": "MPMoviePlayerDidEnterFullscreen",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620816-mpmovieplayerdidenterfullscreen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620816-mpmovieplayerdidenterfullscreen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a movie player has entered full-screen mode. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerDidEnterFullscreen"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620945-mpmovieplayerdidexitfullscreen": {
+      "title": "MPMoviePlayerDidExitFullscreen",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620945-mpmovieplayerdidexitfullscreen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620945-mpmovieplayerdidexitfullscreen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a movie player has exited full-screen mode. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerDidExitFullscreen"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620802-mpmovieplayerisairplayvideoactiv": {
+      "title": "MPMoviePlayerIsAirPlayVideoActiveDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620802-mpmovieplayerisairplayvideoactiv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620802-mpmovieplayerisairplayvideoactiv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a movie player has started or ended playing a movie via AirPlay. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerIsAirPlayVideoActiveDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620909-mpmovieplayerloadstatedidchange": {
+      "title": "MPMoviePlayerLoadStateDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620909-mpmovieplayerloadstatedidchange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620909-mpmovieplayerloadstatedidchange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a movie player’s network buffering state has changed. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerLoadStateDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620917-mpmovieplayernowplayingmoviedidc": {
+      "title": "MPMoviePlayerNowPlayingMovieDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620917-mpmovieplayernowplayingmoviedidc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620917-mpmovieplayernowplayingmoviedidc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the currently playing movie has changed. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerNowPlayingMovieDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620936-mpmovieplayerplaybackdidfinish": {
+      "title": "MPMoviePlayerPlaybackDidFinish",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620936-mpmovieplayerplaybackdidfinish",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620936-mpmovieplayerplaybackdidfinish",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a movie has finished playing. The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary of this notification contains the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpmovieplayerplaybackdidfinishreasonuserinfokey"
+        },
+        {
+          "type": "text",
+          "text": " key, which indicates the reason that playback finished. This notification is also sent when playback fails because of an error."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerPlaybackDidFinish"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620957-mpmovieplayerplaybackstatedidcha": {
+      "title": "MPMoviePlayerPlaybackStateDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620957-mpmovieplayerplaybackstatedidcha",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620957-mpmovieplayerplaybackstatedidcha",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a movie player’s playback state has changed. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerPlaybackStateDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620783-mpmovieplayerreadyfordisplaydidc": {
+      "title": "MPMoviePlayerReadyForDisplayDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620783-mpmovieplayerreadyfordisplaydidc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620783-mpmovieplayerreadyfordisplaydidc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the ready for display state changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerReadyForDisplayDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620838-mpmovieplayerscalingmodedidchang": {
+      "title": "MPMoviePlayerScalingModeDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620838-mpmovieplayerscalingmodedidchang",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620838-mpmovieplayerscalingmodedidchang",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the scaling mode of a movie player has changed. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerScalingModeDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620907-mpmovieplayerthumbnailimagereque": {
+      "title": "MPMoviePlayerThumbnailImageRequestDidFinish",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620907-mpmovieplayerthumbnailimagereque",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620907-mpmovieplayerthumbnailimagereque",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a request to capture a thumbnail from a movie has finished whether the request succeeded or failed. Upon successful capture of a thumbnail, the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary contains values for the following keys:"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerThumbnailImageRequestDidFinish"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620953-mpmovieplayertimedmetadataupdate": {
+      "title": "MPMoviePlayerTimedMetadataUpdated",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620953-mpmovieplayertimedmetadataupdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620953-mpmovieplayertimedmetadataupdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when new timed metadata arrives."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerTimedMetadataUpdated"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620898-mpmovieplayerwillenterfullscreen": {
+      "title": "MPMoviePlayerWillEnterFullscreen",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620898-mpmovieplayerwillenterfullscreen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620898-mpmovieplayerwillenterfullscreen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a movie player is about to enter full-screen mode. The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary contains keys whose values describe the transition animation used to enter full-screen mode. See "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpmovieplayercontroller/fullscreen_notification_keys"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerWillEnterFullscreen"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620855-mpmovieplayerwillexitfullscreen": {
+      "title": "MPMoviePlayerWillExitFullscreen",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620855-mpmovieplayerwillexitfullscreen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620855-mpmovieplayerwillexitfullscreen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when a movie player is about to exit full-screen mode. The "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary contains keys whose values describe the transition animation used to exit full-screen mode. See "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpmovieplayercontroller/fullscreen_notification_keys"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMoviePlayerWillExitFullscreen"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620951-mpmoviesourcetypeavailable": {
+      "title": "MPMovieSourceTypeAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620951-mpmoviesourcetypeavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620951-mpmoviesourcetypeavailable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posted when the source type of a movie was previously unknown and is newly available. There is no "
+        },
+        {
+          "type": "codeVoice",
+          "code": "userInfo"
+        },
+        {
+          "type": "text",
+          "text": " dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPMovieSourceTypeAvailable"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620070-mpvolumeviewwirelessrouteactived": {
+      "title": "MPVolumeViewWirelessRouteActiveDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620070-mpvolumeviewwirelessrouteactived",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620070-mpvolumeviewwirelessrouteactived",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates the active wireless route changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPVolumeViewWirelessRouteActiveDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620065-mpvolumeviewwirelessroutesavaila": {
+      "title": "MPVolumeViewWirelessRoutesAvailableDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620065-mpvolumeviewwirelessroutesavaila",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/1620065-mpvolumeviewwirelessroutesavaila",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates the available wireless routes changed."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "MPVolumeViewWirelessRoutesAvailableDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -282,11 +1060,32 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/mediaplayer/mpmedialibrary/1621272-begingeneratinglibrarychangenoti",
-        "doc://com.apple.documentation/documentation/mediaplayer/mpmedialibrary/1621271-endgeneratinglibrarychangenotifi",
-        "doc://com.apple.documentation/documentation/mediaplayer/mpmedialibrary/1621279-lastmodifieddate"
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/2815063-mpmusicplayercontrollerqueuedidc",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1616250-mpmediaplaybackispreparedtoplayd",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1624257-mpmusicplayercontrollernowplayin",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1624162-mpmusicplayercontrollerplaybacks",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1624238-mpmusicplayercontrollervolumedid",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620881-mpmoviedurationavailable",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620825-mpmoviemediatypesavailable",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620842-mpmovienaturalsizeavailable",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620816-mpmovieplayerdidenterfullscreen",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620945-mpmovieplayerdidexitfullscreen",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620802-mpmovieplayerisairplayvideoactiv",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620909-mpmovieplayerloadstatedidchange",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620917-mpmovieplayernowplayingmoviedidc",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620936-mpmovieplayerplaybackdidfinish",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620957-mpmovieplayerplaybackstatedidcha",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620783-mpmovieplayerreadyfordisplaydidc",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620838-mpmovieplayerscalingmodedidchang",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620907-mpmovieplayerthumbnailimagereque",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620953-mpmovieplayertimedmetadataupdate",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620898-mpmovieplayerwillenterfullscreen",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620855-mpmovieplayerwillexitfullscreen",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620951-mpmoviesourcetypeavailable",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620070-mpvolumeviewwirelessrouteactived",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1620065-mpvolumeviewwirelessroutesavaila"
       ],
-      "title": "Receiving Notifications when the User's Library Changes",
+      "title": "MediaPlayer",
       "generated": true
     }
   ],
@@ -342,6 +1141,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -377,7 +1177,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,27 +35,32 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSURLSessionWebSocketTask",
@@ -72,8 +77,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -259,30 +264,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/urlsessionconfiguration/1411599-httpcookiestorage"
-    },
-    "doc://com.apple.documentation/documentation/swift/cvararg": {
-      "title": "CVarArg",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/cvararg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/cvararg"
-    },
-    "doc://com.apple.documentation/documentation/swift/equatable": {
-      "title": "Equatable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/equatable"
-    },
-    "doc://com.apple.documentation/documentation/swift/hashable": {
-      "title": "Hashable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/hashable"
     },
     "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/message": {
       "title": "URLSessionWebSocketTask.Message",
@@ -496,6 +477,50 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3767359-receive": {
+      "title": "receive()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3767359-receive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionwebsockettask/3767359-receive",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "receive"
+        },
+        {
+          "kind": "text",
+          "text": "() -> URLSessionWebSocketTask.Message"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3767360-send": {
+      "title": "send(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3767360-send",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlsessionwebsockettask/3767360-send",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "send"
+        },
+        {
+          "kind": "text",
+          "text": "(URLSessionWebSocketTask.Message)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/urlsession/3181171-websockettask": {
       "title": "webSocketTask(with:)",
       "type": "topic",
@@ -652,16 +677,6 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/urlsessiontask"
       ]
-    },
-    {
-      "kind": "relationships",
-      "title": "Conforms To",
-      "type": "conformsTo",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/swift/cvararg",
-        "doc://com.apple.documentation/documentation/swift/equatable",
-        "doc://com.apple.documentation/documentation/swift/hashable"
-      ]
     }
   ],
   "topicSections": [
@@ -673,14 +688,16 @@
         "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/message",
         "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3281789-receive",
         "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3181203-maximummessagesize"
-      ]
+      ],
+      "anchor": "3382577"
     },
     {
       "kind": "taskGroup",
       "title": "Sending Ping Frames",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3181206-sendping"
-      ]
+      ],
+      "anchor": "3382578"
     },
     {
       "kind": "taskGroup",
@@ -690,7 +707,17 @@
         "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3181201-closecode",
         "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/closecode",
         "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3181202-closereason"
-      ]
+      ],
+      "anchor": "3382579"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3767359-receive",
+        "doc://com.apple.documentation/documentation/foundation/urlsessionwebsockettask/3767360-send"
+      ],
+      "anchor": "3780930"
     }
   ],
   "seeAlsoSections": [
@@ -739,6 +766,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -894,7 +922,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Constants that describe the modes of video stabilization supported by the device's format."
+      "text": "Constants that describe the video stabilization modes that the device and format support."
     }
   ],
   "documentVersion": 0,
@@ -36,20 +36,25 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
-        "introducedAt": "13.0",
-        "current": "14.3"
+        "introducedAt": "14.0",
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@AVCaptureVideoStabilizationMode",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -134,7 +139,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Video should not be stabilized."
+          "text": "A mode that doesn’t stablize video capture."
         }
       ]
     },
@@ -148,7 +153,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Video should be stabilized using the standard video stabilization algorithm introduced in iOS 5.0."
+          "text": "A video stabilization mode that uses the standard algorithm."
         }
       ]
     },
@@ -162,7 +167,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Video should be stabilized using the cinematic stabilization algorithm for more dramatic results."
+          "text": "A video stabilization mode that uses the cinematic stabilization algorithm."
         }
       ]
     },
@@ -172,7 +177,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematicextended",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematicextended"
+      "url": "/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematicextended",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A video stabilization mode that uses the extended cinematic stabilization algorithm."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeauto": {
       "title": "AVCaptureVideoStabilizationModeAuto",
@@ -184,7 +195,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The most appropriate video stabilization mode for the device and format should be chosen."
+          "text": "The system chooses most appropriate video stabilization mode for the device and format."
         }
       ]
     },
@@ -285,7 +296,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Constants that describe the modes of video stabilization supported by the device's format."
+          "text": "Constants that describe the video stabilization modes that the device and format support."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide": {
+      "title": "geometricDistortionCorrectedVideoFieldOfView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format’s horizontal field of view after correction for geometric distortion."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported": {
+      "title": "globalToneMappingSupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the format supports global tone mapping."
         }
       ]
     },
@@ -313,20 +352,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide": {
-      "title": "geometricDistortionCorrectedVideoFieldOfView",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The format’s horizontal field of view after correction for geometric distortion."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported": {
       "title": "videoStabilizationSupported",
       "type": "topic",
@@ -342,20 +367,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported": {
-      "title": "globalToneMappingSupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the format supports global tone mapping."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -367,14 +378,15 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Constants",
+      "title": "Stabilization Modes",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeoff",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodestandard",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematic",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodecinematicextended",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturevideostabilizationmode/avcapturevideostabilizationmodeauto"
-      ]
+      ],
+      "anchor": "1626250"
     }
   ],
   "seeAlsoSections": [
@@ -385,10 +397,10 @@
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3153005-highestphotoqualitysupported",
         "doc://com.apple.documentation/documentation/avfoundation/avframeraterange",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1387592-videosupportedframerateranges",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte",
         "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported",
-        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported"
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported"
       ],
       "title": "Examining Video Capture Attributes",
       "generated": true
@@ -456,6 +468,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -463,7 +476,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

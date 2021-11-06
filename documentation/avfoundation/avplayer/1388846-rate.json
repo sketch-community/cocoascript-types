@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVPlayer(py)rate",
+    "parent": {
+      "title": "AVPlayer"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -230,6 +238,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerratedidchangenotification": {
+      "title": "AVPlayerRateDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerratedidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerratedidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that a player posts when its rate changes."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -242,7 +264,8 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386726-play",
-        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause"
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerratedidchangenotification"
       ],
       "title": "Controlling Playback",
       "generated": true
@@ -284,6 +307,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -417,7 +441,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

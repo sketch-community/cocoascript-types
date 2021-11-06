@@ -1,0 +1,921 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Upload your app to the Notary service and check the status of the notarization using older command line tools."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution",
+        "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3835197,
+  "kind": "article",
+  "metadata": {
+    "title": "Notarizing Apps when Developing with Xcode 12 and Earlier",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution": {
+      "title": "Notarizing macOS Software Before Distribution",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow": {
+      "title": "Customizing the Notarization Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835196": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835196",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835196"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835194": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835194",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835194"
+    },
+    "link-3178134": {
+      "title": "Using app-specific passwords",
+      "type": "topic",
+      "identifier": "link-3178134",
+      "kind": "article",
+      "role": "link",
+      "url": "https://support.apple.com/en-us/HT204397"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835208": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835208",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835208"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835198": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835198",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835198"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835199": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835199",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835199"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835206": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835206",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835206"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835201": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835201",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835201"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835200": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835200",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835200"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835207": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835207",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835207"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835202": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835202",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835202"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835205": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835205",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier#3835205"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues": {
+      "title": "Resolving Common Notarization Issues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues"
+    },
+    "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier": {
+      "title": "Notarizing Apps when Developing with Xcode 12 and Earlier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow/notarizing_apps_when_developing_with_xcode_12_and_earlier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Upload your app to the Notary service and check the status of the notarization using older command line tools."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In Xcode 13 and later, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " command line utility replaces "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " as the command you use to notarize your apps. For details on how to use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " command, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow"
+            },
+            {
+              "type": "text",
+              "text": ". However, if you’re using Xcode 12 or earlier for development, or if you can’t access the Amazon S3 services on which "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarytool"
+            },
+            {
+              "type": "text",
+              "text": " depends, you can continue to use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " for notarization, as long as your archive doesn’t exceed 50 GB."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "All other aspects of the distribution workflow remain unchanged, including both export before and stapling after notarization."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Only the notarization features of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "altool"
+                },
+                {
+                  "type": "text",
+                  "text": " are deprecated in Xcode 13 and later. You still use "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "altool"
+                },
+                {
+                  "type": "text",
+                  "text": " for uploading apps to the App Store from the command line."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Upload Your App to the Notarization Service",
+          "anchor": "3835203"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After exporting an archive, you can upload it to the notary service with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": ". If you have more than one version of Xcode installed on your Mac, be sure to use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "xcode-select"
+            },
+            {
+              "type": "text",
+              "text": " utility to choose a version that supports notarization with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": ", like Xcode 10 or later:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% sudo xcode-select -s /path/to/Xcode10.app"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835196",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can then use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "xcrun"
+            },
+            {
+              "type": "text",
+              "text": " to invoke the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " command with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarize-app"
+            },
+            {
+              "type": "text",
+              "text": " option:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun altool --notarize-app",
+            "               --primary-bundle-id \"com.example.ote.zip\"",
+            "               --password \"@keychain:AC_PASSWORD\"",
+            "               --asc-provider <ProviderShortname>",
+            "               --file OvernightTextEditor_11.6.8.zip"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835194",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The notary service generates a ticket for the top-level file that you specify, as well as each nested file. For example, if you submit a disk image that contains a signed installer package with an app bundle inside, the notarization service generates tickets for the disk image, installer package, and app bundle."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Include the required "
+            },
+            {
+              "type": "codeVoice",
+              "code": "primary-bundle-id"
+            },
+            {
+              "type": "text",
+              "text": " option to specify an identifier that helps you keep track of automated correspondence from the notarization service. The value you give doesn’t need to match the bundle identifier of the submitted app or have any particular value, as long as it makes sense to you. However, the value can include only alphanumeric characters ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "A"
+            },
+            {
+              "type": "text",
+              "text": "-"
+            },
+            {
+              "type": "codeVoice",
+              "code": "Z"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a"
+            },
+            {
+              "type": "text",
+              "text": "-"
+            },
+            {
+              "type": "codeVoice",
+              "code": "z"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": "-"
+            },
+            {
+              "type": "codeVoice",
+              "code": "9"
+            },
+            {
+              "type": "text",
+              "text": "), hyphen ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "-"
+            },
+            {
+              "type": "text",
+              "text": "), and period ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "."
+            },
+            {
+              "type": "text",
+              "text": "). The notarization service includes the value whenever it emails you regarding the given "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " submission."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Add the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "username"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "password"
+            },
+            {
+              "type": "text",
+              "text": " options to supply your App Store Connect credentials. Because App Store Connect now requires two-factor authentication (2FA) on all accounts, you must create an app-specific password for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": ", as described in "
+            },
+            {
+              "type": "link",
+              "title": "Using app-specific passwords",
+              "destination": "https://support.apple.com/en-us/HT204397"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To avoid including your password as cleartext in a script, you can provide a reference to a keychain item rather than an explicit username and password, as shown in the previous example. This assumes the keychain holds a keychain item named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AC_PASSWORD"
+            },
+            {
+              "type": "text",
+              "text": ". In Xcode 11 and later, you can add a new keychain item for this purpose from the command line using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " utility:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun altool --store-password-in-keychain-item \"AC_PASSWORD\"",
+            "               -u \"AC_USERNAME\"",
+            "               -p <secret_password>"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835208",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can omit the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "asc-provider"
+            },
+            {
+              "type": "text",
+              "text": " option for the notarization call if your credentials are associated with only a single team. Otherwise, use the option to indicate the provider short name for the appropriate team. In Xcode 11 and later, you can use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " to get a table of providers, provider short names, and team IDs associated with a given account using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "list-providers"
+            },
+            {
+              "type": "text",
+              "text": " option:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun altool --list-providers -p \"@keychain:AC_PASSWORD\""
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835198",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If notarization succeeds, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " prints a request identifier:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "altool[16765:378423] No errors uploading 'OvernightTextEditor_11.6.8.zip'.",
+            "RequestUUID = 2EFE2717-52EF-43A5-96DC-0797E4CA1041"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835199",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Save the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "RequestUUID"
+            },
+            {
+              "type": "text",
+              "text": " to use later when checking the status of your request. For more information about "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " and its required options, use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "help"
+            },
+            {
+              "type": "text",
+              "text": " option:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun altool --help"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835206",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Check the Status of Your Request",
+          "anchor": "3835204"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After uploading your app, the notarization process typically takes less than an hour. When the process completes, you receive an email indicating the outcome. Additionally, you can use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarization-history"
+            },
+            {
+              "type": "text",
+              "text": " option to inspect the status of all of your notarization requests:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun altool --notarization-history 0 -p \"@keychain:AC_PASSWORD\""
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835201",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Passing a page value of 0, as in the above example, returns the most recent requests, and prints a table of results:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "Notarization History - page 0",
+            "",
+            "Date                      RequestUUID                          Status      Status Code Status Message  ",
+            "------------------------- ------------------------------------ ----------- ----------- ----------------",
+            "2021-07-02 20:32:01 +0000 2EFE2717-52EF-43A5-96DC-0797E4CA1041 invalid     2           Package Invalid ",
+            "2021-06-29 13:23:13 +0000 6D020E28-9890-48E5-851C-4275169D07CC invalid     2           Package Invalid",
+            ""
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835200",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To obtain detailed information about a particular submission, use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "altool"
+            },
+            {
+              "type": "text",
+              "text": " along with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "notarization-info"
+            },
+            {
+              "type": "text",
+              "text": " option and the UUID for the submission or from the history table above:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "% xcrun altool --notarization-info 2EFE2717-52EF-43A5-96DC-0797E4CA1041 -p \"@keychain:AC_PASSWORD\""
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835207",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Among other details, the tool reports a log file URL that you can use to download a JSON-formatted log file:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "   RequestUUID: 2EFE2717-52EF-43A5-96DC-0797E4CA1041",
+            "          Date: 2021-07-02 20:32:01 +0000",
+            "        Status: invalid",
+            "    LogFileURL: https://osxapps.itunes.apple.com/...",
+            "   Status Code: 2 ",
+            "Status Message: Package Invalid"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835202",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The log file enumerates any issues that notarization found:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "{",
+            "    \"archiveFilename\": \"Overnight TextEditor.app\",",
+            "    \"issues\": [",
+            "        {",
+            "            \"message\": \"The signature of the binary is invalid.\",",
+            "            \"path\": \"Overnight TextEditor.app/Contents/MacOS/Overnight TextEditor\",",
+            "            \"severity\": \"error\"",
+            "        }",
+            "    ],",
+            "    \"jobId\": \"2EFE2717-52EF-43A5-96DC-0797E4CA1041\",",
+            "    \"logFormatVersion\": 1,",
+            "    \"status\": \"Invalid\",",
+            "    \"statusSummary\": \"Archive contains critical validation errors\",",
+            "    \"ticketContents\": null,",
+            "    \"uploadDate\": \"2021-07-02T20:32:01Z\"",
+            "}"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3835205",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Always check the log file, even if notarization succeeds, because it might contain warnings that you can fix prior to your next submission."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about how to deal with common problems, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

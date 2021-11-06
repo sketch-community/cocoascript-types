@@ -1,0 +1,1279 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Deploy industry-standard security technologies using CloudKit encryption."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/cloudkit/encrypting_user_data",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3742453,
+  "kind": "article",
+  "metadata": {
+    "title": "Encrypting User Data",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "CloudKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/cloudkit/encrypting_user_data"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/cloudkit/encrypting_user_data"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/cloudkit": {
+      "title": "CloudKit",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit",
+      "url": "/documentation/cloudkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerrorzonenotfound": {
+      "title": "CKErrorZoneNotFound",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerrorzonenotfound",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerrorcode/ckerrorzonenotfound"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord/3746821-encryptedvalues": {
+      "title": "encryptedValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/3746821-encryptedvalues",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord/3746821-encryptedvalues"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsstring": {
+      "title": "NSString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsstring"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
+      "title": "NSNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdate": {
+      "title": "NSDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdate"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdata": {
+      "title": "NSData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdata"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocation": {
+      "title": "CLLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocation"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsarray": {
+      "title": "NSArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsarray"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckreference": {
+      "title": "CKReference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckreference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckreference"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckasset": {
+      "title": "CKAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckasset"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/encrypting_user_data#3813933": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/encrypting_user_data#3813933",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/encrypting_user_data#3813933"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecord": {
+      "title": "CKRecord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecord"
+    },
+    "link-3842946": {
+      "title": "CloudKit console",
+      "type": "section",
+      "identifier": "link-3842946",
+      "kind": "article",
+      "role": "link",
+      "url": "https://icloud.developer.apple.com/dashboard/#home"
+    },
+    "link-media-3814031": {
+      "identifier": "link-media-3814031",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/cloudkit/encrypting_user_data#3814031"
+    },
+    "media-3814031": {
+      "identifier": "media-3814031",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 735,
+            "height": 525
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6cb6f37017/rendered2x-1621034202.png"
+        }
+      ],
+      "alt": "A screenshot of the CloudKit database app. The New Records menu item is in a selected state in the Schema section on the left, and the New Record Type pane displays on the right.",
+      "title": "Figure 1"
+    },
+    "link-3842293": {
+      "title": "CloudKit security",
+      "type": "topic",
+      "identifier": "link-3842293",
+      "kind": "article",
+      "role": "link",
+      "url": "https://support.apple.com/en-jo/guide/security/sec3d52c0374/1/web/1"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerroruserdidresetencrypteddatakey": {
+      "title": "CKErrorUserDidResetEncryptedDataKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerroruserdidresetencrypteddatakey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerroruserdidresetencrypteddatakey"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckoperation": {
+      "title": "CKOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation": {
+      "title": "CKFetchRecordsOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchrecordsoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation": {
+      "title": "CKFetchRecordZonesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchrecordzonesoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation": {
+      "title": "CKFetchRecordZoneChangesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchrecordzonechangesoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordzonesoperation": {
+      "title": "CKModifyRecordZonesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordzonesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmodifyrecordzonesoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation": {
+      "title": "CKModifyRecordsOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmodifyrecordsoperation"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerroruserdeletedzone": {
+      "title": "CKErrorUserDeletedZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerroruserdeletedzone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerrorcode/ckerroruserdeletedzone"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/encrypting_user_data#3813928": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/encrypting_user_data#3813928",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/cloudkit/encrypting_user_data#3813928"
+    },
+    "link-3842294": {
+      "title": "iCloud security overview",
+      "type": "topic",
+      "identifier": "link-3842294",
+      "kind": "article",
+      "role": "link",
+      "url": "https://support.apple.com/en-us/HT202303"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/encrypting_user_data": {
+      "title": "Encrypting User Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/encrypting_user_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/encrypting_user_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deploy industry-standard security technologies using CloudKit encryption."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/providing_user_access_to_cloudkit_data": {
+      "title": "Providing User Access to CloudKit Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/providing_user_access_to_cloudkit_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/providing_user_access_to_cloudkit_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide users access to the data your app stores on their behalf."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/changing_access_controls_on_user_data": {
+      "title": "Changing Access Controls on User Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/changing_access_controls_on_user_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/changing_access_controls_on_user_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Restrict access to or remove restrictions from a user's data at their request."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation": {
+      "title": "CKFetchWebAuthTokenOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchwebauthtokenoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that creates an authentication token for use with CloudKit web services."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/responding_to_requests_to_delete_data": {
+      "title": "Responding to Requests to Delete Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/responding_to_requests_to_delete_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/responding_to_requests_to_delete_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide options for users to delete their CloudKit data from your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/identifying_an_app_s_containers": {
+      "title": "Identifying an App's Containers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/identifying_an_app_s_containers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/cloudkit/identifying_an_app_s_containers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use Xcode's Project navigator to find the identifiers of active CloudKit containers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/providing_user_access_to_cloudkit_data",
+        "doc://com.apple.documentation/documentation/cloudkit/changing_access_controls_on_user_data",
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/responding_to_requests_to_delete_data",
+        "doc://com.apple.documentation/documentation/cloudkit/identifying_an_app_s_containers"
+      ],
+      "title": "Privacy",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The CloudKit framework enforces strict policies and adopts privacy-preserving technologies to help you encrypt your users’ data. CloudKit stores data and protects data through account authentication using secure tokens. iCloud servers use encryption to ensure that only authorized users can access their data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Encryption adds another layer of protection on top of account-based access control, and is available for data that’s sensitive or private to the user. CloudKit’s encrypted fields allow you to optionally add that second layer of cryptographic protection by choosing which fields the system encrypts within a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use encrypted fields to offer data encryption to your users in your CloudKit-based apps, such as Photos, Notes, Health, Home, and so forth. See the "
+            },
+            {
+              "type": "link",
+              "title": "iCloud security overview",
+              "destination": "https://support.apple.com/en-us/HT202303"
+            },
+            {
+              "type": "text",
+              "text": " for more information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "inlineHead",
+              "inlineContent": []
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Review Supported Database Types",
+          "anchor": "3813931"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit offers multiple database types, but not all databases support encryption. "
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Private database"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Stores data that belongs to a specific iCloud account, so iCloud supports account-based data encryption."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Shared database"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Stores data that the data owner shares with the current user as a shared participant, so iCloud supports account-based data encryption."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Public database"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Stores data that all users of your app can see, so account-based data encryption isn’t necessary."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Protect Users",
+          "anchor": "3813929"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit encrypts data with the key material in the user’s iCloud Keychain. If the user loses access to iCloud Keychain, CloudKit can’t access the key material that it previously used to encrypt the data, so iCloud can’t decrypt it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apple provides functionality to help users avoid this situation. However, there’s always a risk that a user might lose access to their iCloud keychain, and subsequently, can choose to start over by resetting to a new keychain. This may lead to a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerrorzonenotfound"
+            },
+            {
+              "type": "text",
+              "text": " error from CloudKit that your app needs to handle. See the “Handle a User Keychain Reset” section below for more information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Encrypt Fields in CloudKit",
+          "anchor": "3813932"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/3746821-encryptedvalues"
+            },
+            {
+              "type": "text",
+              "text": " property to set a field on a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CKRecord"
+            },
+            {
+              "type": "text",
+              "text": " that instructs CloudKit to automatically encrypt data while writing, and decrypt it while reading. This method of encryption and decryption applies to most of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Record"
+            },
+            {
+              "type": "text",
+              "text": " value types, including "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsstring"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdate"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray"
+            },
+            {
+              "type": "text",
+              "text": ". However, there’s no encryption support for "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckreference"
+            },
+            {
+              "type": "text",
+              "text": " objects because they need to be visible to the server. CloudKit encrypts "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset"
+            },
+            {
+              "type": "text",
+              "text": " by default so you can’t set it as a value for the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/3746821-encryptedvalues"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Below is an example of the encrypted values property setting and getting "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let myRecord = CKRecord(recordType: \"MyRecordType\")",
+            "",
+            "// Encrypts arbitrary bytes of data.",
+            "myRecord.encryptedValues[\"myEncryptedBytesFieldName\"] = NSData()",
+            "",
+            "// Uses the same property to get the bytes of data back.",
+            "var myDecryptedNSData = myRecord.encryptedValues[\"myEncryptedBytesFieldName\"] as? NSData",
+            "",
+            "// Encrypts a list of data bytes.",
+            "myRecord.encryptedValues[\"myEncryptedBytesListFieldName\"] = [NSData(), NSData()]",
+            "",
+            "// Uses allKeys() to get keys of all the Encrypted Fields.",
+            "print(myRecord.encryptedValues.allKeys())"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3813933",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your CloudKit database schema needs to reflect which fields on specific record types require encryption. Update your schema in one of the following ways:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Write a new field to a new or existing "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+                    },
+                    {
+                      "type": "text",
+                      "text": " through the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord/3746821-encryptedvalues"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property in the development environment of your container. This triggers a schema update to your development environment, which reflects in "
+                    },
+                    {
+                      "type": "link",
+                      "title": "CloudKit console",
+                      "destination": "https://icloud.developer.apple.com/dashboard/#home"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Using CloudKit console, add a new field to a new record type in your development environment schema. Set the field type to the desired encrypted data type, such as Encrypted Double or Encrypted String."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "image",
+                      "identifier": "media-3814031",
+                      "metadata": {
+                        "anchor": "3814031",
+                        "title": "Figure 1"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Promote this schema change to your production environment before deploying any app changes to the App Store that rely on the new schema."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The encrypted fields can’t have indexes because the server can’t read the fields. The encrypted fields also have to be newly introduced to an existing record or a new record. You can’t convert existing unencrypted fields in the CloudKit schema."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Assets",
+          "anchor": "3813930"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When creating or updating a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecord"
+            },
+            {
+              "type": "text",
+              "text": " that contains a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckasset"
+            },
+            {
+              "type": "text",
+              "text": ", CloudKit breaks up the asset’s contents into chunks, and encrypts each chunk before storing it in the third-party services. CloudKit then encrypts the key for each chunk, which Apple maintains, with an asset key and stores the asset key on the relevant record."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit automatically stores the asset key in an encrypted field on the record in the private database, and by proxy, in the shared database. This means that CloudKit ultimately encrypts the asset data to a key in the user’s iCloud Keychain."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CloudKit doesn’t store the asset key in an encrypted field on the record in the public database because the record is accessible to anyone with access to that database."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about security, see "
+            },
+            {
+              "type": "link",
+              "title": "CloudKit security",
+              "destination": "https://support.apple.com/en-jo/guide/security/sec3d52c0374/1/web/1"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle a User Keychain Reset",
+          "anchor": "3813927"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When CloudKit is unable to decrypt the encrypted data, it returns a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerrorzonenotfound"
+            },
+            {
+              "type": "text",
+              "text": " with an entry of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerroruserdidresetencrypteddatakey"
+            },
+            {
+              "type": "text",
+              "text": " in its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "userInfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary. This error can occur in any "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckoperation"
+            },
+            {
+              "type": "text",
+              "text": " that involves reading existing zones or records, such as:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonechangesoperation"
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": " "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordzonesoperation"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When this error occurs, the data becomes permanently lost. Your app needs to handle this situation in the following manner:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Delete the relevant zones. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Recreate the relevant zones."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Upload the locally cached data from the device to those zones. CloudKit encrypts the new data using new key material from the user’s iCloud Keychain."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Users can also choose to manually delete their zones, resulting in data loss that isn’t related to resetting the keychain. In this case, any "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckoperation"
+                },
+                {
+                  "type": "text",
+                  "text": " that involves reading zones or records might encounter a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerroruserdeletedzone"
+                },
+                {
+                  "type": "text",
+                  "text": " error. For this error, prompt for the user’s confirmation to purge the associated local records or zones."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use CloudKit Web Services",
+          "anchor": "3813925"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When making requests through the CloudKit web services interface with an authenticated user against compatible databases, you can:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Save data in an encrypted field"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Pass an "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "isEncrypted"
+                    },
+                    {
+                      "type": "text",
+                      "text": " flag along with the payload in a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation"
+                    },
+                    {
+                      "type": "text",
+                      "text": " records request"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The web services handle the encryption and decryption for you. The rules regarding CloudKit database schema promotion remain the same for web services as they are for native CloudKit. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following shows an example request for creating records with the encrypted fields:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "{",
+            "  \"operations\" : [ {",
+            "    \"operationType\" : \"create\",",
+            "    \"record\" : {",
+            "      \"recordType\" : \"myRecordType\",",
+            "      \"fields\" : {",
+            "        \"myDoubleField\" : {",
+            "          \"value\" : 0.55,",
+            "          \"type\" : \"DOUBLE\",",
+            "          \"isEncrypted\" : true",
+            "        },",
+            "        \"myIntListField\" : {",
+            "          \"value\" : [ 123, 456, 789 ],",
+            "          \"type\" : \"INT64_LIST\",",
+            "          \"isEncrypted\" : true",
+            "        }",
+            "      \"recordName\" : \"recordWithEncryptedFields\",",
+            "    }",
+            "  } ],",
+            "  \"zoneID\" : {",
+            "    \"zoneName\" : \"myZone\"",
+            "  }",
+            "}"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3813928",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

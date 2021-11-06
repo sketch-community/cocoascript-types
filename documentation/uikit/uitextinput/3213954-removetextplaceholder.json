@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Removes a placeholder object from the text input view."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UITextInput(im)removeTextPlaceholder:",
+    "parent": {
+      "title": "UITextInput"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -110,7 +124,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uitextplaceholder",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uitextplaceholder"
+      "url": "/documentation/uikit/uitextplaceholder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A placeholder object that reserves visual space in a text input view."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uitextinput/3213953-inserttextplaceholderwithsize": {
       "title": "insertTextPlaceholderWithSize:",
@@ -120,6 +140,12 @@
       "role": "symbol",
       "url": "/documentation/uikit/uitextinput/3213953-inserttextplaceholderwithsize",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a placeholder object to reserve visual space during text input."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -139,6 +165,12 @@
       "role": "symbol",
       "url": "/documentation/uikit/uitextinput/3213954-removetextplaceholder",
       "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a placeholder object from the text input view."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -222,15 +254,38 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "textPlaceholder",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The placeholder object to remove."
+                }
+              ]
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

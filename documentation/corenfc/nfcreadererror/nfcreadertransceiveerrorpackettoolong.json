@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The packet length exceeds the limit supported by the tag."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,20 +34,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@NFCReaderError@NFCReaderTransceiveErrorPacketTooLong",
+    "parent": {
+      "title": "NFCReaderError"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -90,6 +104,90 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorretryexceeded": {
+      "title": "NFCReaderTransceiveErrorRetryExceeded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorretryexceeded",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorretryexceeded",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Too many retries have occurred."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagconnectionlost": {
+      "title": "NFCReaderTransceiveErrorTagConnectionLost",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagconnectionlost",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagconnectionlost",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reader lost the connection to the tag."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagnotconnected": {
+      "title": "NFCReaderTransceiveErrorTagNotConnected",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagnotconnected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagnotconnected",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The tag isn’t in the connected state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagresponseerror": {
+      "title": "NFCReaderTransceiveErrorTagResponseError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagresponseerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagresponseerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The tag has responded with an error."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorsessioninvalidated": {
+      "title": "NFCReaderTransceiveErrorSessionInvalidated",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorsessioninvalidated",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorsessioninvalidated",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reader session is invalid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong": {
+      "title": "NFCReaderTransceiveErrorPacketTooLong",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorpackettoolong",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The packet length exceeds the limit supported by the tag."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -98,6 +196,19 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorretryexceeded",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagconnectionlost",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagnotconnected",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrortagresponseerror",
+        "doc://com.apple.documentation/documentation/corenfc/nfcreadererror/nfcreadertransceiveerrorsessioninvalidated"
+      ],
+      "title": "Transceive Errors",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -114,6 +225,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -121,7 +233,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

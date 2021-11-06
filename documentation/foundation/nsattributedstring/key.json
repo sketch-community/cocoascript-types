@@ -17,7 +17,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/text_storage",
+        "doc://com.apple.documentation/documentation/uikit/textkit",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring"
       ]
     ]
@@ -41,30 +41,38 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSAttributedStringKey",
+    "parent": {
+      "title": "NSAttributedString"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -78,8 +86,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -144,10 +152,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/text_storage": {
-      "title": "Text Storage",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/text_storage",
-      "url": "/documentation/uikit/text_storage",
+    "doc://com.apple.documentation/documentation/uikit/textkit": {
+      "title": "TextKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/textkit",
+      "url": "/documentation/uikit/textkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -1471,6 +1479,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsattributedstring/key/2890748-accessibilityspeechipanotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that indicates the pronunciation of a specific word or phrase, such as a proper name."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -1496,7 +1510,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating the language to use when speaking a string. "
+          "text": "A key that indicates the language to use when speaking a string. "
         }
       ],
       "fragments": [
@@ -1524,7 +1538,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating the pitch to apply to spoken content. "
+          "text": "A key that indicates the pitch to apply to spoken content. "
         }
       ],
       "fragments": [
@@ -1552,7 +1566,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating whether punctuation is spoken. "
+          "text": "A key that indicates whether to speak punctuation. "
         }
       ],
       "fragments": [
@@ -1580,7 +1594,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A key indicating whether the spoken text is queued behind, or interrupts, existing spoken content. "
+          "text": "A key that indicates whether to queue an announcement behind existing speech or to interrupt it."
         }
       ],
       "fragments": [
@@ -1992,6 +2006,204 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746870-alternatedescription": {
+      "title": "alternateDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746870-alternatedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/key/3746870-alternatedescription",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "alternateDescription"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAttributedString.Key"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746891-imageurl": {
+      "title": "imageURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746891-imageurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/key/3746891-imageurl",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "imageURL"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAttributedString.Key"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3861811-inflectionalternative": {
+      "title": "inflectionAlternative",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3861811-inflectionalternative",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/key/3861811-inflectionalternative",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "inflectionAlternative"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAttributedString.Key"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746892-inflectionrule": {
+      "title": "inflectionRule",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746892-inflectionrule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/key/3746892-inflectionrule",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "inflectionRule"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAttributedString.Key"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746900-inlinepresentationintent": {
+      "title": "inlinePresentationIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746900-inlinepresentationintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/key/3746900-inlinepresentationintent",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "inlinePresentationIntent"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAttributedString.Key"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3809904-languageidentifier": {
+      "title": "languageIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3809904-languageidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/key/3809904-languageidentifier",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "languageIdentifier"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAttributedString.Key"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746901-morphology": {
+      "title": "morphology",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746901-morphology",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/key/3746901-morphology",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "morphology"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAttributedString.Key"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3793759-presentationintentattributename": {
+      "title": "presentationIntentAttributeName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3793759-presentationintentattributename",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/key/3793759-presentationintentattributename",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "presentationIntentAttributeName"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAttributedString.Key"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746903-replacementindex": {
+      "title": "replacementIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746903-replacementindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsattributedstring/key/3746903-replacementindex",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "replacementIndex"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAttributedString.Key"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3663380-tracking": {
       "title": "tracking",
       "type": "topic",
@@ -2187,7 +2399,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/1524865-underlinestyle",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/1528658-verticalglyphform",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/1524497-writingdirection"
-      ]
+      ],
+      "anchor": "2901396"
     },
     {
       "kind": "taskGroup",
@@ -2223,7 +2436,8 @@
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/1532759-accessibilityunderline",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/1531758-accessibilityunderlinecolor",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3074363-uiaccessibilitytextattributecont"
-      ]
+      ],
+      "anchor": "3665798"
     },
     {
       "kind": "taskGroup",
@@ -2231,7 +2445,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/1525938-charactershapeattributename",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/1529940-usesscreenfontsdocumentattribute"
-      ]
+      ],
+      "anchor": "3665215"
     },
     {
       "kind": "taskGroup",
@@ -2239,14 +2454,25 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/2895250-init",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/2895125-init"
-      ]
+      ],
+      "anchor": "2901395"
     },
     {
       "kind": "taskGroup",
       "title": "Type Properties",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746870-alternatedescription",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746891-imageurl",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3861811-inflectionalternative",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746892-inflectionrule",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746900-inlinepresentationintent",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3809904-languageidentifier",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746901-morphology",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3793759-presentationintentattributename",
+        "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3746903-replacementindex",
         "doc://com.apple.documentation/documentation/foundation/nsattributedstring/key/3663380-tracking"
-      ]
+      ],
+      "anchor": "2984379"
     }
   ],
   "seeAlsoSections": [
@@ -2285,6 +2511,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -2295,7 +2522,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

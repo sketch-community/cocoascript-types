@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@CKAccountStatus@CKAccountStatusRestricted",
+    "parent": {
+      "title": "CKAccountStatus"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,20 +128,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine": {
-      "title": "CKAccountStatusCouldNotDetermine",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "CloudKit can’t determine the status of the user’s iCloud account."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusavailable": {
       "title": "CKAccountStatusAvailable",
       "type": "topic",
@@ -148,17 +142,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusrestricted": {
-      "title": "CKAccountStatusRestricted",
+    "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine": {
+      "title": "CKAccountStatusCouldNotDetermine",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusrestricted",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckaccountstatus/ckaccountstatusrestricted",
+      "url": "/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine",
       "abstract": [
         {
           "type": "text",
-          "text": "The system denies access to the user’s iCloud account."
+          "text": "CloudKit can’t determine the status of the user’s iCloud account."
         }
       ]
     },
@@ -176,6 +170,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusrestricted": {
+      "title": "CKAccountStatusRestricted",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusrestricted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckaccountstatus/ckaccountstatusrestricted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The system denies access to the user’s iCloud account."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatustemporarilyunavailable": {
+      "title": "CKAccountStatusTemporarilyUnavailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatustemporarilyunavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckaccountstatus/ckaccountstatustemporarilyunavailable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user’s iCloud account is temporarily unavailable. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -187,9 +209,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine",
         "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusavailable",
-        "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusnoaccount"
+        "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine",
+        "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusnoaccount",
+        "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatustemporarilyunavailable"
       ],
       "title": "Account Statuses",
       "generated": true
@@ -215,6 +238,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -245,7 +269,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

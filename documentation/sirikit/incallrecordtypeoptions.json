@@ -34,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@INCallRecordTypeOptions",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -173,6 +178,48 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptionringing": {
+      "title": "INCallRecordTypeOptionRinging",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptionringing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptionringing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An incoming call that is currently causing the user’s phone to ring."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptioninprogress": {
+      "title": "INCallRecordTypeOptionInProgress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptioninprogress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptioninprogress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A received call that is currently in progress."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptiononhold": {
+      "title": "INCallRecordTypeOptionOnHold",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptiononhold",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptiononhold",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A received call that the user has put on hold."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/sirikit/incallrecord": {
       "title": "INCallRecord",
       "type": "topic",
@@ -184,6 +231,34 @@
         {
           "type": "text",
           "text": "The details about a call handled by your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallgroup": {
+      "title": "INCallGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The details of a group call handled by your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter": {
+      "title": "INCallRecordFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/incallrecordfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filters a user specifies to redial a call."
         }
       ]
     },
@@ -246,18 +321,24 @@
         "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptionmissed",
         "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptionreceived",
         "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptionlatest",
-        "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptionvoicemail"
-      ]
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptionvoicemail",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptionringing",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptioninprogress",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptions/incallrecordtypeoptiononhold"
+      ],
+      "anchor": "2868893"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/incallrecord",
+        "doc://com.apple.documentation/documentation/sirikit/incallgroup",
+        "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter",
         "doc://com.apple.documentation/documentation/sirikit/incallrecordtype",
         "doc://com.apple.documentation/documentation/sirikit/incalldestinationtype"
       ],
-      "title": "Data Objects",
+      "title": "Describing a Call",
       "generated": true
     }
   ],
@@ -323,6 +404,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -331,7 +413,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

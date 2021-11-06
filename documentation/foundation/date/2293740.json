@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation4DateV1poiyA2C_SdtFZ",
+    "parent": {
+      "title": "Date"
+    },
     "symbolKind": "opfunc",
     "fragments": [
       {
@@ -81,8 +89,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -131,31 +139,95 @@
       "role": "symbol",
       "url": "/documentation/foundation/timeinterval"
     },
-    "doc://com.apple.documentation/documentation/foundation/date/2883071": {
-      "title": "!=(_:_:)",
+    "doc://com.apple.documentation/documentation/foundation/date/1948949-addtimeinterval": {
+      "title": "addTimeInterval(_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2883071",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/1948949-addtimeinterval",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/date/2883071",
+      "url": "/documentation/foundation/date/1948949-addtimeinterval",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether two values are not equal."
+          "text": "Adds a time interval to this date."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static func "
+          "text": "func "
         },
         {
           "kind": "identifier",
-          "text": "!= "
+          "text": "addTimeInterval"
         },
         {
           "kind": "text",
-          "text": "(Date, Date) -> Bool"
+          "text": "(TimeInterval)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/1948745-addingtimeinterval": {
+      "title": "addingTimeInterval(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/1948745-addingtimeinterval",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/1948745-addingtimeinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new date value by adding a time interval to this date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "addingTimeInterval"
+        },
+        {
+          "kind": "text",
+          "text": "(TimeInterval) -> Date"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/date/3329237-advanced": {
+      "title": "advanced(by:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/3329237-advanced",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/3329237-advanced",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a date offset the specified time interval from this date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "advanced"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "by"
+        },
+        {
+          "kind": "text",
+          "text": ": TimeInterval) -> Date"
         }
       ]
     },
@@ -271,118 +343,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/date/2293238": {
-      "title": "<(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2293238",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2293238",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean that is true if the left hand date is earlier in time than the right hand date."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "< "
-        },
-        {
-          "kind": "text",
-          "text": "(Date, Date) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/date/2883236": {
-      "title": "<=(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2883236",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2883236",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "<= "
-        },
-        {
-          "kind": "text",
-          "text": "(Date, Date) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/date/2293580": {
-      "title": "==(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2293580",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2293580",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean that is true if the two date values represent the same point in time."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "== "
-        },
-        {
-          "kind": "text",
-          "text": "(Date, Date) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/date/2882995": {
-      "title": ">=(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/date/2882995",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/date/2882995",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": ">= "
-        },
-        {
-          "kind": "text",
-          "text": "(Date, Date) -> Bool"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -394,14 +354,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/date/2883071",
+        "doc://com.apple.documentation/documentation/foundation/date/1948949-addtimeinterval",
+        "doc://com.apple.documentation/documentation/foundation/date/1948745-addingtimeinterval",
+        "doc://com.apple.documentation/documentation/foundation/date/3329237-advanced",
         "doc://com.apple.documentation/documentation/foundation/date/2293123",
         "doc://com.apple.documentation/documentation/foundation/date/2293436",
-        "doc://com.apple.documentation/documentation/foundation/date/2293513",
-        "doc://com.apple.documentation/documentation/foundation/date/2293238",
-        "doc://com.apple.documentation/documentation/foundation/date/2883236",
-        "doc://com.apple.documentation/documentation/foundation/date/2293580",
-        "doc://com.apple.documentation/documentation/foundation/date/2882995"
+        "doc://com.apple.documentation/documentation/foundation/date/2293513"
       ],
       "title": "Adding or Subtracting a Time Interval",
       "generated": true
@@ -485,6 +443,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -492,10 +451,75 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "lhs",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A date."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rhs",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/timeinterval"
+                },
+                {
+                  "type": "text",
+                  "text": " to add to the date."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A date with a specified amount of time added to it."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Error codes returned by vImage functions."
+      "text": "Error codes that vImage functions return when an operation fails."
     }
   ],
   "documentVersion": 0,
@@ -32,8 +32,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -707,6 +707,174 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_noerror": {
+      "title": "kvImageCVImageFormat_NoError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_noerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/kvimagecvimageformat_noerror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An error code that indicates the conversion completed without error. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "kvImageCVImageFormat_NoError"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_colorspace": {
+      "title": "kvImageCVImageFormat_ColorSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_colorspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/kvimagecvimageformat_colorspace",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An error code that indicates the image’s color space is missing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "kvImageCVImageFormat_ColorSpace"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_chromasiting": {
+      "title": "kvImageCVImageFormat_ChromaSiting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_chromasiting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/kvimagecvimageformat_chromasiting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An error code that indicates the chroma siting information is absent."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "kvImageCVImageFormat_ChromaSiting"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_alphaisonehint": {
+      "title": "kvImageCVImageFormat_AlphaIsOneHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_alphaisonehint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/kvimagecvimageformat_alphaisonehint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A hint that indicates the alpha channel is opaque."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "kvImageCVImageFormat_AlphaIsOneHint"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_conversionmatrix": {
+      "title": "kvImageCVImageFormat_ConversionMatrix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_conversionmatrix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/kvimagecvimageformat_conversionmatrix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An error code that indicates the required conversion matrix is absent."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "kvImageCVImageFormat_ConversionMatrix"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_videochanneldescription": {
+      "title": "kvImageCVImageFormat_VideoChannelDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_videochanneldescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/kvimagecvimageformat_videochanneldescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An error code that indicates the range and clipping information is missing."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "kvImageCVImageFormat_VideoChannelDescription"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -741,11 +909,25 @@
         "doc://com.apple.documentation/documentation/accelerate/kvimageinvalidrowbytes",
         "doc://com.apple.documentation/documentation/accelerate/kvimageoutofplaceoperationrequired",
         "doc://com.apple.documentation/documentation/accelerate/kvimageunsupportedconversion"
-      ]
+      ],
+      "anchor": "1599550"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Core Video Image Format Errors",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_noerror",
+        "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_colorspace",
+        "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_chromasiting",
+        "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_alphaisonehint",
+        "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_conversionmatrix",
+        "doc://com.apple.documentation/documentation/accelerate/kvimagecvimageformat_videochanneldescription"
+      ],
+      "anchor": "3738823"
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The writing option that sorts keys in lexicographic order."
+      "text": "Specifies that the output sorts keys in lexicographic order."
     }
   ],
   "documentVersion": 0,
@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@NSJSONWritingOptions@NSJSONWritingSortedKeys",
+    "parent": {
+      "title": "NSJSONWritingOptions"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -135,7 +143,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonwritingoptions/nsjsonwritingfragmentsallowed",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsjsonwritingoptions/nsjsonwritingfragmentsallowed"
+      "url": "/documentation/foundation/nsjsonwritingoptions/nsjsonwritingfragmentsallowed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the parser should allow top-level objects that aren’t arrays or dictionaries."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsjsonwritingoptions/nsjsonwritingprettyprinted": {
       "title": "NSJSONWritingPrettyPrinted",
@@ -147,7 +161,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The writing option that uses white space and indentation to make the output more readable."
+          "text": "Specifies that the output uses white space and indentation to make the resulting data more readable."
         }
       ]
     },
@@ -161,7 +175,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The writing option that sorts keys in lexicographic order."
+          "text": "Specifies that the output sorts keys in lexicographic order."
         }
       ]
     },
@@ -171,7 +185,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonwritingoptions/nsjsonwritingwithoutescapingslashes",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsjsonwritingoptions/nsjsonwritingwithoutescapingslashes"
+      "url": "/documentation/foundation/nsjsonwritingoptions/nsjsonwritingwithoutescapingslashes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that the output doesn’t prefix slash characters with escape characters."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -212,6 +232,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -222,7 +243,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

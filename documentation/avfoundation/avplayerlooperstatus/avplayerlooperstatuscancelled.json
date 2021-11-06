@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The looping has been canceled."
+      "text": "The app canceled looping on the player."
     }
   ],
   "documentVersion": 0,
@@ -36,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@AVPlayerLooperStatus@AVPlayerLooperStatusCancelled",
+    "parent": {
+      "title": "AVPlayerLooperStatus"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,7 +133,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The statuses that indicate whether a looper can successfully perform looping playback."
+          "text": "Status constants that indicate whether a looper can successfully perform looping playback."
         }
       ]
     },
@@ -157,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The looper’s status is not yet known."
+          "text": "The status isn’t known."
         }
       ]
     },
@@ -185,7 +193,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The looper is not able to perform looping playback due to an error."
+          "text": "The looper isn’t able to perform looping playback due to an error."
         }
       ]
     },
@@ -199,7 +207,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The looping has been canceled."
+          "text": "The app canceled looping on the player."
         }
       ]
     },
@@ -218,7 +226,7 @@
         "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus/avplayerlooperstatusready",
         "doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus/avplayerlooperstatusfailed"
       ],
-      "title": "Looper Statuses",
+      "title": "Status Values",
       "generated": true
     }
   ],
@@ -242,6 +250,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -264,7 +273,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This status is set when "
+              "text": "The system sets this status after you call the "
             },
             {
               "type": "reference",
@@ -273,7 +282,7 @@
             },
             {
               "type": "text",
-              "text": " was called."
+              "text": " method."
             }
           ]
         }
@@ -281,7 +290,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

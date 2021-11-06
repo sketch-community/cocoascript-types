@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Provides a composition track associated with the specified track ID."
+      "text": "Returns a track that contains the specified identifier."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.11",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVMutableComposition(im)trackWithTrackID:",
+    "parent": {
+      "title": "AVMutableComposition"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,25 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A mutable object used to create a new composition from existing assets."
+          "text": "An object that you use to create a new composition from existing assets."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/3746564-loadtrackwithtrackid": {
+      "title": "loadTrackWithTrackID:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/3746564-loadtrackwithtrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecomposition/3746564-loadtrackwithtrackid",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadTrackWithTrackID:completionHandler:"
         }
       ]
     },
@@ -146,79 +172,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array of mutable composition tracks contained by the composition."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1387601-addmutabletrackwithmediatype": {
-      "title": "addMutableTrackWithMediaType:preferredTrackID:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1387601-addmutabletrackwithmediatype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecomposition/1387601-addmutabletrackwithmediatype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Adds an empty track to the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "addMutableTrackWithMediaType:preferredTrackID:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386818-removetrack": {
-      "title": "removeTrack:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386818-removetrack",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecomposition/1386818-removetrack",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Removes a specified track from the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "removeTrack:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386662-mutabletrackcompatiblewithtrack": {
-      "title": "mutableTrackCompatibleWithTrack:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386662-mutabletrackcompatiblewithtrack",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecomposition/1386662-mutabletrackcompatiblewithtrack",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a track in the receiver into which any time range of a given asset track can be inserted."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "mutableTrackCompatibleWithTrack:"
+          "text": "The tracks that a composition contains."
         }
       ]
     },
@@ -232,7 +186,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides a composition track associated with the specified track ID."
+          "text": "Returns a track that contains the specified identifier."
         }
       ],
       "fragments": [
@@ -246,30 +200,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic": {
-      "title": "tracksWithMediaCharacteristic:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Provides the composition tracks of the specified media characteristic associated with an asset."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "tracksWithMediaCharacteristic:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1385724-trackswithmediatype": {
       "title": "tracksWithMediaType:",
       "type": "topic",
@@ -280,7 +210,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides the composition tracks of the specified media type associated with an asset."
+          "text": "Returns tracks that contain media of a specified type."
         }
       ],
       "fragments": [
@@ -291,6 +221,30 @@
         {
           "kind": "identifier",
           "text": "tracksWithMediaType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic": {
+      "title": "tracksWithMediaCharacteristic:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns tracks that contain media of a specified characteristic."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tracksWithMediaCharacteristic:"
         }
       ]
     },
@@ -306,13 +260,10 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1389937-tracks",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1387601-addmutabletrackwithmediatype",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386818-removetrack",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1386662-mutabletrackcompatiblewithtrack",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic",
-        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1385724-trackswithmediatype"
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1385724-trackswithmediatype",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/1388464-trackswithmediacharacteristic"
       ],
-      "title": "Managing Tracks",
+      "title": "Accessing Tracks",
       "generated": true
     }
   ],
@@ -372,6 +323,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -416,16 +368,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An instance of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack"
-            },
-            {
-              "type": "text",
-              "text": " that contains the track associated with the track ID or "
+              "text": "A composition track or "
             },
             {
               "type": "codeVoice",
@@ -433,15 +376,48 @@
             },
             {
               "type": "text",
-              "text": " when no track is available."
+              "text": " if no track is available."
             }
           ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load a track asynchronously using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition/3746564-loadtrackwithtrackid"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

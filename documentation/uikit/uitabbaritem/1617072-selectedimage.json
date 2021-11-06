@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The image displayed when the tab bar item is selected."
+      "text": "The source image the item uses to generate its selected image."
     }
   ],
   "documentVersion": 0,
@@ -12,15 +12,13 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/views_and_controls",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations"
+        "doc://com.apple.documentation/documentation/uikit/uitabbaritem"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
         "doc://com.apple.documentation/documentation/uikit/view_controllers",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem",
-        "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations"
+        "doc://com.apple.documentation/documentation/uikit/uitabbaritem"
       ]
     ]
   },
@@ -43,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITabBarItem(py)selectedImage",
+    "parent": {
+      "title": "UITabBarItem"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,17 +120,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations": {
-      "title": "Legacy Customizations",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/legacy_customizations",
-      "url": "/documentation/uikit/uitabbaritem/legacy_customizations",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/uikit/view_controllers": {
       "title": "View Controllers",
@@ -134,6 +132,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/objectivec/nil-2gl": {
+      "title": "nil",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nil-2gl"
+    },
     "doc://com.apple.documentation/documentation/uikit/uibaritem/1616415-image": {
       "title": "image",
       "type": "topic",
@@ -141,14 +147,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uibaritem/1616415-image"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uibaritem": {
-      "title": "UIBarItem",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uibaritem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uibaritem"
     },
     "doc://com.apple.documentation/documentation/uikit/uiimagerenderingmode/uiimagerenderingmodealwaysoriginal": {
       "title": "UIImageRenderingModeAlwaysOriginal",
@@ -176,7 +174,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The image displayed when the tab bar item is selected."
+          "text": "The source image the item uses to generate its selected image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/3198079-standardappearance": {
+      "title": "standardAppearance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/3198079-standardappearance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitabbaritem/3198079-standardappearance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The appearance settings for a tab bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/3750913-scrolledgeappearance": {
+      "title": "scrollEdgeAppearance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/3750913-scrolledgeappearance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitabbaritem/3750913-scrolledgeappearance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The appearance settings for the tab bar when the edge of scrollable content aligns with the edge of the tab bar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617070-titlepositionadjustment": {
+      "title": "titlePositionAdjustment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617070-titlepositionadjustment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitabbaritem/1617070-titlepositionadjustment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The offset to apply to the title’s position. "
         }
       ]
     },
@@ -188,16 +228,17 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uitabbaritem/3198079-standardappearance",
+        "doc://com.apple.documentation/documentation/uikit/uitabbaritem/3750913-scrolledgeappearance",
+        "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617070-titlepositionadjustment"
+      ],
+      "title": "Configuring the Item's Appearance",
+      "generated": true
     }
-  },
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -236,6 +277,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -259,12 +301,13 @@
               "text": "If "
             },
             {
-              "type": "codeVoice",
-              "code": "nil"
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nil-2gl"
             },
             {
               "type": "text",
-              "text": ", the value from the "
+              "text": ", the item uses the value in "
             },
             {
               "type": "reference",
@@ -273,25 +316,7 @@
             },
             {
               "type": "text",
-              "text": " property on the superclass, "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uibaritem"
-            },
-            {
-              "type": "text",
-              "text": ", is used as both the unselected and selected image."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "By default, the actual selected image is automatically created from the alpha values in the source image. To prevent system coloring, provide images with "
+              "text": " instead. The item creates the images it displays from the alpha values in its source images. To prevent system tinting, use images with the "
             },
             {
               "type": "reference",
@@ -300,7 +325,7 @@
             },
             {
               "type": "text",
-              "text": ". "
+              "text": " rendering mode. The item clips any image that’s larger than its bounds."
             }
           ]
         }
@@ -308,7 +333,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

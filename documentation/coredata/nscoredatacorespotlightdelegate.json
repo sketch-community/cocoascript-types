@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A delegate that supports Core Spotlight integration."
+      "text": "A set of methods that enable integration with Core Spotlight."
     }
   ],
   "documentVersion": 0,
@@ -35,25 +35,30 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSCoreDataCoreSpotlightDelegate",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -104,6 +109,22 @@
       "kind": "symbol",
       "role": "symbol"
     },
+    "doc://com.apple.documentation/documentation/coredata/nssqlitestoretype": {
+      "title": "NSSQLiteStoreType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nssqlitestoretype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nssqlitestoretype"
+    },
+    "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes": {
+      "title": "Consuming Relevant Store Changes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/coredata/consuming_relevant_store_changes"
+    },
     "doc://com.apple.documentation/documentation/objectivec/nsobject": {
       "title": "NSObject",
       "type": "topic",
@@ -111,6 +132,30 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751984-initforstorewithdescription": {
+      "title": "initForStoreWithDescription:coordinator:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751984-initforstorewithdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/3751984-initforstorewithdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a Core Spotlight delegate with the specified store description and coordinator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initForStoreWithDescription:coordinator:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897196-initforstorewithdescription": {
       "title": "initForStoreWithDescription:model:",
@@ -122,7 +167,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes a spotlight delegate with the specified description and managed object model."
+          "text": "Creates a Core Spotlight delegate with the specified store description and managed object model."
         }
       ],
       "fragments": [
@@ -133,6 +178,21 @@
         {
           "kind": "identifier",
           "text": "initForStoreWithDescription:model:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751983-indexingenabled": {
+      "title": "indexingEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751983-indexingenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/3751983-indexingenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether Core Data is currently updating the Core Spotlight index with the persistent store’s entities."
         }
       ]
     },
@@ -146,7 +206,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Identifies the Core Spotlight domain."
+          "text": "Returns the domain identifier."
         }
       ],
       "fragments": [
@@ -170,7 +230,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Provides a name for the Core Spotlight index."
+          "text": "Returns the index’s name."
         }
       ],
       "fragments": [
@@ -194,7 +254,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns the searchable attributes for the referenced managed object."
+          "text": "Returns the searchable attributes for the specified managed object."
         }
       ],
       "fragments": [
@@ -208,6 +268,78 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751982-deletespotlightindexwithcompleti": {
+      "title": "deleteSpotlightIndexWithCompletionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751982-deletespotlightindexwithcompleti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/3751982-deletespotlightindexwithcompleti",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes all searchable items from the configured index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteSpotlightIndexWithCompletionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751985-startspotlightindexing": {
+      "title": "startSpotlightIndexing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751985-startspotlightindexing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/3751985-startspotlightindexing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Starts the indexing of the store’s entities."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startSpotlightIndexing"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751986-stopspotlightindexing": {
+      "title": "stopSpotlightIndexing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751986-stopspotlightindexing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coredata/nscoredatacorespotlightdelegate/3751986-stopspotlightindexing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Stops the indexing of the store’s entities."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "stopSpotlightIndexing"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897201-searchableindex": {
       "title": "searchableIndex:reindexAllSearchableItemsWithAcknowledgementHandler:",
       "type": "topic",
@@ -218,7 +350,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Requests that the delegate reindex all of its searchable data and clear any local state."
+          "text": "Reindexes all searchable items and clears any local state."
         }
       ],
       "fragments": [
@@ -242,7 +374,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Requests that the delegate reindex the searchable data using the provided identifiers."
+          "text": "Reindexes the searchable items for the specified identifiers."
         }
       ],
       "fragments": [
@@ -266,7 +398,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A delegate that supports Core Spotlight integration."
+          "text": "A set of methods that enable integration with Core Spotlight."
         }
       ]
     },
@@ -276,7 +408,13 @@
       "identifier": "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightexporter",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/coredata/nscoredatacorespotlightexporter"
+      "url": "/documentation/coredata/nscoredatacorespotlightexporter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The key that specifies a CoreSpotlight delegate."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468919-elementsderivedfromexternalrecor": {
       "title": "elementsDerivedFromExternalRecordURL:",
@@ -300,7 +438,8 @@
           "kind": "identifier",
           "text": "elementsDerivedFromExternalRecordURL:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier": {
       "title": "importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:",
@@ -324,19 +463,34 @@
           "kind": "identifier",
           "text": "importStoreWithIdentifier:fromExternalRecordsDirectory:toURL:options:withType:error:"
         }
-      ]
+      ],
+      "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_external_record_elements": {
-      "title": "Spotlight External Record Elements",
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_record_keys": {
+      "title": "Spotlight Record Keys",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_external_record_elements",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_record_keys",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/coredata/nspersistentstorecoordinator/spotlight_external_record_elements",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/spotlight_record_keys",
       "abstract": [
         {
           "type": "text",
-          "text": "Specify values for the parsed elements derived from the Spotlight external record file."
+          "text": "The keys for the values that exist in the Spotlight external record file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/showcase_app_data_in_spotlight": {
+      "title": "Showcase App Data in Spotlight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/showcase_app_data_in_spotlight",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/coredata/nspersistentstorecoordinator/showcase_app_data_in_spotlight",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "​ ​Index app data so users can find it by using Spotlight search. ​​"
         }
       ]
     },
@@ -361,27 +515,42 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Creating a Delegate",
+      "title": "Creating a Core Spotlight Delegate",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751984-initforstorewithdescription",
         "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897196-initforstorewithdescription"
-      ]
+      ],
+      "anchor": "3359542"
     },
     {
       "kind": "taskGroup",
-      "title": "Searching",
+      "title": "Configuring the Index",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751983-indexingenabled",
         "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897202-domainidentifier",
-        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897199-indexname",
-        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897197-attributesetforobject"
-      ]
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897199-indexname"
+      ],
+      "anchor": "3786973"
     },
     {
       "kind": "taskGroup",
-      "title": "Reindexing",
+      "title": "Managing the Index",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897197-attributesetforobject",
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751982-deletespotlightindexwithcompleti",
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751985-startspotlightindexing",
+        "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/3751986-stopspotlightindexing"
+      ],
+      "anchor": "3786974"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Updating the Index",
       "identifiers": [
         "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897201-searchableindex",
         "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897198-searchableindex"
-      ]
+      ],
+      "anchor": "3384375"
     }
   ],
   "seeAlsoSections": [
@@ -390,9 +559,10 @@
         "doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightexporter",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468919-elementsderivedfromexternalrecor",
         "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier",
-        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_external_record_elements"
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/spotlight_record_keys",
+        "doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/showcase_app_data_in_spotlight"
       ],
-      "title": "Working with Spotlight",
+      "title": "Integrating with Spotlight",
       "generated": true
     }
   ],
@@ -430,15 +600,65 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Core Spotlight integration is only available for persistent stores that have a store type of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coredata/nssqlitestoretype"
+                },
+                {
+                  "type": "text",
+                  "text": ", and which use persistent history tracking. For more information, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/coredata/consuming_relevant_store_changes"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

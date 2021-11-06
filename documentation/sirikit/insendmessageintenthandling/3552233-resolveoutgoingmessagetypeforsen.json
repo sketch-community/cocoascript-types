@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Determines what type of message to send."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(pl)INSendMessageIntentHandling(im)resolveOutgoingMessageTypeForSendMessage:withCompletion:",
+    "parent": {
+      "title": "INSendMessageIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -104,6 +118,40 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype": {
+      "title": "INOutgoingMessageType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inoutgoingmessagetype"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype": {
+      "title": "outgoingMessageType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/2138302-unsupported": {
+      "title": "unsupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/2138302-unsupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inintentresolutionresult/2138302-unsupported",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "unsupported"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/sirikit/insendmessageintent": {
       "title": "INSendMessageIntent",
       "type": "topic",
@@ -120,6 +168,106 @@
       "role": "symbol",
       "url": "/documentation/sirikit/inoutgoingmessagetyperesolutionresult"
     },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1638459-resolverecipientsforsendmessage": {
+      "title": "resolveRecipientsForSendMessage:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1638459-resolverecipientsforsendmessage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintenthandling/1638459-resolverecipientsforsendmessage",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolves the user’s input when it isn’t clear who the recipients of the message are."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveRecipientsForSendMessage:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/3552233-resolveoutgoingmessagetypeforsen": {
+      "title": "resolveOutgoingMessageTypeForSendMessage:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/3552233-resolveoutgoingmessagetypeforsen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintenthandling/3552233-resolveoutgoingmessagetypeforsen",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines what type of message to send."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveOutgoingMessageTypeForSendMessage:withCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1902359-resolvecontentforsendmessage": {
+      "title": "resolveContentForSendMessage:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1902359-resolvecontentforsendmessage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintenthandling/1902359-resolvecontentforsendmessage",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolves the contents of the message."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveContentForSendMessage:withCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend": {
+      "title": "resolveSpeakableGroupNameForSendMessage:withCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resolves the name of the group receiving the message."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resolveSpeakableGroupNameForSendMessage:withCompletion:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -128,6 +276,17 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1638459-resolverecipientsforsendmessage",
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/1902359-resolvecontentforsendmessage",
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling/2866588-resolvespeakablegroupnameforsend"
+      ],
+      "title": "Resolving the Intent Parameters",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -220,15 +379,131 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "intent",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The intent object that contains details about the user’s request. Use this object to get the initial information, if any, provided by the user."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "completion",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The block to execute with the resolution. You must execute this block while implementing this method. This block has no return value and takes the following parameter:"
+                }
+              ]
+            },
+            {
+              "type": "termList",
+              "items": [
+                {
+                  "term": {
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "resolutionResult"
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "The object that contains the details of your proposed resolution. For a successful resolution, create a resolution object with the "
+                          },
+                          {
+                            "type": "reference",
+                            "isActive": true,
+                            "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype"
+                          },
+                          {
+                            "type": "text",
+                            "text": " for the message."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you can’t handle messages of the type specified in the intent’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552232-outgoingmessagetype"
+            },
+            {
+              "type": "text",
+              "text": ", create a result with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/2138302-unsupported"
+            },
+            {
+              "type": "text",
+              "text": " and provide that when you call the completion handler."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The provided URL doesn’t match the App Clip’s registered URL."
+      "text": "The provided URL doesn’t match the invocation URL you registered for the App Clip."
     }
   ],
   "documentVersion": 0,
@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:SC28APActivationPayloadErrorCodeLeV12doesNotMatchSoAAVvpZ",
+    "parent": {
+      "title": "APActivationPayloadError"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -66,8 +74,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -118,7 +126,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Error codes an App Clip’s activation payload returns."
+          "text": "Error codes that an App Clip activation payload returns."
         }
       ],
       "fragments": [
@@ -142,7 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The provided URL doesn’t match the App Clip’s registered URL."
+          "text": "The provided URL doesn’t match the invocation URL you registered for the App Clip."
         }
       ],
       "fragments": [
@@ -170,7 +178,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The user denied location access, or the source of the App Clip’s invocation wasn’t an NFC tag or visual code."
+          "text": "The user denied location access, or the source of the App Clip invocation wasn’t an NFC tag or visual code."
         }
       ],
       "fragments": [
@@ -270,6 +278,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -277,7 +286,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

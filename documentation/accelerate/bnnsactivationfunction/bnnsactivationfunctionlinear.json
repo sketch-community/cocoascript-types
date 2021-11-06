@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@EA@BNNSActivationFunction@BNNSActivationFunctionLinear",
+    "parent": {
+      "title": "BNNSActivationFunction"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -138,26 +146,27 @@
       "variants": [
         {
           "traits": [
-            "1x"
-          ],
-          "size": {
-            "width": 680,
-            "height": 356
-          },
-          "url": "https://docs-assets.developer.apple.com/published/a1359ed695/74caaf4a-63fe-4a05-a218-9fc196fa0ca3.png"
-        },
-        {
-          "traits": [
             "2x"
           ],
           "size": {
-            "width": 680,
-            "height": 356
+            "width": 735,
+            "height": 379
           },
-          "url": "https://docs-assets.developer.apple.com/published/190e015396/96ddc78f-9e8d-43a9-ad7a-5fdbaacb82d3.png"
+          "url": "https://docs-assets.developer.apple.com/published/1a2a6aff78/3401546@2x.png"
+        },
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 735,
+            "height": 379
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c1984e4dd3/3401558~dark@2x.png"
         }
       ],
-      "alt": "Graph that shows input values on the horizontal axis, and output values on the vertical axis. The output value is muliplied by the alpha parameter and the graph is a diagonal line.",
+      "alt": "Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ",
       "title": "Figure 1"
     },
     "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionabs": {
@@ -311,6 +320,20 @@
         {
           "type": "text",
           "text": "An activation function that returns the hard sigmoid function of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardswish": {
+      "title": "BNNSActivationFunctionHardSwish",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardswish",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardswish",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the hard swish function of its input."
         }
       ]
     },
@@ -496,6 +519,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsilu": {
+      "title": "BNNSActivationFunctionSiLU",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsilu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsilu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the sigmoid linear unit (SiLU) function of its input."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax": {
       "title": "BNNSActivationFunctionSoftmax",
       "type": "topic",
@@ -616,6 +653,7 @@
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongumbelmax",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardshrink",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardsigmoid",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardswish",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionidentity",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionleakyrectifiedlinear",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturate",
@@ -628,6 +666,7 @@
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionscaledtanh",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionselu",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsigmoid",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsilu",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftshrink",
         "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftplus",
@@ -656,6 +695,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -727,7 +767,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The following illustrates the output that the activation function generates given inputs in the range "
+              "text": "The following illustrates the output that the activation function generates from inputs in the range "
             },
             {
               "type": "codeVoice",
@@ -760,7 +800,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/payments",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling"
       ]
     ]
@@ -35,25 +35,41 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INPayBillIntentHandling(im)resolveBillPayeeForPayBill:withCompletion:",
+    "parent": {
+      "title": "INPayBillIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +104,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/payments": {
-      "title": "Payments",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/payments",
-      "url": "/documentation/sirikit/payments",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -110,13 +126,13 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/inbillpayee": {
-      "title": "INBillPayee",
+    "link-3872884": {
+      "title": "Deprecated SiriKit Intent Domains",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inbillpayee",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inbillpayee"
+      "identifier": "link-3872884",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799063-billpayee": {
       "title": "billPayee",
@@ -133,6 +149,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inpaybillintent/2799073-billtype"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inbillpayee": {
+      "title": "INBillPayee",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inbillpayee",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inbillpayee"
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintent": {
       "title": "INPayBillIntent",
@@ -173,7 +197,8 @@
           "kind": "identifier",
           "text": "resolveBillPayeeForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799065-resolvebilltypeforpaybill": {
       "title": "resolveBillTypeForPayBill:withCompletion:",
@@ -198,7 +223,8 @@
           "kind": "identifier",
           "text": "resolveBillTypeForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799069-resolvefromaccountforpaybill": {
       "title": "resolveFromAccountForPayBill:withCompletion:",
@@ -223,7 +249,8 @@
           "kind": "identifier",
           "text": "resolveFromAccountForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799076-resolvetransactionamountforpaybi": {
       "title": "resolveTransactionAmountForPayBill:withCompletion:",
@@ -248,7 +275,8 @@
           "kind": "identifier",
           "text": "resolveTransactionAmountForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799068-resolveduedateforpaybill": {
       "title": "resolveDueDateForPayBill:withCompletion:",
@@ -273,7 +301,8 @@
           "kind": "identifier",
           "text": "resolveDueDateForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799074-resolvetransactionscheduleddatef": {
       "title": "resolveTransactionScheduledDateForPayBill:withCompletion:",
@@ -286,7 +315,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Resolves the date on which the payment will occur."
+          "text": "Resolves the date for the payment to occur."
         }
       ],
       "fragments": [
@@ -298,7 +327,8 @@
           "kind": "identifier",
           "text": "resolveTransactionScheduledDateForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inpaybillintenthandling/2799078-resolvetransactionnoteforpaybill": {
       "title": "resolveTransactionNoteForPayBill:withCompletion:",
@@ -323,7 +353,8 @@
           "kind": "identifier",
           "text": "resolveTransactionNoteForPayBill:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -333,6 +364,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -439,6 +490,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -459,7 +511,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The intent object containing details of the user's request. Use this object to get the initial information, if any, provided by the user. "
+                  "text": "The intent object containing details of the user’s request. Use this object to get the initial information, if any, provided by the user. "
                 }
               ]
             }
@@ -505,7 +557,7 @@
                           },
                           {
                             "type": "text",
-                            "text": " object that identifies the entity that will receive the funds. This parameter must not be "
+                            "text": " object that identifies the entity to receive the funds. This parameter must not be "
                           },
                           {
                             "type": "codeVoice",
@@ -513,7 +565,7 @@
                           },
                           {
                             "type": "text",
-                            "text": ". "
+                            "text": "."
                           }
                         ]
                       }
@@ -558,7 +610,7 @@
             },
             {
               "type": "text",
-              "text": " property to verify that you are scheduling payment for the correct bill). Always strive toward a successful resolution of the payee, but feel free to return a different resolution if you can’t locate the payee or you aren’t sure which bill the user intended to pay."
+              "text": " property to verify that you’re scheduling payment for the correct bill). Always strive toward a successful resolution of the payee, but feel free to return a different resolution if you can’t locate the payee or you aren’t sure which bill the user intended to pay."
             }
           ]
         }
@@ -566,7 +618,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -11,8 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types"
+        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers"
       ]
     ]
   },
@@ -35,40 +40,48 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "12.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:22UniformTypeIdentifiers6UTTypeV3mp3ACvpZ",
+    "parent": {
+      "title": "UTType"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
         "kind": "text",
-        "text": "static let "
+        "text": "static var "
       },
       {
         "kind": "identifier",
@@ -81,8 +94,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,6 +120,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "url": "/documentation/uniformtypeidentifiers/system_declared_uniform_type_identifiers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype": {
       "title": "UTType",
       "type": "topic",
@@ -115,10 +136,10 @@
       "role": "symbol",
       "url": "/documentation/uniformtypeidentifiers/uttype"
     },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types": {
-      "title": "System Declared Types",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_types",
-      "url": "/documentation/uniformtypeidentifiers/uttype/system_declared_types",
+    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers": {
+      "title": "System Declared Uniform Type Identifiers",
+      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers",
+      "url": "/documentation/uniformtypeidentifiers/uttype/system_declared_uniform_type_identifiers",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -130,230 +151,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uniformtypeidentifiers/uttypeaudio"
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551465-audiovisualcontent": {
-      "title": "audiovisualContent",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551465-audiovisualcontent",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551465-audiovisualcontent",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A base type that represents data that contains video content that may or may not also include audio."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "audiovisualContent"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551532-movie": {
-      "title": "movie",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551532-movie",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551532-movie",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A base type representing media formats that may contain both video and audio."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "movie"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551595-video": {
-      "title": "video",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551595-video",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551595-video",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents video that doesn’t contain audio."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "video"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551464-audio": {
-      "title": "audio",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551464-audio",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551464-audio",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents audio that doesn’t contain video."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "audio"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551558-quicktimemovie": {
-      "title": "quickTimeMovie",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551558-quicktimemovie",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551558-quicktimemovie",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents a QuickTime movie."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "quickTimeMovie"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551534-mpeg": {
-      "title": "mpeg",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551534-mpeg",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551534-mpeg",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents MPEG-1 or MPEG-2 movies."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "mpeg"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551536-mpeg2video": {
-      "title": "mpeg2Video",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551536-mpeg2video",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551536-mpeg2video",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents MPEG-2 videos."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "mpeg2Video"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551535-mpeg2transportstream": {
-      "title": "mpeg2TransportStream",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551535-mpeg2transportstream",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551535-mpeg2transportstream",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents data in the MPEG-2 transport stream movie format."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "mpeg2TransportStream"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551533-mp3": {
       "title": "mp3",
@@ -371,151 +168,11 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
           "text": "mp3"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551538-mpeg4movie": {
-      "title": "mpeg4Movie",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551538-mpeg4movie",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551538-mpeg4movie",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents MPEG-4 movies."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "mpeg4Movie"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551537-mpeg4audio": {
-      "title": "mpeg4Audio",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551537-mpeg4audio",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551537-mpeg4audio",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents MPEG-4 audio layer files."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "mpeg4Audio"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551456-appleprotectedmpeg4video": {
-      "title": "appleProtectedMPEG4Video",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551456-appleprotectedmpeg4video",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551456-appleprotectedmpeg4video",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents data in the Apple-protected MPEG-4 format."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "appleProtectedMPEG4Video"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551455-appleprotectedmpeg4audio": {
-      "title": "appleProtectedMPEG4Audio",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551455-appleprotectedmpeg4audio",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551455-appleprotectedmpeg4audio",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents data in the Apple-protected MPEG4 format."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "appleProtectedMPEG4Audio"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551466-avi": {
-      "title": "avi",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551466-avi",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uniformtypeidentifiers/uttype/3551466-avi",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A type that represents data in the AVI movie format."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static let "
-        },
-        {
-          "kind": "identifier",
-          "text": "avi"
         },
         {
           "kind": "text",
@@ -539,7 +196,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -567,7 +224,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -589,13 +246,13 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A type that represents data in the MIDI audio format."
+          "text": "A type that represents in MIDI audio format."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -623,7 +280,7 @@
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -645,13 +302,13 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A type that represents M3U or M3U8 playlists."
+          "text": "A type that represents a M3U or M3U8 playlist."
         }
       ],
       "fragments": [
         {
           "kind": "text",
-          "text": "static let "
+          "text": "static var "
         },
         {
           "kind": "identifier",
@@ -674,26 +331,13 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551465-audiovisualcontent",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551532-movie",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551595-video",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551464-audio",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551558-quicktimemovie",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551534-mpeg",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551536-mpeg2video",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551535-mpeg2transportstream",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551538-mpeg4movie",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551537-mpeg4audio",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551456-appleprotectedmpeg4video",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551455-appleprotectedmpeg4audio",
-        "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551466-avi",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551453-aiff",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551597-wav",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551530-midi",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551549-playlist",
         "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3551528-m3uplaylist"
       ],
-      "title": "Audio Video Types",
+      "title": "Audio",
       "generated": true
     }
   ],
@@ -716,7 +360,7 @@
             },
             {
               "kind": "keyword",
-              "text": "let"
+              "text": "var"
             },
             {
               "kind": "text",
@@ -735,10 +379,23 @@
               "preciseIdentifier": "s:22UniformTypeIdentifiers6UTTypeV",
               "identifier": "doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype",
               "text": "UTType"
+            },
+            {
+              "kind": "text",
+              "text": " { "
+            },
+            {
+              "kind": "keyword",
+              "text": "get"
+            },
+            {
+              "kind": "text",
+              "text": " }"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -799,7 +456,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

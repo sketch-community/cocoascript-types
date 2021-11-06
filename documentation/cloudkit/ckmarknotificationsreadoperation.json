@@ -11,8 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/notifications",
-        "doc://com.apple.documentation/documentation/cloudkit/notifications/deprecated_symbols"
+        "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols"
       ]
     ]
   },
@@ -36,35 +35,42 @@
         "name": "iOS",
         "introducedAt": "8.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "deprecatedAt": "11.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
         "deprecatedAt": "10.13",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "11.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
         "deprecatedAt": "4.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
@@ -72,8 +78,8 @@
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -108,18 +114,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/notifications": {
-      "title": "Notifications",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/notifications",
-      "url": "/documentation/cloudkit/notifications",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/cloudkit/notifications/deprecated_symbols": {
+    "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols": {
       "title": "Deprecated Symbols",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/notifications/deprecated_symbols",
-      "url": "/documentation/cloudkit/notifications/deprecated_symbols",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/deprecated_symbols",
+      "url": "/documentation/cloudkit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -220,6 +218,21 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation": {
+      "title": "CKFetchRecordChangesOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckfetchrecordchangesoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that reports on the changed and deleted records in the specified record zone."
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation": {
       "title": "CKFetchNotificationChangesOperation",
       "type": "topic",
@@ -250,22 +263,27 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation": {
+      "title": "CKModifyBadgeOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckmodifybadgeoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An operation that sets the value of the app icon’s badge. "
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "relationshipsSections": [
@@ -285,27 +303,32 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckmarknotificationsreadoperation/1515228-initwithnotificationidstomarkrea",
         "doc://com.apple.documentation/documentation/cloudkit/ckmarknotificationsreadoperation/1640383-init"
-      ]
+      ],
+      "anchor": "1666113"
     },
     {
       "kind": "taskGroup",
       "title": "Configuring the Mark Notifications Read Operation",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckmarknotificationsreadoperation/1515056-notificationids"
-      ]
+      ],
+      "anchor": "1666157"
     },
     {
       "kind": "taskGroup",
       "title": "Processing the Mark Notifications Read Results",
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckmarknotificationsreadoperation/1515317-marknotificationsreadcompletionb"
-      ]
+      ],
+      "anchor": "1666206"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation"
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordchangesoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/ckfetchnotificationchangesoperation",
+        "doc://com.apple.documentation/documentation/cloudkit/ckmodifybadgeoperation"
       ],
       "title": "Deprecated Classes",
       "generated": true
@@ -345,6 +368,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -393,7 +417,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

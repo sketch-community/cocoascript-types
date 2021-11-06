@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation4DateV035timeIntervalBetween1970AndReferenceB0SdvpZ",
+    "parent": {
+      "title": "Date"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -81,8 +89,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -147,7 +155,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns the interval between the receiver and another given date."
+          "text": "Returns the interval between this date and another given date."
         }
       ],
       "fragments": [
@@ -305,6 +313,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/date/stride": {
+      "title": "Date.Stride",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/date/stride",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/date/stride",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type alias to define the stride of a date."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "Date.Stride"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -320,7 +352,8 @@
         "doc://com.apple.documentation/documentation/foundation/date/1780473-timeintervalsincenow",
         "doc://com.apple.documentation/documentation/foundation/date/1780268-timeintervalsincereferencedate",
         "doc://com.apple.documentation/documentation/foundation/date/1779963-timeintervalsince1970",
-        "doc://com.apple.documentation/documentation/foundation/date/1780165-timeintervalsincereferencedate"
+        "doc://com.apple.documentation/documentation/foundation/date/1780165-timeintervalsincereferencedate",
+        "doc://com.apple.documentation/documentation/foundation/date/stride"
       ],
       "title": "Getting Time Intervals",
       "generated": true
@@ -368,6 +401,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -378,7 +412,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

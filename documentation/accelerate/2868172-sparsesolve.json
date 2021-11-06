@@ -2,33 +2,33 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Solves the equation "
+      "text": "Solves the system "
     },
     {
       "type": "emphasis",
       "inlineContent": [
         {
           "type": "text",
-          "text": "Factored * x = b"
+          "text": "Ax = b"
         }
       ]
     },
     {
       "type": "text",
-      "text": " for the vector of single-precision values "
+      "text": " using the supplied single-precision factorization of "
     },
     {
       "type": "emphasis",
       "inlineContent": [
         {
           "type": "text",
-          "text": "x."
+          "text": "A"
         }
       ]
     },
     {
       "type": "text",
-      "text": " "
+      "text": "."
     }
   ],
   "documentVersion": 0,
@@ -61,35 +61,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseSolve#$@SA@SparseOpaqueFactorization_Float#$@SA@DenseVector_Float#S1_#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -140,6 +145,38 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "link-media-3703894": {
+      "identifier": "link-media-3703894",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/2868172-sparsesolve#3703894"
+    },
+    "media-3703894": {
+      "identifier": "media-3703894",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 400,
+            "height": 76
+          },
+          "url": "https://docs-assets.developer.apple.com/published/81f556d5e8/rendered2x-1606991249.png"
+        }
+      ],
+      "alt": "A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2868172-sparsesolve#3702400": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868172-sparsesolve#3702400",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/2868172-sparsesolve#3702400"
+    },
     "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t/sparsefactorizationcholeskyata": {
       "title": "SparseFactorizationCholeskyAtA",
       "type": "topic",
@@ -164,104 +201,6 @@
       "role": "symbol",
       "url": "/documentation/accelerate/densevector_float"
     },
-    "doc://com.apple.documentation/documentation/accelerate/2865551-sparsesolve": {
-      "title": "SparseSolve",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2865551-sparsesolve",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2865551-sparsesolve",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Solves the equation "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Factored * x = b"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": " for the vector of double-precision values "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "x"
-            }
-          ]
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": " "
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": "in place."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/2868051-sparsesolve": {
-      "title": "SparseSolve",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868051-sparsesolve",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/2868051-sparsesolve",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Solves the equation "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Factored * x = b"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": " for the vector of single-precision values "
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "x"
-            }
-          ]
-        },
-        {
-          "type": "emphasis",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": " "
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": "in place."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/2868106-sparsesolve": {
       "title": "SparseSolve",
       "type": "topic",
@@ -272,27 +211,27 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Solves the equation "
+          "text": "Solves the system "
         },
         {
           "type": "emphasis",
           "inlineContent": [
             {
               "type": "text",
-              "text": "Factored * x = b"
+              "text": "Ax = b"
             }
           ]
         },
         {
           "type": "text",
-          "text": " for the vector of double-precision values "
+          "text": " using the supplied double-precision factorization of "
         },
         {
           "type": "emphasis",
           "inlineContent": [
             {
               "type": "text",
-              "text": "x"
+              "text": "A"
             }
           ]
         },
@@ -312,33 +251,33 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Solves the equation "
+          "text": "Solves the system "
         },
         {
           "type": "emphasis",
           "inlineContent": [
             {
               "type": "text",
-              "text": "Factored * x = b"
+              "text": "Ax = b"
             }
           ]
         },
         {
           "type": "text",
-          "text": " for the vector of single-precision values "
+          "text": " using the supplied single-precision factorization of "
         },
         {
           "type": "emphasis",
           "inlineContent": [
             {
               "type": "text",
-              "text": "x."
+              "text": "A"
             }
           ]
         },
         {
           "type": "text",
-          "text": " "
+          "text": "."
         }
       ]
     },
@@ -353,11 +292,9 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/2865551-sparsesolve",
-        "doc://com.apple.documentation/documentation/accelerate/2868051-sparsesolve",
         "doc://com.apple.documentation/documentation/accelerate/2868106-sparsesolve"
       ],
-      "title": "Direct Solving Functions",
+      "title": "Out-of-Place Direct Solving Functions",
       "generated": true
     }
   ],
@@ -419,6 +356,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -504,6 +442,111 @@
           "inlineContent": [
             {
               "type": "text",
+              "text": "Use this function to solve a system of linear equations using a factored coefficient matrix. The following figure shows a system of equations where the coefficient matrix is sparse:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3703894",
+              "metadata": {
+                "anchor": "3703894",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code solves this system with a QR factorization of the coefficient matrix:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/// Create the coefficient matrix _A_.",
+            "let rowIndices: [Int32] =    [ 0,  1, 1,  2]",
+            "let columnIndices: [Int32] = [ 2,  0, 2,  1]",
+            "let aValues: [Float] =       [10, 20, 5, 50]",
+            "",
+            "let A = SparseConvertFromCoordinate(3, 3,",
+            "                                    4, 1,",
+            "                                    SparseAttributes_t(),",
+            "                                    rowIndices, columnIndices,",
+            "                                    aValues)",
+            "",
+            "/// Factorize _A_.",
+            "let factorization = SparseFactor(SparseFactorizationQR, A)",
+            "",
+            "defer {",
+            "    SparseCleanup(A)",
+            "    SparseCleanup(factorization)",
+            "}",
+            "",
+            "/// Create the right-hand-side vector, _b_.",
+            "var bValues: [Float] = [30, 35, 100]",
+            "let n = bValues.count",
+            "",
+            "/// Solve the system.",
+            "let xValues = [Float](unsafeUninitializedCapacity: n) {",
+            "    buffer, count in",
+            "    ",
+            "    bValues.withUnsafeMutableBufferPointer { bPtr in",
+            "        ",
+            "        let b = DenseVector_Float(count: 3,",
+            "                                   data: bPtr.baseAddress!)",
+            "        let x = DenseVector_Float(count: 3,",
+            "                                   data: buffer.baseAddress!)",
+            "        ",
+            "        SparseSolve(factorization, b, x)",
+            "        ",
+            "        count = n",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3702400",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, x"
+            },
+            {
+              "type": "codeVoice",
+              "code": "Values"
+            },
+            {
+              "type": "text",
+              "text": " contains the values "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[1.0, 2.0, 3.0]"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
               "text": "If the factorization is "
             },
             {
@@ -517,7 +560,7 @@
             },
             {
               "type": "text",
-              "text": " and the system is underdetermined, the solution of minimum norm "
+              "text": ", the function returns the solution of minimum norm "
             },
             {
               "type": "emphasis",
@@ -557,7 +600,7 @@
             },
             {
               "type": "text",
-              "text": " is returned."
+              "text": " for underdetermined systems."
             }
           ]
         },
@@ -579,7 +622,7 @@
             },
             {
               "type": "text",
-              "text": " and the system is overdetermined, the least squares solution arg "
+              "text": ", the function returns the least squares solution "
             },
             {
               "type": "emphasis",
@@ -601,12 +644,7 @@
             },
             {
               "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": " "
-                }
-              ]
+              "inlineContent": []
             },
             {
               "type": "emphasis",
@@ -646,7 +684,7 @@
             },
             {
               "type": "text",
-              "text": " is returned."
+              "text": " for overdetermined systems."
             }
           ]
         },
@@ -655,7 +693,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "In the case of a factorization of type "
+              "text": "If the factorization is "
             },
             {
               "type": "reference",
@@ -664,7 +702,7 @@
             },
             {
               "type": "text",
-              "text": ", the factorization is in fact of "
+              "text": ", the factorization is of "
             },
             {
               "type": "emphasis",
@@ -695,7 +733,7 @@
             },
             {
               "type": "text",
-              "text": ", so the solution returned is for the system "
+              "text": ", and the solution that returns is for the system "
             },
             {
               "type": "emphasis",
@@ -734,7 +772,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A triangular sparse matrix with a non-unit diagonal."
+      "text": "A triangular sparse matrix with a nonunit diagonal."
     }
   ],
   "documentVersion": 0,
@@ -28,8 +28,7 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float",
+        "doc://com.apple.documentation/documentation/accelerate/sparsematrix_float",
         "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
         "doc://com.apple.documentation/documentation/accelerate/sparsekind_t"
       ],
@@ -37,8 +36,7 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_double",
+        "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double",
         "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
         "doc://com.apple.documentation/documentation/accelerate/sparsekind_t"
       ],
@@ -46,8 +44,7 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
         "doc://com.apple.documentation/documentation/accelerate/sparseopaquesymbolicfactorization",
         "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
         "doc://com.apple.documentation/documentation/accelerate/sparsekind_t"
@@ -73,35 +70,43 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@EA@SparseKind_t@SparseTriangular",
+    "parent": {
+      "title": "SparseKind_t"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -170,7 +175,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure that defines whether the matrix is ordinary, symmetric, or triangular. "
+          "text": "A structure that defines whether the matrix is ordinary, symmetric, or triangular."
         }
       ]
     },
@@ -182,34 +187,26 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float": {
-      "title": "SparseOpaqueSubfactor_Float",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float",
-      "url": "/documentation/accelerate/sparseopaquesubfactor_float",
+    "doc://com.apple.documentation/documentation/accelerate/sparsematrix_float": {
+      "title": "SparseMatrix_Float",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrix_float",
+      "url": "/documentation/accelerate/sparsematrix_float",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_double": {
-      "title": "SparseOpaqueSubfactor_Double",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_double",
-      "url": "/documentation/accelerate/sparseopaquesubfactor_double",
+    "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double": {
+      "title": "SparseMatrix_Double",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double",
+      "url": "/documentation/accelerate/sparsematrix_double",
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions": {
-      "title": "Sparse Symbolic Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions": {
+      "title": "Sparse Symbolic Factorization Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -254,6 +251,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -285,7 +283,7 @@
             },
             {
               "type": "text",
-              "text": " field indicates which triangle (upper or lower) is used to represent the matrix. "
+              "text": " field indicates which triangle (upper or lower) represents the matrix."
             }
           ]
         }
@@ -293,7 +291,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

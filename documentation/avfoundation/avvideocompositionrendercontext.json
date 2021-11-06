@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An object that defines the context within which custom compositors render new output pixel buffers."
+      "text": "An object that defines the context in which custom compositors render pixel buffers."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,35 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVVideoCompositionRenderContext",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -221,7 +226,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The thickness of the edge processing region on the left, top, right, and bottom edges, in pixels."
+          "text": "The width of the edge processing region on the left, top, right, and bottom edges, in pixels."
         }
       ]
     },
@@ -235,7 +240,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An edge processing region thickness."
+          "text": "A structure that defines edge processing region widths."
         }
       ]
     },
@@ -263,7 +268,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A pixel aspect ratio for the rendering context."
+          "text": "A structure that defines a pixel aspect ratio for a rendering context."
         }
       ]
     },
@@ -278,7 +283,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Notifies the custom compositor that a composition will switch to a different render context."
+          "text": "Tells the compositor that the composition changed render contexts."
         }
       ],
       "fragments": [
@@ -302,86 +307,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that defines the context within which custom compositors render new output pixel buffers."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes": {
-      "title": "supportsWideColorSourceFrames",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the client can handle frames that contain wide color properties."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227885-anticipaterenderingusinghint": {
-      "title": "anticipateRenderingUsingHint:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227885-anticipaterenderingusinghint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositing/3227885-anticipaterenderingusinghint",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Informs a custom video compositor about upcoming rendering requests."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "anticipateRenderingUsingHint:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227886-prerollforrenderingusinghint": {
-      "title": "prerollForRenderingUsingHint:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227886-prerollforrenderingusinghint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositing/3227886-prerollforrenderingusinghint",
-      "required": false,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells a custom video compositor to perform any work in the prerolling phase."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "prerollForRenderingUsingHint:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrenderhint": {
-      "title": "AVVideoCompositionRenderHint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrenderhint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositionrenderhint",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Information about upcoming composition requests, such as composition start time and end time."
+          "text": "An object that defines the context in which custom compositors render pixel buffers."
         }
       ]
     },
@@ -409,7 +335,8 @@
       "title": "Creating the Pixel Buffer",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext/1386802-newpixelbuffer"
-      ]
+      ],
+      "anchor": "1668562"
     },
     {
       "kind": "taskGroup",
@@ -420,7 +347,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext/1387408-renderscale",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext/1389831-rendertransform",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext/1389718-size"
-      ]
+      ],
+      "anchor": "1668591"
     },
     {
       "kind": "taskGroup",
@@ -430,19 +358,16 @@
         "doc://com.apple.documentation/documentation/avfoundation/avedgewidths",
         "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrendercontext/1389800-pixelaspectratio",
         "doc://com.apple.documentation/documentation/avfoundation/avpixelaspectratio"
-      ]
+      ],
+      "anchor": "2940888"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227885-anticipaterenderingusinghint",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3227886-prerollforrenderingusinghint",
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositionrenderhint"
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged"
       ],
-      "title": "Render Context Settings",
+      "title": "Observing Render Context Changes",
       "generated": true
     }
   ],
@@ -480,6 +405,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -501,15 +427,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An instance of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "AVVideoCompositionRenderContext"
-            },
-            {
-              "type": "text",
-              "text": " provides size and scaling information and offers a service for efficiently providing pixel buffers from a managed pool of buffers."
+              "text": "A render context provides size and scaling information and offers a service for efficiently providing pixel buffers from a managed pool of buffers."
             }
           ]
         }
@@ -517,7 +435,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

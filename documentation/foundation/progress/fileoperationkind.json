@@ -2,34 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "When tracking file operations with the progress "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1416139-kind"
-    },
-    {
-      "type": "text",
-      "text": " set to "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind/1409141-file"
-    },
-    {
-      "type": "text",
-      "text": ", you must provide a value for the "
-    },
-    {
-      "type": "reference",
-      "isActive": true,
-      "identifier": "doc://com.apple.documentation/documentation/foundation/progressuserinfokey/1408097-fileoperationkindkey"
-    },
-    {
-      "type": "text",
-      "text": " in the user info dictionary. There are four possible values."
+      "text": "The kind of file operation."
     }
   ],
   "documentVersion": 0,
@@ -62,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSProgressFileOperationKind",
+    "parent": {
+      "title": "Progress"
+    },
     "symbolKind": "struct",
     "fragments": [
       {
@@ -99,8 +80,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -153,7 +134,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that conveys ongoing progress for a given task to the user."
+          "text": "An object that conveys ongoing progress to the user for a specified task."
         }
       ]
     },
@@ -180,30 +161,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/progressuserinfokey/1408097-fileoperationkindkey"
-    },
-    "doc://com.apple.documentation/documentation/swift/equatable": {
-      "title": "Equatable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/equatable"
-    },
-    "doc://com.apple.documentation/documentation/swift/hashable": {
-      "title": "Hashable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/hashable"
-    },
-    "doc://com.apple.documentation/documentation/swift/rawrepresentable": {
-      "title": "RawRepresentable",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/swift/rawrepresentable",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/swift/rawrepresentable"
     },
     "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1415785-copying": {
       "title": "copying",
@@ -289,6 +246,34 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/3726163-uploading": {
+      "title": "uploading",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/3726163-uploading",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/fileoperationkind/3726163-uploading",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The progress is tracking a file upload operation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "uploading"
+        },
+        {
+          "kind": "text",
+          "text": ": Progress.FileOperationKind"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1416155-receiving": {
       "title": "receiving",
       "type": "topic",
@@ -317,6 +302,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/swift/equatable": {
+      "title": "Equatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/equatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/equatable"
+    },
+    "doc://com.apple.documentation/documentation/swift/hashable": {
+      "title": "Hashable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/hashable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/hashable"
+    },
+    "doc://com.apple.documentation/documentation/swift/rawrepresentable": {
+      "title": "RawRepresentable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/rawrepresentable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/rawrepresentable"
+    },
     "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1924142-init": {
       "title": "init(_:)",
       "type": "topic",
@@ -324,6 +333,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/progress/fileoperationkind/1924142-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new kind of file operation using the specified string."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -342,6 +357,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/progress/fileoperationkind/1779939-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new kind of file operation using the raw value of a string you specify."
+        }
+      ],
       "fragments": [
         {
           "kind": "identifier",
@@ -358,6 +379,164 @@
         {
           "kind": "text",
           "text": ": String)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/3783501-duplicating": {
+      "title": "duplicating",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/3783501-duplicating",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/fileoperationkind/3783501-duplicating",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "duplicating"
+        },
+        {
+          "kind": "text",
+          "text": ": Progress.FileOperationKind"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/2865625-fileoperationkind": {
+      "title": "fileOperationKind",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/2865625-fileoperationkind",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/2865625-fileoperationkind",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The kind of file operation for the progress object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileOperationKind"
+        },
+        {
+          "kind": "text",
+          "text": ": Progress.FileOperationKind?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/2865663-fileurl": {
+      "title": "fileURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/2865663-fileurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/2865663-fileurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A URL that represents the file for the current progress object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileURL"
+        },
+        {
+          "kind": "text",
+          "text": ": URL?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/2895071-filetotalcount": {
+      "title": "fileTotalCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/2895071-filetotalcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/2895071-filetotalcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The total number of files for a file progress object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileTotalCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Int?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/2895120-filecompletedcount": {
+      "title": "fileCompletedCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/2895120-filecompletedcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/2895120-filecompletedcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of completed files for a file progress object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileCompletedCount"
+        },
+        {
+          "kind": "text",
+          "text": ": Int?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind": {
+      "title": "Progress.FileOperationKind",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/progress/fileoperationkind",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The kind of file operation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Progress.FileOperationKind"
         }
       ]
     },
@@ -384,21 +563,44 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Type Properties",
+      "title": "Creating Kinds of File Operation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1924142-init",
+        "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1779939-init"
+      ],
+      "anchor": "3762004"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Recognizing Kinds of File Operations",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1415785-copying",
         "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1410985-decompressingafterdownloading",
         "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1411252-downloading",
+        "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/3726163-uploading",
         "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1416155-receiving"
-      ]
+      ],
+      "anchor": "1973894"
     },
     {
       "kind": "taskGroup",
-      "title": "Initializers",
+      "title": "Type Properties",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1924142-init",
-        "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1779939-init"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/3783501-duplicating"
+      ],
+      "anchor": "3858242"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/progress/2865625-fileoperationkind",
+        "doc://com.apple.documentation/documentation/foundation/progress/2865663-fileurl",
+        "doc://com.apple.documentation/documentation/foundation/progress/2895071-filetotalcount",
+        "doc://com.apple.documentation/documentation/foundation/progress/2895120-filecompletedcount"
+      ],
+      "title": "Inspecting File Operation Progress Information",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -425,6 +627,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -432,10 +635,145 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When tracking file operations with the progress "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progress/1416139-kind"
+            },
+            {
+              "type": "text",
+              "text": " set to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progresskind/1409141-file"
+            },
+            {
+              "type": "text",
+              "text": ", provide a value for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/progressuserinfokey/1408097-fileoperationkindkey"
+            },
+            {
+              "type": "text",
+              "text": " in the user info dictionary."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To specify the kind of file operation, provide one of the following values:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1415785-copying"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1410985-decompressingafterdownloading"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1411252-downloading"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/3726163-uploading"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/progress/fileoperationkind/1416155-receiving"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

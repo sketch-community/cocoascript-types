@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@SparseMatrix_Double",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,31 +110,17 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868159-data": {
-      "title": "data",
+    "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double": {
+      "title": "SparseMatrix_Double",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868159-data",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparsematrix_double/2868159-data",
+      "url": "/documentation/accelerate/sparsematrix_double",
       "abstract": [
         {
           "type": "text",
-          "text": "The array of values stored contiguously in the nonzero blocks of the matrix, each block in column-major order."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868254-structure": {
-      "title": "structure",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868254-structure",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsematrix_double/2868254-structure",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The sparsity structure of the matrix."
+          "text": "A structure that contains a sparse matrix of double-precision, floating-point values."
         }
       ]
     },
@@ -147,17 +138,67 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double": {
-      "title": "SparseMatrix_Double",
+    "doc://com.apple.documentation/documentation/accelerate/2875479-sparsecleanup": {
+      "title": "SparseCleanup",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875479-sparsecleanup",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/accelerate/sparsematrix_double",
+      "url": "/documentation/accelerate/2875479-sparsecleanup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868254-structure": {
+      "title": "structure",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868254-structure",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsematrix_double/2868254-structure",
       "abstract": [
         {
           "type": "text",
-          "text": "A structure that contains a sparse matrix of double-precision, floating-point values."
+          "text": "The sparsity structure of the matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868159-data": {
+      "title": "data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868159-data",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsematrix_double/2868159-data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The array of contiguous values in the nonzero blocks of the matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure": {
+      "title": "SparseMatrixStructure",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsematrixstructure",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that represents the sparsity structure of a sparse matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t": {
+      "title": "SparseAttributes_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseattributes_t",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that represents the attributes of a matrix."
         }
       ]
     },
@@ -202,9 +243,19 @@
       "kind": "taskGroup",
       "title": "Inspecting a Matrix's Structure and Data",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868159-data",
-        "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868254-structure"
-      ]
+        "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868254-structure",
+        "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double/2868159-data"
+      ],
+      "anchor": "2869126"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Specifying the Structure and Attributes of a Sparse Matrix",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/sparsematrixstructure",
+        "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t"
+      ],
+      "anchor": "3704748"
     }
   ],
   "seeAlsoSections": [
@@ -214,7 +265,7 @@
         "doc://com.apple.documentation/documentation/accelerate/sparsematrix_float",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/conversion_from_other_formats"
       ],
-      "title": "Sparse Matrices",
+      "title": "Creating Sparse Matrices",
       "generated": true
     }
   ],
@@ -270,6 +321,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -292,7 +344,38 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The Accelerate framework uses Compressed Sparse Column (CSC) format to store sparse matrices. CSC stores the matrix as a series of column vectors where only the nonzero entries are specified as "
+              "text": "You typically use sparse matrices to represent the sparse coefficient matrix in the matrix equation "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Ax = b."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " A "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double"
+            },
+            {
+              "type": "text",
+              "text": " structure provides a pointer to its underlying data, and information about its structure and attributes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Accelerate framework uses the compressed sparse column (CSC) format to store sparse matrices. CSC stores the matrix as a series of column vectors that specifies only the nonzero entries as "
             },
             {
               "type": "codeVoice",
@@ -300,7 +383,34 @@
             },
             {
               "type": "text",
-              "text": " pairs. "
+              "text": " pairs. For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you finish using a sparse matrix, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/2875479-sparsecleanup"
+            },
+            {
+              "type": "text",
+              "text": " to release its references to any memory that the Sparse Solvers library allocates."
             }
           ]
         },
@@ -316,7 +426,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

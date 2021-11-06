@@ -1,10 +1,17 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The recipient of the user’s call request."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
+        "doc://com.apple.documentation/documentation/sirikit/voip_calling",
         "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter"
       ]
     ]
@@ -28,25 +35,33 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)INCallRecordFilter(py)participants",
+    "parent": {
+      "title": "INCallRecordFilter"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -81,13 +96,27 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/sirikit/voip_calling": {
+      "title": "VoIP Calling",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/voip_calling",
+      "url": "/documentation/sirikit/voip_calling",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter": {
       "title": "INCallRecordFilter",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/sirikit/incallrecordfilter",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/incallrecordfilter"
+      "url": "/documentation/sirikit/incallrecordfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filters a user specifies to redial a call."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
@@ -111,16 +140,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "primaryContentSections": [
@@ -171,6 +190,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -179,7 +199,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -5,7 +5,20 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/foundation",
-        "doc://com.apple.documentation/documentation/foundation/foundation_enumerations"
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsession",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetrics",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetrics",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics"
       ]
     ]
   },
@@ -28,35 +41,40 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSURLSessionTaskMetricsDomainResolutionProtocol",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -91,13 +109,53 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/foundation/foundation_enumerations": {
-      "title": "Foundation Enumerations",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/foundation_enumerations",
-      "url": "/documentation/foundation/foundation_enumerations",
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "url": "/documentation/foundation/url_loading_system",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession": {
+      "title": "NSURLSession",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession",
+      "url": "/documentation/foundation/nsurlsession",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate": {
+      "title": "NSURLSessionTaskDelegate",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskdelegate",
+      "url": "/documentation/foundation/nsurlsessiontaskdelegate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetrics": {
+      "title": "NSURLSessionTaskMetrics",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetrics",
+      "url": "/documentation/foundation/nsurlsessiontaskmetrics",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics": {
+      "title": "NSURLSessionTaskTransactionMetrics",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask": {
+      "title": "NSURLSessionTask",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask",
+      "url": "/documentation/foundation/nsurlsessiontask",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
@@ -147,6 +205,232 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsurlsessiontaskmetricsdomainresolutionprotocol/nsurlsessiontaskmetricsdomainresolutionprotocolunknown"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1643141-networkprotocolname": {
+      "title": "networkProtocolName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1643141-networkprotocolname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/1643141-networkprotocolname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The network protocol used to fetch the resource."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240642-remoteaddress": {
+      "title": "remoteAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240642-remoteaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3240642-remoteaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The IP address string of the remote interface for the connection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240643-remoteport": {
+      "title": "remotePort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240643-remoteport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3240643-remoteport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The port number of the remote interface for the connection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240636-localaddress": {
+      "title": "localAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240636-localaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3240636-localaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The IP address string of the local interface for the connection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240637-localport": {
+      "title": "localPort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240637-localport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3240637-localport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The port number of the local interface for the connection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240639-negotiatedtlsciphersuite": {
+      "title": "negotiatedTLSCipherSuite",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240639-negotiatedtlsciphersuite",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3240639-negotiatedtlsciphersuite",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The TLS cipher suite the task negotiated with the endpoint for the connection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240640-negotiatedtlsprotocolversion": {
+      "title": "negotiatedTLSProtocolVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240640-negotiatedtlsprotocolversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3240640-negotiatedtlsprotocolversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The TLS protocol version the task negotiated with the endpoint for the connection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240627-cellular": {
+      "title": "cellular",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240627-cellular",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3240627-cellular",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the connection operates over a cellular interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240635-expensive": {
+      "title": "expensive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240635-expensive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3240635-expensive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the connection operates over an expensive interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240628-constrained": {
+      "title": "constrained",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240628-constrained",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3240628-constrained",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the connection operates over an interface marked as constrained."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1642917-proxyconnection": {
+      "title": "proxyConnection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1642917-proxyconnection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/1642917-proxyconnection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicastes whether the task used a proxy connection to fetch the resource."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1643233-reusedconnection": {
+      "title": "reusedConnection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1643233-reusedconnection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/1643233-reusedconnection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the task used a persistent connection to fetch the resource."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240638-multipath": {
+      "title": "multipath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240638-multipath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3240638-multipath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the connection uses a successfully negotiated multipath protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1642919-resourcefetchtype": {
+      "title": "resourceFetchType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1642919-resourcefetchtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/1642919-resourcefetchtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates whether the resource was loaded, pushed, or retrieved from the local cache."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsresourcefetchtype": {
+      "title": "NSURLSessionTaskMetricsResourceFetchType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsresourcefetchtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontaskmetricsresourcefetchtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The manner in which a resource is fetched."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3674827-domainresolutionprotocol": {
+      "title": "domainResolutionProtocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3674827-domainresolutionprotocol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontasktransactionmetrics/3674827-domainresolutionprotocol"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsdomainresolutionprotocol": {
+      "title": "NSURLSessionTaskMetricsDomainResolutionProtocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsdomainresolutionprotocol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontaskmetricsdomainresolutionprotocol"
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -165,7 +449,32 @@
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsdomainresolutionprotocol/nsurlsessiontaskmetricsdomainresolutionprotocoltls",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsdomainresolutionprotocol/nsurlsessiontaskmetricsdomainresolutionprotocoludp",
         "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsdomainresolutionprotocol/nsurlsessiontaskmetricsdomainresolutionprotocolunknown"
-      ]
+      ],
+      "anchor": "3675173"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1643141-networkprotocolname",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240642-remoteaddress",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240643-remoteport",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240636-localaddress",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240637-localport",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240639-negotiatedtlsciphersuite",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240640-negotiatedtlsprotocolversion",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240627-cellular",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240635-expensive",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240628-constrained",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1642917-proxyconnection",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1643233-reusedconnection",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3240638-multipath",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/1642919-resourcefetchtype",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontaskmetricsresourcefetchtype",
+        "doc://com.apple.documentation/documentation/foundation/nsurlsessiontasktransactionmetrics/3674827-domainresolutionprotocol"
+      ],
+      "title": "Accessing Transaction Characteristics",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -230,6 +539,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -240,7 +550,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

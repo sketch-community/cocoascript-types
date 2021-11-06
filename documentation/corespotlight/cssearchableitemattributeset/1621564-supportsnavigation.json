@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A value that indicates whether it makes sense to support navigation to the location represented by the item."
+      "text": "A value that indicates whether the item contains information sufficient to provide navigation to the location it represents."
     }
   ],
   "documentVersion": 0,
@@ -34,25 +34,33 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)CSSearchableItemAttributeSet(py)supportsNavigation",
+    "parent": {
+      "title": "CSSearchableItemAttributeSet"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -127,7 +135,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that indicates whether it makes sense to support navigation to the location represented by the item."
+          "text": "A value that indicates whether the item contains information sufficient to provide navigation to the location it represents."
         }
       ]
     },
@@ -139,6 +147,20 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnumber"
     },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752012-actionidentifiers": {
+      "title": "actionIdentifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752012-actionidentifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/3752012-actionidentifiers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifiers that specify custom actions the app supports for the item."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621653-supportsphonecall": {
       "title": "supportsPhoneCall",
       "type": "topic",
@@ -149,7 +171,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that indicates whether it makes sense to allow a phone call to a number associated with the item."
+          "text": "A value that indicates whether the item contains information sufficient to allow a phone call to a number associated with the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752014-shareditemcontenttype": {
+      "title": "sharedItemContentType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752014-shareditemcontenttype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/cssearchableitemattributeset/3752014-shareditemcontenttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The file type of the item to enable the user to share items from Spotlight."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corespotlight/csactionidentifier": {
+      "title": "CSActionIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corespotlight/csactionidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corespotlight/csactionidentifier",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key that specifies the action’s identifier in a user activity."
         }
       ]
     },
@@ -164,7 +214,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621653-supportsphonecall"
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752012-actionidentifiers",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621653-supportsphonecall",
+        "doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3752014-shareditemcontenttype",
+        "doc://com.apple.documentation/documentation/corespotlight/csactionidentifier"
       ],
       "title": "Supporting Actions",
       "generated": true
@@ -208,6 +261,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -271,7 +325,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

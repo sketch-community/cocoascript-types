@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,20 +34,31 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INSetRadioStationIntent",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,13 +93,21 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent#2315141": {
       "title": "Table 1",
@@ -130,7 +149,8 @@
           "type": "text",
           "text": "A request to change the current radio station."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetradiostationintenthandling": {
       "title": "INSetRadioStationIntentHandling",
@@ -144,7 +164,8 @@
           "type": "text",
           "text": "The handler interface for changing a radio station."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetradiostationintentresponse": {
       "title": "INSetRadioStationIntentResponse",
@@ -158,7 +179,8 @@
           "type": "text",
           "text": "Your app’s response to a set radio station intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/inintent": {
       "title": "INIntent",
@@ -190,7 +212,8 @@
           "kind": "identifier",
           "text": "initWithRadioType:frequency:stationName:channel:presetNumber:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1649472-radiotype": {
       "title": "radioType",
@@ -204,7 +227,8 @@
           "type": "text",
           "text": "The type of radio tuner to use."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1649482-frequency": {
       "title": "frequency",
@@ -218,7 +242,8 @@
           "type": "text",
           "text": "The broadcast frequency of the radio station."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1649478-stationname": {
       "title": "stationName",
@@ -232,7 +257,8 @@
           "type": "text",
           "text": "The name associated with the radio station."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1778274-channel": {
       "title": "channel",
@@ -246,7 +272,8 @@
           "type": "text",
           "text": "The channel number of the station."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1649476-presetnumber": {
       "title": "presetNumber",
@@ -260,7 +287,8 @@
           "type": "text",
           "text": "The programmable preset assigned to the station."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -270,16 +298,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -296,7 +334,8 @@
       "title": "Initializing the Intent Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1778276-initwithradiotype"
-      ]
+      ],
+      "anchor": "2359207"
     },
     {
       "kind": "taskGroup",
@@ -307,7 +346,8 @@
         "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1649478-stationname",
         "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1778274-channel",
         "doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1649476-presetnumber"
-      ]
+      ],
+      "anchor": "2315140"
     }
   ],
   "seeAlsoSections": [
@@ -316,7 +356,7 @@
         "doc://com.apple.documentation/documentation/sirikit/insetradiostationintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/insetradiostationintentresponse"
       ],
-      "title": "Set Radio Station",
+      "title": "CarPlay Radio Station Settings",
       "generated": true
     }
   ],
@@ -354,6 +394,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -391,7 +432,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This properties of this class support identifying a radio station in several different ways, but a given instance of this class contains does not populate all of those properties. When resolving and confirming the parameters of this intent, use the properties that are available to change the station. "
+              "text": "This properties of this class support identifying a radio station in several different ways, but a given instance of this class contains doesn’t populate all of those properties. When resolving and confirming the parameters of this intent, use the properties that are available to change the station. "
             }
           ]
         },
@@ -550,7 +591,7 @@
             },
             {
               "type": "text",
-              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list is not exhaustive and Siri may recognize many other phrases."
+              "text": " provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive and Siri may recognize many other phrases."
             }
           ]
         },
@@ -1395,7 +1436,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "When managing CarPlay features, users do not need to include the name of the app in the phrases that they speak. Siri knows automatically when CarPlay is active and routes CarPlay-related intents to the app of the corresponding automotive vendor."
+              "text": "When managing CarPlay features, users don’t need to include the name of the app in the phrases that they speak. Siri knows automatically when CarPlay is active and routes CarPlay-related intents to the app of the corresponding automotive vendor."
             }
           ]
         }
@@ -1403,7 +1444,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

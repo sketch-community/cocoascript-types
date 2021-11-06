@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The types of source frame pixel buffer attributes a video compositor can accept as input."
+      "text": "The pixel buffer attributes that the compositor accepts for source frames."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)AVVideoCompositing(py)sourcePixelBufferAttributes",
+    "parent": {
+      "title": "AVVideoCompositing"
+    },
     "symbolKind": "intfp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -174,21 +182,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor": {
-      "title": "requiredPixelBufferAttributesForRenderContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The pixel buffer attributes required by the video compositor for new buffers created for processing."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1388610-sourcepixelbufferattributes": {
       "title": "sourcePixelBufferAttributes",
       "type": "topic",
@@ -200,7 +193,67 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The types of source frame pixel buffer attributes a video compositor can accept as input."
+          "text": "The pixel buffer attributes that the compositor accepts for source frames."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor": {
+      "title": "requiredPixelBufferAttributesForRenderContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The pixel buffer attributes that the compositor requires for pixel buffers that it creates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3626026-supportshdrsourceframes": {
+      "title": "supportsHDRSourceFrames",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3626026-supportshdrsourceframes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideocompositing/3626026-supportshdrsourceframes",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the compositor handles source frames that contain high dynamic range (HDR) properties."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes": {
+      "title": "supportsWideColorSourceFrames",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the compositor handles source frames that contains wide color properties."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3750314-canconformcolorofsourceframes": {
+      "title": "canConformColorOfSourceFrames",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3750314-canconformcolorofsourceframes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideocompositing/3750314-canconformcolorofsourceframes",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the compositor conforms the color space of source frames to the composition color space."
         }
       ]
     },
@@ -212,22 +265,15 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor"
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor",
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3626026-supportshdrsourceframes",
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes",
+        "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/3750314-canconformcolorofsourceframes"
       ],
-      "title": "Pixel Buffer Attributes",
+      "title": "Inspecting Processing Requirements",
       "generated": true
     }
   ],
@@ -287,6 +333,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -405,7 +452,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

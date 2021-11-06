@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Values that indicate the status of a property."
+      "text": "Values that indicate the loaded status of a property."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVKeyValueStatus",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -146,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The property value isn’t fully loaded."
+          "text": "The system is loading the property value."
         }
       ]
     },
@@ -174,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The attempt to load the property value failed."
+          "text": "The system is unable to load the propery value."
         }
       ]
     },
@@ -188,7 +193,32 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset canceled the loading of the property value."
+          "text": "You canceled loading a property value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys": {
+      "title": "loadValuesAsynchronouslyForKeys:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the asset to load the values of all of the specified keys that aren’t already loaded."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "loadValuesAsynchronouslyForKeys:completionHandler:"
         }
       ]
     },
@@ -227,32 +257,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Values that indicate the status of a property."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys": {
-      "title": "loadValuesAsynchronouslyForKeys:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
-      "required": true,
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Tells the asset to load the values of all of the specified keys that aren’t already loaded."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "loadValuesAsynchronouslyForKeys:completionHandler:"
+          "text": "Values that indicate the loaded status of a property."
         }
       ]
     },
@@ -267,21 +272,22 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Statuses",
+      "title": "Status Values",
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avkeyvaluestatus/avkeyvaluestatusunknown",
         "doc://com.apple.documentation/documentation/avfoundation/avkeyvaluestatus/avkeyvaluestatusloading",
         "doc://com.apple.documentation/documentation/avfoundation/avkeyvaluestatus/avkeyvaluestatusloaded",
         "doc://com.apple.documentation/documentation/avfoundation/avkeyvaluestatus/avkeyvaluestatusfailed",
         "doc://com.apple.documentation/documentation/avfoundation/avkeyvaluestatus/avkeyvaluestatuscancelled"
-      ]
+      ],
+      "anchor": "1605533"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey",
-        "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys"
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1387321-loadvaluesasynchronouslyforkeys",
+        "doc://com.apple.documentation/documentation/avfoundation/avasynchronouskeyvalueloading/1386816-statusofvalueforkey"
       ],
       "title": "Loading Properties",
       "generated": true
@@ -349,6 +355,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -359,7 +366,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

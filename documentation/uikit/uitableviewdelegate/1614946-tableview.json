@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Asks the delegate for a view object to display in the footer of the specified section of the table view."
+      "text": "Asks the delegate for a view to display in the footer of the specified section of the table view."
     }
   ],
   "documentVersion": 0,
@@ -44,25 +44,33 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)UITableViewDelegate(im)tableView:viewForFooterInSection:",
+    "parent": {
+      "title": "UITableViewDelegate"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -135,22 +143,6 @@
       "role": "symbol",
       "url": "/documentation/uikit/uitableview"
     },
-    "doc://com.apple.documentation/documentation/uikit/uilabel": {
-      "title": "UILabel",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uilabel"
-    },
-    "doc://com.apple.documentation/documentation/uikit/uiimageview": {
-      "title": "UIImageView",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimageview",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/uikit/uiimageview"
-    },
     "doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614967-tableview": {
       "title": "tableView:heightForFooterInSection:",
       "type": "topic",
@@ -168,6 +160,30 @@
           "text": "tableView:heightForFooterInSection:"
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uitableview/1614846-sectionfooterheight": {
+      "title": "sectionFooterHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614846-sectionfooterheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uitableview/1614846-sectionfooterheight"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uilabel": {
+      "title": "UILabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uilabel"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiimageview": {
+      "title": "UIImageView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiimageview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiimageview"
     },
     "doc://com.apple.documentation/documentation/uikit/uiview": {
       "title": "UIView",
@@ -196,7 +212,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Asks the delegate for a view object to display in the header of the specified section of the table view."
+          "text": "Asks the delegate for a view to display in the header of the specified section of the table view."
         }
       ],
       "fragments": [
@@ -221,7 +237,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Asks the delegate for a view object to display in the footer of the specified section of the table view."
+          "text": "Asks the delegate for a view to display in the footer of the specified section of the table view."
         }
       ],
       "fragments": [
@@ -390,6 +406,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -446,7 +463,25 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The view object to display at the bottom of the specified section. "
+              "text": "A "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiimageview"
+            },
+            {
+              "type": "text",
+              "text": ", or custom view to display at the top of the specified section."
             }
           ]
         }
@@ -466,25 +501,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Use this method to return a "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uilabel"
-            },
-            {
-              "type": "text",
-              "text": ", "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/uikit/uiimageview"
-            },
-            {
-              "type": "text",
-              "text": ", or custom view for your footer. If you implement this method, you must also implement the "
+              "text": "If you implement this method but don’t implement "
             },
             {
               "type": "reference",
@@ -493,15 +510,28 @@
             },
             {
               "type": "text",
-              "text": " method to specify the height of your custom view."
+              "text": ", the table view calculates the height automatically, or uses the value of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uitableview/1614846-sectionfooterheight"
+            },
+            {
+              "type": "text",
+              "text": " if set."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

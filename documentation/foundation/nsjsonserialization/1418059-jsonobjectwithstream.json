@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "5.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "5.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSJSONSerialization(cm)JSONObjectWithStream:options:error:",
+    "parent": {
+      "title": "NSJSONSerialization"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,22 +128,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions": {
-      "title": "NSJSONReadingOptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsjsonreadingoptions"
-    },
-    "doc://com.apple.documentation/documentation/foundation/1448136-nserror_codes/nspropertylistreadcorrupterror": {
-      "title": "NSPropertyListReadCorruptError",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/1448136-nserror_codes/nspropertylistreadcorrupterror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/1448136-nserror_codes/nspropertylistreadcorrupterror"
-    },
     "link-3023437": {
       "title": "Error Handling",
       "type": "topic",
@@ -159,6 +151,28 @@
       "kind": "article",
       "role": "article",
       "url": "/documentation/swift/cocoa_design_patterns/about_imported_cocoa_error_parameters"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions": {
+      "title": "NSJSONReadingOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsjsonreadingoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options used when creating Foundation objects from JSON data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/1448136-nserror_codes/nspropertylistreadcorrupterror": {
+      "title": "NSPropertyListReadCorruptError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/1448136-nserror_codes/nspropertylistreadcorrupterror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/1448136-nserror_codes/nspropertylistreadcorrupterror"
     },
     "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1415493-jsonobjectwithdata": {
       "title": "JSONObjectWithData:options:error:",
@@ -259,7 +273,8 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1415493-jsonobjectwithdata"
+        "doc://com.apple.documentation/documentation/foundation/nsjsonserialization/1415493-jsonobjectwithdata",
+        "doc://com.apple.documentation/documentation/foundation/nsjsonreadingoptions"
       ],
       "title": "Creating a JSON Object",
       "generated": true
@@ -390,6 +405,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -421,7 +437,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The stream should be opened and configured. "
+                  "text": "The stream should be open and configured. "
                 }
               ]
             }
@@ -626,7 +642,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

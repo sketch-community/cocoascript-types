@@ -42,27 +42,32 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@NSURLResourceKey",
@@ -79,8 +84,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -399,14 +404,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsurl/1408208-setresourcevalues"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
-      "title": "NSNumber",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsnumber"
     },
     "doc://com.apple.documentation/documentation/foundation/nsstring": {
       "title": "NSString",
@@ -2041,7 +2038,7 @@
         },
         {
           "type": "text",
-          "text": " object (read-only) (read-only)."
+          "text": " object (read-only)."
         }
       ],
       "fragments": [
@@ -3689,16 +3686,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Key for determining whether the resource is excluded from all backups of app data, returned as a Boolean "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
-        },
-        {
-          "type": "text",
-          "text": " object (read-write)."
+          "text": "A key for indicating whether the system excludes the resource from all backups of app data."
         }
       ],
       "fragments": [
@@ -4693,6 +4681,28 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/urlresourcekey/3726164-ubiquitousitemisexcludedfromsync": {
+      "title": "ubiquitousItemIsExcludedFromSyncKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/urlresourcekey/3726164-ubiquitousitemisexcludedfromsync",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/urlresourcekey/3726164-ubiquitousitemisexcludedfromsync",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "ubiquitousItemIsExcludedFromSyncKey"
+        },
+        {
+          "kind": "text",
+          "text": ": URLResourceKey"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/urlresourcekey/3656146-volumesupportsfileprotectionkey": {
       "title": "volumeSupportsFileProtectionKey",
       "type": "topic",
@@ -4940,16 +4950,16 @@
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.2 Release Candidate",
-        "12.3 Release Candidate"
+        "13.1",
+        "13.2 beta 1"
       ]
     },
     "major": {
       "change": "modified",
       "platform": "Xcode",
       "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
+        "13.0",
+        "13.2 beta 1"
       ]
     }
   },
@@ -4972,7 +4982,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1408690-isapplicationkey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1418349-applicationisscriptablekey"
-      ]
+      ],
+      "anchor": "2928570"
     },
     {
       "kind": "taskGroup",
@@ -4980,7 +4991,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1410514-isdirectorykey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1412731-parentdirectoryurlkey"
-      ]
+      ],
+      "anchor": "2928571"
     },
     {
       "kind": "taskGroup",
@@ -5000,7 +5012,8 @@
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1410531-preferredioblocksizekey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1415519-totalfileallocatedsizekey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1411170-totalfilesizekey"
-      ]
+      ],
+      "anchor": "2928572"
     },
     {
       "kind": "taskGroup",
@@ -5011,7 +5024,8 @@
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/2887126-volumeavailablecapacityforimport",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/2887125-volumeavailablecapacityforopport",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1415933-volumetotalcapacitykey"
-      ]
+      ],
+      "anchor": "2923130"
     },
     {
       "kind": "taskGroup",
@@ -5027,7 +5041,8 @@
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1415182-volumeisreadonlykey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1409980-volumeisremovablekey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1643139-volumeisrootfilesystemkey"
-      ]
+      ],
+      "anchor": "2923131"
     },
     {
       "kind": "taskGroup",
@@ -5064,7 +5079,8 @@
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1408767-volumeurlforremountingkey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1412783-volumeurlkey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1412363-volumeuuidstringkey"
-      ]
+      ],
+      "anchor": "2919279"
     },
     {
       "kind": "taskGroup",
@@ -5089,6 +5105,7 @@
         "doc://com.apple.documentation/documentation/foundation/urlubiquitousshareditemrole",
         "doc://com.apple.documentation/documentation/foundation/urlubiquitousshareditempermissions"
       ],
+      "anchor": "2559259",
       "abstract": [
         {
           "type": "text",
@@ -5103,7 +5120,8 @@
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1408744-thumbnailkey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1410313-thumbnaildictionarykey",
         "doc://com.apple.documentation/documentation/foundation/urlthumbnaildictionaryitem"
-      ]
+      ],
+      "anchor": "2931415"
     },
     {
       "kind": "taskGroup",
@@ -5141,7 +5159,8 @@
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1410718-tagnameskey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1416354-typeidentifierkey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/3563985-contenttypekey"
-      ]
+      ],
+      "anchor": "1892053"
     },
     {
       "kind": "taskGroup",
@@ -5149,7 +5168,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1924204-init",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1780148-init"
-      ]
+      ],
+      "anchor": "2859275"
     },
     {
       "kind": "taskGroup",
@@ -5158,7 +5178,8 @@
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1572053-ubiquitousitemisdownloadedkey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1572046-ubiquitousitempercentdownloadedk",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/1572055-ubiquitousitempercentuploadedkey"
-      ]
+      ],
+      "anchor": "2931442"
     },
     {
       "kind": "taskGroup",
@@ -5169,8 +5190,10 @@
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/3616045-issparsekey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/3616046-mayhaveextendedattributeskey",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/3616047-maysharefilecontentkey",
+        "doc://com.apple.documentation/documentation/foundation/urlresourcekey/3726164-ubiquitousitemisexcludedfromsync",
         "doc://com.apple.documentation/documentation/foundation/urlresourcekey/3656146-volumesupportsfileprotectionkey"
-      ]
+      ],
+      "anchor": "3616305"
     }
   ],
   "seeAlsoSections": [
@@ -5211,6 +5234,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -5258,7 +5282,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

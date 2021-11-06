@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/carplay",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintenthandling"
       ]
     ]
@@ -35,20 +35,34 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INSaveProfileInCarIntentHandling(im)resolveProfileNumberForSaveProfileInCar:withCompletion:",
+    "parent": {
+      "title": "INSaveProfileInCarIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -83,10 +97,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/carplay": {
-      "title": "CarPlay",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/carplay",
-      "url": "/documentation/sirikit/carplay",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -104,6 +118,14 @@
           "text": "The handler interface for saving vehicle environment settings to a user-specified profile."
         }
       ]
+    },
+    "link-3866840": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3866840",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintent": {
       "title": "INSaveProfileInCarIntent",
@@ -144,7 +166,8 @@
           "kind": "identifier",
           "text": "resolveProfileNumberForSaveProfileInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintenthandling/2727144-resolveprofilenameforsaveprofile": {
       "title": "resolveProfileNameForSaveProfileInCar:withCompletion:",
@@ -169,7 +192,8 @@
           "kind": "identifier",
           "text": "resolveProfileNameForSaveProfileInCar:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -179,6 +203,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -280,6 +324,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -336,7 +381,7 @@
                         "inlineContent": [
                           {
                             "type": "text",
-                            "text": "The object containing the details of your proposed resolution. For successful resolutions, create a resolution object whose value contains the index of the profile you intend to use. If the index does not correspond to an available profile slot, you might specify a different slot and ask the user for confirmation."
+                            "text": "The object containing the details of your proposed resolution. For successful resolutions, create a resolution object whose value contains the index of the profile you intend to use. If the index doesn’t correspond to an available profile slot, you might specify a different slot and ask the user for confirmation."
                           }
                         ]
                       }
@@ -363,7 +408,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Implement this method to validate the profile number supplied by the user. If you do not implement this method, SiriKit assumes that you are able to save the profile using the specified index."
+              "text": "Implement this method to validate the profile number supplied by the user. If you don’t implement this method, SiriKit assumes that you’re able to save the profile using the specified index."
             }
           ]
         }
@@ -371,7 +416,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

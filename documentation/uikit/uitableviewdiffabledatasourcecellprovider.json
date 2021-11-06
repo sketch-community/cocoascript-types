@@ -36,25 +36,30 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@T@UITableViewDiffableDataSourceCellProvider",
     "symbolKind": "tdef"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -243,7 +248,7 @@
             },
             {
               "kind": "text",
-              "text": " *, "
+              "text": " *tableView, "
             },
             {
               "kind": "typeIdentifier",
@@ -253,7 +258,7 @@
             },
             {
               "kind": "text",
-              "text": " *, "
+              "text": " *indexPath, "
             },
             {
               "kind": "keyword",
@@ -261,11 +266,12 @@
             },
             {
               "kind": "text",
-              "text": ");"
+              "text": " itemIdentifier);"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -286,7 +292,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The table view for which this cell is being configured."
+                  "text": "The table view to configure this cell for."
                 }
               ]
             },
@@ -322,7 +328,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The identifier of the item associated with this cell.  "
+                  "text": "The identifier of the item for this cell.  "
                 }
               ]
             },
@@ -348,7 +354,15 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A configured cell object."
+              "text": "A non-"
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " configured cell object. The cell provider must return a valid cell object to the table view."
             }
           ]
         },
@@ -360,7 +374,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

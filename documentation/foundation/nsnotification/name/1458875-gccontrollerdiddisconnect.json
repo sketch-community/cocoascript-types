@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted immediately after a controller is disconnected from the device."
+      "text": "Posts after a controller disconnects from the device."
     }
   ],
   "documentVersion": 0,
@@ -49,25 +49,33 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@GCControllerDidDisconnectNotification",
+    "parent": {
+      "title": "NSNotification.Name"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -85,8 +93,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -179,7 +187,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted immediately after a new controller is connected to the device."
+          "text": "Posts after a controller connects to the device."
         }
       ],
       "fragments": [
@@ -207,7 +215,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted immediately after a controller is disconnected from the device."
+          "text": "Posts after a controller disconnects from the device."
         }
       ],
       "fragments": [
@@ -218,6 +226,230 @@
         {
           "kind": "identifier",
           "text": "GCControllerDidDisconnect"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3547191-gccontrollerdidbecomecurrent": {
+      "title": "GCControllerDidBecomeCurrent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3547191-gccontrollerdidbecomecurrent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3547191-gccontrollerdidbecomecurrent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posts when a controller becomes the current controller."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "GCControllerDidBecomeCurrent"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3547192-gccontrollerdidstopbeingcurrent": {
+      "title": "GCControllerDidStopBeingCurrent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3547192-gccontrollerdidstopbeingcurrent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3547192-gccontrollerdidstopbeingcurrent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Posts when a controller stops being the current controller."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "GCControllerDidStopBeingCurrent"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626175-gckeyboarddidconnect": {
+      "title": "GCKeyboardDidConnect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626175-gckeyboarddidconnect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3626175-gckeyboarddidconnect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that posts after a keyboard connects to the device."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "GCKeyboardDidConnect"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626176-gckeyboarddiddisconnect": {
+      "title": "GCKeyboardDidDisconnect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626176-gckeyboarddiddisconnect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3626176-gckeyboarddiddisconnect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that posts after a single keyboard, or the last of multiple keyboards, disconnects from the device."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "GCKeyboardDidDisconnect"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626184-gcmousedidbecomecurrent": {
+      "title": "GCMouseDidBecomeCurrent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626184-gcmousedidbecomecurrent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3626184-gcmousedidbecomecurrent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that posts when a mouse becomes the most recent mouse that the user connects."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "GCMouseDidBecomeCurrent"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626185-gcmousedidconnect": {
+      "title": "GCMouseDidConnect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626185-gcmousedidconnect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3626185-gcmousedidconnect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that posts after a mouse connects to the device."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "GCMouseDidConnect"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626186-gcmousediddisconnect": {
+      "title": "GCMouseDidDisconnect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626186-gcmousediddisconnect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3626186-gcmousediddisconnect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that posts after a mouse disconnects from the device."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "GCMouseDidDisconnect"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626187-gcmousedidstopbeingcurrent": {
+      "title": "GCMouseDidStopBeingCurrent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626187-gcmousedidstopbeingcurrent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnotification/name/3626187-gcmousedidstopbeingcurrent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that posts when a mouse stops being the most recent mouse that the user connects."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "GCMouseDidStopBeingCurrent"
         },
         {
           "kind": "text",
@@ -236,9 +468,17 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458856-gccontrollerdidconnect"
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/1458856-gccontrollerdidconnect",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3547191-gccontrollerdidbecomecurrent",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3547192-gccontrollerdidstopbeingcurrent",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626175-gckeyboarddidconnect",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626176-gckeyboarddiddisconnect",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626184-gcmousedidbecomecurrent",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626185-gcmousedidconnect",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626186-gcmousediddisconnect",
+        "doc://com.apple.documentation/documentation/foundation/nsnotification/name/3626187-gcmousedidstopbeingcurrent"
       ],
-      "title": "Notifications",
+      "title": "GameController",
       "generated": true
     }
   ],
@@ -294,6 +534,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -319,12 +560,12 @@
             },
             {
               "type": "reference",
-              "isActive": false,
+              "isActive": true,
               "identifier": "doc://com.apple.documentation/documentation/gamecontroller/gccontroller"
             },
             {
               "type": "text",
-              "text": " object that represented the disconnected device."
+              "text": " object that disconnects from the device."
             }
           ]
         }
@@ -332,7 +573,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

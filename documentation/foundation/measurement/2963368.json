@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Subtract one measurement from another."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "10.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation11MeasurementV1soiyACyxGAE_AEtFZ",
+    "parent": {
+      "title": "Measurement"
+    },
     "symbolKind": "opfunc",
     "fragments": [
       {
@@ -75,8 +89,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -117,6 +131,294 @@
       "role": "symbol",
       "url": "/documentation/foundation/measurement"
     },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2293057": {
+      "title": "*(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293057",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2293057",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiply a scalar value by a measurement."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "* "
+        },
+        {
+          "kind": "text",
+          "text": "(Double, Measurement<UnitType>) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2293711": {
+      "title": "*(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293711",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2293711",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiply a measurement by a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "* "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Double) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2963366": {
+      "title": "+(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2963366",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2963366",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add two measurements."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "+ "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2983377": {
+      "title": "+(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2983377",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2983377",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds two measurements of the same dimension."
+        }
+      ],
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "UnitType",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " conforms to "
+          },
+          {
+            "code": "Dimension",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "+ "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2963368": {
+      "title": "-(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2963368",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2963368",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Subtract one measurement from another."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "- "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2983378": {
+      "title": "-(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2983378",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2983378",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Subtracts two measurements of the same dimension."
+        }
+      ],
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "UnitType",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " conforms to "
+          },
+          {
+            "code": "Dimension",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "- "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2293011": {
+      "title": "/(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293011",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2293011",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Divide a scalar value by a measurement."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "/ "
+        },
+        {
+          "kind": "text",
+          "text": "(Double, Measurement<UnitType>) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2293481": {
+      "title": "/(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293481",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2293481",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Divide a measurement by a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "/ "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Double) -> Measurement<UnitType>"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -125,6 +427,21 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/measurement/2293057",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2293711",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2963366",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2983377",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2983378",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2293011",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2293481"
+      ],
+      "title": "Operating on a Measurement",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -174,7 +491,16 @@
             },
             {
               "kind": "text",
-              "text": "<UnitType>"
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation11MeasurementV8UnitTypexmfp",
+              "text": "UnitType"
+            },
+            {
+              "kind": "text",
+              "text": ">"
             },
             {
               "kind": "text",
@@ -196,7 +522,16 @@
             },
             {
               "kind": "text",
-              "text": "<UnitType>"
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation11MeasurementV8UnitTypexmfp",
+              "text": "UnitType"
+            },
+            {
+              "kind": "text",
+              "text": ">"
             },
             {
               "kind": "text",
@@ -210,11 +545,21 @@
             },
             {
               "kind": "text",
-              "text": "<UnitType>"
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation11MeasurementV8UnitTypexmfp",
+              "text": "UnitType"
+            },
+            {
+              "kind": "text",
+              "text": ">"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -222,10 +567,90 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "lhs",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A measurement."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rhs",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Another measurement, to subtract from "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "lhs"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The result of subtracting "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rhs"
+            },
+            {
+              "type": "text",
+              "text": " from "
+            },
+            {
+              "type": "codeVoice",
+              "code": "lhs"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

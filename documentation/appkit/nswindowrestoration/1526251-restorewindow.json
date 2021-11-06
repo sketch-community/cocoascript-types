@@ -36,10 +36,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSWindowRestoration(cm)restoreWindowWithIdentifier:state:completionHandler:",
+    "parent": {
+      "title": "NSWindowRestoration"
+    },
     "symbolKind": "intfcm",
     "fragments": [
       {
@@ -81,8 +84,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -138,6 +141,22 @@
           "text": "A set of methods that restoration classes must implement to handle the recreation of windows. "
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindowrestoration/1526251-restorewindow#3807763": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindowrestoration/1526251-restorewindow#3807763",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/appkit/nswindowrestoration/1526251-restorewindow#3807763"
+    },
+    "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously": {
+      "title": "Calling Objective-C APIs Asynchronously",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/swift/calling_objective-c_apis_asynchronously"
     },
     "devLink-1744465": {
       "identifier": "devLink-1744465",
@@ -504,6 +523,51 @@
           "type": "heading"
         },
         {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:"
+                }
+              ]
+            },
+            {
+              "type": "codeListing",
+              "code": [
+                "static func restoreWindow(withIdentifier identifier: NSUserInterfaceItemIdentifier, state: NSCoder) async throws -> NSWindow"
+              ],
+              "syntax": "swift",
+              "metadata": {
+                "anchor": "3807763",
+                "title": "Listing 1"
+              }
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For information about concurrency and asynchronous code in Swift, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/swift/calling_objective-c_apis_asynchronously"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important",
+          "name": "Concurrency Note"
+        },
+        {
           "type": "paragraph",
           "inlineContent": [
             {
@@ -558,7 +622,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

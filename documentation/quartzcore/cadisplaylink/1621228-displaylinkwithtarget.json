@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a new display link."
+      "text": "Creates a display link with the target and selector you specify."
     }
   ],
   "documentVersion": 0,
@@ -34,25 +34,33 @@
       {
         "name": "iOS",
         "introducedAt": "3.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.1",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)CADisplayLink(cm)displayLinkWithTarget:selector:",
+    "parent": {
+      "title": "CADisplayLink"
+    },
     "symbolKind": "clm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,7 +121,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a new display link."
+          "text": "Creates a display link with the target and selector you specify."
         }
       ],
       "fragments": [
@@ -213,6 +221,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -233,7 +242,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "An object to be notified when the screen should be updated."
+                  "text": "An object the system notifies to update the screen."
                 }
               ]
             }
@@ -269,7 +278,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "A newly constructed display link."
+              "text": "A new "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink"
+            },
+            {
+              "type": "text",
+              "text": " object."
             }
           ]
         }
@@ -289,7 +307,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The selector to be called on the target must be a method with the following signature:"
+              "text": "The selector on the target must be a method with the following signature, where sender is the display link returned by this method."
             }
           ]
         },
@@ -309,28 +327,6 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "where "
-            },
-            {
-              "type": "emphasis",
-              "inlineContent": [
-                {
-                  "type": "text",
-                  "text": "sender"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " is the display link returned by this method."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
               "text": "The newly constructed display link retains the target."
             }
           ]
@@ -339,7 +335,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

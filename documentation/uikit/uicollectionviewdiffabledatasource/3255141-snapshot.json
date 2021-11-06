@@ -44,25 +44,33 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:5UIKit34UICollectionViewDiffableDataSourceC8snapshotAA010NSDiffableeF8SnapshotVyxq_GyF",
+    "parent": {
+      "title": "UICollectionViewDiffableDataSource"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -80,8 +88,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -180,6 +188,42 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3795617-apply": {
+      "title": "apply(_:animatingDifferences:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3795617-apply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3795617-apply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "apply"
+        },
+        {
+          "kind": "text",
+          "text": "(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "animatingDifferences"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3375795-apply": {
       "title": "apply(_:animatingDifferences:completion:)",
       "type": "topic",
@@ -190,7 +234,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Updates the UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler. "
+          "text": "Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes and executing a completion handler. "
         }
       ],
       "fragments": [
@@ -224,6 +268,70 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3804469-applysnapshotusingreloaddata": {
+      "title": "applySnapshotUsingReloadData(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3804469-applysnapshotusingreloaddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3804469-applysnapshotusingreloaddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "applySnapshotUsingReloadData"
+        },
+        {
+          "kind": "text",
+          "text": "(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3804470-applysnapshotusingreloaddata": {
+      "title": "applySnapshotUsingReloadData(_:completion:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3804470-applysnapshotusingreloaddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uicollectionviewdiffabledatasource/3804470-applysnapshotusingreloaddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes, optionally executing a completion handler. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "applySnapshotUsingReloadData"
+        },
+        {
+          "kind": "text",
+          "text": "(NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "completion"
+        },
+        {
+          "kind": "text",
+          "text": ": (() -> Void)?)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -235,7 +343,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3375795-apply"
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3795617-apply",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3375795-apply",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3804469-applysnapshotusingreloaddata",
+        "doc://com.apple.documentation/documentation/uikit/uicollectionviewdiffabledatasource/3804470-applysnapshotusingreloaddata"
       ],
       "title": "Updating Data",
       "generated": true
@@ -250,6 +361,14 @@
             "swift"
           ],
           "tokens": [
+            {
+              "kind": "keyword",
+              "text": "nonisolated"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
             {
               "kind": "keyword",
               "text": "func"
@@ -274,11 +393,30 @@
             },
             {
               "kind": "text",
-              "text": "<SectionIdentifierType, ItemIdentifierType>"
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:5UIKit34UICollectionViewDiffableDataSourceC21SectionIdentifierTypexmfp",
+              "text": "SectionIdentifierType"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:5UIKit34UICollectionViewDiffableDataSourceC18ItemIdentifierTypeq_mfp",
+              "text": "ItemIdentifierType"
+            },
+            {
+              "kind": "text",
+              "text": ">"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -307,7 +445,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

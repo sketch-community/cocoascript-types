@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Returns a Boolean value that indicates whether the specified output settings support a specified media type."
+      "text": "Determines whether the output file format supports the output settings for a specific media type."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter(im)canApplyOutputSettings:forMediaType:",
+    "parent": {
+      "title": "AVAssetWriter"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
+          "text": "An object that writes media data to a container file."
         }
       ]
     },
@@ -164,6 +172,34 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avmediatype"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs": {
+      "title": "inputs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388264-inputs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The inputs an asset writer contains."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes": {
+      "title": "availableMediaTypes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388730-availablemediatypes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The media types the asset writer supports adding as inputs."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings": {
       "title": "canApplyOutputSettings:forMediaType:",
       "type": "topic",
@@ -174,7 +210,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value that indicates whether the specified output settings support a specified media type."
+          "text": "Determines whether the output file format supports the output settings for a specific media type."
         }
       ],
       "fragments": [
@@ -188,73 +224,51 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata": {
-      "title": "metadata",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput": {
+      "title": "canAddInput:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387974-metadata",
+      "url": "/documentation/avfoundation/avassetwriter/1387863-canaddinput",
       "abstract": [
         {
           "type": "text",
-          "text": "The collection of metadata written to the receiver's output file."
+          "text": "Determines whether the asset writer supports adding the input."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canAddInput:"
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval": {
-      "title": "movieFragmentInterval",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput": {
+      "title": "addInput:",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
+      "url": "/documentation/avfoundation/avassetwriter/1390389-addinput",
       "abstract": [
         {
           "type": "text",
-          "text": "The frequency at which to write movie fragments"
+          "text": "Adds an input to an asset writer."
         }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint": {
-      "title": "overallDurationHint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
-      "abstract": [
+      ],
+      "fragments": [
         {
-          "type": "text",
-          "text": "A hint of the final duration of the file written for file types that support movie fragments."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale": {
-      "title": "movieTimeScale",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1386762-movietimescale",
-      "abstract": [
+          "kind": "text",
+          "text": "- "
+        },
         {
-          "type": "text",
-          "text": "The asset-level time scale to use."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse": {
-      "title": "shouldOptimizeForNetworkUse",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether to write the output file to make it more suitable for playback over a network."
+          "kind": "identifier",
+          "text": "addInput:"
         }
       ]
     },
@@ -269,13 +283,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387974-metadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388408-overalldurationhint",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386762-movietimescale",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388730-availablemediatypes",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput"
       ],
-      "title": "Configuring Output",
+      "title": "Configuring Inputs",
       "generated": true
     }
   ],
@@ -377,6 +390,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -412,7 +426,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The media type for which the output settings are validated."
+                  "text": "The media type to validate the output settings for."
                 }
               ]
             }
@@ -439,23 +453,7 @@
             },
             {
               "type": "text",
-              "text": " if the output settings in "
-            },
-            {
-              "type": "codeVoice",
-              "code": "outputSettings"
-            },
-            {
-              "type": "text",
-              "text": " support "
-            },
-            {
-              "type": "codeVoice",
-              "code": "mediaType"
-            },
-            {
-              "type": "text",
-              "text": ", otherwise "
+              "text": " if the format supports the output settings; otherwise, "
             },
             {
               "type": "reference",
@@ -484,7 +482,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You can use this method to test, for example, whether video output settings that specify H.264 compression will fail (as would be the case if the container format for which the writer was initialized does not support the carriage of H.264-compressed video)."
+              "text": "Use this method to determine the compatibility of output settings for a particular media type. For example, video compression settings that specify H.264 compression aren’t compatible with file formats that don’t contain H.264-compressed video."
             }
           ]
         }
@@ -492,7 +490,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

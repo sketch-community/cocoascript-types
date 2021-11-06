@@ -34,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@CKAccountStatus",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,6 +118,20 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsinteger"
     },
+    "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusavailable": {
+      "title": "CKAccountStatusAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckaccountstatus/ckaccountstatusavailable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The user’s iCloud account is available. "
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine": {
       "title": "CKAccountStatusCouldNotDetermine",
       "type": "topic",
@@ -127,17 +146,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusavailable": {
-      "title": "CKAccountStatusAvailable",
+    "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusnoaccount": {
+      "title": "CKAccountStatusNoAccount",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusavailable",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusnoaccount",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckaccountstatus/ckaccountstatusavailable",
+      "url": "/documentation/cloudkit/ckaccountstatus/ckaccountstatusnoaccount",
       "abstract": [
         {
           "type": "text",
-          "text": "The user’s iCloud account is available. "
+          "text": "The device doesn’t have an iCloud account."
         }
       ]
     },
@@ -155,17 +174,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusnoaccount": {
-      "title": "CKAccountStatusNoAccount",
+    "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatustemporarilyunavailable": {
+      "title": "CKAccountStatusTemporarilyUnavailable",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusnoaccount",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatustemporarilyunavailable",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckaccountstatus/ckaccountstatusnoaccount",
+      "url": "/documentation/cloudkit/ckaccountstatus/ckaccountstatustemporarilyunavailable",
       "abstract": [
         {
           "type": "text",
-          "text": "The device doesn’t have an iCloud account."
+          "text": "The user’s iCloud account is temporarily unavailable. "
         }
       ]
     },
@@ -220,11 +239,13 @@
       "kind": "taskGroup",
       "title": "Account Statuses",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine",
         "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusavailable",
+        "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatuscouldnotdetermine",
+        "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusnoaccount",
         "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusrestricted",
-        "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatusnoaccount"
-      ]
+        "doc://com.apple.documentation/documentation/cloudkit/ckaccountstatus/ckaccountstatustemporarilyunavailable"
+      ],
+      "anchor": "1598529"
     }
   ],
   "seeAlsoSections": [
@@ -298,6 +319,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -308,7 +330,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

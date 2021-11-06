@@ -36,22 +36,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.3",
-        "current": "14.3",
-        "beta": true
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.3",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.3",
-        "current": "14.3",
-        "beta": true
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(pl)AVCapturePhotoFileDataRepresentationCustomizer(im)replacementAppleProRAWCompressionSettingsForPhoto:defaultSettings:maximumBitDepth:",
+    "parent": {
+      "title": "AVCapturePhotoFileDataRepresentationCustomizer"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,11 +118,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of delegate callbacks to be implemented by callers of "
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "A protocol that defines the methods to implement to customize the packaging of photo data."
         }
       ]
     },
@@ -135,24 +137,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avvideoappleprorawbitdepthkey"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom": {
-      "title": "fileDataRepresentationWithCustomizer:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "fileDataRepresentationWithCustomizer:"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsdictionary": {
       "title": "NSDictionary",
@@ -335,8 +319,7 @@
           "kind": "identifier",
           "text": "replacementAppleProRAWCompressionSettingsForPhoto:defaultSettings:maximumBitDepth:"
         }
-      ],
-      "beta": true
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -344,24 +327,6 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
-    }
-  },
-  "diffAvailability": {
-    "minor": {
-      "change": "added",
-      "platform": "Xcode",
-      "versions": [
-        "12.1.1 Release Candidate",
-        "12.3 Release Candidate"
-      ]
-    },
-    "major": {
-      "change": "added",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
     }
   },
   "seeAlsoSections": [
@@ -529,6 +494,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -704,7 +670,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The cell at the specified column and row."
+      "text": "Returns the cell at the specified column and row."
     }
   ],
   "documentVersion": 0,
@@ -11,13 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
+        "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
         "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol"
       ]
     ]
@@ -42,10 +42,13 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(pl)NSAccessibility(im)accessibilityCellForColumn:row:",
+    "parent": {
+      "title": "NSAccessibilityProtocol"
+    },
     "symbolKind": "intfm",
     "fragments": [
       {
@@ -79,8 +82,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -115,10 +118,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos": {
-      "title": "Accessibility for macOS",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_macos",
-      "url": "/documentation/appkit/accessibility_for_macos",
+    "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit": {
+      "title": "Accessibility for AppKit",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/accessibility_for_appkit",
+      "url": "/documentation/appkit/accessibility_for_appkit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -133,7 +136,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The complete list of properties and methods implemented by accessible elements."
+          "text": "The complete list of properties and methods for accessible elements."
         }
       ]
     },
@@ -153,6 +156,238 @@
       "role": "symbol",
       "url": "/documentation/swift/int"
     },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524733-accessibilitycolumnindexrange": {
+      "title": "accessibilityColumnIndexRange()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524733-accessibilitycolumnindexrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1524733-accessibilitycolumnindexrange",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the column index range of the cell."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityColumnIndexRange"
+        },
+        {
+          "kind": "text",
+          "text": "() -> NSRange"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532640-setaccessibilitycolumnindexrange": {
+      "title": "setAccessibilityColumnIndexRange(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532640-setaccessibilitycolumnindexrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1532640-setaccessibilitycolumnindexrange",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the column index range of the cell."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityColumnIndexRange"
+        },
+        {
+          "kind": "text",
+          "text": "(NSRange)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524347-accessibilityrowindexrange": {
+      "title": "accessibilityRowIndexRange()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524347-accessibilityrowindexrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1524347-accessibilityrowindexrange",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the row index range of the cell. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityRowIndexRange"
+        },
+        {
+          "kind": "text",
+          "text": "() -> NSRange"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524995-setaccessibilityrowindexrange": {
+      "title": "setAccessibilityRowIndexRange(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524995-setaccessibilityrowindexrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1524995-setaccessibilityrowindexrange",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the row index range of the cell. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityRowIndexRange"
+        },
+        {
+          "kind": "text",
+          "text": "(NSRange)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527860-accessibilityselectedcells": {
+      "title": "accessibilitySelectedCells()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527860-accessibilityselectedcells",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1527860-accessibilityselectedcells",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the currently selected cells for the table."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilitySelectedCells"
+        },
+        {
+          "kind": "text",
+          "text": "() -> [Any]?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527445-setaccessibilityselectedcells": {
+      "title": "setAccessibilitySelectedCells(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527445-setaccessibilityselectedcells",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1527445-setaccessibilityselectedcells",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the currently selected cells for the table."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilitySelectedCells"
+        },
+        {
+          "kind": "text",
+          "text": "([Any]?)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532361-accessibilityvisiblecells": {
+      "title": "accessibilityVisibleCells()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532361-accessibilityvisiblecells",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1532361-accessibilityvisiblecells",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the visible cells for the table."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "accessibilityVisibleCells"
+        },
+        {
+          "kind": "text",
+          "text": "() -> [Any]?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535039-setaccessibilityvisiblecells": {
+      "title": "setAccessibilityVisibleCells(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535039-setaccessibilityvisiblecells",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsaccessibilityprotocol/1535039-setaccessibilityvisiblecells",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the visible cells for the table."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "setAccessibilityVisibleCells"
+        },
+        {
+          "kind": "text",
+          "text": "([Any]?)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532709-accessibilitycell": {
       "title": "accessibilityCell(forColumn:row:)",
       "type": "topic",
@@ -164,7 +399,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The cell at the specified column and row."
+          "text": "Returns the cell at the specified column and row."
         }
       ],
       "fragments": [
@@ -206,6 +441,22 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524733-accessibilitycolumnindexrange",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532640-setaccessibilitycolumnindexrange",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524347-accessibilityrowindexrange",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1524995-setaccessibilityrowindexrange",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527860-accessibilityselectedcells",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1527445-setaccessibilityselectedcells",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1532361-accessibilityvisiblecells",
+        "doc://com.apple.documentation/documentation/appkit/nsaccessibilityprotocol/1535039-setaccessibilityvisiblecells"
+      ],
+      "title": "Configuring Cell-Based Tables",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -368,7 +619,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

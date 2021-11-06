@@ -11,12 +11,8 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest"
-      ],
-      [
-        "doc://com.apple.documentation/documentation/technologies",
-        "doc://com.apple.documentation/documentation/avfoundation",
-        "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations"
       ]
     ]
   },
@@ -37,17 +33,42 @@
     ],
     "platforms": [
       {
+        "name": "iOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "15.0",
+        "current": "15.2"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "8.0",
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVSampleBufferRequestDirection",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -82,6 +103,14 @@
       "kind": "symbol",
       "role": "collection"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest": {
       "title": "AVSampleBufferRequest",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequest",
@@ -89,14 +118,6 @@
       "type": "topic",
       "kind": "symbol",
       "role": "symbol"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations": {
-      "title": "AVFoundation Enumerations",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfoundation_enumerations",
-      "url": "/documentation/avfoundation/avfoundation_enumerations",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
@@ -228,7 +249,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The modes that describe a buffer request."
+          "text": "The modes in which a sample buffer generator processes a request."
         }
       ]
     },
@@ -290,7 +311,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestdirection/avsamplebufferrequestdirectionforward",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestdirection/avsamplebufferrequestdirectionnone",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrequestdirection/avsamplebufferrequestdirectionreverse"
-      ]
+      ],
+      "anchor": "1599887"
     }
   ],
   "seeAlsoSections": [
@@ -370,14 +392,19 @@
             }
           ],
           "platforms": [
-            "macOS"
+            "iOS",
+            "iPadOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,18 +1,24 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A notification that UIKit posts when the system’s Button Shapes setting changes."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/uikit",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accessibility",
-        "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
       ],
@@ -30,6 +36,47 @@
         "doc://com.apple.documentation/documentation/objectivec/nsobject",
         "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
         "doc://com.apple.documentation/documentation/uikit/uiaccessibility"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/objectivec",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/foundation",
+        "doc://com.apple.documentation/documentation/foundation/object_runtime",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject",
+        "doc://com.apple.documentation/documentation/objectivec/nsobject/uiaccessibility",
+        "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names"
       ]
     ]
   },
@@ -52,20 +99,28 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UIAccessibilityButtonShapesEnabledStatusDidChangeNotification",
+    "parent": {
+      "title": "UIAccessibility"
+    },
     "symbolKind": "structdata",
     "fragments": [
       {
@@ -83,8 +138,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -119,10 +174,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos": {
-      "title": "Accessibility for iOS and tvOS",
-      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_ios_and_tvos",
-      "url": "/documentation/uikit/accessibility_for_ios_and_tvos",
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit": {
+      "title": "Accessibility for UIKit",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit",
+      "url": "/documentation/uikit/accessibility_for_uikit",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -141,7 +196,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiaccessibility"
+      "url": "/documentation/uikit/uiaccessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A namespace for accessibility symbols for UIKit apps."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/accessibility": {
       "title": "Accessibility",
@@ -183,6 +244,22 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names": {
+      "title": "Notification Names",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/accessibility_for_uikit/notification_names",
+      "url": "/documentation/uikit/accessibility_for_uikit/notification_names",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-3672107": {
+      "title": "Make Your App Visually Accessible",
+      "type": "topic",
+      "identifier": "link-3672107",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/wwdc20/10020"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsnotification": {
       "title": "NSNotification",
       "type": "topic",
@@ -199,6 +276,678 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsnotification/name"
     },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620202-announcementdidfinishnotificatio": {
+      "title": "announcementDidFinishNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620202-announcementdidfinishnotificatio",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1620202-announcementdidfinishnotificatio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system finishes reading an announcement."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "announcementDidFinishNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648473-assistivetouchstatusdidchangenot": {
+      "title": "assistiveTouchStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648473-assistivetouchstatusdidchangenot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1648473-assistivetouchstatusdidchangenot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that indicates a change in the status of AssistiveTouch."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "assistiveTouchStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615152-boldtextstatusdidchangenotificat": {
+      "title": "boldTextStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615152-boldtextstatusdidchangenotificat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615152-boldtextstatusdidchangenotificat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Bold Text setting changes. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "boldTextStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3618944-buttonshapesenabledstatusdidchan": {
+      "title": "buttonShapesEnabledStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3618944-buttonshapesenabledstatusdidchan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/3618944-buttonshapesenabledstatusdidchan",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Button Shapes setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "buttonShapesEnabledStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615101-closedcaptioningstatusdidchangen": {
+      "title": "closedCaptioningStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615101-closedcaptioningstatusdidchangen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615101-closedcaptioningstatusdidchangen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the setting for Closed Captions + SDH changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "closedCaptioningStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615177-darkersystemcolorsstatusdidchang": {
+      "title": "darkerSystemColorsStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615177-darkersystemcolorsstatusdidchang",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615177-darkersystemcolorsstatusdidchang",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Increase Contrast setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "darkerSystemColorsStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043554-differentiatewithoutcolordidchan": {
+      "title": "differentiateWithoutColorDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043554-differentiatewithoutcolordidchan",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/3043554-differentiatewithoutcolordidchan",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Differentiate Without Color setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "differentiateWithoutColorDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3131974-onoffswitchlabelsdidchangenotifi": {
+      "title": "onOffSwitchLabelsDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3131974-onoffswitchlabelsdidchangenotifi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/3131974-onoffswitchlabelsdidchangenotifi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s On/Off Labels setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "onOffSwitchLabelsDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238037-videoautoplaystatusdidchangenoti": {
+      "title": "videoAutoplayStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238037-videoautoplaystatusdidchangenoti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/3238037-videoautoplaystatusdidchangenoti",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Auto-Play Video Previews setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "videoAutoplayStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620210-elementfocusednotification": {
+      "title": "elementFocusedNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620210-elementfocusednotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1620210-elementfocusednotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when an assistive app focuses on an accessibility element. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "elementFocusedNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615085-grayscalestatusdidchangenotifica": {
+      "title": "grayscaleStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615085-grayscalestatusdidchangenotifica",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615085-grayscalestatusdidchangenotifica",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Grayscale setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "grayscaleStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615105-guidedaccessstatusdidchangenotif": {
+      "title": "guidedAccessStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615105-guidedaccessstatusdidchangenotif",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615105-guidedaccessstatusdidchangenotif",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that indicates when a Guided Access session starts or ends.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "guidedAccessStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648478-hearingdevicepairedeardidchangen": {
+      "title": "hearingDevicePairedEarDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648478-hearingdevicepairedeardidchangen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1648478-hearingdevicepairedeardidchangen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when there is a change to the currently paired hearing devices."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "hearingDevicePairedEarDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648477-hearingdevicepairedear": {
+      "title": "hearingDevicePairedEar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648477-hearingdevicepairedear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1648477-hearingdevicepairedear",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current pairing status of Made for iPhone hearing devices."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static var "
+        },
+        {
+          "kind": "identifier",
+          "text": "hearingDevicePairedEar"
+        },
+        {
+          "kind": "text",
+          "text": ": UIAccessibility.HearingDeviceEar"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615196-invertcolorsstatusdidchangenotif": {
+      "title": "invertColorsStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615196-invertcolorsstatusdidchangenotif",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615196-invertcolorsstatusdidchangenotif",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the settings for inverted colors change.  "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "invertColorsStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615185-monoaudiostatusdidchangenotifica": {
+      "title": "monoAudioStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615185-monoaudiostatusdidchangenotifica",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615185-monoaudiostatusdidchangenotifica",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when system audio changes from stereo to mono."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "monoAudioStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3584819-preferscrossfadetransitionsstatu": {
+      "title": "prefersCrossFadeTransitionsStatusDidChange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3584819-preferscrossfadetransitionsstatu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/3584819-preferscrossfadetransitionsstatu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Prefer Cross-Fade Transitions setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "prefersCrossFadeTransitionsStatusDidChange"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615204-reducemotionstatusdidchangenotif": {
+      "title": "reduceMotionStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615204-reducemotionstatusdidchangenotif",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615204-reducemotionstatusdidchangenotif",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Reduce Motion setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "reduceMotionStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615125-reducetransparencystatusdidchang": {
+      "title": "reduceTransparencyStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615125-reducetransparencystatusdidchang",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615125-reducetransparencystatusdidchang",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Reduce Transparency setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "reduceTransparencyStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615095-shaketoundodidchangenotification": {
+      "title": "shakeToUndoDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615095-shaketoundodidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615095-shaketoundodidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system's Shake to Undo setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "shakeToUndoDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615097-speakscreenstatusdidchangenotifi": {
+      "title": "speakScreenStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615097-speakscreenstatusdidchangenotifi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615097-speakscreenstatusdidchangenotifi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Speak Screen setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "speakScreenStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615127-speakselectionstatusdidchangenot": {
+      "title": "speakSelectionStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615127-speakselectionstatusdidchangenot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615127-speakselectionstatusdidchangenot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Speak Selection setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "speakSelectionStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615099-switchcontrolstatusdidchangenoti": {
+      "title": "switchControlStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615099-switchcontrolstatusdidchangenoti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/1615099-switchcontrolstatusdidchangenoti",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when the system’s Switch Control setting changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "switchControlStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiaccessibility/2865862-voiceoverstatusdidchangenotifica": {
+      "title": "voiceOverStatusDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiaccessibility/2865862-voiceoverstatusdidchangenotifica",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiaccessibility/2865862-voiceoverstatusdidchangenotifica",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that UIKit posts when VoiceOver starts or stops."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static let "
+        },
+        {
+          "kind": "identifier",
+          "text": "voiceOverStatusDidChangeNotification"
+        },
+        {
+          "kind": "text",
+          "text": ": NSNotification.Name"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -207,6 +956,37 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620202-announcementdidfinishnotificatio",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648473-assistivetouchstatusdidchangenot",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615152-boldtextstatusdidchangenotificat",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615101-closedcaptioningstatusdidchangen",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615177-darkersystemcolorsstatusdidchang",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3043554-differentiatewithoutcolordidchan",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3131974-onoffswitchlabelsdidchangenotifi",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3238037-videoautoplaystatusdidchangenoti",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1620210-elementfocusednotification",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615085-grayscalestatusdidchangenotifica",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615105-guidedaccessstatusdidchangenotif",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648478-hearingdevicepairedeardidchangen",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1648477-hearingdevicepairedear",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615196-invertcolorsstatusdidchangenotif",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615185-monoaudiostatusdidchangenotifica",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/3584819-preferscrossfadetransitionsstatu",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615204-reducemotionstatusdidchangenotif",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615125-reducetransparencystatusdidchang",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615095-shaketoundodidchangenotification",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615097-speakscreenstatusdidchangenotifi",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615127-speakselectionstatusdidchangenot",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/1615099-switchcontrolstatusdidchangenoti",
+        "doc://com.apple.documentation/documentation/uikit/uiaccessibility/2865862-voiceoverstatusdidchangenotifica"
+      ],
+      "title": "System Notifications",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -259,15 +1039,56 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Session 10020: "
+                },
+                {
+                  "type": "link",
+                  "title": "Make Your App Visually Accessible",
+                  "destination": "https://developer.apple.com/wwdc20/10020"
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Related Sessions from WWDC20"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

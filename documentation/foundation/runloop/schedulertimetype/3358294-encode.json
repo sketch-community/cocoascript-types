@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Encodes the run loop schedule time into the given encoder."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -30,35 +36,43 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So9NSRunLoopC10FoundationE17SchedulerTimeTypeV6encode2toys7Encoder_p_tKF",
+    "parent": {
+      "title": "RunLoop.SchedulerTimeType"
+    },
     "symbolKind": "structm",
     "fragments": [
       {
@@ -84,8 +98,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -136,7 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The scheduler time type used by the run loop."
+          "text": "The scheduler time type that the run loop uses."
         }
       ]
     },
@@ -164,6 +178,74 @@
       "role": "symbol",
       "url": "/documentation/swift/encodable/2893603-encode"
     },
+    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358297-init": {
+      "title": "init(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358297-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/schedulertimetype/3358297-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a run loop scheduler time with data from an unarchiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Decoder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358294-encode": {
+      "title": "encode(to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358294-encode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/runloop/schedulertimetype/3358294-encode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encodes the run loop schedule time into the given encoder."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "encode"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Encoder)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -180,6 +262,15 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/swift/encodable"
       ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/runloop/schedulertimetype/3358297-init"
+      ],
+      "title": "Encoding Scheduler Times",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -240,6 +331,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -247,10 +339,32 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "encoder",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The encoder to write data to."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

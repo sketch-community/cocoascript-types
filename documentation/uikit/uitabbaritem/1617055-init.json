@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Initializes the tab bar item to its default state."
+      "text": "Creates a tab bar item with a default configuration."
     }
   ],
   "documentVersion": 0,
@@ -41,25 +41,33 @@
       {
         "name": "iOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UITabBarItem(im)init",
+    "parent": {
+      "title": "UITabBarItem"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,7 +120,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An item in a tab bar."
+          "text": "An object that describes an item in a tab bar."
         }
       ]
     },
@@ -134,7 +142,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns a new item containing the specified system item."
+          "text": "Creates a tab bar item using a system-provided configuration."
         }
       ],
       "fragments": [
@@ -158,7 +166,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns a new item using the specified properties."
+          "text": "Creates a tab bar item that displays a title and an image."
         }
       ],
       "fragments": [
@@ -182,7 +190,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates and returns a new item with the specified title, unselected image, and selected image."
+          "text": "Creates a tab bar item that toggles the image it displays when its selected state changes."
         }
       ],
       "fragments": [
@@ -206,7 +214,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initializes the tab bar item to its default state."
+          "text": "Creates a tab bar item with a default configuration."
         }
       ],
       "fragments": [
@@ -227,6 +235,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/uikit/uitabbaritem/1617071-initwithcoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a tab bar item from a serialized instance."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -248,7 +262,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "System items that can be used on a tab bar."
+          "text": "Constants that represent the system tab bar items."
         }
       ]
     },
@@ -269,7 +283,7 @@
         "doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617071-initwithcoder",
         "doc://com.apple.documentation/documentation/uikit/uitabbarsystemitem"
       ],
-      "title": "Initializing an Item",
+      "title": "Creating a Tab Bar Item",
       "generated": true
     }
   ],
@@ -305,43 +319,16 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "return_value",
-          "level": 2,
-          "text": "Return Value",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "An initialized tab bar item or "
-            },
-            {
-              "type": "codeVoice",
-              "code": "nil"
-            },
-            {
-              "type": "text",
-              "text": " if the item could not be initialized."
-            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/photos",
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
         "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling"
       ]
     ]
@@ -35,25 +35,41 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.2",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(pl)INSearchForPhotosIntentHandling(im)resolvePeopleInPhotoForSearchForPhotos:withCompletion:",
+    "parent": {
+      "title": "INSearchForPhotosIntentHandling"
+    },
     "symbolKind": "intfm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -88,10 +104,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/photos": {
-      "title": "Photos",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/photos",
-      "url": "/documentation/sirikit/photos",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -117,6 +133,14 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/sirikit/inperson"
+    },
+    "link-3876140": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3876140",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent": {
       "title": "INSearchForPhotosIntent",
@@ -165,7 +189,8 @@
           "kind": "identifier",
           "text": "resolveDateCreatedForSearchForPhotos:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling/1902403-resolvelocationcreatedforsearchf": {
       "title": "resolveLocationCreatedForSearchForPhotos:withCompletion:",
@@ -190,7 +215,8 @@
           "kind": "identifier",
           "text": "resolveLocationCreatedForSearchForPhotos:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling/1902402-resolvepeopleinphotoforsearchfor": {
       "title": "resolvePeopleInPhotoForSearchForPhotos:withCompletion:",
@@ -215,7 +241,8 @@
           "kind": "identifier",
           "text": "resolvePeopleInPhotoForSearchForPhotos:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling/1902399-resolvealbumnameforsearchforphot": {
       "title": "resolveAlbumNameForSearchForPhotos:withCompletion:",
@@ -240,7 +267,8 @@
           "kind": "identifier",
           "text": "resolveAlbumNameForSearchForPhotos:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/insearchforphotosintenthandling/1902398-resolvesearchtermsforsearchforph": {
       "title": "resolveSearchTermsForSearchForPhotos:withCompletion:",
@@ -265,7 +293,8 @@
           "kind": "identifier",
           "text": "resolveSearchTermsForSearchForPhotos:withCompletion:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -275,6 +304,26 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -389,6 +438,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -490,7 +540,7 @@
             },
             {
               "type": "text",
-              "text": " object to identify the corresponding users in your app. Always strive toward a successful resolution of the specified users, but feel free to ask for confirmation for one or more users if there is some uncertainty."
+              "text": " object to identify the corresponding users in your app. Always strive toward a successful resolution of the specified users, but feel free to ask for confirmation for one or more users if there’s some uncertainty."
             }
           ]
         },
@@ -507,7 +557,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

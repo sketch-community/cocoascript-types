@@ -34,32 +34,37 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "8.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Foundation11MeasurementV",
@@ -76,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -131,48 +136,6 @@
         {
           "kind": "identifier",
           "text": "Measurement"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsmeasurement": {
-      "title": "NSMeasurement",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmeasurement",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsmeasurement",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object representing a numeric quantity with a unit of measure that bridges to "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/measurement"
-        },
-        {
-          "type": "text",
-          "text": "; use "
-        },
-        {
-          "type": "reference",
-          "isActive": false,
-          "identifier": "doc://com.apple.documentation/documentation/foundation/nsmeasurement"
-        },
-        {
-          "type": "text",
-          "text": " when you need reference semantics or other Foundation-specific behavior."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "class "
-        },
-        {
-          "kind": "identifier",
-          "text": "NSMeasurement"
         }
       ]
     },
@@ -312,6 +275,38 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2908869-init": {
+      "title": "init(from:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2908869-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2908869-init",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new instance by decoding from the given decoder."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "identifier",
+          "text": "init"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": Decoder)"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/measurement/1924144-unit": {
       "title": "unit",
       "type": "topic",
@@ -322,15 +317,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The unit component of the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "Measurement"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "The unit component of the measurement."
         }
       ],
       "fragments": [
@@ -358,15 +345,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The value component of the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "Measurement"
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "The value component of the measurement."
         }
       ],
       "fragments": [
@@ -384,31 +363,139 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2883233": {
-      "title": "!=(_:_:)",
+    "doc://com.apple.documentation/documentation/foundation/measurement/2799525-convert": {
+      "title": "convert(to:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2883233",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2799525-convert",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/measurement/2883233",
+      "url": "/documentation/foundation/measurement/2799525-convert",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a Boolean value indicating whether two values are not equal."
+          "text": "Converts the measurement to the specified unit."
         }
       ],
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "UnitType",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " conforms to "
+          },
+          {
+            "code": "Dimension",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
       "fragments": [
         {
           "kind": "text",
-          "text": "static func "
+          "text": "func "
         },
         {
           "kind": "identifier",
-          "text": "!= "
+          "text": "convert"
         },
         {
           "kind": "text",
-          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": UnitType)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2799413-converted": {
+      "title": "converted(to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2799413-converted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2799413-converted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new measurement created by converting to the specified unit."
+        }
+      ],
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "UnitType",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " conforms to "
+          },
+          {
+            "code": "Dimension",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "converted"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": UnitType) -> Measurement<UnitType>"
         }
       ]
     },
@@ -468,17 +555,17 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2895366": {
-      "title": "..<(_:)",
+    "doc://com.apple.documentation/documentation/foundation/measurement/2963366": {
+      "title": "+(_:_:)",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2895366",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2963366",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/measurement/2895366",
+      "url": "/documentation/foundation/measurement/2963366",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a partial range up to, but not including, its upper bound."
+          "text": "Add two measurements."
         }
       ],
       "fragments": [
@@ -488,11 +575,159 @@
         },
         {
           "kind": "identifier",
-          "text": "..< "
+          "text": "+ "
         },
         {
           "kind": "text",
-          "text": "(Measurement<UnitType>) -> PartialRangeUpTo<Measurement<UnitType>>"
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2983377": {
+      "title": "+(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2983377",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2983377",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds two measurements of the same dimension."
+        }
+      ],
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "UnitType",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " conforms to "
+          },
+          {
+            "code": "Dimension",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "+ "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2963368": {
+      "title": "-(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2963368",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2963368",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Subtract one measurement from another."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "- "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2983378": {
+      "title": "-(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2983378",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2983378",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Subtracts two measurements of the same dimension."
+        }
+      ],
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "UnitType",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " conforms to "
+          },
+          {
+            "code": "Dimension",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "- "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Measurement<UnitType>"
         }
       ]
     },
@@ -549,6 +784,350 @@
         {
           "kind": "text",
           "text": "(Measurement<UnitType>, Double) -> Measurement<UnitType>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/3816388-formatted": {
+      "title": "formatted()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/3816388-formatted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/3816388-formatted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generates a locale-aware string representation of a measurement using the default measurement format style."
+        }
+      ],
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "UnitType",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " conforms to "
+          },
+          {
+            "code": "Dimension",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "formatted"
+        },
+        {
+          "kind": "text",
+          "text": "() -> String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/3816389-formatted": {
+      "title": "formatted(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/3816389-formatted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/3816389-formatted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generates a locale-aware string representation of a measurement using the provided measurement format style."
+        }
+      ],
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "UnitType",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " conforms to "
+          },
+          {
+            "code": "Dimension",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "formatted"
+        },
+        {
+          "kind": "text",
+          "text": "<S>(S) -> S.FormatOutput"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/formatstyle": {
+      "title": "Measurement.FormatStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/formatstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/formatstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that provides localized representations of measurements."
+        }
+      ],
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "UnitType",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " conforms to "
+          },
+          {
+            "code": "Dimension",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Measurement.FormatStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/attributedstyle": {
+      "title": "Measurement.AttributedStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/attributedstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/attributedstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that provides localized representations of measurements with an attributed string."
+        }
+      ],
+      "conformance": {
+        "availabilityPrefix": [
+          {
+            "text": "Available when",
+            "type": "text"
+          }
+        ],
+        "conformancePrefix": [
+          {
+            "text": "Conforms when",
+            "type": "text"
+          }
+        ],
+        "constraints": [
+          {
+            "code": "UnitType",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": " conforms to "
+          },
+          {
+            "code": "Dimension",
+            "type": "codeVoice"
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "Measurement.AttributedStyle"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2293193": {
+      "title": "==(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293193",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2293193",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether two values are equal."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "== "
+        },
+        {
+          "kind": "text",
+          "text": "<LeftHandSideType, RightHandSideType>(Measurement<LeftHandSideType>, Measurement<RightHandSideType>) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2883233": {
+      "title": "!=(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2883233",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2883233",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether two values are unequal."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "!= "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2883205": {
+      "title": ">(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2883205",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2883205",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "> "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2882942": {
+      "title": ">=(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2882942",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2882942",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": ">= "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
         }
       ]
     },
@@ -613,364 +1192,6 @@
         {
           "kind": "text",
           "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2293193": {
-      "title": "==(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2293193",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2293193",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Compare two measurements of the same "
-        },
-        {
-          "type": "codeVoice",
-          "code": "Dimension"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "== "
-        },
-        {
-          "kind": "text",
-          "text": "<LeftHandSideType, RightHandSideType>(Measurement<LeftHandSideType>, Measurement<RightHandSideType>) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2883205": {
-      "title": ">(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2883205",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2883205",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "> "
-        },
-        {
-          "kind": "text",
-          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2882942": {
-      "title": ">=(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2882942",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2882942",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": ">= "
-        },
-        {
-          "kind": "text",
-          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/1924035-description": {
-      "title": "description",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/1924035-description",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/1924035-description",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A textual description of the measurement."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "description"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/1924215-debugdescription": {
-      "title": "debugDescription",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/1924215-debugdescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/1924215-debugdescription",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A textual description of the measurement suitable for debugging."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "debugDescription"
-        },
-        {
-          "kind": "text",
-          "text": ": String"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2427263-custommirror": {
-      "title": "customMirror",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2427263-custommirror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2427263-custommirror",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A mirror that reflects the date interval."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "customMirror"
-        },
-        {
-          "kind": "text",
-          "text": ": Mirror"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/1924269-hashvalue": {
-      "title": "hashValue",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/1924269-hashvalue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/1924269-hashvalue",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The computed hash value for the date interval."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "var "
-        },
-        {
-          "kind": "identifier",
-          "text": "hashValue"
-        },
-        {
-          "kind": "text",
-          "text": ": Int"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/referencetype": {
-      "title": "Measurement.ReferenceType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/referencetype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/referencetype",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An alias for this value type's equivalent reference type."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "typealias "
-        },
-        {
-          "kind": "identifier",
-          "text": "Measurement.ReferenceType"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2908869-init": {
-      "title": "init(from:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2908869-init",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2908869-init",
-      "fragments": [
-        {
-          "kind": "identifier",
-          "text": "init"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "from"
-        },
-        {
-          "kind": "text",
-          "text": ": Decoder)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2908799-encode": {
-      "title": "encode(to:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2908799-encode",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2908799-encode",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "encode"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "to"
-        },
-        {
-          "kind": "text",
-          "text": ": Encoder)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/3236759-hash": {
-      "title": "hash(into:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/3236759-hash",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/3236759-hash",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "hash"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "into"
-        },
-        {
-          "kind": "text",
-          "text": ": inout Hasher)"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2963366": {
-      "title": "+(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2963366",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2963366",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "+ "
-        },
-        {
-          "kind": "text",
-          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Measurement<UnitType>"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/foundation/measurement/2963368": {
-      "title": "-(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2963368",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/measurement/2963368",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "- "
-        },
-        {
-          "kind": "text",
-          "text": "(Measurement<UnitType>, Measurement<UnitType>) -> Measurement<UnitType>"
         }
       ]
     },
@@ -1086,6 +1307,266 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2895366": {
+      "title": "..<(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2895366",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2895366",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a partial range up to, but not including, its upper bound."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "..< "
+        },
+        {
+          "kind": "text",
+          "text": "(Measurement<UnitType>) -> PartialRangeUpTo<Measurement<UnitType>>"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/1924035-description": {
+      "title": "description",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/1924035-description",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/1924035-description",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A textual description of the measurement."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "description"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/1924215-debugdescription": {
+      "title": "debugDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/1924215-debugdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/1924215-debugdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A textual description of the measurement suitable for debugging."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "debugDescription"
+        },
+        {
+          "kind": "text",
+          "text": ": String"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2427263-custommirror": {
+      "title": "customMirror",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2427263-custommirror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2427263-custommirror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mirror that reflects the date interval."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "customMirror"
+        },
+        {
+          "kind": "text",
+          "text": ": Mirror"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/1924269-hashvalue": {
+      "title": "hashValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/1924269-hashvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/1924269-hashvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The computed hash value for the date interval."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "hashValue"
+        },
+        {
+          "kind": "text",
+          "text": ": Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/2908799-encode": {
+      "title": "encode(to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/2908799-encode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/2908799-encode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encodes this value into the given encoder."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "encode"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": Encoder)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/3236759-hash": {
+      "title": "hash(into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/3236759-hash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/3236759-hash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Hashes the essential components of this value by feeding them into the given hasher."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "hash"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "into"
+        },
+        {
+          "kind": "text",
+          "text": ": inout Hasher)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmeasurement": {
+      "title": "NSMeasurement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmeasurement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmeasurement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object representing a numeric quantity with a unit of measure, for use when you need reference semantics or other Foundation-specific behavior."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSMeasurement"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/measurement/referencetype": {
+      "title": "Measurement.ReferenceType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/measurement/referencetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/measurement/referencetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An alias for this value type's equivalent reference type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "Measurement.ReferenceType"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/foundation/dimension": {
       "title": "Dimension",
       "type": "topic",
@@ -1096,7 +1577,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An abstract class representing a dimensional unit of measure. "
+          "text": "An abstract class representing a dimensional unit of measure."
         }
       ],
       "fragments": [
@@ -1116,6 +1597,16 @@
       "url": "/documentation/technologies",
       "kind": "technologies",
       "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "13.0",
+        "13.2 beta 1"
+      ]
     }
   },
   "relationshipsSections": [
@@ -1140,8 +1631,10 @@
       "kind": "taskGroup",
       "title": "Creating a Measurement",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/measurement/1924149-init"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/measurement/1924149-init",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2908869-init"
+      ],
+      "anchor": "2850711"
     },
     {
       "kind": "taskGroup",
@@ -1149,32 +1642,68 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/measurement/1924144-unit",
         "doc://com.apple.documentation/documentation/foundation/measurement/1924053-value"
-      ]
+      ],
+      "anchor": "2850712"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Converting to Other Units",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/measurement/2799525-convert",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2799413-converted"
+      ],
+      "anchor": "2850713"
     },
     {
       "kind": "taskGroup",
       "title": "Operating on a Measurement",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/measurement/2883233",
         "doc://com.apple.documentation/documentation/foundation/measurement/2293057",
         "doc://com.apple.documentation/documentation/foundation/measurement/2293711",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2895366",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2963366",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2983377",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2963368",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2983378",
         "doc://com.apple.documentation/documentation/foundation/measurement/2293011",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2293481",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2293618",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2882914",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2293193",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2883205",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2882942"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/measurement/2293481"
+      ],
+      "anchor": "2850714"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Formatting a Measurement",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/measurement/3816388-formatted",
+        "doc://com.apple.documentation/documentation/foundation/measurement/3816389-formatted",
+        "doc://com.apple.documentation/documentation/foundation/measurement/formatstyle",
+        "doc://com.apple.documentation/documentation/foundation/measurement/attributedstyle"
+      ],
+      "anchor": "3820415"
     },
     {
       "kind": "taskGroup",
       "title": "Comparing Measurements",
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/measurement/2293193",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2883233",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2883205",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2882942",
         "doc://com.apple.documentation/documentation/foundation/measurement/2293618",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2293193"
-      ]
+        "doc://com.apple.documentation/documentation/foundation/measurement/2882914"
+      ],
+      "anchor": "2902145"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Ranges of Measurements",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/measurement/2963370",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2963373",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2949126",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2949137",
+        "doc://com.apple.documentation/documentation/foundation/measurement/2895366"
+      ],
+      "anchor": "3744743"
     },
     {
       "kind": "taskGroup",
@@ -1184,7 +1713,24 @@
         "doc://com.apple.documentation/documentation/foundation/measurement/1924215-debugdescription",
         "doc://com.apple.documentation/documentation/foundation/measurement/2427263-custommirror",
         "doc://com.apple.documentation/documentation/foundation/measurement/1924269-hashvalue"
-      ]
+      ],
+      "anchor": "2902144"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Encoding Measurements",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/measurement/2908799-encode"
+      ],
+      "anchor": "3744741"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Hashing Measurements",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/measurement/3236759-hash"
+      ],
+      "anchor": "3744742"
     },
     {
       "kind": "taskGroup",
@@ -1192,34 +1738,8 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsmeasurement",
         "doc://com.apple.documentation/documentation/foundation/measurement/referencetype"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Initializers",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/measurement/2908869-init"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/measurement/2908799-encode",
-        "doc://com.apple.documentation/documentation/foundation/measurement/3236759-hash"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Operator Functions",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/measurement/2963366",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2963368",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2963370",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2963373",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2949126",
-        "doc://com.apple.documentation/documentation/foundation/measurement/2949137"
-      ]
+      ],
+      "anchor": "2879018"
     }
   ],
   "seeAlsoSections": [
@@ -1228,7 +1748,7 @@
         "doc://com.apple.documentation/documentation/foundation/unit",
         "doc://com.apple.documentation/documentation/foundation/dimension"
       ],
-      "title": "First Steps",
+      "title": "Essentials",
       "generated": true
     }
   ],
@@ -1275,8 +1795,13 @@
               "text": " "
             },
             {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Foundation11MeasurementV8UnitTypexmfp",
+              "text": "UnitType"
+            },
+            {
               "kind": "text",
-              "text": "UnitType : "
+              "text": " : "
             },
             {
               "kind": "typeIdentifier",
@@ -1287,6 +1812,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1303,6 +1829,65 @@
           "level": 2,
           "text": "Overview",
           "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/measurement"
+            },
+            {
+              "type": "text",
+              "text": " object represents a quantity and unit of measure. The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/measurement"
+            },
+            {
+              "type": "text",
+              "text": " type provides a programmatic interface to converting measurements into different units, as well as calculating the sum or difference between two measurements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/measurement"
+            },
+            {
+              "type": "text",
+              "text": " objects are initialized with a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/unit"
+            },
+            {
+              "type": "text",
+              "text": " object and double value. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/measurement"
+            },
+            {
+              "type": "text",
+              "text": " objects are immutable, and cannot be changed after being created."
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -1349,7 +1934,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

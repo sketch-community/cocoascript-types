@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The format of the message."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,25 +34,30 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@INOutgoingMessageType",
     "symbolKind": "enum"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,21 +108,33 @@
       "role": "symbol",
       "url": "/documentation/objectivec/nsinteger"
     },
-    "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio": {
-      "title": "INOutgoingMessageTypeOutgoingMessageAudio",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio"
-    },
     "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessagetext": {
       "title": "INOutgoingMessageTypeOutgoingMessageText",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessagetext",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessagetext"
+      "url": "/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessagetext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Plain text."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio": {
+      "title": "INOutgoingMessageTypeOutgoingMessageAudio",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An audio recording."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeunknown": {
       "title": "INOutgoingMessageTypeUnknown",
@@ -119,47 +142,53 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeunknown",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeunknown"
-    },
-    "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintenthandling": {
-      "title": "INSetMessageAttributeIntentHandling",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintenthandling",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/sirikit/insetmessageattributeintenthandling",
+      "url": "/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeunknown",
       "abstract": [
         {
           "type": "text",
-          "text": "An interface that handles modifying message attributes."
+          "text": "An unspecified message format."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintent": {
-      "title": "INSetMessageAttributeIntent",
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling": {
+      "title": "INSendMessageIntentHandling",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintent",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insetmessageattributeintent",
+      "url": "/documentation/sirikit/insendmessageintenthandling",
       "abstract": [
         {
           "type": "text",
-          "text": "A request to modify the attributes of a message."
+          "text": "An interface to handle sending messages to one or more designated users."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintentresponse": {
-      "title": "INSetMessageAttributeIntentResponse",
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintent": {
+      "title": "INSendMessageIntent",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintentresponse",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintent",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/insetmessageattributeintentresponse",
+      "url": "/documentation/sirikit/insendmessageintent",
       "abstract": [
         {
           "type": "text",
-          "text": "Your app’s response to a set message attribute intent."
+          "text": "A request to send a message to the designated recipients."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageintentresponse": {
+      "title": "INSendMessageIntentResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageintentresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insendmessageintentresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Your app’s response to a send message intent."
         }
       ]
     },
@@ -169,15 +198,27 @@
       "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inoutgoingmessagetype"
+      "url": "/documentation/sirikit/inoutgoingmessagetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the message."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetyperesolutionresult": {
-      "title": "INOutgoingMessageTypeResolutionResult",
+    "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment": {
+      "title": "INSendMessageAttachment",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetyperesolutionresult",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/sirikit/inoutgoingmessagetyperesolutionresult"
+      "url": "/documentation/sirikit/insendmessageattachment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A file to include in a message."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -190,23 +231,24 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Enumeration Cases",
+      "title": "Message Types",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio",
         "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessagetext",
+        "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeoutgoingmessageaudio",
         "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetype/inoutgoingmessagetypeunknown"
-      ]
+      ],
+      "anchor": "3793211"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintenthandling",
-        "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintent",
-        "doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintentresponse",
-        "doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetyperesolutionresult"
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintenthandling",
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintent",
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageintentresponse",
+        "doc://com.apple.documentation/documentation/sirikit/insendmessageattachment"
       ],
-      "title": "Set Message Attributes",
+      "title": "Sending a Message",
       "generated": true
     }
   ],
@@ -272,6 +314,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -280,7 +323,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Shows the picker in a popover relative to a view."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,15 +34,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)ABPersonPicker(im)showRelativeToRect:ofView:preferredEdge:",
+    "parent": {
+      "title": "ABPersonPicker"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -106,6 +115,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/addressbook/abpersonpicker/1589906-showrelativetorect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Shows the picker in a popover relative to a view."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -124,6 +139,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/addressbook/abpersonpicker/1589905-close",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Closes the picker."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -261,10 +282,60 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "positioningRect",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The rectangle that the picker is shown relative to."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "positioningView",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The view that contains the position rectangle."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "preferredEdge",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The preferred edge from which the picker appears."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

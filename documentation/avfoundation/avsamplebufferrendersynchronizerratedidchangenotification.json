@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The synchronizer's rendering rate changed."
+      "text": "The synchronizer’s rendering rate changed."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.14",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "12.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "5.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@AVSampleBufferRenderSynchronizerRateDidChangeNotification",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -156,7 +161,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The synchronizer's rendering timebase, which governs how timestamps are interpreted."
+          "text": "The synchronizer’s rendering timebase which determines how it interprets timestamps."
         }
       ]
     },
@@ -184,7 +189,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Set's the timebase's rate and time."
+          "text": "Sets the renderer’s time and rate."
         }
       ],
       "fragments": [
@@ -198,6 +203,30 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/3726157-setrate": {
+      "title": "setRate:time:atHostTime:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/3726157-setrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferrendersynchronizer/3726157-setrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the playback rate and the relationship between the current time and host time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setRate:time:atHostTime:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizerratedidchangenotification": {
       "title": "AVSampleBufferRenderSynchronizerRateDidChangeNotification",
       "type": "topic",
@@ -208,7 +237,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The synchronizer's rendering rate changed."
+          "text": "The synchronizer’s rendering rate changed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/3726156-delaysratechangeuntilhassufficie": {
+      "title": "delaysRateChangeUntilHasSufficientMediaData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/3726156-delaysratechangeuntilhassufficie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferrendersynchronizer/3726156-delaysratechangeuntilhassufficie",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that Indicates whether the playback should start immediately on rate change requests."
         }
       ]
     },
@@ -226,7 +269,9 @@
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/3022467-currenttime",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/2867822-timebase",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/2867823-rate",
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/2867821-setrate"
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/2867821-setrate",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/3726157-setrate",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer/3726156-delaysratechangeuntilhassufficie"
       ],
       "title": "Accessing Time Information",
       "generated": true
@@ -270,6 +315,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -280,7 +326,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

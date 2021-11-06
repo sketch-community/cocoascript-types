@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS)."
+      "text": "Perform common linear algebra operations with Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS)."
     }
   ],
   "documentVersion": 0,
@@ -30,8 +30,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -468,21 +468,21 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Operations to manage and work with sparse matrix properties."
+          "text": "Manage and work with the properties of a sparse matrix."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/blas/sparse_utility_operations": {
-      "title": "Sparse Utility Operations",
+    "doc://com.apple.documentation/documentation/accelerate/blas/sparse_vector_utility_operations": {
+      "title": "Sparse Vector Utility Operations",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/blas/sparse_utility_operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blas/sparse_vector_utility_operations",
       "kind": "article",
       "role": "collectionGroup",
-      "url": "/documentation/accelerate/blas/sparse_utility_operations",
+      "url": "/documentation/accelerate/blas/sparse_vector_utility_operations",
       "abstract": [
         {
           "type": "text",
-          "text": "Various utility operations for creating and working with sparse structures."
+          "text": "Create and work with sparse vector structures. "
         }
       ]
     },
@@ -566,7 +566,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Multiplies a matrix by a vector (single precision)."
+          "text": "Multiplies a single-precision matrix by a vector."
         }
       ]
     },
@@ -3260,6 +3260,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/solving_systems_of_linear_equations_with_lapack": {
+      "title": "Solving Systems of Linear Equations with LAPACK",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/solving_systems_of_linear_equations_with_lapack",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/solving_systems_of_linear_equations_with_lapack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Select the optimal LAPACK routine to solve a system of linear equations."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method": {
       "title": "Finding an Interpolating Polynomial Using the Vandermonde Method",
       "type": "topic",
@@ -3284,7 +3298,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS)."
+          "text": "Perform common linear algebra operations with Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS)."
         }
       ]
     },
@@ -3310,7 +3324,8 @@
         "doc://com.apple.documentation/documentation/accelerate/1513300-cblas_izamax",
         "doc://com.apple.documentation/documentation/accelerate/1545753-vs256divide",
         "doc://com.apple.documentation/documentation/accelerate/1545674-vu512divide"
-      ]
+      ],
+      "anchor": "1805363"
     },
     {
       "kind": "taskGroup",
@@ -3332,7 +3347,8 @@
         "doc://com.apple.documentation/documentation/accelerate/1513352-cblas_dsdot",
         "doc://com.apple.documentation/documentation/accelerate/1513146-cblas_zdotc_sub",
         "doc://com.apple.documentation/documentation/accelerate/1513136-cblas_zdotu_sub"
-      ]
+      ],
+      "anchor": "1805414"
     },
     {
       "kind": "taskGroup",
@@ -3342,8 +3358,9 @@
         "doc://com.apple.documentation/documentation/accelerate/blas/pointwise_matrix_operations",
         "doc://com.apple.documentation/documentation/accelerate/blas/blockwise_matrix_operations",
         "doc://com.apple.documentation/documentation/accelerate/blas/general_sparse_matrix_management_operations",
-        "doc://com.apple.documentation/documentation/accelerate/blas/sparse_utility_operations"
-      ]
+        "doc://com.apple.documentation/documentation/accelerate/blas/sparse_vector_utility_operations"
+      ],
+      "anchor": "2880618"
     },
     {
       "kind": "taskGroup",
@@ -3381,7 +3398,8 @@
         "doc://com.apple.documentation/documentation/accelerate/1513126-cblas_strmv",
         "doc://com.apple.documentation/documentation/accelerate/1513244-cblas_strsm",
         "doc://com.apple.documentation/documentation/accelerate/1513160-cblas_strsv"
-      ]
+      ],
+      "anchor": "1805465"
     },
     {
       "kind": "taskGroup",
@@ -3422,7 +3440,8 @@
         "doc://com.apple.documentation/documentation/accelerate/1513080-cblas_ctrsv",
         "doc://com.apple.documentation/documentation/accelerate/1513198-cblas_scasum",
         "doc://com.apple.documentation/documentation/accelerate/1513330-cblas_scnrm2"
-      ]
+      ],
+      "anchor": "1805535"
     },
     {
       "kind": "taskGroup",
@@ -3460,7 +3479,8 @@
         "doc://com.apple.documentation/documentation/accelerate/1513154-cblas_dtrmv",
         "doc://com.apple.documentation/documentation/accelerate/1513122-cblas_dtrsm",
         "doc://com.apple.documentation/documentation/accelerate/1513224-cblas_dtrsv"
-      ]
+      ],
+      "anchor": "1805648"
     },
     {
       "kind": "taskGroup",
@@ -3501,7 +3521,8 @@
         "doc://com.apple.documentation/documentation/accelerate/1513029-cblas_ztrmv",
         "doc://com.apple.documentation/documentation/accelerate/1513112-cblas_ztrsm",
         "doc://com.apple.documentation/documentation/accelerate/1513260-cblas_ztrsv"
-      ]
+      ],
+      "anchor": "1805871"
     },
     {
       "kind": "taskGroup",
@@ -3544,6 +3565,7 @@
         "doc://com.apple.documentation/documentation/accelerate/1546984-vu512mod",
         "doc://com.apple.documentation/documentation/accelerate/1546254-vs512mod"
       ],
+      "anchor": "1806197",
       "discussion": {
         "kind": "content",
         "content": [
@@ -3575,6 +3597,7 @@
         "doc://com.apple.documentation/documentation/accelerate/1546696-vu512fullmultiply",
         "doc://com.apple.documentation/documentation/accelerate/1546864-vs512fullmultiply"
       ],
+      "anchor": "1806634",
       "discussion": {
         "kind": "content",
         "content": [
@@ -3597,7 +3620,8 @@
         "doc://com.apple.documentation/documentation/accelerate/blasparamerrorproc",
         "doc://com.apple.documentation/documentation/accelerate/blas/vectorfloat",
         "doc://com.apple.documentation/documentation/accelerate/blas/constvectorfloat"
-      ]
+      ],
+      "anchor": "1670168"
     },
     {
       "kind": "taskGroup",
@@ -3609,6 +3633,7 @@
         "doc://com.apple.documentation/documentation/accelerate/blas/cblas_diag",
         "doc://com.apple.documentation/documentation/accelerate/blas/cblas_side"
       ],
+      "anchor": "1670178",
       "discussion": {
         "kind": "content",
         "content": [
@@ -3635,6 +3660,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/solving_systems_of_linear_equations_with_lapack",
         "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method"
       ],
       "title": "Linear Algebra",
@@ -3697,7 +3723,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

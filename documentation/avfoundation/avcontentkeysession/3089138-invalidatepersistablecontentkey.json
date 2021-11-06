@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Invalidates the persistable content key and creates a secure server playback context (SPC) to verify the outcome of an invalidation request."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "12.2",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "12.2",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVContentKeySession(im)invalidatePersistableContentKey:options:completionHandler:",
+    "parent": {
+      "title": "AVContentKeySession"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -105,7 +119,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to create and track decryption keys for media data."
+          "text": "An object that creates and tracks decryption keys for media data."
         }
       ]
     },
@@ -155,24 +169,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nserror"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk": {
-      "title": "invalidateAllPersistableContentKeysForApp:options:completionHandler:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "invalidateAllPersistableContentKeysForApp:options:completionHandler:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey": {
       "title": "invalidatePersistableContentKey:options:completionHandler:",
       "type": "topic",
@@ -180,6 +176,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invalidates the persistable content key and creates a secure server playback context (SPC) to verify the outcome of an invalidation request."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -188,6 +190,30 @@
         {
           "kind": "identifier",
           "text": "invalidatePersistableContentKey:options:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk": {
+      "title": "invalidateAllPersistableContentKeysForApp:options:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Invalidates all of an app’s persistable content keys and creates a secure server playback context (SPC) to verify the outcome of an invalidation request. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "invalidateAllPersistableContentKeysForApp:options:completionHandler:"
         }
       ]
     },
@@ -361,16 +387,75 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "watchOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "persistableContentKeyData",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The persistable content key data to invalidate."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "options",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Additional options to use when generating the server playback context. Pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": " to indicate no additional options."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "handler",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The completion handler callback."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

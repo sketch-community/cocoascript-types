@@ -12,7 +12,8 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/appkit",
         "doc://com.apple.documentation/documentation/appkit/app_and_environment",
-        "doc://com.apple.documentation/documentation/appkit/nsworkspace"
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/deprecated_symbols"
       ]
     ]
   },
@@ -35,12 +36,15 @@
       {
         "name": "macOS",
         "introducedAt": "10.0",
-        "deprecatedAt": "11.0",
-        "current": "11.1",
+        "deprecatedAt": "12.0",
+        "current": "12.1",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSWorkspace(im)iconForFileType:",
+    "parent": {
+      "title": "NSWorkspace"
+    },
     "symbolKind": "instm",
     "fragments": [
       {
@@ -66,8 +70,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -124,41 +128,21 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/deprecated_symbols",
+      "url": "/documentation/appkit/nsworkspace/deprecated_symbols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace/3553230-icon": {
       "title": "icon(for:)",
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/3553230-icon",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace/3553230-icon",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an image containing the icon for the specified content type."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "icon"
-        },
-        {
-          "kind": "text",
-          "text": "("
-        },
-        {
-          "kind": "identifier",
-          "text": "for"
-        },
-        {
-          "kind": "text",
-          "text": ": UTType) -> NSImage"
-        }
-      ]
+      "url": "/documentation/appkit/nsworkspace/3553230-icon"
     },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525487-icon": {
       "title": "icon(forFiles:)",
@@ -232,6 +216,35 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535898-mountedremovablemedia": {
+      "title": "mountedRemovableMedia()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535898-mountedremovablemedia",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1535898-mountedremovablemedia",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the full pathnames of all currently mounted removable disks."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "mountedRemovableMedia"
+        },
+        {
+          "kind": "text",
+          "text": "() -> [Any]?"
+        }
+      ],
+      "deprecated": true
+    },
     "doc://com.apple.documentation/documentation/swift/string": {
       "title": "String",
       "type": "topic",
@@ -247,6 +260,715 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/appkit/nsimage"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1532940-open": {
+      "title": "open(_:options:configuration:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1532940-open",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1532940-open",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "open"
+        },
+        {
+          "kind": "text",
+          "text": "(URL, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": NSWorkspace.LaunchOptions, "
+        },
+        {
+          "kind": "identifier",
+          "text": "configuration"
+        },
+        {
+          "kind": "text",
+          "text": ": [NSWorkspace.LaunchConfigurationKey : Any]) -> NSRunningApplication"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1528548-open": {
+      "title": "open(_:withApplicationAt:options:configuration:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1528548-open",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1528548-open",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "open"
+        },
+        {
+          "kind": "text",
+          "text": "([URL], "
+        },
+        {
+          "kind": "identifier",
+          "text": "withApplicationAt"
+        },
+        {
+          "kind": "text",
+          "text": ": URL, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": NSWorkspace.LaunchOptions, "
+        },
+        {
+          "kind": "identifier",
+          "text": "configuration"
+        },
+        {
+          "kind": "text",
+          "text": ": [NSWorkspace.LaunchConfigurationKey : Any]) -> NSRunningApplication"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525235-openfile": {
+      "title": "openFile(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525235-openfile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1525235-openfile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens the specified file specified using the default app associated with its type. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "openFile"
+        },
+        {
+          "kind": "text",
+          "text": "(String) -> Bool"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1524481-openfile": {
+      "title": "openFile(_:withApplication:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1524481-openfile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1524481-openfile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens a file using the specified app."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "openFile"
+        },
+        {
+          "kind": "text",
+          "text": "(String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "withApplication"
+        },
+        {
+          "kind": "text",
+          "text": ": String?) -> Bool"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530182-openfile": {
+      "title": "openFile(_:withApplication:andDeactivate:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530182-openfile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1530182-openfile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens the specified file and optionally deactivates the sending app."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "openFile"
+        },
+        {
+          "kind": "text",
+          "text": "(String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "withApplication"
+        },
+        {
+          "kind": "text",
+          "text": ": String?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "andDeactivate"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool) -> Bool"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533605-openfile": {
+      "title": "openFile(_:from:at:in:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533605-openfile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1533605-openfile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens a file using the default app for its type and animates the action using a custom icon."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "openFile"
+        },
+        {
+          "kind": "text",
+          "text": "(String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "from"
+        },
+        {
+          "kind": "text",
+          "text": ": NSImage?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "at"
+        },
+        {
+          "kind": "text",
+          "text": ": NSPoint, "
+        },
+        {
+          "kind": "identifier",
+          "text": "in"
+        },
+        {
+          "kind": "text",
+          "text": ": NSView?) -> Bool"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1531434-launchapplication": {
+      "title": "launchApplication(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1531434-launchapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1531434-launchapplication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Launches the specified app."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "launchApplication"
+        },
+        {
+          "kind": "text",
+          "text": "(String) -> Bool"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1527334-launchapplication": {
+      "title": "launchApplication(_:showIcon:autolaunch:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1527334-launchapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1527334-launchapplication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Launches the specified app using additional options."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "launchApplication"
+        },
+        {
+          "kind": "text",
+          "text": "(String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "showIcon"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool, "
+        },
+        {
+          "kind": "identifier",
+          "text": "autolaunch"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool) -> Bool"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1534810-launchapplication": {
+      "title": "launchApplication(at:options:configuration:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1534810-launchapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1534810-launchapplication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Launches the app at the specified URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "launchApplication"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "at"
+        },
+        {
+          "kind": "text",
+          "text": ": URL, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": NSWorkspace.LaunchOptions, "
+        },
+        {
+          "kind": "identifier",
+          "text": "configuration"
+        },
+        {
+          "kind": "text",
+          "text": ": [NSWorkspace.LaunchConfigurationKey : Any]) -> NSRunningApplication"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1524886-performfileoperation": {
+      "title": "performFileOperation(_:source:destination:files:tag:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1524886-performfileoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1524886-performfileoperation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a file operation on a set of files in a particular directory."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "performFileOperation"
+        },
+        {
+          "kind": "text",
+          "text": "(NSWorkspace.FileOperationName, "
+        },
+        {
+          "kind": "identifier",
+          "text": "source"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "destination"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "files"
+        },
+        {
+          "kind": "text",
+          "text": ": [Any], "
+        },
+        {
+          "kind": "identifier",
+          "text": "tag"
+        },
+        {
+          "kind": "text",
+          "text": ": UnsafeMutablePointer<Int>?) -> Bool"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533992-fullpath": {
+      "title": "fullPath(forApplication:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533992-fullpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1533992-fullpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the full path for the specified app."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "fullPath"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "forApplication"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> String?"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533086-absolutepathforapplication": {
+      "title": "absolutePathForApplication(withBundleIdentifier:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533086-absolutepathforapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1533086-absolutepathforapplication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the absolute file system path of an app bundle."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "absolutePathForApplication"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "withBundleIdentifier"
+        },
+        {
+          "kind": "text",
+          "text": ": String) -> String?"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533335-launchapplication": {
+      "title": "launchApplication(withBundleIdentifier:options:additionalEventParamDescriptor:launchIdentifier:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533335-launchapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1533335-launchapplication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Launches the app corresponding to the specified "
+        },
+        {
+          "type": "codeVoice",
+          "code": "bundleIdentifier"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "launchApplication"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "withBundleIdentifier"
+        },
+        {
+          "kind": "text",
+          "text": ": String, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": NSWorkspace.LaunchOptions, "
+        },
+        {
+          "kind": "identifier",
+          "text": "additionalEventParamDescriptor"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAppleEventDescriptor?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "launchIdentifier"
+        },
+        {
+          "kind": "text",
+          "text": ": AutoreleasingUnsafeMutablePointer<NSNumber?>?) -> Bool"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535886-open": {
+      "title": "open(_:withAppBundleIdentifier:options:additionalEventParamDescriptor:launchIdentifiers:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535886-open",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1535886-open",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens one or more files from an array of URLs."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "open"
+        },
+        {
+          "kind": "text",
+          "text": "([URL], "
+        },
+        {
+          "kind": "identifier",
+          "text": "withAppBundleIdentifier"
+        },
+        {
+          "kind": "text",
+          "text": ": String?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": NSWorkspace.LaunchOptions, "
+        },
+        {
+          "kind": "identifier",
+          "text": "additionalEventParamDescriptor"
+        },
+        {
+          "kind": "text",
+          "text": ": NSAppleEventDescriptor?, "
+        },
+        {
+          "kind": "identifier",
+          "text": "launchIdentifiers"
+        },
+        {
+          "kind": "text",
+          "text": ": AutoreleasingUnsafeMutablePointer<NSArray?>?) -> Bool"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535834-mountedlocalvolumepaths": {
+      "title": "mountedLocalVolumePaths()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535834-mountedlocalvolumepaths",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1535834-mountedlocalvolumepaths",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the mount points of all local volumes, not just the removable ones returned by "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535898-mountedremovablemedia"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "mountedLocalVolumePaths"
+        },
+        {
+          "kind": "text",
+          "text": "() -> [Any]?"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530411-activeapplication": {
+      "title": "activeApplication()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530411-activeapplication",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nsworkspace/1530411-activeapplication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a dictionary with information about the current active app."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "activeApplication"
+        },
+        {
+          "kind": "text",
+          "text": "() -> [AnyHashable : Any]?"
+        }
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/appkit/nsworkspace/1527879-icon": {
       "title": "icon(forFileType:)",
@@ -285,74 +1007,6 @@
       ],
       "deprecated": true
     },
-    "doc://com.apple.documentation/documentation/appkit/nsworkspace/1529882-seticon": {
-      "title": "setIcon(_:forFile:options:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/1529882-seticon",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace/1529882-seticon",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Sets the icon for the file or directory at the specified path. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "func "
-        },
-        {
-          "kind": "identifier",
-          "text": "setIcon"
-        },
-        {
-          "kind": "text",
-          "text": "(NSImage?, "
-        },
-        {
-          "kind": "identifier",
-          "text": "forFile"
-        },
-        {
-          "kind": "text",
-          "text": ": String, "
-        },
-        {
-          "kind": "identifier",
-          "text": "options"
-        },
-        {
-          "kind": "text",
-          "text": ": NSWorkspace.IconCreationOptions) -> Bool"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/appkit/nsworkspace/iconcreationoptions": {
-      "title": "NSWorkspace.IconCreationOptions",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/appkit/nsworkspace/iconcreationoptions",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/appkit/nsworkspace/iconcreationoptions",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Constants that describe options for creating icons. "
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "struct "
-        },
-        {
-          "kind": "identifier",
-          "text": "NSWorkspace.IconCreationOptions"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -381,35 +1035,37 @@
       ]
     }
   ],
-  "diffAvailability": {
-    "minor": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.2 Release Candidate",
-        "12.3 Release Candidate"
-      ]
-    },
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0 beta 5",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1528158-icon",
-        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525487-icon",
-        "doc://com.apple.documentation/documentation/appkit/nsworkspace/3553230-icon",
-        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1529882-seticon",
-        "doc://com.apple.documentation/documentation/appkit/nsworkspace/iconcreationoptions"
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1532940-open",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1528548-open",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525235-openfile",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1524481-openfile",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530182-openfile",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533605-openfile",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1531434-launchapplication",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1527334-launchapplication",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1534810-launchapplication",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1524886-performfileoperation",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533992-fullpath",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533086-absolutepathforapplication",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1533335-launchapplication",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535886-open",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535898-mountedremovablemedia",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1535834-mountedlocalvolumepaths",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1530411-activeapplication"
       ],
-      "title": "Managing Icons",
+      "title": "Methods",
       "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1525487-icon",
+        "doc://com.apple.documentation/documentation/appkit/nsworkspace/1528158-icon"
+      ]
     }
   ],
   "primaryContentSections": [
@@ -549,7 +1205,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

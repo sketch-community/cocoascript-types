@@ -35,8 +35,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -142,6 +142,14 @@
       ],
       "alt": "A screenshot of Xcode’s Project editor with the General pane active and the Supported Intents section expanded. The table of supported intents lists INPlayMediaIntent and INAddMediaIntent. In the Media Categories list, the checkbox for Music is selected.",
       "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/sirikit/insearchformediaintent": {
+      "title": "INSearchForMediaIntent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchformediaintent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/sirikit/insearchformediaintent"
     },
     "link-media-3686892": {
       "identifier": "link-media-3686892",
@@ -546,7 +554,7 @@
             },
             {
               "type": "text",
-              "text": ", that reflect interactions the user can perform directly in your app. "
+              "text": ", that reflect interactions the user can perform directly in your app."
             }
           ]
         },
@@ -624,7 +632,21 @@
         },
         {
           "type": "paragraph",
-          "inlineContent": []
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a user searches for a musician or band on iOS 15 or later, Spotlight may include a suggestion to start listening to content from that artist. To include your app in the list of apps available to listen on, support "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/sirikit/insearchformediaintent"
+            },
+            {
+              "type": "text",
+              "text": ". If the user chooses your app from the list, or if your app is the user’s preferred music app, the system sends your app an intent so you can display content by that artist."
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -1121,7 +1143,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

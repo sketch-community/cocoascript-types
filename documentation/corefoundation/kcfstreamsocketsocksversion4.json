@@ -47,35 +47,40 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.2",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@kCFStreamSocketSOCKSVersion4",
     "symbolKind": "data"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -630,7 +635,8 @@
           "type": "text",
           "text": " object."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/cfnetwork/1426794-cfstreamcreatepairwithsockettone": {
       "title": "CFStreamCreatePairWithSocketToNetService",
@@ -644,7 +650,8 @@
           "type": "text",
           "text": "Creates a pair of streams for a CFNetService."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/cfnetwork/kcfstreamnetworkservicetype": {
       "title": "kCFStreamNetworkServiceType",
@@ -689,7 +696,13 @@
       "identifier": "doc://com.apple.documentation/documentation/cfnetwork/kcfstreamnetworkservicetypecallsignaling",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cfnetwork/kcfstreamnetworkservicetypecallsignaling"
+      "url": "/documentation/cfnetwork/kcfstreamnetworkservicetypecallsignaling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A call signaling service."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/cfnetwork/kcfstreamnetworkservicetypevideo": {
       "title": "kCFStreamNetworkServiceTypeVideo",
@@ -1167,7 +1180,13 @@
       "identifier": "doc://com.apple.documentation/documentation/cfnetwork/kcfstreampropertysocketextendedbackgroundidlemode",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cfnetwork/kcfstreampropertysocketextendedbackgroundidlemode"
+      "url": "/documentation/cfnetwork/kcfstreampropertysocketextendedbackgroundidlemode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value to request that the system keep a socket open and delays reclaiming it when the process moves to the background."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/cfnetwork/kcfstreampropertysocketremotehost": {
       "title": "kCFStreamPropertySocketRemoteHost",
@@ -1651,6 +1670,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1661,7 +1681,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

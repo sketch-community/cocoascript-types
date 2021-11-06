@@ -43,35 +43,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@SA@NSOperatingSystemVersion@FI@minorVersion",
+    "parent": {
+      "title": "NSOperatingSystemVersion"
+    },
     "symbolKind": "structp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -132,15 +140,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Operating system version structure used with "
-        },
-        {
-          "type": "text",
-          "text": " and "
-        },
-        {
-          "type": "text",
-          "text": "."
+          "text": "A structure that contains version information about the currently executing operating system, including major, minor, and patch version numbers."
         }
       ]
     },
@@ -151,32 +151,6 @@
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1410906-operatingsystemversion": {
-      "title": "operatingSystemVersion",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1410906-operatingsystemversion",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprocessinfo/1410906-operatingsystemversion"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1414876-isoperatingsystematleastversion": {
-      "title": "isOperatingSystemAtLeastVersion:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsprocessinfo/1414876-isoperatingsystematleastversion",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsprocessinfo/1414876-isoperatingsystematleastversion",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "isOperatingSystemAtLeastVersion:"
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
       "title": "NSInteger",
@@ -276,6 +250,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -286,7 +261,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

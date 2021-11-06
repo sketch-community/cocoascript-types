@@ -34,25 +34,33 @@
       {
         "name": "iOS",
         "introducedAt": "3.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.1",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)CADisplayLink(im)invalidate",
+    "parent": {
+      "title": "CADisplayLink"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,31 +105,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A timer object that allows your application to synchronize its drawing to the refresh rate of the display."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621293-invalidate": {
-      "title": "invalidate",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621293-invalidate",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/quartzcore/cadisplaylink/1621293-invalidate",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Removes the display link from all run loop modes."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "invalidate"
+          "text": "A timer object that allows your app to synchronize its drawing to the refresh rate of the display."
         }
       ]
     },
@@ -170,6 +154,30 @@
         {
           "kind": "identifier",
           "text": "removeFromRunLoop:forMode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621293-invalidate": {
+      "title": "invalidate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621293-invalidate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/cadisplaylink/1621293-invalidate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the display link from all run loop modes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "invalidate"
         }
       ]
     },
@@ -223,6 +231,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -243,7 +252,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Removing the display link from all run loop modes causes it to be released by the run loop. The display link also releases the target."
+              "text": "When you remove the display link from all run loop mode, the system releases it. The display link also releases the target."
             }
           ]
         },
@@ -251,13 +260,8 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621293-invalidate"
-            },
-            {
               "type": "text",
-              "text": " is thread safe meaning that it can be called from a thread separate to the one in which the display link is running."
+              "text": "This method is thread safe, so you can call it from a thread separate to the one in which the display link runs."
             }
           ]
         }
@@ -265,7 +269,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

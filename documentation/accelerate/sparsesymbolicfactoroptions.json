@@ -12,14 +12,13 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions"
       ],
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions"
       ]
     ]
   },
@@ -42,35 +41,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@SparseSymbolicFactorOptions",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -113,26 +117,18 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions": {
-      "title": "Sparse Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/sparse_factor_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions": {
+      "title": "Sparse Matrix Factor Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_matrix_factor_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions": {
-      "title": "Sparse Symbolic Factor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_symbolic_factor_functions",
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions": {
+      "title": "Sparse Symbolic Factorization Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_symbolic_factorization_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -201,7 +197,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "User-supplied array for ordering."
+          "text": "The user-supplied array for ordering."
         }
       ]
     },
@@ -237,7 +233,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Flags controlling the computation."
+          "text": "The flags that control the computation."
         }
       ]
     },
@@ -255,20 +251,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror": {
-      "title": "reportError",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Function to use to report parameter errors."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868231-ordermethod": {
       "title": "orderMethod",
       "type": "topic",
@@ -279,35 +261,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Ordering algorithm to use."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc": {
-      "title": "malloc",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Function to use to allocate any storage needed."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868237-free": {
-      "title": "free",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868237-free",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868237-free",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Function to use to free allocated storage."
+          "text": "The ordering algorithm."
         }
       ]
     },
@@ -321,7 +275,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An array containing row and column indices to ignore."
+          "text": "An array that contains row and column indices to ignore."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc": {
+      "title": "malloc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The function for allocating any necessary storage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868237-free": {
+      "title": "free",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868237-free",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868237-free",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The function for freeing allocated storage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror": {
+      "title": "reportError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The function for reporting parameter errors."
         }
       ]
     },
@@ -335,7 +331,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure that defines the factorization type."
+          "text": "Constants that define the factorization type."
         }
       ]
     },
@@ -349,35 +345,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure that contains options that affect the numerical stage of a sparse factorization. "
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double": {
-      "title": "SparseOpaqueFactorization_Double",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparseopaquefactorization_double",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure representing the factorization of a matrix of double-precision, floating-point values."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float": {
-      "title": "SparseOpaqueFactorization_Float",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/sparseopaquefactorization_float",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A structure representing the factorization of a matrix of single-precision, floating-point values."
+          "text": "A structure that contains options that affect the numerical stage of a sparse factorization."
         }
       ]
     },
@@ -396,25 +364,24 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868170-control",
         "doc://com.apple.documentation/documentation/accelerate/sparsecontrol_t",
-        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868231-ordermethod",
-        "doc://com.apple.documentation/documentation/accelerate/sparseorder_t",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868178-order",
+        "doc://com.apple.documentation/documentation/accelerate/sparseorder_t",
+        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868103-malloc",
         "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868237-free",
-        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868115-ignorerowsandcolumns"
-      ]
+        "doc://com.apple.documentation/documentation/accelerate/sparsesymbolicfactoroptions/2868183-reporterror"
+      ],
+      "anchor": "2869130"
     }
   ],
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t",
-        "doc://com.apple.documentation/documentation/accelerate/sparsenumericfactoroptions",
-        "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_double",
-        "doc://com.apple.documentation/documentation/accelerate/sparseopaquefactorization_float"
+        "doc://com.apple.documentation/documentation/accelerate/sparsenumericfactoroptions"
       ],
-      "title": "Supporting Types",
+      "title": "Structures that Specify Factorization Type and Factorization Options ",
       "generated": true
     },
     {
@@ -477,6 +444,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -531,7 +499,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Default ordering ("
+                      "text": "The default ordering ("
                     },
                     {
                       "type": "reference",
@@ -549,7 +517,7 @@
                     },
                     {
                       "type": "text",
-                      "text": " for unsymmetric factorizations, but this may change in the future)."
+                      "text": " for unsymmetric factorizations)."
                     }
                   ]
                 }
@@ -574,7 +542,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "User-supplied ordering, or identity if "
+                      "text": "The user-supplied ordering, or identity if "
                     },
                     {
                       "type": "reference",
@@ -583,7 +551,15 @@
                     },
                     {
                       "type": "text",
-                      "text": " is null."
+                      "text": " is "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "null"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
                     }
                   ]
                 }
@@ -608,7 +584,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Approximate Minimum Degree (AMD) ordering. Large overhead cost if used for QR-based factorization due to explicit formation of "
+                      "text": "Approximate minimum degree (AMD) ordering. There’s a large overhead cost if you use it for QR-based factorization due to explicit formation of "
                     },
                     {
                       "type": "emphasis",
@@ -646,7 +622,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "METIS Nested Dissection ordering. Large overhead cost if used for QR-based factorization due to explicit formation of "
+                      "text": "METIS nested dissection ordering. There’s a large overhead cost if you use it for QR-based factorization due to explicit formation of "
                     },
                     {
                       "type": "emphasis",
@@ -684,7 +660,7 @@
                   "inlineContent": [
                     {
                       "type": "text",
-                      "text": "Column AMD ordering for "
+                      "text": "The column AMD ordering for "
                     },
                     {
                       "type": "emphasis",
@@ -697,7 +673,16 @@
                     },
                     {
                       "type": "text",
-                      "text": ". Not valid for symmetric factorizations (use SparseOrderAMD instead)."
+                      "text": ". This isn’t valid for symmetric factorizations (use "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseorder_t/sparseorderamd"
+                    },
+                    {
+                      "type": "text",
+                      "text": " instead)."
                     }
                   ]
                 }
@@ -721,7 +706,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

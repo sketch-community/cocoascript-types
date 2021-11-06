@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/sirikit",
-        "doc://com.apple.documentation/documentation/sirikit/lists_and_notes"
+        "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols"
       ]
     ]
   },
@@ -34,25 +34,38 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)INCreateTaskListIntentResponse",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -87,10 +100,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/sirikit/lists_and_notes": {
-      "title": "Lists and Notes",
-      "identifier": "doc://com.apple.documentation/documentation/sirikit/lists_and_notes",
-      "url": "/documentation/sirikit/lists_and_notes",
+    "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols": {
+      "title": "Deprecated Symbols",
+      "identifier": "doc://com.apple.documentation/documentation/sirikit/deprecated_symbols",
+      "url": "/documentation/sirikit/deprecated_symbols",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -107,7 +120,8 @@
           "type": "text",
           "text": "Your app’s response to a request to create a task list."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling/2873990-confirmcreatetasklist": {
       "title": "confirmCreateTaskList:completion:",
@@ -157,7 +171,16 @@
           "type": "text",
           "text": "The handler interface for creating task lists."
         }
-      ]
+      ],
+      "deprecated": true
+    },
+    "link-3872625": {
+      "title": "Deprecated SiriKit Intent Domains",
+      "type": "topic",
+      "identifier": "link-3872625",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
     },
     "doc://com.apple.documentation/documentation/sirikit/inintentresponse": {
       "title": "INIntentResponse",
@@ -189,7 +212,8 @@
           "kind": "identifier",
           "text": "initWithCode:userActivity:"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponse/2874147-code": {
       "title": "code",
@@ -203,7 +227,8 @@
           "type": "text",
           "text": "The code indicating whether your app successfully handled the intent."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponsecode": {
       "title": "INCreateTaskListIntentResponseCode",
@@ -217,7 +242,8 @@
           "type": "text",
           "text": "Constants indicating the state of the response."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponse/2880162-createdtasklist": {
       "title": "createdTaskList",
@@ -231,7 +257,8 @@
           "type": "text",
           "text": "The details of the task list that your app created."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/sirikit/increatetasklistintent": {
       "title": "INCreateTaskListIntent",
@@ -245,7 +272,8 @@
           "type": "text",
           "text": "A request to create a new task list."
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -255,16 +283,26 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "This intent is no longer available. You may define a custom intent instead. For more information, see "
+        },
+        {
+          "type": "link",
+          "title": "Deprecated SiriKit Intent Domains",
+          "destination": "https://developer.apple.com/support/deprecated-sirikit-intent-domains"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
       ]
     }
-  },
+  ],
   "relationshipsSections": [
     {
       "kind": "relationships",
@@ -281,7 +319,8 @@
       "title": "Initializing the Response Object",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponse/2874148-initwithcode"
-      ]
+      ],
+      "anchor": "2874518"
     },
     {
       "kind": "taskGroup",
@@ -289,14 +328,16 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponse/2874147-code",
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponsecode"
-      ]
+      ],
+      "anchor": "2878539"
     },
     {
       "kind": "taskGroup",
       "title": "Providing the Task List",
       "identifiers": [
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintentresponse/2880162-createdtasklist"
-      ]
+      ],
+      "anchor": "2874519"
     }
   ],
   "seeAlsoSections": [
@@ -305,7 +346,7 @@
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintenthandling",
         "doc://com.apple.documentation/documentation/sirikit/increatetasklistintent"
       ],
-      "title": "Create Task List",
+      "title": "Task List Creation",
       "generated": true
     }
   ],
@@ -343,6 +384,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "watchOS"
           ]
@@ -425,7 +467,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,20 +35,28 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIDocumentPickerViewController(py)allowsMultipleSelection",
+    "parent": {
+      "title": "UIDocumentPickerViewController"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -123,15 +131,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object that adheres to the "
-        },
-        {
-          "type": "codeVoice",
-          "code": "UIDocumentPickerDelegate"
-        },
-        {
-          "type": "text",
-          "text": " protocol."
+          "text": "An object that acts as the delegate of the view controller."
         }
       ]
     },
@@ -145,7 +145,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A set of methods that you implement to track when the user selects a document or destination, or to track when the operation is canceled."
+          "text": "A set of methods for tracking when the user selects a document or destination, or cancels the operation."
         }
       ]
     },
@@ -173,7 +173,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The initial directory displayed by the document picker."
+          "text": "The initial directory that the document picker displays."
         }
       ]
     },
@@ -232,6 +232,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
           ]
         }
@@ -251,7 +252,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "By default, this property is set to "
+              "text": "By default, this property is "
             },
             {
               "type": "reference",
@@ -268,7 +269,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

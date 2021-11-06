@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "A type that represents the status of the participant accepting access."
+      "text": "A type that represents the acceptance status of the participant."
     }
   ],
   "documentVersion": 0,
@@ -11,6 +11,13 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/shared_records",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare",
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant"
       ]
@@ -34,36 +41,58 @@
     "platforms": [
       {
         "name": "iOS",
-        "introducedAt": "8.0",
-        "current": "14.3"
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "macOS",
-        "introducedAt": "10.10",
-        "current": "11.1"
+        "introducedAt": "10.12",
+        "deprecatedAt": "12.0",
+        "current": "12.1",
+        "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "tvOS",
-        "introducedAt": "9.0",
-        "current": "14.3"
+        "introducedAt": "10.0",
+        "deprecatedAt": "15.0",
+        "current": "15.2",
+        "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "deprecatedAt": "8.0",
+        "current": "8.3",
+        "deprecated": true
       },
       {
         "name": "Xcode",
         "introducedAt": "10.0",
-        "current": "12.3"
+        "deprecatedAt": "13.0",
+        "current": "13.2",
+        "deprecated": true
       }
     ],
     "externalID": "s:So18CKShareParticipantC8CloudKitE16AcceptanceStatusa",
+    "parent": {
+      "title": "CKShare.Participant"
+    },
     "symbolKind": "tdef",
     "fragments": [
       {
@@ -77,8 +106,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -103,13 +132,13 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
-      "title": "CKShare",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
-      "url": "/documentation/cloudkit/ckshare",
+    "doc://com.apple.documentation/documentation/cloudkit/shared_records": {
+      "title": "Shared Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/shared_records",
+      "url": "/documentation/cloudkit/shared_records",
       "type": "topic",
-      "kind": "symbol",
-      "role": "symbol"
+      "kind": "article",
+      "role": "collectionGroup"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant": {
       "title": "CKShare.Participant",
@@ -121,17 +150,25 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A reference to the user who accepts a shared record."
+          "text": "An object that describes a user’s participation in a share."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/cloudkit/ckshare_participant_acceptancestatus": {
-      "title": "CKShare_Participant_AcceptanceStatus",
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare": {
+      "title": "CKShare",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare_participant_acceptancestatus",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/cloudkit/ckshare_participant_acceptancestatus",
+      "url": "/documentation/cloudkit/ckshare"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantacceptancestatus": {
+      "title": "CKShare.ParticipantAcceptanceStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantacceptancestatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckshare/participantacceptancestatus",
       "abstract": [
         {
           "type": "text",
@@ -145,7 +182,7 @@
         },
         {
           "kind": "identifier",
-          "text": "CKShare_Participant_AcceptanceStatus"
+          "text": "CKShare.ParticipantAcceptanceStatus"
         }
       ]
     },
@@ -173,7 +210,7 @@
         },
         {
           "kind": "text",
-          "text": ": CKShare_Participant_AcceptanceStatus"
+          "text": ": CKShare.ParticipantAcceptanceStatus"
         }
       ]
     },
@@ -187,7 +224,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A type that represents the status of the participant accepting access."
+          "text": "A type that represents the acceptance status of the participant."
         }
       ],
       "fragments": [
@@ -199,7 +236,8 @@
           "kind": "identifier",
           "text": "CKShare.Participant.AcceptanceStatus"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -213,9 +251,9 @@
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/cloudkit/ckshare/participant/1640395-acceptancestatus",
-        "doc://com.apple.documentation/documentation/cloudkit/ckshare_participant_acceptancestatus"
+        "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantacceptancestatus"
       ],
-      "title": "Accessing the Participant Acceptance Status",
+      "title": "Accessing the Participant’s Status",
       "generated": true
     }
   ],
@@ -246,13 +284,24 @@
             },
             {
               "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)CKShare",
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare",
+              "text": "CKShare"
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "typeIdentifier",
               "preciseIdentifier": "c:@E@CKShareParticipantAcceptanceStatus",
-              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare_participant_acceptancestatus",
-              "text": "CKShare_Participant_AcceptanceStatus"
+              "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckshare/participantacceptancestatus",
+              "text": "ParticipantAcceptanceStatus"
             }
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -263,7 +312,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

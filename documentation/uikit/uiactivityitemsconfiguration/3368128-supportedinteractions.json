@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The types of interactions that the configuration supports."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -37,20 +43,28 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)UIActivityItemsConfiguration(py)supportedInteractions",
+    "parent": {
+      "title": "UIActivityItemsConfiguration"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -137,7 +151,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfigurationinteraction",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfigurationinteraction"
+      "url": "/documentation/uikit/uiactivityitemsconfigurationinteraction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that describes types of interactions."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368128-supportedinteractions": {
       "title": "supportedInteractions",
@@ -145,7 +165,13 @@
       "identifier": "doc://com.apple.documentation/documentation/uikit/uiactivityitemsconfiguration/3368128-supportedinteractions",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368128-supportedinteractions"
+      "url": "/documentation/uikit/uiactivityitemsconfiguration/3368128-supportedinteractions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The types of interactions that the configuration supports."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
@@ -212,14 +238,35 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default value is all known interactions."
+            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

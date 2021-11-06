@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Puts the file pointer at the end of the file referenced by the receiver and returns the new file offset."
+      "text": "Places the file pointer at the end of the file referenced by the file handle and returns the new file offset."
     }
   ],
   "documentVersion": 0,
@@ -36,44 +36,54 @@
         "name": "iOS",
         "introducedAt": "2.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "deprecatedAt": "13.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.0",
         "deprecatedAt": "10.15",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.4",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "watchOS",
         "introducedAt": "2.0",
         "deprecatedAt": "6.0",
-        "current": "7.2",
+        "current": "8.3",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)NSFileHandle(im)seekToEndOfFile",
+    "parent": {
+      "title": "NSFileHandle"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -130,6 +140,38 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset": {
+      "title": "seekToEndReturningOffset:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Places the file pointer at the end of the file referenced by the file handle and returns the new file offset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToEndReturningOffset:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandleoperationexception": {
+      "title": "NSFileHandleOperationException",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandleoperationexception",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandleoperationexception"
+    },
     "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1408461-offsetinfile": {
       "title": "offsetInFile",
       "type": "topic",
@@ -140,10 +182,34 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The position of the file pointer within the file represented by the receiver."
+          "text": "The position of the file pointer within the file represented by the file handle."
         }
       ],
       "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172526-getoffset": {
+      "title": "getOffset:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172526-getoffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172526-getoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Get the current position of the file pointer within the file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "getOffset:error:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1411311-seektoendoffile": {
       "title": "seekToEndOfFile",
@@ -155,7 +221,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Puts the file pointer at the end of the file referenced by the receiver and returns the new file offset."
+          "text": "Places the file pointer at the end of the file referenced by the file handle and returns the new file offset."
         }
       ],
       "fragments": [
@@ -169,6 +235,30 @@
         }
       ],
       "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172530-seektooffset": {
+      "title": "seekToOffset:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172530-seektooffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilehandle/3172530-seektooffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Moves the file pointer to the specified offset within the file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToOffset:error:"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412135-seektofileoffset": {
       "title": "seekToFileOffset:",
@@ -203,10 +293,33 @@
       "title": "Technologies"
     }
   },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset"
+        },
+        {
+          "type": "text",
+          "text": " to handle errors when seeking to the end of the file."
+        }
+      ]
+    }
+  ],
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172526-getoffset",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1408461-offsetinfile",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172529-seektoendreturningoffset",
+        "doc://com.apple.documentation/documentation/foundation/nsfilehandle/3172530-seektooffset",
         "doc://com.apple.documentation/documentation/foundation/nsfilehandle/1412135-seektofileoffset"
       ],
       "title": "Seeking Within a File",
@@ -261,6 +374,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -303,15 +417,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Raises an exception if the message is sent to an "
+              "text": "Raises "
             },
             {
-              "type": "codeVoice",
-              "code": "NSFileHandle"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilehandleoperationexception"
             },
             {
               "type": "text",
-              "text": " object representing a pipe or socket or if the file descriptor is closed."
+              "text": " if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if any other error occurs while seeking."
             }
           ]
         }
@@ -319,7 +434,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

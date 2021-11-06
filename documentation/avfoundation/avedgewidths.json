@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "An edge processing region thickness."
+      "text": "A structure that defines edge processing region widths."
     }
   ],
   "documentVersion": 0,
@@ -36,35 +36,40 @@
       {
         "name": "iOS",
         "introducedAt": "7.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "7.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.9",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@T@AVEdgeWidths",
     "symbolKind": "struct"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -123,20 +128,6 @@
       "kind": "symbol",
       "role": "symbol"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1389716-bottom": {
-      "title": "bottom",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1389716-bottom",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avedgewidths/1389716-bottom",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The bottom edge thickness."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1385663-left": {
       "title": "left",
       "type": "topic",
@@ -147,21 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The left edge thickness."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1386165-right": {
-      "title": "right",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1386165-right",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avedgewidths/1386165-right",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The right edge thickness."
+          "text": "The left-edge width."
         }
       ]
     },
@@ -175,7 +152,35 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The top edge thickness."
+          "text": "The top-edge width."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1386165-right": {
+      "title": "right",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1386165-right",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avedgewidths/1386165-right",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The right-edge width."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1389716-bottom": {
+      "title": "bottom",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1389716-bottom",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avedgewidths/1389716-bottom",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The bottom-edge width."
         }
       ]
     },
@@ -189,7 +194,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The thickness of the edge processing region on the left, top, right, and bottom edges, in pixels."
+          "text": "The width of the edge processing region on the left, top, right, and bottom edges, in pixels."
         }
       ]
     },
@@ -203,7 +208,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An edge processing region thickness."
+          "text": "A structure that defines edge processing region widths."
         }
       ]
     },
@@ -231,7 +236,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A pixel aspect ratio for the rendering context."
+          "text": "A structure that defines a pixel aspect ratio for a rendering context."
         }
       ]
     },
@@ -246,13 +251,14 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Edge Thickness",
+      "title": "Edge Widths",
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1389716-bottom",
         "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1385663-left",
+        "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1390633-top",
         "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1386165-right",
-        "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1390633-top"
-      ]
+        "doc://com.apple.documentation/documentation/avfoundation/avedgewidths/1389716-bottom"
+      ],
+      "anchor": "3037357"
     }
   ],
   "seeAlsoSections": [
@@ -318,6 +324,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -328,7 +335,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

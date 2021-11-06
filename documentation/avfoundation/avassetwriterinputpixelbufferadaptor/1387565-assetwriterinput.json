@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The asset writer input to which the adaptor should append pixel buffers."
+      "text": "The asset writer input to which the adaptor appends pixel buffers."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInputPixelBufferAdaptor(py)assetWriterInput",
+    "parent": {
+      "title": "AVAssetWriterInputPixelBufferAdaptor"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+          "text": "An object that appends video samples to an asset writer input."
         }
       ]
     },
@@ -142,35 +150,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset writer input to which the adaptor should append pixel buffers."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool": {
-      "title": "pixelBufferPool",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A pixel buffer pool that vends and efficiently recycles pixel buffer objects that can be appended to the receiver."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387829-sourcepixelbufferattributes": {
-      "title": "sourcePixelBufferAttributes",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387829-sourcepixelbufferattributes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387829-sourcepixelbufferattributes",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "The pixel buffer attributes for the pixel buffers vended by the adaptor’s pixel buffer pool."
+          "text": "The asset writer input to which the adaptor appends pixel buffers."
         }
       ]
     },
@@ -182,16 +162,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387829-sourcepixelbufferattributes"
-      ],
-      "title": "Inspecting a Pixel Buffer Adaptor",
-      "generated": true
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -230,6 +200,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -239,7 +210,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

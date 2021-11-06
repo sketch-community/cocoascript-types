@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Creates an asset that models the media resource found at the specified URL."
+      "text": "Creates an asset that models the media resource at the specified URL."
     }
   ],
   "documentVersion": 0,
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "4.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVURLAsset(im)initWithURL:options:",
+    "parent": {
+      "title": "AVURLAsset"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An asset subclass used to initialize an asset from a local or remote URL."
+          "text": "An asset that represents media at a local or remote URL."
         }
       ]
     },
@@ -130,40 +138,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Initialization options for use with "
-        },
-        {
-          "type": "reference",
-          "isActive": true,
-          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl"
-        },
-        {
-          "type": "text",
-          "text": "."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl": {
-      "title": "URLAssetWithURL:options:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avurlasset/1508727-urlassetwithurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns an asset that models the media resource found at the specified URL."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "URLAssetWithURL:options:"
+          "text": "Configuration options you use to initialize a URL asset."
         }
       ]
     },
@@ -201,7 +176,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Creates an asset that models the media resource found at the specified URL."
+          "text": "Creates an asset that models the media resource at the specified URL."
         }
       ],
       "fragments": [
@@ -212,6 +187,30 @@
         {
           "kind": "identifier",
           "text": "initWithURL:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl": {
+      "title": "URLAssetWithURL:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset/1508727-urlassetwithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avurlasset/1508727-urlassetwithurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an asset that models the media resource found at the specified URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "URLAssetWithURL:options:"
         }
       ]
     },
@@ -335,6 +334,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -380,7 +380,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "For possible keys and values, see "
+                  "text": "For supported keys and values, see "
                 },
                 {
                   "type": "reference",
@@ -427,7 +427,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

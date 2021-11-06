@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Encodes an object to send over an XPC connection."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -29,20 +35,23 @@
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)NSXPCCoder(im)encodeXPCObject:forKey:",
+    "parent": {
+      "title": "NSXPCCoder"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -91,7 +100,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsxpccoder"
+      "url": "/documentation/foundation/nsxpccoder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A coder that encodes and decodes objects that your app sends over an XPC connection."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/xpc/xpc_object_t": {
       "title": "xpc_object_t",
@@ -109,6 +124,54 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsstring"
     },
+    "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174970-encodexpcobject": {
+      "title": "encodeXPCObject:forKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174970-encodexpcobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsxpccoder/3174970-encodexpcobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encodes an object to send over an XPC connection."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "encodeXPCObject:forKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype": {
+      "title": "decodeXPCObjectOfType:forKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decodes an object and validates that its type matches the type a service provides over XPC."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "decodeXPCObjectOfType:forKey:"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -117,6 +180,15 @@
       "title": "Technologies"
     }
   },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsxpccoder/3174969-decodexpcobjectoftype"
+      ],
+      "title": "Encoding and Decoding",
+      "generated": true
+    }
+  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -201,10 +273,46 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "xpcObject",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An object that XPC can encode."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "key",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A string that your app uses to reference the encoded object."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

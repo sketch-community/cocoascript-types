@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "10.3",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.3",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12.4",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.2",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "7.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)AVContentKeySession(py)keySystem",
+    "parent": {
+      "title": "AVContentKeySession"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -116,7 +124,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to create and track decryption keys for media data."
+          "text": "An object that creates and tracks decryption keys for media data."
         }
       ]
     },
@@ -150,54 +158,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2887362-contentkeysessionwithkeysystem": {
-      "title": "contentKeySessionWithKeySystem:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2887362-contentkeysessionwithkeysystem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2887362-contentkeysessionwithkeysystem",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a content key session to manage a collection of content decryption keys."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "contentKeySessionWithKeySystem:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799206-contentkeysessionwithkeysystem": {
-      "title": "contentKeySessionWithKeySystem:storageDirectoryAtURL:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799206-contentkeysessionwithkeysystem",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avcontentkeysession/2799206-contentkeysessionwithkeysystem",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates a content key session to manage a collection of content decryption keys; points to a directory that stores abnormal session termination reports."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "contentKeySessionWithKeySystem:storageDirectoryAtURL:"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799167-keysystem": {
       "title": "keySystem",
       "type": "topic",
@@ -212,6 +172,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799203-storageurl": {
+      "title": "storageURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799203-storageurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcontentkeysession/2799203-storageurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A URL that points to a writable storage directory."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -223,11 +197,10 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2887362-contentkeysessionwithkeysystem",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799206-contentkeysessionwithkeysystem",
-        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysystem"
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysystem",
+        "doc://com.apple.documentation/documentation/avfoundation/avcontentkeysession/2799203-storageurl"
       ],
-      "title": "Creating New Content Key Sessions",
+      "title": "Inspecting the Session",
       "generated": true
     }
   ],
@@ -269,6 +242,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -317,7 +291,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

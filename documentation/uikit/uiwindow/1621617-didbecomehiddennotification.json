@@ -2,15 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Posted when an "
-    },
-    {
-      "type": "codeVoice",
-      "code": "UIWindow"
-    },
-    {
-      "type": "text",
-      "text": " object becomes hidden."
+      "text": "Posted when a window becomes hidden."
     }
   ],
   "documentVersion": 0,
@@ -58,20 +50,28 @@
       {
         "name": "iOS",
         "introducedAt": "2.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "2.0",
+        "current": "15.2"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@UIWindowDidBecomeHiddenNotification",
+    "parent": {
+      "title": "UIWindow"
+    },
     "symbolKind": "cldata",
     "fragments": [
       {
@@ -89,8 +89,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -205,15 +205,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "UIWindow"
-        },
-        {
-          "type": "text",
-          "text": " object becomes visible."
+          "text": "Posted when a window becomes visible."
         }
       ],
       "fragments": [
@@ -241,15 +233,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted when an "
-        },
-        {
-          "type": "codeVoice",
-          "code": "UIWindow"
-        },
-        {
-          "type": "text",
-          "text": " object becomes hidden."
+          "text": "Posted when a window becomes hidden."
         }
       ],
       "fragments": [
@@ -277,15 +261,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever a "
-        },
-        {
-          "type": "codeVoice",
-          "code": "UIWindow"
-        },
-        {
-          "type": "text",
-          "text": " object becomes the key window."
+          "text": "Posted whenever a window becomes the key window."
         }
       ],
       "fragments": [
@@ -313,15 +289,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Posted whenever a "
-        },
-        {
-          "type": "codeVoice",
-          "code": "UIWindow"
-        },
-        {
-          "type": "text",
-          "text": " object resigns its status as main window."
+          "text": "Posted whenever a window resigns its status as main window."
         }
       ],
       "fragments": [
@@ -410,6 +378,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst",
             "tvOS"
           ]
@@ -430,7 +399,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The notification object is the window object that has become hidden. This notification does not contain a "
+              "text": "The notification object is the hidden window. This notification doesn’t contain a "
             },
             {
               "type": "codeVoice",
@@ -447,7 +416,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Switching between apps does not generate visibility-related notifications for windows. Window visibility changes reflect changes to the window’s "
+              "text": "Switching between apps doesn’t generate visibility-related notifications for windows. Window visibility changes reflect changes to the window’s "
             },
             {
               "type": "reference",
@@ -456,7 +425,7 @@
             },
             {
               "type": "text",
-              "text": " property and reflect only the window’s visibility within the app.  "
+              "text": " property and reflect only the window’s visibility within the app."
             }
           ]
         }
@@ -464,7 +433,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

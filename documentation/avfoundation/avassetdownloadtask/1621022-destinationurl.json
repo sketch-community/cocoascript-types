@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The file URL supplied to the download task upon initialization."
+      "text": "The local file URL to where the task downloads the asset."
     }
   ],
   "documentVersion": 0,
@@ -36,23 +36,33 @@
         "name": "iOS",
         "introducedAt": "9.0",
         "deprecatedAt": "10.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "9.0",
+        "deprecatedAt": "10.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)AVAssetDownloadTask(py)destinationURL",
+    "parent": {
+      "title": "AVAssetDownloadTask"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -127,7 +137,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The asset supplied to the download task upon initialization."
+          "text": "The asset that this task downloads."
         }
       ]
     },
@@ -141,7 +151,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A collection of time ranges for which the download task has media data already downloaded and playable."
+          "text": "The time ranges of the downloaded media that are ready for playback."
         }
       ]
     },
@@ -155,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The options supplied to the download task upon initialization."
+          "text": "The configuration options for the task."
         }
       ]
     },
@@ -169,7 +179,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The file URL supplied to the download task upon initialization."
+          "text": "The local file URL to where the task downloads the asset."
         }
       ],
       "deprecated": true
@@ -231,34 +241,15 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "Mac Catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "discussion",
-          "level": 2,
-          "text": "Discussion",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "This URL may have been appended with the appropriate extension for the asset."
-            }
           ]
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

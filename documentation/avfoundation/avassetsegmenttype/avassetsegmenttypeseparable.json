@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Indicates that the segment is a separable segment."
+      "text": "A separable segment type."
     }
   ],
   "documentVersion": 0,
@@ -13,6 +13,7 @@
         "doc://com.apple.documentation/documentation/avfoundation",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
         "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avassetsegmentreport",
         "doc://com.apple.documentation/documentation/avfoundation/avassetsegmenttype"
@@ -38,30 +39,38 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:@E@AVAssetSegmentType@AVAssetSegmentTypeSeparable",
+    "parent": {
+      "title": "AVAssetSegmentType"
+    },
     "symbolKind": "econst"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -112,6 +121,14 @@
       "kind": "article",
       "role": "collectionGroup"
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
+      "title": "AVAssetWriter",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
+      "url": "/documentation/avfoundation/avassetwriter",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
       "title": "AVAssetWriterDelegate",
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
@@ -134,7 +151,13 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetsegmenttype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetsegmenttype"
+      "url": "/documentation/avfoundation/avassetsegmenttype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that define the type of a segment."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetsegmenttype/avassetsegmenttypeinitialization": {
       "title": "AVAssetSegmentTypeInitialization",
@@ -146,7 +169,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the segment is a initialization segment."
+          "text": "An initialization segment type."
         }
       ]
     },
@@ -160,7 +183,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Indicates that the segment is a separable segment."
+          "text": "A separable segment type."
         }
       ]
     },
@@ -201,6 +224,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -210,7 +234,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

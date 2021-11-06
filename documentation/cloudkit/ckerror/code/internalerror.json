@@ -9,7 +9,10 @@
   "hierarchy": {
     "paths": [
       [
-        "doc://com.apple.documentation/documentation/technologies"
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/cloudkit",
+        "doc://com.apple.documentation/documentation/cloudkit/ckerror",
+        "doc://com.apple.documentation/documentation/cloudkit/ckerror/code"
       ]
     ]
   },
@@ -32,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@E@CKErrorCode@CKErrorInternalError",
+    "parent": {
+      "title": "CKError.Code"
+    },
     "symbolKind": "enumelt",
     "fragments": [
       {
@@ -69,8 +80,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -97,13 +108,21 @@
     }
   ],
   "references": {
-    "link-2872588": {
-      "title": "bug report",
+    "doc://com.apple.documentation/documentation/cloudkit": {
+      "title": "CloudKit",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit",
+      "url": "/documentation/cloudkit",
       "type": "topic",
-      "identifier": "link-2872588",
-      "kind": "article",
-      "role": "link",
-      "url": "http://radar.apple.com"
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerror": {
+      "title": "CKError",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror",
+      "url": "/documentation/cloudkit/ckerror",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckerror/code": {
       "title": "CKError.Code",
@@ -116,6 +135,38 @@
         {
           "type": "text",
           "text": "The error codes that CloudKit returns."
+        }
+      ]
+    },
+    "link-2872588": {
+      "title": "bug report",
+      "type": "topic",
+      "identifier": "link-2872588",
+      "kind": "article",
+      "role": "link",
+      "url": "http://radar.apple.com"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerror/code/accounttemporarilyunavailable": {
+      "title": "CKError.Code.accountTemporarilyUnavailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerror/code/accounttemporarilyunavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerror/code/accounttemporarilyunavailable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An error that occurs when the user’s iCloud account is temporarily unavailable. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "case "
+        },
+        {
+          "kind": "identifier",
+          "text": "accountTemporarilyUnavailable"
         }
       ]
     },
@@ -971,6 +1022,7 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/cloudkit/ckerror/code/accounttemporarilyunavailable",
         "doc://com.apple.documentation/documentation/cloudkit/ckerror/code/alreadyshared",
         "doc://com.apple.documentation/documentation/cloudkit/ckerror/code/assetfilemodified",
         "doc://com.apple.documentation/documentation/cloudkit/ckerror/code/assetfilenotfound",
@@ -1042,6 +1094,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -1081,7 +1134,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -35,30 +35,40 @@
         "name": "iOS",
         "introducedAt": "3.2",
         "deprecatedAt": "6.0",
-        "current": "14.3",
+        "current": "15.2",
+        "deprecated": true
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "3.2",
+        "deprecatedAt": "6.0",
+        "current": "15.2",
         "deprecated": true
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
         "deprecatedAt": "11.0",
-        "current": "11.1",
+        "current": "12.1",
         "deprecated": true
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
         "deprecatedAt": "13.0",
-        "current": "14.3",
+        "current": "15.2",
         "deprecated": true
       }
     ],
     "externalID": "c:objc(cs)CLLocationManager(py)purpose",
+    "parent": {
+      "title": "CLLocationManager"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -219,6 +229,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus": {
+      "title": "authorizationStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocationmanager/3563952-authorizationstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current authorization status for the app."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus": {
       "title": "CLAuthorizationStatus",
       "type": "topic",
@@ -233,17 +257,30 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus": {
-      "title": "authorizationStatus",
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced": {
+      "title": "NSLocationDefaultAccuracyReduced",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/corelocation/cllocationmanager/3563952-authorizationstatus",
+      "url": "/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced",
       "abstract": [
         {
           "type": "text",
-          "text": "The current authorization status for the app."
+          "text": "A Boolean value that indicates whether the app requests reduced location accuracy by default."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationDefaultAccuracyReduced",
+      "ideTitle": "Privacy - Location Default Accuracy Reduced",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationDefaultAccuracyReduced"
         }
       ]
     },
@@ -287,6 +324,33 @@
       ],
       "deprecated": true
     },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription": {
+      "title": "NSLocationAlwaysAndWhenInUseUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A message that tells the user why the app is requesting access to the user’s location information at all times."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSLocationAlwaysAndWhenInUseUsageDescription",
+      "ideTitle": "Privacy - Location Always and When In Use Usage Description",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSLocationAlwaysAndWhenInUseUsageDescription"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -323,16 +387,6 @@
       ]
     }
   ],
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
@@ -340,9 +394,11 @@
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3600217-requesttemporaryfullaccuracyauth",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3600216-requesttemporaryfullaccuracyauth",
-        "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus",
         "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus",
-        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423523-authorizationstatus"
+        "doc://com.apple.documentation/documentation/corelocation/clauthorizationstatus",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationdefaultaccuracyreduced",
+        "doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423523-authorizationstatus",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationalwaysandwheninuseusagedescription"
       ],
       "title": "Requesting Authorization for Location Services",
       "generated": true
@@ -386,6 +442,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst"
           ]
@@ -431,7 +488,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

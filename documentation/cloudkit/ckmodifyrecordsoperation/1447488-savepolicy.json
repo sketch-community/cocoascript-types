@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The policy to apply when the server contains a newer version of a specific record."
+      "text": "The policy to use when saving changes to records."
     }
   ],
   "documentVersion": 0,
@@ -11,7 +11,7 @@
       [
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/cloudkit",
-        "doc://com.apple.documentation/documentation/cloudkit/record_operations",
+        "doc://com.apple.documentation/documentation/cloudkit/local_records",
         "doc://com.apple.documentation/documentation/cloudkit/ckmodifyrecordsoperation"
       ]
     ]
@@ -35,35 +35,43 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "3.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)CKModifyRecordsOperation(py)savePolicy",
+    "parent": {
+      "title": "CKModifyRecordsOperation"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -98,10 +106,10 @@
       "kind": "symbol",
       "role": "collection"
     },
-    "doc://com.apple.documentation/documentation/cloudkit/record_operations": {
-      "title": "Record Operations",
-      "identifier": "doc://com.apple.documentation/documentation/cloudkit/record_operations",
-      "url": "/documentation/cloudkit/record_operations",
+    "doc://com.apple.documentation/documentation/cloudkit/local_records": {
+      "title": "Local Records",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/local_records",
+      "url": "/documentation/cloudkit/local_records",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -127,6 +135,30 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/cloudkit/ckrecordsavepolicy/ckrecordsaveifserverrecordunchanged"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerrorserverrecordchanged": {
+      "title": "CKErrorServerRecordChanged",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerrorserverrecordchanged",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckerrorcode/ckerrorserverrecordchanged"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy/ckrecordsavechangedkeys": {
+      "title": "CKRecordSaveChangedKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy/ckrecordsavechangedkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordsavepolicy/ckrecordsavechangedkeys"
+    },
+    "doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy/ckrecordsaveallkeys": {
+      "title": "CKRecordSaveAllKeys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy/ckrecordsaveallkeys",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/cloudkit/ckrecordsavepolicy/ckrecordsaveallkeys"
     },
     "doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy": {
       "title": "CKRecordSavePolicy",
@@ -208,7 +240,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The policy to apply when the server contains a newer version of a specific record."
+          "text": "The policy to use when saving changes to records."
         }
       ]
     },
@@ -271,6 +303,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -293,7 +326,87 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Each record has a change tag that allows the server to track when it changes that record. When you save a record, CloudKit compares the change tag in your local copy of the record with the one on the server. If the two tags don’t match — meaning that there is a potential conflict — the server uses the value in this property to determine how to proceed. "
+              "text": "The server uses this property to determine how to proceed when saving record changes. The exact behavior depends on the policy you choose:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy/ckrecordsaveifserverrecordunchanged"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to only save a record when the change tag of the local copy matches that of the server’s copy. If the server record’s change tag is more recent, CloudKit discards the save and returns a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckerrorcode/ckerrorserverrecordchanged"
+                    },
+                    {
+                      "type": "text",
+                      "text": " error."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy/ckrecordsavechangedkeys"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to save only the fields of the record that contain changes. The server doesn’t compare record change tags when using this policy."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy/ckrecordsaveallkeys"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to save every field of the record, even those without changes. The server doesn’t compare record change tags when using this policy."
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -302,24 +415,28 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The default value of this property is "
+              "text": "If you change the property’s value, do so before you execute the operation or submit the operation to a queue. The default value is "
             },
             {
               "type": "reference",
-              "isActive": true,
+              "isActive": false,
               "identifier": "doc://com.apple.documentation/documentation/cloudkit/ckrecordsavepolicy/ckrecordsaveifserverrecordunchanged"
             },
             {
               "type": "text",
-              "text": ". If you intend to change the property’s value, do so before you execute the operation or submit the operation to a queue. "
+              "text": "."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

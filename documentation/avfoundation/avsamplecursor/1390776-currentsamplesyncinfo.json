@@ -42,15 +42,18 @@
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       }
     ],
     "externalID": "c:objc(cs)AVSampleCursor(py)currentSampleSyncInfo",
+    "parent": {
+      "title": "AVSampleCursor"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -125,7 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A value that describes attributes of a media sample for consideration when resynchronizing a decoder."
+          "text": "A structure that describes the attributes of media samples to consider when resynchronizing a decoder."
         }
       ]
     },
@@ -181,7 +184,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A structure indicating the offset and length of storage occupied by a media sample or its chunk."
+          "text": "A structure that indicates the offset and length of storage for a media sample or its chunk."
         }
       ]
     },
@@ -321,6 +324,20 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/3752983-currentsampledependencyattachmen": {
+      "title": "currentSampleDependencyAttachments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/3752983-currentsampledependencyattachmen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplecursor/3752983-currentsampledependencyattachmen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary of dependency-related sample buffer attachments."
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -344,7 +361,8 @@
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1386359-currentsamplestoragerange",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursorsyncinfo",
         "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/1390703-copycurrentsampleformatdescripti",
-        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/3131266-currentsampleaudiodependencyinfo"
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/3131266-currentsampleaudiodependencyinfo",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplecursor/3752983-currentsampledependencyattachmen"
       ],
       "title": "Getting Sample Information",
       "generated": true
@@ -394,7 +412,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

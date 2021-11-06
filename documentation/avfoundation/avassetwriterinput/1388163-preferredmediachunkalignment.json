@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "8.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "8.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.10",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInput(py)preferredMediaChunkAlignment",
+    "parent": {
+      "title": "AVAssetWriterInput"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,25 +128,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting": {
-      "title": "startWriting",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1386724-startwriting",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "startWriting"
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
     },
@@ -149,86 +139,6 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/objectivec/nsinteger"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses": {
-      "title": "canPerformMultiplePasses",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the input might perform multiple passes over appended media data."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription": {
-      "title": "currentPassDescription",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that describes the requirements, such as source time ranges to append or re-append, to the current pass."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpassdescription": {
-      "title": "AVAssetWriterInputPassDescription",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpassdescription",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputpassdescription",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "An object that defines an interface for querying about the requirements of the current pass."
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished": {
-      "title": "markCurrentPassAsFinished",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Instructs the receiver to analyze the appended media data and determine whether to improve the results by re-encoding certain segments."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "markCurrentPassAsFinished"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo": {
-      "title": "performsMultiPassEncodingIfSupported",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A Boolean value that indicates whether the input should attempt to encode the source media data using multiple passes."
-        }
-      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment": {
       "title": "preferredMediaChunkAlignment",
@@ -254,31 +164,49 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The duration used for each chunk of sample data in the output file."
+          "text": "The duration to use for each chunk of sample data in the output file."
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu": {
-      "title": "respondToEachPassDescriptionOnQueue:usingBlock:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl": {
+      "title": "sampleReferenceBaseURL",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu",
+      "url": "/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl",
       "abstract": [
         {
           "type": "text",
-          "text": "Instructs the receiver to invoke a client-supplied block whenever a new pass has begun."
+          "text": "The base URL sample references are relative to."
         }
-      ],
-      "fragments": [
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation": {
+      "title": "mediaDataLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation",
+      "abstract": [
         {
-          "kind": "text",
-          "text": "- "
-        },
+          "type": "text",
+          "text": "Specifies how the input lays out and interleaves media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmediadatalocation": {
+      "title": "AVAssetWriterInputMediaDataLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmediadatalocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputmediadatalocation",
+      "abstract": [
         {
-          "kind": "identifier",
-          "text": "respondToEachPassDescriptionOnQueue:usingBlock:"
+          "type": "text",
+          "text": "A structure that indicates how to lay out and interleave media data."
         }
       ]
     },
@@ -293,15 +221,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpassdescription",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmediadatalocation"
       ],
-      "title": "Performing Multiple-Pass Encoding",
+      "title": "Configuring Media Data Layout",
       "generated": true
     }
   ],
@@ -343,6 +268,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -372,7 +298,7 @@
             },
             {
               "type": "text",
-              "text": ", which means that the receiver will choose an appropriate default value. A value of "
+              "text": ", which means that the input chooses an appropriate default value. A value of "
             },
             {
               "type": "codeVoice",
@@ -380,7 +306,7 @@
             },
             {
               "type": "text",
-              "text": " implies that no padding should be used to achieve a particular chunk alignment. It is an error to set a negative value for chunk alignment."
+              "text": " indicates not to use padding to achieve a particular chunk alignment. It’s an error to set a negative value for chunk alignment."
             }
           ]
         },
@@ -389,24 +315,19 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "This property cannot be set after "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1386724-startwriting"
-            },
-            {
-              "type": "text",
-              "text": " has been called for the receiver."
+              "text": "You can’t set this value after writing starts."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "The media types you can add inputs to."
+      "text": "The media types the asset writer supports adding as inputs."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter(py)availableMediaTypes",
+    "parent": {
+      "title": "AVAssetWriter"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,25 +128,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
+          "text": "An object that writes media data to a container file."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediatype#2901743": {
-      "title": "Media Types",
-      "type": "section",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediatype#2901743",
-      "kind": "article",
-      "role": "task",
-      "url": "/documentation/avfoundation/avmediatype#2901743"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avmediatype": {
-      "title": "AVMediaType",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediatype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avmediatype"
     },
     "doc://com.apple.documentation/documentation/foundation/nsarray": {
       "title": "NSArray",
@@ -148,69 +140,25 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsarray"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl": {
-      "title": "assetWriterWithURL:fileType:error:",
+    "doc://com.apple.documentation/documentation/avfoundation/avmediatype": {
+      "title": "AVMediaType",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediatype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl",
+      "url": "/documentation/avfoundation/avmediatype"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs": {
+      "title": "inputs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388264-inputs",
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an asset writer for writing to the file identified by a given URL in a format specified by a given UTI."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "+ "
-        },
-        {
-          "kind": "identifier",
-          "text": "assetWriterWithURL:fileType:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389201-initwithurl": {
-      "title": "initWithURL:fileType:error:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389201-initwithurl",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1389201-initwithurl",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Creates an asset writer for writing to the file identified by a given URL in a format specified by a given UTI."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithURL:fileType:error:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype": {
-      "title": "initWithContentType:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "initWithContentType:"
+          "text": "The inputs an asset writer contains."
         }
       ]
     },
@@ -224,7 +172,79 @@
       "abstract": [
         {
           "type": "text",
-          "text": "The media types you can add inputs to."
+          "text": "The media types the asset writer supports adding as inputs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings": {
+      "title": "canApplyOutputSettings:forMediaType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the output file format supports the output settings for a specific media type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canApplyOutputSettings:forMediaType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput": {
+      "title": "canAddInput:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1387863-canaddinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether the asset writer supports adding the input."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "canAddInput:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput": {
+      "title": "addInput:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/1390389-addinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds an input to an asset writer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addInput:"
         }
       ]
     },
@@ -239,11 +259,12 @@
   "seeAlsoSections": [
     {
       "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426663-assetwriterwithurl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389201-initwithurl",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388264-inputs",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1387863-canaddinput",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1390389-addinput"
       ],
-      "title": "Creating an Asset Writer",
+      "title": "Configuring Inputs",
       "generated": true
     }
   ],
@@ -295,6 +316,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -316,16 +338,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "An array of values specified in "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediatype#2901743"
-            },
-            {
-              "type": "text",
-              "text": ". Some media types may not be accepted within the type of file with which the writer was initialized."
+              "text": "Use this property to determine the acceptable media types for the container file that the asset writer outputs."
             }
           ]
         }
@@ -333,7 +346,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A profile for the output file type."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -30,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "11.0",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "14.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriter(py)outputFileTypeProfile",
+    "parent": {
+      "title": "AVAssetWriter"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -114,9 +128,33 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to write media data to a new file of a specified audiovisual container type."
+          "text": "An object that writes media data to a container file."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofilempeg4applehls": {
+      "title": "AVFileTypeProfileMPEG4AppleHLS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofilempeg4applehls",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfiletypeprofilempeg4applehls"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofilempeg4cmafcompliant": {
+      "title": "AVFileTypeProfileMPEG4CMAFCompliant",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofilempeg4cmafcompliant",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfiletypeprofilempeg4cmafcompliant"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avfiletypempeg4": {
+      "title": "AVFileTypeMPEG4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypempeg4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avfiletypempeg4"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofile": {
       "title": "AVFileTypeProfile",
@@ -132,31 +170,27 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546585-delegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3546585-delegate"
+      "url": "/documentation/avfoundation/avassetwriter/3546585-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A delegate object that responds to asset-writing events."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb": {
-      "title": "initialMovieFragmentSequenceNumber",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
+      "title": "AVAssetWriterDelegate",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime": {
-      "title": "initialSegmentStartTime",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile": {
-      "title": "outputFileTypeProfile",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile"
+      "url": "/documentation/avfoundation/avassetwriterdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A delegate protocol that defines the methods to implement to respond to asset-writing events."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval": {
       "title": "preferredOutputSegmentInterval",
@@ -164,15 +198,41 @@
       "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval"
+      "url": "/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interval of output segments that you prefer."
+        }
+      ]
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments": {
-      "title": "producesCombinableFragments",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime": {
+      "title": "initialSegmentStartTime",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments"
+      "url": "/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The start time of the initial segment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile": {
+      "title": "outputFileTypeProfile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A profile for the output file type."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546586-flushsegment": {
       "title": "flushSegment",
@@ -181,6 +241,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/avfoundation/avassetwriter/3546586-flushsegment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Closes the current segment and outputs it to a delegate method."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -200,27 +266,16 @@
       "title": "Technologies"
     }
   },
-  "diffAvailability": {
-    "major": {
-      "change": "modified",
-      "platform": "Xcode",
-      "versions": [
-        "12.0",
-        "12.3 Release Candidate"
-      ]
-    }
-  },
   "seeAlsoSections": [
     {
       "identifiers": [
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546585-delegate",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/3546586-flushsegment"
       ],
-      "title": "Configuring Fragments",
+      "title": "Configuring Segment Writing",
       "generated": true
     }
   ],
@@ -262,16 +317,85 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default value is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ", which indicates that the writer chooses an appropriate default profile for the output file type. If your app requires segment data that’s suitable for streaming, set the value to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofilempeg4applehls"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofilempeg4cmafcompliant"
+            },
+            {
+              "type": "text",
+              "text": " to output CMAF-compliant "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avfiletypempeg4"
+            },
+            {
+              "type": "text",
+              "text": " data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can’t change this value after writing starts."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

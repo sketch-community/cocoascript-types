@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Reuses the object's storage to compute a new factorization of the double-precision matrix, without internal memory allocation."
+      "text": "Computes a factorization of the specified double-precision matrix using an existing factorization’s storage, without internal memory allocation."
     }
   ],
   "documentVersion": 0,
@@ -12,8 +12,7 @@
         "doc://com.apple.documentation/documentation/technologies",
         "doc://com.apple.documentation/documentation/accelerate",
         "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_refactor_functions"
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions"
       ]
     ]
   },
@@ -36,35 +35,40 @@
       {
         "name": "iOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "11.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.13",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "11.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "4.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:@F@SparseRefactor#$@SA@SparseMatrix_Double#*$@SA@SparseOpaqueFactorization_Double#*v#",
     "symbolKind": "func"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,18 +111,10 @@
       "kind": "article",
       "role": "collectionGroup"
     },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
-      "title": "Advanced Functions for Sparse Solving",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
-      "type": "topic",
-      "kind": "article",
-      "role": "collectionGroup"
-    },
-    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_refactor_functions": {
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions": {
       "title": "Sparse Refactor Functions",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_refactor_functions",
-      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/sparse_refactor_functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_refactor_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_refactor_functions",
       "type": "topic",
       "kind": "article",
       "role": "collectionGroup"
@@ -130,6 +126,38 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/accelerate/2868245-sparsefactor"
+    },
+    "link-media-3703912": {
+      "identifier": "link-media-3703912",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/2868246-sparserefactor#3703912"
+    },
+    "media-3703912": {
+      "identifier": "media-3703912",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 403,
+            "height": 171
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fccc35fb2c/rendered2x-1606992651.png"
+        }
+      ],
+      "alt": "A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2868246-sparserefactor#3703066": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868246-sparserefactor#3703066",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/2868246-sparserefactor#3703066"
     },
     "doc://com.apple.documentation/documentation/accelerate/sparsematrix_double": {
       "title": "SparseMatrix_Double",
@@ -157,7 +185,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reuses the object's storage to compute a new factorization of the double-precision matrix, without internal memory allocation."
+          "text": "Computes a factorization of the specified double-precision matrix using an existing factorization’s storage, without internal memory allocation."
         }
       ]
     },
@@ -171,7 +199,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reuses the object's storage to compute a new factorization of the single-precision matrix, without internal memory allocation."
+          "text": "Computes a factorization of the specified single-precision matrix using an existing factorization’s storage, without internal memory allocation."
         }
       ]
     },
@@ -185,7 +213,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reuses the object's storage to compute a new factorization of the double-precision matrix, using specified options, without internal memory allocation."
+          "text": "Computes a factorization of the specified double-precision matrix using an existing factorization’s storage and specified options, and without internal memory allocation. "
         }
       ]
     },
@@ -199,7 +227,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reuses the object's storage to compute a new factorization of the single-precision matrix, using specified options, without internal memory allocation."
+          "text": "Computes a factorization of the specified single-precision matrix using an existing factorization’s storage and specified options, and without internal memory allocation.  "
         }
       ]
     },
@@ -218,7 +246,7 @@
         "doc://com.apple.documentation/documentation/accelerate/2868033-sparserefactor",
         "doc://com.apple.documentation/documentation/accelerate/2868204-sparserefactor"
       ],
-      "title": "Matrix Refactorizations with User-Defined Workspace",
+      "title": "Matrix Refactorizations Functions with User-Defined Workspace",
       "generated": true
     }
   ],
@@ -278,6 +306,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -300,7 +329,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The matrix containing numerical data to recompute."
+                  "text": "The matrix that contains numerical data to recompute."
                 }
               ]
             }
@@ -336,7 +365,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " bytes. his workspace may be reused or destroyed by the user as soon as the function returns."
+                  "text": " bytes."
                 }
               ]
             }
@@ -357,12 +386,8 @@
           "type": "paragraph",
           "inlineContent": [
             {
-              "type": "codeVoice",
-              "code": "Matrix"
-            },
-            {
               "type": "text",
-              "text": " must have the same non-zero structure as that used for the original factorization."
+              "text": "Use this function to calculate the factorization of a sparse matrix to pass to the direct solve functions using an existing factorization’s storage. The specified matrix must have the same sparsity structure as the matrix of the original factorization. In cases where your code calls the function frequently, create and manage the workspace that the Sparse Solvers library uses and reuse it across function calls. Reusing a workspace prevents the Sparse Solvers library from allocating the temporary storage with each call."
             }
           ]
         },
@@ -371,24 +396,16 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The same numerical factorization options will be used as in the original construction of "
+              "text": "This function provides behavior similar to "
             },
             {
-              "type": "codeVoice",
-              "code": "Factorization"
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/2868245-sparsefactor"
             },
             {
               "type": "text",
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "This call provides very similar behavior to that which can be achieved by reusing explicit storage supplied to "
+              "text": " by reusing explicit storage that you supply to "
             },
             {
               "type": "reference",
@@ -405,7 +422,7 @@
             },
             {
               "type": "text",
-              "text": ". However, in addition to providing a simplified call sequence, this call can also reuse any additional storage allocated to accommodate delayed pivots."
+              "text": ". However, in addition to providing a simplified call sequence, this call can also reuse any additional storage that you allocate to accommodate delayed pivots."
             }
           ]
         },
@@ -414,15 +431,178 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "Note that if the reference count of the underlying object is not exactly one (that is, if there are any implicit copies as a result of calls to transpose or extract factor functions that have not been destroyed through a call to the relevant cleanup function), then new storage will be allocated regardless."
+              "text": "The following figure shows two systems of equations where the coefficient matrix is sparse:"
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3703912",
+              "metadata": {
+                "anchor": "3703912",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code solves these two systems with refactoring. After factorizing and solving for the coefficient matrix "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A0"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", the code refactors and solves for matrix "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A1"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/// Define the sparsity structure of matrices `A0` and `A1`.",
+            "let rowIndices: [Int32] =    [ 0, 1, 1, 2]",
+            "let columnIndices: [Int32] = [ 2, 0, 2, 1]",
+            "",
+            "/// Create the single-precision coefficient matrix _A0_.",
+            "let a0Values: [Double] = [10, 20, 5, 50]",
+            "let A0 = SparseConvertFromCoordinate(3, 3,",
+            "                                     4, 1,",
+            "                                     SparseAttributes_t(),",
+            "                                     rowIndices, columnIndices,",
+            "                                     a0Values)",
+            "",
+            "/// Factorize _A0_.",
+            "var factorization = SparseFactor(SparseFactorizationQR, A0)",
+            "",
+            "/// Solve _A0 · x = b0_ in place.",
+            "var b0Values: [Double] = [30, 35, 100]",
+            "b0Values.withUnsafeMutableBufferPointer { bPtr in",
+            "    let xb = DenseVector_Double(count: 3,",
+            "                               data: bPtr.baseAddress!)",
+            "    ",
+            "    SparseSolve(factorization, xb)",
+            "}",
+            "",
+            "/// Create the double-precision coefficient matrix _A1_.",
+            "let a1Values: [Double] = [5, 10, 2.5, 25]",
+            "let A1 = SparseConvertFromCoordinate(3, 3,",
+            "                                     4, 1,",
+            "                                     SparseAttributes_t(),",
+            "                                     rowIndices, columnIndices,",
+            "                                     a1Values)",
+            "",
+            "/// Create the workspace.",
+            "let byteCount = factorization.symbolicFactorization.workspaceSize_Double",
+            "let workspace = UnsafeMutableRawPointer.allocate(",
+            "    byteCount: byteCount,",
+            "    alignment: MemoryLayout<Double>.alignment)",
+            "defer {",
+            "    workspace.deallocate()",
+            "}",
+            "",
+            "/// Factorize _A1_ into the existing factorization.",
+            "SparseRefactor(A1, &factorization, workspace)",
+            "",
+            "/// Solve _A1 · x = b1_ in place.",
+            "var b1Values: [Double] = [60, 70, 200]",
+            "b1Values.withUnsafeMutableBufferPointer { bPtr in",
+            "    let xb = DenseVector_Double(count: 3,",
+            "                                data: bPtr.baseAddress!)",
+            "    ",
+            "    SparseSolve(factorization, xb)",
+            "}",
+            "",
+            "SparseCleanup(A0)",
+            "SparseCleanup(A1)",
+            "SparseCleanup(factorization)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3703066",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "b0Values"
+            },
+            {
+              "type": "text",
+              "text": " contains the values "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[1.0, 2.0, 3.0]"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "b1Values"
+            },
+            {
+              "type": "text",
+              "text": " contains the values "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[4.0, 8.0, 12.0]"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

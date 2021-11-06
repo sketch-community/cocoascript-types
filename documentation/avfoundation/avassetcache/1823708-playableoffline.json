@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Determines if a complete rendition of an asset is available for playing without a network connection."
+      "text": "A Boolean value that indicates whether the asset is playable without an internet connection."
     }
   ],
   "documentVersion": 0,
@@ -35,30 +35,38 @@
       {
         "name": "iOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "10.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.12",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "10.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetCache(py)playableOffline",
+    "parent": {
+      "title": "AVAssetCache"
+    },
     "symbolKind": "instp"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -111,9 +119,17 @@
       "abstract": [
         {
           "type": "text",
-          "text": "An object used to inspect the state of an asset’s locally cached media data."
+          "text": "An object that you use to inspect locally cached media data."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetcache/1823715-mediaselectionoptionsinmediasele": {
       "title": "mediaSelectionOptionsInMediaSelectionGroup:",
@@ -125,7 +141,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns an array of locally cached media selection options that are available for offline operations."
+          "text": "Returns an array of locally cached media selection options that are available for offline use."
         }
       ],
       "fragments": [
@@ -149,7 +165,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Determines if a complete rendition of an asset is available for playing without a network connection."
+          "text": "A Boolean value that indicates whether the asset is playable without an internet connection."
         }
       ]
     },
@@ -206,6 +222,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -227,49 +244,53 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "You should query this property before presenting or attempting to play an offline asset to determine if it’s available for use. A return value of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "true"
-            },
-            {
-              "type": "text",
-              "text": " indicates a complete rendition of this asset is available for offline playback."
+              "text": "Check the value of this property to determine the asset’s suitability for playback before presenting or attempting to play it."
             }
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "aside",
+          "content": [
             {
-              "type": "text",
-              "text": "A return value of "
-            },
-            {
-              "type": "codeVoice",
-              "code": "true"
-            },
-            {
-              "type": "text",
-              "text": " does not indicate that all of an asset’s associated media selection options are available for offline playback. You should call "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetcache/1823715-mediaselectionoptionsinmediasele"
-            },
-            {
-              "type": "text",
-              "text": " to determine which media selection options are available for offline use."
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A property value of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+                },
+                {
+                  "type": "text",
+                  "text": " doesn’t indicate that all of the asset’s associated media selection options are available for offline playback. Instead, call "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetcache/1823715-mediaselectionoptionsinmediasele"
+                },
+                {
+                  "type": "text",
+                  "text": " to determine which media selections are available."
+                }
+              ]
             }
-          ]
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

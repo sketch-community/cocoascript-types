@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A formatter that creates locale-aware string representations of a relative date or time."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -28,35 +34,40 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       }
     ],
     "externalID": "c:objc(cs)NSRelativeDateTimeFormatter",
     "symbolKind": "cl"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -107,46 +118,6 @@
       "role": "symbol",
       "url": "/documentation/foundation/nsformatter"
     },
-    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130994-calendar": {
-      "title": "calendar",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130994-calendar",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsrelativedatetimeformatter/3130994-calendar"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130995-datetimestyle": {
-      "title": "dateTimeStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130995-datetimestyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsrelativedatetimeformatter/3130995-datetimestyle"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130996-formattingcontext": {
-      "title": "formattingContext",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130996-formattingcontext",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsrelativedatetimeformatter/3130996-formattingcontext"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130997-locale": {
-      "title": "locale",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130997-locale",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsrelativedatetimeformatter/3130997-locale"
-    },
-    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3131002-unitsstyle": {
-      "title": "unitsStyle",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3131002-unitsstyle",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nsrelativedatetimeformatter/3131002-unitsstyle"
-    },
     "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130998-localizedstringfordate": {
       "title": "localizedStringForDate:relativeToDate:",
       "type": "topic",
@@ -154,6 +125,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsrelativedatetimeformatter/3130998-localizedstringfordate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Formats the date interval from the reference date to the specified date using the formatter’s calendar."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -172,6 +149,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsrelativedatetimeformatter/3130999-localizedstringfromdatecomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Formats a relative time represented by the specified date components."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -190,6 +173,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsrelativedatetimeformatter/3131000-localizedstringfromtimeinterval",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Formats the specified time interval using the formatter’s calendar."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -208,6 +197,12 @@
       "kind": "symbol",
       "role": "symbol",
       "url": "/documentation/foundation/nsrelativedatetimeformatter/3131001-stringforobjectvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a formatted string for a date relative to the current date and time."
+        }
+      ],
       "fragments": [
         {
           "kind": "text",
@@ -216,6 +211,104 @@
         {
           "kind": "identifier",
           "text": "stringForObjectValue:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130994-calendar": {
+      "title": "calendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130994-calendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrelativedatetimeformatter/3130994-calendar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The calendar to use for formatting values that don’t have an inherent calendar of their own."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130997-locale": {
+      "title": "locale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130997-locale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrelativedatetimeformatter/3130997-locale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The locale to use when formatting the date."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130995-datetimestyle": {
+      "title": "dateTimeStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130995-datetimestyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrelativedatetimeformatter/3130995-datetimestyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style to use when describing a relative date, for example “yesterday” or “1 day ago”."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle": {
+      "title": "NSRelativeDateTimeFormatterStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrelativedatetimeformatterstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that represents the style to use when formatting relative dates, such as “1 week ago” or “last week”."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3131002-unitsstyle": {
+      "title": "unitsStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3131002-unitsstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrelativedatetimeformatter/3131002-unitsstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The style to use when formatting the quantity or the name of the unit, such as “1 day ago” or “one day ago”."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterunitsstyle": {
+      "title": "NSRelativeDateTimeFormatterUnitsStyle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterunitsstyle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrelativedatetimeformatterunitsstyle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that represents the style to use when formatting the units of relative dates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130996-formattingcontext": {
+      "title": "formattingContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130996-formattingcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsrelativedatetimeformatter/3130996-formattingcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of where the formatted string will appear, allowing the formatter to capitalize the output appropriately."
         }
       ]
     },
@@ -253,7 +346,13 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/nsrelativedatetimeformatter"
+      "url": "/documentation/foundation/nsrelativedatetimeformatter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A formatter that creates locale-aware string representations of a relative date or time."
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/nsdateintervalformatter": {
       "title": "NSDateIntervalFormatter",
@@ -304,24 +403,28 @@
   "topicSections": [
     {
       "kind": "taskGroup",
-      "title": "Instance Properties",
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130994-calendar",
-        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130995-datetimestyle",
-        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130996-formattingcontext",
-        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130997-locale",
-        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3131002-unitsstyle"
-      ]
-    },
-    {
-      "kind": "taskGroup",
-      "title": "Instance Methods",
+      "title": "Converting Dates to Formatted Strings",
       "identifiers": [
         "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130998-localizedstringfordate",
         "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130999-localizedstringfromdatecomponent",
         "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3131000-localizedstringfromtimeinterval",
         "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3131001-stringforobjectvalue"
-      ]
+      ],
+      "anchor": "3737523"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Formatter Options",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130994-calendar",
+        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130997-locale",
+        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130995-datetimestyle",
+        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterstyle",
+        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3131002-unitsstyle",
+        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatterunitsstyle",
+        "doc://com.apple.documentation/documentation/foundation/nsrelativedatetimeformatter/3130996-formattingcontext"
+      ],
+      "anchor": "3737522"
     }
   ],
   "seeAlsoSections": [
@@ -370,6 +473,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -377,10 +481,30 @@
           ]
         }
       ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the strings that the formatter produces, such as “1 hour ago”, “in 2 weeks”, “yesterday”, and “tomorrow” as standalone strings. Embedding them in other strings may not be grammatically correct."
+            }
+          ]
+        }
+      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

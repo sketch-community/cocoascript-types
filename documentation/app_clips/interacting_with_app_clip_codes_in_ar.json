@@ -1,0 +1,1953 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Display content and provide services in an AR experience with App Clip Codes."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/arkit",
+        "doc://com.apple.documentation/documentation/arkit/content_anchors"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/arkit",
+        "doc://com.apple.documentation/documentation/arkit/configuration_objects",
+        "doc://com.apple.documentation/documentation/arkit/arworldtrackingconfiguration"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/arkit",
+        "doc://com.apple.documentation/documentation/arkit/configuration_objects",
+        "doc://com.apple.documentation/documentation/arkit/argeotrackingconfiguration"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/arkit",
+        "doc://com.apple.documentation/documentation/arkit/configuration_objects",
+        "doc://com.apple.documentation/documentation/arkit/arbodytrackingconfiguration"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/app_clips"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3687817,
+  "kind": "article",
+  "metadata": {
+    "title": "Interacting with App Clip Codes in AR",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "ARKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.5",
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "14.5",
+        "current": "15.2"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.5",
+        "current": "13.2"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/interacting_with_app_clip_codes_in_ar",
+        "documentation/arkit/content_anchors/interacting_with_app_clip_codes_in_ar",
+        "documentation/arkit/argeotrackingconfiguration/interacting_with_app_clip_codes_in_ar",
+        "documentation/arkit/arbodytrackingconfiguration/interacting_with_app_clip_codes_in_ar",
+        "documentation/arkit/arworldtrackingconfiguration/interacting_with_app_clip_codes_in_ar"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/app_clips/interacting_with_app_clip_codes_in_ar",
+        "documentation/arkit/content_anchors/interacting_with_app_clip_codes_in_ar",
+        "documentation/arkit/argeotrackingconfiguration/interacting_with_app_clip_codes_in_ar",
+        "documentation/arkit/arbodytrackingconfiguration/interacting_with_app_clip_codes_in_ar",
+        "documentation/arkit/arworldtrackingconfiguration/interacting_with_app_clip_codes_in_ar"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/arkit": {
+      "title": "ARKit",
+      "identifier": "doc://com.apple.documentation/documentation/arkit",
+      "url": "/documentation/arkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/arkit/content_anchors": {
+      "title": "Content Anchors",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/content_anchors",
+      "url": "/documentation/arkit/content_anchors",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/arkit/configuration_objects": {
+      "title": "Configuration Objects",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/configuration_objects",
+      "url": "/documentation/arkit/configuration_objects",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arworldtrackingconfiguration": {
+      "title": "ARWorldTrackingConfiguration",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arworldtrackingconfiguration",
+      "url": "/documentation/arkit/arworldtrackingconfiguration",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/arkit/argeotrackingconfiguration": {
+      "title": "ARGeoTrackingConfiguration",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/argeotrackingconfiguration",
+      "url": "/documentation/arkit/argeotrackingconfiguration",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arbodytrackingconfiguration": {
+      "title": "ARBodyTrackingConfiguration",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arbodytrackingconfiguration",
+      "url": "/documentation/arkit/arbodytrackingconfiguration",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/app_clips": {
+      "title": "App Clips",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips",
+      "url": "/documentation/app_clips",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode": {
+      "title": "Creating an App Clip with Xcode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/creating_an_app_clip_with_xcode"
+    },
+    "link-3706544": {
+      "title": "App Clip Code Generator",
+      "type": "topic",
+      "identifier": "link-3706544",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/app-clips/resources/"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879767": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879767",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879767"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/creating_app_clip_codes": {
+      "title": "Creating App Clip Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_app_clip_codes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/creating_app_clip_codes"
+    },
+    "link-3741608": {
+      "title": "image of a seed packet",
+      "type": "topic",
+      "identifier": "link-3741608",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/sample-code/ar/sunflower.jpg"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arworldtrackingconfiguration/3697086-supportsappclipcodetracking": {
+      "title": "supportsAppClipCodeTracking",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arworldtrackingconfiguration/3697086-supportsappclipcodetracking",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arworldtrackingconfiguration/3697086-supportsappclipcodetracking"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879769": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879769",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879769"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arworldtrackingconfiguration/3697085-appclipcodetrackingenabled": {
+      "title": "appClipCodeTrackingEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arworldtrackingconfiguration/3697085-appclipcodetrackingenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arworldtrackingconfiguration/3697085-appclipcodetrackingenabled"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879770": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879770",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879770"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsuseractivity": {
+      "title": "NSUserActivity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsuseractivity"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879772": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879772",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879772"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/testing_the_launch_experience_of_your_app_clip": {
+      "title": "Testing the Launch Experience of Your App Clip",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/testing_the_launch_experience_of_your_app_clip",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/testing_the_launch_experience_of_your_app_clip"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor/3697075-url": {
+      "title": "url",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor/3697075-url",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arappclipcodeanchor/3697075-url"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor": {
+      "title": "ARAppClipCodeAnchor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arappclipcodeanchor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An anchor that tracks the position and orientation of an App Clip Code in the physical environment."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879773": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879773",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879773"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879775": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879775",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879775"
+    },
+    "link-3741144": {
+      "title": "Set up an App Clip experience",
+      "type": "section",
+      "identifier": "link-3741144",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/app-store-connect/#/dev5b665db74"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879778": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879778",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879778"
+    },
+    "link-3741145": {
+      "title": "Test an App Clip Experience",
+      "type": "section",
+      "identifier": "link-3741145",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/app-store-connect/#/devbc57e2ec6"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879780": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879780",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879780"
+    },
+    "link-3741146": {
+      "title": "https://developer.apple.com/.well-known/apple-app-site-association",
+      "type": "topic",
+      "identifier": "link-3741146",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/.well-known/apple-app-site-association"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879781": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879781",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879781"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/associating_your_app_clip_with_your_website": {
+      "title": "Associating Your App Clip with Your Website",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/associating_your_app_clip_with_your_website",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/app_clips/associating_your_app_clip_with_your_website"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arsessiondelegate/2865617-session": {
+      "title": "session:didAddAnchors:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arsessiondelegate/2865617-session",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arsessiondelegate/2865617-session",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "session:didAddAnchors:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879783": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879783",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879783"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor/3697076-urldecodingstate": {
+      "title": "urlDecodingState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor/3697076-urldecodingstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arappclipcodeanchor/3697076-urldecodingstate"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arappclipcodeurldecodingstate/arappclipcodeurldecodingstatedecoded": {
+      "title": "ARAppClipCodeURLDecodingStateDecoded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeurldecodingstate/arappclipcodeurldecodingstatedecoded",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arappclipcodeurldecodingstate/arappclipcodeurldecodingstatedecoded"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arsessiondelegate/2865624-session": {
+      "title": "session:didUpdateAnchors:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arsessiondelegate/2865624-session",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arsessiondelegate/2865624-session",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "session:didUpdateAnchors:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879784": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879784",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879784"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879785": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879785",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879785"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arappclipcodeurldecodingstate/arappclipcodeurldecodingstatefailed": {
+      "title": "ARAppClipCodeURLDecodingStateFailed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeurldecodingstate/arappclipcodeurldecodingstatefailed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arappclipcodeurldecodingstate/arappclipcodeurldecodingstatefailed"
+    },
+    "link-3741147": {
+      "title": "App Clip Code Human Interface Guidelines",
+      "type": "topic",
+      "identifier": "link-3741147",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/app-clip-codes/"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879787": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879787",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879787"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879788": {
+      "title": "Listing 14",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879788",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879788"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879789": {
+      "title": "Listing 15",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879789",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879789"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879791": {
+      "title": "Listing 16",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879791",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879791"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arimageanchor": {
+      "title": "ARImageAnchor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arimageanchor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arimageanchor"
+    },
+    "doc://com.apple.documentation/documentation/arkit/environmental_analysis/placing_objects_and_handling_3d_interaction": {
+      "title": "Placing Objects and Handling 3D Interaction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/environmental_analysis/placing_objects_and_handling_3d_interaction",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/arkit/environmental_analysis/placing_objects_and_handling_3d_interaction"
+    },
+    "doc://com.apple.documentation/documentation/arkit/arreferenceimage": {
+      "title": "ARReferenceImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/arreferenceimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/arkit/arreferenceimage"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879792": {
+      "title": "Listing 17",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879792",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879792"
+    },
+    "doc://com.apple.documentation/documentation/arkit/content_anchors/tracking_and_altering_images": {
+      "title": "Tracking and Altering Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/arkit/content_anchors/tracking_and_altering_images",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/arkit/content_anchors/tracking_and_altering_images"
+    },
+    "link-media-3879794": {
+      "identifier": "link-media-3879794",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879794"
+    },
+    "media-3879794": {
+      "identifier": "media-3879794",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 621,
+            "height": 952
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1c0e4a8a93/rendered2x-1611093368.png"
+        }
+      ],
+      "alt": "An image of a printed seed packet on a real-world desk. The app displays a 3D model of a fully grown sunflower plant centered on the seed packet.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879795": {
+      "title": "Listing 18",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879795",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879795"
+    },
+    "link-3741148": {
+      "title": "App Clip Human Interface Guidelines",
+      "type": "topic",
+      "identifier": "link-3741148",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/"
+    },
+    "link-media-3879765": {
+      "identifier": "link-media-3879765",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar#3879765"
+    },
+    "media-3879765": {
+      "identifier": "media-3879765",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "dark",
+            "2x"
+          ],
+          "size": {
+            "width": 364,
+            "height": 452
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f31a895393/renderedDark2x-1630415435.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 364,
+            "height": 452
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e3d86ec382/rendered2x-1630415437.png"
+        }
+      ],
+      "alt": "Illustration of a device pointed at a virtual plant. A seed packet rests on a real-world table, and the virtual plant rises up from the seed packaging.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar": {
+      "title": "Interacting with App Clip Codes in AR",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/app_clips/interacting_with_app_clip_codes_in_ar",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/app_clips/interacting_with_app_clip_codes_in_ar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Display content and provide services in an AR experience with App Clip Codes."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/08ffa921b4/InteractingWithAppClipCodesInAR.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/08ffa921b4/InteractingWithAppClipCodesInAR.zip",
+      "checksum": "fb048b00640804c46ce11e1d23a182bda7fd27401552ee45ec73f7a391750df3b447f8374e71dcce9ee312dc50415c4af4cdc7844a12ffafc32e62082314977a",
+      "url": "https://docs-assets.developer.apple.com/published/08ffa921b4/InteractingWithAppClipCodesInAR.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/08ffa921b4/InteractingWithAppClipCodesInAR.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor"
+      ],
+      "title": "App Clip Codes",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample app Seed Shop provides gardeners with previews of fully grown plants. At the nursery, Seed Shop identifies the plant from an App Clip Code on a seed packet, and displays the adult plant in 3D. With the help of AR, the buyer can see, for example, the real height of a typical Mammoth sunflower by inspecting the virtual plant at scale, relative to real objects in the camera feed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3879765",
+              "metadata": {
+                "anchor": "3879765",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a user with a device running iOS & iPad OS 14.3 or later scans the seed packet’s App Clip Code with their camera or Code Scanner, the sample project’s App Clip provides a virtual image of the plant."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the user indicates they may buy a particular plant in the App Clip experience, Seed Shop suggests the user download the full version of the app to preview the plant in their own garden. This sample project builds the App Clip Code provided on the seed packet at the garden store, allowing the user to view an AR version of the plant before purchase."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Sample Code Project",
+          "anchor": "3879798"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To configure Seed Shop for code signing, first set a development team on each target. Define a unique bundle ID for the targets, and set the App Clip’s parent application identifiers entitlement."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Next, set the hostname for the App Clip experience URL in the Associated Domains entitlement. The process of setting the hostname requires an explicit App ID, provided by a development team member with Admin permission. For more information on setting a development team, bundle ID, and entitlements, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_an_app_clip_with_xcode"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Run the following command to generate an App Clip Code from the "
+            },
+            {
+              "type": "link",
+              "title": "App Clip Code Generator",
+              "destination": "https://developer.apple.com/app-clips/resources/"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "AppClipCodeGenerator generate --url https://developer.apple.com/sunfl --index 0 --output ~/Downloads/AppClipCode-sunflower.svg --logo badge"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3879767",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add the sample’s App Clip Codes to the environment, you can display them on another device or print them out. For more on creating App Clip Codes, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/creating_app_clip_codes"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The App Clip Codes in Seed Shop display on a package of seeds. Add this "
+            },
+            {
+              "type": "link",
+              "title": "image of a seed packet",
+              "destination": "https://developer.apple.com/sample-code/ar/sunflower.jpg"
+            },
+            {
+              "type": "text",
+              "text": " to your physical environment by displaying it on another device or printing it out."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You must set the run destination to an actual device. The Simulator doesn’t support augmented reality."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Ensure Device Support and Run a Session",
+          "anchor": "3879799"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In "
+            },
+            {
+              "type": "codeVoice",
+              "code": "viewDidLoad"
+            },
+            {
+              "type": "text",
+              "text": ", the sample app calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arworldtrackingconfiguration/3697086-supportsappclipcodetracking"
+            },
+            {
+              "type": "text",
+              "text": " to check if the device contains the Apple Neural Engine (ANE), which App Clip Code tracking requires."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard ARWorldTrackingConfiguration.supportsAppClipCodeTracking else {",
+            "    displayUnsupportedDevicePrompt()",
+            "    return"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879769",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To search the environment for physical codes, the sample sets "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arworldtrackingconfiguration/3697085-appclipcodetrackingenabled"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": " before running the session."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "newConfiguration.appClipCodeTrackingEnabled = true",
+            "arView.session.run(newConfiguration)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879770",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Identify the App Clip Code that Launched the Experience",
+          "anchor": "3879800"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user points the device at an App Clip Code using the camera or Code Scanner, the system launches its associated App Clip, or if present, the full app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the AR experience, the sample code checks the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsuseractivity"
+            },
+            {
+              "type": "text",
+              "text": " invocation URL to identify the App Clip Code that invoked the app or App Clip."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {",
+            "    for activity in connectionOptions.userActivities where activity.activityType == NSUserActivityTypeBrowsingWeb {",
+            "        appClipCodeURL = activity.webpageURL"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879772",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The source of the URL depends on how the App Clip launched:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The invocation URL is the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "_XCAppClipURL"
+                    },
+                    {
+                      "type": "text",
+                      "text": " scheme environment variable when Xcode launches the app or App Clip. For more information, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/app_clips/testing_the_launch_experience_of_your_app_clip"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The invocation URL is the invoking App Clip Code’s URL when the system launches the app or App Clip in the device’s camera feed or through the Code Scanner."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There may be multiple App Clip Codes visible in the camera feed that share the same "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor/3697075-url"
+            },
+            {
+              "type": "text",
+              "text": "; for more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If an app interacts with a single App Clip Code, the app can limit its interaction with App Clip Codes that encode the invocation URL. For simplicity, the sample allows the user to scan any associated App Clip Code. However, because the sample app downloads custom assets over the web per App Clip Code, the sample app begins downloading assets for the invocation URL immediately, in anticipation that ARKit will recognize the invoking App Clip Code in the camera feed."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "process(productKey: getProductKey(from: appClipCodeLaunchURL), initializePreview: false)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879773",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Guide the User with Messaging",
+          "anchor": "3879801"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The device may pan away from the App Clip Code that launched the experience in the time it takes for the system to transition from the camera or Code Scanner to the app or App Clip. In the event ARKit doesn’t immediately find the App Clip Code in the camera feed, the sample app displays text instructing the user what to do."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class AppClipCodeCoachingOverlayView: UILabel {",
+            "    init(parentView: UIView) {",
+            "        super.init(frame: .zero)",
+            "        text = \"Scan code to start\""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879775",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Launch the App Clip in Code Scanner",
+          "anchor": "3879802"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "During development, the sample project can launch the App Clip target in Xcode to test the AR experience. After the target launches once, the device scans the test App Clip Code with Code Scanner to invoke the App Clip."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Control Center disables Code Scanner by default. Open Control Center Settings on the device and click the “+” button to enable Code Scanner."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To associate an App Clip Code to the App Clip during development, Seed Shop sets up an App Clip local experience. The sample app requires a local experience URL prefix of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "https://developer.apple.com"
+            },
+            {
+              "type": "text",
+              "text": ", and a bundle ID of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "com.example.apple-samplecode.AppClipCodesExampleApp1.Clip"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more on local experiences, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/testing_the_launch_experience_of_your_app_clip"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set Up an App Clip Experience in App Store Connect",
+          "anchor": "3879803"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "At runtime, the system checks the App Clip registry in App Store Connect to ensure an App Clip associates to an App Clip Code before allowing the app access to the App Clip Code URL. For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor/3697075-url"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To decode App Clip Code URLs, Seed Shop sets up an App Clip experience in App Store Connect, and defines the App Clip experience URL of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "https://developer.apple.com"
+            },
+            {
+              "type": "text",
+              "text": ". The value of the App Clip experience URL maps to a server that’s unique and depends on the development team. For more information, see "
+            },
+            {
+              "type": "link",
+              "title": "Set up an App Clip experience",
+              "destination": "https://help.apple.com/app-store-connect/#/dev5b665db74"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The app generates App Clip Codes that associate to the App Clip experience in App Store Connect by uploading a CSV file containing the App Clip Code URLs. The fully qualified domain name of each URL matches the App Clip experience URL. The URL suffix identifies the context-specific items or locations with which the App Clip interacts. The sample app identifies a seed packet for a sunflower. To create an App Clip Code for the sunflower, the sample requires a CSV file containing the URL:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "https://developer.apple.com/sunfl"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3879778",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When testers view App Clip Codes to launch the App Clip or decode "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor"
+            },
+            {
+              "type": "text",
+              "text": " URLs in an AR experience, the framework refers to the device’s local experience. Otherwise, the system displays the App Clip card in the device camera, and allows "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor"
+            },
+            {
+              "type": "text",
+              "text": " URL decoding, only for App Clip experience URLs of app-review approved App Clips. For more information, see "
+            },
+            {
+              "type": "link",
+              "title": "Test an App Clip Experience",
+              "destination": "https://help.apple.com/app-store-connect/#/devbc57e2ec6"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "During testing in the TestFlight app, the three experience URLs in App Store Connect’s TestFlight area change the invocation URL the system passes into the App Clip, but they don’t affect "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor"
+                },
+                {
+                  "type": "text",
+                  "text": " URL decoding."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Server and Targets for App Site Association",
+          "anchor": "3879804"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "App Store Connect allows an app to define a particular App Clip experience URL if the server hosting the URL’s domain approves of it via Apple App Site Association. In addition, the framework performs an equivalent runtime check before allowing the App Clip or parent app to decode "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor"
+            },
+            {
+              "type": "text",
+              "text": " URLs that are within the App Clip experience’s domain. This check occurs for local and App Store Connect experiences. To express approval, the server provides the App Clip’s and parent app’s fully qualified application identifiers in an Apple App Site Association (AASA) file’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "appclips"
+            },
+            {
+              "type": "text",
+              "text": " node."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "\"appclips\": {",
+            "    \"apps\": [",
+            "        \"A93A5CM278.com.example.apple-samplecode.AppClipCodesExampleApp1.Clip\",",
+            "        \"A93A5CM278.com.example.apple-samplecode.AppClipCodesExampleApp1\"",
+            "    ]",
+            "}"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3879780",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Seed Shop requires the AASA file that the Apple Developer website hosts at "
+            },
+            {
+              "type": "link",
+              "title": "https://developer.apple.com/.well-known/apple-app-site-association",
+              "destination": "https://developer.apple.com/.well-known/apple-app-site-association"
+            },
+            {
+              "type": "text",
+              "text": ". Navigate the URL in Safari and inspect its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "appclips"
+            },
+            {
+              "type": "text",
+              "text": " node to see the sample app’s AASA configuration."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample project enables the Associated Domains capability on both targets. The key’s value is the fully qualified domain of the sample project’s App Clip experience URL."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "<key>com.apple.developer.associated-domains</key>",
+            "<array>",
+            "    <string>appclips:developer.apple.com</string>",
+            "</array>"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3879781",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more on configuring AASA for App Clips, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/app_clips/associating_your_app_clip_with_your_website"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Recognize an App Clip Code and Decode the URL",
+          "anchor": "3879805"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When ARKit recognizes an App Clip Code in the camera feed, it instantiates an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor"
+            },
+            {
+              "type": "text",
+              "text": " and passes it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arsessiondelegate/2865617-session"
+            },
+            {
+              "type": "text",
+              "text": " callback. Since the user succeeded in scanning a code, the sample app hides the instructional text."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {",
+            "    for anchor in anchors {",
+            "        if anchor is ARAppClipCodeAnchor {",
+            "            // Hide the coaching overlay since ARKit recognized an App Clip Code.",
+            "            appClipCodeCoachingOverlay.setCoachingViewHidden(true)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879783",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Access the anchor’s URL for context-specific information about the recognized App Clip Code. The URL is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " until the anchor’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor/3697076-urldecodingstate"
+            },
+            {
+              "type": "text",
+              "text": " is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeurldecodingstate/arappclipcodeurldecodingstatedecoded"
+            },
+            {
+              "type": "text",
+              "text": ". To check for decoding state changes, the sample app monitors the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arsessiondelegate/2865624-session"
+            },
+            {
+              "type": "text",
+              "text": " callback."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {",
+            "    for anchor in anchors {",
+            "        if let appClipCodeAnchor = anchor as? ARAppClipCodeAnchor, appClipCodeAnchor.urlDecodingState != .decoding {",
+            "            let decodedURL: URL",
+            "            switch appClipCodeAnchor.urlDecodingState {",
+            "            case .decoded:",
+            "                    decodedURL = appClipCodeAnchor.url!",
+            "                    if !decodedURLs.contains(decodedURL) {",
+            "                        decodedURLs.append(decodedURL)",
+            "                        process(productKey: getProductKey(from: decodedURL))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879784",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If Seed Shop fails to decode the URL, the sample project uses a test URL."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var testAppClipCodeURL = URL(string: \"https://developer.apple.com/sunfl\")!"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879785",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more on URL decoding failure, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeurldecodingstate/arappclipcodeurldecodingstatefailed"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The sample project bundles seed packaging material that displays App Clip Codes, but an app might situate App Clip Codes differently. For detailed guidance on displaying App Clip Codes in the environment, see "
+                },
+                {
+                  "type": "link",
+                  "title": "App Clip Code Human Interface Guidelines",
+                  "destination": "https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/app-clip-codes/"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Retrieve a Product’s 3D Model",
+          "anchor": "3879806"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When ARKit decodes an App Clip Code’s URL, the sample app parses the URL suffix to get the product name."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func getProductKey(from url: URL) -> String { return url.lastPathComponent }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879787",
+            "title": "Listing 13"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The app implements a custom URL mapping system using the project’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "modelURLFor"
+            },
+            {
+              "type": "text",
+              "text": " dictionary. Each dictionary key is an App Clip Code’s URL suffix, and the value represents the seed packet’s corresponding grown plant 3D asset."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let modelURLFor: [String: URL] = [",
+            "    \"sunfl\": URL(string: \"https://developer.apple.com/sample-code/ar/sunflower.usdz\")!",
+            "]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879788",
+            "title": "Listing 14"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample app downloads the asset and prepares the 3D model using the mapped "
+            },
+            {
+              "type": "codeVoice",
+              "code": "contentURL"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "extension ViewController {",
+            "    func process(productKey: String, initializePreview: Bool = true) {",
+            "        if let modelURL = modelURLFor[productKey] {",
+            "            process(modelURL: modelURL, productKey: productKey)",
+            "",
+            "func process(modelURL: URL, productKey: String) {",
+            "    let contentLoad = CachingWebLoader.shared.cachedWebLoad(url: modelURL)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879789",
+            "title": "Listing 15"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Search for Product Packaging",
+          "anchor": "3879807"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample project’s URL mapping system includes an image of the product’s packaging material on which to place the product’s 3D model in the environment."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let imageURLFor: [String: URL] = [",
+            "    \"sunfl\": URL(string: \"https://developer.apple.com/sample-code/ar/sunflower.jpg\")!",
+            "]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879791",
+            "title": "Listing 16"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "ARKit estimates the 3D position and orientation of each "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arappclipcodeanchor"
+            },
+            {
+              "type": "text",
+              "text": ", but "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arimageanchor"
+            },
+            {
+              "type": "text",
+              "text": " serves as a better platform on which to place virtual content for several reasons:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Small physical size impacts ARKit’s tracking accuracy, and App Clip Codes typically run small on product packaging or in an advertisement."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "ARKit manages the removal of App Clip Code anchors from the session whereas the app controls whether to remove an image anchor. As a result, the image anchor is less likely to go away."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An app may require another content anchoring technique, such as placing virtual content instantly after retrieving a position on a nearby horizontal or vertical plane. To ray cast on horizontal planes, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/arkit/environmental_analysis/placing_objects_and_handling_3d_interaction"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To search the environment for the product’s packaging image, the sample downloads the image that the mapping URL references and then creates an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arreferenceimage"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func process(imageURL: URL, productKey: String, initializeImageAnchor: Bool) {",
+            "    if initializeImageAnchor {",
+            "        let imageLoader = CachingWebLoader.shared.cachedWebLoad(url: imageURL) { [weak self] url in",
+            "            DispatchQueue.global(qos: .userInitiated).async {",
+            "                if",
+            "                    let dataProvider = CGDataProvider(url: url as CFURL),",
+            "                    let image = CGImage(",
+            "                        jpegDataProviderSource: dataProvider,",
+            "                        decode: nil,",
+            "                        shouldInterpolate: false,",
+            "                        intent: .absoluteColorimetric",
+            "                    )",
+            "                {",
+            "                    let modelAnchorImage = ARReferenceImage(",
+            "                        image,",
+            "                        orientation: .up,",
+            "                        // Note: the width of the sample seed packet is about 8cm.",
+            "                        physicalWidth: 0.08",
+            "                    )"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879792",
+            "title": "Listing 17"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about image tracking, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/content_anchors/tracking_and_altering_images"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display the 3D Asset",
+          "anchor": "3879808"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user pans the device from the scanned App Clip Code to its downloaded packaging image, ARKit identifies the seed packet’s real-world location and displays the full-grown plant on top."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3879794",
+              "metadata": {
+                "anchor": "3879794",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When ARKit recognizes the packaging image, the session creates an image anchor and passes it into the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/arkit/arsessiondelegate/2865617-session"
+            },
+            {
+              "type": "text",
+              "text": " callback. The app displays the virtual product on top of the image by calling its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "present(_:on)"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if let imageAnchorForModel = self?.imageAnchorFor[productKey], let self = self {",
+            "    self.modelFor[productKey]!.present(on: imageAnchorForModel)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3879795",
+            "title": "Listing 18"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As the user views the virtual plant, the App Clip waits for the user to scan another seed packet. During this time, the App Clip can provide information about the features of the full app. For example, the Seed Shop App Clip might offer the user the ability to download the full app to preview the full-grown plant in their garden. For recommendations about showcasing an app in an App Clip, see "
+            },
+            {
+              "type": "link",
+              "title": "App Clip Human Interface Guidelines",
+              "destination": "https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

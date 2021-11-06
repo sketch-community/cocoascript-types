@@ -1,4 +1,10 @@
 {
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The minimum tolerance the dispatch queue scheduler allows."
+    }
+  ],
   "documentVersion": 0,
   "hierarchy": {
     "paths": [
@@ -35,35 +41,43 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:So16NSOperationQueueC10FoundationE16minimumToleranceAbCE17SchedulerTimeTypeV6StrideVvp",
+    "parent": {
+      "title": "OperationQueue"
+    },
     "symbolKind": "instp",
     "fragments": [
       {
@@ -81,8 +95,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -137,7 +151,23 @@
       "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/foundation/operationqueue/schedulertimetype"
+      "url": "/documentation/foundation/operationqueue/schedulertimetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scheduler time type the operation queue uses."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "OperationQueue.SchedulerTimeType"
+        }
+      ]
     },
     "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype/stride": {
       "title": "OperationQueue.SchedulerTimeType.Stride",
@@ -163,6 +193,234 @@
       "role": "symbol",
       "url": "/documentation/combine/scheduler/minimumtolerance"
     },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule": {
+      "title": "schedule(after:tolerance:options:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329365-schedule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the action at some time after the specified date, optionally taking into account tolerance if possible."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "schedule"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "after"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType, "
+        },
+        {
+          "kind": "identifier",
+          "text": "tolerance"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType.Stride, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerOptions?, () -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329364-schedule": {
+      "title": "schedule(after:interval:tolerance:options:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329364-schedule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329364-schedule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the action at some time after the specified date, at the specified frequency, optionally taking into account tolerance if possible."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "schedule"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "after"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType, "
+        },
+        {
+          "kind": "identifier",
+          "text": "interval"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType.Stride, "
+        },
+        {
+          "kind": "identifier",
+          "text": "tolerance"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType.Stride, "
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerOptions?, () -> Void) -> Cancellable"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329366-schedule": {
+      "title": "schedule(options:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329366-schedule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329366-schedule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the action at the next possible opportunity."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "schedule"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "options"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerOptions?, () -> Void)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now": {
+      "title": "now",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329363-now",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The operation queue’s definition of the current moment in time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "now"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance": {
+      "title": "minimumTolerance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/3329362-minimumtolerance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/3329362-minimumtolerance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The minimum tolerance the dispatch queue scheduler allows."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "var "
+        },
+        {
+          "kind": "identifier",
+          "text": "minimumTolerance"
+        },
+        {
+          "kind": "text",
+          "text": ": OperationQueue.SchedulerTimeType.Stride"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions": {
+      "title": "OperationQueue.SchedulerOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/operationqueue/scheduleroptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type that defines options the operation queue accepts."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "OperationQueue.SchedulerOptions"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/technologies": {
       "type": "topic",
       "identifier": "doc://com.apple.documentation/documentation/technologies",
@@ -179,6 +437,20 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/combine/scheduler"
       ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329365-schedule",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329364-schedule",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329366-schedule",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/3329363-now",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/schedulertimetype",
+        "doc://com.apple.documentation/documentation/foundation/operationqueue/scheduleroptions"
+      ],
+      "title": "Scheduling Operations",
+      "generated": true
     }
   ],
   "primaryContentSections": [
@@ -247,6 +519,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -257,7 +530,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

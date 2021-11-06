@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Appends a pixel buffer to the receiver."
+      "text": "Appends a pixel buffer to the adaptor."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInputPixelBufferAdaptor(im)appendPixelBuffer:withPresentationTime:",
+    "parent": {
+      "title": "AVAssetWriterInputPixelBufferAdaptor"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,17 +128,9 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+          "text": "An object that appends video samples to an asset writer input."
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer": {
-      "title": "CVPixelBuffer",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer",
-      "kind": "article",
-      "role": "collectionGroup",
-      "url": "/documentation/corevideo/cvpixelbuffer"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime": {
       "title": "startSessionAtSourceTime:",
@@ -166,38 +166,6 @@
       "role": "symbol",
       "url": "/documentation/objectivec/no"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting": {
-      "title": "finishWriting",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter/1426644-finishwriting",
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "finishWriting"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool": {
-      "title": "pixelBufferPool",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A pixel buffer pool that vends and efficiently recycles pixel buffer objects that can be appended to the receiver."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/corevideo/cvpixelbufferref": {
       "title": "CVPixelBufferRef",
       "type": "topic",
@@ -224,7 +192,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Appends a pixel buffer to the receiver."
+          "text": "Appends a pixel buffer to the adaptor."
         }
       ],
       "fragments": [
@@ -246,15 +214,6 @@
       "title": "Technologies"
     }
   },
-  "seeAlsoSections": [
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool"
-      ]
-    }
-  ],
   "primaryContentSections": [
     {
       "kind": "declarations",
@@ -331,6 +290,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -352,16 +312,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The "
-                },
-                {
-                  "type": "reference",
-                  "isActive": true,
-                  "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer"
-                },
-                {
-                  "type": "text",
-                  "text": " to be appended."
+                  "text": "The pixel buffer to append."
                 }
               ]
             }
@@ -375,7 +326,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The presentation time for the pixel buffer to be appended.  This time will be considered relative to the time passed to "
+                  "text": "The pixel buffer’s presentation time. The time you specify is relative to the time you called "
                 },
                 {
                   "type": "reference",
@@ -384,7 +335,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " to determine the timing of the frame in the output file."
+                  "text": " with."
                 }
               ]
             }
@@ -411,7 +362,7 @@
             },
             {
               "type": "text",
-              "text": " if the pixel buffer was successfully appended, otherwise "
+              "text": " if the adaptor appends the pixel buffer; otherwise, "
             },
             {
               "type": "reference",
@@ -425,62 +376,10 @@
           ]
         }
       ]
-    },
-    {
-      "kind": "content",
-      "content": [
-        {
-          "anchor": "discussion",
-          "level": 2,
-          "text": "Discussion",
-          "type": "heading"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "If the operation is unsuccessful, writing the asset has failed. You must not call "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1426644-finishwriting"
-            },
-            {
-              "type": "text",
-              "text": ". "
-            }
-          ]
-        },
-        {
-          "level": 3,
-          "type": "heading",
-          "text": "Special Considerations",
-          "anchor": "1677723"
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "Do not modify a "
-            },
-            {
-              "type": "codeVoice",
-              "code": "CVPixelBuffer"
-            },
-            {
-              "type": "text",
-              "text": " or its contents after you have passed it to this method."
-            }
-          ]
-        }
-      ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

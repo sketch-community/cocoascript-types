@@ -1,0 +1,1195 @@
+{
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/corefoundation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/corefoundation/cfallocator-s29",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 1667145,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CFAllocator",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Core Foundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfallocator"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/corefoundation/cfallocator-s29"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/corefoundation": {
+      "title": "Core Foundation",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation",
+      "url": "/documentation/corefoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "devLink-1696119": {
+      "identifier": "devLink-1696119",
+      "type": "link",
+      "title": "Memory Management Programming Guide for Core Foundation",
+      "url": "https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521159-cfallocatorcreate": {
+      "title": "CFAllocatorCreate(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521159-cfallocatorcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521159-cfallocatorcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an allocator object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorCreate"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, UnsafeMutablePointer<CFAllocatorContext>!) -> Unmanaged<CFAllocator>!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521250-cfallocatorallocate": {
+      "title": "CFAllocatorAllocate(_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521250-cfallocatorallocate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521250-cfallocatorallocate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allocates memory using the specified allocator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorAllocate"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, CFIndex, CFOptionFlags) -> UnsafeMutableRawPointer!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521299-cfallocatordeallocate": {
+      "title": "CFAllocatorDeallocate(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521299-cfallocatordeallocate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521299-cfallocatordeallocate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deallocates a block of memory with a given allocator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorDeallocate"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, UnsafeMutableRawPointer!)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521138-cfallocatorgetpreferredsizeforsi": {
+      "title": "CFAllocatorGetPreferredSizeForSize(_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521138-cfallocatorgetpreferredsizeforsi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521138-cfallocatorgetpreferredsizeforsi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the number of bytes likely to be allocated upon a specific request."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorGetPreferredSizeForSize"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, CFIndex, CFOptionFlags) -> CFIndex"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521324-cfallocatorreallocate": {
+      "title": "CFAllocatorReallocate(_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521324-cfallocatorreallocate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521324-cfallocatorreallocate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reallocates memory using the specified allocator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorReallocate"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, UnsafeMutableRawPointer!, CFIndex, CFOptionFlags) -> UnsafeMutableRawPointer!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521325-cfallocatorgetdefault": {
+      "title": "CFAllocatorGetDefault()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521325-cfallocatorgetdefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521325-cfallocatorgetdefault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the default allocator object for the current thread."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorGetDefault"
+        },
+        {
+          "kind": "text",
+          "text": "() -> Unmanaged<CFAllocator>!"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521134-cfallocatorsetdefault": {
+      "title": "CFAllocatorSetDefault(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521134-cfallocatorsetdefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521134-cfallocatorsetdefault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the given allocator as the default for the current thread."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorSetDefault"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521267-cfallocatorgetcontext": {
+      "title": "CFAllocatorGetContext(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521267-cfallocatorgetcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521267-cfallocatorgetcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the context of the specified allocator or of the default allocator."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorGetContext"
+        },
+        {
+          "kind": "text",
+          "text": "(CFAllocator!, UnsafeMutablePointer<CFAllocatorContext>!)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521328-cfallocatorgettypeid": {
+      "title": "CFAllocatorGetTypeID()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521328-cfallocatorgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521328-cfallocatorgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the type identifier for the CFAllocator opaque type."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorGetTypeID"
+        },
+        {
+          "kind": "text",
+          "text": "() -> CFTypeID"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatorallocatecallback": {
+      "title": "CFAllocatorAllocateCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorallocatecallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatorallocatecallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A prototype for a function callback that allocates memory of a requested size."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorAllocateCallBack"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatorcopydescriptioncallback": {
+      "title": "CFAllocatorCopyDescriptionCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorcopydescriptioncallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatorcopydescriptioncallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A prototype for a function callback that provides a description of the specified data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorCopyDescriptionCallBack"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatordeallocatecallback": {
+      "title": "CFAllocatorDeallocateCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatordeallocatecallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatordeallocatecallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A prototype for a function callback that deallocates a block of memory."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorDeallocateCallBack"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatorpreferredsizecallback": {
+      "title": "CFAllocatorPreferredSizeCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorpreferredsizecallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatorpreferredsizecallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A prototype for a function callback that gives the size of memory likely to be allocated, given a certain request."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorPreferredSizeCallBack"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatorreallocatecallback": {
+      "title": "CFAllocatorReallocateCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorreallocatecallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatorreallocatecallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A prototype for a function callback that reallocates memory of a requested size for an existing block of memory."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorReallocateCallBack"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatorreleasecallback": {
+      "title": "CFAllocatorReleaseCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorreleasecallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatorreleasecallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A prototype for a function callback that releases the given data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorReleaseCallBack"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatorretaincallback": {
+      "title": "CFAllocatorRetainCallBack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorretaincallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatorretaincallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A prototype for a function callback that retains the given data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "typealias "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorRetainCallBack"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocatorcontext": {
+      "title": "CFAllocatorContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocatorcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocatorcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that defines the context or operating environment for an allocator (CFAllocator) object. Every Core Foundation allocator object must have a context defined for it."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocatorContext"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocator": {
+      "title": "CFAllocator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfallocator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A reference to a CFAllocator object. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "CFAllocator"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocator/predefined_allocators": {
+      "title": "Predefined Allocators",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocator/predefined_allocators",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfallocator/predefined_allocators",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "CFAllocator provides the following predefined allocators. In general, you should use "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kCFAllocatorDefault"
+        },
+        {
+          "type": "text",
+          "text": " unless one of the special circumstances exist below."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfallocator-s29": {
+      "title": "CFAllocator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfallocator-s29",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfallocator-s29"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfarray-s28": {
+      "title": "CFArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfarray-s28",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfarray-s28"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring-s1s": {
+      "title": "CFAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring-s1s",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfattributedstring-s1s"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbag-s1l": {
+      "title": "CFBag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbag-s1l",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbag-s1l"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap-s11": {
+      "title": "CFBinaryHeap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap-s11",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbinaryheap-s11"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbitvector-s0t": {
+      "title": "CFBitVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbitvector-s0t",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbitvector-s0t"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p": {
+      "title": "CFBoolean",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfboolean-s0p"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfbundle-s0a": {
+      "title": "CFBundle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfbundle-s0a",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfbundle-s0a"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcalendar-s01": {
+      "title": "CFCalendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcalendar-s01",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfcalendar-s01"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset-rvm": {
+      "title": "CFCharacterSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset-rvm",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfcharacterset-rvm"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9": {
+      "title": "CFData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdata-rv9"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdate-rv5": {
+      "title": "CFDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdate-rv5",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdate-rv5"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter-rv6": {
+      "title": "CFDateFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter-rv6",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdateformatter-rv6"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum": {
+      "title": "CFDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfdictionary-rum"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cferror-ru8": {
+      "title": "CFError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cferror-ru8",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cferror-ru8"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor-ru3": {
+      "title": "CFFileDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor-ru3",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cffiledescriptor-ru3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The CFFileDescriptor provides an opaque type to monitor file descriptors for read and write activity via CFRunLoop."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj": {
+      "title": "CFLocale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cflocale-rsj"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmachport-rsc": {
+      "title": "CFMachPort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmachport-rsc",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmachport-rsc"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmessageport-rs2": {
+      "title": "CFMessagePort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmessageport-rs2",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmessageport-rs2"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray-rrk": {
+      "title": "CFMutableArray",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray-rrk",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablearray-rrk"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring-rqp": {
+      "title": "CFMutableAttributedString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring-rqp",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutableattributedstring-rqp"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag-rqn": {
+      "title": "CFMutableBag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag-rqn",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablebag-rqn"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector-rqf": {
+      "title": "CFMutableBitVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector-rqf",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablebitvector-rqf"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset-rq3": {
+      "title": "CFMutableCharacterSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset-rq3",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablecharacterset-rq3"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata-rps": {
+      "title": "CFMutableData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata-rps",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutabledata-rps"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary-rpl": {
+      "title": "CFMutableDictionary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary-rpl",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutabledictionary-rpl"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutableset-rpe": {
+      "title": "CFMutableSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutableset-rpe",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutableset-rpe"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring-rn7": {
+      "title": "CFMutableString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring-rn7",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfmutablestring-rn7"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter-rkv": {
+      "title": "CFNotificationCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter-rkv",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnotificationcenter-rkv"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnull-rkr": {
+      "title": "CFNull",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnull-rkr",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnull-rkr"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd": {
+      "title": "CFNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnumber-rjd"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter-rjs": {
+      "title": "CFNumberFormatter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter-rjs",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfnumberformatter-rjs"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfplugin-rip": {
+      "title": "CFPlugIn",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfplugin-rip",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfplugin-rip"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance-rja": {
+      "title": "CFPlugInInstance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance-rja",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfplugininstance-rja"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist-rif": {
+      "title": "CFPropertyList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist-rif",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfpropertylist-rif"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfreadstream-ri6": {
+      "title": "CFReadStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfreadstream-ri6",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfreadstream-ri6"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht": {
+      "title": "CFRunLoop",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloop-rht"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver-ri3": {
+      "title": "CFRunLoopObserver",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver-ri3",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloopobserver-ri3"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource-rhr": {
+      "title": "CFRunLoopSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource-rhr",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunloopsource-rhr"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer-rhk": {
+      "title": "CFRunLoopTimer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer-rhk",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfrunlooptimer-rhk"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfset-rgt": {
+      "title": "CFSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfset-rgt",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfset-rgt"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfsocket-rg7": {
+      "title": "CFSocket",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfsocket-rg7",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfsocket-rg7"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh": {
+      "title": "CFString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfstring-rfh"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8": {
+      "title": "CFStringTokenizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfstringtokenizer-rf8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "CFStringTokenizer allows you to tokenize strings into words, sentences or paragraphs in a language-neutral way. It supports languages such as Japanese and Chinese that do not delimit words by spaces, as well as de-compounding German compounds. You can obtain Latin transcription for tokens. It also provides language identification API."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftimezone-rec": {
+      "title": "CFTimeZone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftimezone-rec",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftimezone-rec"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftree-rds": {
+      "title": "CFTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftree-rds",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftree-rds"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cftype": {
+      "title": "CFType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cftype",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cftype"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfurl-rd7": {
+      "title": "CFURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfurl-rd7",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfurl-rd7"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfusernotification-rd5": {
+      "title": "CFUserNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfusernotification-rd5",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfusernotification-rd5"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfuuid-rci": {
+      "title": "CFUUID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfuuid-rci",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfuuid-rci"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfwritestream-rc8": {
+      "title": "CFWriteStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfwritestream-rc8",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfwritestream-rc8"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode-rbu": {
+      "title": "CFXMLNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode-rbu",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmlnode-rbu"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser-rc1": {
+      "title": "CFXMLParser",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser-rc1",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmlparser-rc1"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfxmltree-rbh": {
+      "title": "CFXMLTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfxmltree-rbh",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cfxmltree-rbh"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating an Allocator",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1521159-cfallocatorcreate"
+      ],
+      "anchor": "1677592"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Memory with an Allocator",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1521250-cfallocatorallocate",
+        "doc://com.apple.documentation/documentation/corefoundation/1521299-cfallocatordeallocate",
+        "doc://com.apple.documentation/documentation/corefoundation/1521138-cfallocatorgetpreferredsizeforsi",
+        "doc://com.apple.documentation/documentation/corefoundation/1521324-cfallocatorreallocate"
+      ],
+      "anchor": "1677612"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting and Setting the Default Allocator",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1521325-cfallocatorgetdefault",
+        "doc://com.apple.documentation/documentation/corefoundation/1521134-cfallocatorsetdefault"
+      ],
+      "anchor": "1677666"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting an Allocator's Context",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1521267-cfallocatorgetcontext"
+      ],
+      "anchor": "1677689"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the CFAllocator Type ID",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/1521328-cfallocatorgettypeid"
+      ],
+      "anchor": "1677702"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocatorallocatecallback",
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocatorcopydescriptioncallback",
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocatordeallocatecallback",
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocatorpreferredsizecallback",
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocatorreallocatecallback",
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocatorreleasecallback",
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocatorretaincallback"
+      ],
+      "anchor": "1667274"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocatorcontext",
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocator"
+      ],
+      "anchor": "1667370"
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfallocator/predefined_allocators"
+      ],
+      "anchor": "1667521"
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/corefoundation/cfarray-s28",
+        "doc://com.apple.documentation/documentation/corefoundation/cfattributedstring-s1s",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbag-s1l",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbinaryheap-s11",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbitvector-s0t",
+        "doc://com.apple.documentation/documentation/corefoundation/cfboolean-s0p",
+        "doc://com.apple.documentation/documentation/corefoundation/cfbundle-s0a",
+        "doc://com.apple.documentation/documentation/corefoundation/cfcalendar-s01",
+        "doc://com.apple.documentation/documentation/corefoundation/cfcharacterset-rvm",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdata-rv9",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdate-rv5",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdateformatter-rv6",
+        "doc://com.apple.documentation/documentation/corefoundation/cfdictionary-rum",
+        "doc://com.apple.documentation/documentation/corefoundation/cferror-ru8",
+        "doc://com.apple.documentation/documentation/corefoundation/cffiledescriptor-ru3",
+        "doc://com.apple.documentation/documentation/corefoundation/cflocale-rsj",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmachport-rsc",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmessageport-rs2",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablearray-rrk",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutableattributedstring-rqp",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablebag-rqn",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablebitvector-rqf",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablecharacterset-rq3",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutabledata-rps",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutabledictionary-rpl",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutableset-rpe",
+        "doc://com.apple.documentation/documentation/corefoundation/cfmutablestring-rn7",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnotificationcenter-rkv",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnull-rkr",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnumber-rjd",
+        "doc://com.apple.documentation/documentation/corefoundation/cfnumberformatter-rjs",
+        "doc://com.apple.documentation/documentation/corefoundation/cfplugin-rip",
+        "doc://com.apple.documentation/documentation/corefoundation/cfplugininstance-rja",
+        "doc://com.apple.documentation/documentation/corefoundation/cfpropertylist-rif",
+        "doc://com.apple.documentation/documentation/corefoundation/cfreadstream-ri6",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloop-rht",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopobserver-ri3",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunloopsource-rhr",
+        "doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimer-rhk",
+        "doc://com.apple.documentation/documentation/corefoundation/cfset-rgt",
+        "doc://com.apple.documentation/documentation/corefoundation/cfsocket-rg7",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstring-rfh",
+        "doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizer-rf8",
+        "doc://com.apple.documentation/documentation/corefoundation/cftimezone-rec",
+        "doc://com.apple.documentation/documentation/corefoundation/cftree-rds",
+        "doc://com.apple.documentation/documentation/corefoundation/cftype",
+        "doc://com.apple.documentation/documentation/corefoundation/cfurl-rd7",
+        "doc://com.apple.documentation/documentation/corefoundation/cfusernotification-rd5",
+        "doc://com.apple.documentation/documentation/corefoundation/cfuuid-rci",
+        "doc://com.apple.documentation/documentation/corefoundation/cfwritestream-rc8",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlnode-rbu",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmlparser-rc1",
+        "doc://com.apple.documentation/documentation/corefoundation/cfxmltree-rbh"
+      ],
+      "title": "Opaque Types",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "devLink-1696119"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "CFAllocator is an opaque type that allocates and deallocates memory for you. You never have to allocate, reallocate, or deallocate memory directly for Core Foundation objects—and rarely should you. You pass CFAllocator objects into functions that create objects; these functions have “Create” embedded in their names, for example, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CFStringCreateWithPascalString"
+            },
+            {
+              "type": "text",
+              "text": ". The creation functions use the allocators to allocate memory for the objects they create. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

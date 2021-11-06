@@ -34,32 +34,37 @@
       {
         "name": "iOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "13.0",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.15",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "watchOS",
         "introducedAt": "6.0",
-        "current": "7.2"
+        "current": "8.3"
       },
       {
         "name": "Xcode",
         "introducedAt": "11.0",
-        "current": "12.3"
+        "current": "13.2"
       }
     ],
     "externalID": "s:10Accelerate4vDSPO",
@@ -76,8 +81,8 @@
     ]
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -6328,62 +6333,6 @@
         }
       ]
     },
-    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240948-dot": {
-      "title": "dot(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240948-dot",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/vdsp/3240948-dot",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the double-precision dot product of two vectors."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "dot"
-        },
-        {
-          "kind": "text",
-          "text": "<U>(U, U) -> Double"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot": {
-      "title": "dot(_:_:)",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/accelerate/vdsp/3240949-dot",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Returns the single-precision dot product of two vectors."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "static func "
-        },
-        {
-          "kind": "identifier",
-          "text": "dot"
-        },
-        {
-          "kind": "text",
-          "text": "<U>(U, U) -> Float"
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/3240950-doubletofloat": {
       "title": "doubleToFloat(_:)",
       "type": "topic",
@@ -7306,7 +7255,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Populates a double-precision vector with stereo monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
+          "text": "Populates two single-precision vectors that contain stereo monotonically incrementing or decrementing values multiplied by two source vectors."
         }
       ],
       "fragments": [
@@ -7366,7 +7315,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Populates a single-precision vector with stereo monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
+          "text": "Populates two single-precision vectors that contain stereo monotonically incrementing or decrementing values multiplied by two source vectors."
         }
       ],
       "fragments": [
@@ -12554,7 +12503,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculates the single-precision elementwise phase values, in radians, of the supplied complex vector."
+          "text": "Calculates the single-precision element-wise phase values, in radians, of the supplied complex vector."
         }
       ],
       "fragments": [
@@ -12590,7 +12539,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Calculates the double-precision elementwise phase values, in radians, of the supplied complex vector."
+          "text": "Calculates the double-precision element-wise phase values, in radians, of the supplied complex vector."
         }
       ],
       "fragments": [
@@ -13106,7 +13055,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reverses a vector of double-precision values in place."
+          "text": "Reverses a vector of double-precision values in-place."
         }
       ],
       "fragments": [
@@ -13134,7 +13083,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Reverses a vector of single-precision values in place."
+          "text": "Reverses a vector of single-precision values in-place."
         }
       ],
       "fragments": [
@@ -13506,7 +13455,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sorts a vector of double-precision values in place."
+          "text": "Sorts a vector of double-precision values in-place."
         }
       ],
       "fragments": [
@@ -13542,7 +13491,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Sorts a vector of single-precision values in place."
+          "text": "Sorts a vector of single-precision values in-place."
         }
       ],
       "fragments": [
@@ -13778,7 +13727,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a double-precision vector that contains stereo monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
+          "text": "Returns two double-precision vectors that contain stereo monotonically incrementing or decrementing values multiplied by two source vectors. "
         }
       ],
       "fragments": [
@@ -13846,7 +13795,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Returns a single-precision vector that contains stereo monotonically incrementing or decrementing values, and multiplies that vector by a source vector."
+          "text": "Returns two single-precision vectors that contain stereo monotonically incrementing or decrementing values multiplied by two source vectors."
         }
       ],
       "fragments": [
@@ -15876,6 +15825,50 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3747413-dot": {
+      "title": "dot(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3747413-dot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3747413-dot",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dot"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>(T, U) -> Double"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3747414-dot": {
+      "title": "dot(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3747414-dot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3747414-dot",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dot"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>(T, U) -> Float"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/3600620-gather": {
       "title": "gather(_:indices:)",
       "type": "topic",
@@ -16714,7 +16707,8 @@
           "kind": "identifier",
           "text": "vDSP.DFT"
         }
-      ]
+      ],
+      "deprecated": true
     },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/fft": {
       "title": "vDSP.FFT",
@@ -16761,6 +16755,30 @@
         {
           "kind": "identifier",
           "text": "vDSP.FFT2D"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/discretefouriertransform": {
+      "title": "vDSP.DiscreteFourierTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/discretefouriertransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/discretefouriertransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides forward and inverse discrete Fourier transforms on single- or double-precision collections of interleaved or split-complex data."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "class "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP.DiscreteFourierTransform"
         }
       ]
     },
@@ -16836,6 +16854,78 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/dftdoubleprecisioninterleavedfunctions": {
+      "title": "vDSP.DFTDoublePrecisionInterleavedFunctions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/dftdoubleprecisioninterleavedfunctions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/dftdoubleprecisioninterleavedfunctions",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP.DFTDoublePrecisionInterleavedFunctions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/dftdoubleprecisionsplitcomplexfunctions": {
+      "title": "vDSP.DFTDoublePrecisionSplitComplexFunctions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/dftdoubleprecisionsplitcomplexfunctions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/dftdoubleprecisionsplitcomplexfunctions",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP.DFTDoublePrecisionSplitComplexFunctions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/dftsingleprecisioninterleavedfunctions": {
+      "title": "vDSP.DFTSinglePrecisionInterleavedFunctions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/dftsingleprecisioninterleavedfunctions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/dftsingleprecisioninterleavedfunctions",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP.DFTSinglePrecisionInterleavedFunctions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/dftsingleprecisionsplitcomplexfunctions": {
+      "title": "vDSP.DFTSinglePrecisionSplitComplexFunctions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/dftsingleprecisionsplitcomplexfunctions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/dftsingleprecisionsplitcomplexfunctions",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "struct "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP.DFTSinglePrecisionSplitComplexFunctions"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/vdsp/dcttransformtype": {
       "title": "vDSP.DCTTransformType",
       "type": "topic",
@@ -16846,7 +16936,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Discrete cosine transform types."
+          "text": "An enumeration that describes the discrete cosine transform types."
         }
       ],
       "fragments": [
@@ -17052,6 +17142,24 @@
         }
       ]
     },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/dfterror": {
+      "title": "vDSP.DFTError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/dfterror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/dfterror",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "enum "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP.DFTError"
+        }
+      ]
+    },
     "doc://com.apple.documentation/documentation/accelerate/vdsp-snv": {
       "title": "vDSP",
       "type": "topic",
@@ -17235,8 +17343,6 @@
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3240945-divide",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3240946-divide",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3240947-divide",
-        "doc://com.apple.documentation/documentation/accelerate/vdsp/3240948-dot",
-        "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3240950-doubletofloat",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3240951-downsample",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3240952-downsample",
@@ -17448,6 +17554,8 @@
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3600617-compress",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3600618-compress",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3600619-compress",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3747413-dot",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3747414-dot",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3600620-gather",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3600621-gather",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3600622-gather",
@@ -17466,7 +17574,8 @@
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3600635-taperedmerge",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3600636-taperedmerge",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/3600637-taperedmerge"
-      ]
+      ],
+      "anchor": "3262011"
     },
     {
       "kind": "taskGroup",
@@ -17475,8 +17584,10 @@
         "doc://com.apple.documentation/documentation/accelerate/vdsp/dct",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/dft",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/fft",
-        "doc://com.apple.documentation/documentation/accelerate/vdsp/fft2d"
-      ]
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/fft2d",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/discretefouriertransform"
+      ],
+      "anchor": "3262012"
     },
     {
       "kind": "taskGroup",
@@ -17484,8 +17595,13 @@
       "identifiers": [
         "doc://com.apple.documentation/documentation/accelerate/vdsp/biquad",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizabledouble",
-        "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat"
-      ]
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/dftdoubleprecisioninterleavedfunctions",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/dftdoubleprecisionsplitcomplexfunctions",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/dftsingleprecisioninterleavedfunctions",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/dftsingleprecisionsplitcomplexfunctions"
+      ],
+      "anchor": "3262013"
     },
     {
       "kind": "taskGroup",
@@ -17499,8 +17615,10 @@
         "doc://com.apple.documentation/documentation/accelerate/vdsp/roundingmode",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/sortorder",
         "doc://com.apple.documentation/documentation/accelerate/vdsp/thresholdrule",
-        "doc://com.apple.documentation/documentation/accelerate/vdsp/windowsequence"
-      ]
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/windowsequence",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/dfterror"
+      ],
+      "anchor": "3262014"
     }
   ],
   "seeAlsoSections": [
@@ -17536,6 +17654,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS",
@@ -17546,7 +17665,7 @@
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }

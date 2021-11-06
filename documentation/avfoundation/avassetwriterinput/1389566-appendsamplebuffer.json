@@ -2,7 +2,7 @@
   "abstract": [
     {
       "type": "text",
-      "text": "Appends samples to the receiver."
+      "text": "Appends a sample buffer to an input to write to the output file."
     }
   ],
   "documentVersion": 0,
@@ -36,30 +36,38 @@
       {
         "name": "iOS",
         "introducedAt": "4.1",
-        "current": "14.3"
+        "current": "15.2"
+      },
+      {
+        "name": "iPadOS",
+        "introducedAt": "4.1",
+        "current": "15.2"
       },
       {
         "name": "macOS",
         "introducedAt": "10.7",
-        "current": "11.1"
+        "current": "12.1"
       },
       {
         "name": "Mac Catalyst",
         "introducedAt": "13.0",
-        "current": "14.3"
+        "current": "15.2"
       },
       {
         "name": "tvOS",
         "introducedAt": "9.0",
-        "current": "14.3"
+        "current": "15.2"
       }
     ],
     "externalID": "c:objc(cs)AVAssetWriterInput(im)appendSampleBuffer:",
+    "parent": {
+      "title": "AVAssetWriterInput"
+    },
     "symbolKind": "instm"
   },
   "schemaVersion": {
-    "major": 1,
-    "minor": 0,
+    "major": 0,
+    "minor": 1,
     "patch": 0
   },
   "sections": [],
@@ -120,9 +128,25 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+          "text": "An object that appends media samples to a track in an asset writer’s output file."
         }
       ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/no": {
+      "title": "NO",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/no"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime": {
       "title": "startSessionAtSourceTime:",
@@ -141,22 +165,6 @@
           "text": "startSessionAtSourceTime:"
         }
       ]
-    },
-    "doc://com.apple.documentation/documentation/objectivec/no": {
-      "title": "NO",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/no",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/no"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
-      "title": "AVAssetWriter",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriter"
     },
     "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389335-status": {
       "title": "status",
@@ -182,60 +190,6 @@
       "role": "symbol",
       "url": "/documentation/avfoundation/avassetwriter/1390725-error"
     },
-    "doc://com.apple.documentation/documentation/foundation/nserror": {
-      "title": "NSError",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/foundation/nserror"
-    },
-    "doc://com.apple.documentation/documentation/objectivec/yes": {
-      "title": "YES",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/objectivec/yes"
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue": {
-      "title": "requestMediaDataWhenReadyOnQueue:usingBlock:",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "Instructs the receiver to invoke a block repeatedly, at its convenience, to gather media data for writing to the output."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "requestMediaDataWhenReadyOnQueue:usingBlock:"
-        }
-      ]
-    },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint": {
-      "title": "sourceFormatHint",
-      "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint",
-      "kind": "symbol",
-      "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint",
-      "abstract": [
-        {
-          "type": "text",
-          "text": "A hint about the format of the buffers to appended."
-        }
-      ]
-    },
     "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref": {
       "title": "CMSampleBufferRef",
       "type": "topic",
@@ -244,27 +198,17 @@
       "role": "symbol",
       "url": "/documentation/coremedia/cmsamplebufferref"
     },
-    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer": {
-      "title": "appendSampleBuffer:",
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime": {
+      "title": "expectsMediaDataInRealTime",
       "type": "topic",
-      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
       "kind": "symbol",
       "role": "symbol",
-      "url": "/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
+      "url": "/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
       "abstract": [
         {
           "type": "text",
-          "text": "Appends samples to the receiver."
-        }
-      ],
-      "fragments": [
-        {
-          "kind": "text",
-          "text": "- "
-        },
-        {
-          "kind": "identifier",
-          "text": "appendSampleBuffer:"
+          "text": "A Boolean value that indicates whether the input tailors its processing for real-time sources."
         }
       ]
     },
@@ -278,7 +222,55 @@
       "abstract": [
         {
           "type": "text",
-          "text": "A Boolean value that indicates the readiness of the input to accept more media data."
+          "text": "A Boolean value that indicates whether the input is ready to accept media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue": {
+      "title": "requestMediaDataWhenReadyOnQueue:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells the input to request media data, at its convenience, to write to the output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestMediaDataWhenReadyOnQueue:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer": {
+      "title": "appendSampleBuffer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Appends a sample buffer to an input to write to the output file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "appendSampleBuffer:"
         }
       ]
     },
@@ -292,7 +284,7 @@
       "abstract": [
         {
           "type": "text",
-          "text": "Tells the writer it can't append more buffers to this input."
+          "text": "Marks the input as finished to indicate that you’re done appending samples to it."
         }
       ],
       "fragments": [
@@ -317,19 +309,13 @@
   "seeAlsoSections": [
     {
       "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime",
         "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390122-markasfinished",
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue"
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1390122-markasfinished"
       ],
-      "title": "Adding Media Samples",
+      "title": "Appending Media Samples",
       "generated": true
-    },
-    {
-      "title": "Related Documentation",
-      "generated": false,
-      "identifiers": [
-        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint"
-      ]
     }
   ],
   "primaryContentSections": [
@@ -382,6 +368,7 @@
           ],
           "platforms": [
             "iOS",
+            "iPadOS",
             "macOS",
             "Mac Catalyst",
             "tvOS"
@@ -403,7 +390,7 @@
               "inlineContent": [
                 {
                   "type": "text",
-                  "text": "The CMSampleBuffer to be appended."
+                  "text": "The sample buffer to append."
                 }
               ]
             }
@@ -430,7 +417,7 @@
             },
             {
               "type": "text",
-              "text": " if sampleBuffer as appended successfully, otherwise "
+              "text": " if the input successfully appends the sample buffer; otherwise, "
             },
             {
               "type": "reference",
@@ -439,7 +426,7 @@
             },
             {
               "type": "text",
-              "text": ". "
+              "text": "."
             }
           ]
         }
@@ -459,7 +446,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The timing information in the sample buffer, considered relative to the time passed to the asset writer’s "
+              "text": "Order the samples you append according to storage requirements. For example, if you’re working with sample buffers containing compressed video, order and append them according to their decode timestamp. The system uses the timing information in the sample buffer relative to the time you set in the call to "
             },
             {
               "type": "reference",
@@ -468,7 +455,7 @@
             },
             {
               "type": "text",
-              "text": " will be used to determine the timing of those samples in the output file."
+              "text": " to determine the timing of samples in the output file."
             }
           ]
         },
@@ -477,16 +464,7 @@
           "inlineContent": [
             {
               "type": "text",
-              "text": "The appended sample buffers are expected to be ordered according to storage requirements. If you're working with sample buffers containing compressed video, they should be ordered and appended according to their decode timestamp."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "inlineContent": [
-            {
-              "type": "text",
-              "text": "If  "
+              "text": "If this method returns "
             },
             {
               "type": "reference",
@@ -495,16 +473,7 @@
             },
             {
               "type": "text",
-              "text": " is returned, clients can check the value of the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-            },
-            {
-              "type": "text",
-              "text": " "
+              "text": ", check the value of the asset writer’s "
             },
             {
               "type": "reference",
@@ -513,16 +482,7 @@
             },
             {
               "type": "text",
-              "text": " property to determine whether the writing operation completed, failed, or was cancelled.  If the "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter/1389335-status"
-            },
-            {
-              "type": "text",
-              "text": " is "
+              "text": " property to determine whether the writing operation’s status is complete, failed, or canceled. If the status is "
             },
             {
               "type": "reference",
@@ -531,16 +491,7 @@
             },
             {
               "type": "text",
-              "text": ", The "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter"
-            },
-            {
-              "type": "text",
-              "text": " "
+              "text": ", the asset writer’s "
             },
             {
               "type": "reference",
@@ -549,41 +500,34 @@
             },
             {
               "type": "text",
-              "text": " property will contain an instance of "
-            },
-            {
-              "type": "reference",
-              "isActive": true,
-              "identifier": "doc://com.apple.documentation/documentation/foundation/nserror"
-            },
-            {
-              "type": "text",
-              "text": "ß that describes the failure."
+              "text": " property contains an error object that describes the failure."
             }
           ]
         },
         {
-          "type": "paragraph",
-          "inlineContent": [
+          "type": "aside",
+          "content": [
             {
-              "type": "text",
-              "text": "Do not modify "
-            },
-            {
-              "type": "codeVoice",
-              "code": "sampleBuffer"
-            },
-            {
-              "type": "text",
-              "text": " or its contents after you have passed it to this method."
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Don’t modify the sample buffer or its contents after you’ve passed it to this method."
+                }
+              ]
             }
-          ]
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
         }
       ]
     }
   ],
   "legalNotices": {
-    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "copyright": "Copyright &copy; 2021 Apple Inc. All rights reserved.",
     "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
     "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
   }
