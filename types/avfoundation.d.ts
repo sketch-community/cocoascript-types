@@ -26,19 +26,19 @@ declare namespace cocoascript {
     cancelLoading():void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1390489-referencerestrictions
     referenceRestrictions(): AVAssetReferenceRestrictions;
-    setReferenceRestrictions(): void;
+    setReferenceRestrictions(value: AVAssetReferenceRestrictions): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1389400-duration
     duration(): CMTime;
-    setDuration(): void;
+    setDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1390850-providesprecisedurationandtiming
-    providesPreciseDurationAndTiming(): BOOL;
-    setProvidesPreciseDurationAndTiming(): void;
+    providesPreciseDurationAndTiming(): boolean;
+    setProvidesPreciseDurationAndTiming(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/3197641-minimumtimeoffsetfromlive
     minimumTimeOffsetFromLive(): CMTime;
-    setMinimumTimeOffsetFromLive(): void;
+    setMinimumTimeOffsetFromLive(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1387953-tracks
     tracks(): AVAssetTrack;
-    setTracks(): void;
+    setTracks(value: AVAssetTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1390145-trackwithtrackid
     trackWithTrackID(trackID: CMPersistentTrackID):AVAssetTrack;
     // https://developer.apple.com/documentation/avfoundation/avasset/1387140-trackswithmediatype
@@ -49,87 +49,87 @@ declare namespace cocoascript {
     unusedTrackID():CMPersistentTrackID;
     // https://developer.apple.com/documentation/avfoundation/avasset/1390697-trackgroups
     trackGroups(): AVAssetTrackGroup;
-    setTrackGroups(): void;
+    setTrackGroups(value: AVAssetTrackGroup): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1386884-metadata
     metadata(): AVMetadataItem;
-    setMetadata(): void;
+    setMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1390498-commonmetadata
     commonMetadata(): AVMetadataItem;
-    setCommonMetadata(): void;
+    setCommonMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1385823-availablemetadataformats
     availableMetadataFormats(): AVMetadataFormat;
-    setAvailableMetadataFormats(): void;
+    setAvailableMetadataFormats(value: AVMetadataFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1387759-metadataforformat
     metadataForFormat(format: AVMetadataFormat):AVMetadataItem;
     // https://developer.apple.com/documentation/avfoundation/avasset/1386342-creationdate
     creationDate(): AVMetadataItem;
-    setCreationDate(): void;
+    setCreationDate(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1388104-lyrics
     lyrics(): string | cocoascript.NSString;
-    setLyrics(): void;
+    setLyrics(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1385974-playable
-    playable(): BOOL;
-    setPlayable(): void;
+    playable(): boolean;
+    setPlayable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1389245-exportable
-    exportable(): BOOL;
-    setExportable(): void;
+    exportable(): boolean;
+    setExportable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1390475-readable
-    readable(): BOOL;
-    setReadable(): void;
+    readable(): boolean;
+    setReadable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1386129-composable
-    composable(): BOOL;
-    setComposable(): void;
+    composable(): boolean;
+    setComposable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1390333-compatiblewithairplayvideo
-    compatibleWithAirPlayVideo(): BOOL;
-    setCompatibleWithAirPlayVideo(): void;
+    compatibleWithAirPlayVideo(): boolean;
+    setCompatibleWithAirPlayVideo(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1616742-compatiblewithsavedphotosalbum
-    compatibleWithSavedPhotosAlbum(): BOOL;
-    setCompatibleWithSavedPhotosAlbum(): void;
+    compatibleWithSavedPhotosAlbum(): boolean;
+    setCompatibleWithSavedPhotosAlbum(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1389912-preferredrate
     preferredRate(): number;
-    setPreferredRate(): void;
+    setPreferredRate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1390457-preferredvolume
     preferredVolume(): number;
-    setPreferredVolume(): void;
+    setPreferredVolume(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1385906-preferredtransform
     preferredTransform(): CGAffineTransform;
-    setPreferredTransform(): void;
+    setPreferredTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/2935636-preferreddisplaycriteria
     preferredDisplayCriteria(): AVDisplayCriteria;
-    setPreferredDisplayCriteria(): void;
+    setPreferredDisplayCriteria(value: AVDisplayCriteria): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/2890796-allmediaselections
     allMediaSelections(): AVMediaSelection;
-    setAllMediaSelections(): void;
+    setAllMediaSelections(value: AVMediaSelection): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1386122-preferredmediaselection
     preferredMediaSelection(): AVMediaSelection;
-    setPreferredMediaSelection(): void;
+    setPreferredMediaSelection(value: AVMediaSelection): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1389433-availablemediacharacteristicswit
     availableMediaCharacteristicsWithMediaSelectionOptions(): AVMediaCharacteristic;
-    setAvailableMediaCharacteristicsWithMediaSelectionOptions(): void;
+    setAvailableMediaCharacteristicsWithMediaSelectionOptions(value: AVMediaCharacteristic): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1387496-mediaselectiongroupformediachara
     mediaSelectionGroupForMediaCharacteristic(mediaCharacteristic: AVMediaCharacteristic):AVMediaSelectionGroup;
     // https://developer.apple.com/documentation/avfoundation/avasset/1388228-availablechapterlocales
     availableChapterLocales(): NSLocale;
-    setAvailableChapterLocales(): void;
+    setAvailableChapterLocales(value: NSLocale): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo
     chapterMetadataGroupsWithTitleLocale_containingItemsWithCommonKeys(locale: NSLocale, commonKeys: AVMetadataKey):AVTimedMetadataGroup;
     // https://developer.apple.com/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin
     chapterMetadataGroupsBestMatchingPreferredLanguages(preferredLanguages: string | cocoascript.NSString):AVTimedMetadataGroup;
     // https://developer.apple.com/documentation/avfoundation/avasset/1389223-hasprotectedcontent
-    hasProtectedContent(): BOOL;
-    setHasProtectedContent(): void;
+    hasProtectedContent(): boolean;
+    setHasProtectedContent(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1389520-cancontainfragments
-    canContainFragments(): BOOL;
-    setCanContainFragments(): void;
+    canContainFragments(): boolean;
+    setCanContainFragments(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1385589-containsfragments
-    containsFragments(): BOOL;
-    setContainsFragments(): void;
+    containsFragments(): boolean;
+    setContainsFragments(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/2715834-overalldurationhint
     overallDurationHint(): CMTime;
-    setOverallDurationHint(): void;
+    setOverallDurationHint(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avasset/1508715-naturalsize
     naturalSize(): CGSize;
-    setNaturalSize(): void;
+    setNaturalSize(value: CGSize): void;
     //
     alloc():AVAsset;
     //
@@ -146,7 +146,7 @@ declare namespace cocoascript {
   interface AVAssetTrackGroup extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassettrackgroup/1389024-trackids
     trackIDs(): NSNumber;
-    setTrackIDs(): void;
+    setTrackIDs(value: NSNumber): void;
     //
     alloc():AVAssetTrackGroup;
     //
@@ -177,18 +177,18 @@ declare namespace cocoascript {
   interface AVCaptureSession extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1390865-inputs
     inputs(): AVCaptureInput;
-    setInputs(): void;
+    setInputs(value: AVCaptureInput): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1387180-canaddinput
-    canAddInput(input: AVCaptureInput):BOOL;
+    canAddInput(input: AVCaptureInput):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1387239-addinput
     addInput(input: AVCaptureInput):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1388073-removeinput
     removeInput(input: AVCaptureInput):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1387621-outputs
     outputs(): AVCaptureOutput;
-    setOutputs(): void;
+    setOutputs(value: AVCaptureOutput): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1388944-canaddoutput
-    canAddOutput(output: AVCaptureOutput):BOOL;
+    canAddOutput(output: AVCaptureOutput):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1387325-addoutput
     addOutput(output: AVCaptureOutput):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1385688-removeoutput
@@ -198,27 +198,27 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1385661-stoprunning
     stopRunning():void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1388133-running
-    running(): BOOL;
-    setRunning(): void;
+    running(): boolean;
+    setRunning(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1620475-interrupted
-    interrupted(): BOOL;
-    setInterrupted(): void;
+    interrupted(): boolean;
+    setInterrupted(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1389174-beginconfiguration
     beginConfiguration():void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1388173-commitconfiguration
     commitConfiguration():void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1389696-sessionpreset
     sessionPreset(): AVCaptureSessionPreset;
-    setSessionPreset(): void;
+    setSessionPreset(value: AVCaptureSessionPreset): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1389824-cansetsessionpreset
-    canSetSessionPreset(preset: AVCaptureSessionPreset):BOOL;
+    canSetSessionPreset(preset: AVCaptureSessionPreset):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/3153020-connections
     connections(): AVCaptureConnection;
-    setConnections(): void;
+    setConnections(value: AVCaptureConnection): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1389687-addconnection
     addConnection(connection: AVCaptureConnection):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1389596-canaddconnection
-    canAddConnection(connection: AVCaptureConnection):BOOL;
+    canAddConnection(connection: AVCaptureConnection):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1390383-addinputwithnoconnections
     addInputWithNoConnections(input: AVCaptureInput):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1388709-addoutputwithnoconnections
@@ -226,17 +226,17 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1390041-removeconnection
     removeConnection(connection: AVCaptureConnection):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1620490-usesapplicationaudiosession
-    usesApplicationAudioSession(): BOOL;
-    setUsesApplicationAudioSession(): void;
+    usesApplicationAudioSession(): boolean;
+    setUsesApplicationAudioSession(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1620477-automaticallyconfiguresapplicati
-    automaticallyConfiguresApplicationAudioSession(): BOOL;
-    setAutomaticallyConfiguresApplicationAudioSession(): void;
+    automaticallyConfiguresApplicationAudioSession(): boolean;
+    setAutomaticallyConfiguresApplicationAudioSession(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1388984-masterclock
     masterClock(): CMClockRef;
-    setMasterClock(): void;
+    setMasterClock(value: CMClockRef): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesession/1648764-automaticallyconfigurescapturede
-    automaticallyConfiguresCaptureDeviceForWideColor(): BOOL;
-    setAutomaticallyConfiguresCaptureDeviceForWideColor(): void;
+    automaticallyConfiguresCaptureDeviceForWideColor(): boolean;
+    setAutomaticallyConfiguresCaptureDeviceForWideColor(value: boolean): void;
     //
     alloc():AVCaptureSession;
     //
@@ -268,14 +268,14 @@ declare namespace cocoascript {
    */
   interface AVCaptureMultiCamSession extends AVCaptureSession {
     // https://developer.apple.com/documentation/avfoundation/avcapturemulticamsession/3183002-multicamsupported
-    multiCamSupported(): BOOL;
-    setMultiCamSupported(): void;
+    multiCamSupported(): boolean;
+    setMultiCamSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemulticamsession/3153017-hardwarecost
     hardwareCost(): number;
-    setHardwareCost(): void;
+    setHardwareCost(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemulticamsession/3153019-systempressurecost
     systemPressureCost(): number;
-    setSystemPressureCost(): void;
+    setSystemPressureCost(value: number): void;
     //
     alloc():AVCaptureMultiCamSession;
     //
@@ -301,334 +301,334 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1390520-deviceswithmediatype
     devicesWithMediaType(mediaType: AVMediaType):AVCaptureDevice;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624584-requestaccessformediatype
-    requestAccessForMediaType_completionHandler(mediaType: AVMediaType, handler: BOOL):void;
+    requestAccessForMediaType_completionHandler(mediaType: AVMediaType, handler: boolean):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624613-authorizationstatusformediatype
     authorizationStatusForMediaType(mediaType: AVMediaType):AVAuthorizationStatus;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1387810-lockforconfiguration
-    lockForConfiguration(outError: NSError):BOOL;
+    lockForConfiguration(outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1387917-unlockforconfiguration
     unlockForConfiguration():void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1389512-inusebyanotherapplication
-    inUseByAnotherApplication(): BOOL;
-    setInUseByAnotherApplication(): void;
+    inUseByAnotherApplication(): boolean;
+    setInUseByAnotherApplication(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1387761-suspended
-    suspended(): BOOL;
-    setSuspended(): void;
+    suspended(): boolean;
+    setSuspended(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388720-linkeddevices
     linkedDevices(): AVCaptureDevice;
-    setLinkedDevices(): void;
+    setLinkedDevices(value: AVCaptureDevice): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1387804-transporttype
     transportType(): number;
-    setTransportType(): void;
+    setTransportType(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388404-inputsources
     inputSources(): AVCaptureDeviceInputSource;
-    setInputSources(): void;
+    setInputSources(value: AVCaptureDeviceInputSource): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1390141-activeinputsource
     activeInputSource(): AVCaptureDeviceInputSource;
-    setActiveInputSource(): void;
+    setActiveInputSource(value: AVCaptureDeviceInputSource): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1390477-uniqueid
     uniqueID(): string | cocoascript.NSString;
-    setUniqueID(): void;
+    setUniqueID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1389500-modelid
     modelID(): string | cocoascript.NSString;
-    setModelID(): void;
+    setModelID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1390193-manufacturer
     manufacturer(): string | cocoascript.NSString;
-    setManufacturer(): void;
+    setManufacturer(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388222-localizedname
     localizedName(): string | cocoascript.NSString;
-    setLocalizedName(): void;
+    setLocalizedName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1389343-connected
-    connected(): BOOL;
-    setConnected(): void;
+    connected(): boolean;
+    setConnected(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3153002-virtualdevice
-    virtualDevice(): BOOL;
-    setVirtualDevice(): void;
+    virtualDevice(): boolean;
+    setVirtualDevice(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/2361119-devicetype
     deviceType(): AVCaptureDeviceType;
-    setDeviceType(): void;
+    setDeviceType(value: AVCaptureDeviceType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3153001-constituentdevices
     constituentDevices(): AVCaptureDevice;
-    setConstituentDevices(): void;
+    setConstituentDevices(value: AVCaptureDevice): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624589-lensaperture
     lensAperture(): number;
-    setLensAperture(): void;
+    setLensAperture(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1386909-position
     position(): AVCaptureDevicePosition;
-    setPosition(): void;
+    setPosition(value: AVCaptureDevicePosition): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1389487-hasmediatype
-    hasMediaType(mediaType: AVMediaType):BOOL;
+    hasMediaType(mediaType: AVMediaType):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1386263-supportsavcapturesessionpreset
-    supportsAVCaptureSessionPreset(preset: AVCaptureSessionPreset):BOOL;
+    supportsAVCaptureSessionPreset(preset: AVCaptureSessionPreset):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3738419-centerstageenabled
-    centerStageEnabled(): BOOL;
-    setCenterStageEnabled(): void;
+    centerStageEnabled(): boolean;
+    setCenterStageEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3738417-centerstageactive
-    centerStageActive(): BOOL;
-    setCenterStageActive(): void;
+    centerStageActive(): boolean;
+    setCenterStageActive(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3738418-centerstagecontrolmode
     centerStageControlMode(): AVCaptureCenterStageControlMode;
-    setCenterStageControlMode(): void;
+    setCenterStageControlMode(value: AVCaptureCenterStageControlMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388738-formats
     formats(): AVCaptureDeviceFormat;
-    setFormats(): void;
+    setFormats(value: AVCaptureDeviceFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1389221-activeformat
     activeFormat(): AVCaptureDeviceFormat;
-    setActiveFormat(): void;
+    setActiveFormat(value: AVCaptureDeviceFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624606-exposureduration
     exposureDuration(): CMTime;
-    setExposureDuration(): void;
+    setExposureDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624646-setexposuremodecustomwithduratio
     setExposureModeCustomWithDuration_ISO_completionHandler(duration: CMTime, ISO: number, handler: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624630-exposuretargetoffset
     exposureTargetOffset(): number;
-    setExposureTargetOffset(): void;
+    setExposureTargetOffset(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624651-exposuretargetbias
     exposureTargetBias(): number;
-    setExposureTargetBias(): void;
+    setExposureTargetBias(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624604-minexposuretargetbias
     minExposureTargetBias(): number;
-    setMinExposureTargetBias(): void;
+    setMinExposureTargetBias(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624576-maxexposuretargetbias
     maxExposureTargetBias(): number;
-    setMaxExposureTargetBias(): void;
+    setMaxExposureTargetBias(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/2968216-activemaxexposureduration
     activeMaxExposureDuration(): CMTime;
-    setActiveMaxExposureDuration(): void;
+    setActiveMaxExposureDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624637-setexposuretargetbias
     setExposureTargetBias_completionHandler(bias: number, handler: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1386253-adjustingexposure
-    adjustingExposure(): BOOL;
-    setAdjustingExposure(): void;
+    adjustingExposure(): boolean;
+    setAdjustingExposure(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388858-exposuremode
     exposureMode(): AVCaptureExposureMode;
-    setExposureMode(): void;
+    setExposureMode(value: AVCaptureExposureMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1389048-isexposuremodesupported
-    isExposureModeSupported(exposureMode: AVCaptureExposureMode):BOOL;
+    isExposureModeSupported(exposureMode: AVCaptureExposureMode):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388777-exposurepointofinterest
     exposurePointOfInterest(): CGPoint;
-    setExposurePointOfInterest(): void;
+    setExposurePointOfInterest(value: CGPoint): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1387263-exposurepointofinterestsupported
-    exposurePointOfInterestSupported(): BOOL;
-    setExposurePointOfInterestSupported(): void;
+    exposurePointOfInterestSupported(): boolean;
+    setExposurePointOfInterestSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/2865755-activedepthdataformat
     activeDepthDataFormat(): AVCaptureDeviceFormat;
-    setActiveDepthDataFormat(): void;
+    setActiveDepthDataFormat(value: AVCaptureDeviceFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/2968215-activedepthdataminframeduration
     activeDepthDataMinFrameDuration(): CMTime;
-    setActiveDepthDataMinFrameDuration(): void;
+    setActiveDepthDataMinFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624611-videozoomfactor
     videoZoomFactor(): CGFloat;
-    setVideoZoomFactor(): void;
+    setVideoZoomFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/2865754-minavailablevideozoomfactor
     minAvailableVideoZoomFactor(): CGFloat;
-    setMinAvailableVideoZoomFactor(): void;
+    setMinAvailableVideoZoomFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/2865758-maxavailablevideozoomfactor
     maxAvailableVideoZoomFactor(): CGFloat;
-    setMaxAvailableVideoZoomFactor(): void;
+    setMaxAvailableVideoZoomFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624614-ramptovideozoomfactor
     rampToVideoZoomFactor_withRate(factor: CGFloat, rate: number):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624588-rampingvideozoom
-    rampingVideoZoom(): BOOL;
-    setRampingVideoZoom(): void;
+    rampingVideoZoom(): boolean;
+    setRampingVideoZoom(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624631-cancelvideozoomramp
     cancelVideoZoomRamp():void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3153003-virtualdeviceswitchovervideozoom
     virtualDeviceSwitchOverVideoZoomFactors(): NSNumber;
-    setVirtualDeviceSwitchOverVideoZoomFactors(): void;
+    setVirtualDeviceSwitchOverVideoZoomFactors(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/2908991-dualcameraswitchovervideozoomfac
     dualCameraSwitchOverVideoZoomFactor(): CGFloat;
-    setDualCameraSwitchOverVideoZoomFactor(): void;
+    setDualCameraSwitchOverVideoZoomFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3751762-minimumfocusdistance
     minimumFocusDistance(): NSInteger;
-    setMinimumFocusDistance(): void;
+    setMinimumFocusDistance(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1389191-focusmode
     focusMode(): AVCaptureFocusMode;
-    setFocusMode(): void;
+    setFocusMode(value: AVCaptureFocusMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1390215-isfocusmodesupported
-    isFocusModeSupported(focusMode: AVCaptureFocusMode):BOOL;
+    isFocusModeSupported(focusMode: AVCaptureFocusMode):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1385853-focuspointofinterest
     focusPointOfInterest(): CGPoint;
-    setFocusPointOfInterest(): void;
+    setFocusPointOfInterest(value: CGPoint): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1390436-focuspointofinterestsupported
-    focusPointOfInterestSupported(): BOOL;
-    setFocusPointOfInterestSupported(): void;
+    focusPointOfInterestSupported(): boolean;
+    setFocusPointOfInterestSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1390577-adjustingfocus
-    adjustingFocus(): BOOL;
-    setAdjustingFocus(): void;
+    adjustingFocus(): boolean;
+    setAdjustingFocus(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624653-smoothautofocusenabled
-    smoothAutoFocusEnabled(): BOOL;
-    setSmoothAutoFocusEnabled(): void;
+    smoothAutoFocusEnabled(): boolean;
+    setSmoothAutoFocusEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624625-smoothautofocussupported
-    smoothAutoFocusSupported(): BOOL;
-    setSmoothAutoFocusSupported(): void;
+    smoothAutoFocusSupported(): boolean;
+    setSmoothAutoFocusSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624622-autofocusrangerestriction
     autoFocusRangeRestriction(): AVCaptureAutoFocusRangeRestriction;
-    setAutoFocusRangeRestriction(): void;
+    setAutoFocusRangeRestriction(value: AVCaptureAutoFocusRangeRestriction): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624570-autofocusrangerestrictionsupport
-    autoFocusRangeRestrictionSupported(): BOOL;
-    setAutoFocusRangeRestrictionSupported(): void;
+    autoFocusRangeRestrictionSupported(): boolean;
+    setAutoFocusRangeRestrictionSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388988-hasflash
-    hasFlash(): BOOL;
-    setHasFlash(): void;
+    hasFlash(): boolean;
+    setHasFlash(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624627-flashavailable
-    flashAvailable(): BOOL;
-    setFlashAvailable(): void;
+    flashAvailable(): boolean;
+    setFlashAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388116-flashmode
     flashMode(): AVCaptureFlashMode;
-    setFlashMode(): void;
+    setFlashMode(value: AVCaptureFlashMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1386434-isflashmodesupported
-    isFlashModeSupported(flashMode: AVCaptureFlashMode):BOOL;
+    isFlashModeSupported(flashMode: AVCaptureFlashMode):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624598-flashactive
-    flashActive(): BOOL;
-    setFlashActive(): void;
+    flashActive(): boolean;
+    setFlashActive(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1387674-hastorch
-    hasTorch(): BOOL;
-    setHasTorch(): void;
+    hasTorch(): boolean;
+    setHasTorch(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624626-torchavailable
-    torchAvailable(): BOOL;
-    setTorchAvailable(): void;
+    torchAvailable(): boolean;
+    setTorchAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624578-torchactive
-    torchActive(): BOOL;
-    setTorchActive(): void;
+    torchActive(): boolean;
+    setTorchActive(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624605-torchlevel
     torchLevel(): number;
-    setTorchLevel(): void;
+    setTorchLevel(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1386035-torchmode
     torchMode(): AVCaptureTorchMode;
-    setTorchMode(): void;
+    setTorchMode(value: AVCaptureTorchMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388822-istorchmodesupported
-    isTorchModeSupported(torchMode: AVCaptureTorchMode):BOOL;
+    isTorchModeSupported(torchMode: AVCaptureTorchMode):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624609-settorchmodeonwithlevel
-    setTorchModeOnWithLevel_error(torchLevel: number, outError: NSError):BOOL;
+    setTorchModeOnWithLevel_error(torchLevel: number, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624595-lowlightboostsupported
-    lowLightBoostSupported(): BOOL;
-    setLowLightBoostSupported(): void;
+    lowLightBoostSupported(): boolean;
+    setLowLightBoostSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624602-lowlightboostenabled
-    lowLightBoostEnabled(): BOOL;
-    setLowLightBoostEnabled(): void;
+    lowLightBoostEnabled(): boolean;
+    setLowLightBoostEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624610-automaticallyenableslowlightboos
-    automaticallyEnablesLowLightBoostWhenAvailable(): BOOL;
-    setAutomaticallyEnablesLowLightBoostWhenAvailable(): void;
+    automaticallyEnablesLowLightBoostWhenAvailable(): boolean;
+    setAutomaticallyEnablesLowLightBoostWhenAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1389290-activevideominframeduration
     activeVideoMinFrameDuration(): CMTime;
-    setActiveVideoMinFrameDuration(): void;
+    setActiveVideoMinFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1387816-activevideomaxframeduration
     activeVideoMaxFrameDuration(): CMTime;
-    setActiveVideoMaxFrameDuration(): void;
+    setActiveVideoMaxFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388479-transportcontrolssupported
-    transportControlsSupported(): BOOL;
-    setTransportControlsSupported(): void;
+    transportControlsSupported(): boolean;
+    setTransportControlsSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1386373-transportcontrolsplaybackmode
     transportControlsPlaybackMode(): AVCaptureDeviceTransportControlsPlaybackMode;
-    setTransportControlsPlaybackMode(): void;
+    setTransportControlsPlaybackMode(value: AVCaptureDeviceTransportControlsPlaybackMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1386639-transportcontrolsspeed
     transportControlsSpeed(): AVCaptureDeviceTransportControlsSpeed;
-    setTransportControlsSpeed(): void;
+    setTransportControlsSpeed(value: AVCaptureDeviceTransportControlsSpeed): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388481-settransportcontrolsplaybackmode
     setTransportControlsPlaybackMode_speed(mode: AVCaptureDeviceTransportControlsPlaybackMode, speed: AVCaptureDeviceTransportControlsSpeed):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624644-subjectareachangemonitoringenabl
-    subjectAreaChangeMonitoringEnabled(): BOOL;
-    setSubjectAreaChangeMonitoringEnabled(): void;
+    subjectAreaChangeMonitoringEnabled(): boolean;
+    setSubjectAreaChangeMonitoringEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624643-lensposition
     lensPosition(): number;
-    setLensPosition(): void;
+    setLensPosition(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624617-setfocusmodelockedwithlenspositi
     setFocusModeLockedWithLensPosition_completionHandler(lensPosition: number, handler: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/2361529-lockingfocuswithcustomlenspositi
-    lockingFocusWithCustomLensPositionSupported(): BOOL;
-    setLockingFocusWithCustomLensPositionSupported(): void;
+    lockingFocusWithCustomLensPositionSupported(): boolean;
+    setLockingFocusWithCustomLensPositionSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1388587-iswhitebalancemodesupported
-    isWhiteBalanceModeSupported(whiteBalanceMode: AVCaptureWhiteBalanceMode):BOOL;
+    isWhiteBalanceModeSupported(whiteBalanceMode: AVCaptureWhiteBalanceMode):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1386369-whitebalancemode
     whiteBalanceMode(): AVCaptureWhiteBalanceMode;
-    setWhiteBalanceMode(): void;
+    setWhiteBalanceMode(value: AVCaptureWhiteBalanceMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1386544-adjustingwhitebalance
-    adjustingWhiteBalance(): BOOL;
-    setAdjustingWhiteBalance(): void;
+    adjustingWhiteBalance(): boolean;
+    setAdjustingWhiteBalance(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624650-chromaticityvaluesfordevicewhite
     chromaticityValuesForDeviceWhiteBalanceGains(whiteBalanceGains: AVCaptureWhiteBalanceGains):AVCaptureWhiteBalanceChromaticityValues;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624633-devicewhitebalancegains
     deviceWhiteBalanceGains(): AVCaptureWhiteBalanceGains;
-    setDeviceWhiteBalanceGains(): void;
+    setDeviceWhiteBalanceGains(value: AVCaptureWhiteBalanceGains): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624586-maxwhitebalancegain
     maxWhiteBalanceGain(): number;
-    setMaxWhiteBalanceGain(): void;
+    setMaxWhiteBalanceGain(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624575-devicewhitebalancegainsforchroma
     deviceWhiteBalanceGainsForChromaticityValues(chromaticityValues: AVCaptureWhiteBalanceChromaticityValues):AVCaptureWhiteBalanceGains;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624628-devicewhitebalancegainsfortemper
     deviceWhiteBalanceGainsForTemperatureAndTintValues(tempAndTintValues: AVCaptureWhiteBalanceTemperatureAndTintValues):AVCaptureWhiteBalanceGains;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624574-grayworlddevicewhitebalancegains
     grayWorldDeviceWhiteBalanceGains(): AVCaptureWhiteBalanceGains;
-    setGrayWorldDeviceWhiteBalanceGains(): void;
+    setGrayWorldDeviceWhiteBalanceGains(value: AVCaptureWhiteBalanceGains): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624568-setwhitebalancemodelockedwithdev
     setWhiteBalanceModeLockedWithDeviceWhiteBalanceGains_completionHandler(whiteBalanceGains: AVCaptureWhiteBalanceGains, handler: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624640-temperatureandtintvaluesfordevic
     temperatureAndTintValuesForDeviceWhiteBalanceGains(whiteBalanceGains: AVCaptureWhiteBalanceGains):AVCaptureWhiteBalanceTemperatureAndTintValues;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/2360576-lockingwhitebalancewithcustomdev
-    lockingWhiteBalanceWithCustomDeviceGainsSupported(): BOOL;
-    setLockingWhiteBalanceWithCustomDeviceGainsSupported(): void;
+    lockingWhiteBalanceWithCustomDeviceGainsSupported(): boolean;
+    setLockingWhiteBalanceWithCustomDeviceGainsSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624649-iso
     ISO(): number;
-    setISO(): void;
+    setISO(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624593-automaticallyadjustsvideohdrenab
-    automaticallyAdjustsVideoHDREnabled(): BOOL;
-    setAutomaticallyAdjustsVideoHDREnabled(): void;
+    automaticallyAdjustsVideoHDREnabled(): boolean;
+    setAutomaticallyAdjustsVideoHDREnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1624645-videohdrenabled
-    videoHDREnabled(): BOOL;
-    setVideoHDREnabled(): void;
+    videoHDREnabled(): boolean;
+    setVideoHDREnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/1648668-activecolorspace
     activeColorSpace(): AVCaptureColorSpace;
-    setActiveColorSpace(): void;
+    setActiveColorSpace(value: AVCaptureColorSpace): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3194614-geometricdistortioncorrectionsup
-    geometricDistortionCorrectionSupported(): BOOL;
-    setGeometricDistortionCorrectionSupported(): void;
+    geometricDistortionCorrectionSupported(): boolean;
+    setGeometricDistortionCorrectionSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3194613-geometricdistortioncorrectionena
-    geometricDistortionCorrectionEnabled(): BOOL;
-    setGeometricDistortionCorrectionEnabled(): void;
+    geometricDistortionCorrectionEnabled(): boolean;
+    setGeometricDistortionCorrectionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3229937-extrinsicmatrixfromdevice
     extrinsicMatrixFromDevice_toDevice(fromDevice: AVCaptureDevice, toDevice: AVCaptureDevice):NSData;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/2933375-systempressurestate
     systemPressureState(): AVCaptureSystemPressureState;
-    setSystemPressureState(): void;
+    setSystemPressureState(value: AVCaptureSystemPressureState): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3375756-globaltonemappingenabled
-    globalToneMappingEnabled(): BOOL;
-    setGlobalToneMappingEnabled(): void;
+    globalToneMappingEnabled(): boolean;
+    setGlobalToneMappingEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3875310-setprimaryconstituentdeviceswitc
     setPrimaryConstituentDeviceSwitchingBehavior_restrictedSwitchingBehaviorConditions(switchingBehavior: AVCapturePrimaryConstituentDeviceSwitchingBehavior, restrictedSwitchingBehaviorConditions: AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3875309-primaryconstituentdeviceswitchin
     primaryConstituentDeviceSwitchingBehavior(): AVCapturePrimaryConstituentDeviceSwitchingBehavior;
-    setPrimaryConstituentDeviceSwitchingBehavior(): void;
+    setPrimaryConstituentDeviceSwitchingBehavior(value: AVCapturePrimaryConstituentDeviceSwitchingBehavior): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3875308-primaryconstituentdevicerestrict
     primaryConstituentDeviceRestrictedSwitchingBehaviorConditions(): AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions;
-    setPrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions(): void;
+    setPrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions(value: AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3875304-activeprimaryconstituentdevice
     activePrimaryConstituentDevice(): AVCaptureDevice;
-    setActivePrimaryConstituentDevice(): void;
+    setActivePrimaryConstituentDevice(value: AVCaptureDevice): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3875306-activeprimaryconstituentdevicesw
     activePrimaryConstituentDeviceSwitchingBehavior(): AVCapturePrimaryConstituentDeviceSwitchingBehavior;
-    setActivePrimaryConstituentDeviceSwitchingBehavior(): void;
+    setActivePrimaryConstituentDeviceSwitchingBehavior(value: AVCapturePrimaryConstituentDeviceSwitchingBehavior): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3875305-activeprimaryconstituentdevicere
     activePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions(): AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions;
-    setActivePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions(): void;
+    setActivePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions(value: AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3875311-supportedfallbackprimaryconstitu
     supportedFallbackPrimaryConstituentDevices(): AVCaptureDevice;
-    setSupportedFallbackPrimaryConstituentDevices(): void;
+    setSupportedFallbackPrimaryConstituentDevices(value: AVCaptureDevice): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3875307-fallbackprimaryconstituentdevice
     fallbackPrimaryConstituentDevices(): AVCaptureDevice;
-    setFallbackPrimaryConstituentDevices(): void;
+    setFallbackPrimaryConstituentDevices(value: AVCaptureDevice): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3850455-activemicrophonemode
     activeMicrophoneMode(): AVCaptureMicrophoneMode;
-    setActiveMicrophoneMode(): void;
+    setActiveMicrophoneMode(value: AVCaptureMicrophoneMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3850458-preferredmicrophonemode
     preferredMicrophoneMode(): AVCaptureMicrophoneMode;
-    setPreferredMicrophoneMode(): void;
+    setPreferredMicrophoneMode(value: AVCaptureMicrophoneMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3850456-portraiteffectactive
-    portraitEffectActive(): BOOL;
-    setPortraitEffectActive(): void;
+    portraitEffectActive(): boolean;
+    setPortraitEffectActive(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3850457-portraiteffectenabled
-    portraitEffectEnabled(): BOOL;
-    setPortraitEffectEnabled(): void;
+    portraitEffectEnabled(): boolean;
+    setPortraitEffectEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevice/3850459-showsystemuserinterface
     showSystemUserInterface(systemUserInterface: AVCaptureSystemUserInterface):void;
     //
@@ -659,15 +659,15 @@ declare namespace cocoascript {
     deviceInputWithDevice_error(device: AVCaptureDevice, outError: NSError):AVCaptureDeviceInput;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput/1387915-device
     device(): AVCaptureDevice;
-    setDevice(): void;
+    setDevice(value: AVCaptureDevice): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput/3173170-portswithmediatype
     portsWithMediaType_sourceDeviceType_sourceDevicePosition(mediaType: AVMediaType, sourceDeviceType: AVCaptureDeviceType, sourceDevicePosition: AVCaptureDevicePosition):AVCaptureInputPort;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput/2968218-unifiedautoexposuredefaultsenabl
-    unifiedAutoExposureDefaultsEnabled(): BOOL;
-    setUnifiedAutoExposureDefaultsEnabled(): void;
+    unifiedAutoExposureDefaultsEnabled(): boolean;
+    setUnifiedAutoExposureDefaultsEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput/3153008-videominframedurationoverride
     videoMinFrameDurationOverride(): CMTime;
-    setVideoMinFrameDurationOverride(): void;
+    setVideoMinFrameDurationOverride(value: CMTime): void;
     //
     alloc():AVCaptureDeviceInput;
     //
@@ -684,40 +684,40 @@ declare namespace cocoascript {
   interface AVCapturePhoto extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873898-resolvedsettings
     resolvedSettings(): AVCaptureResolvedPhotoSettings;
-    setResolvedSettings(): void;
+    setResolvedSettings(value: AVCaptureResolvedPhotoSettings): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873906-photocount
     photoCount(): NSInteger;
-    setPhotoCount(): void;
+    setPhotoCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873981-timestamp
     timestamp(): CMTime;
-    setTimestamp(): void;
+    setTimestamp(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873894-rawphoto
-    rawPhoto(): BOOL;
-    setRawPhoto(): void;
+    rawPhoto(): boolean;
+    setRawPhoto(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873914-pixelbuffer
     pixelBuffer(): CVPixelBufferRef;
-    setPixelBuffer(): void;
+    setPixelBuffer(value: CVPixelBufferRef): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2875952-embeddedthumbnailphotoformat
     embeddedThumbnailPhotoFormat(): id;
-    setEmbeddedThumbnailPhotoFormat(): void;
+    setEmbeddedThumbnailPhotoFormat(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873984-previewpixelbuffer
     previewPixelBuffer(): CVPixelBufferRef;
-    setPreviewPixelBuffer(): void;
+    setPreviewPixelBuffer(value: CVPixelBufferRef): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873909-depthdata
     depthData(): AVDepthData;
-    setDepthData(): void;
+    setDepthData(value: AVDepthData): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2890249-cameracalibrationdata
     cameraCalibrationData(): AVCameraCalibrationData;
-    setCameraCalibrationData(): void;
+    setCameraCalibrationData(value: AVCameraCalibrationData): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2890250-sourcedevicetype
     sourceDeviceType(): AVCaptureDeviceType;
-    setSourceDeviceType(): void;
+    setSourceDeviceType(value: AVCaptureDeviceType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873982-metadata
     metadata(): id;
-    setMetadata(): void;
+    setMetadata(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2977523-portraiteffectsmatte
     portraitEffectsMatte(): AVPortraitEffectsMatte;
-    setPortraitEffectsMatte(): void;
+    setPortraitEffectsMatte(value: AVPortraitEffectsMatte): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2977522-filedatarepresentationwithcustom
     fileDataRepresentationWithCustomizer(customizer: AVCapturePhotoFileDataRepresentationCustomizer):NSData;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873919-filedatarepresentation
@@ -730,13 +730,13 @@ declare namespace cocoascript {
     fileDataRepresentationWithReplacementMetadata_replacementEmbeddedThumbnailPhotoFormat_replacementEmbeddedThumbnailPixelBuffer_replacementDepthData(replacementMetadata: AVCapturePhoto, replacementEmbeddedThumbnailPhotoFormat: AVCapturePhoto, replacementEmbeddedThumbnailPixelBuffer: CVPixelBufferRef, replacementDepthData: AVDepthData):NSData;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873968-bracketsettings
     bracketSettings(): AVCaptureBracketedStillImageSettings;
-    setBracketSettings(): void;
+    setBracketSettings(value: AVCaptureBracketedStillImageSettings): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2873946-sequencecount
     sequenceCount(): NSInteger;
-    setSequenceCount(): void;
+    setSequenceCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2880219-lensstabilizationstatus
     lensStabilizationStatus(): AVCaptureLensStabilizationStatus;
-    setLensStabilizationStatus(): void;
+    setLensStabilizationStatus(value: AVCaptureLensStabilizationStatus): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/3153009-semanticsegmentationmattefortype
     semanticSegmentationMatteForType(semanticSegmentationMatteType: AVSemanticSegmentationMatteType):AVSemanticSegmentationMatte;
     //
@@ -761,122 +761,122 @@ declare namespace cocoascript {
     capturePhotoWithSettings_delegate(settings: AVCapturePhotoSettings, delegate: AVCapturePhotoCaptureDelegate):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1778630-availablephotopixelformattypes
     availablePhotoPixelFormatTypes(): NSNumber;
-    setAvailablePhotoPixelFormatTypes(): void;
+    setAvailablePhotoPixelFormatTypes(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1778628-availablerawphotopixelformattype
     availableRawPhotoPixelFormatTypes(): NSNumber;
-    setAvailableRawPhotoPixelFormatTypes(): void;
+    setAvailableRawPhotoPixelFormatTypes(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2873950-supportedphotopixelformattypesfo
     supportedPhotoPixelFormatTypesForFileType(fileType: AVFileType):NSNumber;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2873921-supportedrawphotopixelformattype
     supportedRawPhotoPixelFormatTypesForFileType(fileType: AVFileType):NSNumber;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3697090-isappleprorawpixelformat
-    isAppleProRAWPixelFormat(pixelFormat: any):BOOL;
+    isAppleProRAWPixelFormat(pixelFormat: any):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3697091-isbayerrawpixelformat
-    isBayerRAWPixelFormat(pixelFormat: any):BOOL;
+    isBayerRAWPixelFormat(pixelFormat: any):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648654-availablephotocodectypes
     availablePhotoCodecTypes(): AVVideoCodecType;
-    setAvailablePhotoCodecTypes(): void;
+    setAvailablePhotoCodecTypes(value: AVVideoCodecType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2873916-supportedphotocodectypesforfilet
     supportedPhotoCodecTypesForFileType(fileType: AVFileType):AVVideoCodecType;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2873918-availablephotofiletypes
     availablePhotoFileTypes(): AVFileType;
-    setAvailablePhotoFileTypes(): void;
+    setAvailablePhotoFileTypes(value: AVFileType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2873910-availablerawphotofiletypes
     availableRawPhotoFileTypes(): AVFileType;
-    setAvailableRawPhotoFileTypes(): void;
+    setAvailableRawPhotoFileTypes(value: AVFileType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3697089-appleprorawsupported
-    appleProRAWSupported(): BOOL;
-    setAppleProRAWSupported(): void;
+    appleProRAWSupported(): boolean;
+    setAppleProRAWSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3697088-appleprorawenabled
-    appleProRAWEnabled(): BOOL;
-    setAppleProRAWEnabled(): void;
+    appleProRAWEnabled(): boolean;
+    setAppleProRAWEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3566331-contentawaredistortioncorrection
-    contentAwareDistortionCorrectionSupported(): BOOL;
-    setContentAwareDistortionCorrectionSupported(): void;
+    contentAwareDistortionCorrectionSupported(): boolean;
+    setContentAwareDistortionCorrectionSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3566330-contentawaredistortioncorrection
-    contentAwareDistortionCorrectionEnabled(): BOOL;
-    setContentAwareDistortionCorrectionEnabled(): void;
+    contentAwareDistortionCorrectionEnabled(): boolean;
+    setContentAwareDistortionCorrectionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648607-lensstabilizationduringbracketed
-    lensStabilizationDuringBracketedCaptureSupported(): BOOL;
-    setLensStabilizationDuringBracketedCaptureSupported(): void;
+    lensStabilizationDuringBracketedCaptureSupported(): boolean;
+    setLensStabilizationDuringBracketedCaptureSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648702-maxbracketedcapturephotocount
     maxBracketedCapturePhotoCount(): NSUInteger;
-    setMaxBracketedCapturePhotoCount(): void;
+    setMaxBracketedCapturePhotoCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648766-supportedflashmodes
     supportedFlashModes(): NSNumber;
-    setSupportedFlashModes(): void;
+    setSupportedFlashModes(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2968219-autoredeyereductionsupported
-    autoRedEyeReductionSupported(): BOOL;
-    setAutoRedEyeReductionSupported(): void;
+    autoRedEyeReductionSupported(): boolean;
+    setAutoRedEyeReductionSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648698-stillimagestabilizationsupported
-    stillImageStabilizationSupported(): BOOL;
-    setStillImageStabilizationSupported(): void;
+    stillImageStabilizationSupported(): boolean;
+    setStillImageStabilizationSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648703-isflashscene
-    isFlashScene(): BOOL;
-    setIsFlashScene(): void;
+    isFlashScene(): boolean;
+    setIsFlashScene(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1778622-isstillimagestabilizationscene
-    isStillImageStabilizationScene(): BOOL;
-    setIsStillImageStabilizationScene(): void;
+    isStillImageStabilizationScene(): boolean;
+    setIsStillImageStabilizationScene(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1778634-photosettingsforscenemonitoring
     photoSettingsForSceneMonitoring(): AVCapturePhotoSettings;
-    setPhotoSettingsForSceneMonitoring(): void;
+    setPhotoSettingsForSceneMonitoring(value: AVCapturePhotoSettings): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648721-highresolutioncaptureenabled
-    highResolutionCaptureEnabled(): BOOL;
-    setHighResolutionCaptureEnabled(): void;
+    highResolutionCaptureEnabled(): boolean;
+    setHighResolutionCaptureEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648622-livephotocapturesupported
-    livePhotoCaptureSupported(): BOOL;
-    setLivePhotoCaptureSupported(): void;
+    livePhotoCaptureSupported(): boolean;
+    setLivePhotoCaptureSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648772-livephotocaptureenabled
-    livePhotoCaptureEnabled(): BOOL;
-    setLivePhotoCaptureEnabled(): void;
+    livePhotoCaptureEnabled(): boolean;
+    setLivePhotoCaptureEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648615-livephotocapturesuspended
-    livePhotoCaptureSuspended(): BOOL;
-    setLivePhotoCaptureSuspended(): void;
+    livePhotoCaptureSuspended(): boolean;
+    setLivePhotoCaptureSuspended(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1648778-livephotoautotrimmingenabled
-    livePhotoAutoTrimmingEnabled(): BOOL;
-    setLivePhotoAutoTrimmingEnabled(): void;
+    livePhotoAutoTrimmingEnabled(): boolean;
+    setLivePhotoAutoTrimmingEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2866560-availablelivephotovideocodectype
     availableLivePhotoVideoCodecTypes(): AVVideoCodecType;
-    setAvailableLivePhotoVideoCodecTypes(): void;
+    setAvailableLivePhotoVideoCodecTypes(value: AVVideoCodecType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2866563-depthdatadeliverysupported
-    depthDataDeliverySupported(): BOOL;
-    setDepthDataDeliverySupported(): void;
+    depthDataDeliverySupported(): boolean;
+    setDepthDataDeliverySupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2866565-depthdatadeliveryenabled
-    depthDataDeliveryEnabled(): BOOL;
-    setDepthDataDeliveryEnabled(): void;
+    depthDataDeliveryEnabled(): boolean;
+    setDepthDataDeliveryEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2977529-portraiteffectsmattedeliveryenab
-    portraitEffectsMatteDeliveryEnabled(): BOOL;
-    setPortraitEffectsMatteDeliveryEnabled(): void;
+    portraitEffectsMatteDeliveryEnabled(): boolean;
+    setPortraitEffectsMatteDeliveryEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2977530-portraiteffectsmattedeliverysupp
-    portraitEffectsMatteDeliverySupported(): BOOL;
-    setPortraitEffectsMatteDeliverySupported(): void;
+    portraitEffectsMatteDeliverySupported(): boolean;
+    setPortraitEffectsMatteDeliverySupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephoto/2977523-portraiteffectsmatte
     portraitEffectsMatte(): AVPortraitEffectsMatte;
-    setPortraitEffectsMatte(): void;
+    setPortraitEffectsMatte(value: AVPortraitEffectsMatte): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2726864-dualcamerafusionsupported
-    dualCameraFusionSupported(): BOOL;
-    setDualCameraFusionSupported(): void;
+    dualCameraFusionSupported(): boolean;
+    setDualCameraFusionSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2890245-dualcameradualphotodeliverysuppo
-    dualCameraDualPhotoDeliverySupported(): BOOL;
-    setDualCameraDualPhotoDeliverySupported(): void;
+    dualCameraDualPhotoDeliverySupported(): boolean;
+    setDualCameraDualPhotoDeliverySupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2890248-cameracalibrationdatadeliverysup
-    cameraCalibrationDataDeliverySupported(): BOOL;
-    setCameraCalibrationDataDeliverySupported(): void;
+    cameraCalibrationDataDeliverySupported(): boolean;
+    setCameraCalibrationDataDeliverySupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2890246-dualcameradualphotodeliveryenabl
-    dualCameraDualPhotoDeliveryEnabled(): BOOL;
-    setDualCameraDualPhotoDeliveryEnabled(): void;
+    dualCameraDualPhotoDeliveryEnabled(): boolean;
+    setDualCameraDualPhotoDeliveryEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3192191-virtualdevicefusionsupported
-    virtualDeviceFusionSupported(): BOOL;
-    setVirtualDeviceFusionSupported(): void;
+    virtualDeviceFusionSupported(): boolean;
+    setVirtualDeviceFusionSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3192190-virtualdeviceconstituentphotodel
-    virtualDeviceConstituentPhotoDeliverySupported(): BOOL;
-    setVirtualDeviceConstituentPhotoDeliverySupported(): void;
+    virtualDeviceConstituentPhotoDeliverySupported(): boolean;
+    setVirtualDeviceConstituentPhotoDeliverySupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3192189-virtualdeviceconstituentphotodel
-    virtualDeviceConstituentPhotoDeliveryEnabled(): BOOL;
-    setVirtualDeviceConstituentPhotoDeliveryEnabled(): void;
+    virtualDeviceConstituentPhotoDeliveryEnabled(): boolean;
+    setVirtualDeviceConstituentPhotoDeliveryEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2305506-preparedphotosettingsarray
     preparedPhotoSettingsArray(): AVCapturePhotoSettings;
-    setPreparedPhotoSettingsArray(): void;
+    setPreparedPhotoSettingsArray(value: AVCapturePhotoSettings): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/2305505-setpreparedphotosettingsarray
     setPreparedPhotoSettingsArray_completionHandler(preparedPhotoSettingsArray: AVCapturePhotoSettings, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/1778657-jpegphotodatarepresentationforjp
@@ -885,13 +885,13 @@ declare namespace cocoascript {
     DNGPhotoDataRepresentationForRawSampleBuffer_previewPhotoSampleBuffer(rawSampleBuffer: CMSampleBufferRef, previewPhotoSampleBuffer: CMSampleBufferRef):NSData;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3153011-availablesemanticsegmentationmat
     availableSemanticSegmentationMatteTypes(): AVSemanticSegmentationMatteType;
-    setAvailableSemanticSegmentationMatteTypes(): void;
+    setAvailableSemanticSegmentationMatteTypes(value: AVSemanticSegmentationMatteType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3153012-enabledsemanticsegmentationmatte
     enabledSemanticSegmentationMatteTypes(): AVSemanticSegmentationMatteType;
-    setEnabledSemanticSegmentationMatteTypes(): void;
+    setEnabledSemanticSegmentationMatteTypes(value: AVSemanticSegmentationMatteType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3182995-maxphotoqualityprioritization
     maxPhotoQualityPrioritization(): AVCapturePhotoQualityPrioritization;
-    setMaxPhotoQualityPrioritization(): void;
+    setMaxPhotoQualityPrioritization(value: AVCapturePhotoQualityPrioritization): void;
     //
     alloc():AVCapturePhotoOutput;
     //
@@ -937,19 +937,19 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avcapturedepthdataoutput/2879590-new
     new():AVCaptureDepthDataOutput;
     // https://developer.apple.com/documentation/avfoundation/avcapturedepthdataoutput/2865670-alwaysdiscardslatedepthdata
-    alwaysDiscardsLateDepthData(): BOOL;
-    setAlwaysDiscardsLateDepthData(): void;
+    alwaysDiscardsLateDepthData(): boolean;
+    setAlwaysDiscardsLateDepthData(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedepthdataoutput/2881290-filteringenabled
-    filteringEnabled(): BOOL;
-    setFilteringEnabled(): void;
+    filteringEnabled(): boolean;
+    setFilteringEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedepthdataoutput/2873864-setdelegate
     setDelegate_callbackQueue(delegate: AVCaptureDepthDataOutputDelegate, callbackQueue: dispatch_queue_t):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedepthdataoutput/2873865-delegate
     delegate(): AVCaptureDepthDataOutputDelegate;
-    setDelegate(): void;
+    setDelegate(value: AVCaptureDepthDataOutputDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedepthdataoutput/2873863-delegatecallbackqueue
     delegateCallbackQueue(): dispatch_queue_t;
-    setDelegateCallbackQueue(): void;
+    setDelegateCallbackQueue(value: dispatch_queue_t): void;
     //
     alloc():AVCaptureDepthDataOutput;
     //
@@ -970,31 +970,31 @@ declare namespace cocoascript {
     dictionaryRepresentationForAuxiliaryDataType(outAuxDataType: string | cocoascript.NSString):NSDictionary;
     // https://developer.apple.com/documentation/avfoundation/avdepthdata/2881227-depthdatamap
     depthDataMap(): CVPixelBufferRef;
-    setDepthDataMap(): void;
+    setDepthDataMap(value: CVPixelBufferRef): void;
     // https://developer.apple.com/documentation/avfoundation/avdepthdata/2881228-depthdatatype
     depthDataType(): any;
-    setDepthDataType(): void;
+    setDepthDataType(value: any): void;
     // https://developer.apple.com/documentation/avfoundation/avdepthdata/2881224-depthdatafiltered
-    depthDataFiltered(): BOOL;
-    setDepthDataFiltered(): void;
+    depthDataFiltered(): boolean;
+    setDepthDataFiltered(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avdepthdata/2881229-depthdataaccuracy
     depthDataAccuracy(): AVDepthDataAccuracy;
-    setDepthDataAccuracy(): void;
+    setDepthDataAccuracy(value: AVDepthDataAccuracy): void;
     // https://developer.apple.com/documentation/avfoundation/avdepthdata/2919804-depthdataquality
     depthDataQuality(): AVDepthDataQuality;
-    setDepthDataQuality(): void;
+    setDepthDataQuality(value: AVDepthDataQuality): void;
     // https://developer.apple.com/documentation/avfoundation/avdepthdata/2881225-depthdatabyapplyingexiforientati
     depthDataByApplyingExifOrientation(exifOrientation: CGImagePropertyOrientation):AVDepthData;
     // https://developer.apple.com/documentation/avfoundation/avdepthdata/2881222-depthdatabyconvertingtodepthdata
     depthDataByConvertingToDepthDataType(depthDataType: any):AVDepthData;
     // https://developer.apple.com/documentation/avfoundation/avdepthdata/2881233-availabledepthdatatypes
     availableDepthDataTypes(): NSNumber;
-    setAvailableDepthDataTypes(): void;
+    setAvailableDepthDataTypes(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avdepthdata/2881231-depthdatabyreplacingdepthdatamap
     depthDataByReplacingDepthDataMapWithPixelBuffer_error(pixelBuffer: CVPixelBufferRef, outError: NSError):AVDepthData;
     // https://developer.apple.com/documentation/avfoundation/avdepthdata/2881230-cameracalibrationdata
     cameraCalibrationData(): AVCameraCalibrationData;
-    setCameraCalibrationData(): void;
+    setCameraCalibrationData(value: AVCameraCalibrationData): void;
     //
     alloc():AVDepthData;
     //
@@ -1017,10 +1017,10 @@ declare namespace cocoascript {
     portraitEffectsMatteByReplacingPortraitEffectsMatteWithPixelBuffer_error(pixelBuffer: CVPixelBufferRef, outError: NSError):AVPortraitEffectsMatte;
     // https://developer.apple.com/documentation/avfoundation/avportraiteffectsmatte/2976121-mattingimage
     mattingImage(): CVPixelBufferRef;
-    setMattingImage(): void;
+    setMattingImage(value: CVPixelBufferRef): void;
     // https://developer.apple.com/documentation/avfoundation/avportraiteffectsmatte/2976122-pixelformattype
     pixelFormatType(): any;
-    setPixelFormatType(): void;
+    setPixelFormatType(value: any): void;
     // https://developer.apple.com/documentation/avfoundation/avportraiteffectsmatte/2976120-dictionaryrepresentationforauxil
     dictionaryRepresentationForAuxiliaryDataType(outAuxDataType: string | cocoascript.NSString):NSDictionary;
     //
@@ -1047,13 +1047,13 @@ declare namespace cocoascript {
     dictionaryRepresentationForAuxiliaryDataType(outAuxDataType: string | cocoascript.NSString):NSDictionary;
     // https://developer.apple.com/documentation/avfoundation/avsemanticsegmentationmatte/3152119-mattetype
     matteType(): AVSemanticSegmentationMatteType;
-    setMatteType(): void;
+    setMatteType(value: AVSemanticSegmentationMatteType): void;
     // https://developer.apple.com/documentation/avfoundation/avsemanticsegmentationmatte/3152120-mattingimage
     mattingImage(): CVPixelBufferRef;
-    setMattingImage(): void;
+    setMattingImage(value: CVPixelBufferRef): void;
     // https://developer.apple.com/documentation/avfoundation/avsemanticsegmentationmatte/3152121-pixelformattype
     pixelFormatType(): any;
-    setPixelFormatType(): void;
+    setPixelFormatType(value: any): void;
     //
     alloc():AVSemanticSegmentationMatte;
     //
@@ -1074,10 +1074,10 @@ declare namespace cocoascript {
     init():AVCaptureMovieFileOutput;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/1387146-moviefragmentinterval
     movieFragmentInterval(): CMTime;
-    setMovieFragmentInterval(): void;
+    setMovieFragmentInterval(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/1387808-metadata
     metadata(): AVMetadataItem;
-    setMetadata(): void;
+    setMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/2968217-supportedoutputsettingskeysforco
     supportedOutputSettingsKeysForConnection(connection: AVCaptureConnection):NSString;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/1386479-outputsettingsforconnection
@@ -1086,22 +1086,22 @@ declare namespace cocoascript {
     setOutputSettings_forConnection(outputSettings: AVCaptureMovieFileOutput, connection: AVCaptureConnection):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/1648381-availablevideocodectypes
     availableVideoCodecTypes(): AVVideoCodecType;
-    setAvailableVideoCodecTypes(): void;
+    setAvailableVideoCodecTypes(value: AVVideoCodecType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/1616292-recordsvideoorientationandmirror
-    recordsVideoOrientationAndMirroringChangesAsMetadataTrackForConnection(connection: AVCaptureConnection):BOOL;
+    recordsVideoOrientationAndMirroringChangesAsMetadataTrackForConnection(connection: AVCaptureConnection):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/1616284-setrecordsvideoorientationandmir
-    setRecordsVideoOrientationAndMirroringChanges_asMetadataTrackForConnection(doRecordChanges: BOOL, connection: AVCaptureConnection):void;
+    setRecordsVideoOrientationAndMirroringChanges_asMetadataTrackForConnection(doRecordChanges: boolean, connection: AVCaptureConnection):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/3875326-primaryconstituentdeviceswitchin
-    primaryConstituentDeviceSwitchingBehaviorForRecordingEnabled(): BOOL;
-    setPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled(): void;
+    primaryConstituentDeviceSwitchingBehaviorForRecordingEnabled(): boolean;
+    setPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/3875327-setprimaryconstituentdeviceswitc
     setPrimaryConstituentDeviceSwitchingBehaviorForRecording_restrictedSwitchingBehaviorConditions(switchingBehavior: AVCapturePrimaryConstituentDeviceSwitchingBehavior, restrictedSwitchingBehaviorConditions: AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/3875325-primaryconstituentdeviceswitchin
     primaryConstituentDeviceSwitchingBehaviorForRecording(): AVCapturePrimaryConstituentDeviceSwitchingBehavior;
-    setPrimaryConstituentDeviceSwitchingBehaviorForRecording(): void;
+    setPrimaryConstituentDeviceSwitchingBehaviorForRecording(value: AVCapturePrimaryConstituentDeviceSwitchingBehavior): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput/3875324-primaryconstituentdevicerestrict
     primaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording(): AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions;
-    setPrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording(): void;
+    setPrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording(value: AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions): void;
     //
     alloc():AVCaptureMovieFileOutput;
     //
@@ -1118,39 +1118,39 @@ declare namespace cocoascript {
   interface AVCaptureVideoDataOutput extends AVCaptureOutput {
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/1389945-videosettings
     videoSettings(): id;
-    setVideoSettings(): void;
+    setVideoSettings(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/1616296-minframeduration
     minFrameDuration(): CMTime;
-    setMinFrameDuration(): void;
+    setMinFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/1385780-alwaysdiscardslatevideoframes
-    alwaysDiscardsLateVideoFrames(): BOOL;
-    setAlwaysDiscardsLateVideoFrames(): void;
+    alwaysDiscardsLateVideoFrames(): boolean;
+    setAlwaysDiscardsLateVideoFrames(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/3153021-automaticallyconfiguresoutputbuf
-    automaticallyConfiguresOutputBufferDimensions(): BOOL;
-    setAutomaticallyConfiguresOutputBufferDimensions(): void;
+    automaticallyConfiguresOutputBufferDimensions(): boolean;
+    setAutomaticallyConfiguresOutputBufferDimensions(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/3153022-deliverspreviewsizedoutputbuffer
-    deliversPreviewSizedOutputBuffers(): BOOL;
-    setDeliversPreviewSizedOutputBuffers(): void;
+    deliversPreviewSizedOutputBuffers(): boolean;
+    setDeliversPreviewSizedOutputBuffers(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/2867900-recommendedvideosettingsforvideo
     recommendedVideoSettingsForVideoCodecType_assetWriterOutputFileType(videoCodecType: AVVideoCodecType, outputFileType: AVFileType):AVCaptureVideoDataOutput;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/1616290-recommendedvideosettingsforasset
     recommendedVideoSettingsForAssetWriterWithOutputFileType(outputFileType: AVFileType):AVCaptureVideoDataOutput;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/1387050-availablevideocvpixelformattypes
     availableVideoCVPixelFormatTypes(): NSNumber;
-    setAvailableVideoCVPixelFormatTypes(): void;
+    setAvailableVideoCVPixelFormatTypes(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/1389227-availablevideocodectypes
     availableVideoCodecTypes(): AVVideoCodecType;
-    setAvailableVideoCodecTypes(): void;
+    setAvailableVideoCodecTypes(value: AVVideoCodecType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/2867901-availablevideocodectypesforasset
     availableVideoCodecTypesForAssetWriterWithOutputFileType(outputFileType: AVFileType):AVVideoCodecType;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/1389008-setsamplebufferdelegate
     setSampleBufferDelegate_queue(sampleBufferDelegate: AVCaptureVideoDataOutputSampleBufferDelegate, sampleBufferCallbackQueue: dispatch_queue_t):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/1385886-samplebufferdelegate
     sampleBufferDelegate(): AVCaptureVideoDataOutputSampleBufferDelegate;
-    setSampleBufferDelegate(): void;
+    setSampleBufferDelegate(value: AVCaptureVideoDataOutputSampleBufferDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/1385831-samplebuffercallbackqueue
     sampleBufferCallbackQueue(): dispatch_queue_t;
-    setSampleBufferCallbackQueue(): void;
+    setSampleBufferCallbackQueue(value: dispatch_queue_t): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/2879216-init
     init():AVCaptureVideoDataOutput;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/2879482-new
@@ -1175,10 +1175,10 @@ declare namespace cocoascript {
     startRecordingToOutputFileURL_outputFileType_recordingDelegate(outputFileURL: NSURL, fileType: AVFileType, delegate: AVCaptureFileOutputRecordingDelegate):void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiofileoutput/1389958-audiosettings
     audioSettings(): id;
-    setAudioSettings(): void;
+    setAudioSettings(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiofileoutput/1389881-metadata
     metadata(): AVMetadataItem;
-    setMetadata(): void;
+    setMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiofileoutput/2879214-init
     init():AVCaptureAudioFileOutput;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiofileoutput/2879322-new
@@ -1203,17 +1203,17 @@ declare namespace cocoascript {
     new():AVCaptureAudioDataOutput;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiodataoutput/1388527-audiosettings
     audioSettings(): id;
-    setAudioSettings(): void;
+    setAudioSettings(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiodataoutput/1616308-recommendedaudiosettingsforasset
     recommendedAudioSettingsForAssetWriterWithOutputFileType(outputFileType: AVFileType):AVCaptureAudioDataOutput;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiodataoutput/1390651-setsamplebufferdelegate
     setSampleBufferDelegate_queue(sampleBufferDelegate: AVCaptureAudioDataOutputSampleBufferDelegate, sampleBufferCallbackQueue: dispatch_queue_t):void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiodataoutput/1386344-samplebufferdelegate
     sampleBufferDelegate(): AVCaptureAudioDataOutputSampleBufferDelegate;
-    setSampleBufferDelegate(): void;
+    setSampleBufferDelegate(value: AVCaptureAudioDataOutputSampleBufferDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiodataoutput/1389355-samplebuffercallbackqueue
     sampleBufferCallbackQueue(): dispatch_queue_t;
-    setSampleBufferCallbackQueue(): void;
+    setSampleBufferCallbackQueue(value: dispatch_queue_t): void;
     //
     alloc():AVCaptureAudioDataOutput;
     //
@@ -1230,7 +1230,7 @@ declare namespace cocoascript {
   interface AVMetadataBodyObject extends AVMetadataObject {
     // https://developer.apple.com/documentation/avfoundation/avmetadatabodyobject/3174758-bodyid
     bodyID(): NSInteger;
-    setBodyID(): void;
+    setBodyID(value: NSInteger): void;
     //
     alloc():AVMetadataBodyObject;
     //
@@ -1289,7 +1289,7 @@ declare namespace cocoascript {
   interface AVMetadataSalientObject extends AVMetadataObject {
     // https://developer.apple.com/documentation/avfoundation/avmetadatasalientobject/3152378-objectid
     objectID(): NSInteger;
-    setObjectID(): void;
+    setObjectID(value: NSInteger): void;
     //
     alloc():AVMetadataSalientObject;
     //
@@ -1309,7 +1309,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avcapturemetadatainput/1622269-metadatainputwithformatdescripti
     metadataInputWithFormatDescription_clock(desc: CMMetadataFormatDescriptionRef, clock: CMClockRef):AVCaptureMetadataInput;
     // https://developer.apple.com/documentation/avfoundation/avcapturemetadatainput/1622266-appendtimedmetadatagroup
-    appendTimedMetadataGroup_error(metadata: AVTimedMetadataGroup, outError: NSError):BOOL;
+    appendTimedMetadataGroup_error(metadata: AVTimedMetadataGroup, outError: NSError):boolean;
     //
     alloc():AVCaptureMetadataInput;
     //
@@ -1326,21 +1326,21 @@ declare namespace cocoascript {
   interface AVCaptureMetadataOutput extends AVCaptureOutput {
     // https://developer.apple.com/documentation/avfoundation/avcapturemetadataoutput/1616289-availablemetadataobjecttypes
     availableMetadataObjectTypes(): AVMetadataObjectType;
-    setAvailableMetadataObjectTypes(): void;
+    setAvailableMetadataObjectTypes(value: AVMetadataObjectType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemetadataoutput/1616299-metadataobjecttypes
     metadataObjectTypes(): AVMetadataObjectType;
-    setMetadataObjectTypes(): void;
+    setMetadataObjectTypes(value: AVMetadataObjectType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemetadataoutput/1616291-rectofinterest
     rectOfInterest(): CGRect;
-    setRectOfInterest(): void;
+    setRectOfInterest(value: CGRect): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemetadataoutput/1616309-setmetadataobjectsdelegate
     setMetadataObjectsDelegate_queue(objectsDelegate: AVCaptureMetadataOutputObjectsDelegate, objectsCallbackQueue: dispatch_queue_t):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemetadataoutput/1616300-metadataobjectsdelegate
     metadataObjectsDelegate(): AVCaptureMetadataOutputObjectsDelegate;
-    setMetadataObjectsDelegate(): void;
+    setMetadataObjectsDelegate(value: AVCaptureMetadataOutputObjectsDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemetadataoutput/1616307-metadataobjectscallbackqueue
     metadataObjectsCallbackQueue(): dispatch_queue_t;
-    setMetadataObjectsCallbackQueue(): void;
+    setMetadataObjectsCallbackQueue(value: dispatch_queue_t): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemetadataoutput/2879539-init
     init():AVCaptureMetadataOutput;
     // https://developer.apple.com/documentation/avfoundation/avcapturemetadataoutput/2879589-new
@@ -1361,19 +1361,19 @@ declare namespace cocoascript {
   interface AVMetadataFaceObject extends AVMetadataObject {
     // https://developer.apple.com/documentation/avfoundation/avmetadatafaceobject/1386945-faceid
     faceID(): NSInteger;
-    setFaceID(): void;
+    setFaceID(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadatafaceobject/1386866-hasrollangle
-    hasRollAngle(): BOOL;
-    setHasRollAngle(): void;
+    hasRollAngle(): boolean;
+    setHasRollAngle(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadatafaceobject/1389110-rollangle
     rollAngle(): CGFloat;
-    setRollAngle(): void;
+    setRollAngle(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadatafaceobject/1385888-hasyawangle
-    hasYawAngle(): BOOL;
-    setHasYawAngle(): void;
+    hasYawAngle(): boolean;
+    setHasYawAngle(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadatafaceobject/1386517-yawangle
     yawAngle(): CGFloat;
-    setYawAngle(): void;
+    setYawAngle(value: CGFloat): void;
     //
     alloc():AVMetadataFaceObject;
     //
@@ -1390,13 +1390,13 @@ declare namespace cocoascript {
   interface AVMetadataMachineReadableCodeObject extends AVMetadataObject {
     // https://developer.apple.com/documentation/avfoundation/avmetadatamachinereadablecodeobject/1618815-corners
     corners(): NSDictionary;
-    setCorners(): void;
+    setCorners(value: NSDictionary): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadatamachinereadablecodeobject/2875944-descriptor
     descriptor(): CIBarcodeDescriptor;
-    setDescriptor(): void;
+    setDescriptor(value: CIBarcodeDescriptor): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadatamachinereadablecodeobject/1618800-stringvalue
     stringValue(): string | cocoascript.NSString;
-    setStringValue(): void;
+    setStringValue(value: string | cocoascript.NSString): void;
     //
     alloc():AVMetadataMachineReadableCodeObject;
     //
@@ -1413,16 +1413,16 @@ declare namespace cocoascript {
   interface AVMetadataObject extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avmetadataobject/1387841-type
     type(): AVMetadataObjectType;
-    setType(): void;
+    setType(value: AVMetadataObjectType): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataobject/1388593-time
     time(): CMTime;
-    setTime(): void;
+    setTime(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataobject/1386827-duration
     duration(): CMTime;
-    setDuration(): void;
+    setDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataobject/1386043-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     //
     alloc():AVMetadataObject;
     //
@@ -1441,15 +1441,15 @@ declare namespace cocoascript {
     initWithDataOutputs(dataOutputs: AVCaptureOutput):AVCaptureDataOutputSynchronizer;
     // https://developer.apple.com/documentation/avfoundation/avcapturedataoutputsynchronizer/2873912-dataoutputs
     dataOutputs(): AVCaptureOutput;
-    setDataOutputs(): void;
+    setDataOutputs(value: AVCaptureOutput): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedataoutputsynchronizer/2873948-setdelegate
     setDelegate_queue(delegate: AVCaptureDataOutputSynchronizerDelegate, delegateCallbackQueue: dispatch_queue_t):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedataoutputsynchronizer/2873969-delegate
     delegate(): AVCaptureDataOutputSynchronizerDelegate;
-    setDelegate(): void;
+    setDelegate(value: AVCaptureDataOutputSynchronizerDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedataoutputsynchronizer/2873947-delegatecallbackqueue
     delegateCallbackQueue(): dispatch_queue_t;
-    setDelegateCallbackQueue(): void;
+    setDelegateCallbackQueue(value: dispatch_queue_t): void;
     //
     alloc():AVCaptureDataOutputSynchronizer;
     //
@@ -1466,7 +1466,7 @@ declare namespace cocoascript {
   interface AVCaptureSynchronizedDataCollection extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizeddatacollection/2873978-count
     count(): NSUInteger;
-    setCount(): void;
+    setCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizeddatacollection/2873985-synchronizeddataforcaptureoutput
     synchronizedDataForCaptureOutput(captureOutput: AVCaptureOutput):AVCaptureSynchronizedData;
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizeddatacollection/2873892-objectforkeyedsubscript
@@ -1487,13 +1487,13 @@ declare namespace cocoascript {
   interface AVCaptureSynchronizedDepthData extends AVCaptureSynchronizedData {
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizeddepthdata/2873977-depthdata
     depthData(): AVDepthData;
-    setDepthData(): void;
+    setDepthData(value: AVDepthData): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizeddepthdata/2873971-depthdatawasdropped
-    depthDataWasDropped(): BOOL;
-    setDepthDataWasDropped(): void;
+    depthDataWasDropped(): boolean;
+    setDepthDataWasDropped(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizeddepthdata/2873979-droppedreason
     droppedReason(): AVCaptureOutputDataDroppedReason;
-    setDroppedReason(): void;
+    setDroppedReason(value: AVCaptureOutputDataDroppedReason): void;
     //
     alloc():AVCaptureSynchronizedDepthData;
     //
@@ -1510,7 +1510,7 @@ declare namespace cocoascript {
   interface AVCaptureSynchronizedMetadataObjectData extends AVCaptureSynchronizedData {
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizedmetadataobjectdata/2873923-metadataobjects
     metadataObjects(): AVMetadataObject;
-    setMetadataObjects(): void;
+    setMetadataObjects(value: AVMetadataObject): void;
     //
     alloc():AVCaptureSynchronizedMetadataObjectData;
     //
@@ -1527,13 +1527,13 @@ declare namespace cocoascript {
   interface AVCaptureSynchronizedSampleBufferData extends AVCaptureSynchronizedData {
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizedsamplebufferdata/2873893-samplebuffer
     sampleBuffer(): CMSampleBufferRef;
-    setSampleBuffer(): void;
+    setSampleBuffer(value: CMSampleBufferRef): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizedsamplebufferdata/2873965-samplebufferwasdropped
-    sampleBufferWasDropped(): BOOL;
-    setSampleBufferWasDropped(): void;
+    sampleBufferWasDropped(): boolean;
+    setSampleBufferWasDropped(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizedsamplebufferdata/2873896-droppedreason
     droppedReason(): AVCaptureOutputDataDroppedReason;
-    setDroppedReason(): void;
+    setDroppedReason(value: AVCaptureOutputDataDroppedReason): void;
     //
     alloc():AVCaptureSynchronizedSampleBufferData;
     //
@@ -1550,7 +1550,7 @@ declare namespace cocoascript {
   interface AVCaptureSynchronizedData extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcapturesynchronizeddata/2873975-timestamp
     timestamp(): CMTime;
-    setTimestamp(): void;
+    setTimestamp(value: CMTime): void;
     //
     alloc():AVCaptureSynchronizedData;
     //
@@ -1575,31 +1575,31 @@ declare namespace cocoascript {
     layerWithSessionWithNoConnection(session: AVCaptureSession):AVCaptureVideoPreviewLayer;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/1386708-videogravity
     videoGravity(): AVLayerVideoGravity;
-    setVideoGravity(): void;
+    setVideoGravity(value: AVLayerVideoGravity): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/1623494-orientation
     orientation(): AVCaptureVideoOrientation;
-    setOrientation(): void;
+    setOrientation(value: AVCaptureVideoOrientation): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/1623499-orientationsupported
-    orientationSupported(): BOOL;
-    setOrientationSupported(): void;
+    orientationSupported(): boolean;
+    setOrientationSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/1623493-mirrored
-    mirrored(): BOOL;
-    setMirrored(): void;
+    mirrored(): boolean;
+    setMirrored(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/1623500-mirroringsupported
-    mirroringSupported(): BOOL;
-    setMirroringSupported(): void;
+    mirroringSupported(): boolean;
+    setMirroringSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/1623496-automaticallyadjustsmirroring
-    automaticallyAdjustsMirroring(): BOOL;
-    setAutomaticallyAdjustsMirroring(): void;
+    automaticallyAdjustsMirroring(): boolean;
+    setAutomaticallyAdjustsMirroring(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/3192195-previewing
-    previewing(): BOOL;
-    setPreviewing(): void;
+    previewing(): boolean;
+    setPreviewing(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/1386157-session
     session(): AVCaptureSession;
-    setSession(): void;
+    setSession(value: AVCaptureSession): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/1390893-connection
     connection(): AVCaptureConnection;
-    setConnection(): void;
+    setConnection(value: AVCaptureConnection): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/1390387-setsessionwithnoconnection
     setSessionWithNoConnection(session: AVCaptureSession):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer/1623497-capturedevicepointofinterestforp
@@ -1628,10 +1628,10 @@ declare namespace cocoascript {
   interface AVCaptureAudioPreviewOutput extends AVCaptureOutput {
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiopreviewoutput/1390610-outputdeviceuniqueid
     outputDeviceUniqueID(): string | cocoascript.NSString;
-    setOutputDeviceUniqueID(): void;
+    setOutputDeviceUniqueID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiopreviewoutput/1390510-volume
     volume(): number;
-    setVolume(): void;
+    setVolume(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiopreviewoutput/2879215-init
     init():AVCaptureAudioPreviewOutput;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiopreviewoutput/2879470-new
@@ -1658,22 +1658,22 @@ declare namespace cocoascript {
     new():AVCaptureScreenInput;
     // https://developer.apple.com/documentation/avfoundation/avcapturescreeninput/1387216-minframeduration
     minFrameDuration(): CMTime;
-    setMinFrameDuration(): void;
+    setMinFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturescreeninput/1390518-croprect
     cropRect(): CGRect;
-    setCropRect(): void;
+    setCropRect(value: CGRect): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturescreeninput/1390311-scalefactor
     scaleFactor(): CGFloat;
-    setScaleFactor(): void;
+    setScaleFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturescreeninput/1385601-capturescursor
-    capturesCursor(): BOOL;
-    setCapturesCursor(): void;
+    capturesCursor(): boolean;
+    setCapturesCursor(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturescreeninput/1385722-capturesmouseclicks
-    capturesMouseClicks(): BOOL;
-    setCapturesMouseClicks(): void;
+    capturesMouseClicks(): boolean;
+    setCapturesMouseClicks(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturescreeninput/1390547-removesduplicateframes
-    removesDuplicateFrames(): BOOL;
-    setRemovesDuplicateFrames(): void;
+    removesDuplicateFrames(): boolean;
+    setRemovesDuplicateFrames(value: boolean): void;
     //
     alloc():AVCaptureScreenInput;
     //
@@ -1691,44 +1691,44 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1387374-capturestillimageasynchronouslyf
     captureStillImageAsynchronouslyFromConnection_completionHandler(connection: AVCaptureConnection, handler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1387269-capturingstillimage
-    capturingStillImage(): BOOL;
-    setCapturingStillImage(): void;
+    capturingStillImage(): boolean;
+    setCapturingStillImage(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1616297-stillimagestabilizationactive
-    stillImageStabilizationActive(): BOOL;
-    setStillImageStabilizationActive(): void;
+    stillImageStabilizationActive(): boolean;
+    setStillImageStabilizationActive(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1616301-automaticallyenablesstillimagest
-    automaticallyEnablesStillImageStabilizationWhenAvailable(): BOOL;
-    setAutomaticallyEnablesStillImageStabilizationWhenAvailable(): void;
+    automaticallyEnablesStillImageStabilizationWhenAvailable(): boolean;
+    setAutomaticallyEnablesStillImageStabilizationWhenAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1616286-stillimagestabilizationsupported
-    stillImageStabilizationSupported(): BOOL;
-    setStillImageStabilizationSupported(): void;
+    stillImageStabilizationSupported(): boolean;
+    setStillImageStabilizationSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1616305-highresolutionstillimageoutputen
-    highResolutionStillImageOutputEnabled(): BOOL;
-    setHighResolutionStillImageOutputEnabled(): void;
+    highResolutionStillImageOutputEnabled(): boolean;
+    setHighResolutionStillImageOutputEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1388622-availableimagedatacvpixelformatt
     availableImageDataCVPixelFormatTypes(): NSNumber;
-    setAvailableImageDataCVPixelFormatTypes(): void;
+    setAvailableImageDataCVPixelFormatTypes(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1388312-availableimagedatacodectypes
     availableImageDataCodecTypes(): AVVideoCodecType;
-    setAvailableImageDataCodecTypes(): void;
+    setAvailableImageDataCodecTypes(value: AVVideoCodecType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1389306-outputsettings
     outputSettings(): id;
-    setOutputSettings(): void;
+    setOutputSettings(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1388131-jpegstillimagensdatarepresentati
     jpegStillImageNSDataRepresentation(jpegSampleBuffer: CMSampleBufferRef):NSData;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1616285-capturestillimagebracketasynchro
     captureStillImageBracketAsynchronouslyFromConnection_withSettingsArray_completionHandler(connection: AVCaptureConnection, settings: AVCaptureBracketedStillImageSettings, handler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1616294-maxbracketedcapturestillimagecou
     maxBracketedCaptureStillImageCount(): NSUInteger;
-    setMaxBracketedCaptureStillImageCount(): void;
+    setMaxBracketedCaptureStillImageCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1616298-preparetocapturestillimagebracke
     prepareToCaptureStillImageBracketFromConnection_withSettingsArray_completionHandler(connection: AVCaptureConnection, settings: AVCaptureBracketedStillImageSettings, handler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1616288-lensstabilizationduringbracketed
-    lensStabilizationDuringBracketedCaptureSupported(): BOOL;
-    setLensStabilizationDuringBracketedCaptureSupported(): void;
+    lensStabilizationDuringBracketedCaptureSupported(): boolean;
+    setLensStabilizationDuringBracketedCaptureSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/1616287-lensstabilizationduringbracketed
-    lensStabilizationDuringBracketedCaptureEnabled(): BOOL;
-    setLensStabilizationDuringBracketedCaptureEnabled(): void;
+    lensStabilizationDuringBracketedCaptureEnabled(): boolean;
+    setLensStabilizationDuringBracketedCaptureEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/2879209-init
     init():AVCaptureStillImageOutput;
     // https://developer.apple.com/documentation/avfoundation/avcapturestillimageoutput/2879496-new
@@ -1749,7 +1749,7 @@ declare namespace cocoascript {
   interface AVCaptureInput extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcaptureinput/1386635-ports
     ports(): AVCaptureInputPort;
-    setPorts(): void;
+    setPorts(value: AVCaptureInputPort): void;
     //
     alloc():AVCaptureInput;
     //
@@ -1766,7 +1766,7 @@ declare namespace cocoascript {
   interface AVCaptureOutput extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcaptureoutput/1386239-connections
     connections(): AVCaptureConnection;
-    setConnections(): void;
+    setConnections(value: AVCaptureConnection): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureoutput/1389574-connectionwithmediatype
     connectionWithMediaType(mediaType: AVMediaType):AVCaptureConnection;
     // https://developer.apple.com/documentation/avfoundation/avcaptureoutput/1616310-transformedmetadataobjectformeta
@@ -1798,83 +1798,83 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1385882-initwithinputport
     initWithInputPort_videoPreviewLayer(port: AVCaptureInputPort, layer: AVCaptureVideoPreviewLayer):AVCaptureConnection;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1390131-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1387696-active
-    active(): BOOL;
-    setActive(): void;
+    active(): boolean;
+    setActive(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1388322-inputports
     inputPorts(): AVCaptureInputPort;
-    setInputPorts(): void;
+    setInputPorts(value: AVCaptureInputPort): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1385571-output
     output(): AVCaptureOutput;
-    setOutput(): void;
+    setOutput(value: AVCaptureOutput): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1390614-videopreviewlayer
     videoPreviewLayer(): AVCaptureVideoPreviewLayer;
-    setVideoPreviewLayer(): void;
+    setVideoPreviewLayer(value: AVCaptureVideoPreviewLayer): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1387519-audiochannels
     audioChannels(): AVCaptureAudioChannel;
-    setAudioChannels(): void;
+    setAudioChannels(value: AVCaptureAudioChannel): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1389415-videoorientation
     videoOrientation(): AVCaptureVideoOrientation;
-    setVideoOrientation(): void;
+    setVideoOrientation(value: AVCaptureVideoOrientation): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1389294-supportsvideoorientation
-    supportsVideoOrientation(): BOOL;
-    setSupportsVideoOrientation(): void;
+    supportsVideoOrientation(): boolean;
+    setSupportsVideoOrientation(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1390559-videofieldmode
     videoFieldMode(): AVVideoFieldMode;
-    setVideoFieldMode(): void;
+    setVideoFieldMode(value: AVVideoFieldMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1390836-supportsvideofieldmode
-    supportsVideoFieldMode(): BOOL;
-    setSupportsVideoFieldMode(): void;
+    supportsVideoFieldMode(): boolean;
+    setSupportsVideoFieldMode(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1388931-videominframeduration
     videoMinFrameDuration(): CMTime;
-    setVideoMinFrameDuration(): void;
+    setVideoMinFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1386978-supportsvideominframeduration
-    supportsVideoMinFrameDuration(): BOOL;
-    setSupportsVideoMinFrameDuration(): void;
+    supportsVideoMinFrameDuration(): boolean;
+    setSupportsVideoMinFrameDuration(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1390246-videomaxframeduration
     videoMaxFrameDuration(): CMTime;
-    setVideoMaxFrameDuration(): void;
+    setVideoMaxFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1389158-supportsvideomaxframeduration
-    supportsVideoMaxFrameDuration(): BOOL;
-    setSupportsVideoMaxFrameDuration(): void;
+    supportsVideoMaxFrameDuration(): boolean;
+    setSupportsVideoMaxFrameDuration(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1620479-videoscaleandcropfactor
     videoScaleAndCropFactor(): CGFloat;
-    setVideoScaleAndCropFactor(): void;
+    setVideoScaleAndCropFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1620478-videomaxscaleandcropfactor
     videoMaxScaleAndCropFactor(): CGFloat;
-    setVideoMaxScaleAndCropFactor(): void;
+    setVideoMaxScaleAndCropFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1387082-automaticallyadjustsvideomirrori
-    automaticallyAdjustsVideoMirroring(): BOOL;
-    setAutomaticallyAdjustsVideoMirroring(): void;
+    automaticallyAdjustsVideoMirroring(): boolean;
+    setAutomaticallyAdjustsVideoMirroring(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1387424-supportsvideomirroring
-    supportsVideoMirroring(): BOOL;
-    setSupportsVideoMirroring(): void;
+    supportsVideoMirroring(): boolean;
+    setSupportsVideoMirroring(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1389172-videomirrored
-    videoMirrored(): BOOL;
-    setVideoMirrored(): void;
+    videoMirrored(): boolean;
+    setVideoMirrored(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1620481-supportsvideostabilization
-    supportsVideoStabilization(): BOOL;
-    setSupportsVideoStabilization(): void;
+    supportsVideoStabilization(): boolean;
+    setSupportsVideoStabilization(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1620483-activevideostabilizationmode
     activeVideoStabilizationMode(): AVCaptureVideoStabilizationMode;
-    setActiveVideoStabilizationMode(): void;
+    setActiveVideoStabilizationMode(value: AVCaptureVideoStabilizationMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1620484-preferredvideostabilizationmode
     preferredVideoStabilizationMode(): AVCaptureVideoStabilizationMode;
-    setPreferredVideoStabilizationMode(): void;
+    setPreferredVideoStabilizationMode(value: AVCaptureVideoStabilizationMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1620485-videostabilizationenabled
-    videoStabilizationEnabled(): BOOL;
-    setVideoStabilizationEnabled(): void;
+    videoStabilizationEnabled(): boolean;
+    setVideoStabilizationEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/1620482-enablesvideostabilizationwhenava
-    enablesVideoStabilizationWhenAvailable(): BOOL;
-    setEnablesVideoStabilizationWhenAvailable(): void;
+    enablesVideoStabilizationWhenAvailable(): boolean;
+    setEnablesVideoStabilizationWhenAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/2875902-cameraintrinsicmatrixdeliverysup
-    cameraIntrinsicMatrixDeliverySupported(): BOOL;
-    setCameraIntrinsicMatrixDeliverySupported(): void;
+    cameraIntrinsicMatrixDeliverySupported(): boolean;
+    setCameraIntrinsicMatrixDeliverySupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureconnection/2875903-cameraintrinsicmatrixdeliveryena
-    cameraIntrinsicMatrixDeliveryEnabled(): BOOL;
-    setCameraIntrinsicMatrixDeliveryEnabled(): void;
+    cameraIntrinsicMatrixDeliveryEnabled(): boolean;
+    setCameraIntrinsicMatrixDeliveryEnabled(value: boolean): void;
     //
     alloc():AVCaptureConnection;
     //
@@ -1891,16 +1891,16 @@ declare namespace cocoascript {
   interface AVCaptureAudioChannel extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiochannel/1387368-averagepowerlevel
     averagePowerLevel(): number;
-    setAveragePowerLevel(): void;
+    setAveragePowerLevel(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiochannel/1390872-peakholdlevel
     peakHoldLevel(): number;
-    setPeakHoldLevel(): void;
+    setPeakHoldLevel(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiochannel/1388396-volume
     volume(): number;
-    setVolume(): void;
+    setVolume(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureaudiochannel/1388574-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     //
     alloc():AVCaptureAudioChannel;
     //
@@ -1917,31 +1917,31 @@ declare namespace cocoascript {
   interface AVCaptureFileOutput extends AVCaptureOutput {
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1388718-delegate
     delegate(): AVCaptureFileOutputDelegate;
-    setDelegate(): void;
+    setDelegate(value: AVCaptureFileOutputDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1387390-maxrecordedduration
     maxRecordedDuration(): CMTime;
-    setMaxRecordedDuration(): void;
+    setMaxRecordedDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1387684-maxrecordedfilesize
     maxRecordedFileSize(): number;
-    setMaxRecordedFileSize(): void;
+    setMaxRecordedFileSize(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1387523-minfreediskspacelimit
     minFreeDiskSpaceLimit(): number;
-    setMinFreeDiskSpaceLimit(): void;
+    setMinFreeDiskSpaceLimit(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1388576-outputfileurl
     outputFileURL(): NSURL;
-    setOutputFileURL(): void;
+    setOutputFileURL(value: NSURL): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1389028-recordedduration
     recordedDuration(): CMTime;
-    setRecordedDuration(): void;
+    setRecordedDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1386933-recordedfilesize
     recordedFileSize(): number;
-    setRecordedFileSize(): void;
+    setRecordedFileSize(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1387539-recording
-    recording(): BOOL;
-    setRecording(): void;
+    recording(): boolean;
+    setRecording(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1385716-recordingpaused
-    recordingPaused(): BOOL;
-    setRecordingPaused(): void;
+    recordingPaused(): boolean;
+    setRecordingPaused(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1387224-startrecordingtooutputfileurl
     startRecordingToOutputFileURL_recordingDelegate(outputFileURL: NSURL, delegate: AVCaptureFileOutputRecordingDelegate):void;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/1389485-stoprecording
@@ -1965,7 +1965,7 @@ declare namespace cocoascript {
    */
   interface AVCaptureFileOutputDelegate extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutputdelegate/1388760-captureoutputshouldprovidesample
-    captureOutputShouldProvideSampleAccurateRecordingStart(output: AVCaptureOutput):BOOL;
+    captureOutputShouldProvideSampleAccurateRecordingStart(output: AVCaptureOutput):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturefileoutputdelegate/1390096-captureoutput
     captureOutput_didOutputSampleBuffer_fromConnection(output: AVCaptureFileOutput, sampleBuffer: CMSampleBufferRef, connection: AVCaptureConnection):void;
   }
@@ -2028,6 +2028,14 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avplaybackcoordinatorplaybackcontroldelegate
    */
   interface AVPlaybackCoordinatorPlaybackControlDelegate extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinatorplaybackcontroldelegate/3750296-playbackcoordinator
+    playbackCoordinator_didIssuePlayCommand_completionHandler(coordinator: AVDelegatingPlaybackCoordinator, playCommand: AVDelegatingPlaybackCoordinatorPlayCommand, completionHandler: void):void;
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinatorplaybackcontroldelegate/3750295-playbackcoordinator
+    playbackCoordinator_didIssuePauseCommand_completionHandler(coordinator: AVDelegatingPlaybackCoordinator, pauseCommand: AVDelegatingPlaybackCoordinatorPauseCommand, completionHandler: void):void;
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinatorplaybackcontroldelegate/3750298-playbackcoordinator
+    playbackCoordinator_didIssueSeekCommand_completionHandler(coordinator: AVDelegatingPlaybackCoordinator, seekCommand: AVDelegatingPlaybackCoordinatorSeekCommand, completionHandler: void):void;
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinatorplaybackcontroldelegate/3750294-playbackcoordinator
+    playbackCoordinator_didIssueBufferingCommand_completionHandler(coordinator: AVDelegatingPlaybackCoordinator, bufferingCommand: AVDelegatingPlaybackCoordinatorBufferingCommand, completionHandler: void):void;
   }
 }
 declare namespace cocoascript {
@@ -2070,19 +2078,22 @@ declare namespace cocoascript {
   interface AVVideoCompositionInstruction extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/1386654-avvideocompositioninstruction/1389919-passthroughtrackid
     passthroughTrackID(): CMPersistentTrackID;
-    setPassthroughTrackID(): void;
+    setPassthroughTrackID(value: CMPersistentTrackID): void;
     // https://developer.apple.com/documentation/avfoundation/1386654-avvideocompositioninstruction/1388661-requiredsourcetrackids
     requiredSourceTrackIDs(): NSValue;
-    setRequiredSourceTrackIDs(): void;
+    setRequiredSourceTrackIDs(value: NSValue): void;
+    // https://developer.apple.com/documentation/avfoundation/1386654-avvideocompositioninstruction/3750315-requiredsourcesampledatatrackids
+    requiredSourceSampleDataTrackIDs(): NSNumber;
+    setRequiredSourceSampleDataTrackIDs(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/1386654-avvideocompositioninstruction/1389376-containstweening
-    containsTweening(): BOOL;
-    setContainsTweening(): void;
+    containsTweening(): boolean;
+    setContainsTweening(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/1386654-avvideocompositioninstruction/1386216-enablepostprocessing
-    enablePostProcessing(): BOOL;
-    setEnablePostProcessing(): void;
+    enablePostProcessing(): boolean;
+    setEnablePostProcessing(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/1386654-avvideocompositioninstruction/1389873-timerange
     timeRange(): CMTimeRange;
-    setTimeRange(): void;
+    setTimeRange(value: CMTimeRange): void;
   }
 }
 declare namespace cocoascript {
@@ -2123,6 +2134,8 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avplayerplaybackcoordinatordelegate
    */
   interface AVPlayerPlaybackCoordinatorDelegate extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avplayerplaybackcoordinatordelegate/3750304-playbackcoordinator
+    playbackCoordinator_identifierForPlayerItem(coordinator: AVPlayerPlaybackCoordinator, playerItem: AVPlayerItem):NSString;
   }
 }
 declare namespace cocoascript {
@@ -2132,13 +2145,13 @@ declare namespace cocoascript {
    */
   interface AVAssetResourceLoaderDelegate extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloaderdelegate/1388121-resourceloader
-    resourceLoader_shouldWaitForLoadingOfRequestedResource(resourceLoader: AVAssetResourceLoader, loadingRequest: AVAssetResourceLoadingRequest):BOOL;
+    resourceLoader_shouldWaitForLoadingOfRequestedResource(resourceLoader: AVAssetResourceLoader, loadingRequest: AVAssetResourceLoadingRequest):boolean;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloaderdelegate/1387058-resourceloader
-    resourceLoader_shouldWaitForRenewalOfRequestedResource(resourceLoader: AVAssetResourceLoader, renewalRequest: AVAssetResourceRenewalRequest):BOOL;
+    resourceLoader_shouldWaitForRenewalOfRequestedResource(resourceLoader: AVAssetResourceLoader, renewalRequest: AVAssetResourceRenewalRequest):boolean;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloaderdelegate/1387722-resourceloader
     resourceLoader_didCancelLoadingRequest(resourceLoader: AVAssetResourceLoader, loadingRequest: AVAssetResourceLoadingRequest):void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloaderdelegate/1388736-resourceloader
-    resourceLoader_shouldWaitForResponseToAuthenticationChallenge(resourceLoader: AVAssetResourceLoader, authenticationChallenge: NSURLAuthenticationChallenge):BOOL;
+    resourceLoader_shouldWaitForResponseToAuthenticationChallenge(resourceLoader: AVAssetResourceLoader, authenticationChallenge: NSURLAuthenticationChallenge):boolean;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloaderdelegate/1387929-resourceloader
     resourceLoader_didCancelAuthenticationChallenge(resourceLoader: AVAssetResourceLoader, authenticationChallenge: NSURLAuthenticationChallenge):void;
   }
@@ -2150,13 +2163,13 @@ declare namespace cocoascript {
    */
   interface AVVideoCompositionValidationHandling extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionvalidationhandling/1389404-videocomposition
-    videoComposition_shouldContinueValidatingAfterFindingInvalidValueForKey(videoComposition: AVVideoComposition, key: string | cocoascript.NSString):BOOL;
+    videoComposition_shouldContinueValidatingAfterFindingInvalidValueForKey(videoComposition: AVVideoComposition, key: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionvalidationhandling/1388620-videocomposition
-    videoComposition_shouldContinueValidatingAfterFindingEmptyTimeRange(videoComposition: AVVideoComposition, timeRange: CMTimeRange):BOOL;
+    videoComposition_shouldContinueValidatingAfterFindingEmptyTimeRange(videoComposition: AVVideoComposition, timeRange: CMTimeRange):boolean;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionvalidationhandling/1390721-videocomposition
-    videoComposition_shouldContinueValidatingAfterFindingInvalidTimeRangeInInstruction(videoComposition: AVVideoComposition, videoCompositionInstruction: AVVideoCompositionInstruction):BOOL;
+    videoComposition_shouldContinueValidatingAfterFindingInvalidTimeRangeInInstruction(videoComposition: AVVideoComposition, videoCompositionInstruction: AVVideoCompositionInstruction):boolean;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionvalidationhandling/1388452-videocomposition
-    videoComposition_shouldContinueValidatingAfterFindingInvalidTrackIDInInstruction_layerInstruction_asset(videoComposition: AVVideoComposition, videoCompositionInstruction: AVVideoCompositionInstruction, layerInstruction: AVVideoCompositionLayerInstruction, asset: AVAsset):BOOL;
+    videoComposition_shouldContinueValidatingAfterFindingInvalidTrackIDInInstruction_layerInstruction_asset(videoComposition: AVVideoComposition, videoCompositionInstruction: AVVideoCompositionInstruction, layerInstruction: AVVideoCompositionLayerInstruction, asset: AVAsset):boolean;
   }
 }
 declare namespace cocoascript {
@@ -2174,7 +2187,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysessiondelegate/2881821-contentkeysession
     contentKeySession_didUpdatePersistableContentKey_forContentKeyIdentifier(session: AVContentKeySession, persistableContentKey: NSData, keyIdentifier: AVContentKeySessionDelegate):void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysessiondelegate/2799210-contentkeysession
-    contentKeySession_shouldRetryContentKeyRequest_reason(session: AVContentKeySession, keyRequest: AVContentKeyRequest, retryReason: AVContentKeyRequestRetryReason):BOOL;
+    contentKeySession_shouldRetryContentKeyRequest_reason(session: AVContentKeySession, keyRequest: AVContentKeyRequest, retryReason: AVContentKeyRequestRetryReason):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysessiondelegate/2799160-contentkeysessioncontentprotecti
     contentKeySessionContentProtectionSessionIdentifierDidChange(session: AVContentKeySession):void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysessiondelegate/2799201-contentkeysession
@@ -2202,19 +2215,22 @@ declare namespace cocoascript {
    */
   interface AVQueuedSampleBufferRendering extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avqueuedsamplebufferrendering/2867638-readyformoremediadata
-    readyForMoreMediaData(): BOOL;
-    setReadyForMoreMediaData(): void;
+    readyForMoreMediaData(): boolean;
+    setReadyForMoreMediaData(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avqueuedsamplebufferrendering/2867641-enqueuesamplebuffer
     enqueueSampleBuffer(sampleBuffer: CMSampleBufferRef):void;
     // https://developer.apple.com/documentation/avfoundation/avqueuedsamplebufferrendering/2867643-requestmediadatawhenreadyonqueue
     requestMediaDataWhenReadyOnQueue_usingBlock(queue: dispatch_queue_t, block: void):void;
     // https://developer.apple.com/documentation/avfoundation/avqueuedsamplebufferrendering/2867642-stoprequestingmediadata
     stopRequestingMediaData():void;
+    // https://developer.apple.com/documentation/avfoundation/avqueuedsamplebufferrendering/3726153-hassufficientmediadataforreliabl
+    hasSufficientMediaDataForReliablePlaybackStart(): boolean;
+    setHasSufficientMediaDataForReliablePlaybackStart(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avqueuedsamplebufferrendering/2867639-flush
     flush():void;
     // https://developer.apple.com/documentation/avfoundation/avqueuedsamplebufferrendering/2867640-timebase
     timebase(): CMTimebaseRef;
-    setTimebase(): void;
+    setTimebase(value: CMTimebaseRef): void;
   }
 }
 declare namespace cocoascript {
@@ -2225,16 +2241,19 @@ declare namespace cocoascript {
   interface AVVideoCompositing extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avvideocompositing/1388610-sourcepixelbufferattributes
     sourcePixelBufferAttributes(): id;
-    setSourcePixelBufferAttributes(): void;
+    setSourcePixelBufferAttributes(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositing/1386414-requiredpixelbufferattributesfor
     requiredPixelBufferAttributesForRenderContext(): id;
-    setRequiredPixelBufferAttributesForRenderContext(): void;
+    setRequiredPixelBufferAttributesForRenderContext(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositing/3626026-supportshdrsourceframes
-    supportsHDRSourceFrames(): BOOL;
-    setSupportsHDRSourceFrames(): void;
+    supportsHDRSourceFrames(): boolean;
+    setSupportsHDRSourceFrames(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes
-    supportsWideColorSourceFrames(): BOOL;
-    setSupportsWideColorSourceFrames(): void;
+    supportsWideColorSourceFrames(): boolean;
+    setSupportsWideColorSourceFrames(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avvideocompositing/3750314-canconformcolorofsourceframes
+    canConformColorOfSourceFrames(): boolean;
+    setCanConformColorOfSourceFrames(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositing/1390363-rendercontextchanged
     renderContextChanged(newRenderContext: AVVideoCompositionRenderContext):void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositing/3227885-anticipaterenderingusinghint
@@ -2263,6 +2282,8 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avassetreadercaptionvalidationhandling
    */
   interface AVAssetReaderCaptionValidationHandling extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avassetreadercaptionvalidationhandling/3752792-captionadaptor
+    captionAdaptor_didVendCaption_skippingUnsupportedSourceSyntaxElements(adaptor: AVAssetReaderOutputCaptionAdaptor, caption: AVCaption, syntaxElements: string | cocoascript.NSString):void;
   }
 }
 declare namespace cocoascript {
@@ -2275,56 +2296,56 @@ declare namespace cocoascript {
     metadataItemWithPropertiesOfMetadataItem_valueLoadingHandler(metadataItem: AVMetadataItem, handler: AVMetadataItemValueRequest):AVMetadataItem;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1386968-identifier
     identifier(): AVMetadataIdentifier;
-    setIdentifier(): void;
+    setIdentifier(value: AVMetadataIdentifier): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1387843-key
     key(): NSCopying;
-    setKey(): void;
+    setKey(value: NSCopying): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1389864-commonkey
     commonKey(): AVMetadataKey;
-    setCommonKey(): void;
+    setCommonKey(value: AVMetadataKey): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1385757-keyspace
     keySpace(): AVMetadataKeySpace;
-    setKeySpace(): void;
+    setKeySpace(value: AVMetadataKeySpace): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1390537-value
     value(): NSCopying;
-    setValue(): void;
+    setValue(value: NSCopying): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1389570-extraattributes
     extraAttributes(): id;
-    setExtraAttributes(): void;
+    setExtraAttributes(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1386856-datatype
     dataType(): string | cocoascript.NSString;
-    setDataType(): void;
+    setDataType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1390846-stringvalue
     stringValue(): string | cocoascript.NSString;
-    setStringValue(): void;
+    setStringValue(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1390681-numbervalue
     numberValue(): NSNumber;
-    setNumberValue(): void;
+    setNumberValue(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1387641-datavalue
     dataValue(): NSData;
-    setDataValue(): void;
+    setDataValue(value: NSData): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1385563-datevalue
     dateValue(): NSDate;
-    setDateValue(): void;
+    setDateValue(value: NSDate): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1387102-loadvaluesasynchronouslyforkeys
     loadValuesAsynchronouslyForKeys_completionHandler(keys: string | cocoascript.NSString, handler: void):void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1388523-statusofvalueforkey
     statusOfValueForKey_error(key: string | cocoascript.NSString, outError: NSError):AVKeyValueStatus;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1388612-time
     time(): CMTime;
-    setTime(): void;
+    setTime(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1388535-startdate
     startDate(): NSDate;
-    setStartDate(): void;
+    setStartDate(value: NSDate): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1386610-duration
     duration(): CMTime;
-    setDuration(): void;
+    setDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1387114-locale
     locale(): NSLocale;
-    setLocale(): void;
+    setLocale(value: NSLocale): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1387068-extendedlanguagetag
     extendedLanguageTag(): string | cocoascript.NSString;
-    setExtendedLanguageTag(): void;
+    setExtendedLanguageTag(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1385843-metadataitemsfromarray
     metadataItemsFromArray_filteredByIdentifier(metadataItems: AVMetadataItem, identifier: AVMetadataIdentifier):AVMetadataItem;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitem/1386083-metadataitemsfromarray
@@ -2365,19 +2386,19 @@ declare namespace cocoascript {
     initWithData_options(data: NSData, options: AVMovie):AVMovie;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1386990-url
     URL(): NSURL;
-    setURL(): void;
+    setURL(value: NSURL): void;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1388017-data
     data(): NSData;
-    setData(): void;
+    setData(value: NSData): void;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1387333-cancontainmoviefragments
-    canContainMovieFragments(): BOOL;
-    setCanContainMovieFragments(): void;
+    canContainMovieFragments(): boolean;
+    setCanContainMovieFragments(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1388597-containsmoviefragments
-    containsMovieFragments(): BOOL;
-    setContainsMovieFragments(): void;
+    containsMovieFragments(): boolean;
+    setContainsMovieFragments(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1388424-defaultmediadatastorage
     defaultMediaDataStorage(): AVMediaDataStorage;
-    setDefaultMediaDataStorage(): void;
+    setDefaultMediaDataStorage(value: AVMediaDataStorage): void;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1388690-movietypes
     movieTypes():AVFileType;
     // https://developer.apple.com/documentation/avfoundation/avmovie/3746571-loadtrackwithtrackid
@@ -2388,7 +2409,7 @@ declare namespace cocoascript {
     loadTracksWithMediaCharacteristic_completionHandler(mediaCharacteristic: AVMediaCharacteristic, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1386485-tracks
     tracks(): AVMovieTrack;
-    setTracks(): void;
+    setTracks(value: AVMovieTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1386722-trackwithtrackid
     trackWithTrackID(trackID: CMPersistentTrackID):AVMovieTrack;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1388667-trackswithmediatype
@@ -2398,9 +2419,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avmovie/1386686-movieheaderwithfiletype
     movieHeaderWithFileType_error(fileType: AVFileType, outError: NSError):NSData;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1386682-writemovieheadertourl
-    writeMovieHeaderToURL_fileType_options_error(URL: NSURL, fileType: AVFileType, options: AVMovieWritingOptions, outError: NSError):BOOL;
+    writeMovieHeaderToURL_fileType_options_error(URL: NSURL, fileType: AVFileType, options: AVMovieWritingOptions, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avmovie/1385982-iscompatiblewithfiletype
-    isCompatibleWithFileType(fileType: AVFileType):BOOL;
+    isCompatibleWithFileType(fileType: AVFileType):boolean;
     //
     alloc():AVMovie;
     //
@@ -2421,10 +2442,10 @@ declare namespace cocoascript {
     initWithSampleBuffer(sampleBuffer: CMSampleBufferRef):AVTimedMetadataGroup;
     // https://developer.apple.com/documentation/avfoundation/avtimedmetadatagroup/1385928-items
     items(): AVMetadataItem;
-    setItems(): void;
+    setItems(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avtimedmetadatagroup/1387992-timerange
     timeRange(): CMTimeRange;
-    setTimeRange(): void;
+    setTimeRange(value: CMTimeRange): void;
     // https://developer.apple.com/documentation/avfoundation/avtimedmetadatagroup/1389461-copyformatdescription
     copyFormatDescription():CMMetadataFormatDescriptionRef;
     //
@@ -2445,13 +2466,13 @@ declare namespace cocoascript {
     initWithItems_startDate_endDate(items: AVMetadataItem, startDate: NSDate, endDate: NSDate):AVDateRangeMetadataGroup;
     // https://developer.apple.com/documentation/avfoundation/avdaterangemetadatagroup/1390120-items
     items(): AVMetadataItem;
-    setItems(): void;
+    setItems(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avdaterangemetadatagroup/1386420-startdate
     startDate(): NSDate;
-    setStartDate(): void;
+    setStartDate(value: NSDate): void;
     // https://developer.apple.com/documentation/avfoundation/avdaterangemetadatagroup/1386255-enddate
     endDate(): NSDate;
-    setEndDate(): void;
+    setEndDate(value: NSDate): void;
     //
     alloc():AVDateRangeMetadataGroup;
     //
@@ -2468,13 +2489,13 @@ declare namespace cocoascript {
   interface AVAsynchronousCIImageFilteringRequest extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avasynchronousciimagefilteringrequest/1387577-sourceimage
     sourceImage(): CIImage;
-    setSourceImage(): void;
+    setSourceImage(value: CIImage): void;
     // https://developer.apple.com/documentation/avfoundation/avasynchronousciimagefilteringrequest/1388240-compositiontime
     compositionTime(): CMTime;
-    setCompositionTime(): void;
+    setCompositionTime(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avasynchronousciimagefilteringrequest/1387933-rendersize
     renderSize(): CGSize;
-    setRenderSize(): void;
+    setRenderSize(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avasynchronousciimagefilteringrequest/1389124-finishwithimage
     finishWithImage_context(filteredImage: CIImage, context: CIContext):void;
     // https://developer.apple.com/documentation/avfoundation/avasynchronousciimagefilteringrequest/1386608-finishwitherror
@@ -2495,19 +2516,19 @@ declare namespace cocoascript {
   interface AVAsynchronousVideoCompositionRequest extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avasynchronousvideocompositionrequest/1386888-compositiontime
     compositionTime(): CMTime;
-    setCompositionTime(): void;
+    setCompositionTime(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avasynchronousvideocompositionrequest/1389112-rendercontext
     renderContext(): AVVideoCompositionRenderContext;
-    setRenderContext(): void;
+    setRenderContext(value: AVVideoCompositionRenderContext): void;
     // https://developer.apple.com/documentation/avfoundation/avasynchronousvideocompositionrequest/1386672-videocompositioninstruction
     videoCompositionInstruction(): AVVideoCompositionInstruction;
-    setVideoCompositionInstruction(): void;
+    setVideoCompositionInstruction(value: AVVideoCompositionInstruction): void;
     // https://developer.apple.com/documentation/avfoundation/avasynchronousvideocompositionrequest/1388898-sourcetrackids
     sourceTrackIDs(): NSNumber;
-    setSourceTrackIDs(): void;
+    setSourceTrackIDs(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avasynchronousvideocompositionrequest/3750312-sourcesampledatatrackids
     sourceSampleDataTrackIDs(): NSNumber;
-    setSourceSampleDataTrackIDs(): void;
+    setSourceSampleDataTrackIDs(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avasynchronousvideocompositionrequest/1390379-sourceframebytrackid
     sourceFrameByTrackID(trackID: CMPersistentTrackID):CVPixelBufferRef;
     // https://developer.apple.com/documentation/avfoundation/avasynchronousvideocompositionrequest/3750311-sourcesamplebufferbytrackid
@@ -2540,39 +2561,39 @@ declare namespace cocoascript {
     videoCompositionWithAsset_applyingCIFiltersWithHandler(asset: AVAsset, applier: AVAsynchronousCIImageFilteringRequest):AVVideoComposition;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/1388013-frameduration
     frameDuration(): CMTime;
-    setFrameDuration(): void;
+    setFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/1388705-rendersize
     renderSize(): CGSize;
-    setRenderSize(): void;
+    setRenderSize(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/1615786-renderscale
     renderScale(): number;
-    setRenderScale(): void;
+    setRenderScale(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/1387030-animationtool
     animationTool(): AVVideoCompositionCoreAnimationTool;
-    setAnimationTool(): void;
+    setAnimationTool(value: AVVideoCompositionCoreAnimationTool): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/1389622-customvideocompositorclass
     customVideoCompositorClass(): AVVideoCompositing;
-    setCustomVideoCompositorClass(): void;
+    setCustomVideoCompositorClass(value: AVVideoCompositing): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/1643235-colorprimaries
     colorPrimaries(): string | cocoascript.NSString;
-    setColorPrimaries(): void;
+    setColorPrimaries(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/1643230-colortransferfunction
     colorTransferFunction(): string | cocoascript.NSString;
-    setColorTransferFunction(): void;
+    setColorTransferFunction(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/1643236-colorycbcrmatrix
     colorYCbCrMatrix(): string | cocoascript.NSString;
-    setColorYCbCrMatrix(): void;
+    setColorYCbCrMatrix(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/1389917-isvalidforasset
-    isValidForAsset_timeRange_validationDelegate(asset: AVAsset, timeRange: CMTimeRange, validationDelegate: AVVideoCompositionValidationHandling):BOOL;
+    isValidForAsset_timeRange_validationDelegate(asset: AVAsset, timeRange: CMTimeRange, validationDelegate: AVVideoCompositionValidationHandling):boolean;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/1389211-instructions
     instructions(): AVVideoCompositionInstruction;
-    setInstructions(): void;
+    setInstructions(value: AVVideoCompositionInstruction): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/2873798-sourcetrackidforframetiming
     sourceTrackIDForFrameTiming(): CMPersistentTrackID;
-    setSourceTrackIDForFrameTiming(): void;
+    setSourceTrackIDForFrameTiming(value: CMPersistentTrackID): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocomposition/3750318-sourcesampledatatrackids
     sourceSampleDataTrackIDs(): NSNumber;
-    setSourceSampleDataTrackIDs(): void;
+    setSourceSampleDataTrackIDs(value: NSNumber): void;
     //
     alloc():AVVideoComposition;
     //
@@ -2589,13 +2610,13 @@ declare namespace cocoascript {
   interface AVVideoCompositionLayerInstruction extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionlayerinstruction/1390240-trackid
     trackID(): CMPersistentTrackID;
-    setTrackID(): void;
+    setTrackID(value: CMPersistentTrackID): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionlayerinstruction/1388471-getopacityrampfortime
-    getOpacityRampForTime_startOpacity_endOpacity_timeRange(time: CMTime, startOpacity: number, endOpacity: number, timeRange: CMTimeRange):BOOL;
+    getOpacityRampForTime_startOpacity_endOpacity_timeRange(time: CMTime, startOpacity: number, endOpacity: number, timeRange: CMTimeRange):boolean;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionlayerinstruction/1387257-gettransformrampfortime
-    getTransformRampForTime_startTransform_endTransform_timeRange(time: CMTime, startTransform: CGAffineTransform, endTransform: CGAffineTransform, timeRange: CMTimeRange):BOOL;
+    getTransformRampForTime_startTransform_endTransform_timeRange(time: CMTime, startTransform: CGAffineTransform, endTransform: CGAffineTransform, timeRange: CMTimeRange):boolean;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionlayerinstruction/1387998-getcroprectanglerampfortime
-    getCropRectangleRampForTime_startCropRectangle_endCropRectangle_timeRange(time: CMTime, startCropRectangle: CGRect, endCropRectangle: CGRect, timeRange: CMTimeRange):BOOL;
+    getCropRectangleRampForTime_startCropRectangle_endCropRectangle_timeRange(time: CMTime, startCropRectangle: CGRect, endCropRectangle: CGRect, timeRange: CMTimeRange):boolean;
     //
     alloc():AVVideoCompositionLayerInstruction;
     //
@@ -2612,25 +2633,25 @@ declare namespace cocoascript {
   interface AVVideoCompositionInstruction extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avvideocompositioninstruction/1389384-backgroundcolor
     backgroundColor(): CGColorRef;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositioninstruction/1389689-layerinstructions
     layerInstructions(): AVVideoCompositionLayerInstruction;
-    setLayerInstructions(): void;
+    setLayerInstructions(value: AVVideoCompositionLayerInstruction): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositioninstruction/1387857-timerange
     timeRange(): CMTimeRange;
-    setTimeRange(): void;
+    setTimeRange(value: CMTimeRange): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositioninstruction/1388697-enablepostprocessing
-    enablePostProcessing(): BOOL;
-    setEnablePostProcessing(): void;
+    enablePostProcessing(): boolean;
+    setEnablePostProcessing(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositioninstruction/1390913-requiredsourcetrackids
     requiredSourceTrackIDs(): NSValue;
-    setRequiredSourceTrackIDs(): void;
+    setRequiredSourceTrackIDs(value: NSValue): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositioninstruction/3750319-requiredsourcesampledatatrackids
     requiredSourceSampleDataTrackIDs(): NSNumber;
-    setRequiredSourceSampleDataTrackIDs(): void;
+    setRequiredSourceSampleDataTrackIDs(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositioninstruction/1387657-passthroughtrackid
     passthroughTrackID(): CMPersistentTrackID;
-    setPassthroughTrackID(): void;
+    setPassthroughTrackID(value: CMPersistentTrackID): void;
     //
     alloc():AVVideoCompositionInstruction;
     //
@@ -2647,7 +2668,7 @@ declare namespace cocoascript {
   interface AVAudioMix extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudiomix/1388791-inputparameters
     inputParameters(): AVAudioMixInputParameters;
-    setInputParameters(): void;
+    setInputParameters(value: AVAudioMixInputParameters): void;
     //
     alloc():AVAudioMix;
     //
@@ -2664,15 +2685,15 @@ declare namespace cocoascript {
   interface AVAudioMixInputParameters extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudiomixinputparameters/1387471-trackid
     trackID(): CMPersistentTrackID;
-    setTrackID(): void;
+    setTrackID(value: CMPersistentTrackID): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiomixinputparameters/1389578-getvolumerampfortime
-    getVolumeRampForTime_startVolume_endVolume_timeRange(time: CMTime, startVolume: number, endVolume: number, timeRange: CMTimeRange):BOOL;
+    getVolumeRampForTime_startVolume_endVolume_timeRange(time: CMTime, startVolume: number, endVolume: number, timeRange: CMTimeRange):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiomixinputparameters/1388578-audiotapprocessor
     audioTapProcessor(): MTAudioProcessingTapRef;
-    setAudioTapProcessor(): void;
+    setAudioTapProcessor(value: MTAudioProcessingTapRef): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiomixinputparameters/1387042-audiotimepitchalgorithm
     audioTimePitchAlgorithm(): AVAudioTimePitchAlgorithm;
-    setAudioTimePitchAlgorithm(): void;
+    setAudioTimePitchAlgorithm(value: AVAudioTimePitchAlgorithm): void;
     //
     alloc():AVAudioMixInputParameters;
     //
@@ -2689,13 +2710,13 @@ declare namespace cocoascript {
   interface AVAssetTrack extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1385799-trackid
     trackID(): CMPersistentTrackID;
-    setTrackID(): void;
+    setTrackID(value: CMPersistentTrackID): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1385741-mediatype
     mediaType(): AVMediaType;
-    setMediaType(): void;
+    setMediaType(value: AVMediaType): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1385611-asset
     asset(): AVAsset;
-    setAsset(): void;
+    setAsset(value: AVAsset): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/3746539-loadmetadataforformat
     loadMetadataForFormat_completionHandler(format: AVMetadataFormat, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/3746541-loadsegmentfortracktime
@@ -2706,86 +2727,86 @@ declare namespace cocoascript {
     loadAssociatedTracksOfType_completionHandler(trackAssociationType: AVTrackAssociationType, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1386694-formatdescriptions
     formatDescriptions(): NSArray;
-    setFormatDescriptions(): void;
+    setFormatDescriptions(value: NSArray): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1388276-playable
-    playable(): BOOL;
-    setPlayable(): void;
+    playable(): boolean;
+    setPlayable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/2887366-decodable
-    decodable(): BOOL;
-    setDecodable(): void;
+    decodable(): boolean;
+    setDecodable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1387546-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1387643-selfcontained
-    selfContained(): BOOL;
-    setSelfContained(): void;
+    selfContained(): boolean;
+    setSelfContained(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1388900-totalsampledatalength
     totalSampleDataLength(): number;
-    setTotalSampleDataLength(): void;
+    setTotalSampleDataLength(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1385847-hasmediacharacteristic
-    hasMediaCharacteristic(mediaCharacteristic: AVMediaCharacteristic):BOOL;
+    hasMediaCharacteristic(mediaCharacteristic: AVMediaCharacteristic):boolean;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1388335-timerange
     timeRange(): CMTimeRange;
-    setTimeRange(): void;
+    setTimeRange(value: CMTimeRange): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1389233-naturaltimescale
     naturalTimeScale(): CMTimeScale;
-    setNaturalTimeScale(): void;
+    setNaturalTimeScale(value: CMTimeScale): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1389758-estimateddatarate
     estimatedDataRate(): number;
-    setEstimatedDataRate(): void;
+    setEstimatedDataRate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1388627-languagecode
     languageCode(): string | cocoascript.NSString;
-    setLanguageCode(): void;
+    setLanguageCode(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1389105-extendedlanguagetag
     extendedLanguageTag(): string | cocoascript.NSString;
-    setExtendedLanguageTag(): void;
+    setExtendedLanguageTag(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1387724-naturalsize
     naturalSize(): CGSize;
-    setNaturalSize(): void;
+    setNaturalSize(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1389837-preferredtransform
     preferredTransform(): CGAffineTransform;
-    setPreferredTransform(): void;
+    setPreferredTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1388832-preferredvolume
     preferredVolume(): number;
-    setPreferredVolume(): void;
+    setPreferredVolume(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/3131265-hasaudiosampledependencies
-    hasAudioSampleDependencies(): BOOL;
-    setHasAudioSampleDependencies(): void;
+    hasAudioSampleDependencies(): boolean;
+    setHasAudioSampleDependencies(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1386182-nominalframerate
     nominalFrameRate(): number;
-    setNominalFrameRate(): void;
+    setNominalFrameRate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1388608-minframeduration
     minFrameDuration(): CMTime;
-    setMinFrameDuration(): void;
+    setMinFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1390844-requiresframereordering
-    requiresFrameReordering(): BOOL;
-    setRequiresFrameReordering(): void;
+    requiresFrameReordering(): boolean;
+    setRequiresFrameReordering(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1389054-metadata
     metadata(): AVMetadataItem;
-    setMetadata(): void;
+    setMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1390832-commonmetadata
     commonMetadata(): AVMetadataItem;
-    setCommonMetadata(): void;
+    setCommonMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1385751-availablemetadataformats
     availableMetadataFormats(): AVMetadataFormat;
-    setAvailableMetadataFormats(): void;
+    setAvailableMetadataFormats(value: AVMetadataFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1387921-metadataforformat
     metadataForFormat(format: AVMetadataFormat):AVMetadataItem;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1390665-segments
     segments(): AVAssetTrackSegment;
-    setSegments(): void;
+    setSegments(value: AVAssetTrackSegment): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1387186-segmentfortracktime
     segmentForTrackTime(trackTime: CMTime):AVAssetTrackSegment;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1388248-samplepresentationtimefortrackti
     samplePresentationTimeForTrackTime(trackTime: CMTime):CMTime;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1388065-availabletrackassociationtypes
     availableTrackAssociationTypes(): AVTrackAssociationType;
-    setAvailableTrackAssociationTypes(): void;
+    setAvailableTrackAssociationTypes(value: AVTrackAssociationType): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1389251-associatedtracksoftype
     associatedTracksOfType(trackAssociationType: AVTrackAssociationType):AVAssetTrack;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1386692-canprovidesamplecursors
-    canProvideSampleCursors(): BOOL;
-    setCanProvideSampleCursors(): void;
+    canProvideSampleCursors(): boolean;
+    setCanProvideSampleCursors(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1390248-makesamplecursorwithpresentation
     makeSampleCursorWithPresentationTimeStamp(presentationTimeStamp: CMTime):AVSampleCursor;
     // https://developer.apple.com/documentation/avfoundation/avassettrack/1387226-makesamplecursoratfirstsampleind
@@ -2808,15 +2829,15 @@ declare namespace cocoascript {
   interface AVMediaSelectionGroup extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avmediaselectiongroup/1388351-options
     options(): AVMediaSelectionOption;
-    setOptions(): void;
+    setOptions(value: AVMediaSelectionOption): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectiongroup/1389968-mediaselectionoptionwithproperty
     mediaSelectionOptionWithPropertyList(plist: AVMediaSelectionGroup):AVMediaSelectionOption;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectiongroup/1388440-defaultoption
     defaultOption(): AVMediaSelectionOption;
-    setDefaultOption(): void;
+    setDefaultOption(value: AVMediaSelectionOption): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectiongroup/1388483-allowsemptyselection
-    allowsEmptySelection(): BOOL;
-    setAllowsEmptySelection(): void;
+    allowsEmptySelection(): boolean;
+    setAllowsEmptySelection(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectiongroup/1387351-playablemediaselectionoptionsfro
     playableMediaSelectionOptionsFromArray(mediaSelectionOptions: AVMediaSelectionOption):AVMediaSelectionOption;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectiongroup/1387494-mediaselectionoptionsfromarray
@@ -2845,34 +2866,34 @@ declare namespace cocoascript {
   interface AVMediaSelectionOption extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1386322-mediatype
     mediaType(): AVMediaType;
-    setMediaType(): void;
+    setMediaType(value: AVMediaType): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1385587-mediasubtypes
     mediaSubTypes(): NSNumber;
-    setMediaSubTypes(): void;
+    setMediaSubTypes(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1388531-hasmediacharacteristic
-    hasMediaCharacteristic(mediaCharacteristic: AVMediaCharacteristic):BOOL;
+    hasMediaCharacteristic(mediaCharacteristic: AVMediaCharacteristic):boolean;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1387859-commonmetadata
     commonMetadata(): AVMetadataItem;
-    setCommonMetadata(): void;
+    setCommonMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1389504-availablemetadataformats
     availableMetadataFormats(): string | cocoascript.NSString;
-    setAvailableMetadataFormats(): void;
+    setAvailableMetadataFormats(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1386666-metadataforformat
     metadataForFormat(format: string | cocoascript.NSString):AVMetadataItem;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1390917-playable
-    playable(): BOOL;
-    setPlayable(): void;
+    playable(): boolean;
+    setPlayable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1388485-displayname
     displayName(): string | cocoascript.NSString;
-    setDisplayName(): void;
+    setDisplayName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1388021-displaynamewithlocale
     displayNameWithLocale(locale: NSLocale):NSString;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1388436-locale
     locale(): NSLocale;
-    setLocale(): void;
+    setLocale(value: NSLocale): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1387619-extendedlanguagetag
     extendedLanguageTag(): string | cocoascript.NSString;
-    setExtendedLanguageTag(): void;
+    setExtendedLanguageTag(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1388232-associatedmediaselectionoptionin
     associatedMediaSelectionOptionInMediaSelectionGroup(mediaSelectionGroup: AVMediaSelectionGroup):AVMediaSelectionOption;
     // https://developer.apple.com/documentation/avfoundation/avmediaselectionoption/1623532-makenowplayinginfolanguageoption
@@ -2905,10 +2926,10 @@ declare namespace cocoascript {
     initWithTextMarkupAttributes_textSelector(textMarkupAttributes: AVTextStyleRule, textSelector: string | cocoascript.NSString):AVTextStyleRule;
     // https://developer.apple.com/documentation/avfoundation/avtextstylerule/1387945-textmarkupattributes
     textMarkupAttributes(): id;
-    setTextMarkupAttributes(): void;
+    setTextMarkupAttributes(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avtextstylerule/1389451-textselector
     textSelector(): string | cocoascript.NSString;
-    setTextSelector(): void;
+    setTextSelector(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avtextstylerule/1387970-propertylistfortextstylerules
     propertyListForTextStyleRules(textStyleRules: AVTextStyleRule):AVTextStyleRule;
     //
@@ -2928,10 +2949,10 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avmediaselection/1389197-selectedmediaoptioninmediaselect
     selectedMediaOptionInMediaSelectionGroup(mediaSelectionGroup: AVMediaSelectionGroup):AVMediaSelectionOption;
     // https://developer.apple.com/documentation/avfoundation/avmediaselection/1386716-mediaselectioncriteriacanbeappli
-    mediaSelectionCriteriaCanBeAppliedAutomaticallyToMediaSelectionGroup(mediaSelectionGroup: AVMediaSelectionGroup):BOOL;
+    mediaSelectionCriteriaCanBeAppliedAutomaticallyToMediaSelectionGroup(mediaSelectionGroup: AVMediaSelectionGroup):boolean;
     // https://developer.apple.com/documentation/avfoundation/avmediaselection/1390874-asset
     asset(): AVAsset;
-    setAsset(): void;
+    setAsset(value: AVAsset): void;
     //
     alloc():AVMediaSelection;
     //
@@ -2960,72 +2981,72 @@ declare namespace cocoascript {
     playerItemWithAsset_automaticallyLoadedAssetKeys(asset: AVAsset, automaticallyLoadedAssetKeys: string | cocoascript.NSString):AVPlayerItem;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1386361-tracks
     tracks(): AVPlayerItemTrack;
-    setTracks(): void;
+    setTracks(value: AVPlayerItemTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1627623-externalmetadata
     externalMetadata(): AVMetadataItem;
-    setExternalMetadata(): void;
+    setExternalMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389602-timedmetadata
     timedMetadata(): AVMetadataItem;
-    setTimedMetadata(): void;
+    setTimedMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388633-automaticallyloadedassetkeys
     automaticallyLoadedAssetKeys(): string | cocoascript.NSString;
-    setAutomaticallyLoadedAssetKeys(): void;
+    setAutomaticallyLoadedAssetKeys(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389493-status
     status(): AVPlayerItemStatus;
-    setStatus(): void;
+    setStatus(value: AVPlayerItemStatus): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389185-error
     error(): NSError;
-    setError(): void;
+    setError(value: NSError): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1385591-canplayreverse
-    canPlayReverse(): BOOL;
-    setCanPlayReverse(): void;
+    canPlayReverse(): boolean;
+    setCanPlayReverse(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389096-canplayfastforward
-    canPlayFastForward(): BOOL;
-    setCanPlayFastForward(): void;
+    canPlayFastForward(): boolean;
+    setCanPlayFastForward(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1390493-canplayfastreverse
-    canPlayFastReverse(): BOOL;
-    setCanPlayFastReverse(): void;
+    canPlayFastReverse(): boolean;
+    setCanPlayFastReverse(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388078-canplayslowforward
-    canPlaySlowForward(): BOOL;
-    setCanPlaySlowForward(): void;
+    canPlaySlowForward(): boolean;
+    setCanPlaySlowForward(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1390598-canplayslowreverse
-    canPlaySlowReverse(): BOOL;
-    setCanPlaySlowReverse(): void;
+    canPlaySlowReverse(): boolean;
+    setCanPlaySlowReverse(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3726149-variantpreferences
     variantPreferences(): AVVariantPreferences;
-    setVariantPreferences(): void;
+    setVariantPreferences(value: AVVariantPreferences): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3579514-startsonfirsteligiblevariant
-    startsOnFirstEligibleVariant(): BOOL;
-    setStartsOnFirstEligibleVariant(): void;
+    startsOnFirstEligibleVariant(): boolean;
+    setStartsOnFirstEligibleVariant(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3726147-templateplayeritem
     templatePlayerItem(): AVPlayerItem;
-    setTemplatePlayerItem(): void;
+    setTemplatePlayerItem(value: AVPlayerItem): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3726146-automaticallyhandlesinterstitial
-    automaticallyHandlesInterstitialEvents(): BOOL;
-    setAutomaticallyHandlesInterstitialEvents(): void;
+    automaticallyHandlesInterstitialEvents(): boolean;
+    setAutomaticallyHandlesInterstitialEvents(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3750338-translatesplayerinterstitialeven
-    translatesPlayerInterstitialEvents(): BOOL;
-    setTranslatesPlayerInterstitialEvents(): void;
+    translatesPlayerInterstitialEvents(): boolean;
+    setTranslatesPlayerInterstitialEvents(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1385622-forwardplaybackendtime
     forwardPlaybackEndTime(): CMTime;
-    setForwardPlaybackEndTime(): void;
+    setForwardPlaybackEndTime(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388438-reverseplaybackendtime
     reversePlaybackEndTime(): CMTime;
-    setReversePlaybackEndTime(): void;
+    setReversePlaybackEndTime(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389656-canstepforward
-    canStepForward(): BOOL;
-    setCanStepForward(): void;
+    canStepForward(): boolean;
+    setCanStepForward(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1386796-canstepbackward
-    canStepBackward(): BOOL;
-    setCanStepBackward(): void;
+    canStepBackward(): boolean;
+    setCanStepBackward(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1387968-stepbycount
     stepByCount(stepCount: NSInteger):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1387418-seektotime
-    seekToTime_completionHandler(time: CMTime, completionHandler: BOOL):void;
+    seekToTime_completionHandler(time: CMTime, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1387753-seektotime
-    seekToTime_toleranceBefore_toleranceAfter_completionHandler(time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: BOOL):void;
+    seekToTime_toleranceBefore_toleranceAfter_completionHandler(time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389877-seektodate
-    seekToDate_completionHandler(date: NSDate, completionHandler: BOOL):BOOL;
+    seekToDate_completionHandler(date: NSDate, completionHandler: boolean):boolean;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388316-cancelpendingseeks
     cancelPendingSeeks():void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1390153-seektotime
@@ -3033,41 +3054,41 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1385620-seektotime
     seekToTime_toleranceBefore_toleranceAfter(time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389067-seektodate
-    seekToDate(date: NSDate):BOOL;
+    seekToDate(date: NSDate):boolean;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1387230-currenttime
     currentTime():CMTime;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1386188-currentdate
     currentDate():NSDate;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389386-duration
     duration(): CMTime;
-    setDuration(): void;
+    setDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1387605-timebase
     timebase(): CMTimebaseRef;
-    setTimebase(): void;
+    setTimebase(value: CMTimebaseRef): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389953-loadedtimeranges
     loadedTimeRanges(): NSValue;
-    setLoadedTimeRanges(): void;
+    setLoadedTimeRanges(value: NSValue): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1386155-seekabletimeranges
     seekableTimeRanges(): NSValue;
-    setSeekableTimeRanges(): void;
+    setSeekableTimeRanges(value: NSValue): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1390348-playbacklikelytokeepup
-    playbackLikelyToKeepUp(): BOOL;
-    setPlaybackLikelyToKeepUp(): void;
+    playbackLikelyToKeepUp(): boolean;
+    setPlaybackLikelyToKeepUp(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388852-playbackbufferfull
-    playbackBufferFull(): BOOL;
-    setPlaybackBufferFull(): void;
+    playbackBufferFull(): boolean;
+    setPlaybackBufferFull(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1386960-playbackbufferempty
-    playbackBufferEmpty(): BOOL;
-    setPlaybackBufferEmpty(): void;
+    playbackBufferEmpty(): boolean;
+    setPlaybackBufferEmpty(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3746589-preferredpeakbitrateforexpensive
     preferredPeakBitRateForExpensiveNetworks(): number;
-    setPreferredPeakBitRateForExpensiveNetworks(): void;
+    setPreferredPeakBitRateForExpensiveNetworks(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3750308-preferredmaximumresolutionforexp
     preferredMaximumResolutionForExpensiveNetworks(): CGSize;
-    setPreferredMaximumResolutionForExpensiveNetworks(): void;
+    setPreferredMaximumResolutionForExpensiveNetworks(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1386519-currentmediaselection
     currentMediaSelection(): AVMediaSelection;
-    setCurrentMediaSelection(): void;
+    setCurrentMediaSelection(value: AVMediaSelection): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389610-selectmediaoption
     selectMediaOption_inMediaSelectionGroup(mediaSelectionOption: AVMediaSelectionOption, mediaSelectionGroup: AVMediaSelectionGroup):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388268-selectmediaoptionautomaticallyin
@@ -3076,114 +3097,114 @@ declare namespace cocoascript {
     selectedMediaOptionInMediaSelectionGroup(mediaSelectionGroup: AVMediaSelectionGroup):AVMediaSelectionOption;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389681-textstylerules
     textStyleRules(): AVTextStyleRule;
-    setTextStyleRules(): void;
+    setTextStyleRules(value: AVTextStyleRule): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388499-accesslog
     accessLog():AVPlayerItemAccessLog;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1387573-errorlog
     errorLog():AVPlayerItemErrorLog;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3229855-automaticallypreservestimeoffset
-    automaticallyPreservesTimeOffsetFromLive(): BOOL;
-    setAutomaticallyPreservesTimeOffsetFromLive(): void;
+    automaticallyPreservesTimeOffsetFromLive(): boolean;
+    setAutomaticallyPreservesTimeOffsetFromLive(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3227883-recommendedtimeoffsetfromlive
     recommendedTimeOffsetFromLive(): CMTime;
-    setRecommendedTimeOffsetFromLive(): void;
+    setRecommendedTimeOffsetFromLive(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3227882-configuredtimeoffsetfromlive
     configuredTimeOffsetFromLive(): CMTime;
-    setConfiguredTimeOffsetFromLive(): void;
+    setConfiguredTimeOffsetFromLive(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388962-presentationsize
     presentationSize(): CGSize;
-    setPresentationSize(): void;
+    setPresentationSize(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/2867324-preferredmaximumresolution
     preferredMaximumResolution(): CGSize;
-    setPreferredMaximumResolution(): void;
+    setPreferredMaximumResolution(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/2868499-videoaperturemode
     videoApertureMode(): AVVideoApertureMode;
-    setVideoApertureMode(): void;
+    setVideoApertureMode(value: AVVideoApertureMode): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3656127-appliesperframehdrdisplaymetadat
-    appliesPerFrameHDRDisplayMetadata(): BOOL;
-    setAppliesPerFrameHDRDisplayMetadata(): void;
+    appliesPerFrameHDRDisplayMetadata(): boolean;
+    setAppliesPerFrameHDRDisplayMetadata(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388818-videocomposition
     videoComposition(): AVVideoComposition;
-    setVideoComposition(): void;
+    setVideoComposition(value: AVVideoComposition): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1390669-customvideocompositor
     customVideoCompositor(): AVVideoCompositing;
-    setCustomVideoCompositor(): void;
+    setCustomVideoCompositor(value: AVVideoCompositing): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1385726-seekingwaitsforvideocompositionr
-    seekingWaitsForVideoCompositionRendering(): BOOL;
-    setSeekingWaitsForVideoCompositionRendering(): void;
+    seekingWaitsForVideoCompositionRendering(): boolean;
+    setSeekingWaitsForVideoCompositionRendering(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388037-audiomix
     audioMix(): AVAudioMix;
-    setAudioMix(): void;
+    setAudioMix(value: AVAudioMix): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1385855-audiotimepitchalgorithm
     audioTimePitchAlgorithm(): AVAudioTimePitchAlgorithm;
-    setAudioTimePitchAlgorithm(): void;
+    setAudioTimePitchAlgorithm(value: AVAudioTimePitchAlgorithm): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat
     allowedAudioSpatializationFormats(): AVAudioSpatializationFormats;
-    setAllowedAudioSpatializationFormats(): void;
+    setAllowedAudioSpatializationFormats(value: AVAudioSpatializationFormats): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed
-    audioSpatializationAllowed(): BOOL;
-    setAudioSpatializationAllowed(): void;
+    audioSpatializationAllowed(): boolean;
+    setAudioSpatializationAllowed(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389090-outputs
     outputs(): AVPlayerItemOutput;
-    setOutputs(): void;
+    setOutputs(value: AVPlayerItemOutput): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389782-addoutput
     addOutput(output: AVPlayerItemOutput):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388756-removeoutput
     removeOutput(output: AVPlayerItemOutput):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1624161-mediadatacollectors
     mediaDataCollectors(): AVPlayerItemMediaDataCollector;
-    setMediaDataCollectors(): void;
+    setMediaDataCollectors(value: AVPlayerItemMediaDataCollector): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1624164-addmediadatacollector
     addMediaDataCollector(collector: AVPlayerItemMediaDataCollector):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1624163-removemediadatacollector
     removeMediaDataCollector(collector: AVPlayerItemMediaDataCollector):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388541-preferredpeakbitrate
     preferredPeakBitRate(): number;
-    setPreferredPeakBitRate(): void;
+    setPreferredPeakBitRate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1643630-preferredforwardbufferduration
     preferredForwardBufferDuration(): NSTimeInterval;
-    setPreferredForwardBufferDuration(): void;
+    setPreferredForwardBufferDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388752-canusenetworkresourcesforlivestr
-    canUseNetworkResourcesForLiveStreamingWhilePaused(): BOOL;
-    setCanUseNetworkResourcesForLiveStreamingWhilePaused(): void;
+    canUseNetworkResourcesForLiveStreamingWhilePaused(): boolean;
+    setCanUseNetworkResourcesForLiveStreamingWhilePaused(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1627626-navigationmarkergroups
     navigationMarkerGroups(): AVNavigationMarkersGroup;
-    setNavigationMarkerGroups(): void;
+    setNavigationMarkerGroups(value: AVNavigationMarkersGroup): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1627628-interstitialtimeranges
     interstitialTimeRanges(): AVInterstitialTimeRange;
-    setInterstitialTimeRanges(): void;
+    setInterstitialTimeRanges(value: AVInterstitialTimeRange): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1650942-nextcontentproposal
     nextContentProposal(): AVContentProposal;
-    setNextContentProposal(): void;
+    setNextContentProposal(value: AVContentProposal): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3152863-requestplaybackrestrictionsautho
     requestPlaybackRestrictionsAuthorization(completion: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3152862-cancelplaybackrestrictionsauthor
     cancelPlaybackRestrictionsAuthorizationRequest():void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388458-contentauthorizedforplayback
-    contentAuthorizedForPlayback(): BOOL;
-    setContentAuthorizedForPlayback(): void;
+    contentAuthorizedForPlayback(): boolean;
+    setContentAuthorizedForPlayback(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1386106-authorizationrequiredforplayback
-    authorizationRequiredForPlayback(): BOOL;
-    setAuthorizationRequiredForPlayback(): void;
+    authorizationRequiredForPlayback(): boolean;
+    setAuthorizationRequiredForPlayback(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389929-applicationauthorizedforplayback
-    applicationAuthorizedForPlayback(): BOOL;
-    setApplicationAuthorizedForPlayback(): void;
+    applicationAuthorizedForPlayback(): boolean;
+    setApplicationAuthorizedForPlayback(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1390600-requestcontentauthorizationasync
     requestContentAuthorizationAsynchronouslyWithTimeoutInterval_completionHandler(timeoutInterval: NSTimeInterval, handler: void):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1389746-contentauthorizationrequeststatu
     contentAuthorizationRequestStatus(): AVContentAuthorizationStatus;
-    setContentAuthorizationRequestStatus(): void;
+    setContentAuthorizationRequestStatus(value: AVContentAuthorizationStatus): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1387726-cancelcontentauthorizationreques
     cancelContentAuthorizationRequest():void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1627766-externalsubtitleoptionlanguages
     externalSubtitleOptionLanguages(): string | cocoascript.NSString;
-    setExternalSubtitleOptionLanguages(): void;
+    setExternalSubtitleOptionLanguages(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1627765-selectedexternalsubtitleoptionla
     selectedExternalSubtitleOptionLanguage(): string | cocoascript.NSString;
-    setSelectedExternalSubtitleOptionLanguage(): void;
+    setSelectedExternalSubtitleOptionLanguage(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/1388177-asset
     asset(): AVAsset;
-    setAsset(): void;
+    setAsset(value: AVAsset): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3861797-copy
     copy():AVPlayerItem;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3861798-copywithzone
@@ -3214,85 +3235,85 @@ declare namespace cocoascript {
   interface AVPlayerItemAccessLogEvent extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1388643-uri
     URI(): string | cocoascript.NSString;
-    setURI(): void;
+    setURI(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1390315-serveraddress
     serverAddress(): string | cocoascript.NSString;
-    setServerAddress(): void;
+    setServerAddress(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1388076-numberofserveraddresschanges
     numberOfServerAddressChanges(): NSInteger;
-    setNumberOfServerAddressChanges(): void;
+    setNumberOfServerAddressChanges(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1388549-mediarequestswwan
     mediaRequestsWWAN(): NSInteger;
-    setMediaRequestsWWAN(): void;
+    setMediaRequestsWWAN(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1387370-transferduration
     transferDuration(): NSTimeInterval;
-    setTransferDuration(): void;
+    setTransferDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1387305-numberofbytestransferred
     numberOfBytesTransferred(): number;
-    setNumberOfBytesTransferred(): void;
+    setNumberOfBytesTransferred(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1388357-numberofmediarequests
     numberOfMediaRequests(): NSInteger;
-    setNumberOfMediaRequests(): void;
+    setNumberOfMediaRequests(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1390502-playbackstartdate
     playbackStartDate(): NSDate;
-    setPlaybackStartDate(): void;
+    setPlaybackStartDate(value: NSDate): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1388462-playbacksessionid
     playbackSessionID(): string | cocoascript.NSString;
-    setPlaybackSessionID(): void;
+    setPlaybackSessionID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1385922-playbackstartoffset
     playbackStartOffset(): NSTimeInterval;
-    setPlaybackStartOffset(): void;
+    setPlaybackStartOffset(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1387218-playbacktype
     playbackType(): string | cocoascript.NSString;
-    setPlaybackType(): void;
+    setPlaybackType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1389138-startuptime
     startupTime(): NSTimeInterval;
-    setStartupTime(): void;
+    setStartupTime(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1388200-durationwatched
     durationWatched(): NSTimeInterval;
-    setDurationWatched(): void;
+    setDurationWatched(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1388647-numberofdroppedvideoframes
     numberOfDroppedVideoFrames(): NSInteger;
-    setNumberOfDroppedVideoFrames(): void;
+    setNumberOfDroppedVideoFrames(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1387712-numberofstalls
     numberOfStalls(): NSInteger;
-    setNumberOfStalls(): void;
+    setNumberOfStalls(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1588090-numberofsegmentsdownloaded
     numberOfSegmentsDownloaded(): NSInteger;
-    setNumberOfSegmentsDownloaded(): void;
+    setNumberOfSegmentsDownloaded(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1388147-segmentsdownloadedduration
     segmentsDownloadedDuration(): NSTimeInterval;
-    setSegmentsDownloadedDuration(): void;
+    setSegmentsDownloadedDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1389213-downloadoverdue
     downloadOverdue(): NSInteger;
-    setDownloadOverdue(): void;
+    setDownloadOverdue(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1386094-observedbitratestandarddeviation
     observedBitrateStandardDeviation(): number;
-    setObservedBitrateStandardDeviation(): void;
+    setObservedBitrateStandardDeviation(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1386714-observedmaxbitrate
     observedMaxBitrate(): number;
-    setObservedMaxBitrate(): void;
+    setObservedMaxBitrate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1390173-observedminbitrate
     observedMinBitrate(): number;
-    setObservedMinBitrate(): void;
+    setObservedMinBitrate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1390645-switchbitrate
     switchBitrate(): number;
-    setSwitchBitrate(): void;
+    setSwitchBitrate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1388123-indicatedbitrate
     indicatedBitrate(): number;
-    setIndicatedBitrate(): void;
+    setIndicatedBitrate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1390804-observedbitrate
     observedBitrate(): number;
-    setObservedBitrate(): void;
+    setObservedBitrate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1643590-averageaudiobitrate
     averageAudioBitrate(): number;
-    setAverageAudioBitrate(): void;
+    setAverageAudioBitrate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1643592-averagevideobitrate
     averageVideoBitrate(): number;
-    setAverageVideoBitrate(): void;
+    setAverageVideoBitrate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslogevent/1872546-indicatedaveragebitrate
     indicatedAverageBitrate(): number;
-    setIndicatedAverageBitrate(): void;
+    setIndicatedAverageBitrate(value: number): void;
     //
     alloc():AVPlayerItemAccessLogEvent;
     //
@@ -3309,12 +3330,12 @@ declare namespace cocoascript {
   interface AVPlayerItemAccessLog extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslog/1387406-events
     events(): AVPlayerItemAccessLogEvent;
-    setEvents(): void;
+    setEvents(value: AVPlayerItemAccessLogEvent): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslog/1386892-extendedlogdata
     extendedLogData():NSData;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemaccesslog/1390863-extendedlogdatastringencoding
     extendedLogDataStringEncoding(): NSStringEncoding;
-    setExtendedLogDataStringEncoding(): void;
+    setExtendedLogDataStringEncoding(value: NSStringEncoding): void;
     //
     alloc():AVPlayerItemAccessLog;
     //
@@ -3331,25 +3352,25 @@ declare namespace cocoascript {
   interface AVPlayerItemErrorLogEvent extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avplayeritemerrorlogevent/1388416-date
     date(): NSDate;
-    setDate(): void;
+    setDate(value: NSDate): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemerrorlogevent/1389302-uri
     URI(): string | cocoascript.NSString;
-    setURI(): void;
+    setURI(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemerrorlogevent/1385797-serveraddress
     serverAddress(): string | cocoascript.NSString;
-    setServerAddress(): void;
+    setServerAddress(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemerrorlogevent/1385934-playbacksessionid
     playbackSessionID(): string | cocoascript.NSString;
-    setPlaybackSessionID(): void;
+    setPlaybackSessionID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemerrorlogevent/1387875-errorstatuscode
     errorStatusCode(): NSInteger;
-    setErrorStatusCode(): void;
+    setErrorStatusCode(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemerrorlogevent/1388603-errordomain
     errorDomain(): string | cocoascript.NSString;
-    setErrorDomain(): void;
+    setErrorDomain(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemerrorlogevent/1388011-errorcomment
     errorComment(): string | cocoascript.NSString;
-    setErrorComment(): void;
+    setErrorComment(value: string | cocoascript.NSString): void;
     //
     alloc():AVPlayerItemErrorLogEvent;
     //
@@ -3366,12 +3387,12 @@ declare namespace cocoascript {
   interface AVPlayerItemErrorLog extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avplayeritemerrorlog/1387637-events
     events(): AVPlayerItemErrorLogEvent;
-    setEvents(): void;
+    setEvents(value: AVPlayerItemErrorLogEvent): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemerrorlog/1389100-extendedlogdata
     extendedLogData():NSData;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemerrorlog/1387271-extendedlogdatastringencoding
     extendedLogDataStringEncoding(): NSStringEncoding;
-    setExtendedLogDataStringEncoding(): void;
+    setExtendedLogDataStringEncoding(value: NSStringEncoding): void;
     //
     alloc():AVPlayerItemErrorLog;
     //
@@ -3398,105 +3419,105 @@ declare namespace cocoascript {
     photoSettingsWithRawPixelFormatType_rawFileType_processedFormat_processedFileType(rawPixelFormatType: any, rawFileType: AVFileType, processedFormat: AVCapturePhotoSettings, processedFileType: AVFileType):AVCapturePhotoSettings;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1648783-format
     format(): id;
-    setFormat(): void;
+    setFormat(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2873970-processedfiletype
     processedFileType(): AVFileType;
-    setProcessedFileType(): void;
+    setProcessedFileType(value: AVFileType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2873895-rawfiletype
     rawFileType(): AVFileType;
-    setRawFileType(): void;
+    setRawFileType(value: AVFileType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1648768-rawphotopixelformattype
     rawPhotoPixelFormatType(): any;
-    setRawPhotoPixelFormatType(): void;
+    setRawPhotoPixelFormatType(value: any): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1778655-photosettingsfromphotosettings
     photoSettingsFromPhotoSettings(photoSettings: AVCapturePhotoSettings):AVCapturePhotoSettings;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1648767-uniqueid
     uniqueID(): number;
-    setUniqueID(): void;
+    setUniqueID(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1648696-previewphotoformat
     previewPhotoFormat(): id;
-    setPreviewPhotoFormat(): void;
+    setPreviewPhotoFormat(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1778629-availablepreviewphotopixelformat
     availablePreviewPhotoPixelFormatTypes(): NSNumber;
-    setAvailablePreviewPhotoPixelFormatTypes(): void;
+    setAvailablePreviewPhotoPixelFormatTypes(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2873905-embeddedthumbnailphotoformat
     embeddedThumbnailPhotoFormat(): id;
-    setEmbeddedThumbnailPhotoFormat(): void;
+    setEmbeddedThumbnailPhotoFormat(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/3019549-availablerawembeddedthumbnailpho
     availableRawEmbeddedThumbnailPhotoCodecTypes(): AVVideoCodecType;
-    setAvailableRawEmbeddedThumbnailPhotoCodecTypes(): void;
+    setAvailableRawEmbeddedThumbnailPhotoCodecTypes(value: AVVideoCodecType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/3019550-rawembeddedthumbnailphotoformat
     rawEmbeddedThumbnailPhotoFormat(): id;
-    setRawEmbeddedThumbnailPhotoFormat(): void;
+    setRawEmbeddedThumbnailPhotoFormat(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2873907-availableembeddedthumbnailphotoc
     availableEmbeddedThumbnailPhotoCodecTypes(): AVVideoCodecType;
-    setAvailableEmbeddedThumbnailPhotoCodecTypes(): void;
+    setAvailableEmbeddedThumbnailPhotoCodecTypes(value: AVVideoCodecType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1648760-flashmode
     flashMode(): AVCaptureFlashMode;
-    setFlashMode(): void;
+    setFlashMode(value: AVCaptureFlashMode): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/3183000-photoqualityprioritization
     photoQualityPrioritization(): AVCapturePhotoQualityPrioritization;
-    setPhotoQualityPrioritization(): void;
+    setPhotoQualityPrioritization(value: AVCapturePhotoQualityPrioritization): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2968220-autoredeyereductionenabled
-    autoRedEyeReductionEnabled(): BOOL;
-    setAutoRedEyeReductionEnabled(): void;
+    autoRedEyeReductionEnabled(): boolean;
+    setAutoRedEyeReductionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1648666-highresolutionphotoenabled
-    highResolutionPhotoEnabled(): BOOL;
-    setHighResolutionPhotoEnabled(): void;
+    highResolutionPhotoEnabled(): boolean;
+    setHighResolutionPhotoEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2890247-cameracalibrationdatadeliveryena
-    cameraCalibrationDataDeliveryEnabled(): BOOL;
-    setCameraCalibrationDataDeliveryEnabled(): void;
+    cameraCalibrationDataDeliveryEnabled(): boolean;
+    setCameraCalibrationDataDeliveryEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/3566332-autocontentawaredistortioncorrec
-    autoContentAwareDistortionCorrectionEnabled(): BOOL;
-    setAutoContentAwareDistortionCorrectionEnabled(): void;
+    autoContentAwareDistortionCorrectionEnabled(): boolean;
+    setAutoContentAwareDistortionCorrectionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/3192192-autovirtualdevicefusionenabled
-    autoVirtualDeviceFusionEnabled(): BOOL;
-    setAutoVirtualDeviceFusionEnabled(): void;
+    autoVirtualDeviceFusionEnabled(): boolean;
+    setAutoVirtualDeviceFusionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/3192193-virtualdeviceconstituentphotodel
     virtualDeviceConstituentPhotoDeliveryEnabledDevices(): AVCaptureDevice;
-    setVirtualDeviceConstituentPhotoDeliveryEnabledDevices(): void;
+    setVirtualDeviceConstituentPhotoDeliveryEnabledDevices(value: AVCaptureDevice): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1648710-autostillimagestabilizationenabl
-    autoStillImageStabilizationEnabled(): BOOL;
-    setAutoStillImageStabilizationEnabled(): void;
+    autoStillImageStabilizationEnabled(): boolean;
+    setAutoStillImageStabilizationEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2726862-autodualcamerafusionenabled
-    autoDualCameraFusionEnabled(): BOOL;
-    setAutoDualCameraFusionEnabled(): void;
+    autoDualCameraFusionEnabled(): boolean;
+    setAutoDualCameraFusionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2873917-dualcameradualphotodeliveryenabl
-    dualCameraDualPhotoDeliveryEnabled(): BOOL;
-    setDualCameraDualPhotoDeliveryEnabled(): void;
+    dualCameraDualPhotoDeliveryEnabled(): boolean;
+    setDualCameraDualPhotoDeliveryEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1648681-livephotomoviefileurl
     livePhotoMovieFileURL(): NSURL;
-    setLivePhotoMovieFileURL(): void;
+    setLivePhotoMovieFileURL(value: NSURL): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/1648731-livephotomoviemetadata
     livePhotoMovieMetadata(): AVMetadataItem;
-    setLivePhotoMovieMetadata(): void;
+    setLivePhotoMovieMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2866564-livephotovideocodectype
     livePhotoVideoCodecType(): AVVideoCodecType;
-    setLivePhotoVideoCodecType(): void;
+    setLivePhotoVideoCodecType(value: AVVideoCodecType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2866562-depthdatadeliveryenabled
-    depthDataDeliveryEnabled(): BOOL;
-    setDepthDataDeliveryEnabled(): void;
+    depthDataDeliveryEnabled(): boolean;
+    setDepthDataDeliveryEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2873915-embedsdepthdatainphoto
-    embedsDepthDataInPhoto(): BOOL;
-    setEmbedsDepthDataInPhoto(): void;
+    embedsDepthDataInPhoto(): boolean;
+    setEmbedsDepthDataInPhoto(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2881293-depthdatafiltered
-    depthDataFiltered(): BOOL;
-    setDepthDataFiltered(): void;
+    depthDataFiltered(): boolean;
+    setDepthDataFiltered(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2977532-portraiteffectsmattedeliveryenab
-    portraitEffectsMatteDeliveryEnabled(): BOOL;
-    setPortraitEffectsMatteDeliveryEnabled(): void;
+    portraitEffectsMatteDeliveryEnabled(): boolean;
+    setPortraitEffectsMatteDeliveryEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2977531-embedsportraiteffectsmatteinphot
-    embedsPortraitEffectsMatteInPhoto(): BOOL;
-    setEmbedsPortraitEffectsMatteInPhoto(): void;
+    embedsPortraitEffectsMatteInPhoto(): boolean;
+    setEmbedsPortraitEffectsMatteInPhoto(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/3153013-embedssemanticsegmentationmattes
-    embedsSemanticSegmentationMattesInPhoto(): BOOL;
-    setEmbedsSemanticSegmentationMattesInPhoto(): void;
+    embedsSemanticSegmentationMattesInPhoto(): boolean;
+    setEmbedsSemanticSegmentationMattesInPhoto(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/3153014-enabledsemanticsegmentationmatte
     enabledSemanticSegmentationMatteTypes(): AVSemanticSegmentationMatteType;
-    setEnabledSemanticSegmentationMatteTypes(): void;
+    setEnabledSemanticSegmentationMatteTypes(value: AVSemanticSegmentationMatteType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/2875951-metadata
     metadata(): id;
-    setMetadata(): void;
+    setMetadata(value: id): void;
     //
     alloc():AVCapturePhotoSettings;
     //
@@ -3513,10 +3534,10 @@ declare namespace cocoascript {
   interface AVAssetDownloadStorageManagementPolicy extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetdownloadstoragemanagementpolicy/2865559-expirationdate
     expirationDate(): NSDate;
-    setExpirationDate(): void;
+    setExpirationDate(value: NSDate): void;
     // https://developer.apple.com/documentation/avfoundation/avassetdownloadstoragemanagementpolicy/2865565-priority
     priority(): AVAssetDownloadedAssetEvictionPriority;
-    setPriority(): void;
+    setPriority(value: AVAssetDownloadedAssetEvictionPriority): void;
     //
     alloc():AVAssetDownloadStorageManagementPolicy;
     //
@@ -3531,6 +3552,12 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avassetdownloadcontentconfiguration
    */
   interface AVAssetDownloadContentConfiguration extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloadcontentconfiguration/3750225-variantqualifiers
+    variantQualifiers(): AVAssetVariantQualifier;
+    setVariantQualifiers(value: AVAssetVariantQualifier): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloadcontentconfiguration/3750224-mediaselections
+    mediaSelections(): AVMediaSelection;
+    setMediaSelections(value: AVMediaSelection): void;
     //
     alloc():AVAssetDownloadContentConfiguration;
     //
@@ -3545,6 +3572,16 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avassetvariantqualifier
    */
   interface AVAssetVariantQualifier extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantqualifier/3750228-assetvariantqualifierwithvariant
+    assetVariantQualifierWithVariant(variant: AVAssetVariant):AVAssetVariantQualifier;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantqualifier/3750227-assetvariantqualifierwithpredica
+    assetVariantQualifierWithPredicate(predicate: NSPredicate):AVAssetVariantQualifier;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantqualifier/3750230-predicateforchannelcount
+    predicateForChannelCount_mediaSelectionOption_operatorType(channelCount: NSInteger, mediaSelectionOption: AVMediaSelectionOption, operatorType: NSPredicateOperatorType):NSPredicate;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantqualifier/3857561-predicateforpresentationheight
+    predicateForPresentationHeight_operatorType(height: CGFloat, operatorType: NSPredicateOperatorType):NSPredicate;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantqualifier/3857562-predicateforpresentationwidth
+    predicateForPresentationWidth_operatorType(width: CGFloat, operatorType: NSPredicateOperatorType):NSPredicate;
     //
     alloc():AVAssetVariantQualifier;
     //
@@ -3560,55 +3597,58 @@ declare namespace cocoascript {
    */
   interface AVSampleCursor extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1389152-stepbydecodetime
-    stepByDecodeTime_wasPinned(deltaDecodeTime: CMTime, outWasPinned: BOOL):CMTime;
+    stepByDecodeTime_wasPinned(deltaDecodeTime: CMTime, outWasPinned: boolean):CMTime;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1387680-stepbypresentationtime
-    stepByPresentationTime_wasPinned(deltaPresentationTime: CMTime, outWasPinned: BOOL):CMTime;
+    stepByPresentationTime_wasPinned(deltaPresentationTime: CMTime, outWasPinned: boolean):CMTime;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1389606-stepindecodeorderbycount
     stepInDecodeOrderByCount(stepCount: number):number;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1388834-stepinpresentationorderbycount
     stepInPresentationOrderByCount(stepCount: number):number;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1388412-decodetimestamp
     decodeTimeStamp(): CMTime;
-    setDecodeTimeStamp(): void;
+    setDecodeTimeStamp(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1389740-presentationtimestamp
     presentationTimeStamp(): CMTime;
-    setPresentationTimeStamp(): void;
+    setPresentationTimeStamp(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1387481-currentchunkinfo
     currentChunkInfo(): AVSampleCursorChunkInfo;
-    setCurrentChunkInfo(): void;
+    setCurrentChunkInfo(value: AVSampleCursorChunkInfo): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1390385-currentchunkstoragerange
     currentChunkStorageRange(): AVSampleCursorStorageRange;
-    setCurrentChunkStorageRange(): void;
+    setCurrentChunkStorageRange(value: AVSampleCursorStorageRange): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1388328-currentchunkstorageurl
     currentChunkStorageURL(): NSURL;
-    setCurrentChunkStorageURL(): void;
+    setCurrentChunkStorageURL(value: NSURL): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1390766-currentsampledependencyinfo
     currentSampleDependencyInfo(): AVSampleCursorDependencyInfo;
-    setCurrentSampleDependencyInfo(): void;
+    setCurrentSampleDependencyInfo(value: AVSampleCursorDependencyInfo): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1389833-currentsampleduration
     currentSampleDuration(): CMTime;
-    setCurrentSampleDuration(): void;
+    setCurrentSampleDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1387806-currentsampleindexinchunk
     currentSampleIndexInChunk(): number;
-    setCurrentSampleIndexInChunk(): void;
+    setCurrentSampleIndexInChunk(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1386359-currentsamplestoragerange
     currentSampleStorageRange(): AVSampleCursorStorageRange;
-    setCurrentSampleStorageRange(): void;
+    setCurrentSampleStorageRange(value: AVSampleCursorStorageRange): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1390776-currentsamplesyncinfo
     currentSampleSyncInfo(): AVSampleCursorSyncInfo;
-    setCurrentSampleSyncInfo(): void;
+    setCurrentSampleSyncInfo(value: AVSampleCursorSyncInfo): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1390703-copycurrentsampleformatdescripti
     copyCurrentSampleFormatDescription():CMFormatDescriptionRef;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/3131266-currentsampleaudiodependencyinfo
     currentSampleAudioDependencyInfo(): AVSampleCursorAudioDependencyInfo;
-    setCurrentSampleAudioDependencyInfo(): void;
+    setCurrentSampleAudioDependencyInfo(value: AVSampleCursorAudioDependencyInfo): void;
+    // https://developer.apple.com/documentation/avfoundation/avsamplecursor/3752983-currentsampledependencyattachmen
+    currentSampleDependencyAttachments(): NSDictionary;
+    setCurrentSampleDependencyAttachments(value: NSDictionary): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1386558-sampleswithearlierdecodetimestam
-    samplesWithEarlierDecodeTimeStampsMayHaveLaterPresentationTimeStampsThanCursor(cursor: AVSampleCursor):BOOL;
+    samplesWithEarlierDecodeTimeStampsMayHaveLaterPresentationTimeStampsThanCursor(cursor: AVSampleCursor):boolean;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1390029-sampleswithlaterdecodetimestamps
-    samplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor(cursor: AVSampleCursor):BOOL;
+    samplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor(cursor: AVSampleCursor):boolean;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1386446-samplesrequiredfordecoderrefresh
     samplesRequiredForDecoderRefresh(): NSInteger;
-    setSamplesRequiredForDecoderRefresh(): void;
+    setSamplesRequiredForDecoderRefresh(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplecursor/1390608-comparepositionindecodeorderwith
     comparePositionInDecodeOrderWithPositionOfCursor(cursor: AVSampleCursor):NSComparisonResult;
     //
@@ -3625,6 +3665,37 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avcaption
    */
   interface AVCaption extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752820-initwithtext
+    initWithText_timeRange(text: string | cocoascript.NSString, timeRange: CMTimeRange):AVCaption;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752823-text
+    text(): string | cocoascript.NSString;
+    setText(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752827-timerange
+    timeRange(): CMTimeRange;
+    setTimeRange(value: CMTimeRange): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752821-region
+    region(): AVCaptionRegion;
+    setRegion(value: AVCaptionRegion): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752818-fontstyleatindex
+    fontStyleAtIndex_range(index: NSInteger, outRange: NSRange):AVCaptionFontStyle;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752819-fontweightatindex
+    fontWeightAtIndex_range(index: NSInteger, outRange: NSRange):AVCaptionFontWeight;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752817-decorationatindex
+    decorationAtIndex_range(index: NSInteger, outRange: NSRange):AVCaptionDecoration;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752825-textcoloratindex
+    textColorAtIndex_range(index: NSInteger, outRange: NSRange):CGColorRef;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752816-backgroundcoloratindex
+    backgroundColorAtIndex_range(index: NSInteger, outRange: NSRange):CGColorRef;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752824-textalignment
+    textAlignment(): AVCaptionTextAlignment;
+    setTextAlignment(value: AVCaptionTextAlignment): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752815-animation
+    animation(): AVCaptionAnimation;
+    setAnimation(value: AVCaptionAnimation): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752822-rubyatindex
+    rubyAtIndex_range(index: NSInteger, outRange: NSRange):AVCaptionRuby;
+    // https://developer.apple.com/documentation/avfoundation/avcaption/3752826-textcombineatindex
+    textCombineAtIndex_range(index: NSInteger, outRange: NSRange):AVCaptionTextCombine;
     //
     alloc():AVCaption;
     //
@@ -3639,6 +3710,39 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avcaptionregion
    */
   interface AVCaptionRegion extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3857626-appleitttopregion
+    appleITTTopRegion(): AVCaptionRegion;
+    setAppleITTTopRegion(value: AVCaptionRegion): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3857623-appleittbottomregion
+    appleITTBottomRegion(): AVCaptionRegion;
+    setAppleITTBottomRegion(value: AVCaptionRegion): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3857624-appleittleftregion
+    appleITTLeftRegion(): AVCaptionRegion;
+    setAppleITTLeftRegion(value: AVCaptionRegion): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3857625-appleittrightregion
+    appleITTRightRegion(): AVCaptionRegion;
+    setAppleITTRightRegion(value: AVCaptionRegion): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3857629-subriptextbottomregion
+    subRipTextBottomRegion(): AVCaptionRegion;
+    setSubRipTextBottomRegion(value: AVCaptionRegion): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3752853-identifier
+    identifier(): string | cocoascript.NSString;
+    setIdentifier(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3857627-origin
+    origin(): AVCaptionPoint;
+    setOrigin(value: AVCaptionPoint): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3857628-size
+    size(): AVCaptionSize;
+    setSize(value: AVCaptionSize): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3752850-displayalignment
+    displayAlignment(): AVCaptionRegionDisplayAlignment;
+    setDisplayAlignment(value: AVCaptionRegionDisplayAlignment): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3752855-scroll
+    scroll(): AVCaptionRegionScroll;
+    setScroll(value: AVCaptionRegionScroll): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionregion/3752857-writingmode
+    writingMode(): AVCaptionRegionWritingMode;
+    setWritingMode(value: AVCaptionRegionWritingMode): void;
     //
     alloc():AVCaptionRegion;
     //
@@ -3647,12 +3751,31 @@ declare namespace cocoascript {
 }
 
 declare const AVCaptionRegion: cocoascript.AVCaptionRegion;
+// https://developer.apple.com/documentation/avfoundation/3857618-avcaptiondimensionmake
+declare const AVCaptionDimensionMake: cocoascript.AVCaptionUnitsType;
+// https://developer.apple.com/documentation/avfoundation/3857622-avcaptionpointmake
+declare const AVCaptionPointMake: cocoascript.AVCaptionDimension;
+// https://developer.apple.com/documentation/avfoundation/3857633-avcaptionsizemake
+declare const AVCaptionSizeMake: cocoascript.AVCaptionDimension;
 declare namespace cocoascript {
   /**
    * An object that presents ruby characters.
    * https://developer.apple.com/documentation/avfoundation/avcaptionruby
    */
   interface AVCaptionRuby extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaptionruby/3752870-initwithtext
+    initWithText(text: string | cocoascript.NSString):AVCaptionRuby;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionruby/3752871-initwithtext
+    initWithText_position_alignment(text: string | cocoascript.NSString, position: AVCaptionRubyPosition, alignment: AVCaptionRubyAlignment):AVCaptionRuby;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionruby/3752873-text
+    text(): string | cocoascript.NSString;
+    setText(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionruby/3752872-position
+    position(): AVCaptionRubyPosition;
+    setPosition(value: AVCaptionRubyPosition): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionruby/3752869-alignment
+    alignment(): AVCaptionRubyAlignment;
+    setAlignment(value: AVCaptionRubyAlignment): void;
     //
     alloc():AVCaptionRuby;
     //
@@ -3667,6 +3790,15 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avcaptionrendererscene
    */
   interface AVCaptionRendererScene extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaptionrendererscene/3752975-timerange
+    timeRange(): CMTimeRange;
+    setTimeRange(value: CMTimeRange): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionrendererscene/3752973-hasactivecaptions
+    hasActiveCaptions(): boolean;
+    setHasActiveCaptions(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionrendererscene/3752974-needsperiodicrefresh
+    needsPeriodicRefresh(): boolean;
+    setNeedsPeriodicRefresh(value: boolean): void;
     //
     alloc():AVCaptionRendererScene;
     //
@@ -3683,10 +3815,10 @@ declare namespace cocoascript {
   interface AVCompositionTrackFormatDescriptionReplacement extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcompositiontrackformatdescriptionreplacement/3180002-originalformatdescription
     originalFormatDescription(): CMFormatDescriptionRef;
-    setOriginalFormatDescription(): void;
+    setOriginalFormatDescription(value: CMFormatDescriptionRef): void;
     // https://developer.apple.com/documentation/avfoundation/avcompositiontrackformatdescriptionreplacement/3180003-replacementformatdescription
     replacementFormatDescription(): CMFormatDescriptionRef;
-    setReplacementFormatDescription(): void;
+    setReplacementFormatDescription(value: CMFormatDescriptionRef): void;
     //
     alloc():AVCompositionTrackFormatDescriptionReplacement;
     //
@@ -3707,24 +3839,29 @@ declare namespace cocoascript {
     URLAssetWithURL_options(URL: NSURL, options: AVURLAsset):AVURLAsset;
     // https://developer.apple.com/documentation/avfoundation/avurlasset/1388127-url
     URL(): NSURL;
-    setURL(): void;
+    setURL(value: NSURL): void;
+    // https://developer.apple.com/documentation/avfoundation/avurlasset/3746535-findcompatibletrackforcompositio
+    findCompatibleTrackForCompositionTrack_completionHandler(compositionTrack: AVCompositionTrack, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avurlasset/1386800-audiovisualtypes
     audiovisualTypes():AVFileType;
     // https://developer.apple.com/documentation/avfoundation/avurlasset/1390006-audiovisualmimetypes
     audiovisualMIMETypes():NSString;
     // https://developer.apple.com/documentation/avfoundation/avurlasset/1387142-isplayableextendedmimetype
-    isPlayableExtendedMIMEType(extendedMIMEType: string | cocoascript.NSString):BOOL;
+    isPlayableExtendedMIMEType(extendedMIMEType: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/avfoundation/avurlasset/1389118-resourceloader
     resourceLoader(): AVAssetResourceLoader;
-    setResourceLoader(): void;
+    setResourceLoader(value: AVAssetResourceLoader): void;
+    // https://developer.apple.com/documentation/avfoundation/avurlasset/3746536-variants
+    variants(): AVAssetVariant;
+    setVariants(value: AVAssetVariant): void;
     // https://developer.apple.com/documentation/avfoundation/avurlasset/1389650-compatibletrackforcompositiontra
     compatibleTrackForCompositionTrack(compositionTrack: AVCompositionTrack):AVAssetTrack;
     // https://developer.apple.com/documentation/avfoundation/avurlasset/2806807-mayrequirecontentkeysformediadat
-    mayRequireContentKeysForMediaDataProcessing(): BOOL;
-    setMayRequireContentKeysForMediaDataProcessing(): void;
+    mayRequireContentKeysForMediaDataProcessing(): boolean;
+    setMayRequireContentKeysForMediaDataProcessing(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avurlasset/1823714-assetcache
     assetCache(): AVAssetCache;
-    setAssetCache(): void;
+    setAssetCache(value: AVAssetCache): void;
     //
     alloc():AVURLAsset;
     //
@@ -3753,9 +3890,15 @@ declare namespace cocoascript {
   interface AVFragmentedAsset extends AVURLAsset {
     // https://developer.apple.com/documentation/avfoundation/avfragmentedasset/1508700-fragmentedassetwithurl
     fragmentedAssetWithURL_options(URL: NSURL, options: AVFragmentedAsset):AVFragmentedAsset;
+    // https://developer.apple.com/documentation/avfoundation/avfragmentedasset/3746532-loadtrackwithtrackid
+    loadTrackWithTrackID_completionHandler(trackID: CMPersistentTrackID, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avfragmentedasset/3746534-loadtrackswithmediatype
+    loadTracksWithMediaType_completionHandler(mediaType: AVMediaType, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avfragmentedasset/3746533-loadtrackswithmediacharacteristi
+    loadTracksWithMediaCharacteristic_completionHandler(mediaCharacteristic: AVMediaCharacteristic, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedasset/1387937-tracks
     tracks(): AVFragmentedAssetTrack;
-    setTracks(): void;
+    setTracks(value: AVFragmentedAssetTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedasset/1385712-trackwithtrackid
     trackWithTrackID(trackID: CMPersistentTrackID):AVFragmentedAssetTrack;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedasset/1387253-trackswithmediatype
@@ -3796,10 +3939,10 @@ declare namespace cocoascript {
     fragmentedAssetMinderWithAsset_mindingInterval(asset: AVFragmentMinding, mindingInterval: NSTimeInterval):AVFragmentedAssetMinder;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedassetminder/1390760-mindinginterval
     mindingInterval(): NSTimeInterval;
-    setMindingInterval(): void;
+    setMindingInterval(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedassetminder/1390319-assets
     assets(): AVFragmentMinding;
-    setAssets(): void;
+    setAssets(value: AVFragmentMinding): void;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedassetminder/1387483-addfragmentedasset
     addFragmentedAsset(asset: AVFragmentMinding):void;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedassetminder/1389856-removefragmentedasset
@@ -3819,8 +3962,8 @@ declare namespace cocoascript {
    */
   interface AVFragmentMinding {
     // https://developer.apple.com/documentation/avfoundation/avfragmentminding/1390175-associatedwithfragmentminder
-    associatedWithFragmentMinder(): BOOL;
-    setAssociatedWithFragmentMinder(): void;
+    associatedWithFragmentMinder(): boolean;
+    setAssociatedWithFragmentMinder(value: boolean): void;
   }
 }
 declare namespace cocoascript {
@@ -3833,37 +3976,37 @@ declare namespace cocoascript {
     metadataItem():AVMutableMetadataItem;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1386688-identifier
     identifier(): AVMetadataIdentifier;
-    setIdentifier(): void;
+    setIdentifier(value: AVMetadataIdentifier): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1386776-key
     key(): NSCopying;
-    setKey(): void;
+    setKey(value: NSCopying): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1385655-keyspace
     keySpace(): AVMetadataKeySpace;
-    setKeySpace(): void;
+    setKeySpace(value: AVMetadataKeySpace): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1388296-value
     value(): NSCopying;
-    setValue(): void;
+    setValue(value: NSCopying): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1390397-extraattributes
     extraAttributes(): id;
-    setExtraAttributes(): void;
+    setExtraAttributes(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1389471-datatype
     dataType(): string | cocoascript.NSString;
-    setDataType(): void;
+    setDataType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1389990-time
     time(): CMTime;
-    setTime(): void;
+    setTime(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1389966-startdate
     startDate(): NSDate;
-    setStartDate(): void;
+    setStartDate(value: NSDate): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1389980-duration
     duration(): CMTime;
-    setDuration(): void;
+    setDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1389292-locale
     locale(): NSLocale;
-    setLocale(): void;
+    setLocale(value: NSLocale): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemetadataitem/1386664-extendedlanguagetag
     extendedLanguageTag(): string | cocoascript.NSString;
-    setExtendedLanguageTag(): void;
+    setExtendedLanguageTag(value: string | cocoascript.NSString): void;
     //
     alloc():AVMutableMetadataItem;
     //
@@ -3904,83 +4047,83 @@ declare namespace cocoascript {
     exportSessionWithAsset_presetName(asset: AVAsset, presetName: string | cocoascript.NSString):AVAssetExportSession;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1390467-presetname
     presetName(): string | cocoascript.NSString;
-    setPresetName(): void;
+    setPresetName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1387150-allexportpresets
     allExportPresets():NSString;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1390567-exportpresetscompatiblewithasset
     exportPresetsCompatibleWithAsset(asset: AVAsset):NSString;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1385821-determinecompatibilityofexportpr
-    determineCompatibilityOfExportPreset_withAsset_outputFileType_completionHandler(presetName: string | cocoascript.NSString, asset: AVAsset, outputFileType: AVFileType, handler: BOOL):void;
+    determineCompatibilityOfExportPreset_withAsset_outputFileType_completionHandler(presetName: string | cocoascript.NSString, asset: AVAsset, outputFileType: AVFileType, handler: boolean):void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith
     determineCompatibleFileTypesWithCompletionHandler(handler: AVFileType):void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1389970-outputurl
     outputURL(): NSURL;
-    setOutputURL(): void;
+    setOutputURL(value: NSURL): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1387110-outputfiletype
     outputFileType(): AVFileType;
-    setOutputFileType(): void;
+    setOutputFileType(value: AVFileType): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1388762-supportedfiletypes
     supportedFileTypes(): AVFileType;
-    setSupportedFileTypes(): void;
+    setSupportedFileTypes(value: AVFileType): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1388728-timerange
     timeRange(): CMTimeRange;
-    setTimeRange(): void;
+    setTimeRange(value: CMTimeRange): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1622333-filelengthlimit
     fileLengthLimit(): number;
-    setFileLengthLimit(): void;
+    setFileLengthLimit(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1390593-shouldoptimizefornetworkuse
-    shouldOptimizeForNetworkUse(): BOOL;
-    setShouldOptimizeForNetworkUse(): void;
+    shouldOptimizeForNetworkUse(): boolean;
+    setShouldOptimizeForNetworkUse(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1388797-canperformmultiplepassesoversour
-    canPerformMultiplePassesOverSourceMediaData(): BOOL;
-    setCanPerformMultiplePassesOverSourceMediaData(): void;
+    canPerformMultiplePassesOverSourceMediaData(): boolean;
+    setCanPerformMultiplePassesOverSourceMediaData(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1388699-directoryfortemporaryfiles
     directoryForTemporaryFiles(): NSURL;
-    setDirectoryForTemporaryFiles(): void;
+    setDirectoryForTemporaryFiles(value: NSURL): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1390453-metadata
     metadata(): AVMetadataItem;
-    setMetadata(): void;
+    setMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1390226-metadataitemfilter
     metadataItemFilter(): AVMetadataItemFilter;
-    setMetadataItemFilter(): void;
+    setMetadataItemFilter(value: AVMetadataItemFilter): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1389477-videocomposition
     videoComposition(): AVVideoComposition;
-    setVideoComposition(): void;
+    setVideoComposition(value: AVVideoComposition): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1388288-customvideocompositor
     customVideoCompositor(): AVVideoCompositing;
-    setCustomVideoCompositor(): void;
+    setCustomVideoCompositor(value: AVVideoCompositing): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1388155-audiomix
     audioMix(): AVAudioMix;
-    setAudioMix(): void;
+    setAudioMix(value: AVAudioMix): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1385835-audiotimepitchalgorithm
     audioTimePitchAlgorithm(): AVAudioTimePitchAlgorithm;
-    setAudioTimePitchAlgorithm(): void;
+    setAudioTimePitchAlgorithm(value: AVAudioTimePitchAlgorithm): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1388005-exportasynchronouslywithcompleti
     exportAsynchronouslyWithCompletionHandler(handler: void):void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1387794-cancelexport
     cancelExport():void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1390528-status
     status(): AVAssetExportSessionStatus;
-    setStatus(): void;
+    setStatus(value: AVAssetExportSessionStatus): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1387530-progress
     progress(): number;
-    setProgress(): void;
+    setProgress(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1385936-error
     error(): NSError;
-    setError(): void;
+    setError(value: NSError): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/3042921-estimateoutputfilelengthwithcomp
     estimateOutputFileLengthWithCompletionHandler(handler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1389181-estimatedoutputfilelength
     estimatedOutputFileLength(): number;
-    setEstimatedOutputFileLength(): void;
+    setEstimatedOutputFileLength(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/3042920-estimatemaximumdurationwithcompl
     estimateMaximumDurationWithCompletionHandler(handler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1622332-maxduration
     maxDuration(): CMTime;
-    setMaxDuration(): void;
+    setMaxDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avassetexportsession/1385690-asset
     asset(): AVAsset;
-    setAsset(): void;
+    setAsset(value: AVAsset): void;
     //
     alloc():AVAssetExportSession;
     //
@@ -4001,28 +4144,28 @@ declare namespace cocoascript {
     assetImageGeneratorWithAsset(asset: AVAsset):AVAssetImageGenerator;
     // https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1390689-asset
     asset(): AVAsset;
-    setAsset(): void;
+    setAsset(value: AVAsset): void;
     // https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1387560-maximumsize
     maximumSize(): CGSize;
-    setMaximumSize(): void;
+    setMaximumSize(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1390616-appliespreferredtracktransform
-    appliesPreferredTrackTransform(): BOOL;
-    setAppliesPreferredTrackTransform(): void;
+    appliesPreferredTrackTransform(): boolean;
+    setAppliesPreferredTrackTransform(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1390571-requestedtimetolerancebefore
     requestedTimeToleranceBefore(): CMTime;
-    setRequestedTimeToleranceBefore(): void;
+    setRequestedTimeToleranceBefore(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1387751-requestedtimetoleranceafter
     requestedTimeToleranceAfter(): CMTime;
-    setRequestedTimeToleranceAfter(): void;
+    setRequestedTimeToleranceAfter(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1389314-aperturemode
     apertureMode(): AVAssetImageGeneratorApertureMode;
-    setApertureMode(): void;
+    setApertureMode(value: AVAssetImageGeneratorApertureMode): void;
     // https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1390189-videocomposition
     videoComposition(): AVVideoComposition;
-    setVideoComposition(): void;
+    setVideoComposition(value: AVVideoComposition): void;
     // https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1386469-customvideocompositor
     customVideoCompositor(): AVVideoCompositing;
-    setCustomVideoCompositor(): void;
+    setCustomVideoCompositor(value: AVVideoCompositing): void;
     // https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1387303-copycgimageattime
     copyCGImageAtTime_actualTime_error(requestedTime: CMTime, actualTime: CMTime, outError: NSError):CGImageRef;
     // https://developer.apple.com/documentation/avfoundation/avassetimagegenerator/1388100-generatecgimagesasynchronouslyfo
@@ -4047,13 +4190,13 @@ declare namespace cocoascript {
     setDelegate_queue(delegate: AVAssetResourceLoaderDelegate, delegateQueue: dispatch_queue_t):void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloader/1387913-delegate
     delegate(): AVAssetResourceLoaderDelegate;
-    setDelegate(): void;
+    setDelegate(value: AVAssetResourceLoaderDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloader/1387678-delegatequeue
     delegateQueue(): dispatch_queue_t;
-    setDelegateQueue(): void;
+    setDelegateQueue(value: dispatch_queue_t): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloader/1386939-preloadseligiblecontentkeys
-    preloadsEligibleContentKeys(): BOOL;
-    setPreloadsEligibleContentKeys(): void;
+    preloadsEligibleContentKeys(): boolean;
+    setPreloadsEligibleContentKeys(value: boolean): void;
     //
     alloc():AVAssetResourceLoader;
     //
@@ -4070,38 +4213,38 @@ declare namespace cocoascript {
   interface AVAssetResourceLoadingRequest extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1386220-request
     request(): NSURLRequest;
-    setRequest(): void;
+    setRequest(value: NSURLRequest): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/2966509-requestor
     requestor(): AVAssetResourceLoadingRequestor;
-    setRequestor(): void;
+    setRequestor(value: AVAssetResourceLoadingRequestor): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1386116-streamingcontentkeyrequestdatafo
     streamingContentKeyRequestDataForApp_contentIdentifier_options_error(appIdentifier: NSData, contentIdentifier: NSData, options: AVAssetResourceLoadingRequest, outError: NSError):NSData;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1623676-persistentcontentkeyfromkeyvendo
     persistentContentKeyFromKeyVendorResponse_options_error(keyVendorResponse: NSData, options: AVAssetResourceLoadingRequest, outError: NSError):NSData;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1390340-contentinformationrequest
     contentInformationRequest(): AVAssetResourceLoadingContentInformationRequest;
-    setContentInformationRequest(): void;
+    setContentInformationRequest(value: AVAssetResourceLoadingContentInformationRequest): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1388779-datarequest
     dataRequest(): AVAssetResourceLoadingDataRequest;
-    setDataRequest(): void;
+    setDataRequest(value: AVAssetResourceLoadingDataRequest): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1390854-redirect
     redirect(): NSURLRequest;
-    setRedirect(): void;
+    setRedirect(value: NSURLRequest): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1389034-response
     response(): NSURLResponse;
-    setResponse(): void;
+    setResponse(value: NSURLResponse): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1623677-finishloadingwithresponse
     finishLoadingWithResponse_data_redirect(response: NSURLResponse, data: NSData, redirect: NSURLRequest):void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1388359-finishloading
     finishLoading():void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1389518-cancelled
-    cancelled(): BOOL;
-    setCancelled(): void;
+    cancelled(): boolean;
+    setCancelled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1390491-finishloadingwitherror
     finishLoadingWithError(error: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequest/1389270-finished
-    finished(): BOOL;
-    setFinished(): void;
+    finished(): boolean;
+    setFinished(value: boolean): void;
     //
     alloc():AVAssetResourceLoadingRequest;
     //
@@ -4131,8 +4274,8 @@ declare namespace cocoascript {
    */
   interface AVAssetResourceLoadingRequestor extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingrequestor/2966511-providesexpiredsessionreports
-    providesExpiredSessionReports(): BOOL;
-    setProvidesExpiredSessionReports(): void;
+    providesExpiredSessionReports(): boolean;
+    setProvidesExpiredSessionReports(value: boolean): void;
     //
     alloc():AVAssetResourceLoadingRequestor;
     //
@@ -4151,16 +4294,16 @@ declare namespace cocoascript {
     respondWithData(data: NSData):void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingdatarequest/1387720-requestedlength
     requestedLength(): NSInteger;
-    setRequestedLength(): void;
+    setRequestedLength(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingdatarequest/1388428-requestedoffset
     requestedOffset(): number;
-    setRequestedOffset(): void;
+    setRequestedOffset(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingdatarequest/1385945-currentoffset
     currentOffset(): number;
-    setCurrentOffset(): void;
+    setCurrentOffset(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingdatarequest/1386864-requestsalldatatoendofresource
-    requestsAllDataToEndOfResource(): BOOL;
-    setRequestsAllDataToEndOfResource(): void;
+    requestsAllDataToEndOfResource(): boolean;
+    setRequestsAllDataToEndOfResource(value: boolean): void;
     //
     alloc():AVAssetResourceLoadingDataRequest;
     //
@@ -4177,19 +4320,19 @@ declare namespace cocoascript {
   interface AVAssetResourceLoadingContentInformationRequest extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingcontentinformationrequest/2936886-allowedcontenttypes
     allowedContentTypes(): string | cocoascript.NSString;
-    setAllowedContentTypes(): void;
+    setAllowedContentTypes(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingcontentinformationrequest/1388529-contenttype
     contentType(): string | cocoascript.NSString;
-    setContentType(): void;
+    setContentType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingcontentinformationrequest/1389390-contentlength
     contentLength(): number;
-    setContentLength(): void;
+    setContentLength(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingcontentinformationrequest/1386054-byterangeaccesssupported
-    byteRangeAccessSupported(): BOOL;
-    setByteRangeAccessSupported(): void;
+    byteRangeAccessSupported(): boolean;
+    setByteRangeAccessSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassetresourceloadingcontentinformationrequest/1390683-renewaldate
     renewalDate(): NSDate;
-    setRenewalDate(): void;
+    setRenewalDate(value: NSDate): void;
     //
     alloc():AVAssetResourceLoadingContentInformationRequest;
     //
@@ -4246,25 +4389,25 @@ declare namespace cocoascript {
     availableOutputSettingsPresets():AVOutputSettingsPreset;
     // https://developer.apple.com/documentation/avfoundation/avoutputsettingsassistant/1390842-outputfiletype
     outputFileType(): AVFileType;
-    setOutputFileType(): void;
+    setOutputFileType(value: AVFileType): void;
     // https://developer.apple.com/documentation/avfoundation/avoutputsettingsassistant/1386233-audiosettings
     audioSettings(): id;
-    setAudioSettings(): void;
+    setAudioSettings(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avoutputsettingsassistant/1390673-sourceaudioformat
     sourceAudioFormat(): CMAudioFormatDescriptionRef;
-    setSourceAudioFormat(): void;
+    setSourceAudioFormat(value: CMAudioFormatDescriptionRef): void;
     // https://developer.apple.com/documentation/avfoundation/avoutputsettingsassistant/1386880-videosettings
     videoSettings(): id;
-    setVideoSettings(): void;
+    setVideoSettings(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avoutputsettingsassistant/1387885-sourcevideoformat
     sourceVideoFormat(): CMVideoFormatDescriptionRef;
-    setSourceVideoFormat(): void;
+    setSourceVideoFormat(value: CMVideoFormatDescriptionRef): void;
     // https://developer.apple.com/documentation/avfoundation/avoutputsettingsassistant/1386812-sourcevideominframeduration
     sourceVideoMinFrameDuration(): CMTime;
-    setSourceVideoMinFrameDuration(): void;
+    setSourceVideoMinFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avoutputsettingsassistant/1387414-sourcevideoaverageframeduration
     sourceVideoAverageFrameDuration(): CMTime;
-    setSourceVideoAverageFrameDuration(): void;
+    setSourceVideoAverageFrameDuration(value: CMTime): void;
     //
     alloc():AVOutputSettingsAssistant;
     //
@@ -4289,13 +4432,13 @@ declare namespace cocoascript {
     playerWithPlayerItem(item: AVPlayerItem):AVPlayer;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1388096-status
     status(): AVPlayerStatus;
-    setStatus(): void;
+    setStatus(value: AVPlayerStatus): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387764-error
     error(): NSError;
-    setError(): void;
+    setError(value: NSError): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387569-currentitem
     currentItem(): AVPlayerItem;
-    setCurrentItem(): void;
+    setCurrentItem(value: AVPlayerItem): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1390806-replacecurrentitemwithplayeritem
     replaceCurrentItemWithPlayerItem(item: AVPlayerItem):void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1386726-play
@@ -4304,19 +4447,22 @@ declare namespace cocoascript {
     pause():void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1388846-rate
     rate(): number;
-    setRate(): void;
+    setRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayer/3750305-playbackcoordinator
+    playbackCoordinator(): AVPlayerPlaybackCoordinator;
+    setPlaybackCoordinator(value: AVPlayerPlaybackCoordinator): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1385953-seektotime
     seekToTime(time: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387018-seektotime
-    seekToTime_completionHandler(time: CMTime, completionHandler: BOOL):void;
+    seekToTime_completionHandler(time: CMTime, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387741-seektotime
     seekToTime_toleranceBefore_toleranceAfter(time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1388493-seektotime
-    seekToTime_toleranceBefore_toleranceAfter_completionHandler(time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: BOOL):void;
+    seekToTime_toleranceBefore_toleranceAfter_completionHandler(time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1386114-seektodate
     seekToDate(date: NSDate):void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1386108-seektodate
-    seekToDate_completionHandler(date: NSDate, completionHandler: BOOL):void;
+    seekToDate_completionHandler(date: NSDate, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1390404-currenttime
     currentTime():CMTime;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1385829-addperiodictimeobserverforinterv
@@ -4325,90 +4471,96 @@ declare namespace cocoascript {
     addBoundaryTimeObserverForTimes_queue_usingBlock(times: NSValue, queue: dispatch_queue_t, block: void):AVPlayer;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387552-removetimeobserver
     removeTimeObserver(observer: AVPlayer):void;
+    // https://developer.apple.com/documentation/avfoundation/avplayer/3787548-audiovisualbackgroundplaybackpol
+    audiovisualBackgroundPlaybackPolicy(): AVPlayerAudiovisualBackgroundPlaybackPolicy;
+    setAudiovisualBackgroundPlaybackPolicy(value: AVPlayerAudiovisualBackgroundPlaybackPolicy): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1643482-automaticallywaitstominimizestal
-    automaticallyWaitsToMinimizeStalling(): BOOL;
-    setAutomaticallyWaitsToMinimizeStalling(): void;
+    automaticallyWaitsToMinimizeStalling(): boolean;
+    setAutomaticallyWaitsToMinimizeStalling(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1643486-reasonforwaitingtoplay
     reasonForWaitingToPlay(): AVPlayerWaitingReason;
-    setReasonForWaitingToPlay(): void;
+    setReasonForWaitingToPlay(value: AVPlayerWaitingReason): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1643485-timecontrolstatus
     timeControlStatus(): AVPlayerTimeControlStatus;
-    setTimeControlStatus(): void;
+    setTimeControlStatus(value: AVPlayerTimeControlStatus): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1643480-playimmediatelyatrate
     playImmediatelyAtRate(rate: number):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat
     allowedAudioSpatializationFormats(): AVAudioSpatializationFormats;
-    setAllowedAudioSpatializationFormats(): void;
+    setAllowedAudioSpatializationFormats(value: AVAudioSpatializationFormats): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed
-    audioSpatializationAllowed(): BOOL;
-    setAudioSpatializationAllowed(): void;
+    audioSpatializationAllowed(): boolean;
+    setAudioSpatializationAllowed(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387441-allowsexternalplayback
-    allowsExternalPlayback(): BOOL;
-    setAllowsExternalPlayback(): void;
+    allowsExternalPlayback(): boolean;
+    setAllowsExternalPlayback(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1388982-externalplaybackactive
-    externalPlaybackActive(): BOOL;
-    setExternalPlaybackActive(): void;
+    externalPlaybackActive(): boolean;
+    setExternalPlaybackActive(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1624255-usesexternalplaybackwhileexterna
-    usesExternalPlaybackWhileExternalScreenIsActive(): BOOL;
-    setUsesExternalPlaybackWhileExternalScreenIsActive(): void;
+    usesExternalPlaybackWhileExternalScreenIsActive(): boolean;
+    setUsesExternalPlaybackWhileExternalScreenIsActive(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1624251-externalplaybackvideogravity
     externalPlaybackVideoGravity(): AVLayerVideoGravity;
-    setExternalPlaybackVideoGravity(): void;
+    setExternalPlaybackVideoGravity(value: AVLayerVideoGravity): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/3365978-eligibleforhdrplayback
-    eligibleForHDRPlayback(): BOOL;
-    setEligibleForHDRPlayback(): void;
+    eligibleForHDRPlayback(): boolean;
+    setEligibleForHDRPlayback(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/2936889-availablehdrmodes
     availableHDRModes(): AVPlayerHDRMode;
-    setAvailableHDRModes(): void;
+    setAvailableHDRModes(value: AVPlayerHDRMode): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387376-actionatitemend
     actionAtItemEnd(): AVPlayerActionAtItemEnd;
-    setActionAtItemEnd(): void;
+    setActionAtItemEnd(value: AVPlayerActionAtItemEnd): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387178-appliesmediaselectioncriteriaaut
-    appliesMediaSelectionCriteriaAutomatically(): BOOL;
-    setAppliesMediaSelectionCriteriaAutomatically(): void;
+    appliesMediaSelectionCriteriaAutomatically(): boolean;
+    setAppliesMediaSelectionCriteriaAutomatically(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387825-mediaselectioncriteriaformediach
     mediaSelectionCriteriaForMediaCharacteristic(mediaCharacteristic: AVMediaCharacteristic):AVPlayerMediaSelectionCriteria;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1390563-setmediaselectioncriteria
     setMediaSelectionCriteria_forMediaCharacteristic(criteria: AVPlayerMediaSelectionCriteria, mediaCharacteristic: AVMediaCharacteristic):void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1390127-volume
     volume(): number;
-    setVolume(): void;
+    setVolume(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387544-muted
-    muted(): BOOL;
-    setMuted(): void;
+    muted(): boolean;
+    setMuted(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/2990522-preventsdisplaysleepduringvideop
-    preventsDisplaySleepDuringVideoPlayback(): BOOL;
-    setPreventsDisplaySleepDuringVideoPlayback(): void;
+    preventsDisplaySleepDuringVideoPlayback(): boolean;
+    setPreventsDisplaySleepDuringVideoPlayback(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1624254-outputobscuredduetoinsufficiente
-    outputObscuredDueToInsufficientExternalProtection(): BOOL;
-    setOutputObscuredDueToInsufficientExternalProtection(): void;
+    outputObscuredDueToInsufficientExternalProtection(): boolean;
+    setOutputObscuredDueToInsufficientExternalProtection(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1386591-setrate
     setRate_time_atHostTime(rate: number, itemTime: CMTime, hostClockTime: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1389712-prerollatrate
-    prerollAtRate_completionHandler(rate: number, completionHandler: BOOL):void;
+    prerollAtRate_completionHandler(rate: number, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1388260-cancelpendingprerolls
     cancelPendingPrerolls():void;
+    // https://developer.apple.com/documentation/avfoundation/avplayer/3746583-sourceclock
+    sourceClock(): CMClockRef;
+    setSourceClock(value: CMClockRef): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1387066-masterclock
     masterClock(): CMClockRef;
-    setMasterClock(): void;
+    setMasterClock(value: CMClockRef): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1390717-audiooutputdeviceuniqueid
     audioOutputDeviceUniqueID(): string | cocoascript.NSString;
-    setAudioOutputDeviceUniqueID(): void;
+    setAudioOutputDeviceUniqueID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/2942616-preferredvideodecodergpuregistry
     preferredVideoDecoderGPURegistryID(): number;
-    setPreferredVideoDecoderGPURegistryID(): void;
+    setPreferredVideoDecoderGPURegistryID(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1386458-closedcaptiondisplayenabled
-    closedCaptionDisplayEnabled(): BOOL;
-    setClosedCaptionDisplayEnabled(): void;
+    closedCaptionDisplayEnabled(): boolean;
+    setClosedCaptionDisplayEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1624258-allowsairplayvideo
-    allowsAirPlayVideo(): BOOL;
-    setAllowsAirPlayVideo(): void;
+    allowsAirPlayVideo(): boolean;
+    setAllowsAirPlayVideo(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1624259-airplayvideoactive
-    airPlayVideoActive(): BOOL;
-    setAirPlayVideoActive(): void;
+    airPlayVideoActive(): boolean;
+    setAirPlayVideoActive(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayer/1624256-usesairplayvideowhileairplayscre
-    usesAirPlayVideoWhileAirPlayScreenIsActive(): BOOL;
-    setUsesAirPlayVideoWhileAirPlayScreenIsActive(): void;
+    usesAirPlayVideoWhileAirPlayScreenIsActive(): boolean;
+    setUsesAirPlayVideoWhileAirPlayScreenIsActive(value: boolean): void;
     //
     alloc():AVPlayer;
     //
@@ -4432,7 +4584,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avqueueplayer/1389318-advancetonextitem
     advanceToNextItem():void;
     // https://developer.apple.com/documentation/avfoundation/avqueueplayer/1387289-caninsertitem
-    canInsertItem_afterItem(item: AVPlayerItem, afterItem: AVPlayerItem):BOOL;
+    canInsertItem_afterItem(item: AVPlayerItem, afterItem: AVPlayerItem):boolean;
     // https://developer.apple.com/documentation/avfoundation/avqueueplayer/1388543-insertitem
     insertItem_afterItem(item: AVPlayerItem, afterItem: AVPlayerItem):void;
     // https://developer.apple.com/documentation/avfoundation/avqueueplayer/1387400-removeitem
@@ -4461,18 +4613,18 @@ declare namespace cocoascript {
     playerLooperWithPlayer_templateItem(player: AVQueuePlayer, itemToLoop: AVPlayerItem):AVPlayerLooper;
     // https://developer.apple.com/documentation/avfoundation/avplayerlooper/1643631-loopingplayeritems
     loopingPlayerItems(): AVPlayerItem;
-    setLoopingPlayerItems(): void;
+    setLoopingPlayerItems(value: AVPlayerItem): void;
     // https://developer.apple.com/documentation/avfoundation/avplayerlooper/1643629-disablelooping
     disableLooping():void;
     // https://developer.apple.com/documentation/avfoundation/avplayerlooper/1643648-loopcount
     loopCount(): NSInteger;
-    setLoopCount(): void;
+    setLoopCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avplayerlooper/2177060-status
     status(): AVPlayerLooperStatus;
-    setStatus(): void;
+    setStatus(value: AVPlayerLooperStatus): void;
     // https://developer.apple.com/documentation/avfoundation/avplayerlooper/2177064-error
     error(): NSError;
-    setError(): void;
+    setError(value: NSError): void;
     //
     alloc():AVPlayerLooper;
     //
@@ -4494,8 +4646,8 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avplayeritemoutput/1388333-itemtimeforcvtimestamp
     itemTimeForCVTimeStamp(timestamp: CVTimeStamp):CMTime;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemoutput/1386133-suppressesplayerrendering
-    suppressesPlayerRendering(): BOOL;
-    setSuppressesPlayerRendering(): void;
+    suppressesPlayerRendering(): boolean;
+    setSuppressesPlayerRendering(value: boolean): void;
     //
     alloc():AVPlayerItemOutput;
     //
@@ -4518,14 +4670,14 @@ declare namespace cocoascript {
     setDelegate_queue(delegate: AVPlayerItemOutputPullDelegate, delegateQueue: dispatch_queue_t):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemvideooutput/1385827-delegate
     delegate(): AVPlayerItemOutputPullDelegate;
-    setDelegate(): void;
+    setDelegate(value: AVPlayerItemOutputPullDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemvideooutput/1388108-delegatequeue
     delegateQueue(): dispatch_queue_t;
-    setDelegateQueue(): void;
+    setDelegateQueue(value: dispatch_queue_t): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemvideooutput/1386046-requestnotificationofmediadatach
     requestNotificationOfMediaDataChangeWithAdvanceInterval(interval: NSTimeInterval):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemvideooutput/1386444-hasnewpixelbufferforitemtime
-    hasNewPixelBufferForItemTime(itemTime: CMTime):BOOL;
+    hasNewPixelBufferForItemTime(itemTime: CMTime):boolean;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemvideooutput/1386148-copypixelbufferforitemtime
     copyPixelBufferForItemTime_itemTimeForDisplay(itemTime: CMTime, outItemTimeForDisplay: CMTime):CVPixelBufferRef;
     //
@@ -4546,18 +4698,18 @@ declare namespace cocoascript {
     initWithMediaSubtypesForNativeRepresentation(subtypes: NSNumber):AVPlayerItemLegibleOutput;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemlegibleoutput/1385803-textstylingresolution
     textStylingResolution(): AVPlayerItemLegibleOutputTextStylingResolution;
-    setTextStylingResolution(): void;
+    setTextStylingResolution(value: AVPlayerItemLegibleOutputTextStylingResolution): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemlegibleoutput/1387877-delegate
     delegate(): AVPlayerItemLegibleOutputPushDelegate;
-    setDelegate(): void;
+    setDelegate(value: AVPlayerItemLegibleOutputPushDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemlegibleoutput/1386204-setdelegate
     setDelegate_queue(delegate: AVPlayerItemLegibleOutputPushDelegate, delegateQueue: dispatch_queue_t):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemlegibleoutput/1388098-advanceintervalfordelegateinvoca
     advanceIntervalForDelegateInvocation(): NSTimeInterval;
-    setAdvanceIntervalForDelegateInvocation(): void;
+    setAdvanceIntervalForDelegateInvocation(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemlegibleoutput/1386275-delegatequeue
     delegateQueue(): dispatch_queue_t;
-    setDelegateQueue(): void;
+    setDelegateQueue(value: dispatch_queue_t): void;
     //
     alloc():AVPlayerItemLegibleOutput;
     //
@@ -4576,13 +4728,13 @@ declare namespace cocoascript {
     initWithIdentifiers(identifiers: string | cocoascript.NSString):AVPlayerItemMetadataOutput;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemmetadataoutput/1387372-advanceintervalfordelegateinvoca
     advanceIntervalForDelegateInvocation(): NSTimeInterval;
-    setAdvanceIntervalForDelegateInvocation(): void;
+    setAdvanceIntervalForDelegateInvocation(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemmetadataoutput/1387200-delegate
     delegate(): AVPlayerItemMetadataOutputPushDelegate;
-    setDelegate(): void;
+    setDelegate(value: AVPlayerItemMetadataOutputPushDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemmetadataoutput/1387265-delegatequeue
     delegateQueue(): dispatch_queue_t;
-    setDelegateQueue(): void;
+    setDelegateQueue(value: dispatch_queue_t): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemmetadataoutput/1385728-setdelegate
     setDelegate_queue(delegate: AVPlayerItemMetadataOutputPushDelegate, delegateQueue: dispatch_queue_t):void;
     //
@@ -4603,19 +4755,19 @@ declare namespace cocoascript {
     playerLayerWithPlayer(player: AVPlayer):AVPlayerLayer;
     // https://developer.apple.com/documentation/avfoundation/avplayerlayer/1385745-videorect
     videoRect(): CGRect;
-    setVideoRect(): void;
+    setVideoRect(value: CGRect): void;
     // https://developer.apple.com/documentation/avfoundation/avplayerlayer/1388915-videogravity
     videoGravity(): AVLayerVideoGravity;
-    setVideoGravity(): void;
+    setVideoGravity(value: AVLayerVideoGravity): void;
     // https://developer.apple.com/documentation/avfoundation/avplayerlayer/1389748-readyfordisplay
-    readyForDisplay(): BOOL;
-    setReadyForDisplay(): void;
+    readyForDisplay(): boolean;
+    setReadyForDisplay(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayerlayer/1390434-player
     player(): AVPlayer;
-    setPlayer(): void;
+    setPlayer(value: AVPlayer): void;
     // https://developer.apple.com/documentation/avfoundation/avplayerlayer/1390055-pixelbufferattributes
     pixelBufferAttributes(): id;
-    setPixelBufferAttributes(): void;
+    setPixelBufferAttributes(value: id): void;
     //
     alloc():AVPlayerLayer;
     //
@@ -4634,7 +4786,7 @@ declare namespace cocoascript {
     synchronizedLayerWithPlayerItem(playerItem: AVPlayerItem):AVSynchronizedLayer;
     // https://developer.apple.com/documentation/avfoundation/avsynchronizedlayer/1385679-playeritem
     playerItem(): AVPlayerItem;
-    setPlayerItem(): void;
+    setPlayerItem(value: AVPlayerItem): void;
     //
     alloc():AVSynchronizedLayer;
     //
@@ -4649,6 +4801,26 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator
    */
   interface AVPlaybackCoordinator extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator/3750287-participantlimitforwaitingoutsus
+    participantLimitForWaitingOutSuspensionsWithReason(reason: AVCoordinatedPlaybackSuspensionReason):NSInteger;
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator/3750289-setparticipantlimit
+    setParticipantLimit_forWaitingOutSuspensionsWithReason(participantLimit: NSInteger, reason: AVCoordinatedPlaybackSuspensionReason):void;
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator/3750291-suspensionreasonsthattriggerwait
+    suspensionReasonsThatTriggerWaiting(): AVCoordinatedPlaybackSuspensionReason;
+    setSuspensionReasonsThatTriggerWaiting(value: AVCoordinatedPlaybackSuspensionReason): void;
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator/3750288-pausesnapstomediatimeoforiginato
+    pauseSnapsToMediaTimeOfOriginator(): boolean;
+    setPauseSnapsToMediaTimeOfOriginator(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator/3750284-beginsuspensionforreason
+    beginSuspensionForReason(suspensionReason: AVCoordinatedPlaybackSuspensionReason):AVCoordinatedPlaybackSuspension;
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator/3750285-expecteditemtimeathosttime
+    expectedItemTimeAtHostTime(hostClockTime: CMTime):CMTime;
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator/3750290-suspensionreasons
+    suspensionReasons(): AVCoordinatedPlaybackSuspensionReason;
+    setSuspensionReasons(value: AVCoordinatedPlaybackSuspensionReason): void;
+    // https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator/3750286-otherparticipants
+    otherParticipants(): AVCoordinatedPlaybackParticipant;
+    setOtherParticipants(value: AVCoordinatedPlaybackParticipant): void;
     //
     alloc():AVPlaybackCoordinator;
     //
@@ -4663,6 +4835,12 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avplayerplaybackcoordinator
    */
   interface AVPlayerPlaybackCoordinator extends AVPlaybackCoordinator {
+    // https://developer.apple.com/documentation/avfoundation/avplayerplaybackcoordinator/3750302-player
+    player(): AVPlayer;
+    setPlayer(value: AVPlayer): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerplaybackcoordinator/3750301-delegate
+    delegate(): AVPlayerPlaybackCoordinatorDelegate;
+    setDelegate(value: AVPlayerPlaybackCoordinatorDelegate): void;
     //
     alloc():AVPlayerPlaybackCoordinator;
     //
@@ -4677,6 +4855,22 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator
    */
   interface AVDelegatingPlaybackCoordinator extends AVPlaybackCoordinator {
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator/3750256-initwithplaybackcontroldelegate
+    initWithPlaybackControlDelegate(playbackControlDelegate: AVPlaybackCoordinatorPlaybackControlDelegate):AVDelegatingPlaybackCoordinator;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator/3750252-currentitemidentifier
+    currentItemIdentifier(): string | cocoascript.NSString;
+    setCurrentItemIdentifier(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator/3750257-playbackcontroldelegate
+    playbackControlDelegate(): AVPlaybackCoordinatorPlaybackControlDelegate;
+    setPlaybackControlDelegate(value: AVPlaybackCoordinatorPlaybackControlDelegate): void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator/3750250-coordinateratechangetorate
+    coordinateRateChangeToRate_options(rate: number, options: AVDelegatingPlaybackCoordinatorRateChangeOptions):void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator/3750251-coordinateseektotime
+    coordinateSeekToTime_options(time: CMTime, options: AVDelegatingPlaybackCoordinatorSeekOptions):void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator/3750259-transitiontoitemwithidentifier
+    transitionToItemWithIdentifier_proposingInitialTimingBasedOnTimebase(itemIdentifier: string | cocoascript.NSString, snapshotTimebase: CMTimebaseRef):void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinator/3750258-reapplycurrentitemstatetoplaybac
+    reapplyCurrentItemStateToPlaybackControlDelegate():void;
     //
     alloc():AVDelegatingPlaybackCoordinator;
     //
@@ -4691,6 +4885,37 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent
    */
   interface AVPlayerInterstitialEvent extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3820993-interstitialeventwithprimaryitem
+    interstitialEventWithPrimaryItem_identifier_time_templateItems_restrictions_resumptionOffset_playoutLimit_userDefinedAttributes(primaryItem: AVPlayerItem, identifier: string | cocoascript.NSString, time: CMTime, templateItems: AVPlayerItem, restrictions: AVPlayerInterstitialEventRestrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: NSDictionary):AVPlayerInterstitialEvent;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3820992-interstitialeventwithprimaryitem
+    interstitialEventWithPrimaryItem_identifier_date_templateItems_restrictions_resumptionOffset_playoutLimit_userDefinedAttributes(primaryItem: AVPlayerItem, identifier: string | cocoascript.NSString, date: NSDate, templateItems: AVPlayerItem, restrictions: AVPlayerInterstitialEventRestrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: NSDictionary):AVPlayerInterstitialEvent;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3746585-identifier
+    identifier(): string | cocoascript.NSString;
+    setIdentifier(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3820994-userdefinedattributes
+    userDefinedAttributes(): NSDictionary;
+    setUserDefinedAttributes(value: NSDictionary): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3726118-primaryitem
+    primaryItem(): AVPlayerItem;
+    setPrimaryItem(value: AVPlayerItem): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3726121-templateitems
+    templateItems(): AVPlayerItem;
+    setTemplateItems(value: AVPlayerItem): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3726112-date
+    date(): NSDate;
+    setDate(value: NSDate): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3726122-time
+    time(): CMTime;
+    setTime(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3726120-resumptionoffset
+    resumptionOffset(): CMTime;
+    setResumptionOffset(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3746588-playoutlimit
+    playoutLimit(): CMTime;
+    setPlayoutLimit(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/3726119-restrictions
+    restrictions(): AVPlayerInterstitialEventRestrictions;
+    setRestrictions(value: AVPlayerInterstitialEventRestrictions): void;
     //
     alloc():AVPlayerInterstitialEvent;
     //
@@ -4705,6 +4930,15 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventcontroller
    */
   interface AVPlayerInterstitialEventController extends AVPlayerInterstitialEventMonitor {
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventcontroller/3726126-initwithprimaryplayer
+    initWithPrimaryPlayer(primaryPlayer: AVPlayer):AVPlayerInterstitialEventController;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventcontroller/3726127-interstitialeventcontrollerwithp
+    interstitialEventControllerWithPrimaryPlayer(primaryPlayer: AVPlayer):AVPlayerInterstitialEventController;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventcontroller/3726125-events
+    events(): AVPlayerInterstitialEvent;
+    setEvents(value: AVPlayerInterstitialEvent): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventcontroller/3726124-cancelcurrenteventwithresumption
+    cancelCurrentEventWithResumptionOffset(resumptionOffset: CMTime):void;
     //
     alloc():AVPlayerInterstitialEventController;
     //
@@ -4719,6 +4953,22 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventmonitor
    */
   interface AVPlayerInterstitialEventMonitor extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventmonitor/3800565-initwithprimaryplayer
+    initWithPrimaryPlayer(primaryPlayer: AVPlayer):AVPlayerInterstitialEventMonitor;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventmonitor/3800566-interstitialeventmonitorwithprim
+    interstitialEventMonitorWithPrimaryPlayer(primaryPlayer: AVPlayer):AVPlayerInterstitialEventMonitor;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventmonitor/3800563-currentevent
+    currentEvent(): AVPlayerInterstitialEvent;
+    setCurrentEvent(value: AVPlayerInterstitialEvent): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventmonitor/3800564-events
+    events(): AVPlayerInterstitialEvent;
+    setEvents(value: AVPlayerInterstitialEvent): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventmonitor/3800568-primaryplayer
+    primaryPlayer(): AVPlayer;
+    setPrimaryPlayer(value: AVPlayer): void;
+    // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventmonitor/3800567-interstitialplayer
+    interstitialPlayer(): AVQueuePlayer;
+    setInterstitialPlayer(value: AVQueuePlayer): void;
     //
     alloc():AVPlayerInterstitialEventMonitor;
     //
@@ -4755,13 +5005,13 @@ declare namespace cocoascript {
     initWithPrincipalMediaCharacteristics_preferredLanguages_preferredMediaCharacteristics(principalMediaCharacteristics: AVMediaCharacteristic, preferredLanguages: string | cocoascript.NSString, preferredMediaCharacteristics: AVMediaCharacteristic):AVPlayerMediaSelectionCriteria;
     // https://developer.apple.com/documentation/avfoundation/avplayermediaselectioncriteria/1388559-preferredlanguages
     preferredLanguages(): string | cocoascript.NSString;
-    setPreferredLanguages(): void;
+    setPreferredLanguages(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avplayermediaselectioncriteria/1385734-preferredmediacharacteristics
     preferredMediaCharacteristics(): AVMediaCharacteristic;
-    setPreferredMediaCharacteristics(): void;
+    setPreferredMediaCharacteristics(value: AVMediaCharacteristic): void;
     // https://developer.apple.com/documentation/avfoundation/avplayermediaselectioncriteria/3042658-principalmediacharacteristics
     principalMediaCharacteristics(): AVMediaCharacteristic;
-    setPrincipalMediaCharacteristics(): void;
+    setPrincipalMediaCharacteristics(value: AVMediaCharacteristic): void;
     //
     alloc():AVPlayerMediaSelectionCriteria;
     //
@@ -4778,13 +5028,13 @@ declare namespace cocoascript {
   interface AVMetadataGroup extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avmetadatagroup/1389935-items
     items(): AVMetadataItem;
-    setItems(): void;
+    setItems(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadatagroup/1620088-uniqueid
     uniqueID(): string | cocoascript.NSString;
-    setUniqueID(): void;
+    setUniqueID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmetadatagroup/1620087-classifyinglabel
     classifyingLabel(): string | cocoascript.NSString;
-    setClassifyingLabel(): void;
+    setClassifyingLabel(value: string | cocoascript.NSString): void;
     //
     alloc():AVMetadataGroup;
     //
@@ -4801,10 +5051,10 @@ declare namespace cocoascript {
   interface AVMutableTimedMetadataGroup extends AVTimedMetadataGroup {
     // https://developer.apple.com/documentation/avfoundation/avmutabletimedmetadatagroup/1386481-items
     items(): AVMetadataItem;
-    setItems(): void;
+    setItems(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avmutabletimedmetadatagroup/1387595-timerange
     timeRange(): CMTimeRange;
-    setTimeRange(): void;
+    setTimeRange(value: CMTimeRange): void;
     //
     alloc():AVMutableTimedMetadataGroup;
     //
@@ -4821,13 +5071,13 @@ declare namespace cocoascript {
   interface AVMutableDateRangeMetadataGroup extends AVDateRangeMetadataGroup {
     // https://developer.apple.com/documentation/avfoundation/avmutabledaterangemetadatagroup/1388262-items
     items(): AVMetadataItem;
-    setItems(): void;
+    setItems(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avmutabledaterangemetadatagroup/1390555-startdate
     startDate(): NSDate;
-    setStartDate(): void;
+    setStartDate(value: NSDate): void;
     // https://developer.apple.com/documentation/avfoundation/avmutabledaterangemetadatagroup/1387651-enddate
     endDate(): NSDate;
-    setEndDate(): void;
+    setEndDate(value: NSDate): void;
     //
     alloc():AVMutableDateRangeMetadataGroup;
     //
@@ -4862,10 +5112,10 @@ declare namespace cocoascript {
     setDelegate_queue(delegate: AVPlayerItemMetadataCollectorPushDelegate, delegateQueue: dispatch_queue_t):void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemmetadatacollector/1617196-delegate
     delegate(): AVPlayerItemMetadataCollectorPushDelegate;
-    setDelegate(): void;
+    setDelegate(value: AVPlayerItemMetadataCollectorPushDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemmetadatacollector/1617192-delegatequeue
     delegateQueue(): dispatch_queue_t;
-    setDelegateQueue(): void;
+    setDelegateQueue(value: dispatch_queue_t): void;
     //
     alloc():AVPlayerItemMetadataCollector;
     //
@@ -4882,6 +5132,8 @@ declare namespace cocoascript {
   interface AVAssetDownloadURLSession extends NSURLSession {
     // https://developer.apple.com/documentation/avfoundation/avassetdownloadurlsession/1621015-sessionwithconfiguration
     sessionWithConfiguration_assetDownloadDelegate_delegateQueue(configuration: NSURLSessionConfiguration, delegate: AVAssetDownloadDelegate, delegateQueue: NSOperationQueue):AVAssetDownloadURLSession;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloadurlsession/3751761-assetdownloadtaskwithconfigurati
+    assetDownloadTaskWithConfiguration(downloadConfiguration: AVAssetDownloadConfiguration):AVAssetDownloadTask;
     // https://developer.apple.com/documentation/avfoundation/avassetdownloadurlsession/1650938-assetdownloadtaskwithurlasset
     assetDownloadTaskWithURLAsset_assetTitle_assetArtworkData_options(URLAsset: AVURLAsset, title: string | cocoascript.NSString, artworkData: NSData, options: AVAssetDownloadURLSession):AVAssetDownloadTask;
     // https://developer.apple.com/documentation/avfoundation/avassetdownloadurlsession/2897242-aggregateassetdownloadtaskwithur
@@ -4904,16 +5156,16 @@ declare namespace cocoascript {
   interface AVAssetDownloadTask extends NSURLSessionTask {
     // https://developer.apple.com/documentation/avfoundation/avassetdownloadtask/1621024-urlasset
     URLAsset(): AVURLAsset;
-    setURLAsset(): void;
+    setURLAsset(value: AVURLAsset): void;
     // https://developer.apple.com/documentation/avfoundation/avassetdownloadtask/1621026-loadedtimeranges
     loadedTimeRanges(): NSValue;
-    setLoadedTimeRanges(): void;
+    setLoadedTimeRanges(value: NSValue): void;
     // https://developer.apple.com/documentation/avfoundation/avassetdownloadtask/1621014-options
     options(): id;
-    setOptions(): void;
+    setOptions(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avassetdownloadtask/1621022-destinationurl
     destinationURL(): NSURL;
-    setDestinationURL(): void;
+    setDestinationURL(value: NSURL): void;
     //
     alloc():AVAssetDownloadTask;
     //
@@ -4930,7 +5182,7 @@ declare namespace cocoascript {
   interface AVAggregateAssetDownloadTask extends NSURLSessionTask {
     // https://developer.apple.com/documentation/avfoundation/avaggregateassetdownloadtask/2897238-urlasset
     URLAsset(): AVURLAsset;
-    setURLAsset(): void;
+    setURLAsset(value: AVURLAsset): void;
     //
     alloc():AVAggregateAssetDownloadTask;
     //
@@ -4946,8 +5198,8 @@ declare namespace cocoascript {
    */
   interface AVAssetCache extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetcache/1823708-playableoffline
-    playableOffline(): BOOL;
-    setPlayableOffline(): void;
+    playableOffline(): boolean;
+    setPlayableOffline(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassetcache/1823715-mediaselectionoptionsinmediasele
     mediaSelectionOptionsInMediaSelectionGroup(mediaSelectionGroup: AVMediaSelectionGroup):AVMediaSelectionOption;
     //
@@ -4986,10 +5238,10 @@ declare namespace cocoascript {
   interface AVMutableAssetDownloadStorageManagementPolicy extends AVAssetDownloadStorageManagementPolicy {
     // https://developer.apple.com/documentation/avfoundation/avmutableassetdownloadstoragemanagementpolicy/2865564-expirationdate
     expirationDate(): NSDate;
-    setExpirationDate(): void;
+    setExpirationDate(value: NSDate): void;
     // https://developer.apple.com/documentation/avfoundation/avmutableassetdownloadstoragemanagementpolicy/2865558-priority
     priority(): AVAssetDownloadedAssetEvictionPriority;
-    setPriority(): void;
+    setPriority(value: AVAssetDownloadedAssetEvictionPriority): void;
     //
     alloc():AVMutableAssetDownloadStorageManagementPolicy;
     //
@@ -5010,21 +5262,21 @@ declare namespace cocoascript {
     contentKeySessionWithKeySystem_storageDirectoryAtURL(keySystem: AVContentKeySystem, storageURL: NSURL):AVContentKeySession;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/2799167-keysystem
     keySystem(): AVContentKeySystem;
-    setKeySystem(): void;
+    setKeySystem(value: AVContentKeySystem): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/2799203-storageurl
     storageURL(): NSURL;
-    setStorageURL(): void;
+    setStorageURL(value: NSURL): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/2799164-setdelegate
     setDelegate_queue(delegate: AVContentKeySessionDelegate, delegateQueue: dispatch_queue_t):void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/2799191-delegate
     delegate(): AVContentKeySessionDelegate;
-    setDelegate(): void;
+    setDelegate(value: AVContentKeySessionDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/2799178-delegatequeue
     delegateQueue(): dispatch_queue_t;
-    setDelegateQueue(): void;
+    setDelegateQueue(value: dispatch_queue_t): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/2799192-contentkeyrecipients
     contentKeyRecipients(): AVContentKeyRecipient;
-    setContentKeyRecipients(): void;
+    setContentKeyRecipients(value: AVContentKeyRecipient): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/2799174-addcontentkeyrecipient
     addContentKeyRecipient(recipient: AVContentKeyRecipient):void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/2799181-removecontentkeyrecipient
@@ -5039,7 +5291,7 @@ declare namespace cocoascript {
     renewExpiringResponseDataForContentKeyRequest(contentKeyRequest: AVContentKeyRequest):void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/2799189-contentprotectionsessionidentifi
     contentProtectionSessionIdentifier(): NSData;
-    setContentProtectionSessionIdentifier(): void;
+    setContentProtectionSessionIdentifier(value: NSData): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/3089138-invalidatepersistablecontentkey
     invalidatePersistableContentKey_options_completionHandler(persistableContentKeyData: NSData, options: AVContentKeySession, handler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeysession/3089137-invalidateallpersistablecontentk
@@ -5062,6 +5314,9 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avcontentkey
    */
   interface AVContentKey extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcontentkey/3726100-contentkeyspecifier
+    contentKeySpecifier(): AVContentKeySpecifier;
+    setContentKeySpecifier(value: AVContentKeySpecifier): void;
     //
     alloc():AVContentKey;
     //
@@ -5076,6 +5331,19 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avcontentkeyspecifier
    */
   interface AVContentKeySpecifier extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcontentkeyspecifier/3726107-initforkeysystem
+    initForKeySystem_identifier_options(keySystem: AVContentKeySystem, contentKeyIdentifier: AVContentKeySpecifier, options: AVContentKeySpecifier):AVContentKeySpecifier;
+    // https://developer.apple.com/documentation/avfoundation/avcontentkeyspecifier/3726105-contentkeyspecifierforkeysystem
+    contentKeySpecifierForKeySystem_identifier_options(keySystem: AVContentKeySystem, contentKeyIdentifier: AVContentKeySpecifier, options: AVContentKeySpecifier):AVContentKeySpecifier;
+    // https://developer.apple.com/documentation/avfoundation/avcontentkeyspecifier/3726106-identifier
+    identifier(): id;
+    setIdentifier(value: id): void;
+    // https://developer.apple.com/documentation/avfoundation/avcontentkeyspecifier/3726108-keysystem
+    keySystem(): AVContentKeySystem;
+    setKeySystem(value: AVContentKeySystem): void;
+    // https://developer.apple.com/documentation/avfoundation/avcontentkeyspecifier/3726109-options
+    options(): id;
+    setOptions(value: id): void;
     //
     alloc():AVContentKeySpecifier;
     //
@@ -5093,7 +5361,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/2799198-makestreamingcontentkeyrequestda
     makeStreamingContentKeyRequestDataForApp_contentIdentifier_options_completionHandler(appIdentifier: NSData, contentIdentifier: NSData, options: AVContentKeyRequest, handler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/2936887-respondbyrequestingpersistableco
-    respondByRequestingPersistableContentKeyRequestAndReturnError(outError: NSError):BOOL;
+    respondByRequestingPersistableContentKeyRequestAndReturnError(outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/2799165-processcontentkeyresponse
     processContentKeyResponse(keyResponse: AVContentKeyResponse):void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/2799159-processcontentkeyresponseerror
@@ -5102,25 +5370,31 @@ declare namespace cocoascript {
     respondByRequestingPersistableContentKeyRequest():void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/2799205-identifier
     identifier(): id;
-    setIdentifier(): void;
+    setIdentifier(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/2799185-canprovidepersistablecontentkey
-    canProvidePersistableContentKey(): BOOL;
-    setCanProvidePersistableContentKey(): void;
+    canProvidePersistableContentKey(): boolean;
+    setCanProvidePersistableContentKey(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/2799182-error
     error(): NSError;
-    setError(): void;
+    setError(value: NSError): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/2799186-initializationdata
     initializationData(): NSData;
-    setInitializationData(): void;
+    setInitializationData(value: NSData): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/2799193-renewsexpiringresponsedata
-    renewsExpiringResponseData(): BOOL;
-    setRenewsExpiringResponseData(): void;
+    renewsExpiringResponseData(): boolean;
+    setRenewsExpiringResponseData(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/2799190-status
     status(): AVContentKeyRequestStatus;
-    setStatus(): void;
+    setStatus(value: AVContentKeyRequestStatus): void;
+    // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/3726102-contentkey
+    contentKey(): AVContentKey;
+    setContentKey(value: AVContentKey): void;
+    // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/3726103-contentkeyspecifier
+    contentKeySpecifier(): AVContentKeySpecifier;
+    setContentKeySpecifier(value: AVContentKeySpecifier): void;
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequest/3112525-options
     options(): id;
-    setOptions(): void;
+    setOptions(value: id): void;
     //
     alloc():AVContentKeyRequest;
     //
@@ -5177,21 +5451,26 @@ declare namespace cocoascript {
   interface AVSampleBufferRenderSynchronizer extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/2867827-renderers
     renderers(): AVQueuedSampleBufferRendering;
-    setRenderers(): void;
+    setRenderers(value: AVQueuedSampleBufferRendering): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/2867828-addrenderer
     addRenderer(renderer: AVQueuedSampleBufferRendering):void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/2867826-removerenderer
-    removeRenderer_atTime_completionHandler(renderer: AVQueuedSampleBufferRendering, time: CMTime, completionHandler: BOOL):void;
+    removeRenderer_atTime_completionHandler(renderer: AVQueuedSampleBufferRendering, time: CMTime, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/3022467-currenttime
     currentTime():CMTime;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/2867822-timebase
     timebase(): CMTimebaseRef;
-    setTimebase(): void;
+    setTimebase(value: CMTimebaseRef): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/2867823-rate
     rate(): number;
-    setRate(): void;
+    setRate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/2867821-setrate
     setRate_time(rate: number, time: CMTime):void;
+    // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/3726157-setrate
+    setRate_time_atHostTime(rate: number, time: CMTime, hostTime: CMTime):void;
+    // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/3726156-delaysratechangeuntilhassufficie
+    delaysRateChangeUntilHasSufficientMediaData(): boolean;
+    setDelaysRateChangeUntilHasSufficientMediaData(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/2867825-addperiodictimeobserverforinterv
     addPeriodicTimeObserverForInterval_queue_usingBlock(interval: CMTime, queue: dispatch_queue_t, block: CMTime):AVSampleBufferRenderSynchronizer;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/2867824-addboundarytimeobserverfortimes
@@ -5215,11 +5494,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/1387778-requestmediadatawhenreadyonqueue
     requestMediaDataWhenReadyOnQueue_usingBlock(queue: dispatch_queue_t, block: void):void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/1387317-readyformoremediadata
-    readyForMoreMediaData(): BOOL;
-    setReadyForMoreMediaData(): void;
+    readyForMoreMediaData(): boolean;
+    setReadyForMoreMediaData(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/3563946-requiresflushtoresumedecoding
-    requiresFlushToResumeDecoding(): BOOL;
-    setRequiresFlushToResumeDecoding(): void;
+    requiresFlushToResumeDecoding(): boolean;
+    setRequiresFlushToResumeDecoding(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/1388557-stoprequestingmediadata
     stopRequestingMediaData():void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/1385692-flush
@@ -5228,24 +5507,27 @@ declare namespace cocoascript {
     flushAndRemoveImage():void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/1390569-controltimebase
     controlTimebase(): CMTimebaseRef;
-    setControlTimebase(): void;
+    setControlTimebase(value: CMTimebaseRef): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/1387599-enqueuesamplebuffer
     enqueueSampleBuffer(sampleBuffer: CMSampleBufferRef):void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/1387625-videogravity
     videoGravity(): AVLayerVideoGravity;
-    setVideoGravity(): void;
+    setVideoGravity(value: AVLayerVideoGravity): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/1387837-status
     status(): AVQueuedSampleBufferRenderingStatus;
-    setStatus(): void;
+    setStatus(value: AVQueuedSampleBufferRenderingStatus): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/3081651-preventscapture
-    preventsCapture(): BOOL;
-    setPreventsCapture(): void;
+    preventsCapture(): boolean;
+    setPreventsCapture(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/3088800-preventsdisplaysleepduringvideop
-    preventsDisplaySleepDuringVideoPlayback(): BOOL;
-    setPreventsDisplaySleepDuringVideoPlayback(): void;
+    preventsDisplaySleepDuringVideoPlayback(): boolean;
+    setPreventsDisplaySleepDuringVideoPlayback(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/3726154-outputobscuredduetoinsufficiente
+    outputObscuredDueToInsufficientExternalProtection(): boolean;
+    setOutputObscuredDueToInsufficientExternalProtection(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer/1390739-error
     error(): NSError;
-    setError(): void;
+    setError(value: NSError): void;
     //
     alloc():AVSampleBufferDisplayLayer;
     //
@@ -5266,24 +5548,27 @@ declare namespace cocoascript {
   interface AVSampleBufferAudioRenderer extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer/2866183-status
     status(): AVQueuedSampleBufferRenderingStatus;
-    setStatus(): void;
+    setStatus(value: AVQueuedSampleBufferRenderingStatus): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer/2866181-flushfromsourcetime
-    flushFromSourceTime_completionHandler(time: CMTime, completionHandler: BOOL):void;
+    flushFromSourceTime_completionHandler(time: CMTime, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer/2866180-audiotimepitchalgorithm
     audioTimePitchAlgorithm(): AVAudioTimePitchAlgorithm;
-    setAudioTimePitchAlgorithm(): void;
+    setAudioTimePitchAlgorithm(value: AVAudioTimePitchAlgorithm): void;
+    // https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer/3750310-allowedaudiospatializationformat
+    allowedAudioSpatializationFormats(): AVAudioSpatializationFormats;
+    setAllowedAudioSpatializationFormats(value: AVAudioSpatializationFormats): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer/2866179-volume
     volume(): number;
-    setVolume(): void;
+    setVolume(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer/2866177-muted
-    muted(): BOOL;
-    setMuted(): void;
+    muted(): boolean;
+    setMuted(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer/2866182-audiooutputdeviceuniqueid
     audioOutputDeviceUniqueID(): string | cocoascript.NSString;
-    setAudioOutputDeviceUniqueID(): void;
+    setAudioOutputDeviceUniqueID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer/2866178-error
     error(): NSError;
-    setError(): void;
+    setError(value: NSError): void;
     //
     alloc():AVSampleBufferAudioRenderer;
     //
@@ -5324,25 +5609,25 @@ declare namespace cocoascript {
     initWithStartCursor(startCursor: AVSampleCursor):AVSampleBufferRequest;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrequest/1386442-direction
     direction(): AVSampleBufferRequestDirection;
-    setDirection(): void;
+    setDirection(value: AVSampleBufferRequestDirection): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrequest/1387466-limitcursor
     limitCursor(): AVSampleCursor;
-    setLimitCursor(): void;
+    setLimitCursor(value: AVSampleCursor): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrequest/1385645-maxsamplecount
     maxSampleCount(): NSInteger;
-    setMaxSampleCount(): void;
+    setMaxSampleCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrequest/1387463-mode
     mode(): AVSampleBufferRequestMode;
-    setMode(): void;
+    setMode(value: AVSampleBufferRequestMode): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrequest/1385790-overridetime
     overrideTime(): CMTime;
-    setOverrideTime(): void;
+    setOverrideTime(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrequest/1386251-preferredminsamplecount
     preferredMinSampleCount(): NSInteger;
-    setPreferredMinSampleCount(): void;
+    setPreferredMinSampleCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avsamplebufferrequest/1387398-startcursor
     startCursor(): AVSampleCursor;
-    setStartCursor(): void;
+    setStartCursor(value: AVSampleCursor): void;
     //
     alloc():AVSampleBufferRequest;
     //
@@ -5358,11 +5643,11 @@ declare namespace cocoascript {
    */
   interface AVRouteDetector extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avroutedetector/2915762-routedetectionenabled
-    routeDetectionEnabled(): BOOL;
-    setRouteDetectionEnabled(): void;
+    routeDetectionEnabled(): boolean;
+    setRouteDetectionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avroutedetector/2915760-multipleroutesdetected
-    multipleRoutesDetected(): BOOL;
-    setMultipleRoutesDetected(): void;
+    multipleRoutesDetected(): boolean;
+    setMultipleRoutesDetected(value: boolean): void;
     //
     alloc():AVRouteDetector;
     //
@@ -5379,9 +5664,15 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avcomposition
    */
   interface AVComposition extends AVAsset {
+    // https://developer.apple.com/documentation/avfoundation/avcomposition/3746561-loadtrackwithtrackid
+    loadTrackWithTrackID_completionHandler(trackID: CMPersistentTrackID, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avcomposition/3746563-loadtrackswithmediatype
+    loadTracksWithMediaType_completionHandler(mediaType: AVMediaType, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avcomposition/3746562-loadtrackswithmediacharacteristi
+    loadTracksWithMediaCharacteristic_completionHandler(mediaCharacteristic: AVMediaCharacteristic, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avcomposition/1390165-tracks
     tracks(): AVCompositionTrack;
-    setTracks(): void;
+    setTracks(value: AVCompositionTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avcomposition/1388473-trackwithtrackid
     trackWithTrackID(trackID: CMPersistentTrackID):AVCompositionTrack;
     // https://developer.apple.com/documentation/avfoundation/avcomposition/1386534-trackswithmediatype
@@ -5390,10 +5681,10 @@ declare namespace cocoascript {
     tracksWithMediaCharacteristic(mediaCharacteristic: AVMediaCharacteristic):AVCompositionTrack;
     // https://developer.apple.com/documentation/avfoundation/avcomposition/1387247-naturalsize
     naturalSize(): CGSize;
-    setNaturalSize(): void;
+    setNaturalSize(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avcomposition/1387080-urlassetinitializationoptions
     URLAssetInitializationOptions(): id;
-    setURLAssetInitializationOptions(): void;
+    setURLAssetInitializationOptions(value: id): void;
     //
     alloc():AVComposition;
     //
@@ -5410,12 +5701,12 @@ declare namespace cocoascript {
   interface AVCompositionTrack extends AVAssetTrack {
     // https://developer.apple.com/documentation/avfoundation/avcompositiontrack/1387267-segments
     segments(): AVCompositionTrackSegment;
-    setSegments(): void;
+    setSegments(value: AVCompositionTrackSegment): void;
     // https://developer.apple.com/documentation/avfoundation/avcompositiontrack/2865555-segmentfortracktime
     segmentForTrackTime(trackTime: CMTime):AVCompositionTrackSegment;
     // https://developer.apple.com/documentation/avfoundation/avcompositiontrack/3194194-formatdescriptionreplacements
     formatDescriptionReplacements(): AVCompositionTrackFormatDescriptionReplacement;
-    setFormatDescriptionReplacements(): void;
+    setFormatDescriptionReplacements(value: AVCompositionTrackFormatDescriptionReplacement): void;
     //
     alloc():AVCompositionTrack;
     //
@@ -5440,13 +5731,13 @@ declare namespace cocoascript {
     initWithURL_trackID_sourceTimeRange_targetTimeRange(URL: NSURL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange):AVCompositionTrackSegment;
     // https://developer.apple.com/documentation/avfoundation/avcompositiontracksegment/1386814-sourceurl
     sourceURL(): NSURL;
-    setSourceURL(): void;
+    setSourceURL(value: NSURL): void;
     // https://developer.apple.com/documentation/avfoundation/avcompositiontracksegment/1388326-sourcetrackid
     sourceTrackID(): CMPersistentTrackID;
-    setSourceTrackID(): void;
+    setSourceTrackID(value: CMPersistentTrackID): void;
     // https://developer.apple.com/documentation/avfoundation/avcompositiontracksegment/1389592-empty
-    empty(): BOOL;
-    setEmpty(): void;
+    empty(): boolean;
+    setEmpty(value: boolean): void;
     //
     alloc():AVCompositionTrackSegment;
     //
@@ -5465,9 +5756,15 @@ declare namespace cocoascript {
     compositionWithURLAssetInitializationOptions(URLAssetInitializationOptions: AVMutableComposition):AVMutableComposition;
     // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/1495098-composition
     composition():AVMutableComposition;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/3746564-loadtrackwithtrackid
+    loadTrackWithTrackID_completionHandler(trackID: CMPersistentTrackID, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/3746566-loadtrackswithmediatype
+    loadTracksWithMediaType_completionHandler(mediaType: AVMediaType, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/3746565-loadtrackswithmediacharacteristi
+    loadTracksWithMediaCharacteristic_completionHandler(mediaCharacteristic: AVMediaCharacteristic, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/1389937-tracks
     tracks(): AVMutableCompositionTrack;
-    setTracks(): void;
+    setTracks(value: AVMutableCompositionTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/1390074-trackwithtrackid
     trackWithTrackID(trackID: CMPersistentTrackID):AVMutableCompositionTrack;
     // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/1385724-trackswithmediatype
@@ -5483,14 +5780,14 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/1386710-insertemptytimerange
     insertEmptyTimeRange(timeRange: CMTimeRange):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/1385943-inserttimerange
-    insertTimeRange_ofAsset_atTime_error(timeRange: CMTimeRange, asset: AVAsset, startTime: CMTime, outError: NSError):BOOL;
+    insertTimeRange_ofAsset_atTime_error(timeRange: CMTimeRange, asset: AVAsset, startTime: CMTime, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/1387768-removetimerange
     removeTimeRange(timeRange: CMTimeRange):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/1390549-scaletimerange
     scaleTimeRange_toDuration(timeRange: CMTimeRange, duration: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecomposition/1390424-naturalsize
     naturalSize(): CGSize;
-    setNaturalSize(): void;
+    setNaturalSize(value: CGSize): void;
     //
     alloc():AVMutableComposition;
     //
@@ -5506,32 +5803,32 @@ declare namespace cocoascript {
    */
   interface AVMutableCompositionTrack extends AVCompositionTrack {
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/3334926-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale
     naturalTimeScale(): CMTimeScale;
-    setNaturalTimeScale(): void;
+    setNaturalTimeScale(value: CMTimeScale): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1387192-languagecode
     languageCode(): string | cocoascript.NSString;
-    setLanguageCode(): void;
+    setLanguageCode(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1388866-extendedlanguagetag
     extendedLanguageTag(): string | cocoascript.NSString;
-    setExtendedLanguageTag(): void;
+    setExtendedLanguageTag(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1388304-preferredtransform
     preferredTransform(): CGAffineTransform;
-    setPreferredTransform(): void;
+    setPreferredTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1388649-preferredvolume
     preferredVolume(): number;
-    setPreferredVolume(): void;
+    setPreferredVolume(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1390321-segments
     segments(): AVCompositionTrackSegment;
-    setSegments(): void;
+    setSegments(value: AVCompositionTrackSegment): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1389483-insertemptytimerange
     insertEmptyTimeRange(timeRange: CMTimeRange):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1390691-inserttimerange
-    insertTimeRange_ofTrack_atTime_error(timeRange: CMTimeRange, track: AVAssetTrack, startTime: CMTime, outError: NSError):BOOL;
+    insertTimeRange_ofTrack_atTime_error(timeRange: CMTimeRange, track: AVAssetTrack, startTime: CMTime, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges
-    insertTimeRanges_ofTracks_atTime_error(timeRanges: NSValue, tracks: AVAssetTrack, startTime: CMTime, outError: NSError):BOOL;
+    insertTimeRanges_ofTracks_atTime_error(timeRanges: NSValue, tracks: AVAssetTrack, startTime: CMTime, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1386048-removetimerange
     removeTimeRange(timeRange: CMTimeRange):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1388212-scaletimerange
@@ -5543,7 +5840,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/3180005-replaceformatdescription
     replaceFormatDescription_withFormatDescription(originalFormatDescription: CMFormatDescriptionRef, replacementFormatDescription: CMFormatDescriptionRef):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablecompositiontrack/1388746-validatetracksegments
-    validateTrackSegments_error(trackSegments: AVCompositionTrackSegment, outError: NSError):BOOL;
+    validateTrackSegments_error(trackSegments: AVCompositionTrackSegment, outError: NSError):boolean;
     //
     alloc():AVMutableCompositionTrack;
     //
@@ -5560,16 +5857,16 @@ declare namespace cocoascript {
   interface AVMovieTrack extends AVAssetTrack {
     // https://developer.apple.com/documentation/avfoundation/avmovietrack/1387020-alternategroupid
     alternateGroupID(): NSInteger;
-    setAlternateGroupID(): void;
+    setAlternateGroupID(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avmovietrack/1386868-mediadatastorage
     mediaDataStorage(): AVMediaDataStorage;
-    setMediaDataStorage(): void;
+    setMediaDataStorage(value: AVMediaDataStorage): void;
     // https://developer.apple.com/documentation/avfoundation/avmovietrack/1388187-mediadecodetimerange
     mediaDecodeTimeRange(): CMTimeRange;
-    setMediaDecodeTimeRange(): void;
+    setMediaDecodeTimeRange(value: CMTimeRange): void;
     // https://developer.apple.com/documentation/avfoundation/avmovietrack/1389982-mediapresentationtimerange
     mediaPresentationTimeRange(): CMTimeRange;
-    setMediaPresentationTimeRange(): void;
+    setMediaPresentationTimeRange(value: CMTimeRange): void;
     //
     alloc():AVMovieTrack;
     //
@@ -5597,32 +5894,38 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1458238-moviewithsettingsfrommovie
     movieWithSettingsFromMovie_options_error(movie: AVMovie, options: AVMutableMovie, outError: NSError):AVMutableMovie;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1389960-modified
-    modified(): BOOL;
-    setModified(): void;
+    modified(): boolean;
+    setModified(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1388742-metadata
     metadata(): AVMetadataItem;
-    setMetadata(): void;
+    setMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1387335-preferredrate
     preferredRate(): number;
-    setPreferredRate(): void;
+    setPreferredRate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1388771-preferredtransform
     preferredTransform(): CGAffineTransform;
-    setPreferredTransform(): void;
+    setPreferredTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1388614-preferredvolume
     preferredVolume(): number;
-    setPreferredVolume(): void;
+    setPreferredVolume(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1390622-timescale
     timescale(): CMTimeScale;
-    setTimescale(): void;
+    setTimescale(value: CMTimeScale): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1386969-interleavingperiod
     interleavingPeriod(): CMTime;
-    setInterleavingPeriod(): void;
+    setInterleavingPeriod(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1389320-defaultmediadatastorage
     defaultMediaDataStorage(): AVMediaDataStorage;
-    setDefaultMediaDataStorage(): void;
+    setDefaultMediaDataStorage(value: AVMediaDataStorage): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablemovie/3746575-loadtrackwithtrackid
+    loadTrackWithTrackID_completionHandler(trackID: CMPersistentTrackID, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablemovie/3746577-loadtrackswithmediatype
+    loadTracksWithMediaType_completionHandler(mediaType: AVMediaType, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablemovie/3746576-loadtrackswithmediacharacteristi
+    loadTracksWithMediaCharacteristic_completionHandler(mediaCharacteristic: AVMediaCharacteristic, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1387739-tracks
     tracks(): AVMutableMovieTrack;
-    setTracks(): void;
+    setTracks(value: AVMutableMovieTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1389467-trackwithtrackid
     trackWithTrackID(trackID: CMPersistentTrackID):AVMutableMovieTrack;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1390443-trackswithmediatype
@@ -5640,7 +5943,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1387515-insertemptytimerange
     insertEmptyTimeRange(timeRange: CMTimeRange):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1389598-inserttimerange
-    insertTimeRange_ofAsset_atTime_copySampleData_error(timeRange: CMTimeRange, asset: AVAsset, startTime: CMTime, copySampleData: BOOL, outError: NSError):BOOL;
+    insertTimeRange_ofAsset_atTime_copySampleData_error(timeRange: CMTimeRange, asset: AVAsset, startTime: CMTime, copySampleData: boolean, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1385653-scaletimerange
     scaleTimeRange_toDuration(timeRange: CMTimeRange, duration: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovie/1385605-removetimerange
@@ -5665,57 +5968,57 @@ declare namespace cocoascript {
     removeTrackAssociationToTrack_type(movieTrack: AVMovieTrack, trackAssociationType: AVTrackAssociationType):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1387206-alternategroupid
     alternateGroupID(): NSInteger;
-    setAlternateGroupID(): void;
+    setAlternateGroupID(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1386340-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1389542-hasprotectedcontent
-    hasProtectedContent(): BOOL;
-    setHasProtectedContent(): void;
+    hasProtectedContent(): boolean;
+    setHasProtectedContent(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1386532-mediadatastorage
     mediaDataStorage(): AVMediaDataStorage;
-    setMediaDataStorage(): void;
+    setMediaDataStorage(value: AVMediaDataStorage): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1390201-modified
-    modified(): BOOL;
-    setModified(): void;
+    modified(): boolean;
+    setModified(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1385583-samplereferencebaseurl
     sampleReferenceBaseURL(): NSURL;
-    setSampleReferenceBaseURL(): void;
+    setSampleReferenceBaseURL(value: NSURL): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1388055-timescale
     timescale(): CMTimeScale;
-    setTimescale(): void;
+    setTimescale(value: CMTimeScale): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1390023-metadata
     metadata(): AVMetadataItem;
-    setMetadata(): void;
+    setMetadata(value: AVMetadataItem): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1385900-naturalsize
     naturalSize(): CGSize;
-    setNaturalSize(): void;
+    setNaturalSize(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1386593-preferredtransform
     preferredTransform(): CGAffineTransform;
-    setPreferredTransform(): void;
+    setPreferredTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1387655-layer
     layer(): NSInteger;
-    setLayer(): void;
+    setLayer(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1386454-cleanaperturedimensions
     cleanApertureDimensions(): CGSize;
-    setCleanApertureDimensions(): void;
+    setCleanApertureDimensions(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1390108-productionaperturedimensions
     productionApertureDimensions(): CGSize;
-    setProductionApertureDimensions(): void;
+    setProductionApertureDimensions(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1389417-encodedpixelsdimensions
     encodedPixelsDimensions(): CGSize;
-    setEncodedPixelsDimensions(): void;
+    setEncodedPixelsDimensions(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1390391-preferredvolume
     preferredVolume(): number;
-    setPreferredVolume(): void;
+    setPreferredVolume(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1389736-languagecode
     languageCode(): string | cocoascript.NSString;
-    setLanguageCode(): void;
+    setLanguageCode(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1389056-extendedlanguagetag
     extendedLanguageTag(): string | cocoascript.NSString;
-    setExtendedLanguageTag(): void;
+    setExtendedLanguageTag(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1387665-inserttimerange
-    insertTimeRange_ofTrack_atTime_copySampleData_error(timeRange: CMTimeRange, track: AVAssetTrack, startTime: CMTime, copySampleData: BOOL, outError: NSError):BOOL;
+    insertTimeRange_ofTrack_atTime_copySampleData_error(timeRange: CMTimeRange, track: AVAssetTrack, startTime: CMTime, copySampleData: boolean, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1389441-insertemptytimerange
     insertEmptyTimeRange(timeRange: CMTimeRange):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1385962-removetimerange
@@ -5724,17 +6027,17 @@ declare namespace cocoascript {
     scaleTimeRange_toDuration(timeRange: CMTimeRange, duration: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1390504-preferredmediachunkalignment
     preferredMediaChunkAlignment(): NSInteger;
-    setPreferredMediaChunkAlignment(): void;
+    setPreferredMediaChunkAlignment(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1390292-preferredmediachunkduration
     preferredMediaChunkDuration(): CMTime;
-    setPreferredMediaChunkDuration(): void;
+    setPreferredMediaChunkDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1390149-preferredmediachunksize
     preferredMediaChunkSize(): NSInteger;
-    setPreferredMediaChunkSize(): void;
+    setPreferredMediaChunkSize(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1638041-appendsamplebuffer
-    appendSampleBuffer_decodeTime_presentationTime_error(sampleBuffer: CMSampleBufferRef, outDecodeTime: CMTime, outPresentationTime: CMTime, outError: NSError):BOOL;
+    appendSampleBuffer_decodeTime_presentationTime_error(sampleBuffer: CMSampleBufferRef, outDecodeTime: CMTime, outPresentationTime: CMTime, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/1638038-insertmediatimerange
-    insertMediaTimeRange_intoTimeRange(mediaTimeRange: CMTimeRange, trackTimeRange: CMTimeRange):BOOL;
+    insertMediaTimeRange_intoTimeRange(mediaTimeRange: CMTimeRange, trackTimeRange: CMTimeRange):boolean;
     // https://developer.apple.com/documentation/avfoundation/avmutablemovietrack/2876160-replaceformatdescription
     replaceFormatDescription_withFormatDescription(formatDescription: CMFormatDescriptionRef, newFormatDescription: CMFormatDescriptionRef):void;
     //
@@ -5751,9 +6054,15 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/avfoundation/avfragmentedmovie
    */
   interface AVFragmentedMovie extends AVMovie {
+    // https://developer.apple.com/documentation/avfoundation/avfragmentedmovie/3746568-loadtrackwithtrackid
+    loadTrackWithTrackID_completionHandler(trackID: CMPersistentTrackID, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avfragmentedmovie/3746570-loadtrackswithmediatype
+    loadTracksWithMediaType_completionHandler(mediaType: AVMediaType, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avfragmentedmovie/3746569-loadtrackswithmediacharacteristi
+    loadTracksWithMediaCharacteristic_completionHandler(mediaCharacteristic: AVMediaCharacteristic, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedmovie/1388242-tracks
     tracks(): AVFragmentedMovieTrack;
-    setTracks(): void;
+    setTracks(value: AVFragmentedMovieTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedmovie/1388343-trackwithtrackid
     trackWithTrackID(trackID: CMPersistentTrackID):AVFragmentedMovieTrack;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedmovie/1390553-trackswithmediatype
@@ -5798,10 +6107,10 @@ declare namespace cocoascript {
     removeFragmentedMovie(movie: AVFragmentedMovie):void;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedmovieminder/1387704-mindinginterval
     mindingInterval(): NSTimeInterval;
-    setMindingInterval(): void;
+    setMindingInterval(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avfragmentedmovieminder/1388707-movies
     movies(): AVFragmentedMovie;
-    setMovies(): void;
+    setMovies(value: AVFragmentedMovie): void;
     //
     alloc():AVFragmentedMovieMinder;
     //
@@ -5844,34 +6153,37 @@ declare namespace cocoascript {
     videoCompositionWithAsset_applyingCIFiltersWithHandler(asset: AVAsset, applier: AVAsynchronousCIImageFilteringRequest):AVMutableVideoComposition;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/1390059-frameduration
     frameDuration(): CMTime;
-    setFrameDuration(): void;
+    setFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/1386365-rendersize
     renderSize(): CGSize;
-    setRenderSize(): void;
+    setRenderSize(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/1615787-renderscale
     renderScale(): number;
-    setRenderScale(): void;
+    setRenderScale(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/1385815-instructions
     instructions(): AVVideoCompositionInstruction;
-    setInstructions(): void;
+    setInstructions(value: AVVideoCompositionInstruction): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/1390395-animationtool
     animationTool(): AVVideoCompositionCoreAnimationTool;
-    setAnimationTool(): void;
+    setAnimationTool(value: AVVideoCompositionCoreAnimationTool): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/1390649-customvideocompositorclass
     customVideoCompositorClass(): AVVideoCompositing;
-    setCustomVideoCompositorClass(): void;
+    setCustomVideoCompositorClass(value: AVVideoCompositing): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/1643234-colorprimaries
     colorPrimaries(): string | cocoascript.NSString;
-    setColorPrimaries(): void;
+    setColorPrimaries(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/1643237-colortransferfunction
     colorTransferFunction(): string | cocoascript.NSString;
-    setColorTransferFunction(): void;
+    setColorTransferFunction(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/1643231-colorycbcrmatrix
     colorYCbCrMatrix(): string | cocoascript.NSString;
-    setColorYCbCrMatrix(): void;
+    setColorYCbCrMatrix(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/2873799-sourcetrackidforframetiming
     sourceTrackIDForFrameTiming(): CMPersistentTrackID;
-    setSourceTrackIDForFrameTiming(): void;
+    setSourceTrackIDForFrameTiming(value: CMPersistentTrackID): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablevideocomposition/3750316-sourcesampledatatrackids
+    sourceSampleDataTrackIDs(): NSNumber;
+    setSourceSampleDataTrackIDs(value: NSNumber): void;
     //
     alloc():AVMutableVideoComposition;
     //
@@ -5890,16 +6202,19 @@ declare namespace cocoascript {
     videoCompositionInstruction():AVMutableVideoCompositionInstruction;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocompositioninstruction/1390236-backgroundcolor
     backgroundColor(): CGColorRef;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocompositioninstruction/1388912-layerinstructions
     layerInstructions(): AVVideoCompositionLayerInstruction;
-    setLayerInstructions(): void;
+    setLayerInstructions(value: AVVideoCompositionLayerInstruction): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocompositioninstruction/1390418-timerange
     timeRange(): CMTimeRange;
-    setTimeRange(): void;
+    setTimeRange(value: CMTimeRange): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocompositioninstruction/1385876-enablepostprocessing
-    enablePostProcessing(): BOOL;
-    setEnablePostProcessing(): void;
+    enablePostProcessing(): boolean;
+    setEnablePostProcessing(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablevideocompositioninstruction/3750317-requiredsourcesampledatatrackids
+    requiredSourceSampleDataTrackIDs(): NSNumber;
+    setRequiredSourceSampleDataTrackIDs(value: NSNumber): void;
     //
     alloc():AVMutableVideoCompositionInstruction;
     //
@@ -5920,7 +6235,7 @@ declare namespace cocoascript {
     videoCompositionLayerInstructionWithAssetTrack(track: AVAssetTrack):AVMutableVideoCompositionLayerInstruction;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocompositionlayerinstruction/1387222-trackid
     trackID(): CMPersistentTrackID;
-    setTrackID(): void;
+    setTrackID(value: CMPersistentTrackID): void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocompositionlayerinstruction/1390758-setopacity
     setOpacity_atTime(opacity: number, time: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avmutablevideocompositionlayerinstruction/1387532-setopacityrampfromstartopacity
@@ -5971,7 +6286,7 @@ declare namespace cocoascript {
     audioMix():AVMutableAudioMix;
     // https://developer.apple.com/documentation/avfoundation/avmutableaudiomix/1388159-inputparameters
     inputParameters(): AVAudioMixInputParameters;
-    setInputParameters(): void;
+    setInputParameters(value: AVAudioMixInputParameters): void;
     //
     alloc():AVMutableAudioMix;
     //
@@ -5992,17 +6307,17 @@ declare namespace cocoascript {
     audioMixInputParametersWithTrack(track: AVAssetTrack):AVMutableAudioMixInputParameters;
     // https://developer.apple.com/documentation/avfoundation/avmutableaudiomixinputparameters/1389209-trackid
     trackID(): CMPersistentTrackID;
-    setTrackID(): void;
+    setTrackID(value: CMPersistentTrackID): void;
     // https://developer.apple.com/documentation/avfoundation/avmutableaudiomixinputparameters/1389875-setvolume
     setVolume_atTime(volume: number, time: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avmutableaudiomixinputparameters/1386056-setvolumerampfromstartvolume
     setVolumeRampFromStartVolume_toEndVolume_timeRange(startVolume: number, endVolume: number, timeRange: CMTimeRange):void;
     // https://developer.apple.com/documentation/avfoundation/avmutableaudiomixinputparameters/1389296-audiotapprocessor
     audioTapProcessor(): MTAudioProcessingTapRef;
-    setAudioTapProcessor(): void;
+    setAudioTapProcessor(value: MTAudioProcessingTapRef): void;
     // https://developer.apple.com/documentation/avfoundation/avmutableaudiomixinputparameters/1388300-audiotimepitchalgorithm
     audioTimePitchAlgorithm(): AVAudioTimePitchAlgorithm;
-    setAudioTimePitchAlgorithm(): void;
+    setAudioTimePitchAlgorithm(value: AVAudioTimePitchAlgorithm): void;
     //
     alloc():AVMutableAudioMixInputParameters;
     //
@@ -6031,10 +6346,10 @@ declare namespace cocoascript {
   interface AVCaptureSystemPressureState extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcapturesystempressurestate/2933365-level
     level(): AVCaptureSystemPressureLevel;
-    setLevel(): void;
+    setLevel(value: AVCaptureSystemPressureLevel): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturesystempressurestate/2933367-factors
     factors(): AVCaptureSystemPressureFactors;
-    setFactors(): void;
+    setFactors(value: AVCaptureSystemPressureFactors): void;
     //
     alloc():AVCaptureSystemPressureState;
     //
@@ -6069,10 +6384,10 @@ declare namespace cocoascript {
     discoverySessionWithDeviceTypes_mediaType_position(deviceTypes: AVCaptureDeviceType, mediaType: AVMediaType, position: AVCaptureDevicePosition):AVCaptureDeviceDiscoverySession;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevicediscoverysession/2361002-devices
     devices(): AVCaptureDevice;
-    setDevices(): void;
+    setDevices(value: AVCaptureDevice): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedevicediscoverysession/3153004-supportedmulticamdevicesets
     supportedMultiCamDeviceSets(): AVCaptureDevice;
-    setSupportedMultiCamDeviceSets(): void;
+    setSupportedMultiCamDeviceSets(value: AVCaptureDevice): void;
     //
     alloc():AVCaptureDeviceDiscoverySession;
     //
@@ -6089,10 +6404,10 @@ declare namespace cocoascript {
   interface AVCaptureDeviceInputSource extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceinputsource/1387788-inputsourceid
     inputSourceID(): string | cocoascript.NSString;
-    setInputSourceID(): void;
+    setInputSourceID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceinputsource/1390422-localizedname
     localizedName(): string | cocoascript.NSString;
-    setLocalizedName(): void;
+    setLocalizedName(value: string | cocoascript.NSString): void;
     //
     alloc():AVCaptureDeviceInputSource;
     //
@@ -6121,81 +6436,102 @@ declare namespace cocoascript {
   interface AVCaptureDeviceFormat extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1388503-mediatype
     mediaType(): AVMediaType;
-    setMediaType(): void;
+    setMediaType(value: AVMediaType): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1389445-formatdescription
     formatDescription(): CMFormatDescriptionRef;
-    setFormatDescription(): void;
+    setFormatDescription(value: CMFormatDescriptionRef): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1648611-supportedcolorspaces
     supportedColorSpaces(): NSNumber;
-    setSupportedColorSpaces(): void;
+    setSupportedColorSpaces(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624571-videohdrsupported
-    videoHDRSupported(): BOOL;
-    setVideoHDRSupported(): void;
+    videoHDRSupported(): boolean;
+    setVideoHDRSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/2865757-unsupportedcaptureoutputclasses
     unsupportedCaptureOutputClasses(): Class;
-    setUnsupportedCaptureOutputClasses(): void;
+    setUnsupportedCaptureOutputClasses(value: Class): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624620-highresolutionstillimagedimensio
     highResolutionStillImageDimensions(): CMVideoDimensions;
-    setHighResolutionStillImageDimensions(): void;
+    setHighResolutionStillImageDimensions(value: CMVideoDimensions): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624597-videobinned
-    videoBinned(): BOOL;
-    setVideoBinned(): void;
+    videoBinned(): boolean;
+    setVideoBinned(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3153006-multicamsupported
-    multiCamSupported(): BOOL;
-    setMultiCamSupported(): void;
+    multiCamSupported(): boolean;
+    setMultiCamSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3153005-highestphotoqualitysupported
-    highestPhotoQualitySupported(): BOOL;
-    setHighestPhotoQualitySupported(): void;
+    highestPhotoQualitySupported(): boolean;
+    setHighestPhotoQualitySupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1387592-videosupportedframerateranges
     videoSupportedFrameRateRanges(): AVFrameRateRange;
-    setVideoSupportedFrameRateRanges(): void;
+    setVideoSupportedFrameRateRanges(value: AVFrameRateRange): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3194616-geometricdistortioncorrectedvide
     geometricDistortionCorrectedVideoFieldOfView(): number;
-    setGeometricDistortionCorrectedVideoFieldOfView(): void;
+    setGeometricDistortionCorrectedVideoFieldOfView(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3375757-globaltonemappingsupported
-    globalToneMappingSupported(): BOOL;
-    setGlobalToneMappingSupported(): void;
+    globalToneMappingSupported(): boolean;
+    setGlobalToneMappingSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624587-isvideostabilizationmodesupporte
-    isVideoStabilizationModeSupported(videoStabilizationMode: AVCaptureVideoStabilizationMode):BOOL;
+    isVideoStabilizationModeSupported(videoStabilizationMode: AVCaptureVideoStabilizationMode):boolean;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624634-videostabilizationsupported
-    videoStabilizationSupported(): BOOL;
-    setVideoStabilizationSupported(): void;
+    videoStabilizationSupported(): boolean;
+    setVideoStabilizationSupported(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3751763-highphotoqualitysupported
+    highPhotoQualitySupported(): boolean;
+    setHighPhotoQualitySupported(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3738420-centerstagesupported
+    centerStageSupported(): boolean;
+    setCenterStageSupported(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3738421-videoframeraterangeforcenterstag
+    videoFrameRateRangeForCenterStage(): AVFrameRateRange;
+    setVideoFrameRateRangeForCenterStage(value: AVFrameRateRange): void;
+    // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3738423-videominzoomfactorforcenterstage
+    videoMinZoomFactorForCenterStage(): CGFloat;
+    setVideoMinZoomFactorForCenterStage(value: CGFloat): void;
+    // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3738422-videomaxzoomfactorforcenterstage
+    videoMaxZoomFactorForCenterStage(): CGFloat;
+    setVideoMaxZoomFactorForCenterStage(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624592-minexposureduration
     minExposureDuration(): CMTime;
-    setMinExposureDuration(): void;
+    setMinExposureDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624582-maxexposureduration
     maxExposureDuration(): CMTime;
-    setMaxExposureDuration(): void;
+    setMaxExposureDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624603-miniso
     minISO(): number;
-    setMinISO(): void;
+    setMinISO(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624601-maxiso
     maxISO(): number;
-    setMaxISO(): void;
+    setMaxISO(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624600-autofocussystem
     autoFocusSystem(): AVCaptureAutoFocusSystem;
-    setAutoFocusSystem(): void;
+    setAutoFocusSystem(value: AVCaptureAutoFocusSystem): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624569-videofieldofview
     videoFieldOfView(): number;
-    setVideoFieldOfView(): void;
+    setVideoFieldOfView(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624635-videomaxzoomfactor
     videoMaxZoomFactor(): CGFloat;
-    setVideoMaxZoomFactor(): void;
+    setVideoMaxZoomFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/1624638-videozoomfactorupscalethreshold
     videoZoomFactorUpscaleThreshold(): CGFloat;
-    setVideoZoomFactorUpscaleThreshold(): void;
+    setVideoZoomFactorUpscaleThreshold(value: CGFloat): void;
+    // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3875312-portraiteffectsupported
+    portraitEffectSupported(): boolean;
+    setPortraitEffectSupported(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/3875313-videoframeraterangeforportraitef
+    videoFrameRateRangeForPortraitEffect(): AVFrameRateRange;
+    setVideoFrameRateRangeForPortraitEffect(value: AVFrameRateRange): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/2865753-supporteddepthdataformats
     supportedDepthDataFormats(): AVCaptureDeviceFormat;
-    setSupportedDepthDataFormats(): void;
+    setSupportedDepthDataFormats(value: AVCaptureDeviceFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/2977521-portraiteffectsmattestillimagede
-    portraitEffectsMatteStillImageDeliverySupported(): BOOL;
-    setPortraitEffectsMatteStillImageDeliverySupported(): void;
+    portraitEffectsMatteStillImageDeliverySupported(): boolean;
+    setPortraitEffectsMatteStillImageDeliverySupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/2865752-videominzoomfactorfordepthdatade
     videoMinZoomFactorForDepthDataDelivery(): CGFloat;
-    setVideoMinZoomFactorForDepthDataDelivery(): void;
+    setVideoMinZoomFactorForDepthDataDelivery(value: CGFloat): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturedeviceformat/2865756-videomaxzoomfactorfordepthdatade
     videoMaxZoomFactorForDepthDataDelivery(): CGFloat;
-    setVideoMaxZoomFactorForDepthDataDelivery(): void;
+    setVideoMaxZoomFactorForDepthDataDelivery(value: CGFloat): void;
     //
     alloc():AVCaptureDeviceFormat;
     //
@@ -6292,25 +6628,25 @@ declare namespace cocoascript {
   interface AVCameraCalibrationData extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcameracalibrationdata/2881135-intrinsicmatrix
     intrinsicMatrix(): matrix_float3x3;
-    setIntrinsicMatrix(): void;
+    setIntrinsicMatrix(value: matrix_float3x3): void;
     // https://developer.apple.com/documentation/avfoundation/avcameracalibrationdata/2881134-intrinsicmatrixreferencedimensio
     intrinsicMatrixReferenceDimensions(): CGSize;
-    setIntrinsicMatrixReferenceDimensions(): void;
+    setIntrinsicMatrixReferenceDimensions(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avcameracalibrationdata/2881130-extrinsicmatrix
     extrinsicMatrix(): matrix_float4x3;
-    setExtrinsicMatrix(): void;
+    setExtrinsicMatrix(value: matrix_float4x3): void;
     // https://developer.apple.com/documentation/avfoundation/avcameracalibrationdata/2881128-pixelsize
     pixelSize(): number;
-    setPixelSize(): void;
+    setPixelSize(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcameracalibrationdata/2881129-lensdistortionlookuptable
     lensDistortionLookupTable(): NSData;
-    setLensDistortionLookupTable(): void;
+    setLensDistortionLookupTable(value: NSData): void;
     // https://developer.apple.com/documentation/avfoundation/avcameracalibrationdata/2881132-inverselensdistortionlookuptable
     inverseLensDistortionLookupTable(): NSData;
-    setInverseLensDistortionLookupTable(): void;
+    setInverseLensDistortionLookupTable(value: NSData): void;
     // https://developer.apple.com/documentation/avfoundation/avcameracalibrationdata/2881131-lensdistortioncenter
     lensDistortionCenter(): CGPoint;
-    setLensDistortionCenter(): void;
+    setLensDistortionCenter(value: CGPoint): void;
     //
     alloc():AVCameraCalibrationData;
     //
@@ -6331,54 +6667,54 @@ declare namespace cocoascript {
   interface AVCaptureResolvedPhotoSettings extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/1648656-uniqueid
     uniqueID(): number;
-    setUniqueID(): void;
+    setUniqueID(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/2873973-expectedphotocount
     expectedPhotoCount(): NSUInteger;
-    setExpectedPhotoCount(): void;
+    setExpectedPhotoCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/1648693-flashenabled
-    flashEnabled(): BOOL;
-    setFlashEnabled(): void;
+    flashEnabled(): boolean;
+    setFlashEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/2968221-redeyereductionenabled
-    redEyeReductionEnabled(): BOOL;
-    setRedEyeReductionEnabled(): void;
+    redEyeReductionEnabled(): boolean;
+    setRedEyeReductionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/3192194-virtualdevicefusionenabled
-    virtualDeviceFusionEnabled(): BOOL;
-    setVirtualDeviceFusionEnabled(): void;
+    virtualDeviceFusionEnabled(): boolean;
+    setVirtualDeviceFusionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/3566333-contentawaredistortioncorrection
-    contentAwareDistortionCorrectionEnabled(): BOOL;
-    setContentAwareDistortionCorrectionEnabled(): void;
+    contentAwareDistortionCorrectionEnabled(): boolean;
+    setContentAwareDistortionCorrectionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/1648771-stillimagestabilizationenabled
-    stillImageStabilizationEnabled(): BOOL;
-    setStillImageStabilizationEnabled(): void;
+    stillImageStabilizationEnabled(): boolean;
+    setStillImageStabilizationEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/2726863-dualcamerafusionenabled
-    dualCameraFusionEnabled(): BOOL;
-    setDualCameraFusionEnabled(): void;
+    dualCameraFusionEnabled(): boolean;
+    setDualCameraFusionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/1648782-photodimensions
     photoDimensions(): CMVideoDimensions;
-    setPhotoDimensions(): void;
+    setPhotoDimensions(value: CMVideoDimensions): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/1648762-rawphotodimensions
     rawPhotoDimensions(): CMVideoDimensions;
-    setRawPhotoDimensions(): void;
+    setRawPhotoDimensions(value: CMVideoDimensions): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/1648753-previewdimensions
     previewDimensions(): CMVideoDimensions;
-    setPreviewDimensions(): void;
+    setPreviewDimensions(value: CMVideoDimensions): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/2873967-embeddedthumbnaildimensions
     embeddedThumbnailDimensions(): CMVideoDimensions;
-    setEmbeddedThumbnailDimensions(): void;
+    setEmbeddedThumbnailDimensions(value: CMVideoDimensions): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/3019551-rawembeddedthumbnaildimensions
     rawEmbeddedThumbnailDimensions(): CMVideoDimensions;
-    setRawEmbeddedThumbnailDimensions(): void;
+    setRawEmbeddedThumbnailDimensions(value: CMVideoDimensions): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/1648781-livephotomoviedimensions
     livePhotoMovieDimensions(): CMVideoDimensions;
-    setLivePhotoMovieDimensions(): void;
+    setLivePhotoMovieDimensions(value: CMVideoDimensions): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/2977533-portraiteffectsmattedimensions
     portraitEffectsMatteDimensions(): CMVideoDimensions;
-    setPortraitEffectsMatteDimensions(): void;
+    setPortraitEffectsMatteDimensions(value: CMVideoDimensions): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/3153015-dimensionsforsemanticsegmentatio
     dimensionsForSemanticSegmentationMatteOfType(semanticSegmentationMatteType: AVSemanticSegmentationMatteType):CMVideoDimensions;
     // https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/3183001-photoprocessingtimerange
     photoProcessingTimeRange(): CMTimeRange;
-    setPhotoProcessingTimeRange(): void;
+    setPhotoProcessingTimeRange(value: CMTimeRange): void;
     //
     alloc():AVCaptureResolvedPhotoSettings;
     //
@@ -6399,10 +6735,10 @@ declare namespace cocoascript {
     photoBracketSettingsWithRawPixelFormatType_processedFormat_bracketedSettings(rawPixelFormatType: any, processedFormat: AVCapturePhotoBracketSettings, bracketedSettings: AVCaptureBracketedStillImageSettings):AVCapturePhotoBracketSettings;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotobracketsettings/1648613-bracketedsettings
     bracketedSettings(): AVCaptureBracketedStillImageSettings;
-    setBracketedSettings(): void;
+    setBracketedSettings(value: AVCaptureBracketedStillImageSettings): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturephotobracketsettings/1648660-lensstabilizationenabled
-    lensStabilizationEnabled(): BOOL;
-    setLensStabilizationEnabled(): void;
+    lensStabilizationEnabled(): boolean;
+    setLensStabilizationEnabled(value: boolean): void;
     //
     alloc():AVCapturePhotoBracketSettings;
     //
@@ -6450,26 +6786,26 @@ declare namespace cocoascript {
    */
   interface AVCaptureInputPort extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avcaptureinputport/1386833-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureinputport/1387702-input
     input(): AVCaptureInput;
-    setInput(): void;
+    setInput(value: AVCaptureInput): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureinputport/1387120-mediatype
     mediaType(): AVMediaType;
-    setMediaType(): void;
+    setMediaType(value: AVMediaType): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureinputport/1385890-formatdescription
     formatDescription(): CMFormatDescriptionRef;
-    setFormatDescription(): void;
+    setFormatDescription(value: CMFormatDescriptionRef): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureinputport/1385908-clock
     clock(): CMClockRef;
-    setClock(): void;
+    setClock(value: CMClockRef): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureinputport/3114575-sourcedevicetype
     sourceDeviceType(): AVCaptureDeviceType;
-    setSourceDeviceType(): void;
+    setSourceDeviceType(value: AVCaptureDeviceType): void;
     // https://developer.apple.com/documentation/avfoundation/avcaptureinputport/3114574-sourcedeviceposition
     sourceDevicePosition(): AVCaptureDevicePosition;
-    setSourceDevicePosition(): void;
+    setSourceDevicePosition(value: AVCaptureDevicePosition): void;
     //
     alloc():AVCaptureInputPort;
     //
@@ -6496,13 +6832,23 @@ declare namespace cocoascript {
   // https://developer.apple.com/documentation/avfoundation/avvideofieldmode
   type AVVideoFieldMode = cocoascript.NSInteger;
 }
+// https://developer.apple.com/documentation/avfoundation/avplayeravailablehdrmodesdidchangenotification
+declare const AVPlayerAvailableHDRModesDidChangeNotification: cocoascript.NSNotificationName;
 // https://developer.apple.com/documentation/avfoundation/avplayeritemtimejumpednotification
 declare const AVPlayerItemTimeJumpedNotification: cocoascript.NSNotificationName;
 // https://developer.apple.com/documentation/avfoundation/avroutedetectormultipleroutesdetecteddidchangenotification
 declare const AVRouteDetectorMultipleRoutesDetectedDidChangeNotification: cocoascript.NSNotificationName;
+// https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorendereroutputconfigurationdidchangenotification
+declare const AVSampleBufferAudioRendererOutputConfigurationDidChangeNotification: cocoascript.NSNotificationName;
+// https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorendererwasflushedautomaticallynotification
+declare const AVSampleBufferAudioRendererWasFlushedAutomaticallyNotification: cocoascript.NSNotificationName;
+// https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayeroutputobscuredduetoinsufficientexternalprotectiondidchangenotification
+declare const AVSampleBufferDisplayLayerOutputObscuredDueToInsufficientExternalProtectionDidChangeNotification: cocoascript.NSNotificationName;
+// https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayerrequiresflushtoresumedecodingdidchangenotification
+declare const AVSampleBufferDisplayLayerRequiresFlushToResumeDecodingDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
-   * An object used to write media data to a new file of a specified audiovisual container type.
+   * An object that writes media data to a container file.
    * https://developer.apple.com/documentation/avfoundation/avassetwriter
    */
   interface AVAssetWriter extends NSObject {
@@ -6512,87 +6858,87 @@ declare namespace cocoascript {
     initWithURL_fileType_error(outputURL: NSURL, outputFileType: AVFileType, outError: NSError):AVAssetWriter;
     // https://developer.apple.com/documentation/avfoundation/avassetwriter/3563935-initwithcontenttype
     initWithContentType(outputContentType: UTType):AVAssetWriter;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1388730-availablemediatypes
-    availableMediaTypes(): AVMediaType;
-    setAvailableMediaTypes(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1386724-startwriting
-    startWriting():BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1426644-finishwriting
-    finishWriting():BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl
-    finishWritingWithCompletionHandler(handler: void):void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387234-cancelwriting
-    cancelWriting():void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387731-outputurl
-    outputURL(): NSURL;
-    setOutputURL(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387349-outputfiletype
-    outputFileType(): AVFileType;
-    setOutputFileType(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1390725-error
-    error(): NSError;
-    setError(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1389335-status
-    status(): AVAssetWriterStatus;
-    setStatus(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles
-    directoryForTemporaryFiles(): NSURL;
-    setDirectoryForTemporaryFiles(): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriter/1388264-inputs
     inputs(): AVAssetWriterInput;
-    setInputs(): void;
+    setInputs(value: AVAssetWriterInput): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1388730-availablemediatypes
+    availableMediaTypes(): AVMediaType;
+    setAvailableMediaTypes(value: AVMediaType): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings
+    canApplyOutputSettings_forMediaType(outputSettings: AVAssetWriter, mediaType: AVMediaType):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387863-canaddinput
+    canAddInput(input: AVAssetWriterInput):boolean;
     // https://developer.apple.com/documentation/avfoundation/avassetwriter/1390389-addinput
     addInput(input: AVAssetWriterInput):void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387863-canaddinput
-    canAddInput(input: AVAssetWriterInput):BOOL;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1388432-inputgroups
+    inputGroups(): AVAssetWriterInputGroup;
+    setInputGroups(value: AVAssetWriterInputGroup): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1386698-canaddinputgroup
+    canAddInputGroup(inputGroup: AVAssetWriterInputGroup):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1385643-addinputgroup
+    addInputGroup(inputGroup: AVAssetWriterInputGroup):void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387974-metadata
+    metadata(): AVMetadataItem;
+    setMetadata(value: AVMetadataItem): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse
+    shouldOptimizeForNetworkUse(): boolean;
+    setShouldOptimizeForNetworkUse(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387445-directoryfortemporaryfiles
+    directoryForTemporaryFiles(): NSURL;
+    setDirectoryForTemporaryFiles(value: NSURL): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval
+    movieFragmentInterval(): CMTime;
+    setMovieFragmentInterval(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb
+    initialMovieFragmentSequenceNumber(): NSInteger;
+    setInitialMovieFragmentSequenceNumber(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments
+    producesCombinableFragments(): boolean;
+    setProducesCombinableFragments(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1388408-overalldurationhint
+    overallDurationHint(): CMTime;
+    setOverallDurationHint(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1386762-movietimescale
+    movieTimeScale(): CMTimeScale;
+    setMovieTimeScale(value: CMTimeScale): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1386724-startwriting
+    startWriting():boolean;
     // https://developer.apple.com/documentation/avfoundation/avassetwriter/1389908-startsessionatsourcetime
     startSessionAtSourceTime(startTime: CMTime):void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriter/1389921-endsessionatsourcetime
     endSessionAtSourceTime(endTime: CMTime):void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1388842-canapplyoutputsettings
-    canApplyOutputSettings_forMediaType(outputSettings: AVAssetWriter, mediaType: AVMediaType):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387974-metadata
-    metadata(): AVMetadataItem;
-    setMetadata(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval
-    movieFragmentInterval(): CMTime;
-    setMovieFragmentInterval(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1388408-overalldurationhint
-    overallDurationHint(): CMTime;
-    setOverallDurationHint(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1386762-movietimescale
-    movieTimeScale(): CMTimeScale;
-    setMovieTimeScale(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1389811-shouldoptimizefornetworkuse
-    shouldOptimizeForNetworkUse(): BOOL;
-    setShouldOptimizeForNetworkUse(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1385643-addinputgroup
-    addInputGroup(inputGroup: AVAssetWriterInputGroup):void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1386698-canaddinputgroup
-    canAddInputGroup(inputGroup: AVAssetWriterInputGroup):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1388432-inputgroups
-    inputGroups(): AVAssetWriterInputGroup;
-    setInputGroups(): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1390432-finishwritingwithcompletionhandl
+    finishWritingWithCompletionHandler(handler: void):void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387234-cancelwriting
+    cancelWriting():void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1426644-finishwriting
+    finishWriting():boolean;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1389335-status
+    status(): AVAssetWriterStatus;
+    setStatus(value: AVAssetWriterStatus): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1390725-error
+    error(): NSError;
+    setError(value: NSError): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriter/3546585-delegate
     delegate(): AVAssetWriterDelegate;
-    setDelegate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/3577532-initialmoviefragmentsequencenumb
-    initialMovieFragmentSequenceNumber(): NSInteger;
-    setInitialMovieFragmentSequenceNumber(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime
-    initialSegmentStartTime(): CMTime;
-    setInitialSegmentStartTime(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile
-    outputFileTypeProfile(): AVFileTypeProfile;
-    setOutputFileTypeProfile(): void;
+    setDelegate(value: AVAssetWriterDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriter/3546590-preferredoutputsegmentinterval
     preferredOutputSegmentInterval(): CMTime;
-    setPreferredOutputSegmentInterval(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriter/3626025-producescombinablefragments
-    producesCombinableFragments(): BOOL;
-    setProducesCombinableFragments(): void;
+    setPreferredOutputSegmentInterval(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/3546588-initialsegmentstarttime
+    initialSegmentStartTime(): CMTime;
+    setInitialSegmentStartTime(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/3546589-outputfiletypeprofile
+    outputFileTypeProfile(): AVFileTypeProfile;
+    setOutputFileTypeProfile(value: AVFileTypeProfile): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriter/3546586-flushsegment
     flushSegment():void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387731-outputurl
+    outputURL(): NSURL;
+    setOutputURL(value: NSURL): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriter/1387349-outputfiletype
+    outputFileType(): AVFileType;
+    setOutputFileType(value: AVFileType): void;
     //
     alloc():AVAssetWriter;
     //
@@ -6609,10 +6955,10 @@ declare namespace cocoascript {
   interface AVAssetSegmentReport extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetsegmentreport/3546570-segmenttype
     segmentType(): AVAssetSegmentType;
-    setSegmentType(): void;
+    setSegmentType(value: AVAssetSegmentType): void;
     // https://developer.apple.com/documentation/avfoundation/avassetsegmentreport/3546571-trackreports
     trackReports(): AVAssetSegmentTrackReport;
-    setTrackReports(): void;
+    setTrackReports(value: AVAssetSegmentTrackReport): void;
     //
     alloc():AVAssetSegmentReport;
     //
@@ -6657,16 +7003,16 @@ declare namespace cocoascript {
     initWithVideoTracks_videoSettings(videoTracks: AVAssetTrack, videoSettings: AVAssetReaderVideoCompositionOutput):AVAssetReaderVideoCompositionOutput;
     // https://developer.apple.com/documentation/avfoundation/avassetreadervideocompositionoutput/1388927-videocomposition
     videoComposition(): AVVideoComposition;
-    setVideoComposition(): void;
+    setVideoComposition(value: AVVideoComposition): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreadervideocompositionoutput/1388310-customvideocompositor
     customVideoCompositor(): AVVideoCompositing;
-    setCustomVideoCompositor(): void;
+    setCustomVideoCompositor(value: AVVideoCompositing): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreadervideocompositionoutput/1389247-videosettings
     videoSettings(): id;
-    setVideoSettings(): void;
+    setVideoSettings(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreadervideocompositionoutput/1389000-videotracks
     videoTracks(): AVAssetTrack;
-    setVideoTracks(): void;
+    setVideoTracks(value: AVAssetTrack): void;
     //
     alloc():AVAssetReaderVideoCompositionOutput;
     //
@@ -6677,7 +7023,7 @@ declare namespace cocoascript {
 declare const AVAssetReaderVideoCompositionOutput: cocoascript.AVAssetReaderVideoCompositionOutput;
 declare namespace cocoascript {
   /**
-   * An object that defines the context within which custom compositors render new output pixel buffers.
+   * An object that defines the context in which custom compositors render pixel buffers.
    * https://developer.apple.com/documentation/avfoundation/avvideocompositionrendercontext
    */
   interface AVVideoCompositionRenderContext extends NSObject {
@@ -6685,25 +7031,25 @@ declare namespace cocoascript {
     newPixelBuffer():CVPixelBufferRef;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionrendercontext/1390647-videocomposition
     videoComposition(): AVVideoComposition;
-    setVideoComposition(): void;
+    setVideoComposition(value: AVVideoComposition): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionrendercontext/1388758-highqualityrendering
-    highQualityRendering(): BOOL;
-    setHighQualityRendering(): void;
+    highQualityRendering(): boolean;
+    setHighQualityRendering(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionrendercontext/1387408-renderscale
     renderScale(): number;
-    setRenderScale(): void;
+    setRenderScale(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionrendercontext/1389831-rendertransform
     renderTransform(): CGAffineTransform;
-    setRenderTransform(): void;
+    setRenderTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionrendercontext/1389718-size
     size(): CGSize;
-    setSize(): void;
+    setSize(value: CGSize): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionrendercontext/1387026-edgewidths
     edgeWidths(): AVEdgeWidths;
-    setEdgeWidths(): void;
+    setEdgeWidths(value: AVEdgeWidths): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionrendercontext/1389800-pixelaspectratio
     pixelAspectRatio(): AVPixelAspectRatio;
-    setPixelAspectRatio(): void;
+    setPixelAspectRatio(value: AVPixelAspectRatio): void;
     //
     alloc():AVVideoCompositionRenderContext;
     //
@@ -6720,10 +7066,10 @@ declare namespace cocoascript {
   interface AVVideoCompositionRenderHint extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionrenderhint/3227889-startcompositiontime
     startCompositionTime(): CMTime;
-    setStartCompositionTime(): void;
+    setStartCompositionTime(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avvideocompositionrenderhint/3227888-endcompositiontime
     endCompositionTime(): CMTime;
-    setEndCompositionTime(): void;
+    setEndCompositionTime(value: CMTime): void;
     //
     alloc():AVVideoCompositionRenderHint;
     //
@@ -6732,6 +7078,34 @@ declare namespace cocoascript {
 }
 
 declare const AVVideoCompositionRenderHint: cocoascript.AVVideoCompositionRenderHint;
+declare namespace cocoascript {
+  /**
+   * An object that reads caption group objects from an asset track that contains timed text.
+   * https://developer.apple.com/documentation/avfoundation/avassetreaderoutputcaptionadaptor
+   */
+  interface AVAssetReaderOutputCaptionAdaptor extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avassetreaderoutputcaptionadaptor/3752797-initwithassetreadertrackoutput
+    initWithAssetReaderTrackOutput(trackOutput: AVAssetReaderTrackOutput):AVAssetReaderOutputCaptionAdaptor;
+    // https://developer.apple.com/documentation/avfoundation/avassetreaderoutputcaptionadaptor/3752794-assetreaderoutputcaptionadaptorw
+    assetReaderOutputCaptionAdaptorWithAssetReaderTrackOutput(trackOutput: AVAssetReaderTrackOutput):AVAssetReaderOutputCaptionAdaptor;
+    // https://developer.apple.com/documentation/avfoundation/avassetreaderoutputcaptionadaptor/3752795-assetreadertrackoutput
+    assetReaderTrackOutput(): AVAssetReaderTrackOutput;
+    setAssetReaderTrackOutput(value: AVAssetReaderTrackOutput): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetreaderoutputcaptionadaptor/3752799-validationdelegate
+    validationDelegate(): AVAssetReaderCaptionValidationHandling;
+    setValidationDelegate(value: AVAssetReaderCaptionValidationHandling): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetreaderoutputcaptionadaptor/3752798-nextcaptiongroup
+    nextCaptionGroup():AVCaptionGroup;
+    // https://developer.apple.com/documentation/avfoundation/avassetreaderoutputcaptionadaptor/3752796-captionsnotpresentinpreviousgrou
+    captionsNotPresentInPreviousGroupsInCaptionGroup(captionGroup: AVCaptionGroup):AVCaption;
+    //
+    alloc():AVAssetReaderOutputCaptionAdaptor;
+    //
+    init():AVAssetReaderOutputCaptionAdaptor;
+  }
+}
+
+declare const AVAssetReaderOutputCaptionAdaptor: cocoascript.AVAssetReaderOutputCaptionAdaptor;
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/avfoundation/avmetadatakeyspace
   type AVMetadataKeySpace = cocoascript.NSString;
@@ -6752,7 +7126,7 @@ declare namespace cocoascript {
     respondWithError(error: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avmetadataitemvaluerequest/1388069-metadataitem
     metadataItem(): AVMetadataItem;
-    setMetadataItem(): void;
+    setMetadataItem(value: AVMetadataItem): void;
     //
     alloc():AVMetadataItemValueRequest;
     //
@@ -6784,11 +7158,11 @@ declare namespace cocoascript {
    */
   interface AVAssetTrackSegment extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassettracksegment/1385714-empty
-    empty(): BOOL;
-    setEmpty(): void;
+    empty(): boolean;
+    setEmpty(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassettracksegment/1390557-timemapping
     timeMapping(): CMTimeMapping;
-    setTimeMapping(): void;
+    setTimeMapping(value: CMTimeMapping): void;
     //
     alloc():AVAssetTrackSegment;
     //
@@ -6808,17 +7182,17 @@ declare namespace cocoascript {
    */
   interface AVPlayerItemTrack extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avplayeritemtrack/1387062-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemtrack/1390701-assettrack
     assetTrack(): AVAssetTrack;
-    setAssetTrack(): void;
+    setAssetTrack(value: AVAssetTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemtrack/1388956-currentvideoframerate
     currentVideoFrameRate(): number;
-    setCurrentVideoFrameRate(): void;
+    setCurrentVideoFrameRate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avplayeritemtrack/1388045-videofieldmode
     videoFieldMode(): string | cocoascript.NSString;
-    setVideoFieldMode(): void;
+    setVideoFieldMode(value: string | cocoascript.NSString): void;
     //
     alloc():AVPlayerItemTrack;
     //
@@ -6855,34 +7229,258 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   /**
+   * An object that provides the configuration for a download task.
+   * https://developer.apple.com/documentation/avfoundation/avassetdownloadconfiguration
+   */
+  interface AVAssetDownloadConfiguration extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloadconfiguration/3750220-downloadconfigurationwithasset
+    downloadConfigurationWithAsset_title(asset: AVURLAsset, title: string | cocoascript.NSString):AVAssetDownloadConfiguration;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloadconfiguration/3750218-artworkdata
+    artworkData(): NSData;
+    setArtworkData(value: NSData): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloadconfiguration/3750222-primarycontentconfiguration
+    primaryContentConfiguration(): AVAssetDownloadContentConfiguration;
+    setPrimaryContentConfiguration(value: AVAssetDownloadContentConfiguration): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloadconfiguration/3750219-auxiliarycontentconfigurations
+    auxiliaryContentConfigurations(): AVAssetDownloadContentConfiguration;
+    setAuxiliaryContentConfigurations(value: AVAssetDownloadContentConfiguration): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloadconfiguration/3750221-optimizesauxiliarycontentconfigu
+    optimizesAuxiliaryContentConfigurations(): boolean;
+    setOptimizesAuxiliaryContentConfigurations(value: boolean): void;
+    //
+    alloc():AVAssetDownloadConfiguration;
+    //
+    init():AVAssetDownloadConfiguration;
+  }
+}
+
+declare const AVAssetDownloadConfiguration: cocoascript.AVAssetDownloadConfiguration;
+declare namespace cocoascript {
+  /**
+   * An object that represents a bit rate variant.
+   * https://developer.apple.com/documentation/avfoundation/avassetvariant
+   */
+  interface AVAssetVariant extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avassetvariant/3746543-audioattributes
+    audioAttributes(): AVAssetVariantAudioAttributes;
+    setAudioAttributes(value: AVAssetVariantAudioAttributes): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariant/3746546-videoattributes
+    videoAttributes(): AVAssetVariantVideoAttributes;
+    setVideoAttributes(value: AVAssetVariantVideoAttributes): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariant/3746544-averagebitrate
+    averageBitRate(): number;
+    setAverageBitRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariant/3746545-peakbitrate
+    peakBitRate(): number;
+    setPeakBitRate(value: number): void;
+    //
+    alloc():AVAssetVariant;
+    //
+    init():AVAssetVariant;
+  }
+}
+
+declare const AVAssetVariant: cocoascript.AVAssetVariant;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionfontstyle
+  type AVCaptionFontStyle = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionfontweight
+  type AVCaptionFontWeight = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptiondecoration
+  type AVCaptionDecoration = cocoascript.NSUInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptiontextalignment
+  type AVCaptionTextAlignment = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionanimation
+  type AVCaptionAnimation = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptiontextcombine
+  type AVCaptionTextCombine = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  /**
+   * A mutable caption subclass that you use to create new captions.
+   * https://developer.apple.com/documentation/avfoundation/avmutablecaption
+   */
+  interface AVMutableCaption extends AVCaption {
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752915-text
+    text(): string | cocoascript.NSString;
+    setText(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752917-timerange
+    timeRange(): CMTimeRange;
+    setTimeRange(value: CMTimeRange): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752900-region
+    region(): AVCaptionRegion;
+    setRegion(value: AVCaptionRegion): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752910-setfontstyle
+    setFontStyle_inRange(fontStyle: AVCaptionFontStyle, range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752903-removefontstyleinrange
+    removeFontStyleInRange(range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752911-setfontweight
+    setFontWeight_inRange(fontWeight: AVCaptionFontWeight, range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752904-removefontweightinrange
+    removeFontWeightInRange(range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752909-setdecoration
+    setDecoration_inRange(decoration: AVCaptionDecoration, range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752902-removedecorationinrange
+    removeDecorationInRange(range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752913-settextcolor
+    setTextColor_inRange(color: CGColorRef, range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752906-removetextcolorinrange
+    removeTextColorInRange(range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752908-setbackgroundcolor
+    setBackgroundColor_inRange(color: CGColorRef, range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752901-removebackgroundcolorinrange
+    removeBackgroundColorInRange(range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752916-textalignment
+    textAlignment(): AVCaptionTextAlignment;
+    setTextAlignment(value: AVCaptionTextAlignment): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752899-animation
+    animation(): AVCaptionAnimation;
+    setAnimation(value: AVCaptionAnimation): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752912-setruby
+    setRuby_inRange(ruby: AVCaptionRuby, range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752905-removerubyinrange
+    removeRubyInRange(range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752914-settextcombine
+    setTextCombine_inRange(textCombine: AVCaptionTextCombine, range: NSRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaption/3752907-removetextcombineinrange
+    removeTextCombineInRange(range: NSRange):void;
+    //
+    alloc():AVMutableCaption;
+    //
+    init():AVMutableCaption;
+  }
+}
+
+declare const AVMutableCaption: cocoascript.AVMutableCaption;
+declare namespace cocoascript {
+  interface AVCaptionDimension {
+  }
+}
+declare namespace cocoascript {
+  interface AVCaptionPoint {
+  }
+}
+declare namespace cocoascript {
+  interface AVCaptionSize {
+  }
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionregiondisplayalignment
+  type AVCaptionRegionDisplayAlignment = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionregionscroll
+  type AVCaptionRegionScroll = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionregionwritingmode
+  type AVCaptionRegionWritingMode = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  /**
+   * A mutable caption region subclass that you use to create new caption regions.
+   * https://developer.apple.com/documentation/avfoundation/avmutablecaptionregion
+   */
+  interface AVMutableCaptionRegion extends AVCaptionRegion {
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaptionregion/3752922-init
+    init():AVMutableCaptionRegion;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaptionregion/3752923-initwithidentifier
+    initWithIdentifier(identifier: string | cocoascript.NSString):AVMutableCaptionRegion;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaptionregion/3857638-origin
+    origin(): AVCaptionPoint;
+    setOrigin(value: AVCaptionPoint): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaptionregion/3857639-size
+    size(): AVCaptionSize;
+    setSize(value: AVCaptionSize): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaptionregion/3752919-displayalignment
+    displayAlignment(): AVCaptionRegionDisplayAlignment;
+    setDisplayAlignment(value: AVCaptionRegionDisplayAlignment): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaptionregion/3752925-scroll
+    scroll(): AVCaptionRegionScroll;
+    setScroll(value: AVCaptionRegionScroll): void;
+    // https://developer.apple.com/documentation/avfoundation/avmutablecaptionregion/3752926-writingmode
+    writingMode(): AVCaptionRegionWritingMode;
+    setWritingMode(value: AVCaptionRegionWritingMode): void;
+    //
+    alloc():AVMutableCaptionRegion;
+    //
+    init():AVMutableCaptionRegion;
+  }
+}
+
+declare const AVMutableCaptionRegion: cocoascript.AVMutableCaptionRegion;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionrubyposition
+  type AVCaptionRubyPosition = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionrubyalignment
+  type AVCaptionRubyAlignment = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  /**
+   * An object that renders captions for display at a particular time.
+   * https://developer.apple.com/documentation/avfoundation/avcaptionrenderer
+   */
+  interface AVCaptionRenderer extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaptionrenderer/3752970-captions
+    captions(): AVCaption;
+    setCaptions(value: AVCaption): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionrenderer/3752968-bounds
+    bounds(): CGRect;
+    setBounds(value: CGRect): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionrenderer/3752969-captionscenechangesinrange
+    captionSceneChangesInRange(consideredTimeRange: CMTimeRange):AVCaptionRendererScene;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionrenderer/3752971-renderincontext
+    renderInContext_forTime(ctx: CGContextRef, time: CMTime):void;
+    //
+    alloc():AVCaptionRenderer;
+    //
+    init():AVCaptionRenderer;
+  }
+}
+
+declare const AVCaptionRenderer: cocoascript.AVCaptionRenderer;
+declare namespace cocoascript {
+  /**
    * A protocol defining 3D mixing properties.
    * https://developer.apple.com/documentation/avfoundation/avaudio3dmixing
    */
   interface AVAudio3DMixing extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudio3dmixing/1387690-obstruction
     obstruction(): number;
-    setObstruction(): void;
+    setObstruction(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudio3dmixing/1389498-occlusion
     occlusion(): number;
-    setOcclusion(): void;
+    setOcclusion(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudio3dmixing/1390834-position
     position(): AVAudio3DPoint;
-    setPosition(): void;
+    setPosition(value: AVAudio3DPoint): void;
     // https://developer.apple.com/documentation/avfoundation/avaudio3dmixing/1388224-rate
     rate(): number;
-    setRate(): void;
+    setRate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudio3dmixing/1386560-renderingalgorithm
     renderingAlgorithm(): AVAudio3DMixingRenderingAlgorithm;
-    setRenderingAlgorithm(): void;
+    setRenderingAlgorithm(value: AVAudio3DMixingRenderingAlgorithm): void;
     // https://developer.apple.com/documentation/avfoundation/avaudio3dmixing/1388665-reverbblend
     reverbBlend(): number;
-    setReverbBlend(): void;
+    setReverbBlend(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudio3dmixing/3230587-pointsourceinheadmode
     pointSourceInHeadMode(): AVAudio3DMixingPointSourceInHeadMode;
-    setPointSourceInHeadMode(): void;
+    setPointSourceInHeadMode(value: AVAudio3DMixingPointSourceInHeadMode): void;
     // https://developer.apple.com/documentation/avfoundation/avaudio3dmixing/3230588-sourcemode
     sourceMode(): AVAudio3DMixingSourceMode;
-    setSourceMode(): void;
+    setSourceMode(value: AVAudio3DMixingSourceMode): void;
   }
 }
 declare namespace cocoascript {
@@ -6897,27 +7495,27 @@ declare namespace cocoascript {
     assetReaderWithAsset_error(asset: AVAsset, outError: NSError):AVAssetReader;
     // https://developer.apple.com/documentation/avfoundation/avassetreader/1387132-outputs
     outputs(): AVAssetReaderOutput;
-    setOutputs(): void;
+    setOutputs(value: AVAssetReaderOutput): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreader/1390110-addoutput
     addOutput(output: AVAssetReaderOutput):void;
     // https://developer.apple.com/documentation/avfoundation/avassetreader/1387485-canaddoutput
-    canAddOutput(output: AVAssetReaderOutput):BOOL;
+    canAddOutput(output: AVAssetReaderOutput):boolean;
     // https://developer.apple.com/documentation/avfoundation/avassetreader/1390211-status
     status(): AVAssetReaderStatus;
-    setStatus(): void;
+    setStatus(value: AVAssetReaderStatus): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreader/1390286-startreading
-    startReading():BOOL;
+    startReading():boolean;
     // https://developer.apple.com/documentation/avfoundation/avassetreader/1390258-cancelreading
     cancelReading():void;
     // https://developer.apple.com/documentation/avfoundation/avassetreader/1388114-error
     error(): NSError;
-    setError(): void;
+    setError(value: NSError): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreader/1386400-timerange
     timeRange(): CMTimeRange;
-    setTimeRange(): void;
+    setTimeRange(value: CMTimeRange): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreader/1389128-asset
     asset(): AVAsset;
-    setAsset(): void;
+    setAsset(value: AVAsset): void;
     //
     alloc():AVAssetReader;
     //
@@ -6971,18 +7569,18 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avassetreaderoutput/1385732-copynextsamplebuffer
     copyNextSampleBuffer():CMSampleBufferRef;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderoutput/1389189-alwayscopiessampledata
-    alwaysCopiesSampleData(): BOOL;
-    setAlwaysCopiesSampleData(): void;
+    alwaysCopiesSampleData(): boolean;
+    setAlwaysCopiesSampleData(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderoutput/1390880-mediatype
     mediaType(): AVMediaType;
-    setMediaType(): void;
+    setMediaType(value: AVMediaType): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderoutput/1386974-markconfigurationasfinal
     markConfigurationAsFinal():void;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderoutput/1388890-resetforreadingtimeranges
     resetForReadingTimeRanges(timeRanges: NSValue):void;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderoutput/1387927-supportsrandomaccess
-    supportsRandomAccess(): BOOL;
-    setSupportsRandomAccess(): void;
+    supportsRandomAccess(): boolean;
+    setSupportsRandomAccess(value: boolean): void;
     //
     alloc():AVAssetReaderOutput;
     //
@@ -7003,13 +7601,13 @@ declare namespace cocoascript {
     initWithTrack_outputSettings(track: AVAssetTrack, outputSettings: AVAssetReaderTrackOutput):AVAssetReaderTrackOutput;
     // https://developer.apple.com/documentation/avfoundation/avassetreadertrackoutput/1387163-outputsettings
     outputSettings(): id;
-    setOutputSettings(): void;
+    setOutputSettings(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreadertrackoutput/1386921-track
     track(): AVAssetTrack;
-    setTrack(): void;
+    setTrack(value: AVAssetTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreadertrackoutput/1387851-audiotimepitchalgorithm
     audioTimePitchAlgorithm(): AVAudioTimePitchAlgorithm;
-    setAudioTimePitchAlgorithm(): void;
+    setAudioTimePitchAlgorithm(value: AVAudioTimePitchAlgorithm): void;
     //
     alloc():AVAssetReaderTrackOutput;
     //
@@ -7030,16 +7628,16 @@ declare namespace cocoascript {
     assetReaderAudioMixOutputWithAudioTracks_audioSettings(audioTracks: AVAssetTrack, audioSettings: AVAssetReaderAudioMixOutput):AVAssetReaderAudioMixOutput;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderaudiomixoutput/1387074-audiomix
     audioMix(): AVAudioMix;
-    setAudioMix(): void;
+    setAudioMix(value: AVAudioMix): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderaudiomixoutput/1388860-audiosettings
     audioSettings(): id;
-    setAudioSettings(): void;
+    setAudioSettings(value: id): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderaudiomixoutput/1385635-audiotracks
     audioTracks(): AVAssetTrack;
-    setAudioTracks(): void;
+    setAudioTracks(value: AVAssetTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderaudiomixoutput/1388713-audiotimepitchalgorithm
     audioTimePitchAlgorithm(): AVAudioTimePitchAlgorithm;
-    setAudioTimePitchAlgorithm(): void;
+    setAudioTimePitchAlgorithm(value: AVAudioTimePitchAlgorithm): void;
     //
     alloc():AVAssetReaderAudioMixOutput;
     //
@@ -7060,7 +7658,7 @@ declare namespace cocoascript {
     initWithTrack(track: AVAssetTrack):AVAssetReaderSampleReferenceOutput;
     // https://developer.apple.com/documentation/avfoundation/avassetreadersamplereferenceoutput/1390057-track
     track(): AVAssetTrack;
-    setTrack(): void;
+    setTrack(value: AVAssetTrack): void;
     //
     alloc():AVAssetReaderSampleReferenceOutput;
     //
@@ -7081,7 +7679,7 @@ declare namespace cocoascript {
     initWithAssetReaderTrackOutput(trackOutput: AVAssetReaderTrackOutput):AVAssetReaderOutputMetadataAdaptor;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderoutputmetadataadaptor/1388330-assetreadertrackoutput
     assetReaderTrackOutput(): AVAssetReaderTrackOutput;
-    setAssetReaderTrackOutput(): void;
+    setAssetReaderTrackOutput(value: AVAssetReaderTrackOutput): void;
     // https://developer.apple.com/documentation/avfoundation/avassetreaderoutputmetadataadaptor/1390008-nexttimedmetadatagroup
     nextTimedMetadataGroup():AVTimedMetadataGroup;
     //
@@ -7094,92 +7692,92 @@ declare namespace cocoascript {
 declare const AVAssetReaderOutputMetadataAdaptor: cocoascript.AVAssetReaderOutputMetadataAdaptor;
 declare namespace cocoascript {
   /**
-   * A writer used to append media samples to a single track of an asset writer's output file.
+   * An object that appends media samples to a track in an asset writer’s output file.
    * https://developer.apple.com/documentation/avfoundation/avassetwriterinput
    */
   interface AVAssetWriterInput extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1449070-assetwriterinputwithmediatype
     assetWriterInputWithMediaType_outputSettings(mediaType: AVMediaType, outputSettings: AVAssetWriterInput):AVAssetWriterInput;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype
-    assetWriterInputWithMediaType_outputSettings_sourceFormatHint(mediaType: AVMediaType, outputSettings: AVAssetWriterInput, sourceFormatHint: CMFormatDescriptionRef):AVAssetWriterInput;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1385912-initwithmediatype
     initWithMediaType_outputSettings(mediaType: AVMediaType, outputSettings: AVAssetWriterInput):AVAssetWriterInput;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1449091-assetwriterinputwithmediatype
+    assetWriterInputWithMediaType_outputSettings_sourceFormatHint(mediaType: AVMediaType, outputSettings: AVAssetWriterInput, sourceFormatHint: CMFormatDescriptionRef):AVAssetWriterInput;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1389994-initwithmediatype
     initWithMediaType_outputSettings_sourceFormatHint(mediaType: AVMediaType, outputSettings: AVAssetWriterInput, sourceFormatHint: CMFormatDescriptionRef):AVAssetWriterInput;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer
-    appendSampleBuffer(sampleBuffer: CMSampleBufferRef):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata
-    readyForMoreMediaData(): BOOL;
-    setReadyForMoreMediaData(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1390122-markasfinished
-    markAsFinished():void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue
-    requestMediaDataWhenReadyOnQueue_usingBlock(queue: dispatch_queue_t, block: void):void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1386328-metadata
-    metadata(): AVMetadataItem;
-    setMetadata(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1390183-transform
-    transform(): CGAffineTransform;
-    setTransform(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale
-    mediaTimeScale(): CMTimeScale;
-    setMediaTimeScale(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime
-    expectsMediaDataInRealTime(): BOOL;
-    setExpectsMediaDataInRealTime(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled
-    marksOutputTrackAsEnabled(): BOOL;
-    setMarksOutputTrackAsEnabled(): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1387437-naturalsize
     naturalSize(): CGSize;
-    setNaturalSize(): void;
+    setNaturalSize(value: CGSize): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1390183-transform
+    transform(): CGAffineTransform;
+    setTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1389949-preferredvolume
     preferredVolume(): number;
-    setPreferredVolume(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin
-    addTrackAssociationWithTrackOfInput_type(input: AVAssetWriterInput, trackAssociationType: string | cocoascript.NSString):void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko
-    canAddTrackAssociationWithTrackOfInput_type(input: AVAssetWriterInput, trackAssociationType: string | cocoascript.NSString):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1385565-mediatype
-    mediaType(): AVMediaType;
-    setMediaType(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388406-outputsettings
-    outputSettings(): id;
-    setOutputSettings(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint
-    sourceFormatHint(): CMFormatDescriptionRef;
-    setSourceFormatHint(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl
-    sampleReferenceBaseURL(): NSURL;
-    setSampleReferenceBaseURL(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1390768-extendedlanguagetag
-    extendedLanguageTag(): string | cocoascript.NSString;
-    setExtendedLanguageTag(): void;
+    setPreferredVolume(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1386902-mediatimescale
+    mediaTimeScale(): CMTimeScale;
+    setMediaTimeScale(value: CMTimeScale): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1386764-marksoutputtrackasenabled
+    marksOutputTrackAsEnabled(): boolean;
+    setMarksOutputTrackAsEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388507-languagecode
     languageCode(): string | cocoascript.NSString;
-    setLanguageCode(): void;
+    setLanguageCode(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1390768-extendedlanguagetag
+    extendedLanguageTag(): string | cocoascript.NSString;
+    setExtendedLanguageTag(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1386328-metadata
+    metadata(): AVMetadataItem;
+    setMetadata(value: AVMetadataItem): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment
+    preferredMediaChunkAlignment(): NSInteger;
+    setPreferredMediaChunkAlignment(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration
+    preferredMediaChunkDuration(): CMTime;
+    setPreferredMediaChunkDuration(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1386316-samplereferencebaseurl
+    sampleReferenceBaseURL(): NSURL;
+    setSampleReferenceBaseURL(value: NSURL): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation
+    mediaDataLocation(): AVAssetWriterInputMediaDataLocation;
+    setMediaDataLocation(value: AVAssetWriterInputMediaDataLocation): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388292-canaddtrackassociationwithtracko
+    canAddTrackAssociationWithTrackOfInput_type(input: AVAssetWriterInput, trackAssociationType: string | cocoascript.NSString):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388347-addtrackassociationwithtrackofin
+    addTrackAssociationWithTrackOfInput_type(input: AVAssetWriterInput, trackAssociationType: string | cocoascript.NSString):void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1387827-expectsmediadatainrealtime
+    expectsMediaDataInRealTime(): boolean;
+    setExpectsMediaDataInRealTime(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1389084-readyformoremediadata
+    readyForMoreMediaData(): boolean;
+    setReadyForMoreMediaData(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue
+    requestMediaDataWhenReadyOnQueue_usingBlock(queue: dispatch_queue_t, block: void):void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1389566-appendsamplebuffer
+    appendSampleBuffer(sampleBuffer: CMSampleBufferRef):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1390122-markasfinished
+    markAsFinished():void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388284-canperformmultiplepasses
-    canPerformMultiplePasses(): BOOL;
-    setCanPerformMultiplePasses(): void;
+    canPerformMultiplePasses(): boolean;
+    setCanPerformMultiplePasses(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1390627-currentpassdescription
     currentPassDescription(): AVAssetWriterInputPassDescription;
-    setCurrentPassDescription(): void;
+    setCurrentPassDescription(value: AVAssetWriterInputPassDescription): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1389652-markcurrentpassasfinished
     markCurrentPassAsFinished():void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1386570-performsmultipassencodingifsuppo
-    performsMultiPassEncodingIfSupported(): BOOL;
-    setPerformsMultiPassEncodingIfSupported(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388163-preferredmediachunkalignment
-    preferredMediaChunkAlignment(): NSInteger;
-    setPreferredMediaChunkAlignment(): void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1390463-preferredmediachunkduration
-    preferredMediaChunkDuration(): CMTime;
-    setPreferredMediaChunkDuration(): void;
+    performsMultiPassEncodingIfSupported(): boolean;
+    setPerformsMultiPassEncodingIfSupported(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388489-respondtoeachpassdescriptiononqu
     respondToEachPassDescriptionOnQueue_usingBlock(queue: dispatch_queue_t, block: dispatch_block_t):void;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/2867633-mediadatalocation
-    mediaDataLocation(): AVAssetWriterInputMediaDataLocation;
-    setMediaDataLocation(): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1385565-mediatype
+    mediaType(): AVMediaType;
+    setMediaType(value: AVMediaType): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1388406-outputsettings
+    outputSettings(): id;
+    setOutputSettings(value: id): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1387647-sourceformathint
+    sourceFormatHint(): CMFormatDescriptionRef;
+    setSourceFormatHint(value: CMFormatDescriptionRef): void;
     //
     alloc():AVAssetWriterInput;
     //
@@ -7190,7 +7788,7 @@ declare namespace cocoascript {
 declare const AVAssetWriterInput: cocoascript.AVAssetWriterInput;
 declare namespace cocoascript {
   /**
-   * A buffer used to append video samples packaged as pixel buffers to a single asset writer input.
+   * An object that appends video samples to an asset writer input.
    * https://developer.apple.com/documentation/avfoundation/avassetwriterinputpixelbufferadaptor
    */
   interface AVAssetWriterInputPixelBufferAdaptor extends NSObject {
@@ -7199,16 +7797,16 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1390639-initwithassetwriterinput
     initWithAssetWriterInput_sourcePixelBufferAttributes(input: AVAssetWriterInput, sourcePixelBufferAttributes: AVAssetWriterInputPixelBufferAdaptor):AVAssetWriterInputPixelBufferAdaptor;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1388102-appendpixelbuffer
-    appendPixelBuffer_withPresentationTime(pixelBuffer: CVPixelBufferRef, presentationTime: CMTime):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387565-assetwriterinput
-    assetWriterInput(): AVAssetWriterInput;
-    setAssetWriterInput(): void;
+    appendPixelBuffer_withPresentationTime(pixelBuffer: CVPixelBufferRef, presentationTime: CMTime):boolean;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1389662-pixelbufferpool
     pixelBufferPool(): CVPixelBufferPoolRef;
-    setPixelBufferPool(): void;
+    setPixelBufferPool(value: CVPixelBufferPoolRef): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387829-sourcepixelbufferattributes
     sourcePixelBufferAttributes(): id;
-    setSourcePixelBufferAttributes(): void;
+    setSourcePixelBufferAttributes(value: id): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputpixelbufferadaptor/1387565-assetwriterinput
+    assetWriterInput(): AVAssetWriterInput;
+    setAssetWriterInput(value: AVAssetWriterInput): void;
     //
     alloc():AVAssetWriterInputPixelBufferAdaptor;
     //
@@ -7219,19 +7817,19 @@ declare namespace cocoascript {
 declare const AVAssetWriterInputPixelBufferAdaptor: cocoascript.AVAssetWriterInputPixelBufferAdaptor;
 declare namespace cocoascript {
   /**
-   * An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input.
+   * An object that appends timed metadata groups to an asset writer input.
    * https://developer.apple.com/documentation/avfoundation/avassetwriterinputmetadataadaptor
    */
   interface AVAssetWriterInputMetadataAdaptor extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389706-initwithassetwriterinput
-    initWithAssetWriterInput(input: AVAssetWriterInput):AVAssetWriterInputMetadataAdaptor;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinputmetadataadaptor/1449094-assetwriterinputmetadataadaptorw
     assetWriterInputMetadataAdaptorWithAssetWriterInput(input: AVAssetWriterInput):AVAssetWriterInputMetadataAdaptor;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389706-initwithassetwriterinput
+    initWithAssetWriterInput(input: AVAssetWriterInput):AVAssetWriterInputMetadataAdaptor;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinputmetadataadaptor/1389014-appendtimedmetadatagroup
-    appendTimedMetadataGroup(timedMetadataGroup: AVTimedMetadataGroup):BOOL;
+    appendTimedMetadataGroup(timedMetadataGroup: AVTimedMetadataGroup):boolean;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinputmetadataadaptor/1386633-assetwriterinput
     assetWriterInput(): AVAssetWriterInput;
-    setAssetWriterInput(): void;
+    setAssetWriterInput(value: AVAssetWriterInput): void;
     //
     alloc():AVAssetWriterInputMetadataAdaptor;
     //
@@ -7242,7 +7840,7 @@ declare namespace cocoascript {
 declare const AVAssetWriterInputMetadataAdaptor: cocoascript.AVAssetWriterInputMetadataAdaptor;
 declare namespace cocoascript {
   /**
-   * A group of tracks in a mutually exclusive relationship.
+   * A group of inputs with tracks that are mutually exclusive to each other for playback or processing.
    * https://developer.apple.com/documentation/avfoundation/avassetwriterinputgroup
    */
   interface AVAssetWriterInputGroup extends AVMediaSelectionGroup {
@@ -7250,12 +7848,12 @@ declare namespace cocoascript {
     assetWriterInputGroupWithInputs_defaultInput(inputs: AVAssetWriterInput, defaultInput: AVAssetWriterInput):AVAssetWriterInputGroup;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinputgroup/1389502-initwithinputs
     initWithInputs_defaultInput(inputs: AVAssetWriterInput, defaultInput: AVAssetWriterInput):AVAssetWriterInputGroup;
-    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput
-    defaultInput(): AVAssetWriterInput;
-    setDefaultInput(): void;
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinputgroup/1388226-inputs
     inputs(): AVAssetWriterInput;
-    setInputs(): void;
+    setInputs(value: AVAssetWriterInput): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputgroup/1389698-defaultinput
+    defaultInput(): AVAssetWriterInput;
+    setDefaultInput(value: AVAssetWriterInput): void;
     //
     alloc():AVAssetWriterInputGroup;
     //
@@ -7264,6 +7862,134 @@ declare namespace cocoascript {
 }
 
 declare const AVAssetWriterInputGroup: cocoascript.AVAssetWriterInputGroup;
+declare namespace cocoascript {
+  /**
+   * An object that represents zero or more captions that intersect in time.
+   * https://developer.apple.com/documentation/avfoundation/avcaptiongroup
+   */
+  interface AVCaptionGroup extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaptiongroup/3752962-initwithtimerange
+    initWithTimeRange(timeRange: CMTimeRange):AVCaptionGroup;
+    // https://developer.apple.com/documentation/avfoundation/avcaptiongroup/3752961-initwithcaptions
+    initWithCaptions_timeRange(captions: AVCaption, timeRange: CMTimeRange):AVCaptionGroup;
+    // https://developer.apple.com/documentation/avfoundation/avcaptiongroup/3752960-captions
+    captions(): AVCaption;
+    setCaptions(value: AVCaption): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptiongroup/3752963-timerange
+    timeRange(): CMTimeRange;
+    setTimeRange(value: CMTimeRange): void;
+    //
+    alloc():AVCaptionGroup;
+    //
+    init():AVCaptionGroup;
+  }
+}
+
+declare const AVCaptionGroup: cocoascript.AVCaptionGroup;
+declare namespace cocoascript {
+  /**
+   * An object that analyzes the temporal overlaps of caption objects to create caption groups for each span of concurrent captions.
+   * https://developer.apple.com/documentation/avfoundation/avcaptiongrouper
+   */
+  interface AVCaptionGrouper extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaptiongrouper/3752965-addcaption
+    addCaption(input: AVCaption):void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptiongrouper/3752966-flushaddedcaptionsintogroupsupto
+    flushAddedCaptionsIntoGroupsUpToTime(upToTime: CMTime):AVCaptionGroup;
+    //
+    alloc():AVCaptionGrouper;
+    //
+    init():AVCaptionGrouper;
+  }
+}
+
+declare const AVCaptionGrouper: cocoascript.AVCaptionGrouper;
+declare namespace cocoascript {
+  /**
+   * An object that appends captions to an asset writer input.
+   * https://developer.apple.com/documentation/avfoundation/avassetwriterinputcaptionadaptor
+   */
+  interface AVAssetWriterInputCaptionAdaptor extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputcaptionadaptor/3752805-initwithassetwriterinput
+    initWithAssetWriterInput(input: AVAssetWriterInput):AVAssetWriterInputCaptionAdaptor;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputcaptionadaptor/3752804-assetwriterinputcaptionadaptorwi
+    assetWriterInputCaptionAdaptorWithAssetWriterInput(input: AVAssetWriterInput):AVAssetWriterInputCaptionAdaptor;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputcaptionadaptor/3752803-assetwriterinput
+    assetWriterInput(): AVAssetWriterInput;
+    setAssetWriterInput(value: AVAssetWriterInput): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputcaptionadaptor/3752801-appendcaption
+    appendCaption(caption: AVCaption):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avassetwriterinputcaptionadaptor/3752802-appendcaptiongroup
+    appendCaptionGroup(captionGroup: AVCaptionGroup):boolean;
+    //
+    alloc():AVAssetWriterInputCaptionAdaptor;
+    //
+    init():AVAssetWriterInputCaptionAdaptor;
+  }
+}
+
+declare const AVAssetWriterInputCaptionAdaptor: cocoascript.AVAssetWriterInputCaptionAdaptor;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionsettingskey
+  type AVCaptionSettingsKey = cocoascript.NSString;
+}
+declare namespace cocoascript {
+  /**
+   * An object that converts a canonical caption to a specific format.
+   * https://developer.apple.com/documentation/avfoundation/avcaptionformatconformer
+   */
+  interface AVCaptionFormatConformer extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaptionformatconformer/3752958-initwithconversionsettings
+    initWithConversionSettings(conversionSettings: AVCaptionFormatConformer):AVCaptionFormatConformer;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionformatconformer/3752955-captionformatconformerwithconver
+    captionFormatConformerWithConversionSettings(conversionSettings: AVCaptionFormatConformer):AVCaptionFormatConformer;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionformatconformer/3857642-conformscaptionstotimerange
+    conformsCaptionsToTimeRange(): boolean;
+    setConformsCaptionsToTimeRange(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionformatconformer/3752956-conformedcaptionforcaption
+    conformedCaptionForCaption_error(caption: AVCaption, outError: NSError):AVCaption;
+    //
+    alloc():AVCaptionFormatConformer;
+    //
+    init():AVCaptionFormatConformer;
+  }
+}
+
+declare const AVCaptionFormatConformer: cocoascript.AVCaptionFormatConformer;
+declare namespace cocoascript {
+  /**
+   * An object that validates captions for a conversion operation.
+   * https://developer.apple.com/documentation/avfoundation/avcaptionconversionvalidator
+   */
+  interface AVCaptionConversionValidator extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionvalidator/3752937-initwithcaptions
+    initWithCaptions_timeRange_conversionSettings(captions: AVCaption, timeRange: CMTimeRange, conversionSettings: AVCaptionConversionValidator):AVCaptionConversionValidator;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionvalidator/3752935-captionconversionvalidatorwithca
+    captionConversionValidatorWithCaptions_timeRange_conversionSettings(captions: AVCaption, timeRange: CMTimeRange, conversionSettings: AVCaptionConversionValidator):AVCaptionConversionValidator;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionvalidator/3752936-captions
+    captions(): AVCaption;
+    setCaptions(value: AVCaption): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionvalidator/3752940-timerange
+    timeRange(): CMTimeRange;
+    setTimeRange(value: CMTimeRange): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionvalidator/3752941-validatecaptionconversionwithwar
+    validateCaptionConversionWithWarningHandler(handler: AVCaptionConversionWarning):void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionvalidator/3752942-warnings
+    warnings(): AVCaptionConversionWarning;
+    setWarnings(value: AVCaptionConversionWarning): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionvalidator/3752939-stopvalidating
+    stopValidating():void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionvalidator/3752938-status
+    status(): AVCaptionConversionValidatorStatus;
+    setStatus(value: AVCaptionConversionValidatorStatus): void;
+    //
+    alloc():AVCaptionConversionValidator;
+    //
+    init():AVCaptionConversionValidator;
+  }
+}
+
+declare const AVCaptionConversionValidator: cocoascript.AVCaptionConversionValidator;
 // https://developer.apple.com/documentation/avfoundation/avmediatypeaudio
 declare const AVMediaTypeAudio: cocoascript.AVMediaType;
 // https://developer.apple.com/documentation/avfoundation/avmediatypeclosedcaption
@@ -7330,6 +8056,8 @@ declare const AVFileTypeAIFC: cocoascript.AVFileType;
 declare const AVFileTypeAIFF: cocoascript.AVFileType;
 // https://developer.apple.com/documentation/avfoundation/avfiletypeamr
 declare const AVFileTypeAMR: cocoascript.AVFileType;
+// https://developer.apple.com/documentation/avfoundation/avfiletypeappleitt
+declare const AVFileTypeAppleiTT: cocoascript.AVFileType;
 // https://developer.apple.com/documentation/avfoundation/avfiletypesunau
 declare const AVFileTypeSunAU: cocoascript.AVFileType;
 // https://developer.apple.com/documentation/avfoundation/avfiletypeavci
@@ -7356,6 +8084,8 @@ declare const AVFileType3GPP2: cocoascript.AVFileType;
 declare const AVFileTypeMPEGLayer3: cocoascript.AVFileType;
 // https://developer.apple.com/documentation/avfoundation/avfiletypempeg4
 declare const AVFileTypeMPEG4: cocoascript.AVFileType;
+// https://developer.apple.com/documentation/avfoundation/avfiletypescc
+declare const AVFileTypeSCC: cocoascript.AVFileType;
 // https://developer.apple.com/documentation/avfoundation/avfiletypetiff
 declare const AVFileTypeTIFF: cocoascript.AVFileType;
 // https://developer.apple.com/documentation/avfoundation/avfiletypewave
@@ -7375,6 +8105,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/avfoundation/avplayerstatus
   type AVPlayerStatus = cocoascript.NSInteger;
+}
+// https://developer.apple.com/documentation/avfoundation/avplayerratedidchangenotification
+declare const AVPlayerRateDidChangeNotification: cocoascript.NSNotificationName;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avplayeraudiovisualbackgroundplaybackpolicy
+  type AVPlayerAudiovisualBackgroundPlaybackPolicy = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/avfoundation/avplayerwaitingreason
@@ -7409,23 +8145,205 @@ declare namespace cocoascript {
 // https://developer.apple.com/documentation/avfoundation/avcoreanimationbegintimeatzero
 declare const AVCoreAnimationBeginTimeAtZero: cocoascript.CFTimeInterval;
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspensionreason
+  type AVCoordinatedPlaybackSuspensionReason = cocoascript.NSString;
+}
+declare namespace cocoascript {
   /**
-   * Methods you can implement to handle download-related events.
+   * An object that represents a temporary suspension of coordinated playback.
+   * https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspension
+   */
+  interface AVCoordinatedPlaybackSuspension extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspension/3750239-begindate
+    beginDate(): NSDate;
+    setBeginDate(value: NSDate): void;
+    // https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspension/3750242-reason
+    reason(): AVCoordinatedPlaybackSuspensionReason;
+    setReason(value: AVCoordinatedPlaybackSuspensionReason): void;
+    // https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspension/3750240-end
+    end():void;
+    // https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspension/3750241-endproposingnewtime
+    endProposingNewTime(time: CMTime):void;
+    //
+    alloc():AVCoordinatedPlaybackSuspension;
+    //
+    init():AVCoordinatedPlaybackSuspension;
+  }
+}
+
+declare const AVCoordinatedPlaybackSuspension: cocoascript.AVCoordinatedPlaybackSuspension;
+// https://developer.apple.com/documentation/avfoundation/avplaybackcoordinatorsuspensionreasonsdidchangenotification
+declare const AVPlaybackCoordinatorSuspensionReasonsDidChangeNotification: cocoascript.NSNotificationName;
+declare namespace cocoascript {
+  /**
+   * An object that represents a participant in a coordinated playback session.
+   * https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybackparticipant
+   */
+  interface AVCoordinatedPlaybackParticipant extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybackparticipant/3750235-identifier
+    identifier(): NSUUID;
+    setIdentifier(value: NSUUID): void;
+    // https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybackparticipant/3750236-readytoplay
+    readyToPlay(): boolean;
+    setReadyToPlay(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybackparticipant/3750237-suspensionreasons
+    suspensionReasons(): AVCoordinatedPlaybackSuspensionReason;
+    setSuspensionReasons(value: AVCoordinatedPlaybackSuspensionReason): void;
+    //
+    alloc():AVCoordinatedPlaybackParticipant;
+    //
+    init():AVCoordinatedPlaybackParticipant;
+  }
+}
+
+declare const AVCoordinatedPlaybackParticipant: cocoascript.AVCoordinatedPlaybackParticipant;
+// https://developer.apple.com/documentation/avfoundation/avplaybackcoordinatorotherparticipantsdidchangenotification
+declare const AVPlaybackCoordinatorOtherParticipantsDidChangeNotification: cocoascript.NSNotificationName;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorseekoptions
+  type AVDelegatingPlaybackCoordinatorSeekOptions = cocoascript.NSUInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorratechangeoptions
+  type AVDelegatingPlaybackCoordinatorRateChangeOptions = cocoascript.NSUInteger;
+}
+declare namespace cocoascript {
+  /**
+   * An abstract superclass for playback commands.
+   * https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorplaybackcontrolcommand
+   */
+  interface AVDelegatingPlaybackCoordinatorPlaybackControlCommand extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorplaybackcontrolcommand/3750270-expectedcurrentitemidentifier
+    expectedCurrentItemIdentifier(): string | cocoascript.NSString;
+    setExpectedCurrentItemIdentifier(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorplaybackcontrolcommand/3750271-originator
+    originator(): AVCoordinatedPlaybackParticipant;
+    setOriginator(value: AVCoordinatedPlaybackParticipant): void;
+    //
+    alloc():AVDelegatingPlaybackCoordinatorPlaybackControlCommand;
+    //
+    init():AVDelegatingPlaybackCoordinatorPlaybackControlCommand;
+  }
+}
+
+declare const AVDelegatingPlaybackCoordinatorPlaybackControlCommand: cocoascript.AVDelegatingPlaybackCoordinatorPlaybackControlCommand;
+declare namespace cocoascript {
+  /**
+   * A command that indicates to play at a specific rate and time.
+   * https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorplaycommand
+   */
+  interface AVDelegatingPlaybackCoordinatorPlayCommand extends AVDelegatingPlaybackCoordinatorPlaybackControlCommand {
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorplaycommand/3750268-rate
+    rate(): number;
+    setRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorplaycommand/3750267-itemtime
+    itemTime(): CMTime;
+    setItemTime(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorplaycommand/3750266-hostclocktime
+    hostClockTime(): CMTime;
+    setHostClockTime(value: CMTime): void;
+    //
+    alloc():AVDelegatingPlaybackCoordinatorPlayCommand;
+    //
+    init():AVDelegatingPlaybackCoordinatorPlayCommand;
+  }
+}
+
+declare const AVDelegatingPlaybackCoordinatorPlayCommand: cocoascript.AVDelegatingPlaybackCoordinatorPlayCommand;
+declare namespace cocoascript {
+  /**
+   * A command that indicates to pause playback.
+   * https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorpausecommand
+   */
+  interface AVDelegatingPlaybackCoordinatorPauseCommand extends AVDelegatingPlaybackCoordinatorPlaybackControlCommand {
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorpausecommand/3750264-shouldbufferinanticipationofplay
+    shouldBufferInAnticipationOfPlayback(): boolean;
+    setShouldBufferInAnticipationOfPlayback(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorpausecommand/3750263-anticipatedplaybackrate
+    anticipatedPlaybackRate(): number;
+    setAnticipatedPlaybackRate(value: number): void;
+    //
+    alloc():AVDelegatingPlaybackCoordinatorPauseCommand;
+    //
+    init():AVDelegatingPlaybackCoordinatorPauseCommand;
+  }
+}
+
+declare const AVDelegatingPlaybackCoordinatorPauseCommand: cocoascript.AVDelegatingPlaybackCoordinatorPauseCommand;
+declare namespace cocoascript {
+  /**
+   * A command that indicates to seek to a new time in the item timeline.
+   * https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorseekcommand
+   */
+  interface AVDelegatingPlaybackCoordinatorSeekCommand extends AVDelegatingPlaybackCoordinatorPlaybackControlCommand {
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorseekcommand/3750281-shouldbufferinanticipationofplay
+    shouldBufferInAnticipationOfPlayback(): boolean;
+    setShouldBufferInAnticipationOfPlayback(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorseekcommand/3750279-anticipatedplaybackrate
+    anticipatedPlaybackRate(): number;
+    setAnticipatedPlaybackRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorseekcommand/3750280-itemtime
+    itemTime(): CMTime;
+    setItemTime(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorseekcommand/3778531-completionduedate
+    completionDueDate(): NSDate;
+    setCompletionDueDate(value: NSDate): void;
+    //
+    alloc():AVDelegatingPlaybackCoordinatorSeekCommand;
+    //
+    init():AVDelegatingPlaybackCoordinatorSeekCommand;
+  }
+}
+
+declare const AVDelegatingPlaybackCoordinatorSeekCommand: cocoascript.AVDelegatingPlaybackCoordinatorSeekCommand;
+declare namespace cocoascript {
+  /**
+   * A command that indicates to start buffering data in preparation for playback.
+   * https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorbufferingcommand
+   */
+  interface AVDelegatingPlaybackCoordinatorBufferingCommand extends AVDelegatingPlaybackCoordinatorPlaybackControlCommand {
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorbufferingcommand/3750261-anticipatedplaybackrate
+    anticipatedPlaybackRate(): number;
+    setAnticipatedPlaybackRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avdelegatingplaybackcoordinatorbufferingcommand/3778530-completionduedate
+    completionDueDate(): NSDate;
+    setCompletionDueDate(value: NSDate): void;
+    //
+    alloc():AVDelegatingPlaybackCoordinatorBufferingCommand;
+    //
+    init():AVDelegatingPlaybackCoordinatorBufferingCommand;
+  }
+}
+
+declare const AVDelegatingPlaybackCoordinatorBufferingCommand: cocoascript.AVDelegatingPlaybackCoordinatorBufferingCommand;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventrestrictions
+  type AVPlayerInterstitialEventRestrictions = cocoascript.NSUInteger;
+}
+// https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventmonitorcurrenteventdidchangenotification
+declare const AVPlayerInterstitialEventMonitorCurrentEventDidChangeNotification: cocoascript.NSNotificationName;
+// https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventmonitoreventsdidchangenotification
+declare const AVPlayerInterstitialEventMonitorEventsDidChangeNotification: cocoascript.NSNotificationName;
+declare namespace cocoascript {
+  /**
+   * A protocol that defines the methods to implement to respond to asset-download events.
    * https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate
    */
   interface AVAssetDownloadDelegate extends NSURLSessionTaskDelegate {
-    // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/1845200-urlsession
-    URLSession_assetDownloadTask_didFinishDownloadingToURL(session: NSURLSession, assetDownloadTask: AVAssetDownloadTask, location: NSURL):void;
-    // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/1621019-urlsession
-    URLSession_assetDownloadTask_didLoadTimeRange_totalTimeRangesLoaded_timeRangeExpectedToLoad(session: NSURLSession, assetDownloadTask: AVAssetDownloadTask, timeRange: CMTimeRange, loadedTimeRanges: NSValue, timeRangeExpectedToLoad: CMTimeRange):void;
     // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/1621023-urlsession
     URLSession_assetDownloadTask_didResolveMediaSelection(session: NSURLSession, assetDownloadTask: AVAssetDownloadTask, resolvedMediaSelection: AVMediaSelection):void;
-    // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/2897211-urlsession
-    URLSession_aggregateAssetDownloadTask_didCompleteForMediaSelection(session: NSURLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, mediaSelection: AVMediaSelection):void;
-    // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/2919988-urlsession
-    URLSession_aggregateAssetDownloadTask_didLoadTimeRange_totalTimeRangesLoaded_timeRangeExpectedToLoad_forMediaSelection(session: NSURLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, timeRange: CMTimeRange, loadedTimeRanges: NSValue, timeRangeExpectedToLoad: CMTimeRange, mediaSelection: AVMediaSelection):void;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/1621019-urlsession
+    URLSession_assetDownloadTask_didLoadTimeRange_totalTimeRangesLoaded_timeRangeExpectedToLoad(session: NSURLSession, assetDownloadTask: AVAssetDownloadTask, timeRange: CMTimeRange, loadedTimeRanges: NSValue, timeRangeExpectedToLoad: CMTimeRange):void;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/1845200-urlsession
+    URLSession_assetDownloadTask_didFinishDownloadingToURL(session: NSURLSession, assetDownloadTask: AVAssetDownloadTask, location: NSURL):void;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/3751760-urlsession
+    URLSession_assetDownloadTask_willDownloadVariants(session: NSURLSession, assetDownloadTask: AVAssetDownloadTask, variants: AVAssetVariant):void;
     // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/2897241-urlsession
     URLSession_aggregateAssetDownloadTask_willDownloadToURL(session: NSURLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, location: NSURL):void;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/2919988-urlsession
+    URLSession_aggregateAssetDownloadTask_didLoadTimeRange_totalTimeRangesLoaded_timeRangeExpectedToLoad_forMediaSelection(session: NSURLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, timeRange: CMTimeRange, loadedTimeRanges: NSValue, timeRangeExpectedToLoad: CMTimeRange, mediaSelection: AVMediaSelection):void;
+    // https://developer.apple.com/documentation/avfoundation/avassetdownloaddelegate/2897211-urlsession
+    URLSession_aggregateAssetDownloadTask_didCompleteForMediaSelection(session: NSURLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, mediaSelection: AVMediaSelection):void;
   }
 }
 declare namespace cocoascript {
@@ -7443,8 +8361,10 @@ declare namespace cocoascript {
    */
   interface AVContentKeyRecipient {
     // https://developer.apple.com/documentation/avfoundation/avcontentkeyrecipient/2799194-mayrequirecontentkeysformediadat
-    mayRequireContentKeysForMediaDataProcessing(): BOOL;
-    setMayRequireContentKeysForMediaDataProcessing(): void;
+    mayRequireContentKeysForMediaDataProcessing(): boolean;
+    setMayRequireContentKeysForMediaDataProcessing(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avcontentkeyrecipient/3726101-contentkeysession
+    contentKeySession_didProvideContentKey(contentKeySession: AVContentKeySession, contentKey: AVContentKey):void;
   }
 }
 declare namespace cocoascript {
@@ -7529,16 +8449,16 @@ declare namespace cocoascript {
   interface AVFrameRateRange extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avframeraterange/1386786-maxframeduration
     maxFrameDuration(): CMTime;
-    setMaxFrameDuration(): void;
+    setMaxFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avframeraterange/1386988-maxframerate
     maxFrameRate(): Float64;
-    setMaxFrameRate(): void;
+    setMaxFrameRate(value: Float64): void;
     // https://developer.apple.com/documentation/avfoundation/avframeraterange/1388420-minframeduration
     minFrameDuration(): CMTime;
-    setMinFrameDuration(): void;
+    setMinFrameDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avframeraterange/1389132-minframerate
     minFrameRate(): Float64;
-    setMinFrameRate(): void;
+    setMinFrameRate(value: Float64): void;
     //
     alloc():AVFrameRateRange;
     //
@@ -7573,7 +8493,7 @@ declare namespace cocoascript {
     autoExposureSettingsWithExposureTargetBias(exposureTargetBias: number):AVCaptureAutoExposureBracketedStillImageSettings;
     // https://developer.apple.com/documentation/avfoundation/avcaptureautoexposurebracketedstillimagesettings/1616293-exposuretargetbias
     exposureTargetBias(): number;
-    setExposureTargetBias(): void;
+    setExposureTargetBias(value: number): void;
     //
     alloc():AVCaptureAutoExposureBracketedStillImageSettings;
     //
@@ -7592,10 +8512,10 @@ declare namespace cocoascript {
     manualExposureSettingsWithExposureDuration_ISO(duration: CMTime, ISO: number):AVCaptureManualExposureBracketedStillImageSettings;
     // https://developer.apple.com/documentation/avfoundation/avcapturemanualexposurebracketedstillimagesettings/1616282-iso
     ISO(): number;
-    setISO(): void;
+    setISO(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avcapturemanualexposurebracketedstillimagesettings/1616312-exposureduration
     exposureDuration(): CMTime;
-    setExposureDuration(): void;
+    setExposureDuration(value: CMTime): void;
     //
     alloc():AVCaptureManualExposureBracketedStillImageSettings;
     //
@@ -7670,25 +8590,25 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   /**
-   * A class that provides information on a track in segment data.
+   * An object that provides information on a track in segment data.
    * https://developer.apple.com/documentation/avfoundation/avassetsegmenttrackreport
    */
   interface AVAssetSegmentTrackReport extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetsegmenttrackreport/3546581-trackid
     trackID(): CMPersistentTrackID;
-    setTrackID(): void;
+    setTrackID(value: CMPersistentTrackID): void;
     // https://developer.apple.com/documentation/avfoundation/avassetsegmenttrackreport/3546580-mediatype
     mediaType(): AVMediaType;
-    setMediaType(): void;
+    setMediaType(value: AVMediaType): void;
     // https://developer.apple.com/documentation/avfoundation/avassetsegmenttrackreport/3546578-duration
     duration(): CMTime;
-    setDuration(): void;
+    setDuration(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avassetsegmenttrackreport/3600083-earliestpresentationtimestamp
     earliestPresentationTimeStamp(): CMTime;
-    setEarliestPresentationTimeStamp(): void;
+    setEarliestPresentationTimeStamp(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avassetsegmenttrackreport/3546579-firstvideosampleinformation
     firstVideoSampleInformation(): AVAssetSegmentReportSampleInformation;
-    setFirstVideoSampleInformation(): void;
+    setFirstVideoSampleInformation(value: AVAssetSegmentReportSampleInformation): void;
     //
     alloc():AVAssetSegmentTrackReport;
     //
@@ -7697,152 +8617,6 @@ declare namespace cocoascript {
 }
 
 declare const AVAssetSegmentTrackReport: cocoascript.AVAssetSegmentTrackReport;
-declare namespace cocoascript {
-  /**
-   * A mixer node that simulates a 3D audio environment.
-   * https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode
-   */
-  interface AVAudioEnvironmentNode extends AVAudioNode {
-    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1643654-init
-    init():AVAudioEnvironmentNode;
-    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1387396-distanceattenuationparameters
-    distanceAttenuationParameters(): AVAudioEnvironmentDistanceAttenuationParameters;
-    setDistanceAttenuationParameters(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1386966-listenerangularorientation
-    listenerAngularOrientation(): AVAudio3DAngularOrientation;
-    setListenerAngularOrientation(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1389883-listenervectororientation
-    listenerVectorOrientation(): AVAudio3DVectorOrientation;
-    setListenerVectorOrientation(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1387947-listenerposition
-    listenerPosition(): AVAudio3DPoint;
-    setListenerPosition(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1389020-reverbparameters
-    reverbParameters(): AVAudioEnvironmentReverbParameters;
-    setReverbParameters(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1386300-outputvolume
-    outputVolume(): number;
-    setOutputVolume(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1390049-applicablerenderingalgorithms
-    applicableRenderingAlgorithms(): NSNumber;
-    setApplicableRenderingAlgorithms(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1385841-nextavailableinputbus
-    nextAvailableInputBus(): AVAudioNodeBus;
-    setNextAvailableInputBus(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/3114278-outputtype
-    outputType(): AVAudioEnvironmentOutputType;
-    setOutputType(): void;
-    //
-    alloc():AVAudioEnvironmentNode;
-    //
-    init():AVAudioEnvironmentNode;
-  }
-}
-
-declare const AVAudioEnvironmentNode: cocoascript.AVAudioEnvironmentNode;
-declare namespace cocoascript {
-  /**
-   * A group of connected audio node objects used to generate and process audio signals and perform audio input and output.
-   * https://developer.apple.com/documentation/avfoundation/avaudioengine
-   */
-  interface AVAudioEngine extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1390381-init
-    init():AVAudioEngine;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1390685-attachnode
-    attachNode(node: AVAudioNode):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1388198-detachnode
-    detachNode(node: AVAudioNode):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3088797-attachednodes
-    attachedNodes(): AVAudioNode;
-    setAttachedNodes(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1386063-inputnode
-    inputNode(): AVAudioInputNode;
-    setInputNode(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1389103-outputnode
-    outputNode(): AVAudioOutputNode;
-    setOutputNode(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1385813-mainmixernode
-    mainMixerNode(): AVAudioMixerNode;
-    setMainMixerNode(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1388974-connect
-    connect_to_format(node1: AVAudioNode, node2: AVAudioNode, format: AVAudioFormat):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1389776-connect
-    connect_to_fromBus_toBus_format(node1: AVAudioNode, node2: AVAudioNode, bus1: AVAudioNodeBus, bus2: AVAudioNodeBus, format: AVAudioFormat):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1388181-disconnectnodeinput
-    disconnectNodeInput(node: AVAudioNode):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1387251-disconnectnodeinput
-    disconnectNodeInput_bus(node: AVAudioNode, bus: AVAudioNodeBus):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1386992-disconnectnodeoutput
-    disconnectNodeOutput(node: AVAudioNode):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1390352-disconnectnodeoutput
-    disconnectNodeOutput_bus(node: AVAudioNode, bus: AVAudioNodeBus):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012853-connectmidi
-    connectMIDI_to_format_block(sourceNode: AVAudioNode, destinationNode: AVAudioNode, format: AVAudioFormat, tapBlock: AUMIDIOutputEventBlock):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012854-connectmidi
-    connectMIDI_toNodes_format_block(sourceNode: AVAudioNode, destinationNodes: AVAudioNode, format: AVAudioFormat, tapBlock: AUMIDIOutputEventBlock):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012855-disconnectmidi
-    disconnectMIDI_from(sourceNode: AVAudioNode, destinationNode: AVAudioNode):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012856-disconnectmidi
-    disconnectMIDI_fromNodes(sourceNode: AVAudioNode, destinationNodes: AVAudioNode):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012857-disconnectmidiinput
-    disconnectMIDIInput(node: AVAudioNode):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012858-disconnectmidioutput
-    disconnectMIDIOutput(node: AVAudioNode):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1390410-musicsequence
-    musicSequence(): MusicSequence;
-    setMusicSequence(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1386931-prepare
-    prepare():void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1387024-startandreturnerror
-    startAndReturnError(outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1388591-running
-    running(): BOOL;
-    setRunning(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1387076-pause
-    pause():void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1390414-stop
-    stop():void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1389668-reset
-    reset():void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881237-enablemanualrenderingmode
-    enableManualRenderingMode_format_maximumFrameCount_error(mode: AVAudioEngineManualRenderingMode, pcmFormat: AVAudioFormat, maximumFrameCount: AVAudioFrameCount, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881239-disablemanualrenderingmode
-    disableManualRenderingMode():void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881253-renderoffline
-    renderOffline_toBuffer_error(numberOfFrames: AVAudioFrameCount, buffer: AVAudioPCMBuffer, outError: NSError):AVAudioEngineManualRenderingStatus;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881244-manualrenderingblock
-    manualRenderingBlock(): AVAudioEngineManualRenderingBlock;
-    setManualRenderingBlock(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881246-manualrenderingformat
-    manualRenderingFormat(): AVAudioFormat;
-    setManualRenderingFormat(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881254-manualrenderingmaximumframecount
-    manualRenderingMaximumFrameCount(): AVAudioFrameCount;
-    setManualRenderingMaximumFrameCount(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881247-manualrenderingmode
-    manualRenderingMode(): AVAudioEngineManualRenderingMode;
-    setManualRenderingMode(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881255-manualrenderingsampletime
-    manualRenderingSampleTime(): AVAudioFramePosition;
-    setManualRenderingSampleTime(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2879211-autoshutdownenabled
-    autoShutdownEnabled(): BOOL;
-    setAutoShutdownEnabled(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881241-isinmanualrenderingmode
-    isInManualRenderingMode(): BOOL;
-    setIsInManualRenderingMode(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1389510-connect
-    connect_toConnectionPoints_fromBus_format(sourceNode: AVAudioNode, destNodes: AVAudioConnectionPoint, sourceBus: AVAudioNodeBus, format: AVAudioFormat):void;
-    //
-    alloc():AVAudioEngine;
-    //
-    init():AVAudioEngine;
-  }
-}
-
-declare const AVAudioEngine: cocoascript.AVAudioEngine;
-// https://developer.apple.com/documentation/avfoundation/avaudioengineconfigurationchangenotification
-declare const AVAudioEngineConfigurationChangeNotification: cocoascript.NSString;
 // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequestretryreasonreceivedobsoletecontentkey
 declare const AVContentKeyRequestRetryReasonReceivedObsoleteContentKey: cocoascript.AVContentKeyRequestRetryReason;
 // https://developer.apple.com/documentation/avfoundation/avcontentkeyrequestretryreasonreceivedresponsewithexpiredlease
@@ -8063,6 +8837,8 @@ declare const AVMetadataQuickTimeMetadataKeyEncodedBy: cocoascript.AVMetadataKey
 declare const AVMetadataQuickTimeMetadataKeyGenre: cocoascript.AVMetadataKey;
 // https://developer.apple.com/documentation/avfoundation/avmetadataquicktimemetadatakeyinformation
 declare const AVMetadataQuickTimeMetadataKeyInformation: cocoascript.AVMetadataKey;
+// https://developer.apple.com/documentation/avfoundation/avmetadataquicktimemetadatakeyismontage
+declare const AVMetadataQuickTimeMetadataKeyIsMontage: cocoascript.AVMetadataKey;
 // https://developer.apple.com/documentation/avfoundation/avmetadataquicktimemetadatakeyixml
 declare const AVMetadataQuickTimeMetadataKeyiXML: cocoascript.AVMetadataKey;
 // https://developer.apple.com/documentation/avfoundation/avmetadataquicktimemetadatakeykeywords
@@ -8635,6 +9411,8 @@ declare const AVMetadataIdentifierQuickTimeMetadataLocationRole: cocoascript.AVM
 declare const AVMetadataIdentifierQuickTimeMetadataMake: cocoascript.AVMetadataIdentifier;
 // https://developer.apple.com/documentation/avfoundation/avmetadataidentifierquicktimemetadatamodel
 declare const AVMetadataIdentifierQuickTimeMetadataModel: cocoascript.AVMetadataIdentifier;
+// https://developer.apple.com/documentation/avfoundation/avmetadataidentifierquicktimemetadataismontage
+declare const AVMetadataIdentifierQuickTimeMetadataIsMontage: cocoascript.AVMetadataIdentifier;
 // https://developer.apple.com/documentation/avfoundation/avmetadataidentifierquicktimemetadataoriginalartist
 declare const AVMetadataIdentifierQuickTimeMetadataOriginalArtist: cocoascript.AVMetadataIdentifier;
 // https://developer.apple.com/documentation/avfoundation/avmetadataidentifierquicktimemetadataperformer
@@ -9001,6 +9779,55 @@ declare const AVVideoApertureModeEncodedPixels: cocoascript.AVVideoApertureMode;
 declare const AVVideoApertureModeProductionAperture: cocoascript.AVVideoApertureMode;
 declare namespace cocoascript {
   /**
+   * An object that defines the audio attributes for an asset variant.
+   * https://developer.apple.com/documentation/avfoundation/avassetvariantaudioattributes
+   */
+  interface AVAssetVariantAudioAttributes extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantaudioattributes/3746548-formatids
+    formatIDs(): NSNumber;
+    setFormatIDs(value: NSNumber): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantaudioattributes/3746549-renditionspecificattributesforme
+    renditionSpecificAttributesForMediaOption(mediaSelectionOption: AVMediaSelectionOption):AVAssetVariantAudioRenditionSpecificAttributes;
+    //
+    alloc():AVAssetVariantAudioAttributes;
+    //
+    init():AVAssetVariantAudioAttributes;
+  }
+}
+
+declare const AVAssetVariantAudioAttributes: cocoascript.AVAssetVariantAudioAttributes;
+declare namespace cocoascript {
+  /**
+   * An object that defines the video attributes for an asset variant.
+   * https://developer.apple.com/documentation/avfoundation/avassetvariantvideoattributes
+   */
+  interface AVAssetVariantVideoAttributes extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantvideoattributes/3746553-codectypes
+    codecTypes(): NSNumber;
+    setCodecTypes(value: NSNumber): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantvideoattributes/3746554-nominalframerate
+    nominalFrameRate(): number;
+    setNominalFrameRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantvideoattributes/3746555-presentationsize
+    presentationSize(): CGSize;
+    setPresentationSize(value: CGSize): void;
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantvideoattributes/3746556-videorange
+    videoRange(): AVVideoRange;
+    setVideoRange(value: AVVideoRange): void;
+    //
+    alloc():AVAssetVariantVideoAttributes;
+    //
+    init():AVAssetVariantVideoAttributes;
+  }
+}
+
+declare const AVAssetVariantVideoAttributes: cocoascript.AVAssetVariantVideoAttributes;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionunitstype
+  type AVCaptionUnitsType = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  /**
    * Properties that are applicable to the input bus of a mixer node.
    * https://developer.apple.com/documentation/avfoundation/avaudiomixing
    */
@@ -9009,9 +9836,52 @@ declare namespace cocoascript {
     destinationForMixer_bus(mixer: AVAudioNode, bus: AVAudioNodeBus):AVAudioMixingDestination;
     // https://developer.apple.com/documentation/avfoundation/avaudiomixing/1387422-volume
     volume(): number;
-    setVolume(): void;
+    setVolume(value: number): void;
   }
 }
+declare namespace cocoascript {
+  /**
+   * A mixer node that simulates a 3D audio environment.
+   * https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode
+   */
+  interface AVAudioEnvironmentNode extends AVAudioNode {
+    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1643654-init
+    init():AVAudioEnvironmentNode;
+    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1387396-distanceattenuationparameters
+    distanceAttenuationParameters(): AVAudioEnvironmentDistanceAttenuationParameters;
+    setDistanceAttenuationParameters(value: AVAudioEnvironmentDistanceAttenuationParameters): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1386966-listenerangularorientation
+    listenerAngularOrientation(): AVAudio3DAngularOrientation;
+    setListenerAngularOrientation(value: AVAudio3DAngularOrientation): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1389883-listenervectororientation
+    listenerVectorOrientation(): AVAudio3DVectorOrientation;
+    setListenerVectorOrientation(value: AVAudio3DVectorOrientation): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1387947-listenerposition
+    listenerPosition(): AVAudio3DPoint;
+    setListenerPosition(value: AVAudio3DPoint): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1389020-reverbparameters
+    reverbParameters(): AVAudioEnvironmentReverbParameters;
+    setReverbParameters(value: AVAudioEnvironmentReverbParameters): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1386300-outputvolume
+    outputVolume(): number;
+    setOutputVolume(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1390049-applicablerenderingalgorithms
+    applicableRenderingAlgorithms(): NSNumber;
+    setApplicableRenderingAlgorithms(value: NSNumber): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/1385841-nextavailableinputbus
+    nextAvailableInputBus(): AVAudioNodeBus;
+    setNextAvailableInputBus(value: AVAudioNodeBus): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentnode/3114278-outputtype
+    outputType(): AVAudioEnvironmentOutputType;
+    setOutputType(value: AVAudioEnvironmentOutputType): void;
+    //
+    alloc():AVAudioEnvironmentNode;
+    //
+    init():AVAudioEnvironmentNode;
+  }
+}
+
+declare const AVAudioEnvironmentNode: cocoascript.AVAudioEnvironmentNode;
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/avfoundation/avaudio3dmixingrenderingalgorithm
   type AVAudio3DMixingRenderingAlgorithm = cocoascript.NSInteger;
@@ -9023,14 +9893,14 @@ declare namespace cocoascript {
    */
   interface AVAudioEnvironmentReverbParameters extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentreverbparameters/1386259-enable
-    enable(): BOOL;
-    setEnable(): void;
+    enable(): boolean;
+    setEnable(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentreverbparameters/1387313-filterparameters
     filterParameters(): AVAudioUnitEQFilterParameters;
-    setFilterParameters(): void;
+    setFilterParameters(value: AVAudioUnitEQFilterParameters): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentreverbparameters/1387891-level
     level(): number;
-    setLevel(): void;
+    setLevel(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentreverbparameters/1390731-loadfactoryreverbpreset
     loadFactoryReverbPreset(preset: AVAudioUnitReverbPreset):void;
     //
@@ -9049,16 +9919,16 @@ declare namespace cocoascript {
   interface AVAudioEnvironmentDistanceAttenuationParameters extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters/1387431-distanceattenuationmodel
     distanceAttenuationModel(): AVAudioEnvironmentDistanceAttenuationModel;
-    setDistanceAttenuationModel(): void;
+    setDistanceAttenuationModel(value: AVAudioEnvironmentDistanceAttenuationModel): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters/1387580-maximumdistance
     maximumDistance(): number;
-    setMaximumDistance(): void;
+    setMaximumDistance(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters/1386982-referencedistance
     referenceDistance(): number;
-    setReferenceDistance(): void;
+    setReferenceDistance(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters/1386448-rollofffactor
     rolloffFactor(): number;
-    setRolloffFactor(): void;
+    setRolloffFactor(value: number): void;
     //
     alloc():AVAudioEnvironmentDistanceAttenuationParameters;
     //
@@ -9097,6 +9967,109 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   /**
+   * A group of connected audio node objects used to generate and process audio signals and perform audio input and output.
+   * https://developer.apple.com/documentation/avfoundation/avaudioengine
+   */
+  interface AVAudioEngine extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1390381-init
+    init():AVAudioEngine;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1390685-attachnode
+    attachNode(node: AVAudioNode):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1388198-detachnode
+    detachNode(node: AVAudioNode):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3088797-attachednodes
+    attachedNodes(): AVAudioNode;
+    setAttachedNodes(value: AVAudioNode): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1386063-inputnode
+    inputNode(): AVAudioInputNode;
+    setInputNode(value: AVAudioInputNode): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1389103-outputnode
+    outputNode(): AVAudioOutputNode;
+    setOutputNode(value: AVAudioOutputNode): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1385813-mainmixernode
+    mainMixerNode(): AVAudioMixerNode;
+    setMainMixerNode(value: AVAudioMixerNode): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1388974-connect
+    connect_to_format(node1: AVAudioNode, node2: AVAudioNode, format: AVAudioFormat):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1389776-connect
+    connect_to_fromBus_toBus_format(node1: AVAudioNode, node2: AVAudioNode, bus1: AVAudioNodeBus, bus2: AVAudioNodeBus, format: AVAudioFormat):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1388181-disconnectnodeinput
+    disconnectNodeInput(node: AVAudioNode):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1387251-disconnectnodeinput
+    disconnectNodeInput_bus(node: AVAudioNode, bus: AVAudioNodeBus):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1386992-disconnectnodeoutput
+    disconnectNodeOutput(node: AVAudioNode):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1390352-disconnectnodeoutput
+    disconnectNodeOutput_bus(node: AVAudioNode, bus: AVAudioNodeBus):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012853-connectmidi
+    connectMIDI_to_format_block(sourceNode: AVAudioNode, destinationNode: AVAudioNode, format: AVAudioFormat, tapBlock: AUMIDIOutputEventBlock):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012854-connectmidi
+    connectMIDI_toNodes_format_block(sourceNode: AVAudioNode, destinationNodes: AVAudioNode, format: AVAudioFormat, tapBlock: AUMIDIOutputEventBlock):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012855-disconnectmidi
+    disconnectMIDI_from(sourceNode: AVAudioNode, destinationNode: AVAudioNode):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012856-disconnectmidi
+    disconnectMIDI_fromNodes(sourceNode: AVAudioNode, destinationNodes: AVAudioNode):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012857-disconnectmidiinput
+    disconnectMIDIInput(node: AVAudioNode):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/3012858-disconnectmidioutput
+    disconnectMIDIOutput(node: AVAudioNode):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1390410-musicsequence
+    musicSequence(): MusicSequence;
+    setMusicSequence(value: MusicSequence): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1386931-prepare
+    prepare():void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1387024-startandreturnerror
+    startAndReturnError(outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1388591-running
+    running(): boolean;
+    setRunning(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1387076-pause
+    pause():void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1390414-stop
+    stop():void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1389668-reset
+    reset():void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881237-enablemanualrenderingmode
+    enableManualRenderingMode_format_maximumFrameCount_error(mode: AVAudioEngineManualRenderingMode, pcmFormat: AVAudioFormat, maximumFrameCount: AVAudioFrameCount, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881239-disablemanualrenderingmode
+    disableManualRenderingMode():void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881253-renderoffline
+    renderOffline_toBuffer_error(numberOfFrames: AVAudioFrameCount, buffer: AVAudioPCMBuffer, outError: NSError):AVAudioEngineManualRenderingStatus;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881244-manualrenderingblock
+    manualRenderingBlock(): AVAudioEngineManualRenderingBlock;
+    setManualRenderingBlock(value: AVAudioEngineManualRenderingBlock): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881246-manualrenderingformat
+    manualRenderingFormat(): AVAudioFormat;
+    setManualRenderingFormat(value: AVAudioFormat): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881254-manualrenderingmaximumframecount
+    manualRenderingMaximumFrameCount(): AVAudioFrameCount;
+    setManualRenderingMaximumFrameCount(value: AVAudioFrameCount): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881247-manualrenderingmode
+    manualRenderingMode(): AVAudioEngineManualRenderingMode;
+    setManualRenderingMode(value: AVAudioEngineManualRenderingMode): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881255-manualrenderingsampletime
+    manualRenderingSampleTime(): AVAudioFramePosition;
+    setManualRenderingSampleTime(value: AVAudioFramePosition): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2879211-autoshutdownenabled
+    autoShutdownEnabled(): boolean;
+    setAutoShutdownEnabled(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/2881241-isinmanualrenderingmode
+    isInManualRenderingMode(): boolean;
+    setIsInManualRenderingMode(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1389510-connect
+    connect_toConnectionPoints_fromBus_format(sourceNode: AVAudioNode, destNodes: AVAudioConnectionPoint, sourceBus: AVAudioNodeBus, format: AVAudioFormat):void;
+    //
+    alloc():AVAudioEngine;
+    //
+    init():AVAudioEngine;
+  }
+}
+
+declare const AVAudioEngine: cocoascript.AVAudioEngine;
+// https://developer.apple.com/documentation/avfoundation/avaudioengineconfigurationchangenotification
+declare const AVAudioEngineConfigurationChangeNotification: cocoascript.NSString;
+declare namespace cocoascript {
+  /**
    * An abstract class for an audio generation, processing, or I/O block.
    * https://developer.apple.com/documentation/avfoundation/avaudionode
    */
@@ -9107,33 +10080,33 @@ declare namespace cocoascript {
     nameForInputBus(bus: AVAudioNodeBus):NSString;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/1390585-numberofinputs
     numberOfInputs(): NSUInteger;
-    setNumberOfInputs(): void;
+    setNumberOfInputs(value: NSUInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/1389195-outputformatforbus
     outputFormatForBus(bus: AVAudioNodeBus):AVAudioFormat;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/1390811-nameforoutputbus
     nameForOutputBus(bus: AVAudioNodeBus):NSString;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/1385916-numberofoutputs
     numberOfOutputs(): NSUInteger;
-    setNumberOfOutputs(): void;
+    setNumberOfOutputs(value: NSUInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/1387122-installtaponbus
     installTapOnBus_bufferSize_format_block(bus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat, tapBlock: AVAudioNodeTapBlock):void;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/1388717-removetaponbus
     removeTapOnBus(bus: AVAudioNodeBus):void;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/1386896-engine
     engine(): AVAudioEngine;
-    setEngine(): void;
+    setEngine(value: AVAudioEngine): void;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/1385978-lastrendertime
     lastRenderTime(): AVAudioTime;
-    setLastRenderTime(): void;
+    setLastRenderTime(value: AVAudioTime): void;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/2866396-auaudiounit
     AUAudioUnit(): AUAudioUnit;
-    setAUAudioUnit(): void;
+    setAUAudioUnit(value: AUAudioUnit): void;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/2875482-latency
     latency(): NSTimeInterval;
-    setLatency(): void;
+    setLatency(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/2875483-outputpresentationlatency
     outputPresentationLatency(): NSTimeInterval;
-    setOutputPresentationLatency(): void;
+    setOutputPresentationLatency(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avaudionode/1385976-reset
     reset():void;
     //
@@ -9155,14 +10128,18 @@ declare const AVAssetImageGeneratorApertureModeEncodedPixels: cocoascript.AVAsse
 // https://developer.apple.com/documentation/avfoundation/avassetimagegeneratoraperturemodeproductionaperture
 declare const AVAssetImageGeneratorApertureModeProductionAperture: cocoascript.AVAssetImageGeneratorApertureMode;
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avassetwriterinputmediadatalocation
+  type AVAssetWriterInputMediaDataLocation = cocoascript.NSString;
+}
+declare namespace cocoascript {
   /**
-   * An object that defines an interface for querying about the requirements of the current pass.
+   * An object that defines the interface to query for the requirements of the current pass.
    * https://developer.apple.com/documentation/avfoundation/avassetwriterinputpassdescription
    */
   interface AVAssetWriterInputPassDescription extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinputpassdescription/1388732-sourcetimeranges
     sourceTimeRanges(): NSValue;
-    setSourceTimeRanges(): void;
+    setSourceTimeRanges(value: NSValue): void;
     //
     alloc():AVAssetWriterInputPassDescription;
     //
@@ -9171,9 +10148,40 @@ declare namespace cocoascript {
 }
 
 declare const AVAssetWriterInputPassDescription: cocoascript.AVAssetWriterInputPassDescription;
+// https://developer.apple.com/documentation/avfoundation/avcaptionmediatypekey
+declare const AVCaptionMediaTypeKey: cocoascript.AVCaptionSettingsKey;
+// https://developer.apple.com/documentation/avfoundation/avcaptionmediasubtypekey
+declare const AVCaptionMediaSubTypeKey: cocoascript.AVCaptionSettingsKey;
+// https://developer.apple.com/documentation/avfoundation/avcaptiontimecodeframedurationkey
+declare const AVCaptionTimeCodeFrameDurationKey: cocoascript.AVCaptionSettingsKey;
+// https://developer.apple.com/documentation/avfoundation/avcaptionusedropframetimecodekey
+declare const AVCaptionUseDropFrameTimeCodeKey: cocoascript.AVCaptionSettingsKey;
 declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avassetwriterinputmediadatalocation
-  type AVAssetWriterInputMediaDataLocation = cocoascript.NSString;
+  /**
+   * An object that represents a conversion warning produced by a validator.
+   * https://developer.apple.com/documentation/avfoundation/avcaptionconversionwarning
+   */
+  interface AVCaptionConversionWarning extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionwarning/3752951-warningtype
+    warningType(): AVCaptionConversionWarningType;
+    setWarningType(value: AVCaptionConversionWarningType): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionwarning/3752950-rangeofcaptions
+    rangeOfCaptions(): NSRange;
+    setRangeOfCaptions(value: NSRange): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionwarning/3752949-adjustment
+    adjustment(): AVCaptionConversionAdjustment;
+    setAdjustment(value: AVCaptionConversionAdjustment): void;
+    //
+    alloc():AVCaptionConversionWarning;
+    //
+    init():AVCaptionConversionWarning;
+  }
+}
+
+declare const AVCaptionConversionWarning: cocoascript.AVCaptionConversionWarning;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionconversionvalidatorstatus
+  type AVCaptionConversionValidatorStatus = cocoascript.NSInteger;
 }
 // https://developer.apple.com/documentation/avfoundation/avoutputsettingspresethevc3840x2160
 declare const AVOutputSettingsPresetHEVC3840x2160: cocoascript.AVOutputSettingsPreset;
@@ -9189,208 +10197,38 @@ declare const AVOutputSettingsPreset1280x720: cocoascript.AVOutputSettingsPreset
 declare const AVOutputSettingsPreset960x540: cocoascript.AVOutputSettingsPreset;
 // https://developer.apple.com/documentation/avfoundation/avoutputsettingspreset640x480
 declare const AVOutputSettingsPreset640x480: cocoascript.AVOutputSettingsPreset;
+// https://developer.apple.com/documentation/avfoundation/avoutputsettingspresethevc7680x4320
+declare const AVOutputSettingsPresetHEVC7680x4320: cocoascript.AVOutputSettingsPreset;
 declare namespace cocoascript {
-  /**
-   * An object that communicates to the system how you intend to use audio in your app.
-   * https://developer.apple.com/documentation/avfoundation/avaudiosession
-   */
-  interface AVAudioSession extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616504-sharedinstance
-    sharedInstance():AVAudioSession;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1648777-init
-    init():AVAudioSession;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616615-category
-    category(): AVAudioSessionCategory;
-    setCategory(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616583-setcategory
-    setCategory_error(category: AVAudioSessionCategory, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616591-availablecategories
-    availableCategories(): AVAudioSessionCategory;
-    setAvailableCategories(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616503-categoryoptions
-    categoryOptions(): AVAudioSessionCategoryOptions;
-    setCategoryOptions(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616442-setcategory
-    setCategory_withOptions_error(category: AVAudioSessionCategory, options: AVAudioSessionCategoryOptions, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616508-mode
-    mode(): AVAudioSessionMode;
-    setMode(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616614-setmode
-    setMode_error(mode: AVAudioSessionMode, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1771734-setcategory
-    setCategory_mode_options_error(category: AVAudioSessionCategory, mode: AVAudioSessionMode, options: AVAudioSessionCategoryOptions, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616517-availablemodes
-    availableModes(): AVAudioSessionMode;
-    setAvailableModes(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/2887118-routesharingpolicy
-    routeSharingPolicy(): AVAudioSessionRouteSharingPolicy;
-    setRouteSharingPolicy(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/2887480-setcategory
-    setCategory_mode_routeSharingPolicy_options_error(category: AVAudioSessionCategory, mode: AVAudioSessionMode, policy: AVAudioSessionRouteSharingPolicy, options: AVAudioSessionCategoryOptions, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616597-setactive
-    setActive_error(active: BOOL, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616627-setactive
-    setActive_withOptions_error(active: BOOL, options: AVAudioSessionSetActiveOptions, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/2962797-activatewithoptions
-    activateWithOptions_completionHandler(options: AVAudioSessionActivationOptions, handler: NSError):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616496-setactive
-    setActive_withFlags_error(active: BOOL, flags: NSInteger, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616463-recordpermission
-    recordPermission(): AVAudioSessionRecordPermission;
-    setRecordPermission(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616601-requestrecordpermission
-    requestRecordPermission(response: BOOL):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616610-otheraudioplaying
-    otherAudioPlaying(): BOOL;
-    setOtherAudioPlaying(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616600-secondaryaudioshouldbesilencedhi
-    secondaryAudioShouldBeSilencedHint(): BOOL;
-    setSecondaryAudioShouldBeSilencedHint(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3240575-allowhapticsandsystemsoundsdurin
-    allowHapticsAndSystemSoundsDuringRecording(): BOOL;
-    setAllowHapticsAndSystemSoundsDuringRecording(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3240576-setallowhapticsandsystemsoundsdu
-    setAllowHapticsAndSystemSoundsDuringRecording_error(inValue: BOOL, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3139133-promptstyle
-    promptStyle(): AVAudioSessionPromptStyle;
-    setPromptStyle(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616453-currentroute
-    currentRoute(): AVAudioSessionRouteDescription;
-    setCurrentRoute(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616524-inputavailable
-    inputAvailable(): BOOL;
-    setInputAvailable(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616557-availableinputs
-    availableInputs(): AVAudioSessionPortDescription;
-    setAvailableInputs(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616536-preferredinput
-    preferredInput(): AVAudioSessionPortDescription;
-    setPreferredInput(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616491-setpreferredinput
-    setPreferredInput_error(inPort: AVAudioSessionPortDescription, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616485-inputdatasource
-    inputDataSource(): AVAudioSessionDataSourceDescription;
-    setInputDataSource(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616513-inputdatasources
-    inputDataSources(): AVAudioSessionDataSourceDescription;
-    setInputDataSources(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616507-setinputdatasource
-    setInputDataSource_error(dataSource: AVAudioSessionDataSourceDescription, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616479-outputdatasources
-    outputDataSources(): AVAudioSessionDataSourceDescription;
-    setOutputDataSources(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616572-outputdatasource
-    outputDataSource(): AVAudioSessionDataSourceDescription;
-    setOutputDataSource(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616582-setoutputdatasource
-    setOutputDataSource_error(dataSource: AVAudioSessionDataSourceDescription, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616443-overrideoutputaudioport
-    overrideOutputAudioPort_error(portOverride: AVAudioSessionPortOverride, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616514-inputisavailable
-    inputIsAvailable(): BOOL;
-    setInputIsAvailable(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3194617-preparerouteselectionforplayback
-    prepareRouteSelectionForPlaybackWithCompletionHandler(completionHandler: AVAudioSessionRouteSelection):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3551723-inputorientation
-    inputOrientation(): AVAudioStereoOrientation;
-    setInputOrientation(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3551724-preferredinputorientation
-    preferredInputOrientation(): AVAudioStereoOrientation;
-    setPreferredInputOrientation(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3551725-setpreferredinputorientation
-    setPreferredInputOrientation_error(orientation: AVAudioStereoOrientation, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616475-inputnumberofchannels
-    inputNumberOfChannels(): NSInteger;
-    setInputNumberOfChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616454-maximuminputnumberofchannels
-    maximumInputNumberOfChannels(): NSInteger;
-    setMaximumInputNumberOfChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616440-preferredinputnumberofchannels
-    preferredInputNumberOfChannels(): NSInteger;
-    setPreferredInputNumberOfChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616483-setpreferredinputnumberofchannel
-    setPreferredInputNumberOfChannels_error(count: NSInteger, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616471-outputnumberofchannels
-    outputNumberOfChannels(): NSInteger;
-    setOutputNumberOfChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616490-maximumoutputnumberofchannels
-    maximumOutputNumberOfChannels(): NSInteger;
-    setMaximumOutputNumberOfChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616448-preferredoutputnumberofchannels
-    preferredOutputNumberOfChannels(): NSInteger;
-    setPreferredOutputNumberOfChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616481-setpreferredoutputnumberofchanne
-    setPreferredOutputNumberOfChannels_error(count: NSInteger, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616489-currenthardwareinputnumberofchan
-    currentHardwareInputNumberOfChannels(): NSInteger;
-    setCurrentHardwareInputNumberOfChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616581-currenthardwareoutputnumberofcha
-    currentHardwareOutputNumberOfChannels(): NSInteger;
-    setCurrentHardwareOutputNumberOfChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616593-inputgain
-    inputGain(): number;
-    setInputGain(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616502-inputgainsettable
-    inputGainSettable(): BOOL;
-    setInputGainSettable(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616546-setinputgain
-    setInputGain_error(gain: number, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616533-outputvolume
-    outputVolume(): number;
-    setOutputVolume(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616499-samplerate
-    sampleRate(): number;
-    setSampleRate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616543-preferredsamplerate
-    preferredSampleRate(): number;
-    setPreferredSampleRate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616523-setpreferredsamplerate
-    setPreferredSampleRate_error(sampleRate: number, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616537-inputlatency
-    inputLatency(): NSTimeInterval;
-    setInputLatency(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616500-outputlatency
-    outputLatency(): NSTimeInterval;
-    setOutputLatency(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616498-iobufferduration
-    IOBufferDuration(): NSTimeInterval;
-    setIOBufferDuration(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616464-preferrediobufferduration
-    preferredIOBufferDuration(): NSTimeInterval;
-    setPreferredIOBufferDuration(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616589-setpreferrediobufferduration
-    setPreferredIOBufferDuration_error(duration: NSTimeInterval, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616494-currenthardwaresamplerate
-    currentHardwareSampleRate(): number;
-    setCurrentHardwareSampleRate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616571-preferredhardwaresamplerate
-    preferredHardwareSampleRate(): number;
-    setPreferredHardwareSampleRate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616526-setpreferredhardwaresamplerate
-    setPreferredHardwareSampleRate_error(sampleRate: number, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/2186370-setaggregatediopreference
-    setAggregatedIOPreference_error(inIOType: AVAudioSessionIOType, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616556-delegate
-    delegate(): AVAudioSessionDelegate;
-    setDelegate(): void;
-    //
-    alloc():AVAudioSession;
-    //
-    init():AVAudioSession;
-  }
+  // https://developer.apple.com/documentation/avfoundation/avplayerratedidchangereason
+  type AVPlayerRateDidChangeReason = cocoascript.NSString;
 }
-
-declare const AVAudioSession: cocoascript.AVAudioSession;
 // https://developer.apple.com/documentation/avfoundation/avplayerwaitingtominimizestallsreason
 declare const AVPlayerWaitingToMinimizeStallsReason: cocoascript.AVPlayerWaitingReason;
 // https://developer.apple.com/documentation/avfoundation/avplayerwaitingwithnoitemtoplayreason
 declare const AVPlayerWaitingWithNoItemToPlayReason: cocoascript.AVPlayerWaitingReason;
 // https://developer.apple.com/documentation/avfoundation/avplayerwaitingwhileevaluatingbufferingratereason
 declare const AVPlayerWaitingWhileEvaluatingBufferingRateReason: cocoascript.AVPlayerWaitingReason;
+// https://developer.apple.com/documentation/avfoundation/avplayerwaitingduringinterstitialeventreason
+declare const AVPlayerWaitingDuringInterstitialEventReason: cocoascript.AVPlayerWaitingReason;
+// https://developer.apple.com/documentation/avfoundation/avplayerwaitingforcoordinatedplaybackreason
+declare const AVPlayerWaitingForCoordinatedPlaybackReason: cocoascript.AVPlayerWaitingReason;
 // https://developer.apple.com/documentation/avfoundation/avplayeritemlegibleoutputtextstylingresolutiondefault
 declare const AVPlayerItemLegibleOutputTextStylingResolutionDefault: cocoascript.AVPlayerItemLegibleOutputTextStylingResolution;
 // https://developer.apple.com/documentation/avfoundation/avplayeritemlegibleoutputtextstylingresolutionsourceandrulesonly
 declare const AVPlayerItemLegibleOutputTextStylingResolutionSourceAndRulesOnly: cocoascript.AVPlayerItemLegibleOutputTextStylingResolution;
+// https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspensionreasonaudiosessioninterrupted
+declare const AVCoordinatedPlaybackSuspensionReasonAudioSessionInterrupted: cocoascript.AVCoordinatedPlaybackSuspensionReason;
+// https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspensionreasoncoordinatedplaybacknotpossible
+declare const AVCoordinatedPlaybackSuspensionReasonCoordinatedPlaybackNotPossible: cocoascript.AVCoordinatedPlaybackSuspensionReason;
+// https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspensionreasonplayinginterstitial
+declare const AVCoordinatedPlaybackSuspensionReasonPlayingInterstitial: cocoascript.AVCoordinatedPlaybackSuspensionReason;
+// https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspensionreasonstallrecovery
+declare const AVCoordinatedPlaybackSuspensionReasonStallRecovery: cocoascript.AVCoordinatedPlaybackSuspensionReason;
+// https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspensionreasonuseractionrequired
+declare const AVCoordinatedPlaybackSuspensionReasonUserActionRequired: cocoascript.AVCoordinatedPlaybackSuspensionReason;
+// https://developer.apple.com/documentation/avfoundation/avcoordinatedplaybacksuspensionreasonuserischangingcurrenttime
+declare const AVCoordinatedPlaybackSuspensionReasonUserIsChangingCurrentTime: cocoascript.AVCoordinatedPlaybackSuspensionReason;
 // https://developer.apple.com/documentation/avfoundation/avassetdownloadedassetevictionprioritydefault
 declare const AVAssetDownloadedAssetEvictionPriorityDefault: cocoascript.AVAssetDownloadedAssetEvictionPriority;
 // https://developer.apple.com/documentation/avfoundation/avassetdownloadedassetevictionpriorityimportant
@@ -9417,109 +10255,22 @@ declare const AVCaptureSystemPressureLevelCritical: cocoascript.AVCaptureSystemP
 declare const AVCaptureSystemPressureLevelShutdown: cocoascript.AVCaptureSystemPressureLevel;
 declare namespace cocoascript {
   /**
-   * The delegate of an audio recorder object.
-   * https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate
-   */
-  interface AVAudioRecorderDelegate extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1388688-audiorecorderdidfinishrecording
-    audioRecorderDidFinishRecording_successfully(recorder: AVAudioRecorder, flag: BOOL):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1387774-audiorecorderencodeerrordidoccur
-    audioRecorderEncodeErrorDidOccur_error(recorder: AVAudioRecorder, error: NSError):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1624897-audiorecorderbegininterruption
-    audioRecorderBeginInterruption(recorder: AVAudioRecorder):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1624901-audiorecorderendinterruption
-    audioRecorderEndInterruption_withOptions(recorder: AVAudioRecorder, flags: NSUInteger):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1624902-audiorecorderendinterruption
-    audioRecorderEndInterruption(recorder: AVAudioRecorder):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1624904-audiorecorderendinterruption
-    audioRecorderEndInterruption_withFlags(recorder: AVAudioRecorder, flags: NSUInteger):void;
-  }
-}
-declare namespace cocoascript {
-  /**
-   * A delegate protocol that contains optional methods you can implement to respond to events that occur during speech synthesis.
-   * https://developer.apple.com/documentation/avfoundation/avspeechsynthesizerdelegate
-   */
-  interface AVSpeechSynthesizerDelegate extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizerdelegate/1619701-speechsynthesizer
-    speechSynthesizer_didStartSpeechUtterance(synthesizer: AVSpeechSynthesizer, utterance: AVSpeechUtterance):void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizerdelegate/1619681-speechsynthesizer
-    speechSynthesizer_willSpeakRangeOfSpeechString_utterance(synthesizer: AVSpeechSynthesizer, characterRange: NSRange, utterance: AVSpeechUtterance):void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizerdelegate/1619675-speechsynthesizer
-    speechSynthesizer_didPauseSpeechUtterance(synthesizer: AVSpeechSynthesizer, utterance: AVSpeechUtterance):void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizerdelegate/1619677-speechsynthesizer
-    speechSynthesizer_didContinueSpeechUtterance(synthesizer: AVSpeechSynthesizer, utterance: AVSpeechUtterance):void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizerdelegate/1619700-speechsynthesizer
-    speechSynthesizer_didFinishSpeechUtterance(synthesizer: AVSpeechSynthesizer, utterance: AVSpeechUtterance):void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizerdelegate/1619678-speechsynthesizer
-    speechSynthesizer_didCancelSpeechUtterance(synthesizer: AVSpeechSynthesizer, utterance: AVSpeechUtterance):void;
-  }
-}
-declare namespace cocoascript {
-  /**
-   * A protocol that allows a delegate to respond to audio interruptions and audio decoding errors, and to the completion of a sound’s playback.
-   * https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate
-   */
-  interface AVAudioPlayerDelegate extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1389160-audioplayerdidfinishplaying
-    audioPlayerDidFinishPlaying_successfully(player: AVAudioPlayer, flag: BOOL):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1387676-audioplayerdecodeerrordidoccur
-    audioPlayerDecodeErrorDidOccur_error(player: AVAudioPlayer, error: NSError):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1624037-audioplayerbegininterruption
-    audioPlayerBeginInterruption(player: AVAudioPlayer):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1624040-audioplayerendinterruption
-    audioPlayerEndInterruption_withOptions(player: AVAudioPlayer, flags: NSUInteger):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1624039-audioplayerendinterruption
-    audioPlayerEndInterruption(player: AVAudioPlayer):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1624041-audioplayerendinterruption
-    audioPlayerEndInterruption_withFlags(player: AVAudioPlayer, flags: NSUInteger):void;
-  }
-}
-declare namespace cocoascript {
-  /**
-   * A protocol that defines stereo mixing properties used by mixers.
-   * https://developer.apple.com/documentation/avfoundation/avaudiostereomixing
-   */
-  interface AVAudioStereoMixing extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudiostereomixing/1388580-pan
-    pan(): number;
-    setPan(): void;
-  }
-}
-declare namespace cocoascript {
-  /**
-   * A protocol that defines responses to changes in state for the audio session.
-   * https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate
-   */
-  interface AVAudioSessionDelegate extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate/1616469-begininterruption
-    beginInterruption():void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate/1616515-endinterruption
-    endInterruption():void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate/1616472-endinterruptionwithflags
-    endInterruptionWithFlags(flags: NSUInteger):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate/1616532-inputisavailablechanged
-    inputIsAvailableChanged(isInputAvailable: BOOL):void;
-  }
-}
-declare namespace cocoascript {
-  /**
-   * An object that provides information on a sample in a track.
+   * An object that provides information about sample data in a track.
    * https://developer.apple.com/documentation/avfoundation/avassetsegmentreportsampleinformation
    */
   interface AVAssetSegmentReportSampleInformation extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avassetsegmentreportsampleinformation/3546575-presentationtimestamp
     presentationTimeStamp(): CMTime;
-    setPresentationTimeStamp(): void;
+    setPresentationTimeStamp(value: CMTime): void;
     // https://developer.apple.com/documentation/avfoundation/avassetsegmentreportsampleinformation/3546574-offset
     offset(): NSInteger;
-    setOffset(): void;
+    setOffset(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avassetsegmentreportsampleinformation/3546573-length
     length(): NSInteger;
-    setLength(): void;
+    setLength(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avassetsegmentreportsampleinformation/3563932-issyncsample
-    isSyncSample(): BOOL;
-    setIsSyncSample(): void;
+    isSyncSample(): boolean;
+    setIsSyncSample(value: boolean): void;
     //
     alloc():AVAssetSegmentReportSampleInformation;
     //
@@ -9528,6 +10279,207 @@ declare namespace cocoascript {
 }
 
 declare const AVAssetSegmentReportSampleInformation: cocoascript.AVAssetSegmentReportSampleInformation;
+declare namespace cocoascript {
+  /**
+   * An audio player that provides playback of audio data from a file or memory.
+   * https://developer.apple.com/documentation/avfoundation/avaudioplayer
+   */
+  interface AVAudioPlayer extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387281-initwithcontentsofurl
+    initWithContentsOfURL_error(url: NSURL, outError: NSError):AVAudioPlayer;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388349-initwithcontentsofurl
+    initWithContentsOfURL_fileTypeHint_error(url: NSURL, utiString: string | cocoascript.NSString, outError: NSError):AVAudioPlayer;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388809-initwithdata
+    initWithData_error(data: NSData, outError: NSError):AVAudioPlayer;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388525-initwithdata
+    initWithData_fileTypeHint_error(data: NSData, utiString: string | cocoascript.NSString, outError: NSError):AVAudioPlayer;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387297-currenttime
+    currentTime(): NSTimeInterval;
+    setCurrentTime(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388395-duration
+    duration(): NSTimeInterval;
+    setDuration(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1386886-preparetoplay
+    prepareToPlay():boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387388-play
+    play():boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1389324-playattime
+    playAtTime(time: NSTimeInterval):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1389363-pause
+    pause():void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1386018-stop
+    stop():void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1390139-playing
+    playing(): boolean;
+    setPlaying(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1386071-numberofloops
+    numberOfLoops(): NSInteger;
+    setNumberOfLoops(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1643591-setvolume
+    setVolume_fadeDuration(volume: number, duration: NSTimeInterval):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1389330-volume
+    volume(): number;
+    setVolume(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1390884-pan
+    pan(): number;
+    setPan(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1386118-rate
+    rate(): number;
+    setRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387084-enablerate
+    enableRate(): boolean;
+    setEnableRate(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387935-meteringenabled
+    meteringEnabled(): boolean;
+    setMeteringEnabled(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388565-updatemeters
+    updateMeters():void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1390838-averagepowerforchannel
+    averagePowerForChannel(channelNumber: NSUInteger):number;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388509-peakpowerforchannel
+    peakPowerForChannel(channelNumber: NSUInteger):number;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387134-delegate
+    delegate(): AVAudioPlayerDelegate;
+    setDelegate(value: AVAudioPlayerDelegate): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388992-numberofchannels
+    numberOfChannels(): NSUInteger;
+    setNumberOfChannels(value: NSUInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1624038-channelassignments
+    channelAssignments(): AVAudioSessionChannelDescription;
+    setChannelAssignments(value: AVAudioSessionChannelDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/2870198-currentdevice
+    currentDevice(): string | cocoascript.NSString;
+    setCurrentDevice(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387462-devicecurrenttime
+    deviceCurrentTime(): NSTimeInterval;
+    setDeviceCurrentTime(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1389359-settings
+    settings(): id;
+    setSettings(value: id): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1778427-format
+    format(): AVAudioFormat;
+    setFormat(value: AVAudioFormat): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387448-url
+    url(): NSURL;
+    setUrl(value: NSURL): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1389437-data
+    data(): NSData;
+    setData(value: NSData): void;
+    //
+    alloc():AVAudioPlayer;
+    //
+    init():AVAudioPlayer;
+  }
+}
+
+declare const AVAudioPlayer: cocoascript.AVAudioPlayer;
+declare namespace cocoascript {
+  /**
+   * An object that represents attributes specific to a particular rendition.
+   * https://developer.apple.com/documentation/avfoundation/avassetvariantaudiorenditionspecificattributes
+   */
+  interface AVAssetVariantAudioRenditionSpecificAttributes extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avassetvariantaudiorenditionspecificattributes/3746551-channelcount
+    channelCount(): NSInteger;
+    setChannelCount(value: NSInteger): void;
+    //
+    alloc():AVAssetVariantAudioRenditionSpecificAttributes;
+    //
+    init():AVAssetVariantAudioRenditionSpecificAttributes;
+  }
+}
+
+declare const AVAssetVariantAudioRenditionSpecificAttributes: cocoascript.AVAssetVariantAudioRenditionSpecificAttributes;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avvideorange
+  type AVVideoRange = cocoascript.NSString;
+}
+declare namespace cocoascript {
+  /**
+   * The base class for nodes that connect to the system's audio input or output.
+   * https://developer.apple.com/documentation/avfoundation/avaudioionode
+   */
+  interface AVAudioIONode extends AVAudioNode {
+    // https://developer.apple.com/documentation/avfoundation/avaudioionode/1390587-audiounit
+    audioUnit(): AudioUnit;
+    setAudioUnit(value: AudioUnit): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioionode/1385631-presentationlatency
+    presentationLatency(): NSTimeInterval;
+    setPresentationLatency(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioionode/3152101-voiceprocessingenabled
+    voiceProcessingEnabled(): boolean;
+    setVoiceProcessingEnabled(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioionode/3152100-setvoiceprocessingenabled
+    setVoiceProcessingEnabled_error(enabled: boolean, outError: NSError):boolean;
+    //
+    alloc():AVAudioIONode;
+    //
+    init():AVAudioIONode;
+  }
+}
+
+declare const AVAudioIONode: cocoascript.AVAudioIONode;
+declare namespace cocoascript {
+  /**
+   * A node that connects to the system’s audio input.
+   * https://developer.apple.com/documentation/avfoundation/avaudioinputnode
+   */
+  interface AVAudioInputNode extends AVAudioIONode {
+    // https://developer.apple.com/documentation/avfoundation/avaudioinputnode/2881264-setmanualrenderinginputpcmformat
+    setManualRenderingInputPCMFormat_inputBlock(format: AVAudioFormat, block: AVAudioIONodeInputBlock):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudioinputnode/3152102-voiceprocessingagcenabled
+    voiceProcessingAGCEnabled(): boolean;
+    setVoiceProcessingAGCEnabled(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioinputnode/3152103-voiceprocessingbypassed
+    voiceProcessingBypassed(): boolean;
+    setVoiceProcessingBypassed(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioinputnode/3152104-voiceprocessinginputmuted
+    voiceProcessingInputMuted(): boolean;
+    setVoiceProcessingInputMuted(value: boolean): void;
+    //
+    alloc():AVAudioInputNode;
+    //
+    init():AVAudioInputNode;
+  }
+}
+
+declare const AVAudioInputNode: cocoascript.AVAudioInputNode;
+declare namespace cocoascript {
+  /**
+   * This class represents an audio node that connects to the system’s audio output.
+   * https://developer.apple.com/documentation/avfoundation/avaudiooutputnode
+   */
+  interface AVAudioOutputNode extends AVAudioIONode {
+    //
+    alloc():AVAudioOutputNode;
+    //
+    init():AVAudioOutputNode;
+  }
+}
+
+declare const AVAudioOutputNode: cocoascript.AVAudioOutputNode;
+declare namespace cocoascript {
+  /**
+   * A node that mixes its inputs to a single output.
+   * https://developer.apple.com/documentation/avfoundation/avaudiomixernode
+   */
+  interface AVAudioMixerNode extends AVAudioNode {
+    // https://developer.apple.com/documentation/avfoundation/avaudiomixernode/1643644-init
+    init():AVAudioMixerNode;
+    // https://developer.apple.com/documentation/avfoundation/avaudiomixernode/1390244-outputvolume
+    outputVolume(): number;
+    setOutputVolume(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiomixernode/1388695-nextavailableinputbus
+    nextAvailableInputBus(): AVAudioNodeBus;
+    setNextAvailableInputBus(value: AVAudioNodeBus): void;
+    //
+    alloc():AVAudioMixerNode;
+    //
+    init():AVAudioMixerNode;
+  }
+}
+
+declare const AVAudioMixerNode: cocoascript.AVAudioMixerNode;
 declare namespace cocoascript {
   /**
    * A class that plays buffers or segments of audio files.
@@ -9563,8 +10515,8 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avaudioplayernode/1389304-playattime
     playAtTime(when: AVAudioTime):void;
     // https://developer.apple.com/documentation/avfoundation/avaudioplayernode/1390631-playing
-    playing(): BOOL;
-    setPlaying(): void;
+    playing(): boolean;
+    setPlaying(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioplayernode/1388025-pause
     pause():void;
     // https://developer.apple.com/documentation/avfoundation/avaudioplayernode/1388230-stop
@@ -9579,290 +10531,6 @@ declare namespace cocoascript {
 declare const AVAudioPlayerNode: cocoascript.AVAudioPlayerNode;
 declare namespace cocoascript {
   /**
-   * A class that represents a buffer of audio data with a format.
-   * https://developer.apple.com/documentation/avfoundation/avaudioformat
-   */
-  interface AVAudioFormat extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1388426-initstandardformatwithsamplerate
-    initStandardFormatWithSampleRate_channelLayout(sampleRate: number, layout: AVAudioChannelLayout):AVAudioFormat;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1390416-initstandardformatwithsamplerate
-    initStandardFormatWithSampleRate_channels(sampleRate: number, channels: AVAudioChannelCount):AVAudioFormat;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1390591-initwithcommonformat
-    initWithCommonFormat_sampleRate_channels_interleaved(format: AVAudioCommonFormat, sampleRate: number, channels: AVAudioChannelCount, interleaved: BOOL):AVAudioFormat;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1389361-initwithcommonformat
-    initWithCommonFormat_sampleRate_interleaved_channelLayout(format: AVAudioCommonFormat, sampleRate: number, interleaved: BOOL, layout: AVAudioChannelLayout):AVAudioFormat;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1387931-initwithsettings
-    initWithSettings(settings: AVAudioFormat):AVAudioFormat;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1390106-initwithstreamdescription
-    initWithStreamDescription(asbd: AudioStreamBasicDescription):AVAudioFormat;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1389347-initwithstreamdescription
-    initWithStreamDescription_channelLayout(asbd: AudioStreamBasicDescription, layout: AVAudioChannelLayout):AVAudioFormat;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1387465-initwithcmaudioformatdescription
-    initWithCMAudioFormatDescription(formatDescription: CMAudioFormatDescriptionRef):AVAudioFormat;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1386843-streamdescription
-    streamDescription(): AudioStreamBasicDescription;
-    setStreamDescription(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1385683-isequal
-    isEqual(object: AVAudioFormat):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1386831-channelcount
-    channelCount(): AVAudioChannelCount;
-    setChannelCount(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1390671-channellayout
-    channelLayout(): AVAudioChannelLayout;
-    setChannelLayout(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1387814-samplerate
-    sampleRate(): number;
-    setSampleRate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1387467-formatdescription
-    formatDescription(): CMAudioFormatDescriptionRef;
-    setFormatDescription(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1387347-standard
-    standard(): BOOL;
-    setStandard(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1389340-interleaved
-    interleaved(): BOOL;
-    setInterleaved(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1389455-commonformat
-    commonFormat(): AVAudioCommonFormat;
-    setCommonFormat(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1386904-settings
-    settings(): id;
-    setSettings(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1639892-magiccookie
-    magicCookie(): NSData;
-    setMagicCookie(): void;
-    //
-    alloc():AVAudioFormat;
-    //
-    init():AVAudioFormat;
-  }
-}
-
-declare const AVAudioFormat: cocoascript.AVAudioFormat;
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioenginemanualrenderingblock
-  type AVAudioEngineManualRenderingBlock = any;
-}
-declare namespace cocoascript {
-  /**
-   * A representation of either a source or destination connection point in the audio engine.
-   * https://developer.apple.com/documentation/avfoundation/avaudioconnectionpoint
-   */
-  interface AVAudioConnectionPoint extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudioconnectionpoint/1388569-initwithnode
-    initWithNode_bus(node: AVAudioNode, bus: AVAudioNodeBus):AVAudioConnectionPoint;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1387521-inputconnectionpointfornode
-    inputConnectionPointForNode_inputBus(node: AVAudioNode, bus: AVAudioNodeBus):AVAudioConnectionPoint;
-    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1389298-outputconnectionpointsfornode
-    outputConnectionPointsForNode_outputBus(node: AVAudioNode, bus: AVAudioNodeBus):AVAudioConnectionPoint;
-    // https://developer.apple.com/documentation/avfoundation/avaudioconnectionpoint/1389288-bus
-    bus(): AVAudioNodeBus;
-    setBus(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioconnectionpoint/1386935-node
-    node(): AVAudioNode;
-    setNode(): void;
-    //
-    alloc():AVAudioConnectionPoint;
-    //
-    init():AVAudioConnectionPoint;
-  }
-}
-
-declare const AVAudioConnectionPoint: cocoascript.AVAudioConnectionPoint;
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioenginemanualrenderingerror
-  type AVAudioEngineManualRenderingError = any;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioenginemanualrenderingmode
-  type AVAudioEngineManualRenderingMode = cocoascript.NSInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioenginemanualrenderingstatus
-  type AVAudioEngineManualRenderingStatus = cocoascript.NSInteger;
-}
-declare namespace cocoascript {
-  /**
-   * The base class for nodes that connect to the system's audio input or output.
-   * https://developer.apple.com/documentation/avfoundation/avaudioionode
-   */
-  interface AVAudioIONode extends AVAudioNode {
-    // https://developer.apple.com/documentation/avfoundation/avaudioionode/1390587-audiounit
-    audioUnit(): AudioUnit;
-    setAudioUnit(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioionode/1385631-presentationlatency
-    presentationLatency(): NSTimeInterval;
-    setPresentationLatency(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioionode/3152101-voiceprocessingenabled
-    voiceProcessingEnabled(): BOOL;
-    setVoiceProcessingEnabled(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioionode/3152100-setvoiceprocessingenabled
-    setVoiceProcessingEnabled_error(enabled: BOOL, outError: NSError):BOOL;
-    //
-    alloc():AVAudioIONode;
-    //
-    init():AVAudioIONode;
-  }
-}
-
-declare const AVAudioIONode: cocoascript.AVAudioIONode;
-declare namespace cocoascript {
-  /**
-   * A node that connects to the system’s audio input.
-   * https://developer.apple.com/documentation/avfoundation/avaudioinputnode
-   */
-  interface AVAudioInputNode extends AVAudioIONode {
-    // https://developer.apple.com/documentation/avfoundation/avaudioinputnode/2881264-setmanualrenderinginputpcmformat
-    setManualRenderingInputPCMFormat_inputBlock(format: AVAudioFormat, block: AVAudioIONodeInputBlock):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudioinputnode/3152102-voiceprocessingagcenabled
-    voiceProcessingAGCEnabled(): BOOL;
-    setVoiceProcessingAGCEnabled(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioinputnode/3152103-voiceprocessingbypassed
-    voiceProcessingBypassed(): BOOL;
-    setVoiceProcessingBypassed(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioinputnode/3152104-voiceprocessinginputmuted
-    voiceProcessingInputMuted(): BOOL;
-    setVoiceProcessingInputMuted(): void;
-    //
-    alloc():AVAudioInputNode;
-    //
-    init():AVAudioInputNode;
-  }
-}
-
-declare const AVAudioInputNode: cocoascript.AVAudioInputNode;
-declare namespace cocoascript {
-  /**
-   * This class represents an audio node that connects to the system’s audio output.
-   * https://developer.apple.com/documentation/avfoundation/avaudiooutputnode
-   */
-  interface AVAudioOutputNode extends AVAudioIONode {
-    //
-    alloc():AVAudioOutputNode;
-    //
-    init():AVAudioOutputNode;
-  }
-}
-
-declare const AVAudioOutputNode: cocoascript.AVAudioOutputNode;
-declare namespace cocoascript {
-  /**
-   * A node that mixes its inputs to a single output.
-   * https://developer.apple.com/documentation/avfoundation/avaudiomixernode
-   */
-  interface AVAudioMixerNode extends AVAudioNode {
-    // https://developer.apple.com/documentation/avfoundation/avaudiomixernode/1643644-init
-    init():AVAudioMixerNode;
-    // https://developer.apple.com/documentation/avfoundation/avaudiomixernode/1390244-outputvolume
-    outputVolume(): number;
-    setOutputVolume(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiomixernode/1388695-nextavailableinputbus
-    nextAvailableInputBus(): AVAudioNodeBus;
-    setNextAvailableInputBus(): void;
-    //
-    alloc():AVAudioMixerNode;
-    //
-    init():AVAudioMixerNode;
-  }
-}
-
-declare const AVAudioMixerNode: cocoascript.AVAudioMixerNode;
-declare namespace cocoascript {
-  /**
-   * An audio player that provides playback of audio data from a file or memory.
-   * https://developer.apple.com/documentation/avfoundation/avaudioplayer
-   */
-  interface AVAudioPlayer extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387281-initwithcontentsofurl
-    initWithContentsOfURL_error(url: NSURL, outError: NSError):AVAudioPlayer;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388349-initwithcontentsofurl
-    initWithContentsOfURL_fileTypeHint_error(url: NSURL, utiString: string | cocoascript.NSString, outError: NSError):AVAudioPlayer;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388809-initwithdata
-    initWithData_error(data: NSData, outError: NSError):AVAudioPlayer;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388525-initwithdata
-    initWithData_fileTypeHint_error(data: NSData, utiString: string | cocoascript.NSString, outError: NSError):AVAudioPlayer;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387297-currenttime
-    currentTime(): NSTimeInterval;
-    setCurrentTime(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388395-duration
-    duration(): NSTimeInterval;
-    setDuration(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1386886-preparetoplay
-    prepareToPlay():BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387388-play
-    play():BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1389324-playattime
-    playAtTime(time: NSTimeInterval):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1389363-pause
-    pause():void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1386018-stop
-    stop():void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1390139-playing
-    playing(): BOOL;
-    setPlaying(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1386071-numberofloops
-    numberOfLoops(): NSInteger;
-    setNumberOfLoops(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1643591-setvolume
-    setVolume_fadeDuration(volume: number, duration: NSTimeInterval):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1389330-volume
-    volume(): number;
-    setVolume(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1390884-pan
-    pan(): number;
-    setPan(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1386118-rate
-    rate(): number;
-    setRate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387084-enablerate
-    enableRate(): BOOL;
-    setEnableRate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387935-meteringenabled
-    meteringEnabled(): BOOL;
-    setMeteringEnabled(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388565-updatemeters
-    updateMeters():void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1390838-averagepowerforchannel
-    averagePowerForChannel(channelNumber: NSUInteger):number;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388509-peakpowerforchannel
-    peakPowerForChannel(channelNumber: NSUInteger):number;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387134-delegate
-    delegate(): AVAudioPlayerDelegate;
-    setDelegate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1388992-numberofchannels
-    numberOfChannels(): NSUInteger;
-    setNumberOfChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1624038-channelassignments
-    channelAssignments(): AVAudioSessionChannelDescription;
-    setChannelAssignments(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/2870198-currentdevice
-    currentDevice(): string | cocoascript.NSString;
-    setCurrentDevice(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387462-devicecurrenttime
-    deviceCurrentTime(): NSTimeInterval;
-    setDeviceCurrentTime(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1389359-settings
-    settings(): id;
-    setSettings(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1778427-format
-    format(): AVAudioFormat;
-    setFormat(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1387448-url
-    url(): NSURL;
-    setUrl(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudioplayer/1389437-data
-    data(): NSData;
-    setData(): void;
-    //
-    alloc():AVAudioPlayer;
-    //
-    init():AVAudioPlayer;
-  }
-}
-
-declare const AVAudioPlayer: cocoascript.AVAudioPlayer;
-declare namespace cocoascript {
-  /**
    * A collection of MIDI events organized into multiple music tracks, plus a player to play back the events.
    * https://developer.apple.com/documentation/avfoundation/avaudiosequencer
    */
@@ -9872,17 +10540,17 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1388339-initwithaudioengine
     initWithAudioEngine(engine: AVAudioEngine):AVAudioSequencer;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1390589-writetourl
-    writeToURL_SMPTEResolution_replaceExisting_error(fileURL: NSURL, resolution: NSInteger, replace: BOOL, outError: NSError):BOOL;
+    writeToURL_SMPTEResolution_replaceExisting_error(fileURL: NSURL, resolution: NSInteger, replace: boolean, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1385633-preparetoplay
     prepareToPlay():void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1387594-startandreturnerror
-    startAndReturnError(outError: NSError):BOOL;
+    startAndReturnError(outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1386674-stop
     stop():void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1389720-loadfromdata
-    loadFromData_options_error(data: NSData, options: AVMusicSequenceLoadOptions, outError: NSError):BOOL;
+    loadFromData_options_error(data: NSData, options: AVMusicSequenceLoadOptions, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1386241-loadfromurl
-    loadFromURL_options_error(fileURL: NSURL, options: AVMusicSequenceLoadOptions, outError: NSError):BOOL;
+    loadFromURL_options_error(fileURL: NSURL, options: AVMusicSequenceLoadOptions, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1386184-hosttimeforbeats
     hostTimeForBeats_error(inBeats: AVMusicTimeStamp, outError: NSError):UInt64;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1387615-secondsforbeats
@@ -9895,25 +10563,25 @@ declare namespace cocoascript {
     dataWithSMPTEResolution_error(SMPTEResolution: NSInteger, outError: NSError):NSData;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1388910-currentpositioninbeats
     currentPositionInBeats(): NSTimeInterval;
-    setCurrentPositionInBeats(): void;
+    setCurrentPositionInBeats(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1390524-currentpositioninseconds
     currentPositionInSeconds(): NSTimeInterval;
-    setCurrentPositionInSeconds(): void;
+    setCurrentPositionInSeconds(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1388402-playing
-    playing(): BOOL;
-    setPlaying(): void;
+    playing(): boolean;
+    setPlaying(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1387903-rate
     rate(): number;
-    setRate(): void;
+    setRate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1390252-tempotrack
     tempoTrack(): AVMusicTrack;
-    setTempoTrack(): void;
+    setTempoTrack(value: AVMusicTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1387567-tracks
     tracks(): AVMusicTrack;
-    setTracks(): void;
+    setTracks(value: AVMusicTrack): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosequencer/1389262-userinfo
     userInfo(): id;
-    setUserInfo(): void;
+    setUserInfo(value: id): void;
     //
     alloc():AVAudioSequencer;
     //
@@ -9929,20 +10597,20 @@ declare namespace cocoascript {
    */
   interface AVAudioUnitSampler extends AVAudioUnitMIDIInstrument {
     // https://developer.apple.com/documentation/avfoundation/avaudiounitsampler/1388631-loadaudiofilesaturls
-    loadAudioFilesAtURLs_error(audioFiles: NSURL, outError: NSError):BOOL;
+    loadAudioFilesAtURLs_error(audioFiles: NSURL, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiounitsampler/1389514-loadinstrumentaturl
-    loadInstrumentAtURL_error(instrumentURL: NSURL, outError: NSError):BOOL;
+    loadInstrumentAtURL_error(instrumentURL: NSURL, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiounitsampler/1385687-loadsoundbankinstrumentaturl
-    loadSoundBankInstrumentAtURL_program_bankMSB_bankLSB_error(bankURL: NSURL, program: number, bankMSB: number, bankLSB: number, outError: NSError):BOOL;
+    loadSoundBankInstrumentAtURL_program_bankMSB_bankLSB_error(bankURL: NSURL, program: number, bankMSB: number, bankLSB: number, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiounitsampler/1386733-globaltuning
     globalTuning(): number;
-    setGlobalTuning(): void;
+    setGlobalTuning(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiounitsampler/1386788-mastergain
     masterGain(): number;
-    setMasterGain(): void;
+    setMasterGain(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiounitsampler/1385805-stereopan
     stereoPan(): number;
-    setStereoPan(): void;
+    setStereoPan(value: number): void;
     //
     alloc():AVAudioUnitSampler;
     //
@@ -10034,63 +10702,63 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1387865-converttobuffer
     convertToBuffer_error_withInputFromBlock(outputBuffer: AVAudioBuffer, outError: NSError, inputBlock: AVAudioConverterInputBlock):AVAudioConverterOutputStatus;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1388341-converttobuffer
-    convertToBuffer_fromBuffer_error(outputBuffer: AVAudioPCMBuffer, inputBuffer: AVAudioPCMBuffer, outError: NSError):BOOL;
+    convertToBuffer_fromBuffer_error(outputBuffer: AVAudioPCMBuffer, inputBuffer: AVAudioPCMBuffer, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1390876-reset
     reset():void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1390653-channelmap
     channelMap(): NSNumber;
-    setChannelMap(): void;
+    setChannelMap(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1386312-dither
-    dither(): BOOL;
-    setDither(): void;
+    dither(): boolean;
+    setDither(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1388244-downmix
-    downmix(): BOOL;
-    setDownmix(): void;
+    downmix(): boolean;
+    setDownmix(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1388914-inputformat
     inputFormat(): AVAudioFormat;
-    setInputFormat(): void;
+    setInputFormat(value: AVAudioFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1387563-outputformat
     outputFormat(): AVAudioFormat;
-    setOutputFormat(): void;
+    setOutputFormat(value: AVAudioFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1390770-magiccookie
     magicCookie(): NSData;
-    setMagicCookie(): void;
+    setMagicCookie(value: NSData): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1390069-maximumoutputpacketsize
     maximumOutputPacketSize(): NSInteger;
-    setMaximumOutputPacketSize(): void;
+    setMaximumOutputPacketSize(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1388940-applicableencodebitrates
     applicableEncodeBitRates(): NSNumber;
-    setApplicableEncodeBitRates(): void;
+    setApplicableEncodeBitRates(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1388589-availableencodebitrates
     availableEncodeBitRates(): NSNumber;
-    setAvailableEncodeBitRates(): void;
+    setAvailableEncodeBitRates(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1387337-availableencodechannellayouttags
     availableEncodeChannelLayoutTags(): NSNumber;
-    setAvailableEncodeChannelLayoutTags(): void;
+    setAvailableEncodeChannelLayoutTags(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1390373-bitrate
     bitRate(): NSInteger;
-    setBitRate(): void;
+    setBitRate(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1386092-bitratestrategy
     bitRateStrategy(): string | cocoascript.NSString;
-    setBitRateStrategy(): void;
+    setBitRateStrategy(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1390887-samplerateconverterquality
     sampleRateConverterQuality(): NSInteger;
-    setSampleRateConverterQuality(): void;
+    setSampleRateConverterQuality(value: NSInteger): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1387976-samplerateconverteralgorithm
     sampleRateConverterAlgorithm(): string | cocoascript.NSString;
-    setSampleRateConverterAlgorithm(): void;
+    setSampleRateConverterAlgorithm(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1389427-applicableencodesamplerates
     applicableEncodeSampleRates(): NSNumber;
-    setApplicableEncodeSampleRates(): void;
+    setApplicableEncodeSampleRates(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1386202-availableencodesamplerates
     availableEncodeSampleRates(): NSNumber;
-    setAvailableEncodeSampleRates(): void;
+    setAvailableEncodeSampleRates(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1389770-primeinfo
     primeInfo(): AVAudioConverterPrimeInfo;
-    setPrimeInfo(): void;
+    setPrimeInfo(value: AVAudioConverterPrimeInfo): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioconverter/1387299-primemethod
     primeMethod(): AVAudioConverterPrimeMethod;
-    setPrimeMethod(): void;
+    setPrimeMethod(value: AVAudioConverterPrimeMethod): void;
     //
     alloc():AVAudioConverter;
     //
@@ -10106,34 +10774,34 @@ declare namespace cocoascript {
    */
   interface AVAudioFile extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1387283-initforreading
-    initForReading_commonFormat_interleaved_error(fileURL: NSURL, format: AVAudioCommonFormat, interleaved: BOOL, outError: NSError):AVAudioFile;
+    initForReading_commonFormat_interleaved_error(fileURL: NSURL, format: AVAudioCommonFormat, interleaved: boolean, outError: NSError):AVAudioFile;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1388218-initforreading
     initForReading_error(fileURL: NSURL, outError: NSError):AVAudioFile;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1387154-initforwriting
-    initForWriting_settings_commonFormat_interleaved_error(fileURL: NSURL, settings: AVAudioFile, format: AVAudioCommonFormat, interleaved: BOOL, outError: NSError):AVAudioFile;
+    initForWriting_settings_commonFormat_interleaved_error(fileURL: NSURL, settings: AVAudioFile, format: AVAudioCommonFormat, interleaved: boolean, outError: NSError):AVAudioFile;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1390840-initforwriting
     initForWriting_settings_error(fileURL: NSURL, settings: AVAudioFile, outError: NSError):AVAudioFile;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1388043-readintobuffer
-    readIntoBuffer_error(buffer: AVAudioPCMBuffer, outError: NSError):BOOL;
+    readIntoBuffer_error(buffer: AVAudioPCMBuffer, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1389774-readintobuffer
-    readIntoBuffer_frameCount_error(buffer: AVAudioPCMBuffer, frames: AVAudioFrameCount, outError: NSError):BOOL;
+    readIntoBuffer_frameCount_error(buffer: AVAudioPCMBuffer, frames: AVAudioFrameCount, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1385637-writefrombuffer
-    writeFromBuffer_error(buffer: AVAudioPCMBuffer, outError: NSError):BOOL;
+    writeFromBuffer_error(buffer: AVAudioPCMBuffer, outError: NSError):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1387096-fileformat
     fileFormat(): AVAudioFormat;
-    setFileFormat(): void;
+    setFileFormat(value: AVAudioFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1388308-processingformat
     processingFormat(): AVAudioFormat;
-    setProcessingFormat(): void;
+    setProcessingFormat(value: AVAudioFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1390785-frameposition
     framePosition(): AVAudioFramePosition;
-    setFramePosition(): void;
+    setFramePosition(value: AVAudioFramePosition): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1390473-length
     length(): AVAudioFramePosition;
-    setLength(): void;
+    setLength(value: AVAudioFramePosition): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiofile/1387360-url
     url(): NSURL;
-    setUrl(): void;
+    setUrl(value: NSURL): void;
     //
     alloc():AVAudioFile;
     //
@@ -10152,13 +10820,13 @@ declare namespace cocoascript {
   interface AVAudioBuffer extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudiobuffer/1387540-format
     format(): AVAudioFormat;
-    setFormat(): void;
+    setFormat(value: AVAudioFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiobuffer/1385579-audiobufferlist
     audioBufferList(): AudioBufferList;
-    setAudioBufferList(): void;
+    setAudioBufferList(value: AudioBufferList): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiobuffer/1389207-mutableaudiobufferlist
     mutableAudioBufferList(): AudioBufferList;
-    setMutableAudioBufferList(): void;
+    setMutableAudioBufferList(value: AudioBufferList): void;
     //
     alloc():AVAudioBuffer;
     //
@@ -10193,26 +10861,26 @@ declare namespace cocoascript {
     extrapolateTimeFromAnchor(anchorTime: AVAudioTime):AVAudioTime;
     // https://developer.apple.com/documentation/avfoundation/avaudiotime/1385955-hosttime
     hostTime(): number;
-    setHostTime(): void;
+    setHostTime(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiotime/1387611-hosttimevalid
-    hostTimeValid(): BOOL;
-    setHostTimeValid(): void;
+    hostTimeValid(): boolean;
+    setHostTimeValid(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiotime/1388521-hosttimeforseconds
     hostTimeForSeconds(seconds: NSTimeInterval):number;
     // https://developer.apple.com/documentation/avfoundation/avaudiotime/1386096-secondsforhosttime
     secondsForHostTime(hostTime: number):NSTimeInterval;
     // https://developer.apple.com/documentation/avfoundation/avaudiotime/1387315-samplerate
     sampleRate(): number;
-    setSampleRate(): void;
+    setSampleRate(value: number): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiotime/1389853-sampletime
     sampleTime(): AVAudioFramePosition;
-    setSampleTime(): void;
+    setSampleTime(value: AVAudioFramePosition): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiotime/1385868-sampletimevalid
-    sampleTimeValid(): BOOL;
-    setSampleTimeValid(): void;
+    sampleTimeValid(): boolean;
+    setSampleTimeValid(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiotime/1388908-audiotimestamp
     audioTimeStamp(): AudioTimeStamp;
-    setAudioTimeStamp(): void;
+    setAudioTimeStamp(value: AudioTimeStamp): void;
     //
     alloc():AVAudioTime;
     //
@@ -10229,7 +10897,7 @@ declare namespace cocoascript {
   interface AVAudioMixingDestination extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudiomixingdestination/1389898-connectionpoint
     connectionPoint(): AVAudioConnectionPoint;
-    setConnectionPoint(): void;
+    setConnectionPoint(value: AVAudioConnectionPoint): void;
     //
     alloc():AVAudioMixingDestination;
     //
@@ -10240,6 +10908,17 @@ declare namespace cocoascript {
 declare const AVAudioMixingDestination: cocoascript.AVAudioMixingDestination;
 declare namespace cocoascript {
   /**
+   * A protocol that defines stereo mixing properties used by mixers.
+   * https://developer.apple.com/documentation/avfoundation/avaudiostereomixing
+   */
+  interface AVAudioStereoMixing extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudiostereomixing/1388580-pan
+    pan(): number;
+    setPan(value: number): void;
+  }
+}
+declare namespace cocoascript {
+  /**
    * An audio unit subclass that generates audio output.
    * https://developer.apple.com/documentation/avfoundation/avaudiounitgenerator
    */
@@ -10247,8 +10926,8 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/avfoundation/avaudiounitgenerator/1387964-initwithaudiocomponentdescriptio
     initWithAudioComponentDescription(audioComponentDescription: AudioComponentDescription):AVAudioUnitGenerator;
     // https://developer.apple.com/documentation/avfoundation/avaudiounitgenerator/1390858-bypass
-    bypass(): BOOL;
-    setBypass(): void;
+    bypass(): boolean;
+    setBypass(value: boolean): void;
     //
     alloc():AVAudioUnitGenerator;
     //
@@ -10258,8 +10937,112 @@ declare namespace cocoascript {
 
 declare const AVAudioUnitGenerator: cocoascript.AVAudioUnitGenerator;
 declare namespace cocoascript {
+  /**
+   * A class that represents a buffer of audio data with a format.
+   * https://developer.apple.com/documentation/avfoundation/avaudioformat
+   */
+  interface AVAudioFormat extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1388426-initstandardformatwithsamplerate
+    initStandardFormatWithSampleRate_channelLayout(sampleRate: number, layout: AVAudioChannelLayout):AVAudioFormat;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1390416-initstandardformatwithsamplerate
+    initStandardFormatWithSampleRate_channels(sampleRate: number, channels: AVAudioChannelCount):AVAudioFormat;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1390591-initwithcommonformat
+    initWithCommonFormat_sampleRate_channels_interleaved(format: AVAudioCommonFormat, sampleRate: number, channels: AVAudioChannelCount, interleaved: boolean):AVAudioFormat;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1389361-initwithcommonformat
+    initWithCommonFormat_sampleRate_interleaved_channelLayout(format: AVAudioCommonFormat, sampleRate: number, interleaved: boolean, layout: AVAudioChannelLayout):AVAudioFormat;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1387931-initwithsettings
+    initWithSettings(settings: AVAudioFormat):AVAudioFormat;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1390106-initwithstreamdescription
+    initWithStreamDescription(asbd: AudioStreamBasicDescription):AVAudioFormat;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1389347-initwithstreamdescription
+    initWithStreamDescription_channelLayout(asbd: AudioStreamBasicDescription, layout: AVAudioChannelLayout):AVAudioFormat;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1387465-initwithcmaudioformatdescription
+    initWithCMAudioFormatDescription(formatDescription: CMAudioFormatDescriptionRef):AVAudioFormat;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1386843-streamdescription
+    streamDescription(): AudioStreamBasicDescription;
+    setStreamDescription(value: AudioStreamBasicDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1385683-isequal
+    isEqual(object: AVAudioFormat):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1386831-channelcount
+    channelCount(): AVAudioChannelCount;
+    setChannelCount(value: AVAudioChannelCount): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1390671-channellayout
+    channelLayout(): AVAudioChannelLayout;
+    setChannelLayout(value: AVAudioChannelLayout): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1387814-samplerate
+    sampleRate(): number;
+    setSampleRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1387467-formatdescription
+    formatDescription(): CMAudioFormatDescriptionRef;
+    setFormatDescription(value: CMAudioFormatDescriptionRef): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1387347-standard
+    standard(): boolean;
+    setStandard(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1389340-interleaved
+    interleaved(): boolean;
+    setInterleaved(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1389455-commonformat
+    commonFormat(): AVAudioCommonFormat;
+    setCommonFormat(value: AVAudioCommonFormat): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1386904-settings
+    settings(): id;
+    setSettings(value: id): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioformat/1639892-magiccookie
+    magicCookie(): NSData;
+    setMagicCookie(value: NSData): void;
+    //
+    alloc():AVAudioFormat;
+    //
+    init():AVAudioFormat;
+  }
+}
+
+declare const AVAudioFormat: cocoascript.AVAudioFormat;
+declare namespace cocoascript {
   // https://developer.apple.com/documentation/avfoundation/avaudioenvironmentdistanceattenuationmodel
   type AVAudioEnvironmentDistanceAttenuationModel = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioenginemanualrenderingblock
+  type AVAudioEngineManualRenderingBlock = any;
+}
+declare namespace cocoascript {
+  /**
+   * A representation of either a source or destination connection point in the audio engine.
+   * https://developer.apple.com/documentation/avfoundation/avaudioconnectionpoint
+   */
+  interface AVAudioConnectionPoint extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudioconnectionpoint/1388569-initwithnode
+    initWithNode_bus(node: AVAudioNode, bus: AVAudioNodeBus):AVAudioConnectionPoint;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1387521-inputconnectionpointfornode
+    inputConnectionPointForNode_inputBus(node: AVAudioNode, bus: AVAudioNodeBus):AVAudioConnectionPoint;
+    // https://developer.apple.com/documentation/avfoundation/avaudioengine/1389298-outputconnectionpointsfornode
+    outputConnectionPointsForNode_outputBus(node: AVAudioNode, bus: AVAudioNodeBus):AVAudioConnectionPoint;
+    // https://developer.apple.com/documentation/avfoundation/avaudioconnectionpoint/1389288-bus
+    bus(): AVAudioNodeBus;
+    setBus(value: AVAudioNodeBus): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioconnectionpoint/1386935-node
+    node(): AVAudioNode;
+    setNode(value: AVAudioNode): void;
+    //
+    alloc():AVAudioConnectionPoint;
+    //
+    init():AVAudioConnectionPoint;
+  }
+}
+
+declare const AVAudioConnectionPoint: cocoascript.AVAudioConnectionPoint;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioenginemanualrenderingerror
+  type AVAudioEngineManualRenderingError = any;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioenginemanualrenderingmode
+  type AVAudioEngineManualRenderingMode = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioenginemanualrenderingstatus
+  type AVAudioEngineManualRenderingStatus = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/avfoundation/avaudionodetapblock
@@ -10273,6 +11056,65 @@ declare namespace cocoascript {
   // https://developer.apple.com/documentation/avfoundation/avaudionodebus
   type AVAudioNodeBus = cocoascript.NSUInteger;
 }
+// https://developer.apple.com/documentation/avfoundation/avassetwriterinputmediadatalocationbeforemainmediadatanotinterleaved
+declare const AVAssetWriterInputMediaDataLocationBeforeMainMediaDataNotInterleaved: cocoascript.AVAssetWriterInputMediaDataLocation;
+// https://developer.apple.com/documentation/avfoundation/avassetwriterinputmediadatalocationinterleavedwithmainmediadata
+declare const AVAssetWriterInputMediaDataLocationInterleavedWithMainMediaData: cocoascript.AVAssetWriterInputMediaDataLocation;
+declare namespace cocoascript {
+  /**
+   * An object that describes an adjustment to correct a problem found during validation of a caption conversion.
+   * https://developer.apple.com/documentation/avfoundation/avcaptionconversionadjustment
+   */
+  interface AVCaptionConversionAdjustment extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversionadjustment/3752928-adjustmenttype
+    adjustmentType(): AVCaptionConversionAdjustmentType;
+    setAdjustmentType(value: AVCaptionConversionAdjustmentType): void;
+    //
+    alloc():AVCaptionConversionAdjustment;
+    //
+    init():AVCaptionConversionAdjustment;
+  }
+}
+
+declare const AVCaptionConversionAdjustment: cocoascript.AVCaptionConversionAdjustment;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionconversionwarningtype
+  type AVCaptionConversionWarningType = cocoascript.NSString;
+}
+// https://developer.apple.com/documentation/avfoundation/avplayerratedidchangereasonappbackgrounded
+declare const AVPlayerRateDidChangeReasonAppBackgrounded: cocoascript.AVPlayerRateDidChangeReason;
+// https://developer.apple.com/documentation/avfoundation/avplayerratedidchangereasonaudiosessioninterrupted
+declare const AVPlayerRateDidChangeReasonAudioSessionInterrupted: cocoascript.AVPlayerRateDidChangeReason;
+// https://developer.apple.com/documentation/avfoundation/avplayerratedidchangereasonsetratecalled
+declare const AVPlayerRateDidChangeReasonSetRateCalled: cocoascript.AVPlayerRateDidChangeReason;
+// https://developer.apple.com/documentation/avfoundation/avplayerratedidchangereasonsetratefailed
+declare const AVPlayerRateDidChangeReasonSetRateFailed: cocoascript.AVPlayerRateDidChangeReason;
+declare namespace cocoascript {
+  /**
+   * A class that describes a hardware channel on the current device.
+   * https://developer.apple.com/documentation/avfoundation/avaudiosessionchanneldescription
+   */
+  interface AVAudioSessionChannelDescription extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionchanneldescription/1616521-channelname
+    channelName(): string | cocoascript.NSString;
+    setChannelName(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionchanneldescription/1616444-channelnumber
+    channelNumber(): NSUInteger;
+    setChannelNumber(value: NSUInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionchanneldescription/1616562-owningportuid
+    owningPortUID(): string | cocoascript.NSString;
+    setOwningPortUID(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionchanneldescription/1616565-channellabel
+    channelLabel(): AudioChannelLabel;
+    setChannelLabel(value: AudioChannelLabel): void;
+    //
+    alloc():AVAudioSessionChannelDescription;
+    //
+    init():AVAudioSessionChannelDescription;
+  }
+}
+
+declare const AVAudioSessionChannelDescription: cocoascript.AVAudioSessionChannelDescription;
 declare namespace cocoascript {
   /**
    * An object that provides audio recording capabilities in your app.
@@ -10285,29 +11127,29 @@ declare namespace cocoascript {
     initWithURL_format_error(url: NSURL, format: AVAudioFormat, outError: NSError):AVAudioRecorder;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1390135-currenttime
     currentTime(): NSTimeInterval;
-    setCurrentTime(): void;
+    setCurrentTime(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1389435-preparetorecord
-    prepareToRecord():BOOL;
+    prepareToRecord():boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1388252-record
-    record():BOOL;
+    record():boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1624900-recordattime
-    recordAtTime(time: NSTimeInterval):BOOL;
+    recordAtTime(time: NSTimeInterval):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1389378-recordforduration
-    recordForDuration(duration: NSTimeInterval):BOOL;
+    recordForDuration(duration: NSTimeInterval):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1624899-recordattime
-    recordAtTime_forDuration(time: NSTimeInterval, duration: NSTimeInterval):BOOL;
+    recordAtTime_forDuration(time: NSTimeInterval, duration: NSTimeInterval):boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1389069-pause
     pause():void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1389073-stop
     stop():void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1388793-deleterecording
-    deleteRecording():BOOL;
+    deleteRecording():boolean;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1390313-recording
-    recording(): BOOL;
-    setRecording(): void;
+    recording(): boolean;
+    setRecording(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1386355-meteringenabled
-    meteringEnabled(): BOOL;
-    setMeteringEnabled(): void;
+    meteringEnabled(): boolean;
+    setMeteringEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1386326-updatemeters
     updateMeters():void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1389463-peakpowerforchannel
@@ -10316,22 +11158,22 @@ declare namespace cocoascript {
     averagePowerForChannel(channelNumber: NSUInteger):number;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1385839-delegate
     delegate(): AVAudioRecorderDelegate;
-    setDelegate(): void;
+    setDelegate(value: AVAudioRecorderDelegate): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1624898-devicecurrenttime
     deviceCurrentTime(): NSTimeInterval;
-    setDeviceCurrentTime(): void;
+    setDeviceCurrentTime(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1624903-channelassignments
     channelAssignments(): AVAudioSessionChannelDescription;
-    setChannelAssignments(): void;
+    setChannelAssignments(value: AVAudioSessionChannelDescription): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1389050-url
     url(): NSURL;
-    setUrl(): void;
+    setUrl(value: NSURL): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1778754-format
     format(): AVAudioFormat;
-    setFormat(): void;
+    setFormat(value: AVAudioFormat): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiorecorder/1390903-settings
     settings(): id;
-    setSettings(): void;
+    setSettings(value: id): void;
     //
     alloc():AVAudioRecorder;
     //
@@ -10341,13 +11183,776 @@ declare namespace cocoascript {
 
 declare const AVAudioRecorder: cocoascript.AVAudioRecorder;
 declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioquality
-  type AVAudioQuality = cocoascript.NSInteger;
+  /**
+   * A protocol that allows a delegate to respond to audio interruptions and audio decoding errors, and to the completion of a sound’s playback.
+   * https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate
+   */
+  interface AVAudioPlayerDelegate extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1389160-audioplayerdidfinishplaying
+    audioPlayerDidFinishPlaying_successfully(player: AVAudioPlayer, flag: boolean):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1387676-audioplayerdecodeerrordidoccur
+    audioPlayerDecodeErrorDidOccur_error(player: AVAudioPlayer, error: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1624037-audioplayerbegininterruption
+    audioPlayerBeginInterruption(player: AVAudioPlayer):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1624040-audioplayerendinterruption
+    audioPlayerEndInterruption_withOptions(player: AVAudioPlayer, flags: NSUInteger):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1624039-audioplayerendinterruption
+    audioPlayerEndInterruption(player: AVAudioPlayer):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudioplayerdelegate/1624041-audioplayerendinterruption
+    audioPlayerEndInterruption_withFlags(player: AVAudioPlayer, flags: NSUInteger):void;
+  }
 }
-// https://developer.apple.com/documentation/avfoundation/avassetwriterinputmediadatalocationbeforemainmediadatanotinterleaved
-declare const AVAssetWriterInputMediaDataLocationBeforeMainMediaDataNotInterleaved: cocoascript.AVAssetWriterInputMediaDataLocation;
-// https://developer.apple.com/documentation/avfoundation/avassetwriterinputmediadatalocationinterleavedwithmainmediadata
-declare const AVAssetWriterInputMediaDataLocationInterleavedWithMainMediaData: cocoascript.AVAssetWriterInputMediaDataLocation;
+declare namespace cocoascript {
+  /**
+   * An object that communicates to the system how you intend to use audio in your app.
+   * https://developer.apple.com/documentation/avfoundation/avaudiosession
+   */
+  interface AVAudioSession extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616504-sharedinstance
+    sharedInstance():AVAudioSession;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1648777-init
+    init():AVAudioSession;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616615-category
+    category(): AVAudioSessionCategory;
+    setCategory(value: AVAudioSessionCategory): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616583-setcategory
+    setCategory_error(category: AVAudioSessionCategory, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616591-availablecategories
+    availableCategories(): AVAudioSessionCategory;
+    setAvailableCategories(value: AVAudioSessionCategory): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616503-categoryoptions
+    categoryOptions(): AVAudioSessionCategoryOptions;
+    setCategoryOptions(value: AVAudioSessionCategoryOptions): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616442-setcategory
+    setCategory_withOptions_error(category: AVAudioSessionCategory, options: AVAudioSessionCategoryOptions, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616508-mode
+    mode(): AVAudioSessionMode;
+    setMode(value: AVAudioSessionMode): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616614-setmode
+    setMode_error(mode: AVAudioSessionMode, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1771734-setcategory
+    setCategory_mode_options_error(category: AVAudioSessionCategory, mode: AVAudioSessionMode, options: AVAudioSessionCategoryOptions, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616517-availablemodes
+    availableModes(): AVAudioSessionMode;
+    setAvailableModes(value: AVAudioSessionMode): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/2887118-routesharingpolicy
+    routeSharingPolicy(): AVAudioSessionRouteSharingPolicy;
+    setRouteSharingPolicy(value: AVAudioSessionRouteSharingPolicy): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/2887480-setcategory
+    setCategory_mode_routeSharingPolicy_options_error(category: AVAudioSessionCategory, mode: AVAudioSessionMode, policy: AVAudioSessionRouteSharingPolicy, options: AVAudioSessionCategoryOptions, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616597-setactive
+    setActive_error(active: boolean, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616627-setactive
+    setActive_withOptions_error(active: boolean, options: AVAudioSessionSetActiveOptions, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/2962797-activatewithoptions
+    activateWithOptions_completionHandler(options: AVAudioSessionActivationOptions, handler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616496-setactive
+    setActive_withFlags_error(active: boolean, flags: NSInteger, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616463-recordpermission
+    recordPermission(): AVAudioSessionRecordPermission;
+    setRecordPermission(value: AVAudioSessionRecordPermission): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616601-requestrecordpermission
+    requestRecordPermission(response: boolean):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616610-otheraudioplaying
+    otherAudioPlaying(): boolean;
+    setOtherAudioPlaying(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616600-secondaryaudioshouldbesilencedhi
+    secondaryAudioShouldBeSilencedHint(): boolean;
+    setSecondaryAudioShouldBeSilencedHint(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3240575-allowhapticsandsystemsoundsdurin
+    allowHapticsAndSystemSoundsDuringRecording(): boolean;
+    setAllowHapticsAndSystemSoundsDuringRecording(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3240576-setallowhapticsandsystemsoundsdu
+    setAllowHapticsAndSystemSoundsDuringRecording_error(inValue: boolean, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3139133-promptstyle
+    promptStyle(): AVAudioSessionPromptStyle;
+    setPromptStyle(value: AVAudioSessionPromptStyle): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616453-currentroute
+    currentRoute(): AVAudioSessionRouteDescription;
+    setCurrentRoute(value: AVAudioSessionRouteDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616524-inputavailable
+    inputAvailable(): boolean;
+    setInputAvailable(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616557-availableinputs
+    availableInputs(): AVAudioSessionPortDescription;
+    setAvailableInputs(value: AVAudioSessionPortDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616536-preferredinput
+    preferredInput(): AVAudioSessionPortDescription;
+    setPreferredInput(value: AVAudioSessionPortDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616491-setpreferredinput
+    setPreferredInput_error(inPort: AVAudioSessionPortDescription, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616485-inputdatasource
+    inputDataSource(): AVAudioSessionDataSourceDescription;
+    setInputDataSource(value: AVAudioSessionDataSourceDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616513-inputdatasources
+    inputDataSources(): AVAudioSessionDataSourceDescription;
+    setInputDataSources(value: AVAudioSessionDataSourceDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616507-setinputdatasource
+    setInputDataSource_error(dataSource: AVAudioSessionDataSourceDescription, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616479-outputdatasources
+    outputDataSources(): AVAudioSessionDataSourceDescription;
+    setOutputDataSources(value: AVAudioSessionDataSourceDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616572-outputdatasource
+    outputDataSource(): AVAudioSessionDataSourceDescription;
+    setOutputDataSource(value: AVAudioSessionDataSourceDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616582-setoutputdatasource
+    setOutputDataSource_error(dataSource: AVAudioSessionDataSourceDescription, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616443-overrideoutputaudioport
+    overrideOutputAudioPort_error(portOverride: AVAudioSessionPortOverride, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616514-inputisavailable
+    inputIsAvailable(): boolean;
+    setInputIsAvailable(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3194617-preparerouteselectionforplayback
+    prepareRouteSelectionForPlaybackWithCompletionHandler(completionHandler: AVAudioSessionRouteSelection):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3551723-inputorientation
+    inputOrientation(): AVAudioStereoOrientation;
+    setInputOrientation(value: AVAudioStereoOrientation): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3551724-preferredinputorientation
+    preferredInputOrientation(): AVAudioStereoOrientation;
+    setPreferredInputOrientation(value: AVAudioStereoOrientation): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/3551725-setpreferredinputorientation
+    setPreferredInputOrientation_error(orientation: AVAudioStereoOrientation, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616475-inputnumberofchannels
+    inputNumberOfChannels(): NSInteger;
+    setInputNumberOfChannels(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616454-maximuminputnumberofchannels
+    maximumInputNumberOfChannels(): NSInteger;
+    setMaximumInputNumberOfChannels(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616440-preferredinputnumberofchannels
+    preferredInputNumberOfChannels(): NSInteger;
+    setPreferredInputNumberOfChannels(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616483-setpreferredinputnumberofchannel
+    setPreferredInputNumberOfChannels_error(count: NSInteger, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616471-outputnumberofchannels
+    outputNumberOfChannels(): NSInteger;
+    setOutputNumberOfChannels(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616490-maximumoutputnumberofchannels
+    maximumOutputNumberOfChannels(): NSInteger;
+    setMaximumOutputNumberOfChannels(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616448-preferredoutputnumberofchannels
+    preferredOutputNumberOfChannels(): NSInteger;
+    setPreferredOutputNumberOfChannels(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616481-setpreferredoutputnumberofchanne
+    setPreferredOutputNumberOfChannels_error(count: NSInteger, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616489-currenthardwareinputnumberofchan
+    currentHardwareInputNumberOfChannels(): NSInteger;
+    setCurrentHardwareInputNumberOfChannels(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616581-currenthardwareoutputnumberofcha
+    currentHardwareOutputNumberOfChannels(): NSInteger;
+    setCurrentHardwareOutputNumberOfChannels(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616593-inputgain
+    inputGain(): number;
+    setInputGain(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616502-inputgainsettable
+    inputGainSettable(): boolean;
+    setInputGainSettable(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616546-setinputgain
+    setInputGain_error(gain: number, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616533-outputvolume
+    outputVolume(): number;
+    setOutputVolume(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616499-samplerate
+    sampleRate(): number;
+    setSampleRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616543-preferredsamplerate
+    preferredSampleRate(): number;
+    setPreferredSampleRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616523-setpreferredsamplerate
+    setPreferredSampleRate_error(sampleRate: number, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616537-inputlatency
+    inputLatency(): NSTimeInterval;
+    setInputLatency(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616500-outputlatency
+    outputLatency(): NSTimeInterval;
+    setOutputLatency(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616498-iobufferduration
+    IOBufferDuration(): NSTimeInterval;
+    setIOBufferDuration(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616464-preferrediobufferduration
+    preferredIOBufferDuration(): NSTimeInterval;
+    setPreferredIOBufferDuration(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616589-setpreferrediobufferduration
+    setPreferredIOBufferDuration_error(duration: NSTimeInterval, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616494-currenthardwaresamplerate
+    currentHardwareSampleRate(): number;
+    setCurrentHardwareSampleRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616571-preferredhardwaresamplerate
+    preferredHardwareSampleRate(): number;
+    setPreferredHardwareSampleRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616526-setpreferredhardwaresamplerate
+    setPreferredHardwareSampleRate_error(sampleRate: number, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/2186370-setaggregatediopreference
+    setAggregatedIOPreference_error(inIOType: AVAudioSessionIOType, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosession/1616556-delegate
+    delegate(): AVAudioSessionDelegate;
+    setDelegate(value: AVAudioSessionDelegate): void;
+    //
+    alloc():AVAudioSession;
+    //
+    init():AVAudioSession;
+  }
+}
+
+declare const AVAudioSession: cocoascript.AVAudioSession;
+declare namespace cocoascript {
+  /**
+   * A protocol that defines responses to changes in state for the audio session.
+   * https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate
+   */
+  interface AVAudioSessionDelegate extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate/1616469-begininterruption
+    beginInterruption():void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate/1616515-endinterruption
+    endInterruption():void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate/1616472-endinterruptionwithflags
+    endInterruptionWithFlags(flags: NSUInteger):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessiondelegate/1616532-inputisavailablechanged
+    inputIsAvailableChanged(isInputAvailable: boolean):void;
+  }
+}
+declare namespace cocoascript {
+  /**
+   * A player for music file formats like MIDI and iMelody.
+   * https://developer.apple.com/documentation/avfoundation/avmidiplayer
+   */
+  interface AVMIDIPlayer extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1390856-initwithcontentsofurl
+    initWithContentsOfURL_soundBankURL_error(inURL: NSURL, bankURL: NSURL, outError: NSError):AVMIDIPlayer;
+    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1389225-initwithdata
+    initWithData_soundBankURL_error(data: NSData, bankURL: NSURL, outError: NSError):AVMIDIPlayer;
+    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1385769-preparetoplay
+    prepareToPlay():void;
+    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1388390-play
+    play(completionHandler: AVMIDIPlayerCompletionHandler):void;
+    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1385747-playing
+    playing(): boolean;
+    setPlaying(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1388856-stop
+    stop():void;
+    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1387366-rate
+    rate(): number;
+    setRate(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1386440-duration
+    duration(): NSTimeInterval;
+    setDuration(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1389636-currentposition
+    currentPosition(): NSTimeInterval;
+    setCurrentPosition(value: NSTimeInterval): void;
+    //
+    alloc():AVMIDIPlayer;
+    //
+    init():AVMIDIPlayer;
+  }
+}
+
+declare const AVMIDIPlayer: cocoascript.AVMIDIPlayer;
+// https://developer.apple.com/documentation/avfoundation/avvideorangesdr
+declare const AVVideoRangeSDR: cocoascript.AVVideoRange;
+// https://developer.apple.com/documentation/avfoundation/avvideorangepq
+declare const AVVideoRangePQ: cocoascript.AVVideoRange;
+// https://developer.apple.com/documentation/avfoundation/avvideorangehlg
+declare const AVVideoRangeHLG: cocoascript.AVVideoRange;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioionodeinputblock
+  type AVAudioIONodeInputBlock = cocoascript.AVAudioFrameCount;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioplayernodecompletioncallbacktype
+  type AVAudioPlayerNodeCompletionCallbackType = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioplayernodecompletionhandler
+  type AVAudioPlayerNodeCompletionHandler = cocoascript.AVAudioPlayerNodeCompletionCallbackType;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioplayernodebufferoptions
+  type AVAudioPlayerNodeBufferOptions = cocoascript.NSUInteger;
+}
+declare namespace cocoascript {
+  /**
+   * A collection of music events sent to a given destination, and which can be offset, muted, and manipulated independently from other track events.
+   * https://developer.apple.com/documentation/avfoundation/avmusictrack
+   */
+  interface AVMusicTrack extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1390533-destinationaudiounit
+    destinationAudioUnit(): AVAudioUnit;
+    setDestinationAudioUnit(value: AVAudioUnit): void;
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1388828-destinationmidiendpoint
+    destinationMIDIEndpoint(): MIDIEndpointRef;
+    setDestinationMIDIEndpoint(value: MIDIEndpointRef): void;
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1389910-lengthinbeats
+    lengthInBeats(): AVMusicTimeStamp;
+    setLengthInBeats(value: AVMusicTimeStamp): void;
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1385749-lengthinseconds
+    lengthInSeconds(): NSTimeInterval;
+    setLengthInSeconds(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1386292-looprange
+    loopRange(): AVBeatRange;
+    setLoopRange(value: AVBeatRange): void;
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1385811-loopingenabled
+    loopingEnabled(): boolean;
+    setLoopingEnabled(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1387694-muted
+    muted(): boolean;
+    setMuted(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1389268-numberofloops
+    numberOfLoops(): NSInteger;
+    setNumberOfLoops(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1386336-offsettime
+    offsetTime(): AVMusicTimeStamp;
+    setOffsetTime(value: AVMusicTimeStamp): void;
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1387883-soloed
+    soloed(): boolean;
+    setSoloed(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1387198-timeresolution
+    timeResolution(): NSUInteger;
+    setTimeResolution(value: NSUInteger): void;
+    //
+    alloc():AVMusicTrack;
+    //
+    init():AVMusicTrack;
+  }
+}
+
+declare const AVMusicTrack: cocoascript.AVMusicTrack;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avmusictrackloopcount
+  type AVMusicTrackLoopCount = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avmusicsequenceloadoptions
+  type AVMusicSequenceLoadOptions = cocoascript.NSUInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avmusictimestamp
+  type AVMusicTimeStamp = cocoascript.Float64;
+}
+declare namespace cocoascript {
+  interface AVBeatRange {
+  }
+}
+declare namespace cocoascript {
+  /**
+   * A subclass of the audio node class that, depending on the type of the audio unit, processes audio either in real time or non-real time.
+   * https://developer.apple.com/documentation/avfoundation/avaudiounit
+   */
+  interface AVAudioUnit extends AVAudioNode {
+    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1386098-audiounit
+    audioUnit(): AudioUnit;
+    setAudioUnit(value: AudioUnit): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1387527-loadaudiounitpresetaturl
+    loadAudioUnitPresetAtURL_error(url: NSURL, outError: NSError):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1390583-instantiatewithcomponentdescript
+    instantiateWithComponentDescription_options_completionHandler(audioComponentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions, completionHandler: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1389217-audiocomponentdescription
+    audioComponentDescription(): AudioComponentDescription;
+    setAudioComponentDescription(value: AudioComponentDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1388972-manufacturername
+    manufacturerName(): string | cocoascript.NSString;
+    setManufacturerName(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1390637-name
+    name(): string | cocoascript.NSString;
+    setName(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1386720-version
+    version(): NSUInteger;
+    setVersion(value: NSUInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1388167-auaudiounit
+    AUAudioUnit(): AUAudioUnit;
+    setAUAudioUnit(value: AUAudioUnit): void;
+    //
+    alloc():AVAudioUnit;
+    //
+    init():AVAudioUnit;
+  }
+}
+
+declare const AVAudioUnit: cocoascript.AVAudioUnit;
+declare namespace cocoascript {
+  /**
+   * A class that provides details about an audio unit such as: type, subtype, manufacturer, and location.
+   * https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent
+   */
+  interface AVAudioUnitComponent extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1385910-audiocomponent
+    audioComponent(): AudioComponent;
+    setAudioComponent(value: AudioComponent): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387404-audiocomponentdescription
+    audioComponentDescription(): AudioComponentDescription;
+    setAudioComponentDescription(value: AudioComponentDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387088-availablearchitectures
+    availableArchitectures(): NSNumber;
+    setAvailableArchitectures(value: NSNumber): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1388088-componenturl
+    componentURL(): NSURL;
+    setComponentURL(value: NSURL): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1390327-configurationdictionary
+    configurationDictionary(): id;
+    setConfigurationDictionary(value: id): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1388384-hascustomview
+    hasCustomView(): boolean;
+    setHasCustomView(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1389600-hasmidiinput
+    hasMIDIInput(): boolean;
+    setHasMIDIInput(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387070-hasmidioutput
+    hasMIDIOutput(): boolean;
+    setHasMIDIOutput(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387472-manufacturername
+    manufacturerName(): string | cocoascript.NSString;
+    setManufacturerName(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1385941-name
+    name(): string | cocoascript.NSString;
+    setName(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1388306-passesauval
+    passesAUVal(): boolean;
+    setPassesAUVal(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1390100-sandboxsafe
+    sandboxSafe(): boolean;
+    setSandboxSafe(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1389351-supportsnumberinputchannels
+    supportsNumberInputChannels_outputChannels(numInputChannels: NSInteger, numOutputChannels: NSInteger):boolean;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1389988-typename
+    typeName(): string | cocoascript.NSString;
+    setTypeName(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387762-version
+    version(): NSUInteger;
+    setVersion(value: NSUInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1388446-versionstring
+    versionString(): string | cocoascript.NSString;
+    setVersionString(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1390618-iconurl
+    iconURL(): NSURL;
+    setIconURL(value: NSURL): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1385647-icon
+    icon(): NSImage;
+    setIcon(value: NSImage): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1390541-localizedtypename
+    localizedTypeName(): string | cocoascript.NSString;
+    setLocalizedTypeName(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387996-alltagnames
+    allTagNames(): string | cocoascript.NSString;
+    setAllTagNames(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1385609-usertagnames
+    userTagNames(): string | cocoascript.NSString;
+    setUserTagNames(value: string | cocoascript.NSString): void;
+    //
+    alloc():AVAudioUnitComponent;
+    //
+    init():AVAudioUnitComponent;
+  }
+}
+
+declare const AVAudioUnitComponent: cocoascript.AVAudioUnitComponent;
+// https://developer.apple.com/documentation/avfoundation/avaudiounitcomponenttagsdidchangenotification
+declare const AVAudioUnitComponentTagsDidChangeNotification: cocoascript.NSString;
+declare namespace cocoascript {
+  /**
+   * An object that provides a way to search and query audio components that are registered with the system.
+   * https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager
+   */
+  interface AVAudioUnitComponentManager extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1390177-sharedaudiounitcomponentmanager
+    sharedAudioUnitComponentManager():AVAudioUnitComponentManager;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1386367-componentsmatchingdescription
+    componentsMatchingDescription(desc: AudioComponentDescription):AVAudioUnitComponent;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1386487-componentsmatchingpredicate
+    componentsMatchingPredicate(predicate: NSPredicate):AVAudioUnitComponent;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1390260-componentspassingtest
+    componentsPassingTest(testHandler: boolean):AVAudioUnitComponent;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1388545-standardlocalizedtagnames
+    standardLocalizedTagNames(): string | cocoascript.NSString;
+    setStandardLocalizedTagNames(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1390133-tagnames
+    tagNames(): string | cocoascript.NSString;
+    setTagNames(value: string | cocoascript.NSString): void;
+    //
+    alloc():AVAudioUnitComponentManager;
+    //
+    init():AVAudioUnitComponentManager;
+  }
+}
+
+declare const AVAudioUnitComponentManager: cocoascript.AVAudioUnitComponentManager;
+declare namespace cocoascript {
+  /**
+   * A class that processes audio in real time.
+   * https://developer.apple.com/documentation/avfoundation/avaudiouniteffect
+   */
+  interface AVAudioUnitEffect extends AVAudioUnit {
+    // https://developer.apple.com/documentation/avfoundation/avaudiouniteffect/1388397-initwithaudiocomponentdescriptio
+    initWithAudioComponentDescription(audioComponentDescription: AudioComponentDescription):AVAudioUnitEffect;
+    // https://developer.apple.com/documentation/avfoundation/avaudiouniteffect/1386894-bypass
+    bypass(): boolean;
+    setBypass(value: boolean): void;
+    //
+    alloc():AVAudioUnitEffect;
+    //
+    init():AVAudioUnitEffect;
+  }
+}
+
+declare const AVAudioUnitEffect: cocoascript.AVAudioUnitEffect;
+declare namespace cocoascript {
+  /**
+   * A class that implements a multiband equalizer.
+   * https://developer.apple.com/documentation/avfoundation/avaudiouniteq
+   */
+  interface AVAudioUnitEQ extends AVAudioUnitEffect {
+    // https://developer.apple.com/documentation/avfoundation/avaudiouniteq/1390915-initwithnumberofbands
+    initWithNumberOfBands(numberOfBands: NSUInteger):AVAudioUnitEQ;
+    // https://developer.apple.com/documentation/avfoundation/avaudiouniteq/1388840-bands
+    bands(): AVAudioUnitEQFilterParameters;
+    setBands(value: AVAudioUnitEQFilterParameters): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiouniteq/1389193-globalgain
+    globalGain(): number;
+    setGlobalGain(value: number): void;
+    //
+    alloc():AVAudioUnitEQ;
+    //
+    init():AVAudioUnitEQ;
+  }
+}
+
+declare const AVAudioUnitEQ: cocoascript.AVAudioUnitEQ;
+declare namespace cocoascript {
+  /**
+   * A class that implements a multistage distortion effect.
+   * https://developer.apple.com/documentation/avfoundation/avaudiounitdistortion
+   */
+  interface AVAudioUnitDistortion extends AVAudioUnitEffect {
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitdistortion/1389550-loadfactorypreset
+    loadFactoryPreset(preset: AVAudioUnitDistortionPreset):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitdistortion/1388179-pregain
+    preGain(): number;
+    setPreGain(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitdistortion/1385730-wetdrymix
+    wetDryMix(): number;
+    setWetDryMix(value: number): void;
+    //
+    alloc():AVAudioUnitDistortion;
+    //
+    init():AVAudioUnitDistortion;
+  }
+}
+
+declare const AVAudioUnitDistortion: cocoascript.AVAudioUnitDistortion;
+declare namespace cocoascript {
+  /**
+   * A class that implements a delay effect.
+   * https://developer.apple.com/documentation/avfoundation/avaudiounitdelay
+   */
+  interface AVAudioUnitDelay extends AVAudioUnitEffect {
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitdelay/1386919-delaytime
+    delayTime(): NSTimeInterval;
+    setDelayTime(value: NSTimeInterval): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitdelay/1388517-feedback
+    feedback(): number;
+    setFeedback(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitdelay/1386489-lowpasscutoff
+    lowPassCutoff(): number;
+    setLowPassCutoff(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitdelay/1390516-wetdrymix
+    wetDryMix(): number;
+    setWetDryMix(value: number): void;
+    //
+    alloc():AVAudioUnitDelay;
+    //
+    init():AVAudioUnitDelay;
+  }
+}
+
+declare const AVAudioUnitDelay: cocoascript.AVAudioUnitDelay;
+declare namespace cocoascript {
+  /**
+   * A class that implements a reverb effect.
+   * https://developer.apple.com/documentation/avfoundation/avaudiounitreverb
+   */
+  interface AVAudioUnitReverb extends AVAudioUnitEffect {
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitreverb/1389169-loadfactorypreset
+    loadFactoryPreset(preset: AVAudioUnitReverbPreset):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitreverb/1388998-wetdrymix
+    wetDryMix(): number;
+    setWetDryMix(value: number): void;
+    //
+    alloc():AVAudioUnitReverb;
+    //
+    init():AVAudioUnitReverb;
+  }
+}
+
+declare const AVAudioUnitReverb: cocoascript.AVAudioUnitReverb;
+declare namespace cocoascript {
+  /**
+   * A class that processes audio in non-real time.
+   * https://developer.apple.com/documentation/avfoundation/avaudiounittimeeffect
+   */
+  interface AVAudioUnitTimeEffect extends AVAudioUnit {
+    // https://developer.apple.com/documentation/avfoundation/avaudiounittimeeffect/1390254-initwithaudiocomponentdescriptio
+    initWithAudioComponentDescription(audioComponentDescription: AudioComponentDescription):AVAudioUnitTimeEffect;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounittimeeffect/1388684-bypass
+    bypass(): boolean;
+    setBypass(value: boolean): void;
+    //
+    alloc():AVAudioUnitTimeEffect;
+    //
+    init():AVAudioUnitTimeEffect;
+  }
+}
+
+declare const AVAudioUnitTimeEffect: cocoascript.AVAudioUnitTimeEffect;
+declare namespace cocoascript {
+  /**
+   * A class that provides good-quality playback rate and pitch shifting independently of each other.
+   * https://developer.apple.com/documentation/avfoundation/avaudiounittimepitch
+   */
+  interface AVAudioUnitTimePitch extends AVAudioUnitTimeEffect {
+    // https://developer.apple.com/documentation/avfoundation/avaudiounittimepitch/1388238-overlap
+    overlap(): number;
+    setOverlap(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounittimepitch/1387188-pitch
+    pitch(): number;
+    setPitch(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiounittimepitch/1389380-rate
+    rate(): number;
+    setRate(value: number): void;
+    //
+    alloc():AVAudioUnitTimePitch;
+    //
+    init():AVAudioUnitTimePitch;
+  }
+}
+
+declare const AVAudioUnitTimePitch: cocoascript.AVAudioUnitTimePitch;
+declare namespace cocoascript {
+  /**
+   * A class that allows control of the playback rate.
+   * https://developer.apple.com/documentation/avfoundation/avaudiounitvarispeed
+   */
+  interface AVAudioUnitVarispeed extends AVAudioUnitTimeEffect {
+    // https://developer.apple.com/documentation/avfoundation/avaudiounitvarispeed/1387118-rate
+    rate(): number;
+    setRate(value: number): void;
+    //
+    alloc():AVAudioUnitVarispeed;
+    //
+    init():AVAudioUnitVarispeed;
+  }
+}
+
+declare const AVAudioUnitVarispeed: cocoascript.AVAudioUnitVarispeed;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudiosourcenoderenderblock
+  type AVAudioSourceNodeRenderBlock = cocoascript.AudioBufferList;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudiosinknodereceiverblock
+  type AVAudioSinkNodeReceiverBlock = cocoascript.AudioBufferList;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioconverterinputblock
+  type AVAudioConverterInputBlock = cocoascript.AVAudioConverterInputStatus;
+}
+declare namespace cocoascript {
+  interface AVAudioConverterPrimeInfo {
+  }
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioconverterinputstatus
+  type AVAudioConverterInputStatus = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioconverteroutputstatus
+  type AVAudioConverterOutputStatus = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioconverterprimemethod
+  type AVAudioConverterPrimeMethod = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  /**
+   * A subclass of
+   * https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer
+   */
+  interface AVAudioPCMBuffer extends AVAudioBuffer {
+    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1389630-initwithpcmformat
+    initWithPCMFormat_frameCapacity(format: AVAudioFormat, frameCapacity: AVAudioFrameCount):AVAudioPCMBuffer;
+    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1386069-framelength
+    frameLength(): AVAudioFrameCount;
+    setFrameLength(value: AVAudioFrameCount): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1386212-floatchanneldata
+    floatChannelData(): const;
+    setFloatChannelData(value: const): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1386941-framecapacity
+    frameCapacity(): AVAudioFrameCount;
+    setFrameCapacity(value: AVAudioFrameCount): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1388925-int16channeldata
+    int16ChannelData(): const;
+    setInt16ChannelData(value: const): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1389756-int32channeldata
+    int32ChannelData(): const;
+    setInt32ChannelData(value: const): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1389726-stride
+    stride(): NSUInteger;
+    setStride(value: NSUInteger): void;
+    //
+    alloc():AVAudioPCMBuffer;
+    //
+    init():AVAudioPCMBuffer;
+  }
+}
+
+declare const AVAudioPCMBuffer: cocoascript.AVAudioPCMBuffer;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudiocommonformat
+  type AVAudioCommonFormat = cocoascript.NSUInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioframeposition
+  type AVAudioFramePosition = number;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioframecount
+  type AVAudioFrameCount = number;
+}
+declare namespace cocoascript {
+  /**
+   * A subclass of
+   * https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer
+   */
+  interface AVAudioCompressedBuffer extends AVAudioBuffer {
+    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1387124-initwithformat
+    initWithFormat_packetCapacity(format: AVAudioFormat, packetCapacity: AVAudioPacketCount):AVAudioCompressedBuffer;
+    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1386718-initwithformat
+    initWithFormat_packetCapacity_maximumPacketSize(format: AVAudioFormat, packetCapacity: AVAudioPacketCount, maximumPacketSize: NSInteger):AVAudioCompressedBuffer;
+    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/2919694-bytecapacity
+    byteCapacity(): number;
+    setByteCapacity(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/2919695-bytelength
+    byteLength(): number;
+    setByteLength(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1390620-data
+    data(): void;
+    setData(value: void): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1389326-maximumpacketsize
+    maximumPacketSize(): NSInteger;
+    setMaximumPacketSize(value: NSInteger): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1386081-packetcapacity
+    packetCapacity(): AVAudioPacketCount;
+    setPacketCapacity(value: AVAudioPacketCount): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1386000-packetcount
+    packetCount(): AVAudioPacketCount;
+    setPacketCount(value: AVAudioPacketCount): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1389750-packetdescriptions
+    packetDescriptions(): AudioStreamPacketDescription;
+    setPacketDescriptions(value: AudioStreamPacketDescription): void;
+    //
+    alloc():AVAudioCompressedBuffer;
+    //
+    init():AVAudioCompressedBuffer;
+  }
+}
+
+declare const AVAudioCompressedBuffer: cocoascript.AVAudioCompressedBuffer;
 declare namespace cocoascript {
   /**
    * The roles of a set of audio channels.
@@ -10364,15 +11969,15 @@ declare namespace cocoascript {
     initWithLayoutTag(layoutTag: AudioChannelLayoutTag):AVAudioChannelLayout;
     // https://developer.apple.com/documentation/avfoundation/avaudiochannellayout/1390526-channelcount
     channelCount(): AVAudioChannelCount;
-    setChannelCount(): void;
+    setChannelCount(value: AVAudioChannelCount): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiochannellayout/1385786-layout
     layout(): AudioChannelLayout;
-    setLayout(): void;
+    setLayout(value: AudioChannelLayout): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiochannellayout/1388519-layouttag
     layoutTag(): AudioChannelLayoutTag;
-    setLayoutTag(): void;
+    setLayoutTag(value: AudioChannelLayoutTag): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiochannellayout/1389677-isequal
-    isEqual(object: AVAudioChannelLayout):BOOL;
+    isEqual(object: AVAudioChannelLayout):boolean;
     //
     alloc():AVAudioChannelLayout;
     //
@@ -10381,6 +11986,133 @@ declare namespace cocoascript {
 }
 
 declare const AVAudioChannelLayout: cocoascript.AVAudioChannelLayout;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudioquality
+  type AVAudioQuality = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  /**
+   * The
+   * https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters
+   */
+  interface AVAudioUnitEQFilterParameters extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters/1389528-bandwidth
+    bandwidth(): number;
+    setBandwidth(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters/1386257-bypass
+    bypass(): boolean;
+    setBypass(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters/1389780-filtertype
+    filterType(): AVAudioUnitEQFilterType;
+    setFilterType(value: AVAudioUnitEQFilterType): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters/1390693-frequency
+    frequency(): number;
+    setFrequency(value: number): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters/1389286-gain
+    gain(): number;
+    setGain(value: number): void;
+    //
+    alloc():AVAudioUnitEQFilterParameters;
+    //
+    init():AVAudioUnitEQFilterParameters;
+  }
+}
+
+declare const AVAudioUnitEQFilterParameters: cocoascript.AVAudioUnitEQFilterParameters;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudiounitreverbpreset
+  type AVAudioUnitReverbPreset = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avcaptionconversionadjustmenttype
+  type AVCaptionConversionAdjustmentType = cocoascript.NSString;
+}
+declare namespace cocoascript {
+  /**
+   * An object that describes an adjustment to the time range of one or more captions.
+   * https://developer.apple.com/documentation/avfoundation/avcaptionconversiontimerangeadjustment
+   */
+  interface AVCaptionConversionTimeRangeAdjustment extends AVCaptionConversionAdjustment {
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversiontimerangeadjustment/3857641-starttimeoffset
+    startTimeOffset(): CMTime;
+    setStartTimeOffset(value: CMTime): void;
+    // https://developer.apple.com/documentation/avfoundation/avcaptionconversiontimerangeadjustment/3857640-durationoffset
+    durationOffset(): CMTime;
+    setDurationOffset(value: CMTime): void;
+    //
+    alloc():AVCaptionConversionTimeRangeAdjustment;
+    //
+    init():AVCaptionConversionTimeRangeAdjustment;
+  }
+}
+
+declare const AVCaptionConversionTimeRangeAdjustment: cocoascript.AVCaptionConversionTimeRangeAdjustment;
+// https://developer.apple.com/documentation/avfoundation/avcaptionconversionwarningtypeexcessmediadata
+declare const AVCaptionConversionWarningTypeExcessMediaData: cocoascript.AVCaptionConversionWarningType;
+declare namespace cocoascript {
+  /**
+   * Information about the capabilities of the port and the hardware channels it supports.
+   * https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription
+   */
+  interface AVAudioSessionPortDescription extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616497-portname
+    portName(): string | cocoascript.NSString;
+    setPortName(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616445-porttype
+    portType(): AVAudioSessionPort;
+    setPortType(value: AVAudioSessionPort): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616574-channels
+    channels(): AVAudioSessionChannelDescription;
+    setChannels(value: AVAudioSessionChannelDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616617-uid
+    UID(): string | cocoascript.NSString;
+    setUID(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1778338-hashardwarevoicecallprocessing
+    hasHardwareVoiceCallProcessing(): boolean;
+    setHasHardwareVoiceCallProcessing(value: boolean): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616570-datasources
+    dataSources(): AVAudioSessionDataSourceDescription;
+    setDataSources(value: AVAudioSessionDataSourceDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616538-selecteddatasource
+    selectedDataSource(): AVAudioSessionDataSourceDescription;
+    setSelectedDataSource(value: AVAudioSessionDataSourceDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616628-preferreddatasource
+    preferredDataSource(): AVAudioSessionDataSourceDescription;
+    setPreferredDataSource(value: AVAudioSessionDataSourceDescription): void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616554-setpreferreddatasource
+    setPreferredDataSource_error(dataSource: AVAudioSessionDataSourceDescription, outError: NSError):boolean;
+    //
+    alloc():AVAudioSessionPortDescription;
+    //
+    init():AVAudioSessionPortDescription;
+  }
+}
+
+declare const AVAudioSessionPortDescription: cocoascript.AVAudioSessionPortDescription;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudiosessionport
+  type AVAudioSessionPort = cocoascript.NSString;
+}
+declare namespace cocoascript {
+  /**
+   * The delegate of an audio recorder object.
+   * https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate
+   */
+  interface AVAudioRecorderDelegate extends NSObject {
+    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1388688-audiorecorderdidfinishrecording
+    audioRecorderDidFinishRecording_successfully(recorder: AVAudioRecorder, flag: boolean):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1387774-audiorecorderencodeerrordidoccur
+    audioRecorderEncodeErrorDidOccur_error(recorder: AVAudioRecorder, error: NSError):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1624897-audiorecorderbegininterruption
+    audioRecorderBeginInterruption(recorder: AVAudioRecorder):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1624901-audiorecorderendinterruption
+    audioRecorderEndInterruption_withOptions(recorder: AVAudioRecorder, flags: NSUInteger):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1624902-audiorecorderendinterruption
+    audioRecorderEndInterruption(recorder: AVAudioRecorder):void;
+    // https://developer.apple.com/documentation/avfoundation/avaudiorecorderdelegate/1624904-audiorecorderendinterruption
+    audioRecorderEndInterruption_withFlags(recorder: AVAudioRecorder, flags: NSUInteger):void;
+  }
+}
 // https://developer.apple.com/documentation/avfoundation/avaudiosessioncategoryplayback
 declare const AVAudioSessionCategoryPlayback: cocoascript.AVAudioSessionCategory;
 declare namespace cocoascript {
@@ -10425,10 +12157,10 @@ declare namespace cocoascript {
   interface AVAudioSessionRouteDescription extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudiosessionroutedescription/1616474-inputs
     inputs(): AVAudioSessionPortDescription;
-    setInputs(): void;
+    setInputs(value: AVAudioSessionPortDescription): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosessionroutedescription/1616552-outputs
     outputs(): AVAudioSessionPortDescription;
-    setOutputs(): void;
+    setOutputs(value: AVAudioSessionPortDescription): void;
     //
     alloc():AVAudioSessionRouteDescription;
     //
@@ -10439,73 +12171,33 @@ declare namespace cocoascript {
 declare const AVAudioSessionRouteDescription: cocoascript.AVAudioSessionRouteDescription;
 declare namespace cocoascript {
   /**
-   * Information about the capabilities of the port and the hardware channels it supports.
-   * https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription
-   */
-  interface AVAudioSessionPortDescription extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616497-portname
-    portName(): string | cocoascript.NSString;
-    setPortName(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616445-porttype
-    portType(): AVAudioSessionPort;
-    setPortType(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616574-channels
-    channels(): AVAudioSessionChannelDescription;
-    setChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616617-uid
-    UID(): string | cocoascript.NSString;
-    setUID(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1778338-hashardwarevoicecallprocessing
-    hasHardwareVoiceCallProcessing(): BOOL;
-    setHasHardwareVoiceCallProcessing(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616570-datasources
-    dataSources(): AVAudioSessionDataSourceDescription;
-    setDataSources(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616538-selecteddatasource
-    selectedDataSource(): AVAudioSessionDataSourceDescription;
-    setSelectedDataSource(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616628-preferreddatasource
-    preferredDataSource(): AVAudioSessionDataSourceDescription;
-    setPreferredDataSource(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionportdescription/1616554-setpreferreddatasource
-    setPreferredDataSource_error(dataSource: AVAudioSessionDataSourceDescription, outError: NSError):BOOL;
-    //
-    alloc():AVAudioSessionPortDescription;
-    //
-    init():AVAudioSessionPortDescription;
-  }
-}
-
-declare const AVAudioSessionPortDescription: cocoascript.AVAudioSessionPortDescription;
-declare namespace cocoascript {
-  /**
    * An object that defines a data source for an audio input or output, giving information such as the source’s name, location, and orientation.
    * https://developer.apple.com/documentation/avfoundation/avaudiosessiondatasourcedescription
    */
   interface AVAudioSessionDataSourceDescription extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudiosessiondatasourcedescription/1616584-datasourceid
     dataSourceID(): NSNumber;
-    setDataSourceID(): void;
+    setDataSourceID(value: NSNumber): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosessiondatasourcedescription/1616595-datasourcename
     dataSourceName(): string | cocoascript.NSString;
-    setDataSourceName(): void;
+    setDataSourceName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosessiondatasourcedescription/1616495-location
     location(): AVAudioSessionLocation;
-    setLocation(): void;
+    setLocation(value: AVAudioSessionLocation): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosessiondatasourcedescription/1616456-orientation
     orientation(): AVAudioSessionOrientation;
-    setOrientation(): void;
+    setOrientation(value: AVAudioSessionOrientation): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosessiondatasourcedescription/1616619-selectedpolarpattern
     selectedPolarPattern(): AVAudioSessionPolarPattern;
-    setSelectedPolarPattern(): void;
+    setSelectedPolarPattern(value: AVAudioSessionPolarPattern): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosessiondatasourcedescription/1616450-supportedpolarpatterns
     supportedPolarPatterns(): AVAudioSessionPolarPattern;
-    setSupportedPolarPatterns(): void;
+    setSupportedPolarPatterns(value: AVAudioSessionPolarPattern): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosessiondatasourcedescription/1616446-preferredpolarpattern
     preferredPolarPattern(): AVAudioSessionPolarPattern;
-    setPreferredPolarPattern(): void;
+    setPreferredPolarPattern(value: AVAudioSessionPolarPattern): void;
     // https://developer.apple.com/documentation/avfoundation/avaudiosessiondatasourcedescription/1616516-setpreferredpolarpattern
-    setPreferredPolarPattern_error(pattern: AVAudioSessionPolarPattern, outError: NSError):BOOL;
+    setPreferredPolarPattern_error(pattern: AVAudioSessionPolarPattern, outError: NSError):boolean;
     //
     alloc():AVAudioSessionDataSourceDescription;
     //
@@ -10530,7 +12222,7 @@ declare namespace cocoascript {
   interface AVAudioRoutingArbiter extends NSObject {
     // https://developer.apple.com/documentation/avfoundation/avaudioroutingarbiter/3566849-sharedroutingarbiter
     sharedRoutingArbiter(): AVAudioRoutingArbiter;
-    setSharedRoutingArbiter(): void;
+    setSharedRoutingArbiter(value: AVAudioRoutingArbiter): void;
     // https://developer.apple.com/documentation/avfoundation/avaudioroutingarbiter/3566847-beginarbitrationwithcategory
     beginArbitrationWithCategory_completionHandler(category: AVAudioRoutingArbitrationCategory, handler: NSError):void;
     // https://developer.apple.com/documentation/avfoundation/avaudioroutingarbiter/3566848-leavearbitration
@@ -10543,648 +12235,66 @@ declare namespace cocoascript {
 }
 
 declare const AVAudioRoutingArbiter: cocoascript.AVAudioRoutingArbiter;
+// https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanagerregistrationschangednotification
+declare const AVAudioUnitComponentManagerRegistrationsChangedNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
-  /**
-   * An object that produces synthesized speech from text utterances and enables monitoring or controlling of ongoing speech.
-   * https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer
-   */
-  interface AVSpeechSynthesizer extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/1619686-speakutterance
-    speakUtterance(utterance: AVSpeechUtterance):void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/1619704-continuespeaking
-    continueSpeaking():BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/1619689-pausespeakingatboundary
-    pauseSpeakingAtBoundary(boundary: AVSpeechBoundary):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/1619676-stopspeakingatboundary
-    stopSpeakingAtBoundary(boundary: AVSpeechBoundary):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/1619680-speaking
-    speaking(): BOOL;
-    setSpeaking(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/1619692-paused
-    paused(): BOOL;
-    setPaused(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/1619709-delegate
-    delegate(): AVSpeechSynthesizerDelegate;
-    setDelegate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/3362518-usesapplicationaudiosession
-    usesApplicationAudioSession(): BOOL;
-    setUsesApplicationAudioSession(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/3132070-mixtotelephonyuplink
-    mixToTelephonyUplink(): BOOL;
-    setMixToTelephonyUplink(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/1648692-outputchannels
-    outputChannels(): AVAudioSessionChannelDescription;
-    setOutputChannels(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizer/3141659-writeutterance
-    writeUtterance_toBufferCallback(utterance: AVSpeechUtterance, bufferCallback: AVSpeechSynthesizerBufferCallback):void;
-    //
-    alloc():AVSpeechSynthesizer;
-    //
-    init():AVSpeechSynthesizer;
-  }
-}
-
-declare const AVSpeechSynthesizer: cocoascript.AVSpeechSynthesizer;
-declare namespace cocoascript {
-  /**
-   * A class that provides details about an audio unit such as: type, subtype, manufacturer, and location.
-   * https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent
-   */
-  interface AVAudioUnitComponent extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1385910-audiocomponent
-    audioComponent(): AudioComponent;
-    setAudioComponent(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387404-audiocomponentdescription
-    audioComponentDescription(): AudioComponentDescription;
-    setAudioComponentDescription(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387088-availablearchitectures
-    availableArchitectures(): NSNumber;
-    setAvailableArchitectures(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1388088-componenturl
-    componentURL(): NSURL;
-    setComponentURL(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1390327-configurationdictionary
-    configurationDictionary(): id;
-    setConfigurationDictionary(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1388384-hascustomview
-    hasCustomView(): BOOL;
-    setHasCustomView(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1389600-hasmidiinput
-    hasMIDIInput(): BOOL;
-    setHasMIDIInput(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387070-hasmidioutput
-    hasMIDIOutput(): BOOL;
-    setHasMIDIOutput(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387472-manufacturername
-    manufacturerName(): string | cocoascript.NSString;
-    setManufacturerName(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1385941-name
-    name(): string | cocoascript.NSString;
-    setName(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1388306-passesauval
-    passesAUVal(): BOOL;
-    setPassesAUVal(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1390100-sandboxsafe
-    sandboxSafe(): BOOL;
-    setSandboxSafe(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1389351-supportsnumberinputchannels
-    supportsNumberInputChannels_outputChannels(numInputChannels: NSInteger, numOutputChannels: NSInteger):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1389988-typename
-    typeName(): string | cocoascript.NSString;
-    setTypeName(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387762-version
-    version(): NSUInteger;
-    setVersion(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1388446-versionstring
-    versionString(): string | cocoascript.NSString;
-    setVersionString(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1390618-iconurl
-    iconURL(): NSURL;
-    setIconURL(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1385647-icon
-    icon(): NSImage;
-    setIcon(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1390541-localizedtypename
-    localizedTypeName(): string | cocoascript.NSString;
-    setLocalizedTypeName(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1387996-alltagnames
-    allTagNames(): string | cocoascript.NSString;
-    setAllTagNames(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponent/1385609-usertagnames
-    userTagNames(): string | cocoascript.NSString;
-    setUserTagNames(): void;
-    //
-    alloc():AVAudioUnitComponent;
-    //
-    init():AVAudioUnitComponent;
-  }
-}
-
-declare const AVAudioUnitComponent: cocoascript.AVAudioUnitComponent;
-// https://developer.apple.com/documentation/avfoundation/avaudiounitcomponenttagsdidchangenotification
-declare const AVAudioUnitComponentTagsDidChangeNotification: cocoascript.NSString;
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioplayernodecompletioncallbacktype
-  type AVAudioPlayerNodeCompletionCallbackType = cocoascript.NSInteger;
+  // https://developer.apple.com/documentation/avfoundation/avaudiounitdistortionpreset
+  type AVAudioUnitDistortionPreset = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioplayernodecompletionhandler
-  type AVAudioPlayerNodeCompletionHandler = cocoascript.AVAudioPlayerNodeCompletionCallbackType;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioplayernodebufferoptions
-  type AVAudioPlayerNodeBufferOptions = cocoascript.NSUInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudiocommonformat
-  type AVAudioCommonFormat = cocoascript.NSUInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioframecount
-  type AVAudioFrameCount = number;
-}
-declare namespace cocoascript {
-  /**
-   * A subclass of
-   * https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer
-   */
-  interface AVAudioPCMBuffer extends AVAudioBuffer {
-    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1389630-initwithpcmformat
-    initWithPCMFormat_frameCapacity(format: AVAudioFormat, frameCapacity: AVAudioFrameCount):AVAudioPCMBuffer;
-    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1386069-framelength
-    frameLength(): AVAudioFrameCount;
-    setFrameLength(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1386212-floatchanneldata
-    floatChannelData(): const;
-    setFloatChannelData(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1386941-framecapacity
-    frameCapacity(): AVAudioFrameCount;
-    setFrameCapacity(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1388925-int16channeldata
-    int16ChannelData(): const;
-    setInt16ChannelData(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1389756-int32channeldata
-    int32ChannelData(): const;
-    setInt32ChannelData(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiopcmbuffer/1389726-stride
-    stride(): NSUInteger;
-    setStride(): void;
-    //
-    alloc():AVAudioPCMBuffer;
-    //
-    init():AVAudioPCMBuffer;
-  }
-}
-
-declare const AVAudioPCMBuffer: cocoascript.AVAudioPCMBuffer;
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioframeposition
-  type AVAudioFramePosition = number;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioionodeinputblock
-  type AVAudioIONodeInputBlock = cocoascript.AVAudioFrameCount;
-}
-declare namespace cocoascript {
-  /**
-   * A class that describes a hardware channel on the current device.
-   * https://developer.apple.com/documentation/avfoundation/avaudiosessionchanneldescription
-   */
-  interface AVAudioSessionChannelDescription extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionchanneldescription/1616521-channelname
-    channelName(): string | cocoascript.NSString;
-    setChannelName(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionchanneldescription/1616444-channelnumber
-    channelNumber(): NSUInteger;
-    setChannelNumber(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionchanneldescription/1616562-owningportuid
-    owningPortUID(): string | cocoascript.NSString;
-    setOwningPortUID(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiosessionchanneldescription/1616565-channellabel
-    channelLabel(): AudioChannelLabel;
-    setChannelLabel(): void;
-    //
-    alloc():AVAudioSessionChannelDescription;
-    //
-    init():AVAudioSessionChannelDescription;
-  }
-}
-
-declare const AVAudioSessionChannelDescription: cocoascript.AVAudioSessionChannelDescription;
-declare namespace cocoascript {
-  /**
-   * A player for music file formats like MIDI and iMelody.
-   * https://developer.apple.com/documentation/avfoundation/avmidiplayer
-   */
-  interface AVMIDIPlayer extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1390856-initwithcontentsofurl
-    initWithContentsOfURL_soundBankURL_error(inURL: NSURL, bankURL: NSURL, outError: NSError):AVMIDIPlayer;
-    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1389225-initwithdata
-    initWithData_soundBankURL_error(data: NSData, bankURL: NSURL, outError: NSError):AVMIDIPlayer;
-    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1385769-preparetoplay
-    prepareToPlay():void;
-    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1388390-play
-    play(completionHandler: AVMIDIPlayerCompletionHandler):void;
-    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1385747-playing
-    playing(): BOOL;
-    setPlaying(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1388856-stop
-    stop():void;
-    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1387366-rate
-    rate(): number;
-    setRate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1386440-duration
-    duration(): NSTimeInterval;
-    setDuration(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmidiplayer/1389636-currentposition
-    currentPosition(): NSTimeInterval;
-    setCurrentPosition(): void;
-    //
-    alloc():AVMIDIPlayer;
-    //
-    init():AVMIDIPlayer;
-  }
-}
-
-declare const AVMIDIPlayer: cocoascript.AVMIDIPlayer;
-declare namespace cocoascript {
-  /**
-   * A collection of music events sent to a given destination, and which can be offset, muted, and manipulated independently from other track events.
-   * https://developer.apple.com/documentation/avfoundation/avmusictrack
-   */
-  interface AVMusicTrack extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1390533-destinationaudiounit
-    destinationAudioUnit(): AVAudioUnit;
-    setDestinationAudioUnit(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1388828-destinationmidiendpoint
-    destinationMIDIEndpoint(): MIDIEndpointRef;
-    setDestinationMIDIEndpoint(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1389910-lengthinbeats
-    lengthInBeats(): AVMusicTimeStamp;
-    setLengthInBeats(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1385749-lengthinseconds
-    lengthInSeconds(): NSTimeInterval;
-    setLengthInSeconds(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1386292-looprange
-    loopRange(): AVBeatRange;
-    setLoopRange(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1385811-loopingenabled
-    loopingEnabled(): BOOL;
-    setLoopingEnabled(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1387694-muted
-    muted(): BOOL;
-    setMuted(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1389268-numberofloops
-    numberOfLoops(): NSInteger;
-    setNumberOfLoops(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1386336-offsettime
-    offsetTime(): AVMusicTimeStamp;
-    setOffsetTime(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1387883-soloed
-    soloed(): BOOL;
-    setSoloed(): void;
-    // https://developer.apple.com/documentation/avfoundation/avmusictrack/1387198-timeresolution
-    timeResolution(): NSUInteger;
-    setTimeResolution(): void;
-    //
-    alloc():AVMusicTrack;
-    //
-    init():AVMusicTrack;
-  }
-}
-
-declare const AVMusicTrack: cocoascript.AVMusicTrack;
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avmusictrackloopcount
-  type AVMusicTrackLoopCount = cocoascript.NSInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avmusicsequenceloadoptions
-  type AVMusicSequenceLoadOptions = cocoascript.NSUInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avmusictimestamp
-  type AVMusicTimeStamp = cocoascript.Float64;
-}
-declare namespace cocoascript {
-  interface AVBeatRange {
-  }
-}
-declare namespace cocoascript {
-  /**
-   * A subclass of the audio node class that, depending on the type of the audio unit, processes audio either in real time or non-real time.
-   * https://developer.apple.com/documentation/avfoundation/avaudiounit
-   */
-  interface AVAudioUnit extends AVAudioNode {
-    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1386098-audiounit
-    audioUnit(): AudioUnit;
-    setAudioUnit(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1387527-loadaudiounitpresetaturl
-    loadAudioUnitPresetAtURL_error(url: NSURL, outError: NSError):BOOL;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1390583-instantiatewithcomponentdescript
-    instantiateWithComponentDescription_options_completionHandler(audioComponentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions, completionHandler: NSError):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1389217-audiocomponentdescription
-    audioComponentDescription(): AudioComponentDescription;
-    setAudioComponentDescription(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1388972-manufacturername
-    manufacturerName(): string | cocoascript.NSString;
-    setManufacturerName(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1390637-name
-    name(): string | cocoascript.NSString;
-    setName(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1386720-version
-    version(): NSUInteger;
-    setVersion(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounit/1388167-auaudiounit
-    AUAudioUnit(): AUAudioUnit;
-    setAUAudioUnit(): void;
-    //
-    alloc():AVAudioUnit;
-    //
-    init():AVAudioUnit;
-  }
-}
-
-declare const AVAudioUnit: cocoascript.AVAudioUnit;
-declare namespace cocoascript {
-  /**
-   * An object that provides a way to search and query audio components that are registered with the system.
-   * https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager
-   */
-  interface AVAudioUnitComponentManager extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1390177-sharedaudiounitcomponentmanager
-    sharedAudioUnitComponentManager():AVAudioUnitComponentManager;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1386367-componentsmatchingdescription
-    componentsMatchingDescription(desc: AudioComponentDescription):AVAudioUnitComponent;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1386487-componentsmatchingpredicate
-    componentsMatchingPredicate(predicate: NSPredicate):AVAudioUnitComponent;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1390260-componentspassingtest
-    componentsPassingTest(testHandler: BOOL):AVAudioUnitComponent;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1388545-standardlocalizedtagnames
-    standardLocalizedTagNames(): string | cocoascript.NSString;
-    setStandardLocalizedTagNames(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanager/1390133-tagnames
-    tagNames(): string | cocoascript.NSString;
-    setTagNames(): void;
-    //
-    alloc():AVAudioUnitComponentManager;
-    //
-    init():AVAudioUnitComponentManager;
-  }
-}
-
-declare const AVAudioUnitComponentManager: cocoascript.AVAudioUnitComponentManager;
-declare namespace cocoascript {
-  /**
-   * A class that processes audio in real time.
-   * https://developer.apple.com/documentation/avfoundation/avaudiouniteffect
-   */
-  interface AVAudioUnitEffect extends AVAudioUnit {
-    // https://developer.apple.com/documentation/avfoundation/avaudiouniteffect/1388397-initwithaudiocomponentdescriptio
-    initWithAudioComponentDescription(audioComponentDescription: AudioComponentDescription):AVAudioUnitEffect;
-    // https://developer.apple.com/documentation/avfoundation/avaudiouniteffect/1386894-bypass
-    bypass(): BOOL;
-    setBypass(): void;
-    //
-    alloc():AVAudioUnitEffect;
-    //
-    init():AVAudioUnitEffect;
-  }
-}
-
-declare const AVAudioUnitEffect: cocoascript.AVAudioUnitEffect;
-declare namespace cocoascript {
-  /**
-   * A class that implements a multiband equalizer.
-   * https://developer.apple.com/documentation/avfoundation/avaudiouniteq
-   */
-  interface AVAudioUnitEQ extends AVAudioUnitEffect {
-    // https://developer.apple.com/documentation/avfoundation/avaudiouniteq/1390915-initwithnumberofbands
-    initWithNumberOfBands(numberOfBands: NSUInteger):AVAudioUnitEQ;
-    // https://developer.apple.com/documentation/avfoundation/avaudiouniteq/1388840-bands
-    bands(): AVAudioUnitEQFilterParameters;
-    setBands(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiouniteq/1389193-globalgain
-    globalGain(): number;
-    setGlobalGain(): void;
-    //
-    alloc():AVAudioUnitEQ;
-    //
-    init():AVAudioUnitEQ;
-  }
-}
-
-declare const AVAudioUnitEQ: cocoascript.AVAudioUnitEQ;
-declare namespace cocoascript {
-  /**
-   * A class that implements a multistage distortion effect.
-   * https://developer.apple.com/documentation/avfoundation/avaudiounitdistortion
-   */
-  interface AVAudioUnitDistortion extends AVAudioUnitEffect {
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitdistortion/1389550-loadfactorypreset
-    loadFactoryPreset(preset: AVAudioUnitDistortionPreset):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitdistortion/1388179-pregain
-    preGain(): number;
-    setPreGain(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitdistortion/1385730-wetdrymix
-    wetDryMix(): number;
-    setWetDryMix(): void;
-    //
-    alloc():AVAudioUnitDistortion;
-    //
-    init():AVAudioUnitDistortion;
-  }
-}
-
-declare const AVAudioUnitDistortion: cocoascript.AVAudioUnitDistortion;
-declare namespace cocoascript {
-  /**
-   * A class that implements a delay effect.
-   * https://developer.apple.com/documentation/avfoundation/avaudiounitdelay
-   */
-  interface AVAudioUnitDelay extends AVAudioUnitEffect {
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitdelay/1386919-delaytime
-    delayTime(): NSTimeInterval;
-    setDelayTime(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitdelay/1388517-feedback
-    feedback(): number;
-    setFeedback(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitdelay/1386489-lowpasscutoff
-    lowPassCutoff(): number;
-    setLowPassCutoff(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitdelay/1390516-wetdrymix
-    wetDryMix(): number;
-    setWetDryMix(): void;
-    //
-    alloc():AVAudioUnitDelay;
-    //
-    init():AVAudioUnitDelay;
-  }
-}
-
-declare const AVAudioUnitDelay: cocoascript.AVAudioUnitDelay;
-declare namespace cocoascript {
-  /**
-   * A class that implements a reverb effect.
-   * https://developer.apple.com/documentation/avfoundation/avaudiounitreverb
-   */
-  interface AVAudioUnitReverb extends AVAudioUnitEffect {
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitreverb/1389169-loadfactorypreset
-    loadFactoryPreset(preset: AVAudioUnitReverbPreset):void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitreverb/1388998-wetdrymix
-    wetDryMix(): number;
-    setWetDryMix(): void;
-    //
-    alloc():AVAudioUnitReverb;
-    //
-    init():AVAudioUnitReverb;
-  }
-}
-
-declare const AVAudioUnitReverb: cocoascript.AVAudioUnitReverb;
-declare namespace cocoascript {
-  /**
-   * A class that processes audio in non-real time.
-   * https://developer.apple.com/documentation/avfoundation/avaudiounittimeeffect
-   */
-  interface AVAudioUnitTimeEffect extends AVAudioUnit {
-    // https://developer.apple.com/documentation/avfoundation/avaudiounittimeeffect/1390254-initwithaudiocomponentdescriptio
-    initWithAudioComponentDescription(audioComponentDescription: AudioComponentDescription):AVAudioUnitTimeEffect;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounittimeeffect/1388684-bypass
-    bypass(): BOOL;
-    setBypass(): void;
-    //
-    alloc():AVAudioUnitTimeEffect;
-    //
-    init():AVAudioUnitTimeEffect;
-  }
-}
-
-declare const AVAudioUnitTimeEffect: cocoascript.AVAudioUnitTimeEffect;
-declare namespace cocoascript {
-  /**
-   * A class that provides good-quality playback rate and pitch shifting independently of each other.
-   * https://developer.apple.com/documentation/avfoundation/avaudiounittimepitch
-   */
-  interface AVAudioUnitTimePitch extends AVAudioUnitTimeEffect {
-    // https://developer.apple.com/documentation/avfoundation/avaudiounittimepitch/1388238-overlap
-    overlap(): number;
-    setOverlap(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounittimepitch/1387188-pitch
-    pitch(): number;
-    setPitch(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiounittimepitch/1389380-rate
-    rate(): number;
-    setRate(): void;
-    //
-    alloc():AVAudioUnitTimePitch;
-    //
-    init():AVAudioUnitTimePitch;
-  }
-}
-
-declare const AVAudioUnitTimePitch: cocoascript.AVAudioUnitTimePitch;
-declare namespace cocoascript {
-  /**
-   * A class that allows control of the playback rate.
-   * https://developer.apple.com/documentation/avfoundation/avaudiounitvarispeed
-   */
-  interface AVAudioUnitVarispeed extends AVAudioUnitTimeEffect {
-    // https://developer.apple.com/documentation/avfoundation/avaudiounitvarispeed/1387118-rate
-    rate(): number;
-    setRate(): void;
-    //
-    alloc():AVAudioUnitVarispeed;
-    //
-    init():AVAudioUnitVarispeed;
-  }
-}
-
-declare const AVAudioUnitVarispeed: cocoascript.AVAudioUnitVarispeed;
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudiosourcenoderenderblock
-  type AVAudioSourceNodeRenderBlock = cocoascript.AudioBufferList;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudiosinknodereceiverblock
-  type AVAudioSinkNodeReceiverBlock = cocoascript.AudioBufferList;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioconverterinputblock
-  type AVAudioConverterInputBlock = cocoascript.AVAudioConverterInputStatus;
-}
-declare namespace cocoascript {
-  interface AVAudioConverterPrimeInfo {
-  }
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioconverterinputstatus
-  type AVAudioConverterInputStatus = cocoascript.NSInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioconverteroutputstatus
-  type AVAudioConverterOutputStatus = cocoascript.NSInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudioconverterprimemethod
-  type AVAudioConverterPrimeMethod = cocoascript.NSInteger;
-}
-declare namespace cocoascript {
-  /**
-   * A subclass of
-   * https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer
-   */
-  interface AVAudioCompressedBuffer extends AVAudioBuffer {
-    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1387124-initwithformat
-    initWithFormat_packetCapacity(format: AVAudioFormat, packetCapacity: AVAudioPacketCount):AVAudioCompressedBuffer;
-    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1386718-initwithformat
-    initWithFormat_packetCapacity_maximumPacketSize(format: AVAudioFormat, packetCapacity: AVAudioPacketCount, maximumPacketSize: NSInteger):AVAudioCompressedBuffer;
-    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/2919694-bytecapacity
-    byteCapacity(): number;
-    setByteCapacity(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/2919695-bytelength
-    byteLength(): number;
-    setByteLength(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1390620-data
-    data(): void;
-    setData(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1389326-maximumpacketsize
-    maximumPacketSize(): NSInteger;
-    setMaximumPacketSize(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1386081-packetcapacity
-    packetCapacity(): AVAudioPacketCount;
-    setPacketCapacity(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1386000-packetcount
-    packetCount(): AVAudioPacketCount;
-    setPacketCount(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiocompressedbuffer/1389750-packetdescriptions
-    packetDescriptions(): AudioStreamPacketDescription;
-    setPacketDescriptions(): void;
-    //
-    alloc():AVAudioCompressedBuffer;
-    //
-    init():AVAudioCompressedBuffer;
-  }
-}
-
-declare const AVAudioCompressedBuffer: cocoascript.AVAudioCompressedBuffer;
-declare namespace cocoascript {
-  /**
-   * The
-   * https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters
-   */
-  interface AVAudioUnitEQFilterParameters extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters/1389528-bandwidth
-    bandwidth(): number;
-    setBandwidth(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters/1386257-bypass
-    bypass(): BOOL;
-    setBypass(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters/1389780-filtertype
-    filterType(): AVAudioUnitEQFilterType;
-    setFilterType(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters/1390693-frequency
-    frequency(): number;
-    setFrequency(): void;
-    // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfilterparameters/1389286-gain
-    gain(): number;
-    setGain(): void;
-    //
-    alloc():AVAudioUnitEQFilterParameters;
-    //
-    init():AVAudioUnitEQFilterParameters;
-  }
-}
-
-declare const AVAudioUnitEQFilterParameters: cocoascript.AVAudioUnitEQFilterParameters;
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudiounitreverbpreset
-  type AVAudioUnitReverbPreset = cocoascript.NSInteger;
+  // https://developer.apple.com/documentation/avfoundation/avaudiopacketcount
+  type AVAudioPacketCount = number;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/avfoundation/avaudiochannelcount
   type AVAudioChannelCount = number;
 }
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfiltertype
+  type AVAudioUnitEQFilterType = cocoascript.NSInteger;
+}
+// https://developer.apple.com/documentation/avfoundation/avcaptionconversionadjustmenttypetimerange
+declare const AVCaptionConversionAdjustmentTypeTimeRange: cocoascript.AVCaptionConversionAdjustmentType;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbuiltinmic
+declare const AVAudioSessionPortBuiltInMic: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportheadsetmic
+declare const AVAudioSessionPortHeadsetMic: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportlinein
+declare const AVAudioSessionPortLineIn: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportairplay
+declare const AVAudioSessionPortAirPlay: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbluetootha2dp
+declare const AVAudioSessionPortBluetoothA2DP: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbluetoothle
+declare const AVAudioSessionPortBluetoothLE: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbuiltinreceiver
+declare const AVAudioSessionPortBuiltInReceiver: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbuiltinspeaker
+declare const AVAudioSessionPortBuiltInSpeaker: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionporthdmi
+declare const AVAudioSessionPortHDMI: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportheadphones
+declare const AVAudioSessionPortHeadphones: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportlineout
+declare const AVAudioSessionPortLineOut: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportavb
+declare const AVAudioSessionPortAVB: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbluetoothhfp
+declare const AVAudioSessionPortBluetoothHFP: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportdisplayport
+declare const AVAudioSessionPortDisplayPort: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportcaraudio
+declare const AVAudioSessionPortCarAudio: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportfirewire
+declare const AVAudioSessionPortFireWire: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportpci
+declare const AVAudioSessionPortPCI: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportthunderbolt
+declare const AVAudioSessionPortThunderbolt: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportusbaudio
+declare const AVAudioSessionPortUSBAudio: cocoascript.AVAudioSessionPort;
+// https://developer.apple.com/documentation/avfoundation/avaudiosessionportvirtual
+declare const AVAudioSessionPortVirtual: cocoascript.AVAudioSessionPort;
 // https://developer.apple.com/documentation/avfoundation/avaudiosessioncategoryambient
 declare const AVAudioSessionCategoryAmbient: cocoascript.AVAudioSessionCategory;
 // https://developer.apple.com/documentation/avfoundation/avaudiosessioncategorymultiroute
@@ -11240,10 +12350,6 @@ declare namespace cocoascript {
   type AVAudioSessionSilenceSecondaryAudioHintType = cocoascript.NSUInteger;
 }
 declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudiosessionport
-  type AVAudioSessionPort = cocoascript.NSString;
-}
-declare namespace cocoascript {
   // https://developer.apple.com/documentation/avfoundation/avaudiosessionlocation
   type AVAudioSessionLocation = cocoascript.NSString;
 }
@@ -11266,160 +12372,9 @@ declare namespace cocoascript {
   type AVAudioRoutingArbitrationCategory = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
-  /**
-   * An object that encapsulates the text for speech synthesis and parameters that affect the speech.
-   * https://developer.apple.com/documentation/avfoundation/avspeechutterance
-   */
-  interface AVSpeechUtterance extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1619684-initwithstring
-    initWithString(string: string | cocoascript.NSString):AVSpeechUtterance;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1619668-speechutterancewithstring
-    speechUtteranceWithString(string: string | cocoascript.NSString):AVSpeechUtterance;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1648776-initwithattributedstring
-    initWithAttributedString(string: NSAttributedString):AVSpeechUtterance;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1649801-speechutterancewithattributedstr
-    speechUtteranceWithAttributedString(string: NSAttributedString):AVSpeechUtterance;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1619710-voice
-    voice(): AVSpeechSynthesisVoice;
-    setVoice(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1619683-pitchmultiplier
-    pitchMultiplier(): number;
-    setPitchMultiplier(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1619687-volume
-    volume(): number;
-    setVolume(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/3546568-prefersassistivetechnologysettin
-    prefersAssistiveTechnologySettings(): BOOL;
-    setPrefersAssistiveTechnologySettings(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1619708-rate
-    rate(): number;
-    setRate(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1619679-preutterancedelay
-    preUtteranceDelay(): NSTimeInterval;
-    setPreUtteranceDelay(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1619694-postutterancedelay
-    postUtteranceDelay(): NSTimeInterval;
-    setPostUtteranceDelay(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1619702-speechstring
-    speechString(): string | cocoascript.NSString;
-    setSpeechString(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechutterance/1648723-attributedspeechstring
-    attributedSpeechString(): NSAttributedString;
-    setAttributedSpeechString(): void;
-    //
-    alloc():AVSpeechUtterance;
-    //
-    init():AVSpeechUtterance;
-  }
+  // https://developer.apple.com/documentation/avfoundation/avmidiplayercompletionhandler
+  type AVMIDIPlayerCompletionHandler = void;
 }
-
-declare const AVSpeechUtterance: cocoascript.AVSpeechUtterance;
-// https://developer.apple.com/documentation/avfoundation/avspeechsynthesisipanotationattribute
-declare const AVSpeechSynthesisIPANotationAttribute: cocoascript.NSString;
-declare namespace cocoascript {
-  /**
-   * A distinct voice for use in speech synthesis.
-   * https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice
-   */
-  interface AVSpeechSynthesisVoice extends NSObject {
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice/1619711-voicewithidentifier
-    voiceWithIdentifier(identifier: string | cocoascript.NSString):AVSpeechSynthesisVoice;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice/1619699-voicewithlanguage
-    voiceWithLanguage(languageCode: string | cocoascript.NSString):AVSpeechSynthesisVoice;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice/1619697-speechvoices
-    speechVoices():AVSpeechSynthesisVoice;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice/1619670-identifier
-    identifier(): string | cocoascript.NSString;
-    setIdentifier(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice/1619669-name
-    name(): string | cocoascript.NSString;
-    setName(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice/1619688-quality
-    quality(): AVSpeechSynthesisVoiceQuality;
-    setQuality(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice/3081643-gender
-    gender(): AVSpeechSynthesisVoiceGender;
-    setGender(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice/3141658-audiofilesettings
-    audioFileSettings(): id;
-    setAudioFileSettings(): void;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice/1619707-currentlanguagecode
-    currentLanguageCode():NSString;
-    // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoice/1619698-language
-    language(): string | cocoascript.NSString;
-    setLanguage(): void;
-    //
-    alloc():AVSpeechSynthesisVoice;
-    //
-    init():AVSpeechSynthesisVoice;
-  }
-}
-
-declare const AVSpeechSynthesisVoice: cocoascript.AVSpeechSynthesisVoice;
-// https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoiceidentifieralex
-declare const AVSpeechSynthesisVoiceIdentifierAlex: cocoascript.NSString;
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avspeechboundary
-  type AVSpeechBoundary = cocoascript.NSInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avspeechsynthesizerbuffercallback
-  type AVSpeechSynthesizerBufferCallback = cocoascript.AVAudioBuffer;
-}
-// https://developer.apple.com/documentation/avfoundation/avaudiounitcomponentmanagerregistrationschangednotification
-declare const AVAudioUnitComponentManagerRegistrationsChangedNotification: cocoascript.NSNotificationName;
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudiounitdistortionpreset
-  type AVAudioUnitDistortionPreset = cocoascript.NSInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudiopacketcount
-  type AVAudioPacketCount = number;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avaudiouniteqfiltertype
-  type AVAudioUnitEQFilterType = cocoascript.NSInteger;
-}
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbuiltinmic
-declare const AVAudioSessionPortBuiltInMic: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportheadsetmic
-declare const AVAudioSessionPortHeadsetMic: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportlinein
-declare const AVAudioSessionPortLineIn: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportairplay
-declare const AVAudioSessionPortAirPlay: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbluetootha2dp
-declare const AVAudioSessionPortBluetoothA2DP: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbluetoothle
-declare const AVAudioSessionPortBluetoothLE: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbuiltinreceiver
-declare const AVAudioSessionPortBuiltInReceiver: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbuiltinspeaker
-declare const AVAudioSessionPortBuiltInSpeaker: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionporthdmi
-declare const AVAudioSessionPortHDMI: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportheadphones
-declare const AVAudioSessionPortHeadphones: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportlineout
-declare const AVAudioSessionPortLineOut: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportavb
-declare const AVAudioSessionPortAVB: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportbluetoothhfp
-declare const AVAudioSessionPortBluetoothHFP: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportdisplayport
-declare const AVAudioSessionPortDisplayPort: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportcaraudio
-declare const AVAudioSessionPortCarAudio: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportfirewire
-declare const AVAudioSessionPortFireWire: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportpci
-declare const AVAudioSessionPortPCI: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportthunderbolt
-declare const AVAudioSessionPortThunderbolt: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportusbaudio
-declare const AVAudioSessionPortUSBAudio: cocoascript.AVAudioSessionPort;
-// https://developer.apple.com/documentation/avfoundation/avaudiosessionportvirtual
-declare const AVAudioSessionPortVirtual: cocoascript.AVAudioSessionPort;
 // https://developer.apple.com/documentation/avfoundation/avaudiosessionlocationlower
 declare const AVAudioSessionLocationLower: cocoascript.AVAudioSessionLocation;
 // https://developer.apple.com/documentation/avfoundation/avaudiosessionlocationupper
@@ -11442,21 +12397,3 @@ declare const AVAudioSessionPolarPatternCardioid: cocoascript.AVAudioSessionPola
 declare const AVAudioSessionPolarPatternSubcardioid: cocoascript.AVAudioSessionPolarPattern;
 // https://developer.apple.com/documentation/avfoundation/avaudiosessionpolarpatternomnidirectional
 declare const AVAudioSessionPolarPatternOmnidirectional: cocoascript.AVAudioSessionPolarPattern;
-// https://developer.apple.com/documentation/avfoundation/avspeechutteranceminimumspeechrate
-declare const AVSpeechUtteranceMinimumSpeechRate: number;
-// https://developer.apple.com/documentation/avfoundation/avspeechutterancemaximumspeechrate
-declare const AVSpeechUtteranceMaximumSpeechRate: number;
-// https://developer.apple.com/documentation/avfoundation/avspeechutterancedefaultspeechrate
-declare const AVSpeechUtteranceDefaultSpeechRate: number;
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoicequality
-  type AVSpeechSynthesisVoiceQuality = cocoascript.NSInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avspeechsynthesisvoicegender
-  type AVSpeechSynthesisVoiceGender = cocoascript.NSInteger;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/avfoundation/avmidiplayercompletionhandler
-  type AVMIDIPlayerCompletionHandler = void;
-}

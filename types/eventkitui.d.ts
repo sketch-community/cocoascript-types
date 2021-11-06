@@ -46,19 +46,19 @@ declare namespace cocoascript {
     initWithSelectionStyle_displayStyle_entityType_eventStore(style: EKCalendarChooserSelectionStyle, displayStyle: EKCalendarChooserDisplayStyle, entityType: EKEntityType, eventStore: EKEventStore):EKCalendarChooser;
     // https://developer.apple.com/documentation/eventkitui/ekcalendarchooser/1613949-delegate
     delegate(): EKCalendarChooserDelegate;
-    setDelegate(): void;
+    setDelegate(value: EKCalendarChooserDelegate): void;
     // https://developer.apple.com/documentation/eventkitui/ekcalendarchooser/1613926-selectedcalendars
     selectedCalendars(): EKCalendar;
-    setSelectedCalendars(): void;
+    setSelectedCalendars(value: EKCalendar): void;
     // https://developer.apple.com/documentation/eventkitui/ekcalendarchooser/1613923-selectionstyle
     selectionStyle(): EKCalendarChooserSelectionStyle;
-    setSelectionStyle(): void;
+    setSelectionStyle(value: EKCalendarChooserSelectionStyle): void;
     // https://developer.apple.com/documentation/eventkitui/ekcalendarchooser/1613935-showscancelbutton
-    showsCancelButton(): BOOL;
-    setShowsCancelButton(): void;
+    showsCancelButton(): boolean;
+    setShowsCancelButton(value: boolean): void;
     // https://developer.apple.com/documentation/eventkitui/ekcalendarchooser/1613958-showsdonebutton
-    showsDoneButton(): BOOL;
-    setShowsDoneButton(): void;
+    showsDoneButton(): boolean;
+    setShowsDoneButton(value: boolean): void;
     //
     alloc():EKCalendarChooser;
     //
@@ -75,16 +75,16 @@ declare namespace cocoascript {
   interface EKEventViewController extends UIViewController {
     // https://developer.apple.com/documentation/eventkitui/ekeventviewcontroller/1613939-delegate
     delegate(): EKEventViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: EKEventViewDelegate): void;
     // https://developer.apple.com/documentation/eventkitui/ekeventviewcontroller/1613929-event
     event(): EKEvent;
-    setEvent(): void;
+    setEvent(value: EKEvent): void;
     // https://developer.apple.com/documentation/eventkitui/ekeventviewcontroller/1613956-allowscalendarpreview
-    allowsCalendarPreview(): BOOL;
-    setAllowsCalendarPreview(): void;
+    allowsCalendarPreview(): boolean;
+    setAllowsCalendarPreview(value: boolean): void;
     // https://developer.apple.com/documentation/eventkitui/ekeventviewcontroller/1613964-allowsediting
-    allowsEditing(): BOOL;
-    setAllowsEditing(): void;
+    allowsEditing(): boolean;
+    setAllowsEditing(value: boolean): void;
     //
     alloc():EKEventViewController;
     //
@@ -105,13 +105,13 @@ declare namespace cocoascript {
   interface EKEventEditViewController extends UINavigationController {
     // https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller/1613954-editviewdelegate
     editViewDelegate(): EKEventEditViewDelegate;
-    setEditViewDelegate(): void;
+    setEditViewDelegate(value: EKEventEditViewDelegate): void;
     // https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller/1613936-event
     event(): EKEvent;
-    setEvent(): void;
+    setEvent(value: EKEvent): void;
     // https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller/1613981-eventstore
     eventStore(): EKEventStore;
-    setEventStore(): void;
+    setEventStore(value: EKEventStore): void;
     // https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller/1613937-cancelediting
     cancelEditing():void;
     //

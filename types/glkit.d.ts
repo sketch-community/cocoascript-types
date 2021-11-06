@@ -8,38 +8,38 @@ declare namespace cocoascript {
     initWithFrame_context(frame: CGRect, context: EAGLContext):GLKView;
     // https://developer.apple.com/documentation/glkit/glkview/1615557-delegate
     delegate(): GLKViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: GLKViewDelegate): void;
     // https://developer.apple.com/documentation/glkit/glkview/1615587-drawablecolorformat
     drawableColorFormat(): GLKViewDrawableColorFormat;
-    setDrawableColorFormat(): void;
+    setDrawableColorFormat(value: GLKViewDrawableColorFormat): void;
     // https://developer.apple.com/documentation/glkit/glkview/1615583-drawabledepthformat
     drawableDepthFormat(): GLKViewDrawableDepthFormat;
-    setDrawableDepthFormat(): void;
+    setDrawableDepthFormat(value: GLKViewDrawableDepthFormat): void;
     // https://developer.apple.com/documentation/glkit/glkview/1615605-drawablestencilformat
     drawableStencilFormat(): GLKViewDrawableStencilFormat;
-    setDrawableStencilFormat(): void;
+    setDrawableStencilFormat(value: GLKViewDrawableStencilFormat): void;
     // https://developer.apple.com/documentation/glkit/glkview/1615601-drawablemultisample
     drawableMultisample(): GLKViewDrawableMultisample;
-    setDrawableMultisample(): void;
+    setDrawableMultisample(value: GLKViewDrawableMultisample): void;
     // https://developer.apple.com/documentation/glkit/glkview/1615559-drawableheight
     drawableHeight(): NSInteger;
-    setDrawableHeight(): void;
+    setDrawableHeight(value: NSInteger): void;
     // https://developer.apple.com/documentation/glkit/glkview/1615591-drawablewidth
     drawableWidth(): NSInteger;
-    setDrawableWidth(): void;
+    setDrawableWidth(value: NSInteger): void;
     // https://developer.apple.com/documentation/glkit/glkview/1615597-context
     context(): EAGLContext;
-    setContext(): void;
+    setContext(value: EAGLContext): void;
     // https://developer.apple.com/documentation/glkit/glkview/1615593-binddrawable
     bindDrawable():void;
     // https://developer.apple.com/documentation/glkit/glkview/1615561-enablesetneedsdisplay
-    enableSetNeedsDisplay(): BOOL;
-    setEnableSetNeedsDisplay(): void;
+    enableSetNeedsDisplay(): boolean;
+    setEnableSetNeedsDisplay(value: boolean): void;
     // https://developer.apple.com/documentation/glkit/glkview/1615571-display
     display():void;
     // https://developer.apple.com/documentation/glkit/glkview/1615562-snapshot
     snapshot(): UIImage;
-    setSnapshot(): void;
+    setSnapshot(value: UIImage): void;
     // https://developer.apple.com/documentation/glkit/glkview/1615569-deletedrawable
     deleteDrawable():void;
     //
@@ -58,37 +58,37 @@ declare namespace cocoascript {
   interface GLKViewController extends UIViewController {
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620702-preferredframespersecond
     preferredFramesPerSecond(): NSInteger;
-    setPreferredFramesPerSecond(): void;
+    setPreferredFramesPerSecond(value: NSInteger): void;
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620723-framespersecond
     framesPerSecond(): NSInteger;
-    setFramesPerSecond(): void;
+    setFramesPerSecond(value: NSInteger): void;
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620711-delegate
     delegate(): GLKViewControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: GLKViewControllerDelegate): void;
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620712-paused
-    paused(): BOOL;
-    setPaused(): void;
+    paused(): boolean;
+    setPaused(value: boolean): void;
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620699-pauseonwillresignactive
-    pauseOnWillResignActive(): BOOL;
-    setPauseOnWillResignActive(): void;
+    pauseOnWillResignActive(): boolean;
+    setPauseOnWillResignActive(value: boolean): void;
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620734-resumeondidbecomeactive
-    resumeOnDidBecomeActive(): BOOL;
-    setResumeOnDidBecomeActive(): void;
+    resumeOnDidBecomeActive(): boolean;
+    setResumeOnDidBecomeActive(value: boolean): void;
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620790-framesdisplayed
     framesDisplayed(): NSInteger;
-    setFramesDisplayed(): void;
+    setFramesDisplayed(value: NSInteger): void;
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620709-timesincefirstresume
     timeSinceFirstResume(): NSTimeInterval;
-    setTimeSinceFirstResume(): void;
+    setTimeSinceFirstResume(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620706-timesincelastresume
     timeSinceLastResume(): NSTimeInterval;
-    setTimeSinceLastResume(): void;
+    setTimeSinceLastResume(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620726-timesincelastupdate
     timeSinceLastUpdate(): NSTimeInterval;
-    setTimeSinceLastUpdate(): void;
+    setTimeSinceLastUpdate(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/glkit/glkviewcontroller/1620725-timesincelastdraw
     timeSinceLastDraw(): NSTimeInterval;
-    setTimeSinceLastDraw(): void;
+    setTimeSinceLastDraw(value: NSTimeInterval): void;
     //
     alloc():GLKViewController;
     //
@@ -106,7 +106,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/glkit/glkviewcontrollerdelegate/1620710-glkviewcontrollerupdate
     glkViewControllerUpdate(controller: GLKViewController):void;
     // https://developer.apple.com/documentation/glkit/glkviewcontrollerdelegate/1620776-glkviewcontroller
-    glkViewController_willPause(controller: GLKViewController, pause: BOOL):void;
+    glkViewController_willPause(controller: GLKViewController, pause: boolean):void;
   }
 }
 declare namespace cocoascript {
@@ -127,34 +127,34 @@ declare namespace cocoascript {
   interface GLKTextureInfo extends NSObject {
     // https://developer.apple.com/documentation/glkit/glktextureinfo/1488763-name
     name(): any;
-    setName(): void;
+    setName(value: any): void;
     // https://developer.apple.com/documentation/glkit/glktextureinfo/1489087-target
     target(): any;
-    setTarget(): void;
+    setTarget(value: any): void;
     // https://developer.apple.com/documentation/glkit/glktextureinfo/1488622-height
     height(): any;
-    setHeight(): void;
+    setHeight(value: any): void;
     // https://developer.apple.com/documentation/glkit/glktextureinfo/1489126-width
     width(): any;
-    setWidth(): void;
+    setWidth(value: any): void;
     // https://developer.apple.com/documentation/glkit/glktextureinfo/1488624-textureorigin
     textureOrigin(): GLKTextureInfoOrigin;
-    setTextureOrigin(): void;
+    setTextureOrigin(value: GLKTextureInfoOrigin): void;
     // https://developer.apple.com/documentation/glkit/glktextureinfo/1489050-alphastate
     alphaState(): GLKTextureInfoAlphaState;
-    setAlphaState(): void;
+    setAlphaState(value: GLKTextureInfoAlphaState): void;
     // https://developer.apple.com/documentation/glkit/glktextureinfo/1488618-containsmipmaps
-    containsMipmaps(): BOOL;
-    setContainsMipmaps(): void;
+    containsMipmaps(): boolean;
+    setContainsMipmaps(value: boolean): void;
     // https://developer.apple.com/documentation/glkit/glktextureinfo/1639613-arraylength
     arrayLength(): any;
-    setArrayLength(): void;
+    setArrayLength(value: any): void;
     // https://developer.apple.com/documentation/glkit/glktextureinfo/1639589-depth
     depth(): any;
-    setDepth(): void;
+    setDepth(value: any): void;
     // https://developer.apple.com/documentation/glkit/glktextureinfo/1639598-mimaplevelcount
     mimapLevelCount(): any;
-    setMimapLevelCount(): void;
+    setMimapLevelCount(value: any): void;
     //
     alloc():GLKTextureInfo;
     //
@@ -245,52 +245,52 @@ declare namespace cocoascript {
   interface GLKBaseEffect extends NSObject {
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488835-label
     label(): string | cocoascript.NSString;
-    setLabel(): void;
+    setLabel(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1489030-transform
     transform(): GLKEffectPropertyTransform;
-    setTransform(): void;
+    setTransform(value: GLKEffectPropertyTransform): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1489037-lightingtype
     lightingType(): GLKLightingType;
-    setLightingType(): void;
+    setLightingType(value: GLKLightingType): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1489036-lightmodeltwosided
     lightModelTwoSided(): GLboolean;
-    setLightModelTwoSided(): void;
+    setLightModelTwoSided(value: GLboolean): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488753-material
     material(): GLKEffectPropertyMaterial;
-    setMaterial(): void;
+    setMaterial(value: GLKEffectPropertyMaterial): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1489061-lightmodelambientcolor
     lightModelAmbientColor(): GLKVector4;
-    setLightModelAmbientColor(): void;
+    setLightModelAmbientColor(value: GLKVector4): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488785-light0
     light0(): GLKEffectPropertyLight;
-    setLight0(): void;
+    setLight0(value: GLKEffectPropertyLight): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1489095-light1
     light1(): GLKEffectPropertyLight;
-    setLight1(): void;
+    setLight1(value: GLKEffectPropertyLight): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488671-light2
     light2(): GLKEffectPropertyLight;
-    setLight2(): void;
+    setLight2(value: GLKEffectPropertyLight): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488664-texture2d0
     texture2d0(): GLKEffectPropertyTexture;
-    setTexture2d0(): void;
+    setTexture2d0(value: GLKEffectPropertyTexture): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488699-texture2d1
     texture2d1(): GLKEffectPropertyTexture;
-    setTexture2d1(): void;
+    setTexture2d1(value: GLKEffectPropertyTexture): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488830-textureorder
     textureOrder(): GLKEffectPropertyTexture;
-    setTextureOrder(): void;
+    setTextureOrder(value: GLKEffectPropertyTexture): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488697-fog
     fog(): GLKEffectPropertyFog;
-    setFog(): void;
+    setFog(value: GLKEffectPropertyFog): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488710-colormaterialenabled
     colorMaterialEnabled(): GLboolean;
-    setColorMaterialEnabled(): void;
+    setColorMaterialEnabled(value: GLboolean): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488783-useconstantcolor
     useConstantColor(): GLboolean;
-    setUseConstantColor(): void;
+    setUseConstantColor(value: GLboolean): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1488903-constantcolor
     constantColor(): GLKVector4;
-    setConstantColor(): void;
+    setConstantColor(value: GLKVector4): void;
     // https://developer.apple.com/documentation/glkit/glkbaseeffect/1489101-preparetodraw
     prepareToDraw():void;
     //
@@ -311,10 +311,10 @@ declare namespace cocoascript {
     prepareToDraw():void;
     // https://developer.apple.com/documentation/glkit/glkreflectionmapeffect/1415312-texturecubemap
     textureCubeMap(): GLKEffectPropertyTexture;
-    setTextureCubeMap(): void;
+    setTextureCubeMap(value: GLKEffectPropertyTexture): void;
     // https://developer.apple.com/documentation/glkit/glkreflectionmapeffect/1415314-matrix
     matrix(): GLKMatrix3;
-    setMatrix(): void;
+    setMatrix(value: GLKMatrix3): void;
     //
     alloc():GLKReflectionMapEffect;
     //
@@ -331,29 +331,29 @@ declare namespace cocoascript {
   interface GLKSkyboxEffect extends NSObject {
     // https://developer.apple.com/documentation/glkit/glkskyboxeffect/1489038-label
     label(): string | cocoascript.NSString;
-    setLabel(): void;
+    setLabel(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/glkit/glkskyboxeffect/1488887-preparetodraw
     prepareToDraw():void;
     // https://developer.apple.com/documentation/glkit/glkskyboxeffect/1488843-draw
     draw():void;
     // https://developer.apple.com/documentation/glkit/glkskyboxeffect/1488873-texturecubemap
     textureCubeMap(): GLKEffectPropertyTexture;
-    setTextureCubeMap(): void;
+    setTextureCubeMap(value: GLKEffectPropertyTexture): void;
     // https://developer.apple.com/documentation/glkit/glkskyboxeffect/1488839-center
     center(): GLKVector3;
-    setCenter(): void;
+    setCenter(value: GLKVector3): void;
     // https://developer.apple.com/documentation/glkit/glkskyboxeffect/1488891-xsize
     xSize(): any;
-    setXSize(): void;
+    setXSize(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkskyboxeffect/1489024-ysize
     ySize(): any;
-    setYSize(): void;
+    setYSize(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkskyboxeffect/1488976-zsize
     zSize(): any;
-    setZSize(): void;
+    setZSize(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkskyboxeffect/1489015-transform
     transform(): GLKEffectPropertyTransform;
-    setTransform(): void;
+    setTransform(value: GLKEffectPropertyTransform): void;
     //
     alloc():GLKSkyboxEffect;
     //
@@ -371,19 +371,19 @@ declare namespace cocoascript {
     initWithMesh_error(mesh: MDLMesh, error: NSError):GLKMesh;
     // https://developer.apple.com/documentation/glkit/glkmesh/1489104-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/glkit/glkmesh/1489060-submeshes
     submeshes(): GLKSubmesh;
-    setSubmeshes(): void;
+    setSubmeshes(value: GLKSubmesh): void;
     // https://developer.apple.com/documentation/glkit/glkmesh/1488688-vertexbuffers
     vertexBuffers(): GLKMeshBuffer;
-    setVertexBuffers(): void;
+    setVertexBuffers(value: GLKMeshBuffer): void;
     // https://developer.apple.com/documentation/glkit/glkmesh/1489043-vertexcount
     vertexCount(): NSUInteger;
-    setVertexCount(): void;
+    setVertexCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/glkit/glkmesh/1488990-vertexdescriptor
     vertexDescriptor(): MDLVertexDescriptor;
-    setVertexDescriptor(): void;
+    setVertexDescriptor(value: MDLVertexDescriptor): void;
     // https://developer.apple.com/documentation/glkit/glkmesh/1488791-newmeshesfromasset
     newMeshesFromAsset_sourceMeshes_error(asset: MDLAsset, sourceMeshes: MDLMesh, error: NSError):GLKMesh;
     //
@@ -401,22 +401,22 @@ declare namespace cocoascript {
   interface GLKMeshBuffer extends NSObject {
     // https://developer.apple.com/documentation/glkit/glkmeshbuffer/1489083-allocator
     allocator(): GLKMeshBufferAllocator;
-    setAllocator(): void;
+    setAllocator(value: GLKMeshBufferAllocator): void;
     // https://developer.apple.com/documentation/glkit/glkmeshbuffer/1488636-glbuffername
     glBufferName(): any;
-    setGlBufferName(): void;
+    setGlBufferName(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkmeshbuffer/1488631-length
     length(): NSUInteger;
-    setLength(): void;
+    setLength(value: NSUInteger): void;
     // https://developer.apple.com/documentation/glkit/glkmeshbuffer/1488607-offset
     offset(): NSUInteger;
-    setOffset(): void;
+    setOffset(value: NSUInteger): void;
     // https://developer.apple.com/documentation/glkit/glkmeshbuffer/1488681-type
     type(): MDLMeshBufferType;
-    setType(): void;
+    setType(value: MDLMeshBufferType): void;
     // https://developer.apple.com/documentation/glkit/glkmeshbuffer/1538271-zone
     zone(): MDLMeshBufferZone;
-    setZone(): void;
+    setZone(value: MDLMeshBufferZone): void;
     //
     alloc():GLKMeshBuffer;
     //
@@ -445,22 +445,22 @@ declare namespace cocoascript {
   interface GLKSubmesh extends NSObject {
     // https://developer.apple.com/documentation/glkit/glksubmesh/1488972-elementbuffer
     elementBuffer(): GLKMeshBuffer;
-    setElementBuffer(): void;
+    setElementBuffer(value: GLKMeshBuffer): void;
     // https://developer.apple.com/documentation/glkit/glksubmesh/1489103-elementcount
     elementCount(): any;
-    setElementCount(): void;
+    setElementCount(value: any): void;
     // https://developer.apple.com/documentation/glkit/glksubmesh/1489108-mesh
     mesh(): GLKMesh;
-    setMesh(): void;
+    setMesh(value: GLKMesh): void;
     // https://developer.apple.com/documentation/glkit/glksubmesh/1488690-mode
     mode(): any;
-    setMode(): void;
+    setMode(value: any): void;
     // https://developer.apple.com/documentation/glkit/glksubmesh/1488724-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/glkit/glksubmesh/1489072-type
     type(): any;
-    setType(): void;
+    setType(value: any): void;
     //
     alloc():GLKSubmesh;
     //
@@ -501,22 +501,22 @@ declare namespace cocoascript {
   interface GLKEffectPropertyFog extends GLKEffectProperty {
     // https://developer.apple.com/documentation/glkit/glkeffectpropertyfog/1429941-enabled
     enabled(): GLboolean;
-    setEnabled(): void;
+    setEnabled(value: GLboolean): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertyfog/1429943-mode
     mode(): any;
-    setMode(): void;
+    setMode(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertyfog/1429938-color
     color(): GLKVector4;
-    setColor(): void;
+    setColor(value: GLKVector4): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertyfog/1429947-density
     density(): any;
-    setDensity(): void;
+    setDensity(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertyfog/1429936-start
     start(): any;
-    setStart(): void;
+    setStart(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertyfog/1429949-end
     end(): any;
-    setEnd(): void;
+    setEnd(value: any): void;
     //
     alloc():GLKEffectPropertyFog;
     //
@@ -533,40 +533,40 @@ declare namespace cocoascript {
   interface GLKEffectPropertyLight extends GLKEffectProperty {
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473558-enabled
     enabled(): GLboolean;
-    setEnabled(): void;
+    setEnabled(value: GLboolean): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473576-position
     position(): GLKVector4;
-    setPosition(): void;
+    setPosition(value: GLKVector4): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473568-transform
     transform(): GLKEffectPropertyTransform;
-    setTransform(): void;
+    setTransform(value: GLKEffectPropertyTransform): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473564-ambientcolor
     ambientColor(): GLKVector4;
-    setAmbientColor(): void;
+    setAmbientColor(value: GLKVector4): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473560-diffusecolor
     diffuseColor(): GLKVector4;
-    setDiffuseColor(): void;
+    setDiffuseColor(value: GLKVector4): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473562-specularcolor
     specularColor(): GLKVector4;
-    setSpecularColor(): void;
+    setSpecularColor(value: GLKVector4): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473574-constantattenuation
     constantAttenuation(): any;
-    setConstantAttenuation(): void;
+    setConstantAttenuation(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473549-linearattenuation
     linearAttenuation(): any;
-    setLinearAttenuation(): void;
+    setLinearAttenuation(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473578-quadraticattenuation
     quadraticAttenuation(): any;
-    setQuadraticAttenuation(): void;
+    setQuadraticAttenuation(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473572-spotcutoff
     spotCutoff(): any;
-    setSpotCutoff(): void;
+    setSpotCutoff(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473547-spotdirection
     spotDirection(): GLKVector3;
-    setSpotDirection(): void;
+    setSpotDirection(value: GLKVector3): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertylight/1473551-spotexponent
     spotExponent(): any;
-    setSpotExponent(): void;
+    setSpotExponent(value: any): void;
     //
     alloc():GLKEffectPropertyLight;
     //
@@ -583,16 +583,16 @@ declare namespace cocoascript {
   interface GLKEffectPropertyTexture extends GLKEffectProperty {
     // https://developer.apple.com/documentation/glkit/glkeffectpropertytexture/1488708-enabled
     enabled(): GLboolean;
-    setEnabled(): void;
+    setEnabled(value: GLboolean): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertytexture/1488986-envmode
     envMode(): GLKTextureEnvMode;
-    setEnvMode(): void;
+    setEnvMode(value: GLKTextureEnvMode): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertytexture/1488884-name
     name(): any;
-    setName(): void;
+    setName(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertytexture/1488852-target
     target(): GLKTextureTarget;
-    setTarget(): void;
+    setTarget(value: GLKTextureTarget): void;
     //
     alloc():GLKEffectPropertyTexture;
     //
@@ -609,19 +609,19 @@ declare namespace cocoascript {
   interface GLKEffectPropertyMaterial extends GLKEffectProperty {
     // https://developer.apple.com/documentation/glkit/glkeffectpropertymaterial/1409844-ambientcolor
     ambientColor(): GLKVector4;
-    setAmbientColor(): void;
+    setAmbientColor(value: GLKVector4): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertymaterial/1409843-diffusecolor
     diffuseColor(): GLKVector4;
-    setDiffuseColor(): void;
+    setDiffuseColor(value: GLKVector4): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertymaterial/1409839-emissivecolor
     emissiveColor(): GLKVector4;
-    setEmissiveColor(): void;
+    setEmissiveColor(value: GLKVector4): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertymaterial/1409837-shininess
     shininess(): any;
-    setShininess(): void;
+    setShininess(value: any): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertymaterial/1409841-specularcolor
     specularColor(): GLKVector4;
-    setSpecularColor(): void;
+    setSpecularColor(value: GLKVector4): void;
     //
     alloc():GLKEffectPropertyMaterial;
     //
@@ -638,13 +638,13 @@ declare namespace cocoascript {
   interface GLKEffectPropertyTransform extends GLKEffectProperty {
     // https://developer.apple.com/documentation/glkit/glkeffectpropertytransform/1489097-modelviewmatrix
     modelviewMatrix(): GLKMatrix4;
-    setModelviewMatrix(): void;
+    setModelviewMatrix(value: GLKMatrix4): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertytransform/1488648-normalmatrix
     normalMatrix(): GLKMatrix3;
-    setNormalMatrix(): void;
+    setNormalMatrix(value: GLKMatrix3): void;
     // https://developer.apple.com/documentation/glkit/glkeffectpropertytransform/1489114-projectionmatrix
     projectionMatrix(): GLKMatrix4;
-    setProjectionMatrix(): void;
+    setProjectionMatrix(value: GLKMatrix4): void;
     //
     alloc():GLKEffectPropertyTransform;
     //

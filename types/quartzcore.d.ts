@@ -6,15 +6,15 @@ declare namespace cocoascript {
   interface CAOpenGLLayer extends CALayer {
     // https://developer.apple.com/documentation/quartzcore/caopengllayer/1521873-colorspace
     colorspace(): CGColorSpaceRef;
-    setColorspace(): void;
+    setColorspace(value: CGColorSpaceRef): void;
     // https://developer.apple.com/documentation/quartzcore/caopengllayer/1521900-wantsextendeddynamicrangecontent
-    wantsExtendedDynamicRangeContent(): BOOL;
-    setWantsExtendedDynamicRangeContent(): void;
+    wantsExtendedDynamicRangeContent(): boolean;
+    setWantsExtendedDynamicRangeContent(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/caopengllayer/1522116-asynchronous
-    asynchronous(): BOOL;
-    setAsynchronous(): void;
+    asynchronous(): boolean;
+    setAsynchronous(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/caopengllayer/1522184-candrawincglcontext
-    canDrawInCGLContext_pixelFormat_forLayerTime_displayTime(ctx: any, pf: any, t: CFTimeInterval, ts: CVTimeStamp):BOOL;
+    canDrawInCGLContext_pixelFormat_forLayerTime_displayTime(ctx: any, pf: any, t: CFTimeInterval, ts: CVTimeStamp):boolean;
     // https://developer.apple.com/documentation/quartzcore/caopengllayer/1522316-drawincglcontext
     drawInCGLContext_pixelFormat_forLayerTime_displayTime(ctx: any, pf: any, t: CFTimeInterval, ts: CVTimeStamp):void;
     // https://developer.apple.com/documentation/quartzcore/caopengllayer/1522052-copycglpixelformatfordisplaymask
@@ -53,157 +53,157 @@ declare namespace cocoascript {
     modelLayer():CALayer;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410984-delegate
     delegate(): CALayerDelegate;
-    setDelegate(): void;
+    setDelegate(value: CALayerDelegate): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410773-contents
     contents(): id;
-    setContents(): void;
+    setContents(value: id): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410866-contentsrect
     contentsRect(): CGRect;
-    setContentsRect(): void;
+    setContentsRect(value: CGRect): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410740-contentscenter
     contentsCenter(): CGRect;
-    setContentsCenter(): void;
+    setContentsCenter(value: CGRect): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410926-display
     display():void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410757-drawincontext
     drawInContext(ctx: CGContextRef):void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410872-contentsgravity
     contentsGravity(): CALayerContentsGravity;
-    setContentsGravity(): void;
+    setContentsGravity(value: CALayerContentsGravity): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410933-opacity
     opacity(): number;
-    setOpacity(): void;
+    setOpacity(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410838-hidden
-    hidden(): BOOL;
-    setHidden(): void;
+    hidden(): boolean;
+    setHidden(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410896-maskstobounds
-    masksToBounds(): BOOL;
-    setMasksToBounds(): void;
+    masksToBounds(): boolean;
+    setMasksToBounds(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410861-mask
     mask(): CALayer;
-    setMask(): void;
+    setMask(value: CALayer): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410924-doublesided
-    doubleSided(): BOOL;
-    setDoubleSided(): void;
+    doubleSided(): boolean;
+    setDoubleSided(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410818-cornerradius
     cornerRadius(): CGFloat;
-    setCornerRadius(): void;
+    setCornerRadius(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/2877488-maskedcorners
     maskedCorners(): CACornerMask;
-    setMaskedCorners(): void;
+    setMaskedCorners(value: CACornerMask): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410917-borderwidth
     borderWidth(): CGFloat;
-    setBorderWidth(): void;
+    setBorderWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410903-bordercolor
     borderColor(): CGColorRef;
-    setBorderColor(): void;
+    setBorderColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410966-backgroundcolor
     backgroundColor(): CGColorRef;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410751-shadowopacity
     shadowOpacity(): number;
-    setShadowOpacity(): void;
+    setShadowOpacity(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410819-shadowradius
     shadowRadius(): CGFloat;
-    setShadowRadius(): void;
+    setShadowRadius(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410970-shadowoffset
     shadowOffset(): CGSize;
-    setShadowOffset(): void;
+    setShadowOffset(value: CGSize): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410829-shadowcolor
     shadowColor(): CGColorRef;
-    setShadowColor(): void;
+    setShadowColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410771-shadowpath
     shadowPath(): CGPathRef;
-    setShadowPath(): void;
+    setShadowPath(value: CGPathRef): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410875-style
     style(): NSDictionary;
-    setStyle(): void;
+    setStyle(value: NSDictionary): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1621285-allowsedgeantialiasing
-    allowsEdgeAntialiasing(): BOOL;
-    setAllowsEdgeAntialiasing(): void;
+    allowsEdgeAntialiasing(): boolean;
+    setAllowsEdgeAntialiasing(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1621277-allowsgroupopacity
-    allowsGroupOpacity(): BOOL;
-    setAllowsGroupOpacity(): void;
+    allowsGroupOpacity(): boolean;
+    setAllowsGroupOpacity(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410901-filters
     filters(): NSArray;
-    setFilters(): void;
+    setFilters(value: NSArray): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410748-compositingfilter
     compositingFilter(): id;
-    setCompositingFilter(): void;
+    setCompositingFilter(value: id): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410827-backgroundfilters
     backgroundFilters(): NSArray;
-    setBackgroundFilters(): void;
+    setBackgroundFilters(value: NSArray): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410898-minificationfilter
     minificationFilter(): CALayerContentsFilter;
-    setMinificationFilter(): void;
+    setMinificationFilter(value: CALayerContentsFilter): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410775-minificationfilterbias
     minificationFilterBias(): number;
-    setMinificationFilterBias(): void;
+    setMinificationFilterBias(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410907-magnificationfilter
     magnificationFilter(): CALayerContentsFilter;
-    setMagnificationFilter(): void;
+    setMagnificationFilter(value: CALayerContentsFilter): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410763-opaque
-    opaque(): BOOL;
-    setOpaque(): void;
+    opaque(): boolean;
+    setOpaque(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410892-edgeantialiasingmask
     edgeAntialiasingMask(): CAEdgeAntialiasingMask;
-    setEdgeAntialiasingMask(): void;
+    setEdgeAntialiasingMask(value: CAEdgeAntialiasingMask): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410777-contentsareflipped
-    contentsAreFlipped():BOOL;
+    contentsAreFlipped():boolean;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410960-geometryflipped
-    geometryFlipped(): BOOL;
-    setGeometryFlipped(): void;
+    geometryFlipped(): boolean;
+    setGeometryFlipped(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410974-drawsasynchronously
-    drawsAsynchronously(): BOOL;
-    setDrawsAsynchronously(): void;
+    drawsAsynchronously(): boolean;
+    setDrawsAsynchronously(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410905-shouldrasterize
-    shouldRasterize(): BOOL;
-    setShouldRasterize(): void;
+    shouldRasterize(): boolean;
+    setShouldRasterize(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410801-rasterizationscale
     rasterizationScale(): CGFloat;
-    setRasterizationScale(): void;
+    setRasterizationScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1792104-contentsformat
     contentsFormat(): CALayerContentsFormat;
-    setContentsFormat(): void;
+    setContentsFormat(value: CALayerContentsFormat): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410909-renderincontext
     renderInContext(ctx: CGContextRef):void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410779-frame
     frame(): CGRect;
-    setFrame(): void;
+    setFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410915-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410791-position
     position(): CGPoint;
-    setPosition(): void;
+    setPosition(value: CGPoint): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410884-zposition
     zPosition(): CGFloat;
-    setZPosition(): void;
+    setZPosition(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410796-anchorpointz
     anchorPointZ(): CGFloat;
-    setAnchorPointZ(): void;
+    setAnchorPointZ(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410817-anchorpoint
     anchorPoint(): CGPoint;
-    setAnchorPoint(): void;
+    setAnchorPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410746-contentsscale
     contentsScale(): CGFloat;
-    setContentsScale(): void;
+    setContentsScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410836-transform
     transform(): CATransform3D;
-    setTransform(): void;
+    setTransform(value: CATransform3D): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410888-sublayertransform
     sublayerTransform(): CATransform3D;
-    setSublayerTransform(): void;
+    setSublayerTransform(value: CATransform3D): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410882-affinetransform
     affineTransform():CGAffineTransform;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410868-setaffinetransform
     setAffineTransform(m: CGAffineTransform):void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410802-sublayers
     sublayers(): CALayer;
-    setSublayers(): void;
+    setSublayers(value: CALayer): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410761-superlayer
     superlayer(): CALayer;
-    setSuperlayer(): void;
+    setSuperlayer(value: CALayer): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410833-addsublayer
     addSublayer(layer: CALayer):void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410767-removefromsuperlayer
@@ -221,14 +221,14 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/quartzcore/calayer/1410800-setneedsdisplayinrect
     setNeedsDisplayInRect(r: CGRect):void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410923-needsdisplayonboundschange
-    needsDisplayOnBoundsChange(): BOOL;
-    setNeedsDisplayOnBoundsChange(): void;
+    needsDisplayOnBoundsChange(): boolean;
+    setNeedsDisplayOnBoundsChange(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410813-displayifneeded
     displayIfNeeded():void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410958-needsdisplay
-    needsDisplay():BOOL;
+    needsDisplay():boolean;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410769-needsdisplayforkey
-    needsDisplayForKey(key: string | cocoascript.NSString):BOOL;
+    needsDisplayForKey(key: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410848-addanimation
     addAnimation_forKey(anim: CAAnimation, key: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410808-animationforkey
@@ -241,7 +241,7 @@ declare namespace cocoascript {
     animationKeys():NSString;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410749-layoutmanager
     layoutManager(): CALayoutManager;
-    setLayoutManager(): void;
+    setLayoutManager(value: CALayoutManager): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410946-setneedslayout
     setNeedsLayout():void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410935-layoutsublayers
@@ -249,10 +249,10 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/quartzcore/calayer/1410873-layoutifneeded
     layoutIfNeeded():void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410956-needslayout
-    needsLayout():BOOL;
+    needsLayout():boolean;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410877-autoresizingmask
     autoresizingMask(): CAAutoresizingMask;
-    setAutoresizingMask(): void;
+    setAutoresizingMask(value: CAAutoresizingMask): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410894-resizewitholdsuperlayersize
     resizeWithOldSuperlayerSize(size: CGSize):void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410929-resizesublayerswitholdsize
@@ -261,14 +261,14 @@ declare namespace cocoascript {
     preferredFrameSize():CGSize;
     // https://developer.apple.com/documentation/quartzcore/calayer/1521906-constraints
     constraints(): CAConstraint;
-    setConstraints(): void;
+    setConstraints(value: CAConstraint): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1521899-addconstraint
     addConstraint(c: CAConstraint):void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410844-actionforkey
     actionForKey(event: string | cocoascript.NSString):CAAction;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410789-actions
     actions(): CAAction;
-    setActions(): void;
+    setActions(value: CAAction): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410954-defaultactionforkey
     defaultActionForKey(event: string | cocoascript.NSString):CAAction;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410825-convertpoint
@@ -286,24 +286,24 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/quartzcore/calayer/1410972-hittest
     hitTest(p: CGPoint):CALayer;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410857-containspoint
-    containsPoint(p: CGPoint):BOOL;
+    containsPoint(p: CGPoint):boolean;
     // https://developer.apple.com/documentation/quartzcore/calayer/1521892-visiblerect
     visibleRect(): CGRect;
-    setVisibleRect(): void;
+    setVisibleRect(value: CGRect): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1522202-scrollpoint
     scrollPoint(p: CGPoint):void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1522139-scrollrecttovisible
     scrollRectToVisible(r: CGRect):void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410879-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410753-shouldarchivevalueforkey
-    shouldArchiveValueForKey(key: string | cocoascript.NSString):BOOL;
+    shouldArchiveValueForKey(key: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/quartzcore/calayer/1410886-defaultvalueforkey
     defaultValueForKey(key: string | cocoascript.NSString):CALayer;
     // https://developer.apple.com/documentation/quartzcore/calayer/3152596-cornercurve
     cornerCurve(): CALayerCornerCurve;
-    setCornerCurve(): void;
+    setCornerCurve(value: CALayerCornerCurve): void;
     // https://developer.apple.com/documentation/quartzcore/calayer/3152597-cornercurveexpansionfactor
     cornerCurveExpansionFactor(curve: CALayerCornerCurve):CGFloat;
     //
@@ -331,33 +331,33 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/quartzcore/caanimation/2867443-animationwithscnanimation
     animationWithSCNAnimation(animation: SCNAnimation):CAAnimation;
     // https://developer.apple.com/documentation/quartzcore/caanimation/1412458-removedoncompletion
-    removedOnCompletion(): BOOL;
-    setRemovedOnCompletion(): void;
+    removedOnCompletion(): boolean;
+    setRemovedOnCompletion(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/caanimation/1412456-timingfunction
     timingFunction(): CAMediaTimingFunction;
-    setTimingFunction(): void;
+    setTimingFunction(value: CAMediaTimingFunction): void;
     // https://developer.apple.com/documentation/quartzcore/caanimation/1412530-defaultvalueforkey
     defaultValueForKey(key: string | cocoascript.NSString):CAAnimation;
     // https://developer.apple.com/documentation/quartzcore/caanimation/1412490-delegate
     delegate(): CAAnimationDelegate;
-    setDelegate(): void;
+    setDelegate(value: CAAnimationDelegate): void;
     // https://developer.apple.com/documentation/quartzcore/caanimation/1412525-shouldarchivevalueforkey
-    shouldArchiveValueForKey(key: string | cocoascript.NSString):BOOL;
+    shouldArchiveValueForKey(key: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/quartzcore/caanimation/1523819-usesscenetimebase
-    usesSceneTimeBase(): BOOL;
-    setUsesSceneTimeBase(): void;
+    usesSceneTimeBase(): boolean;
+    setUsesSceneTimeBase(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/caanimation/1523370-fadeinduration
     fadeInDuration(): CGFloat;
-    setFadeInDuration(): void;
+    setFadeInDuration(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caanimation/1522959-fadeoutduration
     fadeOutDuration(): CGFloat;
-    setFadeOutDuration(): void;
+    setFadeOutDuration(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caanimation/1523940-animationevents
     animationEvents(): SCNAnimationEvent;
-    setAnimationEvents(): void;
+    setAnimationEvents(value: SCNAnimationEvent): void;
     // https://developer.apple.com/documentation/quartzcore/caanimation/3875342-preferredframeraterange
     preferredFrameRateRange(): CAFrameRateRange;
-    setPreferredFrameRateRange(): void;
+    setPreferredFrameRateRange(value: CAFrameRateRange): void;
     //
     alloc():CAAnimation;
     //
@@ -387,9 +387,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/quartzcore/catransaction/1448279-setanimationtimingfunction
     setAnimationTimingFunction(func: CAMediaTimingFunction):void;
     // https://developer.apple.com/documentation/quartzcore/catransaction/1448276-disableactions
-    disableActions():BOOL;
+    disableActions():boolean;
     // https://developer.apple.com/documentation/quartzcore/catransaction/1448261-setdisableactions
-    setDisableActions(flag: BOOL):void;
+    setDisableActions(flag: boolean):void;
     // https://developer.apple.com/documentation/quartzcore/catransaction/1448280-completionblock
     completionBlock():void;
     // https://developer.apple.com/documentation/quartzcore/catransaction/1448281-setcompletionblock
@@ -418,42 +418,42 @@ declare namespace cocoascript {
   interface CAMetalLayer extends CALayer {
     // https://developer.apple.com/documentation/quartzcore/cametallayer/1478163-device
     device(): any;
-    setDevice(): void;
+    setDevice(value: any): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/3175021-preferreddevice
     preferredDevice(): any;
-    setPreferredDevice(): void;
+    setPreferredDevice(value: any): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/1478155-pixelformat
     pixelFormat(): any;
-    setPixelFormat(): void;
+    setPixelFormat(value: any): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/1478170-colorspace
     colorspace(): CGColorSpaceRef;
-    setColorspace(): void;
+    setColorspace(value: CGColorSpaceRef): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/1478168-framebufferonly
-    framebufferOnly(): BOOL;
-    setFramebufferOnly(): void;
+    framebufferOnly(): boolean;
+    setFramebufferOnly(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/1478174-drawablesize
     drawableSize(): CGSize;
-    setDrawableSize(): void;
+    setDrawableSize(value: CGSize): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/1478157-presentswithtransaction
-    presentsWithTransaction(): BOOL;
-    setPresentsWithTransaction(): void;
+    presentsWithTransaction(): boolean;
+    setPresentsWithTransaction(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/2887087-displaysyncenabled
-    displaySyncEnabled(): BOOL;
-    setDisplaySyncEnabled(): void;
+    displaySyncEnabled(): boolean;
+    setDisplaySyncEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/1478161-wantsextendeddynamicrangecontent
-    wantsExtendedDynamicRangeContent(): BOOL;
-    setWantsExtendedDynamicRangeContent(): void;
+    wantsExtendedDynamicRangeContent(): boolean;
+    setWantsExtendedDynamicRangeContent(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/3182052-edrmetadata
     EDRMetadata(): CAEDRMetadata;
-    setEDRMetadata(): void;
+    setEDRMetadata(value: CAEDRMetadata): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/1478172-nextdrawable
     nextDrawable():CAMetalDrawable;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/2938720-maximumdrawablecount
     maximumDrawableCount(): NSUInteger;
-    setMaximumDrawableCount(): void;
+    setMaximumDrawableCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/quartzcore/cametallayer/2887086-allowsnextdrawabletimeout
-    allowsNextDrawableTimeout(): BOOL;
-    setAllowsNextDrawableTimeout(): void;
+    allowsNextDrawableTimeout(): boolean;
+    setAllowsNextDrawableTimeout(value: boolean): void;
     //
     alloc():CAMetalLayer;
     //
@@ -470,10 +470,10 @@ declare namespace cocoascript {
   interface CAMetalDrawable extends MTLDrawable {
     // https://developer.apple.com/documentation/quartzcore/cametaldrawable/1478159-texture
     texture(): any;
-    setTexture(): void;
+    setTexture(value: any): void;
     // https://developer.apple.com/documentation/quartzcore/cametaldrawable/1478165-layer
     layer(): CAMetalLayer;
-    setLayer(): void;
+    setLayer(value: CAMetalLayer): void;
   }
 }
 declare namespace cocoascript {
@@ -483,8 +483,8 @@ declare namespace cocoascript {
    */
   interface CAEAGLLayer extends CALayer {
     // https://developer.apple.com/documentation/quartzcore/caeagllayer/1618676-presentswithtransaction
-    presentsWithTransaction(): BOOL;
-    setPresentsWithTransaction(): void;
+    presentsWithTransaction(): boolean;
+    setPresentsWithTransaction(value: boolean): void;
     //
     alloc():CAEAGLLayer;
     //
@@ -501,7 +501,7 @@ declare namespace cocoascript {
   interface CAEDRMetadata extends NSObject {
     // https://developer.apple.com/documentation/quartzcore/caedrmetadata/3194384-hlgmetadata
     HLGMetadata(): CAEDRMetadata;
-    setHLGMetadata(): void;
+    setHLGMetadata(value: CAEDRMetadata): void;
     // https://developer.apple.com/documentation/quartzcore/caedrmetadata/3194382-hdr10metadatawithdisplayinfo
     HDR10MetadataWithDisplayInfo_contentInfo_opticalOutputScale(displayData: NSData, contentData: NSData, scale: number):CAEDRMetadata;
     // https://developer.apple.com/documentation/quartzcore/caedrmetadata/3194383-hdr10metadatawithminluminance
@@ -526,10 +526,10 @@ declare namespace cocoascript {
     rendererWithMTLTexture_options(tex: any, dict: NSDictionary):CARenderer;
     // https://developer.apple.com/documentation/quartzcore/carenderer/1519583-layer
     layer(): CALayer;
-    setLayer(): void;
+    setLayer(value: CALayer): void;
     // https://developer.apple.com/documentation/quartzcore/carenderer/1519591-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/quartzcore/carenderer/1519595-beginframeattime
     beginFrameAtTime_timeStamp(t: CFTimeInterval, ts: CVTimeStamp):void;
     // https://developer.apple.com/documentation/quartzcore/carenderer/1519594-updatebounds
@@ -562,13 +562,13 @@ declare namespace cocoascript {
     fadeDuration():CFTimeInterval;
     // https://developer.apple.com/documentation/quartzcore/catiledlayer/1522244-levelsofdetail
     levelsOfDetail(): any;
-    setLevelsOfDetail(): void;
+    setLevelsOfDetail(value: any): void;
     // https://developer.apple.com/documentation/quartzcore/catiledlayer/1522099-levelsofdetailbias
     levelsOfDetailBias(): any;
-    setLevelsOfDetailBias(): void;
+    setLevelsOfDetailBias(value: any): void;
     // https://developer.apple.com/documentation/quartzcore/catiledlayer/1522114-tilesize
     tileSize(): CGSize;
-    setTileSize(): void;
+    setTileSize(value: CGSize): void;
     //
     alloc():CATiledLayer;
     //
@@ -604,7 +604,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/quartzcore/caanimationdelegate/2097265-animationdidstart
     animationDidStart(anim: CAAnimation):void;
     // https://developer.apple.com/documentation/quartzcore/caanimationdelegate/2097259-animationdidstop
-    animationDidStop_finished(anim: CAAnimation, flag: BOOL):void;
+    animationDidStop_finished(anim: CAAnimation, flag: boolean):void;
   }
 }
 declare namespace cocoascript {
@@ -629,28 +629,28 @@ declare namespace cocoascript {
   interface CAMediaTiming {
     // https://developer.apple.com/documentation/quartzcore/camediatiming/1427654-begintime
     beginTime(): CFTimeInterval;
-    setBeginTime(): void;
+    setBeginTime(value: CFTimeInterval): void;
     // https://developer.apple.com/documentation/quartzcore/camediatiming/1427650-timeoffset
     timeOffset(): CFTimeInterval;
-    setTimeOffset(): void;
+    setTimeOffset(value: CFTimeInterval): void;
     // https://developer.apple.com/documentation/quartzcore/camediatiming/1427666-repeatcount
     repeatCount(): number;
-    setRepeatCount(): void;
+    setRepeatCount(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/camediatiming/1427643-repeatduration
     repeatDuration(): CFTimeInterval;
-    setRepeatDuration(): void;
+    setRepeatDuration(value: CFTimeInterval): void;
     // https://developer.apple.com/documentation/quartzcore/camediatiming/1427652-duration
     duration(): CFTimeInterval;
-    setDuration(): void;
+    setDuration(value: CFTimeInterval): void;
     // https://developer.apple.com/documentation/quartzcore/camediatiming/1427647-speed
     speed(): number;
-    setSpeed(): void;
+    setSpeed(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/camediatiming/1427645-autoreverses
-    autoreverses(): BOOL;
-    setAutoreverses(): void;
+    autoreverses(): boolean;
+    setAutoreverses(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/camediatiming/1427656-fillmode
     fillMode(): CAMediaTimingFillMode;
-    setFillMode(): void;
+    setFillMode(value: CAMediaTimingFillMode): void;
   }
 }
 declare namespace cocoascript {
@@ -695,19 +695,19 @@ declare namespace cocoascript {
     initWithAttribute_relativeTo_attribute_scale_offset(attr: CAConstraintAttribute, srcId: string | cocoascript.NSString, srcAttr: CAConstraintAttribute, m: CGFloat, c: CGFloat):CAConstraint;
     // https://developer.apple.com/documentation/quartzcore/caconstraint/1522186-attribute
     attribute(): CAConstraintAttribute;
-    setAttribute(): void;
+    setAttribute(value: CAConstraintAttribute): void;
     // https://developer.apple.com/documentation/quartzcore/caconstraint/1522142-offset
     offset(): CGFloat;
-    setOffset(): void;
+    setOffset(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caconstraint/1521911-scale
     scale(): CGFloat;
-    setScale(): void;
+    setScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caconstraint/1522385-sourceattribute
     sourceAttribute(): CAConstraintAttribute;
-    setSourceAttribute(): void;
+    setSourceAttribute(value: CAConstraintAttribute): void;
     // https://developer.apple.com/documentation/quartzcore/caconstraint/1522224-sourcename
     sourceName(): string | cocoascript.NSString;
-    setSourceName(): void;
+    setSourceName(value: string | cocoascript.NSString): void;
     //
     alloc():CAConstraint;
     //
@@ -754,7 +754,7 @@ declare namespace cocoascript {
   interface CAValueFunction extends NSObject {
     // https://developer.apple.com/documentation/quartzcore/cavaluefunction/1521888-name
     name(): CAValueFunctionName;
-    setName(): void;
+    setName(value: CAValueFunctionName): void;
     // https://developer.apple.com/documentation/quartzcore/cavaluefunction/1522115-functionwithname
     functionWithName(name: CAValueFunctionName):CAValueFunction;
     //
@@ -797,113 +797,113 @@ declare namespace cocoascript {
     emitterCell():CAEmitterCell;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522109-contents
     contents(): id;
-    setContents(): void;
+    setContents(value: id): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522124-contentsrect
     contentsRect(): CGRect;
-    setContentsRect(): void;
+    setContentsRect(value: CGRect): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521866-emittercells
     emitterCells(): CAEmitterCell;
-    setEmitterCells(): void;
+    setEmitterCells(value: CAEmitterCell): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521831-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522322-color
     color(): CGColorRef;
-    setColor(): void;
+    setColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522176-redrange
     redRange(): number;
-    setRedRange(): void;
+    setRedRange(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521867-greenrange
     greenRange(): number;
-    setGreenRange(): void;
+    setGreenRange(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522158-bluerange
     blueRange(): number;
-    setBlueRange(): void;
+    setBlueRange(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522110-alpharange
     alphaRange(): number;
-    setAlphaRange(): void;
+    setAlphaRange(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521859-redspeed
     redSpeed(): number;
-    setRedSpeed(): void;
+    setRedSpeed(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521946-greenspeed
     greenSpeed(): number;
-    setGreenSpeed(): void;
+    setGreenSpeed(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522082-bluespeed
     blueSpeed(): number;
-    setBlueSpeed(): void;
+    setBlueSpeed(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522120-alphaspeed
     alphaSpeed(): number;
-    setAlphaSpeed(): void;
+    setAlphaSpeed(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522228-magnificationfilter
     magnificationFilter(): string | cocoascript.NSString;
-    setMagnificationFilter(): void;
+    setMagnificationFilter(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522222-minificationfilter
     minificationFilter(): string | cocoascript.NSString;
-    setMinificationFilter(): void;
+    setMinificationFilter(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521907-minificationfilterbias
     minificationFilterBias(): number;
-    setMinificationFilterBias(): void;
+    setMinificationFilterBias(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522287-scale
     scale(): CGFloat;
-    setScale(): void;
+    setScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521915-scalerange
     scaleRange(): CGFloat;
-    setScaleRange(): void;
+    setScaleRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522197-contentsscale
     contentsScale(): CGFloat;
-    setContentsScale(): void;
+    setContentsScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521909-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521925-style
     style(): NSDictionary;
-    setStyle(): void;
+    setStyle(value: NSDictionary): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522361-spin
     spin(): CGFloat;
-    setSpin(): void;
+    setSpin(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522084-spinrange
     spinRange(): CGFloat;
-    setSpinRange(): void;
+    setSpinRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521857-emissionlatitude
     emissionLatitude(): CGFloat;
-    setEmissionLatitude(): void;
+    setEmissionLatitude(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522013-emissionlongitude
     emissionLongitude(): CGFloat;
-    setEmissionLongitude(): void;
+    setEmissionLongitude(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521847-emissionrange
     emissionRange(): CGFloat;
-    setEmissionRange(): void;
+    setEmissionRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522075-lifetime
     lifetime(): number;
-    setLifetime(): void;
+    setLifetime(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522101-lifetimerange
     lifetimeRange(): number;
-    setLifetimeRange(): void;
+    setLifetimeRange(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522100-birthrate
     birthRate(): number;
-    setBirthRate(): void;
+    setBirthRate(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522241-scalespeed
     scaleSpeed(): CGFloat;
-    setScaleSpeed(): void;
+    setScaleSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521837-velocity
     velocity(): CGFloat;
-    setVelocity(): void;
+    setVelocity(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522330-velocityrange
     velocityRange(): CGFloat;
-    setVelocityRange(): void;
+    setVelocityRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521879-xacceleration
     xAcceleration(): CGFloat;
-    setXAcceleration(): void;
+    setXAcceleration(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522077-yacceleration
     yAcceleration(): CGFloat;
-    setYAcceleration(): void;
+    setYAcceleration(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522298-zacceleration
     zAcceleration(): CGFloat;
-    setZAcceleration(): void;
+    setZAcceleration(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1521964-defaultvalueforkey
     defaultValueForKey(key: string | cocoascript.NSString):CAEmitterCell;
     // https://developer.apple.com/documentation/quartzcore/caemittercell/1522005-shouldarchivevalueforkey
-    shouldArchiveValueForKey(key: string | cocoascript.NSString):BOOL;
+    shouldArchiveValueForKey(key: string | cocoascript.NSString):boolean;
     //
     alloc():CAEmitterCell;
     //
@@ -920,13 +920,13 @@ declare namespace cocoascript {
   interface CABasicAnimation extends CAPropertyAnimation {
     // https://developer.apple.com/documentation/quartzcore/cabasicanimation/1412519-fromvalue
     fromValue(): id;
-    setFromValue(): void;
+    setFromValue(value: id): void;
     // https://developer.apple.com/documentation/quartzcore/cabasicanimation/1412523-tovalue
     toValue(): id;
-    setToValue(): void;
+    setToValue(value: id): void;
     // https://developer.apple.com/documentation/quartzcore/cabasicanimation/1412445-byvalue
     byValue(): id;
-    setByValue(): void;
+    setByValue(value: id): void;
     //
     alloc():CABasicAnimation;
     //
@@ -943,31 +943,31 @@ declare namespace cocoascript {
   interface CAKeyframeAnimation extends CAPropertyAnimation {
     // https://developer.apple.com/documentation/quartzcore/cakeyframeanimation/1412498-values
     values(): NSArray;
-    setValues(): void;
+    setValues(value: NSArray): void;
     // https://developer.apple.com/documentation/quartzcore/cakeyframeanimation/1412474-path
     path(): CGPathRef;
-    setPath(): void;
+    setPath(value: CGPathRef): void;
     // https://developer.apple.com/documentation/quartzcore/cakeyframeanimation/1412522-keytimes
     keyTimes(): NSNumber;
-    setKeyTimes(): void;
+    setKeyTimes(value: NSNumber): void;
     // https://developer.apple.com/documentation/quartzcore/cakeyframeanimation/1412465-timingfunctions
     timingFunctions(): CAMediaTimingFunction;
-    setTimingFunctions(): void;
+    setTimingFunctions(value: CAMediaTimingFunction): void;
     // https://developer.apple.com/documentation/quartzcore/cakeyframeanimation/1412500-calculationmode
     calculationMode(): CAAnimationCalculationMode;
-    setCalculationMode(): void;
+    setCalculationMode(value: CAAnimationCalculationMode): void;
     // https://developer.apple.com/documentation/quartzcore/cakeyframeanimation/1412454-rotationmode
     rotationMode(): CAAnimationRotationMode;
-    setRotationMode(): void;
+    setRotationMode(value: CAAnimationRotationMode): void;
     // https://developer.apple.com/documentation/quartzcore/cakeyframeanimation/1412475-tensionvalues
     tensionValues(): NSNumber;
-    setTensionValues(): void;
+    setTensionValues(value: NSNumber): void;
     // https://developer.apple.com/documentation/quartzcore/cakeyframeanimation/1412491-continuityvalues
     continuityValues(): NSNumber;
-    setContinuityValues(): void;
+    setContinuityValues(value: NSNumber): void;
     // https://developer.apple.com/documentation/quartzcore/cakeyframeanimation/1412485-biasvalues
     biasValues(): NSNumber;
-    setBiasValues(): void;
+    setBiasValues(value: NSNumber): void;
     //
     alloc():CAKeyframeAnimation;
     //
@@ -984,7 +984,7 @@ declare namespace cocoascript {
   interface CAAnimationGroup extends CAAnimation {
     // https://developer.apple.com/documentation/quartzcore/caanimationgroup/1412516-animations
     animations(): CAAnimation;
-    setAnimations(): void;
+    setAnimations(value: CAAnimation): void;
     //
     alloc():CAAnimationGroup;
     //
@@ -1001,19 +1001,19 @@ declare namespace cocoascript {
   interface CATransition extends CAAnimation {
     // https://developer.apple.com/documentation/quartzcore/catransition/1412511-startprogress
     startProgress(): number;
-    setStartProgress(): void;
+    setStartProgress(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/catransition/1412509-endprogress
     endProgress(): number;
-    setEndProgress(): void;
+    setEndProgress(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/catransition/1412502-type
     type(): CATransitionType;
-    setType(): void;
+    setType(value: CATransitionType): void;
     // https://developer.apple.com/documentation/quartzcore/catransition/1412467-subtype
     subtype(): CATransitionSubtype;
-    setSubtype(): void;
+    setSubtype(value: CATransitionSubtype): void;
     // https://developer.apple.com/documentation/quartzcore/catransition/1412506-filter
     filter(): id;
-    setFilter(): void;
+    setFilter(value: id): void;
     //
     alloc():CATransition;
     //
@@ -1030,16 +1030,16 @@ declare namespace cocoascript {
   interface CAPropertyAnimation extends CAAnimation {
     // https://developer.apple.com/documentation/quartzcore/capropertyanimation/1412496-keypath
     keyPath(): string | cocoascript.NSString;
-    setKeyPath(): void;
+    setKeyPath(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/quartzcore/capropertyanimation/1412538-cumulative
-    cumulative(): BOOL;
-    setCumulative(): void;
+    cumulative(): boolean;
+    setCumulative(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/capropertyanimation/1412493-additive
-    additive(): BOOL;
-    setAdditive(): void;
+    additive(): boolean;
+    setAdditive(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/capropertyanimation/1412447-valuefunction
     valueFunction(): CAValueFunction;
-    setValueFunction(): void;
+    setValueFunction(value: CAValueFunction): void;
     // https://developer.apple.com/documentation/quartzcore/capropertyanimation/1412534-animationwithkeypath
     animationWithKeyPath(path: string | cocoascript.NSString):CAPropertyAnimation;
     //
@@ -1058,19 +1058,19 @@ declare namespace cocoascript {
   interface CASpringAnimation extends CABasicAnimation {
     // https://developer.apple.com/documentation/quartzcore/caspringanimation/1412532-damping
     damping(): CGFloat;
-    setDamping(): void;
+    setDamping(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caspringanimation/1412443-initialvelocity
     initialVelocity(): CGFloat;
-    setInitialVelocity(): void;
+    setInitialVelocity(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caspringanimation/1412540-mass
     mass(): CGFloat;
-    setMass(): void;
+    setMass(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caspringanimation/1412524-settlingduration
     settlingDuration(): CFTimeInterval;
-    setSettlingDuration(): void;
+    setSettlingDuration(value: CFTimeInterval): void;
     // https://developer.apple.com/documentation/quartzcore/caspringanimation/1412515-stiffness
     stiffness(): CGFloat;
-    setStiffness(): void;
+    setStiffness(value: CGFloat): void;
     //
     alloc():CASpringAnimation;
     //
@@ -1087,28 +1087,28 @@ declare namespace cocoascript {
   interface CATextLayer extends CALayer {
     // https://developer.apple.com/documentation/quartzcore/catextlayer/1515295-string
     string(): id;
-    setString(): void;
+    setString(value: id): void;
     // https://developer.apple.com/documentation/quartzcore/catextlayer/1515303-font
     font(): CFTypeRef;
-    setFont(): void;
+    setFont(value: CFTypeRef): void;
     // https://developer.apple.com/documentation/quartzcore/catextlayer/1515290-fontsize
     fontSize(): CGFloat;
-    setFontSize(): void;
+    setFontSize(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/catextlayer/1515305-foregroundcolor
     foregroundColor(): CGColorRef;
-    setForegroundColor(): void;
+    setForegroundColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/quartzcore/catextlayer/1515300-allowsfontsubpixelquantization
-    allowsFontSubpixelQuantization(): BOOL;
-    setAllowsFontSubpixelQuantization(): void;
+    allowsFontSubpixelQuantization(): boolean;
+    setAllowsFontSubpixelQuantization(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/catextlayer/1515302-wrapped
-    wrapped(): BOOL;
-    setWrapped(): void;
+    wrapped(): boolean;
+    setWrapped(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/catextlayer/1515301-alignmentmode
     alignmentMode(): CATextLayerAlignmentMode;
-    setAlignmentMode(): void;
+    setAlignmentMode(value: CATextLayerAlignmentMode): void;
     // https://developer.apple.com/documentation/quartzcore/catextlayer/1515296-truncationmode
     truncationMode(): CATextLayerTruncationMode;
-    setTruncationMode(): void;
+    setTruncationMode(value: CATextLayerTruncationMode): void;
     //
     alloc():CATextLayer;
     //
@@ -1125,40 +1125,40 @@ declare namespace cocoascript {
   interface CAShapeLayer extends CALayer {
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1521904-path
     path(): CGPathRef;
-    setPath(): void;
+    setPath(value: CGPathRef): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1522248-fillcolor
     fillColor(): CGColorRef;
-    setFillColor(): void;
+    setFillColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1522146-fillrule
     fillRule(): CAShapeLayerFillRule;
-    setFillRule(): void;
+    setFillRule(value: CAShapeLayerFillRule): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1521905-linecap
     lineCap(): CAShapeLayerLineCap;
-    setLineCap(): void;
+    setLineCap(value: CAShapeLayerLineCap): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1521921-linedashpattern
     lineDashPattern(): NSNumber;
-    setLineDashPattern(): void;
+    setLineDashPattern(value: NSNumber): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1521856-linedashphase
     lineDashPhase(): CGFloat;
-    setLineDashPhase(): void;
+    setLineDashPhase(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1522147-linejoin
     lineJoin(): CAShapeLayerLineJoin;
-    setLineJoin(): void;
+    setLineJoin(value: CAShapeLayerLineJoin): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1521890-linewidth
     lineWidth(): CGFloat;
-    setLineWidth(): void;
+    setLineWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1521870-miterlimit
     miterLimit(): CGFloat;
-    setMiterLimit(): void;
+    setMiterLimit(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1521897-strokecolor
     strokeColor(): CGColorRef;
-    setStrokeColor(): void;
+    setStrokeColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1521929-strokestart
     strokeStart(): CGFloat;
-    setStrokeStart(): void;
+    setStrokeStart(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/cashapelayer/1522252-strokeend
     strokeEnd(): CGFloat;
-    setStrokeEnd(): void;
+    setStrokeEnd(value: CGFloat): void;
     //
     alloc():CAShapeLayer;
     //
@@ -1175,19 +1175,19 @@ declare namespace cocoascript {
   interface CAGradientLayer extends CALayer {
     // https://developer.apple.com/documentation/quartzcore/cagradientlayer/1462403-colors
     colors(): NSArray;
-    setColors(): void;
+    setColors(value: NSArray): void;
     // https://developer.apple.com/documentation/quartzcore/cagradientlayer/1462410-locations
     locations(): NSNumber;
-    setLocations(): void;
+    setLocations(value: NSNumber): void;
     // https://developer.apple.com/documentation/quartzcore/cagradientlayer/1462412-endpoint
     endPoint(): CGPoint;
-    setEndPoint(): void;
+    setEndPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/quartzcore/cagradientlayer/1462408-startpoint
     startPoint(): CGPoint;
-    setStartPoint(): void;
+    setStartPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/quartzcore/cagradientlayer/1462413-type
     type(): CAGradientLayerType;
-    setType(): void;
+    setType(value: CAGradientLayerType): void;
     //
     alloc():CAGradientLayer;
     //
@@ -1212,22 +1212,25 @@ declare namespace cocoascript {
     invalidate():void;
     // https://developer.apple.com/documentation/quartzcore/cadisplaylink/1621292-duration
     duration(): CFTimeInterval;
-    setDuration(): void;
+    setDuration(value: CFTimeInterval): void;
     // https://developer.apple.com/documentation/quartzcore/cadisplaylink/1648421-preferredframespersecond
     preferredFramesPerSecond(): NSInteger;
-    setPreferredFramesPerSecond(): void;
+    setPreferredFramesPerSecond(value: NSInteger): void;
     // https://developer.apple.com/documentation/quartzcore/cadisplaylink/1621229-paused
-    paused(): BOOL;
-    setPaused(): void;
+    paused(): boolean;
+    setPaused(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/cadisplaylink/1621257-timestamp
     timestamp(): CFTimeInterval;
-    setTimestamp(): void;
+    setTimestamp(value: CFTimeInterval): void;
     // https://developer.apple.com/documentation/quartzcore/cadisplaylink/1648422-targettimestamp
     targetTimestamp(): CFTimeInterval;
-    setTargetTimestamp(): void;
+    setTargetTimestamp(value: CFTimeInterval): void;
     // https://developer.apple.com/documentation/quartzcore/cadisplaylink/1621231-frameinterval
     frameInterval(): NSInteger;
-    setFrameInterval(): void;
+    setFrameInterval(value: NSInteger): void;
+    // https://developer.apple.com/documentation/quartzcore/cadisplaylink/3875343-preferredframeraterange
+    preferredFrameRateRange(): CAFrameRateRange;
+    setPreferredFrameRateRange(value: CAFrameRateRange): void;
     //
     alloc():CADisplayLink;
     //
@@ -1244,49 +1247,49 @@ declare namespace cocoascript {
   interface CAEmitterLayer extends CALayer {
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1521923-emittercells
     emitterCells(): CAEmitterCell;
-    setEmitterCells(): void;
+    setEmitterCells(value: CAEmitterCell): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1522104-rendermode
     renderMode(): CAEmitterLayerRenderMode;
-    setRenderMode(): void;
+    setRenderMode(value: CAEmitterLayerRenderMode): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1522289-emitterposition
     emitterPosition(): CGPoint;
-    setEmitterPosition(): void;
+    setEmitterPosition(value: CGPoint): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1521919-emittershape
     emitterShape(): CAEmitterLayerEmitterShape;
-    setEmitterShape(): void;
+    setEmitterShape(value: CAEmitterLayerEmitterShape): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1522169-emitterzposition
     emitterZPosition(): CGFloat;
-    setEmitterZPosition(): void;
+    setEmitterZPosition(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1521844-emitterdepth
     emitterDepth(): CGFloat;
-    setEmitterDepth(): void;
+    setEmitterDepth(value: CGFloat): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1521869-emittersize
     emitterSize(): CGSize;
-    setEmitterSize(): void;
+    setEmitterSize(value: CGSize): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1521841-scale
     scale(): number;
-    setScale(): void;
+    setScale(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1522079-seed
     seed(): number;
-    setSeed(): void;
+    setSeed(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1521861-spin
     spin(): number;
-    setSpin(): void;
+    setSpin(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1522015-velocity
     velocity(): number;
-    setVelocity(): void;
+    setVelocity(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1521976-birthrate
     birthRate(): number;
-    setBirthRate(): void;
+    setBirthRate(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1522128-emittermode
     emitterMode(): CAEmitterLayerEmitterMode;
-    setEmitterMode(): void;
+    setEmitterMode(value: CAEmitterLayerEmitterMode): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1522144-lifetime
     lifetime(): number;
-    setLifetime(): void;
+    setLifetime(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caemitterlayer/1521872-preservesdepth
-    preservesDepth(): BOOL;
-    setPreservesDepth(): void;
+    preservesDepth(): boolean;
+    setPreservesDepth(value: boolean): void;
     //
     alloc():CAEmitterLayer;
     //
@@ -1303,7 +1306,7 @@ declare namespace cocoascript {
   interface CAScrollLayer extends CALayer {
     // https://developer.apple.com/documentation/quartzcore/cascrolllayer/1522111-scrollmode
     scrollMode(): CAScrollLayerScrollMode;
-    setScrollMode(): void;
+    setScrollMode(value: CAScrollLayerScrollMode): void;
     // https://developer.apple.com/documentation/quartzcore/cascrolllayer/1522021-scrolltopoint
     scrollToPoint(p: CGPoint):void;
     // https://developer.apple.com/documentation/quartzcore/cascrolllayer/1522167-scrolltorect
@@ -1340,31 +1343,31 @@ declare namespace cocoascript {
   interface CAReplicatorLayer extends CALayer {
     // https://developer.apple.com/documentation/quartzcore/careplicatorlayer/1521883-instancecount
     instanceCount(): NSInteger;
-    setInstanceCount(): void;
+    setInstanceCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/quartzcore/careplicatorlayer/1522391-instancedelay
     instanceDelay(): CFTimeInterval;
-    setInstanceDelay(): void;
+    setInstanceDelay(value: CFTimeInterval): void;
     // https://developer.apple.com/documentation/quartzcore/careplicatorlayer/1522312-instancetransform
     instanceTransform(): CATransform3D;
-    setInstanceTransform(): void;
+    setInstanceTransform(value: CATransform3D): void;
     // https://developer.apple.com/documentation/quartzcore/careplicatorlayer/1522095-preservesdepth
-    preservesDepth(): BOOL;
-    setPreservesDepth(): void;
+    preservesDepth(): boolean;
+    setPreservesDepth(value: boolean): void;
     // https://developer.apple.com/documentation/quartzcore/careplicatorlayer/1522154-instancecolor
     instanceColor(): CGColorRef;
-    setInstanceColor(): void;
+    setInstanceColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/quartzcore/careplicatorlayer/1522090-instanceredoffset
     instanceRedOffset(): number;
-    setInstanceRedOffset(): void;
+    setInstanceRedOffset(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/careplicatorlayer/1522032-instancegreenoffset
     instanceGreenOffset(): number;
-    setInstanceGreenOffset(): void;
+    setInstanceGreenOffset(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/careplicatorlayer/1522267-instanceblueoffset
     instanceBlueOffset(): number;
-    setInstanceBlueOffset(): void;
+    setInstanceBlueOffset(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/careplicatorlayer/1521898-instancealphaoffset
     instanceAlphaOffset(): number;
-    setInstanceAlphaOffset(): void;
+    setInstanceAlphaOffset(value: number): void;
     //
     alloc():CAReplicatorLayer;
     //
@@ -1382,10 +1385,10 @@ declare namespace cocoascript {
     initWithServerPort(port: any):CARemoteLayerClient;
     // https://developer.apple.com/documentation/quartzcore/caremotelayerclient/1418375-clientid
     clientId(): number;
-    setClientId(): void;
+    setClientId(value: number): void;
     // https://developer.apple.com/documentation/quartzcore/caremotelayerclient/1418373-layer
     layer(): CALayer;
-    setLayer(): void;
+    setLayer(value: CALayer): void;
     // https://developer.apple.com/documentation/quartzcore/caremotelayerclient/1418372-invalidate
     invalidate():void;
     //
@@ -1403,7 +1406,7 @@ declare namespace cocoascript {
   interface CARemoteLayerServer extends NSObject {
     // https://developer.apple.com/documentation/quartzcore/caremotelayerserver/1521922-serverport
     serverPort(): any;
-    setServerPort(): void;
+    setServerPort(value: any): void;
     // https://developer.apple.com/documentation/quartzcore/caremotelayerserver/1521954-sharedserver
     sharedServer():CARemoteLayerServer;
     //
@@ -1414,6 +1417,12 @@ declare namespace cocoascript {
 }
 
 declare const CARemoteLayerServer: cocoascript.CARemoteLayerServer;
+declare namespace cocoascript {
+  interface CAFrameRateRange {
+  }
+}
+// https://developer.apple.com/documentation/quartzcore/caframeraterangedefault
+declare const CAFrameRateRangeDefault: cocoascript.CAFrameRateRange;
 // https://developer.apple.com/documentation/quartzcore/catransform3didentity
 declare const CATransform3DIdentity: cocoascript.CATransform3D;
 // https://developer.apple.com/documentation/quartzcore/kcafilterlinear

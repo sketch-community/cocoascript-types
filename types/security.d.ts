@@ -51,12 +51,40 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/security/sec_trust_t
+  type sec_trust_t = cocoascript.OS_sec_trust;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/security/sec_object_t
+  type sec_object_t = cocoascript.OS_sec_object;
+}
+declare namespace cocoascript {
   interface SecIdentityRef {
   }
 }
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/security/sec_identity_t
+  type sec_identity_t = cocoascript.OS_sec_identity;
+}
+declare namespace cocoascript {
   interface SecCertificateRef {
   }
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/security/sec_protocol_metadata_t
+  type sec_protocol_metadata_t = cocoascript.OS_sec_protocol_metadata;
+}
+// https://developer.apple.com/documentation/security/2976251-sec_protocol_metadata_get_negoti
+declare const sec_protocol_metadata_get_negotiated_protocol: cocoascript.sec_protocol_metadata_t;
+// https://developer.apple.com/documentation/security/3180214-sec_protocol_metadata_get_server
+declare const sec_protocol_metadata_get_server_name: cocoascript.sec_protocol_metadata_t;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/security/sec_certificate_t
+  type sec_certificate_t = cocoascript.OS_sec_certificate;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/security/sec_protocol_options_t
+  type sec_protocol_options_t = cocoascript.OS_sec_protocol_options;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/security/authorizationrights
@@ -75,8 +103,24 @@ declare namespace cocoascript {
   type tls_protocol_version_t = number;
 }
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/security/tls_ciphersuite_t
+  type tls_ciphersuite_t = number;
+}
+declare namespace cocoascript {
   // https://developer.apple.com/documentation/security/sslprotocol
   type SSLProtocol = number;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/security/sslciphersuite
+  type SSLCipherSuite = number;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/security/tls_ciphersuite_group_t
+  type tls_ciphersuite_group_t = number;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/security/sslciphersuitegroup
+  type SSLCiphersuiteGroup = number;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/security/authorizationref
@@ -755,22 +799,6 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/security/sslsessionstate
   type SSLSessionState = number;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/security/tls_ciphersuite_group_t
-  type tls_ciphersuite_group_t = number;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/security/tls_ciphersuite_t
-  type tls_ciphersuite_t = number;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/security/sslciphersuite
-  type SSLCipherSuite = number;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/security/sslciphersuitegroup
-  type SSLCiphersuiteGroup = number;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/security/sslclientcertificatestate

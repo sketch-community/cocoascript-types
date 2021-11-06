@@ -11,8 +11,8 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetproviding/1490262-widgetperformupdatewithcompletio
     widgetPerformUpdateWithCompletionHandler(completionHandler: NCUpdateResult):void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetproviding/1490251-widgetallowsediting
-    widgetAllowsEditing(): BOOL;
-    setWidgetAllowsEditing(): void;
+    widgetAllowsEditing(): boolean;
+    setWidgetAllowsEditing(value: boolean): void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetproviding/1490249-widgetdidbeginediting
     widgetDidBeginEditing():void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetproviding/1490258-widgetdidendediting
@@ -30,13 +30,13 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewdelegate/1476049-widgetlist
     widgetList_didRemoveRow(list: NCWidgetListViewController, row: NSUInteger):void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewdelegate/1476035-widgetlist
-    widgetList_shouldRemoveRow(list: NCWidgetListViewController, row: NSUInteger):BOOL;
+    widgetList_shouldRemoveRow(list: NCWidgetListViewController, row: NSUInteger):boolean;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewdelegate/1476037-widgetlistperformaddaction
     widgetListPerformAddAction(list: NCWidgetListViewController):void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewdelegate/1476063-widgetlist
     widgetList_didReorderRow_toRow(list: NCWidgetListViewController, row: NSUInteger, newIndex: NSUInteger):void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewdelegate/1476059-widgetlist
-    widgetList_shouldReorderRow(list: NCWidgetListViewController, row: NSUInteger):BOOL;
+    widgetList_shouldReorderRow(list: NCWidgetListViewController, row: NSUInteger):boolean;
   }
 }
 declare namespace cocoascript {
@@ -70,7 +70,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetcontroller/1456687-widgetcontroller
     widgetController():NCWidgetController;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetcontroller/1456693-sethascontent
-    setHasContent_forWidgetWithBundleIdentifier(flag: BOOL, bundleID: string | cocoascript.NSString):void;
+    setHasContent_forWidgetWithBundleIdentifier(flag: boolean, bundleID: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetcontroller/1456691-defaultwidgetcontroller
     defaultWidgetController():NCWidgetController;
     //
@@ -89,26 +89,26 @@ declare namespace cocoascript {
   interface NCWidgetListViewController extends NSViewController {
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewcontroller/1476044-delegate
     delegate(): NCWidgetListViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: NCWidgetListViewDelegate): void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewcontroller/1476057-contents
     contents(): id;
-    setContents(): void;
+    setContents(value: id): void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewcontroller/1476053-rowforviewcontroller
     rowForViewController(viewController: NSViewController):NSUInteger;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewcontroller/1476061-viewcontrolleratrow
-    viewControllerAtRow_makeIfNecessary(row: NSUInteger, makeIfNecesary: BOOL):NSViewController;
+    viewControllerAtRow_makeIfNecessary(row: NSUInteger, makeIfNecesary: boolean):NSViewController;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewcontroller/1476034-minimumvisiblerowcount
     minimumVisibleRowCount(): NSUInteger;
-    setMinimumVisibleRowCount(): void;
+    setMinimumVisibleRowCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewcontroller/1476043-hasdividerlines
-    hasDividerLines(): BOOL;
-    setHasDividerLines(): void;
+    hasDividerLines(): boolean;
+    setHasDividerLines(value: boolean): void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewcontroller/1476039-editing
-    editing(): BOOL;
-    setEditing(): void;
+    editing(): boolean;
+    setEditing(value: boolean): void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetlistviewcontroller/1476041-showsaddbuttonwhenediting
-    showsAddButtonWhenEditing(): BOOL;
-    setShowsAddButtonWhenEditing(): void;
+    showsAddButtonWhenEditing(): boolean;
+    setShowsAddButtonWhenEditing(value: boolean): void;
     //
     alloc():NCWidgetListViewController;
     //
@@ -125,19 +125,19 @@ declare namespace cocoascript {
   interface NCWidgetSearchViewController extends NSViewController {
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449562-delegate
     delegate(): NCWidgetSearchViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: NCWidgetSearchViewDelegate): void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449554-searchdescription
     searchDescription(): string | cocoascript.NSString;
-    setSearchDescription(): void;
+    setSearchDescription(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449552-searchresultsplaceholderstring
     searchResultsPlaceholderString(): string | cocoascript.NSString;
-    setSearchResultsPlaceholderString(): void;
+    setSearchResultsPlaceholderString(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449556-searchresultkeypath
     searchResultKeyPath(): string | cocoascript.NSString;
-    setSearchResultKeyPath(): void;
+    setSearchResultKeyPath(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449551-searchresults
     searchResults(): id;
-    setSearchResults(): void;
+    setSearchResults(value: id): void;
     //
     alloc():NCWidgetSearchViewController;
     //

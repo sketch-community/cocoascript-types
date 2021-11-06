@@ -1,6 +1,7 @@
 export const shim: Record<string, string> = {
   void: 'void',
   bool: 'boolean',
+  BOOL: 'boolean',
   Boolean: 'boolean',
   IBAction: 'any',
   IBOutlet: 'any',
@@ -70,4 +71,4 @@ export const shim: Record<string, string> = {
   ICCameraFile: 'any',
   ICDevice: 'any',
   IMP: 'any',
-}
+};

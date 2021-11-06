@@ -6,7 +6,7 @@ declare namespace cocoascript {
   interface APActivationPayload extends NSObject {
     // https://developer.apple.com/documentation/app_clips/apactivationpayload/3580308-url
     URL(): NSURL;
-    setURL(): void;
+    setURL(value: NSURL): void;
     // https://developer.apple.com/documentation/app_clips/apactivationpayload/3580309-confirmacquiredinregion
     confirmAcquiredInRegion_completionHandler(region: CLRegion, completionHandler: NSError):void;
     //

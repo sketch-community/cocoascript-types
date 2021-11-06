@@ -994,6 +994,8 @@ declare const kCFURLIsSparseKey: cocoascript.CFStringRef;
 declare const kCFURLMayHaveExtendedAttributesKey: cocoascript.CFStringRef;
 // https://developer.apple.com/documentation/corefoundation/kcfurlmaysharefilecontentkey
 declare const kCFURLMayShareFileContentKey: cocoascript.CFStringRef;
+// https://developer.apple.com/documentation/corefoundation/kcfurlubiquitousitemisexcludedfromsynckey
+declare const kCFURLUbiquitousItemIsExcludedFromSyncKey: cocoascript.CFStringRef;
 // https://developer.apple.com/documentation/corefoundation/kcfurlvolumeavailablecapacityforimportantusagekey
 declare const kCFURLVolumeAvailableCapacityForImportantUsageKey: cocoascript.CFStringRef;
 // https://developer.apple.com/documentation/corefoundation/kcfurlvolumeavailablecapacityforopportunisticusagekey

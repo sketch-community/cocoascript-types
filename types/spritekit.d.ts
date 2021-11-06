@@ -16,41 +16,41 @@ declare namespace cocoascript {
     nodeWithFileNamed_securelyWithClasses_andError(filename: string | cocoascript.NSString, classes: Class, error: NSError):SKNode;
     // https://developer.apple.com/documentation/spritekit/sknode/1483101-position
     position(): CGPoint;
-    setPosition(): void;
+    setPosition(value: CGPoint): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483026-frame
     frame(): CGRect;
-    setFrame(): void;
+    setFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483066-calculateaccumulatedframe
     calculateAccumulatedFrame():CGRect;
     // https://developer.apple.com/documentation/spritekit/sknode/1483107-zposition
     zPosition(): CGFloat;
-    setZPosition(): void;
+    setZPosition(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483089-zrotation
     zRotation(): CGFloat;
-    setZRotation(): void;
+    setZRotation(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483126-setscale
     setScale(scale: CGFloat):void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483087-xscale
     xScale(): CGFloat;
-    setXScale(): void;
+    setXScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483046-yscale
     yScale(): CGFloat;
-    setYScale(): void;
+    setYScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483064-scene
     scene(): SKScene;
-    setScene(): void;
+    setScene(value: SKScene): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483080-parent
     parent(): SKNode;
-    setParent(): void;
+    setParent(value: SKNode): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483028-children
     children(): SKNode;
-    setChildren(): void;
+    setChildren(value: SKNode): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483054-addchild
     addChild(node: SKNode):void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483062-insertchild
     insertChild_atIndex(node: SKNode, index: NSInteger):void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483078-isequaltonode
-    isEqualToNode(node: SKNode):BOOL;
+    isEqualToNode(node: SKNode):boolean;
     // https://developer.apple.com/documentation/spritekit/sknode/1483021-movetoparent
     moveToParent(parent: SKNode):void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483119-removefromparent
@@ -60,22 +60,22 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/sknode/1483091-removechildreninarray
     removeChildrenInArray(nodes: SKNode):void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483111-inparenthierarchy
-    inParentHierarchy(parent: SKNode):BOOL;
+    inParentHierarchy(parent: SKNode):boolean;
     // https://developer.apple.com/documentation/spritekit/sknode/1483136-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483060-childnodewithname
     childNodeWithName(name: string | cocoascript.NSString):SKNode;
     // https://developer.apple.com/documentation/spritekit/sknode/1483024-enumeratechildnodeswithname
-    enumerateChildNodesWithName_usingBlock(name: string | cocoascript.NSString, block: BOOL):void;
+    enumerateChildNodesWithName_usingBlock(name: string | cocoascript.NSString, block: boolean):void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483070-objectforkeyedsubscript
     objectForKeyedSubscript(name: string | cocoascript.NSString):SKNode;
     // https://developer.apple.com/documentation/spritekit/sknode/1483023-alpha
     alpha(): CGFloat;
-    setAlpha(): void;
+    setAlpha(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483048-hidden
-    hidden(): BOOL;
-    setHidden(): void;
+    hidden(): boolean;
+    setHidden(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483093-runaction
     runAction(action: SKAction):void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483103-runaction
@@ -84,32 +84,32 @@ declare namespace cocoascript {
     runAction_withKey(action: SKAction, key: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483036-speed
     speed(): CGFloat;
-    setSpeed(): void;
+    setSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483113-paused
-    paused(): BOOL;
-    setPaused(): void;
+    paused(): boolean;
+    setPaused(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483138-actionforkey
     actionForKey(key: string | cocoascript.NSString):SKAction;
     // https://developer.apple.com/documentation/spritekit/sknode/1483081-hasactions
-    hasActions():BOOL;
+    hasActions():boolean;
     // https://developer.apple.com/documentation/spritekit/sknode/1483030-removeallactions
     removeAllActions():void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483076-removeactionforkey
     removeActionForKey(key: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483117-physicsbody
     physicsBody(): SKPhysicsBody;
-    setPhysicsBody(): void;
+    setPhysicsBody(value: SKPhysicsBody): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483124-constraints
     constraints(): SKConstraint;
-    setConstraints(): void;
+    setConstraints(value: SKConstraint): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483019-reachconstraints
     reachConstraints(): SKReachConstraints;
-    setReachConstraints(): void;
+    setReachConstraints(value: SKReachConstraints): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483140-intersectsnode
-    intersectsNode(node: SKNode):BOOL;
+    intersectsNode(node: SKNode):boolean;
     // https://developer.apple.com/documentation/spritekit/sknode/1640688-entity
     entity(): GKEntity;
-    setEntity(): void;
+    setEntity(value: GKEntity): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483132-obstaclesfromnodebounds
     obstaclesFromNodeBounds(nodes: SKNode):GKPolygonObstacle;
     // https://developer.apple.com/documentation/spritekit/sknode/1483085-obstaclesfromnodephysicsbodies
@@ -117,13 +117,13 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/sknode/1483134-obstaclesfromspritetextures
     obstaclesFromSpriteTextures_accuracy(sprites: SKNode, accuracy: number):GKPolygonObstacle;
     // https://developer.apple.com/documentation/spritekit/sknode/1483109-userinteractionenabled
-    userInteractionEnabled(): BOOL;
-    setUserInteractionEnabled(): void;
+    userInteractionEnabled(): boolean;
+    setUserInteractionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sknode/2882953-focusbehavior
     focusBehavior(): SKNodeFocusBehavior;
-    setFocusBehavior(): void;
+    setFocusBehavior(value: SKNodeFocusBehavior): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1483044-containspoint
-    containsPoint(p: CGPoint):BOOL;
+    containsPoint(p: CGPoint):boolean;
     // https://developer.apple.com/documentation/spritekit/sknode/1483099-nodeatpoint
     nodeAtPoint(p: CGPoint):SKNode;
     // https://developer.apple.com/documentation/spritekit/sknode/1483072-nodesatpoint
@@ -134,42 +134,42 @@ declare namespace cocoascript {
     convertPoint_toNode(point: CGPoint, node: SKNode):CGPoint;
     // https://developer.apple.com/documentation/spritekit/sknode/1483121-userdata
     userData(): NSMutableDictionary;
-    setUserData(): void;
+    setUserData(value: NSMutableDictionary): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645045-accessibilitychildren
     accessibilityChildren(): NSArray;
-    setAccessibilityChildren(): void;
+    setAccessibilityChildren(value: NSArray): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645044-accessibilityframe
     accessibilityFrame(): CGRect;
-    setAccessibilityFrame(): void;
+    setAccessibilityFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645041-accessibilityhelp
     accessibilityHelp(): string | cocoascript.NSString;
-    setAccessibilityHelp(): void;
+    setAccessibilityHelp(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645039-accessibilitylabel
     accessibilityLabel(): string | cocoascript.NSString;
-    setAccessibilityLabel(): void;
+    setAccessibilityLabel(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645042-accessibilityparent
     accessibilityParent(): id;
-    setAccessibilityParent(): void;
+    setAccessibilityParent(value: id): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645036-accessibilityrole
     accessibilityRole(): string | cocoascript.NSString;
-    setAccessibilityRole(): void;
+    setAccessibilityRole(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645035-accessibilityroledescription
     accessibilityRoleDescription(): string | cocoascript.NSString;
-    setAccessibilityRoleDescription(): void;
+    setAccessibilityRoleDescription(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645043-accessibilitysubrole
     accessibilitySubrole(): string | cocoascript.NSString;
-    setAccessibilitySubrole(): void;
+    setAccessibilitySubrole(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645038-accessibilityelement
-    accessibilityElement(): BOOL;
-    setAccessibilityElement(): void;
+    accessibilityElement(): boolean;
+    setAccessibilityElement(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645037-accessibilityenabled
-    accessibilityEnabled(): BOOL;
-    setAccessibilityEnabled(): void;
+    accessibilityEnabled(): boolean;
+    setAccessibilityEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1645040-accessibilityhittest
     accessibilityHitTest(point: CGPoint):SKNode;
     // https://developer.apple.com/documentation/spritekit/sknode/1644181-attributevalues
     attributeValues(): SKAttributeValue;
-    setAttributeValues(): void;
+    setAttributeValues(value: SKAttributeValue): void;
     // https://developer.apple.com/documentation/spritekit/sknode/1644180-setvalue
     setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/spritekit/sknode/1644182-valueforattributenamed
@@ -201,7 +201,7 @@ declare namespace cocoascript {
    */
   interface SKViewDelegate extends NSObject {
     // https://developer.apple.com/documentation/spritekit/skviewdelegate/1642775-view
-    view_shouldRenderAtTime(view: SKView, time: NSTimeInterval):BOOL;
+    view_shouldRenderAtTime(view: SKView, time: NSTimeInterval):boolean;
   }
 }
 declare namespace cocoascript {
@@ -230,10 +230,10 @@ declare namespace cocoascript {
   interface SKWarpable extends NSObject {
     // https://developer.apple.com/documentation/spritekit/skwarpable/1690947-subdivisionlevels
     subdivisionLevels(): NSInteger;
-    setSubdivisionLevels(): void;
+    setSubdivisionLevels(value: NSInteger): void;
     // https://developer.apple.com/documentation/spritekit/skwarpable/1690953-warpgeometry
     warpGeometry(): SKWarpGeometry;
-    setWarpGeometry(): void;
+    setWarpGeometry(value: SKWarpGeometry): void;
   }
 }
 declare namespace cocoascript {
@@ -270,10 +270,10 @@ declare namespace cocoascript {
     getKeyframeValueForIndex(index: NSUInteger):SKKeyframeSequence;
     // https://developer.apple.com/documentation/spritekit/skkeyframesequence/1390914-interpolationmode
     interpolationMode(): SKInterpolationMode;
-    setInterpolationMode(): void;
+    setInterpolationMode(value: SKInterpolationMode): void;
     // https://developer.apple.com/documentation/spritekit/skkeyframesequence/1390900-repeatmode
     repeatMode(): SKRepeatMode;
-    setRepeatMode(): void;
+    setRepeatMode(value: SKRepeatMode): void;
     //
     alloc():SKKeyframeSequence;
     //
@@ -317,11 +317,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/sktransition/1395895-transitionwithcifilter
     transitionWithCIFilter_duration(filter: CIFilter, sec: NSTimeInterval):SKTransition;
     // https://developer.apple.com/documentation/spritekit/sktransition/1395883-pausesincomingscene
-    pausesIncomingScene(): BOOL;
-    setPausesIncomingScene(): void;
+    pausesIncomingScene(): boolean;
+    setPausesIncomingScene(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sktransition/1395877-pausesoutgoingscene
-    pausesOutgoingScene(): BOOL;
-    setPausesOutgoingScene(): void;
+    pausesOutgoingScene(): boolean;
+    setPausesOutgoingScene(value: boolean): void;
     //
     alloc():SKTransition;
     //
@@ -338,16 +338,16 @@ declare namespace cocoascript {
   interface SKAction extends NSObject {
     // https://developer.apple.com/documentation/spritekit/skaction/1417790-duration
     duration(): NSTimeInterval;
-    setDuration(): void;
+    setDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/spritekit/skaction/1417807-timingmode
     timingMode(): SKActionTimingMode;
-    setTimingMode(): void;
+    setTimingMode(value: SKActionTimingMode): void;
     // https://developer.apple.com/documentation/spritekit/skaction/1417666-timingfunction
     timingFunction(): SKActionTimingFunction;
-    setTimingFunction(): void;
+    setTimingFunction(value: SKActionTimingFunction): void;
     // https://developer.apple.com/documentation/spritekit/skaction/1417718-speed
     speed(): CGFloat;
-    setSpeed(): void;
+    setSpeed(value: CGFloat): void;
     //
     alloc():SKAction;
     //
@@ -400,34 +400,34 @@ declare namespace cocoascript {
     initWithName_texture(name: string | cocoascript.NSString, texture: SKTexture):SKUniform;
     // https://developer.apple.com/documentation/spritekit/skuniform/1455442-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1455440-uniformtype
     uniformType(): SKUniformType;
-    setUniformType(): void;
+    setUniformType(value: SKUniformType): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1455406-floatvalue
     floatValue(): number;
-    setFloatValue(): void;
+    setFloatValue(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1455436-floatvector2value
     floatVector2Value(): GLKVector2;
-    setFloatVector2Value(): void;
+    setFloatVector2Value(value: GLKVector2): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1455434-floatvector3value
     floatVector3Value(): GLKVector3;
-    setFloatVector3Value(): void;
+    setFloatVector3Value(value: GLKVector3): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1455404-floatvector4value
     floatVector4Value(): GLKVector4;
-    setFloatVector4Value(): void;
+    setFloatVector4Value(value: GLKVector4): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1455410-floatmatrix2value
     floatMatrix2Value(): GLKMatrix2;
-    setFloatMatrix2Value(): void;
+    setFloatMatrix2Value(value: GLKMatrix2): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1455438-floatmatrix3value
     floatMatrix3Value(): GLKMatrix3;
-    setFloatMatrix3Value(): void;
+    setFloatMatrix3Value(value: GLKMatrix3): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1455460-floatmatrix4value
     floatMatrix4Value(): GLKMatrix4;
-    setFloatMatrix4Value(): void;
+    setFloatMatrix4Value(value: GLKMatrix4): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1455449-texturevalue
     textureValue(): SKTexture;
-    setTextureValue(): void;
+    setTextureValue(value: SKTexture): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1645806-initwithname
     initWithName_matrixFloat2x2(name: string | cocoascript.NSString, value: matrix_float2x2):SKUniform;
     // https://developer.apple.com/documentation/spritekit/skuniform/1645799-initwithname
@@ -442,22 +442,22 @@ declare namespace cocoascript {
     initWithName_vectorFloat4(name: string | cocoascript.NSString, value: vector_float4):SKUniform;
     // https://developer.apple.com/documentation/spritekit/skuniform/1645818-matrixfloat2x2value
     matrixFloat2x2Value(): matrix_float2x2;
-    setMatrixFloat2x2Value(): void;
+    setMatrixFloat2x2Value(value: matrix_float2x2): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1645810-matrixfloat3x3value
     matrixFloat3x3Value(): matrix_float3x3;
-    setMatrixFloat3x3Value(): void;
+    setMatrixFloat3x3Value(value: matrix_float3x3): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1645817-matrixfloat4x4value
     matrixFloat4x4Value(): matrix_float4x4;
-    setMatrixFloat4x4Value(): void;
+    setMatrixFloat4x4Value(value: matrix_float4x4): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1645819-vectorfloat2value
     vectorFloat2Value(): vector_float2;
-    setVectorFloat2Value(): void;
+    setVectorFloat2Value(value: vector_float2): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1645805-vectorfloat3value
     vectorFloat3Value(): vector_float3;
-    setVectorFloat3Value(): void;
+    setVectorFloat3Value(value: vector_float3): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1645789-vectorfloat4value
     vectorFloat4Value(): vector_float4;
-    setVectorFloat4Value(): void;
+    setVectorFloat4Value(value: vector_float4): void;
     // https://developer.apple.com/documentation/spritekit/skuniform/1646689-uniformwithname
     uniformWithName_matrixFloat2x2(name: string | cocoascript.NSString, value: matrix_float2x2):SKUniform;
     // https://developer.apple.com/documentation/spritekit/skuniform/1646692-uniformwithname
@@ -502,15 +502,15 @@ declare namespace cocoascript {
     removeUniformNamed(name: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/spritekit/skshader/1477565-uniforms
     uniforms(): SKUniform;
-    setUniforms(): void;
+    setUniforms(value: SKUniform): void;
     // https://developer.apple.com/documentation/spritekit/skshader/1477567-uniformnamed
     uniformNamed(name: string | cocoascript.NSString):SKUniform;
     // https://developer.apple.com/documentation/spritekit/skshader/1645287-attributes
     attributes(): SKAttribute;
-    setAttributes(): void;
+    setAttributes(value: SKAttribute): void;
     // https://developer.apple.com/documentation/spritekit/skshader/1477544-source
     source(): string | cocoascript.NSString;
-    setSource(): void;
+    setSource(value: string | cocoascript.NSString): void;
     //
     alloc():SKShader;
     //
@@ -541,10 +541,10 @@ declare namespace cocoascript {
     initWithLowerLimit_upperLimit(lower: CGFloat, upper: CGFloat):SKRange;
     // https://developer.apple.com/documentation/spritekit/skrange/1520000-lowerlimit
     lowerLimit(): CGFloat;
-    setLowerLimit(): void;
+    setLowerLimit(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skrange/1519596-upperlimit
     upperLimit(): CGFloat;
-    setUpperLimit(): void;
+    setUpperLimit(value: CGFloat): void;
     //
     alloc():SKRange;
     //
@@ -581,10 +581,10 @@ declare namespace cocoascript {
     distance_toPoint_inNode(range: SKRange, point: CGPoint, node: SKNode):SKConstraint;
     // https://developer.apple.com/documentation/spritekit/skconstraint/1520369-referencenode
     referenceNode(): SKNode;
-    setReferenceNode(): void;
+    setReferenceNode(value: SKNode): void;
     // https://developer.apple.com/documentation/spritekit/skconstraint/1519669-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     //
     alloc():SKConstraint;
     //
@@ -624,47 +624,47 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519871-bodywithedgechainfrompath
     bodyWithEdgeChainFromPath(path: CGPathRef):SKPhysicsBody;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519774-affectedbygravity
-    affectedByGravity(): BOOL;
-    setAffectedByGravity(): void;
+    affectedByGravity(): boolean;
+    setAffectedByGravity(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519986-allowsrotation
-    allowsRotation(): BOOL;
-    setAllowsRotation(): void;
+    allowsRotation(): boolean;
+    setAllowsRotation(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520132-dynamic
-    dynamic(): BOOL;
-    setDynamic(): void;
+    dynamic(): boolean;
+    setDynamic(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519906-mass
     mass(): CGFloat;
-    setMass(): void;
+    setMass(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519983-density
     density(): CGFloat;
-    setDensity(): void;
+    setDensity(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520034-area
     area(): CGFloat;
-    setArea(): void;
+    setArea(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519840-friction
     friction(): CGFloat;
-    setFriction(): void;
+    setFriction(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520447-restitution
     restitution(): CGFloat;
-    setRestitution(): void;
+    setRestitution(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519796-lineardamping
     linearDamping(): CGFloat;
-    setLinearDamping(): void;
+    setLinearDamping(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519913-angulardamping
     angularDamping(): CGFloat;
-    setAngularDamping(): void;
+    setAngularDamping(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519869-categorybitmask
     categoryBitMask(): number;
-    setCategoryBitMask(): void;
+    setCategoryBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520003-collisionbitmask
     collisionBitMask(): number;
-    setCollisionBitMask(): void;
+    setCollisionBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520014-usesprecisecollisiondetection
-    usesPreciseCollisionDetection(): BOOL;
-    setUsesPreciseCollisionDetection(): void;
+    usesPreciseCollisionDetection(): boolean;
+    setUsesPreciseCollisionDetection(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519781-contacttestbitmask
     contactTestBitMask(): number;
-    setContactTestBitMask(): void;
+    setContactTestBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520397-allcontactedbodies
     allContactedBodies():SKPhysicsBody;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520430-applyforce
@@ -681,28 +681,28 @@ declare namespace cocoascript {
     applyImpulse_atPoint(impulse: CGVector, point: CGPoint):void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519635-velocity
     velocity(): CGVector;
-    setVelocity(): void;
+    setVelocity(value: CGVector): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519766-angularvelocity
     angularVelocity(): CGFloat;
-    setAngularVelocity(): void;
+    setAngularVelocity(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520256-resting
-    resting(): BOOL;
-    setResting(): void;
+    resting(): boolean;
+    setResting(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520049-node
     node(): SKNode;
-    setNode(): void;
+    setNode(value: SKNode): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519849-joints
     joints(): SKPhysicsJoint;
-    setJoints(): void;
+    setJoints(value: SKPhysicsJoint): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520280-fieldbitmask
     fieldBitMask(): number;
-    setFieldBitMask(): void;
+    setFieldBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1519881-charge
     charge(): CGFloat;
-    setCharge(): void;
+    setCharge(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsbody/1520354-pinned
-    pinned(): BOOL;
-    setPinned(): void;
+    pinned(): boolean;
+    setPinned(value: boolean): void;
     //
     alloc():SKPhysicsBody;
     //
@@ -735,9 +735,9 @@ declare namespace cocoascript {
     regionByUnionWithRegion(region: SKRegion):SKRegion;
     // https://developer.apple.com/documentation/spritekit/skregion/1520042-path
     path(): CGPathRef;
-    setPath(): void;
+    setPath(value: CGPathRef): void;
     // https://developer.apple.com/documentation/spritekit/skregion/1519695-containspoint
-    containsPoint(point: CGPoint):BOOL;
+    containsPoint(point: CGPoint):boolean;
     //
     alloc():SKRegion;
     //
@@ -758,10 +758,10 @@ declare namespace cocoascript {
     textureRect():CGRect;
     // https://developer.apple.com/documentation/spritekit/sktexture/1519659-filteringmode
     filteringMode(): SKTextureFilteringMode;
-    setFilteringMode(): void;
+    setFilteringMode(value: SKTextureFilteringMode): void;
     // https://developer.apple.com/documentation/spritekit/sktexture/1519960-usesmipmaps
-    usesMipmaps(): BOOL;
-    setUsesMipmaps(): void;
+    usesMipmaps(): boolean;
+    setUsesMipmaps(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sktexture/1519755-cgimage
     CGImage():CGImageRef;
     // https://developer.apple.com/documentation/spritekit/sktexture/1520172-preloadwithcompletionhandler
@@ -784,19 +784,19 @@ declare namespace cocoascript {
   interface SKTileMapNode extends SKNode {
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643608-anchorpoint
     anchorPoint(): CGPoint;
-    setAnchorPoint(): void;
+    setAnchorPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643594-tilesize
     tileSize(): CGSize;
-    setTileSize(): void;
+    setTileSize(value: CGSize): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643610-tileset
     tileSet(): SKTileSet;
-    setTileSet(): void;
+    setTileSet(value: SKTileSet): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643600-numberofcolumns
     numberOfColumns(): NSUInteger;
-    setNumberOfColumns(): void;
+    setNumberOfColumns(value: NSUInteger): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643611-numberofrows
     numberOfRows(): NSUInteger;
-    setNumberOfRows(): void;
+    setNumberOfRows(value: NSUInteger): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643599-centeroftileatcolumn
     centerOfTileAtColumn_row(column: NSUInteger, row: NSUInteger):CGPoint;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643617-tilecolumnindexfromposition
@@ -809,25 +809,25 @@ declare namespace cocoascript {
     tileRowIndexFromPosition(position: CGPoint):NSUInteger;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643595-mapsize
     mapSize(): CGSize;
-    setMapSize(): void;
+    setMapSize(value: CGSize): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643601-color
     color(): UIColor;
-    setColor(): void;
+    setColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643607-colorblendfactor
     colorBlendFactor(): CGFloat;
-    setColorBlendFactor(): void;
+    setColorBlendFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643618-lightingbitmask
     lightingBitMask(): number;
-    setLightingBitMask(): void;
+    setLightingBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643598-blendmode
     blendMode(): SKBlendMode;
-    setBlendMode(): void;
+    setBlendMode(value: SKBlendMode): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/1643596-shader
     shader(): SKShader;
-    setShader(): void;
+    setShader(value: SKShader): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/2715851-attributevalues
     attributeValues(): SKAttributeValue;
-    setAttributeValues(): void;
+    setAttributeValues(value: SKAttributeValue): void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/2715852-setvalue
     setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/spritekit/sktilemapnode/2715847-valueforattributenamed
@@ -860,19 +860,19 @@ declare namespace cocoascript {
     tileSetWithTileGroups_tileSetType(tileGroups: SKTileGroup, tileSetType: SKTileSetType):SKTileSet;
     // https://developer.apple.com/documentation/spritekit/sktileset/1643878-defaulttilegroup
     defaultTileGroup(): SKTileGroup;
-    setDefaultTileGroup(): void;
+    setDefaultTileGroup(value: SKTileGroup): void;
     // https://developer.apple.com/documentation/spritekit/sktileset/1643889-defaulttilesize
     defaultTileSize(): CGSize;
-    setDefaultTileSize(): void;
+    setDefaultTileSize(value: CGSize): void;
     // https://developer.apple.com/documentation/spritekit/sktileset/1643888-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sktileset/1643874-tilegroups
     tileGroups(): SKTileGroup;
-    setTileGroups(): void;
+    setTileGroups(value: SKTileGroup): void;
     // https://developer.apple.com/documentation/spritekit/sktileset/1643836-type
     type(): SKTileSetType;
-    setType(): void;
+    setType(value: SKTileSetType): void;
     //
     alloc():SKTileSet;
     //
@@ -893,13 +893,13 @@ declare namespace cocoascript {
     tileGroupRuleWithAdjacency_tileDefinitions(adjacency: SKTileAdjacencyMask, tileDefinitions: SKTileDefinition):SKTileGroupRule;
     // https://developer.apple.com/documentation/spritekit/sktilegrouprule/1643818-adjacency
     adjacency(): SKTileAdjacencyMask;
-    setAdjacency(): void;
+    setAdjacency(value: SKTileAdjacencyMask): void;
     // https://developer.apple.com/documentation/spritekit/sktilegrouprule/1643860-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sktilegrouprule/1643823-tiledefinitions
     tileDefinitions(): SKTileDefinition;
-    setTileDefinitions(): void;
+    setTileDefinitions(value: SKTileDefinition): void;
     //
     alloc():SKTileGroupRule;
     //
@@ -924,10 +924,10 @@ declare namespace cocoascript {
     tileGroupWithRules(rules: SKTileGroupRule):SKTileGroup;
     // https://developer.apple.com/documentation/spritekit/sktilegroup/1643893-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sktilegroup/1643867-rules
     rules(): SKTileGroupRule;
-    setRules(): void;
+    setRules(value: SKTileGroupRule): void;
     // https://developer.apple.com/documentation/spritekit/sktilegroup/1643840-emptytilegroup
     emptyTileGroup():SKTileGroup;
     //
@@ -965,35 +965,35 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1646653-tiledefinitionwithtextures
     tileDefinitionWithTextures_size_timePerFrame(textures: SKTexture, size: CGSize, timePerFrame: CGFloat):SKTileDefinition;
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1645804-fliphorizontally
-    flipHorizontally(): BOOL;
-    setFlipHorizontally(): void;
+    flipHorizontally(): boolean;
+    setFlipHorizontally(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1645800-flipvertically
-    flipVertically(): BOOL;
-    setFlipVertically(): void;
+    flipVertically(): boolean;
+    setFlipVertically(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1645775-rotation
     rotation(): SKTileDefinitionRotation;
-    setRotation(): void;
+    setRotation(value: SKTileDefinitionRotation): void;
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1645802-textures
     textures(): SKTexture;
-    setTextures(): void;
+    setTextures(value: SKTexture): void;
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1645780-normaltextures
     normalTextures(): SKTexture;
-    setNormalTextures(): void;
+    setNormalTextures(value: SKTexture): void;
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1645811-timeperframe
     timePerFrame(): CGFloat;
-    setTimePerFrame(): void;
+    setTimePerFrame(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1645813-userdata
     userData(): NSMutableDictionary;
-    setUserData(): void;
+    setUserData(value: NSMutableDictionary): void;
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1645779-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1645820-placementweight
     placementWeight(): NSUInteger;
-    setPlacementWeight(): void;
+    setPlacementWeight(value: NSUInteger): void;
     // https://developer.apple.com/documentation/spritekit/sktiledefinition/1645790-size
     size(): CGSize;
-    setSize(): void;
+    setSize(value: CGSize): void;
     //
     alloc():SKTileDefinition;
     //
@@ -1036,7 +1036,7 @@ declare namespace cocoascript {
     preloadTextureAtlasesNamed_withCompletionHandler(atlasNames: string | cocoascript.NSString, completionHandler: SKTextureAtlas):void;
     // https://developer.apple.com/documentation/spritekit/sktextureatlas/1427373-texturenames
     textureNames(): string | cocoascript.NSString;
-    setTextureNames(): void;
+    setTextureNames(value: string | cocoascript.NSString): void;
     //
     alloc():SKTextureAtlas;
     //
@@ -1053,10 +1053,10 @@ declare namespace cocoascript {
   interface SKPhysicsWorld extends NSObject {
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449623-gravity
     gravity(): CGVector;
-    setGravity(): void;
+    setGravity(value: CGVector): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449611-speed
     speed(): CGFloat;
-    setSpeed(): void;
+    setSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449617-addjoint
     addJoint(joint: SKPhysicsJoint):void;
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449621-removealljoints
@@ -1065,7 +1065,7 @@ declare namespace cocoascript {
     removeJoint(joint: SKPhysicsJoint):void;
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449602-contactdelegate
     contactDelegate(): SKPhysicsContactDelegate;
-    setContactDelegate(): void;
+    setContactDelegate(value: SKPhysicsContactDelegate): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449613-bodyalongraystart
     bodyAlongRayStart_end(start: CGPoint, end: CGPoint):SKPhysicsBody;
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449625-bodyatpoint
@@ -1073,11 +1073,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449604-bodyinrect
     bodyInRect(rect: CGRect):SKPhysicsBody;
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449615-enumeratebodiesalongraystart
-    enumerateBodiesAlongRayStart_end_usingBlock(start: CGPoint, end: CGPoint, block: BOOL):void;
+    enumerateBodiesAlongRayStart_end_usingBlock(start: CGPoint, end: CGPoint, block: boolean):void;
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449597-enumeratebodiesatpoint
-    enumerateBodiesAtPoint_usingBlock(point: CGPoint, block: BOOL):void;
+    enumerateBodiesAtPoint_usingBlock(point: CGPoint, block: boolean):void;
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449619-enumeratebodiesinrect
-    enumerateBodiesInRect_usingBlock(rect: CGRect, block: BOOL):void;
+    enumerateBodiesInRect_usingBlock(rect: CGRect, block: boolean):void;
     // https://developer.apple.com/documentation/spritekit/skphysicsworld/1449627-samplefieldsat
     sampleFieldsAt(position: vector_float3):vector_float3;
     //
@@ -1096,16 +1096,16 @@ declare namespace cocoascript {
   interface SKPhysicsJoint extends NSObject {
     // https://developer.apple.com/documentation/spritekit/skphysicsjoint/1520403-bodya
     bodyA(): SKPhysicsBody;
-    setBodyA(): void;
+    setBodyA(value: SKPhysicsBody): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsjoint/1519693-bodyb
     bodyB(): SKPhysicsBody;
-    setBodyB(): void;
+    setBodyB(value: SKPhysicsBody): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsjoint/1519866-reactionforce
     reactionForce(): CGVector;
-    setReactionForce(): void;
+    setReactionForce(value: CGVector): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsjoint/1519682-reactiontorque
     reactionTorque(): CGFloat;
-    setReactionTorque(): void;
+    setReactionTorque(value: CGFloat): void;
     //
     alloc():SKPhysicsJoint;
     //
@@ -1124,10 +1124,10 @@ declare namespace cocoascript {
     initWithLowerAngleLimit_upperAngleLimit(lowerAngleLimit: CGFloat, upperAngleLimit: CGFloat):SKReachConstraints;
     // https://developer.apple.com/documentation/spritekit/skreachconstraints/1519923-loweranglelimit
     lowerAngleLimit(): CGFloat;
-    setLowerAngleLimit(): void;
+    setLowerAngleLimit(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skreachconstraints/1519699-upperanglelimit
     upperAngleLimit(): CGFloat;
-    setUpperAngleLimit(): void;
+    setUpperAngleLimit(value: CGFloat): void;
     //
     alloc():SKReachConstraints;
     //
@@ -1152,13 +1152,13 @@ declare namespace cocoascript {
     initWithCoder(aDecoder: NSCoder):SKAudioNode;
     // https://developer.apple.com/documentation/spritekit/skaudionode/1519633-avaudionode
     avAudioNode(): AVAudioNode;
-    setAvAudioNode(): void;
+    setAvAudioNode(value: AVAudioNode): void;
     // https://developer.apple.com/documentation/spritekit/skaudionode/1520418-positional
-    positional(): BOOL;
-    setPositional(): void;
+    positional(): boolean;
+    setPositional(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skaudionode/1520336-autoplaylooped
-    autoplayLooped(): BOOL;
-    setAutoplayLooped(): void;
+    autoplayLooped(): boolean;
+    setAutoplayLooped(value: boolean): void;
     //
     alloc():SKAudioNode;
     //
@@ -1185,16 +1185,16 @@ declare namespace cocoascript {
     valueWithVectorFloat4(value: vector_float4):SKAttributeValue;
     // https://developer.apple.com/documentation/spritekit/skattributevalue/1643424-floatvalue
     floatValue(): number;
-    setFloatValue(): void;
+    setFloatValue(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skattributevalue/1643435-vectorfloat2value
     vectorFloat2Value(): vector_float2;
-    setVectorFloat2Value(): void;
+    setVectorFloat2Value(value: vector_float2): void;
     // https://developer.apple.com/documentation/spritekit/skattributevalue/1643434-vectorfloat3value
     vectorFloat3Value(): vector_float3;
-    setVectorFloat3Value(): void;
+    setVectorFloat3Value(value: vector_float3): void;
     // https://developer.apple.com/documentation/spritekit/skattributevalue/1643442-vectorfloat4value
     vectorFloat4Value(): vector_float4;
-    setVectorFloat4Value(): void;
+    setVectorFloat4Value(value: vector_float4): void;
     //
     alloc():SKAttributeValue;
     //
@@ -1213,10 +1213,10 @@ declare namespace cocoascript {
     initWithName_type(name: string | cocoascript.NSString, type: SKAttributeType):SKAttribute;
     // https://developer.apple.com/documentation/spritekit/skattribute/1643444-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/skattribute/1643432-type
     type(): SKAttributeType;
-    setType(): void;
+    setType(value: SKAttributeType): void;
     // https://developer.apple.com/documentation/spritekit/skattribute/1643426-attributewithname
     attributeWithName_type(name: string | cocoascript.NSString, type: SKAttributeType):SKAttribute;
     //
@@ -1245,13 +1245,13 @@ declare namespace cocoascript {
     initWithCoder(aDecoder: NSCoder):SKWarpGeometryGrid;
     // https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/1690942-numberofcolumns
     numberOfColumns(): NSInteger;
-    setNumberOfColumns(): void;
+    setNumberOfColumns(value: NSInteger): void;
     // https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/1690943-numberofrows
     numberOfRows(): NSInteger;
-    setNumberOfRows(): void;
+    setNumberOfRows(value: NSInteger): void;
     // https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/1690940-vertexcount
     vertexCount(): NSInteger;
-    setVertexCount(): void;
+    setVertexCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/1690944-destpositionatindex
     destPositionAtIndex(index: NSInteger):vector_float2;
     // https://developer.apple.com/documentation/spritekit/skwarpgeometrygrid/1690952-sourcepositionatindex
@@ -1276,56 +1276,56 @@ declare namespace cocoascript {
   interface SKView extends NSView {
     // https://developer.apple.com/documentation/spritekit/skview/1520084-scene
     scene(): SKScene;
-    setScene(): void;
+    setScene(value: SKScene): void;
     // https://developer.apple.com/documentation/spritekit/skview/1519705-presentscene
     presentScene(scene: SKScene):void;
     // https://developer.apple.com/documentation/spritekit/skview/1520090-presentscene
     presentScene_transition(scene: SKScene, transition: SKTransition):void;
     // https://developer.apple.com/documentation/spritekit/skview/1519654-paused
-    paused(): BOOL;
-    setPaused(): void;
+    paused(): boolean;
+    setPaused(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1642773-preferredframespersecond
     preferredFramesPerSecond(): NSInteger;
-    setPreferredFramesPerSecond(): void;
+    setPreferredFramesPerSecond(value: NSInteger): void;
     // https://developer.apple.com/documentation/spritekit/skview/1642774-delegate
     delegate(): SKViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: SKViewDelegate): void;
     // https://developer.apple.com/documentation/spritekit/skview/1520008-frameinterval
     frameInterval(): NSInteger;
-    setFrameInterval(): void;
+    setFrameInterval(value: NSInteger): void;
     // https://developer.apple.com/documentation/spritekit/skview/1642777-preferredframerate
     preferredFrameRate(): number;
-    setPreferredFrameRate(): void;
+    setPreferredFrameRate(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skview/1520215-ignoressiblingorder
-    ignoresSiblingOrder(): BOOL;
-    setIgnoresSiblingOrder(): void;
+    ignoresSiblingOrder(): boolean;
+    setIgnoresSiblingOrder(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1519683-shouldcullnonvisiblenodes
-    shouldCullNonVisibleNodes(): BOOL;
-    setShouldCullNonVisibleNodes(): void;
+    shouldCullNonVisibleNodes(): boolean;
+    setShouldCullNonVisibleNodes(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1519697-allowstransparency
-    allowsTransparency(): BOOL;
-    setAllowsTransparency(): void;
+    allowsTransparency(): boolean;
+    setAllowsTransparency(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1520229-asynchronous
-    asynchronous(): BOOL;
-    setAsynchronous(): void;
+    asynchronous(): boolean;
+    setAsynchronous(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1519590-showsfps
-    showsFPS(): BOOL;
-    setShowsFPS(): void;
+    showsFPS(): boolean;
+    setShowsFPS(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1520156-showsnodecount
-    showsNodeCount(): BOOL;
-    setShowsNodeCount(): void;
+    showsNodeCount(): boolean;
+    setShowsNodeCount(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1520112-showsdrawcount
-    showsDrawCount(): BOOL;
-    setShowsDrawCount(): void;
+    showsDrawCount(): boolean;
+    setShowsDrawCount(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1519652-showsquadcount
-    showsQuadCount(): BOOL;
-    setShowsQuadCount(): void;
+    showsQuadCount(): boolean;
+    setShowsQuadCount(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1520389-showsphysics
-    showsPhysics(): BOOL;
-    setShowsPhysics(): void;
+    showsPhysics(): boolean;
+    setShowsPhysics(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1520443-showsfields
-    showsFields(): BOOL;
-    setShowsFields(): void;
+    showsFields(): boolean;
+    setShowsFields(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skview/1520328-convertpoint
     convertPoint_fromScene(point: CGPoint, scene: SKScene):CGPoint;
     // https://developer.apple.com/documentation/spritekit/skview/1519847-convertpoint
@@ -1335,8 +1335,8 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/skview/1520114-texturefromnode
     textureFromNode(node: SKNode):SKTexture;
     // https://developer.apple.com/documentation/spritekit/skview/3548062-disabledepthstencilbuffer
-    disableDepthStencilBuffer(): BOOL;
-    setDisableDepthStencilBuffer(): void;
+    disableDepthStencilBuffer(): boolean;
+    setDisableDepthStencilBuffer(value: boolean): void;
     //
     alloc():SKView;
     //
@@ -1358,7 +1358,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/skcameranode/1434222-containednodeset
     containedNodeSet():SKNode;
     // https://developer.apple.com/documentation/spritekit/skcameranode/1434224-containsnode
-    containsNode(node: SKNode):BOOL;
+    containsNode(node: SKNode):boolean;
     //
     alloc():SKCameraNode;
     //
@@ -1403,19 +1403,19 @@ declare namespace cocoascript {
   interface SKPhysicsContact extends NSObject {
     // https://developer.apple.com/documentation/spritekit/skphysicscontact/1478533-bodya
     bodyA(): SKPhysicsBody;
-    setBodyA(): void;
+    setBodyA(value: SKPhysicsBody): void;
     // https://developer.apple.com/documentation/spritekit/skphysicscontact/1478526-bodyb
     bodyB(): SKPhysicsBody;
-    setBodyB(): void;
+    setBodyB(value: SKPhysicsBody): void;
     // https://developer.apple.com/documentation/spritekit/skphysicscontact/1478524-contactpoint
     contactPoint(): CGPoint;
-    setContactPoint(): void;
+    setContactPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/spritekit/skphysicscontact/1478523-collisionimpulse
     collisionImpulse(): CGFloat;
-    setCollisionImpulse(): void;
+    setCollisionImpulse(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicscontact/1478528-contactnormal
     contactNormal(): CGVector;
-    setContactNormal(): void;
+    setContactNormal(value: CGVector): void;
     //
     alloc():SKPhysicsContact;
     //
@@ -1455,38 +1455,38 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1519710-customfieldwithevaluationblock
     customFieldWithEvaluationBlock(block: SKFieldForceEvaluator):SKFieldNode;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1520079-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1520365-exclusive
-    exclusive(): BOOL;
-    setExclusive(): void;
+    exclusive(): boolean;
+    setExclusive(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1519551-region
     region(): SKRegion;
-    setRegion(): void;
+    setRegion(value: SKRegion): void;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1519804-minimumradius
     minimumRadius(): number;
-    setMinimumRadius(): void;
+    setMinimumRadius(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1520143-categorybitmask
     categoryBitMask(): number;
-    setCategoryBitMask(): void;
+    setCategoryBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1520152-strength
     strength(): number;
-    setStrength(): void;
+    setStrength(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1520445-falloff
     falloff(): number;
-    setFalloff(): void;
+    setFalloff(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1519822-animationspeed
     animationSpeed(): number;
-    setAnimationSpeed(): void;
+    setAnimationSpeed(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1520273-smoothness
     smoothness(): number;
-    setSmoothness(): void;
+    setSmoothness(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1520091-direction
     direction(): vector_float3;
-    setDirection(): void;
+    setDirection(value: vector_float3): void;
     // https://developer.apple.com/documentation/spritekit/skfieldnode/1519928-texture
     texture(): SKTexture;
-    setTexture(): void;
+    setTexture(value: SKTexture): void;
     //
     alloc():SKFieldNode;
     //
@@ -1507,16 +1507,16 @@ declare namespace cocoascript {
     initWithSize(size: CGSize):SKScene;
     // https://developer.apple.com/documentation/spritekit/skscene/1519831-size
     size(): CGSize;
-    setSize(): void;
+    setSize(value: CGSize): void;
     // https://developer.apple.com/documentation/spritekit/skscene/1519562-scalemode
     scaleMode(): SKSceneScaleMode;
-    setScaleMode(): void;
+    setScaleMode(value: SKSceneScaleMode): void;
     // https://developer.apple.com/documentation/spritekit/skscene/1519696-camera
     camera(): SKCameraNode;
-    setCamera(): void;
+    setCamera(value: SKCameraNode): void;
     // https://developer.apple.com/documentation/spritekit/skscene/1519864-anchorpoint
     anchorPoint(): CGPoint;
-    setAnchorPoint(): void;
+    setAnchorPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/spritekit/skscene/1645216-scenedidload
     sceneDidLoad():void;
     // https://developer.apple.com/documentation/spritekit/skscene/1519545-didchangesize
@@ -1537,22 +1537,22 @@ declare namespace cocoascript {
     didFinishUpdate():void;
     // https://developer.apple.com/documentation/spritekit/skscene/1520213-delegate
     delegate(): SKSceneDelegate;
-    setDelegate(): void;
+    setDelegate(value: SKSceneDelegate): void;
     // https://developer.apple.com/documentation/spritekit/skscene/1519726-view
     view(): SKView;
-    setView(): void;
+    setView(value: SKView): void;
     // https://developer.apple.com/documentation/spritekit/skscene/1520278-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/skscene/1519584-physicsworld
     physicsWorld(): SKPhysicsWorld;
-    setPhysicsWorld(): void;
+    setPhysicsWorld(value: SKPhysicsWorld): void;
     // https://developer.apple.com/documentation/spritekit/skscene/1520363-listener
     listener(): SKNode;
-    setListener(): void;
+    setListener(value: SKNode): void;
     // https://developer.apple.com/documentation/spritekit/skscene/1519644-audioengine
     audioEngine(): AVAudioEngine;
-    setAudioEngine(): void;
+    setAudioEngine(value: AVAudioEngine): void;
     // https://developer.apple.com/documentation/spritekit/skscene/1520395-convertpointfromview
     convertPointFromView(point: CGPoint):CGPoint;
     // https://developer.apple.com/documentation/spritekit/skscene/1520082-convertpointtoview
@@ -1573,29 +1573,29 @@ declare namespace cocoascript {
   interface SKEffectNode extends SKNode {
     // https://developer.apple.com/documentation/spritekit/skeffectnode/1459392-filter
     filter(): CIFilter;
-    setFilter(): void;
+    setFilter(value: CIFilter): void;
     // https://developer.apple.com/documentation/spritekit/skeffectnode/1459385-shouldenableeffects
-    shouldEnableEffects(): BOOL;
-    setShouldEnableEffects(): void;
+    shouldEnableEffects(): boolean;
+    setShouldEnableEffects(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skeffectnode/1459390-shouldcenterfilter
-    shouldCenterFilter(): BOOL;
-    setShouldCenterFilter(): void;
+    shouldCenterFilter(): boolean;
+    setShouldCenterFilter(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skeffectnode/1459388-shader
     shader(): SKShader;
-    setShader(): void;
+    setShader(value: SKShader): void;
     // https://developer.apple.com/documentation/spritekit/skeffectnode/2715848-attributevalues
     attributeValues(): SKAttributeValue;
-    setAttributeValues(): void;
+    setAttributeValues(value: SKAttributeValue): void;
     // https://developer.apple.com/documentation/spritekit/skeffectnode/2715853-setvalue
     setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/spritekit/skeffectnode/2715844-valueforattributenamed
     valueForAttributeNamed(key: string | cocoascript.NSString):SKAttributeValue;
     // https://developer.apple.com/documentation/spritekit/skeffectnode/1459381-shouldrasterize
-    shouldRasterize(): BOOL;
-    setShouldRasterize(): void;
+    shouldRasterize(): boolean;
+    setShouldRasterize(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skeffectnode/1459386-blendmode
     blendMode(): SKBlendMode;
-    setBlendMode(): void;
+    setBlendMode(value: SKBlendMode): void;
     //
     alloc():SKEffectNode;
     //
@@ -1613,7 +1613,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/skspritenode/1520391-initwithimagenamed
     initWithImageNamed(name: string | cocoascript.NSString):SKSpriteNode;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519721-spritenodewithimagenamed
-    spriteNodeWithImageNamed_normalMapped(name: string | cocoascript.NSString, generateNormalMap: BOOL):SKSpriteNode;
+    spriteNodeWithImageNamed_normalMapped(name: string | cocoascript.NSString, generateNormalMap: boolean):SKSpriteNode;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519942-initwithtexture
     initWithTexture(texture: SKTexture):SKSpriteNode;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1520029-initwithtexture
@@ -1630,49 +1630,49 @@ declare namespace cocoascript {
     spriteNodeWithTexture_normalMap(texture: SKTexture, normalMap: SKTexture):SKSpriteNode;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1520011-texture
     texture(): SKTexture;
-    setTexture(): void;
+    setTexture(value: SKTexture): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519762-initwithcolor
     initWithColor_size(color: UIColor, size: CGSize):SKSpriteNode;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1520399-initwithcoder
     initWithCoder(aDecoder: NSCoder):SKSpriteNode;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519668-size
     size(): CGSize;
-    setSize(): void;
+    setSize(value: CGSize): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1645445-scaletosize
     scaleToSize(size: CGSize):void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519877-anchorpoint
     anchorPoint(): CGPoint;
-    setAnchorPoint(): void;
+    setAnchorPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1520119-centerrect
     centerRect(): CGRect;
-    setCenterRect(): void;
+    setCenterRect(value: CGRect): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519639-color
     color(): UIColor;
-    setColor(): void;
+    setColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519780-colorblendfactor
     colorBlendFactor(): CGFloat;
-    setColorBlendFactor(): void;
+    setColorBlendFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519931-blendmode
     blendMode(): SKBlendMode;
-    setBlendMode(): void;
+    setBlendMode(value: SKBlendMode): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519637-lightingbitmask
     lightingBitMask(): number;
-    setLightingBitMask(): void;
+    setLightingBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519974-shadowedbitmask
     shadowedBitMask(): number;
-    setShadowedBitMask(): void;
+    setShadowedBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1520325-shadowcastbitmask
     shadowCastBitMask(): number;
-    setShadowCastBitMask(): void;
+    setShadowCastBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519657-normaltexture
     normalTexture(): SKTexture;
-    setNormalTexture(): void;
+    setNormalTexture(value: SKTexture): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/1519714-shader
     shader(): SKShader;
-    setShader(): void;
+    setShader(value: SKShader): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/2715845-attributevalues
     attributeValues(): SKAttributeValue;
-    setAttributeValues(): void;
+    setAttributeValues(value: SKAttributeValue): void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/2715849-setvalue
     setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/spritekit/skspritenode/2715846-valueforattributenamed
@@ -1693,155 +1693,155 @@ declare namespace cocoascript {
   interface SKEmitterNode extends SKNode {
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398012-targetnode
     targetNode(): SKNode;
-    setTargetNode(): void;
+    setTargetNode(value: SKNode): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398027-advancesimulationtime
     advanceSimulationTime(sec: NSTimeInterval):void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398053-resetsimulation
     resetSimulation():void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398039-particlebirthrate
     particleBirthRate(): CGFloat;
-    setParticleBirthRate(): void;
+    setParticleBirthRate(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398043-numparticlestoemit
     numParticlesToEmit(): NSUInteger;
-    setNumParticlesToEmit(): void;
+    setNumParticlesToEmit(value: NSUInteger): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397986-particlerenderorder
     particleRenderOrder(): SKParticleRenderOrder;
-    setParticleRenderOrder(): void;
+    setParticleRenderOrder(value: SKParticleRenderOrder): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398000-particlelifetime
     particleLifetime(): CGFloat;
-    setParticleLifetime(): void;
+    setParticleLifetime(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397994-particlelifetimerange
     particleLifetimeRange(): CGFloat;
-    setParticleLifetimeRange(): void;
+    setParticleLifetimeRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398019-particleposition
     particlePosition(): CGPoint;
-    setParticlePosition(): void;
+    setParticlePosition(value: CGPoint): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397972-particlepositionrange
     particlePositionRange(): CGVector;
-    setParticlePositionRange(): void;
+    setParticlePositionRange(value: CGVector): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398055-particlezposition
     particleZPosition(): CGFloat;
-    setParticleZPosition(): void;
+    setParticleZPosition(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397974-particlezpositionrange
     particleZPositionRange(): CGFloat;
-    setParticleZPositionRange(): void;
+    setParticleZPositionRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398061-particlespeed
     particleSpeed(): CGFloat;
-    setParticleSpeed(): void;
+    setParticleSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398045-particlespeedrange
     particleSpeedRange(): CGFloat;
-    setParticleSpeedRange(): void;
+    setParticleSpeedRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398035-emissionangle
     emissionAngle(): CGFloat;
-    setEmissionAngle(): void;
+    setEmissionAngle(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398067-emissionanglerange
     emissionAngleRange(): CGFloat;
-    setEmissionAngleRange(): void;
+    setEmissionAngleRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398017-xacceleration
     xAcceleration(): CGFloat;
-    setXAcceleration(): void;
+    setXAcceleration(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397982-yacceleration
     yAcceleration(): CGFloat;
-    setYAcceleration(): void;
+    setYAcceleration(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398008-particlezpositionspeed
     particleZPositionSpeed(): CGFloat;
-    setParticleZPositionSpeed(): void;
+    setParticleZPositionSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398025-particlerotation
     particleRotation(): CGFloat;
-    setParticleRotation(): void;
+    setParticleRotation(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397996-particlerotationrange
     particleRotationRange(): CGFloat;
-    setParticleRotationRange(): void;
+    setParticleRotationRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397968-particlerotationspeed
     particleRotationSpeed(): CGFloat;
-    setParticleRotationSpeed(): void;
+    setParticleRotationSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398014-particlescale
     particleScale(): CGFloat;
-    setParticleScale(): void;
+    setParticleScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397990-particlescalerange
     particleScaleRange(): CGFloat;
-    setParticleScaleRange(): void;
+    setParticleScaleRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398073-particlescalespeed
     particleScaleSpeed(): CGFloat;
-    setParticleScaleSpeed(): void;
+    setParticleScaleSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398029-particlescalesequence
     particleScaleSequence(): SKKeyframeSequence;
-    setParticleScaleSequence(): void;
+    setParticleScaleSequence(value: SKKeyframeSequence): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398004-particletexture
     particleTexture(): SKTexture;
-    setParticleTexture(): void;
+    setParticleTexture(value: SKTexture): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398063-particlesize
     particleSize(): CGSize;
-    setParticleSize(): void;
+    setParticleSize(value: CGSize): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397992-particlecolorsequence
     particleColorSequence(): SKKeyframeSequence;
-    setParticleColorSequence(): void;
+    setParticleColorSequence(value: SKKeyframeSequence): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398049-particlecolor
     particleColor(): UIColor;
-    setParticleColor(): void;
+    setParticleColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397976-particlecoloralpharange
     particleColorAlphaRange(): CGFloat;
-    setParticleColorAlphaRange(): void;
+    setParticleColorAlphaRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398075-particlecolorbluerange
     particleColorBlueRange(): CGFloat;
-    setParticleColorBlueRange(): void;
+    setParticleColorBlueRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398065-particlecolorgreenrange
     particleColorGreenRange(): CGFloat;
-    setParticleColorGreenRange(): void;
+    setParticleColorGreenRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397998-particlecolorredrange
     particleColorRedRange(): CGFloat;
-    setParticleColorRedRange(): void;
+    setParticleColorRedRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398051-particlecoloralphaspeed
     particleColorAlphaSpeed(): CGFloat;
-    setParticleColorAlphaSpeed(): void;
+    setParticleColorAlphaSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398023-particlecolorbluespeed
     particleColorBlueSpeed(): CGFloat;
-    setParticleColorBlueSpeed(): void;
+    setParticleColorBlueSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398033-particlecolorgreenspeed
     particleColorGreenSpeed(): CGFloat;
-    setParticleColorGreenSpeed(): void;
+    setParticleColorGreenSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398041-particlecolorredspeed
     particleColorRedSpeed(): CGFloat;
-    setParticleColorRedSpeed(): void;
+    setParticleColorRedSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397980-particlecolorblendfactorsequence
     particleColorBlendFactorSequence(): SKKeyframeSequence;
-    setParticleColorBlendFactorSequence(): void;
+    setParticleColorBlendFactorSequence(value: SKKeyframeSequence): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398071-particlecolorblendfactor
     particleColorBlendFactor(): CGFloat;
-    setParticleColorBlendFactor(): void;
+    setParticleColorBlendFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398047-particlecolorblendfactorrange
     particleColorBlendFactorRange(): CGFloat;
-    setParticleColorBlendFactorRange(): void;
+    setParticleColorBlendFactorRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398037-particlecolorblendfactorspeed
     particleColorBlendFactorSpeed(): CGFloat;
-    setParticleColorBlendFactorSpeed(): void;
+    setParticleColorBlendFactorSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397978-particleblendmode
     particleBlendMode(): SKBlendMode;
-    setParticleBlendMode(): void;
+    setParticleBlendMode(value: SKBlendMode): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398057-particlealphasequence
     particleAlphaSequence(): SKKeyframeSequence;
-    setParticleAlphaSequence(): void;
+    setParticleAlphaSequence(value: SKKeyframeSequence): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397988-particlealpha
     particleAlpha(): CGFloat;
-    setParticleAlpha(): void;
+    setParticleAlpha(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398031-particlealpharange
     particleAlphaRange(): CGFloat;
-    setParticleAlphaRange(): void;
+    setParticleAlphaRange(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398021-particlealphaspeed
     particleAlphaSpeed(): CGFloat;
-    setParticleAlphaSpeed(): void;
+    setParticleAlphaSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1397970-particleaction
     particleAction(): SKAction;
-    setParticleAction(): void;
+    setParticleAction(value: SKAction): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398006-fieldbitmask
     fieldBitMask(): number;
-    setFieldBitMask(): void;
+    setFieldBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/1398069-shader
     shader(): SKShader;
-    setShader(): void;
+    setShader(value: SKShader): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/2715850-attributevalues
     attributeValues(): SKAttributeValue;
-    setAttributeValues(): void;
+    setAttributeValues(value: SKAttributeValue): void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/2715854-setvalue
     setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/spritekit/skemitternode/2715842-valueforattributenamed
@@ -1887,10 +1887,10 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/skshapenode/1520022-shapenodewithpath
     shapeNodeWithPath(path: CGPathRef):SKShapeNode;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1519649-shapenodewithpath
-    shapeNodeWithPath_centered(path: CGPathRef, centered: BOOL):SKShapeNode;
+    shapeNodeWithPath_centered(path: CGPathRef, centered: boolean):SKShapeNode;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1519741-path
     path(): CGPathRef;
-    setPath(): void;
+    setPath(value: CGPathRef): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1520047-shapenodewithrect
     shapeNodeWithRect(rect: CGRect):SKShapeNode;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1520147-shapenodewithrectofsize
@@ -1911,49 +1911,49 @@ declare namespace cocoascript {
     shapeNodeWithSplinePoints_count(points: CGPoint, numPoints: any):SKShapeNode;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1520154-fillcolor
     fillColor(): UIColor;
-    setFillColor(): void;
+    setFillColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1519956-filltexture
     fillTexture(): SKTexture;
-    setFillTexture(): void;
+    setFillTexture(value: SKTexture): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1519885-linewidth
     lineWidth(): CGFloat;
-    setLineWidth(): void;
+    setLineWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1519748-strokecolor
     strokeColor(): UIColor;
-    setStrokeColor(): void;
+    setStrokeColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1519824-stroketexture
     strokeTexture(): SKTexture;
-    setStrokeTexture(): void;
+    setStrokeTexture(value: SKTexture): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1520116-glowwidth
     glowWidth(): CGFloat;
-    setGlowWidth(): void;
+    setGlowWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1520360-linecap
     lineCap(): CGLineCap;
-    setLineCap(): void;
+    setLineCap(value: CGLineCap): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1520358-linejoin
     lineJoin(): CGLineJoin;
-    setLineJoin(): void;
+    setLineJoin(value: CGLineJoin): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1520240-miterlimit
     miterLimit(): CGFloat;
-    setMiterLimit(): void;
+    setMiterLimit(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1519719-antialiased
-    antialiased(): BOOL;
-    setAntialiased(): void;
+    antialiased(): boolean;
+    setAntialiased(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1520045-blendmode
     blendMode(): SKBlendMode;
-    setBlendMode(): void;
+    setBlendMode(value: SKBlendMode): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1520398-linelength
     lineLength(): CGFloat;
-    setLineLength(): void;
+    setLineLength(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1519784-strokeshader
     strokeShader(): SKShader;
-    setStrokeShader(): void;
+    setStrokeShader(value: SKShader): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/1519629-fillshader
     fillShader(): SKShader;
-    setFillShader(): void;
+    setFillShader(value: SKShader): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/2715841-attributevalues
     attributeValues(): SKAttributeValue;
-    setAttributeValues(): void;
+    setAttributeValues(value: SKAttributeValue): void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/2715855-setvalue
     setValue_forAttributeNamed(value: SKAttributeValue, key: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/spritekit/skshapenode/2715843-valueforattributenamed
@@ -2030,7 +2030,7 @@ declare namespace cocoascript {
     jointWithBodyA_bodyB_anchorA_anchorB(bodyA: SKPhysicsBody, bodyB: SKPhysicsBody, anchorA: CGPoint, anchorB: CGPoint):SKPhysicsJointLimit;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointlimit/1519978-maxlength
     maxLength(): CGFloat;
-    setMaxLength(): void;
+    setMaxLength(value: CGFloat): void;
     //
     alloc():SKPhysicsJointLimit;
     //
@@ -2049,19 +2049,19 @@ declare namespace cocoascript {
     jointWithBodyA_bodyB_anchor(bodyA: SKPhysicsBody, bodyB: SKPhysicsBody, anchor: CGPoint):SKPhysicsJointPin;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointpin/1520259-rotationspeed
     rotationSpeed(): CGFloat;
-    setRotationSpeed(): void;
+    setRotationSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointpin/1520292-shouldenablelimits
-    shouldEnableLimits(): BOOL;
-    setShouldEnableLimits(): void;
+    shouldEnableLimits(): boolean;
+    setShouldEnableLimits(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointpin/1520130-loweranglelimit
     lowerAngleLimit(): CGFloat;
-    setLowerAngleLimit(): void;
+    setLowerAngleLimit(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointpin/1519967-upperanglelimit
     upperAngleLimit(): CGFloat;
-    setUpperAngleLimit(): void;
+    setUpperAngleLimit(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointpin/1520299-frictiontorque
     frictionTorque(): CGFloat;
-    setFrictionTorque(): void;
+    setFrictionTorque(value: CGFloat): void;
     //
     alloc():SKPhysicsJointPin;
     //
@@ -2079,14 +2079,14 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/skphysicsjointsliding/1520333-jointwithbodya
     jointWithBodyA_bodyB_anchor_axis(bodyA: SKPhysicsBody, bodyB: SKPhysicsBody, anchor: CGPoint, axis: CGVector):SKPhysicsJointSliding;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointsliding/1520053-shouldenablelimits
-    shouldEnableLimits(): BOOL;
-    setShouldEnableLimits(): void;
+    shouldEnableLimits(): boolean;
+    setShouldEnableLimits(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointsliding/1519969-lowerdistancelimit
     lowerDistanceLimit(): CGFloat;
-    setLowerDistanceLimit(): void;
+    setLowerDistanceLimit(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointsliding/1519836-upperdistancelimit
     upperDistanceLimit(): CGFloat;
-    setUpperDistanceLimit(): void;
+    setUpperDistanceLimit(value: CGFloat): void;
     //
     alloc():SKPhysicsJointSliding;
     //
@@ -2105,10 +2105,10 @@ declare namespace cocoascript {
     jointWithBodyA_bodyB_anchorA_anchorB(bodyA: SKPhysicsBody, bodyB: SKPhysicsBody, anchorA: CGPoint, anchorB: CGPoint):SKPhysicsJointSpring;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointspring/1519709-damping
     damping(): CGFloat;
-    setDamping(): void;
+    setDamping(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/skphysicsjointspring/1519806-frequency
     frequency(): CGFloat;
-    setFrequency(): void;
+    setFrequency(value: CGFloat): void;
     //
     alloc():SKPhysicsJointSpring;
     //
@@ -2124,23 +2124,23 @@ declare namespace cocoascript {
    */
   interface SKLightNode extends SKNode {
     // https://developer.apple.com/documentation/spritekit/sklightnode/1519826-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sklightnode/1519940-categorybitmask
     categoryBitMask(): number;
-    setCategoryBitMask(): void;
+    setCategoryBitMask(value: number): void;
     // https://developer.apple.com/documentation/spritekit/sklightnode/1520139-ambientcolor
     ambientColor(): UIColor;
-    setAmbientColor(): void;
+    setAmbientColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/sklightnode/1520244-lightcolor
     lightColor(): UIColor;
-    setLightColor(): void;
+    setLightColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/sklightnode/1519844-shadowcolor
     shadowColor(): UIColor;
-    setShadowColor(): void;
+    setShadowColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/sklightnode/1519776-falloff
     falloff(): CGFloat;
-    setFalloff(): void;
+    setFalloff(value: CGFloat): void;
     //
     alloc():SKLightNode;
     //
@@ -2163,7 +2163,7 @@ declare namespace cocoascript {
     rendererWithDevice(device: any):SKRenderer;
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866081-scene
     scene(): SKScene;
-    setScene(): void;
+    setScene(value: SKScene): void;
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866073-renderwithviewport
     renderWithViewport_commandBuffer_renderPassDescriptor(viewport: CGRect, commandBuffer: any, renderPassDescriptor: any):void;
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866083-renderwithviewport
@@ -2171,26 +2171,26 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866080-updateattime
     updateAtTime(currentTime: NSTimeInterval):void;
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866074-ignoressiblingorder
-    ignoresSiblingOrder(): BOOL;
-    setIgnoresSiblingOrder(): void;
+    ignoresSiblingOrder(): boolean;
+    setIgnoresSiblingOrder(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866075-shouldcullnonvisiblenodes
-    shouldCullNonVisibleNodes(): BOOL;
-    setShouldCullNonVisibleNodes(): void;
+    shouldCullNonVisibleNodes(): boolean;
+    setShouldCullNonVisibleNodes(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866071-showsnodecount
-    showsNodeCount(): BOOL;
-    setShowsNodeCount(): void;
+    showsNodeCount(): boolean;
+    setShowsNodeCount(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866077-showsdrawcount
-    showsDrawCount(): BOOL;
-    setShowsDrawCount(): void;
+    showsDrawCount(): boolean;
+    setShowsDrawCount(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866078-showsquadcount
-    showsQuadCount(): BOOL;
-    setShowsQuadCount(): void;
+    showsQuadCount(): boolean;
+    setShowsQuadCount(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866076-showsphysics
-    showsPhysics(): BOOL;
-    setShowsPhysics(): void;
+    showsPhysics(): boolean;
+    setShowsPhysics(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/skrenderer/2866082-showsfields
-    showsFields(): BOOL;
-    setShowsFields(): void;
+    showsFields(): boolean;
+    setShowsFields(value: boolean): void;
     //
     alloc():SKRenderer;
     //
@@ -2215,43 +2215,43 @@ declare namespace cocoascript {
     labelNodeWithAttributedText(attributedText: NSAttributedString):SKLabelNode;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/1519788-text
     text(): string | cocoascript.NSString;
-    setText(): void;
+    setText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/2865816-attributedtext
     attributedText(): NSAttributedString;
-    setAttributedText(): void;
+    setAttributedText(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/1520057-fontcolor
     fontColor(): UIColor;
-    setFontColor(): void;
+    setFontColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/1520129-fontname
     fontName(): string | cocoascript.NSString;
-    setFontName(): void;
+    setFontName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/1520208-fontsize
     fontSize(): CGFloat;
-    setFontSize(): void;
+    setFontSize(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/1519933-verticalalignmentmode
     verticalAlignmentMode(): SKLabelVerticalAlignmentMode;
-    setVerticalAlignmentMode(): void;
+    setVerticalAlignmentMode(value: SKLabelVerticalAlignmentMode): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/1519711-horizontalalignmentmode
     horizontalAlignmentMode(): SKLabelHorizontalAlignmentMode;
-    setHorizontalAlignmentMode(): void;
+    setHorizontalAlignmentMode(value: SKLabelHorizontalAlignmentMode): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/2865814-preferredmaxlayoutwidth
     preferredMaxLayoutWidth(): CGFloat;
-    setPreferredMaxLayoutWidth(): void;
+    setPreferredMaxLayoutWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/2865818-linebreakmode
     lineBreakMode(): NSLineBreakMode;
-    setLineBreakMode(): void;
+    setLineBreakMode(value: NSLineBreakMode): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/2865815-numberoflines
     numberOfLines(): NSInteger;
-    setNumberOfLines(): void;
+    setNumberOfLines(value: NSInteger): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/1519938-color
     color(): UIColor;
-    setColor(): void;
+    setColor(value: UIColor): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/1519724-colorblendfactor
     colorBlendFactor(): CGFloat;
-    setColorBlendFactor(): void;
+    setColorBlendFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sklabelnode/1519598-blendmode
     blendMode(): SKBlendMode;
-    setBlendMode(): void;
+    setBlendMode(value: SKBlendMode): void;
     //
     alloc():SKLabelNode;
     //
@@ -2286,10 +2286,10 @@ declare namespace cocoascript {
     initWithVideoURL(url: NSURL):SKVideoNode;
     // https://developer.apple.com/documentation/spritekit/skvideonode/1407904-anchorpoint
     anchorPoint(): CGPoint;
-    setAnchorPoint(): void;
+    setAnchorPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/spritekit/skvideonode/1407916-size
     size(): CGSize;
-    setSize(): void;
+    setSize(value: CGSize): void;
     // https://developer.apple.com/documentation/spritekit/skvideonode/1407896-play
     play():void;
     // https://developer.apple.com/documentation/spritekit/skvideonode/1407910-pause
@@ -2320,25 +2320,25 @@ declare namespace cocoascript {
     initWithCoder(aDecoder: NSCoder):SK3DNode;
     // https://developer.apple.com/documentation/spritekit/sk3dnode/1520078-viewportsize
     viewportSize(): CGSize;
-    setViewportSize(): void;
+    setViewportSize(value: CGSize): void;
     // https://developer.apple.com/documentation/spritekit/sk3dnode/1519834-scnscene
     scnScene(): any;
-    setScnScene(): void;
+    setScnScene(value: any): void;
     // https://developer.apple.com/documentation/spritekit/sk3dnode/1519786-pointofview
     pointOfView(): any;
-    setPointOfView(): void;
+    setPointOfView(value: any): void;
     // https://developer.apple.com/documentation/spritekit/sk3dnode/1519676-autoenablesdefaultlighting
-    autoenablesDefaultLighting(): BOOL;
-    setAutoenablesDefaultLighting(): void;
+    autoenablesDefaultLighting(): boolean;
+    setAutoenablesDefaultLighting(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sk3dnode/1520297-playing
-    playing(): BOOL;
-    setPlaying(): void;
+    playing(): boolean;
+    setPlaying(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sk3dnode/1519549-loops
-    loops(): BOOL;
-    setLoops(): void;
+    loops(): boolean;
+    setLoops(value: boolean): void;
     // https://developer.apple.com/documentation/spritekit/sk3dnode/1519738-scenetime
     sceneTime(): NSTimeInterval;
-    setSceneTime(): void;
+    setSceneTime(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/spritekit/sk3dnode/1519782-hittest
     hitTest_options(point: CGPoint, options: SK3DNode):any;
     // https://developer.apple.com/documentation/spritekit/sk3dnode/1520400-projectpoint
@@ -2361,7 +2361,7 @@ declare namespace cocoascript {
   interface SKCropNode extends SKNode {
     // https://developer.apple.com/documentation/spritekit/skcropnode/1520449-masknode
     maskNode(): SKNode;
-    setMaskNode(): void;
+    setMaskNode(value: SKNode): void;
     //
     alloc():SKCropNode;
     //
@@ -2378,10 +2378,10 @@ declare namespace cocoascript {
   interface SKTransformNode extends SKNode {
     // https://developer.apple.com/documentation/spritekit/sktransformnode/2883239-xrotation
     xRotation(): CGFloat;
-    setXRotation(): void;
+    setXRotation(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sktransformnode/2883242-yrotation
     yRotation(): CGFloat;
-    setYRotation(): void;
+    setYRotation(value: CGFloat): void;
     // https://developer.apple.com/documentation/spritekit/sktransformnode/2883246-seteulerangles
     setEulerAngles(euler: vector_float3):void;
     // https://developer.apple.com/documentation/spritekit/sktransformnode/2883240-setquaternion

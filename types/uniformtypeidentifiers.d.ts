@@ -28,43 +28,43 @@ declare namespace cocoascript {
     typeWithTag_tagClass_conformingToType(tag: string | cocoascript.NSString, tagClass: string | cocoascript.NSString, supertype: UTType):UTType;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548206-identifier
     identifier(): string | cocoascript.NSString;
-    setIdentifier(): void;
+    setIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548210-preferredfilenameextension
     preferredFilenameExtension(): string | cocoascript.NSString;
-    setPreferredFilenameExtension(): void;
+    setPreferredFilenameExtension(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548211-preferredmimetype
     preferredMIMEType(): string | cocoascript.NSString;
-    setPreferredMIMEType(): void;
+    setPreferredMIMEType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548215-tags
     tags(): string | cocoascript.NSString;
-    setTags(): void;
+    setTags(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548204-declared
-    declared(): BOOL;
-    setDeclared(): void;
+    declared(): boolean;
+    setDeclared(value: boolean): void;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548205-dynamic
-    dynamic(): BOOL;
-    setDynamic(): void;
+    dynamic(): boolean;
+    setDynamic(value: boolean): void;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548212-publictype
-    publicType(): BOOL;
-    setPublicType(): void;
+    publicType(): boolean;
+    setPublicType(value: boolean): void;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548213-referenceurl
     referenceURL(): NSURL;
-    setReferenceURL(): void;
+    setReferenceURL(value: NSURL): void;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548223-version
     version(): NSNumber;
-    setVersion(): void;
+    setVersion(value: NSNumber): void;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548214-supertypes
     supertypes(): UTType;
-    setSupertypes(): void;
+    setSupertypes(value: UTType): void;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548203-conformstotype
-    conformsToType(type: UTType):BOOL;
+    conformsToType(type: UTType):boolean;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548207-issubtypeoftype
-    isSubtypeOfType(type: UTType):BOOL;
+    isSubtypeOfType(type: UTType):boolean;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548208-issupertypeoftype
-    isSupertypeOfType(type: UTType):BOOL;
+    isSupertypeOfType(type: UTType):boolean;
     // https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3548209-localizeddescription
     localizedDescription(): string | cocoascript.NSString;
-    setLocalizedDescription(): void;
+    setLocalizedDescription(value: string | cocoascript.NSString): void;
     //
     alloc():UTType;
     //

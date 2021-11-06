@@ -33,8 +33,8 @@ declare namespace cocoascript {
    */
   interface NFCNDEFTag extends NSCopying {
     // https://developer.apple.com/documentation/corenfc/nfcndeftag/3173178-available
-    available(): BOOL;
-    setAvailable(): void;
+    available(): boolean;
+    setAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/corenfc/nfcndeftag/3144659-queryndefstatuswithcompletionhan
     queryNDEFStatusWithCompletionHandler(completionHandler: NSError):void;
     // https://developer.apple.com/documentation/corenfc/nfcndeftag/3075571-readndefwithcompletionhandler
@@ -82,14 +82,14 @@ declare namespace cocoascript {
    */
   interface NFCTag extends NSCopying {
     // https://developer.apple.com/documentation/corenfc/nfctag/2873690-available
-    available(): BOOL;
-    setAvailable(): void;
+    available(): boolean;
+    setAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/corenfc/nfctag/2873684-session
     session(): NFCReaderSession;
-    setSession(): void;
+    setSession(value: NFCReaderSession): void;
     // https://developer.apple.com/documentation/corenfc/nfctag/2873692-type
     type(): NFCTagType;
-    setType(): void;
+    setType(value: NFCTagType): void;
     // https://developer.apple.com/documentation/corenfc/nfctag/3183041-asnfciso15693tag
     asNFCISO15693Tag():NFCISO15693Tag;
     // https://developer.apple.com/documentation/corenfc/nfctag/3183042-asnfciso7816tag
@@ -107,8 +107,8 @@ declare namespace cocoascript {
    */
   interface NFCReaderSession extends NSObject {
     // https://developer.apple.com/documentation/corenfc/nfcreadersession/2874109-ready
-    ready(): BOOL;
-    setReady(): void;
+    ready(): boolean;
+    setReady(value: boolean): void;
     // https://developer.apple.com/documentation/corenfc/nfcreadersession/2874112-beginsession
     beginSession():void;
     // https://developer.apple.com/documentation/corenfc/nfcreadersession/2874107-invalidatesession
@@ -117,7 +117,7 @@ declare namespace cocoascript {
     invalidateSessionWithErrorMessage(errorMessage: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/corenfc/nfcreadersession/2919987-alertmessage
     alertMessage(): string | cocoascript.NSString;
-    setAlertMessage(): void;
+    setAlertMessage(value: string | cocoascript.NSString): void;
   }
 }
 declare namespace cocoascript {
@@ -128,10 +128,10 @@ declare namespace cocoascript {
   interface NFCTagCommandConfiguration extends NSObject {
     // https://developer.apple.com/documentation/corenfc/nfctagcommandconfiguration/2873693-maximumretries
     maximumRetries(): NSUInteger;
-    setMaximumRetries(): void;
+    setMaximumRetries(value: NSUInteger): void;
     // https://developer.apple.com/documentation/corenfc/nfctagcommandconfiguration/2873688-retryinterval
     retryInterval(): NSTimeInterval;
-    setRetryInterval(): void;
+    setRetryInterval(value: NSTimeInterval): void;
     //
     alloc():NFCTagCommandConfiguration;
     //
@@ -152,22 +152,22 @@ declare namespace cocoascript {
     initWithData(data: NSData):NFCISO7816APDU;
     // https://developer.apple.com/documentation/corenfc/nfciso7816apdu/3075556-instructionclass
     instructionClass(): number;
-    setInstructionClass(): void;
+    setInstructionClass(value: number): void;
     // https://developer.apple.com/documentation/corenfc/nfciso7816apdu/3075557-instructioncode
     instructionCode(): number;
-    setInstructionCode(): void;
+    setInstructionCode(value: number): void;
     // https://developer.apple.com/documentation/corenfc/nfciso7816apdu/3075558-p1parameter
     p1Parameter(): number;
-    setP1Parameter(): void;
+    setP1Parameter(value: number): void;
     // https://developer.apple.com/documentation/corenfc/nfciso7816apdu/3075559-p2parameter
     p2Parameter(): number;
-    setP2Parameter(): void;
+    setP2Parameter(value: number): void;
     // https://developer.apple.com/documentation/corenfc/nfciso7816apdu/3043826-data
     data(): NSData;
-    setData(): void;
+    setData(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfciso7816apdu/3075554-expectedresponselength
     expectedResponseLength(): NSInteger;
-    setExpectedResponseLength(): void;
+    setExpectedResponseLength(value: NSInteger): void;
     //
     alloc():NFCISO7816APDU;
     //
@@ -186,13 +186,13 @@ declare namespace cocoascript {
     initWithVASMode_passTypeIdentifier_url(mode: NFCVASMode, passTypeIdentifier: string | cocoascript.NSString, url: NSURL):NFCVASCommandConfiguration;
     // https://developer.apple.com/documentation/corenfc/nfcvascommandconfiguration/3043861-mode
     mode(): NFCVASMode;
-    setMode(): void;
+    setMode(value: NFCVASMode): void;
     // https://developer.apple.com/documentation/corenfc/nfcvascommandconfiguration/3043862-passtypeidentifier
     passTypeIdentifier(): string | cocoascript.NSString;
-    setPassTypeIdentifier(): void;
+    setPassTypeIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/corenfc/nfcvascommandconfiguration/3043863-url
     url(): NSURL;
-    setUrl(): void;
+    setUrl(value: NSURL): void;
     //
     alloc():NFCVASCommandConfiguration;
     //
@@ -209,13 +209,13 @@ declare namespace cocoascript {
   interface NFCVASResponse extends NSObject {
     // https://developer.apple.com/documentation/corenfc/nfcvasresponse/3043872-status
     status(): NFCVASErrorCode;
-    setStatus(): void;
+    setStatus(value: NFCVASErrorCode): void;
     // https://developer.apple.com/documentation/corenfc/nfcvasresponse/3043873-vasdata
     vasData(): NSData;
-    setVasData(): void;
+    setVasData(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfcvasresponse/3043871-mobiletoken
     mobileToken(): NSData;
-    setMobileToken(): void;
+    setMobileToken(value: NSData): void;
     //
     alloc():NFCVASResponse;
     //
@@ -244,16 +244,16 @@ declare namespace cocoascript {
     wellKnowTypeTextPayloadWithString_locale(text: string | cocoascript.NSString, locale: NSLocale):NFCNDEFPayload;
     // https://developer.apple.com/documentation/corenfc/nfcndefpayload/2875573-identifier
     identifier(): NSData;
-    setIdentifier(): void;
+    setIdentifier(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfcndefpayload/2875556-payload
     payload(): NSData;
-    setPayload(): void;
+    setPayload(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfcndefpayload/2875576-type
     type(): NSData;
-    setType(): void;
+    setType(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfcndefpayload/2875566-typenameformat
     typeNameFormat(): NFCTypeNameFormat;
-    setTypeNameFormat(): void;
+    setTypeNameFormat(value: NFCTypeNameFormat): void;
     // https://developer.apple.com/documentation/corenfc/nfcndefpayload/3153117-wellknowntypeuripayload
     wellKnownTypeURIPayload():NSURL;
     // https://developer.apple.com/documentation/corenfc/nfcndefpayload/3153116-wellknowntypetextpayloadwithloca
@@ -278,10 +278,10 @@ declare namespace cocoascript {
     ndefMessageWithData(data: NSData):NFCNDEFMessage;
     // https://developer.apple.com/documentation/corenfc/nfcndefmessage/2875563-records
     records(): NFCNDEFPayload;
-    setRecords(): void;
+    setRecords(value: NFCNDEFPayload): void;
     // https://developer.apple.com/documentation/corenfc/nfcndefmessage/3075561-length
     length(): NSUInteger;
-    setLength(): void;
+    setLength(value: NSUInteger): void;
     //
     alloc():NFCNDEFMessage;
     //
@@ -302,7 +302,7 @@ declare namespace cocoascript {
     connectToTag_completionHandler(tag: NFCTag, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/corenfc/nfctagreadersession/3043855-connectedtag
     connectedTag(): NFCTag;
-    setConnectedTag(): void;
+    setConnectedTag(value: NFCTag): void;
     // https://developer.apple.com/documentation/corenfc/nfctagreadersession/3043857-restartpolling
     restartPolling():void;
     //
@@ -324,7 +324,7 @@ declare namespace cocoascript {
    */
   interface NFCNDEFReaderSession extends NFCReaderSession {
     // https://developer.apple.com/documentation/corenfc/nfcndefreadersession/2882064-initwithdelegate
-    initWithDelegate_queue_invalidateAfterFirstRead(delegate: NFCNDEFReaderSessionDelegate, queue: dispatch_queue_t, invalidateAfterFirstRead: BOOL):NFCNDEFReaderSession;
+    initWithDelegate_queue_invalidateAfterFirstRead(delegate: NFCNDEFReaderSessionDelegate, queue: dispatch_queue_t, invalidateAfterFirstRead: boolean):NFCNDEFReaderSession;
     // https://developer.apple.com/documentation/corenfc/nfcndefreadersession/3153120-connecttotag
     connectToTag_completionHandler(tag: NFCNDEFTag, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/corenfc/nfcndefreadersession/3075565-restartpolling
@@ -360,14 +360,14 @@ declare namespace cocoascript {
    */
   interface NFCReaderSession extends NSObject {
     // https://developer.apple.com/documentation/corenfc/nfcreadersession/3043845-readingavailable
-    readingAvailable(): BOOL;
-    setReadingAvailable(): void;
+    readingAvailable(): boolean;
+    setReadingAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/corenfc/nfcreadersession/2874104-delegate
     delegate(): id;
-    setDelegate(): void;
+    setDelegate(value: id): void;
     // https://developer.apple.com/documentation/corenfc/nfcreadersession/2874110-sessionqueue
     sessionQueue(): dispatch_queue_t;
-    setSessionQueue(): void;
+    setSessionQueue(value: dispatch_queue_t): void;
     //
     alloc():NFCReaderSession;
     //
@@ -384,19 +384,19 @@ declare namespace cocoascript {
   interface NFCISO7816Tag extends NFCNDEFTag {
     // https://developer.apple.com/documentation/corenfc/nfciso7816tag/3043834-initialselectedaid
     initialSelectedAID(): string | cocoascript.NSString;
-    setInitialSelectedAID(): void;
+    setInitialSelectedAID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/corenfc/nfciso7816tag/3183035-identifier
     identifier(): NSData;
-    setIdentifier(): void;
+    setIdentifier(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfciso7816tag/3183034-historicalbytes
     historicalBytes(): NSData;
-    setHistoricalBytes(): void;
+    setHistoricalBytes(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfciso7816tag/3183033-applicationdata
     applicationData(): NSData;
-    setApplicationData(): void;
+    setApplicationData(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfciso7816tag/3183036-proprietaryapplicationdatacoding
-    proprietaryApplicationDataCoding(): BOOL;
-    setProprietaryApplicationDataCoding(): void;
+    proprietaryApplicationDataCoding(): boolean;
+    setProprietaryApplicationDataCoding(value: boolean): void;
     // https://developer.apple.com/documentation/corenfc/nfciso7816tag/3043835-sendcommandapdu
     sendCommandAPDU_completionHandler(apdu: NFCISO7816APDU, completionHandler: NSError):void;
   }
@@ -409,10 +409,10 @@ declare namespace cocoascript {
   interface NFCFeliCaTag extends NFCNDEFTag {
     // https://developer.apple.com/documentation/corenfc/nfcfelicatag/3043777-currentsystemcode
     currentSystemCode(): NSData;
-    setCurrentSystemCode(): void;
+    setCurrentSystemCode(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfcfelicatag/3043776-currentidm
     currentIDm(): NSData;
-    setCurrentIDm(): void;
+    setCurrentIDm(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfcfelicatag/3043778-pollingwithsystemcode
     pollingWithSystemCode_requestCode_timeSlot_completionHandler(systemCode: NSData, requestCode: NFCFeliCaPollingRequestCode, timeSlot: NFCFeliCaPollingTimeSlot, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/corenfc/nfcfelicatag/3043782-requestservicewithnodecodelist
@@ -443,13 +443,13 @@ declare namespace cocoascript {
   interface NFCISO15693Tag extends NFCNDEFTag {
     // https://developer.apple.com/documentation/corenfc/nfciso15693tag/2882083-icmanufacturercode
     icManufacturerCode(): NSUInteger;
-    setIcManufacturerCode(): void;
+    setIcManufacturerCode(value: NSUInteger): void;
     // https://developer.apple.com/documentation/corenfc/nfciso15693tag/2882070-icserialnumber
     icSerialNumber(): NSData;
-    setIcSerialNumber(): void;
+    setIcSerialNumber(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfciso15693tag/2882078-identifier
     identifier(): NSData;
-    setIdentifier(): void;
+    setIdentifier(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfciso15693tag/3043805-getsysteminfowithrequestflag
     getSystemInfoWithRequestFlag_completionHandler(flags: NFCISO15693RequestFlag, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/corenfc/nfciso15693tag/3043810-readsingleblockwithrequestflags
@@ -522,13 +522,13 @@ declare namespace cocoascript {
   interface NFCMiFareTag extends NFCNDEFTag {
     // https://developer.apple.com/documentation/corenfc/nfcmifaretag/3153113-mifarefamily
     mifareFamily(): NFCMiFareFamily;
-    setMifareFamily(): void;
+    setMifareFamily(value: NFCMiFareFamily): void;
     // https://developer.apple.com/documentation/corenfc/nfcmifaretag/3183038-identifier
     identifier(): NSData;
-    setIdentifier(): void;
+    setIdentifier(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfcmifaretag/3183037-historicalbytes
     historicalBytes(): NSData;
-    setHistoricalBytes(): void;
+    setHistoricalBytes(value: NSData): void;
     // https://developer.apple.com/documentation/corenfc/nfcmifaretag/3043838-sendmifarecommand
     sendMiFareCommand_completionHandler(command: NSData, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/corenfc/nfcmifaretag/3153114-sendmifareiso7816command

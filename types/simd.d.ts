@@ -1,8 +1,4 @@
 declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/vector_float2
-  type vector_float2 = cocoascript.simd_float2;
-}
-declare namespace cocoascript {
   // https://developer.apple.com/documentation/simd/matrix_float2x2
   type matrix_float2x2 = cocoascript.simd_float2x2;
 }
@@ -15,32 +11,16 @@ declare namespace cocoascript {
   type matrix_float4x4 = cocoascript.simd_float4x4;
 }
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/vector_float2
+  type vector_float2 = cocoascript.simd_float2;
+}
+declare namespace cocoascript {
   // https://developer.apple.com/documentation/simd/vector_float3
   type vector_float3 = cocoascript.simd_float3;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/simd/vector_float4
   type vector_float4 = cocoascript.simd_float4;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_float4x3
-  type matrix_float4x3 = cocoascript.simd_float4x3;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_float2
-  type simd_float2 = any;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_float3
-  type simd_float3 = any;
-}
-declare namespace cocoascript {
-  interface simd_float4x4 {
-  }
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_float4
-  type simd_float4 = any;
 }
 declare namespace cocoascript {
   interface simd_float2x2 {
@@ -51,24 +31,108 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/vector_int2
-  type vector_int2 = cocoascript.simd_int2;
+  interface simd_float4x4 {
+  }
 }
 declare namespace cocoascript {
-  interface simd_float4x3 {
-  }
+  // https://developer.apple.com/documentation/simd/simd_float2
+  type simd_float2 = any;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/simd_float3
+  type simd_float3 = any;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/simd_float4
+  type simd_float4 = any;
 }
 declare namespace cocoascript {
   interface simd_quatf {
   }
 }
 declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/vector_double3
-  type vector_double3 = cocoascript.simd_double3;
+  // https://developer.apple.com/documentation/simd/matrix_double2x2
+  type matrix_double2x2 = cocoascript.simd_double2x2;
 }
 declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/vector_double2
-  type vector_double2 = cocoascript.simd_double2;
+  // https://developer.apple.com/documentation/simd/matrix_double2x3
+  type matrix_double2x3 = cocoascript.simd_double2x3;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_double2x4
+  type matrix_double2x4 = cocoascript.simd_double2x4;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_double3x2
+  type matrix_double3x2 = cocoascript.simd_double3x2;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_double3x3
+  type matrix_double3x3 = cocoascript.simd_double3x3;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_double3x4
+  type matrix_double3x4 = cocoascript.simd_double3x4;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_double4x2
+  type matrix_double4x2 = cocoascript.simd_double4x2;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_double4x3
+  type matrix_double4x3 = cocoascript.simd_double4x3;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_double4x4
+  type matrix_double4x4 = cocoascript.simd_double4x4;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_float2x3
+  type matrix_float2x3 = cocoascript.simd_float2x3;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_float2x4
+  type matrix_float2x4 = cocoascript.simd_float2x4;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_float3x2
+  type matrix_float3x2 = cocoascript.simd_float3x2;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_float3x4
+  type matrix_float3x4 = cocoascript.simd_float3x4;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_float4x2
+  type matrix_float4x2 = cocoascript.simd_float4x2;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/matrix_float4x3
+  type matrix_float4x3 = cocoascript.simd_float4x3;
+}
+declare namespace cocoascript {
+  interface simd_float3x2 {
+  }
+}
+declare namespace cocoascript {
+  interface simd_float4x2 {
+  }
+}
+declare namespace cocoascript {
+  interface simd_float2x3 {
+  }
+}
+declare namespace cocoascript {
+  interface simd_float4x3 {
+  }
+}
+declare namespace cocoascript {
+  interface simd_float2x4 {
+  }
+}
+declare namespace cocoascript {
+  interface simd_float3x4 {
+  }
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/simd/packed_char16
@@ -647,6 +711,14 @@ declare namespace cocoascript {
   type vector_char8 = cocoascript.simd_char8;
 }
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/vector_double2
+  type vector_double2 = cocoascript.simd_double2;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/vector_double3
+  type vector_double3 = cocoascript.simd_double3;
+}
+declare namespace cocoascript {
   // https://developer.apple.com/documentation/simd/vector_double4
   type vector_double4 = cocoascript.simd_double4;
 }
@@ -665,6 +737,10 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/simd/vector_int16
   type vector_int16 = cocoascript.simd_int16;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/vector_int2
+  type vector_int2 = cocoascript.simd_int2;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/simd/vector_int3
@@ -811,96 +887,8 @@ declare namespace cocoascript {
   type vector_ushort8 = cocoascript.simd_ushort8;
 }
 declare namespace cocoascript {
-  interface simd_float3x2 {
-  }
-}
-declare namespace cocoascript {
-  interface simd_float4x2 {
-  }
-}
-declare namespace cocoascript {
-  interface simd_float2x3 {
-  }
-}
-declare namespace cocoascript {
-  interface simd_float2x4 {
-  }
-}
-declare namespace cocoascript {
-  interface simd_float3x4 {
-  }
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_double2x2
-  type matrix_double2x2 = cocoascript.simd_double2x2;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_double2x3
-  type matrix_double2x3 = cocoascript.simd_double2x3;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_double2x4
-  type matrix_double2x4 = cocoascript.simd_double2x4;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_double3x2
-  type matrix_double3x2 = cocoascript.simd_double3x2;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_double3x3
-  type matrix_double3x3 = cocoascript.simd_double3x3;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_double3x4
-  type matrix_double3x4 = cocoascript.simd_double3x4;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_double4x2
-  type matrix_double4x2 = cocoascript.simd_double4x2;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_double4x3
-  type matrix_double4x3 = cocoascript.simd_double4x3;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_double4x4
-  type matrix_double4x4 = cocoascript.simd_double4x4;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_float2x3
-  type matrix_float2x3 = cocoascript.simd_float2x3;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_float2x4
-  type matrix_float2x4 = cocoascript.simd_float2x4;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_float3x2
-  type matrix_float3x2 = cocoascript.simd_float3x2;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_float3x4
-  type matrix_float3x4 = cocoascript.simd_float3x4;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/matrix_float4x2
-  type matrix_float4x2 = cocoascript.simd_float4x2;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_int2
-  type simd_int2 = any;
-}
-declare namespace cocoascript {
   interface simd_quatd {
   }
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_double3
-  type simd_double3 = any;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_double2
-  type simd_double2 = any;
 }
 // https://developer.apple.com/documentation/simd/matrix_identity_double2x2
 declare const matrix_identity_double2x2: cocoascript.simd_double2x2;
@@ -915,43 +903,7 @@ declare const matrix_identity_float3x3: cocoascript.simd_float3x3;
 // https://developer.apple.com/documentation/simd/matrix_identity_float4x4
 declare const matrix_identity_float4x4: cocoascript.simd_float4x4;
 declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_double4
-  type simd_double4 = any;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_int3
-  type simd_int3 = any;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_int4
-  type simd_int4 = any;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_uint2
-  type simd_uint2 = any;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_uint3
-  type simd_uint3 = any;
-}
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/simd/simd_uint4
-  type simd_uint4 = any;
-}
-declare namespace cocoascript {
-  interface simd_double2x2 {
-  }
-}
-declare namespace cocoascript {
-  interface simd_double3x2 {
-  }
-}
-declare namespace cocoascript {
-  interface simd_double4x2 {
-  }
-}
-declare namespace cocoascript {
-  interface simd_double2x3 {
+  interface simd_double3x4 {
   }
 }
 declare namespace cocoascript {
@@ -959,18 +911,66 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  interface simd_double4x3 {
+  interface simd_double4x2 {
   }
+}
+declare namespace cocoascript {
+  interface simd_double2x2 {
+  }
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/simd_double2
+  type simd_double2 = any;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/simd_double4
+  type simd_double4 = any;
 }
 declare namespace cocoascript {
   interface simd_double2x4 {
   }
 }
 declare namespace cocoascript {
-  interface simd_double3x4 {
+  // https://developer.apple.com/documentation/simd/simd_double3
+  type simd_double3 = any;
+}
+declare namespace cocoascript {
+  interface simd_double2x3 {
   }
 }
 declare namespace cocoascript {
   interface simd_double4x4 {
   }
+}
+declare namespace cocoascript {
+  interface simd_double3x2 {
+  }
+}
+declare namespace cocoascript {
+  interface simd_double4x3 {
+  }
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/simd_int2
+  type simd_int2 = any;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/simd_uint2
+  type simd_uint2 = any;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/simd_int3
+  type simd_int3 = any;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/simd_uint3
+  type simd_uint3 = any;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/simd_int4
+  type simd_int4 = any;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/simd/simd_uint4
+  type simd_uint4 = any;
 }

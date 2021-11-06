@@ -17,11 +17,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/securityfoundation/sfauthorization/1417645-permitwithrights
     permitWithRights_flags_environment_authorizedRights(rights: AuthorizationRights, flags: AuthorizationFlags, environment: AuthorizationEnvironment, authorizedRights: AuthorizationRights):any;
     // https://developer.apple.com/documentation/securityfoundation/sfauthorization/1417648-obtainwithrights
-    obtainWithRights_flags_environment_authorizedRights_error(rights: AuthorizationRights, flags: AuthorizationFlags, environment: AuthorizationEnvironment, authorizedRights: AuthorizationRights, error: NSError):BOOL;
+    obtainWithRights_flags_environment_authorizedRights_error(rights: AuthorizationRights, flags: AuthorizationFlags, environment: AuthorizationEnvironment, authorizedRights: AuthorizationRights, error: NSError):boolean;
     // https://developer.apple.com/documentation/securityfoundation/sfauthorization/1417641-permitwithright
     permitWithRight_flags(rightName: AuthorizationString, flags: AuthorizationFlags):any;
     // https://developer.apple.com/documentation/securityfoundation/sfauthorization/1417652-obtainwithright
-    obtainWithRight_flags_error(rightName: AuthorizationString, flags: AuthorizationFlags, error: NSError):BOOL;
+    obtainWithRight_flags_error(rightName: AuthorizationString, flags: AuthorizationFlags, error: NSError):boolean;
     // https://developer.apple.com/documentation/securityfoundation/sfauthorization/1417634-invalidatecredentials
     invalidateCredentials():void;
     //

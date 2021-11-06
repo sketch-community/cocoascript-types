@@ -47,10 +47,6 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  interface CVPixelBufferPoolRef {
-  }
-}
-declare namespace cocoascript {
   // https://developer.apple.com/documentation/corevideo/cvreturn
   type CVReturn = number;
 }
@@ -61,6 +57,10 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/corevideo/cvattachmentmode
   type CVAttachmentMode = number;
+}
+declare namespace cocoascript {
+  interface CVPixelBufferPoolRef {
+  }
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/corevideo/cvpixelbufferpoolflushflags

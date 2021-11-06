@@ -40,7 +40,7 @@ export class PropertyDeclaration {
     const code = new CodeGenerator();
     code.appendLine(getDocumentComment(this.id));
     code.appendLine(`${this.identifier}(): ${normalizeType(this.type!)};`);
-    code.appendLine(`set${capitalize(this.identifier!)}(): void;`);
+    code.appendLine(`set${capitalize(this.identifier!)}(value: ${normalizeType(this.type!)}): void;`);
     return code.toString();
   }
 }

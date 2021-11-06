@@ -14,19 +14,19 @@ declare namespace cocoascript {
     initWithRecordZoneID(recordZoneID: CKRecordZoneID):CKShare;
     // https://developer.apple.com/documentation/cloudkit/ckshare/1640503-owner
     owner(): CKShareParticipant;
-    setOwner(): void;
+    setOwner(value: CKShareParticipant): void;
     // https://developer.apple.com/documentation/cloudkit/ckshare/1640441-currentuserparticipant
     currentUserParticipant(): CKShareParticipant;
-    setCurrentUserParticipant(): void;
+    setCurrentUserParticipant(value: CKShareParticipant): void;
     // https://developer.apple.com/documentation/cloudkit/ckshare/1640453-participants
     participants(): CKShareParticipant;
-    setParticipants(): void;
+    setParticipants(value: CKShareParticipant): void;
     // https://developer.apple.com/documentation/cloudkit/ckshare/1640465-url
     URL(): NSURL;
-    setURL(): void;
+    setURL(value: NSURL): void;
     // https://developer.apple.com/documentation/cloudkit/ckshare/1640494-publicpermission
     publicPermission(): CKShareParticipantPermission;
-    setPublicPermission(): void;
+    setPublicPermission(value: CKShareParticipantPermission): void;
     // https://developer.apple.com/documentation/cloudkit/ckshare/1640443-addparticipant
     addParticipant(participant: CKShareParticipant):void;
     // https://developer.apple.com/documentation/cloudkit/ckshare/1640523-removeparticipant
@@ -79,13 +79,13 @@ declare namespace cocoascript {
     initWithShareMetadatas(shareMetadatas: CKShareMetadata):CKAcceptSharesOperation;
     // https://developer.apple.com/documentation/cloudkit/ckacceptsharesoperation/1823508-sharemetadatas
     shareMetadatas(): CKShareMetadata;
-    setShareMetadatas(): void;
+    setShareMetadatas(value: CKShareMetadata): void;
     // https://developer.apple.com/documentation/cloudkit/ckacceptsharesoperation/1640426-persharecompletionblock
     perShareCompletionBlock(): NSError;
-    setPerShareCompletionBlock(): void;
+    setPerShareCompletionBlock(value: NSError): void;
     // https://developer.apple.com/documentation/cloudkit/ckacceptsharesoperation/1640442-acceptsharescompletionblock
     acceptSharesCompletionBlock(): NSError;
-    setAcceptSharesCompletionBlock(): void;
+    setAcceptSharesCompletionBlock(value: NSError): void;
     //
     alloc():CKAcceptSharesOperation;
     //
@@ -102,31 +102,34 @@ declare namespace cocoascript {
   interface CKShareMetadata extends NSObject {
     // https://developer.apple.com/documentation/cloudkit/cksharemetadata/1640412-share
     share(): CKShare;
-    setShare(): void;
+    setShare(value: CKShare): void;
     // https://developer.apple.com/documentation/cloudkit/cksharemetadata/1640400-containeridentifier
     containerIdentifier(): string | cocoascript.NSString;
-    setContainerIdentifier(): void;
+    setContainerIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cksharemetadata/1640498-owneridentity
     ownerIdentity(): CKUserIdentity;
-    setOwnerIdentity(): void;
+    setOwnerIdentity(value: CKUserIdentity): void;
+    // https://developer.apple.com/documentation/cloudkit/cksharemetadata/3793709-hierarchicalrootrecordid
+    hierarchicalRootRecordID(): CKRecordID;
+    setHierarchicalRootRecordID(value: CKRecordID): void;
     // https://developer.apple.com/documentation/cloudkit/cksharemetadata/1640366-rootrecord
     rootRecord(): CKRecord;
-    setRootRecord(): void;
+    setRootRecord(value: CKRecord): void;
     // https://developer.apple.com/documentation/cloudkit/cksharemetadata/1640410-rootrecordid
     rootRecordID(): CKRecordID;
-    setRootRecordID(): void;
+    setRootRecordID(value: CKRecordID): void;
     // https://developer.apple.com/documentation/cloudkit/cksharemetadata/2980666-participantrole
     participantRole(): CKShareParticipantRole;
-    setParticipantRole(): void;
+    setParticipantRole(value: CKShareParticipantRole): void;
     // https://developer.apple.com/documentation/cloudkit/cksharemetadata/1640483-participantpermission
     participantPermission(): CKShareParticipantPermission;
-    setParticipantPermission(): void;
+    setParticipantPermission(value: CKShareParticipantPermission): void;
     // https://developer.apple.com/documentation/cloudkit/cksharemetadata/1640420-participantstatus
     participantStatus(): CKShareParticipantAcceptanceStatus;
-    setParticipantStatus(): void;
+    setParticipantStatus(value: CKShareParticipantAcceptanceStatus): void;
     // https://developer.apple.com/documentation/cloudkit/cksharemetadata/1640518-participanttype
     participantType(): CKShareParticipantType;
-    setParticipantType(): void;
+    setParticipantType(value: CKShareParticipantType): void;
     //
     alloc():CKShareMetadata;
     //
@@ -147,13 +150,13 @@ declare namespace cocoascript {
     initWithCoder(aDecoder: NSCoder):CKQuery;
     // https://developer.apple.com/documentation/cloudkit/ckquery/1413117-recordtype
     recordType(): CKRecordType;
-    setRecordType(): void;
+    setRecordType(value: CKRecordType): void;
     // https://developer.apple.com/documentation/cloudkit/ckquery/1413112-predicate
     predicate(): NSPredicate;
-    setPredicate(): void;
+    setPredicate(value: NSPredicate): void;
     // https://developer.apple.com/documentation/cloudkit/ckquery/1413121-sortdescriptors
     sortDescriptors(): NSSortDescriptor;
-    setSortDescriptors(): void;
+    setSortDescriptors(value: NSSortDescriptor): void;
     //
     alloc():CKQuery;
     //
@@ -202,38 +205,38 @@ declare namespace cocoascript {
     changedKeys():CKRecordFieldKey;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1462229-recordid
     recordID(): CKRecordID;
-    setRecordID(): void;
+    setRecordID(value: CKRecordID): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1462206-recordtype
     recordType(): CKRecordType;
-    setRecordType(): void;
+    setRecordType(value: CKRecordType): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1462223-creationdate
     creationDate(): NSDate;
-    setCreationDate(): void;
+    setCreationDate(value: NSDate): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1462208-creatoruserrecordid
     creatorUserRecordID(): CKRecordID;
-    setCreatorUserRecordID(): void;
+    setCreatorUserRecordID(value: CKRecordID): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1462227-modificationdate
     modificationDate(): NSDate;
-    setModificationDate(): void;
+    setModificationDate(value: NSDate): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1462212-lastmodifieduserrecordid
     lastModifiedUserRecordID(): CKRecordID;
-    setLastModifiedUserRecordID(): void;
+    setLastModifiedUserRecordID(value: CKRecordID): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1462195-recordchangetag
     recordChangeTag(): string | cocoascript.NSString;
-    setRecordChangeTag(): void;
+    setRecordChangeTag(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/3746821-encryptedvalues
     encryptedValues(): CKRecordKeyValueSetting;
-    setEncryptedValues(): void;
+    setEncryptedValues(value: CKRecordKeyValueSetting): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1462199-alltokens
     allTokens():NSString;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1462200-encodesystemfieldswithcoder
     encodeSystemFieldsWithCoder(coder: NSCoder):void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1640527-parent
     parent(): CKReference;
-    setParent(): void;
+    setParent(value: CKReference): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1640378-share
     share(): CKReference;
-    setShare(): void;
+    setShare(value: CKReference): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1690507-setparentreferencefromrecord
     setParentReferenceFromRecord(parentRecord: CKRecord):void;
     // https://developer.apple.com/documentation/cloudkit/ckrecord/1690508-setparentreferencefromrecordid
@@ -258,10 +261,10 @@ declare namespace cocoascript {
     initWithRecordName_zoneID(recordName: string | cocoascript.NSString, zoneID: CKRecordZoneID):CKRecordID;
     // https://developer.apple.com/documentation/cloudkit/ckrecordid/1500973-recordname
     recordName(): string | cocoascript.NSString;
-    setRecordName(): void;
+    setRecordName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecordid/1500969-zoneid
     zoneID(): CKRecordZoneID;
-    setZoneID(): void;
+    setZoneID(value: CKRecordZoneID): void;
     //
     alloc():CKRecordID;
     //
@@ -282,10 +285,10 @@ declare namespace cocoascript {
     initWithZoneName_ownerName(zoneName: string | cocoascript.NSString, ownerName: string | cocoascript.NSString):CKRecordZoneID;
     // https://developer.apple.com/documentation/cloudkit/ckrecordzoneid/1508094-zonename
     zoneName(): string | cocoascript.NSString;
-    setZoneName(): void;
+    setZoneName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecordzoneid/1508096-ownername
     ownerName(): string | cocoascript.NSString;
-    setOwnerName(): void;
+    setOwnerName(value: string | cocoascript.NSString): void;
     //
     alloc():CKRecordZoneID;
     //
@@ -316,13 +319,13 @@ declare namespace cocoascript {
   interface CKSubscription extends NSObject {
     // https://developer.apple.com/documentation/cloudkit/cksubscription/1514948-notificationinfo
     notificationInfo(): CKNotificationInfo;
-    setNotificationInfo(): void;
+    setNotificationInfo(value: CKNotificationInfo): void;
     // https://developer.apple.com/documentation/cloudkit/cksubscription/1515199-subscriptionid
     subscriptionID(): CKSubscriptionID;
-    setSubscriptionID(): void;
+    setSubscriptionID(value: CKSubscriptionID): void;
     // https://developer.apple.com/documentation/cloudkit/cksubscription/1515250-subscriptiontype
     subscriptionType(): CKSubscriptionType;
-    setSubscriptionType(): void;
+    setSubscriptionType(value: CKSubscriptionType): void;
     //
     alloc():CKSubscription;
     //
@@ -339,58 +342,58 @@ declare namespace cocoascript {
   interface CKNotificationInfo extends NSObject {
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/1515082-category
     category(): string | cocoascript.NSString;
-    setCategory(): void;
+    setCategory(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/2887430-collapseidkey
     collapseIDKey(): string | cocoascript.NSString;
-    setCollapseIDKey(): void;
+    setCollapseIDKey(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/1514996-shouldbadge
-    shouldBadge(): BOOL;
-    setShouldBadge(): void;
+    shouldBadge(): boolean;
+    setShouldBadge(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/1515270-alertbody
     alertBody(): string | cocoascript.NSString;
-    setAlertBody(): void;
+    setAlertBody(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/1514968-alertlocalizationkey
     alertLocalizationKey(): string | cocoascript.NSString;
-    setAlertLocalizationKey(): void;
+    setAlertLocalizationKey(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/1515182-alertlocalizationargs
     alertLocalizationArgs(): CKRecordFieldKey;
-    setAlertLocalizationArgs(): void;
+    setAlertLocalizationArgs(value: CKRecordFieldKey): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/1514945-alertactionlocalizationkey
     alertActionLocalizationKey(): string | cocoascript.NSString;
-    setAlertActionLocalizationKey(): void;
+    setAlertActionLocalizationKey(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/1515075-alertlaunchimage
     alertLaunchImage(): string | cocoascript.NSString;
-    setAlertLaunchImage(): void;
+    setAlertLaunchImage(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/1514987-soundname
     soundName(): string | cocoascript.NSString;
-    setSoundName(): void;
+    setSoundName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/1515110-shouldsendcontentavailable
-    shouldSendContentAvailable(): BOOL;
-    setShouldSendContentAvailable(): void;
+    shouldSendContentAvailable(): boolean;
+    setShouldSendContentAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/2868500-shouldsendmutablecontent
-    shouldSendMutableContent(): BOOL;
-    setShouldSendMutableContent(): void;
+    shouldSendMutableContent(): boolean;
+    setShouldSendMutableContent(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/1514931-desiredkeys
     desiredKeys(): CKRecordFieldKey;
-    setDesiredKeys(): void;
+    setDesiredKeys(value: CKRecordFieldKey): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/2869870-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/2869865-titlelocalizationkey
     titleLocalizationKey(): string | cocoascript.NSString;
-    setTitleLocalizationKey(): void;
+    setTitleLocalizationKey(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/2869866-titlelocalizationargs
     titleLocalizationArgs(): CKRecordFieldKey;
-    setTitleLocalizationArgs(): void;
+    setTitleLocalizationArgs(value: CKRecordFieldKey): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/2869863-subtitle
     subtitle(): string | cocoascript.NSString;
-    setSubtitle(): void;
+    setSubtitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/2869864-subtitlelocalizationkey
     subtitleLocalizationKey(): string | cocoascript.NSString;
-    setSubtitleLocalizationKey(): void;
+    setSubtitleLocalizationKey(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotificationinfo/2869869-subtitlelocalizationargs
     subtitleLocalizationArgs(): CKRecordFieldKey;
-    setSubtitleLocalizationArgs(): void;
+    setSubtitleLocalizationArgs(value: CKRecordFieldKey): void;
     //
     alloc():CKNotificationInfo;
     //
@@ -413,13 +416,13 @@ declare namespace cocoascript {
     defaultRecordZone():CKRecordZone;
     // https://developer.apple.com/documentation/cloudkit/ckrecordzone/1514917-zoneid
     zoneID(): CKRecordZoneID;
-    setZoneID(): void;
+    setZoneID(value: CKRecordZoneID): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecordzone/1515194-capabilities
     capabilities(): CKRecordZoneCapabilities;
-    setCapabilities(): void;
+    setCapabilities(value: CKRecordZoneCapabilities): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecordzone/3746822-share
     share(): CKReference;
-    setShare(): void;
+    setShare(value: CKReference): void;
     //
     alloc():CKRecordZone;
     //
@@ -456,10 +459,10 @@ declare namespace cocoascript {
     initWithRecord_action(record: CKRecord, action: CKReferenceAction):CKReference;
     // https://developer.apple.com/documentation/cloudkit/ckreference/1514900-referenceaction
     referenceAction(): CKReferenceAction;
-    setReferenceAction(): void;
+    setReferenceAction(value: CKReferenceAction): void;
     // https://developer.apple.com/documentation/cloudkit/ckreference/1514956-recordid
     recordID(): CKRecordID;
-    setRecordID(): void;
+    setRecordID(value: CKRecordID): void;
     //
     alloc():CKReference;
     //
@@ -475,20 +478,20 @@ declare namespace cocoascript {
    */
   interface CKUserIdentity extends NSObject {
     // https://developer.apple.com/documentation/cloudkit/ckuseridentity/1640513-hasicloudaccount
-    hasiCloudAccount(): BOOL;
-    setHasiCloudAccount(): void;
+    hasiCloudAccount(): boolean;
+    setHasiCloudAccount(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/ckuseridentity/1640371-lookupinfo
     lookupInfo(): CKUserIdentityLookupInfo;
-    setLookupInfo(): void;
+    setLookupInfo(value: CKUserIdentityLookupInfo): void;
     // https://developer.apple.com/documentation/cloudkit/ckuseridentity/1640504-userrecordid
     userRecordID(): CKRecordID;
-    setUserRecordID(): void;
+    setUserRecordID(value: CKRecordID): void;
     // https://developer.apple.com/documentation/cloudkit/ckuseridentity/2866227-contactidentifiers
     contactIdentifiers(): string | cocoascript.NSString;
-    setContactIdentifiers(): void;
+    setContactIdentifiers(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/ckuseridentity/1640458-namecomponents
     nameComponents(): NSPersonNameComponents;
-    setNameComponents(): void;
+    setNameComponents(value: NSPersonNameComponents): void;
     //
     alloc():CKUserIdentity;
     //
@@ -517,13 +520,13 @@ declare namespace cocoascript {
     lookupInfosWithRecordIDs(recordIDs: CKRecordID):CKUserIdentityLookupInfo;
     // https://developer.apple.com/documentation/cloudkit/ckuseridentitylookupinfo/1640462-emailaddress
     emailAddress(): string | cocoascript.NSString;
-    setEmailAddress(): void;
+    setEmailAddress(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/ckuseridentitylookupinfo/1640482-phonenumber
     phoneNumber(): string | cocoascript.NSString;
-    setPhoneNumber(): void;
+    setPhoneNumber(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/ckuseridentitylookupinfo/1640405-userrecordid
     userRecordID(): CKRecordID;
-    setUserRecordID(): void;
+    setUserRecordID(value: CKRecordID): void;
     //
     alloc():CKUserIdentityLookupInfo;
     //
@@ -540,13 +543,13 @@ declare namespace cocoascript {
   interface CKFetchRecordZoneChangesOptions extends NSObject {
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoptions/1640472-desiredkeys
     desiredKeys(): CKRecordFieldKey;
-    setDesiredKeys(): void;
+    setDesiredKeys(value: CKRecordFieldKey): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoptions/1640389-previousserverchangetoken
     previousServerChangeToken(): CKServerChangeToken;
-    setPreviousServerChangeToken(): void;
+    setPreviousServerChangeToken(value: CKServerChangeToken): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoptions/1640481-resultslimit
     resultsLimit(): NSUInteger;
-    setResultsLimit(): void;
+    setResultsLimit(value: NSUInteger): void;
     //
     alloc():CKFetchRecordZoneChangesOptions;
     //
@@ -569,16 +572,16 @@ declare namespace cocoascript {
     initWithCoder(aDecoder: NSCoder):CKQuerySubscription;
     // https://developer.apple.com/documentation/cloudkit/ckquerysubscription/1640485-predicate
     predicate(): NSPredicate;
-    setPredicate(): void;
+    setPredicate(value: NSPredicate): void;
     // https://developer.apple.com/documentation/cloudkit/ckquerysubscription/1640414-querysubscriptionoptions
     querySubscriptionOptions(): CKQuerySubscriptionOptions;
-    setQuerySubscriptionOptions(): void;
+    setQuerySubscriptionOptions(value: CKQuerySubscriptionOptions): void;
     // https://developer.apple.com/documentation/cloudkit/ckquerysubscription/1640393-recordtype
     recordType(): CKRecordType;
-    setRecordType(): void;
+    setRecordType(value: CKRecordType): void;
     // https://developer.apple.com/documentation/cloudkit/ckquerysubscription/1640390-zoneid
     zoneID(): CKRecordZoneID;
-    setZoneID(): void;
+    setZoneID(value: CKRecordZoneID): void;
     //
     alloc():CKQuerySubscription;
     //
@@ -601,10 +604,10 @@ declare namespace cocoascript {
     initWithCoder(aDecoder: NSCoder):CKRecordZoneSubscription;
     // https://developer.apple.com/documentation/cloudkit/ckrecordzonesubscription/1640479-recordtype
     recordType(): CKRecordType;
-    setRecordType(): void;
+    setRecordType(value: CKRecordType): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecordzonesubscription/1640367-zoneid
     zoneID(): CKRecordZoneID;
-    setZoneID(): void;
+    setZoneID(value: CKRecordZoneID): void;
     //
     alloc():CKRecordZoneSubscription;
     //
@@ -629,7 +632,7 @@ declare namespace cocoascript {
     new():CKDatabaseSubscription;
     // https://developer.apple.com/documentation/cloudkit/ckdatabasesubscription/1640418-recordtype
     recordType(): CKRecordType;
-    setRecordType(): void;
+    setRecordType(value: CKRecordType): void;
     //
     alloc():CKDatabaseSubscription;
     //
@@ -646,16 +649,16 @@ declare namespace cocoascript {
   interface CKShareParticipant extends NSObject {
     // https://developer.apple.com/documentation/cloudkit/ckshareparticipant/1640395-acceptancestatus
     acceptanceStatus(): CKShareParticipantAcceptanceStatus;
-    setAcceptanceStatus(): void;
+    setAcceptanceStatus(value: CKShareParticipantAcceptanceStatus): void;
     // https://developer.apple.com/documentation/cloudkit/ckshareparticipant/1640488-useridentity
     userIdentity(): CKUserIdentity;
-    setUserIdentity(): void;
+    setUserIdentity(value: CKUserIdentity): void;
     // https://developer.apple.com/documentation/cloudkit/ckshareparticipant/1640433-permission
     permission(): CKShareParticipantPermission;
-    setPermission(): void;
+    setPermission(value: CKShareParticipantPermission): void;
     // https://developer.apple.com/documentation/cloudkit/ckshareparticipant/2980667-role
     role(): CKShareParticipantRole;
-    setRole(): void;
+    setRole(value: CKShareParticipantRole): void;
     //
     alloc():CKShareParticipant;
     //
@@ -672,13 +675,13 @@ declare namespace cocoascript {
   interface CKFetchRecordZoneChangesConfiguration extends NSObject {
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesconfiguration/2980662-previousserverchangetoken
     previousServerChangeToken(): CKServerChangeToken;
-    setPreviousServerChangeToken(): void;
+    setPreviousServerChangeToken(value: CKServerChangeToken): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesconfiguration/2980663-resultslimit
     resultsLimit(): NSUInteger;
-    setResultsLimit(): void;
+    setResultsLimit(value: NSUInteger): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesconfiguration/2980661-desiredkeys
     desiredKeys(): CKRecordFieldKey;
-    setDesiredKeys(): void;
+    setDesiredKeys(value: CKRecordFieldKey): void;
     //
     alloc():CKFetchRecordZoneChangesConfiguration;
     //
@@ -699,28 +702,34 @@ declare namespace cocoascript {
     init():CKModifyRecordsOperation;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation/1447482-recordstosave
     recordsToSave(): CKRecord;
-    setRecordsToSave(): void;
+    setRecordsToSave(value: CKRecord): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation/1447479-recordidstodelete
     recordIDsToDelete(): CKRecordID;
-    setRecordIDsToDelete(): void;
+    setRecordIDsToDelete(value: CKRecordID): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation/1447472-clientchangetokendata
     clientChangeTokenData(): NSData;
-    setClientChangeTokenData(): void;
+    setClientChangeTokenData(value: NSData): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation/1447484-atomic
-    atomic(): BOOL;
-    setAtomic(): void;
+    atomic(): boolean;
+    setAtomic(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation/1447488-savepolicy
     savePolicy(): CKRecordSavePolicy;
-    setSavePolicy(): void;
+    setSavePolicy(value: CKRecordSavePolicy): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation/1447477-perrecordprogressblock
     perRecordProgressBlock(): number;
-    setPerRecordProgressBlock(): void;
+    setPerRecordProgressBlock(value: number): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation/1447470-perrecordcompletionblock
     perRecordCompletionBlock(): NSError;
-    setPerRecordCompletionBlock(): void;
+    setPerRecordCompletionBlock(value: NSError): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation/1447486-modifyrecordscompletionblock
     modifyRecordsCompletionBlock(): NSError;
-    setModifyRecordsCompletionBlock(): void;
+    setModifyRecordsCompletionBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation/3793704-perrecorddeleteblock
+    perRecordDeleteBlock(): NSError;
+    setPerRecordDeleteBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation/3793705-perrecordsaveblock
+    perRecordSaveBlock(): NSError;
+    setPerRecordSaveBlock(value: NSError): void;
     //
     alloc():CKModifyRecordsOperation;
     //
@@ -741,19 +750,19 @@ declare namespace cocoascript {
     initWithShareURLs(shareURLs: NSURL):CKFetchShareMetadataOperation;
     // https://developer.apple.com/documentation/cloudkit/ckfetchsharemetadataoperation/1640375-rootrecorddesiredkeys
     rootRecordDesiredKeys(): CKRecordFieldKey;
-    setRootRecordDesiredKeys(): void;
+    setRootRecordDesiredKeys(value: CKRecordFieldKey): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchsharemetadataoperation/1640508-shareurls
     shareURLs(): NSURL;
-    setShareURLs(): void;
+    setShareURLs(value: NSURL): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchsharemetadataoperation/1640519-shouldfetchrootrecord
-    shouldFetchRootRecord(): BOOL;
-    setShouldFetchRootRecord(): void;
+    shouldFetchRootRecord(): boolean;
+    setShouldFetchRootRecord(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchsharemetadataoperation/1640447-persharemetadatablock
     perShareMetadataBlock(): NSError;
-    setPerShareMetadataBlock(): void;
+    setPerShareMetadataBlock(value: NSError): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchsharemetadataoperation/1640457-fetchsharemetadatacompletionbloc
     fetchShareMetadataCompletionBlock(): NSError;
-    setFetchShareMetadataCompletionBlock(): void;
+    setFetchShareMetadataCompletionBlock(value: NSError): void;
     //
     alloc():CKFetchShareMetadataOperation;
     //
@@ -774,13 +783,16 @@ declare namespace cocoascript {
     initWithUserIdentityLookupInfos(userIdentityLookupInfos: CKUserIdentityLookupInfo):CKFetchShareParticipantsOperation;
     // https://developer.apple.com/documentation/cloudkit/ckfetchshareparticipantsoperation/1640380-useridentitylookupinfos
     userIdentityLookupInfos(): CKUserIdentityLookupInfo;
-    setUserIdentityLookupInfos(): void;
+    setUserIdentityLookupInfos(value: CKUserIdentityLookupInfo): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchshareparticipantsoperation/1640451-shareparticipantfetchedblock
     shareParticipantFetchedBlock(): CKShareParticipant;
-    setShareParticipantFetchedBlock(): void;
+    setShareParticipantFetchedBlock(value: CKShareParticipant): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchshareparticipantsoperation/1640529-fetchshareparticipantscompletion
     fetchShareParticipantsCompletionBlock(): NSError;
-    setFetchShareParticipantsCompletionBlock(): void;
+    setFetchShareParticipantsCompletionBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchshareparticipantsoperation/3793700-pershareparticipantcompletionblo
+    perShareParticipantCompletionBlock(): NSError;
+    setPerShareParticipantCompletionBlock(value: NSError): void;
     //
     alloc():CKFetchShareParticipantsOperation;
     //
@@ -805,16 +817,16 @@ declare namespace cocoascript {
     init():CKOperation;
     // https://developer.apple.com/documentation/cloudkit/ckoperation/1452362-operationid
     operationID(): CKOperationID;
-    setOperationID(): void;
+    setOperationID(value: CKOperationID): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperation/2866213-configuration
     configuration(): CKOperationConfiguration;
-    setConfiguration(): void;
+    setConfiguration(value: CKOperationConfiguration): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperation/2866228-group
     group(): CKOperationGroup;
-    setGroup(): void;
+    setGroup(value: CKOperationGroup): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperation/1452366-longlivedoperationwaspersistedbl
     longLivedOperationWasPersistedBlock(): void;
-    setLongLivedOperationWasPersistedBlock(): void;
+    setLongLivedOperationWasPersistedBlock(value: void): void;
     //
     alloc():CKOperation;
     //
@@ -835,7 +847,7 @@ declare namespace cocoascript {
     initWithCoder(aDecoder: NSCoder):CKLocationSortDescriptor;
     // https://developer.apple.com/documentation/cloudkit/cklocationsortdescriptor/1514915-relativelocation
     relativeLocation(): CLLocation;
-    setRelativeLocation(): void;
+    setRelativeLocation(value: CLLocation): void;
     //
     alloc():CKLocationSortDescriptor;
     //
@@ -856,22 +868,22 @@ declare namespace cocoascript {
     initWithCoder(aDecoder: NSCoder):CKOperationGroup;
     // https://developer.apple.com/documentation/cloudkit/ckoperationgroup/2866240-defaultconfiguration
     defaultConfiguration(): CKOperationConfiguration;
-    setDefaultConfiguration(): void;
+    setDefaultConfiguration(value: CKOperationConfiguration): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperationgroup/2866229-expectedreceivesize
     expectedReceiveSize(): CKOperationGroupTransferSize;
-    setExpectedReceiveSize(): void;
+    setExpectedReceiveSize(value: CKOperationGroupTransferSize): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperationgroup/2866235-expectedsendsize
     expectedSendSize(): CKOperationGroupTransferSize;
-    setExpectedSendSize(): void;
+    setExpectedSendSize(value: CKOperationGroupTransferSize): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperationgroup/2866233-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperationgroup/2866238-operationgroupid
     operationGroupID(): string | cocoascript.NSString;
-    setOperationGroupID(): void;
+    setOperationGroupID(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperationgroup/2866220-quantity
     quantity(): NSUInteger;
-    setQuantity(): void;
+    setQuantity(value: NSUInteger): void;
     //
     alloc():CKOperationGroup;
     //
@@ -890,7 +902,7 @@ declare namespace cocoascript {
     initWithFileURL(fileURL: NSURL):CKAsset;
     // https://developer.apple.com/documentation/cloudkit/ckasset/1515050-fileurl
     fileURL(): NSURL;
-    setFileURL(): void;
+    setFileURL(value: NSURL): void;
     //
     alloc():CKAsset;
     //
@@ -901,7 +913,7 @@ declare namespace cocoascript {
 declare const CKAsset: cocoascript.CKAsset;
 declare namespace cocoascript {
   /**
-   * An encapsulation of content for an app.
+   * A conduit to your app’s databases.
    * https://developer.apple.com/documentation/cloudkit/ckcontainer
    */
   interface CKContainer extends NSObject {
@@ -911,18 +923,18 @@ declare namespace cocoascript {
     containerWithIdentifier(containerIdentifier: string | cocoascript.NSString):CKContainer;
     // https://developer.apple.com/documentation/cloudkit/ckcontainer/1399205-privateclouddatabase
     privateCloudDatabase(): CKDatabase;
-    setPrivateCloudDatabase(): void;
+    setPrivateCloudDatabase(value: CKDatabase): void;
     // https://developer.apple.com/documentation/cloudkit/ckcontainer/1399166-publicclouddatabase
     publicCloudDatabase(): CKDatabase;
-    setPublicCloudDatabase(): void;
+    setPublicCloudDatabase(value: CKDatabase): void;
     // https://developer.apple.com/documentation/cloudkit/ckcontainer/1640408-sharedclouddatabase
     sharedCloudDatabase(): CKDatabase;
-    setSharedCloudDatabase(): void;
+    setSharedCloudDatabase(value: CKDatabase): void;
     // https://developer.apple.com/documentation/cloudkit/ckcontainer/1640475-databasewithdatabasescope
     databaseWithDatabaseScope(databaseScope: CKDatabaseScope):CKDatabase;
     // https://developer.apple.com/documentation/cloudkit/ckcontainer/1399182-containeridentifier
     containerIdentifier(): string | cocoascript.NSString;
-    setContainerIdentifier(): void;
+    setContainerIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/ckcontainer/1399180-accountstatuswithcompletionhandl
     accountStatusWithCompletionHandler(completionHandler: NSError):void;
     // https://developer.apple.com/documentation/cloudkit/ckcontainer/1399174-requestapplicationpermission
@@ -1003,7 +1015,7 @@ declare namespace cocoascript {
     deleteSubscriptionWithID_completionHandler(subscriptionID: CKSubscriptionID, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/cloudkit/ckdatabase/1640398-databasescope
     databaseScope(): CKDatabaseScope;
-    setDatabaseScope(): void;
+    setDatabaseScope(value: CKDatabaseScope): void;
     //
     alloc():CKDatabase;
     //
@@ -1014,7 +1026,7 @@ declare namespace cocoascript {
 declare const CKDatabase: cocoascript.CKDatabase;
 declare namespace cocoascript {
   /**
-   * An operation that fetches all discoverable user identities in the device’s Contacts.
+   * An operation that uses the device’s contacts to search for discoverable iCloud users.
    * https://developer.apple.com/documentation/cloudkit/ckdiscoveralluseridentitiesoperation
    */
   interface CKDiscoverAllUserIdentitiesOperation extends CKOperation {
@@ -1022,10 +1034,10 @@ declare namespace cocoascript {
     init():CKDiscoverAllUserIdentitiesOperation;
     // https://developer.apple.com/documentation/cloudkit/ckdiscoveralluseridentitiesoperation/1640416-useridentitydiscoveredblock
     userIdentityDiscoveredBlock(): CKUserIdentity;
-    setUserIdentityDiscoveredBlock(): void;
+    setUserIdentityDiscoveredBlock(value: CKUserIdentity): void;
     // https://developer.apple.com/documentation/cloudkit/ckdiscoveralluseridentitiesoperation/1640497-discoveralluseridentitiescomplet
     discoverAllUserIdentitiesCompletionBlock(): NSError;
-    setDiscoverAllUserIdentitiesCompletionBlock(): void;
+    setDiscoverAllUserIdentitiesCompletionBlock(value: NSError): void;
     //
     alloc():CKDiscoverAllUserIdentitiesOperation;
     //
@@ -1036,7 +1048,7 @@ declare namespace cocoascript {
 declare const CKDiscoverAllUserIdentitiesOperation: cocoascript.CKDiscoverAllUserIdentitiesOperation;
 declare namespace cocoascript {
   /**
-   * An operation that fetches user identities.
+   * An operation that uses the provided criteria to search for discoverable iCloud users.
    * https://developer.apple.com/documentation/cloudkit/ckdiscoveruseridentitiesoperation
    */
   interface CKDiscoverUserIdentitiesOperation extends CKOperation {
@@ -1046,13 +1058,13 @@ declare namespace cocoascript {
     initWithUserIdentityLookupInfos(userIdentityLookupInfos: CKUserIdentityLookupInfo):CKDiscoverUserIdentitiesOperation;
     // https://developer.apple.com/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640450-useridentitylookupinfos
     userIdentityLookupInfos(): CKUserIdentityLookupInfo;
-    setUserIdentityLookupInfos(): void;
+    setUserIdentityLookupInfos(value: CKUserIdentityLookupInfo): void;
     // https://developer.apple.com/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640524-useridentitydiscoveredblock
     userIdentityDiscoveredBlock(): CKUserIdentityLookupInfo;
-    setUserIdentityDiscoveredBlock(): void;
+    setUserIdentityDiscoveredBlock(value: CKUserIdentityLookupInfo): void;
     // https://developer.apple.com/documentation/cloudkit/ckdiscoveruseridentitiesoperation/1640500-discoveruseridentitiescompletion
     discoverUserIdentitiesCompletionBlock(): NSError;
-    setDiscoverUserIdentitiesCompletionBlock(): void;
+    setDiscoverUserIdentitiesCompletionBlock(value: NSError): void;
     //
     alloc():CKDiscoverUserIdentitiesOperation;
     //
@@ -1063,7 +1075,7 @@ declare namespace cocoascript {
 declare const CKDiscoverUserIdentitiesOperation: cocoascript.CKDiscoverUserIdentitiesOperation;
 declare namespace cocoascript {
   /**
-   * An operation that fetches the web authentication token for an API token.
+   * An operation that creates an authentication token for use with CloudKit web services.
    * https://developer.apple.com/documentation/cloudkit/ckfetchwebauthtokenoperation
    */
   interface CKFetchWebAuthTokenOperation extends CKDatabaseOperation {
@@ -1073,10 +1085,10 @@ declare namespace cocoascript {
     init():CKFetchWebAuthTokenOperation;
     // https://developer.apple.com/documentation/cloudkit/ckfetchwebauthtokenoperation/1515095-apitoken
     APIToken(): string | cocoascript.NSString;
-    setAPIToken(): void;
+    setAPIToken(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchwebauthtokenoperation/1514980-fetchwebauthtokencompletionblock
     fetchWebAuthTokenCompletionBlock(): NSError;
-    setFetchWebAuthTokenCompletionBlock(): void;
+    setFetchWebAuthTokenCompletionBlock(value: NSError): void;
     //
     alloc():CKFetchWebAuthTokenOperation;
     //
@@ -1103,25 +1115,28 @@ declare namespace cocoascript {
     init():CKQueryOperation;
     // https://developer.apple.com/documentation/cloudkit/ckqueryoperation/1515127-query
     query(): CKQuery;
-    setQuery(): void;
+    setQuery(value: CKQuery): void;
     // https://developer.apple.com/documentation/cloudkit/ckqueryoperation/1514975-cursor
     cursor(): CKQueryCursor;
-    setCursor(): void;
+    setCursor(value: CKQueryCursor): void;
     // https://developer.apple.com/documentation/cloudkit/ckqueryoperation/1515269-zoneid
     zoneID(): CKRecordZoneID;
-    setZoneID(): void;
+    setZoneID(value: CKRecordZoneID): void;
     // https://developer.apple.com/documentation/cloudkit/ckqueryoperation/1515078-resultslimit
     resultsLimit(): NSUInteger;
-    setResultsLimit(): void;
+    setResultsLimit(value: NSUInteger): void;
     // https://developer.apple.com/documentation/cloudkit/ckqueryoperation/1515268-desiredkeys
     desiredKeys(): CKRecordFieldKey;
-    setDesiredKeys(): void;
+    setDesiredKeys(value: CKRecordFieldKey): void;
     // https://developer.apple.com/documentation/cloudkit/ckqueryoperation/1515283-recordfetchedblock
     recordFetchedBlock(): CKRecord;
-    setRecordFetchedBlock(): void;
+    setRecordFetchedBlock(value: CKRecord): void;
     // https://developer.apple.com/documentation/cloudkit/ckqueryoperation/1515067-querycompletionblock
     queryCompletionBlock(): NSError;
-    setQueryCompletionBlock(): void;
+    setQueryCompletionBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckqueryoperation/3793708-recordmatchedblock
+    recordMatchedBlock(): NSError;
+    setRecordMatchedBlock(value: NSError): void;
     //
     alloc():CKQueryOperation;
     //
@@ -1140,64 +1155,64 @@ declare namespace cocoascript {
     notificationFromRemoteNotificationDictionary(notificationDictionary: NSDictionary):CKNotification;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428080-notificationid
     notificationID(): CKNotificationID;
-    setNotificationID(): void;
+    setNotificationID(value: CKNotificationID): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428078-notificationtype
     notificationType(): CKNotificationType;
-    setNotificationType(): void;
+    setNotificationType(value: CKNotificationType): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428119-containeridentifier
     containerIdentifier(): string | cocoascript.NSString;
-    setContainerIdentifier(): void;
+    setContainerIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428088-ispruned
-    isPruned(): BOOL;
-    setIsPruned(): void;
+    isPruned(): boolean;
+    setIsPruned(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428084-alertbody
     alertBody(): string | cocoascript.NSString;
-    setAlertBody(): void;
+    setAlertBody(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428095-alertlocalizationkey
     alertLocalizationKey(): string | cocoascript.NSString;
-    setAlertLocalizationKey(): void;
+    setAlertLocalizationKey(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428105-alertlocalizationargs
     alertLocalizationArgs(): string | cocoascript.NSString;
-    setAlertLocalizationArgs(): void;
+    setAlertLocalizationArgs(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428109-alertactionlocalizationkey
     alertActionLocalizationKey(): string | cocoascript.NSString;
-    setAlertActionLocalizationKey(): void;
+    setAlertActionLocalizationKey(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428103-alertlaunchimage
     alertLaunchImage(): string | cocoascript.NSString;
-    setAlertLaunchImage(): void;
+    setAlertLaunchImage(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428077-soundname
     soundName(): string | cocoascript.NSString;
-    setSoundName(): void;
+    setSoundName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428082-badge
     badge(): NSNumber;
-    setBadge(): void;
+    setBadge(value: NSNumber): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428107-category
     category(): string | cocoascript.NSString;
-    setCategory(): void;
+    setCategory(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/1428118-subscriptionid
     subscriptionID(): CKSubscriptionID;
-    setSubscriptionID(): void;
+    setSubscriptionID(value: CKSubscriptionID): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/3577533-subscriptionowneruserrecordid
     subscriptionOwnerUserRecordID(): CKRecordID;
-    setSubscriptionOwnerUserRecordID(): void;
+    setSubscriptionOwnerUserRecordID(value: CKRecordID): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/2868440-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/2868436-titlelocalizationkey
     titleLocalizationKey(): string | cocoascript.NSString;
-    setTitleLocalizationKey(): void;
+    setTitleLocalizationKey(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/2868437-titlelocalizationargs
     titleLocalizationArgs(): string | cocoascript.NSString;
-    setTitleLocalizationArgs(): void;
+    setTitleLocalizationArgs(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/2868435-subtitle
     subtitle(): string | cocoascript.NSString;
-    setSubtitle(): void;
+    setSubtitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/2868438-subtitlelocalizationkey
     subtitleLocalizationKey(): string | cocoascript.NSString;
-    setSubtitleLocalizationKey(): void;
+    setSubtitleLocalizationKey(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/cloudkit/cknotification/2868439-subtitlelocalizationargs
     subtitleLocalizationArgs(): string | cocoascript.NSString;
-    setSubtitleLocalizationArgs(): void;
+    setSubtitleLocalizationArgs(value: string | cocoascript.NSString): void;
     //
     alloc():CKNotification;
     //
@@ -1240,19 +1255,19 @@ declare namespace cocoascript {
     fetchCurrentUserRecordOperation():CKFetchRecordsOperation;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordsoperation/1476076-recordids
     recordIDs(): CKRecordID;
-    setRecordIDs(): void;
+    setRecordIDs(value: CKRecordID): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordsoperation/1476088-desiredkeys
     desiredKeys(): CKRecordFieldKey;
-    setDesiredKeys(): void;
+    setDesiredKeys(value: CKRecordFieldKey): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordsoperation/1476080-perrecordprogressblock
     perRecordProgressBlock(): number;
-    setPerRecordProgressBlock(): void;
+    setPerRecordProgressBlock(value: number): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordsoperation/1476082-perrecordcompletionblock
     perRecordCompletionBlock(): NSError;
-    setPerRecordCompletionBlock(): void;
+    setPerRecordCompletionBlock(value: NSError): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordsoperation/1476078-fetchrecordscompletionblock
     fetchRecordsCompletionBlock(): NSError;
-    setFetchRecordsCompletionBlock(): void;
+    setFetchRecordsCompletionBlock(value: NSError): void;
     //
     alloc():CKFetchRecordsOperation;
     //
@@ -1275,10 +1290,13 @@ declare namespace cocoascript {
     fetchAllRecordZonesOperation():CKFetchRecordZonesOperation;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonesoperation/1515084-recordzoneids
     recordZoneIDs(): CKRecordZoneID;
-    setRecordZoneIDs(): void;
+    setRecordZoneIDs(value: CKRecordZoneID): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonesoperation/1515145-fetchrecordzonescompletionblock
     fetchRecordZonesCompletionBlock(): NSError;
-    setFetchRecordZonesCompletionBlock(): void;
+    setFetchRecordZonesCompletionBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonesoperation/3793699-perrecordzonecompletionblock
+    perRecordZoneCompletionBlock(): NSError;
+    setPerRecordZoneCompletionBlock(value: NSError): void;
     //
     alloc():CKFetchRecordZonesOperation;
     //
@@ -1301,19 +1319,19 @@ declare namespace cocoascript {
     init():CKFetchNotificationChangesOperation;
     // https://developer.apple.com/documentation/cloudkit/ckfetchnotificationchangesoperation/1515139-previousserverchangetoken
     previousServerChangeToken(): CKServerChangeToken;
-    setPreviousServerChangeToken(): void;
+    setPreviousServerChangeToken(value: CKServerChangeToken): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchnotificationchangesoperation/1515275-resultslimit
     resultsLimit(): NSUInteger;
-    setResultsLimit(): void;
+    setResultsLimit(value: NSUInteger): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchnotificationchangesoperation/1515108-morecoming
-    moreComing(): BOOL;
-    setMoreComing(): void;
+    moreComing(): boolean;
+    setMoreComing(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchnotificationchangesoperation/1515253-notificationchangedblock
     notificationChangedBlock(): CKNotification;
-    setNotificationChangedBlock(): void;
+    setNotificationChangedBlock(value: CKNotification): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchnotificationchangesoperation/1515125-fetchnotificationchangescompleti
     fetchNotificationChangesCompletionBlock(): NSError;
-    setFetchNotificationChangesCompletionBlock(): void;
+    setFetchNotificationChangesCompletionBlock(value: NSError): void;
     //
     alloc():CKFetchNotificationChangesOperation;
     //
@@ -1330,16 +1348,16 @@ declare namespace cocoascript {
   interface CKQueryNotification extends CKNotification {
     // https://developer.apple.com/documentation/cloudkit/ckquerynotification/1640449-databasescope
     databaseScope(): CKDatabaseScope;
-    setDatabaseScope(): void;
+    setDatabaseScope(value: CKDatabaseScope): void;
     // https://developer.apple.com/documentation/cloudkit/ckquerynotification/1428123-querynotificationreason
     queryNotificationReason(): CKQueryNotificationReason;
-    setQueryNotificationReason(): void;
+    setQueryNotificationReason(value: CKQueryNotificationReason): void;
     // https://developer.apple.com/documentation/cloudkit/ckquerynotification/1428134-recordid
     recordID(): CKRecordID;
-    setRecordID(): void;
+    setRecordID(value: CKRecordID): void;
     // https://developer.apple.com/documentation/cloudkit/ckquerynotification/1428114-recordfields
     recordFields(): id;
-    setRecordFields(): void;
+    setRecordFields(value: id): void;
     //
     alloc():CKQueryNotification;
     //
@@ -1356,10 +1374,10 @@ declare namespace cocoascript {
   interface CKRecordZoneNotification extends CKNotification {
     // https://developer.apple.com/documentation/cloudkit/ckrecordzonenotification/1428086-recordzoneid
     recordZoneID(): CKRecordZoneID;
-    setRecordZoneID(): void;
+    setRecordZoneID(value: CKRecordZoneID): void;
     // https://developer.apple.com/documentation/cloudkit/ckrecordzonenotification/1640394-databasescope
     databaseScope(): CKDatabaseScope;
-    setDatabaseScope(): void;
+    setDatabaseScope(value: CKDatabaseScope): void;
     //
     alloc():CKRecordZoneNotification;
     //
@@ -1380,13 +1398,19 @@ declare namespace cocoascript {
     init():CKModifySubscriptionsOperation;
     // https://developer.apple.com/documentation/cloudkit/ckmodifysubscriptionsoperation/1515135-subscriptionstosave
     subscriptionsToSave(): CKSubscription;
-    setSubscriptionsToSave(): void;
+    setSubscriptionsToSave(value: CKSubscription): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifysubscriptionsoperation/1514892-subscriptionidstodelete
     subscriptionIDsToDelete(): CKSubscriptionID;
-    setSubscriptionIDsToDelete(): void;
+    setSubscriptionIDsToDelete(value: CKSubscriptionID): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifysubscriptionsoperation/1515288-modifysubscriptionscompletionblo
     modifySubscriptionsCompletionBlock(): NSError;
-    setModifySubscriptionsCompletionBlock(): void;
+    setModifySubscriptionsCompletionBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckmodifysubscriptionsoperation/3793706-persubscriptiondeleteblock
+    perSubscriptionDeleteBlock(): NSError;
+    setPerSubscriptionDeleteBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckmodifysubscriptionsoperation/3793707-persubscriptionsaveblock
+    perSubscriptionSaveBlock(): NSError;
+    setPerSubscriptionSaveBlock(value: NSError): void;
     //
     alloc():CKModifySubscriptionsOperation;
     //
@@ -1411,7 +1435,7 @@ declare namespace cocoascript {
   interface CKDatabaseOperation extends CKOperation {
     // https://developer.apple.com/documentation/cloudkit/ckdatabaseoperation/1515274-database
     database(): CKDatabase;
-    setDatabase(): void;
+    setDatabase(value: CKDatabase): void;
     //
     alloc():CKDatabaseOperation;
     //
@@ -1432,13 +1456,19 @@ declare namespace cocoascript {
     init():CKModifyRecordZonesOperation;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordzonesoperation/1415171-recordzonestosave
     recordZonesToSave(): CKRecordZone;
-    setRecordZonesToSave(): void;
+    setRecordZonesToSave(value: CKRecordZone): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordzonesoperation/1415173-recordzoneidstodelete
     recordZoneIDsToDelete(): CKRecordZoneID;
-    setRecordZoneIDsToDelete(): void;
+    setRecordZoneIDsToDelete(value: CKRecordZoneID): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordzonesoperation/1415164-modifyrecordzonescompletionblock
     modifyRecordZonesCompletionBlock(): NSError;
-    setModifyRecordZonesCompletionBlock(): void;
+    setModifyRecordZonesCompletionBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordzonesoperation/3793702-perrecordzonedeleteblock
+    perRecordZoneDeleteBlock(): NSError;
+    setPerRecordZoneDeleteBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckmodifyrecordzonesoperation/3793703-perrecordzonesaveblock
+    perRecordZoneSaveBlock(): NSError;
+    setPerRecordZoneSaveBlock(value: NSError): void;
     //
     alloc():CKModifyRecordZonesOperation;
     //
@@ -1462,29 +1492,32 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation/2715838-init
     init():CKFetchDatabaseChangesOperation;
     // https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation/1640473-fetchallchanges
-    fetchAllChanges(): BOOL;
-    setFetchAllChanges(): void;
+    fetchAllChanges(): boolean;
+    setFetchAllChanges(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation/1640522-previousserverchangetoken
     previousServerChangeToken(): CKServerChangeToken;
-    setPreviousServerChangeToken(): void;
+    setPreviousServerChangeToken(value: CKServerChangeToken): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation/1640520-resultslimit
     resultsLimit(): NSUInteger;
-    setResultsLimit(): void;
+    setResultsLimit(value: NSUInteger): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation/1640391-recordzonewithidchangedblock
     recordZoneWithIDChangedBlock(): CKRecordZoneID;
-    setRecordZoneWithIDChangedBlock(): void;
+    setRecordZoneWithIDChangedBlock(value: CKRecordZoneID): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation/1640428-recordzonewithidwasdeletedblock
     recordZoneWithIDWasDeletedBlock(): CKRecordZoneID;
-    setRecordZoneWithIDWasDeletedBlock(): void;
+    setRecordZoneWithIDWasDeletedBlock(value: CKRecordZoneID): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation/3746820-recordzonewithidwasdeletedduetou
+    recordZoneWithIDWasDeletedDueToUserEncryptedDataResetBlock(): CKRecordZoneID;
+    setRecordZoneWithIDWasDeletedDueToUserEncryptedDataResetBlock(value: CKRecordZoneID): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation/2866207-recordzonewithidwaspurgedblock
     recordZoneWithIDWasPurgedBlock(): CKRecordZoneID;
-    setRecordZoneWithIDWasPurgedBlock(): void;
+    setRecordZoneWithIDWasPurgedBlock(value: CKRecordZoneID): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation/1640467-changetokenupdatedblock
     changeTokenUpdatedBlock(): CKServerChangeToken;
-    setChangeTokenUpdatedBlock(): void;
+    setChangeTokenUpdatedBlock(value: CKServerChangeToken): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation/1640434-fetchdatabasechangescompletionbl
     fetchDatabaseChangesCompletionBlock(): NSError;
-    setFetchDatabaseChangesCompletionBlock(): void;
+    setFetchDatabaseChangesCompletionBlock(value: NSError): void;
     //
     alloc():CKFetchDatabaseChangesOperation;
     //
@@ -1505,28 +1538,31 @@ declare namespace cocoascript {
     init():CKFetchRecordZoneChangesOperation;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation/2980664-configurationsbyrecordzoneid
     configurationsByRecordZoneID(): CKFetchRecordZoneChangesConfiguration;
-    setConfigurationsByRecordZoneID(): void;
+    setConfigurationsByRecordZoneID(value: CKFetchRecordZoneChangesConfiguration): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640386-fetchallchanges
-    fetchAllChanges(): BOOL;
-    setFetchAllChanges(): void;
+    fetchAllChanges(): boolean;
+    setFetchAllChanges(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640463-recordzoneids
     recordZoneIDs(): CKRecordZoneID;
-    setRecordZoneIDs(): void;
+    setRecordZoneIDs(value: CKRecordZoneID): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640417-recordchangedblock
     recordChangedBlock(): CKRecord;
-    setRecordChangedBlock(): void;
+    setRecordChangedBlock(value: CKRecord): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640470-recordwithidwasdeletedblock
     recordWithIDWasDeletedBlock(): CKRecordType;
-    setRecordWithIDWasDeletedBlock(): void;
+    setRecordWithIDWasDeletedBlock(value: CKRecordType): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640422-recordzonechangetokensupdatedblo
     recordZoneChangeTokensUpdatedBlock(): NSData;
-    setRecordZoneChangeTokensUpdatedBlock(): void;
+    setRecordZoneChangeTokensUpdatedBlock(value: NSData): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640411-recordzonefetchcompletionblock
     recordZoneFetchCompletionBlock(): NSError;
-    setRecordZoneFetchCompletionBlock(): void;
+    setRecordZoneFetchCompletionBlock(value: NSError): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation/1640409-fetchrecordzonechangescompletion
     fetchRecordZoneChangesCompletionBlock(): NSError;
-    setFetchRecordZoneChangesCompletionBlock(): void;
+    setFetchRecordZoneChangesCompletionBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordzonechangesoperation/3793698-recordwaschangedblock
+    recordWasChangedBlock(): NSError;
+    setRecordWasChangedBlock(value: NSError): void;
     //
     alloc():CKFetchRecordZoneChangesOperation;
     //
@@ -1551,7 +1587,7 @@ declare namespace cocoascript {
   interface CKDatabaseNotification extends CKNotification {
     // https://developer.apple.com/documentation/cloudkit/ckdatabasenotification/1640510-databasescope
     databaseScope(): CKDatabaseScope;
-    setDatabaseScope(): void;
+    setDatabaseScope(value: CKDatabaseScope): void;
     //
     alloc():CKDatabaseNotification;
     //
@@ -1569,6 +1605,10 @@ declare namespace cocoascript {
   type CKShareParticipantPermission = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/cloudkit/ckshareparticipantrole
+  type CKShareParticipantRole = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
   // https://developer.apple.com/documentation/cloudkit/ckrecordsavepolicy
   type CKRecordSavePolicy = cocoascript.NSInteger;
 }
@@ -1583,23 +1623,23 @@ declare namespace cocoascript {
    */
   interface CKOperationConfiguration extends NSObject {
     // https://developer.apple.com/documentation/cloudkit/ckoperationconfiguration/2866217-allowscellularaccess
-    allowsCellularAccess(): BOOL;
-    setAllowsCellularAccess(): void;
+    allowsCellularAccess(): boolean;
+    setAllowsCellularAccess(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperationconfiguration/2866232-container
     container(): CKContainer;
-    setContainer(): void;
+    setContainer(value: CKContainer): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperationconfiguration/2866225-longlived
-    longLived(): BOOL;
-    setLongLived(): void;
+    longLived(): boolean;
+    setLongLived(value: boolean): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperationconfiguration/2866201-qualityofservice
     qualityOfService(): NSQualityOfService;
-    setQualityOfService(): void;
+    setQualityOfService(value: NSQualityOfService): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperationconfiguration/2866210-timeoutintervalforrequest
     timeoutIntervalForRequest(): NSTimeInterval;
-    setTimeoutIntervalForRequest(): void;
+    setTimeoutIntervalForRequest(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/cloudkit/ckoperationconfiguration/2866221-timeoutintervalforresource
     timeoutIntervalForResource(): NSTimeInterval;
-    setTimeoutIntervalForResource(): void;
+    setTimeoutIntervalForResource(value: NSTimeInterval): void;
     //
     alloc():CKOperationConfiguration;
     //
@@ -1622,10 +1662,13 @@ declare namespace cocoascript {
     fetchAllSubscriptionsOperation():CKFetchSubscriptionsOperation;
     // https://developer.apple.com/documentation/cloudkit/ckfetchsubscriptionsoperation/1515011-subscriptionids
     subscriptionIDs(): CKSubscriptionID;
-    setSubscriptionIDs(): void;
+    setSubscriptionIDs(value: CKSubscriptionID): void;
     // https://developer.apple.com/documentation/cloudkit/ckfetchsubscriptionsoperation/1515261-fetchsubscriptioncompletionblock
     fetchSubscriptionCompletionBlock(): NSError;
-    setFetchSubscriptionCompletionBlock(): void;
+    setFetchSubscriptionCompletionBlock(value: NSError): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchsubscriptionsoperation/3793701-persubscriptioncompletionblock
+    perSubscriptionCompletionBlock(): NSError;
+    setPerSubscriptionCompletionBlock(value: NSError): void;
     //
     alloc():CKFetchSubscriptionsOperation;
     //
@@ -1659,13 +1702,47 @@ declare namespace cocoascript {
   type CKDatabaseScope = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
-  // https://developer.apple.com/documentation/cloudkit/NULL
-  type CKShareParticipantRole = cocoascript.NSInteger;
+  /**
+   * An operation that reports on the changed and deleted records in the specified record zone.
+   * https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation
+   */
+  interface CKFetchRecordChangesOperation extends CKDatabaseOperation {
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515224-initwithrecordzoneid
+    initWithRecordZoneID_previousServerChangeToken(recordZoneID: CKRecordZoneID, previousServerChangeToken: CKServerChangeToken):CKFetchRecordChangesOperation;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/2715828-init
+    init():CKFetchRecordChangesOperation;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515018-recordzoneid
+    recordZoneID(): CKRecordZoneID;
+    setRecordZoneID(value: CKRecordZoneID): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515209-previousserverchangetoken
+    previousServerChangeToken(): CKServerChangeToken;
+    setPreviousServerChangeToken(value: CKServerChangeToken): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515230-desiredkeys
+    desiredKeys(): CKRecordFieldKey;
+    setDesiredKeys(value: CKRecordFieldKey): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1514891-resultslimit
+    resultsLimit(): NSUInteger;
+    setResultsLimit(value: NSUInteger): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515322-morecoming
+    moreComing(): boolean;
+    setMoreComing(value: boolean): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515155-recordchangedblock
+    recordChangedBlock(): CKRecord;
+    setRecordChangedBlock(value: CKRecord): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515054-recordwithidwasdeletedblock
+    recordWithIDWasDeletedBlock(): CKRecordID;
+    setRecordWithIDWasDeletedBlock(value: CKRecordID): void;
+    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515267-fetchrecordchangescompletionbloc
+    fetchRecordChangesCompletionBlock(): NSError;
+    setFetchRecordChangesCompletionBlock(value: NSError): void;
+    //
+    alloc():CKFetchRecordChangesOperation;
+    //
+    init():CKFetchRecordChangesOperation;
+  }
 }
-declare namespace cocoascript {
-  // https://developer.apple.com/documentation/cloudkit/ckshareparticipanttype
-  type CKShareParticipantType = cocoascript.NSInteger;
-}
+
+declare const CKFetchRecordChangesOperation: cocoascript.CKFetchRecordChangesOperation;
 declare namespace cocoascript {
   /**
    * An operation that marks push notifications as read by your app.
@@ -1678,10 +1755,10 @@ declare namespace cocoascript {
     init():CKMarkNotificationsReadOperation;
     // https://developer.apple.com/documentation/cloudkit/ckmarknotificationsreadoperation/1515056-notificationids
     notificationIDs(): CKNotificationID;
-    setNotificationIDs(): void;
+    setNotificationIDs(value: CKNotificationID): void;
     // https://developer.apple.com/documentation/cloudkit/ckmarknotificationsreadoperation/1515317-marknotificationsreadcompletionb
     markNotificationsReadCompletionBlock(): NSError;
-    setMarkNotificationsReadCompletionBlock(): void;
+    setMarkNotificationsReadCompletionBlock(value: NSError): void;
     //
     alloc():CKMarkNotificationsReadOperation;
     //
@@ -1690,48 +1767,6 @@ declare namespace cocoascript {
 }
 
 declare const CKMarkNotificationsReadOperation: cocoascript.CKMarkNotificationsReadOperation;
-declare namespace cocoascript {
-  /**
-   * An operation that reports on the changed and deleted records in the specified record zone.
-   * https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation
-   */
-  interface CKFetchRecordChangesOperation extends CKDatabaseOperation {
-    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515224-initwithrecordzoneid
-    initWithRecordZoneID_previousServerChangeToken(recordZoneID: CKRecordZoneID, previousServerChangeToken: CKServerChangeToken):CKFetchRecordChangesOperation;
-    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/2715828-init
-    init():CKFetchRecordChangesOperation;
-    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515018-recordzoneid
-    recordZoneID(): CKRecordZoneID;
-    setRecordZoneID(): void;
-    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515209-previousserverchangetoken
-    previousServerChangeToken(): CKServerChangeToken;
-    setPreviousServerChangeToken(): void;
-    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515230-desiredkeys
-    desiredKeys(): CKRecordFieldKey;
-    setDesiredKeys(): void;
-    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1514891-resultslimit
-    resultsLimit(): NSUInteger;
-    setResultsLimit(): void;
-    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515322-morecoming
-    moreComing(): BOOL;
-    setMoreComing(): void;
-    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515155-recordchangedblock
-    recordChangedBlock(): CKRecord;
-    setRecordChangedBlock(): void;
-    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515054-recordwithidwasdeletedblock
-    recordWithIDWasDeletedBlock(): CKRecordID;
-    setRecordWithIDWasDeletedBlock(): void;
-    // https://developer.apple.com/documentation/cloudkit/ckfetchrecordchangesoperation/1515267-fetchrecordchangescompletionbloc
-    fetchRecordChangesCompletionBlock(): NSError;
-    setFetchRecordChangesCompletionBlock(): void;
-    //
-    alloc():CKFetchRecordChangesOperation;
-    //
-    init():CKFetchRecordChangesOperation;
-  }
-}
-
-declare const CKFetchRecordChangesOperation: cocoascript.CKFetchRecordChangesOperation;
 declare namespace cocoascript {
   /**
    * An operation that sets the value of the app icon’s badge.
@@ -1744,10 +1779,10 @@ declare namespace cocoascript {
     initWithBadgeValue(badgeValue: NSUInteger):CKModifyBadgeOperation;
     // https://developer.apple.com/documentation/cloudkit/ckmodifybadgeoperation/1391674-badgevalue
     badgeValue(): NSUInteger;
-    setBadgeValue(): void;
+    setBadgeValue(value: NSUInteger): void;
     // https://developer.apple.com/documentation/cloudkit/ckmodifybadgeoperation/1391682-modifybadgecompletionblock
     modifyBadgeCompletionBlock(): NSError;
-    setModifyBadgeCompletionBlock(): void;
+    setModifyBadgeCompletionBlock(value: NSError): void;
     //
     alloc():CKModifyBadgeOperation;
     //
@@ -1756,6 +1791,10 @@ declare namespace cocoascript {
 }
 
 declare const CKModifyBadgeOperation: cocoascript.CKModifyBadgeOperation;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/cloudkit/ckshareparticipanttype
+  type CKShareParticipantType = cocoascript.NSInteger;
+}
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/cloudkit/ckquerynotificationreason
   type CKQueryNotificationReason = cocoascript.NSInteger;

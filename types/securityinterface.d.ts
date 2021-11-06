@@ -9,19 +9,19 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1411021-setauthorizationrights
     setAuthorizationRights(authorizationRights: AuthorizationRights):void;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1411004-setautoupdate
-    setAutoupdate(autoupdate: BOOL):void;
+    setAutoupdate(autoupdate: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1411030-setautoupdate
-    setAutoupdate_interval(autoupdate: BOOL, interval: NSTimeInterval):void;
+    setAutoupdate_interval(autoupdate: boolean, interval: NSTimeInterval):void;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1410998-setflags
     setFlags(flags: AuthorizationFlags):void;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1411000-setenabled
-    setEnabled(enabled: BOOL):void;
+    setEnabled(enabled: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1410994-setdelegate
     setDelegate(delegate: SFAuthorizationView):void;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1410996-delegate
     delegate():SFAuthorizationView;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1411015-updatestatus
-    updateStatus(inSender: SFAuthorizationView):BOOL;
+    updateStatus(inSender: SFAuthorizationView):boolean;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1411032-authorization
     authorization():SFAuthorization;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1410995-authorizationrights
@@ -29,13 +29,13 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1411023-authorizationstate
     authorizationState():SFAuthorizationViewState;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1411028-isenabled
-    isEnabled():BOOL;
+    isEnabled():boolean;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1411027-authorize
-    authorize(inSender: SFAuthorizationView):BOOL;
+    authorize(inSender: SFAuthorizationView):boolean;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationview/1411025-deauthorize
-    deauthorize(inSender: SFAuthorizationView):BOOL;
+    deauthorize(inSender: SFAuthorizationView):boolean;
     // https://developer.apple.com/documentation/objectivec/nsobject/1411006-authorizationviewshoulddeauthori
-    authorizationViewShouldDeauthorize(view: SFAuthorizationView):BOOL;
+    authorizationViewShouldDeauthorize(view: SFAuthorizationView):boolean;
     // https://developer.apple.com/documentation/objectivec/nsobject/1411010-authorizationviewcreatedauthoriz
     authorizationViewCreatedAuthorization(view: SFAuthorizationView):void;
     // https://developer.apple.com/documentation/objectivec/nsobject/1411002-authorizationviewdidauthorize
@@ -65,11 +65,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543234-sethelpanchor
     setHelpAnchor(anchor: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543223-setshowshelp
-    setShowsHelp(showsHelp: BOOL):void;
+    setShowsHelp(showsHelp: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543225-helpanchor
     helpAnchor():NSString;
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543231-showshelp
-    showsHelp():BOOL;
+    showsHelp():boolean;
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543227-setalternatebuttontitle
     setAlternateButtonTitle(title: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543242-setdefaultbuttontitle
@@ -79,17 +79,17 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543232-policies
     policies():NSArray;
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543229-beginsheetforwindow
-    beginSheetForWindow_modalDelegate_didEndSelector_contextInfo_certificates_showGroup(docWindow: NSWindow, delegate: SFCertificatePanel, didEndSelector: SEL, contextInfo: void, certificates: NSArray, showGroup: BOOL):void;
+    beginSheetForWindow_modalDelegate_didEndSelector_contextInfo_certificates_showGroup(docWindow: NSWindow, delegate: SFCertificatePanel, didEndSelector: SEL, contextInfo: void, certificates: NSArray, showGroup: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543228-beginsheetforwindow
-    beginSheetForWindow_modalDelegate_didEndSelector_contextInfo_trust_showGroup(docWindow: NSWindow, delegate: SFCertificatePanel, didEndSelector: SEL, contextInfo: void, trust: SecTrustRef, showGroup: BOOL):void;
+    beginSheetForWindow_modalDelegate_didEndSelector_contextInfo_trust_showGroup(docWindow: NSWindow, delegate: SFCertificatePanel, didEndSelector: SEL, contextInfo: void, trust: SecTrustRef, showGroup: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543244-certificateview
     certificateView():SFCertificateView;
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543240-runmodalforcertificates
-    runModalForCertificates_showGroup(certificates: NSArray, showGroup: BOOL):NSInteger;
+    runModalForCertificates_showGroup(certificates: NSArray, showGroup: boolean):NSInteger;
     // https://developer.apple.com/documentation/securityinterface/sfcertificatepanel/1543238-runmodalfortrust
-    runModalForTrust_showGroup(trust: SecTrustRef, showGroup: BOOL):NSInteger;
+    runModalForTrust_showGroup(trust: SecTrustRef, showGroup: boolean):NSInteger;
     // https://developer.apple.com/documentation/objectivec/nsobject/1514145-certificatepanelshowhelp
-    certificatePanelShowHelp(sender: SFCertificatePanel):BOOL;
+    certificatePanelShowHelp(sender: SFCertificatePanel):boolean;
     //
     alloc():SFCertificatePanel;
     //
@@ -109,11 +109,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/securityinterface/sfchooseidentitypanel/1556990-sethelpanchor
     setHelpAnchor(anchor: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/securityinterface/sfchooseidentitypanel/1556992-setshowshelp
-    setShowsHelp(showsHelp: BOOL):void;
+    setShowsHelp(showsHelp: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfchooseidentitypanel/1556996-helpanchor
     helpAnchor():NSString;
     // https://developer.apple.com/documentation/securityinterface/sfchooseidentitypanel/1556997-showshelp
-    showsHelp():BOOL;
+    showsHelp():boolean;
     // https://developer.apple.com/documentation/securityinterface/sfchooseidentitypanel/1556993-setalternatebuttontitle
     setAlternateButtonTitle(title: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/securityinterface/sfchooseidentitypanel/1556989-setdefaultbuttontitle
@@ -137,7 +137,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/securityinterface/sfchooseidentitypanel/1556988-setdomain
     setDomain(domainString: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/objectivec/nsobject/1514140-chooseidentitypanelshowhelp
-    chooseIdentityPanelShowHelp(sender: SFChooseIdentityPanel):BOOL;
+    chooseIdentityPanelShowHelp(sender: SFChooseIdentityPanel):boolean;
     //
     alloc():SFChooseIdentityPanel;
     //
@@ -177,11 +177,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationpluginview/1524413-lastkeyview
     lastKeyView():NSView;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationpluginview/1524404-setenabled
-    setEnabled(inEnabled: BOOL):void;
+    setEnabled(inEnabled: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationpluginview/1514136-displayview
     displayView():void;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationpluginview/1514134-setbutton
-    setButton_enabled(inButtonType: SFButtonType, inEnabled: BOOL):void;
+    setButton_enabled(inButtonType: SFButtonType, inEnabled: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfauthorizationpluginview/1514132-updateview
     updateView():void;
     //
@@ -225,31 +225,31 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588429-setcertificate
     setCertificate(certificate: SecCertificateRef):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588428-setdetailsdisclosed
-    setDetailsDisclosed(disclosed: BOOL):void;
+    setDetailsDisclosed(disclosed: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588420-setdisplaydetails
-    setDisplayDetails(display: BOOL):void;
+    setDisplayDetails(display: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588433-setdisplaytrust
-    setDisplayTrust(display: BOOL):void;
+    setDisplayTrust(display: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588427-seteditabletrust
-    setEditableTrust(editable: BOOL):void;
+    setEditableTrust(editable: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588423-setpolicies
     setPolicies(policies: SFCertificateView):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588434-setpoliciesdisclosed
-    setPoliciesDisclosed(disclosed: BOOL):void;
+    setPoliciesDisclosed(disclosed: boolean):void;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588426-certificate
     certificate():SecCertificateRef;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588422-detailsdisplayed
-    detailsDisplayed():BOOL;
+    detailsDisplayed():boolean;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588431-detailsdisclosed
-    detailsDisclosed():BOOL;
+    detailsDisclosed():boolean;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588425-istrustdisplayed
-    isTrustDisplayed():BOOL;
+    isTrustDisplayed():boolean;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588421-iseditable
-    isEditable():BOOL;
+    isEditable():boolean;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588432-policies
     policies():NSArray;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588418-policiesdisclosed
-    policiesDisclosed():BOOL;
+    policiesDisclosed():boolean;
     // https://developer.apple.com/documentation/securityinterface/sfcertificateview/1588424-savetrustsettings
     saveTrustSettings():void;
     //
@@ -267,7 +267,7 @@ declare namespace cocoascript {
   interface SFChooseIdentityTableCellView extends NSTableCellView {
     // https://developer.apple.com/documentation/securityinterface/sfchooseidentitytablecellview/2880435-issuertextfield
     issuerTextField(): NSTextField;
-    setIssuerTextField(): void;
+    setIssuerTextField(value: NSTextField): void;
     //
     alloc():SFChooseIdentityTableCellView;
     //

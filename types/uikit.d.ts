@@ -23,14 +23,14 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitooltipinteraction/3795601-initwithdefaulttooltip
     initWithDefaultToolTip(defaultToolTip: string | cocoascript.NSString):UIToolTipInteraction;
     // https://developer.apple.com/documentation/uikit/uitooltipinteraction/3795599-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitooltipinteraction/3795597-defaulttooltip
     defaultToolTip(): string | cocoascript.NSString;
-    setDefaultToolTip(): void;
+    setDefaultToolTip(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitooltipinteraction/3795598-delegate
     delegate(): UIToolTipInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIToolTipInteractionDelegate): void;
     //
     alloc():UIToolTipInteraction;
     //
@@ -57,56 +57,56 @@ declare namespace cocoascript {
   interface UIDevice extends NSObject {
     // https://developer.apple.com/documentation/uikit/uidevice/1620014-currentdevice
     currentDevice(): UIDevice;
-    setCurrentDevice(): void;
+    setCurrentDevice(value: UIDevice): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620036-multitaskingsupported
-    multitaskingSupported(): BOOL;
-    setMultitaskingSupported(): void;
+    multitaskingSupported(): boolean;
+    setMultitaskingSupported(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620015-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620054-systemname
     systemName(): string | cocoascript.NSString;
-    setSystemName(): void;
+    setSystemName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620043-systemversion
     systemVersion(): string | cocoascript.NSString;
-    setSystemVersion(): void;
+    setSystemVersion(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620044-model
     model(): string | cocoascript.NSString;
-    setModel(): void;
+    setModel(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620029-localizedmodel
     localizedModel(): string | cocoascript.NSString;
-    setLocalizedModel(): void;
+    setLocalizedModel(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620037-userinterfaceidiom
     userInterfaceIdiom(): UIUserInterfaceIdiom;
-    setUserInterfaceIdiom(): void;
+    setUserInterfaceIdiom(value: UIUserInterfaceIdiom): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor
     identifierForVendor(): NSUUID;
-    setIdentifierForVendor(): void;
+    setIdentifierForVendor(value: NSUUID): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620053-orientation
     orientation(): UIDeviceOrientation;
-    setOrientation(): void;
+    setOrientation(value: UIDeviceOrientation): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620055-generatesdeviceorientationnotifi
-    generatesDeviceOrientationNotifications(): BOOL;
-    setGeneratesDeviceOrientationNotifications(): void;
+    generatesDeviceOrientationNotifications(): boolean;
+    setGeneratesDeviceOrientationNotifications(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620041-begingeneratingdeviceorientation
     beginGeneratingDeviceOrientationNotifications():void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620033-endgeneratingdeviceorientationno
     endGeneratingDeviceOrientationNotifications():void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620042-batterylevel
     batteryLevel(): number;
-    setBatteryLevel(): void;
+    setBatteryLevel(value: number): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620045-batterymonitoringenabled
-    batteryMonitoringEnabled(): BOOL;
-    setBatteryMonitoringEnabled(): void;
+    batteryMonitoringEnabled(): boolean;
+    setBatteryMonitoringEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620051-batterystate
     batteryState(): UIDeviceBatteryState;
-    setBatteryState(): void;
+    setBatteryState(value: UIDeviceBatteryState): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620017-proximitymonitoringenabled
-    proximityMonitoringEnabled(): BOOL;
-    setProximityMonitoringEnabled(): void;
+    proximityMonitoringEnabled(): boolean;
+    setProximityMonitoringEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620058-proximitystate
-    proximityState(): BOOL;
-    setProximityState(): void;
+    proximityState(): boolean;
+    setProximityState(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidevice/1620050-playinputclick
     playInputClick():void;
     //
@@ -131,13 +131,13 @@ declare namespace cocoascript {
     initWithName_bundle(name: NSDataAssetName, bundle: NSBundle):NSDataAsset;
     // https://developer.apple.com/documentation/uikit/nsdataasset/1403437-data
     data(): NSData;
-    setData(): void;
+    setData(value: NSData): void;
     // https://developer.apple.com/documentation/uikit/nsdataasset/1403435-name
     name(): NSDataAssetName;
-    setName(): void;
+    setName(value: NSDataAssetName): void;
     // https://developer.apple.com/documentation/uikit/nsdataasset/1403434-typeidentifier
     typeIdentifier(): string | cocoascript.NSString;
-    setTypeIdentifier(): void;
+    setTypeIdentifier(value: string | cocoascript.NSString): void;
     //
     alloc():NSDataAsset;
     //
@@ -157,48 +157,48 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526954-constraintwithitem
     constraintWithItem_attribute_relatedBy_toItem_attribute_multiplier_constant(view1: NSLayoutConstraint, attr1: NSLayoutAttribute, relation: NSLayoutRelation, view2: NSLayoutConstraint, attr2: NSLayoutAttribute, multiplier: CGFloat, c: CGFloat):NSLayoutConstraint;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1527000-active
-    active(): BOOL;
-    setActive(): void;
+    active(): boolean;
+    setActive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526955-activateconstraints
     activateConstraints(constraints: NSLayoutConstraint):void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526066-deactivateconstraints
     deactivateConstraints(constraints: NSLayoutConstraint):void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526860-firstitem
     firstItem(): id;
-    setFirstItem(): void;
+    setFirstItem(value: id): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1525204-firstattribute
     firstAttribute(): NSLayoutAttribute;
-    setFirstAttribute(): void;
+    setFirstAttribute(value: NSLayoutAttribute): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526549-relation
     relation(): NSLayoutRelation;
-    setRelation(): void;
+    setRelation(value: NSLayoutRelation): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526868-seconditem
     secondItem(): id;
-    setSecondItem(): void;
+    setSecondItem(value: id): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526941-secondattribute
     secondAttribute(): NSLayoutAttribute;
-    setSecondAttribute(): void;
+    setSecondAttribute(value: NSLayoutAttribute): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526920-multiplier
     multiplier(): CGFloat;
-    setMultiplier(): void;
+    setMultiplier(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526928-constant
     constant(): CGFloat;
-    setConstant(): void;
+    setConstant(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1644261-firstanchor
     firstAnchor(): NSLayoutAnchor;
-    setFirstAnchor(): void;
+    setFirstAnchor(value: NSLayoutAnchor): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1644260-secondanchor
     secondAnchor(): NSLayoutAnchor;
-    setSecondAnchor(): void;
+    setSecondAnchor(value: NSLayoutAnchor): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526946-priority
     priority(): UILayoutPriority;
-    setPriority(): void;
+    setPriority(value: UILayoutPriority): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1526879-identifier
     identifier(): string | cocoascript.NSString;
-    setIdentifier(): void;
+    setIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/nslayoutconstraint/1525647-shouldbearchived
-    shouldBeArchived(): BOOL;
-    setShouldBeArchived(): void;
+    shouldBeArchived(): boolean;
+    setShouldBeArchived(value: boolean): void;
     //
     alloc():NSLayoutConstraint;
     //
@@ -259,16 +259,16 @@ declare namespace cocoascript {
     constraintLessThanOrEqualToAnchor_constant(anchor: AnchorType, c: CGFloat):NSLayoutConstraint;
     // https://developer.apple.com/documentation/appkit/nslayoutanchor/2870023-constraintsaffectinglayout
     constraintsAffectingLayout(): NSLayoutConstraint;
-    setConstraintsAffectingLayout(): void;
+    setConstraintsAffectingLayout(value: NSLayoutConstraint): void;
     // https://developer.apple.com/documentation/appkit/nslayoutanchor/2870024-hasambiguouslayout
-    hasAmbiguousLayout(): BOOL;
-    setHasAmbiguousLayout(): void;
+    hasAmbiguousLayout(): boolean;
+    setHasAmbiguousLayout(value: boolean): void;
     // https://developer.apple.com/documentation/appkit/nslayoutanchor/2870022-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/appkit/nslayoutanchor/2870025-item
     item(): id;
-    setItem(): void;
+    setItem(value: id): void;
     //
     alloc():NSLayoutAnchor;
     //
@@ -329,19 +329,19 @@ declare namespace cocoascript {
   interface NSStringDrawingContext extends NSObject {
     // https://developer.apple.com/documentation/uikit/nsstringdrawingcontext/1534020-minimumscalefactor
     minimumScaleFactor(): CGFloat;
-    setMinimumScaleFactor(): void;
+    setMinimumScaleFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsstringdrawingcontext/1531498-actualscalefactor
     actualScaleFactor(): CGFloat;
-    setActualScaleFactor(): void;
+    setActualScaleFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsstringdrawingcontext/1530525-totalbounds
     totalBounds(): CGRect;
-    setTotalBounds(): void;
+    setTotalBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nsstringdrawingcontext/1624043-minimumtrackingadjustment
     minimumTrackingAdjustment(): CGFloat;
-    setMinimumTrackingAdjustment(): void;
+    setMinimumTrackingAdjustment(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsstringdrawingcontext/1624042-actualtrackingadjustment
     actualTrackingAdjustment(): CGFloat;
-    setActualTrackingAdjustment(): void;
+    setActualTrackingAdjustment(value: CGFloat): void;
     //
     alloc():NSStringDrawingContext;
     //
@@ -366,13 +366,13 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):NSShadow;
     // https://developer.apple.com/documentation/uikit/nsshadow/1429851-shadowoffset
     shadowOffset(): CGSize;
-    setShadowOffset(): void;
+    setShadowOffset(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/nsshadow/1429846-shadowblurradius
     shadowBlurRadius(): CGFloat;
-    setShadowBlurRadius(): void;
+    setShadowBlurRadius(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsshadow/1429855-shadowcolor
     shadowColor(): id;
-    setShadowColor(): void;
+    setShadowColor(value: id): void;
     // https://developer.apple.com/documentation/appkit/nsshadow/1429857-set
     set():void;
     //
@@ -391,16 +391,16 @@ declare namespace cocoascript {
   interface NSTextContentStorage extends NSTextContentManager {
     // https://developer.apple.com/documentation/uikit/nstextcontentstorage/3809934-attributedstring
     attributedString(): NSAttributedString;
-    setAttributedString(): void;
+    setAttributedString(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/nstextcontentstorage/3809935-attributedstringfortextelement
     attributedStringForTextElement(textElement: NSTextElement):NSAttributedString;
     // https://developer.apple.com/documentation/uikit/nstextcontentstorage/3809937-textelementforattributedstring
     textElementForAttributedString(attributedString: NSAttributedString):NSTextElement;
     // https://developer.apple.com/documentation/uikit/nstextcontentstorage/3809936-delegate
     delegate(): NSTextContentStorageDelegate;
-    setDelegate(): void;
+    setDelegate(value: NSTextContentStorageDelegate): void;
     // https://developer.apple.com/documentation/uikit/nstextcontentstorage/3852570-adjustedrangefromrange
-    adjustedRangeFromRange_forEditingTextSelection(textRange: NSTextRange, forEditingTextSelection: BOOL):NSTextRange;
+    adjustedRangeFromRange_forEditingTextSelection(textRange: NSTextRange, forEditingTextSelection: boolean):NSTextRange;
     // https://developer.apple.com/documentation/uikit/nstextcontentstorage/3852571-locationfromlocation
     locationFromLocation_withOffset(location: NSTextLocation, offset: NSInteger):NSTextLocation;
     // https://developer.apple.com/documentation/uikit/nstextcontentstorage/3852572-offsetfromlocation
@@ -425,37 +425,37 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):NSTextLayoutManager;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810000-layoutqueue
     layoutQueue(): NSOperationQueue;
-    setLayoutQueue(): void;
+    setLayoutQueue(value: NSOperationQueue): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810005-renderingattributesvalidator
     renderingAttributesValidator(): NSTextLayoutFragment;
-    setRenderingAttributesValidator(): void;
+    setRenderingAttributesValidator(value: NSTextLayoutFragment): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810018-usesfontleading
-    usesFontLeading(): BOOL;
-    setUsesFontLeading(): void;
+    usesFontLeading(): boolean;
+    setUsesFontLeading(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810019-useshyphenation
-    usesHyphenation(): BOOL;
-    setUsesHyphenation(): void;
+    usesHyphenation(): boolean;
+    setUsesHyphenation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810001-limitslayoutforsuspiciouscontent
-    limitsLayoutForSuspiciousContents(): BOOL;
-    setLimitsLayoutForSuspiciousContents(): void;
+    limitsLayoutForSuspiciousContents(): boolean;
+    setLimitsLayoutForSuspiciousContents(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3809990-delegate
     delegate(): NSTextLayoutManagerDelegate;
-    setDelegate(): void;
+    setDelegate(value: NSTextLayoutManagerDelegate): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810011-textcontentmanager
     textContentManager(): NSTextContentManager;
-    setTextContentManager(): void;
+    setTextContentManager(value: NSTextContentManager): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810010-textcontainer
     textContainer(): NSTextContainer;
-    setTextContainer(): void;
+    setTextContainer(value: NSTextContainer): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810014-textselectionnavigation
     textSelectionNavigation(): NSTextSelectionNavigation;
-    setTextSelectionNavigation(): void;
+    setTextSelectionNavigation(value: NSTextSelectionNavigation): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810015-textselections
     textSelections(): NSTextSelection;
-    setTextSelections(): void;
+    setTextSelections(value: NSTextSelection): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810017-usageboundsfortextcontainer
     usageBoundsForTextContainer(): CGRect;
-    setUsageBoundsForTextContainer(): void;
+    setUsageBoundsForTextContainer(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3809995-enumeratetextsegmentsinrange
     enumerateTextSegmentsInRange_type_options_usingBlock(textRange: NSTextRange, type: NSTextLayoutManagerSegmentType, options: NSTextLayoutManagerSegmentOptions, block: NSTextContainer):void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810008-replacetextcontentmanager
@@ -466,11 +466,11 @@ declare namespace cocoascript {
     replaceContentsInRange_withTextElements(range: NSTextRange, textElements: NSTextElement):void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810002-linkrenderingattributes
     linkRenderingAttributes(): id;
-    setLinkRenderingAttributes(): void;
+    setLinkRenderingAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3809989-addrenderingattribute
     addRenderingAttribute_value_forTextRange(renderingAttribute: NSAttributedStringKey, value: NSTextLayoutManager, textRange: NSTextRange):void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3809993-enumeraterenderingattributesfrom
-    enumerateRenderingAttributesFromLocation_reverse_usingBlock(location: NSTextLocation, reverse: BOOL, block: NSTextRange):void;
+    enumerateRenderingAttributesFromLocation_reverse_usingBlock(location: NSTextLocation, reverse: boolean, block: NSTextRange):void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810004-renderingattributesforlink
     renderingAttributesForLink_atLocation(link: NSTextLayoutManager, location: NSTextLocation):NSTextLayoutManager;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3809999-invalidaterenderingattributesfor
@@ -481,7 +481,7 @@ declare namespace cocoascript {
     setRenderingAttributes_forTextRange(renderingAttributes: NSTextLayoutManager, textRange: NSTextRange):void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810016-textviewportlayoutcontroller
     textViewportLayoutController(): NSTextViewportLayoutController;
-    setTextViewportLayoutController(): void;
+    setTextViewportLayoutController(value: NSTextViewportLayoutController): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3809998-invalidatelayoutforrange
     invalidateLayoutForRange(range: NSTextRange):void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanager/3810012-textlayoutfragmentforlocation
@@ -514,50 +514,50 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):NSTextContainer;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444517-layoutmanager
     layoutManager(): NSLayoutManager;
-    setLayoutManager(): void;
+    setLayoutManager(value: NSLayoutManager): void;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/3809914-textlayoutmanager
     textLayoutManager(): NSTextLayoutManager;
-    setTextLayoutManager(): void;
+    setTextLayoutManager(value: NSTextLayoutManager): void;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444545-replacelayoutmanager
     replaceLayoutManager(newLayoutManager: NSLayoutManager):void;
     // https://developer.apple.com/documentation/appkit/nstextcontainer/1444537-textview
     textView(): NSTextView;
-    setTextView(): void;
+    setTextView(value: NSTextView): void;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444553-size
     size(): CGSize;
-    setSize(): void;
+    setSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444569-exclusionpaths
     exclusionPaths(): UIBezierPath;
-    setExclusionPaths(): void;
+    setExclusionPaths(value: UIBezierPath): void;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444519-linebreakmode
     lineBreakMode(): NSLineBreakMode;
-    setLineBreakMode(): void;
+    setLineBreakMode(value: NSLineBreakMode): void;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444563-widthtrackstextview
-    widthTracksTextView(): BOOL;
-    setWidthTracksTextView(): void;
+    widthTracksTextView(): boolean;
+    setWidthTracksTextView(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444559-heighttrackstextview
-    heightTracksTextView(): BOOL;
-    setHeightTracksTextView(): void;
+    heightTracksTextView(): boolean;
+    setHeightTracksTextView(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444531-maximumnumberoflines
     maximumNumberOfLines(): NSUInteger;
-    setMaximumNumberOfLines(): void;
+    setMaximumNumberOfLines(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444527-linefragmentpadding
     lineFragmentPadding(): CGFloat;
-    setLineFragmentPadding(): void;
+    setLineFragmentPadding(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444555-linefragmentrectforproposedrect
     lineFragmentRectForProposedRect_atIndex_writingDirection_remainingRect(proposedRect: CGRect, characterIndex: NSUInteger, baseWritingDirection: NSWritingDirection, remainingRect: CGRect):CGRect;
     // https://developer.apple.com/documentation/uikit/nstextcontainer/1444525-simplerectangulartextcontainer
-    simpleRectangularTextContainer(): BOOL;
-    setSimpleRectangularTextContainer(): void;
+    simpleRectangularTextContainer(): boolean;
+    setSimpleRectangularTextContainer(value: boolean): void;
     // https://developer.apple.com/documentation/appkit/nstextcontainer/1444543-initwithcontainersize
     initWithContainerSize(aContainerSize: NSSize):NSTextContainer;
     // https://developer.apple.com/documentation/appkit/nstextcontainer/1444571-linefragmentrectforproposedrect
     lineFragmentRectForProposedRect_sweepDirection_movementDirection_remainingRect(proposedRect: NSRect, sweepDirection: NSLineSweepDirection, movementDirection: NSLineMovementDirection, remainingRect: NSRectPointer):NSRect;
     // https://developer.apple.com/documentation/appkit/nstextcontainer/1444567-containspoint
-    containsPoint(point: NSPoint):BOOL;
+    containsPoint(point: NSPoint):boolean;
     // https://developer.apple.com/documentation/appkit/nstextcontainer/1444551-containersize
     containerSize(): NSSize;
-    setContainerSize(): void;
+    setContainerSize(value: NSSize): void;
     //
     alloc():NSTextContainer;
     //
@@ -574,10 +574,10 @@ declare namespace cocoascript {
   interface NSTextStorage extends NSMutableAttributedString {
     // https://developer.apple.com/documentation/uikit/nstextstorage/1532704-delegate
     delegate(): NSTextStorageDelegate;
-    setDelegate(): void;
+    setDelegate(value: NSTextStorageDelegate): void;
     // https://developer.apple.com/documentation/uikit/nstextstorage/1527938-layoutmanagers
     layoutManagers(): NSLayoutManager;
-    setLayoutManagers(): void;
+    setLayoutManagers(value: NSLayoutManager): void;
     // https://developer.apple.com/documentation/uikit/nstextstorage/1533459-addlayoutmanager
     addLayoutManager(aLayoutManager: NSLayoutManager):void;
     // https://developer.apple.com/documentation/uikit/nstextstorage/1528755-removelayoutmanager
@@ -591,38 +591,38 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nstextstorage/1533947-ensureattributesarefixedinrange
     ensureAttributesAreFixedInRange(range: NSRange):void;
     // https://developer.apple.com/documentation/uikit/nstextstorage/1532043-fixesattributeslazily
-    fixesAttributesLazily(): BOOL;
-    setFixesAttributesLazily(): void;
+    fixesAttributesLazily(): boolean;
+    setFixesAttributesLazily(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextstorage/1525323-editedmask
     editedMask(): NSTextStorageEditActions;
-    setEditedMask(): void;
+    setEditedMask(value: NSTextStorageEditActions): void;
     // https://developer.apple.com/documentation/uikit/nstextstorage/1524379-editedrange
     editedRange(): NSRange;
-    setEditedRange(): void;
+    setEditedRange(value: NSRange): void;
     // https://developer.apple.com/documentation/uikit/nstextstorage/1528400-changeinlength
     changeInLength(): NSInteger;
-    setChangeInLength(): void;
+    setChangeInLength(value: NSInteger): void;
     // https://developer.apple.com/documentation/appkit/nstextstorage/1532095-attributeruns
     attributeRuns(): NSTextStorage;
-    setAttributeRuns(): void;
+    setAttributeRuns(value: NSTextStorage): void;
     // https://developer.apple.com/documentation/appkit/nstextstorage/1525943-paragraphs
     paragraphs(): NSTextStorage;
-    setParagraphs(): void;
+    setParagraphs(value: NSTextStorage): void;
     // https://developer.apple.com/documentation/appkit/nstextstorage/1524565-words
     words(): NSTextStorage;
-    setWords(): void;
+    setWords(value: NSTextStorage): void;
     // https://developer.apple.com/documentation/appkit/nstextstorage/1535788-characters
     characters(): NSTextStorage;
-    setCharacters(): void;
+    setCharacters(value: NSTextStorage): void;
     // https://developer.apple.com/documentation/appkit/nstextstorage/1535365-font
     font(): NSFont;
-    setFont(): void;
+    setFont(value: NSFont): void;
     // https://developer.apple.com/documentation/appkit/nstextstorage/1527175-foregroundcolor
     foregroundColor(): NSColor;
-    setForegroundColor(): void;
+    setForegroundColor(value: NSColor): void;
     // https://developer.apple.com/documentation/uikit/nstextstorage/3824756-textstorageobserver
     textStorageObserver(): NSTextStorageObserving;
-    setTextStorageObserver(): void;
+    setTextStorageObserver(value: NSTextStorageObserving): void;
     //
     alloc():NSTextStorage;
     //
@@ -642,24 +642,24 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3809920-initwithcoder
     initWithCoder(coder: NSCoder):NSTextContentManager;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3852565-automaticallysynchronizestobacki
-    automaticallySynchronizesToBackingStore(): BOOL;
-    setAutomaticallySynchronizesToBackingStore(): void;
+    automaticallySynchronizesToBackingStore(): boolean;
+    setAutomaticallySynchronizesToBackingStore(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3809918-haseditingtransaction
-    hasEditingTransaction(): BOOL;
-    setHasEditingTransaction(): void;
+    hasEditingTransaction(): boolean;
+    setHasEditingTransaction(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3809921-performeditingtransactionusingbl
     performEditingTransactionUsingBlock(transaction: void):void;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3809923-recordeditactioninrange
     recordEditActionInRange_newTextRange(originalTextRange: NSTextRange, newTextRange: NSTextRange):void;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3809922-primarytextlayoutmanager
     primaryTextLayoutManager(): NSTextLayoutManager;
-    setPrimaryTextLayoutManager(): void;
+    setPrimaryTextLayoutManager(value: NSTextLayoutManager): void;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3809929-textlayoutmanagers
     textLayoutManagers(): NSTextLayoutManager;
-    setTextLayoutManagers(): void;
+    setTextLayoutManagers(value: NSTextLayoutManager): void;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3852564-automaticallysynchronizestextlay
-    automaticallySynchronizesTextLayoutManagers(): BOOL;
-    setAutomaticallySynchronizesTextLayoutManagers(): void;
+    automaticallySynchronizesTextLayoutManagers(): boolean;
+    setAutomaticallySynchronizesTextLayoutManagers(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3809916-addtextlayoutmanager
     addTextLayoutManager(textLayoutManager: NSTextLayoutManager):void;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3809924-removetextlayoutmanager
@@ -668,7 +668,7 @@ declare namespace cocoascript {
     synchronizeTextLayoutManagers(completionHandler: NSError):void;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3809917-delegate
     delegate(): NSTextContentManagerDelegate;
-    setDelegate(): void;
+    setDelegate(value: NSTextContentManagerDelegate): void;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanager/3809928-textelementsforrange
     textElementsForRange(range: NSTextRange):NSTextElement;
     //
@@ -687,53 +687,53 @@ declare namespace cocoascript {
   interface NSTextLayoutFragment extends NSObject {
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3852574-bottommargin
     bottomMargin(): CGFloat;
-    setBottomMargin(): void;
+    setBottomMargin(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3852575-leadingpadding
     leadingPadding(): CGFloat;
-    setLeadingPadding(): void;
+    setLeadingPadding(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3852576-topmargin
     topMargin(): CGFloat;
-    setTopMargin(): void;
+    setTopMargin(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3852577-trailingpadding
     trailingPadding(): CGFloat;
-    setTrailingPadding(): void;
+    setTrailingPadding(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809965-initwithcoder
     initWithCoder(coder: NSCoder):NSTextLayoutFragment;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809966-initwithtextelement
     initWithTextElement_range(textElement: NSTextElement, rangeInElement: NSTextRange):NSTextLayoutFragment;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809975-textlayoutmanager
     textLayoutManager(): NSTextLayoutManager;
-    setTextLayoutManager(): void;
+    setTextLayoutManager(value: NSTextLayoutManager): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809969-layoutqueue
     layoutQueue(): NSOperationQueue;
-    setLayoutQueue(): void;
+    setLayoutQueue(value: NSOperationQueue): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809968-layoutfragmentframe
     layoutFragmentFrame(): CGRect;
-    setLayoutFragmentFrame(): void;
+    setLayoutFragmentFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809971-renderingsurfacebounds
     renderingSurfaceBounds(): CGRect;
-    setRenderingSurfaceBounds(): void;
+    setRenderingSurfaceBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3824748-drawatpoint
     drawAtPoint_inContext(point: CGPoint, context: CGContextRef):void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809967-invalidatelayout
     invalidateLayout():void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809973-textattachmentviewproviders
     textAttachmentViewProviders(): NSTextAttachmentViewProvider;
-    setTextAttachmentViewProviders(): void;
+    setTextAttachmentViewProviders(value: NSTextAttachmentViewProvider): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809964-framefortextattachmentatlocation
     frameForTextAttachmentAtLocation(location: NSTextLocation):CGRect;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809972-state
     state(): NSTextLayoutFragmentState;
-    setState(): void;
+    setState(value: NSTextLayoutFragmentState): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809970-rangeinelement
     rangeInElement(): NSTextRange;
-    setRangeInElement(): void;
+    setRangeInElement(value: NSTextRange): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809974-textelement
     textElement(): NSTextElement;
-    setTextElement(): void;
+    setTextElement(value: NSTextElement): void;
     // https://developer.apple.com/documentation/uikit/nstextlayoutfragment/3809976-textlinefragments
     textLineFragments(): NSTextLineFragment;
-    setTextLineFragments(): void;
+    setTextLineFragments(value: NSTextLineFragment): void;
     //
     alloc():NSTextLayoutFragment;
     //
@@ -752,16 +752,16 @@ declare namespace cocoascript {
     initWithTextLayoutManager(textLayoutManager: NSTextLayoutManager):NSTextViewportLayoutController;
     // https://developer.apple.com/documentation/uikit/nstextviewportlayoutcontroller/3824772-textlayoutmanager
     textLayoutManager(): NSTextLayoutManager;
-    setTextLayoutManager(): void;
+    setTextLayoutManager(value: NSTextLayoutManager): void;
     // https://developer.apple.com/documentation/uikit/nstextviewportlayoutcontroller/3824768-delegate
     delegate(): NSTextViewportLayoutControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: NSTextViewportLayoutControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/nstextviewportlayoutcontroller/3824773-viewportbounds
     viewportBounds(): CGRect;
-    setViewportBounds(): void;
+    setViewportBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nstextviewportlayoutcontroller/3824774-viewportrange
     viewportRange(): NSTextRange;
-    setViewportRange(): void;
+    setViewportRange(value: NSTextRange): void;
     // https://developer.apple.com/documentation/uikit/nstextviewportlayoutcontroller/3852589-adjustviewportbyverticaloffset
     adjustViewportByVerticalOffset(verticalOffset: CGFloat):void;
     // https://developer.apple.com/documentation/uikit/nstextviewportlayoutcontroller/3824770-layoutviewport
@@ -788,39 +788,39 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):NSLayoutManager;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402920-delegate
     delegate(): NSLayoutManagerDelegate;
-    setDelegate(): void;
+    setDelegate(value: NSLayoutManagerDelegate): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403015-textstorage
     textStorage(): NSTextStorage;
-    setTextStorage(): void;
+    setTextStorage(value: NSTextStorage): void;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403227-replacetextstorage
     replaceTextStorage(newTextStorage: NSTextStorage):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403197-allowsnoncontiguouslayout
-    allowsNonContiguousLayout(): BOOL;
-    setAllowsNonContiguousLayout(): void;
+    allowsNonContiguousLayout(): boolean;
+    setAllowsNonContiguousLayout(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403207-hasnoncontiguouslayout
-    hasNonContiguousLayout(): BOOL;
-    setHasNonContiguousLayout(): void;
+    hasNonContiguousLayout(): boolean;
+    setHasNonContiguousLayout(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403254-showsinvisiblecharacters
-    showsInvisibleCharacters(): BOOL;
-    setShowsInvisibleCharacters(): void;
+    showsInvisibleCharacters(): boolean;
+    setShowsInvisibleCharacters(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402912-showscontrolcharacters
-    showsControlCharacters(): BOOL;
-    setShowsControlCharacters(): void;
+    showsControlCharacters(): boolean;
+    setShowsControlCharacters(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403156-usesfontleading
-    usesFontLeading(): BOOL;
-    setUsesFontLeading(): void;
+    usesFontLeading(): boolean;
+    setUsesFontLeading(value: boolean): void;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1402952-backgroundlayoutenabled
-    backgroundLayoutEnabled(): BOOL;
-    setBackgroundLayoutEnabled(): void;
+    backgroundLayoutEnabled(): boolean;
+    setBackgroundLayoutEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/3021179-limitslayoutforsuspiciouscontent
-    limitsLayoutForSuspiciousContents(): BOOL;
-    setLimitsLayoutForSuspiciousContents(): void;
+    limitsLayoutForSuspiciousContents(): boolean;
+    setLimitsLayoutForSuspiciousContents(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/3180380-usesdefaulthyphenation
-    usesDefaultHyphenation(): BOOL;
-    setUsesDefaultHyphenation(): void;
+    usesDefaultHyphenation(): boolean;
+    setUsesDefaultHyphenation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403144-textcontainers
     textContainers(): NSTextContainer;
-    setTextContainers(): void;
+    setTextContainers(value: NSTextContainer): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402946-addtextcontainer
     addTextContainer(container: NSTextContainer):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403010-inserttextcontainer
@@ -836,7 +836,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403110-textcontainerforglyphatindex
     textContainerForGlyphAtIndex_effectiveRange(glyphIndex: NSUInteger, effectiveGlyphRange: NSRangePointer):NSTextContainer;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403055-textcontainerforglyphatindex
-    textContainerForGlyphAtIndex_effectiveRange_withoutAdditionalLayout(glyphIndex: NSUInteger, effectiveGlyphRange: NSRangePointer, flag: BOOL):NSTextContainer;
+    textContainerForGlyphAtIndex_effectiveRange_withoutAdditionalLayout(glyphIndex: NSUInteger, effectiveGlyphRange: NSRangePointer, flag: boolean):NSTextContainer;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402980-usedrectfortextcontainer
     usedRectForTextContainer(container: NSTextContainer):CGRect;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402924-invalidatedisplayforcharacterran
@@ -863,13 +863,13 @@ declare namespace cocoascript {
     ensureLayoutForTextContainer(container: NSTextContainer):void;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403069-glyphgenerator
     glyphGenerator(): NSGlyphGenerator;
-    setGlyphGenerator(): void;
+    setGlyphGenerator(value: NSGlyphGenerator): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403104-getglyphsinrange
     getGlyphsInRange_glyphs_properties_characterIndexes_bidiLevels(glyphRange: NSRange, glyphBuffer: CGGlyph, props: NSGlyphProperty, charIndexBuffer: NSUInteger, bidiLevelBuffer: string):NSUInteger;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403039-cgglyphatindex
     CGGlyphAtIndex(glyphIndex: NSUInteger):CGGlyph;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403132-cgglyphatindex
-    CGGlyphAtIndex_isValidIndex(glyphIndex: NSUInteger, isValidIndex: BOOL):CGGlyph;
+    CGGlyphAtIndex_isValidIndex(glyphIndex: NSUInteger, isValidIndex: boolean):CGGlyph;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403030-setglyphs
     setGlyphs_properties_characterIndexes_font_forGlyphRange(glyphs: CGGlyph, props: NSGlyphProperty, charIndexes: NSUInteger, aFont: UIFont, glyphRange: NSRange):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402944-characterindexforglyphatindex
@@ -877,16 +877,16 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403001-glyphindexforcharacteratindex
     glyphIndexForCharacterAtIndex(charIndex: NSUInteger):NSUInteger;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402950-isvalidglyphindex
-    isValidGlyphIndex(glyphIndex: NSUInteger):BOOL;
+    isValidGlyphIndex(glyphIndex: NSUInteger):boolean;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402937-numberofglyphs
     numberOfGlyphs(): NSUInteger;
-    setNumberOfGlyphs(): void;
+    setNumberOfGlyphs(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403014-propertyforglyphatindex
     propertyForGlyphAtIndex(glyphIndex: NSUInteger):NSGlyphProperty;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403047-setattachmentsize
     setAttachmentSize_forGlyphRange(attachmentSize: CGSize, glyphRange: NSRange):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402964-setdrawsoutsidelinefragment
-    setDrawsOutsideLineFragment_forGlyphAtIndex(flag: BOOL, glyphIndex: NSUInteger):void;
+    setDrawsOutsideLineFragment_forGlyphAtIndex(flag: boolean, glyphIndex: NSUInteger):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403071-setextralinefragmentrect
     setExtraLineFragmentRect_usedRect_textContainer(fragmentRect: CGRect, usedRect: CGRect, container: NSTextContainer):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402935-setlinefragmentrect
@@ -894,20 +894,20 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402982-setlocation
     setLocation_forStartOfGlyphRange(location: CGPoint, glyphRange: NSRange):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403078-setnotshownattribute
-    setNotShownAttribute_forGlyphAtIndex(flag: BOOL, glyphIndex: NSUInteger):void;
+    setNotShownAttribute_forGlyphAtIndex(flag: boolean, glyphIndex: NSUInteger):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403099-attachmentsizeforglyphatindex
     attachmentSizeForGlyphAtIndex(glyphIndex: NSUInteger):CGSize;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403003-drawsoutsidelinefragmentforglyph
-    drawsOutsideLineFragmentForGlyphAtIndex(glyphIndex: NSUInteger):BOOL;
+    drawsOutsideLineFragmentForGlyphAtIndex(glyphIndex: NSUInteger):boolean;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403175-extralinefragmentrect
     extraLineFragmentRect(): CGRect;
-    setExtraLineFragmentRect(): void;
+    setExtraLineFragmentRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403165-extralinefragmenttextcontainer
     extraLineFragmentTextContainer(): NSTextContainer;
-    setExtraLineFragmentTextContainer(): void;
+    setExtraLineFragmentTextContainer(value: NSTextContainer): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402988-extralinefragmentusedrect
     extraLineFragmentUsedRect(): CGRect;
-    setExtraLineFragmentUsedRect(): void;
+    setExtraLineFragmentUsedRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403067-firstunlaidcharacterindex
     firstUnlaidCharacterIndex():NSUInteger;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403245-firstunlaidglyphindex
@@ -917,15 +917,15 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403140-linefragmentrectforglyphatindex
     lineFragmentRectForGlyphAtIndex_effectiveRange(glyphIndex: NSUInteger, effectiveGlyphRange: NSRangePointer):CGRect;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403116-linefragmentrectforglyphatindex
-    lineFragmentRectForGlyphAtIndex_effectiveRange_withoutAdditionalLayout(glyphIndex: NSUInteger, effectiveGlyphRange: NSRangePointer, flag: BOOL):CGRect;
+    lineFragmentRectForGlyphAtIndex_effectiveRange_withoutAdditionalLayout(glyphIndex: NSUInteger, effectiveGlyphRange: NSRangePointer, flag: boolean):CGRect;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403193-linefragmentusedrectforglyphatin
     lineFragmentUsedRectForGlyphAtIndex_effectiveRange(glyphIndex: NSUInteger, effectiveGlyphRange: NSRangePointer):CGRect;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403035-linefragmentusedrectforglyphatin
-    lineFragmentUsedRectForGlyphAtIndex_effectiveRange_withoutAdditionalLayout(glyphIndex: NSUInteger, effectiveGlyphRange: NSRangePointer, flag: BOOL):CGRect;
+    lineFragmentUsedRectForGlyphAtIndex_effectiveRange_withoutAdditionalLayout(glyphIndex: NSUInteger, effectiveGlyphRange: NSRangePointer, flag: boolean):CGRect;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403239-locationforglyphatindex
     locationForGlyphAtIndex(glyphIndex: NSUInteger):CGPoint;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402931-notshownattributeforglyphatindex
-    notShownAttributeForGlyphAtIndex(glyphIndex: NSUInteger):BOOL;
+    notShownAttributeForGlyphAtIndex(glyphIndex: NSUInteger):boolean;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403203-truncatedglyphrangeinlinefragmen
     truncatedGlyphRangeInLineFragmentForGlyphAtIndex(glyphIndex: NSUInteger):NSRange;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403255-boundingrectforglyphrange
@@ -935,13 +935,13 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403225-characterrangeforglyphrange
     characterRangeForGlyphRange_actualGlyphRange(glyphRange: NSRange, actualGlyphRange: NSRangePointer):NSRange;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403021-enumerateenclosingrectsforglyphr
-    enumerateEnclosingRectsForGlyphRange_withinSelectedGlyphRange_inTextContainer_usingBlock(glyphRange: NSRange, selectedRange: NSRange, textContainer: NSTextContainer, block: BOOL):void;
+    enumerateEnclosingRectsForGlyphRange_withinSelectedGlyphRange_inTextContainer_usingBlock(glyphRange: NSRange, selectedRange: NSRange, textContainer: NSTextContainer, block: boolean):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403160-enumeratelinefragmentsforglyphra
-    enumerateLineFragmentsForGlyphRange_usingBlock(glyphRange: NSRange, block: BOOL):void;
+    enumerateLineFragmentsForGlyphRange_usingBlock(glyphRange: NSRange, block: boolean):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403097-fractionofdistancethroughglyphfo
     fractionOfDistanceThroughGlyphForPoint_inTextContainer(point: CGPoint, container: NSTextContainer):CGFloat;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403012-getlinefragmentinsertionpointsfo
-    getLineFragmentInsertionPointsForCharacterAtIndex_alternatePositions_inDisplayOrder_positions_characterIndexes(charIndex: NSUInteger, aFlag: BOOL, dFlag: BOOL, positions: CGFloat, charIndexes: NSUInteger):NSUInteger;
+    getLineFragmentInsertionPointsForCharacterAtIndex_alternatePositions_inDisplayOrder_positions_characterIndexes(charIndex: NSUInteger, aFlag: boolean, dFlag: boolean, positions: CGFloat, charIndexes: NSUInteger):NSUInteger;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1403112-glyphindexforpoint
     glyphIndexForPoint_inTextContainer(point: CGPoint, container: NSTextContainer):NSUInteger;
     // https://developer.apple.com/documentation/uikit/nslayoutmanager/1402933-glyphindexforpoint
@@ -986,27 +986,27 @@ declare namespace cocoascript {
     boundsRectForTextBlock_atIndex_effectiveRange(block: NSTextBlock, glyphIndex: NSUInteger, effectiveGlyphRange: NSRangePointer):NSRect;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403045-defaultattachmentscaling
     defaultAttachmentScaling(): NSImageScaling;
-    setDefaultAttachmentScaling(): void;
+    setDefaultAttachmentScaling(value: NSImageScaling): void;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1402965-showattachmentcell
     showAttachmentCell_inRect_characterIndex(cell: NSCell, rect: NSRect, attachmentIndex: NSUInteger):void;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403130-ruleraccessoryviewfortextview
-    rulerAccessoryViewForTextView_paragraphStyle_ruler_enabled(view: NSTextView, style: NSParagraphStyle, ruler: NSRulerView, isEnabled: BOOL):NSView;
+    rulerAccessoryViewForTextView_paragraphStyle_ruler_enabled(view: NSTextView, style: NSParagraphStyle, ruler: NSRulerView, isEnabled: boolean):NSView;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403163-rulermarkersfortextview
     rulerMarkersForTextView_paragraphStyle_ruler(view: NSTextView, style: NSParagraphStyle, ruler: NSRulerView):NSRulerMarker;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403026-layoutmanagerownsfirstresponderi
-    layoutManagerOwnsFirstResponderInWindow(window: NSWindow):BOOL;
+    layoutManagerOwnsFirstResponderInWindow(window: NSWindow):boolean;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1402995-firsttextview
     firstTextView(): NSTextView;
-    setFirstTextView(): void;
+    setFirstTextView(value: NSTextView): void;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403089-textviewforbeginningofselection
     textViewForBeginningOfSelection(): NSTextView;
-    setTextViewForBeginningOfSelection(): void;
+    setTextViewForBeginningOfSelection(value: NSTextView): void;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403205-typesetter
     typesetter(): NSTypesetter;
-    setTypesetter(): void;
+    setTypesetter(value: NSTypesetter): void;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403199-typesetterbehavior
     typesetterBehavior(): NSTypesetterBehavior;
-    setTypesetterBehavior(): void;
+    setTypesetterBehavior(value: NSTypesetterBehavior): void;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403007-defaultlineheightforfont
     defaultLineHeightForFont(theFont: NSFont):CGFloat;
     // https://developer.apple.com/documentation/appkit/nslayoutmanager/1403058-defaultbaselineoffsetforfont
@@ -1043,7 +1043,7 @@ declare namespace cocoascript {
   interface NSTextLayoutOrientationProvider {
     // https://developer.apple.com/documentation/uikit/nstextlayoutorientationprovider/1402990-layoutorientation
     layoutOrientation(): NSTextLayoutOrientation;
-    setLayoutOrientation(): void;
+    setLayoutOrientation(value: NSTextLayoutOrientation): void;
   }
 }
 declare namespace cocoascript {
@@ -1056,10 +1056,10 @@ declare namespace cocoascript {
     initWithTextContentManager(textContentManager: NSTextContentManager):NSTextElement;
     // https://developer.apple.com/documentation/uikit/nstextelement/3809956-textcontentmanager
     textContentManager(): NSTextContentManager;
-    setTextContentManager(): void;
+    setTextContentManager(value: NSTextContentManager): void;
     // https://developer.apple.com/documentation/uikit/nstextelement/3809954-elementrange
     elementRange(): NSTextRange;
-    setElementRange(): void;
+    setElementRange(value: NSTextRange): void;
     //
     alloc():NSTextElement;
     //
@@ -1076,7 +1076,7 @@ declare namespace cocoascript {
   interface NSTextElementProvider extends NSObject {
     // https://developer.apple.com/documentation/uikit/nstextelementprovider/3809944-documentrange
     documentRange(): NSTextRange;
-    setDocumentRange(): void;
+    setDocumentRange(value: NSTextRange): void;
     // https://developer.apple.com/documentation/uikit/nstextelementprovider/3809945-enumeratetextelementsfromlocatio
     enumerateTextElementsFromLocation_options_usingBlock(textLocation: NSTextLocation, options: NSTextContentManagerEnumerationOptions, block: NSTextElement):NSTextLocation;
     // https://developer.apple.com/documentation/uikit/nstextelementprovider/3809946-locationfromlocation
@@ -1084,7 +1084,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nstextelementprovider/3809948-replacecontentsinrange
     replaceContentsInRange_withTextElements(range: NSTextRange, textElements: NSTextElement):void;
     // https://developer.apple.com/documentation/uikit/nstextelementprovider/3852573-adjustedrangefromrange
-    adjustedRangeFromRange_forEditingTextSelection(textRange: NSTextRange, forEditingTextSelection: BOOL):NSTextRange;
+    adjustedRangeFromRange_forEditingTextSelection(textRange: NSTextRange, forEditingTextSelection: boolean):NSTextRange;
     // https://developer.apple.com/documentation/uikit/nstextelementprovider/3809947-offsetfromlocation
     offsetFromLocation_toLocation(from: NSTextLocation, to: NSTextLocation):NSInteger;
     // https://developer.apple.com/documentation/uikit/nstextelementprovider/3809949-synchronizetobackingstore
@@ -1105,16 +1105,16 @@ declare namespace cocoascript {
     initWithString_attributes_range(string: string | cocoascript.NSString, attributes: NSTextLineFragment, range: NSRange):NSTextLineFragment;
     // https://developer.apple.com/documentation/uikit/nstextlinefragment/3810037-attributedstring
     attributedString(): NSAttributedString;
-    setAttributedString(): void;
+    setAttributedString(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/nstextlinefragment/3810039-characterrange
     characterRange(): NSRange;
-    setCharacterRange(): void;
+    setCharacterRange(value: NSRange): void;
     // https://developer.apple.com/documentation/uikit/nstextlinefragment/3810041-glyphorigin
     glyphOrigin(): CGPoint;
-    setGlyphOrigin(): void;
+    setGlyphOrigin(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/nstextlinefragment/3810046-typographicbounds
     typographicBounds(): CGRect;
-    setTypographicBounds(): void;
+    setTypographicBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nstextlinefragment/3852578-characterindexforpoint
     characterIndexForPoint(point: CGPoint):NSInteger;
     // https://developer.apple.com/documentation/uikit/nstextlinefragment/3852579-fractionofdistancethroughglyphfo
@@ -1141,13 +1141,13 @@ declare namespace cocoascript {
     initWithAttributedString(attributedString: NSAttributedString):NSTextParagraph;
     // https://developer.apple.com/documentation/uikit/nstextparagraph/3809958-attributedstring
     attributedString(): NSAttributedString;
-    setAttributedString(): void;
+    setAttributedString(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/nstextparagraph/3809960-paragraphcontentrange
     paragraphContentRange(): NSTextRange;
-    setParagraphContentRange(): void;
+    setParagraphContentRange(value: NSTextRange): void;
     // https://developer.apple.com/documentation/uikit/nstextparagraph/3809961-paragraphseparatorrange
     paragraphSeparatorRange(): NSTextRange;
-    setParagraphSeparatorRange(): void;
+    setParagraphSeparatorRange(value: NSTextRange): void;
     //
     alloc():NSTextParagraph;
     //
@@ -1168,25 +1168,25 @@ declare namespace cocoascript {
     initWithLocation_endLocation(location: NSTextLocation, endLocation: NSTextLocation):NSTextRange;
     // https://developer.apple.com/documentation/uikit/nstextrange/3801807-endlocation
     endLocation(): NSTextLocation;
-    setEndLocation(): void;
+    setEndLocation(value: NSTextLocation): void;
     // https://developer.apple.com/documentation/uikit/nstextrange/3801806-empty
-    empty(): BOOL;
-    setEmpty(): void;
+    empty(): boolean;
+    setEmpty(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextrange/3801812-location
     location(): NSTextLocation;
-    setLocation(): void;
+    setLocation(value: NSTextLocation): void;
     // https://developer.apple.com/documentation/uikit/nstextrange/3801814-textrangebyintersectingwithtextr
     textRangeByIntersectingWithTextRange(textRange: NSTextRange):NSTextRange;
     // https://developer.apple.com/documentation/uikit/nstextrange/3801810-intersectswithtextrange
-    intersectsWithTextRange(textRange: NSTextRange):BOOL;
+    intersectsWithTextRange(textRange: NSTextRange):boolean;
     // https://developer.apple.com/documentation/uikit/nstextrange/3801811-isequaltotextrange
-    isEqualToTextRange(textRange: NSTextRange):BOOL;
+    isEqualToTextRange(textRange: NSTextRange):boolean;
     // https://developer.apple.com/documentation/uikit/nstextrange/3801813-textrangebyformingunionwithtextr
     textRangeByFormingUnionWithTextRange(textRange: NSTextRange):NSTextRange;
     // https://developer.apple.com/documentation/uikit/nstextrange/3801804-containslocation
-    containsLocation(location: NSTextLocation):BOOL;
+    containsLocation(location: NSTextLocation):boolean;
     // https://developer.apple.com/documentation/uikit/nstextrange/3801805-containsrange
-    containsRange(textRange: NSTextRange):BOOL;
+    containsRange(textRange: NSTextRange):boolean;
     //
     alloc():NSTextRange;
     //
@@ -1211,28 +1211,28 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):NSTextSelection;
     // https://developer.apple.com/documentation/uikit/nstextselection/3801816-affinity
     affinity(): NSTextSelectionAffinity;
-    setAffinity(): void;
+    setAffinity(value: NSTextSelectionAffinity): void;
     // https://developer.apple.com/documentation/uikit/nstextselection/3801817-anchorpositionoffset
     anchorPositionOffset(): CGFloat;
-    setAnchorPositionOffset(): void;
+    setAnchorPositionOffset(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nstextselection/3801818-granularity
     granularity(): NSTextSelectionGranularity;
-    setGranularity(): void;
+    setGranularity(value: NSTextSelectionGranularity): void;
     // https://developer.apple.com/documentation/uikit/nstextselection/3801823-logical
-    logical(): BOOL;
-    setLogical(): void;
+    logical(): boolean;
+    setLogical(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextselection/3801827-transient
-    transient(): BOOL;
-    setTransient(): void;
+    transient(): boolean;
+    setTransient(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextselection/3801824-secondaryselectionlocation
     secondarySelectionLocation(): NSTextLocation;
-    setSecondarySelectionLocation(): void;
+    setSecondarySelectionLocation(value: NSTextLocation): void;
     // https://developer.apple.com/documentation/uikit/nstextselection/3801825-textranges
     textRanges(): NSTextRange;
-    setTextRanges(): void;
+    setTextRanges(value: NSTextRange): void;
     // https://developer.apple.com/documentation/uikit/nstextselection/3801828-typingattributes
     typingAttributes(): id;
-    setTypingAttributes(): void;
+    setTypingAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/nstextselection/3801826-textselectionwithtextranges
     textSelectionWithTextRanges(textRanges: NSTextRange):NSTextSelection;
     //
@@ -1252,28 +1252,28 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3801854-initwithdatasource
     initWithDataSource(dataSource: NSTextSelectionDataSource):NSTextSelectionNavigation;
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3801850-allowsnoncontiguousranges
-    allowsNonContiguousRanges(): BOOL;
-    setAllowsNonContiguousRanges(): void;
+    allowsNonContiguousRanges(): boolean;
+    setAllowsNonContiguousRanges(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3801856-rotatescoordinatesystemforlayout
-    rotatesCoordinateSystemForLayoutOrientation(): BOOL;
-    setRotatesCoordinateSystemForLayoutOrientation(): void;
+    rotatesCoordinateSystemForLayoutOrientation(): boolean;
+    setRotatesCoordinateSystemForLayoutOrientation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3801858-textselectionforselectiongranula
     textSelectionForSelectionGranularity_enclosingPoint_inContainerAtLocation(selectionGranularity: NSTextSelectionGranularity, point: CGPoint, location: NSTextLocation):NSTextSelection;
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3801857-textselectiondatasource
     textSelectionDataSource(): NSTextSelectionDataSource;
-    setTextSelectionDataSource(): void;
+    setTextSelectionDataSource(value: NSTextSelectionDataSource): void;
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3801868-textselectionforselectiongranula
     textSelectionForSelectionGranularity_enclosingTextSelection(selectionGranularity: NSTextSelectionGranularity, textSelection: NSTextSelection):NSTextSelection;
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3801869-textselectionsinteractingatpoint
-    textSelectionsInteractingAtPoint_inContainerAtLocation_anchors_modifiers_selecting_bounds(point: CGPoint, containerLocation: NSTextLocation, anchors: NSTextSelection, modifiers: NSTextSelectionNavigationModifier, selecting: BOOL, bounds: CGRect):NSTextSelection;
+    textSelectionsInteractingAtPoint_inContainerAtLocation_anchors_modifiers_selecting_bounds(point: CGPoint, containerLocation: NSTextLocation, anchors: NSTextSelection, modifiers: NSTextSelectionNavigationModifier, selecting: boolean, bounds: CGRect):NSTextSelection;
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3801852-destinationselectionfortextselec
-    destinationSelectionForTextSelection_direction_destination_extending_confined(textSelection: NSTextSelection, direction: NSTextSelectionNavigationDirection, destination: NSTextSelectionNavigationDestination, extending: BOOL, confined: BOOL):NSTextSelection;
+    destinationSelectionForTextSelection_direction_destination_extending_confined(textSelection: NSTextSelection, direction: NSTextSelectionNavigationDirection, destination: NSTextSelectionNavigationDestination, extending: boolean, confined: boolean):NSTextSelection;
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3801853-flushlayoutcache
     flushLayoutCache():void;
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3852581-resolvedinsertionlocationfortext
     resolvedInsertionLocationForTextSelection_writingDirection(textSelection: NSTextSelection, writingDirection: NSTextSelectionNavigationWritingDirection):NSTextLocation;
     // https://developer.apple.com/documentation/uikit/nstextselectionnavigation/3801851-deletionrangesfortextselection
-    deletionRangesForTextSelection_direction_destination_allowsDecomposition(textSelection: NSTextSelection, direction: NSTextSelectionNavigationDirection, destination: NSTextSelectionNavigationDestination, allowsDecomposition: BOOL):NSTextRange;
+    deletionRangesForTextSelection_direction_destination_allowsDecomposition(textSelection: NSTextSelection, direction: NSTextSelectionNavigationDirection, destination: NSTextSelectionNavigationDestination, allowsDecomposition: boolean):NSTextRange;
     //
     alloc():NSTextSelectionNavigation;
     //
@@ -1294,75 +1294,75 @@ declare namespace cocoascript {
   interface NSParagraphStyle extends NSObject {
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1532681-defaultparagraphstyle
     defaultParagraphStyle(): NSParagraphStyle;
-    setDefaultParagraphStyle(): void;
+    setDefaultParagraphStyle(value: NSParagraphStyle): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1532321-alignment
     alignment(): NSTextAlignment;
-    setAlignment(): void;
+    setAlignment(value: NSTextAlignment): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1527764-firstlineheadindent
     firstLineHeadIndent(): CGFloat;
-    setFirstLineHeadIndent(): void;
+    setFirstLineHeadIndent(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1530760-headindent
     headIndent(): CGFloat;
-    setHeadIndent(): void;
+    setHeadIndent(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1525556-tailindent
     tailIndent(): CGFloat;
-    setTailIndent(): void;
+    setTailIndent(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1528614-lineheightmultiple
     lineHeightMultiple(): CGFloat;
-    setLineHeightMultiple(): void;
+    setLineHeightMultiple(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1533343-maximumlineheight
     maximumLineHeight(): CGFloat;
-    setMaximumLineHeight(): void;
+    setMaximumLineHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1535639-minimumlineheight
     minimumLineHeight(): CGFloat;
-    setMinimumLineHeight(): void;
+    setMinimumLineHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1524635-linespacing
     lineSpacing(): CGFloat;
-    setLineSpacing(): void;
+    setLineSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1530912-paragraphspacing
     paragraphSpacing(): CGFloat;
-    setParagraphSpacing(): void;
+    setParagraphSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1533011-paragraphspacingbefore
     paragraphSpacingBefore(): CGFloat;
-    setParagraphSpacingBefore(): void;
+    setParagraphSpacingBefore(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1532841-tabstops
     tabStops(): NSTextTab;
-    setTabStops(): void;
+    setTabStops(value: NSTextTab): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1535614-defaulttabinterval
     defaultTabInterval(): CGFloat;
-    setDefaultTabInterval(): void;
+    setDefaultTabInterval(value: CGFloat): void;
     // https://developer.apple.com/documentation/appkit/nsparagraphstyle/1528053-textblocks
     textBlocks(): NSTextBlock;
-    setTextBlocks(): void;
+    setTextBlocks(value: NSTextBlock): void;
     // https://developer.apple.com/documentation/appkit/nsparagraphstyle/1534193-textlists
     textLists(): NSTextList;
-    setTextLists(): void;
+    setTextLists(value: NSTextList): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1529937-linebreakmode
     lineBreakMode(): NSLineBreakMode;
-    setLineBreakMode(): void;
+    setLineBreakMode(value: NSLineBreakMode): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/3667463-linebreakstrategy
     lineBreakStrategy(): NSLineBreakStrategy;
-    setLineBreakStrategy(): void;
+    setLineBreakStrategy(value: NSLineBreakStrategy): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1529275-hyphenationfactor
     hyphenationFactor(): number;
-    setHyphenationFactor(): void;
+    setHyphenationFactor(value: number): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/3809913-usesdefaulthyphenation
-    usesDefaultHyphenation(): BOOL;
-    setUsesDefaultHyphenation(): void;
+    usesDefaultHyphenation(): boolean;
+    setUsesDefaultHyphenation(value: boolean): void;
     // https://developer.apple.com/documentation/appkit/nsparagraphstyle/1529278-tighteningfactorfortruncation
     tighteningFactorForTruncation(): number;
-    setTighteningFactorForTruncation(): void;
+    setTighteningFactorForTruncation(value: number): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1528994-allowsdefaulttighteningfortrunca
-    allowsDefaultTighteningForTruncation(): BOOL;
-    setAllowsDefaultTighteningForTruncation(): void;
+    allowsDefaultTighteningForTruncation(): boolean;
+    setAllowsDefaultTighteningForTruncation(value: boolean): void;
     // https://developer.apple.com/documentation/appkit/nsparagraphstyle/1535869-headerlevel
     headerLevel(): NSInteger;
-    setHeaderLevel(): void;
+    setHeaderLevel(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1535327-defaultwritingdirectionforlangua
     defaultWritingDirectionForLanguage(languageName: string | cocoascript.NSString):NSWritingDirection;
     // https://developer.apple.com/documentation/uikit/nsparagraphstyle/1527354-basewritingdirection
     baseWritingDirection(): NSWritingDirection;
-    setBaseWritingDirection(): void;
+    setBaseWritingDirection(value: NSWritingDirection): void;
     //
     alloc():NSParagraphStyle;
     //
@@ -1381,74 +1381,74 @@ declare namespace cocoascript {
     setParagraphStyle(obj: NSParagraphStyle):void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1534368-alignment
     alignment(): NSTextAlignment;
-    setAlignment(): void;
+    setAlignment(value: NSTextAlignment): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1528392-firstlineheadindent
     firstLineHeadIndent(): CGFloat;
-    setFirstLineHeadIndent(): void;
+    setFirstLineHeadIndent(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1525135-headindent
     headIndent(): CGFloat;
-    setHeadIndent(): void;
+    setHeadIndent(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1531666-tailindent
     tailIndent(): CGFloat;
-    setTailIndent(): void;
+    setTailIndent(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1524596-lineheightmultiple
     lineHeightMultiple(): CGFloat;
-    setLineHeightMultiple(): void;
+    setLineHeightMultiple(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1524351-maximumlineheight
     maximumLineHeight(): CGFloat;
-    setMaximumLineHeight(): void;
+    setMaximumLineHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1531118-minimumlineheight
     minimumLineHeight(): CGFloat;
-    setMinimumLineHeight(): void;
+    setMinimumLineHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1528742-linespacing
     lineSpacing(): CGFloat;
-    setLineSpacing(): void;
+    setLineSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1532528-paragraphspacing
     paragraphSpacing(): CGFloat;
-    setParagraphSpacing(): void;
+    setParagraphSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1527729-paragraphspacingbefore
     paragraphSpacingBefore(): CGFloat;
-    setParagraphSpacingBefore(): void;
+    setParagraphSpacingBefore(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1534601-basewritingdirection
     baseWritingDirection(): NSWritingDirection;
-    setBaseWritingDirection(): void;
+    setBaseWritingDirection(value: NSWritingDirection): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1525051-addtabstop
     addTabStop(anObject: NSTextTab):void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1535084-removetabstop
     removeTabStop(anObject: NSTextTab):void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1531988-tabstops
     tabStops(): NSTextTab;
-    setTabStops(): void;
+    setTabStops(value: NSTextTab): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1529861-defaulttabinterval
     defaultTabInterval(): CGFloat;
-    setDefaultTabInterval(): void;
+    setDefaultTabInterval(value: CGFloat): void;
     // https://developer.apple.com/documentation/appkit/nsmutableparagraphstyle/1535855-textblocks
     textBlocks(): NSTextBlock;
-    setTextBlocks(): void;
+    setTextBlocks(value: NSTextBlock): void;
     // https://developer.apple.com/documentation/appkit/nsmutableparagraphstyle/1524648-textlists
     textLists(): NSTextList;
-    setTextLists(): void;
+    setTextLists(value: NSTextList): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1535126-linebreakmode
     lineBreakMode(): NSLineBreakMode;
-    setLineBreakMode(): void;
+    setLineBreakMode(value: NSLineBreakMode): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/3667462-linebreakstrategy
     lineBreakStrategy(): NSLineBreakStrategy;
-    setLineBreakStrategy(): void;
+    setLineBreakStrategy(value: NSLineBreakStrategy): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1535553-hyphenationfactor
     hyphenationFactor(): number;
-    setHyphenationFactor(): void;
+    setHyphenationFactor(value: number): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/3809912-usesdefaulthyphenation
-    usesDefaultHyphenation(): BOOL;
-    setUsesDefaultHyphenation(): void;
+    usesDefaultHyphenation(): boolean;
+    setUsesDefaultHyphenation(value: boolean): void;
     // https://developer.apple.com/documentation/appkit/nsmutableparagraphstyle/1531383-tighteningfactorfortruncation
     tighteningFactorForTruncation(): number;
-    setTighteningFactorForTruncation(): void;
+    setTighteningFactorForTruncation(value: number): void;
     // https://developer.apple.com/documentation/uikit/nsmutableparagraphstyle/1534136-allowsdefaulttighteningfortrunca
-    allowsDefaultTighteningForTruncation(): BOOL;
-    setAllowsDefaultTighteningForTruncation(): void;
+    allowsDefaultTighteningForTruncation(): boolean;
+    setAllowsDefaultTighteningForTruncation(value: boolean): void;
     // https://developer.apple.com/documentation/appkit/nsmutableparagraphstyle/1533962-headerlevel
     headerLevel(): NSInteger;
-    setHeaderLevel(): void;
+    setHeaderLevel(value: NSInteger): void;
     //
     alloc():NSMutableParagraphStyle;
     //
@@ -1467,20 +1467,20 @@ declare namespace cocoascript {
     initWithTextAlignment_location_options(alignment: NSTextAlignment, loc: CGFloat, options: NSTextTab):NSTextTab;
     // https://developer.apple.com/documentation/uikit/nstexttab/1527968-location
     location(): CGFloat;
-    setLocation(): void;
+    setLocation(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nstexttab/1527212-alignment
     alignment(): NSTextAlignment;
-    setAlignment(): void;
+    setAlignment(value: NSTextAlignment): void;
     // https://developer.apple.com/documentation/uikit/nstexttab/1534965-options
     options(): id;
-    setOptions(): void;
+    setOptions(value: id): void;
     // https://developer.apple.com/documentation/uikit/nstexttab/1535107-columnterminatorsforlocale
     columnTerminatorsForLocale(aLocale: NSLocale):NSCharacterSet;
     // https://developer.apple.com/documentation/appkit/nstexttab/1526556-initwithtype
     initWithType_location(type: NSTextTabType, loc: CGFloat):NSTextTab;
     // https://developer.apple.com/documentation/appkit/nstexttab/1527842-tabstoptype
     tabStopType(): NSTextTabType;
-    setTabStopType(): void;
+    setTabStopType(value: NSTextTabType): void;
     //
     alloc():NSTextTab;
     //
@@ -1503,31 +1503,31 @@ declare namespace cocoascript {
     textAttachmentWithImage(image: UIImage):NSTextAttachment;
     // https://developer.apple.com/documentation/uikit/nstextattachment/1508394-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nstextattachment/1508401-contents
     contents(): NSData;
-    setContents(): void;
+    setContents(value: NSData): void;
     // https://developer.apple.com/documentation/uikit/nstextattachment/1508416-filetype
     fileType(): string | cocoascript.NSString;
-    setFileType(): void;
+    setFileType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/nstextattachment/1508378-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/nstextattachment/1508398-filewrapper
     fileWrapper(): NSFileWrapper;
-    setFileWrapper(): void;
+    setFileWrapper(value: NSFileWrapper): void;
     // https://developer.apple.com/documentation/uikit/nstextattachment/3857584-allowstextattachmentview
-    allowsTextAttachmentView(): BOOL;
-    setAllowsTextAttachmentView(): void;
+    allowsTextAttachmentView(): boolean;
+    setAllowsTextAttachmentView(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextattachment/3857588-usestextattachmentview
-    usesTextAttachmentView(): BOOL;
-    setUsesTextAttachmentView(): void;
+    usesTextAttachmentView(): boolean;
+    setUsesTextAttachmentView(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextattachment/3857585-linelayoutpadding
     lineLayoutPadding(): CGFloat;
-    setLineLayoutPadding(): void;
+    setLineLayoutPadding(value: CGFloat): void;
     // https://developer.apple.com/documentation/appkit/nstextattachment/1508413-attachmentcell
     attachmentCell(): NSTextAttachmentCell;
-    setAttachmentCell(): void;
+    setAttachmentCell(value: NSTextAttachmentCell): void;
     // https://developer.apple.com/documentation/uikit/nstextattachment/3857586-registertextattachmentviewprovid
     registerTextAttachmentViewProviderClass_forFileType(textAttachmentViewProviderClass: Class, fileType: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/nstextattachment/3857587-textattachmentviewproviderclassf
@@ -1550,19 +1550,19 @@ declare namespace cocoascript {
     initWithTextAttachment_parentView_textLayoutManager_location(textAttachment: NSTextAttachment, parentView: UIView, textLayoutManager: NSTextLayoutManager, location: NSTextLocation):NSTextAttachmentViewProvider;
     // https://developer.apple.com/documentation/uikit/nstextattachmentviewprovider/3857597-location
     location(): NSTextLocation;
-    setLocation(): void;
+    setLocation(value: NSTextLocation): void;
     // https://developer.apple.com/documentation/uikit/nstextattachmentviewprovider/3857598-textattachment
     textAttachment(): NSTextAttachment;
-    setTextAttachment(): void;
+    setTextAttachment(value: NSTextAttachment): void;
     // https://developer.apple.com/documentation/uikit/nstextattachmentviewprovider/3857599-textlayoutmanager
     textLayoutManager(): NSTextLayoutManager;
-    setTextLayoutManager(): void;
+    setTextLayoutManager(value: NSTextLayoutManager): void;
     // https://developer.apple.com/documentation/uikit/nstextattachmentviewprovider/3857600-trackstextattachmentviewbounds
-    tracksTextAttachmentViewBounds(): BOOL;
-    setTracksTextAttachmentViewBounds(): void;
+    tracksTextAttachmentViewBounds(): boolean;
+    setTracksTextAttachmentViewBounds(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nstextattachmentviewprovider/3857601-view
     view(): UIView;
-    setView(): void;
+    setView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/nstextattachmentviewprovider/3857596-loadview
     loadView():void;
     // https://developer.apple.com/documentation/uikit/nstextattachmentviewprovider/3857594-attachmentboundsforattributes
@@ -1627,20 +1627,20 @@ declare namespace cocoascript {
     buttonWithConfiguration_primaryAction(configuration: UIButtonConfiguration, primaryAction: UIAction):UIButton;
     // https://developer.apple.com/documentation/uikit/uibutton/3750768-configuration
     configuration(): UIButtonConfiguration;
-    setConfiguration(): void;
+    setConfiguration(value: UIButtonConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3750766-automaticallyupdatesconfiguratio
-    automaticallyUpdatesConfiguration(): BOOL;
-    setAutomaticallyUpdatesConfiguration(): void;
+    automaticallyUpdatesConfiguration(): boolean;
+    setAutomaticallyUpdatesConfiguration(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3750773-setneedsupdateconfiguration
     setNeedsUpdateConfiguration():void;
     // https://developer.apple.com/documentation/uikit/uibutton/3750775-updateconfiguration
     updateConfiguration():void;
     // https://developer.apple.com/documentation/uikit/uibutton/3750769-configurationupdatehandler
     configurationUpdateHandler(): UIButtonConfigurationUpdateHandler;
-    setConfigurationUpdateHandler(): void;
+    setConfigurationUpdateHandler(value: UIButtonConfigurationUpdateHandler): void;
     // https://developer.apple.com/documentation/uikit/uibutton/1623992-titlelabel
     titleLabel(): UILabel;
-    setTitleLabel(): void;
+    setTitleLabel(value: UILabel): void;
     // https://developer.apple.com/documentation/uikit/uibutton/1624022-titleforstate
     titleForState(state: UIControlState):NSString;
     // https://developer.apple.com/documentation/uikit/uibutton/1624018-settitle
@@ -1671,64 +1671,64 @@ declare namespace cocoascript {
     setPreferredSymbolConfiguration_forImageInState(configuration: UIImageSymbolConfiguration, state: UIControlState):void;
     // https://developer.apple.com/documentation/uikit/uibutton/1624025-tintcolor
     tintColor(): UIColor;
-    setTintColor(): void;
+    setTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3612050-role
     role(): UIButtonRole;
-    setRole(): void;
+    setRole(value: UIButtonRole): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3752180-behavioralstyle
     behavioralStyle(): UIBehavioralStyle;
-    setBehavioralStyle(): void;
+    setBehavioralStyle(value: UIBehavioralStyle): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3752181-preferredbehavioralstyle
     preferredBehavioralStyle(): UIBehavioralStyle;
-    setPreferredBehavioralStyle(): void;
+    setPreferredBehavioralStyle(value: UIBehavioralStyle): void;
     // https://developer.apple.com/documentation/uikit/uibutton/1624011-buttontype
     buttonType(): UIButtonType;
-    setButtonType(): void;
+    setButtonType(value: UIButtonType): void;
     // https://developer.apple.com/documentation/uikit/uibutton/1624032-currenttitle
     currentTitle(): string | cocoascript.NSString;
-    setCurrentTitle(): void;
+    setCurrentTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uibutton/1624002-currentattributedtitle
     currentAttributedTitle(): NSAttributedString;
-    setCurrentAttributedTitle(): void;
+    setCurrentAttributedTitle(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uibutton/1624006-currenttitlecolor
     currentTitleColor(): UIColor;
-    setCurrentTitleColor(): void;
+    setCurrentTitleColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uibutton/1624019-currenttitleshadowcolor
     currentTitleShadowColor(): UIColor;
-    setCurrentTitleShadowColor(): void;
+    setCurrentTitleShadowColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uibutton/1623998-currentimage
     currentImage(): UIImage;
-    setCurrentImage(): void;
+    setCurrentImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uibutton/1624035-currentbackgroundimage
     currentBackgroundImage(): UIImage;
-    setCurrentBackgroundImage(): void;
+    setCurrentBackgroundImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3295913-currentpreferredsymbolconfigurat
     currentPreferredSymbolConfiguration(): UIImageSymbolConfiguration;
-    setCurrentPreferredSymbolConfiguration(): void;
+    setCurrentPreferredSymbolConfiguration(value: UIImageSymbolConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uibutton/1624033-imageview
     imageView(): UIImageView;
-    setImageView(): void;
+    setImageView(value: UIImageView): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3750774-subtitlelabel
     subtitleLabel(): UILabel;
-    setSubtitleLabel(): void;
+    setSubtitleLabel(value: UILabel): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3538957-pointerinteractionenabled
-    pointerInteractionEnabled(): BOOL;
-    setPointerInteractionEnabled(): void;
+    pointerInteractionEnabled(): boolean;
+    setPointerInteractionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3750771-hovered
-    hovered(): BOOL;
-    setHovered(): void;
+    hovered(): boolean;
+    setHovered(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3538958-pointerstyleprovider
     pointerStyleProvider(): UIButtonPointerStyleProvider;
-    setPointerStyleProvider(): void;
+    setPointerStyleProvider(value: UIButtonPointerStyleProvider): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3601189-menu
     menu(): UIMenu;
-    setMenu(): void;
+    setMenu(value: UIMenu): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3750770-held
-    held(): BOOL;
-    setHeld(): void;
+    held(): boolean;
+    setHeld(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uibutton/3752184-changesselectionasprimaryaction
-    changesSelectionAsPrimaryAction(): BOOL;
-    setChangesSelectionAsPrimaryAction(): void;
+    changesSelectionAsPrimaryAction(): boolean;
+    setChangesSelectionAsPrimaryAction(value: boolean): void;
     //
     alloc():UIButton;
     //
@@ -1748,31 +1748,31 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiswitch/1623685-initwithcoder
     initWithCoder(coder: NSCoder):UISwitch;
     // https://developer.apple.com/documentation/uikit/uiswitch/1623690-on
-    on(): BOOL;
-    setOn(): void;
+    on(): boolean;
+    setOn(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiswitch/1623686-seton
-    setOn_animated(on: BOOL, animated: BOOL):void;
+    setOn_animated(on: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiswitch/3621874-preferredstyle
     preferredStyle(): UISwitchStyle;
-    setPreferredStyle(): void;
+    setPreferredStyle(value: UISwitchStyle): void;
     // https://developer.apple.com/documentation/uikit/uiswitch/3621875-style
     style(): UISwitchStyle;
-    setStyle(): void;
+    setStyle(value: UISwitchStyle): void;
     // https://developer.apple.com/documentation/uikit/uiswitch/3621876-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiswitch/1623687-ontintcolor
     onTintColor(): UIColor;
-    setOnTintColor(): void;
+    setOnTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uiswitch/1623684-thumbtintcolor
     thumbTintColor(): UIColor;
-    setThumbTintColor(): void;
+    setThumbTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uiswitch/1623689-onimage
     onImage(): UIImage;
-    setOnImage(): void;
+    setOnImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiswitch/1623683-offimage
     offImage(): UIImage;
-    setOffImage(): void;
+    setOffImage(value: UIImage): void;
     //
     alloc():UISwitch;
     //
@@ -1789,38 +1789,38 @@ declare namespace cocoascript {
   interface UIPageControl extends UIControl {
     // https://developer.apple.com/documentation/uikit/uipagecontrol/1621234-currentpage
     currentPage(): NSInteger;
-    setCurrentPage(): void;
+    setCurrentPage(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/1621232-numberofpages
     numberOfPages(): NSInteger;
-    setNumberOfPages(): void;
+    setNumberOfPages(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/1621238-hidesforsinglepage
-    hidesForSinglePage(): BOOL;
-    setHidesForSinglePage(): void;
+    hidesForSinglePage(): boolean;
+    setHidesForSinglePage(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/1621239-pageindicatortintcolor
     pageIndicatorTintColor(): UIColor;
-    setPageIndicatorTintColor(): void;
+    setPageIndicatorTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/1621233-currentpageindicatortintcolor
     currentPageIndicatorTintColor(): UIColor;
-    setCurrentPageIndicatorTintColor(): void;
+    setCurrentPageIndicatorTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/1621230-deferscurrentpagedisplay
-    defersCurrentPageDisplay(): BOOL;
-    setDefersCurrentPageDisplay(): void;
+    defersCurrentPageDisplay(): boolean;
+    setDefersCurrentPageDisplay(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/1621235-updatecurrentpagedisplay
     updateCurrentPageDisplay():void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/1621237-sizefornumberofpages
     sizeForNumberOfPages(pageCount: NSInteger):CGSize;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/3577676-backgroundstyle
     backgroundStyle(): UIPageControlBackgroundStyle;
-    setBackgroundStyle(): void;
+    setBackgroundStyle(value: UIPageControlBackgroundStyle): void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/3577675-allowscontinuousinteraction
-    allowsContinuousInteraction(): BOOL;
-    setAllowsContinuousInteraction(): void;
+    allowsContinuousInteraction(): boolean;
+    setAllowsContinuousInteraction(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/3577678-interactionstate
     interactionState(): UIPageControlInteractionState;
-    setInteractionState(): void;
+    setInteractionState(value: UIPageControlInteractionState): void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/3577679-preferredindicatorimage
     preferredIndicatorImage(): UIImage;
-    setPreferredIndicatorImage(): void;
+    setPreferredIndicatorImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/3577680-setindicatorimage
     setIndicatorImage_forPage(image: UIImage, page: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uipagecontrol/3577677-indicatorimageforpage
@@ -1843,17 +1843,17 @@ declare namespace cocoascript {
     init():UIRefreshControl;
     // https://developer.apple.com/documentation/uikit/uirefreshcontrol/1624847-tintcolor
     tintColor(): UIColor;
-    setTintColor(): void;
+    setTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uirefreshcontrol/1624845-attributedtitle
     attributedTitle(): NSAttributedString;
-    setAttributedTitle(): void;
+    setAttributedTitle(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uirefreshcontrol/1624842-beginrefreshing
     beginRefreshing():void;
     // https://developer.apple.com/documentation/uikit/uirefreshcontrol/1624848-endrefreshing
     endRefreshing():void;
     // https://developer.apple.com/documentation/uikit/uirefreshcontrol/1624844-refreshing
-    refreshing(): BOOL;
-    setRefreshing(): void;
+    refreshing(): boolean;
+    setRefreshing(value: boolean): void;
     //
     alloc():UIRefreshControl;
     //
@@ -1869,26 +1869,26 @@ declare namespace cocoascript {
    */
   interface UIStepper extends UIControl {
     // https://developer.apple.com/documentation/uikit/uistepper/1624082-continuous
-    continuous(): BOOL;
-    setContinuous(): void;
+    continuous(): boolean;
+    setContinuous(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uistepper/1624079-autorepeat
-    autorepeat(): BOOL;
-    setAutorepeat(): void;
+    autorepeat(): boolean;
+    setAutorepeat(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uistepper/1624068-wraps
-    wraps(): BOOL;
-    setWraps(): void;
+    wraps(): boolean;
+    setWraps(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uistepper/1624078-minimumvalue
     minimumValue(): number;
-    setMinimumValue(): void;
+    setMinimumValue(value: number): void;
     // https://developer.apple.com/documentation/uikit/uistepper/1624075-maximumvalue
     maximumValue(): number;
-    setMaximumValue(): void;
+    setMaximumValue(value: number): void;
     // https://developer.apple.com/documentation/uikit/uistepper/1624083-stepvalue
     stepValue(): number;
-    setStepValue(): void;
+    setStepValue(value: number): void;
     // https://developer.apple.com/documentation/uikit/uistepper/1624076-value
     value(): number;
-    setValue(): void;
+    setValue(value: number): void;
     // https://developer.apple.com/documentation/uikit/uistepper/1624069-backgroundimageforstate
     backgroundImageForState(state: UIControlState):UIImage;
     // https://developer.apple.com/documentation/uikit/uistepper/1624081-setbackgroundimage
@@ -1933,43 +1933,43 @@ declare namespace cocoascript {
     keyCommandWithInput_modifierFlags_action_discoverabilityTitle(input: string | cocoascript.NSString, modifierFlags: UIKeyModifierFlags, action: SEL, discoverabilityTitle: string | cocoascript.NSString):UIKeyCommand;
     // https://developer.apple.com/documentation/uikit/uikeycommand/3335197-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/3335190-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/1621143-input
     input(): string | cocoascript.NSString;
-    setInput(): void;
+    setInput(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/3175393-action
     action(): SEL;
-    setAction(): void;
+    setAction(value: SEL): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/1621140-modifierflags
     modifierFlags(): UIKeyModifierFlags;
-    setModifierFlags(): void;
+    setModifierFlags(value: UIKeyModifierFlags): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/1621094-discoverabilitytitle
     discoverabilityTitle(): string | cocoascript.NSString;
-    setDiscoverabilityTitle(): void;
+    setDiscoverabilityTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/3335189-attributes
     attributes(): UIMenuElementAttributes;
-    setAttributes(): void;
+    setAttributes(value: UIMenuElementAttributes): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/3335196-state
     state(): UIMenuElementState;
-    setState(): void;
+    setState(value: UIMenuElementState): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/3335188-alternates
     alternates(): UICommandAlternate;
-    setAlternates(): void;
+    setAlternates(value: UICommandAlternate): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/3335195-propertylist
     propertyList(): id;
-    setPropertyList(): void;
+    setPropertyList(value: id): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/3783575-allowsautomaticlocalization
-    allowsAutomaticLocalization(): BOOL;
-    setAllowsAutomaticLocalization(): void;
+    allowsAutomaticLocalization(): boolean;
+    setAllowsAutomaticLocalization(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/3783576-allowsautomaticmirroring
-    allowsAutomaticMirroring(): BOOL;
-    setAllowsAutomaticMirroring(): void;
+    allowsAutomaticMirroring(): boolean;
+    setAllowsAutomaticMirroring(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uikeycommand/3780513-wantspriorityoversystembehavior
-    wantsPriorityOverSystemBehavior(): BOOL;
-    setWantsPriorityOverSystemBehavior(): void;
+    wantsPriorityOverSystemBehavior(): boolean;
+    setWantsPriorityOverSystemBehavior(value: boolean): void;
     //
     alloc():UIKeyCommand;
     //
@@ -1988,56 +1988,56 @@ declare namespace cocoascript {
   interface UISlider extends UIControl {
     // https://developer.apple.com/documentation/uikit/uislider/1621346-value
     value(): number;
-    setValue(): void;
+    setValue(value: number): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621330-setvalue
-    setValue_animated(value: number, animated: BOOL):void;
+    setValue_animated(value: number, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uislider/1621345-minimumvalue
     minimumValue(): number;
-    setMinimumValue(): void;
+    setMinimumValue(value: number): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621341-maximumvalue
     maximumValue(): number;
-    setMaximumValue(): void;
+    setMaximumValue(value: number): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621340-continuous
-    continuous(): BOOL;
-    setContinuous(): void;
+    continuous(): boolean;
+    setContinuous(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uislider/3752182-behavioralstyle
     behavioralStyle(): UIBehavioralStyle;
-    setBehavioralStyle(): void;
+    setBehavioralStyle(value: UIBehavioralStyle): void;
     // https://developer.apple.com/documentation/uikit/uislider/3752183-preferredbehavioralstyle
     preferredBehavioralStyle(): UIBehavioralStyle;
-    setPreferredBehavioralStyle(): void;
+    setPreferredBehavioralStyle(value: UIBehavioralStyle): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621337-minimumvalueimage
     minimumValueImage(): UIImage;
-    setMinimumValueImage(): void;
+    setMinimumValueImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621329-maximumvalueimage
     maximumValueImage(): UIImage;
-    setMaximumValueImage(): void;
+    setMaximumValueImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621348-minimumtracktintcolor
     minimumTrackTintColor(): UIColor;
-    setMinimumTrackTintColor(): void;
+    setMinimumTrackTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621339-currentminimumtrackimage
     currentMinimumTrackImage(): UIImage;
-    setCurrentMinimumTrackImage(): void;
+    setCurrentMinimumTrackImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621328-minimumtrackimageforstate
     minimumTrackImageForState(state: UIControlState):UIImage;
     // https://developer.apple.com/documentation/uikit/uislider/1621331-setminimumtrackimage
     setMinimumTrackImage_forState(image: UIImage, state: UIControlState):void;
     // https://developer.apple.com/documentation/uikit/uislider/1621334-maximumtracktintcolor
     maximumTrackTintColor(): UIColor;
-    setMaximumTrackTintColor(): void;
+    setMaximumTrackTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621343-currentmaximumtrackimage
     currentMaximumTrackImage(): UIImage;
-    setCurrentMaximumTrackImage(): void;
+    setCurrentMaximumTrackImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621335-maximumtrackimageforstate
     maximumTrackImageForState(state: UIControlState):UIImage;
     // https://developer.apple.com/documentation/uikit/uislider/1621338-setmaximumtrackimage
     setMaximumTrackImage_forState(image: UIImage, state: UIControlState):void;
     // https://developer.apple.com/documentation/uikit/uislider/1621332-thumbtintcolor
     thumbTintColor(): UIColor;
-    setThumbTintColor(): void;
+    setThumbTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621347-currentthumbimage
     currentThumbImage(): UIImage;
-    setCurrentThumbImage(): void;
+    setCurrentThumbImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uislider/1621342-thumbimageforstate
     thumbImageForState(state: UIControlState):UIImage;
     // https://developer.apple.com/documentation/uikit/uislider/1621336-setthumbimage
@@ -2066,7 +2066,7 @@ declare namespace cocoascript {
   interface UIMenuBuilder {
     // https://developer.apple.com/documentation/uikit/uimenubuilder/3327311-system
     system(): UIMenuSystem;
-    setSystem(): void;
+    setSystem(value: UIMenuSystem): void;
     // https://developer.apple.com/documentation/uikit/uimenubuilder/3327307-menuforidentifier
     menuForIdentifier(identifier: UIMenuIdentifier):UIMenu;
     // https://developer.apple.com/documentation/uikit/uimenubuilder/3335198-actionforidentifier
@@ -2099,25 +2099,25 @@ declare namespace cocoascript {
     actionWithTitle_image_identifier_handler(title: string | cocoascript.NSString, image: UIImage, identifier: UIActionIdentifier, handler: UIActionHandler):UIAction;
     // https://developer.apple.com/documentation/uikit/uiaction/3335179-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiaction/3335177-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiaction/3335176-identifier
     identifier(): UIActionIdentifier;
-    setIdentifier(): void;
+    setIdentifier(value: UIActionIdentifier): void;
     // https://developer.apple.com/documentation/uikit/uiaction/3335175-discoverabilitytitle
     discoverabilityTitle(): string | cocoascript.NSString;
-    setDiscoverabilityTitle(): void;
+    setDiscoverabilityTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiaction/3335174-attributes
     attributes(): UIMenuElementAttributes;
-    setAttributes(): void;
+    setAttributes(value: UIMenuElementAttributes): void;
     // https://developer.apple.com/documentation/uikit/uiaction/3335178-state
     state(): UIMenuElementState;
-    setState(): void;
+    setState(value: UIMenuElementState): void;
     // https://developer.apple.com/documentation/uikit/uiaction/3600315-sender
     sender(): id;
-    setSender(): void;
+    setSender(value: id): void;
     // https://developer.apple.com/documentation/uikit/uiaction/3778552-capturetextfromcameraactionforre
     captureTextFromCameraActionForResponder_identifier(responder: UIKeyInput, identifier: UIActionIdentifier):UIAction;
     // https://developer.apple.com/documentation/uikit/uiaction/3656167-actionwithhandler
@@ -2144,18 +2144,18 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIMenu;
     // https://developer.apple.com/documentation/uikit/uimenu/3261448-children
     children(): UIMenuElement;
-    setChildren(): void;
+    setChildren(value: UIMenuElement): void;
     // https://developer.apple.com/documentation/uikit/uimenu/3261450-menubyreplacingchildren
     menuByReplacingChildren(newChildren: UIMenuElement):UIMenu;
     // https://developer.apple.com/documentation/uikit/uimenu/3261449-identifier
     identifier(): UIMenuIdentifier;
-    setIdentifier(): void;
+    setIdentifier(value: UIMenuIdentifier): void;
     // https://developer.apple.com/documentation/uikit/uimenu/3261451-options
     options(): UIMenuOptions;
-    setOptions(): void;
+    setOptions(value: UIMenuOptions): void;
     // https://developer.apple.com/documentation/uikit/uimenu/3750863-selectedelements
     selectedElements(): UIMenuElement;
-    setSelectedElements(): void;
+    setSelectedElements(value: UIMenuElement): void;
     // https://developer.apple.com/documentation/uikit/uimenu/3656168-menuwithchildren
     menuWithChildren(children: UIMenuElement):UIMenu;
     //
@@ -2183,17 +2183,17 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiactivityindicatorview/1622842-stopanimating
     stopAnimating():void;
     // https://developer.apple.com/documentation/uikit/uiactivityindicatorview/2097554-animating
-    animating(): BOOL;
-    setAnimating(): void;
+    animating(): boolean;
+    setAnimating(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiactivityindicatorview/1622837-hideswhenstopped
-    hidesWhenStopped(): BOOL;
-    setHidesWhenStopped(): void;
+    hidesWhenStopped(): boolean;
+    setHidesWhenStopped(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiactivityindicatorview/1622847-activityindicatorviewstyle
     activityIndicatorViewStyle(): UIActivityIndicatorViewStyle;
-    setActivityIndicatorViewStyle(): void;
+    setActivityIndicatorViewStyle(value: UIActivityIndicatorViewStyle): void;
     // https://developer.apple.com/documentation/uikit/uiactivityindicatorview/1622836-color
     color(): UIColor;
-    setColor(): void;
+    setColor(value: UIColor): void;
     //
     alloc():UIActivityIndicatorView;
     //
@@ -2212,26 +2212,26 @@ declare namespace cocoascript {
     alertControllerWithTitle_message_preferredStyle(title: string | cocoascript.NSString, message: string | cocoascript.NSString, preferredStyle: UIAlertControllerStyle):UIAlertController;
     // https://developer.apple.com/documentation/uikit/uialertcontroller/1620103-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uialertcontroller/1620106-message
     message(): string | cocoascript.NSString;
-    setMessage(): void;
+    setMessage(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uialertcontroller/1620096-preferredstyle
     preferredStyle(): UIAlertControllerStyle;
-    setPreferredStyle(): void;
+    setPreferredStyle(value: UIAlertControllerStyle): void;
     // https://developer.apple.com/documentation/uikit/uialertcontroller/1620094-addaction
     addAction(action: UIAlertAction):void;
     // https://developer.apple.com/documentation/uikit/uialertcontroller/1620099-actions
     actions(): UIAlertAction;
-    setActions(): void;
+    setActions(value: UIAlertAction): void;
     // https://developer.apple.com/documentation/uikit/uialertcontroller/1620102-preferredaction
     preferredAction(): UIAlertAction;
-    setPreferredAction(): void;
+    setPreferredAction(value: UIAlertAction): void;
     // https://developer.apple.com/documentation/uikit/uialertcontroller/1620093-addtextfieldwithconfigurationhan
     addTextFieldWithConfigurationHandler(configurationHandler: UITextField):void;
     // https://developer.apple.com/documentation/uikit/uialertcontroller/1620104-textfields
     textFields(): UITextField;
-    setTextFields(): void;
+    setTextFields(value: UITextField): void;
     //
     alloc():UIAlertController;
     //
@@ -2248,42 +2248,42 @@ declare namespace cocoascript {
   interface UIDatePicker extends UIControl {
     // https://developer.apple.com/documentation/uikit/uidatepicker/1615973-calendar
     calendar(): NSCalendar;
-    setCalendar(): void;
+    setCalendar(value: NSCalendar): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/1615975-date
     date(): NSDate;
-    setDate(): void;
+    setDate(value: NSDate): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/1615995-locale
     locale(): NSLocale;
-    setLocale(): void;
+    setLocale(value: NSLocale): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/1615971-setdate
-    setDate_animated(date: NSDate, animated: BOOL):void;
+    setDate_animated(date: NSDate, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/1615976-timezone
     timeZone(): NSTimeZone;
-    setTimeZone(): void;
+    setTimeZone(value: NSTimeZone): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/1615997-datepickermode
     datePickerMode(): UIDatePickerMode;
-    setDatePickerMode(): void;
+    setDatePickerMode(value: UIDatePickerMode): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/3526123-datepickerstyle
     datePickerStyle(): UIDatePickerStyle;
-    setDatePickerStyle(): void;
+    setDatePickerStyle(value: UIDatePickerStyle): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/3526124-preferreddatepickerstyle
     preferredDatePickerStyle(): UIDatePickerStyle;
-    setPreferredDatePickerStyle(): void;
+    setPreferredDatePickerStyle(value: UIDatePickerStyle): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/1615999-maximumdate
     maximumDate(): NSDate;
-    setMaximumDate(): void;
+    setMaximumDate(value: NSDate): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/1615980-minimumdate
     minimumDate(): NSDate;
-    setMinimumDate(): void;
+    setMinimumDate(value: NSDate): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/1615998-minuteinterval
     minuteInterval(): NSInteger;
-    setMinuteInterval(): void;
+    setMinuteInterval(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/1615986-countdownduration
     countDownDuration(): NSTimeInterval;
-    setCountDownDuration(): void;
+    setCountDownDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uidatepicker/3791478-roundstominuteinterval
-    roundsToMinuteInterval(): BOOL;
-    setRoundsToMinuteInterval(): void;
+    roundsToMinuteInterval(): boolean;
+    setRoundsToMinuteInterval(value: boolean): void;
     //
     alloc():UIDatePicker;
     //
@@ -2300,13 +2300,13 @@ declare namespace cocoascript {
   interface UIPickerView extends UIView {
     // https://developer.apple.com/documentation/uikit/uipickerview/1614370-datasource
     dataSource(): UIPickerViewDataSource;
-    setDataSource(): void;
+    setDataSource(value: UIPickerViewDataSource): void;
     // https://developer.apple.com/documentation/uikit/uipickerview/1614379-delegate
     delegate(): UIPickerViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIPickerViewDelegate): void;
     // https://developer.apple.com/documentation/uikit/uipickerview/1614368-numberofcomponents
     numberOfComponents(): NSInteger;
-    setNumberOfComponents(): void;
+    setNumberOfComponents(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uipickerview/1614381-numberofrowsincomponent
     numberOfRowsInComponent(component: NSInteger):NSInteger;
     // https://developer.apple.com/documentation/uikit/uipickerview/1614374-rowsizeforcomponent
@@ -2316,14 +2316,14 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uipickerview/1614385-reloadcomponent
     reloadComponent(component: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uipickerview/1614382-selectrow
-    selectRow_inComponent_animated(row: NSInteger, component: NSInteger, animated: BOOL):void;
+    selectRow_inComponent_animated(row: NSInteger, component: NSInteger, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipickerview/1614369-selectedrowincomponent
     selectedRowInComponent(component: NSInteger):NSInteger;
     // https://developer.apple.com/documentation/uikit/uipickerview/1614372-viewforrow
     viewForRow_forComponent(row: NSInteger, component: NSInteger):UIView;
     // https://developer.apple.com/documentation/uikit/uipickerview/1614373-showsselectionindicator
-    showsSelectionIndicator(): BOOL;
-    setShowsSelectionIndicator(): void;
+    showsSelectionIndicator(): boolean;
+    setShowsSelectionIndicator(value: boolean): void;
     //
     alloc():UIPickerView;
     //
@@ -2342,13 +2342,13 @@ declare namespace cocoascript {
     init():UIColorPickerViewController;
     // https://developer.apple.com/documentation/uikit/uicolorpickerviewcontroller/3600464-delegate
     delegate(): UIColorPickerViewControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIColorPickerViewControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uicolorpickerviewcontroller/3600466-selectedcolor
     selectedColor(): UIColor;
-    setSelectedColor(): void;
+    setSelectedColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uicolorpickerviewcontroller/3600467-supportsalpha
-    supportsAlpha(): BOOL;
-    setSupportsAlpha(): void;
+    supportsAlpha(): boolean;
+    setSupportsAlpha(value: boolean): void;
     //
     alloc():UIColorPickerViewController;
     //
@@ -2365,13 +2365,13 @@ declare namespace cocoascript {
   interface UIColorWell extends UIControl {
     // https://developer.apple.com/documentation/uikit/uicolorwell/3600472-selectedcolor
     selectedColor(): UIColor;
-    setSelectedColor(): void;
+    setSelectedColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uicolorwell/3600473-supportsalpha
-    supportsAlpha(): BOOL;
-    setSupportsAlpha(): void;
+    supportsAlpha(): boolean;
+    setSupportsAlpha(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicolorwell/3600474-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     //
     alloc():UIColorWell;
     //
@@ -2390,13 +2390,13 @@ declare namespace cocoascript {
     initWithConfiguration(configuration: UIFontPickerViewControllerConfiguration):UIFontPickerViewController;
     // https://developer.apple.com/documentation/uikit/uifontpickerviewcontroller/3238096-configuration
     configuration(): UIFontPickerViewControllerConfiguration;
-    setConfiguration(): void;
+    setConfiguration(value: UIFontPickerViewControllerConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uifontpickerviewcontroller/3238097-delegate
     delegate(): UIFontPickerViewControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIFontPickerViewControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uifontpickerviewcontroller/3238099-selectedfontdescriptor
     selectedFontDescriptor(): UIFontDescriptor;
-    setSelectedFontDescriptor(): void;
+    setSelectedFontDescriptor(value: UIFontDescriptor): void;
     //
     alloc():UIFontPickerViewController;
     //
@@ -2413,65 +2413,65 @@ declare namespace cocoascript {
   interface UIImagePickerController extends UINavigationController {
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619145-delegate
     delegate(): UIImagePickerControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIImagePickerControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619169-availablemediatypesforsourcetype
     availableMediaTypesForSourceType(sourceType: UIImagePickerControllerSourceType):NSString;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619144-issourcetypeavailable
-    isSourceTypeAvailable(sourceType: UIImagePickerControllerSourceType):BOOL;
+    isSourceTypeAvailable(sourceType: UIImagePickerControllerSourceType):boolean;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619167-sourcetype
     sourceType(): UIImagePickerControllerSourceType;
-    setSourceType(): void;
+    setSourceType(value: UIImagePickerControllerSourceType): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619173-mediatypes
     mediaTypes(): string | cocoascript.NSString;
-    setMediaTypes(): void;
+    setMediaTypes(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619137-allowsediting
-    allowsEditing(): BOOL;
-    setAllowsEditing(): void;
+    allowsEditing(): boolean;
+    setAllowsEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619115-allowsimageediting
-    allowsImageEditing(): BOOL;
-    setAllowsImageEditing(): void;
+    allowsImageEditing(): boolean;
+    setAllowsImageEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619154-videoquality
     videoQuality(): UIImagePickerControllerQualityType;
-    setVideoQuality(): void;
+    setVideoQuality(value: UIImagePickerControllerQualityType): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619146-videomaximumduration
     videoMaximumDuration(): NSTimeInterval;
-    setVideoMaximumDuration(): void;
+    setVideoMaximumDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619129-showscameracontrols
-    showsCameraControls(): BOOL;
-    setShowsCameraControls(): void;
+    showsCameraControls(): boolean;
+    setShowsCameraControls(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619113-cameraoverlayview
     cameraOverlayView(): UIView;
-    setCameraOverlayView(): void;
+    setCameraOverlayView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619142-cameraviewtransform
     cameraViewTransform(): CGAffineTransform;
-    setCameraViewTransform(): void;
+    setCameraViewTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619160-takepicture
     takePicture():void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619123-startvideocapture
-    startVideoCapture():BOOL;
+    startVideoCapture():boolean;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619140-stopvideocapture
     stopVideoCapture():void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619159-iscameradeviceavailable
-    isCameraDeviceAvailable(cameraDevice: UIImagePickerControllerCameraDevice):BOOL;
+    isCameraDeviceAvailable(cameraDevice: UIImagePickerControllerCameraDevice):boolean;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619117-cameradevice
     cameraDevice(): UIImagePickerControllerCameraDevice;
-    setCameraDevice(): void;
+    setCameraDevice(value: UIImagePickerControllerCameraDevice): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619127-availablecapturemodesforcamerade
     availableCaptureModesForCameraDevice(cameraDevice: UIImagePickerControllerCameraDevice):NSNumber;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619141-cameracapturemode
     cameraCaptureMode(): UIImagePickerControllerCameraCaptureMode;
-    setCameraCaptureMode(): void;
+    setCameraCaptureMode(value: UIImagePickerControllerCameraCaptureMode): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619118-isflashavailableforcameradevice
-    isFlashAvailableForCameraDevice(cameraDevice: UIImagePickerControllerCameraDevice):BOOL;
+    isFlashAvailableForCameraDevice(cameraDevice: UIImagePickerControllerCameraDevice):boolean;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/1619124-cameraflashmode
     cameraFlashMode(): UIImagePickerControllerCameraFlashMode;
-    setCameraFlashMode(): void;
+    setCameraFlashMode(value: UIImagePickerControllerCameraFlashMode): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/2897484-imageexportpreset
     imageExportPreset(): UIImagePickerControllerImageURLExportPreset;
-    setImageExportPreset(): void;
+    setImageExportPreset(value: UIImagePickerControllerImageURLExportPreset): void;
     // https://developer.apple.com/documentation/uikit/uiimagepickercontroller/2890964-videoexportpreset
     videoExportPreset(): string | cocoascript.NSString;
-    setVideoExportPreset(): void;
+    setVideoExportPreset(value: string | cocoascript.NSString): void;
     //
     alloc():UIImagePickerController;
     //
@@ -2492,53 +2492,53 @@ declare namespace cocoascript {
     initWithImage_highlightedImage(image: UIImage, highlightedImage: UIImage):UIImageView;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621069-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621066-highlightedimage
     highlightedImage(): UIImage;
-    setHighlightedImage(): void;
+    setHighlightedImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621068-animationimages
     animationImages(): UIImage;
-    setAnimationImages(): void;
+    setAnimationImages(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621065-highlightedanimationimages
     highlightedAnimationImages(): UIImage;
-    setHighlightedAnimationImages(): void;
+    setHighlightedAnimationImages(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621058-animationduration
     animationDuration(): NSTimeInterval;
-    setAnimationDuration(): void;
+    setAnimationDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621070-animationrepeatcount
     animationRepeatCount(): NSInteger;
-    setAnimationRepeatCount(): void;
+    setAnimationRepeatCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621061-startanimating
     startAnimating():void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621057-stopanimating
     stopAnimating():void;
     // https://developer.apple.com/documentation/uikit/uiimageview/2097534-animating
-    animating(): BOOL;
-    setAnimating(): void;
+    animating(): boolean;
+    setAnimating(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/3295948-preferredsymbolconfiguration
     preferredSymbolConfiguration(): UIImageSymbolConfiguration;
-    setPreferredSymbolConfiguration(): void;
+    setPreferredSymbolConfiguration(value: UIImageSymbolConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621063-userinteractionenabled
-    userInteractionEnabled(): BOOL;
-    setUserInteractionEnabled(): void;
+    userInteractionEnabled(): boolean;
+    setUserInteractionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621060-highlighted
-    highlighted(): BOOL;
-    setHighlighted(): void;
+    highlighted(): boolean;
+    setHighlighted(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1621059-tintcolor
     tintColor(): UIColor;
-    setTintColor(): void;
+    setTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1627692-adjustsimagewhenancestorfocused
-    adjustsImageWhenAncestorFocused(): BOOL;
-    setAdjustsImageWhenAncestorFocused(): void;
+    adjustsImageWhenAncestorFocused(): boolean;
+    setAdjustsImageWhenAncestorFocused(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/1627691-focusedframeguide
     focusedFrameGuide(): UILayoutGuide;
-    setFocusedFrameGuide(): void;
+    setFocusedFrameGuide(value: UILayoutGuide): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/2920037-masksfocuseffecttocontents
-    masksFocusEffectToContents(): BOOL;
-    setMasksFocusEffectToContents(): void;
+    masksFocusEffectToContents(): boolean;
+    setMasksFocusEffectToContents(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimageview/2882128-overlaycontentview
     overlayContentView(): UIView;
-    setOverlayContentView(): void;
+    setOverlayContentView(value: UIView): void;
     //
     alloc():UIImageView;
     //
@@ -2561,27 +2561,27 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIProgressView;
     // https://developer.apple.com/documentation/uikit/uiprogressview/1619844-progress
     progress(): number;
-    setProgress(): void;
+    setProgress(value: number): void;
     // https://developer.apple.com/documentation/uikit/uiprogressview/1619846-setprogress
-    setProgress_animated(progress: number, animated: BOOL):void;
+    setProgress_animated(progress: number, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiprogressview/1619840-observedprogress
     observedProgress(): NSProgress;
-    setObservedProgress(): void;
+    setObservedProgress(value: NSProgress): void;
     // https://developer.apple.com/documentation/uikit/uiprogressview/1619845-progressviewstyle
     progressViewStyle(): UIProgressViewStyle;
-    setProgressViewStyle(): void;
+    setProgressViewStyle(value: UIProgressViewStyle): void;
     // https://developer.apple.com/documentation/uikit/uiprogressview/1619836-progresstintcolor
     progressTintColor(): UIColor;
-    setProgressTintColor(): void;
+    setProgressTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uiprogressview/1619837-progressimage
     progressImage(): UIImage;
-    setProgressImage(): void;
+    setProgressImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiprogressview/1619841-tracktintcolor
     trackTintColor(): UIColor;
-    setTrackTintColor(): void;
+    setTrackTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uiprogressview/1619843-trackimage
     trackImage(): UIImage;
-    setTrackImage(): void;
+    setTrackImage(value: UIImage): void;
     //
     alloc():UIProgressView;
     //
@@ -2604,54 +2604,54 @@ declare namespace cocoascript {
     initWithFrame(frame: CGRect):UISearchBar;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624291-delegate
     delegate(): UISearchBarDelegate;
-    setDelegate(): void;
+    setDelegate(value: UISearchBarDelegate): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624322-placeholder
     placeholder(): string | cocoascript.NSString;
-    setPlaceholder(): void;
+    setPlaceholder(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624326-prompt
     prompt(): string | cocoascript.NSString;
-    setPrompt(): void;
+    setPrompt(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624282-text
     text(): string | cocoascript.NSString;
-    setText(): void;
+    setText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/3175433-searchtextfield
     searchTextField(): UISearchTextField;
-    setSearchTextField(): void;
+    setSearchTextField(value: UISearchTextField): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624295-bartintcolor
     barTintColor(): UIColor;
-    setBarTintColor(): void;
+    setBarTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624281-searchbarstyle
     searchBarStyle(): UISearchBarStyle;
-    setSearchBarStyle(): void;
+    setSearchBarStyle(value: UISearchBarStyle): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624286-tintcolor
     tintColor(): UIColor;
-    setTintColor(): void;
+    setTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624321-translucent
-    translucent(): BOOL;
-    setTranslucent(): void;
+    translucent(): boolean;
+    setTranslucent(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624270-barstyle
     barStyle(): UIBarStyle;
-    setBarStyle(): void;
+    setBarStyle(value: UIBarStyle): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624275-inputassistantitem
     inputAssistantItem(): UITextInputAssistantItem;
-    setInputAssistantItem(): void;
+    setInputAssistantItem(value: UITextInputAssistantItem): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624298-showsbookmarkbutton
-    showsBookmarkButton(): BOOL;
-    setShowsBookmarkButton(): void;
+    showsBookmarkButton(): boolean;
+    setShowsBookmarkButton(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624283-showscancelbutton
-    showsCancelButton(): BOOL;
-    setShowsCancelButton(): void;
+    showsCancelButton(): boolean;
+    setShowsCancelButton(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624293-setshowscancelbutton
-    setShowsCancelButton_animated(showsCancelButton: BOOL, animated: BOOL):void;
+    setShowsCancelButton_animated(showsCancelButton: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624273-showssearchresultsbutton
-    showsSearchResultsButton(): BOOL;
-    setShowsSearchResultsButton(): void;
+    showsSearchResultsButton(): boolean;
+    setShowsSearchResultsButton(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624285-searchresultsbuttonselected
-    searchResultsButtonSelected(): BOOL;
-    setSearchResultsButtonSelected(): void;
+    searchResultsButtonSelected(): boolean;
+    setSearchResultsButtonSelected(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624276-backgroundimage
     backgroundImage(): UIImage;
-    setBackgroundImage(): void;
+    setBackgroundImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624274-backgroundimageforbarposition
     backgroundImageForBarPosition_barMetrics(barPosition: UIBarPosition, barMetrics: UIBarMetrics):UIImage;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624325-setbackgroundimage
@@ -2666,31 +2666,31 @@ declare namespace cocoascript {
     setPositionAdjustment_forSearchBarIcon(adjustment: UIOffset, icon: UISearchBarIcon):void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624279-inputaccessoryview
     inputAccessoryView(): UIView;
-    setInputAccessoryView(): void;
+    setInputAccessoryView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624288-searchfieldbackgroundimageforsta
     searchFieldBackgroundImageForState(state: UIControlState):UIImage;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624307-setsearchfieldbackgroundimage
     setSearchFieldBackgroundImage_forState(backgroundImage: UIImage, state: UIControlState):void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624320-searchfieldbackgroundpositionadj
     searchFieldBackgroundPositionAdjustment(): UIOffset;
-    setSearchFieldBackgroundPositionAdjustment(): void;
+    setSearchFieldBackgroundPositionAdjustment(value: UIOffset): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624297-searchtextpositionadjustment
     searchTextPositionAdjustment(): UIOffset;
-    setSearchTextPositionAdjustment(): void;
+    setSearchTextPositionAdjustment(value: UIOffset): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624292-scopebuttontitles
     scopeButtonTitles(): string | cocoascript.NSString;
-    setScopeButtonTitles(): void;
+    setScopeButtonTitles(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex
     selectedScopeButtonIndex(): NSInteger;
-    setSelectedScopeButtonIndex(): void;
+    setSelectedScopeButtonIndex(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624319-showsscopebar
-    showsScopeBar(): BOOL;
-    setShowsScopeBar(): void;
+    showsScopeBar(): boolean;
+    setShowsScopeBar(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/3152925-setshowsscopebar
-    setShowsScopeBar_animated(show: BOOL, animate: BOOL):void;
+    setShowsScopeBar_animated(show: boolean, animate: boolean):void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624317-scopebarbackgroundimage
     scopeBarBackgroundImage(): UIImage;
-    setScopeBarBackgroundImage(): void;
+    setScopeBarBackgroundImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624311-scopebarbuttonbackgroundimagefor
     scopeBarButtonBackgroundImageForState(state: UIControlState):UIImage;
     // https://developer.apple.com/documentation/uikit/uisearchbar/1624290-setscopebarbuttonbackgroundimage
@@ -2739,29 +2739,29 @@ declare namespace cocoascript {
     setAction_forSegmentAtIndex(action: UIAction, segment: NSUInteger):void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments
     numberOfSegments(): NSUInteger;
-    setNumberOfSegments(): void;
+    setNumberOfSegments(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/3600582-segmentindexforactionidentifier
     segmentIndexForActionIdentifier(actionIdentifier: UIActionIdentifier):NSInteger;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/3600581-insertsegmentwithaction
-    insertSegmentWithAction_atIndex_animated(action: UIAction, segment: NSUInteger, animated: BOOL):void;
+    insertSegmentWithAction_atIndex_animated(action: UIAction, segment: NSUInteger, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618572-insertsegmentwithimage
-    insertSegmentWithImage_atIndex_animated(image: UIImage, segment: NSUInteger, animated: BOOL):void;
+    insertSegmentWithImage_atIndex_animated(image: UIImage, segment: NSUInteger, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618588-insertsegmentwithtitle
-    insertSegmentWithTitle_atIndex_animated(title: string | cocoascript.NSString, segment: NSUInteger, animated: BOOL):void;
+    insertSegmentWithTitle_atIndex_animated(title: string | cocoascript.NSString, segment: NSUInteger, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618557-removeallsegments
     removeAllSegments():void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618590-removesegmentatindex
-    removeSegmentAtIndex_animated(segment: NSUInteger, animated: BOOL):void;
+    removeSegmentAtIndex_animated(segment: NSUInteger, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618575-selectedsegmentindex
     selectedSegmentIndex(): NSInteger;
-    setSelectedSegmentIndex(): void;
+    setSelectedSegmentIndex(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618586-momentary
-    momentary(): BOOL;
-    setMomentary(): void;
+    momentary(): boolean;
+    setMomentary(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618567-setenabled
-    setEnabled_forSegmentAtIndex(enabled: BOOL, segment: NSUInteger):void;
+    setEnabled_forSegmentAtIndex(enabled: boolean, segment: NSUInteger):void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618591-isenabledforsegmentatindex
-    isEnabledForSegmentAtIndex(segment: NSUInteger):BOOL;
+    isEnabledForSegmentAtIndex(segment: NSUInteger):boolean;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618574-setcontentoffset
     setContentOffset_forSegmentAtIndex(offset: CGSize, segment: NSUInteger):void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618580-contentoffsetforsegmentatindex
@@ -2771,14 +2771,14 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618581-widthforsegmentatindex
     widthForSegmentAtIndex(segment: NSUInteger):CGFloat;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618578-apportionssegmentwidthsbycontent
-    apportionsSegmentWidthsByContent(): BOOL;
-    setApportionsSegmentWidthsByContent(): void;
+    apportionsSegmentWidthsByContent(): boolean;
+    setApportionsSegmentWidthsByContent(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618577-segmentedcontrolstyle
     segmentedControlStyle(): UISegmentedControlStyle;
-    setSegmentedControlStyle(): void;
+    setSegmentedControlStyle(value: UISegmentedControlStyle): void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/3335209-selectedsegmenttintcolor
     selectedSegmentTintColor(): UIColor;
-    setSelectedSegmentTintColor(): void;
+    setSelectedSegmentTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618583-backgroundimageforstate
     backgroundImageForState_barMetrics(state: UIControlState, barMetrics: UIBarMetrics):UIImage;
     // https://developer.apple.com/documentation/uikit/uisegmentedcontrol/1618571-setbackgroundimage
@@ -2819,29 +2819,29 @@ declare namespace cocoascript {
     addArrangedSubview(view: UIView):void;
     // https://developer.apple.com/documentation/uikit/uistackview/1616232-arrangedsubviews
     arrangedSubviews(): UIView;
-    setArrangedSubviews(): void;
+    setArrangedSubviews(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uistackview/1616237-insertarrangedsubview
     insertArrangedSubview_atIndex(view: UIView, stackIndex: NSUInteger):void;
     // https://developer.apple.com/documentation/uikit/uistackview/1616235-removearrangedsubview
     removeArrangedSubview(view: UIView):void;
     // https://developer.apple.com/documentation/uikit/uistackview/1616243-alignment
     alignment(): UIStackViewAlignment;
-    setAlignment(): void;
+    setAlignment(value: UIStackViewAlignment): void;
     // https://developer.apple.com/documentation/uikit/uistackview/1616223-axis
     axis(): UILayoutConstraintAxis;
-    setAxis(): void;
+    setAxis(value: UILayoutConstraintAxis): void;
     // https://developer.apple.com/documentation/uikit/uistackview/1616224-baselinerelativearrangement
-    baselineRelativeArrangement(): BOOL;
-    setBaselineRelativeArrangement(): void;
+    baselineRelativeArrangement(): boolean;
+    setBaselineRelativeArrangement(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uistackview/1616233-distribution
     distribution(): UIStackViewDistribution;
-    setDistribution(): void;
+    setDistribution(value: UIStackViewDistribution): void;
     // https://developer.apple.com/documentation/uikit/uistackview/1616220-layoutmarginsrelativearrangement
-    layoutMarginsRelativeArrangement(): BOOL;
-    setLayoutMarginsRelativeArrangement(): void;
+    layoutMarginsRelativeArrangement(): boolean;
+    setLayoutMarginsRelativeArrangement(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uistackview/1616225-spacing
     spacing(): CGFloat;
-    setSpacing(): void;
+    setSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uistackview/2865827-customspacingafterview
     customSpacingAfterView(arrangedSubview: UIView):CGFloat;
     // https://developer.apple.com/documentation/uikit/uistackview/2866023-setcustomspacing
@@ -2862,76 +2862,76 @@ declare namespace cocoascript {
   interface UITextField extends UIControl {
     // https://developer.apple.com/documentation/uikit/uitextfield/1619595-delegate
     delegate(): UITextFieldDelegate;
-    setDelegate(): void;
+    setDelegate(value: UITextFieldDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619635-text
     text(): string | cocoascript.NSString;
-    setText(): void;
+    setText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619602-attributedtext
     attributedText(): NSAttributedString;
-    setAttributedText(): void;
+    setAttributedText(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619621-placeholder
     placeholder(): string | cocoascript.NSString;
-    setPlaceholder(): void;
+    setPlaceholder(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619610-attributedplaceholder
     attributedPlaceholder(): NSAttributedString;
-    setAttributedPlaceholder(): void;
+    setAttributedPlaceholder(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619618-defaulttextattributes
     defaultTextAttributes(): id;
-    setDefaultTextAttributes(): void;
+    setDefaultTextAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619604-font
     font(): UIFont;
-    setFont(): void;
+    setFont(value: UIFont): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619617-textcolor
     textColor(): UIColor;
-    setTextColor(): void;
+    setTextColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619643-textalignment
     textAlignment(): NSTextAlignment;
-    setTextAlignment(): void;
+    setTextAlignment(value: NSTextAlignment): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619632-typingattributes
     typingAttributes(): id;
-    setTypingAttributes(): void;
+    setTypingAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619625-adjustsfontsizetofitwidth
-    adjustsFontSizeToFitWidth(): BOOL;
-    setAdjustsFontSizeToFitWidth(): void;
+    adjustsFontSizeToFitWidth(): boolean;
+    setAdjustsFontSizeToFitWidth(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619605-minimumfontsize
     minimumFontSize(): CGFloat;
-    setMinimumFontSize(): void;
+    setMinimumFontSize(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619608-editing
-    editing(): BOOL;
-    setEditing(): void;
+    editing(): boolean;
+    setEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619639-clearsonbeginediting
-    clearsOnBeginEditing(): BOOL;
-    setClearsOnBeginEditing(): void;
+    clearsOnBeginEditing(): boolean;
+    setClearsOnBeginEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619631-clearsoninsertion
-    clearsOnInsertion(): BOOL;
-    setClearsOnInsertion(): void;
+    clearsOnInsertion(): boolean;
+    setClearsOnInsertion(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619628-allowseditingtextattributes
-    allowsEditingTextAttributes(): BOOL;
-    setAllowsEditingTextAttributes(): void;
+    allowsEditingTextAttributes(): boolean;
+    setAllowsEditingTextAttributes(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619624-borderstyle
     borderStyle(): UITextBorderStyle;
-    setBorderStyle(): void;
+    setBorderStyle(value: UITextBorderStyle): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619623-background
     background(): UIImage;
-    setBackground(): void;
+    setBackground(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619611-disabledbackground
     disabledBackground(): UIImage;
-    setDisabledBackground(): void;
+    setDisabledBackground(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619622-clearbuttonmode
     clearButtonMode(): UITextFieldViewMode;
-    setClearButtonMode(): void;
+    setClearButtonMode(value: UITextFieldViewMode): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619597-leftview
     leftView(): UIView;
-    setLeftView(): void;
+    setLeftView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619588-leftviewmode
     leftViewMode(): UITextFieldViewMode;
-    setLeftViewMode(): void;
+    setLeftViewMode(value: UITextFieldViewMode): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619596-rightview
     rightView(): UIView;
-    setRightView(): void;
+    setRightView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619607-rightviewmode
     rightViewMode(): UITextFieldViewMode;
-    setRightViewMode(): void;
+    setRightViewMode(value: UITextFieldViewMode): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619636-textrectforbounds
     textRectForBounds(bounds: CGRect):CGRect;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619587-drawtextinrect
@@ -2952,13 +2952,13 @@ declare namespace cocoascript {
     rightViewRectForBounds(bounds: CGRect):CGRect;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619620-inputview
     inputView(): UIView;
-    setInputView(): void;
+    setInputView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619627-inputaccessoryview
     inputAccessoryView(): UIView;
-    setInputAccessoryView(): void;
+    setInputAccessoryView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/3821028-interactionstate
     interactionState(): id;
-    setInteractionState(): void;
+    setInteractionState(value: id): void;
     //
     alloc():UITextField;
     //
@@ -2980,15 +2980,15 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitextformattingcoordinator/3261464-initwithwindowscene
     initWithWindowScene(windowScene: UIWindowScene):UITextFormattingCoordinator;
     // https://developer.apple.com/documentation/uikit/uitextformattingcoordinator/3261463-fontpanelvisible
-    fontPanelVisible(): BOOL;
-    setFontPanelVisible(): void;
+    fontPanelVisible(): boolean;
+    setFontPanelVisible(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextformattingcoordinator/3261467-togglefontpanel
     toggleFontPanel(sender: UITextFormattingCoordinator):void;
     // https://developer.apple.com/documentation/uikit/uitextformattingcoordinator/3261465-setselectedattributes
-    setSelectedAttributes_isMultiple(attributes: UITextFormattingCoordinator, flag: BOOL):void;
+    setSelectedAttributes_isMultiple(attributes: UITextFormattingCoordinator, flag: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitextformattingcoordinator/3261462-delegate
     delegate(): UITextFormattingCoordinatorDelegate;
-    setDelegate(): void;
+    setDelegate(value: UITextFormattingCoordinatorDelegate): void;
     //
     alloc():UITextFormattingCoordinator;
     //
@@ -3009,74 +3009,74 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UITextView;
     // https://developer.apple.com/documentation/uikit/uitextview/1618631-delegate
     delegate(): UITextViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: UITextViewDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618623-text
     text(): string | cocoascript.NSString;
-    setText(): void;
+    setText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618626-attributedtext
     attributedText(): NSAttributedString;
-    setAttributedText(): void;
+    setAttributedText(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618600-font
     font(): UIFont;
-    setFont(): void;
+    setFont(value: UIFont): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618601-textcolor
     textColor(): UIColor;
-    setTextColor(): void;
+    setTextColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618607-datadetectortypes
     dataDetectorTypes(): UIDataDetectorTypes;
-    setDataDetectorTypes(): void;
+    setDataDetectorTypes(value: UIDataDetectorTypes): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618618-textalignment
     textAlignment(): NSTextAlignment;
-    setTextAlignment(): void;
+    setTextAlignment(value: NSTextAlignment): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1807137-hastext
     ():void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618629-typingattributes
     typingAttributes(): id;
-    setTypingAttributes(): void;
+    setTypingAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618632-linktextattributes
     linkTextAttributes(): id;
-    setLinkTextAttributes(): void;
+    setLinkTextAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618619-textcontainerinset
     textContainerInset(): UIEdgeInsets;
-    setTextContainerInset(): void;
+    setTextContainerInset(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uitextview/3295975-usesstandardtextscaling
-    usesStandardTextScaling(): BOOL;
-    setUsesStandardTextScaling(): void;
+    usesStandardTextScaling(): boolean;
+    setUsesStandardTextScaling(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618616-editable
-    editable(): BOOL;
-    setEditable(): void;
+    editable(): boolean;
+    setEditable(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618622-allowseditingtextattributes
-    allowsEditingTextAttributes(): BOOL;
-    setAllowsEditingTextAttributes(): void;
+    allowsEditingTextAttributes(): boolean;
+    setAllowsEditingTextAttributes(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618615-selectedrange
     selectedRange(): NSRange;
-    setSelectedRange(): void;
+    setSelectedRange(value: NSRange): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618613-scrollrangetovisible
     scrollRangeToVisible(range: NSRange):void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618605-clearsoninsertion
-    clearsOnInsertion(): BOOL;
-    setClearsOnInsertion(): void;
+    clearsOnInsertion(): boolean;
+    setClearsOnInsertion(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618627-selectable
-    selectable(): BOOL;
-    setSelectable(): void;
+    selectable(): boolean;
+    setSelectable(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618614-inputview
     inputView(): UIView;
-    setInputView(): void;
+    setInputView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618596-inputaccessoryview
     inputAccessoryView(): UIView;
-    setInputAccessoryView(): void;
+    setInputAccessoryView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618602-layoutmanager
     layoutManager(): NSLayoutManager;
-    setLayoutManager(): void;
+    setLayoutManager(value: NSLayoutManager): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618624-textcontainer
     textContainer(): NSTextContainer;
-    setTextContainer(): void;
+    setTextContainer(value: NSTextContainer): void;
     // https://developer.apple.com/documentation/uikit/uitextview/1618611-textstorage
     textStorage(): NSTextStorage;
-    setTextStorage(): void;
+    setTextStorage(value: NSTextStorage): void;
     // https://developer.apple.com/documentation/uikit/uitextview/3821029-interactionstate
     interactionState(): id;
-    setInteractionState(): void;
+    setInteractionState(value: id): void;
     //
     alloc():UITextView;
     //
@@ -3093,27 +3093,27 @@ declare namespace cocoascript {
   interface UIToolbar extends UIView {
     // https://developer.apple.com/documentation/uikit/uitoolbar/1617992-delegate
     delegate(): UIToolbarDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIToolbarDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitoolbar/1617997-items
     items(): UIBarButtonItem;
-    setItems(): void;
+    setItems(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uitoolbar/1617999-setitems
-    setItems_animated(items: UIBarButtonItem, animated: BOOL):void;
+    setItems_animated(items: UIBarButtonItem, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitoolbar/3198081-standardappearance
     standardAppearance(): UIToolbarAppearance;
-    setStandardAppearance(): void;
+    setStandardAppearance(value: UIToolbarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitoolbar/3198080-compactappearance
     compactAppearance(): UIToolbarAppearance;
-    setCompactAppearance(): void;
+    setCompactAppearance(value: UIToolbarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitoolbar/3752214-scrolledgeappearance
     scrollEdgeAppearance(): UIToolbarAppearance;
-    setScrollEdgeAppearance(): void;
+    setScrollEdgeAppearance(value: UIToolbarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitoolbar/3752213-compactscrolledgeappearance
     compactScrollEdgeAppearance(): UIToolbarAppearance;
-    setCompactScrollEdgeAppearance(): void;
+    setCompactScrollEdgeAppearance(value: UIToolbarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitoolbar/1618001-translucent
-    translucent(): BOOL;
-    setTranslucent(): void;
+    translucent(): boolean;
+    setTranslucent(value: boolean): void;
     //
     alloc():UIToolbar;
     //
@@ -3148,70 +3148,70 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIView;
     // https://developer.apple.com/documentation/uikit/uiview/1622591-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622585-hidden
-    hidden(): BOOL;
-    setHidden(): void;
+    hidden(): boolean;
+    setHidden(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622417-alpha
     alpha(): CGFloat;
-    setAlpha(): void;
+    setAlpha(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622622-opaque
-    opaque(): BOOL;
-    setOpaque(): void;
+    opaque(): boolean;
+    setOpaque(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622467-tintcolor
     tintColor(): UIColor;
-    setTintColor(): void;
+    setTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622555-tintadjustmentmode
     tintAdjustmentMode(): UIViewTintAdjustmentMode;
-    setTintAdjustmentMode(): void;
+    setTintAdjustmentMode(value: UIViewTintAdjustmentMode): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622415-clipstobounds
-    clipsToBounds(): BOOL;
-    setClipsToBounds(): void;
+    clipsToBounds(): boolean;
+    setClipsToBounds(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622449-clearscontextbeforedrawing
-    clearsContextBeforeDrawing(): BOOL;
-    setClearsContextBeforeDrawing(): void;
+    clearsContextBeforeDrawing(): boolean;
+    setClearsContextBeforeDrawing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622557-maskview
     maskView(): UIView;
-    setMaskView(): void;
+    setMaskView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622626-layerclass
     layerClass(): Class;
-    setLayerClass(): void;
+    setLayerClass(value: Class): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622436-layer
     layer(): CALayer;
-    setLayer(): void;
+    setLayer(value: CALayer): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622577-userinteractionenabled
-    userInteractionEnabled(): BOOL;
-    setUserInteractionEnabled(): void;
+    userInteractionEnabled(): boolean;
+    setUserInteractionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622519-multipletouchenabled
-    multipleTouchEnabled(): BOOL;
-    setMultipleTouchEnabled(): void;
+    multipleTouchEnabled(): boolean;
+    setMultipleTouchEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622453-exclusivetouch
-    exclusiveTouch(): BOOL;
-    setExclusiveTouch(): void;
+    exclusiveTouch(): boolean;
+    setExclusiveTouch(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622621-frame
     frame(): CGRect;
-    setFrame(): void;
+    setFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622580-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622627-center
     center(): CGPoint;
-    setCenter(): void;
+    setCenter(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622459-transform
     transform(): CGAffineTransform;
-    setTransform(): void;
+    setTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/uikit/uiview/3043565-transform3d
     transform3D(): CATransform3D;
-    setTransform3D(): void;
+    setTransform3D(value: CATransform3D): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622474-superview
     superview(): UIView;
-    setSuperview(): void;
+    setSuperview(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622614-subviews
     subviews(): UIView;
-    setSubviews(): void;
+    setSubviews(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622456-window
     window(): UIWindow;
-    setWindow(): void;
+    setWindow(value: UIWindow): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622616-addsubview
     addSubview(view: UIView):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622541-bringsubviewtofront
@@ -3229,7 +3229,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiview/1622448-exchangesubviewatindex
     exchangeSubviewAtIndex_withSubviewAtIndex(index1: NSInteger, index2: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622521-isdescendantofview
-    isDescendantOfView(view: UIView):BOOL;
+    isDescendantOfView(view: UIView):boolean;
     // https://developer.apple.com/documentation/uikit/uiview/1622500-didaddsubview
     didAddSubview(subview: UIView):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622647-willremovesubview
@@ -3244,29 +3244,29 @@ declare namespace cocoascript {
     didMoveToWindow():void;
     // https://developer.apple.com/documentation/uikit/uiview/2865930-directionallayoutmargins
     directionalLayoutMargins(): NSDirectionalEdgeInsets;
-    setDirectionalLayoutMargins(): void;
+    setDirectionalLayoutMargins(value: NSDirectionalEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622566-layoutmargins
     layoutMargins(): UIEdgeInsets;
-    setLayoutMargins(): void;
+    setLayoutMargins(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622653-preservessuperviewlayoutmargins
-    preservesSuperviewLayoutMargins(): BOOL;
-    setPreservesSuperviewLayoutMargins(): void;
+    preservesSuperviewLayoutMargins(): boolean;
+    setPreservesSuperviewLayoutMargins(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622416-layoutmarginsdidchange
     layoutMarginsDidChange():void;
     // https://developer.apple.com/documentation/uikit/uiview/2891103-safeareainsets
     safeAreaInsets(): UIEdgeInsets;
-    setSafeAreaInsets(): void;
+    setSafeAreaInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiview/2891102-safearealayoutguide
     safeAreaLayoutGuide(): UILayoutGuide;
-    setSafeAreaLayoutGuide(): void;
+    setSafeAreaLayoutGuide(value: UILayoutGuide): void;
     // https://developer.apple.com/documentation/uikit/uiview/2891104-safeareainsetsdidchange
     safeAreaInsetsDidChange():void;
     // https://developer.apple.com/documentation/uikit/uiview/2891101-insetslayoutmarginsfromsafearea
-    insetsLayoutMarginsFromSafeArea(): BOOL;
-    setInsetsLayoutMarginsFromSafeArea(): void;
+    insetsLayoutMarginsFromSafeArea(): boolean;
+    setInsetsLayoutMarginsFromSafeArea(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622464-constraints
     constraints(): NSLayoutConstraint;
-    setConstraints(): void;
+    setConstraints(value: NSLayoutConstraint): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622523-addconstraint
     addConstraint(constraint: NSLayoutConstraint):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622513-addconstraints
@@ -3277,51 +3277,51 @@ declare namespace cocoascript {
     removeConstraints(constraints: NSLayoutConstraint):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622483-bottomanchor
     bottomAnchor(): NSLayoutYAxisAnchor;
-    setBottomAnchor(): void;
+    setBottomAnchor(value: NSLayoutYAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622596-centerxanchor
     centerXAnchor(): NSLayoutXAxisAnchor;
-    setCenterXAnchor(): void;
+    setCenterXAnchor(value: NSLayoutXAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622447-centeryanchor
     centerYAnchor(): NSLayoutYAxisAnchor;
-    setCenterYAnchor(): void;
+    setCenterYAnchor(value: NSLayoutYAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622508-firstbaselineanchor
     firstBaselineAnchor(): NSLayoutYAxisAnchor;
-    setFirstBaselineAnchor(): void;
+    setFirstBaselineAnchor(value: NSLayoutYAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622590-heightanchor
     heightAnchor(): NSLayoutDimension;
-    setHeightAnchor(): void;
+    setHeightAnchor(value: NSLayoutDimension): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622471-lastbaselineanchor
     lastBaselineAnchor(): NSLayoutYAxisAnchor;
-    setLastBaselineAnchor(): void;
+    setLastBaselineAnchor(value: NSLayoutYAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622520-leadinganchor
     leadingAnchor(): NSLayoutXAxisAnchor;
-    setLeadingAnchor(): void;
+    setLeadingAnchor(value: NSLayoutXAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622435-leftanchor
     leftAnchor(): NSLayoutXAxisAnchor;
-    setLeftAnchor(): void;
+    setLeftAnchor(value: NSLayoutXAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622579-rightanchor
     rightAnchor(): NSLayoutXAxisAnchor;
-    setRightAnchor(): void;
+    setRightAnchor(value: NSLayoutXAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622613-topanchor
     topAnchor(): NSLayoutYAxisAnchor;
-    setTopAnchor(): void;
+    setTopAnchor(value: NSLayoutYAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622522-trailinganchor
     trailingAnchor(): NSLayoutXAxisAnchor;
-    setTrailingAnchor(): void;
+    setTrailingAnchor(value: NSLayoutXAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622605-widthanchor
     widthAnchor(): NSLayoutDimension;
-    setWidthAnchor(): void;
+    setWidthAnchor(value: NSLayoutDimension): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622414-addlayoutguide
     addLayoutGuide(layoutGuide: UILayoutGuide):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622536-layoutguides
     layoutGuides(): UILayoutGuide;
-    setLayoutGuides(): void;
+    setLayoutGuides(value: UILayoutGuide): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622651-layoutmarginsguide
     layoutMarginsGuide(): UILayoutGuide;
-    setLayoutMarginsGuide(): void;
+    setLayoutMarginsGuide(value: UILayoutGuide): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622644-readablecontentguide
     readableContentGuide(): UILayoutGuide;
-    setReadableContentGuide(): void;
+    setReadableContentGuide(value: UILayoutGuide): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622506-removelayoutguide
     removeLayoutGuide(layoutGuide: UILayoutGuide):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622624-systemlayoutsizefittingsize
@@ -3330,7 +3330,7 @@ declare namespace cocoascript {
     systemLayoutSizeFittingSize_withHorizontalFittingPriority_verticalFittingPriority(targetSize: CGSize, horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority):CGSize;
     // https://developer.apple.com/documentation/uikit/uiview/1622600-intrinsiccontentsize
     intrinsicContentSize(): CGSize;
-    setIntrinsicContentSize(): void;
+    setIntrinsicContentSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622457-invalidateintrinsiccontentsize
     invalidateIntrinsicContentSize():void;
     // https://developer.apple.com/documentation/uikit/uiview/1622465-contentcompressionresistanceprio
@@ -3347,17 +3347,17 @@ declare namespace cocoascript {
     frameForAlignmentRect(alignmentRect: CGRect):CGRect;
     // https://developer.apple.com/documentation/uikit/uiview/1622648-alignmentrectinsets
     alignmentRectInsets(): UIEdgeInsets;
-    setAlignmentRectInsets(): void;
+    setAlignmentRectInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622439-viewforbaselinelayout
     viewForBaselineLayout():UIView;
     // https://developer.apple.com/documentation/uikit/uiview/1622452-viewforfirstbaselinelayout
     viewForFirstBaselineLayout(): UIView;
-    setViewForFirstBaselineLayout(): void;
+    setViewForFirstBaselineLayout(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622633-viewforlastbaselinelayout
     viewForLastBaselineLayout(): UIView;
-    setViewForLastBaselineLayout(): void;
+    setViewForLastBaselineLayout(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622567-needsupdateconstraints
-    needsUpdateConstraints():BOOL;
+    needsUpdateConstraints():boolean;
     // https://developer.apple.com/documentation/uikit/uiview/1622450-setneedsupdateconstraints
     setNeedsUpdateConstraints():void;
     // https://developer.apple.com/documentation/uikit/uiview/1622512-updateconstraints
@@ -3367,26 +3367,26 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiview/1622432-constraintsaffectinglayoutforaxi
     constraintsAffectingLayoutForAxis(axis: UILayoutConstraintAxis):NSLayoutConstraint;
     // https://developer.apple.com/documentation/uikit/uiview/1622517-hasambiguouslayout
-    hasAmbiguousLayout(): BOOL;
-    setHasAmbiguousLayout(): void;
+    hasAmbiguousLayout(): boolean;
+    setHasAmbiguousLayout(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622545-exerciseambiguityinlayout
     exerciseAmbiguityInLayout():void;
     // https://developer.apple.com/documentation/uikit/uiview/1622619-contentmode
     contentMode(): UIViewContentMode;
-    setContentMode(): void;
+    setContentMode(value: UIViewContentMode): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622511-contentstretch
     contentStretch(): CGRect;
-    setContentStretch(): void;
+    setContentStretch(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622625-sizethatfits
     sizeThatFits(size: CGSize):CGSize;
     // https://developer.apple.com/documentation/uikit/uiview/1622630-sizetofit
     sizeToFit():void;
     // https://developer.apple.com/documentation/uikit/uiview/1622425-autoresizessubviews
-    autoresizesSubviews(): BOOL;
-    setAutoresizesSubviews(): void;
+    autoresizesSubviews(): boolean;
+    setAutoresizesSubviews(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622559-autoresizingmask
     autoresizingMask(): UIViewAutoresizing;
-    setAutoresizingMask(): void;
+    setAutoresizingMask(value: UIViewAutoresizing): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622482-layoutsubviews
     layoutSubviews():void;
     // https://developer.apple.com/documentation/uikit/uiview/1622601-setneedslayout
@@ -3394,34 +3394,34 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiview/1622507-layoutifneeded
     layoutIfNeeded():void;
     // https://developer.apple.com/documentation/uikit/uiview/1622549-requiresconstraintbasedlayout
-    requiresConstraintBasedLayout(): BOOL;
-    setRequiresConstraintBasedLayout(): void;
+    requiresConstraintBasedLayout(): boolean;
+    setRequiresConstraintBasedLayout(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622572-translatesautoresizingmaskintoco
-    translatesAutoresizingMaskIntoConstraints(): BOOL;
-    setTranslatesAutoresizingMaskIntoConstraints(): void;
+    translatesAutoresizingMaskIntoConstraints(): boolean;
+    setTranslatesAutoresizingMaskIntoConstraints(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/3238086-overrideuserinterfacestyle
     overrideUserInterfaceStyle(): UIUserInterfaceStyle;
-    setOverrideUserInterfaceStyle(): void;
+    setOverrideUserInterfaceStyle(value: UIUserInterfaceStyle): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622461-semanticcontentattribute
     semanticContentAttribute(): UISemanticContentAttribute;
-    setSemanticContentAttribute(): void;
+    setSemanticContentAttribute(value: UISemanticContentAttribute): void;
     // https://developer.apple.com/documentation/uikit/uiview/1648536-effectiveuserinterfacelayoutdire
     effectiveUserInterfaceLayoutDirection(): UIUserInterfaceLayoutDirection;
-    setEffectiveUserInterfaceLayoutDirection(): void;
+    setEffectiveUserInterfaceLayoutDirection(value: UIUserInterfaceLayoutDirection): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622480-userinterfacelayoutdirectionfors
     userInterfaceLayoutDirectionForSemanticContentAttribute(attribute: UISemanticContentAttribute):UIUserInterfaceLayoutDirection;
     // https://developer.apple.com/documentation/uikit/uiview/1648535-userinterfacelayoutdirectionfors
     userInterfaceLayoutDirectionForSemanticContentAttribute_relativeToLayoutDirection(semanticContentAttribute: UISemanticContentAttribute, layoutDirection: UIUserInterfaceLayoutDirection):UIUserInterfaceLayoutDirection;
     // https://developer.apple.com/documentation/uikit/uiview/3752221-keyboardlayoutguide
     keyboardLayoutGuide(): UIKeyboardLayoutGuide;
-    setKeyboardLayoutGuide(): void;
+    setKeyboardLayoutGuide(value: UIKeyboardLayoutGuide): void;
     // https://developer.apple.com/documentation/uikit/uiview/2891013-addinteraction
     addInteraction(interaction: UIInteraction):void;
     // https://developer.apple.com/documentation/uikit/uiview/2891036-removeinteraction
     removeInteraction(interaction: UIInteraction):void;
     // https://developer.apple.com/documentation/uikit/uiview/2891054-interactions
     interactions(): UIInteraction;
-    setInteractions(): void;
+    setInteractions(value: UIInteraction): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622529-drawrect
     drawRect(rect: CGRect):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622437-setneedsdisplay
@@ -3430,7 +3430,7 @@ declare namespace cocoascript {
     setNeedsDisplayInRect(rect: CGRect):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622657-contentscalefactor
     contentScaleFactor(): CGFloat;
-    setContentScaleFactor(): void;
+    setContentScaleFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622620-tintcolordidchange
     tintColorDidChange():void;
     // https://developer.apple.com/documentation/uikit/uiview/1621835-viewprintformatter
@@ -3443,44 +3443,44 @@ declare namespace cocoascript {
     removeGestureRecognizer(gestureRecognizer: UIGestureRecognizer):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622542-gesturerecognizers
     gestureRecognizers(): UIGestureRecognizer;
-    setGestureRecognizers(): void;
+    setGestureRecognizers(value: UIGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622460-gesturerecognizershouldbegin
-    gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer):BOOL;
+    gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer):boolean;
     // https://developer.apple.com/documentation/uikit/uiview/1622584-canbecomefocused
-    canBecomeFocused(): BOOL;
-    setCanBecomeFocused(): void;
+    canBecomeFocused(): boolean;
+    setCanBecomeFocused(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622479-inheritedanimationduration
     inheritedAnimationDuration(): NSTimeInterval;
-    setInheritedAnimationDuration(): void;
+    setInheritedAnimationDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622565-focused
-    focused(): BOOL;
-    setFocused(): void;
+    focused(): boolean;
+    setFocused(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/3601233-focusgroupidentifier
     focusGroupIdentifier(): string | cocoascript.NSString;
-    setFocusGroupIdentifier(): void;
+    setFocusGroupIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622586-addmotioneffect
     addMotionEffect(effect: UIMotionEffect):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622428-motioneffects
     motionEffects(): UIMotionEffect;
-    setMotionEffects(): void;
+    setMotionEffects(value: UIMotionEffect): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622481-removemotioneffect
     removeMotionEffect(effect: UIMotionEffect):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622494-restorationidentifier
     restorationIdentifier(): string | cocoascript.NSString;
-    setRestorationIdentifier(): void;
+    setRestorationIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622516-encoderestorablestatewithcoder
     encodeRestorableStateWithCoder(coder: NSCoder):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622638-decoderestorablestatewithcoder
     decodeRestorableStateWithCoder(coder: NSCoder):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622531-snapshotviewafterscreenupdates
-    snapshotViewAfterScreenUpdates(afterUpdates: BOOL):UIView;
+    snapshotViewAfterScreenUpdates(afterUpdates: boolean):UIView;
     // https://developer.apple.com/documentation/uikit/uiview/1622597-resizablesnapshotviewfromrect
-    resizableSnapshotViewFromRect_afterScreenUpdates_withCapInsets(rect: CGRect, afterUpdates: BOOL, capInsets: UIEdgeInsets):UIView;
+    resizableSnapshotViewFromRect_afterScreenUpdates_withCapInsets(rect: CGRect, afterUpdates: boolean, capInsets: UIEdgeInsets):UIView;
     // https://developer.apple.com/documentation/uikit/uiview/1622589-drawviewhierarchyinrect
-    drawViewHierarchyInRect_afterScreenUpdates(rect: CGRect, afterUpdates: BOOL):BOOL;
+    drawViewHierarchyInRect_afterScreenUpdates(rect: CGRect, afterUpdates: boolean):boolean;
     // https://developer.apple.com/documentation/uikit/uiview/1622493-tag
     tag(): NSInteger;
-    setTag(): void;
+    setTag(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622429-viewwithtag
     viewWithTag(tag: NSInteger):UIView;
     // https://developer.apple.com/documentation/uikit/uiview/1622442-convertpoint
@@ -3494,49 +3494,49 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiview/1622469-hittest
     hitTest_withEvent(point: CGPoint, event: UIEvent):UIView;
     // https://developer.apple.com/documentation/uikit/uiview/1622533-pointinside
-    pointInside_withEvent(point: CGPoint, event: UIEvent):BOOL;
+    pointInside_withEvent(point: CGPoint, event: UIEvent):boolean;
     // https://developer.apple.com/documentation/uikit/uiview/1619630-endediting
-    endEditing(force: BOOL):BOOL;
+    endEditing(force: boolean):boolean;
     // https://developer.apple.com/documentation/uikit/uiview/2865843-accessibilityignoresinvertcolors
-    accessibilityIgnoresInvertColors(): BOOL;
-    setAccessibilityIgnoresInvertColors(): void;
+    accessibilityIgnoresInvertColors(): boolean;
+    setAccessibilityIgnoresInvertColors(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/3183937-largecontentimage
     largeContentImage(): UIImage;
-    setLargeContentImage(): void;
+    setLargeContentImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiview/3183938-largecontentimageinsets
     largeContentImageInsets(): UIEdgeInsets;
-    setLargeContentImageInsets(): void;
+    setLargeContentImageInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiview/3183939-largecontenttitle
     largeContentTitle(): string | cocoascript.NSString;
-    setLargeContentTitle(): void;
+    setLargeContentTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiview/3183940-scaleslargecontentimage
-    scalesLargeContentImage(): BOOL;
-    setScalesLargeContentImage(): void;
+    scalesLargeContentImage(): boolean;
+    setScalesLargeContentImage(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/3183941-showslargecontentviewer
-    showsLargeContentViewer(): BOOL;
-    setShowsLargeContentViewer(): void;
+    showsLargeContentViewer(): boolean;
+    setShowsLargeContentViewer(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/1622451-animatewithduration
-    animateWithDuration_delay_options_animations_completion(duration: NSTimeInterval, delay: NSTimeInterval, options: UIViewAnimationOptions, animations: void, completion: BOOL):void;
+    animateWithDuration_delay_options_animations_completion(duration: NSTimeInterval, delay: NSTimeInterval, options: UIViewAnimationOptions, animations: void, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622515-animatewithduration
-    animateWithDuration_animations_completion(duration: NSTimeInterval, animations: void, completion: BOOL):void;
+    animateWithDuration_animations_completion(duration: NSTimeInterval, animations: void, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622418-animatewithduration
     animateWithDuration_animations(duration: NSTimeInterval, animations: void):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622574-transitionwithview
-    transitionWithView_duration_options_animations_completion(view: UIView, duration: NSTimeInterval, options: UIViewAnimationOptions, animations: void, completion: BOOL):void;
+    transitionWithView_duration_options_animations_completion(view: UIView, duration: NSTimeInterval, options: UIViewAnimationOptions, animations: void, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622562-transitionfromview
-    transitionFromView_toView_duration_options_completion(fromView: UIView, toView: UIView, duration: NSTimeInterval, options: UIViewAnimationOptions, completion: BOOL):void;
+    transitionFromView_toView_duration_options_completion(fromView: UIView, toView: UIView, duration: NSTimeInterval, options: UIViewAnimationOptions, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622552-animatekeyframeswithduration
-    animateKeyframesWithDuration_delay_options_animations_completion(duration: NSTimeInterval, delay: NSTimeInterval, options: UIViewKeyframeAnimationOptions, animations: void, completion: BOOL):void;
+    animateKeyframesWithDuration_delay_options_animations_completion(duration: NSTimeInterval, delay: NSTimeInterval, options: UIViewKeyframeAnimationOptions, animations: void, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622554-addkeyframewithrelativestarttime
     addKeyframeWithRelativeStartTime_relativeDuration_animations(frameStartTime: number, frameDuration: number, animations: void):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622635-performsystemanimation
-    performSystemAnimation_onViews_options_animations_completion(animation: UISystemAnimation, views: UIView, options: UIViewAnimationOptions, parallelAnimations: void, completion: BOOL):void;
+    performSystemAnimation_onViews_options_animations_completion(animation: UISystemAnimation, views: UIView, options: UIViewAnimationOptions, parallelAnimations: void, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622594-animatewithduration
-    animateWithDuration_delay_usingSpringWithDamping_initialSpringVelocity_options_animations_completion(duration: NSTimeInterval, delay: NSTimeInterval, dampingRatio: CGFloat, velocity: CGFloat, options: UIViewAnimationOptions, animations: void, completion: BOOL):void;
+    animateWithDuration_delay_usingSpringWithDamping_initialSpringVelocity_options_animations_completion(duration: NSTimeInterval, delay: NSTimeInterval, dampingRatio: CGFloat, velocity: CGFloat, options: UIViewAnimationOptions, animations: void, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622484-performwithoutanimation
     performWithoutAnimation(actionsWithoutAnimation: void):void;
     // https://developer.apple.com/documentation/uikit/uiview/3043564-modifyanimationswithrepeatcount
-    modifyAnimationsWithRepeatCount_autoreverses_animations(count: CGFloat, autoreverses: BOOL, animations: void):void;
+    modifyAnimationsWithRepeatCount_autoreverses_animations(count: CGFloat, autoreverses: boolean, animations: void):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622463-beginanimations
     beginAnimations_context(animationID: string | cocoascript.NSString, context: void):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622664-commitanimations
@@ -3544,7 +3544,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiview/1622466-setanimationstartdate
     setAnimationStartDate(startDate: NSDate):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622420-setanimationsenabled
-    setAnimationsEnabled(enabled: BOOL):void;
+    setAnimationsEnabled(enabled: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622509-setanimationdelegate
     setAnimationDelegate(delegate: UIView):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622649-setanimationwillstartselector
@@ -3560,29 +3560,29 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiview/1622419-setanimationrepeatcount
     setAnimationRepeatCount(repeatCount: number):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622501-setanimationrepeatautoreverses
-    setAnimationRepeatAutoreverses(repeatAutoreverses: BOOL):void;
+    setAnimationRepeatAutoreverses(repeatAutoreverses: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622446-setanimationbeginsfromcurrentsta
-    setAnimationBeginsFromCurrentState(fromCurrentState: BOOL):void;
+    setAnimationBeginsFromCurrentState(fromCurrentState: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622528-setanimationtransition
-    setAnimationTransition_forView_cache(transition: UIViewAnimationTransition, view: UIView, cache: BOOL):void;
+    setAnimationTransition_forView_cache(transition: UIViewAnimationTransition, view: UIView, cache: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiview/1622571-areanimationsenabled
-    areAnimationsEnabled(): BOOL;
-    setAreAnimationsEnabled(): void;
+    areAnimationsEnabled(): boolean;
+    setAreAnimationsEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/3750922-appliedcontentsizecategorylimits
     appliedContentSizeCategoryLimitsDescription(): string | cocoascript.NSString;
-    setAppliedContentSizeCategoryLimitsDescription(): void;
+    setAppliedContentSizeCategoryLimitsDescription(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiview/3778578-focuseffect
     focusEffect(): UIFocusEffect;
-    setFocusEffect(): void;
+    setFocusEffect(value: UIFocusEffect): void;
     // https://developer.apple.com/documentation/uikit/uiview/3778579-focusgrouppriority
     focusGroupPriority(): UIFocusGroupPriority;
-    setFocusGroupPriority(): void;
+    setFocusGroupPriority(value: UIFocusGroupPriority): void;
     // https://developer.apple.com/documentation/uikit/uiview/3750923-maximumcontentsizecategory
     maximumContentSizeCategory(): UIContentSizeCategory;
-    setMaximumContentSizeCategory(): void;
+    setMaximumContentSizeCategory(value: UIContentSizeCategory): void;
     // https://developer.apple.com/documentation/uikit/uiview/3750924-minimumcontentsizecategory
     minimumContentSizeCategory(): UIContentSizeCategory;
-    setMinimumContentSizeCategory(): void;
+    setMinimumContentSizeCategory(value: UIContentSizeCategory): void;
     //
     alloc():UIView;
     //
@@ -3599,26 +3599,26 @@ declare namespace cocoascript {
   interface UIPrintPageRenderer extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiprintpagerenderer/1621631-numberofpages
     numberOfPages(): NSInteger;
-    setNumberOfPages(): void;
+    setNumberOfPages(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiprintpagerenderer/1621633-paperrect
     paperRect(): CGRect;
-    setPaperRect(): void;
+    setPaperRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiprintpagerenderer/1621628-printablerect
     printableRect(): CGRect;
-    setPrintableRect(): void;
+    setPrintableRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiprintpagerenderer/1621630-headerheight
     headerHeight(): CGFloat;
-    setHeaderHeight(): void;
+    setHeaderHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiprintpagerenderer/1621634-footerheight
     footerHeight(): CGFloat;
-    setFooterHeight(): void;
+    setFooterHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiprintpagerenderer/1621632-addprintformatter
     addPrintFormatter_startingAtPageAtIndex(formatter: UIPrintFormatter, pageIndex: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uiprintpagerenderer/1621635-printformattersforpageatindex
     printFormattersForPageAtIndex(pageIndex: NSInteger):UIPrintFormatter;
     // https://developer.apple.com/documentation/uikit/uiprintpagerenderer/1621640-printformatters
     printFormatters(): UIPrintFormatter;
-    setPrintFormatters(): void;
+    setPrintFormatters(value: UIPrintFormatter): void;
     // https://developer.apple.com/documentation/uikit/uiprintpagerenderer/1621643-preparefordrawingpages
     prepareForDrawingPages(range: NSRange):void;
     // https://developer.apple.com/documentation/uikit/uiprintpagerenderer/1621636-drawpageatindex
@@ -3652,26 +3652,26 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uifocusenvironment/1616833-updatefocusifneeded
     updateFocusIfNeeded():void;
     // https://developer.apple.com/documentation/uikit/uifocusenvironment/1616831-shouldupdatefocusincontext
-    shouldUpdateFocusInContext(context: UIFocusUpdateContext):BOOL;
+    shouldUpdateFocusInContext(context: UIFocusUpdateContext):boolean;
     // https://developer.apple.com/documentation/uikit/uifocusenvironment/1616841-didupdatefocusincontext
     didUpdateFocusInContext_withAnimationCoordinator(context: UIFocusUpdateContext, coordinator: UIFocusAnimationCoordinator):void;
     // https://developer.apple.com/documentation/uikit/uifocusenvironment/1648972-preferredfocusenvironments
     preferredFocusEnvironments(): UIFocusEnvironment;
-    setPreferredFocusEnvironments(): void;
+    setPreferredFocusEnvironments(value: UIFocusEnvironment): void;
     // https://developer.apple.com/documentation/uikit/uifocusenvironment/1616830-preferredfocusedview
     preferredFocusedView(): UIView;
-    setPreferredFocusedView(): void;
+    setPreferredFocusedView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uifocusenvironment/2887504-soundidentifierforfocusupdateinc
     soundIdentifierForFocusUpdateInContext(context: UIFocusUpdateContext):UIFocusSoundIdentifier;
     // https://developer.apple.com/documentation/uikit/uifocusenvironment/2976950-parentfocusenvironment
     parentFocusEnvironment(): UIFocusEnvironment;
-    setParentFocusEnvironment(): void;
+    setParentFocusEnvironment(value: UIFocusEnvironment): void;
     // https://developer.apple.com/documentation/uikit/uifocusenvironment/2976949-focusitemcontainer
     focusItemContainer(): UIFocusItemContainer;
-    setFocusItemContainer(): void;
+    setFocusItemContainer(value: UIFocusItemContainer): void;
     // https://developer.apple.com/documentation/uikit/uifocusenvironment/3601224-focusgroupidentifier
     focusGroupIdentifier(): string | cocoascript.NSString;
-    setFocusGroupIdentifier(): void;
+    setFocusGroupIdentifier(value: string | cocoascript.NSString): void;
   }
 }
 declare namespace cocoascript {
@@ -3684,13 +3684,13 @@ declare namespace cocoascript {
     focusSystemForEnvironment(environment: UIFocusEnvironment):UIFocusSystem;
     // https://developer.apple.com/documentation/uikit/uifocussystem/2866087-focuseditem
     focusedItem(): UIFocusItem;
-    setFocusedItem(): void;
+    setFocusedItem(value: UIFocusItem): void;
     // https://developer.apple.com/documentation/uikit/uifocussystem/2866115-requestfocusupdatetoenvironment
     requestFocusUpdateToEnvironment(environment: UIFocusEnvironment):void;
     // https://developer.apple.com/documentation/uikit/uifocussystem/2865914-updatefocusifneeded
     updateFocusIfNeeded():void;
     // https://developer.apple.com/documentation/uikit/uifocussystem/2873786-environment
-    environment_containsEnvironment(environment: UIFocusEnvironment, otherEnvironment: UIFocusEnvironment):BOOL;
+    environment_containsEnvironment(environment: UIFocusEnvironment, otherEnvironment: UIFocusEnvironment):boolean;
     // https://developer.apple.com/documentation/uikit/uifocussystem/2887479-registerurl
     registerURL_forSoundIdentifier(soundFileURL: NSURL, identifier: UIFocusSoundIdentifier):void;
     //
@@ -3713,19 +3713,19 @@ declare namespace cocoascript {
   interface UIFocusUpdateContext extends NSObject {
     // https://developer.apple.com/documentation/uikit/uifocusupdatecontext/1616839-previouslyfocusedview
     previouslyFocusedView(): UIView;
-    setPreviouslyFocusedView(): void;
+    setPreviouslyFocusedView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uifocusupdatecontext/1616843-nextfocusedview
     nextFocusedView(): UIView;
-    setNextFocusedView(): void;
+    setNextFocusedView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uifocusupdatecontext/1616834-focusheading
     focusHeading(): UIFocusHeading;
-    setFocusHeading(): void;
+    setFocusHeading(value: UIFocusHeading): void;
     // https://developer.apple.com/documentation/uikit/uifocusupdatecontext/1648962-previouslyfocuseditem
     previouslyFocusedItem(): UIFocusItem;
-    setPreviouslyFocusedItem(): void;
+    setPreviouslyFocusedItem(value: UIFocusItem): void;
     // https://developer.apple.com/documentation/uikit/uifocusupdatecontext/1648967-nextfocuseditem
     nextFocusedItem(): UIFocusItem;
-    setNextFocusedItem(): void;
+    setNextFocusedItem(value: UIFocusItem): void;
     //
     alloc():UIFocusUpdateContext;
     //
@@ -3745,22 +3745,22 @@ declare namespace cocoascript {
    */
   interface UIFocusItem extends UIFocusEnvironment {
     // https://developer.apple.com/documentation/uikit/uifocusitem/1648965-canbecomefocused
-    canBecomeFocused(): BOOL;
-    setCanBecomeFocused(): void;
+    canBecomeFocused(): boolean;
+    setCanBecomeFocused(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uifocusitem/2976952-frame
     frame(): CGRect;
-    setFrame(): void;
+    setFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uifocusitem/2976951-didhintfocusmovement
     didHintFocusMovement(hint: UIFocusMovementHint):void;
     // https://developer.apple.com/documentation/uikit/uifocusitem/3778560-focuseffect
     focusEffect(): UIFocusEffect;
-    setFocusEffect(): void;
+    setFocusEffect(value: UIFocusEffect): void;
     // https://developer.apple.com/documentation/uikit/uifocusitem/3778561-focusgrouppriority
     focusGroupPriority(): UIFocusGroupPriority;
-    setFocusGroupPriority(): void;
+    setFocusGroupPriority(value: UIFocusGroupPriority): void;
     // https://developer.apple.com/documentation/uikit/uifocusitem/3778562-istransparentfocusitem
-    isTransparentFocusItem(): BOOL;
-    setIsTransparentFocusItem(): void;
+    isTransparentFocusItem(): boolean;
+    setIsTransparentFocusItem(value: boolean): void;
   }
 }
 declare namespace cocoascript {
@@ -3771,19 +3771,19 @@ declare namespace cocoascript {
   interface UIFocusMovementHint extends NSObject {
     // https://developer.apple.com/documentation/uikit/uifocusmovementhint/3000774-movementdirection
     movementDirection(): CGVector;
-    setMovementDirection(): void;
+    setMovementDirection(value: CGVector): void;
     // https://developer.apple.com/documentation/uikit/uifocusmovementhint/3000773-interactiontransform
     interactionTransform(): CATransform3D;
-    setInteractionTransform(): void;
+    setInteractionTransform(value: CATransform3D): void;
     // https://developer.apple.com/documentation/uikit/uifocusmovementhint/2976962-perspectivetransform
     perspectiveTransform(): CATransform3D;
-    setPerspectiveTransform(): void;
+    setPerspectiveTransform(value: CATransform3D): void;
     // https://developer.apple.com/documentation/uikit/uifocusmovementhint/3000775-rotation
     rotation(): CGVector;
-    setRotation(): void;
+    setRotation(value: CGVector): void;
     // https://developer.apple.com/documentation/uikit/uifocusmovementhint/3000776-translation
     translation(): CGVector;
-    setTranslation(): void;
+    setTranslation(value: CGVector): void;
     //
     alloc():UIFocusMovementHint;
     //
@@ -3802,7 +3802,7 @@ declare namespace cocoascript {
     focusItemsInRect(rect: CGRect):UIFocusItem;
     // https://developer.apple.com/documentation/uikit/uifocusitemcontainer/2998462-coordinatespace
     coordinateSpace(): UICoordinateSpace;
-    setCoordinateSpace(): void;
+    setCoordinateSpace(value: UICoordinateSpace): void;
   }
 }
 declare namespace cocoascript {
@@ -3813,13 +3813,13 @@ declare namespace cocoascript {
   interface UIFocusItemScrollableContainer extends UIFocusItemContainer {
     // https://developer.apple.com/documentation/uikit/uifocusitemscrollablecontainer/2976956-contentoffset
     contentOffset(): CGPoint;
-    setContentOffset(): void;
+    setContentOffset(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uifocusitemscrollablecontainer/2976957-contentsize
     contentSize(): CGSize;
-    setContentSize(): void;
+    setContentSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uifocusitemscrollablecontainer/2998463-visiblesize
     visibleSize(): CGSize;
-    setVisibleSize(): void;
+    setVisibleSize(value: CGSize): void;
   }
 }
 declare namespace cocoascript {
@@ -3840,28 +3840,28 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UICommand;
     // https://developer.apple.com/documentation/uikit/uicommand/3175312-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uicommand/3229869-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uicommand/3175302-action
     action(): SEL;
-    setAction(): void;
+    setAction(value: SEL): void;
     // https://developer.apple.com/documentation/uikit/uicommand/3175308-discoverabilitytitle
     discoverabilityTitle(): string | cocoascript.NSString;
-    setDiscoverabilityTitle(): void;
+    setDiscoverabilityTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uicommand/3335180-attributes
     attributes(): UIMenuElementAttributes;
-    setAttributes(): void;
+    setAttributes(value: UIMenuElementAttributes): void;
     // https://developer.apple.com/documentation/uikit/uicommand/3229870-state
     state(): UIMenuElementState;
-    setState(): void;
+    setState(value: UIMenuElementState): void;
     // https://developer.apple.com/documentation/uikit/uicommand/3175303-alternates
     alternates(): UICommandAlternate;
-    setAlternates(): void;
+    setAlternates(value: UICommandAlternate): void;
     // https://developer.apple.com/documentation/uikit/uicommand/3175310-propertylist
     propertyList(): id;
-    setPropertyList(): void;
+    setPropertyList(value: id): void;
     //
     alloc():UICommand;
     //
@@ -3882,12 +3882,12 @@ declare namespace cocoascript {
     initWithDelegate(delegate: UIContextMenuInteractionDelegate):UIContextMenuInteraction;
     // https://developer.apple.com/documentation/uikit/uicontextmenuinteraction/3295925-delegate
     delegate(): UIContextMenuInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIContextMenuInteractionDelegate): void;
     // https://developer.apple.com/documentation/uikit/uicontextmenuinteraction/3295927-locationinview
     locationInView(view: UIView):CGPoint;
     // https://developer.apple.com/documentation/uikit/uicontextmenuinteraction/3601209-menuappearance
     menuAppearance(): UIContextMenuInteractionAppearance;
-    setMenuAppearance(): void;
+    setMenuAppearance(value: UIContextMenuInteractionAppearance): void;
     // https://developer.apple.com/documentation/uikit/uicontextmenuinteraction/3601208-dismissmenu
     dismissMenu():void;
     // https://developer.apple.com/documentation/uikit/uicontextmenuinteraction/3601210-updatevisiblemenuwithblock
@@ -3928,10 +3928,10 @@ declare namespace cocoascript {
   interface UIMenuSystem extends NSObject {
     // https://developer.apple.com/documentation/uikit/uimenusystem/3327314-mainsystem
     mainSystem(): UIMenuSystem;
-    setMainSystem(): void;
+    setMainSystem(value: UIMenuSystem): void;
     // https://developer.apple.com/documentation/uikit/uimenusystem/3327313-contextsystem
     contextSystem(): UIMenuSystem;
-    setContextSystem(): void;
+    setContextSystem(value: UIMenuSystem): void;
     // https://developer.apple.com/documentation/uikit/uimenusystem/3327315-setneedsrebuild
     setNeedsRebuild():void;
     // https://developer.apple.com/documentation/uikit/uimenusystem/3327316-setneedsrevalidate
@@ -3952,15 +3952,15 @@ declare namespace cocoascript {
   interface UIMenuElement extends NSObject {
     // https://developer.apple.com/documentation/uikit/uimenuelement/3261458-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uimenuelement/3261457-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uimenuelement/3335208-initwithcoder
     initWithCoder(coder: NSCoder):UIMenuElement;
     // https://developer.apple.com/documentation/uikit/uimenuelement/3857606-subtitle
     subtitle(): string | cocoascript.NSString;
-    setSubtitle(): void;
+    setSubtitle(value: string | cocoascript.NSString): void;
     //
     alloc():UIMenuElement;
     //
@@ -4003,20 +4003,20 @@ declare namespace cocoascript {
   interface UIResponder extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiresponder/1621099-nextresponder
     nextResponder(): UIResponder;
-    setNextResponder(): void;
+    setNextResponder(value: UIResponder): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621145-isfirstresponder
-    isFirstResponder(): BOOL;
-    setIsFirstResponder(): void;
+    isFirstResponder(): boolean;
+    setIsFirstResponder(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621130-canbecomefirstresponder
-    canBecomeFirstResponder(): BOOL;
-    setCanBecomeFirstResponder(): void;
+    canBecomeFirstResponder(): boolean;
+    setCanBecomeFirstResponder(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621113-becomefirstresponder
-    becomeFirstResponder():BOOL;
+    becomeFirstResponder():boolean;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621125-canresignfirstresponder
-    canResignFirstResponder(): BOOL;
-    setCanResignFirstResponder(): void;
+    canResignFirstResponder(): boolean;
+    setCanResignFirstResponder(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621097-resignfirstresponder
-    resignFirstResponder():BOOL;
+    resignFirstResponder():boolean;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621142-touchesbegan
     touchesBegan_withEvent(touches: UITouch, event: UIEvent):void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621107-touchesmoved
@@ -4045,61 +4045,61 @@ declare namespace cocoascript {
     remoteControlReceivedWithEvent(event: UIEvent):void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621092-inputview
     inputView(): UIView;
-    setInputView(): void;
+    setInputView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621117-inputviewcontroller
     inputViewController(): UIInputViewController;
-    setInputViewController(): void;
+    setInputViewController(value: UIInputViewController): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621119-inputaccessoryview
     inputAccessoryView(): UIView;
-    setInputAccessoryView(): void;
+    setInputAccessoryView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621124-inputaccessoryviewcontroller
     inputAccessoryViewController(): UIInputViewController;
-    setInputAccessoryViewController(): void;
+    setInputAccessoryViewController(value: UIInputViewController): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621110-reloadinputviews
     reloadInputViews():void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621122-undomanager
     undoManager(): NSUndoManager;
-    setUndoManager(): void;
+    setUndoManager(value: NSUndoManager): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/3327317-buildmenuwithbuilder
     buildMenuWithBuilder(builder: UIMenuBuilder):void;
     // https://developer.apple.com/documentation/uikit/uiresponder/3229892-validatecommand
     validateCommand(command: UICommand):void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621105-canperformaction
-    canPerformAction_withSender(action: SEL, sender: UIResponder):BOOL;
+    canPerformAction_withSender(action: SEL, sender: UIResponder):boolean;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621146-targetforaction
     targetForAction_withSender(action: SEL, sender: UIResponder):UIResponder;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621141-keycommands
     keyCommands(): UIKeyCommand;
-    setKeyCommands(): void;
+    setKeyCommands(value: UIKeyCommand): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621133-textinputmode
     textInputMode(): UITextInputMode;
-    setTextInputMode(): void;
+    setTextInputMode(value: UITextInputMode): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621091-textinputcontextidentifier
     textInputContextIdentifier(): string | cocoascript.NSString;
-    setTextInputContextIdentifier(): void;
+    setTextInputContextIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621138-cleartextinputcontextidentifier
     clearTextInputContextIdentifier(identifier: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621135-inputassistantitem
     inputAssistantItem(): UITextInputAssistantItem;
-    setInputAssistantItem(): void;
+    setInputAssistantItem(value: UITextInputAssistantItem): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621089-useractivity
     userActivity(): NSUserActivity;
-    setUserActivity(): void;
+    setUserActivity(value: NSUserActivity): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621111-restoreuseractivitystate
     restoreUserActivityState(activity: NSUserActivity):void;
     // https://developer.apple.com/documentation/uikit/uiresponder/1621095-updateuseractivitystate
     updateUserActivityState(activity: NSUserActivity):void;
     // https://developer.apple.com/documentation/uikit/uiresponder/3368158-activityitemsconfiguration
     activityItemsConfiguration(): UIActivityItemsConfigurationReading;
-    setActivityItemsConfiguration(): void;
+    setActivityItemsConfiguration(value: UIActivityItemsConfigurationReading): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/3327318-editinginteractionconfiguration
     editingInteractionConfiguration(): UIEditingInteractionConfiguration;
-    setEditingInteractionConfiguration(): void;
+    setEditingInteractionConfiguration(value: UIEditingInteractionConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/3375808-maketouchbar
     makeTouchBar():NSTouchBar;
     // https://developer.apple.com/documentation/uikit/uiresponder/3375809-touchbar
     touchBar(): NSTouchBar;
-    setTouchBar(): void;
+    setTouchBar(value: NSTouchBar): void;
     // https://developer.apple.com/documentation/uikit/uiresponder/3778577-capturetextfromcamera
     captureTextFromCamera(sender: UIResponder):void;
     //
@@ -4128,29 +4128,29 @@ declare namespace cocoascript {
   interface UIApplication extends UIResponder {
     // https://developer.apple.com/documentation/uikit/uiapplication/1622975-sharedapplication
     sharedApplication(): UIApplication;
-    setSharedApplication(): void;
+    setSharedApplication(value: UIApplication): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1622936-delegate
     delegate(): UIApplicationDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIApplicationDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623078-registerforremotenotifications
     registerForRemoteNotifications():void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623093-unregisterforremotenotifications
     unregisterForRemoteNotifications():void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623069-registeredforremotenotifications
-    registeredForRemoteNotifications(): BOOL;
-    setRegisteredForRemoteNotifications(): void;
+    registeredForRemoteNotifications(): boolean;
+    setRegisteredForRemoteNotifications(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623003-applicationstate
     applicationState(): UIApplicationState;
-    setApplicationState(): void;
+    setApplicationState(value: UIApplicationState): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/3197904-supportsmultiplescenes
-    supportsMultipleScenes(): BOOL;
-    setSupportsMultipleScenes(): void;
+    supportsMultipleScenes(): boolean;
+    setSupportsMultipleScenes(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/3197899-connectedscenes
     connectedScenes(): UIScene;
-    setConnectedScenes(): void;
+    setConnectedScenes(value: UIScene): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/3197900-opensessions
     openSessions(): UISceneSession;
-    setOpenSessions(): void;
+    setOpenSessions(value: UISceneSession): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/3197901-requestscenesessionactivation
     requestSceneSessionActivation_userActivity_options_errorHandler(sceneSession: UISceneSession, userActivity: NSUserActivity, options: UISceneActivationRequestOptions, errorHandler: NSError):void;
     // https://developer.apple.com/documentation/uikit/uiapplication/3197902-requestscenesessiondestruction
@@ -4159,7 +4159,7 @@ declare namespace cocoascript {
     requestSceneSessionRefresh(sceneSession: UISceneSession):void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1622994-backgroundrefreshstatus
     backgroundRefreshStatus(): UIBackgroundRefreshStatus;
-    setBackgroundRefreshStatus(): void;
+    setBackgroundRefreshStatus(value: UIBackgroundRefreshStatus): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623051-beginbackgroundtaskwithname
     beginBackgroundTaskWithName_expirationHandler(taskName: string | cocoascript.NSString, handler: void):UIBackgroundTaskIdentifier;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623031-beginbackgroundtaskwithexpiratio
@@ -4168,14 +4168,14 @@ declare namespace cocoascript {
     endBackgroundTask(identifier: UIBackgroundTaskIdentifier):void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623029-backgroundtimeremaining
     backgroundTimeRemaining(): NSTimeInterval;
-    setBackgroundTimeRemaining(): void;
+    setBackgroundTimeRemaining(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1648685-openurl
-    openURL_options_completionHandler(url: NSURL, options: UIApplication, completion: BOOL):void;
+    openURL_options_completionHandler(url: NSURL, options: UIApplication, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1622952-canopenurl
-    canOpenURL(url: NSURL):BOOL;
+    canOpenURL(url: NSURL):boolean;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623070-idletimerdisabled
-    idleTimerDisabled(): BOOL;
-    setIdleTimerDisabled(): void;
+    idleTimerDisabled(): boolean;
+    setIdleTimerDisabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623060-extendstaterestoration
     extendStateRestoration():void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623081-completestaterestoration
@@ -4186,41 +4186,41 @@ declare namespace cocoascript {
     registerObjectForStateRestoration_restorationIdentifier(object: UIStateRestoring, restorationIdentifier: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623033-shortcutitems
     shortcutItems(): UIApplicationShortcutItem;
-    setShortcutItems(): void;
+    setShortcutItems(value: UIApplicationShortcutItem): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1622925-protecteddataavailable
-    protectedDataAvailable(): BOOL;
-    setProtectedDataAvailable(): void;
+    protectedDataAvailable(): boolean;
+    setProtectedDataAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623126-beginreceivingremotecontrolevent
     beginReceivingRemoteControlEvents():void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623057-endreceivingremotecontrolevents
     endReceivingRemoteControlEvents():void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623025-userinterfacelayoutdirection
     userInterfaceLayoutDirection(): UIUserInterfaceLayoutDirection;
-    setUserInterfaceLayoutDirection(): void;
+    setUserInterfaceLayoutDirection(value: UIUserInterfaceLayoutDirection): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623043-sendevent
     sendEvent(event: UIEvent):void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1622946-sendaction
-    sendAction_to_from_forEvent(action: SEL, target: UIApplication, sender: UIApplication, event: UIEvent):BOOL;
+    sendAction_to_from_forEvent(action: SEL, target: UIApplication, sender: UIApplication, event: UIEvent):boolean;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623127-applicationsupportsshaketoedit
-    applicationSupportsShakeToEdit(): BOOL;
-    setApplicationSupportsShakeToEdit(): void;
+    applicationSupportsShakeToEdit(): boolean;
+    setApplicationSupportsShakeToEdit(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1622918-applicationiconbadgenumber
     applicationIconBadgeNumber(): NSInteger;
-    setApplicationIconBadgeNumber(): void;
+    setApplicationIconBadgeNumber(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/2806815-supportsalternateicons
-    supportsAlternateIcons(): BOOL;
-    setSupportsAlternateIcons(): void;
+    supportsAlternateIcons(): boolean;
+    setSupportsAlternateIcons(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/2806808-alternateiconname
     alternateIconName(): string | cocoascript.NSString;
-    setAlternateIconName(): void;
+    setAlternateIconName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/2806818-setalternateiconname
     setAlternateIconName_completionHandler(alternateIconName: string | cocoascript.NSString, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623104-windows
     windows(): UIWindow;
-    setWindows(): void;
+    setWindows(value: UIWindow): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory
     preferredContentSizeCategory(): UIContentSizeCategory;
-    setPreferredContentSizeCategory(): void;
+    setPreferredContentSizeCategory(value: UIContentSizeCategory): void;
     // https://developer.apple.com/documentation/uikit/uiapplication/1623091-supportedinterfaceorientationsfo
     supportedInterfaceOrientationsForWindow(window: UIWindow):UIInterfaceOrientationMask;
     //
@@ -4245,7 +4245,7 @@ declare namespace cocoascript {
     initWithTarget_action(target: UIGestureRecognizer, action: SEL):UIGestureRecognizer;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624207-delegate
     delegate(): UIGestureRecognizerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIGestureRecognizerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624230-addtarget
     addTarget_action(target: UIGestureRecognizer, action: SEL):void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624226-removetarget
@@ -4256,42 +4256,42 @@ declare namespace cocoascript {
     locationOfTouch_inView(touchIndex: NSUInteger, view: UIView):CGPoint;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624200-numberoftouches
     numberOfTouches(): NSUInteger;
-    setNumberOfTouches(): void;
+    setNumberOfTouches(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1619998-state
     state(): UIGestureRecognizerState;
-    setState(): void;
+    setState(value: UIGestureRecognizerState): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624212-view
     view(): UIView;
-    setView(): void;
+    setView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624220-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/3538974-buttonmask
     buttonMask(): UIEventButtonMask;
-    setButtonMask(): void;
+    setButtonMask(value: UIEventButtonMask): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/3538975-modifierflags
     modifierFlags(): UIKeyModifierFlags;
-    setModifierFlags(): void;
+    setModifierFlags(value: UIKeyModifierFlags): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624218-cancelstouchesinview
-    cancelsTouchesInView(): BOOL;
-    setCancelsTouchesInView(): void;
+    cancelsTouchesInView(): boolean;
+    setCancelsTouchesInView(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624234-delaystouchesbegan
-    delaysTouchesBegan(): BOOL;
-    setDelaysTouchesBegan(): void;
+    delaysTouchesBegan(): boolean;
+    setDelaysTouchesBegan(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624209-delaystouchesended
-    delaysTouchesEnded(): BOOL;
-    setDelaysTouchesEnded(): void;
+    delaysTouchesEnded(): boolean;
+    setDelaysTouchesEnded(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624203-requiregesturerecognizertofail
     requireGestureRecognizerToFail(otherGestureRecognizer: UIGestureRecognizer):void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624231-allowedpresstypes
     allowedPressTypes(): NSNumber;
-    setAllowedPressTypes(): void;
+    setAllowedPressTypes(value: NSNumber): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1624223-allowedtouchtypes
     allowedTouchTypes(): NSNumber;
-    setAllowedTouchTypes(): void;
+    setAllowedTouchTypes(value: NSNumber): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1649116-requiresexclusivetouchtype
-    requiresExclusiveTouchType(): BOOL;
-    setRequiresExclusiveTouchType(): void;
+    requiresExclusiveTouchType(): boolean;
+    setRequiresExclusiveTouchType(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1620009-touchesbegan
     touchesBegan_withEvent(touches: UITouch, event: UIEvent):void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1619996-touchesmoved
@@ -4307,13 +4307,13 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1620010-ignoretouch
     ignoreTouch_forEvent(touch: UITouch, event: UIEvent):void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1620003-canbepreventedbygesturerecognize
-    canBePreventedByGestureRecognizer(preventingGestureRecognizer: UIGestureRecognizer):BOOL;
+    canBePreventedByGestureRecognizer(preventingGestureRecognizer: UIGestureRecognizer):boolean;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1620008-canpreventgesturerecognizer
-    canPreventGestureRecognizer(preventedGestureRecognizer: UIGestureRecognizer):BOOL;
+    canPreventGestureRecognizer(preventedGestureRecognizer: UIGestureRecognizer):boolean;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1620006-shouldrequirefailureofgesturerec
-    shouldRequireFailureOfGestureRecognizer(otherGestureRecognizer: UIGestureRecognizer):BOOL;
+    shouldRequireFailureOfGestureRecognizer(otherGestureRecognizer: UIGestureRecognizer):boolean;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1619994-shouldberequiredtofailbygesturer
-    shouldBeRequiredToFailByGestureRecognizer(otherGestureRecognizer: UIGestureRecognizer):BOOL;
+    shouldBeRequiredToFailByGestureRecognizer(otherGestureRecognizer: UIGestureRecognizer):boolean;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1620007-ignorepress
     ignorePress_forEvent(button: UIPress, event: UIPressesEvent):void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/1619995-pressesbegan
@@ -4326,13 +4326,13 @@ declare namespace cocoascript {
     pressesCancelled_withEvent(presses: UIPress, event: UIPressesEvent):void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/2890966-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/3182937-init
     init():UIGestureRecognizer;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/3043559-initwithcoder
     initWithCoder(coder: NSCoder):UIGestureRecognizer;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizer/3538977-shouldreceiveevent
-    shouldReceiveEvent(event: UIEvent):BOOL;
+    shouldReceiveEvent(event: UIEvent):boolean;
     //
     alloc():UIGestureRecognizer;
     //
@@ -4349,16 +4349,16 @@ declare namespace cocoascript {
   interface UILongPressGestureRecognizer extends UIGestureRecognizer {
     // https://developer.apple.com/documentation/uikit/uilongpressgesturerecognizer/1616423-minimumpressduration
     minimumPressDuration(): NSTimeInterval;
-    setMinimumPressDuration(): void;
+    setMinimumPressDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uilongpressgesturerecognizer/1616425-numberoftouchesrequired
     numberOfTouchesRequired(): NSUInteger;
-    setNumberOfTouchesRequired(): void;
+    setNumberOfTouchesRequired(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/uilongpressgesturerecognizer/1616424-numberoftapsrequired
     numberOfTapsRequired(): NSUInteger;
-    setNumberOfTapsRequired(): void;
+    setNumberOfTapsRequired(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/uilongpressgesturerecognizer/1616427-allowablemovement
     allowableMovement(): CGFloat;
-    setAllowableMovement(): void;
+    setAllowableMovement(value: CGFloat): void;
     //
     alloc():UILongPressGestureRecognizer;
     //
@@ -4375,10 +4375,10 @@ declare namespace cocoascript {
   interface UIPanGestureRecognizer extends UIGestureRecognizer {
     // https://developer.apple.com/documentation/uikit/uipangesturerecognizer/1621208-maximumnumberoftouches
     maximumNumberOfTouches(): NSUInteger;
-    setMaximumNumberOfTouches(): void;
+    setMaximumNumberOfTouches(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/uipangesturerecognizer/1621210-minimumnumberoftouches
     minimumNumberOfTouches(): NSUInteger;
-    setMinimumNumberOfTouches(): void;
+    setMinimumNumberOfTouches(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/uipangesturerecognizer/1621207-translationinview
     translationInView(view: UIView):CGPoint;
     // https://developer.apple.com/documentation/uikit/uipangesturerecognizer/1621206-settranslation
@@ -4387,7 +4387,7 @@ declare namespace cocoascript {
     velocityInView(view: UIView):CGPoint;
     // https://developer.apple.com/documentation/uikit/uipangesturerecognizer/3538978-allowedscrolltypesmask
     allowedScrollTypesMask(): UIScrollTypeMask;
-    setAllowedScrollTypesMask(): void;
+    setAllowedScrollTypesMask(value: UIScrollTypeMask): void;
     //
     alloc():UIPanGestureRecognizer;
     //
@@ -4404,10 +4404,10 @@ declare namespace cocoascript {
   interface UIPinchGestureRecognizer extends UIGestureRecognizer {
     // https://developer.apple.com/documentation/uikit/uipinchgesturerecognizer/1622235-scale
     scale(): CGFloat;
-    setScale(): void;
+    setScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uipinchgesturerecognizer/1622233-velocity
     velocity(): CGFloat;
-    setVelocity(): void;
+    setVelocity(value: CGFloat): void;
     //
     alloc():UIPinchGestureRecognizer;
     //
@@ -4424,10 +4424,10 @@ declare namespace cocoascript {
   interface UIRotationGestureRecognizer extends UIGestureRecognizer {
     // https://developer.apple.com/documentation/uikit/uirotationgesturerecognizer/1624337-rotation
     rotation(): CGFloat;
-    setRotation(): void;
+    setRotation(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uirotationgesturerecognizer/1624335-velocity
     velocity(): CGFloat;
-    setVelocity(): void;
+    setVelocity(value: CGFloat): void;
     //
     alloc():UIRotationGestureRecognizer;
     //
@@ -4444,7 +4444,7 @@ declare namespace cocoascript {
   interface UIScreenEdgePanGestureRecognizer extends UIPanGestureRecognizer {
     // https://developer.apple.com/documentation/uikit/uiscreenedgepangesturerecognizer/1614142-edges
     edges(): UIRectEdge;
-    setEdges(): void;
+    setEdges(value: UIRectEdge): void;
     //
     alloc():UIScreenEdgePanGestureRecognizer;
     //
@@ -4461,10 +4461,10 @@ declare namespace cocoascript {
   interface UISwipeGestureRecognizer extends UIGestureRecognizer {
     // https://developer.apple.com/documentation/uikit/uiswipegesturerecognizer/1619178-direction
     direction(): UISwipeGestureRecognizerDirection;
-    setDirection(): void;
+    setDirection(value: UISwipeGestureRecognizerDirection): void;
     // https://developer.apple.com/documentation/uikit/uiswipegesturerecognizer/1619182-numberoftouchesrequired
     numberOfTouchesRequired(): NSUInteger;
-    setNumberOfTouchesRequired(): void;
+    setNumberOfTouchesRequired(value: NSUInteger): void;
     //
     alloc():UISwipeGestureRecognizer;
     //
@@ -4481,13 +4481,13 @@ declare namespace cocoascript {
   interface UITapGestureRecognizer extends UIGestureRecognizer {
     // https://developer.apple.com/documentation/uikit/uitapgesturerecognizer/3539032-buttonmaskrequired
     buttonMaskRequired(): UIEventButtonMask;
-    setButtonMaskRequired(): void;
+    setButtonMaskRequired(value: UIEventButtonMask): void;
     // https://developer.apple.com/documentation/uikit/uitapgesturerecognizer/1623581-numberoftapsrequired
     numberOfTapsRequired(): NSUInteger;
-    setNumberOfTapsRequired(): void;
+    setNumberOfTapsRequired(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/uitapgesturerecognizer/1623580-numberoftouchesrequired
     numberOfTouchesRequired(): NSUInteger;
-    setNumberOfTouchesRequired(): void;
+    setNumberOfTouchesRequired(value: NSUInteger): void;
     //
     alloc():UITapGestureRecognizer;
     //
@@ -4510,32 +4510,32 @@ declare namespace cocoascript {
     setStroke():void;
     // https://developer.apple.com/documentation/uikit/uicolor/1621954-cgcolor
     CGColor(): CGColorRef;
-    setCGColor(): void;
+    setCGColor(value: CGColorRef): void;
     // https://developer.apple.com/documentation/uikit/uicolor/1621943-cgcolor
     CGColor():CGColorRef;
     // https://developer.apple.com/documentation/uikit/uicolor/1621951-cicolor
     CIColor(): CIColor;
-    setCIColor(): void;
+    setCIColor(value: CIColor): void;
     // https://developer.apple.com/documentation/uikit/uicolor/1621949-gethue
-    getHue_saturation_brightness_alpha(hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat):BOOL;
+    getHue_saturation_brightness_alpha(hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat):boolean;
     // https://developer.apple.com/documentation/uikit/uicolor/1621919-getred
-    getRed_green_blue_alpha(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat):BOOL;
+    getRed_green_blue_alpha(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat):boolean;
     // https://developer.apple.com/documentation/uikit/uicolor/1621927-getwhite
-    getWhite_alpha(white: CGFloat, alpha: CGFloat):BOOL;
+    getWhite_alpha(white: CGFloat, alpha: CGFloat):boolean;
     // https://developer.apple.com/documentation/uikit/uicolor/3600314-accessibilityname
     accessibilityName(): string | cocoascript.NSString;
-    setAccessibilityName(): void;
+    setAccessibilityName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uicolor/3238042-resolvedcolorwithtraitcollection
     resolvedColorWithTraitCollection(traitCollection: UITraitCollection):UIColor;
     // https://developer.apple.com/documentation/uikit/uicolor/3852740-systemcyancolor
     systemCyanColor(): UIColor;
-    setSystemCyanColor(): void;
+    setSystemCyanColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uicolor/3852741-systemmintcolor
     systemMintColor(): UIColor;
-    setSystemMintColor(): void;
+    setSystemMintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uicolor/3750859-tintcolor
     tintColor(): UIColor;
-    setTintColor(): void;
+    setTintColor(value: UIColor): void;
     //
     alloc():UIColor;
     //
@@ -4552,77 +4552,77 @@ declare namespace cocoascript {
   interface UILabel extends UIView {
     // https://developer.apple.com/documentation/uikit/uilabel/1620538-text
     text(): string | cocoascript.NSString;
-    setText(): void;
+    setText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620542-attributedtext
     attributedText(): NSAttributedString;
-    setAttributedText(): void;
+    setAttributedText(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620532-font
     font(): UIFont;
-    setFont(): void;
+    setFont(value: UIFont): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620531-textcolor
     textColor(): UIColor;
-    setTextColor(): void;
+    setTextColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620541-textalignment
     textAlignment(): NSTextAlignment;
-    setTextAlignment(): void;
+    setTextAlignment(value: NSTextAlignment): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620525-linebreakmode
     lineBreakMode(): NSLineBreakMode;
-    setLineBreakMode(): void;
+    setLineBreakMode(value: NSLineBreakMode): void;
     // https://developer.apple.com/documentation/uikit/uilabel/3667730-linebreakstrategy
     lineBreakStrategy(): NSLineBreakStrategy;
-    setLineBreakStrategy(): void;
+    setLineBreakStrategy(value: NSLineBreakStrategy): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620530-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilabel/2967087-enablesmarqueewhenancestorfocuse
-    enablesMarqueeWhenAncestorFocused(): BOOL;
-    setEnablesMarqueeWhenAncestorFocused(): void;
+    enablesMarqueeWhenAncestorFocused(): boolean;
+    setEnablesMarqueeWhenAncestorFocused(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilabel/3750862-showsexpansiontextwhentruncated
-    showsExpansionTextWhenTruncated(): BOOL;
-    setShowsExpansionTextWhenTruncated(): void;
+    showsExpansionTextWhenTruncated(): boolean;
+    setShowsExpansionTextWhenTruncated(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620546-adjustsfontsizetofitwidth
-    adjustsFontSizeToFitWidth(): BOOL;
-    setAdjustsFontSizeToFitWidth(): void;
+    adjustsFontSizeToFitWidth(): boolean;
+    setAdjustsFontSizeToFitWidth(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620533-allowsdefaulttighteningfortrunca
-    allowsDefaultTighteningForTruncation(): BOOL;
-    setAllowsDefaultTighteningForTruncation(): void;
+    allowsDefaultTighteningForTruncation(): boolean;
+    setAllowsDefaultTighteningForTruncation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620524-baselineadjustment
     baselineAdjustment(): UIBaselineAdjustment;
-    setBaselineAdjustment(): void;
+    setBaselineAdjustment(value: UIBaselineAdjustment): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620544-minimumscalefactor
     minimumScaleFactor(): CGFloat;
-    setMinimumScaleFactor(): void;
+    setMinimumScaleFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620539-numberoflines
     numberOfLines(): NSInteger;
-    setNumberOfLines(): void;
+    setNumberOfLines(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620535-adjustsletterspacingtofitwidth
-    adjustsLetterSpacingToFitWidth(): BOOL;
-    setAdjustsLetterSpacingToFitWidth(): void;
+    adjustsLetterSpacingToFitWidth(): boolean;
+    setAdjustsLetterSpacingToFitWidth(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620529-minimumfontsize
     minimumFontSize(): CGFloat;
-    setMinimumFontSize(): void;
+    setMinimumFontSize(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620540-highlightedtextcolor
     highlightedTextColor(): UIColor;
-    setHighlightedTextColor(): void;
+    setHighlightedTextColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620526-highlighted
-    highlighted(): BOOL;
-    setHighlighted(): void;
+    highlighted(): boolean;
+    setHighlighted(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620536-shadowcolor
     shadowColor(): UIColor;
-    setShadowColor(): void;
+    setShadowColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620528-shadowoffset
     shadowOffset(): CGSize;
-    setShadowOffset(): void;
+    setShadowOffset(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620545-textrectforbounds
     textRectForBounds_limitedToNumberOfLines(bounds: CGRect, numberOfLines: NSInteger):CGRect;
     // https://developer.apple.com/documentation/uikit/uilabel/1620527-drawtextinrect
     drawTextInRect(rect: CGRect):void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620534-preferredmaxlayoutwidth
     preferredMaxLayoutWidth(): CGFloat;
-    setPreferredMaxLayoutWidth(): void;
+    setPreferredMaxLayoutWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uilabel/1620543-userinteractionenabled
-    userInteractionEnabled(): BOOL;
-    setUserInteractionEnabled(): void;
+    userInteractionEnabled(): boolean;
+    setUserInteractionEnabled(value: boolean): void;
     //
     alloc():UILabel;
     //
@@ -4639,25 +4639,25 @@ declare namespace cocoascript {
   interface UIControl extends UIView {
     // https://developer.apple.com/documentation/uikit/uicontrol/1618245-state
     state(): UIControlState;
-    setState(): void;
+    setState(value: UIControlState): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618217-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618203-selected
-    selected(): BOOL;
-    setSelected(): void;
+    selected(): boolean;
+    setSelected(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618231-highlighted
-    highlighted(): BOOL;
-    setHighlighted(): void;
+    highlighted(): boolean;
+    setHighlighted(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618249-contentverticalalignment
     contentVerticalAlignment(): UIControlContentVerticalAlignment;
-    setContentVerticalAlignment(): void;
+    setContentVerticalAlignment(value: UIControlContentVerticalAlignment): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618213-contenthorizontalalignment
     contentHorizontalAlignment(): UIControlContentHorizontalAlignment;
-    setContentHorizontalAlignment(): void;
+    setContentHorizontalAlignment(value: UIControlContentHorizontalAlignment): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/2866070-effectivecontenthorizontalalignm
     effectiveContentHorizontalAlignment(): UIControlContentHorizontalAlignment;
-    setEffectiveContentHorizontalAlignment(): void;
+    setEffectiveContentHorizontalAlignment(value: UIControlContentHorizontalAlignment): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618259-addtarget
     addTarget_action_forControlEvents(target: UIControl, action: SEL, controlEvents: UIControlEvents):void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618248-removetarget
@@ -4666,28 +4666,28 @@ declare namespace cocoascript {
     actionsForTarget_forControlEvent(target: UIControl, controlEvent: UIControlEvents):NSString;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618225-allcontrolevents
     allControlEvents(): UIControlEvents;
-    setAllControlEvents(): void;
+    setAllControlEvents(value: UIControlEvents): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618207-alltargets
     allTargets(): NSSet;
-    setAllTargets(): void;
+    setAllTargets(value: NSSet): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618237-sendaction
     sendAction_to_forEvent(action: SEL, target: UIControl, event: UIEvent):void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618211-sendactionsforcontrolevents
     sendActionsForControlEvents(controlEvents: UIControlEvents):void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618227-begintrackingwithtouch
-    beginTrackingWithTouch_withEvent(touch: UITouch, event: UIEvent):BOOL;
+    beginTrackingWithTouch_withEvent(touch: UITouch, event: UIEvent):boolean;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618216-continuetrackingwithtouch
-    continueTrackingWithTouch_withEvent(touch: UITouch, event: UIEvent):BOOL;
+    continueTrackingWithTouch_withEvent(touch: UITouch, event: UIEvent):boolean;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618234-endtrackingwithtouch
     endTrackingWithTouch_withEvent(touch: UITouch, event: UIEvent):void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618219-canceltrackingwithevent
     cancelTrackingWithEvent(event: UIEvent):void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618210-tracking
-    tracking(): BOOL;
-    setTracking(): void;
+    tracking(): boolean;
+    setTracking(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/1618229-touchinside
-    touchInside(): BOOL;
-    setTouchInside(): void;
+    touchInside(): boolean;
+    setTouchInside(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/3600490-addaction
     addAction_forControlEvents(action: UIAction, controlEvents: UIControlEvents):void;
     // https://developer.apple.com/documentation/uikit/uicontrol/3601216-contextmenuinteraction
@@ -4709,22 +4709,22 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uicontrol/3600497-sendaction
     sendAction(action: UIAction):void;
     // https://developer.apple.com/documentation/uikit/uicontrol/3600491-enumerateeventhandlers
-    enumerateEventHandlers(iterator: BOOL):void;
+    enumerateEventHandlers(iterator: boolean):void;
     // https://developer.apple.com/documentation/uikit/uicontrol/3601215-contextmenuinteraction
     contextMenuInteraction(): UIContextMenuInteraction;
-    setContextMenuInteraction(): void;
+    setContextMenuInteraction(value: UIContextMenuInteraction): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/3601222-contextmenuinteractionenabled
-    contextMenuInteractionEnabled(): BOOL;
-    setContextMenuInteractionEnabled(): void;
+    contextMenuInteractionEnabled(): boolean;
+    setContextMenuInteractionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/3601223-showsmenuasprimaryaction
-    showsMenuAsPrimaryAction(): BOOL;
-    setShowsMenuAsPrimaryAction(): void;
+    showsMenuAsPrimaryAction(): boolean;
+    setShowsMenuAsPrimaryAction(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/3750832-tooltip
     toolTip(): string | cocoascript.NSString;
-    setToolTip(): void;
+    setToolTip(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/3750833-tooltipinteraction
     toolTipInteraction(): UIToolTipInteraction;
-    setToolTipInteraction(): void;
+    setToolTipInteraction(value: UIToolTipInteraction): void;
     // https://developer.apple.com/documentation/uikit/uicontrol/3600492-initwithcoder
     initWithCoder(coder: NSCoder):UIControl;
     // https://developer.apple.com/documentation/uikit/uicontrol/3600493-initwithframe
@@ -4751,10 +4751,10 @@ declare namespace cocoascript {
     configurationWithToolTip_inRect(toolTip: string | cocoascript.NSString, sourceRect: CGRect):UIToolTipConfiguration;
     // https://developer.apple.com/documentation/uikit/uitooltipconfiguration/3858112-tooltip
     toolTip(): string | cocoascript.NSString;
-    setToolTip(): void;
+    setToolTip(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitooltipconfiguration/3858111-sourcerect
     sourceRect(): CGRect;
-    setSourceRect(): void;
+    setSourceRect(value: CGRect): void;
     //
     alloc():UIToolTipConfiguration;
     //
@@ -4771,7 +4771,7 @@ declare namespace cocoascript {
   interface UIInteraction extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiinteraction/2890990-view
     view(): UIView;
-    setView(): void;
+    setView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiinteraction/2891009-didmovetoview
     didMoveToView(view: UIView):void;
     // https://developer.apple.com/documentation/uikit/uiinteraction/2891039-willmovetoview
@@ -4790,22 +4790,22 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIViewController;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621399-storyboard
     storyboard(): UIStoryboard;
-    setStoryboard(): void;
+    setStoryboard(value: UIStoryboard): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621487-nibname
     nibName(): string | cocoascript.NSString;
-    setNibName(): void;
+    setNibName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621489-nibbundle
     nibBundle(): NSBundle;
-    setNibBundle(): void;
+    setNibBundle(value: NSBundle): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621460-view
     view(): UIView;
-    setView(): void;
+    setView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621360-viewifloaded
     viewIfLoaded(): UIView;
-    setViewIfLoaded(): void;
+    setViewIfLoaded(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2097563-viewloaded
-    viewLoaded(): BOOL;
-    setViewLoaded(): void;
+    viewLoaded(): boolean;
+    setViewLoaded(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621454-loadview
     loadView():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621495-viewdidload
@@ -4814,49 +4814,49 @@ declare namespace cocoascript {
     loadViewIfNeeded():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621364-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621476-preferredcontentsize
     preferredContentSize(): CGSize;
-    setPreferredContentSize(): void;
+    setPreferredContentSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621510-viewwillappear
-    viewWillAppear(animated: BOOL):void;
+    viewWillAppear(animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621423-viewdidappear
-    viewDidAppear(animated: BOOL):void;
+    viewDidAppear(animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621485-viewwilldisappear
-    viewWillDisappear(animated: BOOL):void;
+    viewWillDisappear(animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621477-viewdiddisappear
-    viewDidDisappear(animated: BOOL):void;
+    viewDidDisappear(animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2097562-beingdismissed
-    beingDismissed(): BOOL;
-    setBeingDismissed(): void;
+    beingDismissed(): boolean;
+    setBeingDismissed(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2097564-beingpresented
-    beingPresented(): BOOL;
-    setBeingPresented(): void;
+    beingPresented(): boolean;
+    setBeingPresented(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2097565-movingfromparentviewcontroller
-    movingFromParentViewController(): BOOL;
-    setMovingFromParentViewController(): void;
+    movingFromParentViewController(): boolean;
+    setMovingFromParentViewController(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2097561-movingtoparentviewcontroller
-    movingToParentViewController(): BOOL;
-    setMovingToParentViewController(): void;
+    movingToParentViewController(): boolean;
+    setMovingToParentViewController(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2902284-additionalsafeareainsets
     additionalSafeAreaInsets(): UIEdgeInsets;
-    setAdditionalSafeAreaInsets(): void;
+    setAdditionalSafeAreaInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2891116-viewsafeareainsetsdidchange
     viewSafeAreaInsetsDidChange():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2891115-viewrespectssystemminimumlayoutm
-    viewRespectsSystemMinimumLayoutMargins(): BOOL;
-    setViewRespectsSystemMinimumLayoutMargins(): void;
+    viewRespectsSystemMinimumLayoutMargins(): boolean;
+    setViewRespectsSystemMinimumLayoutMargins(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2865908-systemminimumlayoutmargins
     systemMinimumLayoutMargins(): NSDirectionalEdgeInsets;
-    setSystemMinimumLayoutMargins(): void;
+    setSystemMinimumLayoutMargins(value: NSDirectionalEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2891114-viewlayoutmarginsdidchange
     viewLayoutMarginsDidChange():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621515-edgesforextendedlayout
     edgesForExtendedLayout(): UIRectEdge;
-    setEdgesForExtendedLayout(): void;
+    setEdgesForExtendedLayout(value: UIRectEdge): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621404-extendedlayoutincludesopaquebars
-    extendedLayoutIncludesOpaqueBars(): BOOL;
-    setExtendedLayoutIncludesOpaqueBars(): void;
+    extendedLayoutIncludesOpaqueBars(): boolean;
+    setExtendedLayoutIncludesOpaqueBars(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621437-viewwilllayoutsubviews
     viewWillLayoutSubviews():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621398-viewdidlayoutsubviews
@@ -4864,18 +4864,18 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621379-updateviewconstraints
     updateViewConstraints():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621419-shouldautorotate
-    shouldAutorotate(): BOOL;
-    setShouldAutorotate(): void;
+    shouldAutorotate(): boolean;
+    setShouldAutorotate(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621435-supportedinterfaceorientations
     supportedInterfaceOrientations(): UIInterfaceOrientationMask;
-    setSupportedInterfaceOrientations(): void;
+    setSupportedInterfaceOrientations(value: UIInterfaceOrientationMask): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621438-preferredinterfaceorientationfor
     preferredInterfaceOrientationForPresentation(): UIInterfaceOrientation;
-    setPreferredInterfaceOrientationForPresentation(): void;
+    setPreferredInterfaceOrientationForPresentation(value: UIInterfaceOrientation): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621400-attemptrotationtodeviceorientati
     attemptRotationToDeviceOrientation():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621502-shouldperformseguewithidentifier
-    shouldPerformSegueWithIdentifier_sender(identifier: string | cocoascript.NSString, sender: UIViewController):BOOL;
+    shouldPerformSegueWithIdentifier_sender(identifier: string | cocoascript.NSString, sender: UIViewController):boolean;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621490-prepareforsegue
     prepareForSegue_sender(segue: UIStoryboardSegue, sender: UIViewController):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621413-performseguewithidentifier
@@ -4885,7 +4885,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621384-childviewcontrollercontainingseg
     childViewControllerContainingSegueSource(source: UIStoryboardUnwindSegueSource):UIViewController;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3089101-canperformunwindsegueaction
-    canPerformUnwindSegueAction_fromViewController_sender(action: SEL, fromViewController: UIViewController, sender: UIViewController):BOOL;
+    canPerformUnwindSegueAction_fromViewController_sender(action: SEL, fromViewController: UIViewController, sender: UIViewController):boolean;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621473-unwindforsegue
     unwindForSegue_towardsViewController(unwindSegue: UIStoryboardSegue, subsequentVC: UIViewController):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621377-showviewcontroller
@@ -4893,73 +4893,73 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621432-showdetailviewcontroller
     showDetailViewController_sender(vc: UIViewController, sender: UIViewController):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621380-presentviewcontroller
-    presentViewController_animated_completion(viewControllerToPresent: UIViewController, flag: BOOL, completion: void):void;
+    presentViewController_animated_completion(viewControllerToPresent: UIViewController, flag: boolean, completion: void):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621505-dismissviewcontrolleranimated
-    dismissViewControllerAnimated_completion(flag: BOOL, completion: void):void;
+    dismissViewControllerAnimated_completion(flag: boolean, completion: void):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621355-modalpresentationstyle
     modalPresentationStyle(): UIModalPresentationStyle;
-    setModalPresentationStyle(): void;
+    setModalPresentationStyle(value: UIModalPresentationStyle): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621388-modaltransitionstyle
     modalTransitionStyle(): UIModalTransitionStyle;
-    setModalTransitionStyle(): void;
+    setModalTransitionStyle(value: UIModalTransitionStyle): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3229894-modalinpresentation
-    modalInPresentation(): BOOL;
-    setModalInPresentation(): void;
+    modalInPresentation(): boolean;
+    setModalInPresentation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621456-definespresentationcontext
-    definesPresentationContext(): BOOL;
-    setDefinesPresentationContext(): void;
+    definesPresentationContext(): boolean;
+    setDefinesPresentationContext(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621356-providespresentationcontexttrans
-    providesPresentationContextTransitionStyle(): BOOL;
-    setProvidesPresentationContextTransitionStyle(): void;
+    providesPresentationContextTransitionStyle(): boolean;
+    setProvidesPresentationContextTransitionStyle(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621385-disablesautomatickeyboarddismiss
-    disablesAutomaticKeyboardDismissal(): BOOL;
-    setDisablesAutomaticKeyboardDismissal(): void;
+    disablesAutomaticKeyboardDismissal(): boolean;
+    setDisablesAutomaticKeyboardDismissal(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621421-transitioningdelegate
     transitioningDelegate(): UIViewControllerTransitioningDelegate;
-    setTransitioningDelegate(): void;
+    setTransitioningDelegate(value: UIViewControllerTransitioningDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1619294-transitioncoordinator
     transitionCoordinator(): UIViewControllerTransitionCoordinator;
-    setTransitionCoordinator(): void;
+    setTransitionCoordinator(value: UIViewControllerTransitionCoordinator): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621415-targetviewcontrollerforaction
     targetViewControllerForAction_sender(action: SEL, sender: UIViewController):UIViewController;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621426-presentationcontroller
     presentationController(): UIPresentationController;
-    setPresentationController(): void;
+    setPresentationController(value: UIPresentationController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621428-popoverpresentationcontroller
     popoverPresentationController(): UIPopoverPresentationController;
-    setPopoverPresentationController(): void;
+    setPopoverPresentationController(value: UIPopoverPresentationController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1829440-restoresfocusaftertransition
-    restoresFocusAfterTransition(): BOOL;
-    setRestoresFocusAfterTransition(): void;
+    restoresFocusAfterTransition(): boolean;
+    setRestoresFocusAfterTransition(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1623193-collapsesecondaryviewcontroller
     collapseSecondaryViewController_forSplitViewController(secondaryViewController: UIViewController, splitViewController: UISplitViewController):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1623191-separatesecondaryviewcontrollerf
     separateSecondaryViewControllerForSplitViewController(splitViewController: UISplitViewController):UIViewController;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3238087-overrideuserinterfacestyle
     overrideUserInterfaceStyle(): UIUserInterfaceStyle;
-    setOverrideUserInterfaceStyle(): void;
+    setOverrideUserInterfaceStyle(value: UIUserInterfaceStyle): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2909093-preferreduserinterfacestyle
     preferredUserInterfaceStyle(): UIUserInterfaceStyle;
-    setPreferredUserInterfaceStyle(): void;
+    setPreferredUserInterfaceStyle(value: UIUserInterfaceStyle): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2909095-childviewcontrollerforuserinterf
     childViewControllerForUserInterfaceStyle(): UIViewController;
-    setChildViewControllerForUserInterfaceStyle(): void;
+    setChildViewControllerForUserInterfaceStyle(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2909094-setneedsuserinterfaceappearanceu
     setNeedsUserInterfaceAppearanceUpdate():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621452-childviewcontrollers
     childViewControllers(): UIViewController;
-    setChildViewControllers(): void;
+    setChildViewControllers(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621394-addchildviewcontroller
     addChildViewController(childController: UIViewController):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621425-removefromparentviewcontroller
     removeFromParentViewController():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621363-transitionfromviewcontroller
-    transitionFromViewController_toViewController_duration_options_animations_completion(fromViewController: UIViewController, toViewController: UIViewController, duration: NSTimeInterval, options: UIViewAnimationOptions, animations: void, completion: BOOL):void;
+    transitionFromViewController_toViewController_duration_options_animations_completion(fromViewController: UIViewController, toViewController: UIViewController, duration: NSTimeInterval, options: UIViewAnimationOptions, animations: void, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621389-shouldautomaticallyforwardappear
-    shouldAutomaticallyForwardAppearanceMethods(): BOOL;
-    setShouldAutomaticallyForwardAppearanceMethods(): void;
+    shouldAutomaticallyForwardAppearanceMethods(): boolean;
+    setShouldAutomaticallyForwardAppearanceMethods(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621387-beginappearancetransition
-    beginAppearanceTransition_animated(isAppearing: BOOL, animated: BOOL):void;
+    beginAppearanceTransition_animated(isAppearing: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621503-endappearancetransition
     endAppearanceTransition():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621406-setoverridetraitcollection
@@ -4972,114 +4972,114 @@ declare namespace cocoascript {
     didMoveToParentViewController(parent: UIViewController):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621430-presentingviewcontroller
     presentingViewController(): UIViewController;
-    setPresentingViewController(): void;
+    setPresentingViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621407-presentedviewcontroller
     presentedViewController(): UIViewController;
-    setPresentedViewController(): void;
+    setPresentedViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621362-parentviewcontroller
     parentViewController(): UIViewController;
-    setParentViewController(): void;
+    setParentViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1623187-splitviewcontroller
     splitViewController(): UISplitViewController;
-    setSplitViewController(): void;
+    setSplitViewController(value: UISplitViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621860-navigationcontroller
     navigationController(): UINavigationController;
-    setNavigationController(): void;
+    setNavigationController(value: UINavigationController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621169-tabbarcontroller
     tabBarController(): UITabBarController;
-    setTabBarController(): void;
+    setTabBarController(value: UITabBarController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621851-navigationitem
     navigationItem(): UINavigationItem;
-    setNavigationItem(): void;
+    setNavigationItem(value: UINavigationItem): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621863-hidesbottombarwhenpushed
-    hidesBottomBarWhenPushed(): BOOL;
-    setHidesBottomBarWhenPushed(): void;
+    hidesBottomBarWhenPushed(): boolean;
+    setHidesBottomBarWhenPushed(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621874-settoolbaritems
-    setToolbarItems_animated(toolbarItems: UIBarButtonItem, animated: BOOL):void;
+    setToolbarItems_animated(toolbarItems: UIBarButtonItem, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621867-toolbaritems
     toolbarItems(): UIBarButtonItem;
-    setToolbarItems(): void;
+    setToolbarItems(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621175-tabbaritem
     tabBarItem(): UITabBarItem;
-    setTabBarItem(): void;
+    setTabBarItem(value: UITabBarItem): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3152928-tabbarobservedscrollview
     tabBarObservedScrollView(): UIScrollView;
-    setTabBarObservedScrollView(): void;
+    setTabBarObservedScrollView(value: UIScrollView): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621411-extensioncontext
     extensionContext(): NSExtensionContext;
-    setExtensionContext(): void;
+    setExtensionContext(value: NSExtensionContext): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2887512-preferredscreenedgesdeferringsys
     preferredScreenEdgesDeferringSystemGestures(): UIRectEdge;
-    setPreferredScreenEdgesDeferringSystemGestures(): void;
+    setPreferredScreenEdgesDeferringSystemGestures(value: UIRectEdge): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2887511-childviewcontrollerforscreenedge
     childViewControllerForScreenEdgesDeferringSystemGestures(): UIViewController;
-    setChildViewControllerForScreenEdgesDeferringSystemGestures(): void;
+    setChildViewControllerForScreenEdgesDeferringSystemGestures(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2887507-setneedsupdateofscreenedgesdefer
     setNeedsUpdateOfScreenEdgesDeferringSystemGestures():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2887510-prefershomeindicatorautohidden
-    prefersHomeIndicatorAutoHidden(): BOOL;
-    setPrefersHomeIndicatorAutoHidden(): void;
+    prefersHomeIndicatorAutoHidden(): boolean;
+    setPrefersHomeIndicatorAutoHidden(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2887508-childviewcontrollerforhomeindica
     childViewControllerForHomeIndicatorAutoHidden(): UIViewController;
-    setChildViewControllerForHomeIndicatorAutoHidden(): void;
+    setChildViewControllerForHomeIndicatorAutoHidden(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/2887509-setneedsupdateofhomeindicatoraut
     setNeedsUpdateOfHomeIndicatorAutoHidden():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3601235-preferspointerlocked
-    prefersPointerLocked(): BOOL;
-    setPrefersPointerLocked(): void;
+    prefersPointerLocked(): boolean;
+    setPrefersPointerLocked(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3601236-setneedsupdateofpreferspointerlo
     setNeedsUpdateOfPrefersPointerLocked():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3601234-childviewcontrollerforpointerloc
     childViewControllerForPointerLock(): UIViewController;
-    setChildViewControllerForPointerLock(): void;
+    setChildViewControllerForPointerLock(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621451-childviewcontrollerforstatusbarh
     childViewControllerForStatusBarHidden(): UIViewController;
-    setChildViewControllerForStatusBarHidden(): void;
+    setChildViewControllerForStatusBarHidden(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621433-childviewcontrollerforstatusbars
     childViewControllerForStatusBarStyle(): UIViewController;
-    setChildViewControllerForStatusBarStyle(): void;
+    setChildViewControllerForStatusBarStyle(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621416-preferredstatusbarstyle
     preferredStatusBarStyle(): UIStatusBarStyle;
-    setPreferredStatusBarStyle(): void;
+    setPreferredStatusBarStyle(value: UIStatusBarStyle): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621440-prefersstatusbarhidden
-    prefersStatusBarHidden(): BOOL;
-    setPrefersStatusBarHidden(): void;
+    prefersStatusBarHidden(): boolean;
+    setPrefersStatusBarHidden(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621453-modalpresentationcapturesstatusb
-    modalPresentationCapturesStatusBarAppearance(): BOOL;
-    setModalPresentationCapturesStatusBarAppearance(): void;
+    modalPresentationCapturesStatusBarAppearance(): boolean;
+    setModalPresentationCapturesStatusBarAppearance(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621434-preferredstatusbarupdateanimatio
     preferredStatusBarUpdateAnimation(): UIStatusBarAnimation;
-    setPreferredStatusBarUpdateAnimation(): void;
+    setPreferredStatusBarUpdateAnimation(value: UIStatusBarAnimation): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621354-setneedsstatusbarappearanceupdat
     setNeedsStatusBarAppearanceUpdate():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3375829-childviewcontrollerfortouchbar
     childViewControllerForTouchBar(): UIViewController;
-    setChildViewControllerForTouchBar(): void;
+    setChildViewControllerForTouchBar(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3375830-setneedstouchbarupdate
     setNeedsTouchBarUpdate():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3368164-performsactionswhilepresentingmo
-    performsActionsWhilePresentingModally(): BOOL;
-    setPerformsActionsWhilePresentingModally(): void;
+    performsActionsWhilePresentingModally(): boolean;
+    setPerformsActionsWhilePresentingModally(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621439-addkeycommand
     addKeyCommand(keyCommand: UIKeyCommand):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621410-removekeycommand
     removeKeyCommand(keyCommand: UIKeyCommand):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621498-editing
-    editing(): BOOL;
-    setEditing(): void;
+    editing(): boolean;
+    setEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621378-setediting
-    setEditing_animated(editing: BOOL, animated: BOOL):void;
+    setEditing_animated(editing: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621471-editbuttonitem
     editButtonItem(): UIBarButtonItem;
-    setEditButtonItem(): void;
+    setEditButtonItem(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621409-didreceivememorywarning
     didReceiveMemoryWarning():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621499-restorationidentifier
     restorationIdentifier(): string | cocoascript.NSString;
-    setRestorationIdentifier(): void;
+    setRestorationIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621472-restorationclass
     restorationClass(): UIViewControllerRestoration;
-    setRestorationClass(): void;
+    setRestorationClass(value: UIViewControllerRestoration): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621461-encoderestorablestatewithcoder
     encodeRestorableStateWithCoder(coder: NSCoder):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/1621429-decoderestorablestatewithcoder
@@ -5088,10 +5088,10 @@ declare namespace cocoascript {
     applicationFinishedRestoringState():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3795605-focusgroupidentifier
     focusGroupIdentifier(): string | cocoascript.NSString;
-    setFocusGroupIdentifier(): void;
+    setFocusGroupIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3850571-sheetpresentationcontroller
     sheetPresentationController(): UISheetPresentationController;
-    setSheetPresentationController(): void;
+    setSheetPresentationController(value: UISheetPresentationController): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3750929-contentscrollviewforedge
     contentScrollViewForEdge(edge: NSDirectionalRectEdge):UIScrollView;
     // https://developer.apple.com/documentation/uikit/uiviewcontroller/3750930-setcontentscrollview
@@ -5112,7 +5112,7 @@ declare namespace cocoascript {
   interface UITraitEnvironment extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitraitenvironment/1623514-traitcollection
     traitCollection(): UITraitCollection;
-    setTraitCollection(): void;
+    setTraitCollection(value: UITraitCollection): void;
     // https://developer.apple.com/documentation/uikit/uitraitenvironment/1623516-traitcollectiondidchange
     traitCollectionDidChange(previousTraitCollection: UITraitCollection):void;
   }
@@ -5124,9 +5124,9 @@ declare namespace cocoascript {
    */
   interface UIApplicationDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623032-application
-    application_willFinishLaunchingWithOptions(application: UIApplication, launchOptions: UIApplicationDelegate):BOOL;
+    application_willFinishLaunchingWithOptions(application: UIApplication, launchOptions: UIApplicationDelegate):boolean;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622921-application
-    application_didFinishLaunchingWithOptions(application: UIApplication, launchOptions: UIApplicationDelegate):BOOL;
+    application_didFinishLaunchingWithOptions(application: UIApplication, launchOptions: UIApplicationDelegate):boolean;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3197905-application
     application_configurationForConnectingSceneSession_options(application: UIApplication, connectingSceneSession: UISceneSession, options: UISceneConnectionOptions):UISceneConfiguration;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3197906-application
@@ -5150,9 +5150,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622992-applicationsignificanttimechange
     applicationSignificantTimeChange(application: UIApplication):void;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3395862-application
-    application_shouldSaveSecureApplicationState(application: UIApplication, coder: NSCoder):BOOL;
+    application_shouldSaveSecureApplicationState(application: UIApplication, coder: NSCoder):boolean;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3395861-application
-    application_shouldRestoreSecureApplicationState(application: UIApplication, coder: NSCoder):BOOL;
+    application_shouldRestoreSecureApplicationState(application: UIApplication, coder: NSCoder):boolean;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623062-application
     application_viewControllerWithRestorationIdentifierPath_coder(application: UIApplication, identifierComponents: string | cocoascript.NSString, coder: NSCoder):UIViewController;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623099-application
@@ -5168,23 +5168,23 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623013-application
     application_didReceiveRemoteNotification_fetchCompletionHandler(application: UIApplication, userInfo: NSDictionary, completionHandler: UIBackgroundFetchResult):void;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622919-application
-    application_willContinueUserActivityWithType(application: UIApplication, userActivityType: string | cocoascript.NSString):BOOL;
+    application_willContinueUserActivityWithType(application: UIApplication, userActivityType: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623072-application
-    application_continueUserActivity_restorationHandler(application: UIApplication, userActivity: NSUserActivity, restorationHandler: UIUserActivityRestoring):BOOL;
+    application_continueUserActivity_restorationHandler(application: UIApplication, userActivity: NSUserActivity, restorationHandler: UIUserActivityRestoring):boolean;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622963-application
     application_didUpdateUserActivity(application: UIApplication, userActivity: NSUserActivity):void;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622927-application
     application_didFailToContinueUserActivityWithType_error(application: UIApplication, userActivityType: string | cocoascript.NSString, error: NSError):void;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622935-application
-    application_performActionForShortcutItem_completionHandler(application: UIApplication, shortcutItem: UIApplicationShortcutItem, completionHandler: BOOL):void;
+    application_performActionForShortcutItem_completionHandler(application: UIApplication, shortcutItem: UIApplicationShortcutItem, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623041-application
     application_handleWatchKitExtensionRequest_reply(application: UIApplication, userInfo: NSDictionary, reply: NSDictionary):void;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622998-applicationshouldrequesthealthau
     applicationShouldRequestHealthAuthorization(application: UIApplication):void;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623112-application
-    application_openURL_options(app: UIApplication, url: NSURL, options: UIApplicationDelegate):BOOL;
+    application_openURL_options(app: UIApplication, url: NSURL, options: UIApplicationDelegate):boolean;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623122-application
-    application_shouldAllowExtensionPointIdentifier(application: UIApplication, extensionPointIdentifier: UIApplicationExtensionPointIdentifier):BOOL;
+    application_shouldAllowExtensionPointIdentifier(application: UIApplication, extensionPointIdentifier: UIApplicationExtensionPointIdentifier):boolean;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3548063-application
     application_handlerForIntent(application: UIApplication, intent: INIntent):UIApplicationDelegate;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/2206721-application
@@ -5193,11 +5193,11 @@ declare namespace cocoascript {
     application_supportedInterfaceOrientationsForWindow(application: UIApplication, window: UIWindow):UIInterfaceOrientationMask;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623056-window
     window(): UIWindow;
-    setWindow(): void;
+    setWindow(value: UIWindow): void;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623053-applicationdidfinishlaunching
     applicationDidFinishLaunching(application: UIApplication):void;
     // https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3783574-applicationshouldautomaticallylo
-    applicationShouldAutomaticallyLocalizeKeyCommands(application: UIApplication):BOOL;
+    applicationShouldAutomaticallyLocalizeKeyCommands(application: UIApplication):boolean;
   }
 }
 // https://developer.apple.com/documentation/uikit/uiapplicationstaterestorationbundleversionkey
@@ -5217,14 +5217,14 @@ declare namespace cocoascript {
    */
   interface UIStatusBarManager extends NSObject {
     // https://developer.apple.com/documentation/uikit/uistatusbarmanager/3213941-statusbarhidden
-    statusBarHidden(): BOOL;
-    setStatusBarHidden(): void;
+    statusBarHidden(): boolean;
+    setStatusBarHidden(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uistatusbarmanager/3213942-statusbarstyle
     statusBarStyle(): UIStatusBarStyle;
-    setStatusBarStyle(): void;
+    setStatusBarStyle(value: UIStatusBarStyle): void;
     // https://developer.apple.com/documentation/uikit/uistatusbarmanager/3213940-statusbarframe
     statusBarFrame(): CGRect;
-    setStatusBarFrame(): void;
+    setStatusBarFrame(value: CGRect): void;
     //
     alloc():UIStatusBarManager;
     //
@@ -5273,53 +5273,53 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UITraitCollection;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/3238080-currenttraitcollection
     currentTraitCollection(): UITraitCollection;
-    setCurrentTraitCollection(): void;
+    setCurrentTraitCollection(value: UITraitCollection): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/1623508-horizontalsizeclass
     horizontalSizeClass(): UIUserInterfaceSizeClass;
-    setHorizontalSizeClass(): void;
+    setHorizontalSizeClass(value: UIUserInterfaceSizeClass): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/1623513-verticalsizeclass
     verticalSizeClass(): UIUserInterfaceSizeClass;
-    setVerticalSizeClass(): void;
+    setVerticalSizeClass(value: UIUserInterfaceSizeClass): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/1623519-displayscale
     displayScale(): CGFloat;
-    setDisplayScale(): void;
+    setDisplayScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/1771749-displaygamut
     displayGamut(): UIDisplayGamut;
-    setDisplayGamut(): void;
+    setDisplayGamut(value: UIDisplayGamut): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/1651063-userinterfacestyle
     userInterfaceStyle(): UIUserInterfaceStyle;
-    setUserInterfaceStyle(): void;
+    setUserInterfaceStyle(value: UIUserInterfaceStyle): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/1623521-userinterfaceidiom
     userInterfaceIdiom(): UIUserInterfaceIdiom;
-    setUserInterfaceIdiom(): void;
+    setUserInterfaceIdiom(value: UIUserInterfaceIdiom): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/3238085-userinterfacelevel
     userInterfaceLevel(): UIUserInterfaceLevel;
-    setUserInterfaceLevel(): void;
+    setUserInterfaceLevel(value: UIUserInterfaceLevel): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/1648355-layoutdirection
     layoutDirection(): UITraitEnvironmentLayoutDirection;
-    setLayoutDirection(): void;
+    setLayoutDirection(value: UITraitEnvironmentLayoutDirection): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/3238079-accessibilitycontrast
     accessibilityContrast(): UIAccessibilityContrast;
-    setAccessibilityContrast(): void;
+    setAccessibilityContrast(value: UIAccessibilityContrast): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/3255094-legibilityweight
     legibilityWeight(): UILegibilityWeight;
-    setLegibilityWeight(): void;
+    setLegibilityWeight(value: UILegibilityWeight): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/3618952-activeappearance
     activeAppearance(): UIUserInterfaceActiveAppearance;
-    setActiveAppearance(): void;
+    setActiveAppearance(value: UIUserInterfaceActiveAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/1623515-forcetouchcapability
     forceTouchCapability(): UIForceTouchCapability;
-    setForceTouchCapability(): void;
+    setForceTouchCapability(value: UIForceTouchCapability): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/1771746-preferredcontentsizecategory
     preferredContentSizeCategory(): UIContentSizeCategory;
-    setPreferredContentSizeCategory(): void;
+    setPreferredContentSizeCategory(value: UIContentSizeCategory): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/1623506-containstraitsincollection
-    containsTraitsInCollection(trait: UITraitCollection):BOOL;
+    containsTraitsInCollection(trait: UITraitCollection):boolean;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/3238081-hasdifferentcolorappearancecompa
-    hasDifferentColorAppearanceComparedToTraitCollection(traitCollection: UITraitCollection):BOOL;
+    hasDifferentColorAppearanceComparedToTraitCollection(traitCollection: UITraitCollection):boolean;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/3295976-imageconfiguration
     imageConfiguration(): UIImageConfiguration;
-    setImageConfiguration(): void;
+    setImageConfiguration(value: UIImageConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uitraitcollection/3238082-performascurrenttraitcollection
     performAsCurrentTraitCollection(actions: void):void;
     //
@@ -5349,7 +5349,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229888-presentationcontrollerdidattempt
     presentationControllerDidAttemptToDismiss(presentationController: UIPresentationController):void;
     // https://developer.apple.com/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229890-presentationcontrollershoulddism
-    presentationControllerShouldDismiss(presentationController: UIPresentationController):BOOL;
+    presentationControllerShouldDismiss(presentationController: UIPresentationController):boolean;
     // https://developer.apple.com/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229889-presentationcontrollerdiddismiss
     presentationControllerDidDismiss(presentationController: UIPresentationController):void;
     // https://developer.apple.com/documentation/uikit/uiadaptivepresentationcontrollerdelegate/3229891-presentationcontrollerwilldismis
@@ -5376,7 +5376,7 @@ declare namespace cocoascript {
     systemLayoutFittingSizeDidChangeForChildContentContainer(container: UIContentContainer):void;
     // https://developer.apple.com/documentation/uikit/uicontentcontainer/1621481-preferredcontentsize
     preferredContentSize(): CGSize;
-    setPreferredContentSize(): void;
+    setPreferredContentSize(value: CGSize): void;
   }
 }
 declare namespace cocoascript {
@@ -5387,7 +5387,7 @@ declare namespace cocoascript {
   interface UIGuidedAccessRestrictionDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiguidedaccessrestrictiondelegate/1621160-guidedaccessrestrictionidentifie
     guidedAccessRestrictionIdentifiers(): string | cocoascript.NSString;
-    setGuidedAccessRestrictionIdentifiers(): void;
+    setGuidedAccessRestrictionIdentifiers(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiguidedaccessrestrictiondelegate/1621161-textforguidedaccessrestrictionwi
     textForGuidedAccessRestrictionWithIdentifier(restrictionIdentifier: string | cocoascript.NSString):NSString;
     // https://developer.apple.com/documentation/uikit/uiguidedaccessrestrictiondelegate/1621158-detailtextforguidedaccessrestric
@@ -5406,78 +5406,78 @@ declare namespace cocoascript {
     initWithFileURL(url: NSURL):UIDocument;
     // https://developer.apple.com/documentation/uikit/uidocument/1619990-fileurl
     fileURL(): NSURL;
-    setFileURL(): void;
+    setFileURL(value: NSURL): void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619959-localizedname
     localizedName(): string | cocoascript.NSString;
-    setLocalizedName(): void;
+    setLocalizedName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619992-filetype
     fileType(): string | cocoascript.NSString;
-    setFileType(): void;
+    setFileType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619952-filemodificationdate
     fileModificationDate(): NSDate;
-    setFileModificationDate(): void;
+    setFileModificationDate(value: NSDate): void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619982-documentstate
     documentState(): UIDocumentState;
-    setDocumentState(): void;
+    setDocumentState(value: UIDocumentState): void;
     // https://developer.apple.com/documentation/uikit/uidocument/1648564-progress
     progress(): NSProgress;
-    setProgress(): void;
+    setProgress(value: NSProgress): void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619976-closewithcompletionhandler
-    closeWithCompletionHandler(completionHandler: BOOL):void;
+    closeWithCompletionHandler(completionHandler: boolean):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619978-contentsfortype
     contentsForType_error(typeName: string | cocoascript.NSString, outError: NSError):UIDocument;
     // https://developer.apple.com/documentation/uikit/uidocument/1619988-savetourl
-    saveToURL_forSaveOperation_completionHandler(url: NSURL, saveOperation: UIDocumentSaveOperation, completionHandler: BOOL):void;
+    saveToURL_forSaveOperation_completionHandler(url: NSURL, saveOperation: UIDocumentSaveOperation, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619951-writecontents
-    writeContents_andAttributes_safelyToURL_forSaveOperation_error(contents: UIDocument, additionalFileAttributes: NSDictionary, url: NSURL, saveOperation: UIDocumentSaveOperation, outError: NSError):BOOL;
+    writeContents_andAttributes_safelyToURL_forSaveOperation_error(contents: UIDocument, additionalFileAttributes: NSDictionary, url: NSURL, saveOperation: UIDocumentSaveOperation, outError: NSError):boolean;
     // https://developer.apple.com/documentation/uikit/uidocument/1619989-writecontents
-    writeContents_toURL_forSaveOperation_originalContentsURL_error(contents: UIDocument, url: NSURL, saveOperation: UIDocumentSaveOperation, originalContentsURL: NSURL, outError: NSError):BOOL;
+    writeContents_toURL_forSaveOperation_originalContentsURL_error(contents: UIDocument, url: NSURL, saveOperation: UIDocumentSaveOperation, originalContentsURL: NSURL, outError: NSError):boolean;
     // https://developer.apple.com/documentation/uikit/uidocument/1619991-savingfiletype
     savingFileType(): string | cocoascript.NSString;
-    setSavingFileType(): void;
+    setSavingFileType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619947-fileattributestowritetourl
     fileAttributesToWriteToURL_forSaveOperation_error(url: NSURL, saveOperation: UIDocumentSaveOperation, outError: NSError):NSDictionary;
     // https://developer.apple.com/documentation/uikit/uidocument/1619969-filenameextensionfortype
     fileNameExtensionForType_saveOperation(typeName: string | cocoascript.NSString, saveOperation: UIDocumentSaveOperation):NSString;
     // https://developer.apple.com/documentation/uikit/uidocument/1619977-openwithcompletionhandler
-    openWithCompletionHandler(completionHandler: BOOL):void;
+    openWithCompletionHandler(completionHandler: boolean):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619971-loadfromcontents
-    loadFromContents_ofType_error(contents: UIDocument, typeName: string | cocoascript.NSString, outError: NSError):BOOL;
+    loadFromContents_ofType_error(contents: UIDocument, typeName: string | cocoascript.NSString, outError: NSError):boolean;
     // https://developer.apple.com/documentation/uikit/uidocument/1619967-readfromurl
-    readFromURL_error(url: NSURL, outError: NSError):BOOL;
+    readFromURL_error(url: NSURL, outError: NSError):boolean;
     // https://developer.apple.com/documentation/uikit/uidocument/1619980-performasynchronousfileaccessusi
     performAsynchronousFileAccessUsingBlock(block: void):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619974-reverttocontentsofurl
-    revertToContentsOfURL_completionHandler(url: NSURL, completionHandler: BOOL):void;
+    revertToContentsOfURL_completionHandler(url: NSURL, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619958-disableediting
     disableEditing():void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619987-enableediting
     enableEditing():void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619965-hasunsavedchanges
-    hasUnsavedChanges(): BOOL;
-    setHasUnsavedChanges(): void;
+    hasUnsavedChanges(): boolean;
+    setHasUnsavedChanges(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619961-updatechangecount
     updateChangeCount(change: UIDocumentChangeKind):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619953-undomanager
     undoManager(): NSUndoManager;
-    setUndoManager(): void;
+    setUndoManager(value: NSUndoManager): void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619954-changecounttokenforsaveoperation
     changeCountTokenForSaveOperation(saveOperation: UIDocumentSaveOperation):UIDocument;
     // https://developer.apple.com/documentation/uikit/uidocument/1619975-updatechangecountwithtoken
     updateChangeCountWithToken_forSaveOperation(changeCountToken: UIDocument, saveOperation: UIDocumentSaveOperation):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619981-autosavewithcompletionhandler
-    autosaveWithCompletionHandler(completionHandler: BOOL):void;
+    autosaveWithCompletionHandler(completionHandler: boolean):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619963-useractivity
     userActivity(): NSUserActivity;
-    setUserActivity(): void;
+    setUserActivity(value: NSUserActivity): void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619973-restoreuseractivitystate
     restoreUserActivityState(userActivity: NSUserActivity):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619986-updateuseractivitystate
     updateUserActivityState(userActivity: NSUserActivity):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619955-handleerror
-    handleError_userInteractionPermitted(error: NSError, userInteractionPermitted: BOOL):void;
+    handleError_userInteractionPermitted(error: NSError, userInteractionPermitted: boolean):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619960-finishedhandlingerror
-    finishedHandlingError_recovered(error: NSError, recovered: BOOL):void;
+    finishedHandlingError_recovered(error: NSError, recovered: boolean):void;
     // https://developer.apple.com/documentation/uikit/uidocument/1619993-userinteractionnolongerpermitted
     userInteractionNoLongerPermittedForError(error: NSError):void;
     //
@@ -5497,30 +5497,30 @@ declare namespace cocoascript {
    */
   interface UIManagedDocument extends UIDocument {
     // https://developer.apple.com/documentation/uikit/uimanageddocument/1622674-configurepersistentstorecoordina
-    configurePersistentStoreCoordinatorForURL_ofType_modelConfiguration_storeOptions_error(storeURL: NSURL, fileType: string | cocoascript.NSString, configuration: string | cocoascript.NSString, storeOptions: NSDictionary, error: NSError):BOOL;
+    configurePersistentStoreCoordinatorForURL_ofType_modelConfiguration_storeOptions_error(storeURL: NSURL, fileType: string | cocoascript.NSString, configuration: string | cocoascript.NSString, storeOptions: NSDictionary, error: NSError):boolean;
     // https://developer.apple.com/documentation/uikit/uimanageddocument/1622667-managedobjectcontext
     managedObjectContext(): NSManagedObjectContext;
-    setManagedObjectContext(): void;
+    setManagedObjectContext(value: NSManagedObjectContext): void;
     // https://developer.apple.com/documentation/uikit/uimanageddocument/1622669-managedobjectmodel
     managedObjectModel(): NSManagedObjectModel;
-    setManagedObjectModel(): void;
+    setManagedObjectModel(value: NSManagedObjectModel): void;
     // https://developer.apple.com/documentation/uikit/uimanageddocument/1622666-persistentstoreoptions
     persistentStoreOptions(): NSDictionary;
-    setPersistentStoreOptions(): void;
+    setPersistentStoreOptions(value: NSDictionary): void;
     // https://developer.apple.com/documentation/uikit/uimanageddocument/1622671-modelconfiguration
     modelConfiguration(): string | cocoascript.NSString;
-    setModelConfiguration(): void;
+    setModelConfiguration(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uimanageddocument/1622673-persistentstoretypeforfiletype
     persistentStoreTypeForFileType(fileType: string | cocoascript.NSString):NSString;
     // https://developer.apple.com/documentation/uikit/uimanageddocument/1622670-readadditionalcontentfromurl
-    readAdditionalContentFromURL_error(absoluteURL: NSURL, error: NSError):BOOL;
+    readAdditionalContentFromURL_error(absoluteURL: NSURL, error: NSError):boolean;
     // https://developer.apple.com/documentation/uikit/uimanageddocument/1622665-additionalcontentforurl
     additionalContentForURL_error(absoluteURL: NSURL, error: NSError):UIManagedDocument;
     // https://developer.apple.com/documentation/uikit/uimanageddocument/1622668-writeadditionalcontent
-    writeAdditionalContent_toURL_originalContentsURL_error(content: UIManagedDocument, absoluteURL: NSURL, absoluteOriginalContentsURL: NSURL, error: NSError):BOOL;
+    writeAdditionalContent_toURL_originalContentsURL_error(content: UIManagedDocument, absoluteURL: NSURL, absoluteOriginalContentsURL: NSURL, error: NSError):boolean;
     // https://developer.apple.com/documentation/uikit/uimanageddocument/1622672-persistentstorename
     persistentStoreName(): string | cocoascript.NSString;
-    setPersistentStoreName(): void;
+    setPersistentStoreName(value: string | cocoascript.NSString): void;
     //
     alloc():UIManagedDocument;
     //
@@ -5549,22 +5549,22 @@ declare namespace cocoascript {
   interface UIPasteboard extends NSObject {
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622106-generalpasteboard
     generalPasteboard(): UIPasteboard;
-    setGeneralPasteboard(): void;
+    setGeneralPasteboard(value: UIPasteboard): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622074-pasteboardwithname
-    pasteboardWithName_create(pasteboardName: UIPasteboardName, create: BOOL):UIPasteboard;
+    pasteboardWithName_create(pasteboardName: UIPasteboardName, create: boolean):UIPasteboard;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622087-pasteboardwithuniquename
     pasteboardWithUniqueName():UIPasteboard;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622072-removepasteboardwithname
     removePasteboardWithName(pasteboardName: UIPasteboardName):void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622083-name
     name(): UIPasteboardName;
-    setName(): void;
+    setName(value: UIPasteboardName): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622103-changecount
     changeCount(): NSInteger;
-    setChangeCount(): void;
+    setChangeCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622096-setpersistent
-    persistent(): BOOL;
-    setPersistent(): void;
+    persistent(): boolean;
+    setPersistent(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/3621870-detectpatternsforpatterns
     detectPatternsForPatterns_completionHandler(patterns: UIPasteboardDetectionPattern, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/3621871-detectpatternsforpatterns
@@ -5575,21 +5575,21 @@ declare namespace cocoascript {
     detectValuesForPatterns_inItemSet_completionHandler(patterns: UIPasteboardDetectionPattern, itemSet: NSIndexSet, completionHandler: NSError):void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622077-pasteboardtypes
     pasteboardTypes(): string | cocoascript.NSString;
-    setPasteboardTypes(): void;
+    setPasteboardTypes(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622095-pasteboardtypesforitemset
     pasteboardTypesForItemSet(itemSet: NSIndexSet):NSString;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622070-containspasteboardtypes
-    containsPasteboardTypes(pasteboardTypes: string | cocoascript.NSString):BOOL;
+    containsPasteboardTypes(pasteboardTypes: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622100-containspasteboardtypes
-    containsPasteboardTypes_inItemSet(pasteboardTypes: string | cocoascript.NSString, itemSet: NSIndexSet):BOOL;
+    containsPasteboardTypes_inItemSet(pasteboardTypes: string | cocoascript.NSString, itemSet: NSIndexSet):boolean;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622071-itemsetwithpasteboardtypes
     itemSetWithPasteboardTypes(pasteboardTypes: string | cocoascript.NSString):NSIndexSet;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622076-numberofitems
     numberOfItems(): NSInteger;
-    setNumberOfItems(): void;
+    setNumberOfItems(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622067-items
     items(): id;
-    setItems(): void;
+    setItems(value: id): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622101-additems
     addItems(items: UIPasteboard):void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1829417-setitems
@@ -5608,49 +5608,49 @@ declare namespace cocoascript {
     setValue_forPasteboardType(value: UIPasteboard, pasteboardType: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622092-string
     string(): string | cocoascript.NSString;
-    setString(): void;
+    setString(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622091-strings
     strings(): string | cocoascript.NSString;
-    setStrings(): void;
+    setStrings(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622069-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622086-images
     images(): UIImage;
-    setImages(): void;
+    setImages(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622081-url
     URL(): NSURL;
-    setURL(): void;
+    setURL(value: NSURL): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622097-urls
     URLs(): NSURL;
-    setURLs(): void;
+    setURLs(value: NSURL): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622085-color
     color(): UIColor;
-    setColor(): void;
+    setColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1622078-colors
     colors(): UIColor;
-    setColors(): void;
+    setColors(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1829413-hascolors
-    hasColors(): BOOL;
-    setHasColors(): void;
+    hasColors(): boolean;
+    setHasColors(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1829411-hasimages
-    hasImages(): BOOL;
-    setHasImages(): void;
+    hasImages(): boolean;
+    setHasImages(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1829416-hasstrings
-    hasStrings(): BOOL;
-    setHasStrings(): void;
+    hasStrings(): boolean;
+    setHasStrings(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/1829410-hasurls
-    hasURLs(): BOOL;
-    setHasURLs(): void;
+    hasURLs(): boolean;
+    setHasURLs(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/2882049-itemproviders
     itemProviders(): NSItemProvider;
-    setItemProviders(): void;
+    setItemProviders(value: NSItemProvider): void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/2882050-setitemproviders
-    setItemProviders_localOnly_expirationDate(itemProviders: NSItemProvider, localOnly: BOOL, expirationDate: NSDate):void;
+    setItemProviders_localOnly_expirationDate(itemProviders: NSItemProvider, localOnly: boolean, expirationDate: NSDate):void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/2882051-setobjects
     setObjects(objects: NSItemProviderWriting):void;
     // https://developer.apple.com/documentation/uikit/uipasteboard/2882052-setobjects
-    setObjects_localOnly_expirationDate(objects: NSItemProviderWriting, localOnly: BOOL, expirationDate: NSDate):void;
+    setObjects_localOnly_expirationDate(objects: NSItemProviderWriting, localOnly: boolean, expirationDate: NSDate):void;
     //
     alloc():UIPasteboard;
     //
@@ -5673,7 +5673,7 @@ declare namespace cocoascript {
     initWithTypeIdentifiersForAcceptingClass(aClass: NSItemProviderReading):UIPasteConfiguration;
     // https://developer.apple.com/documentation/uikit/uipasteconfiguration/2882059-acceptabletypeidentifiers
     acceptableTypeIdentifiers(): string | cocoascript.NSString;
-    setAcceptableTypeIdentifiers(): void;
+    setAcceptableTypeIdentifiers(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uipasteconfiguration/2882057-addacceptabletypeidentifiers
     addAcceptableTypeIdentifiers(acceptableTypeIdentifiers: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uipasteconfiguration/2882062-addtypeidentifiersforacceptingcl
@@ -5694,9 +5694,9 @@ declare namespace cocoascript {
   interface UIPasteConfigurationSupporting extends NSObject {
     // https://developer.apple.com/documentation/uikit/uipasteconfigurationsupporting/2882040-pasteconfiguration
     pasteConfiguration(): UIPasteConfiguration;
-    setPasteConfiguration(): void;
+    setPasteConfiguration(value: UIPasteConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uipasteconfigurationsupporting/2887578-canpasteitemproviders
-    canPasteItemProviders(itemProviders: NSItemProvider):BOOL;
+    canPasteItemProviders(itemProviders: NSItemProvider):boolean;
     // https://developer.apple.com/documentation/uikit/uipasteconfigurationsupporting/2887579-pasteitemproviders
     pasteItemProviders(itemProviders: NSItemProvider):void;
   }
@@ -5735,13 +5735,13 @@ declare namespace cocoascript {
     initWithIdentifier_source_destination(identifier: string | cocoascript.NSString, source: UIViewController, destination: UIViewController):UIStoryboardSegue;
     // https://developer.apple.com/documentation/uikit/uistoryboardsegue/1621918-sourceviewcontroller
     sourceViewController(): UIViewController;
-    setSourceViewController(): void;
+    setSourceViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uistoryboardsegue/1621916-destinationviewcontroller
     destinationViewController(): UIViewController;
-    setDestinationViewController(): void;
+    setDestinationViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uistoryboardsegue/1621909-identifier
     identifier(): string | cocoascript.NSString;
-    setIdentifier(): void;
+    setIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uistoryboardsegue/1621912-perform
     perform():void;
     // https://developer.apple.com/documentation/uikit/uistoryboardsegue/1621910-seguewithidentifier
@@ -5762,13 +5762,13 @@ declare namespace cocoascript {
   interface UIStoryboardUnwindSegueSource extends NSObject {
     // https://developer.apple.com/documentation/uikit/uistoryboardunwindseguesource/1621917-sourceviewcontroller
     sourceViewController(): UIViewController;
-    setSourceViewController(): void;
+    setSourceViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uistoryboardunwindseguesource/1621915-unwindaction
     unwindAction(): SEL;
-    setUnwindAction(): void;
+    setUnwindAction(value: SEL): void;
     // https://developer.apple.com/documentation/uikit/uistoryboardunwindseguesource/1621914-sender
     sender(): id;
-    setSender(): void;
+    setSender(value: id): void;
     //
     alloc():UIStoryboardUnwindSegueSource;
     //
@@ -5843,21 +5843,21 @@ declare namespace cocoascript {
     dismissGrantingAccessToURL(url: NSURL):void;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerextensionviewcontroller/1614393-documentpickermode
     documentPickerMode(): UIDocumentPickerMode;
-    setDocumentPickerMode(): void;
+    setDocumentPickerMode(value: UIDocumentPickerMode): void;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerextensionviewcontroller/1614390-documentstorageurl
     documentStorageURL(): NSURL;
-    setDocumentStorageURL(): void;
+    setDocumentStorageURL(value: NSURL): void;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerextensionviewcontroller/1614392-originalurl
     originalURL(): NSURL;
-    setOriginalURL(): void;
+    setOriginalURL(value: NSURL): void;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerextensionviewcontroller/1614395-prepareforpresentationinmode
     prepareForPresentationInMode(mode: UIDocumentPickerMode):void;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerextensionviewcontroller/1614396-provideridentifier
     providerIdentifier(): string | cocoascript.NSString;
-    setProviderIdentifier(): void;
+    setProviderIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerextensionviewcontroller/1614394-validtypes
     validTypes(): string | cocoascript.NSString;
-    setValidTypes(): void;
+    setValidTypes(value: string | cocoascript.NSString): void;
     //
     alloc():UIDocumentPickerExtensionViewController;
     //
@@ -5874,25 +5874,25 @@ declare namespace cocoascript {
   interface UITextDocumentProxy extends UIKeyInput {
     // https://developer.apple.com/documentation/uikit/uitextdocumentproxy/1649583-documentinputmode
     documentInputMode(): UITextInputMode;
-    setDocumentInputMode(): void;
+    setDocumentInputMode(value: UITextInputMode): void;
     // https://developer.apple.com/documentation/uikit/uitextdocumentproxy/1618199-documentcontextafterinput
     documentContextAfterInput(): string | cocoascript.NSString;
-    setDocumentContextAfterInput(): void;
+    setDocumentContextAfterInput(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitextdocumentproxy/1618190-documentcontextbeforeinput
     documentContextBeforeInput(): string | cocoascript.NSString;
-    setDocumentContextBeforeInput(): void;
+    setDocumentContextBeforeInput(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitextdocumentproxy/1618194-adjusttextpositionbycharacteroff
     adjustTextPositionByCharacterOffset(offset: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uitextdocumentproxy/2875749-selectedtext
     selectedText(): string | cocoascript.NSString;
-    setSelectedText(): void;
+    setSelectedText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitextdocumentproxy/3152923-setmarkedtext
     setMarkedText_selectedRange(markedText: string | cocoascript.NSString, selectedRange: NSRange):void;
     // https://developer.apple.com/documentation/uikit/uitextdocumentproxy/3152924-unmarktext
     unmarkText():void;
     // https://developer.apple.com/documentation/uikit/uitextdocumentproxy/2875742-documentidentifier
     documentIdentifier(): NSUUID;
-    setDocumentIdentifier(): void;
+    setDocumentIdentifier(value: NSUUID): void;
   }
 }
 declare namespace cocoascript {
@@ -5902,8 +5902,8 @@ declare namespace cocoascript {
    */
   interface UIInputViewAudioFeedback extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiinputviewaudiofeedback/1620038-enableinputclickswhenvisible
-    enableInputClicksWhenVisible(): BOOL;
-    setEnableInputClicksWhenVisible(): void;
+    enableInputClicksWhenVisible(): boolean;
+    setEnableInputClicksWhenVisible(value: boolean): void;
   }
 }
 declare namespace cocoascript {
@@ -5914,7 +5914,7 @@ declare namespace cocoascript {
   interface UIInputViewController extends UIViewController {
     // https://developer.apple.com/documentation/uikit/uiinputviewcontroller/1618192-inputview
     inputView(): UIInputView;
-    setInputView(): void;
+    setInputView(value: UIInputView): void;
     // https://developer.apple.com/documentation/uikit/uiinputviewcontroller/1618191-advancetonextinputmode
     advanceToNextInputMode():void;
     // https://developer.apple.com/documentation/uikit/uiinputviewcontroller/1618196-dismisskeyboard
@@ -5923,21 +5923,21 @@ declare namespace cocoascript {
     handleInputModeListFromView_withEvent(view: UIView, event: UIEvent):void;
     // https://developer.apple.com/documentation/uikit/uiinputviewcontroller/1618193-textdocumentproxy
     textDocumentProxy(): UITextDocumentProxy;
-    setTextDocumentProxy(): void;
+    setTextDocumentProxy(value: UITextDocumentProxy): void;
     // https://developer.apple.com/documentation/uikit/uiinputviewcontroller/1618195-requestsupplementarylexiconwithc
     requestSupplementaryLexiconWithCompletion(completionHandler: UILexicon):void;
     // https://developer.apple.com/documentation/uikit/uiinputviewcontroller/1618200-primarylanguage
     primaryLanguage(): string | cocoascript.NSString;
-    setPrimaryLanguage(): void;
+    setPrimaryLanguage(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiinputviewcontroller/2875741-needsinputmodeswitchkey
-    needsInputModeSwitchKey(): BOOL;
-    setNeedsInputModeSwitchKey(): void;
+    needsInputModeSwitchKey(): boolean;
+    setNeedsInputModeSwitchKey(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiinputviewcontroller/2875763-hasfullaccess
-    hasFullAccess(): BOOL;
-    setHasFullAccess(): void;
+    hasFullAccess(): boolean;
+    setHasFullAccess(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiinputviewcontroller/2932195-hasdictationkey
-    hasDictationKey(): BOOL;
-    setHasDictationKey(): void;
+    hasDictationKey(): boolean;
+    setHasDictationKey(value: boolean): void;
     //
     alloc():UIInputViewController;
     //
@@ -5954,7 +5954,7 @@ declare namespace cocoascript {
   interface UILexicon extends NSObject {
     // https://developer.apple.com/documentation/uikit/uilexicon/1614133-entries
     entries(): UILexiconEntry;
-    setEntries(): void;
+    setEntries(value: UILexiconEntry): void;
     //
     alloc():UILexicon;
     //
@@ -5971,10 +5971,10 @@ declare namespace cocoascript {
   interface UILexiconEntry extends NSObject {
     // https://developer.apple.com/documentation/uikit/uilexiconentry/1614130-documenttext
     documentText(): string | cocoascript.NSString;
-    setDocumentText(): void;
+    setDocumentText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilexiconentry/1614132-userinput
     userInput(): string | cocoascript.NSString;
-    setUserInput(): void;
+    setUserInput(value: string | cocoascript.NSString): void;
     //
     alloc():UILexiconEntry;
     //
@@ -6001,27 +6001,27 @@ declare namespace cocoascript {
   interface UIActivity extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiactivity/1620656-activitycategory
     activityCategory(): UIActivityCategory;
-    setActivityCategory(): void;
+    setActivityCategory(value: UIActivityCategory): void;
     // https://developer.apple.com/documentation/uikit/uiactivity/1620671-activitytype
     activityType(): UIActivityType;
-    setActivityType(): void;
+    setActivityType(value: UIActivityType): void;
     // https://developer.apple.com/documentation/uikit/uiactivity/1620674-activitytitle
     activityTitle(): string | cocoascript.NSString;
-    setActivityTitle(): void;
+    setActivityTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiactivity/1620658-activityimage
     activityImage(): UIImage;
-    setActivityImage(): void;
+    setActivityImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiactivity/1620677-canperformwithactivityitems
-    canPerformWithActivityItems(activityItems: NSArray):BOOL;
+    canPerformWithActivityItems(activityItems: NSArray):boolean;
     // https://developer.apple.com/documentation/uikit/uiactivity/1620668-preparewithactivityitems
     prepareWithActivityItems(activityItems: NSArray):void;
     // https://developer.apple.com/documentation/uikit/uiactivity/1620678-activityviewcontroller
     activityViewController(): UIViewController;
-    setActivityViewController(): void;
+    setActivityViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiactivity/1620659-performactivity
     performActivity():void;
     // https://developer.apple.com/documentation/uikit/uiactivity/1620679-activitydidfinish
-    activityDidFinish(completed: BOOL):void;
+    activityDidFinish(completed: boolean):void;
     //
     alloc():UIActivity;
     //
@@ -6042,13 +6042,13 @@ declare namespace cocoascript {
     initWithActivityItemsConfiguration(activityItemsConfiguration: UIActivityItemsConfigurationReading):UIActivityViewController;
     // https://developer.apple.com/documentation/uikit/uiactivityviewcontroller/1622022-completionwithitemshandler
     completionWithItemsHandler(): UIActivityViewControllerCompletionWithItemsHandler;
-    setCompletionWithItemsHandler(): void;
+    setCompletionWithItemsHandler(value: UIActivityViewControllerCompletionWithItemsHandler): void;
     // https://developer.apple.com/documentation/uikit/uiactivityviewcontroller/1622009-excludedactivitytypes
     excludedActivityTypes(): UIActivityType;
-    setExcludedActivityTypes(): void;
+    setExcludedActivityTypes(value: UIActivityType): void;
     // https://developer.apple.com/documentation/uikit/uiactivityviewcontroller/1622010-completionhandler
     completionHandler(): UIActivityViewControllerCompletionHandler;
-    setCompletionHandler(): void;
+    setCompletionHandler(value: UIActivityViewControllerCompletionHandler): void;
     //
     alloc():UIActivityViewController;
     //
@@ -6087,13 +6087,13 @@ declare namespace cocoascript {
     initWithPlaceholderItem(placeholderItem: UIActivityItemProvider):UIActivityItemProvider;
     // https://developer.apple.com/documentation/uikit/uiactivityitemprovider/1620457-item
     item(): id;
-    setItem(): void;
+    setItem(value: id): void;
     // https://developer.apple.com/documentation/uikit/uiactivityitemprovider/1620454-placeholderitem
     placeholderItem(): id;
-    setPlaceholderItem(): void;
+    setPlaceholderItem(value: id): void;
     // https://developer.apple.com/documentation/uikit/uiactivityitemprovider/1620459-activitytype
     activityType(): UIActivityType;
-    setActivityType(): void;
+    setActivityType(value: UIActivityType): void;
     //
     alloc():UIActivityItemProvider;
     //
@@ -6140,18 +6140,18 @@ declare namespace cocoascript {
     appendItemsWithIdentifiers(identifiers: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182913-numberofitems
     numberOfItems(): NSInteger;
-    setNumberOfItems(): void;
+    setNumberOfItems(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182915-numberofsections
     numberOfSections(): NSInteger;
-    setNumberOfSections(): void;
+    setNumberOfSections(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182914-numberofitemsinsection
     numberOfItemsInSection(sectionIdentifier: any):NSInteger;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182907-itemidentifiers
     itemIdentifiers(): any;
-    setItemIdentifiers(): void;
+    setItemIdentifiers(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182919-sectionidentifiers
     sectionIdentifiers(): any;
-    setSectionIdentifiers(): void;
+    setSectionIdentifiers(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182901-indexofitemidentifier
     indexOfItemIdentifier(itemIdentifier: any):NSInteger;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182902-indexofsectionidentifier
@@ -6186,17 +6186,17 @@ declare namespace cocoascript {
     reconfigureItemsWithIdentifiers(identifiers: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3857603-reconfigureditemidentifiers
     reconfiguredItemIdentifiers(): any;
-    setReconfiguredItemIdentifiers(): void;
+    setReconfiguredItemIdentifiers(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182916-reloaditemswithidentifiers
     reloadItemsWithIdentifiers(identifiers: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3857604-reloadeditemidentifiers
     reloadedItemIdentifiers(): any;
-    setReloadedItemIdentifiers(): void;
+    setReloadedItemIdentifiers(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182917-reloadsectionswithidentifiers
     reloadSectionsWithIdentifiers(sectionIdentifiers: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3857605-reloadedsectionidentifiers
     reloadedSectionIdentifiers(): any;
-    setReloadedSectionIdentifiers(): void;
+    setReloadedSectionIdentifiers(value: any): void;
     //
     alloc():NSDiffableDataSourceSnapshot;
     //
@@ -6213,16 +6213,16 @@ declare namespace cocoascript {
   interface UILayoutSupport extends NSObject {
     // https://developer.apple.com/documentation/uikit/uilayoutsupport/1622253-length
     length(): CGFloat;
-    setLength(): void;
+    setLength(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uilayoutsupport/1622239-bottomanchor
     bottomAnchor(): NSLayoutYAxisAnchor;
-    setBottomAnchor(): void;
+    setBottomAnchor(value: NSLayoutYAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uilayoutsupport/1622236-heightanchor
     heightAnchor(): NSLayoutDimension;
-    setHeightAnchor(): void;
+    setHeightAnchor(value: NSLayoutDimension): void;
     // https://developer.apple.com/documentation/uikit/uilayoutsupport/1622255-topanchor
     topAnchor(): NSLayoutYAxisAnchor;
-    setTopAnchor(): void;
+    setTopAnchor(value: NSLayoutYAxisAnchor): void;
   }
 }
 declare namespace cocoascript {
@@ -6261,51 +6261,51 @@ declare namespace cocoascript {
   interface UILayoutGuide extends NSObject {
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619655-identifier
     identifier(): string | cocoascript.NSString;
-    setIdentifier(): void;
+    setIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619657-layoutframe
     layoutFrame(): CGRect;
-    setLayoutFrame(): void;
+    setLayoutFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619648-owningview
     owningView(): UIView;
-    setOwningView(): void;
+    setOwningView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619661-bottomanchor
     bottomAnchor(): NSLayoutYAxisAnchor;
-    setBottomAnchor(): void;
+    setBottomAnchor(value: NSLayoutYAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619654-centerxanchor
     centerXAnchor(): NSLayoutXAxisAnchor;
-    setCenterXAnchor(): void;
+    setCenterXAnchor(value: NSLayoutXAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619659-centeryanchor
     centerYAnchor(): NSLayoutYAxisAnchor;
-    setCenterYAnchor(): void;
+    setCenterYAnchor(value: NSLayoutYAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619652-heightanchor
     heightAnchor(): NSLayoutDimension;
-    setHeightAnchor(): void;
+    setHeightAnchor(value: NSLayoutDimension): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619658-leadinganchor
     leadingAnchor(): NSLayoutXAxisAnchor;
-    setLeadingAnchor(): void;
+    setLeadingAnchor(value: NSLayoutXAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619656-leftanchor
     leftAnchor(): NSLayoutXAxisAnchor;
-    setLeftAnchor(): void;
+    setLeftAnchor(value: NSLayoutXAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619649-rightanchor
     rightAnchor(): NSLayoutXAxisAnchor;
-    setRightAnchor(): void;
+    setRightAnchor(value: NSLayoutXAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619650-topanchor
     topAnchor(): NSLayoutYAxisAnchor;
-    setTopAnchor(): void;
+    setTopAnchor(value: NSLayoutYAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619660-trailinganchor
     trailingAnchor(): NSLayoutXAxisAnchor;
-    setTrailingAnchor(): void;
+    setTrailingAnchor(value: NSLayoutXAxisAnchor): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1619653-widthanchor
     widthAnchor(): NSLayoutDimension;
-    setWidthAnchor(): void;
+    setWidthAnchor(value: NSLayoutDimension): void;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1648534-constraintsaffectinglayoutforaxi
     constraintsAffectingLayoutForAxis(axis: UILayoutConstraintAxis):NSLayoutConstraint;
     // https://developer.apple.com/documentation/uikit/uilayoutguide/1648533-hasambiguouslayout
-    hasAmbiguousLayout(): BOOL;
-    setHasAmbiguousLayout(): void;
+    hasAmbiguousLayout(): boolean;
+    setHasAmbiguousLayout(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiview/3752221-keyboardlayoutguide
     keyboardLayoutGuide(): UIKeyboardLayoutGuide;
-    setKeyboardLayoutGuide(): void;
+    setKeyboardLayoutGuide(value: UIKeyboardLayoutGuide): void;
     //
     alloc():UILayoutGuide;
     //
@@ -6324,25 +6324,25 @@ declare namespace cocoascript {
     initWithPresentedViewController_presentingViewController(presentedViewController: UIViewController, presentingViewController: UIViewController):UIPresentationController;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618329-delegate
     delegate(): UIAdaptivePresentationControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIAdaptivePresentationControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618338-presentingviewcontroller
     presentingViewController(): UIViewController;
-    setPresentingViewController(): void;
+    setPresentingViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618322-presentedviewcontroller
     presentedViewController(): UIViewController;
-    setPresentedViewController(): void;
+    setPresentedViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618332-containerview
     containerView(): UIView;
-    setContainerView(): void;
+    setContainerView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618321-presentedview
     presentedView(): UIView;
-    setPresentedView(): void;
+    setPresentedView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618337-frameofpresentedviewincontainerv
     frameOfPresentedViewInContainerView(): CGRect;
-    setFrameOfPresentedViewInContainerView(): void;
+    setFrameOfPresentedViewInContainerView(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618335-overridetraitcollection
     overrideTraitCollection(): UITraitCollection;
-    setOverrideTraitCollection(): void;
+    setOverrideTraitCollection(value: UITraitCollection): void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618341-containerviewwilllayoutsubviews
     containerViewWillLayoutSubviews():void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618331-containerviewdidlayoutsubviews
@@ -6350,25 +6350,25 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618330-presentationtransitionwillbegin
     presentationTransitionWillBegin():void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618327-presentationtransitiondidend
-    presentationTransitionDidEnd(completed: BOOL):void;
+    presentationTransitionDidEnd(completed: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618342-dismissaltransitionwillbegin
     dismissalTransitionWillBegin():void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618323-dismissaltransitiondidend
-    dismissalTransitionDidEnd(completed: BOOL):void;
+    dismissalTransitionDidEnd(completed: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618320-presentationstyle
     presentationStyle(): UIModalPresentationStyle;
-    setPresentationStyle(): void;
+    setPresentationStyle(value: UIModalPresentationStyle): void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618325-adaptivepresentationstylefortrai
     adaptivePresentationStyleForTraitCollection(traitCollection: UITraitCollection):UIModalPresentationStyle;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618340-adaptivepresentationstyle
     adaptivePresentationStyle(): UIModalPresentationStyle;
-    setAdaptivePresentationStyle(): void;
+    setAdaptivePresentationStyle(value: UIModalPresentationStyle): void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618336-shouldpresentinfullscreen
-    shouldPresentInFullscreen(): BOOL;
-    setShouldPresentInFullscreen(): void;
+    shouldPresentInFullscreen(): boolean;
+    setShouldPresentInFullscreen(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipresentationcontroller/1618319-shouldremovepresentersview
-    shouldRemovePresentersView(): BOOL;
-    setShouldRemovePresentersView(): void;
+    shouldRemovePresentersView(): boolean;
+    setShouldRemovePresentersView(value: boolean): void;
     //
     alloc():UIPresentationController;
     //
@@ -6389,10 +6389,10 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIVisualEffectView;
     // https://developer.apple.com/documentation/uikit/uivisualeffectview/1615068-contentview
     contentView(): UIView;
-    setContentView(): void;
+    setContentView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uivisualeffectview/1615072-effect
     effect(): UIVisualEffect;
-    setEffect(): void;
+    setEffect(value: UIVisualEffect): void;
     //
     alloc():UIVisualEffectView;
     //
@@ -6434,11 +6434,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uidraginteractiondelegate/2890967-draginteraction
     dragInteraction_previewForCancellingItem_withDefault(interaction: UIDragInteraction, item: UIDragItem, defaultPreview: UITargetedDragPreview):UITargetedDragPreview;
     // https://developer.apple.com/documentation/uikit/uidraginteractiondelegate/2891028-draginteraction
-    dragInteraction_prefersFullSizePreviewsForSession(interaction: UIDragInteraction, session: UIDragSession):BOOL;
+    dragInteraction_prefersFullSizePreviewsForSession(interaction: UIDragInteraction, session: UIDragSession):boolean;
     // https://developer.apple.com/documentation/uikit/uidraginteractiondelegate/2891063-draginteraction
-    dragInteraction_sessionIsRestrictedToDraggingApplication(interaction: UIDragInteraction, session: UIDragSession):BOOL;
+    dragInteraction_sessionIsRestrictedToDraggingApplication(interaction: UIDragInteraction, session: UIDragSession):boolean;
     // https://developer.apple.com/documentation/uikit/uidraginteractiondelegate/2890978-draginteraction
-    dragInteraction_sessionAllowsMoveOperation(interaction: UIDragInteraction, session: UIDragSession):BOOL;
+    dragInteraction_sessionAllowsMoveOperation(interaction: UIDragInteraction, session: UIDragSession):boolean;
   }
 }
 declare namespace cocoascript {
@@ -6448,7 +6448,7 @@ declare namespace cocoascript {
    */
   interface UIDropInteractionDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uidropinteractiondelegate/2890887-dropinteraction
-    dropInteraction_canHandleSession(interaction: UIDropInteraction, session: UIDropSession):BOOL;
+    dropInteraction_canHandleSession(interaction: UIDropInteraction, session: UIDropSession):boolean;
     // https://developer.apple.com/documentation/uikit/uidropinteractiondelegate/2890889-dropinteraction
     dropInteraction_performDrop(interaction: UIDropInteraction, session: UIDropSession):void;
     // https://developer.apple.com/documentation/uikit/uidropinteractiondelegate/2890880-dropinteraction
@@ -6476,17 +6476,17 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uidraginteraction/2890982-initwithdelegate
     initWithDelegate(delegate: UIDragInteractionDelegate):UIDragInteraction;
     // https://developer.apple.com/documentation/uikit/uidraginteraction/2919986-allowssimultaneousrecognitiondur
-    allowsSimultaneousRecognitionDuringLift(): BOOL;
-    setAllowsSimultaneousRecognitionDuringLift(): void;
+    allowsSimultaneousRecognitionDuringLift(): boolean;
+    setAllowsSimultaneousRecognitionDuringLift(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidraginteraction/2891021-delegate
     delegate(): UIDragInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIDragInteractionDelegate): void;
     // https://developer.apple.com/documentation/uikit/uidraginteraction/2891015-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidraginteraction/2891051-enabledbydefault
-    enabledByDefault(): BOOL;
-    setEnabledByDefault(): void;
+    enabledByDefault(): boolean;
+    setEnabledByDefault(value: boolean): void;
     //
     alloc():UIDragInteraction;
     //
@@ -6505,10 +6505,10 @@ declare namespace cocoascript {
     initWithDelegate(delegate: UIDropInteractionDelegate):UIDropInteraction;
     // https://developer.apple.com/documentation/uikit/uidropinteraction/2890890-delegate
     delegate(): UIDropInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIDropInteractionDelegate): void;
     // https://developer.apple.com/documentation/uikit/uidropinteraction/2890871-allowssimultaneousdropsessions
-    allowsSimultaneousDropSessions(): BOOL;
-    setAllowsSimultaneousDropSessions(): void;
+    allowsSimultaneousDropSessions(): boolean;
+    setAllowsSimultaneousDropSessions(value: boolean): void;
     //
     alloc():UIDropInteraction;
     //
@@ -6524,7 +6524,7 @@ declare namespace cocoascript {
    */
   interface UISpringLoadedInteractionBehavior extends NSObject {
     // https://developer.apple.com/documentation/uikit/uispringloadedinteractionbehavior/2897297-shouldallowinteraction
-    shouldAllowInteraction_withContext(interaction: UISpringLoadedInteraction, context: UISpringLoadedInteractionContext):BOOL;
+    shouldAllowInteraction_withContext(interaction: UISpringLoadedInteraction, context: UISpringLoadedInteractionContext):boolean;
     // https://developer.apple.com/documentation/uikit/uispringloadedinteractionbehavior/2897322-interactiondidfinish
     interactionDidFinish(interaction: UISpringLoadedInteraction):void;
   }
@@ -6536,8 +6536,8 @@ declare namespace cocoascript {
    */
   interface UISpringLoadedInteractionSupporting extends NSObject {
     // https://developer.apple.com/documentation/uikit/uispringloadedinteractionsupporting/2897189-springloaded
-    springLoaded(): BOOL;
-    setSpringLoaded(): void;
+    springLoaded(): boolean;
+    setSpringLoaded(value: boolean): void;
   }
 }
 declare namespace cocoascript {
@@ -6552,10 +6552,10 @@ declare namespace cocoascript {
     initWithActivationHandler(handler: UISpringLoadedInteractionContext):UISpringLoadedInteraction;
     // https://developer.apple.com/documentation/uikit/uispringloadedinteraction/2897325-interactionbehavior
     interactionBehavior(): UISpringLoadedInteractionBehavior;
-    setInteractionBehavior(): void;
+    setInteractionBehavior(value: UISpringLoadedInteractionBehavior): void;
     // https://developer.apple.com/documentation/uikit/uispringloadedinteraction/2897379-interactioneffect
     interactionEffect(): UISpringLoadedInteractionEffect;
-    setInteractionEffect(): void;
+    setInteractionEffect(value: UISpringLoadedInteractionEffect): void;
     //
     alloc():UISpringLoadedInteraction;
     //
@@ -6572,13 +6572,13 @@ declare namespace cocoascript {
   interface UISpringLoadedInteractionContext extends NSObject {
     // https://developer.apple.com/documentation/uikit/uispringloadedinteractioncontext/2897357-state
     state(): UISpringLoadedInteractionEffectState;
-    setState(): void;
+    setState(value: UISpringLoadedInteractionEffectState): void;
     // https://developer.apple.com/documentation/uikit/uispringloadedinteractioncontext/2897330-targetitem
     targetItem(): id;
-    setTargetItem(): void;
+    setTargetItem(value: id): void;
     // https://developer.apple.com/documentation/uikit/uispringloadedinteractioncontext/2897394-targetview
     targetView(): UIView;
-    setTargetView(): void;
+    setTargetView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uispringloadedinteractioncontext/2897468-locationinview
     locationInView(view: UIView):CGPoint;
   }
@@ -6603,13 +6603,13 @@ declare namespace cocoascript {
     initWithItemProvider(itemProvider: NSItemProvider):UIDragItem;
     // https://developer.apple.com/documentation/uikit/uidragitem/2890975-itemprovider
     itemProvider(): NSItemProvider;
-    setItemProvider(): void;
+    setItemProvider(value: NSItemProvider): void;
     // https://developer.apple.com/documentation/uikit/uidragitem/2890981-localobject
     localObject(): id;
-    setLocalObject(): void;
+    setLocalObject(value: id): void;
     // https://developer.apple.com/documentation/uikit/uidragitem/2890972-previewprovider
     previewProvider(): void;
-    setPreviewProvider(): void;
+    setPreviewProvider(value: void): void;
     //
     alloc():UIDragItem;
     //
@@ -6625,18 +6625,18 @@ declare namespace cocoascript {
    */
   interface UIDragDropSession extends NSObject {
     // https://developer.apple.com/documentation/uikit/uidragdropsession/2903561-canloadobjectsofclass
-    canLoadObjectsOfClass(aClass: NSItemProviderReading):BOOL;
+    canLoadObjectsOfClass(aClass: NSItemProviderReading):boolean;
     // https://developer.apple.com/documentation/uikit/uidragdropsession/2891006-hasitemsconformingtotypeidentifi
-    hasItemsConformingToTypeIdentifiers(typeIdentifiers: string | cocoascript.NSString):BOOL;
+    hasItemsConformingToTypeIdentifiers(typeIdentifiers: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uidragdropsession/2891030-items
     items(): UIDragItem;
-    setItems(): void;
+    setItems(value: UIDragItem): void;
     // https://developer.apple.com/documentation/uikit/uidragdropsession/2891062-allowsmoveoperation
-    allowsMoveOperation(): BOOL;
-    setAllowsMoveOperation(): void;
+    allowsMoveOperation(): boolean;
+    setAllowsMoveOperation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidragdropsession/2890983-restrictedtodraggingapplication
-    restrictedToDraggingApplication(): BOOL;
-    setRestrictedToDraggingApplication(): void;
+    restrictedToDraggingApplication(): boolean;
+    setRestrictedToDraggingApplication(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidragdropsession/2891049-locationinview
     locationInView(view: UIView):CGPoint;
   }
@@ -6649,7 +6649,7 @@ declare namespace cocoascript {
   interface UIDragSession extends UIDragDropSession {
     // https://developer.apple.com/documentation/uikit/uidragsession/2891033-localcontext
     localContext(): id;
-    setLocalContext(): void;
+    setLocalContext(value: id): void;
   }
 }
 declare namespace cocoascript {
@@ -6672,12 +6672,12 @@ declare namespace cocoascript {
   interface UIDropSession extends NSProgressReporting {
     // https://developer.apple.com/documentation/uikit/uidropsession/2890985-localdragsession
     localDragSession(): UIDragSession;
-    setLocalDragSession(): void;
+    setLocalDragSession(value: UIDragSession): void;
     // https://developer.apple.com/documentation/uikit/uidropsession/2891058-loadobjectsofclass
     loadObjectsOfClass_completion(aClass: NSItemProviderReading, completion: NSItemProviderReading):NSProgress;
     // https://developer.apple.com/documentation/uikit/uidropsession/2890980-progressindicatorstyle
     progressIndicatorStyle(): UIDropSessionProgressIndicatorStyle;
-    setProgressIndicatorStyle(): void;
+    setProgressIndicatorStyle(value: UIDropSessionProgressIndicatorStyle): void;
   }
 }
 declare namespace cocoascript {
@@ -6690,13 +6690,13 @@ declare namespace cocoascript {
     initWithDropOperation(operation: UIDropOperation):UIDropProposal;
     // https://developer.apple.com/documentation/uikit/uidropproposal/2890877-operation
     operation(): UIDropOperation;
-    setOperation(): void;
+    setOperation(value: UIDropOperation): void;
     // https://developer.apple.com/documentation/uikit/uidropproposal/2890897-precise
-    precise(): BOOL;
-    setPrecise(): void;
+    precise(): boolean;
+    setPrecise(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidropproposal/2890884-prefersfullsizepreview
-    prefersFullSizePreview(): BOOL;
-    setPrefersFullSizePreview(): void;
+    prefersFullSizePreview(): boolean;
+    setPrefersFullSizePreview(value: boolean): void;
     //
     alloc():UIDropProposal;
     //
@@ -6720,7 +6720,7 @@ declare namespace cocoascript {
   interface UIItemProviderPresentationSizeProviding extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiitemproviderpresentationsizeproviding/2921674-preferredpresentationsizeforitem
     preferredPresentationSizeForItemProvider(): CGSize;
-    setPreferredPresentationSizeForItemProvider(): void;
+    setPreferredPresentationSizeForItemProvider(value: CGSize): void;
   }
 }
 declare namespace cocoascript {
@@ -6753,10 +6753,10 @@ declare namespace cocoascript {
     previewForURL_title(url: NSURL, title: string | cocoascript.NSString):UIDragPreview;
     // https://developer.apple.com/documentation/uikit/uidragpreview/2890925-parameters
     parameters(): UIDragPreviewParameters;
-    setParameters(): void;
+    setParameters(value: UIDragPreviewParameters): void;
     // https://developer.apple.com/documentation/uikit/uidragpreview/2890924-view
     view(): UIView;
-    setView(): void;
+    setView(value: UIView): void;
     //
     alloc():UIDragPreview;
     //
@@ -6875,81 +6875,81 @@ declare namespace cocoascript {
     imageWithBaselineOffsetFromBottom(baselineOffset: CGFloat):UIImage;
     // https://developer.apple.com/documentation/uikit/uiimage/3294220-addimage
     addImage(): UIImage;
-    setAddImage(): void;
+    setAddImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3294230-removeimage
     removeImage(): UIImage;
-    setRemoveImage(): void;
+    setRemoveImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3294219-actionsimage
     actionsImage(): UIImage;
-    setActionsImage(): void;
+    setActionsImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3343561-checkmarkimage
     checkmarkImage(): UIImage;
-    setCheckmarkImage(): void;
+    setCheckmarkImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3343562-strokedcheckmarkimage
     strokedCheckmarkImage(): UIImage;
-    setStrokedCheckmarkImage(): void;
+    setStrokedCheckmarkImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624147-cgimage
     CGImage(): CGImageRef;
-    setCGImage(): void;
+    setCGImage(value: CGImageRef): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624159-cgimage
     CGImage():CGImageRef;
     // https://developer.apple.com/documentation/uikit/uiimage/1624129-ciimage
     CIImage(): CIImage;
-    setCIImage(): void;
+    setCIImage(value: CIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624117-images
     images(): UIImage;
-    setImages(): void;
+    setImages(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624151-imageasset
     imageAsset(): UIImageAsset;
-    setImageAsset(): void;
+    setImageAsset(value: UIImageAsset): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624110-scale
     scale(): CGFloat;
-    setScale(): void;
+    setScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624105-size
     size(): CGSize;
-    setSize(): void;
+    setSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624141-imageorientation
     imageOrientation(): UIImageOrientation;
-    setImageOrientation(): void;
+    setImageOrientation(value: UIImageOrientation): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624128-flipsforrighttoleftlayoutdirecti
-    flipsForRightToLeftLayoutDirection(): BOOL;
-    setFlipsForRightToLeftLayoutDirection(): void;
+    flipsForRightToLeftLayoutDirection(): boolean;
+    setFlipsForRightToLeftLayoutDirection(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624157-resizingmode
     resizingMode(): UIImageResizingMode;
-    setResizingMode(): void;
+    setResizingMode(value: UIImageResizingMode): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624155-duration
     duration(): NSTimeInterval;
-    setDuration(): void;
+    setDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624097-capinsets
     capInsets(): UIEdgeInsets;
-    setCapInsets(): void;
+    setCapInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624139-alignmentrectinsets
     alignmentRectInsets(): UIEdgeInsets;
-    setAlignmentRectInsets(): void;
+    setAlignmentRectInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3294232-symbolimage
-    symbolImage(): BOOL;
-    setSymbolImage(): void;
+    symbolImage(): boolean;
+    setSymbolImage(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3294223-configuration
     configuration(): UIImageConfiguration;
-    setConfiguration(): void;
+    setConfiguration(value: UIImageConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3294231-symbolconfiguration
     symbolConfiguration(): UIImageSymbolConfiguration;
-    setSymbolConfiguration(): void;
+    setSymbolConfiguration(value: UIImageSymbolConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624158-traitcollection
     traitCollection(): UITraitCollection;
-    setTraitCollection(): void;
+    setTraitCollection(value: UITraitCollection): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3294224-hasbaseline
-    hasBaseline(): BOOL;
-    setHasBaseline(): void;
+    hasBaseline(): boolean;
+    setHasBaseline(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3294221-baselineoffsetfrombottom
     baselineOffsetFromBottom(): CGFloat;
-    setBaselineOffsetFromBottom(): void;
+    setBaselineOffsetFromBottom(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624122-renderingmode
     renderingMode(): UIImageRenderingMode;
-    setRenderingMode(): void;
+    setRenderingMode(value: UIImageRenderingMode): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1649497-imagerendererformat
     imageRendererFormat(): UIGraphicsImageRendererFormat;
-    setImageRendererFormat(): void;
+    setImageRendererFormat(value: UIGraphicsImageRendererFormat): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3327300-imagewithtintcolor
     imageWithTintColor(color: UIColor):UIImage;
     // https://developer.apple.com/documentation/uikit/uiimage/3327301-imagewithtintcolor
@@ -6968,10 +6968,10 @@ declare namespace cocoascript {
     stretchableImageWithLeftCapWidth_topCapHeight(leftCapWidth: NSInteger, topCapHeight: NSInteger):UIImage;
     // https://developer.apple.com/documentation/uikit/uiimage/1624148-leftcapwidth
     leftCapWidth(): NSInteger;
-    setLeftCapWidth(): void;
+    setLeftCapWidth(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiimage/1624116-topcapheight
     topCapHeight(): NSInteger;
-    setTopCapHeight(): void;
+    setTopCapHeight(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiimage/3750844-preparefordisplaywithcompletionh
     prepareForDisplayWithCompletionHandler(completionHandler: UIImage):void;
     // https://developer.apple.com/documentation/uikit/uiimage/3750845-preparethumbnailofsize
@@ -7022,7 +7022,7 @@ declare namespace cocoascript {
   interface NSTextStorageObserving extends NSObject {
     // https://developer.apple.com/documentation/uikit/nstextstorageobserving/3810051-textstorage
     textStorage(): NSTextStorage;
-    setTextStorage(): void;
+    setTextStorage(value: NSTextStorage): void;
     // https://developer.apple.com/documentation/uikit/nstextstorageobserving/3852588-performeditingtransactionfortext
     performEditingTransactionForTextStorage_usingBlock(textStorage: NSTextStorage, transaction: void):void;
     // https://developer.apple.com/documentation/uikit/nstextstorageobserving/3810050-processeditingfortextstorage
@@ -7047,13 +7047,13 @@ declare namespace cocoascript {
   interface NSTextSelectionDataSource extends NSObject {
     // https://developer.apple.com/documentation/uikit/nstextselectiondatasource/3801840-documentrange
     documentRange(): NSTextRange;
-    setDocumentRange(): void;
+    setDocumentRange(value: NSTextRange): void;
     // https://developer.apple.com/documentation/uikit/nstextselectiondatasource/3801841-enumeratecaretoffsetsinlinefragm
-    enumerateCaretOffsetsInLineFragmentAtLocation_usingBlock(location: NSTextLocation, block: BOOL):void;
+    enumerateCaretOffsetsInLineFragmentAtLocation_usingBlock(location: NSTextLocation, block: boolean):void;
     // https://developer.apple.com/documentation/uikit/nstextselectiondatasource/3801842-enumeratecontainerboundariesfrom
-    enumerateContainerBoundariesFromLocation_reverse_usingBlock(location: NSTextLocation, reverse: BOOL, block: BOOL):void;
+    enumerateContainerBoundariesFromLocation_reverse_usingBlock(location: NSTextLocation, reverse: boolean, block: boolean):void;
     // https://developer.apple.com/documentation/uikit/nstextselectiondatasource/3801843-enumeratesubstringsfromlocation
-    enumerateSubstringsFromLocation_options_usingBlock(location: NSTextLocation, options: NSStringEnumerationOptions, block: BOOL):void;
+    enumerateSubstringsFromLocation_options_usingBlock(location: NSTextLocation, options: NSStringEnumerationOptions, block: boolean):void;
     // https://developer.apple.com/documentation/uikit/nstextselectiondatasource/3801846-locationfromlocation
     locationFromLocation_withOffset(location: NSTextLocation, offset: NSInteger):NSTextLocation;
     // https://developer.apple.com/documentation/uikit/nstextselectiondatasource/3801845-linefragmentrangeforpoint
@@ -7077,7 +7077,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanagerdelegate/3824749-textlayoutmanager
     textLayoutManager_renderingAttributesForLink_atLocation_defaultAttributes(textLayoutManager: NSTextLayoutManager, link: NSTextLayoutManagerDelegate, location: NSTextLocation, renderingAttributes: NSTextLayoutManagerDelegate):NSTextLayoutManagerDelegate;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanagerdelegate/3810021-textlayoutmanager
-    textLayoutManager_shouldBreakLineBeforeLocation_hyphenating(textLayoutManager: NSTextLayoutManager, location: NSTextLocation, hyphenating: BOOL):BOOL;
+    textLayoutManager_shouldBreakLineBeforeLocation_hyphenating(textLayoutManager: NSTextLayoutManager, location: NSTextLocation, hyphenating: boolean):boolean;
     // https://developer.apple.com/documentation/uikit/nstextlayoutmanagerdelegate/3810024-textlayoutmanager
     textLayoutManager_textLayoutFragmentForLocation_inTextElement(textLayoutManager: NSTextLayoutManager, location: NSTextLocation, textElement: NSTextElement):NSTextLayoutFragment;
   }
@@ -7151,7 +7151,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nstextcontentmanagerdelegate/3809932-textcontentmanager
     textContentManager_textElementAtLocation(textContentManager: NSTextContentManager, location: NSTextLocation):NSTextElement;
     // https://developer.apple.com/documentation/uikit/nstextcontentmanagerdelegate/3852566-textcontentmanager
-    textContentManager_shouldEnumerateTextElement_options(textContentManager: NSTextContentManager, textElement: NSTextElement, options: NSTextContentManagerEnumerationOptions):BOOL;
+    textContentManager_shouldEnumerateTextElement_options(textContentManager: NSTextContentManager, textElement: NSTextElement, options: NSTextContentManagerEnumerationOptions):boolean;
   }
 }
 declare namespace cocoascript {
@@ -7191,13 +7191,13 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nslayoutmanagerdelegate/1403167-layoutmanager
     layoutManager_shouldUseAction_forControlCharacterAtIndex(layoutManager: NSLayoutManager, action: NSControlCharacterAction, charIndex: NSUInteger):NSControlCharacterAction;
     // https://developer.apple.com/documentation/uikit/nslayoutmanagerdelegate/1402926-layoutmanager
-    layoutManager_didCompleteLayoutForTextContainer_atEnd(layoutManager: NSLayoutManager, textContainer: NSTextContainer, layoutFinishedFlag: BOOL):void;
+    layoutManager_didCompleteLayoutForTextContainer_atEnd(layoutManager: NSLayoutManager, textContainer: NSTextContainer, layoutFinishedFlag: boolean):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanagerdelegate/1403049-layoutmanager
     layoutManager_textContainer_didChangeGeometryFromSize(layoutManager: NSLayoutManager, textContainer: NSTextContainer, oldSize: CGSize):void;
     // https://developer.apple.com/documentation/uikit/nslayoutmanagerdelegate/1403128-layoutmanager
-    layoutManager_shouldBreakLineByHyphenatingBeforeCharacterAtIndex(layoutManager: NSLayoutManager, charIndex: NSUInteger):BOOL;
+    layoutManager_shouldBreakLineByHyphenatingBeforeCharacterAtIndex(layoutManager: NSLayoutManager, charIndex: NSUInteger):boolean;
     // https://developer.apple.com/documentation/uikit/nslayoutmanagerdelegate/1403051-layoutmanager
-    layoutManager_shouldBreakLineByWordBeforeCharacterAtIndex(layoutManager: NSLayoutManager, charIndex: NSUInteger):BOOL;
+    layoutManager_shouldBreakLineByWordBeforeCharacterAtIndex(layoutManager: NSLayoutManager, charIndex: NSUInteger):boolean;
     // https://developer.apple.com/documentation/uikit/nslayoutmanagerdelegate/1402948-layoutmanager
     layoutManager_lineSpacingAfterGlyphAtIndex_withProposedLineFragmentRect(layoutManager: NSLayoutManager, glyphIndex: NSUInteger, rect: CGRect):CGFloat;
     // https://developer.apple.com/documentation/uikit/nslayoutmanagerdelegate/1403076-layoutmanager
@@ -7207,9 +7207,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nslayoutmanagerdelegate/1402922-layoutmanager
     layoutManager_boundingBoxForControlGlyphAtIndex_forTextContainer_proposedLineFragment_glyphPosition_characterIndex(layoutManager: NSLayoutManager, glyphIndex: NSUInteger, textContainer: NSTextContainer, proposedRect: CGRect, glyphPosition: CGPoint, charIndex: NSUInteger):CGRect;
     // https://developer.apple.com/documentation/uikit/nslayoutmanagerdelegate/1403122-layoutmanager
-    layoutManager_shouldSetLineFragmentRect_lineFragmentUsedRect_baselineOffset_inTextContainer_forGlyphRange(layoutManager: NSLayoutManager, lineFragmentRect: CGRect, lineFragmentUsedRect: CGRect, baselineOffset: CGFloat, textContainer: NSTextContainer, glyphRange: NSRange):BOOL;
+    layoutManager_shouldSetLineFragmentRect_lineFragmentUsedRect_baselineOffset_inTextContainer_forGlyphRange(layoutManager: NSLayoutManager, lineFragmentRect: CGRect, lineFragmentUsedRect: CGRect, baselineOffset: CGFloat, textContainer: NSTextContainer, glyphRange: NSRange):boolean;
     // https://developer.apple.com/documentation/appkit/nslayoutmanagerdelegate/1403085-layoutmanager
-    layoutManager_shouldUseTemporaryAttributes_forDrawingToScreen_atCharacterIndex_effectiveRange(layoutManager: NSLayoutManager, attrs: NSLayoutManagerDelegate, toScreen: BOOL, charIndex: NSUInteger, effectiveCharRange: NSRangePointer):NSLayoutManagerDelegate;
+    layoutManager_shouldUseTemporaryAttributes_forDrawingToScreen_atCharacterIndex_effectiveRange(layoutManager: NSLayoutManager, attrs: NSLayoutManagerDelegate, toScreen: boolean, charIndex: NSUInteger, effectiveCharRange: NSRangePointer):NSLayoutManagerDelegate;
   }
 }
 declare namespace cocoascript {
@@ -7312,7 +7312,7 @@ declare namespace cocoascript {
   interface UIEvent extends NSObject {
     // https://developer.apple.com/documentation/uikit/uievent/1613836-alltouches
     allTouches(): UITouch;
-    setAllTouches(): void;
+    setAllTouches(value: UITouch): void;
     // https://developer.apple.com/documentation/uikit/uievent/1613812-touchesforview
     touchesForView(view: UIView):UITouch;
     // https://developer.apple.com/documentation/uikit/uievent/1613794-touchesforwindow
@@ -7323,21 +7323,21 @@ declare namespace cocoascript {
     predictedTouchesForTouch(touch: UITouch):UITouch;
     // https://developer.apple.com/documentation/uikit/uievent/1613790-timestamp
     timestamp(): NSTimeInterval;
-    setTimestamp(): void;
+    setTimestamp(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uievent/1613840-type
     type(): UIEventType;
-    setType(): void;
+    setType(value: UIEventType): void;
     // https://developer.apple.com/documentation/uikit/uievent/1613824-subtype
     subtype(): UIEventSubtype;
-    setSubtype(): void;
+    setSubtype(value: UIEventSubtype): void;
     // https://developer.apple.com/documentation/uikit/uievent/1613832-touchesforgesturerecognizer
     touchesForGestureRecognizer(gesture: UIGestureRecognizer):UITouch;
     // https://developer.apple.com/documentation/uikit/uievent/3538960-buttonmask
     buttonMask(): UIEventButtonMask;
-    setButtonMask(): void;
+    setButtonMask(value: UIEventButtonMask): void;
     // https://developer.apple.com/documentation/uikit/uievent/3538961-modifierflags
     modifierFlags(): UIKeyModifierFlags;
-    setModifierFlags(): void;
+    setModifierFlags(value: UIKeyModifierFlags): void;
     //
     alloc():UIEvent;
     //
@@ -7358,57 +7358,57 @@ declare namespace cocoascript {
     previousLocationInView(view: UIView):CGPoint;
     // https://developer.apple.com/documentation/uikit/uitouch/1618109-view
     view(): UIView;
-    setView(): void;
+    setView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618126-window
     window(): UIWindow;
-    setWindow(): void;
+    setWindow(value: UIWindow): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618106-majorradius
     majorRadius(): CGFloat;
-    setMajorRadius(): void;
+    setMajorRadius(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618120-majorradiustolerance
     majorRadiusTolerance(): CGFloat;
-    setMajorRadiusTolerance(): void;
+    setMajorRadiusTolerance(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618134-preciselocationinview
     preciseLocationInView(view: UIView):CGPoint;
     // https://developer.apple.com/documentation/uikit/uitouch/1618129-precisepreviouslocationinview
     precisePreviousLocationInView(view: UIView):CGPoint;
     // https://developer.apple.com/documentation/uikit/uitouch/1618132-tapcount
     tapCount(): NSUInteger;
-    setTapCount(): void;
+    setTapCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618144-timestamp
     timestamp(): NSTimeInterval;
-    setTimestamp(): void;
+    setTimestamp(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618143-type
     type(): UITouchType;
-    setType(): void;
+    setType(value: UITouchType): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618113-phase
     phase(): UITouchPhase;
-    setPhase(): void;
+    setPhase(value: UITouchPhase): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618110-force
     force(): CGFloat;
-    setForce(): void;
+    setForce(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618121-maximumpossibleforce
     maximumPossibleForce(): CGFloat;
-    setMaximumPossibleForce(): void;
+    setMaximumPossibleForce(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618118-altitudeangle
     altitudeAngle(): CGFloat;
-    setAltitudeAngle(): void;
+    setAltitudeAngle(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618131-azimuthangleinview
     azimuthAngleInView(view: UIView):CGFloat;
     // https://developer.apple.com/documentation/uikit/uitouch/1618133-azimuthunitvectorinview
     azimuthUnitVectorInView(view: UIView):CGVector;
     // https://developer.apple.com/documentation/uikit/uitouch/1618130-estimatedproperties
     estimatedProperties(): UITouchProperties;
-    setEstimatedProperties(): void;
+    setEstimatedProperties(value: UITouchProperties): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618119-estimatedpropertiesexpectingupda
     estimatedPropertiesExpectingUpdates(): UITouchProperties;
-    setEstimatedPropertiesExpectingUpdates(): void;
+    setEstimatedPropertiesExpectingUpdates(value: UITouchProperties): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618137-estimationupdateindex
     estimationUpdateIndex(): NSNumber;
-    setEstimationUpdateIndex(): void;
+    setEstimationUpdateIndex(value: NSNumber): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1618114-gesturerecognizers
     gestureRecognizers(): UIGestureRecognizer;
-    setGestureRecognizers(): void;
+    setGestureRecognizers(value: UIGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uitouch/1614836-locationinnode
     locationInNode(node: SKNode):CGPoint;
     // https://developer.apple.com/documentation/uikit/uitouch/1615023-previouslocationinnode
@@ -7429,28 +7429,28 @@ declare namespace cocoascript {
   interface UIPress extends NSObject {
     // https://developer.apple.com/documentation/uikit/uipress/1620364-force
     force(): CGFloat;
-    setForce(): void;
+    setForce(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uipress/1620376-gesturerecognizers
     gestureRecognizers(): UIGestureRecognizer;
-    setGestureRecognizers(): void;
+    setGestureRecognizers(value: UIGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uipress/1620374-responder
     responder(): UIResponder;
-    setResponder(): void;
+    setResponder(value: UIResponder): void;
     // https://developer.apple.com/documentation/uikit/uipress/1620366-window
     window(): UIWindow;
-    setWindow(): void;
+    setWindow(value: UIWindow): void;
     // https://developer.apple.com/documentation/uikit/uipress/3526315-key
     key(): UIKey;
-    setKey(): void;
+    setKey(value: UIKey): void;
     // https://developer.apple.com/documentation/uikit/uipress/1620370-type
     type(): UIPressType;
-    setType(): void;
+    setType(value: UIPressType): void;
     // https://developer.apple.com/documentation/uikit/uipress/1620367-phase
     phase(): UIPressPhase;
-    setPhase(): void;
+    setPhase(value: UIPressPhase): void;
     // https://developer.apple.com/documentation/uikit/uipress/1620360-timestamp
     timestamp(): NSTimeInterval;
-    setTimestamp(): void;
+    setTimestamp(value: NSTimeInterval): void;
     //
     alloc():UIPress;
     //
@@ -7467,7 +7467,7 @@ declare namespace cocoascript {
   interface UIPressesEvent extends UIEvent {
     // https://developer.apple.com/documentation/uikit/uipressesevent/1623575-allpresses
     allPresses(): UIPress;
-    setAllPresses(): void;
+    setAllPresses(value: UIPress): void;
     // https://developer.apple.com/documentation/uikit/uipressesevent/1623574-pressesforgesturerecognizer
     pressesForGestureRecognizer(gesture: UIGestureRecognizer):UIPress;
     //
@@ -7485,19 +7485,19 @@ declare namespace cocoascript {
    */
   interface UIGestureRecognizerDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate/1624213-gesturerecognizershouldbegin
-    gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer):BOOL;
+    gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer):boolean;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate/1624214-gesturerecognizer
-    gestureRecognizer_shouldReceiveTouch(gestureRecognizer: UIGestureRecognizer, touch: UITouch):BOOL;
+    gestureRecognizer_shouldReceiveTouch(gestureRecognizer: UIGestureRecognizer, touch: UITouch):boolean;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate/1624216-gesturerecognizer
-    gestureRecognizer_shouldReceivePress(gestureRecognizer: UIGestureRecognizer, press: UIPress):BOOL;
+    gestureRecognizer_shouldReceivePress(gestureRecognizer: UIGestureRecognizer, press: UIPress):boolean;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate/3538976-gesturerecognizer
-    gestureRecognizer_shouldReceiveEvent(gestureRecognizer: UIGestureRecognizer, event: UIEvent):BOOL;
+    gestureRecognizer_shouldReceiveEvent(gestureRecognizer: UIGestureRecognizer, event: UIEvent):boolean;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate/1624208-gesturerecognizer
-    gestureRecognizer_shouldRecognizeSimultaneouslyWithGestureRecognizer(gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer):BOOL;
+    gestureRecognizer_shouldRecognizeSimultaneouslyWithGestureRecognizer(gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer):boolean;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate/1624229-gesturerecognizer
-    gestureRecognizer_shouldRequireFailureOfGestureRecognizer(gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer):BOOL;
+    gestureRecognizer_shouldRequireFailureOfGestureRecognizer(gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer):boolean;
     // https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate/1624222-gesturerecognizer
-    gestureRecognizer_shouldBeRequiredToFailByGestureRecognizer(gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer):BOOL;
+    gestureRecognizer_shouldBeRequiredToFailByGestureRecognizer(gestureRecognizer: UIGestureRecognizer, otherGestureRecognizer: UIGestureRecognizer):boolean;
   }
 }
 declare namespace cocoascript {
@@ -7510,10 +7510,10 @@ declare namespace cocoascript {
     initWithView(view: UIView):UIPreviewInteraction;
     // https://developer.apple.com/documentation/uikit/uipreviewinteraction/1648537-delegate
     delegate(): UIPreviewInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIPreviewInteractionDelegate): void;
     // https://developer.apple.com/documentation/uikit/uipreviewinteraction/1648544-view
     view(): UIView;
-    setView(): void;
+    setView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uipreviewinteraction/1648539-cancelinteraction
     cancelInteraction():void;
     // https://developer.apple.com/documentation/uikit/uipreviewinteraction/1648545-locationincoordinatespace
@@ -7533,11 +7533,11 @@ declare namespace cocoascript {
    */
   interface UIPreviewInteractionDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uipreviewinteractiondelegate/1648538-previewinteractionshouldbegin
-    previewInteractionShouldBegin(previewInteraction: UIPreviewInteraction):BOOL;
+    previewInteractionShouldBegin(previewInteraction: UIPreviewInteraction):boolean;
     // https://developer.apple.com/documentation/uikit/uipreviewinteractiondelegate/1648546-previewinteraction
-    previewInteraction_didUpdatePreviewTransition_ended(previewInteraction: UIPreviewInteraction, transitionProgress: CGFloat, ended: BOOL):void;
+    previewInteraction_didUpdatePreviewTransition_ended(previewInteraction: UIPreviewInteraction, transitionProgress: CGFloat, ended: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipreviewinteractiondelegate/1648540-previewinteraction
-    previewInteraction_didUpdateCommitTransition_ended(previewInteraction: UIPreviewInteraction, transitionProgress: CGFloat, ended: BOOL):void;
+    previewInteraction_didUpdateCommitTransition_ended(previewInteraction: UIPreviewInteraction, transitionProgress: CGFloat, ended: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipreviewinteractiondelegate/1648547-previewinteractiondidcancel
     previewInteractionDidCancel(previewInteraction: UIPreviewInteraction):void;
   }
@@ -7550,7 +7550,7 @@ declare namespace cocoascript {
   interface UIPreviewActionItem extends NSObject {
     // https://developer.apple.com/documentation/uikit/uipreviewactionitem/1621352-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
   }
 }
 declare namespace cocoascript {
@@ -7563,10 +7563,10 @@ declare namespace cocoascript {
     initWithDelegate(delegate: UIPointerInteractionDelegate):UIPointerInteraction;
     // https://developer.apple.com/documentation/uikit/uipointerinteraction/3538987-delegate
     delegate(): UIPointerInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIPointerInteractionDelegate): void;
     // https://developer.apple.com/documentation/uikit/uipointerinteraction/3538988-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipointerinteraction/3538990-invalidate
     invalidate():void;
     //
@@ -7605,6 +7605,11 @@ declare namespace cocoascript {
     styleWithEffect_shape(effect: UIPointerEffect, shape: UIPointerShape):UIPointerStyle;
     // https://developer.apple.com/documentation/uikit/uipointerstyle/3539027-stylewithshape
     styleWithShape_constrainedAxes(shape: UIPointerShape, axes: UIAxis):UIPointerStyle;
+    // https://developer.apple.com/documentation/uikit/uipointerstyle/3752210-accessories
+    accessories(): UIPointerAccessory;
+    setAccessories(value: UIPointerAccessory): void;
+    // https://developer.apple.com/documentation/uikit/uipointerstyle/3752211-systempointerstyle
+    systemPointerStyle():UIPointerStyle;
     //
     alloc():UIPointerStyle;
     //
@@ -7663,31 +7668,31 @@ declare namespace cocoascript {
     flexibleSpaceItem():UIBarButtonItem;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/1617154-target
     target(): id;
-    setTarget(): void;
+    setTarget(value: id): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/1617127-action
     action(): SEL;
-    setAction(): void;
+    setAction(value: SEL): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/1617114-style
     style(): UIBarButtonItemStyle;
-    setStyle(): void;
+    setStyle(value: UIBarButtonItemStyle): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/1617132-possibletitles
     possibleTitles(): string | cocoascript.NSString;
-    setPossibleTitles(): void;
+    setPossibleTitles(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/1617155-width
     width(): CGFloat;
-    setWidth(): void;
+    setWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/1617129-customview
     customView(): UIView;
-    setCustomView(): void;
+    setCustomView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/3601188-menu
     menu(): UIMenu;
-    setMenu(): void;
+    setMenu(value: UIMenu): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/3600345-primaryaction
     primaryAction(): UIAction;
-    setPrimaryAction(): void;
+    setPrimaryAction(value: UIAction): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/1617135-tintcolor
     tintColor(): UIColor;
-    setTintColor(): void;
+    setTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/1617125-backbuttonbackgroundimageforstat
     backButtonBackgroundImageForState_barMetrics(state: UIControlState, barMetrics: UIBarMetrics):UIImage;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/1617128-setbackbuttonbackgroundimage
@@ -7718,13 +7723,13 @@ declare namespace cocoascript {
     setTitlePositionAdjustment_forBarMetrics(adjustment: UIOffset, barMetrics: UIBarMetrics):void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/1623564-buttongroup
     buttonGroup(): UIBarButtonItemGroup;
-    setButtonGroup(): void;
+    setButtonGroup(value: UIBarButtonItemGroup): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/3752177-changesselectionasprimaryaction
-    changesSelectionAsPrimaryAction(): BOOL;
-    setChangesSelectionAsPrimaryAction(): void;
+    changesSelectionAsPrimaryAction(): boolean;
+    setChangesSelectionAsPrimaryAction(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitem/3752178-selected
-    selected(): BOOL;
-    setSelected(): void;
+    selected(): boolean;
+    setSelected(value: boolean): void;
     //
     alloc():UIBarButtonItem;
     //
@@ -7742,7 +7747,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uipointerinteractionanimating/3538992-addanimations
     addAnimations(animations: void):void;
     // https://developer.apple.com/documentation/uikit/uipointerinteractionanimating/3538993-addcompletion
-    addCompletion(completion: BOOL):void;
+    addCompletion(completion: boolean):void;
   }
 }
 declare namespace cocoascript {
@@ -7775,7 +7780,7 @@ declare namespace cocoascript {
   interface UIPointerEffect extends NSObject {
     // https://developer.apple.com/documentation/uikit/uipointereffect/3539008-preview
     preview(): UITargetedPreview;
-    setPreview(): void;
+    setPreview(value: UITargetedPreview): void;
     // https://developer.apple.com/documentation/uikit/uipointereffect/3539007-effectwithpreview
     effectWithPreview(preview: UITargetedPreview):UIPointerEffect;
     //
@@ -7791,6 +7796,19 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uipointeraccessory
    */
   interface UIPointerAccessory extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uipointeraccessory/3752193-accessorywithshape
+    accessoryWithShape_position(shape: UIPointerShape, position: UIPointerAccessoryPosition):UIPointerAccessory;
+    // https://developer.apple.com/documentation/uikit/uipointeraccessory/3752194-arrowaccessorywithposition
+    arrowAccessoryWithPosition(position: UIPointerAccessoryPosition):UIPointerAccessory;
+    // https://developer.apple.com/documentation/uikit/uipointeraccessory/3752195-orientationmatchesangle
+    orientationMatchesAngle(): boolean;
+    setOrientationMatchesAngle(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uipointeraccessory/3752197-shape
+    shape(): UIPointerShape;
+    setShape(value: UIPointerShape): void;
+    // https://developer.apple.com/documentation/uikit/uipointeraccessory/3752196-position
+    position(): UIPointerAccessoryPosition;
+    setPosition(value: UIPointerAccessoryPosition): void;
     //
     alloc():UIPointerAccessory;
     //
@@ -7809,10 +7827,13 @@ declare namespace cocoascript {
     regionWithRect_identifier(rect: CGRect, identifier: NSObject):UIPointerRegion;
     // https://developer.apple.com/documentation/uikit/uipointerregion/3539004-rect
     rect(): CGRect;
-    setRect(): void;
+    setRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uipointerregion/3539003-identifier
     identifier(): NSObject;
-    setIdentifier(): void;
+    setIdentifier(value: NSObject): void;
+    // https://developer.apple.com/documentation/uikit/uipointerregion/3821024-latchingaxes
+    latchingAxes(): UIAxis;
+    setLatchingAxes(value: UIAxis): void;
     //
     alloc():UIPointerRegion;
     //
@@ -7829,10 +7850,10 @@ declare namespace cocoascript {
   interface UIPointerRegionRequest extends NSObject {
     // https://developer.apple.com/documentation/uikit/uipointerregionrequest/3539000-location
     location(): CGPoint;
-    setLocation(): void;
+    setLocation(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uipointerregionrequest/3539001-modifiers
     modifiers(): UIKeyModifierFlags;
-    setModifiers(): void;
+    setModifiers(value: UIKeyModifierFlags): void;
     //
     alloc():UIPointerRegionRequest;
     //
@@ -7848,8 +7869,8 @@ declare namespace cocoascript {
    */
   interface UIPointerLockState extends NSObject {
     // https://developer.apple.com/documentation/uikit/uipointerlockstate/3601226-locked
-    locked(): BOOL;
-    setLocked(): void;
+    locked(): boolean;
+    setLocked(value: boolean): void;
     //
     alloc():UIPointerLockState;
     //
@@ -7858,11 +7879,30 @@ declare namespace cocoascript {
 }
 
 declare const UIPointerLockState: cocoascript.UIPointerLockState;
+// https://developer.apple.com/documentation/uikit/uipointerlockstatesceneuserinfokey
+declare const UIPointerLockStateSceneUserInfoKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * https://developer.apple.com/documentation/uikit/uibandselectioninteraction
    */
   interface UIBandSelectionInteraction extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uibandselectioninteraction/3752167-initwithselectionhandler
+    initWithSelectionHandler(selectionHandler: UIBandSelectionInteraction):UIBandSelectionInteraction;
+    // https://developer.apple.com/documentation/uikit/uibandselectioninteraction/3752168-initialmodifierflags
+    initialModifierFlags(): UIKeyModifierFlags;
+    setInitialModifierFlags(value: UIKeyModifierFlags): void;
+    // https://developer.apple.com/documentation/uikit/uibandselectioninteraction/3752166-enabled
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uibandselectioninteraction/3752170-shouldbeginhandler
+    shouldBeginHandler(): CGPoint;
+    setShouldBeginHandler(value: CGPoint): void;
+    // https://developer.apple.com/documentation/uikit/uibandselectioninteraction/3752171-state
+    state(): UIBandSelectionInteractionState;
+    setState(value: UIBandSelectionInteractionState): void;
+    // https://developer.apple.com/documentation/uikit/uibandselectioninteraction/3752169-selectionrect
+    selectionRect(): CGRect;
+    setSelectionRect(value: CGRect): void;
     //
     alloc():UIBandSelectionInteraction;
     //
@@ -7883,16 +7923,16 @@ declare namespace cocoascript {
   interface UIPencilInteraction extends NSObject {
     // https://developer.apple.com/documentation/uikit/uipencilinteraction/3039591-delegate
     delegate(): UIPencilInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIPencilInteractionDelegate): void;
     // https://developer.apple.com/documentation/uikit/uipencilinteraction/3039592-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipencilinteraction/3039593-preferredtapaction
     preferredTapAction(): UIPencilPreferredAction;
-    setPreferredTapAction(): void;
+    setPreferredTapAction(value: UIPencilPreferredAction): void;
     // https://developer.apple.com/documentation/uikit/uipencilinteraction/3552414-preferspencilonlydrawing
-    prefersPencilOnlyDrawing(): BOOL;
-    setPrefersPencilOnlyDrawing(): void;
+    prefersPencilOnlyDrawing(): boolean;
+    setPrefersPencilOnlyDrawing(value: boolean): void;
     //
     alloc():UIPencilInteraction;
     //
@@ -7918,14 +7958,14 @@ declare namespace cocoascript {
    */
   interface UIFocusGuide extends UILayoutGuide {
     // https://developer.apple.com/documentation/uikit/uifocusguide/1616838-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uifocusguide/1648230-preferredfocusenvironments
     preferredFocusEnvironments(): UIFocusEnvironment;
-    setPreferredFocusEnvironments(): void;
+    setPreferredFocusEnvironments(value: UIFocusEnvironment): void;
     // https://developer.apple.com/documentation/uikit/uifocusguide/1616848-preferredfocusedview
     preferredFocusedView(): UIView;
-    setPreferredFocusedView(): void;
+    setPreferredFocusedView(value: UIView): void;
     //
     alloc():UIFocusGuide;
     //
@@ -7948,6 +7988,8 @@ declare namespace cocoascript {
     checkFocusabilityForItem(item: UIFocusItem):UIFocusDebuggerOutput;
     // https://developer.apple.com/documentation/uikit/uifocusdebugger/2887498-simulatefocusupdaterequestfromen
     simulateFocusUpdateRequestFromEnvironment(environment: UIFocusEnvironment):UIFocusDebuggerOutput;
+    // https://developer.apple.com/documentation/uikit/uifocusdebugger/3795592-checkfocusgrouptreeforenvironmen
+    checkFocusGroupTreeForEnvironment(environment: UIFocusEnvironment):NSString;
     //
     alloc():UIFocusDebugger;
     //
@@ -7981,6 +8023,8 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uifocuseffect
    */
   interface UIFocusEffect extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uifocuseffect/3778564-effect
+    effect():UIFocusEffect;
     //
     alloc():UIFocusEffect;
     //
@@ -7994,6 +8038,21 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uifocushaloeffect
    */
   interface UIFocusHaloEffect extends UIFocusEffect {
+    // https://developer.apple.com/documentation/uikit/uifocushaloeffect/3778567-effectwithpath
+    effectWithPath(bezierPath: UIBezierPath):UIFocusHaloEffect;
+    // https://developer.apple.com/documentation/uikit/uifocushaloeffect/3778568-effectwithrect
+    effectWithRect(rect: CGRect):UIFocusHaloEffect;
+    // https://developer.apple.com/documentation/uikit/uifocushaloeffect/3778569-effectwithroundedrect
+    effectWithRoundedRect_cornerRadius_curve(rect: CGRect, cornerRadius: CGFloat, curve: CALayerCornerCurve):UIFocusHaloEffect;
+    // https://developer.apple.com/documentation/uikit/uifocushaloeffect/3778566-containerview
+    containerView(): UIView;
+    setContainerView(value: UIView): void;
+    // https://developer.apple.com/documentation/uikit/uifocushaloeffect/3778570-position
+    position(): UIFocusHaloEffectPosition;
+    setPosition(value: UIFocusHaloEffectPosition): void;
+    // https://developer.apple.com/documentation/uikit/uifocushaloeffect/3778571-referenceview
+    referenceView(): UIView;
+    setReferenceView(value: UIView): void;
     //
     alloc():UIFocusHaloEffect;
     //
@@ -8014,7 +8073,7 @@ declare namespace cocoascript {
   interface UIMenuController extends NSObject {
     // https://developer.apple.com/documentation/uikit/uimenucontroller/1622831-sharedmenucontroller
     sharedMenuController(): UIMenuController;
-    setSharedMenuController(): void;
+    setSharedMenuController(value: UIMenuController): void;
     // https://developer.apple.com/documentation/uikit/uimenucontroller/3044217-showmenufromview
     showMenuFromView_rect(targetView: UIView, targetRect: CGRect):void;
     // https://developer.apple.com/documentation/uikit/uimenucontroller/3044216-hidemenufromview
@@ -8022,23 +8081,23 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uimenucontroller/3044215-hidemenu
     hideMenu():void;
     // https://developer.apple.com/documentation/uikit/uimenucontroller/1622833-setmenuvisible
-    menuVisible(): BOOL;
-    setMenuVisible(): void;
+    menuVisible(): boolean;
+    setMenuVisible(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uimenucontroller/1622819-setmenuvisible
-    setMenuVisible_animated(menuVisible: BOOL, animated: BOOL):void;
+    setMenuVisible_animated(menuVisible: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uimenucontroller/1622822-menuframe
     menuFrame(): CGRect;
-    setMenuFrame(): void;
+    setMenuFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uimenucontroller/1622821-arrowdirection
     arrowDirection(): UIMenuControllerArrowDirection;
-    setArrowDirection(): void;
+    setArrowDirection(value: UIMenuControllerArrowDirection): void;
     // https://developer.apple.com/documentation/uikit/uimenucontroller/1622812-settargetrect
     setTargetRect_inView(targetRect: CGRect, targetView: UIView):void;
     // https://developer.apple.com/documentation/uikit/uimenucontroller/1622815-update
     update():void;
     // https://developer.apple.com/documentation/uikit/uimenucontroller/1622811-menuitems
     menuItems(): UIMenuItem;
-    setMenuItems(): void;
+    setMenuItems(value: UIMenuItem): void;
     //
     alloc():UIMenuController;
     //
@@ -8057,10 +8116,10 @@ declare namespace cocoascript {
     initWithTitle_action(title: string | cocoascript.NSString, action: SEL):UIMenuItem;
     // https://developer.apple.com/documentation/uikit/uimenuitem/1622827-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uimenuitem/1622817-action
     action(): SEL;
-    setAction(): void;
+    setAction(value: SEL): void;
     //
     alloc():UIMenuItem;
     //
@@ -8087,6 +8146,8 @@ declare namespace cocoascript {
     select(sender: UIResponderStandardEditActions):void;
     // https://developer.apple.com/documentation/uikit/uiresponderstandardeditactions/2354200-selectall
     selectAll(sender: UIResponderStandardEditActions):void;
+    // https://developer.apple.com/documentation/uikit/uiresponderstandardeditactions/3750910-print
+    print(sender: UIResponderStandardEditActions):void;
     // https://developer.apple.com/documentation/uikit/uiresponderstandardeditactions/2354196-toggleboldface
     toggleBoldface(sender: UIResponderStandardEditActions):void;
     // https://developer.apple.com/documentation/uikit/uiresponderstandardeditactions/2354187-toggleitalics
@@ -8103,6 +8164,12 @@ declare namespace cocoascript {
     decreaseSize(sender: UIResponderStandardEditActions):void;
     // https://developer.apple.com/documentation/uikit/uiresponderstandardeditactions/3261459-updatetextattributeswithconversi
     updateTextAttributesWithConversionHandler(conversionHandler: UITextAttributesConversionHandler):void;
+    // https://developer.apple.com/documentation/uikit/uiresponderstandardeditactions/3750907-pasteandgo
+    pasteAndGo(sender: UIResponderStandardEditActions):void;
+    // https://developer.apple.com/documentation/uikit/uiresponderstandardeditactions/3750908-pasteandmatchstyle
+    pasteAndMatchStyle(sender: UIResponderStandardEditActions):void;
+    // https://developer.apple.com/documentation/uikit/uiresponderstandardeditactions/3750909-pasteandsearch
+    pasteAndSearch(sender: UIResponderStandardEditActions):void;
   }
 }
 declare namespace cocoascript {
@@ -8119,16 +8186,16 @@ declare namespace cocoascript {
     initWithView(view: UIView):UITargetedPreview;
     // https://developer.apple.com/documentation/uikit/uitargetedpreview/3295974-view
     view(): UIView;
-    setView(): void;
+    setView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitargetedpreview/3295973-target
     target(): UIPreviewTarget;
-    setTarget(): void;
+    setTarget(value: UIPreviewTarget): void;
     // https://developer.apple.com/documentation/uikit/uitargetedpreview/3295972-size
     size(): CGSize;
-    setSize(): void;
+    setSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uitargetedpreview/3295970-parameters
     parameters(): UIPreviewParameters;
-    setParameters(): void;
+    setParameters(value: UIPreviewParameters): void;
     // https://developer.apple.com/documentation/uikit/uitargetedpreview/3295971-retargetedpreviewwithtarget
     retargetedPreviewWithTarget(newTarget: UIPreviewTarget):UITargetedPreview;
     //
@@ -8151,13 +8218,13 @@ declare namespace cocoascript {
     initWithContainer_center(container: UIView, center: CGPoint):UIPreviewTarget;
     // https://developer.apple.com/documentation/uikit/uipreviewtarget/3295962-container
     container(): UIView;
-    setContainer(): void;
+    setContainer(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uipreviewtarget/3295961-center
     center(): CGPoint;
-    setCenter(): void;
+    setCenter(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uipreviewtarget/3295965-transform
     transform(): CGAffineTransform;
-    setTransform(): void;
+    setTransform(value: CGAffineTransform): void;
     //
     alloc():UIPreviewTarget;
     //
@@ -8178,13 +8245,13 @@ declare namespace cocoascript {
     initWithTextLineRects(textLineRects: NSValue):UIPreviewParameters;
     // https://developer.apple.com/documentation/uikit/uipreviewparameters/3295950-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uipreviewparameters/3295953-visiblepath
     visiblePath(): UIBezierPath;
-    setVisiblePath(): void;
+    setVisiblePath(value: UIBezierPath): void;
     // https://developer.apple.com/documentation/uikit/uipreviewparameters/3601230-shadowpath
     shadowPath(): UIBezierPath;
-    setShadowPath(): void;
+    setShadowPath(value: UIBezierPath): void;
     //
     alloc():UIPreviewParameters;
     //
@@ -8205,22 +8272,22 @@ declare namespace cocoascript {
     initWithType_localizedTitle_localizedSubtitle_icon_userInfo(type: string | cocoascript.NSString, localizedTitle: string | cocoascript.NSString, localizedSubtitle: string | cocoascript.NSString, icon: UIApplicationShortcutIcon, userInfo: NSSecureCoding):UIApplicationShortcutItem;
     // https://developer.apple.com/documentation/uikit/uiapplicationshortcutitem/1623354-localizedtitle
     localizedTitle(): string | cocoascript.NSString;
-    setLocalizedTitle(): void;
+    setLocalizedTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiapplicationshortcutitem/1623376-localizedsubtitle
     localizedSubtitle(): string | cocoascript.NSString;
-    setLocalizedSubtitle(): void;
+    setLocalizedSubtitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiapplicationshortcutitem/1623382-type
     type(): string | cocoascript.NSString;
-    setType(): void;
+    setType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiapplicationshortcutitem/1623352-icon
     icon(): UIApplicationShortcutIcon;
-    setIcon(): void;
+    setIcon(value: UIApplicationShortcutIcon): void;
     // https://developer.apple.com/documentation/uikit/uiapplicationshortcutitem/1623370-userinfo
     userInfo(): NSSecureCoding;
-    setUserInfo(): void;
+    setUserInfo(value: NSSecureCoding): void;
     // https://developer.apple.com/documentation/uikit/uiapplicationshortcutitem/3238038-targetcontentidentifier
     targetContentIdentifier(): id;
-    setTargetContentIdentifier(): void;
+    setTargetContentIdentifier(value: id): void;
     //
     alloc():UIApplicationShortcutItem;
     //
@@ -8259,22 +8326,22 @@ declare namespace cocoascript {
   interface UIMutableApplicationShortcutItem extends UIApplicationShortcutItem {
     // https://developer.apple.com/documentation/uikit/uimutableapplicationshortcutitem/1623371-localizedtitle
     localizedTitle(): string | cocoascript.NSString;
-    setLocalizedTitle(): void;
+    setLocalizedTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uimutableapplicationshortcutitem/1623384-localizedsubtitle
     localizedSubtitle(): string | cocoascript.NSString;
-    setLocalizedSubtitle(): void;
+    setLocalizedSubtitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uimutableapplicationshortcutitem/1623362-type
     type(): string | cocoascript.NSString;
-    setType(): void;
+    setType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uimutableapplicationshortcutitem/1623351-icon
     icon(): UIApplicationShortcutIcon;
-    setIcon(): void;
+    setIcon(value: UIApplicationShortcutIcon): void;
     // https://developer.apple.com/documentation/uikit/uimutableapplicationshortcutitem/1623375-userinfo
     userInfo(): NSSecureCoding;
-    setUserInfo(): void;
+    setUserInfo(value: NSSecureCoding): void;
     // https://developer.apple.com/documentation/uikit/uimutableapplicationshortcutitem/3238039-targetcontentidentifier
     targetContentIdentifier(): id;
-    setTargetContentIdentifier(): void;
+    setTargetContentIdentifier(value: id): void;
     //
     alloc():UIMutableApplicationShortcutItem;
     //
@@ -8293,28 +8360,28 @@ declare namespace cocoascript {
     initWithAccessibilityContainer(container: UIAccessibilityElement):UIAccessibilityElement;
     // https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619581-accessibilitycontainer
     accessibilityContainer(): id;
-    setAccessibilityContainer(): void;
+    setAccessibilityContainer(value: id): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619580-isaccessibilityelement
-    isAccessibilityElement(): BOOL;
-    setIsAccessibilityElement(): void;
+    isAccessibilityElement(): boolean;
+    setIsAccessibilityElement(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel
     accessibilityLabel(): string | cocoascript.NSString;
-    setAccessibilityLabel(): void;
+    setAccessibilityLabel(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619585-accessibilityhint
     accessibilityHint(): string | cocoascript.NSString;
-    setAccessibilityHint(): void;
+    setAccessibilityHint(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619583-accessibilityvalue
     accessibilityValue(): string | cocoascript.NSString;
-    setAccessibilityValue(): void;
+    setAccessibilityValue(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619579-accessibilityframe
     accessibilityFrame(): CGRect;
-    setAccessibilityFrame(): void;
+    setAccessibilityFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1649543-accessibilityframeincontainerspa
     accessibilityFrameInContainerSpace(): CGRect;
-    setAccessibilityFrameInContainerSpace(): void;
+    setAccessibilityFrameInContainerSpace(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619584-accessibilitytraits
     accessibilityTraits(): UIAccessibilityTraits;
-    setAccessibilityTraits(): void;
+    setAccessibilityTraits(value: UIAccessibilityTraits): void;
     //
     alloc():UIAccessibilityElement;
     //
@@ -8331,7 +8398,7 @@ declare namespace cocoascript {
   interface UIAccessibilityIdentification extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier
     accessibilityIdentifier(): string | cocoascript.NSString;
-    setAccessibilityIdentifier(): void;
+    setAccessibilityIdentifier(value: string | cocoascript.NSString): void;
   }
 }
 declare namespace cocoascript {
@@ -8361,8 +8428,8 @@ declare namespace cocoascript {
    */
   interface UIAccessibilityContentSizeCategoryImageAdjusting extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycontentsizecategoryimageadjusting/2890929-adjustsimagesizeforaccessibility
-    adjustsImageSizeForAccessibilityContentSizeCategory(): BOOL;
-    setAdjustsImageSizeForAccessibilityContentSizeCategory(): void;
+    adjustsImageSizeForAccessibilityContentSizeCategory(): boolean;
+    setAdjustsImageSizeForAccessibilityContentSizeCategory(value: boolean): void;
   }
 }
 declare namespace cocoascript {
@@ -8401,22 +8468,22 @@ declare namespace cocoascript {
     initWithAttributedName_image_target_selector(attributedName: NSAttributedString, image: UIImage, target: UIAccessibilityCustomAction, selector: SEL):UIAccessibilityCustomAction;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomaction/1620502-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomaction/2865932-attributedname
     attributedName(): NSAttributedString;
-    setAttributedName(): void;
+    setAttributedName(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomaction/3650217-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler
     actionHandler(): UIAccessibilityCustomActionHandler;
-    setActionHandler(): void;
+    setActionHandler(value: UIAccessibilityCustomActionHandler): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomaction/1620501-target
     target(): id;
-    setTarget(): void;
+    setTarget(value: id): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomaction/1620498-selector
     selector(): SEL;
-    setSelector(): void;
+    setSelector(value: SEL): void;
     //
     alloc():UIAccessibilityCustomAction;
     //
@@ -8509,16 +8576,16 @@ declare namespace cocoascript {
     initWithSystemType_itemSearchBlock(type: UIAccessibilityCustomSystemRotorType, itemSearchBlock: UIAccessibilityCustomRotorSearch):UIAccessibilityCustomRotor;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor/1649800-itemsearchblock
     itemSearchBlock(): UIAccessibilityCustomRotorSearch;
-    setItemSearchBlock(): void;
+    setItemSearchBlock(value: UIAccessibilityCustomRotorSearch): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor/2865918-systemrotortype
     systemRotorType(): UIAccessibilityCustomSystemRotorType;
-    setSystemRotorType(): void;
+    setSystemRotorType(value: UIAccessibilityCustomSystemRotorType): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor/1649745-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor/2865780-attributedname
     attributedName(): NSAttributedString;
-    setAttributedName(): void;
+    setAttributedName(value: NSAttributedString): void;
     //
     alloc():UIAccessibilityCustomRotor;
     //
@@ -8537,10 +8604,10 @@ declare namespace cocoascript {
     initWithTargetElement_targetRange(targetElement: NSObject, targetRange: UITextRange):UIAccessibilityCustomRotorItemResult;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotoritemresult/1649842-targetelement
     targetElement(): NSObject;
-    setTargetElement(): void;
+    setTargetElement(value: NSObject): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotoritemresult/1649803-targetrange
     targetRange(): UITextRange;
-    setTargetRange(): void;
+    setTargetRange(value: UITextRange): void;
     //
     alloc():UIAccessibilityCustomRotorItemResult;
     //
@@ -8557,10 +8624,10 @@ declare namespace cocoascript {
   interface UIAccessibilityCustomRotorSearchPredicate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotorsearchpredicate/1649821-currentitem
     currentItem(): UIAccessibilityCustomRotorItemResult;
-    setCurrentItem(): void;
+    setCurrentItem(value: UIAccessibilityCustomRotorItemResult): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotorsearchpredicate/1649916-searchdirection
     searchDirection(): UIAccessibilityCustomRotorDirection;
-    setSearchDirection(): void;
+    setSearchDirection(value: UIAccessibilityCustomRotorDirection): void;
     //
     alloc():UIAccessibilityCustomRotorSearchPredicate;
     //
@@ -8583,16 +8650,16 @@ declare namespace cocoascript {
     initWithName_view(name: string | cocoascript.NSString, view: UIView):UIAccessibilityLocationDescriptor;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitylocationdescriptor/2890959-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitylocationdescriptor/2890960-attributedname
     attributedName(): NSAttributedString;
-    setAttributedName(): void;
+    setAttributedName(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitylocationdescriptor/2890956-point
     point(): CGPoint;
-    setPoint(): void;
+    setPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uiaccessibilitylocationdescriptor/2890961-view
     view(): UIView;
-    setView(): void;
+    setView(value: UIView): void;
     //
     alloc():UIAccessibilityLocationDescriptor;
     //
@@ -8613,7 +8680,7 @@ declare namespace cocoascript {
   interface UIBarPositioning extends NSObject {
     // https://developer.apple.com/documentation/uikit/uibarpositioning/1624857-barposition
     barPosition(): UIBarPosition;
-    setBarPosition(): void;
+    setBarPosition(value: UIBarPosition): void;
   }
 }
 declare namespace cocoascript {
@@ -8624,139 +8691,139 @@ declare namespace cocoascript {
   interface UIScrollView extends UIView {
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619430-delegate
     delegate(): UIScrollViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIScrollViewDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619399-contentsize
     contentSize(): CGSize;
-    setContentSize(): void;
+    setContentSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619404-contentoffset
     contentOffset(): CGPoint;
-    setContentOffset(): void;
+    setContentOffset(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619400-setcontentoffset
-    setContentOffset_animated(contentOffset: CGPoint, animated: BOOL):void;
+    setContentOffset_animated(contentOffset: CGPoint, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/2902259-adjustedcontentinset
     adjustedContentInset(): UIEdgeInsets;
-    setAdjustedContentInset(): void;
+    setAdjustedContentInset(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619406-contentinset
     contentInset(): UIEdgeInsets;
-    setContentInset(): void;
+    setContentInset(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/2902261-contentinsetadjustmentbehavior
     contentInsetAdjustmentBehavior(): UIScrollViewContentInsetAdjustmentBehavior;
-    setContentInsetAdjustmentBehavior(): void;
+    setContentInsetAdjustmentBehavior(value: UIScrollViewContentInsetAdjustmentBehavior): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/2902254-adjustedcontentinsetdidchange
     adjustedContentInsetDidChange():void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/2865772-framelayoutguide
     frameLayoutGuide(): UILayoutGuide;
-    setFrameLayoutGuide(): void;
+    setFrameLayoutGuide(value: UILayoutGuide): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/2865870-contentlayoutguide
     contentLayoutGuide(): UILayoutGuide;
-    setContentLayoutGuide(): void;
+    setContentLayoutGuide(value: UILayoutGuide): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619395-scrollenabled
-    scrollEnabled(): BOOL;
-    setScrollEnabled(): void;
+    scrollEnabled(): boolean;
+    setScrollEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619390-directionallockenabled
-    directionalLockEnabled(): BOOL;
-    setDirectionalLockEnabled(): void;
+    directionalLockEnabled(): boolean;
+    setDirectionalLockEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619432-pagingenabled
-    pagingEnabled(): BOOL;
-    setPagingEnabled(): void;
+    pagingEnabled(): boolean;
+    setPagingEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619421-scrollstotop
-    scrollsToTop(): BOOL;
-    setScrollsToTop(): void;
+    scrollsToTop(): boolean;
+    setScrollsToTop(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619420-bounces
-    bounces(): BOOL;
-    setBounces(): void;
+    bounces(): boolean;
+    setBounces(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619383-alwaysbouncevertical
-    alwaysBounceVertical(): BOOL;
-    setAlwaysBounceVertical(): void;
+    alwaysBounceVertical(): boolean;
+    setAlwaysBounceVertical(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619393-alwaysbouncehorizontal
-    alwaysBounceHorizontal(): BOOL;
-    setAlwaysBounceHorizontal(): void;
+    alwaysBounceHorizontal(): boolean;
+    setAlwaysBounceHorizontal(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619413-tracking
-    tracking(): BOOL;
-    setTracking(): void;
+    tracking(): boolean;
+    setTracking(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619384-dragging
-    dragging(): BOOL;
-    setDragging(): void;
+    dragging(): boolean;
+    setDragging(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619434-decelerating
-    decelerating(): BOOL;
-    setDecelerating(): void;
+    decelerating(): boolean;
+    setDecelerating(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619438-decelerationrate
     decelerationRate(): UIScrollViewDecelerationRate;
-    setDecelerationRate(): void;
+    setDecelerationRate(value: UIScrollViewDecelerationRate): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619433-indicatorstyle
     indicatorStyle(): UIScrollViewIndicatorStyle;
-    setIndicatorStyle(): void;
+    setIndicatorStyle(value: UIScrollViewIndicatorStyle): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619380-showshorizontalscrollindicator
-    showsHorizontalScrollIndicator(): BOOL;
-    setShowsHorizontalScrollIndicator(): void;
+    showsHorizontalScrollIndicator(): boolean;
+    setShowsHorizontalScrollIndicator(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619405-showsverticalscrollindicator
-    showsVerticalScrollIndicator(): BOOL;
-    setShowsVerticalScrollIndicator(): void;
+    showsVerticalScrollIndicator(): boolean;
+    setShowsVerticalScrollIndicator(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/3198044-horizontalscrollindicatorinsets
     horizontalScrollIndicatorInsets(): UIEdgeInsets;
-    setHorizontalScrollIndicatorInsets(): void;
+    setHorizontalScrollIndicatorInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/3198045-verticalscrollindicatorinsets
     verticalScrollIndicatorInsets(): UIEdgeInsets;
-    setVerticalScrollIndicatorInsets(): void;
+    setVerticalScrollIndicatorInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/3198043-automaticallyadjustsscrollindica
-    automaticallyAdjustsScrollIndicatorInsets(): BOOL;
-    setAutomaticallyAdjustsScrollIndicatorInsets(): void;
+    automaticallyAdjustsScrollIndicatorInsets(): boolean;
+    setAutomaticallyAdjustsScrollIndicatorInsets(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619435-flashscrollindicators
     flashScrollIndicators():void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/2127691-refreshcontrol
     refreshControl(): UIRefreshControl;
-    setRefreshControl(): void;
+    setRefreshControl(value: UIRefreshControl): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619427-scrollindicatorinsets
     scrollIndicatorInsets():UIEdgeInsets;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619439-scrollrecttovisible
-    scrollRectToVisible_animated(rect: CGRect, animated: BOOL):void;
+    scrollRectToVisible_animated(rect: CGRect, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619418-touchesshouldbegin
-    touchesShouldBegin_withEvent_inContentView(touches: UITouch, event: UIEvent, view: UIView):BOOL;
+    touchesShouldBegin_withEvent_inContentView(touches: UITouch, event: UIEvent, view: UIView):boolean;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619387-touchesshouldcancelincontentview
-    touchesShouldCancelInContentView(view: UIView):BOOL;
+    touchesShouldCancelInContentView(view: UIView):boolean;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619424-cancancelcontenttouches
-    canCancelContentTouches(): BOOL;
-    setCanCancelContentTouches(): void;
+    canCancelContentTouches(): boolean;
+    setCanCancelContentTouches(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619398-delayscontenttouches
-    delaysContentTouches(): BOOL;
-    setDelaysContentTouches(): void;
+    delaysContentTouches(): boolean;
+    setDelaysContentTouches(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1627702-directionalpressgesturerecognize
     directionalPressGestureRecognizer(): UIGestureRecognizer;
-    setDirectionalPressGestureRecognizer(): void;
+    setDirectionalPressGestureRecognizer(value: UIGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619425-pangesturerecognizer
     panGestureRecognizer(): UIPanGestureRecognizer;
-    setPanGestureRecognizer(): void;
+    setPanGestureRecognizer(value: UIPanGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619381-pinchgesturerecognizer
     pinchGestureRecognizer(): UIPinchGestureRecognizer;
-    setPinchGestureRecognizer(): void;
+    setPinchGestureRecognizer(value: UIPinchGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619388-zoomtorect
-    zoomToRect_animated(rect: CGRect, animated: BOOL):void;
+    zoomToRect_animated(rect: CGRect, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619419-zoomscale
     zoomScale(): CGFloat;
-    setZoomScale(): void;
+    setZoomScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619412-setzoomscale
-    setZoomScale_animated(scale: CGFloat, animated: BOOL):void;
+    setZoomScale_animated(scale: CGFloat, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619408-maximumzoomscale
     maximumZoomScale(): CGFloat;
-    setMaximumZoomScale(): void;
+    setMaximumZoomScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619428-minimumzoomscale
     minimumZoomScale(): CGFloat;
-    setMinimumZoomScale(): void;
+    setMinimumZoomScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619423-zoombouncing
-    zoomBouncing(): BOOL;
-    setZoomBouncing(): void;
+    zoomBouncing(): boolean;
+    setZoomBouncing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619429-zooming
-    zooming(): BOOL;
-    setZooming(): void;
+    zooming(): boolean;
+    setZooming(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619410-bounceszoom
-    bouncesZoom(): BOOL;
-    setBouncesZoom(): void;
+    bouncesZoom(): boolean;
+    setBouncesZoom(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/1619437-keyboarddismissmode
     keyboardDismissMode(): UIScrollViewKeyboardDismissMode;
-    setKeyboardDismissMode(): void;
+    setKeyboardDismissMode(value: UIScrollViewKeyboardDismissMode): void;
     // https://developer.apple.com/documentation/uikit/uiscrollview/2851452-indexdisplaymode
     indexDisplayMode(): UIScrollViewIndexDisplayMode;
-    setIndexDisplayMode(): void;
+    setIndexDisplayMode(value: UIScrollViewIndexDisplayMode): void;
     //
     alloc():UIScrollView;
     //
@@ -8773,7 +8840,7 @@ declare namespace cocoascript {
   interface UIWebView extends UIView {
     // https://developer.apple.com/documentation/uikit/uiwebview/1617937-delegate
     delegate(): UIWebViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIWebViewDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617941-loaddata
     loadData_MIMEType_textEncodingName_baseURL(data: NSData, MIMEType: string | cocoascript.NSString, textEncodingName: string | cocoascript.NSString, baseURL: NSURL):void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617979-loadhtmlstring
@@ -8782,74 +8849,74 @@ declare namespace cocoascript {
     loadRequest(request: NSURLRequest):void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617972-request
     request(): NSURLRequest;
-    setRequest(): void;
+    setRequest(value: NSURLRequest): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617978-loading
-    loading(): BOOL;
-    setLoading(): void;
+    loading(): boolean;
+    setLoading(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617974-stoploading
     stopLoading():void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617932-reload
     reload():void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617931-cangoback
-    canGoBack(): BOOL;
-    setCanGoBack(): void;
+    canGoBack(): boolean;
+    setCanGoBack(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617951-cangoforward
-    canGoForward(): BOOL;
-    setCanGoForward(): void;
+    canGoForward(): boolean;
+    setCanGoForward(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617975-goback
     goBack():void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617940-goforward
     goForward():void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617976-allowslinkpreview
-    allowsLinkPreview(): BOOL;
-    setAllowsLinkPreview(): void;
+    allowsLinkPreview(): boolean;
+    setAllowsLinkPreview(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617950-scalespagetofit
-    scalesPageToFit(): BOOL;
-    setScalesPageToFit(): void;
+    scalesPageToFit(): boolean;
+    setScalesPageToFit(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617955-scrollview
     scrollView(): UIScrollView;
-    setScrollView(): void;
+    setScrollView(value: UIScrollView): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617984-suppressesincrementalrendering
-    suppressesIncrementalRendering(): BOOL;
-    setSuppressesIncrementalRendering(): void;
+    suppressesIncrementalRendering(): boolean;
+    setSuppressesIncrementalRendering(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617967-keyboarddisplayrequiresuseractio
-    keyboardDisplayRequiresUserAction(): BOOL;
-    setKeyboardDisplayRequiresUserAction(): void;
+    keyboardDisplayRequiresUserAction(): boolean;
+    setKeyboardDisplayRequiresUserAction(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617965-datadetectortypes
     dataDetectorTypes(): UIDataDetectorTypes;
-    setDataDetectorTypes(): void;
+    setDataDetectorTypes(value: UIDataDetectorTypes): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617963-stringbyevaluatingjavascriptfrom
     stringByEvaluatingJavaScriptFromString(script: string | cocoascript.NSString):NSString;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617960-allowsinlinemediaplayback
-    allowsInlineMediaPlayback(): BOOL;
-    setAllowsInlineMediaPlayback(): void;
+    allowsInlineMediaPlayback(): boolean;
+    setAllowsInlineMediaPlayback(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617954-mediaplaybackrequiresuseraction
-    mediaPlaybackRequiresUserAction(): BOOL;
-    setMediaPlaybackRequiresUserAction(): void;
+    mediaPlaybackRequiresUserAction(): boolean;
+    setMediaPlaybackRequiresUserAction(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617973-mediaplaybackallowsairplay
-    mediaPlaybackAllowsAirPlay(): BOOL;
-    setMediaPlaybackAllowsAirPlay(): void;
+    mediaPlaybackAllowsAirPlay(): boolean;
+    setMediaPlaybackAllowsAirPlay(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617944-allowspictureinpicturemediaplayb
-    allowsPictureInPictureMediaPlayback(): BOOL;
-    setAllowsPictureInPictureMediaPlayback(): void;
+    allowsPictureInPictureMediaPlayback(): boolean;
+    setAllowsPictureInPictureMediaPlayback(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617943-gapbetweenpages
     gapBetweenPages(): CGFloat;
-    setGapBetweenPages(): void;
+    setGapBetweenPages(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617968-pagecount
     pageCount(): NSUInteger;
-    setPageCount(): void;
+    setPageCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617980-pagelength
     pageLength(): CGFloat;
-    setPageLength(): void;
+    setPageLength(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617933-paginationbreakingmode
     paginationBreakingMode(): UIWebPaginationBreakingMode;
-    setPaginationBreakingMode(): void;
+    setPaginationBreakingMode(value: UIWebPaginationBreakingMode): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617985-paginationmode
     paginationMode(): UIWebPaginationMode;
-    setPaginationMode(): void;
+    setPaginationMode(value: UIWebPaginationMode): void;
     // https://developer.apple.com/documentation/uikit/uiwebview/1617952-detectsphonenumbers
-    detectsPhoneNumbers(): BOOL;
-    setDetectsPhoneNumbers(): void;
+    detectsPhoneNumbers(): boolean;
+    setDetectsPhoneNumbers(value: boolean): void;
     //
     alloc():UIWebView;
     //
@@ -8868,26 +8935,26 @@ declare namespace cocoascript {
     replaceTextualPortionOfRange_withToken_atIndex(textRange: UITextRange, token: UISearchToken, tokenIndex: NSUInteger):void;
     // https://developer.apple.com/documentation/uikit/uisearchtextfield/3175441-textualrange
     textualRange(): UITextRange;
-    setTextualRange(): void;
+    setTextualRange(value: UITextRange): void;
     // https://developer.apple.com/documentation/uikit/uisearchtextfield/3175436-allowsdeletingtokens
-    allowsDeletingTokens(): BOOL;
-    setAllowsDeletingTokens(): void;
+    allowsDeletingTokens(): boolean;
+    setAllowsDeletingTokens(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchtextfield/3175435-allowscopyingtokens
-    allowsCopyingTokens(): BOOL;
-    setAllowsCopyingTokens(): void;
+    allowsCopyingTokens(): boolean;
+    setAllowsCopyingTokens(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextfield/1619595-delegate
     delegate(): UITextFieldDelegate;
-    setDelegate(): void;
+    setDelegate(value: UITextFieldDelegate): void;
     // https://developer.apple.com/documentation/uikit/uisearchtextfield/3175443-tokens
     tokens(): UISearchToken;
-    setTokens(): void;
+    setTokens(value: UISearchToken): void;
     // https://developer.apple.com/documentation/uikit/uisearchtextfield/3175437-inserttoken
     insertToken_atIndex(token: UISearchToken, tokenIndex: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uisearchtextfield/3175439-removetokenatindex
     removeTokenAtIndex(tokenIndex: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uisearchtextfield/3175442-tokenbackgroundcolor
     tokenBackgroundColor(): UIColor;
-    setTokenBackgroundColor(): void;
+    setTokenBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uisearchtextfield/3175444-tokensinrange
     tokensInRange(textRange: UITextRange):UISearchToken;
     // https://developer.apple.com/documentation/uikit/uisearchtextfield/3175438-positionoftokenatindex
@@ -8910,7 +8977,7 @@ declare namespace cocoascript {
     tokenWithIcon_text(icon: UIImage, text: string | cocoascript.NSString):UISearchToken;
     // https://developer.apple.com/documentation/uikit/uisearchtoken/3175448-representedobject
     representedObject(): id;
-    setRepresentedObject(): void;
+    setRepresentedObject(value: id): void;
     //
     alloc():UISearchToken;
     //
@@ -8983,31 +9050,31 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIBarItem;
     // https://developer.apple.com/documentation/uikit/uibaritem/1616412-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uibaritem/1616415-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uibaritem/1616421-landscapeimagephone
     landscapeImagePhone(): UIImage;
-    setLandscapeImagePhone(): void;
+    setLandscapeImagePhone(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uibaritem/2865917-largecontentsizeimage
     largeContentSizeImage(): UIImage;
-    setLargeContentSizeImage(): void;
+    setLargeContentSizeImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uibaritem/1616413-imageinsets
     imageInsets(): UIEdgeInsets;
-    setImageInsets(): void;
+    setImageInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uibaritem/1616420-landscapeimagephoneinsets
     landscapeImagePhoneInsets(): UIEdgeInsets;
-    setLandscapeImagePhoneInsets(): void;
+    setLandscapeImagePhoneInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uibaritem/2865781-largecontentsizeimageinsets
     largeContentSizeImageInsets(): UIEdgeInsets;
-    setLargeContentSizeImageInsets(): void;
+    setLargeContentSizeImageInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uibaritem/1616418-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uibaritem/1616419-tag
     tag(): NSInteger;
-    setTag(): void;
+    setTag(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uibaritem/1616414-settitletextattributes
     setTitleTextAttributes_forState(attributes: UIBarItem, state: UIControlState):void;
     // https://developer.apple.com/documentation/uikit/uibaritem/1616422-titletextattributesforstate
@@ -9032,13 +9099,13 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIBarButtonItemGroup;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemgroup/1623565-barbuttonitems
     barButtonItems(): UIBarButtonItem;
-    setBarButtonItems(): void;
+    setBarButtonItems(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemgroup/1623563-representativeitem
     representativeItem(): UIBarButtonItem;
-    setRepresentativeItem(): void;
+    setRepresentativeItem(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemgroup/1623560-displayingrepresentativeitem
-    displayingRepresentativeItem(): BOOL;
-    setDisplayingRepresentativeItem(): void;
+    displayingRepresentativeItem(): boolean;
+    setDisplayingRepresentativeItem(value: boolean): void;
     //
     alloc():UIBarButtonItemGroup;
     //
@@ -9055,40 +9122,40 @@ declare namespace cocoascript {
   interface UINavigationBar extends UIView {
     // https://developer.apple.com/documentation/uikit/uinavigationbar/1624951-delegate
     delegate(): UINavigationBarDelegate;
-    setDelegate(): void;
+    setDelegate(value: UINavigationBarDelegate): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/1624952-pushnavigationitem
-    pushNavigationItem_animated(item: UINavigationItem, animated: BOOL):void;
+    pushNavigationItem_animated(item: UINavigationItem, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/1624969-popnavigationitemanimated
-    popNavigationItemAnimated(animated: BOOL):UINavigationItem;
+    popNavigationItemAnimated(animated: boolean):UINavigationItem;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/1624945-setitems
-    setItems_animated(items: UINavigationItem, animated: BOOL):void;
+    setItems_animated(items: UINavigationItem, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/1624961-items
     items(): UINavigationItem;
-    setItems(): void;
+    setItems(value: UINavigationItem): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/1624967-topitem
     topItem(): UINavigationItem;
-    setTopItem(): void;
+    setTopItem(value: UINavigationItem): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/1624925-backitem
     backItem(): UINavigationItem;
-    setBackItem(): void;
+    setBackItem(value: UINavigationItem): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/2908999-preferslargetitles
-    prefersLargeTitles(): BOOL;
-    setPrefersLargeTitles(): void;
+    prefersLargeTitles(): boolean;
+    setPrefersLargeTitles(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/3198028-standardappearance
     standardAppearance(): UINavigationBarAppearance;
-    setStandardAppearance(): void;
+    setStandardAppearance(value: UINavigationBarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/3198026-compactappearance
     compactAppearance(): UINavigationBarAppearance;
-    setCompactAppearance(): void;
+    setCompactAppearance(value: UINavigationBarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/3198027-scrolledgeappearance
     scrollEdgeAppearance(): UINavigationBarAppearance;
-    setScrollEdgeAppearance(): void;
+    setScrollEdgeAppearance(value: UINavigationBarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/3750865-compactscrolledgeappearance
     compactScrollEdgeAppearance(): UINavigationBarAppearance;
-    setCompactScrollEdgeAppearance(): void;
+    setCompactScrollEdgeAppearance(value: UINavigationBarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbar/1624928-translucent
-    translucent(): BOOL;
-    setTranslucent(): void;
+    translucent(): boolean;
+    setTranslucent(value: boolean): void;
     //
     alloc():UINavigationBar;
     //
@@ -9105,34 +9172,37 @@ declare namespace cocoascript {
   interface UITabBar extends UIView {
     // https://developer.apple.com/documentation/uikit/uitabbar/1623444-delegate
     delegate(): UITabBarDelegate;
-    setDelegate(): void;
+    setDelegate(value: UITabBarDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitabbar/1623466-items
     items(): UITabBarItem;
-    setItems(): void;
+    setItems(value: UITabBarItem): void;
     // https://developer.apple.com/documentation/uikit/uitabbar/1623455-setitems
-    setItems_animated(items: UITabBarItem, animated: BOOL):void;
+    setItems_animated(items: UITabBarItem, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitabbar/1623453-selecteditem
     selectedItem(): UITabBarItem;
-    setSelectedItem(): void;
+    setSelectedItem(value: UITabBarItem): void;
     // https://developer.apple.com/documentation/uikit/uitabbar/3198046-standardappearance
     standardAppearance(): UITabBarAppearance;
-    setStandardAppearance(): void;
+    setStandardAppearance(value: UITabBarAppearance): void;
+    // https://developer.apple.com/documentation/uikit/uitabbar/3750912-scrolledgeappearance
+    scrollEdgeAppearance(): UITabBarAppearance;
+    setScrollEdgeAppearance(value: UITabBarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitabbar/3213944-leadingaccessoryview
     leadingAccessoryView(): UIView;
-    setLeadingAccessoryView(): void;
+    setLeadingAccessoryView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitabbar/3213945-trailingaccessoryview
     trailingAccessoryView(): UIView;
-    setTrailingAccessoryView(): void;
+    setTrailingAccessoryView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitabbar/1623458-translucent
-    translucent(): BOOL;
-    setTranslucent(): void;
+    translucent(): boolean;
+    setTranslucent(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitabbar/1623462-begincustomizingitems
     beginCustomizingItems(items: UITabBarItem):void;
     // https://developer.apple.com/documentation/uikit/uitabbar/1623448-endcustomizinganimated
-    endCustomizingAnimated(animated: BOOL):BOOL;
+    endCustomizingAnimated(animated: boolean):boolean;
     // https://developer.apple.com/documentation/uikit/uitabbar/2102237-customizing
-    customizing(): BOOL;
-    setCustomizing(): void;
+    customizing(): boolean;
+    setCustomizing(value: boolean): void;
     //
     alloc():UITabBar;
     //
@@ -9159,19 +9229,22 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UITabBarItem;
     // https://developer.apple.com/documentation/uikit/uitabbaritem/1617072-selectedimage
     selectedImage(): UIImage;
-    setSelectedImage(): void;
+    setSelectedImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritem/3198079-standardappearance
     standardAppearance(): UITabBarAppearance;
-    setStandardAppearance(): void;
+    setStandardAppearance(value: UITabBarAppearance): void;
+    // https://developer.apple.com/documentation/uikit/uitabbaritem/3750913-scrolledgeappearance
+    scrollEdgeAppearance(): UITabBarAppearance;
+    setScrollEdgeAppearance(value: UITabBarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritem/1617070-titlepositionadjustment
     titlePositionAdjustment(): UIOffset;
-    setTitlePositionAdjustment(): void;
+    setTitlePositionAdjustment(value: UIOffset): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritem/1617065-badgevalue
     badgeValue(): string | cocoascript.NSString;
-    setBadgeValue(): void;
+    setBadgeValue(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritem/1648567-badgecolor
     badgeColor(): UIColor;
-    setBadgeColor(): void;
+    setBadgeColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritem/1648566-setbadgetextattributes
     setBadgeTextAttributes_forState(textAttributes: UITabBarItem, state: UIControlState):void;
     // https://developer.apple.com/documentation/uikit/uitabbaritem/1648565-badgetextattributesforstate
@@ -9210,13 +9283,13 @@ declare namespace cocoascript {
     initWithDelegate(delegate: UILargeContentViewerInteractionDelegate):UILargeContentViewerInteraction;
     // https://developer.apple.com/documentation/uikit/uilargecontentviewerinteraction/3183922-delegate
     delegate(): UILargeContentViewerInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UILargeContentViewerInteractionDelegate): void;
     // https://developer.apple.com/documentation/uikit/uilargecontentviewerinteraction/3183924-gesturerecognizerforexclusionrel
     gestureRecognizerForExclusionRelationship(): UIGestureRecognizer;
-    setGestureRecognizerForExclusionRelationship(): void;
+    setGestureRecognizerForExclusionRelationship(value: UIGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uilargecontentviewerinteraction/3183923-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     //
     alloc():UILargeContentViewerInteraction;
     //
@@ -9246,20 +9319,20 @@ declare namespace cocoascript {
    */
   interface UILargeContentViewerItem extends NSObject {
     // https://developer.apple.com/documentation/uikit/uilargecontentvieweritem/3183936-showslargecontentviewer
-    showsLargeContentViewer(): BOOL;
-    setShowsLargeContentViewer(): void;
+    showsLargeContentViewer(): boolean;
+    setShowsLargeContentViewer(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilargecontentvieweritem/3183934-largecontenttitle
     largeContentTitle(): string | cocoascript.NSString;
-    setLargeContentTitle(): void;
+    setLargeContentTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilargecontentvieweritem/3183932-largecontentimage
     largeContentImage(): UIImage;
-    setLargeContentImage(): void;
+    setLargeContentImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uilargecontentvieweritem/3183933-largecontentimageinsets
     largeContentImageInsets(): UIEdgeInsets;
-    setLargeContentImageInsets(): void;
+    setLargeContentImageInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uilargecontentvieweritem/3183935-scaleslargecontentimage
-    scalesLargeContentImage(): BOOL;
-    setScalesLargeContentImage(): void;
+    scalesLargeContentImage(): boolean;
+    setScalesLargeContentImage(value: boolean): void;
   }
 }
 declare namespace cocoascript {
@@ -9310,6 +9383,23 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uieventattribution
    */
   interface UIEventAttribution extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uieventattribution/3727313-initwithsourceidentifier
+    initWithSourceIdentifier_destinationURL_sourceDescription_purchaser(sourceIdentifier: number, destinationURL: NSURL, sourceDescription: string | cocoascript.NSString, purchaser: string | cocoascript.NSString):UIEventAttribution;
+    // https://developer.apple.com/documentation/uikit/uieventattribution/3727312-destinationurl
+    destinationURL(): NSURL;
+    setDestinationURL(value: NSURL): void;
+    // https://developer.apple.com/documentation/uikit/uieventattribution/3727314-purchaser
+    purchaser(): string | cocoascript.NSString;
+    setPurchaser(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/uikit/uieventattribution/3727315-reportendpoint
+    reportEndpoint(): NSURL;
+    setReportEndpoint(value: NSURL): void;
+    // https://developer.apple.com/documentation/uikit/uieventattribution/3727316-sourcedescription
+    sourceDescription(): string | cocoascript.NSString;
+    setSourceDescription(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/uikit/uieventattribution/3727317-sourceidentifier
+    sourceIdentifier(): number;
+    setSourceIdentifier(value: number): void;
     //
     alloc():UIEventAttribution;
     //
@@ -9334,63 +9424,63 @@ declare namespace cocoascript {
     initWithCoder(aDecoder: NSCoder):UINavigationController;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621876-delegate
     delegate(): UINavigationControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UINavigationControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621849-topviewcontroller
     topViewController(): UIViewController;
-    setTopViewController(): void;
+    setTopViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621862-visibleviewcontroller
     visibleViewController(): UIViewController;
-    setVisibleViewController(): void;
+    setVisibleViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621873-viewcontrollers
     viewControllers(): UIViewController;
-    setViewControllers(): void;
+    setViewControllers(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621861-setviewcontrollers
-    setViewControllers_animated(viewControllers: UIViewController, animated: BOOL):void;
+    setViewControllers_animated(viewControllers: UIViewController, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621887-pushviewcontroller
-    pushViewController_animated(viewController: UIViewController, animated: BOOL):void;
+    pushViewController_animated(viewController: UIViewController, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621886-popviewcontrolleranimated
-    popViewControllerAnimated(animated: BOOL):UIViewController;
+    popViewControllerAnimated(animated: boolean):UIViewController;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621855-poptorootviewcontrolleranimated
-    popToRootViewControllerAnimated(animated: BOOL):UIViewController;
+    popToRootViewControllerAnimated(animated: boolean):UIViewController;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621871-poptoviewcontroller
-    popToViewController_animated(viewController: UIViewController, animated: BOOL):UIViewController;
+    popToViewController_animated(viewController: UIViewController, animated: boolean):UIViewController;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621847-interactivepopgesturerecognizer
     interactivePopGestureRecognizer(): UIGestureRecognizer;
-    setInteractivePopGestureRecognizer(): void;
+    setInteractivePopGestureRecognizer(value: UIGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621877-navigationbar
     navigationBar(): UINavigationBar;
-    setNavigationBar(): void;
+    setNavigationBar(value: UINavigationBar): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621885-setnavigationbarhidden
-    setNavigationBarHidden_animated(hidden: BOOL, animated: BOOL):void;
+    setNavigationBarHidden_animated(hidden: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621882-toolbar
     toolbar(): UIToolbar;
-    setToolbar(): void;
+    setToolbar(value: UIToolbar): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621888-settoolbarhidden
-    setToolbarHidden_animated(hidden: BOOL, animated: BOOL):void;
+    setToolbarHidden_animated(hidden: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621875-toolbarhidden
-    toolbarHidden(): BOOL;
-    setToolbarHidden(): void;
+    toolbarHidden(): boolean;
+    setToolbarHidden(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621879-hidesbarsontap
-    hidesBarsOnTap(): BOOL;
-    setHidesBarsOnTap(): void;
+    hidesBarsOnTap(): boolean;
+    setHidesBarsOnTap(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621883-hidesbarsonswipe
-    hidesBarsOnSwipe(): BOOL;
-    setHidesBarsOnSwipe(): void;
+    hidesBarsOnSwipe(): boolean;
+    setHidesBarsOnSwipe(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621869-hidesbarswhenverticallycompact
-    hidesBarsWhenVerticallyCompact(): BOOL;
-    setHidesBarsWhenVerticallyCompact(): void;
+    hidesBarsWhenVerticallyCompact(): boolean;
+    setHidesBarsWhenVerticallyCompact(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621881-hidesbarswhenkeyboardappears
-    hidesBarsWhenKeyboardAppears(): BOOL;
-    setHidesBarsWhenKeyboardAppears(): void;
+    hidesBarsWhenKeyboardAppears(): boolean;
+    setHidesBarsWhenKeyboardAppears(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621850-navigationbarhidden
-    navigationBarHidden(): BOOL;
-    setNavigationBarHidden(): void;
+    navigationBarHidden(): boolean;
+    setNavigationBarHidden(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621852-barhideontapgesturerecognizer
     barHideOnTapGestureRecognizer(): UITapGestureRecognizer;
-    setBarHideOnTapGestureRecognizer(): void;
+    setBarHideOnTapGestureRecognizer(value: UITapGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621854-barhideonswipegesturerecognizer
     barHideOnSwipeGestureRecognizer(): UIPanGestureRecognizer;
-    setBarHideOnSwipeGestureRecognizer(): void;
+    setBarHideOnSwipeGestureRecognizer(value: UIPanGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621872-showviewcontroller
     showViewController_sender(vc: UIViewController, sender: UINavigationController):void;
     //
@@ -9415,13 +9505,13 @@ declare namespace cocoascript {
     initWithNibName_bundle(nibNameOrNil: string | cocoascript.NSString, nibBundleOrNil: NSBundle):UITableViewController;
     // https://developer.apple.com/documentation/uikit/uitableviewcontroller/1614753-tableview
     tableView(): UITableView;
-    setTableView(): void;
+    setTableView(value: UITableView): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcontroller/1614758-clearsselectiononviewwillappear
-    clearsSelectionOnViewWillAppear(): BOOL;
-    setClearsSelectionOnViewWillAppear(): void;
+    clearsSelectionOnViewWillAppear(): boolean;
+    setClearsSelectionOnViewWillAppear(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcontroller/1614752-refreshcontrol
     refreshControl(): UIRefreshControl;
-    setRefreshControl(): void;
+    setRefreshControl(value: UIRefreshControl): void;
     //
     alloc():UITableViewController;
     //
@@ -9444,19 +9534,19 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UICollectionViewController;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcontroller/1623983-collectionview
     collectionView(): UICollectionView;
-    setCollectionView(): void;
+    setCollectionView(value: UICollectionView): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcontroller/1623980-collectionviewlayout
     collectionViewLayout(): UICollectionViewLayout;
-    setCollectionViewLayout(): void;
+    setCollectionViewLayout(value: UICollectionViewLayout): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcontroller/1623977-clearsselectiononviewwillappear
-    clearsSelectionOnViewWillAppear(): BOOL;
-    setClearsSelectionOnViewWillAppear(): void;
+    clearsSelectionOnViewWillAppear(): boolean;
+    setClearsSelectionOnViewWillAppear(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcontroller/1623979-installsstandardgestureforintera
-    installsStandardGestureForInteractiveMovement(): BOOL;
-    setInstallsStandardGestureForInteractiveMovement(): void;
+    installsStandardGestureForInteractiveMovement(): boolean;
+    setInstallsStandardGestureForInteractiveMovement(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcontroller/1623978-uselayouttolayoutnavigationtrans
-    useLayoutToLayoutNavigationTransitions(): BOOL;
-    setUseLayoutToLayoutNavigationTransitions(): void;
+    useLayoutToLayoutNavigationTransitions(): boolean;
+    setUseLayoutToLayoutNavigationTransitions(value: boolean): void;
     //
     alloc():UICollectionViewController;
     //
@@ -9479,17 +9569,17 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UISplitViewController;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580915-style
     style(): UISplitViewControllerStyle;
-    setStyle(): void;
+    setStyle(value: UISplitViewControllerStyle): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623167-delegate
     delegate(): UISplitViewControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UISplitViewControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580911-setviewcontroller
     setViewController_forColumn(vc: UIViewController, column: UISplitViewControllerColumn):void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580917-viewcontrollerforcolumn
     viewControllerForColumn(column: UISplitViewControllerColumn):UIViewController;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623181-viewcontrollers
     viewControllers(): UIViewController;
-    setViewControllers(): void;
+    setViewControllers(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580912-showcolumn
     showColumn(column: UISplitViewControllerColumn):void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580903-hidecolumn
@@ -9500,64 +9590,67 @@ declare namespace cocoascript {
     showDetailViewController_sender(vc: UIViewController, sender: UISplitViewController):void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623170-preferreddisplaymode
     preferredDisplayMode(): UISplitViewControllerDisplayMode;
-    setPreferredDisplayMode(): void;
+    setPreferredDisplayMode(value: UISplitViewControllerDisplayMode): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623194-displaymode
     displayMode(): UISplitViewControllerDisplayMode;
-    setDisplayMode(): void;
+    setDisplayMode(value: UISplitViewControllerDisplayMode): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623196-displaymodebuttonitem
     displayModeButtonItem(): UIBarButtonItem;
-    setDisplayModeButtonItem(): void;
+    setDisplayModeButtonItem(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623171-presentswithgesture
-    presentsWithGesture(): BOOL;
-    setPresentsWithGesture(): void;
+    presentsWithGesture(): boolean;
+    setPresentsWithGesture(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580913-showssecondaryonlybutton
-    showsSecondaryOnlyButton(): BOOL;
-    setShowsSecondaryOnlyButton(): void;
+    showsSecondaryOnlyButton(): boolean;
+    setShowsSecondaryOnlyButton(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3726265-displaymodebuttonvisibility
+    displayModeButtonVisibility(): UISplitViewControllerDisplayModeButtonVisibility;
+    setDisplayModeButtonVisibility(value: UISplitViewControllerDisplayModeButtonVisibility): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580909-preferredsplitbehavior
     preferredSplitBehavior(): UISplitViewControllerSplitBehavior;
-    setPreferredSplitBehavior(): void;
+    setPreferredSplitBehavior(value: UISplitViewControllerSplitBehavior): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580914-splitbehavior
     splitBehavior(): UISplitViewControllerSplitBehavior;
-    setSplitBehavior(): void;
+    setSplitBehavior(value: UISplitViewControllerSplitBehavior): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623185-collapsed
-    collapsed(): BOOL;
-    setCollapsed(): void;
+    collapsed(): boolean;
+    setCollapsed(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623183-preferredprimarycolumnwidthfract
     preferredPrimaryColumnWidthFraction(): CGFloat;
-    setPreferredPrimaryColumnWidthFraction(): void;
+    setPreferredPrimaryColumnWidthFraction(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3650234-preferredprimarycolumnwidth
     preferredPrimaryColumnWidth(): CGFloat;
-    setPreferredPrimaryColumnWidth(): void;
+    setPreferredPrimaryColumnWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623200-primarycolumnwidth
     primaryColumnWidth(): CGFloat;
-    setPrimaryColumnWidth(): void;
+    setPrimaryColumnWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623198-minimumprimarycolumnwidth
     minimumPrimaryColumnWidth(): CGFloat;
-    setMinimumPrimaryColumnWidth(): void;
+    setMinimumPrimaryColumnWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/1623180-maximumprimarycolumnwidth
     maximumPrimaryColumnWidth(): CGFloat;
-    setMaximumPrimaryColumnWidth(): void;
+    setMaximumPrimaryColumnWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580910-preferredsupplementarycolumnwidt
     preferredSupplementaryColumnWidthFraction(): CGFloat;
-    setPreferredSupplementaryColumnWidthFraction(): void;
+    setPreferredSupplementaryColumnWidthFraction(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3650235-preferredsupplementarycolumnwidt
     preferredSupplementaryColumnWidth(): CGFloat;
-    setPreferredSupplementaryColumnWidth(): void;
+    setPreferredSupplementaryColumnWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580916-supplementarycolumnwidth
     supplementaryColumnWidth(): CGFloat;
-    setSupplementaryColumnWidth(): void;
+    setSupplementaryColumnWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580908-minimumsupplementarycolumnwidth
     minimumSupplementaryColumnWidth(): CGFloat;
-    setMinimumSupplementaryColumnWidth(): void;
+    setMinimumSupplementaryColumnWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3580907-maximumsupplementarycolumnwidth
     maximumSupplementaryColumnWidth(): CGFloat;
-    setMaximumSupplementaryColumnWidth(): void;
+    setMaximumSupplementaryColumnWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/2875524-primaryedge
     primaryEdge(): UISplitViewControllerPrimaryEdge;
-    setPrimaryEdge(): void;
+    setPrimaryEdge(value: UISplitViewControllerPrimaryEdge): void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontroller/3238075-primarybackgroundstyle
     primaryBackgroundStyle(): UISplitViewControllerBackgroundStyle;
-    setPrimaryBackgroundStyle(): void;
+    setPrimaryBackgroundStyle(value: UISplitViewControllerBackgroundStyle): void;
     //
     alloc():UISplitViewController;
     //
@@ -9578,71 +9671,71 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UINavigationItem;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624965-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/2909056-largetitledisplaymode
     largeTitleDisplayMode(): UINavigationItemLargeTitleDisplayMode;
-    setLargeTitleDisplayMode(): void;
+    setLargeTitleDisplayMode(value: UINavigationItemLargeTitleDisplayMode): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624958-backbarbuttonitem
     backBarButtonItem(): UIBarButtonItem;
-    setBackBarButtonItem(): void;
+    setBackBarButtonItem(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/3600576-backbuttontitle
     backButtonTitle(): string | cocoascript.NSString;
-    setBackButtonTitle(): void;
+    setBackButtonTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/3656350-backbuttondisplaymode
     backButtonDisplayMode(): UINavigationItemBackButtonDisplayMode;
-    setBackButtonDisplayMode(): void;
+    setBackButtonDisplayMode(value: UINavigationItemBackButtonDisplayMode): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624947-hidesbackbutton
-    hidesBackButton(): BOOL;
-    setHidesBackButton(): void;
+    hidesBackButton(): boolean;
+    setHidesBackButton(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624934-sethidesbackbutton
-    setHidesBackButton_animated(hidesBackButton: BOOL, animated: BOOL):void;
+    setHidesBackButton_animated(hidesBackButton: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624930-prompt
     prompt(): string | cocoascript.NSString;
-    setPrompt(): void;
+    setPrompt(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624933-leftitemssupplementbackbutton
-    leftItemsSupplementBackButton(): BOOL;
-    setLeftItemsSupplementBackButton(): void;
+    leftItemsSupplementBackButton(): boolean;
+    setLeftItemsSupplementBackButton(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624935-titleview
     titleView(): UIView;
-    setTitleView(): void;
+    setTitleView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624946-leftbarbuttonitems
     leftBarButtonItems(): UIBarButtonItem;
-    setLeftBarButtonItems(): void;
+    setLeftBarButtonItems(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624936-leftbarbuttonitem
     leftBarButtonItem(): UIBarButtonItem;
-    setLeftBarButtonItem(): void;
+    setLeftBarButtonItem(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624956-rightbarbuttonitems
     rightBarButtonItems(): UIBarButtonItem;
-    setRightBarButtonItems(): void;
+    setRightBarButtonItems(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624957-rightbarbuttonitem
     rightBarButtonItem(): UIBarButtonItem;
-    setRightBarButtonItem(): void;
+    setRightBarButtonItem(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624949-setleftbarbuttonitems
-    setLeftBarButtonItems_animated(items: UIBarButtonItem, animated: BOOL):void;
+    setLeftBarButtonItems_animated(items: UIBarButtonItem, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624954-setleftbarbuttonitem
-    setLeftBarButtonItem_animated(item: UIBarButtonItem, animated: BOOL):void;
+    setLeftBarButtonItem_animated(item: UIBarButtonItem, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624939-setrightbarbuttonitems
-    setRightBarButtonItems_animated(items: UIBarButtonItem, animated: BOOL):void;
+    setRightBarButtonItems_animated(items: UIBarButtonItem, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/1624929-setrightbarbuttonitem
-    setRightBarButtonItem_animated(item: UIBarButtonItem, animated: BOOL):void;
+    setRightBarButtonItem_animated(item: UIBarButtonItem, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/3198042-standardappearance
     standardAppearance(): UINavigationBarAppearance;
-    setStandardAppearance(): void;
+    setStandardAppearance(value: UINavigationBarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/3198040-compactappearance
     compactAppearance(): UINavigationBarAppearance;
-    setCompactAppearance(): void;
+    setCompactAppearance(value: UINavigationBarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/3198041-scrolledgeappearance
     scrollEdgeAppearance(): UINavigationBarAppearance;
-    setScrollEdgeAppearance(): void;
+    setScrollEdgeAppearance(value: UINavigationBarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/3750866-compactscrolledgeappearance
     compactScrollEdgeAppearance(): UINavigationBarAppearance;
-    setCompactScrollEdgeAppearance(): void;
+    setCompactScrollEdgeAppearance(value: UINavigationBarAppearance): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/2897305-searchcontroller
     searchController(): UISearchController;
-    setSearchController(): void;
+    setSearchController(value: UISearchController): void;
     // https://developer.apple.com/documentation/uikit/uinavigationitem/2897296-hidessearchbarwhenscrolling
-    hidesSearchBarWhenScrolling(): BOOL;
-    setHidesSearchBarWhenScrolling(): void;
+    hidesSearchBarWhenScrolling(): boolean;
+    setHidesSearchBarWhenScrolling(value: boolean): void;
     //
     alloc():UINavigationItem;
     //
@@ -9659,27 +9752,27 @@ declare namespace cocoascript {
   interface UITabBarController extends UIViewController {
     // https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621164-delegate
     delegate(): UITabBarControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UITabBarControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621174-tabbar
     tabBar(): UITabBar;
-    setTabBar(): void;
+    setTabBar(value: UITabBar): void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621185-viewcontrollers
     viewControllers(): UIViewController;
-    setViewControllers(): void;
+    setViewControllers(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621177-setviewcontrollers
-    setViewControllers_animated(viewControllers: UIViewController, animated: BOOL):void;
+    setViewControllers_animated(viewControllers: UIViewController, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621184-customizableviewcontrollers
     customizableViewControllers(): UIViewController;
-    setCustomizableViewControllers(): void;
+    setCustomizableViewControllers(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621183-morenavigationcontroller
     moreNavigationController(): UINavigationController;
-    setMoreNavigationController(): void;
+    setMoreNavigationController(value: UINavigationController): void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621172-selectedviewcontroller
     selectedViewController(): UIViewController;
-    setSelectedViewController(): void;
+    setSelectedViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621171-selectedindex
     selectedIndex(): NSUInteger;
-    setSelectedIndex(): void;
+    setSelectedIndex(value: NSUInteger): void;
     //
     alloc():UITabBarController;
     //
@@ -9700,30 +9793,30 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIPageViewController;
     // https://developer.apple.com/documentation/uikit/uipageviewcontroller/1614117-datasource
     dataSource(): UIPageViewControllerDataSource;
-    setDataSource(): void;
+    setDataSource(value: UIPageViewControllerDataSource): void;
     // https://developer.apple.com/documentation/uikit/uipageviewcontroller/1614089-delegate
     delegate(): UIPageViewControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIPageViewControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uipageviewcontroller/1614087-setviewcontrollers
-    setViewControllers_direction_animated_completion(viewControllers: UIViewController, direction: UIPageViewControllerNavigationDirection, animated: BOOL, completion: BOOL):void;
+    setViewControllers_direction_animated_completion(viewControllers: UIViewController, direction: UIPageViewControllerNavigationDirection, animated: boolean, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipageviewcontroller/1614106-viewcontrollers
     viewControllers(): UIViewController;
-    setViewControllers(): void;
+    setViewControllers(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uipageviewcontroller/1614107-gesturerecognizers
     gestureRecognizers(): UIGestureRecognizer;
-    setGestureRecognizers(): void;
+    setGestureRecognizers(value: UIGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uipageviewcontroller/1614097-navigationorientation
     navigationOrientation(): UIPageViewControllerNavigationOrientation;
-    setNavigationOrientation(): void;
+    setNavigationOrientation(value: UIPageViewControllerNavigationOrientation): void;
     // https://developer.apple.com/documentation/uikit/uipageviewcontroller/1614085-spinelocation
     spineLocation(): UIPageViewControllerSpineLocation;
-    setSpineLocation(): void;
+    setSpineLocation(value: UIPageViewControllerSpineLocation): void;
     // https://developer.apple.com/documentation/uikit/uipageviewcontroller/1614092-transitionstyle
     transitionStyle(): UIPageViewControllerTransitionStyle;
-    setTransitionStyle(): void;
+    setTransitionStyle(value: UIPageViewControllerTransitionStyle): void;
     // https://developer.apple.com/documentation/uikit/uipageviewcontroller/1614098-doublesided
-    doubleSided(): BOOL;
-    setDoubleSided(): void;
+    doubleSided(): boolean;
+    setDoubleSided(value: boolean): void;
     //
     alloc():UIPageViewController;
     //
@@ -9738,6 +9831,38 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller
    */
   interface UISheetPresentationController extends UIPresentationController {
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3801903-detents
+    detents(): UISheetPresentationControllerDetent;
+    setDetents(value: UISheetPresentationControllerDetent): void;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3801908-selecteddetentidentifier
+    selectedDetentIdentifier(): UISheetPresentationControllerDetentIdentifier;
+    setSelectedDetentIdentifier(value: UISheetPresentationControllerDetentIdentifier): void;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3801902-delegate
+    delegate(): UISheetPresentationControllerDelegate;
+    setDelegate(value: UISheetPresentationControllerDelegate): void;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3858107-largestundimmeddetentidentifier
+    largestUndimmedDetentIdentifier(): UISheetPresentationControllerDetentIdentifier;
+    setLargestUndimmedDetentIdentifier(value: UISheetPresentationControllerDetentIdentifier): void;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3801907-prefersscrollingexpandswhenscrol
+    prefersScrollingExpandsWhenScrolledToEdge(): boolean;
+    setPrefersScrollingExpandsWhenScrolledToEdge(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3801906-prefersgrabbervisible
+    prefersGrabberVisible(): boolean;
+    setPrefersGrabberVisible(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3801905-prefersedgeattachedincompactheig
+    prefersEdgeAttachedInCompactHeight(): boolean;
+    setPrefersEdgeAttachedInCompactHeight(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3801911-widthfollowspreferredcontentsize
+    widthFollowsPreferredContentSizeWhenEdgeAttached(): boolean;
+    setWidthFollowsPreferredContentSizeWhenEdgeAttached(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3801904-preferredcornerradius
+    preferredCornerRadius(): CGFloat;
+    setPreferredCornerRadius(value: CGFloat): void;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3801910-sourceview
+    sourceView(): UIView;
+    setSourceView(value: UIView): void;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontroller/3801901-animatechanges
+    animateChanges(changes: void):void;
     //
     alloc():UISheetPresentationController;
     //
@@ -9756,7 +9881,7 @@ declare namespace cocoascript {
     initWithSearchController(searchController: UISearchController):UISearchContainerViewController;
     // https://developer.apple.com/documentation/uikit/uisearchcontainerviewcontroller/1615748-searchcontroller
     searchController(): UISearchController;
-    setSearchController(): void;
+    setSearchController(value: UISearchController): void;
     //
     alloc():UISearchContainerViewController;
     //
@@ -9779,46 +9904,46 @@ declare namespace cocoascript {
     initWithNibName_bundle(nibNameOrNil: string | cocoascript.NSString, nibBundleOrNil: NSBundle):UISearchController;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/1618654-delegate
     delegate(): UISearchControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UISearchControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/1618657-searchbar
     searchBar(): UISearchBar;
-    setSearchBar(): void;
+    setSearchBar(value: UISearchBar): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/1618661-searchresultsupdater
     searchResultsUpdater(): UISearchResultsUpdating;
-    setSearchResultsUpdater(): void;
+    setSearchResultsUpdater(value: UISearchResultsUpdating): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/1618649-searchresultscontroller
     searchResultsController(): UIViewController;
-    setSearchResultsController(): void;
+    setSearchResultsController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/1618659-active
-    active(): BOOL;
-    setActive(): void;
+    active(): boolean;
+    setActive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/3584820-searchcontrollerobservedscrollvi
     searchControllerObservedScrollView(): UIScrollView;
-    setSearchControllerObservedScrollView(): void;
+    setSearchControllerObservedScrollView(value: UIScrollView): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/1618656-obscuresbackgroundduringpresenta
-    obscuresBackgroundDuringPresentation(): BOOL;
-    setObscuresBackgroundDuringPresentation(): void;
+    obscuresBackgroundDuringPresentation(): boolean;
+    setObscuresBackgroundDuringPresentation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/1618650-hidesnavigationbarduringpresenta
-    hidesNavigationBarDuringPresentation(): BOOL;
-    setHidesNavigationBarDuringPresentation(): void;
+    hidesNavigationBarDuringPresentation(): boolean;
+    setHidesNavigationBarDuringPresentation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/3152926-automaticallyshowscancelbutton
-    automaticallyShowsCancelButton(): BOOL;
-    setAutomaticallyShowsCancelButton(): void;
+    automaticallyShowsCancelButton(): boolean;
+    setAutomaticallyShowsCancelButton(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/3152927-automaticallyshowsscopebar
-    automaticallyShowsScopeBar(): BOOL;
-    setAutomaticallyShowsScopeBar(): void;
+    automaticallyShowsScopeBar(): boolean;
+    setAutomaticallyShowsScopeBar(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/3153160-automaticallyshowssearchresultsc
-    automaticallyShowsSearchResultsController(): BOOL;
-    setAutomaticallyShowsSearchResultsController(): void;
+    automaticallyShowsSearchResultsController(): boolean;
+    setAutomaticallyShowsSearchResultsController(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/3153161-showssearchresultscontroller
-    showsSearchResultsController(): BOOL;
-    setShowsSearchResultsController(): void;
+    showsSearchResultsController(): boolean;
+    setShowsSearchResultsController(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/1618660-dimsbackgroundduringpresentation
-    dimsBackgroundDuringPresentation(): BOOL;
-    setDimsBackgroundDuringPresentation(): void;
+    dimsBackgroundDuringPresentation(): boolean;
+    setDimsBackgroundDuringPresentation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchcontroller/3584821-searchsuggestions
     searchSuggestions(): UISearchSuggestion;
-    setSearchSuggestions(): void;
+    setSearchSuggestions(value: UISearchSuggestion): void;
     //
     alloc():UISearchController;
     //
@@ -9847,18 +9972,18 @@ declare namespace cocoascript {
   interface UIVideoEditorController extends UINavigationController {
     // https://developer.apple.com/documentation/uikit/uivideoeditorcontroller/1622341-delegate
     delegate(): UIVideoEditorControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIVideoEditorControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uivideoeditorcontroller/1622340-caneditvideoatpath
-    canEditVideoAtPath(videoPath: string | cocoascript.NSString):BOOL;
+    canEditVideoAtPath(videoPath: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uivideoeditorcontroller/1622338-videomaximumduration
     videoMaximumDuration(): NSTimeInterval;
-    setVideoMaximumDuration(): void;
+    setVideoMaximumDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uivideoeditorcontroller/1622343-videopath
     videoPath(): string | cocoascript.NSString;
-    setVideoPath(): void;
+    setVideoPath(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uivideoeditorcontroller/1622339-videoquality
     videoQuality(): UIImagePickerControllerQualityType;
-    setVideoQuality(): void;
+    setVideoQuality(value: UIImagePickerControllerQualityType): void;
     //
     alloc():UIVideoEditorController;
     //
@@ -9879,47 +10004,47 @@ declare namespace cocoascript {
     initForOpeningFilesWithContentTypes(allowedContentTypes: string | cocoascript.NSString):UIDocumentBrowserViewController;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2874185-delegate
     delegate(): UIDocumentBrowserViewControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIDocumentBrowserViewControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2927800-importdocumentaturl
     importDocumentAtURL_nextToDocumentAtURL_mode_completionHandler(documentURL: NSURL, neighbourURL: NSURL, importMode: UIDocumentBrowserImportMode, completion: NSError):void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2874172-allowsdocumentcreation
-    allowsDocumentCreation(): BOOL;
-    setAllowsDocumentCreation(): void;
+    allowsDocumentCreation(): boolean;
+    setAllowsDocumentCreation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2874179-allowspickingmultipleitems
-    allowsPickingMultipleItems(): BOOL;
-    setAllowsPickingMultipleItems(): void;
+    allowsPickingMultipleItems(): boolean;
+    setAllowsPickingMultipleItems(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2915849-revealdocumentaturl
-    revealDocumentAtURL_importIfNeeded_completion(url: NSURL, importIfNeeded: BOOL, completion: NSError):void;
+    revealDocumentAtURL_importIfNeeded_completion(url: NSURL, importIfNeeded: boolean, completion: NSError):void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/3566728-contenttypesforrecentdocuments
     contentTypesForRecentDocuments(): UTType;
-    setContentTypesForRecentDocuments(): void;
+    setContentTypesForRecentDocuments(value: UTType): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes
     recentDocumentsContentTypes(): string | cocoascript.NSString;
-    setRecentDocumentsContentTypes(): void;
+    setRecentDocumentsContentTypes(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes
     allowedContentTypes(): string | cocoascript.NSString;
-    setAllowedContentTypes(): void;
+    setAllowedContentTypes(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2875748-browseruserinterfacestyle
     browserUserInterfaceStyle(): UIDocumentBrowserUserInterfaceStyle;
-    setBrowserUserInterfaceStyle(): void;
+    setBrowserUserInterfaceStyle(value: UIDocumentBrowserUserInterfaceStyle): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2874191-additionalleadingnavigationbarbu
     additionalLeadingNavigationBarButtonItems(): UIBarButtonItem;
-    setAdditionalLeadingNavigationBarButtonItems(): void;
+    setAdditionalLeadingNavigationBarButtonItems(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2874180-additionaltrailingnavigationbarb
     additionalTrailingNavigationBarButtonItems(): UIBarButtonItem;
-    setAdditionalTrailingNavigationBarButtonItems(): void;
+    setAdditionalTrailingNavigationBarButtonItems(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/3153159-shouldshowfileextensions
-    shouldShowFileExtensions(): BOOL;
-    setShouldShowFileExtensions(): void;
+    shouldShowFileExtensions(): boolean;
+    setShouldShowFileExtensions(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/3114622-localizedcreatedocumentactiontit
     localizedCreateDocumentActionTitle(): string | cocoascript.NSString;
-    setLocalizedCreateDocumentActionTitle(): void;
+    setLocalizedCreateDocumentActionTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/3123949-defaultdocumentaspectratio
     defaultDocumentAspectRatio(): CGFloat;
-    setDefaultDocumentAspectRatio(): void;
+    setDefaultDocumentAspectRatio(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2874181-customactions
     customActions(): UIDocumentBrowserAction;
-    setCustomActions(): void;
+    setCustomActions(value: UIDocumentBrowserAction): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/3019587-transitioncontrollerfordocumenta
     transitionControllerForDocumentAtURL(documentURL: NSURL):UIDocumentBrowserTransitionController;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller/2874177-transitioncontrollerfordocumentu
@@ -9943,11 +10068,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/3566730-initforexportingurls
     initForExportingURLs(urls: NSURL):UIDocumentPickerViewController;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/3566731-initforexportingurls
-    initForExportingURLs_asCopy(urls: NSURL, asCopy: BOOL):UIDocumentPickerViewController;
+    initForExportingURLs_asCopy(urls: NSURL, asCopy: boolean):UIDocumentPickerViewController;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/3566732-initforopeningcontenttypes
     initForOpeningContentTypes(contentTypes: UTType):UIDocumentPickerViewController;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/3566733-initforopeningcontenttypes
-    initForOpeningContentTypes_asCopy(contentTypes: UTType, asCopy: BOOL):UIDocumentPickerViewController;
+    initForOpeningContentTypes_asCopy(contentTypes: UTType, asCopy: boolean):UIDocumentPickerViewController;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/1618678-initwithdocumenttypes
     initWithDocumentTypes_inMode(allowedUTIs: string | cocoascript.NSString, mode: UIDocumentPickerMode):UIDocumentPickerViewController;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/1618684-initwithurl
@@ -9956,19 +10081,19 @@ declare namespace cocoascript {
     initWithURLs_inMode(urls: NSURL, mode: UIDocumentPickerMode):UIDocumentPickerViewController;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/1618690-delegate
     delegate(): UIDocumentPickerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIDocumentPickerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/2902365-allowsmultipleselection
-    allowsMultipleSelection(): BOOL;
-    setAllowsMultipleSelection(): void;
+    allowsMultipleSelection(): boolean;
+    setAllowsMultipleSelection(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/3183918-directoryurl
     directoryURL(): NSURL;
-    setDirectoryURL(): void;
+    setDirectoryURL(value: NSURL): void;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/3152920-shouldshowfileextensions
-    shouldShowFileExtensions(): BOOL;
-    setShouldShowFileExtensions(): void;
+    shouldShowFileExtensions(): boolean;
+    setShouldShowFileExtensions(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller/1618681-documentpickermode
     documentPickerMode(): UIDocumentPickerMode;
-    setDocumentPickerMode(): void;
+    setDocumentPickerMode(value: UIDocumentPickerMode): void;
     //
     alloc():UIDocumentPickerViewController;
     //
@@ -9987,39 +10112,39 @@ declare namespace cocoascript {
     interactionControllerWithURL(url: NSURL):UIDocumentInteractionController;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616812-delegate
     delegate(): UIDocumentInteractionControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIDocumentInteractionControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616828-presentpreviewanimated
-    presentPreviewAnimated(animated: BOOL):BOOL;
+    presentPreviewAnimated(animated: boolean):boolean;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616815-dismisspreviewanimated
-    dismissPreviewAnimated(animated: BOOL):void;
+    dismissPreviewAnimated(animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616814-presentoptionsmenufromrect
-    presentOptionsMenuFromRect_inView_animated(rect: CGRect, view: UIView, animated: BOOL):BOOL;
+    presentOptionsMenuFromRect_inView_animated(rect: CGRect, view: UIView, animated: boolean):boolean;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616811-presentoptionsmenufrombarbuttoni
-    presentOptionsMenuFromBarButtonItem_animated(item: UIBarButtonItem, animated: BOOL):BOOL;
+    presentOptionsMenuFromBarButtonItem_animated(item: UIBarButtonItem, animated: boolean):boolean;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616807-presentopeninmenufromrect
-    presentOpenInMenuFromRect_inView_animated(rect: CGRect, view: UIView, animated: BOOL):BOOL;
+    presentOpenInMenuFromRect_inView_animated(rect: CGRect, view: UIView, animated: boolean):boolean;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616827-presentopeninmenufrombarbuttonit
-    presentOpenInMenuFromBarButtonItem_animated(item: UIBarButtonItem, animated: BOOL):BOOL;
+    presentOpenInMenuFromBarButtonItem_animated(item: UIBarButtonItem, animated: boolean):boolean;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616816-dismissmenuanimated
-    dismissMenuAnimated(animated: BOOL):void;
+    dismissMenuAnimated(animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616804-url
     URL(): NSURL;
-    setURL(): void;
+    setURL(value: NSURL): void;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616802-uti
     UTI(): string | cocoascript.NSString;
-    setUTI(): void;
+    setUTI(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616810-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616801-icons
     icons(): UIImage;
-    setIcons(): void;
+    setIcons(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616820-annotation
     annotation(): id;
-    setAnnotation(): void;
+    setAnnotation(value: id): void;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontroller/1616817-gesturerecognizers
     gestureRecognizers(): UIGestureRecognizer;
-    setGestureRecognizers(): void;
+    setGestureRecognizers(value: UIGestureRecognizer): void;
     //
     alloc():UIDocumentInteractionController;
     //
@@ -10040,13 +10165,13 @@ declare namespace cocoascript {
     initWithShare_container(share: CKShare, container: CKContainer):UICloudSharingController;
     // https://developer.apple.com/documentation/uikit/uicloudsharingcontroller/1649595-delegate
     delegate(): UICloudSharingControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UICloudSharingControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uicloudsharingcontroller/1649602-availablepermissions
     availablePermissions(): UICloudSharingPermissionOptions;
-    setAvailablePermissions(): void;
+    setAvailablePermissions(value: UICloudSharingPermissionOptions): void;
     // https://developer.apple.com/documentation/uikit/uicloudsharingcontroller/1649601-share
     share(): CKShare;
-    setShare(): void;
+    setShare(value: CKShare): void;
     // https://developer.apple.com/documentation/uikit/uicloudsharingcontroller/1649594-activityitemsource
     activityItemSource():UIActivityItemSource;
     //
@@ -10065,7 +10190,7 @@ declare namespace cocoascript {
   interface UIActivityItemsConfigurationProviding extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationproviding/3780512-activityitemsconfiguration
     activityItemsConfiguration(): UIActivityItemsConfigurationReading;
-    setActivityItemsConfiguration(): void;
+    setActivityItemsConfiguration(value: UIActivityItemsConfigurationReading): void;
   }
 }
 declare namespace cocoascript {
@@ -10087,17 +10212,17 @@ declare namespace cocoascript {
    */
   interface UIFontPickerViewControllerConfiguration extends NSObject {
     // https://developer.apple.com/documentation/uikit/uifontpickerviewcontrollerconfiguration/3327296-displayusingsystemfont
-    displayUsingSystemFont(): BOOL;
-    setDisplayUsingSystemFont(): void;
+    displayUsingSystemFont(): boolean;
+    setDisplayUsingSystemFont(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uifontpickerviewcontrollerconfiguration/3238104-includefaces
-    includeFaces(): BOOL;
-    setIncludeFaces(): void;
+    includeFaces(): boolean;
+    setIncludeFaces(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uifontpickerviewcontrollerconfiguration/3327299-filteredtraits
     filteredTraits(): UIFontDescriptorSymbolicTraits;
-    setFilteredTraits(): void;
+    setFilteredTraits(value: UIFontDescriptorSymbolicTraits): void;
     // https://developer.apple.com/documentation/uikit/uifontpickerviewcontrollerconfiguration/3327298-filteredlanguagespredicate
     filteredLanguagesPredicate(): NSPredicate;
-    setFilteredLanguagesPredicate(): void;
+    setFilteredLanguagesPredicate(value: NSPredicate): void;
     // https://developer.apple.com/documentation/uikit/uifontpickerviewcontrollerconfiguration/3327297-filterpredicateforfilteredlangua
     filterPredicateForFilteredLanguages(filteredLanguages: string | cocoascript.NSString):NSPredicate;
     //
@@ -10118,6 +10243,8 @@ declare namespace cocoascript {
     colorPickerViewControllerDidFinish(viewController: UIColorPickerViewController):void;
     // https://developer.apple.com/documentation/uikit/uicolorpickerviewcontrollerdelegate/3600470-colorpickerviewcontrollerdidsele
     colorPickerViewControllerDidSelectColor(viewController: UIColorPickerViewController):void;
+    // https://developer.apple.com/documentation/uikit/uicolorpickerviewcontrollerdelegate/3752187-colorpickerviewcontroller
+    colorPickerViewController_didSelectColor_continuously(viewController: UIColorPickerViewController, color: UIColor, continuously: boolean):void;
   }
 }
 declare namespace cocoascript {
@@ -10127,7 +10254,7 @@ declare namespace cocoascript {
    */
   interface UIReferenceLibraryViewController extends UIViewController {
     // https://developer.apple.com/documentation/uikit/uireferencelibraryviewcontroller/1624810-dictionaryhasdefinitionforterm
-    dictionaryHasDefinitionForTerm(term: string | cocoascript.NSString):BOOL;
+    dictionaryHasDefinitionForTerm(term: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uireferencelibraryviewcontroller/1624808-initwithterm
     initWithTerm(term: string | cocoascript.NSString):UIReferenceLibraryViewController;
     // https://developer.apple.com/documentation/uikit/uireferencelibraryviewcontroller/1624809-initwithcoder
@@ -10150,18 +10277,18 @@ declare namespace cocoascript {
     printerPickerControllerWithInitiallySelectedPrinter(printer: UIPrinter):UIPrinterPickerController;
     // https://developer.apple.com/documentation/uikit/uiprinterpickercontroller/1620511-delegate
     delegate(): UIPrinterPickerControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIPrinterPickerControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiprinterpickercontroller/1620514-presentanimated
-    presentAnimated_completionHandler(animated: BOOL, completion: UIPrinterPickerCompletionHandler):BOOL;
+    presentAnimated_completionHandler(animated: boolean, completion: UIPrinterPickerCompletionHandler):boolean;
     // https://developer.apple.com/documentation/uikit/uiprinterpickercontroller/1620507-presentfrombarbuttonitem
-    presentFromBarButtonItem_animated_completionHandler(item: UIBarButtonItem, animated: BOOL, completion: UIPrinterPickerCompletionHandler):BOOL;
+    presentFromBarButtonItem_animated_completionHandler(item: UIBarButtonItem, animated: boolean, completion: UIPrinterPickerCompletionHandler):boolean;
     // https://developer.apple.com/documentation/uikit/uiprinterpickercontroller/1620515-presentfromrect
-    presentFromRect_inView_animated_completionHandler(rect: CGRect, view: UIView, animated: BOOL, completion: UIPrinterPickerCompletionHandler):BOOL;
+    presentFromRect_inView_animated_completionHandler(rect: CGRect, view: UIView, animated: boolean, completion: UIPrinterPickerCompletionHandler):boolean;
     // https://developer.apple.com/documentation/uikit/uiprinterpickercontroller/1620512-dismissanimated
-    dismissAnimated(animated: BOOL):void;
+    dismissAnimated(animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiprinterpickercontroller/1620516-selectedprinter
     selectedPrinter(): UIPrinter;
-    setSelectedPrinter(): void;
+    setSelectedPrinter(value: UIPrinter): void;
     //
     alloc():UIPrinterPickerController;
     //
@@ -10198,10 +10325,10 @@ declare namespace cocoascript {
   interface UIStateRestoring extends NSObject {
     // https://developer.apple.com/documentation/uikit/uistaterestoring/1616867-restorationparent
     restorationParent(): UIStateRestoring;
-    setRestorationParent(): void;
+    setRestorationParent(value: UIStateRestoring): void;
     // https://developer.apple.com/documentation/uikit/uistaterestoring/1616851-objectrestorationclass
     objectRestorationClass(): UIObjectRestoration;
-    setObjectRestorationClass(): void;
+    setObjectRestorationClass(value: UIObjectRestoration): void;
     // https://developer.apple.com/documentation/uikit/uistaterestoring/1616866-encoderestorablestatewithcoder
     encodeRestorableStateWithCoder(coder: NSCoder):void;
     // https://developer.apple.com/documentation/uikit/uistaterestoring/1616854-decoderestorablestatewithcoder
@@ -10238,30 +10365,30 @@ declare namespace cocoascript {
   interface UINavigationBarAppearance extends UIBarAppearance {
     // https://developer.apple.com/documentation/uikit/uinavigationbarappearance/3198039-titletextattributes
     titleTextAttributes(): id;
-    setTitleTextAttributes(): void;
+    setTitleTextAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbarappearance/3198035-largetitletextattributes
     largeTitleTextAttributes(): id;
-    setLargeTitleTextAttributes(): void;
+    setLargeTitleTextAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbarappearance/3198038-titlepositionadjustment
     titlePositionAdjustment(): UIOffset;
-    setTitlePositionAdjustment(): void;
+    setTitlePositionAdjustment(value: UIOffset): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbarappearance/3198033-buttonappearance
     buttonAppearance(): UIBarButtonItemAppearance;
-    setButtonAppearance(): void;
+    setButtonAppearance(value: UIBarButtonItemAppearance): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbarappearance/3198030-backbuttonappearance
     backButtonAppearance(): UIBarButtonItemAppearance;
-    setBackButtonAppearance(): void;
+    setBackButtonAppearance(value: UIBarButtonItemAppearance): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbarappearance/3198031-backindicatorimage
     backIndicatorImage(): UIImage;
-    setBackIndicatorImage(): void;
+    setBackIndicatorImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbarappearance/3198032-backindicatortransitionmaskimage
     backIndicatorTransitionMaskImage(): UIImage;
-    setBackIndicatorTransitionMaskImage(): void;
+    setBackIndicatorTransitionMaskImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uinavigationbarappearance/3198037-setbackindicatorimage
     setBackIndicatorImage_transitionMaskImage(backIndicatorImage: UIImage, backIndicatorTransitionMaskImage: UIImage):void;
     // https://developer.apple.com/documentation/uikit/uinavigationbarappearance/3198034-donebuttonappearance
     doneButtonAppearance(): UIBarButtonItemAppearance;
-    setDoneButtonAppearance(): void;
+    setDoneButtonAppearance(value: UIBarButtonItemAppearance): void;
     //
     alloc():UINavigationBarAppearance;
     //
@@ -10278,10 +10405,10 @@ declare namespace cocoascript {
   interface UIToolbarAppearance extends UIBarAppearance {
     // https://developer.apple.com/documentation/uikit/uitoolbarappearance/3198083-buttonappearance
     buttonAppearance(): UIBarButtonItemAppearance;
-    setButtonAppearance(): void;
+    setButtonAppearance(value: UIBarButtonItemAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitoolbarappearance/3198084-donebuttonappearance
     doneButtonAppearance(): UIBarButtonItemAppearance;
-    setDoneButtonAppearance(): void;
+    setDoneButtonAppearance(value: UIBarButtonItemAppearance): void;
     //
     alloc():UIToolbarAppearance;
     //
@@ -10298,28 +10425,28 @@ declare namespace cocoascript {
   interface UITabBarAppearance extends UIBarAppearance {
     // https://developer.apple.com/documentation/uikit/uitabbarappearance/3198055-stackedlayoutappearance
     stackedLayoutAppearance(): UITabBarItemAppearance;
-    setStackedLayoutAppearance(): void;
+    setStackedLayoutAppearance(value: UITabBarItemAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitabbarappearance/3198052-stackeditempositioning
     stackedItemPositioning(): UITabBarItemPositioning;
-    setStackedItemPositioning(): void;
+    setStackedItemPositioning(value: UITabBarItemPositioning): void;
     // https://developer.apple.com/documentation/uikit/uitabbarappearance/3198053-stackeditemspacing
     stackedItemSpacing(): CGFloat;
-    setStackedItemSpacing(): void;
+    setStackedItemSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitabbarappearance/3198054-stackeditemwidth
     stackedItemWidth(): CGFloat;
-    setStackedItemWidth(): void;
+    setStackedItemWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitabbarappearance/3198049-inlinelayoutappearance
     inlineLayoutAppearance(): UITabBarItemAppearance;
-    setInlineLayoutAppearance(): void;
+    setInlineLayoutAppearance(value: UITabBarItemAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitabbarappearance/3198048-compactinlinelayoutappearance
     compactInlineLayoutAppearance(): UITabBarItemAppearance;
-    setCompactInlineLayoutAppearance(): void;
+    setCompactInlineLayoutAppearance(value: UITabBarItemAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitabbarappearance/3198051-selectionindicatortintcolor
     selectionIndicatorTintColor(): UIColor;
-    setSelectionIndicatorTintColor(): void;
+    setSelectionIndicatorTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitabbarappearance/3198050-selectionindicatorimage
     selectionIndicatorImage(): UIImage;
-    setSelectionIndicatorImage(): void;
+    setSelectionIndicatorImage(value: UIImage): void;
     //
     alloc():UITabBarAppearance;
     //
@@ -10344,16 +10471,16 @@ declare namespace cocoascript {
     configureWithDefaultForStyle(style: UITabBarItemAppearanceStyle):void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemappearance/3198064-normal
     normal(): UITabBarItemStateAppearance;
-    setNormal(): void;
+    setNormal(value: UITabBarItemStateAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemappearance/3198065-selected
     selected(): UITabBarItemStateAppearance;
-    setSelected(): void;
+    setSelected(value: UITabBarItemStateAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemappearance/3198058-disabled
     disabled(): UITabBarItemStateAppearance;
-    setDisabled(): void;
+    setDisabled(value: UITabBarItemStateAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemappearance/3198059-focused
     focused(): UITabBarItemStateAppearance;
-    setFocused(): void;
+    setFocused(value: UITabBarItemStateAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemappearance/3368163-copy
     copy():UITabBarItemAppearance;
     //
@@ -10372,25 +10499,25 @@ declare namespace cocoascript {
   interface UITabBarItemStateAppearance extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitabbaritemstateappearance/3198078-titletextattributes
     titleTextAttributes(): id;
-    setTitleTextAttributes(): void;
+    setTitleTextAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemstateappearance/3198077-titlepositionadjustment
     titlePositionAdjustment(): UIOffset;
-    setTitlePositionAdjustment(): void;
+    setTitlePositionAdjustment(value: UIOffset): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemstateappearance/3198076-iconcolor
     iconColor(): UIColor;
-    setIconColor(): void;
+    setIconColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemstateappearance/3198074-badgetextattributes
     badgeTextAttributes(): id;
-    setBadgeTextAttributes(): void;
+    setBadgeTextAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemstateappearance/3198072-badgebackgroundcolor
     badgeBackgroundColor(): UIColor;
-    setBadgeBackgroundColor(): void;
+    setBadgeBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemstateappearance/3198075-badgetitlepositionadjustment
     badgeTitlePositionAdjustment(): UIOffset;
-    setBadgeTitlePositionAdjustment(): void;
+    setBadgeTitlePositionAdjustment(value: UIOffset): void;
     // https://developer.apple.com/documentation/uikit/uitabbaritemstateappearance/3198073-badgepositionadjustment
     badgePositionAdjustment(): UIOffset;
-    setBadgePositionAdjustment(): void;
+    setBadgePositionAdjustment(value: UIOffset): void;
     //
     alloc():UITabBarItemStateAppearance;
     //
@@ -10421,25 +10548,25 @@ declare namespace cocoascript {
     configureWithTransparentBackground():void;
     // https://developer.apple.com/documentation/uikit/uibarappearance/3197994-backgroundeffect
     backgroundEffect(): UIBlurEffect;
-    setBackgroundEffect(): void;
+    setBackgroundEffect(value: UIBlurEffect): void;
     // https://developer.apple.com/documentation/uikit/uibarappearance/3197993-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uibarappearance/3197995-backgroundimage
     backgroundImage(): UIImage;
-    setBackgroundImage(): void;
+    setBackgroundImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uibarappearance/3197996-backgroundimagecontentmode
     backgroundImageContentMode(): UIViewContentMode;
-    setBackgroundImageContentMode(): void;
+    setBackgroundImageContentMode(value: UIViewContentMode): void;
     // https://developer.apple.com/documentation/uikit/uibarappearance/3198008-shadowcolor
     shadowColor(): UIColor;
-    setShadowColor(): void;
+    setShadowColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uibarappearance/3198009-shadowimage
     shadowImage(): UIImage;
-    setShadowImage(): void;
+    setShadowImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uibarappearance/3198000-idiom
     idiom(): UIUserInterfaceIdiom;
-    setIdiom(): void;
+    setIdiom(value: UIUserInterfaceIdiom): void;
     // https://developer.apple.com/documentation/uikit/uibarappearance/3368150-copy
     copy():UIBarAppearance;
     //
@@ -10466,16 +10593,16 @@ declare namespace cocoascript {
     configureWithDefaultForStyle(style: UIBarButtonItemStyle):void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemappearance/3198019-normal
     normal(): UIBarButtonItemStateAppearance;
-    setNormal(): void;
+    setNormal(value: UIBarButtonItemStateAppearance): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemappearance/3198012-disabled
     disabled(): UIBarButtonItemStateAppearance;
-    setDisabled(): void;
+    setDisabled(value: UIBarButtonItemStateAppearance): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemappearance/3198014-highlighted
     highlighted(): UIBarButtonItemStateAppearance;
-    setHighlighted(): void;
+    setHighlighted(value: UIBarButtonItemStateAppearance): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemappearance/3198013-focused
     focused(): UIBarButtonItemStateAppearance;
-    setFocused(): void;
+    setFocused(value: UIBarButtonItemStateAppearance): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemappearance/3368152-copy
     copy():UIBarButtonItemAppearance;
     //
@@ -10494,16 +10621,16 @@ declare namespace cocoascript {
   interface UIBarButtonItemStateAppearance extends NSObject {
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemstateappearance/3198025-titletextattributes
     titleTextAttributes(): id;
-    setTitleTextAttributes(): void;
+    setTitleTextAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemstateappearance/3198024-titlepositionadjustment
     titlePositionAdjustment(): UIOffset;
-    setTitlePositionAdjustment(): void;
+    setTitlePositionAdjustment(value: UIOffset): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemstateappearance/3198022-backgroundimage
     backgroundImage(): UIImage;
-    setBackgroundImage(): void;
+    setBackgroundImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uibarbuttonitemstateappearance/3198023-backgroundimagepositionadjustmen
     backgroundImagePositionAdjustment(): UIOffset;
-    setBackgroundImagePositionAdjustment(): void;
+    setBackgroundImagePositionAdjustment(value: UIOffset): void;
     //
     alloc():UIBarButtonItemStateAppearance;
     //
@@ -10596,77 +10723,77 @@ declare namespace cocoascript {
   interface UIScreen extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiscreen/1617815-mainscreen
     mainScreen(): UIScreen;
-    setMainScreen(): void;
+    setMainScreen(value: UIScreen): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617812-screens
     screens(): UIScreen;
-    setScreens(): void;
+    setScreens(value: UIScreen): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617829-mirroredscreen
     mirroredScreen(): UIScreen;
-    setMirroredScreen(): void;
+    setMirroredScreen(value: UIScreen): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617833-coordinatespace
     coordinateSpace(): UICoordinateSpace;
-    setCoordinateSpace(): void;
+    setCoordinateSpace(value: UICoordinateSpace): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617819-fixedcoordinatespace
     fixedCoordinateSpace(): UICoordinateSpace;
-    setFixedCoordinateSpace(): void;
+    setFixedCoordinateSpace(value: UICoordinateSpace): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617838-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617835-applicationframe
     applicationFrame(): CGRect;
-    setApplicationFrame(): void;
+    setApplicationFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617810-nativebounds
     nativeBounds(): CGRect;
-    setNativeBounds(): void;
+    setNativeBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617825-nativescale
     nativeScale(): CGFloat;
-    setNativeScale(): void;
+    setNativeScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617836-scale
     scale(): CGFloat;
-    setScale(): void;
+    setScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617817-currentmode
     currentMode(): UIScreenMode;
-    setCurrentMode(): void;
+    setCurrentMode(value: UIScreenMode): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617823-preferredmode
     preferredMode(): UIScreenMode;
-    setPreferredMode(): void;
+    setPreferredMode(value: UIScreenMode): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617839-availablemodes
     availableModes(): UIScreenMode;
-    setAvailableModes(): void;
+    setAvailableModes(value: UIScreenMode): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617820-displaylinkwithtarget
     displayLinkWithTarget_selector(target: UIScreen, sel: SEL):CADisplayLink;
     // https://developer.apple.com/documentation/uikit/uiscreen/2806814-maximumframespersecond
     maximumFramesPerSecond(): NSInteger;
-    setMaximumFramesPerSecond(): void;
+    setMaximumFramesPerSecond(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617830-brightness
     brightness(): CGFloat;
-    setBrightness(): void;
+    setBrightness(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617821-wantssoftwaredimming
-    wantsSoftwareDimming(): BOOL;
-    setWantsSoftwareDimming(): void;
+    wantsSoftwareDimming(): boolean;
+    setWantsSoftwareDimming(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617824-overscancompensationinsets
     overscanCompensationInsets(): UIEdgeInsets;
-    setOverscanCompensationInsets(): void;
+    setOverscanCompensationInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617818-overscancompensation
     overscanCompensation(): UIScreenOverscanCompensation;
-    setOverscanCompensation(): void;
+    setOverscanCompensation(value: UIScreenOverscanCompensation): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617814-snapshotviewafterscreenupdates
-    snapshotViewAfterScreenUpdates(afterUpdates: BOOL):UIView;
+    snapshotViewAfterScreenUpdates(afterUpdates: boolean):UIView;
     // https://developer.apple.com/documentation/uikit/uiscreen/2921651-captured
-    captured(): BOOL;
-    setCaptured(): void;
+    captured(): boolean;
+    setCaptured(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1649175-focuseditem
     focusedItem(): UIFocusItem;
-    setFocusedItem(): void;
+    setFocusedItem(value: UIFocusItem): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617831-focusedview
     focusedView(): UIView;
-    setFocusedView(): void;
+    setFocusedView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/1617816-supportsfocus
-    supportsFocus(): BOOL;
-    setSupportsFocus(): void;
+    supportsFocus(): boolean;
+    setSupportsFocus(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscreen/3368162-calibratedlatency
     calibratedLatency(): CFTimeInterval;
-    setCalibratedLatency(): void;
+    setCalibratedLatency(value: CFTimeInterval): void;
     //
     alloc():UIScreen;
     //
@@ -10685,19 +10812,22 @@ declare namespace cocoascript {
     initWithWindowScene(windowScene: UIWindowScene):UIWindow;
     // https://developer.apple.com/documentation/uikit/uiwindow/1621581-rootviewcontroller
     rootViewController(): UIViewController;
-    setRootViewController(): void;
+    setRootViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uiwindow/1621593-windowlevel
     windowLevel(): UIWindowLevel;
-    setWindowLevel(): void;
+    setWindowLevel(value: UIWindowLevel): void;
     // https://developer.apple.com/documentation/uikit/uiwindow/1621597-setscreen
     screen(): UIScreen;
-    setScreen(): void;
+    setScreen(value: UIScreen): void;
     // https://developer.apple.com/documentation/uikit/uiwindow/3368165-canresizetofitcontent
-    canResizeToFitContent(): BOOL;
-    setCanResizeToFitContent(): void;
+    canResizeToFitContent(): boolean;
+    setCanResizeToFitContent(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwindow/1621612-keywindow
-    keyWindow(): BOOL;
-    setKeyWindow(): void;
+    keyWindow(): boolean;
+    setKeyWindow(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uiwindow/3750931-canbecomekeywindow
+    canBecomeKeyWindow(): boolean;
+    setCanBecomeKeyWindow(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiwindow/1621601-makekeyandvisible
     makeKeyAndVisible():void;
     // https://developer.apple.com/documentation/uikit/uiwindow/1621610-makekeywindow
@@ -10708,10 +10838,10 @@ declare namespace cocoascript {
     resignKeyWindow():void;
     // https://developer.apple.com/documentation/uikit/uiwindow/3197962-windowscene
     windowScene(): UIWindowScene;
-    setWindowScene(): void;
+    setWindowScene(value: UIWindowScene): void;
     // https://developer.apple.com/documentation/uikit/uiwindow/2935634-avdisplaymanager
     avDisplayManager(): AVDisplayManager;
-    setAvDisplayManager(): void;
+    setAvDisplayManager(value: AVDisplayManager): void;
     // https://developer.apple.com/documentation/uikit/uiwindow/1621589-convertpoint
     convertPoint_toWindow(point: CGPoint, window: UIWindow):CGPoint;
     // https://developer.apple.com/documentation/uikit/uiwindow/1621583-convertpoint
@@ -10754,13 +10884,13 @@ declare namespace cocoascript {
   interface UIPopoverBackgroundView extends UIView {
     // https://developer.apple.com/documentation/uikit/uipopoverbackgroundview/1619347-arrowoffset
     arrowOffset(): CGFloat;
-    setArrowOffset(): void;
+    setArrowOffset(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uipopoverbackgroundview/1619355-arrowdirection
     arrowDirection(): UIPopoverArrowDirection;
-    setArrowDirection(): void;
+    setArrowDirection(value: UIPopoverArrowDirection): void;
     // https://developer.apple.com/documentation/uikit/uipopoverbackgroundview/1619357-wantsdefaultcontentappearance
-    wantsDefaultContentAppearance(): BOOL;
-    setWantsDefaultContentAppearance(): void;
+    wantsDefaultContentAppearance(): boolean;
+    setWantsDefaultContentAppearance(value: boolean): void;
     //
     alloc():UIPopoverBackgroundView;
     //
@@ -10777,7 +10907,7 @@ declare namespace cocoascript {
   interface UICoordinateSpace extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicoordinatespace/1622443-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uicoordinatespace/1622609-convertpoint
     convertPoint_toCoordinateSpace(point: CGPoint, coordinateSpace: UICoordinateSpace):CGPoint;
     // https://developer.apple.com/documentation/uikit/uicoordinatespace/1622550-convertpoint
@@ -10796,37 +10926,40 @@ declare namespace cocoascript {
   interface UIPopoverPresentationController extends UIPresentationController {
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622320-delegate
     delegate(): UIPopoverPresentationControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIPopoverPresentationControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622323-popoverlayoutmargins
     popoverLayoutMargins(): UIEdgeInsets;
-    setPopoverLayoutMargins(): void;
+    setPopoverLayoutMargins(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622316-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622312-passthroughviews
     passthroughViews(): UIView;
-    setPassthroughViews(): void;
+    setPassthroughViews(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622318-popoverbackgroundviewclass
     popoverBackgroundViewClass(): UIPopoverBackgroundViewMethods;
-    setPopoverBackgroundViewClass(): void;
+    setPopoverBackgroundViewClass(value: UIPopoverBackgroundViewMethods): void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622325-canoverlapsourceviewrect
-    canOverlapSourceViewRect(): BOOL;
-    setCanOverlapSourceViewRect(): void;
+    canOverlapSourceViewRect(): boolean;
+    setCanOverlapSourceViewRect(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622314-barbuttonitem
     barButtonItem(): UIBarButtonItem;
-    setBarButtonItem(): void;
+    setBarButtonItem(value: UIBarButtonItem): void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622313-sourceview
     sourceView(): UIView;
-    setSourceView(): void;
+    setSourceView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622324-sourcerect
     sourceRect(): CGRect;
-    setSourceRect(): void;
+    setSourceRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622319-permittedarrowdirections
     permittedArrowDirections(): UIPopoverArrowDirection;
-    setPermittedArrowDirections(): void;
+    setPermittedArrowDirections(value: UIPopoverArrowDirection): void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/1622315-arrowdirection
     arrowDirection(): UIPopoverArrowDirection;
-    setArrowDirection(): void;
+    setArrowDirection(value: UIPopoverArrowDirection): void;
+    // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontroller/3810055-adaptivesheetpresentationcontrol
+    adaptiveSheetPresentationController(): UISheetPresentationController;
+    setAdaptiveSheetPresentationController(value: UISheetPresentationController): void;
     //
     alloc():UIPopoverPresentationController;
     //
@@ -10859,13 +10992,13 @@ declare namespace cocoascript {
     actionWithTitle_style_handler(title: string | cocoascript.NSString, style: UIAlertActionStyle, handler: UIAlertAction):UIAlertAction;
     // https://developer.apple.com/documentation/uikit/uialertaction/1620098-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uialertaction/1620107-style
     style(): UIAlertActionStyle;
-    setStyle(): void;
+    setStyle(value: UIAlertActionStyle): void;
     // https://developer.apple.com/documentation/uikit/uialertaction/1620109-enabled
-    enabled(): BOOL;
-    setEnabled(): void;
+    enabled(): boolean;
+    setEnabled(value: boolean): void;
     //
     alloc():UIAlertAction;
     //
@@ -10882,10 +11015,10 @@ declare namespace cocoascript {
   interface UIScreenMode extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiscreenmode/1620083-size
     size(): CGSize;
-    setSize(): void;
+    setSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uiscreenmode/1620082-pixelaspectratio
     pixelAspectRatio(): CGFloat;
-    setPixelAspectRatio(): void;
+    setPixelAspectRatio(value: CGFloat): void;
     //
     alloc():UIScreenMode;
     //
@@ -10918,9 +11051,15 @@ declare namespace cocoascript {
     configurationWithFont(font: UIFont):UIImageSymbolConfiguration;
     // https://developer.apple.com/documentation/uikit/uiimagesymbolconfiguration/3294240-configurationwithfont
     configurationWithFont_scale(font: UIFont, scale: UIImageSymbolScale):UIImageSymbolConfiguration;
+    // https://developer.apple.com/documentation/uikit/uiimagesymbolconfiguration/3810053-configurationwithhierarchicalcol
+    configurationWithHierarchicalColor(hierarchicalColor: UIColor):UIImageSymbolConfiguration;
+    // https://developer.apple.com/documentation/uikit/uiimagesymbolconfiguration/3810054-configurationwithpalettecolors
+    configurationWithPaletteColors(paletteColors: UIColor):UIImageSymbolConfiguration;
+    // https://developer.apple.com/documentation/uikit/uiimagesymbolconfiguration/3810052-configurationpreferringmulticolo
+    configurationPreferringMulticolor():UIImageSymbolConfiguration;
     // https://developer.apple.com/documentation/uikit/uiimagesymbolconfiguration/3294253-unspecifiedconfiguration
     unspecifiedConfiguration(): UIImageSymbolConfiguration;
-    setUnspecifiedConfiguration(): void;
+    setUnspecifiedConfiguration(value: UIImageSymbolConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uiimagesymbolconfiguration/3294248-configurationwithoutpointsizeand
     configurationWithoutPointSizeAndWeight():UIImageSymbolConfiguration;
     // https://developer.apple.com/documentation/uikit/uiimagesymbolconfiguration/3294249-configurationwithoutscale
@@ -10930,7 +11069,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiimagesymbolconfiguration/3294251-configurationwithoutweight
     configurationWithoutWeight():UIImageSymbolConfiguration;
     // https://developer.apple.com/documentation/uikit/uiimagesymbolconfiguration/3294252-isequaltoconfiguration
-    isEqualToConfiguration(otherConfiguration: UIImageSymbolConfiguration):BOOL;
+    isEqualToConfiguration(otherConfiguration: UIImageSymbolConfiguration):boolean;
     //
     alloc():UIImageSymbolConfiguration;
     //
@@ -10951,7 +11090,7 @@ declare namespace cocoascript {
     configurationWithTraitCollection(traitCollection: UITraitCollection):UIImageConfiguration;
     // https://developer.apple.com/documentation/uikit/uiimageconfiguration/3295947-traitcollection
     traitCollection(): UITraitCollection;
-    setTraitCollection(): void;
+    setTraitCollection(value: UITraitCollection): void;
     //
     alloc():UIImageConfiguration;
     //
@@ -10968,10 +11107,10 @@ declare namespace cocoascript {
   interface UIScreenshotService extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiscreenshotservice/3213934-delegate
     delegate(): UIScreenshotServiceDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIScreenshotServiceDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiscreenshotservice/3213935-windowscene
     windowScene(): UIWindowScene;
-    setWindowScene(): void;
+    setWindowScene(value: UIWindowScene): void;
     //
     alloc():UIScreenshotService;
     //
@@ -10991,13 +11130,13 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uigraphicsrenderer/1648558-initwithbounds
     initWithBounds_format(bounds: CGRect, format: UIGraphicsRendererFormat):UIGraphicsRenderer;
     // https://developer.apple.com/documentation/uikit/uigraphicsrenderer/1648553-allowsimageoutput
-    allowsImageOutput(): BOOL;
-    setAllowsImageOutput(): void;
+    allowsImageOutput(): boolean;
+    setAllowsImageOutput(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uigraphicsrenderer/1648556-format
     format(): UIGraphicsRendererFormat;
-    setFormat(): void;
+    setFormat(value: UIGraphicsRendererFormat): void;
     // https://developer.apple.com/documentation/uikit/uigraphicsrenderer/1649839-rundrawingactions
-    runDrawingActions_completionActions_error(drawingActions: UIGraphicsDrawingActions, completionActions: UIGraphicsDrawingActions, error: NSError):BOOL;
+    runDrawingActions_completionActions_error(drawingActions: UIGraphicsDrawingActions, completionActions: UIGraphicsDrawingActions, error: NSError):boolean;
     // https://developer.apple.com/documentation/uikit/uigraphicsrenderer/1649838-contextwithformat
     contextWithFormat(format: UIGraphicsRendererFormat):CGContextRef;
     // https://developer.apple.com/documentation/uikit/uigraphicsrenderer/1649837-preparecgcontext
@@ -11020,10 +11159,10 @@ declare namespace cocoascript {
   interface UIGraphicsRendererContext extends NSObject {
     // https://developer.apple.com/documentation/uikit/uigraphicsrenderercontext/1648560-cgcontext
     CGContext(): CGContextRef;
-    setCGContext(): void;
+    setCGContext(value: CGContextRef): void;
     // https://developer.apple.com/documentation/uikit/uigraphicsrenderercontext/1648557-format
     format(): UIGraphicsRendererFormat;
-    setFormat(): void;
+    setFormat(value: UIGraphicsRendererFormat): void;
     // https://developer.apple.com/documentation/uikit/uigraphicsrenderercontext/1648555-strokerect
     strokeRect(rect: CGRect):void;
     // https://developer.apple.com/documentation/uikit/uigraphicsrenderercontext/1648562-strokerect
@@ -11054,7 +11193,7 @@ declare namespace cocoascript {
     preferredFormat():UIGraphicsRendererFormat;
     // https://developer.apple.com/documentation/uikit/uigraphicsrendererformat/1648563-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     //
     alloc():UIGraphicsRendererFormat;
     //
@@ -11097,7 +11236,7 @@ declare namespace cocoascript {
   interface UIGraphicsImageRendererContext extends UIGraphicsRendererContext {
     // https://developer.apple.com/documentation/uikit/uigraphicsimagerenderercontext/1649237-currentimage
     currentImage(): UIImage;
-    setCurrentImage(): void;
+    setCurrentImage(value: UIImage): void;
     //
     alloc():UIGraphicsImageRendererContext;
     //
@@ -11115,17 +11254,17 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uigraphicsimagerendererformat/2887477-formatfortraitcollection
     formatForTraitCollection(traitCollection: UITraitCollection):UIGraphicsImageRendererFormat;
     // https://developer.apple.com/documentation/uikit/uigraphicsimagerendererformat/1649238-opaque
-    opaque(): BOOL;
-    setOpaque(): void;
+    opaque(): boolean;
+    setOpaque(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uigraphicsimagerendererformat/1649228-scale
     scale(): CGFloat;
-    setScale(): void;
+    setScale(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uigraphicsimagerendererformat/2998464-preferredrange
     preferredRange(): UIGraphicsImageRendererFormatRange;
-    setPreferredRange(): void;
+    setPreferredRange(value: UIGraphicsImageRendererFormatRange): void;
     // https://developer.apple.com/documentation/uikit/uigraphicsimagerendererformat/1649227-prefersextendedrange
-    prefersExtendedRange(): BOOL;
-    setPrefersExtendedRange(): void;
+    prefersExtendedRange(): boolean;
+    setPrefersExtendedRange(value: boolean): void;
     //
     alloc():UIGraphicsImageRendererFormat;
     //
@@ -11145,7 +11284,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uigraphicspdfrenderer/1649120-pdfdatawithactions
     PDFDataWithActions(actions: UIGraphicsPDFDrawingActions):NSData;
     // https://developer.apple.com/documentation/uikit/uigraphicspdfrenderer/1649119-writepdftourl
-    writePDFToURL_withActions_error(url: NSURL, actions: UIGraphicsPDFDrawingActions, error: NSError):BOOL;
+    writePDFToURL_withActions_error(url: NSURL, actions: UIGraphicsPDFDrawingActions, error: NSError):boolean;
     //
     alloc():UIGraphicsPDFRenderer;
     //
@@ -11166,7 +11305,7 @@ declare namespace cocoascript {
     beginPageWithBounds_pageInfo(bounds: CGRect, pageInfo: UIGraphicsPDFRendererContext):void;
     // https://developer.apple.com/documentation/uikit/uigraphicspdfrenderercontext/1649122-pdfcontextbounds
     pdfContextBounds(): CGRect;
-    setPdfContextBounds(): void;
+    setPdfContextBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uigraphicspdfrenderercontext/1649128-adddestinationwithname
     addDestinationWithName_atPoint(name: string | cocoascript.NSString, point: CGPoint):void;
     // https://developer.apple.com/documentation/uikit/uigraphicspdfrenderercontext/1649118-setdestinationwithname
@@ -11189,7 +11328,7 @@ declare namespace cocoascript {
   interface UIGraphicsPDFRendererFormat extends UIGraphicsRendererFormat {
     // https://developer.apple.com/documentation/uikit/uigraphicspdfrendererformat/1649130-documentinfo
     documentInfo(): id;
-    setDocumentInfo(): void;
+    setDocumentInfo(value: id): void;
     //
     alloc():UIGraphicsPDFRendererFormat;
     //
@@ -11215,7 +11354,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624368-bezierpathwithroundedrect
     bezierPathWithRoundedRect_byRoundingCorners_cornerRadii(rect: CGRect, corners: UIRectCorner, cornerRadii: CGSize):UIBezierPath;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624358-bezierpathwitharccenter
-    bezierPathWithArcCenter_radius_startAngle_endAngle_clockwise(center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: BOOL):UIBezierPath;
+    bezierPathWithArcCenter_radius_startAngle_endAngle_clockwise(center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: boolean):UIBezierPath;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624362-bezierpathwithcgpath
     bezierPathWithCGPath(CGPath: CGPathRef):UIBezierPath;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624348-bezierpathbyreversingpath
@@ -11229,7 +11368,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624354-addlinetopoint
     addLineToPoint(point: CGPoint):void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624367-addarcwithcenter
-    addArcWithCenter_radius_startAngle_endAngle_clockwise(center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: BOOL):void;
+    addArcWithCenter_radius_startAngle_endAngle_clockwise(center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: boolean):void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624357-addcurvetopoint
     addCurveToPoint_controlPoint1_controlPoint2(endPoint: CGPoint, controlPoint1: CGPoint, controlPoint2: CGPoint):void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624351-addquadcurvetopoint
@@ -11242,30 +11381,30 @@ declare namespace cocoascript {
     appendPath(bezierPath: UIBezierPath):void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624342-cgpath
     CGPath(): CGPathRef;
-    setCGPath(): void;
+    setCGPath(value: CGPathRef): void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624376-cgpath
     CGPath():CGPathRef;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624352-currentpoint
     currentPoint(): CGPoint;
-    setCurrentPoint(): void;
+    setCurrentPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624349-linewidth
     lineWidth(): CGFloat;
-    setLineWidth(): void;
+    setLineWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624347-linecapstyle
     lineCapStyle(): CGLineCap;
-    setLineCapStyle(): void;
+    setLineCapStyle(value: CGLineCap): void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624378-linejoinstyle
     lineJoinStyle(): CGLineJoin;
-    setLineJoinStyle(): void;
+    setLineJoinStyle(value: CGLineJoin): void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624370-miterlimit
     miterLimit(): CGFloat;
-    setMiterLimit(): void;
+    setMiterLimit(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624344-flatness
     flatness(): CGFloat;
-    setFlatness(): void;
+    setFlatness(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624360-usesevenoddfillrule
-    usesEvenOddFillRule(): BOOL;
-    setUsesEvenOddFillRule(): void;
+    usesEvenOddFillRule(): boolean;
+    setUsesEvenOddFillRule(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624373-setlinedash
     setLineDash_count_phase(pattern: CGFloat, count: NSInteger, phase: CGFloat):void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624374-getlinedash
@@ -11281,13 +11420,13 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624341-addclip
     addClip():void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624345-containspoint
-    containsPoint(point: CGPoint):BOOL;
+    containsPoint(point: CGPoint):boolean;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624382-empty
-    empty(): BOOL;
-    setEmpty(): void;
+    empty(): boolean;
+    setEmpty(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624350-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uibezierpath/1624340-applytransform
     applyTransform(transform: CGAffineTransform):void;
     //
@@ -11306,57 +11445,60 @@ declare namespace cocoascript {
   interface UIPrintInteractionController extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618159-sharedprintcontroller
     sharedPrintController(): UIPrintInteractionController;
-    setSharedPrintController(): void;
+    setSharedPrintController(value: UIPrintInteractionController): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618153-delegate
     delegate(): UIPrintInteractionControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIPrintInteractionControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618183-printingavailable
-    printingAvailable(): BOOL;
-    setPrintingAvailable(): void;
+    printingAvailable(): boolean;
+    setPrintingAvailable(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618184-canprintdata
-    canPrintData(data: NSData):BOOL;
+    canPrintData(data: NSData):boolean;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618155-canprinturl
-    canPrintURL(url: NSURL):BOOL;
+    canPrintURL(url: NSURL):boolean;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618150-printableutis
     printableUTIs(): string | cocoascript.NSString;
-    setPrintableUTIs(): void;
+    setPrintableUTIs(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618157-printingitem
     printingItem(): id;
-    setPrintingItem(): void;
+    setPrintingItem(value: id): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618156-printingitems
     printingItems(): NSArray;
-    setPrintingItems(): void;
+    setPrintingItems(value: NSArray): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618148-printpagerenderer
     printPageRenderer(): UIPrintPageRenderer;
-    setPrintPageRenderer(): void;
+    setPrintPageRenderer(value: UIPrintPageRenderer): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618152-printformatter
     printFormatter(): UIPrintFormatter;
-    setPrintFormatter(): void;
+    setPrintFormatter(value: UIPrintFormatter): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618149-presentanimated
-    presentAnimated_completionHandler(animated: BOOL, completion: UIPrintInteractionCompletionHandler):BOOL;
+    presentAnimated_completionHandler(animated: boolean, completion: UIPrintInteractionCompletionHandler):boolean;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618169-presentfrombarbuttonitem
-    presentFromBarButtonItem_animated_completionHandler(item: UIBarButtonItem, animated: BOOL, completion: UIPrintInteractionCompletionHandler):BOOL;
+    presentFromBarButtonItem_animated_completionHandler(item: UIBarButtonItem, animated: boolean, completion: UIPrintInteractionCompletionHandler):boolean;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618176-presentfromrect
-    presentFromRect_inView_animated_completionHandler(rect: CGRect, view: UIView, animated: BOOL, completion: UIPrintInteractionCompletionHandler):BOOL;
+    presentFromRect_inView_animated_completionHandler(rect: CGRect, view: UIView, animated: boolean, completion: UIPrintInteractionCompletionHandler):boolean;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618166-dismissanimated
-    dismissAnimated(animated: BOOL):void;
+    dismissAnimated(animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618174-printtoprinter
-    printToPrinter_completionHandler(printer: UIPrinter, completion: UIPrintInteractionCompletionHandler):BOOL;
+    printToPrinter_completionHandler(printer: UIPrinter, completion: UIPrintInteractionCompletionHandler):boolean;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618171-printinfo
     printInfo(): UIPrintInfo;
-    setPrintInfo(): void;
+    setPrintInfo(value: UIPrintInfo): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618165-printpaper
     printPaper(): UIPrintPaper;
-    setPrintPaper(): void;
+    setPrintPaper(value: UIPrintPaper): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618177-showsnumberofcopies
-    showsNumberOfCopies(): BOOL;
-    setShowsNumberOfCopies(): void;
+    showsNumberOfCopies(): boolean;
+    setShowsNumberOfCopies(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618164-showspaperselectionforloadedpape
-    showsPaperSelectionForLoadedPapers(): BOOL;
-    setShowsPaperSelectionForLoadedPapers(): void;
+    showsPaperSelectionForLoadedPapers(): boolean;
+    setShowsPaperSelectionForLoadedPapers(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/1618180-showspagerange
-    showsPageRange(): BOOL;
-    setShowsPageRange(): void;
+    showsPageRange(): boolean;
+    setShowsPageRange(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller/3791479-showspaperorientation
+    showsPaperOrientation(): boolean;
+    setShowsPaperOrientation(value: boolean): void;
     //
     alloc():UIPrintInteractionController;
     //
@@ -11375,27 +11517,27 @@ declare namespace cocoascript {
     printerWithURL(url: NSURL):UIPrinter;
     // https://developer.apple.com/documentation/uikit/uiprinter/1620440-url
     URL(): NSURL;
-    setURL(): void;
+    setURL(value: NSURL): void;
     // https://developer.apple.com/documentation/uikit/uiprinter/1620427-displayname
     displayName(): string | cocoascript.NSString;
-    setDisplayName(): void;
+    setDisplayName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiprinter/1620426-displaylocation
     displayLocation(): string | cocoascript.NSString;
-    setDisplayLocation(): void;
+    setDisplayLocation(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiprinter/1620438-makeandmodel
     makeAndModel(): string | cocoascript.NSString;
-    setMakeAndModel(): void;
+    setMakeAndModel(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiprinter/1620436-supportedjobtypes
     supportedJobTypes(): UIPrinterJobTypes;
-    setSupportedJobTypes(): void;
+    setSupportedJobTypes(value: UIPrinterJobTypes): void;
     // https://developer.apple.com/documentation/uikit/uiprinter/1620429-supportscolor
-    supportsColor(): BOOL;
-    setSupportsColor(): void;
+    supportsColor(): boolean;
+    setSupportsColor(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiprinter/1620434-supportsduplex
-    supportsDuplex(): BOOL;
-    setSupportsDuplex(): void;
+    supportsDuplex(): boolean;
+    setSupportsDuplex(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiprinter/1620431-contactprinter
-    contactPrinter(completionHandler: BOOL):void;
+    contactPrinter(completionHandler: boolean):void;
     //
     alloc():UIPrinter;
     //
@@ -11416,24 +11558,24 @@ declare namespace cocoascript {
     printInfoWithDictionary(dictionary: NSDictionary):UIPrintInfo;
     // https://developer.apple.com/documentation/uikit/uiprintinfo/1623539-dictionaryrepresentation
     dictionaryRepresentation(): NSDictionary;
-    setDictionaryRepresentation(): void;
+    setDictionaryRepresentation(value: NSDictionary): void;
     // https://developer.apple.com/documentation/uikit/uiprintinfo/1623546-initwithcoder
     initWithCoder(coder: NSCoder):UIPrintInfo;
     // https://developer.apple.com/documentation/uikit/uiprintinfo/1623549-duplex
     duplex(): UIPrintInfoDuplex;
-    setDuplex(): void;
+    setDuplex(value: UIPrintInfoDuplex): void;
     // https://developer.apple.com/documentation/uikit/uiprintinfo/1623543-jobname
     jobName(): string | cocoascript.NSString;
-    setJobName(): void;
+    setJobName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiprintinfo/1623550-orientation
     orientation(): UIPrintInfoOrientation;
-    setOrientation(): void;
+    setOrientation(value: UIPrintInfoOrientation): void;
     // https://developer.apple.com/documentation/uikit/uiprintinfo/1623552-outputtype
     outputType(): UIPrintInfoOutputType;
-    setOutputType(): void;
+    setOutputType(value: UIPrintInfoOutputType): void;
     // https://developer.apple.com/documentation/uikit/uiprintinfo/1623535-printerid
     printerID(): string | cocoascript.NSString;
-    setPrinterID(): void;
+    setPrinterID(value: string | cocoascript.NSString): void;
     //
     alloc():UIPrintInfo;
     //
@@ -11450,10 +11592,10 @@ declare namespace cocoascript {
   interface UIPrintPaper extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiprintpaper/1623529-papersize
     paperSize(): CGSize;
-    setPaperSize(): void;
+    setPaperSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uiprintpaper/1623530-printablerect
     printableRect(): CGRect;
-    setPrintableRect(): void;
+    setPrintableRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiprintpaper/1623527-bestpaperforpagesize
     bestPaperForPageSize_withPapersFromArray(contentSize: CGSize, paperList: UIPrintPaper):UIPrintPaper;
     // https://developer.apple.com/documentation/uikit/uiprintpaper/1623528-printrect
@@ -11474,22 +11616,22 @@ declare namespace cocoascript {
   interface UIPrintFormatter extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiprintformatter/1621831-perpagecontentinsets
     perPageContentInsets(): UIEdgeInsets;
-    setPerPageContentInsets(): void;
+    setPerPageContentInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiprintformatter/1621826-maximumcontentheight
     maximumContentHeight(): CGFloat;
-    setMaximumContentHeight(): void;
+    setMaximumContentHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiprintformatter/1621840-maximumcontentwidth
     maximumContentWidth(): CGFloat;
-    setMaximumContentWidth(): void;
+    setMaximumContentWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiprintformatter/1621823-contentinsets
     contentInsets(): UIEdgeInsets;
-    setContentInsets(): void;
+    setContentInsets(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uiprintformatter/1621827-startpage
     startPage(): NSInteger;
-    setStartPage(): void;
+    setStartPage(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiprintformatter/1621843-pagecount
     pageCount(): NSInteger;
-    setPageCount(): void;
+    setPageCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiprintformatter/1621841-drawinrect
     drawInRect_forPageAtIndex(rect: CGRect, pageIndex: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uiprintformatter/1621829-rectforpageatindex
@@ -11498,7 +11640,7 @@ declare namespace cocoascript {
     removeFromPrintPageRenderer():void;
     // https://developer.apple.com/documentation/uikit/uiprintformatter/1621821-printpagerenderer
     printPageRenderer(): UIPrintPageRenderer;
-    setPrintPageRenderer(): void;
+    setPrintPageRenderer(value: UIPrintPageRenderer): void;
     //
     alloc():UIPrintFormatter;
     //
@@ -11515,7 +11657,7 @@ declare namespace cocoascript {
   interface UIViewPrintFormatter extends UIPrintFormatter {
     // https://developer.apple.com/documentation/uikit/uiviewprintformatter/1621824-view
     view(): UIView;
-    setView(): void;
+    setView(value: UIView): void;
     //
     alloc():UIViewPrintFormatter;
     //
@@ -11536,19 +11678,19 @@ declare namespace cocoascript {
     initWithText(text: string | cocoascript.NSString):UISimpleTextPrintFormatter;
     // https://developer.apple.com/documentation/uikit/uisimpletextprintformatter/1621820-attributedtext
     attributedText(): NSAttributedString;
-    setAttributedText(): void;
+    setAttributedText(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uisimpletextprintformatter/1621833-text
     text(): string | cocoascript.NSString;
-    setText(): void;
+    setText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisimpletextprintformatter/1621837-font
     font(): UIFont;
-    setFont(): void;
+    setFont(value: UIFont): void;
     // https://developer.apple.com/documentation/uikit/uisimpletextprintformatter/1621830-color
     color(): UIColor;
-    setColor(): void;
+    setColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uisimpletextprintformatter/1621832-textalignment
     textAlignment(): NSTextAlignment;
-    setTextAlignment(): void;
+    setTextAlignment(value: NSTextAlignment): void;
     //
     alloc():UISimpleTextPrintFormatter;
     //
@@ -11567,7 +11709,7 @@ declare namespace cocoascript {
     initWithMarkupText(markupText: string | cocoascript.NSString):UIMarkupTextPrintFormatter;
     // https://developer.apple.com/documentation/uikit/uimarkuptextprintformatter/1621842-markuptext
     markupText(): string | cocoascript.NSString;
-    setMarkupText(): void;
+    setMarkupText(value: string | cocoascript.NSString): void;
     //
     alloc():UIMarkupTextPrintFormatter;
     //
@@ -11582,6 +11724,8 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uiprintserviceextension
    */
   interface UIPrintServiceExtension extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uiprintserviceextension/3727330-printerdestinationsforprintinfo
+    printerDestinationsForPrintInfo(printInfo: UIPrintInfo):UIPrinterDestination;
     //
     alloc():UIPrintServiceExtension;
     //
@@ -11596,6 +11740,17 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uiprinterdestination
    */
   interface UIPrinterDestination extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uiprinterdestination/3727334-initwithurl
+    initWithURL(url: NSURL):UIPrinterDestination;
+    // https://developer.apple.com/documentation/uikit/uiprinterdestination/3727333-displayname
+    displayName(): string | cocoascript.NSString;
+    setDisplayName(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/uikit/uiprinterdestination/3727335-txtrecord
+    txtRecord(): NSData;
+    setTxtRecord(value: NSData): void;
+    // https://developer.apple.com/documentation/uikit/uiprinterdestination/3727332-url
+    URL(): NSURL;
+    setURL(value: NSURL): void;
     //
     alloc():UIPrinterDestination;
     //
@@ -11638,54 +11793,54 @@ declare namespace cocoascript {
     monospacedDigitSystemFontOfSize_weight(fontSize: CGFloat, weight: UIFontWeight):UIFont;
     // https://developer.apple.com/documentation/uikit/uifont/1619040-familynames
     familyNames(): string | cocoascript.NSString;
-    setFamilyNames(): void;
+    setFamilyNames(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uifont/1619023-fontnamesforfamilyname
     fontNamesForFamilyName(familyName: string | cocoascript.NSString):NSString;
     // https://developer.apple.com/documentation/uikit/uifont/1619033-familyname
     familyName(): string | cocoascript.NSString;
-    setFamilyName(): void;
+    setFamilyName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uifont/1619024-fontname
     fontName(): string | cocoascript.NSString;
-    setFontName(): void;
+    setFontName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uifont/1619031-pointsize
     pointSize(): CGFloat;
-    setPointSize(): void;
+    setPointSize(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1619034-ascender
     ascender(): CGFloat;
-    setAscender(): void;
+    setAscender(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1619036-descender
     descender(): CGFloat;
-    setDescender(): void;
+    setDescender(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1619026-leading
     leading(): CGFloat;
-    setLeading(): void;
+    setLeading(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1619035-capheight
     capHeight(): CGFloat;
-    setCapHeight(): void;
+    setCapHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1619028-xheight
     xHeight(): CGFloat;
-    setXHeight(): void;
+    setXHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1619038-lineheight
     lineHeight(): CGFloat;
-    setLineHeight(): void;
+    setLineHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1623398-labelfontsize
     labelFontSize(): CGFloat;
-    setLabelFontSize(): void;
+    setLabelFontSize(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1623410-buttonfontsize
     buttonFontSize(): CGFloat;
-    setButtonFontSize(): void;
+    setButtonFontSize(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1623399-smallsystemfontsize
     smallSystemFontSize(): CGFloat;
-    setSmallSystemFontSize(): void;
+    setSmallSystemFontSize(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1623395-systemfontsize
     systemFontSize(): CGFloat;
-    setSystemFontSize(): void;
+    setSystemFontSize(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifont/1619037-fontdescriptor
     fontDescriptor(): UIFontDescriptor;
-    setFontDescriptor(): void;
+    setFontDescriptor(value: UIFontDescriptor): void;
     // https://developer.apple.com/documentation/uikit/uifont/3255206-ek_defaultoccurrencesecondarytex
     ek_defaultOccurrenceSecondaryTextFont(): UIFont;
-    setEk_defaultOccurrenceSecondaryTextFont(): void;
+    setEk_defaultOccurrenceSecondaryTextFont(value: UIFont): void;
     // https://developer.apple.com/documentation/uikit/uifont/3255205-ek_defaultoccurrenceprimarytextf
     ek_defaultOccurrencePrimaryTextFontForSizeClass(sizeClass: UIUserInterfaceSizeClass):UIFont;
     // https://developer.apple.com/documentation/uikit/uifont/3255207-ek_defaultoccurrencesmallprimary
@@ -11738,21 +11893,21 @@ declare namespace cocoascript {
     matchingFontDescriptorsWithMandatoryKeys(mandatoryKeys: UIFontDescriptorAttributeName):UIFontDescriptor;
     // https://developer.apple.com/documentation/uikit/uifontdescriptor/1616698-fontattributes
     fontAttributes(): id;
-    setFontAttributes(): void;
+    setFontAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uifontdescriptor/1616713-matrix
     matrix(): CGAffineTransform;
-    setMatrix(): void;
+    setMatrix(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/uikit/uifontdescriptor/1616733-objectforkey
     objectForKey(anAttribute: UIFontDescriptorAttributeName):UIFontDescriptor;
     // https://developer.apple.com/documentation/uikit/uifontdescriptor/1616696-pointsize
     pointSize(): CGFloat;
-    setPointSize(): void;
+    setPointSize(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifontdescriptor/1616693-postscriptname
     postscriptName(): string | cocoascript.NSString;
-    setPostscriptName(): void;
+    setPostscriptName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uifontdescriptor/1616723-symbolictraits
     symbolicTraits(): UIFontDescriptorSymbolicTraits;
-    setSymbolicTraits(): void;
+    setSymbolicTraits(value: UIFontDescriptorSymbolicTraits): void;
     //
     alloc():UIFontDescriptor;
     //
@@ -11773,7 +11928,7 @@ declare namespace cocoascript {
     metricsForTextStyle(textStyle: UIFontTextStyle):UIFontMetrics;
     // https://developer.apple.com/documentation/uikit/uifontmetrics/2877382-defaultmetrics
     defaultMetrics(): UIFontMetrics;
-    setDefaultMetrics(): void;
+    setDefaultMetrics(value: UIFontMetrics): void;
     // https://developer.apple.com/documentation/uikit/uifontmetrics/2877385-scaledfontforfont
     scaledFontForFont(font: UIFont):UIFont;
     // https://developer.apple.com/documentation/uikit/uifontmetrics/2877389-scaledfontforfont
@@ -11801,7 +11956,7 @@ declare namespace cocoascript {
    */
   interface UITextChecker extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextchecker/1621029-rangeofmisspelledwordinstring
-    rangeOfMisspelledWordInString_range_startingAt_wrap_language(stringToCheck: string | cocoascript.NSString, range: NSRange, startingOffset: NSInteger, wrapFlag: BOOL, language: string | cocoascript.NSString):NSRange;
+    rangeOfMisspelledWordInString_range_startingAt_wrap_language(stringToCheck: string | cocoascript.NSString, range: NSRange, startingOffset: NSInteger, wrapFlag: boolean, language: string | cocoascript.NSString):NSRange;
     // https://developer.apple.com/documentation/uikit/uitextchecker/1621037-guessesforwordrange
     guessesForWordRange_inString_language(range: NSRange, string: string | cocoascript.NSString, language: string | cocoascript.NSString):NSString;
     // https://developer.apple.com/documentation/uikit/uitextchecker/1621034-completionsforpartialwordrange
@@ -11810,16 +11965,16 @@ declare namespace cocoascript {
     ignoreWord(wordToIgnore: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uitextchecker/1621032-ignoredwords
     ignoredWords(): string | cocoascript.NSString;
-    setIgnoredWords(): void;
+    setIgnoredWords(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitextchecker/1621028-learnword
     learnWord(word: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uitextchecker/1621036-unlearnword
     unlearnWord(word: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uitextchecker/1621027-haslearnedword
-    hasLearnedWord(word: string | cocoascript.NSString):BOOL;
+    hasLearnedWord(word: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uitextchecker/1621033-availablelanguages
     availableLanguages(): string | cocoascript.NSString;
-    setAvailableLanguages(): void;
+    setAvailableLanguages(value: string | cocoascript.NSString): void;
     //
     alloc():UITextChecker;
     //
@@ -11850,13 +12005,13 @@ declare namespace cocoascript {
   interface UITextRange extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextrange/1614459-start
     start(): UITextPosition;
-    setStart(): void;
+    setStart(value: UITextPosition): void;
     // https://developer.apple.com/documentation/uikit/uitextrange/1614544-end
     end(): UITextPosition;
-    setEnd(): void;
+    setEnd(value: UITextPosition): void;
     // https://developer.apple.com/documentation/uikit/uitextrange/1614556-empty
-    empty(): BOOL;
-    setEmpty(): void;
+    empty(): boolean;
+    setEmpty(value: boolean): void;
     //
     alloc():UITextRange;
     //
@@ -11873,19 +12028,19 @@ declare namespace cocoascript {
   interface UITextSelectionRect extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextselectionrect/1614461-rect
     rect(): CGRect;
-    setRect(): void;
+    setRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uitextselectionrect/1614569-writingdirection
     writingDirection(): NSWritingDirection;
-    setWritingDirection(): void;
+    setWritingDirection(value: NSWritingDirection): void;
     // https://developer.apple.com/documentation/uikit/uitextselectionrect/1614561-isvertical
-    isVertical(): BOOL;
-    setIsVertical(): void;
+    isVertical(): boolean;
+    setIsVertical(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextselectionrect/1614560-containsstart
-    containsStart(): BOOL;
-    setContainsStart(): void;
+    containsStart(): boolean;
+    setContainsStart(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextselectionrect/1614516-containsend
-    containsEnd(): BOOL;
-    setContainsEnd(): void;
+    containsEnd(): boolean;
+    setContainsEnd(value: boolean): void;
     //
     alloc():UITextSelectionRect;
     //
@@ -11906,22 +12061,22 @@ declare namespace cocoascript {
   interface UITextInput extends UIKeyInput {
     // https://developer.apple.com/documentation/uikit/uitextinput/1614508-inputdelegate
     inputDelegate(): UITextInputDelegate;
-    setInputDelegate(): void;
+    setInputDelegate(value: UITextInputDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614527-textinrange
     textInRange(range: UITextRange):NSString;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614558-replacerange
     replaceRange_withText(range: UITextRange, text: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614495-shouldchangetextinrange
-    shouldChangeTextInRange_replacementText(range: UITextRange, text: string | cocoascript.NSString):BOOL;
+    shouldChangeTextInRange_replacementText(range: UITextRange, text: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614541-selectedtextrange
     selectedTextRange(): UITextRange;
-    setSelectedTextRange(): void;
+    setSelectedTextRange(value: UITextRange): void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614489-markedtextrange
     markedTextRange(): UITextRange;
-    setMarkedTextRange(): void;
+    setMarkedTextRange(value: UITextRange): void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614500-markedtextstyle
     markedTextStyle(): id;
-    setMarkedTextStyle(): void;
+    setMarkedTextStyle(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614465-setmarkedtext
     setMarkedText_selectedRange(markedText: string | cocoascript.NSString, selectedRange: NSRange):void;
     // https://developer.apple.com/documentation/uikit/uitextinput/3213955-setattributedmarkedtext
@@ -11930,7 +12085,7 @@ declare namespace cocoascript {
     unmarkText():void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614539-selectionaffinity
     selectionAffinity(): UITextStorageDirection;
-    setSelectionAffinity(): void;
+    setSelectionAffinity(value: UITextStorageDirection): void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614573-textrangefromposition
     textRangeFromPosition_toPosition(fromPosition: UITextPosition, toPosition: UITextPosition):UITextRange;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614511-positionfromposition
@@ -11939,10 +12094,10 @@ declare namespace cocoascript {
     positionFromPosition_inDirection_offset(position: UITextPosition, direction: UITextLayoutDirection, offset: NSInteger):UITextPosition;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614528-beginningofdocument
     beginningOfDocument(): UITextPosition;
-    setBeginningOfDocument(): void;
+    setBeginningOfDocument(value: UITextPosition): void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614555-endofdocument
     endOfDocument(): UITextPosition;
-    setEndOfDocument(): void;
+    setEndOfDocument(value: UITextPosition): void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614526-compareposition
     comparePosition_toPosition(position: UITextPosition, other: UITextPosition):NSComparisonResult;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614473-offsetfromposition
@@ -11969,7 +12124,7 @@ declare namespace cocoascript {
     characterRangeAtPoint(point: CGPoint):UITextRange;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614537-tokenizer
     tokenizer(): UITextInputTokenizer;
-    setTokenizer(): void;
+    setTokenizer(value: UITextInputTokenizer): void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614557-beginfloatingcursoratpoint
     beginFloatingCursorAtPoint(point: CGPoint):void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614550-updatefloatingcursoratpoint
@@ -11984,11 +12139,11 @@ declare namespace cocoascript {
     insertDictationResult(dictationResult: UIDictationPhrase):void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614466-insertdictationresultplaceholder
     insertDictationResultPlaceholder(): id;
-    setInsertDictationResultPlaceholder(): void;
+    setInsertDictationResultPlaceholder(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614493-framefordictationresultplacehold
     frameForDictationResultPlaceholder(placeholder: UITextInput):CGRect;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614546-removedictationresultplaceholder
-    removeDictationResultPlaceholder_willInsertResult(placeholder: UITextInput, willInsertResult: BOOL):void;
+    removeDictationResultPlaceholder_willInsertResult(placeholder: UITextInput, willInsertResult: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitextinput/3213953-inserttextplaceholderwithsize
     insertTextPlaceholderWithSize(size: CGSize):UITextPlaceholder;
     // https://developer.apple.com/documentation/uikit/uitextinput/3213954-removetextplaceholder
@@ -12003,7 +12158,7 @@ declare namespace cocoascript {
     characterOffsetOfPosition_withinRange(position: UITextPosition, range: UITextRange):NSInteger;
     // https://developer.apple.com/documentation/uikit/uitextinput/1614564-textinputview
     textInputView(): UIView;
-    setTextInputView(): void;
+    setTextInputView(value: UIView): void;
   }
 }
 declare namespace cocoascript {
@@ -12033,8 +12188,8 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uikeyinput/1614572-deletebackward
     deleteBackward():void;
     // https://developer.apple.com/documentation/uikit/uikeyinput/1614457-hastext
-    hasText(): BOOL;
-    setHasText(): void;
+    hasText(): boolean;
+    setHasText(value: boolean): void;
   }
 }
 declare namespace cocoascript {
@@ -12045,40 +12200,40 @@ declare namespace cocoascript {
   interface UITextInputTraits extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/1624457-keyboardtype
     keyboardType(): UIKeyboardType;
-    setKeyboardType(): void;
+    setKeyboardType(value: UIKeyboardType): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/1624434-keyboardappearance
     keyboardAppearance(): UIKeyboardAppearance;
-    setKeyboardAppearance(): void;
+    setKeyboardAppearance(value: UIKeyboardAppearance): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/1624446-returnkeytype
     returnKeyType(): UIReturnKeyType;
-    setReturnKeyType(): void;
+    setReturnKeyType(value: UIReturnKeyType): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/1649656-textcontenttype
     textContentType(): UITextContentType;
-    setTextContentType(): void;
+    setTextContentType(value: UITextContentType): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/1624427-securetextentry
-    secureTextEntry(): BOOL;
-    setSecureTextEntry(): void;
+    secureTextEntry(): boolean;
+    setSecureTextEntry(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/1624432-enablesreturnkeyautomatically
-    enablesReturnKeyAutomatically(): BOOL;
-    setEnablesReturnKeyAutomatically(): void;
+    enablesReturnKeyAutomatically(): boolean;
+    setEnablesReturnKeyAutomatically(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/1624447-autocapitalizationtype
     autocapitalizationType(): UITextAutocapitalizationType;
-    setAutocapitalizationType(): void;
+    setAutocapitalizationType(value: UITextAutocapitalizationType): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/1624453-autocorrectiontype
     autocorrectionType(): UITextAutocorrectionType;
-    setAutocorrectionType(): void;
+    setAutocorrectionType(value: UITextAutocorrectionType): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/1624461-spellcheckingtype
     spellCheckingType(): UITextSpellCheckingType;
-    setSpellCheckingType(): void;
+    setSpellCheckingType(value: UITextSpellCheckingType): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/2865931-smartquotestype
     smartQuotesType(): UITextSmartQuotesType;
-    setSmartQuotesType(): void;
+    setSmartQuotesType(value: UITextSmartQuotesType): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/2866013-smartdashestype
     smartDashesType(): UITextSmartDashesType;
-    setSmartDashesType(): void;
+    setSmartDashesType(value: UITextSmartDashesType): void;
     // https://developer.apple.com/documentation/uikit/uitextinputtraits/2865828-smartinsertdeletetype
     smartInsertDeleteType(): UITextSmartInsertDeleteType;
-    setSmartInsertDeleteType(): void;
+    setSmartInsertDeleteType(value: UITextSmartInsertDeleteType): void;
   }
 }
 declare namespace cocoascript {
@@ -12089,12 +12244,12 @@ declare namespace cocoascript {
   interface UITextInputMode extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextinputmode/1614522-activeinputmodes
     activeInputModes(): UITextInputMode;
-    setActiveInputModes(): void;
+    setActiveInputModes(value: UITextInputMode): void;
     // https://developer.apple.com/documentation/uikit/uitextinputmode/1614538-currentinputmode
     currentInputMode():UITextInputMode;
     // https://developer.apple.com/documentation/uikit/uitextinputmode/1614535-primarylanguage
     primaryLanguage(): string | cocoascript.NSString;
-    setPrimaryLanguage(): void;
+    setPrimaryLanguage(value: string | cocoascript.NSString): void;
     //
     alloc():UITextInputMode;
     //
@@ -12111,13 +12266,13 @@ declare namespace cocoascript {
   interface UITextInputAssistantItem extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextinputassistantitem/1614575-leadingbarbuttongroups
     leadingBarButtonGroups(): UIBarButtonItemGroup;
-    setLeadingBarButtonGroups(): void;
+    setLeadingBarButtonGroups(value: UIBarButtonItemGroup): void;
     // https://developer.apple.com/documentation/uikit/uitextinputassistantitem/1614532-trailingbarbuttongroups
     trailingBarButtonGroups(): UIBarButtonItemGroup;
-    setTrailingBarButtonGroups(): void;
+    setTrailingBarButtonGroups(value: UIBarButtonItemGroup): void;
     // https://developer.apple.com/documentation/uikit/uitextinputassistantitem/1614529-allowshidingshortcuts
-    allowsHidingShortcuts(): BOOL;
-    setAllowsHidingShortcuts(): void;
+    allowsHidingShortcuts(): boolean;
+    setAllowsHidingShortcuts(value: boolean): void;
     //
     alloc():UITextInputAssistantItem;
     //
@@ -12134,10 +12289,10 @@ declare namespace cocoascript {
   interface UIDictationPhrase extends NSObject {
     // https://developer.apple.com/documentation/uikit/uidictationphrase/1614510-alternativeinterpretations
     alternativeInterpretations(): string | cocoascript.NSString;
-    setAlternativeInterpretations(): void;
+    setAlternativeInterpretations(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidictationphrase/1614456-text
     text(): string | cocoascript.NSString;
-    setText(): void;
+    setText(value: string | cocoascript.NSString): void;
     //
     alloc():UIDictationPhrase;
     //
@@ -12153,9 +12308,9 @@ declare namespace cocoascript {
    */
   interface UITextInputTokenizer extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextinputtokenizer/1614553-isposition
-    isPosition_atBoundary_inDirection(position: UITextPosition, granularity: UITextGranularity, direction: UITextDirection):BOOL;
+    isPosition_atBoundary_inDirection(position: UITextPosition, granularity: UITextGranularity, direction: UITextDirection):boolean;
     // https://developer.apple.com/documentation/uikit/uitextinputtokenizer/1614491-isposition
-    isPosition_withinTextUnit_inDirection(position: UITextPosition, granularity: UITextGranularity, direction: UITextDirection):BOOL;
+    isPosition_withinTextUnit_inDirection(position: UITextPosition, granularity: UITextGranularity, direction: UITextDirection):boolean;
     // https://developer.apple.com/documentation/uikit/uitextinputtokenizer/1614513-positionfromposition
     positionFromPosition_toBoundary_inDirection(position: UITextPosition, granularity: UITextGranularity, direction: UITextDirection):UITextPosition;
     // https://developer.apple.com/documentation/uikit/uitextinputtokenizer/1614464-rangeenclosingposition
@@ -12188,16 +12343,16 @@ declare namespace cocoascript {
     textInteractionForMode(mode: UITextInteractionMode):UITextInteraction;
     // https://developer.apple.com/documentation/uikit/uitextinteraction/3255084-textinput
     textInput(): UITextInput;
-    setTextInput(): void;
+    setTextInput(value: UITextInput): void;
     // https://developer.apple.com/documentation/uikit/uitextinteraction/3255082-delegate
     delegate(): UITextInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UITextInteractionDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitextinteraction/3255083-gesturesforfailurerequirements
     gesturesForFailureRequirements(): UIGestureRecognizer;
-    setGesturesForFailureRequirements(): void;
+    setGesturesForFailureRequirements(value: UIGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uitextinteraction/3255086-textinteractionmode
     textInteractionMode(): UITextInteractionMode;
-    setTextInteractionMode(): void;
+    setTextInteractionMode(value: UITextInteractionMode): void;
     //
     alloc():UITextInteraction;
     //
@@ -12213,7 +12368,7 @@ declare namespace cocoascript {
    */
   interface UITextInteractionDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextinteractiondelegate/3255089-interactionshouldbegin
-    interactionShouldBegin_atPoint(interaction: UITextInteraction, point: CGPoint):BOOL;
+    interactionShouldBegin_atPoint(interaction: UITextInteraction, point: CGPoint):boolean;
     // https://developer.apple.com/documentation/uikit/uitextinteractiondelegate/3255090-interactionwillbegin
     interactionWillBegin(interaction: UITextInteraction):void;
     // https://developer.apple.com/documentation/uikit/uitextinteractiondelegate/3255088-interactiondidend
@@ -12230,6 +12385,9 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uikeyboardlayoutguide
    */
   interface UIKeyboardLayoutGuide extends UITrackingLayoutGuide {
+    // https://developer.apple.com/documentation/uikit/uikeyboardlayoutguide/3752189-followsundockedkeyboard
+    followsUndockedKeyboard(): boolean;
+    setFollowsUndockedKeyboard(value: boolean): void;
     //
     alloc():UIKeyboardLayoutGuide;
     //
@@ -12244,6 +12402,16 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uitrackinglayoutguide
    */
   interface UITrackingLayoutGuide extends UILayoutGuide {
+    // https://developer.apple.com/documentation/uikit/uitrackinglayoutguide/3752220-setconstraints
+    setConstraints_activeWhenNearEdge(trackingConstraints: NSLayoutConstraint, edge: NSDirectionalRectEdge):void;
+    // https://developer.apple.com/documentation/uikit/uitrackinglayoutguide/3752219-setconstraints
+    setConstraints_activeWhenAwayFromEdge(trackingConstraints: NSLayoutConstraint, edge: NSDirectionalRectEdge):void;
+    // https://developer.apple.com/documentation/uikit/uitrackinglayoutguide/3752217-constraintsactivewhennearedge
+    constraintsActiveWhenNearEdge(edge: NSDirectionalRectEdge):NSLayoutConstraint;
+    // https://developer.apple.com/documentation/uikit/uitrackinglayoutguide/3752216-constraintsactivewhenawayfromedg
+    constraintsActiveWhenAwayFromEdge(edge: NSDirectionalRectEdge):NSLayoutConstraint;
+    // https://developer.apple.com/documentation/uikit/uitrackinglayoutguide/3752218-removealltrackedconstraints
+    removeAllTrackedConstraints():void;
     //
     alloc():UITrackingLayoutGuide;
     //
@@ -12264,10 +12432,10 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIInputView;
     // https://developer.apple.com/documentation/uikit/uiinputview/1619471-inputviewstyle
     inputViewStyle(): UIInputViewStyle;
-    setInputViewStyle(): void;
+    setInputViewStyle(value: UIInputViewStyle): void;
     // https://developer.apple.com/documentation/uikit/uiinputview/1619473-allowsselfsizing
-    allowsSelfSizing(): BOOL;
-    setAllowsSelfSizing(): void;
+    allowsSelfSizing(): boolean;
+    setAllowsSelfSizing(value: boolean): void;
     //
     alloc():UIInputView;
     //
@@ -12284,16 +12452,16 @@ declare namespace cocoascript {
   interface UIKey extends NSObject {
     // https://developer.apple.com/documentation/uikit/uikey/3526132-keycode
     keyCode(): UIKeyboardHIDUsage;
-    setKeyCode(): void;
+    setKeyCode(value: UIKeyboardHIDUsage): void;
     // https://developer.apple.com/documentation/uikit/uikey/3526133-modifierflags
     modifierFlags(): UIKeyModifierFlags;
-    setModifierFlags(): void;
+    setModifierFlags(value: UIKeyModifierFlags): void;
     // https://developer.apple.com/documentation/uikit/uikey/3526130-characters
     characters(): string | cocoascript.NSString;
-    setCharacters(): void;
+    setCharacters(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uikey/3526131-charactersignoringmodifiers
     charactersIgnoringModifiers(): string | cocoascript.NSString;
-    setCharactersIgnoringModifiers(): void;
+    setCharactersIgnoringModifiers(value: string | cocoascript.NSString): void;
     //
     alloc():UIKey;
     //
@@ -12316,13 +12484,13 @@ declare namespace cocoascript {
     initWithDelegate(delegate: UIScribbleInteractionDelegate):UIScribbleInteraction;
     // https://developer.apple.com/documentation/uikit/uiscribbleinteraction/3566747-delegate
     delegate(): UIScribbleInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIScribbleInteractionDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiscribbleinteraction/3566748-handlingwriting
-    handlingWriting(): BOOL;
-    setHandlingWriting(): void;
+    handlingWriting(): boolean;
+    setHandlingWriting(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiscribbleinteraction/3566750-pencilinputexpected
-    pencilInputExpected(): BOOL;
-    setPencilInputExpected(): void;
+    pencilInputExpected(): boolean;
+    setPencilInputExpected(value: boolean): void;
     //
     alloc():UIScribbleInteraction;
     //
@@ -12338,9 +12506,9 @@ declare namespace cocoascript {
    */
   interface UIScribbleInteractionDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiscribbleinteractiondelegate/3566752-scribbleinteraction
-    scribbleInteraction_shouldBeginAtLocation(interaction: UIScribbleInteraction, location: CGPoint):BOOL;
+    scribbleInteraction_shouldBeginAtLocation(interaction: UIScribbleInteraction, location: CGPoint):boolean;
     // https://developer.apple.com/documentation/uikit/uiscribbleinteractiondelegate/3566754-scribbleinteractionshoulddelayfo
-    scribbleInteractionShouldDelayFocus(interaction: UIScribbleInteraction):BOOL;
+    scribbleInteractionShouldDelayFocus(interaction: UIScribbleInteraction):boolean;
     // https://developer.apple.com/documentation/uikit/uiscribbleinteractiondelegate/3566755-scribbleinteractionwillbeginwrit
     scribbleInteractionWillBeginWriting(interaction: UIScribbleInteraction):void;
     // https://developer.apple.com/documentation/uikit/uiscribbleinteractiondelegate/3566753-scribbleinteractiondidfinishwrit
@@ -12357,10 +12525,10 @@ declare namespace cocoascript {
     initWithDelegate(delegate: UIIndirectScribbleInteractionDelegate):UIIndirectScribbleInteraction;
     // https://developer.apple.com/documentation/uikit/uiindirectscribbleinteraction/3566735-delegate
     delegate(): UIIndirectScribbleInteractionDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIIndirectScribbleInteractionDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiindirectscribbleinteraction/3566736-handlingwriting
-    handlingWriting(): BOOL;
-    setHandlingWriting(): void;
+    handlingWriting(): boolean;
+    setHandlingWriting(value: boolean): void;
     //
     alloc():UIIndirectScribbleInteraction;
     //
@@ -12376,11 +12544,11 @@ declare namespace cocoascript {
    */
   interface UIIndirectScribbleInteractionDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiindirectscribbleinteractiondelegate/3566742-indirectscribbleinteraction
-    indirectScribbleInteraction_isElementFocused(interaction: UIIndirectScribbleInteraction, elementIdentifier: UIScribbleElementIdentifier):BOOL;
+    indirectScribbleInteraction_isElementFocused(interaction: UIIndirectScribbleInteraction, elementIdentifier: UIScribbleElementIdentifier):boolean;
     // https://developer.apple.com/documentation/uikit/uiindirectscribbleinteractiondelegate/3566740-indirectscribbleinteraction
     indirectScribbleInteraction_focusElementIfNeeded_referencePoint_completion(interaction: UIIndirectScribbleInteraction, elementIdentifier: UIScribbleElementIdentifier, focusReferencePoint: CGPoint, completion: UITextInput):void;
     // https://developer.apple.com/documentation/uikit/uiindirectscribbleinteractiondelegate/3566744-indirectscribbleinteraction
-    indirectScribbleInteraction_shouldDelayFocusForElement(interaction: UIIndirectScribbleInteraction, elementIdentifier: UIScribbleElementIdentifier):BOOL;
+    indirectScribbleInteraction_shouldDelayFocusForElement(interaction: UIIndirectScribbleInteraction, elementIdentifier: UIScribbleElementIdentifier):boolean;
     // https://developer.apple.com/documentation/uikit/uiindirectscribbleinteractiondelegate/3566745-indirectscribbleinteraction
     indirectScribbleInteraction_willBeginWritingInElement(interaction: UIIndirectScribbleInteraction, elementIdentifier: UIScribbleElementIdentifier):void;
     // https://developer.apple.com/documentation/uikit/uiindirectscribbleinteractiondelegate/3566739-indirectscribbleinteraction
@@ -12405,7 +12573,7 @@ declare namespace cocoascript {
     actionWithTitle_style_handler(title: string | cocoascript.NSString, style: UIPreviewActionStyle, handler: UIViewController):UIPreviewAction;
     // https://developer.apple.com/documentation/uikit/uipreviewaction/1621447-handler
     handler(): UIViewController;
-    setHandler(): void;
+    setHandler(value: UIViewController): void;
     //
     alloc():UIPreviewAction;
     //
@@ -12424,10 +12592,10 @@ declare namespace cocoascript {
     sharedAccelerometer():UIAccelerometer;
     // https://developer.apple.com/documentation/uikit/uiaccelerometer/1620651-updateinterval
     updateInterval(): NSTimeInterval;
-    setUpdateInterval(): void;
+    setUpdateInterval(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uiaccelerometer/1620646-delegate
     delegate(): UIAccelerometerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIAccelerometerDelegate): void;
     //
     alloc():UIAccelerometer;
     //
@@ -12445,32 +12613,32 @@ declare namespace cocoascript {
     initWithTitle_delegate_cancelButtonTitle_destructiveButtonTitle_otherButtonTitles(title: string | cocoascript.NSString, delegate: UIActionSheetDelegate, cancelButtonTitle: string | cocoascript.NSString, destructiveButtonTitle: string | cocoascript.NSString, ...otherButtonTitles: Array<string | cocoascript.NSString>):UIActionSheet;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622878-delegate
     delegate(): UIActionSheetDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIActionSheetDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622882-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622885-visible
-    visible(): BOOL;
-    setVisible(): void;
+    visible(): boolean;
+    setVisible(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622881-actionsheetstyle
     actionSheetStyle(): UIActionSheetStyle;
-    setActionSheetStyle(): void;
+    setActionSheetStyle(value: UIActionSheetStyle): void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622864-addbuttonwithtitle
     addButtonWithTitle(title: string | cocoascript.NSString):NSInteger;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622891-numberofbuttons
     numberOfButtons(): NSInteger;
-    setNumberOfButtons(): void;
+    setNumberOfButtons(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622871-buttontitleatindex
     buttonTitleAtIndex(buttonIndex: NSInteger):NSString;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622866-cancelbuttonindex
     cancelButtonIndex(): NSInteger;
-    setCancelButtonIndex(): void;
+    setCancelButtonIndex(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622863-destructivebuttonindex
     destructiveButtonIndex(): NSInteger;
-    setDestructiveButtonIndex(): void;
+    setDestructiveButtonIndex(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622870-firstotherbuttonindex
     firstOtherButtonIndex(): NSInteger;
-    setFirstOtherButtonIndex(): void;
+    setFirstOtherButtonIndex(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622872-showfromtabbar
     showFromTabBar(view: UITabBar):void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622874-showfromtoolbar
@@ -12478,11 +12646,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622886-showinview
     showInView(view: UIView):void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622869-showfrombarbuttonitem
-    showFromBarButtonItem_animated(item: UIBarButtonItem, animated: BOOL):void;
+    showFromBarButtonItem_animated(item: UIBarButtonItem, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622892-showfromrect
-    showFromRect_inView_animated(rect: CGRect, view: UIView, animated: BOOL):void;
+    showFromRect_inView_animated(rect: CGRect, view: UIView, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiactionsheet/1622888-dismisswithclickedbuttonindex
-    dismissWithClickedButtonIndex_animated(buttonIndex: NSInteger, animated: BOOL):void;
+    dismissWithClickedButtonIndex_animated(buttonIndex: NSInteger, animated: boolean):void;
     //
     alloc():UIActionSheet;
     //
@@ -12524,38 +12692,38 @@ declare namespace cocoascript {
     initWithTitle_message_delegate_cancelButtonTitle_otherButtonTitles(title: string | cocoascript.NSString, message: string | cocoascript.NSString, delegate: UIAlertView, cancelButtonTitle: string | cocoascript.NSString, ...otherButtonTitles: Array<string | cocoascript.NSString>):UIAlertView;
     // https://developer.apple.com/documentation/uikit/uialertview/1620769-delegate
     delegate(): id;
-    setDelegate(): void;
+    setDelegate(value: id): void;
     // https://developer.apple.com/documentation/uikit/uialertview/1620780-alertviewstyle
     alertViewStyle(): UIAlertViewStyle;
-    setAlertViewStyle(): void;
+    setAlertViewStyle(value: UIAlertViewStyle): void;
     // https://developer.apple.com/documentation/uikit/uialertview/1620768-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uialertview/1620758-message
     message(): string | cocoascript.NSString;
-    setMessage(): void;
+    setMessage(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uialertview/1620764-visible
-    visible(): BOOL;
-    setVisible(): void;
+    visible(): boolean;
+    setVisible(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uialertview/1620761-addbuttonwithtitle
     addButtonWithTitle(title: string | cocoascript.NSString):NSInteger;
     // https://developer.apple.com/documentation/uikit/uialertview/1620753-numberofbuttons
     numberOfButtons(): NSInteger;
-    setNumberOfButtons(): void;
+    setNumberOfButtons(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uialertview/1620756-buttontitleatindex
     buttonTitleAtIndex(buttonIndex: NSInteger):NSString;
     // https://developer.apple.com/documentation/uikit/uialertview/1620757-textfieldatindex
     textFieldAtIndex(textFieldIndex: NSInteger):UITextField;
     // https://developer.apple.com/documentation/uikit/uialertview/1620766-cancelbuttonindex
     cancelButtonIndex(): NSInteger;
-    setCancelButtonIndex(): void;
+    setCancelButtonIndex(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uialertview/1620771-firstotherbuttonindex
     firstOtherButtonIndex(): NSInteger;
-    setFirstOtherButtonIndex(): void;
+    setFirstOtherButtonIndex(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uialertview/1620751-show
     show():void;
     // https://developer.apple.com/documentation/uikit/uialertview/1620754-dismisswithclickedbuttonindex
-    dismissWithClickedButtonIndex_animated(buttonIndex: NSInteger, animated: BOOL):void;
+    dismissWithClickedButtonIndex_animated(buttonIndex: NSInteger, animated: boolean):void;
     //
     alloc():UIAlertView;
     //
@@ -12571,25 +12739,25 @@ declare namespace cocoascript {
   interface UIUserNotificationAction extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiusernotificationaction/1615361-identifier
     identifier(): string | cocoascript.NSString;
-    setIdentifier(): void;
+    setIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiusernotificationaction/1615358-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiusernotificationaction/1615329-activationmode
     activationMode(): UIUserNotificationActivationMode;
-    setActivationMode(): void;
+    setActivationMode(value: UIUserNotificationActivationMode): void;
     // https://developer.apple.com/documentation/uikit/uiusernotificationaction/1615381-authenticationrequired
-    authenticationRequired(): BOOL;
-    setAuthenticationRequired(): void;
+    authenticationRequired(): boolean;
+    setAuthenticationRequired(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiusernotificationaction/1615385-destructive
-    destructive(): BOOL;
-    setDestructive(): void;
+    destructive(): boolean;
+    setDestructive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiusernotificationaction/1615399-behavior
     behavior(): UIUserNotificationActionBehavior;
-    setBehavior(): void;
+    setBehavior(value: UIUserNotificationActionBehavior): void;
     // https://developer.apple.com/documentation/uikit/uiusernotificationaction/1615337-parameters
     parameters(): NSDictionary;
-    setParameters(): void;
+    setParameters(value: NSDictionary): void;
     // https://developer.apple.com/documentation/uikit/uiusernotificationaction/1615368-init
     init():UIUserNotificationAction;
     // https://developer.apple.com/documentation/uikit/uiusernotificationaction/1615366-initwithcoder
@@ -12610,37 +12778,37 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620411-initwithsearchbar
     initWithSearchBar_contentsController(searchBar: UISearchBar, viewController: UIViewController):UISearchDisplayController;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620406-active
-    active(): BOOL;
-    setActive(): void;
+    active(): boolean;
+    setActive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620397-setactive
-    setActive_animated(visible: BOOL, animated: BOOL):void;
+    setActive_animated(visible: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620388-delegate
     delegate(): UISearchDisplayDelegate;
-    setDelegate(): void;
+    setDelegate(value: UISearchDisplayDelegate): void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620387-searchbar
     searchBar(): UISearchBar;
-    setSearchBar(): void;
+    setSearchBar(value: UISearchBar): void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620393-searchcontentscontroller
     searchContentsController(): UIViewController;
-    setSearchContentsController(): void;
+    setSearchContentsController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620400-searchresultstableview
     searchResultsTableView(): UITableView;
-    setSearchResultsTableView(): void;
+    setSearchResultsTableView(value: UITableView): void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620390-searchresultsdatasource
     searchResultsDataSource(): UITableViewDataSource;
-    setSearchResultsDataSource(): void;
+    setSearchResultsDataSource(value: UITableViewDataSource): void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620404-searchresultsdelegate
     searchResultsDelegate(): UITableViewDelegate;
-    setSearchResultsDelegate(): void;
+    setSearchResultsDelegate(value: UITableViewDelegate): void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620386-searchresultstitle
     searchResultsTitle(): string | cocoascript.NSString;
-    setSearchResultsTitle(): void;
+    setSearchResultsTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620394-displayssearchbarinnavigationbar
-    displaysSearchBarInNavigationBar(): BOOL;
-    setDisplaysSearchBarInNavigationBar(): void;
+    displaysSearchBarInNavigationBar(): boolean;
+    setDisplaysSearchBarInNavigationBar(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaycontroller/1620408-navigationitem
     navigationItem(): UINavigationItem;
-    setNavigationItem(): void;
+    setNavigationItem(value: UINavigationItem): void;
     //
     alloc():UISearchDisplayController;
     //
@@ -12675,9 +12843,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uisearchdisplaydelegate/1620395-searchdisplaycontroller
     searchDisplayController_didHideSearchResultsTableView(controller: UISearchDisplayController, tableView: UITableView):void;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaydelegate/1620403-searchdisplaycontroller
-    searchDisplayController_shouldReloadTableForSearchString(controller: UISearchDisplayController, searchString: string | cocoascript.NSString):BOOL;
+    searchDisplayController_shouldReloadTableForSearchString(controller: UISearchDisplayController, searchString: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uisearchdisplaydelegate/1620409-searchdisplaycontroller
-    searchDisplayController_shouldReloadTableForSearchScope(controller: UISearchDisplayController, searchOption: NSInteger):BOOL;
+    searchDisplayController_shouldReloadTableForSearchScope(controller: UISearchDisplayController, searchOption: NSInteger):boolean;
   }
 }
 declare namespace cocoascript {
@@ -12689,7 +12857,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uialertviewdelegate/1620752-alertview
     alertView_clickedButtonAtIndex(alertView: UIAlertView, buttonIndex: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uialertviewdelegate/1620774-alertviewshouldenablefirstotherb
-    alertViewShouldEnableFirstOtherButton(alertView: UIAlertView):BOOL;
+    alertViewShouldEnableFirstOtherButton(alertView: UIAlertView):boolean;
     // https://developer.apple.com/documentation/uikit/uialertviewdelegate/1620767-willpresentalertview
     willPresentAlertView(alertView: UIAlertView):void;
     // https://developer.apple.com/documentation/uikit/uialertviewdelegate/1620750-didpresentalertview
@@ -12710,42 +12878,42 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624669-initwithcontentviewcontroller
     initWithContentViewController(viewController: UIViewController):UIPopoverController;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624660-presentpopoverfromrect
-    presentPopoverFromRect_inView_permittedArrowDirections_animated(rect: CGRect, view: UIView, arrowDirections: UIPopoverArrowDirection, animated: BOOL):void;
+    presentPopoverFromRect_inView_permittedArrowDirections_animated(rect: CGRect, view: UIView, arrowDirections: UIPopoverArrowDirection, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624668-presentpopoverfrombarbuttonitem
-    presentPopoverFromBarButtonItem_permittedArrowDirections_animated(item: UIBarButtonItem, arrowDirections: UIPopoverArrowDirection, animated: BOOL):void;
+    presentPopoverFromBarButtonItem_permittedArrowDirections_animated(item: UIBarButtonItem, arrowDirections: UIPopoverArrowDirection, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624662-dismisspopoveranimated
-    dismissPopoverAnimated(animated: BOOL):void;
+    dismissPopoverAnimated(animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624672-contentviewcontroller
     contentViewController(): UIViewController;
-    setContentViewController(): void;
+    setContentViewController(value: UIViewController): void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624655-setcontentviewcontroller
-    setContentViewController_animated(viewController: UIViewController, animated: BOOL):void;
+    setContentViewController_animated(viewController: UIViewController, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624667-popovercontentsize
     popoverContentSize(): CGSize;
-    setPopoverContentSize(): void;
+    setPopoverContentSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624670-setpopovercontentsize
-    setPopoverContentSize_animated(size: CGSize, animated: BOOL):void;
+    setPopoverContentSize_animated(size: CGSize, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624654-passthroughviews
     passthroughViews(): UIView;
-    setPassthroughViews(): void;
+    setPassthroughViews(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624656-popovervisible
-    popoverVisible(): BOOL;
-    setPopoverVisible(): void;
+    popoverVisible(): boolean;
+    setPopoverVisible(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624665-popoverarrowdirection
     popoverArrowDirection(): UIPopoverArrowDirection;
-    setPopoverArrowDirection(): void;
+    setPopoverArrowDirection(value: UIPopoverArrowDirection): void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624666-delegate
     delegate(): UIPopoverControllerDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIPopoverControllerDelegate): void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624657-popoverlayoutmargins
     popoverLayoutMargins(): UIEdgeInsets;
-    setPopoverLayoutMargins(): void;
+    setPopoverLayoutMargins(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624659-popoverbackgroundviewclass
     popoverBackgroundViewClass(): Class;
-    setPopoverBackgroundViewClass(): void;
+    setPopoverBackgroundViewClass(value: Class): void;
     // https://developer.apple.com/documentation/uikit/uipopovercontroller/1624673-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     //
     alloc():UIPopoverController;
     //
@@ -12796,16 +12964,16 @@ declare namespace cocoascript {
   interface UIAcceleration extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiacceleration/1620652-x
     x(): UIAccelerationValue;
-    setX(): void;
+    setX(value: UIAccelerationValue): void;
     // https://developer.apple.com/documentation/uikit/uiacceleration/1620644-y
     y(): UIAccelerationValue;
-    setY(): void;
+    setY(value: UIAccelerationValue): void;
     // https://developer.apple.com/documentation/uikit/uiacceleration/1620643-z
     z(): UIAccelerationValue;
-    setZ(): void;
+    setZ(value: UIAccelerationValue): void;
     // https://developer.apple.com/documentation/uikit/uiacceleration/1620650-timestamp
     timestamp(): NSTimeInterval;
-    setTimestamp(): void;
+    setTimestamp(value: NSTimeInterval): void;
     //
     alloc():UIAcceleration;
     //
@@ -12828,7 +12996,7 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIDocumentMenuViewController;
     // https://developer.apple.com/documentation/uikit/uidocumentmenuviewcontroller/1614192-delegate
     delegate(): UIDocumentMenuDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIDocumentMenuDelegate): void;
     // https://developer.apple.com/documentation/uikit/uidocumentmenuviewcontroller/1614193-addoptionwithtitle
     addOptionWithTitle_image_order_handler(title: string | cocoascript.NSString, image: UIImage, order: UIDocumentMenuOrder, handler: void):void;
     //
@@ -12846,49 +13014,49 @@ declare namespace cocoascript {
   interface UILocalNotification extends NSObject {
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616650-firedate
     fireDate(): NSDate;
-    setFireDate(): void;
+    setFireDate(value: NSDate): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616659-timezone
     timeZone(): NSTimeZone;
-    setTimeZone(): void;
+    setTimeZone(value: NSTimeZone): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616643-repeatinterval
     repeatInterval(): NSCalendarUnit;
-    setRepeatInterval(): void;
+    setRepeatInterval(value: NSCalendarUnit): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616656-repeatcalendar
     repeatCalendar(): NSCalendar;
-    setRepeatCalendar(): void;
+    setRepeatCalendar(value: NSCalendar): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616644-region
     region(): CLRegion;
-    setRegion(): void;
+    setRegion(value: CLRegion): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616654-regiontriggersonce
-    regionTriggersOnce(): BOOL;
-    setRegionTriggersOnce(): void;
+    regionTriggersOnce(): boolean;
+    setRegionTriggersOnce(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616646-alertbody
     alertBody(): string | cocoascript.NSString;
-    setAlertBody(): void;
+    setAlertBody(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616648-alertaction
     alertAction(): string | cocoascript.NSString;
-    setAlertAction(): void;
+    setAlertAction(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616647-alerttitle
     alertTitle(): string | cocoascript.NSString;
-    setAlertTitle(): void;
+    setAlertTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616649-hasaction
-    hasAction(): BOOL;
-    setHasAction(): void;
+    hasAction(): boolean;
+    setHasAction(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616660-alertlaunchimage
     alertLaunchImage(): string | cocoascript.NSString;
-    setAlertLaunchImage(): void;
+    setAlertLaunchImage(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616655-category
     category(): string | cocoascript.NSString;
-    setCategory(): void;
+    setCategory(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616658-applicationiconbadgenumber
     applicationIconBadgeNumber(): NSInteger;
-    setApplicationIconBadgeNumber(): void;
+    setApplicationIconBadgeNumber(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616651-soundname
     soundName(): string | cocoascript.NSString;
-    setSoundName(): void;
+    setSoundName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616657-userinfo
     userInfo(): NSDictionary;
-    setUserInfo(): void;
+    setUserInfo(value: NSDictionary): void;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616645-init
     init():UILocalNotification;
     // https://developer.apple.com/documentation/uikit/uilocalnotification/1616653-initwithcoder
@@ -12908,25 +13076,25 @@ declare namespace cocoascript {
   interface UIMutableUserNotificationAction extends UIUserNotificationAction {
     // https://developer.apple.com/documentation/uikit/uimutableusernotificationaction/1615379-identifier
     identifier(): string | cocoascript.NSString;
-    setIdentifier(): void;
+    setIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uimutableusernotificationaction/1615370-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uimutableusernotificationaction/1615372-activationmode
     activationMode(): UIUserNotificationActivationMode;
-    setActivationMode(): void;
+    setActivationMode(value: UIUserNotificationActivationMode): void;
     // https://developer.apple.com/documentation/uikit/uimutableusernotificationaction/1615389-authenticationrequired
-    authenticationRequired(): BOOL;
-    setAuthenticationRequired(): void;
+    authenticationRequired(): boolean;
+    setAuthenticationRequired(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uimutableusernotificationaction/1615322-destructive
-    destructive(): BOOL;
-    setDestructive(): void;
+    destructive(): boolean;
+    setDestructive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uimutableusernotificationaction/1615395-behavior
     behavior(): UIUserNotificationActionBehavior;
-    setBehavior(): void;
+    setBehavior(value: UIUserNotificationActionBehavior): void;
     // https://developer.apple.com/documentation/uikit/uimutableusernotificationaction/1615354-parameters
     parameters(): NSDictionary;
-    setParameters(): void;
+    setParameters(value: NSDictionary): void;
     //
     alloc():UIMutableUserNotificationAction;
     //
@@ -12942,7 +13110,7 @@ declare namespace cocoascript {
   interface UIMutableUserNotificationCategory extends UIUserNotificationCategory {
     // https://developer.apple.com/documentation/uikit/uimutableusernotificationcategory/1615376-identifier
     identifier(): string | cocoascript.NSString;
-    setIdentifier(): void;
+    setIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uimutableusernotificationcategory/1615397-setactions
     setActions_forContext(actions: UIUserNotificationAction, context: UIUserNotificationActionContext):void;
     //
@@ -12961,7 +13129,7 @@ declare namespace cocoascript {
   interface UIStoryboardPopoverSegue extends UIStoryboardSegue {
     // https://developer.apple.com/documentation/uikit/uistoryboardpopoversegue/1624759-popovercontroller
     popoverController(): UIPopoverController;
-    setPopoverController(): void;
+    setPopoverController(value: UIPopoverController): void;
     //
     alloc():UIStoryboardPopoverSegue;
     //
@@ -12977,7 +13145,7 @@ declare namespace cocoascript {
   interface UIUserNotificationCategory extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiusernotificationcategory/1615383-identifier
     identifier(): string | cocoascript.NSString;
-    setIdentifier(): void;
+    setIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiusernotificationcategory/1615374-actionsforcontext
     actionsForContext(context: UIUserNotificationActionContext):UIUserNotificationAction;
     // https://developer.apple.com/documentation/uikit/uiusernotificationcategory/1615327-init
@@ -13001,10 +13169,10 @@ declare namespace cocoascript {
     settingsForTypes_categories(types: UIUserNotificationType, categories: UIUserNotificationCategory):UIUserNotificationSettings;
     // https://developer.apple.com/documentation/uikit/uiusernotificationsettings/1615321-types
     types(): UIUserNotificationType;
-    setTypes(): void;
+    setTypes(value: UIUserNotificationType): void;
     // https://developer.apple.com/documentation/uikit/uiusernotificationsettings/1615365-categories
     categories(): UIUserNotificationCategory;
-    setCategories(): void;
+    setCategories(value: UIUserNotificationCategory): void;
     //
     alloc():UIUserNotificationSettings;
     //
@@ -13021,16 +13189,16 @@ declare namespace cocoascript {
   interface UIViewControllerPreviewing extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiviewcontrollerpreviewing/1621431-sourcerect
     sourceRect(): CGRect;
-    setSourceRect(): void;
+    setSourceRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollerpreviewing/1621467-previewinggesturerecognizerforfa
     previewingGestureRecognizerForFailureRelationship(): UIGestureRecognizer;
-    setPreviewingGestureRecognizerForFailureRelationship(): void;
+    setPreviewingGestureRecognizerForFailureRelationship(value: UIGestureRecognizer): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollerpreviewing/1621422-delegate
     delegate(): UIViewControllerPreviewingDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIViewControllerPreviewingDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollerpreviewing/1621436-sourceview
     sourceView(): UIView;
-    setSourceView(): void;
+    setSourceView(value: UIView): void;
   }
 }
 declare namespace cocoascript {
@@ -13064,7 +13232,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uipopovercontrollerdelegate/1624664-popovercontroller
     popoverController_willRepositionPopoverToRect_inView(popoverController: UIPopoverController, rect: CGRect, view: UIView):void;
     // https://developer.apple.com/documentation/uikit/uipopovercontrollerdelegate/1624661-popovercontrollershoulddismisspo
-    popoverControllerShouldDismissPopover(popoverController: UIPopoverController):BOOL;
+    popoverControllerShouldDismissPopover(popoverController: UIPopoverController):boolean;
     // https://developer.apple.com/documentation/uikit/uipopovercontrollerdelegate/1624671-popovercontrollerdiddismisspopov
     popoverControllerDidDismissPopover(popoverController: UIPopoverController):void;
   }
@@ -13077,13 +13245,13 @@ declare namespace cocoascript {
   interface UITimingCurveProvider extends NSCoding {
     // https://developer.apple.com/documentation/uikit/uitimingcurveprovider/1648030-timingcurvetype
     timingCurveType(): UITimingCurveType;
-    setTimingCurveType(): void;
+    setTimingCurveType(value: UITimingCurveType): void;
     // https://developer.apple.com/documentation/uikit/uitimingcurveprovider/1648036-cubictimingparameters
     cubicTimingParameters(): UICubicTimingParameters;
-    setCubicTimingParameters(): void;
+    setCubicTimingParameters(value: UICubicTimingParameters): void;
     // https://developer.apple.com/documentation/uikit/uitimingcurveprovider/1648031-springtimingparameters
     springTimingParameters(): UISpringTimingParameters;
-    setSpringTimingParameters(): void;
+    setSpringTimingParameters(value: UISpringTimingParameters): void;
   }
 }
 declare namespace cocoascript {
@@ -13098,10 +13266,10 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UITableView;
     // https://developer.apple.com/documentation/uikit/uitableview/1614955-datasource
     dataSource(): UITableViewDataSource;
-    setDataSource(): void;
+    setDataSource(value: UITableViewDataSource): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1771763-prefetchdatasource
     prefetchDataSource(): UITableViewDataSourcePrefetching;
-    setPrefetchDataSource(): void;
+    setPrefetchDataSource(value: UITableViewDataSourcePrefetching): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614937-registernib
     registerNib_forCellReuseIdentifier(nib: UINib, identifier: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614888-registerclass
@@ -13118,66 +13286,66 @@ declare namespace cocoascript {
     dequeueReusableHeaderFooterViewWithIdentifier(identifier: string | cocoascript.NSString):UITableViewHeaderFooterView;
     // https://developer.apple.com/documentation/uikit/uitableview/1614894-delegate
     delegate(): UITableViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: UITableViewDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614913-style
     style(): UITableViewStyle;
-    setStyle(): void;
+    setStyle(value: UITableViewStyle): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614904-tableheaderview
     tableHeaderView(): UIView;
-    setTableHeaderView(): void;
+    setTableHeaderView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614976-tablefooterview
     tableFooterView(): UIView;
-    setTableFooterView(): void;
+    setTableFooterView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614986-backgroundview
     backgroundView(): UIView;
-    setBackgroundView(): void;
+    setBackgroundView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614852-rowheight
     rowHeight(): CGFloat;
-    setRowHeight(): void;
+    setRowHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614925-estimatedrowheight
     estimatedRowHeight(): CGFloat;
-    setEstimatedRowHeight(): void;
+    setEstimatedRowHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614849-celllayoutmarginsfollowreadablew
-    cellLayoutMarginsFollowReadableWidth(): BOOL;
-    setCellLayoutMarginsFollowReadableWidth(): void;
+    cellLayoutMarginsFollowReadableWidth(): boolean;
+    setCellLayoutMarginsFollowReadableWidth(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/2921665-insetscontentviewstosafearea
-    insetsContentViewsToSafeArea(): BOOL;
-    setInsetsContentViewsToSafeArea(): void;
+    insetsContentViewsToSafeArea(): boolean;
+    setInsetsContentViewsToSafeArea(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614863-sectionheaderheight
     sectionHeaderHeight(): CGFloat;
-    setSectionHeaderHeight(): void;
+    setSectionHeaderHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614846-sectionfooterheight
     sectionFooterHeight(): CGFloat;
-    setSectionFooterHeight(): void;
+    setSectionFooterHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614957-estimatedsectionheaderheight
     estimatedSectionHeaderHeight(): CGFloat;
-    setEstimatedSectionHeaderHeight(): void;
+    setEstimatedSectionHeaderHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614979-estimatedsectionfooterheight
     estimatedSectionFooterHeight(): CGFloat;
-    setEstimatedSectionFooterHeight(): void;
+    setEstimatedSectionFooterHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitableview/3750914-sectionheadertoppadding
     sectionHeaderTopPadding(): CGFloat;
-    setSectionHeaderTopPadding(): void;
+    setSectionHeaderTopPadding(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614909-separatorstyle
     separatorStyle(): UITableViewCellSeparatorStyle;
-    setSeparatorStyle(): void;
+    setSeparatorStyle(value: UITableViewCellSeparatorStyle): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614984-separatorcolor
     separatorColor(): UIColor;
-    setSeparatorColor(): void;
+    setSeparatorColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614865-separatoreffect
     separatorEffect(): UIVisualEffect;
-    setSeparatorEffect(): void;
+    setSeparatorEffect(value: UIVisualEffect): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614851-separatorinset
     separatorInset(): UIEdgeInsets;
-    setSeparatorInset(): void;
+    setSeparatorInset(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uitableview/2887517-separatorinsetreference
     separatorInsetReference(): UITableViewSeparatorInsetReference;
-    setSeparatorInsetReference(): void;
+    setSeparatorInsetReference(value: UITableViewSeparatorInsetReference): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614952-numberofrowsinsection
     numberOfRowsInSection(section: NSInteger):NSInteger;
     // https://developer.apple.com/documentation/uikit/uitableview/1614924-numberofsections
     numberOfSections(): NSInteger;
-    setNumberOfSections(): void;
+    setNumberOfSections(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614983-cellforrowatindexpath
     cellForRowAtIndexPath(indexPath: NSIndexPath):UITableViewCell;
     // https://developer.apple.com/documentation/uikit/uitableview/1614965-headerviewforsection
@@ -13192,35 +13360,35 @@ declare namespace cocoascript {
     indexPathsForRowsInRect(rect: CGRect):NSIndexPath;
     // https://developer.apple.com/documentation/uikit/uitableview/1614896-visiblecells
     visibleCells(): UITableViewCell;
-    setVisibleCells(): void;
+    setVisibleCells(value: UITableViewCell): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614885-indexpathsforvisiblerows
     indexPathsForVisibleRows(): NSIndexPath;
-    setIndexPathsForVisibleRows(): void;
+    setIndexPathsForVisibleRows(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1615000-indexpathforselectedrow
     indexPathForSelectedRow(): NSIndexPath;
-    setIndexPathForSelectedRow(): void;
+    setIndexPathForSelectedRow(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614864-indexpathsforselectedrows
     indexPathsForSelectedRows(): NSIndexPath;
-    setIndexPathsForSelectedRows(): void;
+    setIndexPathsForSelectedRows(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614875-selectrowatindexpath
-    selectRowAtIndexPath_animated_scrollPosition(indexPath: NSIndexPath, animated: BOOL, scrollPosition: UITableViewScrollPosition):void;
+    selectRowAtIndexPath_animated_scrollPosition(indexPath: NSIndexPath, animated: boolean, scrollPosition: UITableViewScrollPosition):void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614989-deselectrowatindexpath
-    deselectRowAtIndexPath_animated(indexPath: NSIndexPath, animated: BOOL):void;
+    deselectRowAtIndexPath_animated(indexPath: NSIndexPath, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614911-allowsselection
-    allowsSelection(): BOOL;
-    setAllowsSelection(): void;
+    allowsSelection(): boolean;
+    setAllowsSelection(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614938-allowsmultipleselection
-    allowsMultipleSelection(): BOOL;
-    setAllowsMultipleSelection(): void;
+    allowsMultipleSelection(): boolean;
+    setAllowsMultipleSelection(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614889-allowsselectionduringediting
-    allowsSelectionDuringEditing(): BOOL;
-    setAllowsSelectionDuringEditing(): void;
+    allowsSelectionDuringEditing(): boolean;
+    setAllowsSelectionDuringEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614944-allowsmultipleselectionduringedi
-    allowsMultipleSelectionDuringEditing(): BOOL;
-    setAllowsMultipleSelectionDuringEditing(): void;
+    allowsMultipleSelectionDuringEditing(): boolean;
+    setAllowsMultipleSelectionDuringEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/3573921-selectionfollowsfocus
-    selectionFollowsFocus(): BOOL;
-    setSelectionFollowsFocus(): void;
+    selectionFollowsFocus(): boolean;
+    setSelectionFollowsFocus(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614879-insertrowsatindexpaths
     insertRowsAtIndexPaths_withRowAnimation(indexPaths: NSIndexPath, animation: UITableViewRowAnimation):void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614960-deleterowsatindexpaths
@@ -13234,26 +13402,26 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitableview/1614940-movesection
     moveSection_toSection(section: NSInteger, newSection: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uitableview/2887515-performbatchupdates
-    performBatchUpdates_completion(updates: void, completion: BOOL):void;
+    performBatchUpdates_completion(updates: void, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614908-beginupdates
     beginUpdates():void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614890-endupdates
     endUpdates():void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614903-sectionindexminimumdisplayrowcou
     sectionIndexMinimumDisplayRowCount(): NSInteger;
-    setSectionIndexMinimumDisplayRowCount(): void;
+    setSectionIndexMinimumDisplayRowCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614915-sectionindexcolor
     sectionIndexColor(): UIColor;
-    setSectionIndexColor(): void;
+    setSectionIndexColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614918-sectionindexbackgroundcolor
     sectionIndexBackgroundColor(): UIColor;
-    setSectionIndexBackgroundColor(): void;
+    setSectionIndexBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614992-sectionindextrackingbackgroundco
     sectionIndexTrackingBackgroundColor(): UIColor;
-    setSectionIndexTrackingBackgroundColor(): void;
+    setSectionIndexTrackingBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitableview/2891097-hasuncommittedupdates
-    hasUncommittedUpdates(): BOOL;
-    setHasUncommittedUpdates(): void;
+    hasUncommittedUpdates(): boolean;
+    setHasUncommittedUpdates(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/3801923-reconfigurerowsatindexpaths
     reconfigureRowsAtIndexPaths(indexPaths: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614862-reloaddata
@@ -13266,28 +13434,28 @@ declare namespace cocoascript {
     reloadSectionIndexTitles():void;
     // https://developer.apple.com/documentation/uikit/uitableview/2897362-dragdelegate
     dragDelegate(): UITableViewDragDelegate;
-    setDragDelegate(): void;
+    setDragDelegate(value: UITableViewDragDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitableview/2897381-hasactivedrag
-    hasActiveDrag(): BOOL;
-    setHasActiveDrag(): void;
+    hasActiveDrag(): boolean;
+    setHasActiveDrag(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/2909064-draginteractionenabled
-    dragInteractionEnabled(): BOOL;
-    setDragInteractionEnabled(): void;
+    dragInteractionEnabled(): boolean;
+    setDragInteractionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/2897372-dropdelegate
     dropDelegate(): UITableViewDropDelegate;
-    setDropDelegate(): void;
+    setDropDelegate(value: UITableViewDropDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitableview/2897323-hasactivedrop
-    hasActiveDrop(): BOOL;
-    setHasActiveDrop(): void;
+    hasActiveDrop(): boolean;
+    setHasActiveDrop(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614997-scrolltorowatindexpath
-    scrollToRowAtIndexPath_atScrollPosition_animated(indexPath: NSIndexPath, scrollPosition: UITableViewScrollPosition, animated: BOOL):void;
+    scrollToRowAtIndexPath_atScrollPosition_animated(indexPath: NSIndexPath, scrollPosition: UITableViewScrollPosition, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614910-scrolltonearestselectedrowatscro
-    scrollToNearestSelectedRowAtScrollPosition_animated(scrollPosition: UITableViewScrollPosition, animated: BOOL):void;
+    scrollToNearestSelectedRowAtScrollPosition_animated(scrollPosition: UITableViewScrollPosition, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614876-setediting
-    setEditing_animated(editing: BOOL, animated: BOOL):void;
+    setEditing_animated(editing: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitableview/1615001-editing
-    editing(): BOOL;
-    setEditing(): void;
+    editing(): boolean;
+    setEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/1614951-rectforsection
     rectForSection(section: NSInteger):CGRect;
     // https://developer.apple.com/documentation/uikit/uitableview/1614974-rectforrowatindexpath
@@ -13297,23 +13465,23 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitableview/1614872-rectforheaderinsection
     rectForHeaderInSection(section: NSInteger):CGRect;
     // https://developer.apple.com/documentation/uikit/uitableview/1614858-rememberslastfocusedindexpath
-    remembersLastFocusedIndexPath(): BOOL;
-    setRemembersLastFocusedIndexPath(): void;
+    remembersLastFocusedIndexPath(): boolean;
+    setRemembersLastFocusedIndexPath(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/3795594-allowsfocus
-    allowsFocus(): BOOL;
-    setAllowsFocus(): void;
+    allowsFocus(): boolean;
+    setAllowsFocus(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/3795595-allowsfocusduringediting
-    allowsFocusDuringEditing(): BOOL;
-    setAllowsFocusDuringEditing(): void;
+    allowsFocusDuringEditing(): boolean;
+    setAllowsFocusDuringEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableview/3867097-contextmenuinteraction
     contextMenuInteraction(): UIContextMenuInteraction;
-    setContextMenuInteraction(): void;
+    setContextMenuInteraction(value: UIContextMenuInteraction): void;
     // https://developer.apple.com/documentation/uikit/uitableview/3801921-fillerrowheight
     fillerRowHeight(): CGFloat;
-    setFillerRowHeight(): void;
+    setFillerRowHeight(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitableview/3801922-prefetchingenabled
-    prefetchingEnabled(): BOOL;
-    setPrefetchingEnabled(): void;
+    prefetchingEnabled(): boolean;
+    setPrefetchingEnabled(value: boolean): void;
     //
     alloc():UITableView;
     //
@@ -13336,13 +13504,13 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UICollectionViewLayout;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617751-collectionview
     collectionView(): UICollectionView;
-    setCollectionView(): void;
+    setCollectionView(value: UICollectionView): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617796-collectionviewcontentsize
     collectionViewContentSize(): CGSize;
-    setCollectionViewContentSize(): void;
+    setCollectionViewContentSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617774-layoutattributesclass
     layoutAttributesClass(): Class;
-    setLayoutAttributesClass(): void;
+    setLayoutAttributesClass(value: Class): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617752-preparelayout
     prepareLayout():void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617769-layoutattributesforelementsinrec
@@ -13391,19 +13559,19 @@ declare namespace cocoascript {
     invalidateLayoutWithContext(context: UICollectionViewLayoutInvalidationContext):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617790-invalidationcontextclass
     invalidationContextClass(): Class;
-    setInvalidationContextClass(): void;
+    setInvalidationContextClass(value: Class): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617781-shouldinvalidatelayoutforboundsc
-    shouldInvalidateLayoutForBoundsChange(newBounds: CGRect):BOOL;
+    shouldInvalidateLayoutForBoundsChange(newBounds: CGRect):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617754-invalidationcontextforboundschan
     invalidationContextForBoundsChange(newBounds: CGRect):UICollectionViewLayoutInvalidationContext;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617746-shouldinvalidatelayoutforpreferr
-    shouldInvalidateLayoutForPreferredLayoutAttributes_withOriginalAttributes(preferredAttributes: UICollectionViewLayoutAttributes, originalAttributes: UICollectionViewLayoutAttributes):BOOL;
+    shouldInvalidateLayoutForPreferredLayoutAttributes_withOriginalAttributes(preferredAttributes: UICollectionViewLayoutAttributes, originalAttributes: UICollectionViewLayoutAttributes):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617767-invalidationcontextforpreferredl
     invalidationContextForPreferredLayoutAttributes_withOriginalAttributes(preferredAttributes: UICollectionViewLayoutAttributes, originalAttributes: UICollectionViewLayoutAttributes):UICollectionViewLayoutInvalidationContext;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617757-invalidationcontextforinteractiv
     invalidationContextForInteractivelyMovingItems_withTargetPosition_previousIndexPaths_previousPosition(targetIndexPaths: NSIndexPath, targetPosition: CGPoint, previousIndexPaths: NSIndexPath, previousPosition: CGPoint):UICollectionViewLayoutInvalidationContext;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617755-invalidationcontextforendinginte
-    invalidationContextForEndingInteractiveMovementOfItemsToFinalIndexPaths_previousIndexPaths_movementCancelled(indexPaths: NSIndexPath, previousIndexPaths: NSIndexPath, movementCancelled: BOOL):UICollectionViewLayoutInvalidationContext;
+    invalidationContextForEndingInteractiveMovementOfItemsToFinalIndexPaths_previousIndexPaths_movementCancelled(indexPaths: NSIndexPath, previousIndexPaths: NSIndexPath, movementCancelled: boolean):UICollectionViewLayoutInvalidationContext;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617761-prepareforanimatedboundschange
     prepareForAnimatedBoundsChange(oldBounds: CGRect):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/1617745-finalizeanimatedboundschange
@@ -13420,10 +13588,10 @@ declare namespace cocoascript {
     registerNib_forDecorationViewOfKind(nib: UINib, elementKind: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/2891100-developmentlayoutdirection
     developmentLayoutDirection(): UIUserInterfaceLayoutDirection;
-    setDevelopmentLayoutDirection(): void;
+    setDevelopmentLayoutDirection(value: UIUserInterfaceLayoutDirection): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayout/2891099-flipshorizontallyinoppositelayou
-    flipsHorizontallyInOppositeLayoutDirection(): BOOL;
-    setFlipsHorizontallyInOppositeLayoutDirection(): void;
+    flipsHorizontallyInOppositeLayoutDirection(): boolean;
+    setFlipsHorizontallyInOppositeLayoutDirection(value: boolean): void;
     //
     alloc():UICollectionViewLayout;
     //
@@ -13440,7 +13608,7 @@ declare namespace cocoascript {
   interface UIRegion extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiregion/1621896-infiniteregion
     infiniteRegion(): UIRegion;
-    setInfiniteRegion(): void;
+    setInfiniteRegion(value: UIRegion): void;
     // https://developer.apple.com/documentation/uikit/uiregion/1621891-initwithsize
     initWithSize(size: CGSize):UIRegion;
     // https://developer.apple.com/documentation/uikit/uiregion/1621889-initwithradius
@@ -13454,7 +13622,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiregion/1621890-regionbyunionwithregion
     regionByUnionWithRegion(region: UIRegion):UIRegion;
     // https://developer.apple.com/documentation/uikit/uiregion/1621893-containspoint
-    containsPoint(point: CGPoint):BOOL;
+    containsPoint(point: CGPoint):boolean;
     //
     alloc():UIRegion;
     //
@@ -13495,96 +13663,96 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UITableViewCell;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623246-reuseidentifier
     reuseIdentifier(): string | cocoascript.NSString;
-    setReuseIdentifier(): void;
+    setReuseIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623223-prepareforreuse
     prepareForReuse():void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/3600586-backgroundconfiguration
     backgroundConfiguration(): UIBackgroundConfiguration;
-    setBackgroundConfiguration(): void;
+    setBackgroundConfiguration(value: UIBackgroundConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/3600584-automaticallyupdatesbackgroundco
-    automaticallyUpdatesBackgroundConfiguration(): BOOL;
-    setAutomaticallyUpdatesBackgroundConfiguration(): void;
+    automaticallyUpdatesBackgroundConfiguration(): boolean;
+    setAutomaticallyUpdatesBackgroundConfiguration(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623260-backgroundview
     backgroundView(): UIView;
-    setBackgroundView(): void;
+    setBackgroundView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623226-selectedbackgroundview
     selectedBackgroundView(): UIView;
-    setSelectedBackgroundView(): void;
+    setSelectedBackgroundView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623275-multipleselectionbackgroundview
     multipleSelectionBackgroundView(): UIView;
-    setMultipleSelectionBackgroundView(): void;
+    setMultipleSelectionBackgroundView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/3600589-defaultcontentconfiguration
     defaultContentConfiguration():UIListContentConfiguration;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/3600588-contentconfiguration
     contentConfiguration(): UIContentConfiguration;
-    setContentConfiguration(): void;
+    setContentConfiguration(value: UIContentConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/3600585-automaticallyupdatescontentconfi
-    automaticallyUpdatesContentConfiguration(): BOOL;
-    setAutomaticallyUpdatesContentConfiguration(): void;
+    automaticallyUpdatesContentConfiguration(): boolean;
+    setAutomaticallyUpdatesContentConfiguration(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623229-contentview
     contentView(): UIView;
-    setContentView(): void;
+    setContentView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623210-textlabel
     textLabel(): UILabel;
-    setTextLabel(): void;
+    setTextLabel(value: UILabel): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623273-detailtextlabel
     detailTextLabel(): UILabel;
-    setDetailTextLabel(): void;
+    setDetailTextLabel(value: UILabel): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623270-imageview
     imageView(): UIImageView;
-    setImageView(): void;
+    setImageView(value: UIImageView): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/3600587-configurationstate
     configurationState(): UICellConfigurationState;
-    setConfigurationState(): void;
+    setConfigurationState(value: UICellConfigurationState): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/3600590-setneedsupdateconfiguration
     setNeedsUpdateConfiguration():void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/3600591-updateconfigurationusingstate
     updateConfigurationUsingState(state: UICellConfigurationState):void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/3750915-configurationupdatehandler
     configurationUpdateHandler(): UITableViewCellConfigurationUpdateHandler;
-    setConfigurationUpdateHandler(): void;
+    setConfigurationUpdateHandler(value: UITableViewCellConfigurationUpdateHandler): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623228-accessorytype
     accessoryType(): UITableViewCellAccessoryType;
-    setAccessoryType(): void;
+    setAccessoryType(value: UITableViewCellAccessoryType): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623219-accessoryview
     accessoryView(): UIView;
-    setAccessoryView(): void;
+    setAccessoryView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623266-editingaccessorytype
     editingAccessoryType(): UITableViewCellAccessoryType;
-    setEditingAccessoryType(): void;
+    setEditingAccessoryType(value: UITableViewCellAccessoryType): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623264-editingaccessoryview
     editingAccessoryView(): UIView;
-    setEditingAccessoryView(): void;
+    setEditingAccessoryView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623221-selectionstyle
     selectionStyle(): UITableViewCellSelectionStyle;
-    setSelectionStyle(): void;
+    setSelectionStyle(value: UITableViewCellSelectionStyle): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623263-selected
-    selected(): BOOL;
-    setSelected(): void;
+    selected(): boolean;
+    setSelected(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623255-setselected
-    setSelected_animated(selected: BOOL, animated: BOOL):void;
+    setSelected_animated(selected: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623241-highlighted
-    highlighted(): BOOL;
-    setHighlighted(): void;
+    highlighted(): boolean;
+    setHighlighted(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623280-sethighlighted
-    setHighlighted_animated(highlighted: BOOL, animated: BOOL):void;
+    setHighlighted_animated(highlighted: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623268-editing
-    editing(): BOOL;
-    setEditing(): void;
+    editing(): boolean;
+    setEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623222-setediting
-    setEditing_animated(editing: BOOL, animated: BOOL):void;
+    setEditing_animated(editing: boolean, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623234-editingstyle
     editingStyle(): UITableViewCellEditingStyle;
-    setEditingStyle(): void;
+    setEditingStyle(value: UITableViewCellEditingStyle): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623211-showingdeleteconfirmation
-    showingDeleteConfirmation(): BOOL;
-    setShowingDeleteConfirmation(): void;
+    showingDeleteConfirmation(): boolean;
+    setShowingDeleteConfirmation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623243-showsreordercontrol
-    showsReorderControl(): BOOL;
-    setShowsReorderControl(): void;
+    showsReorderControl(): boolean;
+    setShowsReorderControl(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/2897414-userinteractionenabledwhiledragg
-    userInteractionEnabledWhileDragging(): BOOL;
-    setUserInteractionEnabledWhileDragging(): void;
+    userInteractionEnabledWhileDragging(): boolean;
+    setUserInteractionEnabledWhileDragging(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/2897452-dragstatedidchange
     dragStateDidChange(dragState: UITableViewCellDragState):void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623240-willtransitiontostate
@@ -13593,57 +13761,57 @@ declare namespace cocoascript {
     didTransitionToState(state: UITableViewCellStateMask):void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623252-indentationlevel
     indentationLevel(): NSInteger;
-    setIndentationLevel(): void;
+    setIndentationLevel(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623247-indentationwidth
     indentationWidth(): CGFloat;
-    setIndentationWidth(): void;
+    setIndentationWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623214-shouldindentwhileediting
-    shouldIndentWhileEditing(): BOOL;
-    setShouldIndentWhileEditing(): void;
+    shouldIndentWhileEditing(): boolean;
+    setShouldIndentWhileEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623250-separatorinset
     separatorInset(): UIEdgeInsets;
-    setSeparatorInset(): void;
+    setSeparatorInset(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623248-focusstyle
     focusStyle(): UITableViewCellFocusStyle;
-    setFocusStyle(): void;
+    setFocusStyle(value: UITableViewCellFocusStyle): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623218-initwithframe
     initWithFrame_reuseIdentifier(frame: CGRect, reuseIdentifier: string | cocoascript.NSString):UITableViewCell;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623237-text
     text(): string | cocoascript.NSString;
-    setText(): void;
+    setText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623236-font
     font(): UIFont;
-    setFont(): void;
+    setFont(value: UIFont): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623284-textalignment
     textAlignment(): NSTextAlignment;
-    setTextAlignment(): void;
+    setTextAlignment(value: NSTextAlignment): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623235-textcolor
     textColor(): UIColor;
-    setTextColor(): void;
+    setTextColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623251-selectedtextcolor
     selectedTextColor(): UIColor;
-    setSelectedTextColor(): void;
+    setSelectedTextColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623259-linebreakmode
     lineBreakMode(): NSLineBreakMode;
-    setLineBreakMode(): void;
+    setLineBreakMode(value: NSLineBreakMode): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623213-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623215-selectedimage
     selectedImage(): UIImage;
-    setSelectedImage(): void;
+    setSelectedImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623230-hidesaccessorywhenediting
-    hidesAccessoryWhenEditing(): BOOL;
-    setHidesAccessoryWhenEditing(): void;
+    hidesAccessoryWhenEditing(): boolean;
+    setHidesAccessoryWhenEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623272-target
     target(): id;
-    setTarget(): void;
+    setTarget(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623206-editaction
     editAction(): SEL;
-    setEditAction(): void;
+    setEditAction(value: SEL): void;
     // https://developer.apple.com/documentation/uikit/uitableviewcell/1623249-accessoryaction
     accessoryAction(): SEL;
-    setAccessoryAction(): void;
+    setAccessoryAction(value: SEL): void;
     //
     alloc():UITableViewCell;
     //
@@ -13662,6 +13830,95 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uibuttonconfiguration
    */
   interface UIButtonConfiguration extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750793-plainbuttonconfiguration
+    plainButtonConfiguration():UIButtonConfiguration;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750786-filledbuttonconfiguration
+    filledButtonConfiguration():UIButtonConfiguration;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750787-graybuttonconfiguration
+    grayButtonConfiguration():UIButtonConfiguration;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750798-tintedbuttonconfiguration
+    tintedButtonConfiguration():UIButtonConfiguration;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750803-updatedconfigurationforbutton
+    updatedConfigurationForButton(button: UIButton):UIButtonConfiguration;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750799-title
+    title(): string | cocoascript.NSString;
+    setTitle(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750796-subtitle
+    subtitle(): string | cocoascript.NSString;
+    setSubtitle(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750779-attributedtitle
+    attributedTitle(): NSAttributedString;
+    setAttributedTitle(value: NSAttributedString): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750778-attributedsubtitle
+    attributedSubtitle(): NSAttributedString;
+    setAttributedSubtitle(value: NSAttributedString): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750802-titletextattributestransformer
+    titleTextAttributesTransformer(): UIConfigurationTextAttributesTransformer;
+    setTitleTextAttributesTransformer(value: UIConfigurationTextAttributesTransformer): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750797-subtitletextattributestransforme
+    subtitleTextAttributesTransformer(): UIConfigurationTextAttributesTransformer;
+    setSubtitleTextAttributesTransformer(value: UIConfigurationTextAttributesTransformer): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750801-titlepadding
+    titlePadding(): CGFloat;
+    setTitlePadding(value: CGFloat): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750800-titlealignment
+    titleAlignment(): UIButtonConfigurationTitleAlignment;
+    setTitleAlignment(value: UIButtonConfigurationTitleAlignment): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750788-image
+    image(): UIImage;
+    setImage(value: UIImage): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750790-imagepadding
+    imagePadding(): CGFloat;
+    setImagePadding(value: CGFloat): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750795-showsactivityindicator
+    showsActivityIndicator(): boolean;
+    setShowsActivityIndicator(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750791-imageplacement
+    imagePlacement(): NSDirectionalRectEdge;
+    setImagePlacement(value: NSDirectionalRectEdge): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750789-imagecolortransformer
+    imageColorTransformer(): UIConfigurationColorTransformer;
+    setImageColorTransformer(value: UIConfigurationColorTransformer): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750794-preferredsymbolconfigurationfori
+    preferredSymbolConfigurationForImage(): UIImageSymbolConfiguration;
+    setPreferredSymbolConfigurationForImage(value: UIImageSymbolConfiguration): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750783-buttonsize
+    buttonSize(): UIButtonConfigurationSize;
+    setButtonSize(value: UIButtonConfigurationSize): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750784-contentinsets
+    contentInsets(): NSDirectionalEdgeInsets;
+    setContentInsets(value: NSDirectionalEdgeInsets): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750781-basebackgroundcolor
+    baseBackgroundColor(): UIColor;
+    setBaseBackgroundColor(value: UIColor): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750782-baseforegroundcolor
+    baseForegroundColor(): UIColor;
+    setBaseForegroundColor(value: UIColor): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750780-background
+    background(): UIBackgroundConfiguration;
+    setBackground(value: UIBackgroundConfiguration): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750785-cornerstyle
+    cornerStyle(): UIButtonConfigurationCornerStyle;
+    setCornerStyle(value: UIButtonConfigurationCornerStyle): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3750792-macidiomstyle
+    macIdiomStyle(): UIButtonConfigurationMacIdiomStyle;
+    setMacIdiomStyle(value: UIButtonConfigurationMacIdiomStyle): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3867087-activityindicatorcolortransforme
+    activityIndicatorColorTransformer(): UIConfigurationColorTransformer;
+    setActivityIndicatorColorTransformer(value: UIConfigurationColorTransformer): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3867088-automaticallyupdateforselection
+    automaticallyUpdateForSelection(): boolean;
+    setAutomaticallyUpdateForSelection(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3867093-setdefaultcontentinsets
+    setDefaultContentInsets():void;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3867089-borderedbuttonconfiguration
+    borderedButtonConfiguration():UIButtonConfiguration;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3867090-borderedprominentbuttonconfigura
+    borderedProminentButtonConfiguration():UIButtonConfiguration;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3867091-borderedtintedbuttonconfiguratio
+    borderedTintedButtonConfiguration():UIButtonConfiguration;
+    // https://developer.apple.com/documentation/uikit/uibuttonconfiguration/3867092-borderlessbuttonconfiguration
+    borderlessButtonConfiguration():UIButtonConfiguration;
     //
     alloc():UIButtonConfiguration;
     //
@@ -13717,9 +13974,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614871-tableview
     tableView_commitEditingStyle_forRowAtIndexPath(tableView: UITableView, editingStyle: UITableViewCellEditingStyle, indexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614900-tableview
-    tableView_canEditRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):BOOL;
+    tableView_canEditRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614927-tableview
-    tableView_canMoveRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):BOOL;
+    tableView_canMoveRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614867-tableview
     tableView_moveRowAtIndexPath_toIndexPath(tableView: UITableView, sourceIndexPath: NSIndexPath, destinationIndexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614857-sectionindextitlesfortableview
@@ -13752,15 +14009,23 @@ declare namespace cocoascript {
     itemIdentifierForIndexPath(indexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3182932-indexpathforitemidentifier
     indexPathForItemIdentifier(identifier: any):NSIndexPath;
+    // https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3801898-sectionidentifierforindex
+    sectionIdentifierForIndex(index: NSInteger):void;
+    // https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3801897-indexforsectionidentifier
+    indexForSectionIdentifier(identifier: any):NSInteger;
     // https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3182935-snapshot
     snapshot():NSDiffableDataSourceSnapshot;
     // https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3182930-applysnapshot
-    applySnapshot_animatingDifferences(snapshot: any, animatingDifferences: BOOL):void;
+    applySnapshot_animatingDifferences(snapshot: any, animatingDifferences: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3356326-applysnapshot
-    applySnapshot_animatingDifferences_completion(snapshot: any, animatingDifferences: BOOL, completion: void):void;
+    applySnapshot_animatingDifferences_completion(snapshot: any, animatingDifferences: boolean, completion: void):void;
+    // https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3801895-applysnapshotusingreloaddata
+    applySnapshotUsingReloadData(snapshot: any):void;
+    // https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3801896-applysnapshotusingreloaddata
+    applySnapshotUsingReloadData_completion(snapshot: any, completion: void):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3182931-defaultrowanimation
     defaultRowAnimation(): UITableViewRowAnimation;
-    setDefaultRowAnimation(): void;
+    setDefaultRowAnimation(value: UITableViewRowAnimation): void;
     //
     alloc():UITableViewDiffableDataSource;
     //
@@ -13783,10 +14048,10 @@ declare namespace cocoascript {
     sortedArrayFromArray_collationStringSelector(array: NSArray, selector: SEL):NSArray;
     // https://developer.apple.com/documentation/uikit/uilocalizedindexedcollation/1620379-sectiontitles
     sectionTitles(): string | cocoascript.NSString;
-    setSectionTitles(): void;
+    setSectionTitles(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilocalizedindexedcollation/1620383-sectionindextitles
     sectionIndexTitles(): string | cocoascript.NSString;
-    setSectionIndexTitles(): void;
+    setSectionIndexTitles(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilocalizedindexedcollation/1620380-sectionforsectionindextitleatind
     sectionForSectionIndexTitleAtIndex(indexTitleIndex: NSInteger):NSInteger;
     //
@@ -13827,13 +14092,13 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UICommandAlternate;
     // https://developer.apple.com/documentation/uikit/uicommandalternate/3175318-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uicommandalternate/3175314-action
     action(): SEL;
-    setAction(): void;
+    setAction(value: SEL): void;
     // https://developer.apple.com/documentation/uikit/uicommandalternate/3175317-modifierflags
     modifierFlags(): UIKeyModifierFlags;
-    setModifierFlags(): void;
+    setModifierFlags(value: UIKeyModifierFlags): void;
     //
     alloc():UICommandAlternate;
     //
@@ -13995,13 +14260,13 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uisearchbardelegate/1624299-searchbar
     searchBar_textDidChange(searchBar: UISearchBar, searchText: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uisearchbardelegate/1624328-searchbar
-    searchBar_shouldChangeTextInRange_replacementText(searchBar: UISearchBar, range: NSRange, text: string | cocoascript.NSString):BOOL;
+    searchBar_shouldChangeTextInRange_replacementText(searchBar: UISearchBar, range: NSRange, text: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uisearchbardelegate/1624306-searchbarshouldbeginediting
-    searchBarShouldBeginEditing(searchBar: UISearchBar):BOOL;
+    searchBarShouldBeginEditing(searchBar: UISearchBar):boolean;
     // https://developer.apple.com/documentation/uikit/uisearchbardelegate/1624303-searchbartextdidbeginediting
     searchBarTextDidBeginEditing(searchBar: UISearchBar):void;
     // https://developer.apple.com/documentation/uikit/uisearchbardelegate/1624329-searchbarshouldendediting
-    searchBarShouldEndEditing(searchBar: UISearchBar):BOOL;
+    searchBarShouldEndEditing(searchBar: UISearchBar):boolean;
     // https://developer.apple.com/documentation/uikit/uisearchbardelegate/1624301-searchbartextdidendediting
     searchBarTextDidEndEditing(searchBar: UISearchBar):void;
     // https://developer.apple.com/documentation/uikit/uisearchbardelegate/1624312-searchbarbookmarkbuttonclicked
@@ -14067,21 +14332,21 @@ declare namespace cocoascript {
    */
   interface UITextFieldDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619601-textfieldshouldbeginediting
-    textFieldShouldBeginEditing(textField: UITextField):BOOL;
+    textFieldShouldBeginEditing(textField: UITextField):boolean;
     // https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619590-textfielddidbeginediting
     textFieldDidBeginEditing(textField: UITextField):void;
     // https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619592-textfieldshouldendediting
-    textFieldShouldEndEditing(textField: UITextField):BOOL;
+    textFieldShouldEndEditing(textField: UITextField):boolean;
     // https://developer.apple.com/documentation/uikit/uitextfielddelegate/2352220-textfielddidendediting
     textFieldDidEndEditing_reason(textField: UITextField, reason: UITextFieldDidEndEditingReason):void;
     // https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619591-textfielddidendediting
     textFieldDidEndEditing(textField: UITextField):void;
     // https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619599-textfield
-    textField_shouldChangeCharactersInRange_replacementString(textField: UITextField, range: NSRange, string: string | cocoascript.NSString):BOOL;
+    textField_shouldChangeCharactersInRange_replacementString(textField: UITextField, range: NSRange, string: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619594-textfieldshouldclear
-    textFieldShouldClear(textField: UITextField):BOOL;
+    textFieldShouldClear(textField: UITextField):boolean;
     // https://developer.apple.com/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn
-    textFieldShouldReturn(textField: UITextField):BOOL;
+    textFieldShouldReturn(textField: UITextField):boolean;
     // https://developer.apple.com/documentation/uikit/uitextfielddelegate/3114542-textfielddidchangeselection
     textFieldDidChangeSelection(textField: UITextField):void;
   }
@@ -14093,8 +14358,8 @@ declare namespace cocoascript {
    */
   interface UIContentSizeCategoryAdjusting extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicontentsizecategoryadjusting/1771731-adjustsfontforcontentsizecategor
-    adjustsFontForContentSizeCategory(): BOOL;
-    setAdjustsFontForContentSizeCategory(): void;
+    adjustsFontForContentSizeCategory(): boolean;
+    setAdjustsFontForContentSizeCategory(value: boolean): void;
   }
 }
 declare namespace cocoascript {
@@ -14132,27 +14397,27 @@ declare namespace cocoascript {
    */
   interface UITextViewDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1618608-textviewshouldbeginediting
-    textViewShouldBeginEditing(textView: UITextView):BOOL;
+    textViewShouldBeginEditing(textView: UITextView):boolean;
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1618610-textviewdidbeginediting
     textViewDidBeginEditing(textView: UITextView):void;
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1618603-textviewshouldendediting
-    textViewShouldEndEditing(textView: UITextView):BOOL;
+    textViewShouldEndEditing(textView: UITextView):boolean;
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1618628-textviewdidendediting
     textViewDidEndEditing(textView: UITextView):void;
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1618630-textview
-    textView_shouldChangeTextInRange_replacementText(textView: UITextView, range: NSRange, text: string | cocoascript.NSString):BOOL;
+    textView_shouldChangeTextInRange_replacementText(textView: UITextView, range: NSRange, text: string | cocoascript.NSString):boolean;
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1618599-textviewdidchange
     textViewDidChange(textView: UITextView):void;
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1618620-textviewdidchangeselection
     textViewDidChangeSelection(textView: UITextView):void;
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1649336-textview
-    textView_shouldInteractWithTextAttachment_inRange_interaction(textView: UITextView, textAttachment: NSTextAttachment, characterRange: NSRange, interaction: UITextItemInteraction):BOOL;
+    textView_shouldInteractWithTextAttachment_inRange_interaction(textView: UITextView, textAttachment: NSTextAttachment, characterRange: NSRange, interaction: UITextItemInteraction):boolean;
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1649337-textview
-    textView_shouldInteractWithURL_inRange_interaction(textView: UITextView, URL: NSURL, characterRange: NSRange, interaction: UITextItemInteraction):BOOL;
+    textView_shouldInteractWithURL_inRange_interaction(textView: UITextView, URL: NSURL, characterRange: NSRange, interaction: UITextItemInteraction):boolean;
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1618621-textview
-    textView_shouldInteractWithTextAttachment_inRange(textView: UITextView, textAttachment: NSTextAttachment, characterRange: NSRange):BOOL;
+    textView_shouldInteractWithTextAttachment_inRange(textView: UITextView, textAttachment: NSTextAttachment, characterRange: NSRange):boolean;
     // https://developer.apple.com/documentation/uikit/uitextviewdelegate/1618606-textview
-    textView_shouldInteractWithURL_inRange(textView: UITextView, URL: NSURL, characterRange: NSRange):BOOL;
+    textView_shouldInteractWithURL_inRange(textView: UITextView, URL: NSURL, characterRange: NSRange):boolean;
   }
 }
 declare namespace cocoascript {
@@ -14199,28 +14464,28 @@ declare namespace cocoascript {
     continueAnimationWithTimingParameters_durationFactor(parameters: UITimingCurveProvider, durationFactor: CGFloat):void;
     // https://developer.apple.com/documentation/uikit/uiviewpropertyanimator/1648375-duration
     duration(): NSTimeInterval;
-    setDuration(): void;
+    setDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uiviewpropertyanimator/2097549-delay
     delay(): NSTimeInterval;
-    setDelay(): void;
+    setDelay(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uiviewpropertyanimator/1648363-timingparameters
     timingParameters(): UITimingCurveProvider;
-    setTimingParameters(): void;
+    setTimingParameters(value: UITimingCurveProvider): void;
     // https://developer.apple.com/documentation/uikit/uiviewpropertyanimator/1648372-interruptible
-    interruptible(): BOOL;
-    setInterruptible(): void;
+    interruptible(): boolean;
+    setInterruptible(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewpropertyanimator/1648365-userinteractionenabled
-    userInteractionEnabled(): BOOL;
-    setUserInteractionEnabled(): void;
+    userInteractionEnabled(): boolean;
+    setUserInteractionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewpropertyanimator/2097548-manualhittestingenabled
-    manualHitTestingEnabled(): BOOL;
-    setManualHitTestingEnabled(): void;
+    manualHitTestingEnabled(): boolean;
+    setManualHitTestingEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewpropertyanimator/2873966-scrubslinearly
-    scrubsLinearly(): BOOL;
-    setScrubsLinearly(): void;
+    scrubsLinearly(): boolean;
+    setScrubsLinearly(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewpropertyanimator/2909004-pausesoncompletion
-    pausesOnCompletion(): BOOL;
-    setPausesOnCompletion(): void;
+    pausesOnCompletion(): boolean;
+    setPausesOnCompletion(value: boolean): void;
     //
     alloc():UIViewPropertyAnimator;
     //
@@ -14237,19 +14502,19 @@ declare namespace cocoascript {
   interface UIDynamicItem extends NSObject {
     // https://developer.apple.com/documentation/uikit/uidynamicitem/1618495-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitem/1618491-center
     center(): CGPoint;
-    setCenter(): void;
+    setCenter(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitem/1618483-transform
     transform(): CGAffineTransform;
-    setTransform(): void;
+    setTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitem/1618493-collisionboundstype
     collisionBoundsType(): UIDynamicItemCollisionBoundsType;
-    setCollisionBoundsType(): void;
+    setCollisionBoundsType(value: UIDynamicItemCollisionBoundsType): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitem/1618494-collisionboundingpath
     collisionBoundingPath(): UIBezierPath;
-    setCollisionBoundingPath(): void;
+    setCollisionBoundingPath(value: UIBezierPath): void;
   }
 }
 declare namespace cocoascript {
@@ -14306,34 +14571,40 @@ declare namespace cocoascript {
   interface UIWindowScene extends UIScene {
     // https://developer.apple.com/documentation/uikit/uiwindowscene/3198091-windows
     windows(): UIWindow;
-    setWindows(): void;
+    setWindows(value: UIWindow): void;
+    // https://developer.apple.com/documentation/uikit/uiwindowscene/3750932-keywindow
+    keyWindow(): UIWindow;
+    setKeyWindow(value: UIWindow): void;
     // https://developer.apple.com/documentation/uikit/uiwindowscene/3198089-screen
     screen(): UIScreen;
-    setScreen(): void;
+    setScreen(value: UIScreen): void;
     // https://developer.apple.com/documentation/uikit/uiwindowscene/3198090-traitcollection
     traitCollection(): UITraitCollection;
-    setTraitCollection(): void;
+    setTraitCollection(value: UITraitCollection): void;
     // https://developer.apple.com/documentation/uikit/uiwindowscene/3198087-coordinatespace
     coordinateSpace(): UICoordinateSpace;
-    setCoordinateSpace(): void;
+    setCoordinateSpace(value: UICoordinateSpace): void;
     // https://developer.apple.com/documentation/uikit/uiwindowscene/3198088-interfaceorientation
     interfaceOrientation(): UIInterfaceOrientation;
-    setInterfaceOrientation(): void;
+    setInterfaceOrientation(value: UIInterfaceOrientation): void;
     // https://developer.apple.com/documentation/uikit/uiwindowscene/3368166-sizerestrictions
     sizeRestrictions(): UISceneSizeRestrictions;
-    setSizeRestrictions(): void;
+    setSizeRestrictions(value: UISceneSizeRestrictions): void;
     // https://developer.apple.com/documentation/uikit/uiwindowscene/3213938-screenshotservice
     screenshotService(): UIScreenshotService;
-    setScreenshotService(): void;
+    setScreenshotService(value: UIScreenshotService): void;
     // https://developer.apple.com/documentation/uikit/uiwindowscene/3213943-statusbarmanager
     statusBarManager(): UIStatusBarManager;
-    setStatusBarManager(): void;
+    setStatusBarManager(value: UIStatusBarManager): void;
     // https://developer.apple.com/documentation/uikit/uiwindowscene/3375831-titlebar
     titlebar(): UITitlebar;
-    setTitlebar(): void;
+    setTitlebar(value: UITitlebar): void;
     // https://developer.apple.com/documentation/uikit/uiwindowscene/3780514-activityitemsconfigurationsource
     activityItemsConfigurationSource(): UIActivityItemsConfigurationProviding;
-    setActivityItemsConfigurationSource(): void;
+    setActivityItemsConfigurationSource(value: UIActivityItemsConfigurationProviding): void;
+    // https://developer.apple.com/documentation/uikit/uiwindowscene/3795593-focussystem
+    focusSystem(): UIFocusSystem;
+    setFocusSystem(value: UIFocusSystem): void;
     //
     alloc():UIWindowScene;
     //
@@ -14350,22 +14621,22 @@ declare namespace cocoascript {
   interface UITitlebar extends NSObject {
     // https://developer.apple.com/documentation/uikit/uititlebar/3664137-separatorstyle
     separatorStyle(): UITitlebarSeparatorStyle;
-    setSeparatorStyle(): void;
+    setSeparatorStyle(value: UITitlebarSeparatorStyle): void;
     // https://developer.apple.com/documentation/uikit/uititlebar/3375824-titlevisibility
     titleVisibility(): UITitlebarTitleVisibility;
-    setTitleVisibility(): void;
+    setTitleVisibility(value: UITitlebarTitleVisibility): void;
     // https://developer.apple.com/documentation/uikit/uititlebar/3375823-representedurl
     representedURL(): NSURL;
-    setRepresentedURL(): void;
+    setRepresentedURL(value: NSURL): void;
     // https://developer.apple.com/documentation/uikit/uititlebar/3375825-toolbar
     toolbar(): NSToolbar;
-    setToolbar(): void;
+    setToolbar(value: NSToolbar): void;
     // https://developer.apple.com/documentation/uikit/uititlebar/3604076-toolbarstyle
     toolbarStyle(): UITitlebarToolbarStyle;
-    setToolbarStyle(): void;
+    setToolbarStyle(value: UITitlebarToolbarStyle): void;
     // https://developer.apple.com/documentation/uikit/uititlebar/3375822-autohidestoolbarinfullscreen
-    autoHidesToolbarInFullScreen(): BOOL;
-    setAutoHidesToolbarInFullScreen(): void;
+    autoHidesToolbarInFullScreen(): boolean;
+    setAutoHidesToolbarInFullScreen(value: boolean): void;
     //
     alloc():UITitlebar;
     //
@@ -14420,7 +14691,7 @@ declare namespace cocoascript {
     configurationWithIdentifier_previewProvider_actionProvider(identifier: NSCopying, previewProvider: UIContextMenuContentPreviewProvider, actionProvider: UIContextMenuActionProvider):UIContextMenuConfiguration;
     // https://developer.apple.com/documentation/uikit/uicontextmenuconfiguration/3295923-identifier
     identifier(): NSCopying;
-    setIdentifier(): void;
+    setIdentifier(value: NSCopying): void;
     //
     alloc():UIContextMenuConfiguration;
     //
@@ -14437,7 +14708,7 @@ declare namespace cocoascript {
   interface UIContextMenuInteractionCommitAnimating extends UIContextMenuInteractionAnimating {
     // https://developer.apple.com/documentation/uikit/uicontextmenuinteractioncommitanimating/3295931-preferredcommitstyle
     preferredCommitStyle(): UIContextMenuInteractionCommitStyle;
-    setPreferredCommitStyle(): void;
+    setPreferredCommitStyle(value: UIContextMenuInteractionCommitStyle): void;
   }
 }
 declare namespace cocoascript {
@@ -14452,7 +14723,7 @@ declare namespace cocoascript {
     addCompletion(completion: void):void;
     // https://developer.apple.com/documentation/uikit/uicontextmenuinteractionanimating/3375804-previewviewcontroller
     previewViewController(): UIViewController;
-    setPreviewViewController(): void;
+    setPreviewViewController(value: UIViewController): void;
   }
 }
 declare namespace cocoascript {
@@ -14471,10 +14742,10 @@ declare namespace cocoascript {
   interface UISceneActivationRequestOptions extends NSObject {
     // https://developer.apple.com/documentation/uikit/uisceneactivationrequestoptions/3197937-requestingscene
     requestingScene(): UIScene;
-    setRequestingScene(): void;
+    setRequestingScene(value: UIScene): void;
     // https://developer.apple.com/documentation/uikit/uisceneactivationrequestoptions/3623235-collectionjoinbehavior
     collectionJoinBehavior(): UISceneCollectionJoinBehavior;
-    setCollectionJoinBehavior(): void;
+    setCollectionJoinBehavior(value: UISceneCollectionJoinBehavior): void;
     //
     alloc():UISceneActivationRequestOptions;
     //
@@ -14578,6 +14849,8 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uiwindowsceneactivationinteraction
    */
   interface UIWindowSceneActivationInteraction extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uiwindowsceneactivationinteraction/3752232-initwithconfigurationprovider
+    initWithConfigurationProvider_errorHandler(configurationProvider: UIWindowSceneActivationInteractionConfigurationProvider, errorHandler: NSError):UIWindowSceneActivationInteraction;
     //
     alloc():UIWindowSceneActivationInteraction;
     //
@@ -14621,7 +14894,7 @@ declare namespace cocoascript {
    */
   interface UIWebViewDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiwebviewdelegate/1617945-webview
-    webView_shouldStartLoadWithRequest_navigationType(webView: UIWebView, request: NSURLRequest, navigationType: UIWebViewNavigationType):BOOL;
+    webView_shouldStartLoadWithRequest_navigationType(webView: UIWebView, request: NSURLRequest, navigationType: UIWebViewNavigationType):boolean;
     // https://developer.apple.com/documentation/uikit/uiwebviewdelegate/1617947-webviewdidstartload
     webViewDidStartLoad(webView: UIWebView):void;
     // https://developer.apple.com/documentation/uikit/uiwebviewdelegate/1617969-webviewdidfinishload
@@ -14637,7 +14910,7 @@ declare namespace cocoascript {
    */
   interface UITableViewDropDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitableviewdropdelegate/2897434-tableview
-    tableView_canHandleDropSession(tableView: UITableView, session: UIDropSession):BOOL;
+    tableView_canHandleDropSession(tableView: UITableView, session: UIDropSession):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdropdelegate/2921669-tableview
     tableView_dropPreviewParametersForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):UIDragPreviewParameters;
     // https://developer.apple.com/documentation/uikit/uitableviewdropdelegate/2897427-tableview
@@ -14678,10 +14951,10 @@ declare namespace cocoascript {
   interface UICollectionViewDropCoordinator extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropcoordinator/2897482-items
     items(): UICollectionViewDropItem;
-    setItems(): void;
+    setItems(value: UICollectionViewDropItem): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropcoordinator/2897284-destinationindexpath
     destinationIndexPath(): NSIndexPath;
-    setDestinationIndexPath(): void;
+    setDestinationIndexPath(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropcoordinator/2897310-dropitem
     dropItem_toItemAtIndexPath(dragItem: UIDragItem, indexPath: NSIndexPath):UIDragAnimating;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropcoordinator/2909040-dropitem
@@ -14692,10 +14965,10 @@ declare namespace cocoascript {
     dropItem_toPlaceholder(dragItem: UIDragItem, placeholder: UICollectionViewDropPlaceholder):UICollectionViewDropPlaceholderContext;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropcoordinator/2897462-session
     session(): UIDropSession;
-    setSession(): void;
+    setSession(value: UIDropSession): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropcoordinator/2897465-proposal
     proposal(): UICollectionViewDropProposal;
-    setProposal(): void;
+    setProposal(value: UICollectionViewDropProposal): void;
   }
 }
 declare namespace cocoascript {
@@ -14706,13 +14979,13 @@ declare namespace cocoascript {
   interface UICollectionViewDropItem extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropitem/2897456-dragitem
     dragItem(): UIDragItem;
-    setDragItem(): void;
+    setDragItem(value: UIDragItem): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropitem/2897437-previewsize
     previewSize(): CGSize;
-    setPreviewSize(): void;
+    setPreviewSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropitem/2897392-sourceindexpath
     sourceIndexPath(): NSIndexPath;
-    setSourceIndexPath(): void;
+    setSourceIndexPath(value: NSIndexPath): void;
   }
 }
 declare namespace cocoascript {
@@ -14772,9 +15045,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdragdelegate/2897459-collectionview
     collectionView_dragPreviewParametersForItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):UIDragPreviewParameters;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdragdelegate/2919964-collectionview
-    collectionView_dragSessionAllowsMoveOperation(collectionView: UICollectionView, session: UIDragSession):BOOL;
+    collectionView_dragSessionAllowsMoveOperation(collectionView: UICollectionView, session: UIDragSession):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdragdelegate/2919963-collectionview
-    collectionView_dragSessionIsRestrictedToDraggingApplication(collectionView: UICollectionView, session: UIDragSession):BOOL;
+    collectionView_dragSessionIsRestrictedToDraggingApplication(collectionView: UICollectionView, session: UIDragSession):boolean;
   }
 }
 declare namespace cocoascript {
@@ -14785,16 +15058,16 @@ declare namespace cocoascript {
   interface UIActivityItemsConfigurationReading extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationreading/3368149-itemprovidersforactivityitemscon
     itemProvidersForActivityItemsConfiguration(): NSItemProvider;
-    setItemProvidersForActivityItemsConfiguration(): void;
+    setItemProvidersForActivityItemsConfiguration(value: NSItemProvider): void;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationreading/3368148-applicationactivitiesforactivity
     applicationActivitiesForActivityItemsConfiguration(): UIActivity;
-    setApplicationActivitiesForActivityItemsConfiguration(): void;
+    setApplicationActivitiesForActivityItemsConfiguration(value: UIActivity): void;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationreading/3368144-activityitemsconfigurationmetada
     activityItemsConfigurationMetadataForKey(key: UIActivityItemsConfigurationMetadataKey):UIActivityItemsConfigurationReading;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationreading/3368145-activityitemsconfigurationmetada
     activityItemsConfigurationMetadataForItemAtIndex_key(index: NSInteger, key: UIActivityItemsConfigurationMetadataKey):UIActivityItemsConfigurationReading;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationreading/3368147-activityitemsconfigurationsuppor
-    activityItemsConfigurationSupportsInteraction(interaction: UIActivityItemsConfigurationInteraction):BOOL;
+    activityItemsConfigurationSupportsInteraction(interaction: UIActivityItemsConfigurationInteraction):boolean;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationreading/3368146-activityitemsconfigurationprevie
     activityItemsConfigurationPreviewForItemAtIndex_intent_suggestedSize(index: NSInteger, intent: UIActivityItemsConfigurationPreviewIntent, suggestedSize: CGSize):NSItemProvider;
   }
@@ -14834,7 +15107,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uipageviewcontrollerdelegate/1614091-pageviewcontroller
     pageViewController_willTransitionToViewControllers(pageViewController: UIPageViewController, pendingViewControllers: UIViewController):void;
     // https://developer.apple.com/documentation/uikit/uipageviewcontrollerdelegate/1614090-pageviewcontroller
-    pageViewController_didFinishAnimating_previousViewControllers_transitionCompleted(pageViewController: UIPageViewController, finished: BOOL, previousViewControllers: UIViewController, completed: BOOL):void;
+    pageViewController_didFinishAnimating_previousViewControllers_transitionCompleted(pageViewController: UIPageViewController, finished: boolean, previousViewControllers: UIViewController, completed: boolean):void;
     // https://developer.apple.com/documentation/uikit/uipageviewcontrollerdelegate/1614083-pageviewcontroller
     pageViewController_spineLocationForInterfaceOrientation(pageViewController: UIPageViewController, orientation: UIInterfaceOrientation):UIPageViewControllerSpineLocation;
     // https://developer.apple.com/documentation/uikit/uipageviewcontrollerdelegate/1614100-pageviewcontrollersupportedinter
@@ -14855,40 +15128,40 @@ declare namespace cocoascript {
     viewForKey(key: UITransitionContextViewKey):UIView;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/1619280-containerview
     containerView(): UIView;
-    setContainerView(): void;
+    setContainerView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/1619287-presentationstyle
     presentationStyle(): UIModalPresentationStyle;
-    setPresentationStyle(): void;
+    setPresentationStyle(value: UIModalPresentationStyle): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/1619286-transitionduration
     transitionDuration(): NSTimeInterval;
-    setTransitionDuration(): void;
+    setTransitionDuration(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/1619299-completioncurve
     completionCurve(): UIViewAnimationCurve;
-    setCompletionCurve(): void;
+    setCompletionCurve(value: UIViewAnimationCurve): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/1619282-completionvelocity
     completionVelocity(): CGFloat;
-    setCompletionVelocity(): void;
+    setCompletionVelocity(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/1619290-percentcomplete
     percentComplete(): CGFloat;
-    setPercentComplete(): void;
+    setPercentComplete(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/1619285-initiallyinteractive
-    initiallyInteractive(): BOOL;
-    setInitiallyInteractive(): void;
+    initiallyInteractive(): boolean;
+    setInitiallyInteractive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/2097567-interactive
-    interactive(): BOOL;
-    setInteractive(): void;
+    interactive(): boolean;
+    setInteractive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/2097566-animated
-    animated(): BOOL;
-    setAnimated(): void;
+    animated(): boolean;
+    setAnimated(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/2097568-cancelled
-    cancelled(): BOOL;
-    setCancelled(): void;
+    cancelled(): boolean;
+    setCancelled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/1829390-isinterruptible
-    isInterruptible(): BOOL;
-    setIsInterruptible(): void;
+    isInterruptible(): boolean;
+    setIsInterruptible(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinatorcontext/1619289-targettransform
     targetTransform(): CGAffineTransform;
-    setTargetTransform(): void;
+    setTargetTransform(value: CGAffineTransform): void;
   }
 }
 declare namespace cocoascript {
@@ -14898,7 +15171,7 @@ declare namespace cocoascript {
    */
   interface UICollectionViewDropDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropdelegate/2897386-collectionview
-    collectionView_canHandleDropSession(collectionView: UICollectionView, session: UIDropSession):BOOL;
+    collectionView_canHandleDropSession(collectionView: UICollectionView, session: UIDropSession):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropdelegate/2897304-collectionview
     collectionView_performDropWithCoordinator(collectionView: UICollectionView, coordinator: UICollectionViewDropCoordinator):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropdelegate/2897375-collectionview
@@ -14942,9 +15215,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontrollerdelegate/1616824-documentinteractioncontroller
     documentInteractionController_didEndSendingToApplication(controller: UIDocumentInteractionController, application: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontrollerdelegate/1616800-documentinteractioncontroller
-    documentInteractionController_canPerformAction(controller: UIDocumentInteractionController, action: SEL):BOOL;
+    documentInteractionController_canPerformAction(controller: UIDocumentInteractionController, action: SEL):boolean;
     // https://developer.apple.com/documentation/uikit/uidocumentinteractioncontrollerdelegate/1616823-documentinteractioncontroller
-    documentInteractionController_performAction(controller: UIDocumentInteractionController, action: SEL):BOOL;
+    documentInteractionController_performAction(controller: UIDocumentInteractionController, action: SEL):boolean;
   }
 }
 declare namespace cocoascript {
@@ -14955,40 +15228,40 @@ declare namespace cocoascript {
   interface NSCollectionLayoutVisibleItem extends NSObject {
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199122-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199124-representedelementkind
     representedElementKind(): string | cocoascript.NSString;
-    setRepresentedElementKind(): void;
+    setRepresentedElementKind(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199123-representedelementcategory
     representedElementCategory(): UICollectionElementCategory;
-    setRepresentedElementCategory(): void;
+    setRepresentedElementCategory(value: UICollectionElementCategory): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199120-indexpath
     indexPath(): NSIndexPath;
-    setIndexPath(): void;
+    setIndexPath(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199116-alpha
     alpha(): CGFloat;
-    setAlpha(): void;
+    setAlpha(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199121-hidden
-    hidden(): BOOL;
-    setHidden(): void;
+    hidden(): boolean;
+    setHidden(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199119-frame
     frame(): CGRect;
-    setFrame(): void;
+    setFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199117-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199118-center
     center(): CGPoint;
-    setCenter(): void;
+    setCenter(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199125-transform
     transform(): CGAffineTransform;
-    setTransform(): void;
+    setTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199126-transform3d
     transform3D(): CATransform3D;
-    setTransform3D(): void;
+    setTransform3D(value: CATransform3D): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutvisibleitem/3199127-zindex
     zIndex(): NSInteger;
-    setZIndex(): void;
+    setZIndex(value: NSInteger): void;
   }
 }
 declare namespace cocoascript {
@@ -15014,7 +15287,7 @@ declare namespace cocoascript {
    */
   interface UIPrinterPickerControllerDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiprinterpickercontrollerdelegate/1620503-printerpickercontroller
-    printerPickerController_shouldShowPrinter(printerPickerController: UIPrinterPickerController, printer: UIPrinter):BOOL;
+    printerPickerController_shouldShowPrinter(printerPickerController: UIPrinterPickerController, printer: UIPrinter):boolean;
     // https://developer.apple.com/documentation/uikit/uiprinterpickercontrollerdelegate/1620504-printerpickercontrollerdidselect
     printerPickerControllerDidSelectPrinter(printerPickerController: UIPrinterPickerController):void;
     // https://developer.apple.com/documentation/uikit/uiprinterpickercontrollerdelegate/1620518-printerpickercontrollerparentvie
@@ -15042,7 +15315,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitextpastedelegate/2887492-textpasteconfigurationsupporting
     textPasteConfigurationSupporting_performPasteOfAttributedString_toRange(textPasteConfigurationSupporting: UITextPasteConfigurationSupporting, attributedString: NSAttributedString, textRange: UITextRange):UITextRange;
     // https://developer.apple.com/documentation/uikit/uitextpastedelegate/2909062-textpasteconfigurationsupporting
-    textPasteConfigurationSupporting_shouldAnimatePasteOfAttributedString_toRange(textPasteConfigurationSupporting: UITextPasteConfigurationSupporting, attributedString: NSAttributedString, textRange: UITextRange):BOOL;
+    textPasteConfigurationSupporting_shouldAnimatePasteOfAttributedString_toRange(textPasteConfigurationSupporting: UITextPasteConfigurationSupporting, attributedString: NSAttributedString, textRange: UITextRange):boolean;
   }
 }
 declare namespace cocoascript {
@@ -15053,7 +15326,7 @@ declare namespace cocoascript {
   interface UIFocusAnimationContext extends NSObject {
     // https://developer.apple.com/documentation/uikit/uifocusanimationcontext/2887568-duration
     duration(): NSTimeInterval;
-    setDuration(): void;
+    setDuration(value: NSTimeInterval): void;
   }
 }
 declare namespace cocoascript {
@@ -15079,15 +15352,15 @@ declare namespace cocoascript {
    */
   interface UITabBarControllerDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitabbarcontrollerdelegate/1621166-tabbarcontroller
-    tabBarController_shouldSelectViewController(tabBarController: UITabBarController, viewController: UIViewController):BOOL;
+    tabBarController_shouldSelectViewController(tabBarController: UITabBarController, viewController: UIViewController):boolean;
     // https://developer.apple.com/documentation/uikit/uitabbarcontrollerdelegate/1621173-tabbarcontroller
     tabBarController_didSelectViewController(tabBarController: UITabBarController, viewController: UIViewController):void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontrollerdelegate/1621179-tabbarcontroller
     tabBarController_willBeginCustomizingViewControllers(tabBarController: UITabBarController, viewControllers: UIViewController):void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontrollerdelegate/1621178-tabbarcontroller
-    tabBarController_willEndCustomizingViewControllers_changed(tabBarController: UITabBarController, viewControllers: UIViewController, changed: BOOL):void;
+    tabBarController_willEndCustomizingViewControllers_changed(tabBarController: UITabBarController, viewControllers: UIViewController, changed: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontrollerdelegate/1621168-tabbarcontroller
-    tabBarController_didEndCustomizingViewControllers_changed(tabBarController: UITabBarController, viewControllers: UIViewController, changed: BOOL):void;
+    tabBarController_didEndCustomizingViewControllers_changed(tabBarController: UITabBarController, viewControllers: UIViewController, changed: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitabbarcontrollerdelegate/1621180-tabbarcontrollersupportedinterfa
     tabBarControllerSupportedInterfaceOrientations(tabBarController: UITabBarController):UIInterfaceOrientationMask;
     // https://developer.apple.com/documentation/uikit/uitabbarcontrollerdelegate/1621176-tabbarcontrollerpreferredinterfa
@@ -15106,19 +15379,19 @@ declare namespace cocoascript {
   interface UITextDragRequest extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextdragrequest/2890912-existingitems
     existingItems(): UIDragItem;
-    setExistingItems(): void;
+    setExistingItems(value: UIDragItem): void;
     // https://developer.apple.com/documentation/uikit/uitextdragrequest/2890900-suggesteditems
     suggestedItems(): UIDragItem;
-    setSuggestedItems(): void;
+    setSuggestedItems(value: UIDragItem): void;
     // https://developer.apple.com/documentation/uikit/uitextdragrequest/2890901-dragrange
     dragRange(): UITextRange;
-    setDragRange(): void;
+    setDragRange(value: UITextRange): void;
     // https://developer.apple.com/documentation/uikit/uitextdragrequest/2890906-selected
-    selected(): BOOL;
-    setSelected(): void;
+    selected(): boolean;
+    setSelected(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextdragrequest/2890910-dragsession
     dragSession(): UIDragSession;
-    setDragSession(): void;
+    setDragSession(value: UIDragSession): void;
   }
 }
 declare namespace cocoascript {
@@ -15136,9 +15409,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitableviewdragdelegate/2897428-tableview
     tableView_dragSessionDidEnd(tableView: UITableView, session: UIDragSession):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdragdelegate/2919982-tableview
-    tableView_dragSessionIsRestrictedToDraggingApplication(tableView: UITableView, session: UIDragSession):BOOL;
+    tableView_dragSessionIsRestrictedToDraggingApplication(tableView: UITableView, session: UIDragSession):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdragdelegate/2919983-tableview
-    tableView_dragSessionAllowsMoveOperation(tableView: UITableView, session: UIDragSession):BOOL;
+    tableView_dragSessionAllowsMoveOperation(tableView: UITableView, session: UIDragSession):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdragdelegate/2897353-tableview
     tableView_dragPreviewParametersForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):UIDragPreviewParameters;
   }
@@ -15158,7 +15431,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdatasource/1618037-collectionview
     collectionView_viewForSupplementaryElementOfKind_atIndexPath(collectionView: UICollectionView, kind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionReusableView;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdatasource/1618015-collectionview
-    collectionView_canMoveItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):BOOL;
+    collectionView_canMoveItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdatasource/1618064-collectionview
     collectionView_moveItemAtIndexPath_toIndexPath(collectionView: UICollectionView, sourceIndexPath: NSIndexPath, destinationIndexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdatasource/2851455-indextitlesforcollectionview
@@ -15175,7 +15448,7 @@ declare namespace cocoascript {
   interface UIViewControllerContextTransitioning extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1622045-containerview
     containerView(): UIView;
-    setContainerView(): void;
+    setContainerView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1622043-viewcontrollerforkey
     viewControllerForKey(key: UITransitionContextViewControllerKey):UIViewController;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1622055-viewforkey
@@ -15185,16 +15458,16 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1622024-finalframeforviewcontroller
     finalFrameForViewController(vc: UIViewController):CGRect;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/2097569-animated
-    animated(): BOOL;
-    setAnimated(): void;
+    animated(): boolean;
+    setAnimated(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/2097570-interactive
-    interactive(): BOOL;
-    setInteractive(): void;
+    interactive(): boolean;
+    setInteractive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1622049-presentationstyle
     presentationStyle(): UIModalPresentationStyle;
-    setPresentationStyle(): void;
+    setPresentationStyle(value: UIModalPresentationStyle): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1622042-completetransition
-    completeTransition(didComplete: BOOL):void;
+    completeTransition(didComplete: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1622025-updateinteractivetransition
     updateInteractiveTransition(percentComplete: CGFloat):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1829437-pauseinteractivetransition
@@ -15204,11 +15477,11 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1622038-cancelinteractivetransition
     cancelInteractiveTransition():void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1622039-transitionwascancelled
-    transitionWasCancelled(): BOOL;
-    setTransitionWasCancelled(): void;
+    transitionWasCancelled(): boolean;
+    setTransitionWasCancelled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollercontexttransitioning/1622036-targettransform
     targetTransform(): CGAffineTransform;
-    setTargetTransform(): void;
+    setTargetTransform(value: CGAffineTransform): void;
   }
 }
 declare namespace cocoascript {
@@ -15220,14 +15493,14 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiviewcontrollerinteractivetransitioning/1622028-startinteractivetransition
     startInteractiveTransition(transitionContext: UIViewControllerContextTransitioning):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollerinteractivetransitioning/1829433-wantsinteractivestart
-    wantsInteractiveStart(): BOOL;
-    setWantsInteractiveStart(): void;
+    wantsInteractiveStart(): boolean;
+    setWantsInteractiveStart(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollerinteractivetransitioning/1622027-completioncurve
     completionCurve(): UIViewAnimationCurve;
-    setCompletionCurve(): void;
+    setCompletionCurve(value: UIViewAnimationCurve): void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollerinteractivetransitioning/1622031-completionspeed
     completionSpeed(): CGFloat;
-    setCompletionSpeed(): void;
+    setCompletionSpeed(value: CGFloat): void;
   }
 }
 declare namespace cocoascript {
@@ -15269,7 +15542,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614966-tableview
     tableView_indentationLevelForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):NSInteger;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/2897335-tableview
-    tableView_shouldSpringLoadRowAtIndexPath_withContext(tableView: UITableView, indexPath: NSIndexPath, context: UISpringLoadedInteractionContext):BOOL;
+    tableView_shouldSpringLoadRowAtIndexPath_withContext(tableView: UITableView, indexPath: NSIndexPath, context: UISpringLoadedInteractionContext):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614943-tableview
     tableView_willSelectRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):NSIndexPath;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614877-tableview
@@ -15279,7 +15552,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614916-tableview
     tableView_didDeselectRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/3183943-tableview
-    tableView_shouldBeginMultipleSelectionInteractionAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):BOOL;
+    tableView_shouldBeginMultipleSelectionInteractionAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/3183942-tableview
     tableView_didBeginMultipleSelectionInteractionAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/3183944-tableviewdidendmultipleselection
@@ -15325,15 +15598,15 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/2902367-tableview
     tableView_trailingSwipeActionsConfigurationForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):UISwipeActionsConfiguration;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614950-tableview
-    tableView_shouldShowMenuForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):BOOL;
+    tableView_shouldShowMenuForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614898-tableview
-    tableView_canPerformAction_forRowAtIndexPath_withSender(tableView: UITableView, action: SEL, indexPath: NSIndexPath, sender: UITableViewDelegate):BOOL;
+    tableView_canPerformAction_forRowAtIndexPath_withSender(tableView: UITableView, action: SEL, indexPath: NSIndexPath, sender: UITableViewDelegate):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614980-tableview
     tableView_performAction_forRowAtIndexPath_withSender(tableView: UITableView, action: SEL, indexPath: NSIndexPath, sender: UITableViewDelegate):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614956-tableview
     tableView_editActionsForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):UITableViewRowAction;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614988-tableview
-    tableView_shouldHighlightRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):BOOL;
+    tableView_shouldHighlightRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614982-tableview
     tableView_didHighlightRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614868-tableview
@@ -15347,7 +15620,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614970-tableview
     tableView_titleForDeleteConfirmationButtonForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):NSString;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614873-tableview
-    tableView_shouldIndentWhileEditingRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):BOOL;
+    tableView_shouldIndentWhileEditingRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614953-tableview
     tableView_targetIndexPathForMoveFromRowAtIndexPath_toProposedIndexPath(tableView: UITableView, sourceIndexPath: NSIndexPath, proposedDestinationIndexPath: NSIndexPath):NSIndexPath;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614870-tableview
@@ -15357,13 +15630,15 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614856-tableview
     tableView_didEndDisplayingFooterView_forSection(tableView: UITableView, view: UIView, section: NSInteger):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614973-tableview
-    tableView_canFocusRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):BOOL;
+    tableView_canFocusRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614949-tableview
-    tableView_shouldUpdateFocusInContext(tableView: UITableView, context: UITableViewFocusUpdateContext):BOOL;
+    tableView_shouldUpdateFocusInContext(tableView: UITableView, context: UITableViewFocusUpdateContext):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614945-tableview
     tableView_didUpdateFocusInContext_withAnimationCoordinator(tableView: UITableView, context: UITableViewFocusUpdateContext, coordinator: UIFocusAnimationCoordinator):void;
     // https://developer.apple.com/documentation/uikit/uitableviewdelegate/1614929-indexpathforpreferredfocusedview
     indexPathForPreferredFocusedViewInTableView(tableView: UITableView):NSIndexPath;
+    // https://developer.apple.com/documentation/uikit/uitableviewdelegate/3752212-tableview
+    tableView_selectionFollowsFocusForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):boolean;
   }
 }
 declare namespace cocoascript {
@@ -15374,13 +15649,13 @@ declare namespace cocoascript {
   interface UITableViewDropItem extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitableviewdropitem/2897402-dragitem
     dragItem(): UIDragItem;
-    setDragItem(): void;
+    setDragItem(value: UIDragItem): void;
     // https://developer.apple.com/documentation/uikit/uitableviewdropitem/2897464-previewsize
     previewSize(): CGSize;
-    setPreviewSize(): void;
+    setPreviewSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uitableviewdropitem/2897479-sourceindexpath
     sourceIndexPath(): NSIndexPath;
-    setSourceIndexPath(): void;
+    setSourceIndexPath(value: NSIndexPath): void;
   }
 }
 declare namespace cocoascript {
@@ -15396,21 +15671,21 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiviewanimating/1649843-pauseanimation
     pauseAnimation():void;
     // https://developer.apple.com/documentation/uikit/uiviewanimating/1649750-stopanimation
-    stopAnimation(withoutFinishing: BOOL):void;
+    stopAnimation(withoutFinishing: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewanimating/1649796-finishanimationatposition
     finishAnimationAtPosition(finalPosition: UIViewAnimatingPosition):void;
     // https://developer.apple.com/documentation/uikit/uiviewanimating/1649787-fractioncomplete
     fractionComplete(): CGFloat;
-    setFractionComplete(): void;
+    setFractionComplete(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiviewanimating/1649804-reversed
-    reversed(): BOOL;
-    setReversed(): void;
+    reversed(): boolean;
+    setReversed(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewanimating/1649743-state
     state(): UIViewAnimatingState;
-    setState(): void;
+    setState(value: UIViewAnimatingState): void;
     // https://developer.apple.com/documentation/uikit/uiviewanimating/1649785-running
-    running(): BOOL;
-    setRunning(): void;
+    running(): boolean;
+    setRunning(value: boolean): void;
   }
 }
 declare namespace cocoascript {
@@ -15480,7 +15755,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiviewcontrolleranimatedtransitioning/1622061-animatetransition
     animateTransition(transitionContext: UIViewControllerContextTransitioning):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrolleranimatedtransitioning/1622059-animationended
-    animationEnded(transitionCompleted: BOOL):void;
+    animationEnded(transitionCompleted: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrolleranimatedtransitioning/1622032-transitionduration
     transitionDuration(transitionContext: UIViewControllerContextTransitioning):NSTimeInterval;
     // https://developer.apple.com/documentation/uikit/uiviewcontrolleranimatedtransitioning/1829434-interruptibleanimatorfortransiti
@@ -15495,10 +15770,10 @@ declare namespace cocoascript {
   interface NSCollectionLayoutEnvironment extends NSObject {
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutenvironment/3199073-container
     container(): NSCollectionLayoutContainer;
-    setContainer(): void;
+    setContainer(value: NSCollectionLayoutContainer): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutenvironment/3199074-traitcollection
     traitCollection(): UITraitCollection;
-    setTraitCollection(): void;
+    setTraitCollection(value: UITraitCollection): void;
   }
 }
 declare namespace cocoascript {
@@ -15508,9 +15783,9 @@ declare namespace cocoascript {
    */
   interface UINavigationControllerDelegate extends NSObject {
     // https://developer.apple.com/documentation/uikit/uinavigationcontrollerdelegate/1621878-navigationcontroller
-    navigationController_willShowViewController_animated(navigationController: UINavigationController, viewController: UIViewController, animated: BOOL):void;
+    navigationController_willShowViewController_animated(navigationController: UINavigationController, viewController: UIViewController, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontrollerdelegate/1621848-navigationcontroller
-    navigationController_didShowViewController_animated(navigationController: UINavigationController, viewController: UIViewController, animated: BOOL):void;
+    navigationController_didShowViewController_animated(navigationController: UINavigationController, viewController: UIViewController, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uinavigationcontrollerdelegate/1621846-navigationcontroller
     navigationController_animationControllerForOperation_fromViewController_toViewController(navigationController: UINavigationController, operation: UINavigationControllerOperation, fromVC: UIViewController, toVC: UIViewController):UIViewControllerAnimatedTransitioning;
     // https://developer.apple.com/documentation/uikit/uinavigationcontrollerdelegate/1621880-navigationcontroller
@@ -15532,9 +15807,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitabbardelegate/1623471-tabbar
     tabBar_didBeginCustomizingItems(tabBar: UITabBar, items: UITabBarItem):void;
     // https://developer.apple.com/documentation/uikit/uitabbardelegate/1623464-tabbar
-    tabBar_willEndCustomizingItems_changed(tabBar: UITabBar, items: UITabBarItem, changed: BOOL):void;
+    tabBar_willEndCustomizingItems_changed(tabBar: UITabBar, items: UITabBarItem, changed: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitabbardelegate/1623447-tabbar
-    tabBar_didEndCustomizingItems_changed(tabBar: UITabBar, items: UITabBarItem, changed: BOOL):void;
+    tabBar_didEndCustomizingItems_changed(tabBar: UITabBar, items: UITabBarItem, changed: boolean):void;
     // https://developer.apple.com/documentation/uikit/uitabbardelegate/1623463-tabbar
     tabBar_didSelectItem(tabBar: UITabBar, item: UITabBarItem):void;
   }
@@ -15547,13 +15822,13 @@ declare namespace cocoascript {
   interface UITextPasteItem extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextpasteitem/2887489-itemprovider
     itemProvider(): NSItemProvider;
-    setItemProvider(): void;
+    setItemProvider(value: NSItemProvider): void;
     // https://developer.apple.com/documentation/uikit/uitextpasteitem/2887485-localobject
     localObject(): id;
-    setLocalObject(): void;
+    setLocalObject(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitextpasteitem/2887486-defaultattributes
     defaultAttributes(): id;
-    setDefaultAttributes(): void;
+    setDefaultAttributes(value: id): void;
     // https://developer.apple.com/documentation/uikit/uitextpasteitem/2887487-setstringresult
     setStringResult(string: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uitextpasteitem/2887482-setattributedstringresult
@@ -15596,6 +15871,8 @@ declare namespace cocoascript {
     stateRestorationActivityForScene(scene: UIScene):NSUserActivity;
     // https://developer.apple.com/documentation/uikit/uiscenedelegate/3238058-scene
     scene_didUpdateUserActivity(scene: UIScene, userActivity: NSUserActivity):void;
+    // https://developer.apple.com/documentation/uikit/uiscenedelegate/3821025-scene
+    scene_restoreInteractionStateWithUserActivity(scene: UIScene, stateRestorationActivity: NSUserActivity):void;
   }
 }
 declare namespace cocoascript {
@@ -15606,7 +15883,7 @@ declare namespace cocoascript {
   interface UIContentView extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicontentview/3600489-configuration
     configuration(): UIContentConfiguration;
-    setConfiguration(): void;
+    setConfiguration(value: UIContentConfiguration): void;
   }
 }
 declare namespace cocoascript {
@@ -15617,10 +15894,10 @@ declare namespace cocoascript {
   interface UITableViewDropCoordinator extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitableviewdropcoordinator/2897439-items
     items(): UITableViewDropItem;
-    setItems(): void;
+    setItems(value: UITableViewDropItem): void;
     // https://developer.apple.com/documentation/uikit/uitableviewdropcoordinator/2897496-destinationindexpath
     destinationIndexPath(): NSIndexPath;
-    setDestinationIndexPath(): void;
+    setDestinationIndexPath(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uitableviewdropcoordinator/2897301-dropitem
     dropItem_toRowAtIndexPath(dragItem: UIDragItem, indexPath: NSIndexPath):UIDragAnimating;
     // https://developer.apple.com/documentation/uikit/uitableviewdropcoordinator/2909061-dropitem
@@ -15631,10 +15908,10 @@ declare namespace cocoascript {
     dropItem_toPlaceholder(dragItem: UIDragItem, placeholder: UITableViewDropPlaceholder):UITableViewDropPlaceholderContext;
     // https://developer.apple.com/documentation/uikit/uitableviewdropcoordinator/2897324-session
     session(): UIDropSession;
-    setSession(): void;
+    setSession(value: UIDropSession): void;
     // https://developer.apple.com/documentation/uikit/uitableviewdropcoordinator/2897451-proposal
     proposal(): UITableViewDropProposal;
-    setProposal(): void;
+    setProposal(value: UITableViewDropProposal): void;
   }
 }
 declare namespace cocoascript {
@@ -15645,16 +15922,16 @@ declare namespace cocoascript {
   interface NSCollectionLayoutContainer extends NSObject {
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutcontainer/3199047-contentsize
     contentSize(): CGSize;
-    setContentSize(): void;
+    setContentSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutcontainer/3199049-effectivecontentsize
     effectiveContentSize(): CGSize;
-    setEffectiveContentSize(): void;
+    setEffectiveContentSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutcontainer/3199046-contentinsets
     contentInsets(): NSDirectionalEdgeInsets;
-    setContentInsets(): void;
+    setContentInsets(value: NSDirectionalEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutcontainer/3199048-effectivecontentinsets
     effectiveContentInsets(): NSDirectionalEdgeInsets;
-    setEffectiveContentInsets(): void;
+    setEffectiveContentInsets(value: NSDirectionalEdgeInsets): void;
   }
 }
 declare namespace cocoascript {
@@ -15684,9 +15961,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uiscrollviewdelegate/1619385-scrollviewwillenddragging
     scrollViewWillEndDragging_withVelocity_targetContentOffset(scrollView: UIScrollView, velocity: CGPoint, targetContentOffset: CGPoint):void;
     // https://developer.apple.com/documentation/uikit/uiscrollviewdelegate/1619436-scrollviewdidenddragging
-    scrollViewDidEndDragging_willDecelerate(scrollView: UIScrollView, decelerate: BOOL):void;
+    scrollViewDidEndDragging_willDecelerate(scrollView: UIScrollView, decelerate: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiscrollviewdelegate/1619378-scrollviewshouldscrolltotop
-    scrollViewShouldScrollToTop(scrollView: UIScrollView):BOOL;
+    scrollViewShouldScrollToTop(scrollView: UIScrollView):boolean;
     // https://developer.apple.com/documentation/uikit/uiscrollviewdelegate/1619382-scrollviewdidscrolltotop
     scrollViewDidScrollToTop(scrollView: UIScrollView):void;
     // https://developer.apple.com/documentation/uikit/uiscrollviewdelegate/1619386-scrollviewwillbegindecelerating
@@ -15715,16 +15992,16 @@ declare namespace cocoascript {
   interface UITextDropRequest extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextdroprequest/2890859-dropposition
     dropPosition(): UITextPosition;
-    setDropPosition(): void;
+    setDropPosition(value: UITextPosition): void;
     // https://developer.apple.com/documentation/uikit/uitextdroprequest/2890844-sameview
-    sameView(): BOOL;
-    setSameView(): void;
+    sameView(): boolean;
+    setSameView(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextdroprequest/2890845-suggestedproposal
     suggestedProposal(): UITextDropProposal;
-    setSuggestedProposal(): void;
+    setSuggestedProposal(value: UITextDropProposal): void;
     // https://developer.apple.com/documentation/uikit/uitextdroprequest/2890853-dropsession
     dropSession(): UIDropSession;
-    setDropSession(): void;
+    setDropSession(value: UIDropSession): void;
   }
 }
 declare namespace cocoascript {
@@ -15735,7 +16012,7 @@ declare namespace cocoascript {
   interface UIConfigurationState extends NSCopying {
     // https://developer.apple.com/documentation/uikit/uiconfigurationstate/3600978-traitcollection
     traitCollection(): UITraitCollection;
-    setTraitCollection(): void;
+    setTraitCollection(value: UITraitCollection): void;
     // https://developer.apple.com/documentation/uikit/uiconfigurationstate/3600478-customstateforkey
     customStateForKey(key: UIConfigurationStateCustomKey):UIConfigurationState;
     // https://developer.apple.com/documentation/uikit/uiconfigurationstate/3600481-setcustomstate
@@ -15768,13 +16045,13 @@ declare namespace cocoascript {
   interface UISearchSuggestion extends NSObject {
     // https://developer.apple.com/documentation/uikit/uisearchsuggestion/3584826-localizedsuggestion
     localizedSuggestion(): string | cocoascript.NSString;
-    setLocalizedSuggestion(): void;
+    setLocalizedSuggestion(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisearchsuggestion/3584825-localizeddescription
     localizedDescription(): string | cocoascript.NSString;
-    setLocalizedDescription(): void;
+    setLocalizedDescription(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisearchsuggestion/3584824-iconimage
     iconImage(): UIImage;
-    setIconImage(): void;
+    setIconImage(value: UIImage): void;
   }
 }
 declare namespace cocoascript {
@@ -15843,11 +16120,11 @@ declare namespace cocoascript {
   interface UIWindowSceneDelegate extends UISceneDelegate {
     // https://developer.apple.com/documentation/uikit/uiwindowscenedelegate/3198093-window
     window(): UIWindow;
-    setWindow(): void;
+    setWindow(value: UIWindow): void;
     // https://developer.apple.com/documentation/uikit/uiwindowscenedelegate/3198094-windowscene
     windowScene_didUpdateCoordinateSpace_interfaceOrientation_traitCollection(windowScene: UIWindowScene, previousCoordinateSpace: UICoordinateSpace, previousInterfaceOrientation: UIInterfaceOrientation, previousTraitCollection: UITraitCollection):void;
     // https://developer.apple.com/documentation/uikit/uiwindowscenedelegate/3238088-windowscene
-    windowScene_performActionForShortcutItem_completionHandler(windowScene: UIWindowScene, shortcutItem: UIApplicationShortcutItem, completionHandler: BOOL):void;
+    windowScene_performActionForShortcutItem_completionHandler(windowScene: UIWindowScene, shortcutItem: UIApplicationShortcutItem, completionHandler: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiwindowscenedelegate/3238089-windowscene
     windowScene_userDidAcceptCloudKitShareWithMetadata(windowScene: UIWindowScene, cloudKitShareMetadata: CKShareMetadata):void;
   }
@@ -15862,24 +16139,31 @@ declare namespace cocoascript {
     initWithSession_connectionOptions(session: UISceneSession, connectionOptions: UISceneConnectionOptions):UIScene;
     // https://developer.apple.com/documentation/uikit/uiscene/3197909-delegate
     delegate(): UISceneDelegate;
-    setDelegate(): void;
+    setDelegate(value: UISceneDelegate): void;
     // https://developer.apple.com/documentation/uikit/uiscene/3197908-activationstate
     activationState(): UISceneActivationState;
-    setActivationState(): void;
+    setActivationState(value: UISceneActivationState): void;
     // https://developer.apple.com/documentation/uikit/uiscene/3197912-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/uikit/uiscene/3750911-subtitle
+    subtitle(): string | cocoascript.NSString;
+    setSubtitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiscene/3238055-activationconditions
     activationConditions(): UISceneActivationConditions;
-    setActivationConditions(): void;
+    setActivationConditions(value: UISceneActivationConditions): void;
     // https://developer.apple.com/documentation/uikit/uiscene/3197911-session
     session(): UISceneSession;
-    setSession(): void;
+    setSession(value: UISceneSession): void;
     // https://developer.apple.com/documentation/uikit/uiscene/3327319-openurl
-    openURL_options_completionHandler(url: NSURL, options: UISceneOpenExternalURLOptions, completion: BOOL):void;
+    openURL_options_completionHandler(url: NSURL, options: UISceneOpenExternalURLOptions, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uiscene/3601229-pointerlockstate
     pointerLockState(): UIPointerLockState;
-    setPointerLockState(): void;
+    setPointerLockState(value: UIPointerLockState): void;
+    // https://developer.apple.com/documentation/uikit/uiscene/3821026-completestaterestoration
+    completeStateRestoration():void;
+    // https://developer.apple.com/documentation/uikit/uiscene/3821027-extendstaterestoration
+    extendStateRestoration():void;
     //
     alloc():UIScene;
     //
@@ -15900,19 +16184,19 @@ declare namespace cocoascript {
     initWithName_sessionRole(name: string | cocoascript.NSString, sessionRole: UISceneSessionRole):UISceneConfiguration;
     // https://developer.apple.com/documentation/uikit/uisceneconfiguration/3197952-sceneclass
     sceneClass(): Class;
-    setSceneClass(): void;
+    setSceneClass(value: Class): void;
     // https://developer.apple.com/documentation/uikit/uisceneconfiguration/3197948-delegateclass
     delegateClass(): Class;
-    setDelegateClass(): void;
+    setDelegateClass(value: Class): void;
     // https://developer.apple.com/documentation/uikit/uisceneconfiguration/3197953-storyboard
     storyboard(): UIStoryboard;
-    setStoryboard(): void;
+    setStoryboard(value: UIStoryboard): void;
     // https://developer.apple.com/documentation/uikit/uisceneconfiguration/3197950-name
     name(): string | cocoascript.NSString;
-    setName(): void;
+    setName(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisceneconfiguration/3197951-role
     role(): UISceneSessionRole;
-    setRole(): void;
+    setRole(value: UISceneSessionRole): void;
     //
     alloc():UISceneConfiguration;
     //
@@ -15929,22 +16213,22 @@ declare namespace cocoascript {
   interface UISceneSession extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiscenesession/3197958-scene
     scene(): UIScene;
-    setScene(): void;
+    setScene(value: UIScene): void;
     // https://developer.apple.com/documentation/uikit/uiscenesession/3197957-role
     role(): UISceneSessionRole;
-    setRole(): void;
+    setRole(value: UISceneSessionRole): void;
     // https://developer.apple.com/documentation/uikit/uiscenesession/3197955-configuration
     configuration(): UISceneConfiguration;
-    setConfiguration(): void;
+    setConfiguration(value: UISceneConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uiscenesession/3197956-persistentidentifier
     persistentIdentifier(): string | cocoascript.NSString;
-    setPersistentIdentifier(): void;
+    setPersistentIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiscenesession/3197959-staterestorationactivity
     stateRestorationActivity(): NSUserActivity;
-    setStateRestorationActivity(): void;
+    setStateRestorationActivity(value: NSUserActivity): void;
     // https://developer.apple.com/documentation/uikit/uiscenesession/3197960-userinfo
     userInfo(): id;
-    setUserInfo(): void;
+    setUserInfo(value: id): void;
     //
     alloc():UISceneSession;
     //
@@ -15965,10 +16249,10 @@ declare namespace cocoascript {
     initWithCoder(aDecoder: NSCoder):UISceneActivationConditions;
     // https://developer.apple.com/documentation/uikit/uisceneactivationconditions/3238067-preferstoactivatefortargetconten
     prefersToActivateForTargetContentIdentifierPredicate(): NSPredicate;
-    setPrefersToActivateForTargetContentIdentifierPredicate(): void;
+    setPrefersToActivateForTargetContentIdentifierPredicate(value: NSPredicate): void;
     // https://developer.apple.com/documentation/uikit/uisceneactivationconditions/3238064-canactivatefortargetcontentident
     canActivateForTargetContentIdentifierPredicate(): NSPredicate;
-    setCanActivateForTargetContentIdentifierPredicate(): void;
+    setCanActivateForTargetContentIdentifierPredicate(value: NSPredicate): void;
     //
     alloc():UISceneActivationConditions;
     //
@@ -15985,7 +16269,7 @@ declare namespace cocoascript {
   interface UIWindowSceneDestructionRequestOptions extends UISceneDestructionRequestOptions {
     // https://developer.apple.com/documentation/uikit/uiwindowscenedestructionrequestoptions/3197964-windowdismissalanimation
     windowDismissalAnimation(): UIWindowSceneDismissalAnimation;
-    setWindowDismissalAnimation(): void;
+    setWindowDismissalAnimation(value: UIWindowSceneDismissalAnimation): void;
     //
     alloc():UIWindowSceneDestructionRequestOptions;
     //
@@ -16002,10 +16286,10 @@ declare namespace cocoascript {
   interface UIOpenURLContext extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiopenurlcontext/3238053-url
     URL(): NSURL;
-    setURL(): void;
+    setURL(value: NSURL): void;
     // https://developer.apple.com/documentation/uikit/uiopenurlcontext/3238054-options
     options(): UISceneOpenURLOptions;
-    setOptions(): void;
+    setOptions(value: UISceneOpenURLOptions): void;
     //
     alloc():UIOpenURLContext;
     //
@@ -16021,8 +16305,11 @@ declare namespace cocoascript {
    */
   interface UISceneOpenExternalURLOptions extends NSObject {
     // https://developer.apple.com/documentation/uikit/uisceneopenexternalurloptions/3197941-universallinksonly
-    universalLinksOnly(): BOOL;
-    setUniversalLinksOnly(): void;
+    universalLinksOnly(): boolean;
+    setUniversalLinksOnly(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uisceneopenexternalurloptions/3727336-eventattribution
+    eventAttribution(): UIEventAttribution;
+    setEventAttribution(value: UIEventAttribution): void;
     //
     alloc():UISceneOpenExternalURLOptions;
     //
@@ -16058,7 +16345,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontrollerdelegate/1622317-prepareforpopoverpresentation
     prepareForPopoverPresentation(popoverPresentationController: UIPopoverPresentationController):void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontrollerdelegate/1622321-popoverpresentationcontrollersho
-    popoverPresentationControllerShouldDismissPopover(popoverPresentationController: UIPopoverPresentationController):BOOL;
+    popoverPresentationControllerShouldDismissPopover(popoverPresentationController: UIPopoverPresentationController):boolean;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontrollerdelegate/1622322-popoverpresentationcontrollerdid
     popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController):void;
     // https://developer.apple.com/documentation/uikit/uipopoverpresentationcontrollerdelegate/1622326-popoverpresentationcontroller
@@ -16071,6 +16358,8 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uisheetpresentationcontrollerdelegate
    */
   interface UISheetPresentationControllerDelegate extends UIAdaptivePresentationControllerDelegate {
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontrollerdelegate/3801914-sheetpresentationcontrollerdidch
+    sheetPresentationControllerDidChangeSelectedDetentIdentifier(sheetPresentationController: UISheetPresentationController):void;
   }
 }
 declare namespace cocoascript {
@@ -16103,16 +16392,16 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UICollectionView;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618091-datasource
     dataSource(): UICollectionViewDataSource;
-    setDataSource(): void;
+    setDataSource(value: UICollectionViewDataSource): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1771771-prefetchingenabled
-    prefetchingEnabled(): BOOL;
-    setPrefetchingEnabled(): void;
+    prefetchingEnabled(): boolean;
+    setPrefetchingEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1771768-prefetchdatasource
     prefetchDataSource(): UICollectionViewDataSourcePrefetching;
-    setPrefetchDataSource(): void;
+    setPrefetchDataSource(value: UICollectionViewDataSourcePrefetching): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618033-delegate
     delegate(): UICollectionViewDelegate;
-    setDelegate(): void;
+    setDelegate(value: UICollectionViewDelegate): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/3600423-dequeueconfiguredreusablecellwit
     dequeueConfiguredReusableCellWithRegistration_forIndexPath_item(registration: UICollectionViewCellRegistration, indexPath: NSIndexPath, item: UICollectionView):UICollectionViewCell;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618089-registerclass
@@ -16131,14 +16420,14 @@ declare namespace cocoascript {
     dequeueReusableSupplementaryViewOfKind_withReuseIdentifier_forIndexPath(elementKind: string | cocoascript.NSString, identifier: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionReusableView;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618074-backgroundview
     backgroundView(): UIView;
-    setBackgroundView(): void;
+    setBackgroundView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618047-collectionviewlayout
     collectionViewLayout(): UICollectionViewLayout;
-    setCollectionViewLayout(): void;
+    setCollectionViewLayout(value: UICollectionViewLayout): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618086-setcollectionviewlayout
-    setCollectionViewLayout_animated(layout: UICollectionViewLayout, animated: BOOL):void;
+    setCollectionViewLayout_animated(layout: UICollectionViewLayout, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618017-setcollectionviewlayout
-    setCollectionViewLayout_animated_completion(layout: UICollectionViewLayout, animated: BOOL, completion: BOOL):void;
+    setCollectionViewLayout_animated_completion(layout: UICollectionViewLayout, animated: boolean, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618098-startinteractivetransitiontocoll
     startInteractiveTransitionToCollectionViewLayout_completion(layout: UICollectionViewLayout, completion: UICollectionViewLayoutInteractiveTransitionCompletion):UICollectionViewTransitionLayout;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618080-finishinteractivetransition
@@ -16147,12 +16436,12 @@ declare namespace cocoascript {
     cancelInteractiveTransition():void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618028-numberofsections
     numberOfSections(): NSInteger;
-    setNumberOfSections(): void;
+    setNumberOfSections(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618016-numberofitemsinsection
     numberOfItemsInSection(section: NSInteger):NSInteger;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618056-visiblecells
     visibleCells(): UICollectionViewCell;
-    setVisibleCells(): void;
+    setVisibleCells(value: UICollectionViewCell): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618097-insertitemsatindexpaths
     insertItemsAtIndexPaths(indexPaths: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618059-moveitematindexpath
@@ -16166,7 +16455,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618102-deletesections
     deleteSections(sections: NSIndexSet):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618019-begininteractivemovementforitema
-    beginInteractiveMovementForItemAtIndexPath(indexPath: NSIndexPath):BOOL;
+    beginInteractiveMovementForItemAtIndexPath(indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618079-updateinteractivemovementtargetp
     updateInteractiveMovementTargetPosition(targetPosition: CGPoint):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618082-endinteractivemovement
@@ -16175,52 +16464,52 @@ declare namespace cocoascript {
     cancelInteractiveMovement():void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/2897404-dragdelegate
     dragDelegate(): UICollectionViewDragDelegate;
-    setDragDelegate(): void;
+    setDragDelegate(value: UICollectionViewDragDelegate): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/2897415-hasactivedrag
-    hasActiveDrag(): BOOL;
-    setHasActiveDrag(): void;
+    hasActiveDrag(): boolean;
+    setHasActiveDrag(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/2909041-draginteractionenabled
-    dragInteractionEnabled(): BOOL;
-    setDragInteractionEnabled(): void;
+    dragInteractionEnabled(): boolean;
+    setDragInteractionEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/2897491-dropdelegate
     dropDelegate(): UICollectionViewDropDelegate;
-    setDropDelegate(): void;
+    setDropDelegate(value: UICollectionViewDropDelegate): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/2897433-hasactivedrop
-    hasActiveDrop(): BOOL;
-    setHasActiveDrop(): void;
+    hasActiveDrop(): boolean;
+    setHasActiveDrop(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/2897347-reorderingcadence
     reorderingCadence(): UICollectionViewReorderingCadence;
-    setReorderingCadence(): void;
+    setReorderingCadence(value: UICollectionViewReorderingCadence): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618099-indexpathsforselecteditems
     indexPathsForSelectedItems(): NSIndexPath;
-    setIndexPathsForSelectedItems(): void;
+    setIndexPathsForSelectedItems(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618057-selectitematindexpath
-    selectItemAtIndexPath_animated_scrollPosition(indexPath: NSIndexPath, animated: BOOL, scrollPosition: UICollectionViewScrollPosition):void;
+    selectItemAtIndexPath_animated_scrollPosition(indexPath: NSIndexPath, animated: boolean, scrollPosition: UICollectionViewScrollPosition):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618040-deselectitematindexpath
-    deselectItemAtIndexPath_animated(indexPath: NSIndexPath, animated: BOOL):void;
+    deselectItemAtIndexPath_animated(indexPath: NSIndexPath, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618009-allowsselection
-    allowsSelection(): BOOL;
-    setAllowsSelection(): void;
+    allowsSelection(): boolean;
+    setAllowsSelection(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618024-allowsmultipleselection
-    allowsMultipleSelection(): BOOL;
-    setAllowsMultipleSelection(): void;
+    allowsMultipleSelection(): boolean;
+    setAllowsMultipleSelection(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/3600422-allowsselectionduringediting
-    allowsSelectionDuringEditing(): BOOL;
-    setAllowsSelectionDuringEditing(): void;
+    allowsSelectionDuringEditing(): boolean;
+    setAllowsSelectionDuringEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/3600421-allowsmultipleselectionduringedi
-    allowsMultipleSelectionDuringEditing(): BOOL;
-    setAllowsMultipleSelectionDuringEditing(): void;
+    allowsMultipleSelectionDuringEditing(): boolean;
+    setAllowsMultipleSelectionDuringEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/3573920-selectionfollowsfocus
-    selectionFollowsFocus(): BOOL;
-    setSelectionFollowsFocus(): void;
+    selectionFollowsFocus(): boolean;
+    setSelectionFollowsFocus(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/3600425-editing
-    editing(): BOOL;
-    setEditing(): void;
+    editing(): boolean;
+    setEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618030-indexpathforitematpoint
     indexPathForItemAtPoint(point: CGPoint):NSIndexPath;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618020-indexpathsforvisibleitems
     indexPathsForVisibleItems(): NSIndexPath;
-    setIndexPathsForVisibleItems(): void;
+    setIndexPathsForVisibleItems(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618094-indexpathforcell
     indexPathForCell(cell: UICollectionViewCell):NSIndexPath;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618088-cellforitematindexpath
@@ -16236,12 +16525,14 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618012-layoutattributesforsupplementary
     layoutAttributesForSupplementaryElementOfKind_atIndexPath(kind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618046-scrolltoitematindexpath
-    scrollToItemAtIndexPath_atScrollPosition_animated(indexPath: NSIndexPath, scrollPosition: UICollectionViewScrollPosition, animated: BOOL):void;
+    scrollToItemAtIndexPath_atScrollPosition_animated(indexPath: NSIndexPath, scrollPosition: UICollectionViewScrollPosition, animated: boolean):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618045-performbatchupdates
-    performBatchUpdates_completion(updates: void, completion: BOOL):void;
+    performBatchUpdates_completion(updates: void, completion: boolean):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/2891094-hasuncommittedupdates
-    hasUncommittedUpdates(): BOOL;
-    setHasUncommittedUpdates(): void;
+    hasUncommittedUpdates(): boolean;
+    setHasUncommittedUpdates(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uicollectionview/3801889-reconfigureitemsatindexpaths
+    reconfigureItemsAtIndexPaths(indexPaths: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618078-reloaddata
     reloadData():void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618092-reloadsections
@@ -16249,8 +16540,17 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618055-reloaditemsatindexpaths
     reloadItemsAtIndexPaths(indexPaths: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionview/1618022-rememberslastfocusedindexpath
-    remembersLastFocusedIndexPath(): BOOL;
-    setRemembersLastFocusedIndexPath(): void;
+    remembersLastFocusedIndexPath(): boolean;
+    setRemembersLastFocusedIndexPath(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uicollectionview/3795590-allowsfocus
+    allowsFocus(): boolean;
+    setAllowsFocus(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uicollectionview/3795591-allowsfocusduringediting
+    allowsFocusDuringEditing(): boolean;
+    setAllowsFocusDuringEditing(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uicollectionview/3867094-contextmenuinteraction
+    contextMenuInteraction(): UIContextMenuInteraction;
+    setContextMenuInteraction(value: UIContextMenuInteraction): void;
     //
     alloc():UICollectionView;
     //
@@ -16293,7 +16593,7 @@ declare namespace cocoascript {
   interface UITextPasteConfigurationSupporting extends UIPasteConfigurationSupporting {
     // https://developer.apple.com/documentation/uikit/uitextpasteconfigurationsupporting/2887494-pastedelegate
     pasteDelegate(): UITextPasteDelegate;
-    setPasteDelegate(): void;
+    setPasteDelegate(value: UITextPasteDelegate): void;
   }
 }
 declare namespace cocoascript {
@@ -16328,22 +16628,22 @@ declare namespace cocoascript {
     activityItemsConfigurationWithItemProviders(itemProviders: NSItemProvider):UIActivityItemsConfiguration;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfiguration/3368124-localobject
     localObject(): id;
-    setLocalObject(): void;
+    setLocalObject(value: id): void;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfiguration/3368125-metadataprovider
     metadataProvider(): UIActivityItemsConfigurationMetadataKey;
-    setMetadataProvider(): void;
+    setMetadataProvider(value: UIActivityItemsConfigurationMetadataKey): void;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfiguration/3368126-peritemmetadataprovider
     perItemMetadataProvider(): UIActivityItemsConfigurationMetadataKey;
-    setPerItemMetadataProvider(): void;
+    setPerItemMetadataProvider(value: UIActivityItemsConfigurationMetadataKey): void;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfiguration/3368121-applicationactivitiesprovider
     applicationActivitiesProvider(): void;
-    setApplicationActivitiesProvider(): void;
+    setApplicationActivitiesProvider(value: void): void;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfiguration/3368128-supportedinteractions
     supportedInteractions(): UIActivityItemsConfigurationInteraction;
-    setSupportedInteractions(): void;
+    setSupportedInteractions(value: UIActivityItemsConfigurationInteraction): void;
     // https://developer.apple.com/documentation/uikit/uiactivityitemsconfiguration/3368127-previewprovider
     previewProvider(): CGSize;
-    setPreviewProvider(): void;
+    setPreviewProvider(value: CGSize): void;
     //
     alloc():UIActivityItemsConfiguration;
     //
@@ -16358,7 +16658,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uiactivityviewcontrollercompletionhandler
-  type UIActivityViewControllerCompletionHandler = cocoascript.BOOL;
+  type UIActivityViewControllerCompletionHandler = boolean;
 }
 declare namespace cocoascript {
   /**
@@ -16370,16 +16670,16 @@ declare namespace cocoascript {
     rowActionWithStyle_title_handler(style: UITableViewRowActionStyle, title: string | cocoascript.NSString, handler: NSIndexPath):UITableViewRowAction;
     // https://developer.apple.com/documentation/uikit/uitableviewrowaction/1614887-style
     style(): UITableViewRowActionStyle;
-    setStyle(): void;
+    setStyle(value: UITableViewRowActionStyle): void;
     // https://developer.apple.com/documentation/uikit/uitableviewrowaction/1614993-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitableviewrowaction/1614995-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uitableviewrowaction/1614990-backgroundeffect
     backgroundEffect(): UIVisualEffect;
-    setBackgroundEffect(): void;
+    setBackgroundEffect(value: UIVisualEffect): void;
     //
     alloc():UITableViewRowAction;
     //
@@ -16402,40 +16702,40 @@ declare namespace cocoascript {
     layoutAttributesForDecorationViewOfKind_withIndexPath(decorationViewKind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617776-indexpath
     indexPath(): NSIndexPath;
-    setIndexPath(): void;
+    setIndexPath(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617738-representedelementcategory
     representedElementCategory(): UICollectionElementCategory;
-    setRepresentedElementCategory(): void;
+    setRepresentedElementCategory(value: UICollectionElementCategory): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617806-representedelementkind
     representedElementKind(): string | cocoascript.NSString;
-    setRepresentedElementKind(): void;
+    setRepresentedElementKind(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617753-frame
     frame(): CGRect;
-    setFrame(): void;
+    setFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617782-bounds
     bounds(): CGRect;
-    setBounds(): void;
+    setBounds(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617735-center
     center(): CGPoint;
-    setCenter(): void;
+    setCenter(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617733-size
     size(): CGSize;
-    setSize(): void;
+    setSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617764-transform3d
     transform3D(): CATransform3D;
-    setTransform3D(): void;
+    setTransform3D(value: CATransform3D): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617779-transform
     transform(): CGAffineTransform;
-    setTransform(): void;
+    setTransform(value: CGAffineTransform): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617743-alpha
     alpha(): CGFloat;
-    setAlpha(): void;
+    setAlpha(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617768-zindex
     zIndex(): NSInteger;
-    setZIndex(): void;
+    setZIndex(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutattributes/1617799-hidden
-    hidden(): BOOL;
-    setHidden(): void;
+    hidden(): boolean;
+    setHidden(value: boolean): void;
     //
     alloc():UICollectionViewLayoutAttributes;
     //
@@ -16452,16 +16752,16 @@ declare namespace cocoascript {
   interface UITextDropProposal extends UIDropProposal {
     // https://developer.apple.com/documentation/uikit/uitextdropproposal/2891037-dropaction
     dropAction(): UITextDropAction;
-    setDropAction(): void;
+    setDropAction(value: UITextDropAction): void;
     // https://developer.apple.com/documentation/uikit/uitextdropproposal/2919992-dropperformer
     dropPerformer(): UITextDropPerformer;
-    setDropPerformer(): void;
+    setDropPerformer(value: UITextDropPerformer): void;
     // https://developer.apple.com/documentation/uikit/uitextdropproposal/2890989-dropprogressmode
     dropProgressMode(): UITextDropProgressMode;
-    setDropProgressMode(): void;
+    setDropProgressMode(value: UITextDropProgressMode): void;
     // https://developer.apple.com/documentation/uikit/uitextdropproposal/2891034-usefastsameviewoperations
-    useFastSameViewOperations(): BOOL;
-    setUseFastSameViewOperations(): void;
+    useFastSameViewOperations(): boolean;
+    setUseFastSameViewOperations(value: boolean): void;
     //
     alloc():UITextDropProposal;
     //
@@ -16480,7 +16780,7 @@ declare namespace cocoascript {
     passwordRulesWithDescriptor(passwordRulesDescriptor: string | cocoascript.NSString):UITextInputPasswordRules;
     // https://developer.apple.com/documentation/uikit/uitextinputpasswordrules/2980932-passwordrulesdescriptor
     passwordRulesDescriptor(): string | cocoascript.NSString;
-    setPasswordRulesDescriptor(): void;
+    setPasswordRulesDescriptor(value: string | cocoascript.NSString): void;
     //
     alloc():UITextInputPasswordRules;
     //
@@ -16503,16 +16803,16 @@ declare namespace cocoascript {
     layoutAnchorWithEdges_fractionalOffset(edges: NSDirectionalRectEdge, fractionalOffset: CGPoint):NSCollectionLayoutAnchor;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutanchor/3199030-edges
     edges(): NSDirectionalRectEdge;
-    setEdges(): void;
+    setEdges(value: NSDirectionalRectEdge): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutanchor/3199037-offset
     offset(): CGPoint;
-    setOffset(): void;
+    setOffset(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutanchor/3213811-isabsoluteoffset
-    isAbsoluteOffset(): BOOL;
-    setIsAbsoluteOffset(): void;
+    isAbsoluteOffset(): boolean;
+    setIsAbsoluteOffset(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutanchor/3213812-isfractionaloffset
-    isFractionalOffset(): BOOL;
-    setIsFractionalOffset(): void;
+    isFractionalOffset(): boolean;
+    setIsFractionalOffset(value: boolean): void;
     //
     alloc():NSCollectionLayoutAnchor;
     //
@@ -16532,17 +16832,17 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3213820-boundarysupplementaryitemwithlay
     boundarySupplementaryItemWithLayoutSize_elementKind_alignment_absoluteOffset(layoutSize: NSCollectionLayoutSize, elementKind: string | cocoascript.NSString, alignment: NSRectAlignment, absoluteOffset: CGPoint):NSCollectionLayoutBoundarySupplementaryItem;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3199044-pintovisiblebounds
-    pinToVisibleBounds(): BOOL;
-    setPinToVisibleBounds(): void;
+    pinToVisibleBounds(): boolean;
+    setPinToVisibleBounds(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3199043-offset
     offset(): CGPoint;
-    setOffset(): void;
+    setOffset(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3199039-alignment
     alignment(): NSRectAlignment;
-    setAlignment(): void;
+    setAlignment(value: NSRectAlignment): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3199040-extendsboundary
-    extendsBoundary(): BOOL;
-    setExtendsBoundary(): void;
+    extendsBoundary(): boolean;
+    setExtendsBoundary(value: boolean): void;
     //
     alloc():NSCollectionLayoutBoundarySupplementaryItem;
     //
@@ -16561,10 +16861,10 @@ declare namespace cocoascript {
     backgroundDecorationItemWithElementKind(elementKind: string | cocoascript.NSString):NSCollectionLayoutDecorationItem;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutdecorationitem/3213831-elementkind
     elementKind(): string | cocoascript.NSString;
-    setElementKind(): void;
+    setElementKind(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutdecorationitem/3199053-zindex
     zIndex(): NSInteger;
-    setZIndex(): void;
+    setZIndex(value: NSInteger): void;
     //
     alloc():NSCollectionLayoutDecorationItem;
     //
@@ -16589,19 +16889,19 @@ declare namespace cocoascript {
     fractionalWidthDimension(fractionalWidth: CGFloat):NSCollectionLayoutDimension;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutdimension/3199056-dimension
     dimension(): CGFloat;
-    setDimension(): void;
+    setDimension(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutdimension/3199060-isabsolute
-    isAbsolute(): BOOL;
-    setIsAbsolute(): void;
+    isAbsolute(): boolean;
+    setIsAbsolute(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutdimension/3199061-isestimated
-    isEstimated(): BOOL;
-    setIsEstimated(): void;
+    isEstimated(): boolean;
+    setIsEstimated(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutdimension/3199062-isfractionalheight
-    isFractionalHeight(): BOOL;
-    setIsFractionalHeight(): void;
+    isFractionalHeight(): boolean;
+    setIsFractionalHeight(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutdimension/3199063-isfractionalwidth
-    isFractionalWidth(): BOOL;
-    setIsFractionalWidth(): void;
+    isFractionalWidth(): boolean;
+    setIsFractionalWidth(value: boolean): void;
     //
     alloc():NSCollectionLayoutDimension;
     //
@@ -16620,16 +16920,16 @@ declare namespace cocoascript {
     spacingForLeading_top_trailing_bottom(leading: NSCollectionLayoutSpacing, top: NSCollectionLayoutSpacing, trailing: NSCollectionLayoutSpacing, bottom: NSCollectionLayoutSpacing):NSCollectionLayoutEdgeSpacing;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutedgespacing/3199069-leading
     leading(): NSCollectionLayoutSpacing;
-    setLeading(): void;
+    setLeading(value: NSCollectionLayoutSpacing): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutedgespacing/3199070-top
     top(): NSCollectionLayoutSpacing;
-    setTop(): void;
+    setTop(value: NSCollectionLayoutSpacing): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutedgespacing/3199071-trailing
     trailing(): NSCollectionLayoutSpacing;
-    setTrailing(): void;
+    setTrailing(value: NSCollectionLayoutSpacing): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutedgespacing/3199065-bottom
     bottom(): NSCollectionLayoutSpacing;
-    setBottom(): void;
+    setBottom(value: NSCollectionLayoutSpacing): void;
     //
     alloc():NSCollectionLayoutEdgeSpacing;
     //
@@ -16656,13 +16956,13 @@ declare namespace cocoascript {
     customGroupWithLayoutSize_itemProvider(layoutSize: NSCollectionLayoutSize, itemProvider: NSCollectionLayoutGroupCustomItemProvider):NSCollectionLayoutGroup;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutgroup/3213857-subitems
     subitems(): NSCollectionLayoutItem;
-    setSubitems(): void;
+    setSubitems(value: NSCollectionLayoutItem): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutgroup/3199079-supplementaryitems
     supplementaryItems(): NSCollectionLayoutSupplementaryItem;
-    setSupplementaryItems(): void;
+    setSupplementaryItems(value: NSCollectionLayoutSupplementaryItem): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutgroup/3199078-interitemspacing
     interItemSpacing(): NSCollectionLayoutSpacing;
-    setInterItemSpacing(): void;
+    setInterItemSpacing(value: NSCollectionLayoutSpacing): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutgroup/3199082-visualdescription
     visualDescription():NSString;
     //
@@ -16685,10 +16985,10 @@ declare namespace cocoascript {
     customItemWithFrame_zIndex(frame: CGRect, zIndex: NSInteger):NSCollectionLayoutGroupCustomItem;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutgroupcustomitem/3213865-frame
     frame(): CGRect;
-    setFrame(): void;
+    setFrame(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutgroupcustomitem/3213866-zindex
     zIndex(): NSInteger;
-    setZIndex(): void;
+    setZIndex(value: NSInteger): void;
     //
     alloc():NSCollectionLayoutGroupCustomItem;
     //
@@ -16709,16 +17009,16 @@ declare namespace cocoascript {
     itemWithLayoutSize_supplementaryItems(layoutSize: NSCollectionLayoutSize, supplementaryItems: NSCollectionLayoutSupplementaryItem):NSCollectionLayoutItem;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutitem/3213873-layoutsize
     layoutSize(): NSCollectionLayoutSize;
-    setLayoutSize(): void;
+    setLayoutSize(value: NSCollectionLayoutSize): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutitem/3213874-supplementaryitems
     supplementaryItems(): NSCollectionLayoutSupplementaryItem;
-    setSupplementaryItems(): void;
+    setSupplementaryItems(value: NSCollectionLayoutSupplementaryItem): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutitem/3199085-edgespacing
     edgeSpacing(): NSCollectionLayoutEdgeSpacing;
-    setEdgeSpacing(): void;
+    setEdgeSpacing(value: NSCollectionLayoutEdgeSpacing): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutitem/3199084-contentinsets
     contentInsets(): NSDirectionalEdgeInsets;
-    setContentInsets(): void;
+    setContentInsets(value: NSDirectionalEdgeInsets): void;
     //
     alloc():NSCollectionLayoutItem;
     //
@@ -16739,28 +17039,30 @@ declare namespace cocoascript {
     sectionWithListConfiguration_layoutEnvironment(configuration: UICollectionLayoutListConfiguration, layoutEnvironment: NSCollectionLayoutEnvironment):NSCollectionLayoutSection;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsection/3199094-orthogonalscrollingbehavior
     orthogonalScrollingBehavior(): UICollectionLayoutSectionOrthogonalScrollingBehavior;
-    setOrthogonalScrollingBehavior(): void;
+    setOrthogonalScrollingBehavior(value: UICollectionLayoutSectionOrthogonalScrollingBehavior): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsection/3199093-intergroupspacing
     interGroupSpacing(): CGFloat;
-    setInterGroupSpacing(): void;
+    setInterGroupSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsection/3199090-contentinsets
     contentInsets(): NSDirectionalEdgeInsets;
-    setContentInsets(): void;
+    setContentInsets(value: NSDirectionalEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsection/3600434-contentinsetsreference
     contentInsetsReference(): UIContentInsetsReference;
-    setContentInsetsReference(): void;
+    setContentInsetsReference(value: UIContentInsetsReference): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsection/3199095-supplementariesfollowcontentinse
-    supplementariesFollowContentInsets(): BOOL;
-    setSupplementariesFollowContentInsets(): void;
+    supplementariesFollowContentInsets(): boolean;
+    setSupplementariesFollowContentInsets(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsection/3199089-boundarysupplementaryitems
     boundarySupplementaryItems(): NSCollectionLayoutBoundarySupplementaryItem;
-    setBoundarySupplementaryItems(): void;
+    setBoundarySupplementaryItems(value: NSCollectionLayoutBoundarySupplementaryItem): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsection/3199091-decorationitems
     decorationItems(): NSCollectionLayoutDecorationItem;
-    setDecorationItems(): void;
+    setDecorationItems(value: NSCollectionLayoutDecorationItem): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsection/3199096-visibleitemsinvalidationhandler
     visibleItemsInvalidationHandler(): NSCollectionLayoutSectionVisibleItemsInvalidationHandler;
-    setVisibleItemsInvalidationHandler(): void;
+    setVisibleItemsInvalidationHandler(value: NSCollectionLayoutSectionVisibleItemsInvalidationHandler): void;
+    // https://developer.apple.com/documentation/appkit/nscollectionlayoutsection/3780294-orthogonallayoutsectionformediai
+    orthogonalLayoutSectionForMediaItems():NSCollectionLayoutSection;
     //
     alloc():NSCollectionLayoutSection;
     //
@@ -16779,10 +17081,10 @@ declare namespace cocoascript {
     sizeWithWidthDimension_heightDimension(width: NSCollectionLayoutDimension, height: NSCollectionLayoutDimension):NSCollectionLayoutSize;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsize/3213888-widthdimension
     widthDimension(): NSCollectionLayoutDimension;
-    setWidthDimension(): void;
+    setWidthDimension(value: NSCollectionLayoutDimension): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsize/3213886-heightdimension
     heightDimension(): NSCollectionLayoutDimension;
-    setHeightDimension(): void;
+    setHeightDimension(value: NSCollectionLayoutDimension): void;
     //
     alloc():NSCollectionLayoutSize;
     //
@@ -16803,13 +17105,13 @@ declare namespace cocoascript {
     flexibleSpacing(flexibleSpacing: CGFloat):NSCollectionLayoutSpacing;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutspacing/3199107-spacing
     spacing(): CGFloat;
-    setSpacing(): void;
+    setSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutspacing/3199105-isfixedspacing
-    isFixedSpacing(): BOOL;
-    setIsFixedSpacing(): void;
+    isFixedSpacing(): boolean;
+    setIsFixedSpacing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutspacing/3199106-isflexiblespacing
-    isFlexibleSpacing(): BOOL;
-    setIsFlexibleSpacing(): void;
+    isFlexibleSpacing(): boolean;
+    setIsFlexibleSpacing(value: boolean): void;
     //
     alloc():NSCollectionLayoutSpacing;
     //
@@ -16830,16 +17132,16 @@ declare namespace cocoascript {
     supplementaryItemWithLayoutSize_elementKind_containerAnchor_itemAnchor(layoutSize: NSCollectionLayoutSize, elementKind: string | cocoascript.NSString, containerAnchor: NSCollectionLayoutAnchor, itemAnchor: NSCollectionLayoutAnchor):NSCollectionLayoutSupplementaryItem;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsupplementaryitem/3199113-itemanchor
     itemAnchor(): NSCollectionLayoutAnchor;
-    setItemAnchor(): void;
+    setItemAnchor(value: NSCollectionLayoutAnchor): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsupplementaryitem/3199109-containeranchor
     containerAnchor(): NSCollectionLayoutAnchor;
-    setContainerAnchor(): void;
+    setContainerAnchor(value: NSCollectionLayoutAnchor): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsupplementaryitem/3199110-elementkind
     elementKind(): string | cocoascript.NSString;
-    setElementKind(): void;
+    setElementKind(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/nscollectionlayoutsupplementaryitem/3199114-zindex
     zIndex(): NSInteger;
-    setZIndex(): void;
+    setZIndex(value: NSInteger): void;
     //
     alloc():NSCollectionLayoutSupplementaryItem;
     //
@@ -16856,16 +17158,16 @@ declare namespace cocoascript {
   interface UICollectionViewCompositionalLayoutConfiguration extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicollectionviewcompositionallayoutconfiguration/3199222-scrolldirection
     scrollDirection(): UICollectionViewScrollDirection;
-    setScrollDirection(): void;
+    setScrollDirection(value: UICollectionViewScrollDirection): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcompositionallayoutconfiguration/3199221-intersectionspacing
     interSectionSpacing(): CGFloat;
-    setInterSectionSpacing(): void;
+    setInterSectionSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcompositionallayoutconfiguration/3600435-contentinsetsreference
     contentInsetsReference(): UIContentInsetsReference;
-    setContentInsetsReference(): void;
+    setContentInsetsReference(value: UIContentInsetsReference): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcompositionallayoutconfiguration/3199219-boundarysupplementaryitems
     boundarySupplementaryItems(): NSCollectionLayoutBoundarySupplementaryItem;
-    setBoundarySupplementaryItems(): void;
+    setBoundarySupplementaryItems(value: NSCollectionLayoutBoundarySupplementaryItem): void;
     //
     alloc():UICollectionViewCompositionalLayoutConfiguration;
     //
@@ -16885,7 +17187,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600310-snapshotofparentitem
     snapshotOfParentItem(parentItem: any):NSDiffableDataSourceSectionSnapshot;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600311-snapshotofparentitem
-    snapshotOfParentItem_includingParentItem(parentItem: any, includingParentItem: BOOL):NSDiffableDataSourceSectionSnapshot;
+    snapshotOfParentItem_includingParentItem(parentItem: any, includingParentItem: boolean):NSDiffableDataSourceSectionSnapshot;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600288-appenditems
     appendItems(items: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600289-appenditems
@@ -16894,13 +17196,13 @@ declare namespace cocoascript {
     items():NSArray;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600305-items
     items(): any;
-    setItems(): void;
+    setItems(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600309-rootitems
     rootItems(): any;
-    setRootItems(): void;
+    setRootItems(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600312-visibleitems
     visibleItems(): any;
-    setVisibleItems(): void;
+    setVisibleItems(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600296-indexofitem
     indexOfItem(item: any):NSInteger;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600306-levelofitem
@@ -16908,9 +17210,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600307-parentofchilditem
     parentOfChildItem(childItem: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600291-containsitem
-    containsItem(item: any):BOOL;
+    containsItem(item: any):boolean;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600303-isvisible
-    isVisible(item: any):BOOL;
+    isVisible(item: any):boolean;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600298-insertitems
     insertItems_afterItem(items: any, afterIdentifier: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600300-insertsnapshot
@@ -16926,7 +17228,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600308-replacechildrenofparentitem
     replaceChildrenOfParentItem_withSnapshot(parentItem: any, snapshot: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600302-isexpanded
-    isExpanded(item: any):BOOL;
+    isExpanded(item: any):boolean;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600294-expanditems
     expandItems(items: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600290-collapseitems
@@ -16967,41 +17269,47 @@ declare namespace cocoascript {
     clearConfiguration():UIBackgroundConfiguration;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600322-customview
     customView(): UIView;
-    setCustomView(): void;
+    setCustomView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600321-cornerradius
     cornerRadius(): CGFloat;
-    setCornerRadius(): void;
+    setCornerRadius(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600319-backgroundinsets
     backgroundInsets(): NSDirectionalEdgeInsets;
-    setBackgroundInsets(): void;
+    setBackgroundInsets(value: NSDirectionalEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600323-edgesaddinglayoutmarginstobackgr
     edgesAddingLayoutMarginsToBackgroundInsets(): NSDirectionalRectEdge;
-    setEdgesAddingLayoutMarginsToBackgroundInsets(): void;
+    setEdgesAddingLayoutMarginsToBackgroundInsets(value: NSDirectionalRectEdge): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600317-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600318-backgroundcolortransformer
     backgroundColorTransformer(): UIConfigurationColorTransformer;
-    setBackgroundColorTransformer(): void;
+    setBackgroundColorTransformer(value: UIConfigurationColorTransformer): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600330-resolvedbackgroundcolorfortintco
     resolvedBackgroundColorForTintColor(tintColor: UIColor):UIColor;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600337-visualeffect
     visualEffect(): UIVisualEffect;
-    setVisualEffect(): void;
+    setVisualEffect(value: UIVisualEffect): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600332-strokecolor
     strokeColor(): UIColor;
-    setStrokeColor(): void;
+    setStrokeColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600333-strokecolortransformer
     strokeColorTransformer(): UIConfigurationColorTransformer;
-    setStrokeColorTransformer(): void;
+    setStrokeColorTransformer(value: UIConfigurationColorTransformer): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600331-resolvedstrokecolorfortintcolor
     resolvedStrokeColorForTintColor(tintColor: UIColor):UIColor;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600335-strokewidth
     strokeWidth(): CGFloat;
-    setStrokeWidth(): void;
+    setStrokeWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600334-strokeoutset
     strokeOutset(): CGFloat;
-    setStrokeOutset(): void;
+    setStrokeOutset(value: CGFloat): void;
+    // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3750760-image
+    image(): UIImage;
+    setImage(value: UIImage): void;
+    // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3750761-imagecontentmode
+    imageContentMode(): UIViewContentMode;
+    setImageContentMode(value: UIViewContentMode): void;
     // https://developer.apple.com/documentation/uikit/uibackgroundconfiguration/3600336-updatedconfigurationforstate
     updatedConfigurationForState(state: UIConfigurationState):UIBackgroundConfiguration;
     //
@@ -17023,17 +17331,17 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uicellaccessory/3600354-initwithcoder
     initWithCoder(coder: NSCoder):UICellAccessory;
     // https://developer.apple.com/documentation/uikit/uicellaccessory/3667726-hidden
-    hidden(): BOOL;
-    setHidden(): void;
+    hidden(): boolean;
+    setHidden(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessory/3600356-tintcolor
     tintColor(): UIColor;
-    setTintColor(): void;
+    setTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessory/3600352-displayedstate
     displayedState(): UICellAccessoryDisplayedState;
-    setDisplayedState(): void;
+    setDisplayedState(value: UICellAccessoryDisplayedState): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessory/3600355-reservedlayoutwidth
     reservedLayoutWidth(): CGFloat;
-    setReservedLayoutWidth(): void;
+    setReservedLayoutWidth(value: CGFloat): void;
     //
     alloc():UICellAccessory;
     //
@@ -17056,25 +17364,34 @@ declare namespace cocoascript {
     initWithAppearance(appearance: UICollectionLayoutListAppearance):UICollectionLayoutListConfiguration;
     // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration/3600408-appearance
     appearance(): UICollectionLayoutListAppearance;
-    setAppearance(): void;
+    setAppearance(value: UICollectionLayoutListAppearance): void;
     // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration/3600409-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration/3601202-showsseparators
-    showsSeparators(): BOOL;
-    setShowsSeparators(): void;
+    showsSeparators(): boolean;
+    setShowsSeparators(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration/3727309-separatorconfiguration
+    separatorConfiguration(): UIListSeparatorConfiguration;
+    setSeparatorConfiguration(value: UIListSeparatorConfiguration): void;
+    // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration/3727308-itemseparatorhandler
+    itemSeparatorHandler(): UICollectionLayoutListItemSeparatorHandler;
+    setItemSeparatorHandler(value: UICollectionLayoutListItemSeparatorHandler): void;
     // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration/3600411-headermode
     headerMode(): UICollectionLayoutListHeaderMode;
-    setHeaderMode(): void;
+    setHeaderMode(value: UICollectionLayoutListHeaderMode): void;
     // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration/3600410-footermode
     footerMode(): UICollectionLayoutListFooterMode;
-    setFooterMode(): void;
+    setFooterMode(value: UICollectionLayoutListFooterMode): void;
+    // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration/3750827-headertoppadding
+    headerTopPadding(): CGFloat;
+    setHeaderTopPadding(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration/3650427-leadingswipeactionsconfiguration
     leadingSwipeActionsConfigurationProvider(): UICollectionLayoutListSwipeActionsConfigurationProvider;
-    setLeadingSwipeActionsConfigurationProvider(): void;
+    setLeadingSwipeActionsConfigurationProvider(value: UICollectionLayoutListSwipeActionsConfigurationProvider): void;
     // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration/3650428-trailingswipeactionsconfiguratio
     trailingSwipeActionsConfigurationProvider(): UICollectionLayoutListSwipeActionsConfigurationProvider;
-    setTrailingSwipeActionsConfigurationProvider(): void;
+    setTrailingSwipeActionsConfigurationProvider(value: UICollectionLayoutListSwipeActionsConfigurationProvider): void;
     //
     alloc():UICollectionLayoutListConfiguration;
     //
@@ -17091,13 +17408,13 @@ declare namespace cocoascript {
   interface UICollectionViewDiffableDataSourceReorderingHandlers extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasourcereorderinghandlers/3600517-canreorderitemhandler
     canReorderItemHandler(): ItemType;
-    setCanReorderItemHandler(): void;
+    setCanReorderItemHandler(value: ItemType): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasourcereorderinghandlers/3600519-willreorderhandler
     willReorderHandler(): ItemType;
-    setWillReorderHandler(): void;
+    setWillReorderHandler(value: ItemType): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasourcereorderinghandlers/3600518-didreorderhandler
     didReorderHandler(): ItemType;
-    setDidReorderHandler(): void;
+    setDidReorderHandler(value: ItemType): void;
     //
     alloc():UICollectionViewDiffableDataSourceReorderingHandlers;
     //
@@ -17114,19 +17431,19 @@ declare namespace cocoascript {
   interface UICollectionViewDiffableDataSourceSectionSnapshotHandlers extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasourcesectionsnapshothandlers/3600521-shouldcollapseitemhandler
     shouldCollapseItemHandler(): ItemType;
-    setShouldCollapseItemHandler(): void;
+    setShouldCollapseItemHandler(value: ItemType): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasourcesectionsnapshothandlers/3600522-shouldexpanditemhandler
     shouldExpandItemHandler(): ItemType;
-    setShouldExpandItemHandler(): void;
+    setShouldExpandItemHandler(value: ItemType): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasourcesectionsnapshothandlers/3600524-willcollapseitemhandler
     willCollapseItemHandler(): ItemType;
-    setWillCollapseItemHandler(): void;
+    setWillCollapseItemHandler(value: ItemType): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasourcesectionsnapshothandlers/3600525-willexpanditemhandler
     willExpandItemHandler(): ItemType;
-    setWillExpandItemHandler(): void;
+    setWillExpandItemHandler(value: ItemType): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasourcesectionsnapshothandlers/3600523-snapshotforexpandingparentitemha
     snapshotForExpandingParentItemHandler(): ItemType;
-    setSnapshotForExpandingParentItemHandler(): void;
+    setSnapshotForExpandingParentItemHandler(value: ItemType): void;
     //
     alloc():UICollectionViewDiffableDataSourceSectionSnapshotHandlers;
     //
@@ -17143,27 +17460,27 @@ declare namespace cocoascript {
   interface UIListContentImageProperties extends NSObject {
     // https://developer.apple.com/documentation/uikit/uilistcontentimageproperties/3600558-preferredsymbolconfiguration
     preferredSymbolConfiguration(): UIImageSymbolConfiguration;
-    setPreferredSymbolConfiguration(): void;
+    setPreferredSymbolConfiguration(value: UIImageSymbolConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentimageproperties/3600560-tintcolor
     tintColor(): UIColor;
-    setTintColor(): void;
+    setTintColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentimageproperties/3606377-tintcolortransformer
     tintColorTransformer(): UIConfigurationColorTransformer;
-    setTintColorTransformer(): void;
+    setTintColorTransformer(value: UIConfigurationColorTransformer): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentimageproperties/3606376-resolvedtintcolorfortintcolor
     resolvedTintColorForTintColor(tintColor: UIColor):UIColor;
     // https://developer.apple.com/documentation/uikit/uilistcontentimageproperties/3600556-cornerradius
     cornerRadius(): CGFloat;
-    setCornerRadius(): void;
+    setCornerRadius(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentimageproperties/3600557-maximumsize
     maximumSize(): CGSize;
-    setMaximumSize(): void;
+    setMaximumSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentimageproperties/3600559-reservedlayoutsize
     reservedLayoutSize(): CGSize;
-    setReservedLayoutSize(): void;
+    setReservedLayoutSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentimageproperties/3667733-accessibilityignoresinvertcolors
-    accessibilityIgnoresInvertColors(): BOOL;
-    setAccessibilityIgnoresInvertColors(): void;
+    accessibilityIgnoresInvertColors(): boolean;
+    setAccessibilityIgnoresInvertColors(value: boolean): void;
     //
     alloc():UIListContentImageProperties;
     //
@@ -17180,39 +17497,39 @@ declare namespace cocoascript {
   interface UIListContentTextProperties extends NSObject {
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3600572-font
     font(): UIFont;
-    setFont(): void;
+    setFont(value: UIFont): void;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3600571-color
     color(): UIColor;
-    setColor(): void;
+    setColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3606378-colortransformer
     colorTransformer(): UIConfigurationColorTransformer;
-    setColorTransformer(): void;
+    setColorTransformer(value: UIConfigurationColorTransformer): void;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3606379-resolvedcolor
     resolvedColor():UIColor;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3600569-alignment
     alignment(): UIListContentTextAlignment;
-    setAlignment(): void;
+    setAlignment(value: UIListContentTextAlignment): void;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3600573-linebreakmode
     lineBreakMode(): NSLineBreakMode;
-    setLineBreakMode(): void;
+    setLineBreakMode(value: NSLineBreakMode): void;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3600575-numberoflines
     numberOfLines(): NSInteger;
-    setNumberOfLines(): void;
+    setNumberOfLines(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3600568-adjustsfontsizetofitwidth
-    adjustsFontSizeToFitWidth(): BOOL;
-    setAdjustsFontSizeToFitWidth(): void;
+    adjustsFontSizeToFitWidth(): boolean;
+    setAdjustsFontSizeToFitWidth(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3600574-minimumscalefactor
     minimumScaleFactor(): CGFloat;
-    setMinimumScaleFactor(): void;
+    setMinimumScaleFactor(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3600570-allowsdefaulttighteningfortrunca
-    allowsDefaultTighteningForTruncation(): BOOL;
-    setAllowsDefaultTighteningForTruncation(): void;
+    allowsDefaultTighteningForTruncation(): boolean;
+    setAllowsDefaultTighteningForTruncation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3600567-adjustsfontforcontentsizecategor
-    adjustsFontForContentSizeCategory(): BOOL;
-    setAdjustsFontForContentSizeCategory(): void;
+    adjustsFontForContentSizeCategory(): boolean;
+    setAdjustsFontForContentSizeCategory(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilistcontenttextproperties/3650227-transform
     transform(): UIListContentTextTransform;
-    setTransform(): void;
+    setTransform(value: UIListContentTextTransform): void;
     //
     alloc():UIListContentTextProperties;
     //
@@ -17227,6 +17544,29 @@ declare namespace cocoascript {
    * https://developer.apple.com/documentation/uikit/uilistseparatorconfiguration
    */
   interface UIListSeparatorConfiguration extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uilistseparatorconfiguration/3727324-initwithlistappearance
+    initWithListAppearance(listAppearance: UICollectionLayoutListAppearance):UIListSeparatorConfiguration;
+    // https://developer.apple.com/documentation/uikit/uilistseparatorconfiguration/3727327-topseparatorvisibility
+    topSeparatorVisibility(): UIListSeparatorVisibility;
+    setTopSeparatorVisibility(value: UIListSeparatorVisibility): void;
+    // https://developer.apple.com/documentation/uikit/uilistseparatorconfiguration/3727322-bottomseparatorvisibility
+    bottomSeparatorVisibility(): UIListSeparatorVisibility;
+    setBottomSeparatorVisibility(value: UIListSeparatorVisibility): void;
+    // https://developer.apple.com/documentation/uikit/uilistseparatorconfiguration/3727326-topseparatorinsets
+    topSeparatorInsets(): NSDirectionalEdgeInsets;
+    setTopSeparatorInsets(value: NSDirectionalEdgeInsets): void;
+    // https://developer.apple.com/documentation/uikit/uilistseparatorconfiguration/3727321-bottomseparatorinsets
+    bottomSeparatorInsets(): NSDirectionalEdgeInsets;
+    setBottomSeparatorInsets(value: NSDirectionalEdgeInsets): void;
+    // https://developer.apple.com/documentation/uikit/uilistseparatorconfiguration/3727323-color
+    color(): UIColor;
+    setColor(value: UIColor): void;
+    // https://developer.apple.com/documentation/uikit/uilistseparatorconfiguration/3727325-multipleselectioncolor
+    multipleSelectionColor(): UIColor;
+    setMultipleSelectionColor(value: UIColor): void;
+    // https://developer.apple.com/documentation/uikit/uilistseparatorconfiguration/3858106-visualeffect
+    visualEffect(): UIVisualEffect;
+    setVisualEffect(value: UIVisualEffect): void;
     //
     alloc():UIListSeparatorConfiguration;
     //
@@ -17257,18 +17597,18 @@ declare namespace cocoascript {
     appendItemsWithIdentifiers(identifiers: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182913-numberofitems
     numberOfItems(): NSInteger;
-    setNumberOfItems(): void;
+    setNumberOfItems(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182915-numberofsections
     numberOfSections(): NSInteger;
-    setNumberOfSections(): void;
+    setNumberOfSections(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182914-numberofitemsinsection
     numberOfItemsInSection(sectionIdentifier: any):NSInteger;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182907-itemidentifiers
     itemIdentifiers(): any;
-    setItemIdentifiers(): void;
+    setItemIdentifiers(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182919-sectionidentifiers
     sectionIdentifiers(): any;
-    setSectionIdentifiers(): void;
+    setSectionIdentifiers(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182901-indexofitemidentifier
     indexOfItemIdentifier(itemIdentifier: any):NSInteger;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182902-indexofsectionidentifier
@@ -17303,17 +17643,17 @@ declare namespace cocoascript {
     reconfigureItemsWithIdentifiers(identifiers: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3857603-reconfigureditemidentifiers
     reconfiguredItemIdentifiers(): any;
-    setReconfiguredItemIdentifiers(): void;
+    setReconfiguredItemIdentifiers(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182916-reloaditemswithidentifiers
     reloadItemsWithIdentifiers(identifiers: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3857604-reloadeditemidentifiers
     reloadedItemIdentifiers(): any;
-    setReloadedItemIdentifiers(): void;
+    setReloadedItemIdentifiers(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3182917-reloadsectionswithidentifiers
     reloadSectionsWithIdentifiers(sectionIdentifiers: any):void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot/3857605-reloadedsectionidentifiers
     reloadedSectionIdentifiers(): any;
-    setReloadedSectionIdentifiers(): void;
+    setReloadedSectionIdentifiers(value: any): void;
     //
     alloc():NSDiffableDataSourceSnapshot;
     //
@@ -17332,29 +17672,37 @@ declare namespace cocoascript {
     initWithCollectionView_cellProvider(collectionView: UICollectionView, cellProvider: UICollectionViewDiffableDataSourceCellProvider):UICollectionViewDiffableDataSource;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3182926-supplementaryviewprovider
     supplementaryViewProvider(): UICollectionViewDiffableDataSourceSupplementaryViewProvider;
-    setSupplementaryViewProvider(): void;
+    setSupplementaryViewProvider(value: UICollectionViewDiffableDataSourceSupplementaryViewProvider): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3182924-itemidentifierforindexpath
     itemIdentifierForIndexPath(indexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3182922-indexpathforitemidentifier
     indexPathForItemIdentifier(identifier: any):NSIndexPath;
+    // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3801894-sectionidentifierforindex
+    sectionIdentifierForIndex(index: NSInteger):void;
+    // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3801893-indexforsectionidentifier
+    indexForSectionIdentifier(identifier: any):NSInteger;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3182925-snapshot
     snapshot():NSDiffableDataSourceSnapshot;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3182921-applysnapshot
-    applySnapshot_animatingDifferences(snapshot: any, animatingDifferences: BOOL):void;
+    applySnapshot_animatingDifferences(snapshot: any, animatingDifferences: boolean):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3356324-applysnapshot
-    applySnapshot_animatingDifferences_completion(snapshot: any, animatingDifferences: BOOL, completion: void):void;
+    applySnapshot_animatingDifferences_completion(snapshot: any, animatingDifferences: boolean, completion: void):void;
+    // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3801891-applysnapshotusingreloaddata
+    applySnapshotUsingReloadData(snapshot: any):void;
+    // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3801892-applysnapshotusingreloaddata
+    applySnapshotUsingReloadData_completion(snapshot: any, completion: void):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3600515-snapshotforsection
     snapshotForSection(section: any):NSDiffableDataSourceSectionSnapshot;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3600511-applysnapshot
-    applySnapshot_toSection_animatingDifferences(snapshot: any, sectionIdentifier: any, animatingDifferences: BOOL):void;
+    applySnapshot_toSection_animatingDifferences(snapshot: any, sectionIdentifier: any, animatingDifferences: boolean):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3600512-applysnapshot
-    applySnapshot_toSection_animatingDifferences_completion(snapshot: any, sectionIdentifier: any, animatingDifferences: BOOL, completion: void):void;
+    applySnapshot_toSection_animatingDifferences_completion(snapshot: any, sectionIdentifier: any, animatingDifferences: boolean, completion: void):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3600513-reorderinghandlers
     reorderingHandlers(): any;
-    setReorderingHandlers(): void;
+    setReorderingHandlers(value: any): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource/3600514-sectionsnapshothandlers
     sectionSnapshotHandlers(): any;
-    setSectionSnapshotHandlers(): void;
+    setSectionSnapshotHandlers(value: any): void;
     //
     alloc():UICollectionViewDiffableDataSource;
     //
@@ -17377,19 +17725,19 @@ declare namespace cocoascript {
     defaultContentConfiguration():UIListContentConfiguration;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlistcell/3600458-accessories
     accessories(): UICellAccessory;
-    setAccessories(): void;
+    setAccessories(value: UICellAccessory): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlistcell/3600460-indentationlevel
     indentationLevel(): NSInteger;
-    setIndentationLevel(): void;
+    setIndentationLevel(value: NSInteger): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlistcell/3600461-indentationwidth
     indentationWidth(): CGFloat;
-    setIndentationWidth(): void;
+    setIndentationWidth(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlistcell/3600462-indentsaccessories
-    indentsAccessories(): BOOL;
-    setIndentsAccessories(): void;
+    indentsAccessories(): boolean;
+    setIndentsAccessories(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlistcell/3601206-separatorlayoutguide
     separatorLayoutGuide(): UILayoutGuide;
-    setSeparatorLayoutGuide(): void;
+    setSeparatorLayoutGuide(value: UILayoutGuide): void;
     //
     alloc():UICollectionViewListCell;
     //
@@ -17444,50 +17792,54 @@ declare namespace cocoascript {
     groupedHeaderConfiguration():UIListContentConfiguration;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600531-groupedfooterconfiguration
     groupedFooterConfiguration():UIListContentConfiguration;
+    // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3752191-prominentinsetgroupedheaderconfi
+    prominentInsetGroupedHeaderConfiguration():UIListContentConfiguration;
+    // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3752190-extraprominentinsetgroupedheader
+    extraProminentInsetGroupedHeaderConfiguration():UIListContentConfiguration;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600543-sidebarheaderconfiguration
     sidebarHeaderConfiguration():UIListContentConfiguration;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600533-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600546-text
     text(): string | cocoascript.NSString;
-    setText(): void;
+    setText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600527-attributedtext
     attributedText(): NSAttributedString;
-    setAttributedText(): void;
+    setAttributedText(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600540-secondarytext
     secondaryText(): string | cocoascript.NSString;
-    setSecondaryText(): void;
+    setSecondaryText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600539-secondaryattributedtext
     secondaryAttributedText(): NSAttributedString;
-    setSecondaryAttributedText(): void;
+    setSecondaryAttributedText(value: NSAttributedString): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600534-imageproperties
     imageProperties(): UIListContentImageProperties;
-    setImageProperties(): void;
+    setImageProperties(value: UIListContentImageProperties): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600547-textproperties
     textProperties(): UIListContentTextProperties;
-    setTextProperties(): void;
+    setTextProperties(value: UIListContentTextProperties): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600541-secondarytextproperties
     secondaryTextProperties(): UIListContentTextProperties;
-    setSecondaryTextProperties(): void;
+    setSecondaryTextProperties(value: UIListContentTextProperties): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600528-axespreservingsuperviewlayoutmar
     axesPreservingSuperviewLayoutMargins(): UIAxis;
-    setAxesPreservingSuperviewLayoutMargins(): void;
+    setAxesPreservingSuperviewLayoutMargins(value: UIAxis): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600530-directionallayoutmargins
     directionalLayoutMargins(): NSDirectionalEdgeInsets;
-    setDirectionalLayoutMargins(): void;
+    setDirectionalLayoutMargins(value: NSDirectionalEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600538-preferssidebysidetextandsecondar
-    prefersSideBySideTextAndSecondaryText(): BOOL;
-    setPrefersSideBySideTextAndSecondaryText(): void;
+    prefersSideBySideTextAndSecondaryText(): boolean;
+    setPrefersSideBySideTextAndSecondaryText(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600535-imagetotextpadding
     imageToTextPadding(): CGFloat;
-    setImageToTextPadding(): void;
+    setImageToTextPadding(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600548-texttosecondarytexthorizontalpad
     textToSecondaryTextHorizontalPadding(): CGFloat;
-    setTextToSecondaryTextHorizontalPadding(): void;
+    setTextToSecondaryTextHorizontalPadding(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentconfiguration/3600549-texttosecondarytextverticalpaddi
     textToSecondaryTextVerticalPadding(): CGFloat;
-    setTextToSecondaryTextVerticalPadding(): void;
+    setTextToSecondaryTextVerticalPadding(value: CGFloat): void;
     //
     alloc():UIListContentConfiguration;
     //
@@ -17507,14 +17859,14 @@ declare namespace cocoascript {
    */
   interface UICollectionViewDropPlaceholderContext extends UIDragAnimating {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropplaceholdercontext/2897447-commitinsertionwithdatasourceupd
-    commitInsertionWithDataSourceUpdates(dataSourceUpdates: NSIndexPath):BOOL;
+    commitInsertionWithDataSourceUpdates(dataSourceUpdates: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropplaceholdercontext/2897490-setneedscellupdate
     setNeedsCellUpdate():void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropplaceholdercontext/2897339-deleteplaceholder
-    deletePlaceholder():BOOL;
+    deletePlaceholder():boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropplaceholdercontext/2897430-dragitem
     dragItem(): UIDragItem;
-    setDragItem(): void;
+    setDragItem(value: UIDragItem): void;
   }
 }
 declare namespace cocoascript {
@@ -17524,12 +17876,12 @@ declare namespace cocoascript {
    */
   interface UITableViewDropPlaceholderContext extends UIDragAnimating {
     // https://developer.apple.com/documentation/uikit/uitableviewdropplaceholdercontext/2897487-commitinsertionwithdatasourceupd
-    commitInsertionWithDataSourceUpdates(dataSourceUpdates: NSIndexPath):BOOL;
+    commitInsertionWithDataSourceUpdates(dataSourceUpdates: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdropplaceholdercontext/2897343-deleteplaceholder
-    deletePlaceholder():BOOL;
+    deletePlaceholder():boolean;
     // https://developer.apple.com/documentation/uikit/uitableviewdropplaceholdercontext/2897407-dragitem
     dragItem(): UIDragItem;
-    setDragItem(): void;
+    setDragItem(value: UIDragItem): void;
   }
 }
 declare namespace cocoascript {
@@ -17542,7 +17894,7 @@ declare namespace cocoascript {
     initWithDropOperation_intent(operation: UIDropOperation, intent: UITableViewDropIntent):UITableViewDropProposal;
     // https://developer.apple.com/documentation/uikit/uitableviewdropproposal/2897495-intent
     intent(): UITableViewDropIntent;
-    setIntent(): void;
+    setIntent(value: UITableViewDropIntent): void;
     //
     alloc():UITableViewDropProposal;
     //
@@ -17561,7 +17913,7 @@ declare namespace cocoascript {
     initWithDropOperation_intent(operation: UIDropOperation, intent: UICollectionViewDropIntent):UICollectionViewDropProposal;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropproposal/2897338-intent
     intent(): UICollectionViewDropIntent;
-    setIntent(): void;
+    setIntent(value: UICollectionViewDropIntent): void;
     //
     alloc():UICollectionViewDropProposal;
     //
@@ -17742,13 +18094,13 @@ declare namespace cocoascript {
   interface UIPointerHoverEffect extends UIPointerEffect {
     // https://developer.apple.com/documentation/uikit/uipointerhovereffect/3539015-preferredtintmode
     preferredTintMode(): UIPointerEffectTintMode;
-    setPreferredTintMode(): void;
+    setPreferredTintMode(value: UIPointerEffectTintMode): void;
     // https://developer.apple.com/documentation/uikit/uipointerhovereffect/3539016-prefersscaledcontent
-    prefersScaledContent(): BOOL;
-    setPrefersScaledContent(): void;
+    prefersScaledContent(): boolean;
+    setPrefersScaledContent(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipointerhovereffect/3539017-prefersshadow
-    prefersShadow(): BOOL;
-    setPrefersShadow(): void;
+    prefersShadow(): boolean;
+    setPrefersShadow(value: boolean): void;
     //
     alloc():UIPointerHoverEffect;
     //
@@ -17765,6 +18117,12 @@ declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uibarbuttonitemstyle
   type UIBarButtonItemStyle = cocoascript.NSInteger;
 }
+declare namespace cocoascript {
+  interface UIPointerAccessoryPosition {
+  }
+}
+// https://developer.apple.com/documentation/uikit/uipointerlockstatedidchangenotification
+declare const UIPointerLockStateDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uipencilpreferredaction
   type UIPencilPreferredAction = cocoascript.NSInteger;
@@ -17839,6 +18197,8 @@ declare const UIAccessibilitySwitchControlStatusDidChangeNotification: cocoascri
 declare const UIAccessibilityElementFocusedNotification: cocoascript.NSNotificationName;
 // https://developer.apple.com/documentation/uikit/uiaccessibilityreducetransparencystatusdidchangenotification
 declare const UIAccessibilityReduceTransparencyStatusDidChangeNotification: cocoascript.NSNotificationName;
+// https://developer.apple.com/documentation/uikit/uiaccessibilitybuttonshapesenabledstatusdidchangenotification
+declare const UIAccessibilityButtonShapesEnabledStatusDidChangeNotification: cocoascript.NSNotificationName;
 // https://developer.apple.com/documentation/uikit/uiaccessibilityvoiceoverstatusdidchangenotification
 declare const UIAccessibilityVoiceOverStatusDidChangeNotification: cocoascript.NSNotificationName;
 // https://developer.apple.com/documentation/uikit/uiaccessibilityannouncementdidfinishnotification
@@ -17888,21 +18248,21 @@ declare namespace cocoascript {
    */
   interface UICollectionViewDelegate extends UIScrollViewDelegate {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618095-collectionview
-    collectionView_shouldSelectItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):BOOL;
+    collectionView_shouldSelectItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618032-collectionview
     collectionView_didSelectItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618067-collectionview
-    collectionView_shouldDeselectItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):BOOL;
+    collectionView_shouldDeselectItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618035-collectionview
     collectionView_didDeselectItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3183916-collectionview
-    collectionView_shouldBeginMultipleSelectionInteractionAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):BOOL;
+    collectionView_shouldBeginMultipleSelectionInteractionAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3183915-collectionview
     collectionView_didBeginMultipleSelectionInteractionAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3183917-collectionviewdidendmultiplesele
     collectionViewDidEndMultipleSelectionInteraction(collectionView: UICollectionView):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618070-collectionview
-    collectionView_shouldHighlightItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):BOOL;
+    collectionView_shouldHighlightItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618049-collectionview
     collectionView_didHighlightItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618027-collectionview
@@ -17920,7 +18280,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618007-collectionview
     collectionView_targetContentOffsetForProposedContentOffset(collectionView: UICollectionView, proposedContentOffset: CGPoint):CGPoint;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618052-collectionview
-    collectionView_targetIndexPathForMoveFromItemAtIndexPath_toProposedIndexPath(collectionView: UICollectionView, originalIndexPath: NSIndexPath, proposedIndexPath: NSIndexPath):NSIndexPath;
+    collectionView_targetIndexPathForMoveFromItemAtIndexPath_toProposedIndexPath(collectionView: UICollectionView, currentIndexPath: NSIndexPath, proposedIndexPath: NSIndexPath):NSIndexPath;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3295917-collectionview
     collectionView_contextMenuConfigurationForItemAtIndexPath_point(collectionView: UICollectionView, indexPath: NSIndexPath, point: CGPoint):UIContextMenuConfiguration;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3295918-collectionview
@@ -17934,23 +18294,29 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3375794-collectionview
     collectionView_willPerformPreviewActionForMenuWithConfiguration_animator(collectionView: UICollectionView, configuration: UIContextMenuConfiguration, animator: UIContextMenuInteractionCommitAnimating):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618013-collectionview
-    collectionView_canFocusItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):BOOL;
+    collectionView_canFocusItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618066-indexpathforpreferredfocusedview
     indexPathForPreferredFocusedViewInCollectionView(collectionView: UICollectionView):NSIndexPath;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618072-collectionview
-    collectionView_shouldUpdateFocusInContext(collectionView: UICollectionView, context: UICollectionViewFocusUpdateContext):BOOL;
+    collectionView_shouldUpdateFocusInContext(collectionView: UICollectionView, context: UICollectionViewFocusUpdateContext):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618081-collectionview
     collectionView_didUpdateFocusInContext_withAnimationCoordinator(collectionView: UICollectionView, context: UICollectionViewFocusUpdateContext, coordinator: UIFocusAnimationCoordinator):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3600426-collectionview
-    collectionView_canEditItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):BOOL;
+    collectionView_canEditItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/2897333-collectionview
-    collectionView_shouldSpringLoadItemAtIndexPath_withContext(collectionView: UICollectionView, indexPath: NSIndexPath, context: UISpringLoadedInteractionContext):BOOL;
+    collectionView_shouldSpringLoadItemAtIndexPath_withContext(collectionView: UICollectionView, indexPath: NSIndexPath, context: UISpringLoadedInteractionContext):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618010-collectionview
-    collectionView_shouldShowMenuForItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):BOOL;
+    collectionView_shouldShowMenuForItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618051-collectionview
-    collectionView_canPerformAction_forItemAtIndexPath_withSender(collectionView: UICollectionView, action: SEL, indexPath: NSIndexPath, sender: UICollectionViewDelegate):BOOL;
+    collectionView_canPerformAction_forItemAtIndexPath_withSender(collectionView: UICollectionView, action: SEL, indexPath: NSIndexPath, sender: UICollectionViewDelegate):boolean;
     // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/1618073-collectionview
     collectionView_performAction_forItemAtIndexPath_withSender(collectionView: UICollectionView, action: SEL, indexPath: NSIndexPath, sender: UICollectionViewDelegate):void;
+    // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3752185-collectionview
+    collectionView_sceneActivationConfigurationForItemAtIndexPath_point(collectionView: UICollectionView, indexPath: NSIndexPath, point: CGPoint):UIWindowSceneActivationConfiguration;
+    // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3752186-collectionview
+    collectionView_selectionFollowsFocusForItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):boolean;
+    // https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/3750828-collectionview
+    collectionView_targetIndexPathForMoveOfItemFromOriginalIndexPath_atCurrentIndexPath_toProposedIndexPath(collectionView: UICollectionView, originalIndexPath: NSIndexPath, currentIndexPath: NSIndexPath, proposedIndexPath: NSIndexPath):NSIndexPath;
   }
 }
 declare namespace cocoascript {
@@ -17961,38 +18327,41 @@ declare namespace cocoascript {
   interface UICollectionViewCell extends UICollectionReusableView {
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/3600429-backgroundconfiguration
     backgroundConfiguration(): UIBackgroundConfiguration;
-    setBackgroundConfiguration(): void;
+    setBackgroundConfiguration(value: UIBackgroundConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/3600427-automaticallyupdatesbackgroundco
-    automaticallyUpdatesBackgroundConfiguration(): BOOL;
-    setAutomaticallyUpdatesBackgroundConfiguration(): void;
+    automaticallyUpdatesBackgroundConfiguration(): boolean;
+    setAutomaticallyUpdatesBackgroundConfiguration(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/1620131-backgroundview
     backgroundView(): UIView;
-    setBackgroundView(): void;
+    setBackgroundView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/1620138-selectedbackgroundview
     selectedBackgroundView(): UIView;
-    setSelectedBackgroundView(): void;
+    setSelectedBackgroundView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/3600431-contentconfiguration
     contentConfiguration(): UIContentConfiguration;
-    setContentConfiguration(): void;
+    setContentConfiguration(value: UIContentConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/3600428-automaticallyupdatescontentconfi
-    automaticallyUpdatesContentConfiguration(): BOOL;
-    setAutomaticallyUpdatesContentConfiguration(): void;
+    automaticallyUpdatesContentConfiguration(): boolean;
+    setAutomaticallyUpdatesContentConfiguration(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/1620133-contentview
     contentView(): UIView;
-    setContentView(): void;
+    setContentView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/3600430-configurationstate
     configurationState(): UICellConfigurationState;
-    setConfigurationState(): void;
+    setConfigurationState(value: UICellConfigurationState): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/3600432-setneedsupdateconfiguration
     setNeedsUpdateConfiguration():void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/3600433-updateconfigurationusingstate
     updateConfigurationUsingState(state: UICellConfigurationState):void;
+    // https://developer.apple.com/documentation/uikit/uicollectionviewcell/3750829-configurationupdatehandler
+    configurationUpdateHandler(): UICollectionViewCellConfigurationUpdateHandler;
+    setConfigurationUpdateHandler(value: UICollectionViewCellConfigurationUpdateHandler): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/1620130-selected
-    selected(): BOOL;
-    setSelected(): void;
+    selected(): boolean;
+    setSelected(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/1620134-highlighted
-    highlighted(): BOOL;
-    setHighlighted(): void;
+    highlighted(): boolean;
+    setHighlighted(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcell/2897262-dragstatedidchange
     dragStateDidChange(dragState: UICollectionViewCellDragState):void;
     //
@@ -18011,7 +18380,7 @@ declare namespace cocoascript {
   interface UICollectionReusableView extends UIView {
     // https://developer.apple.com/documentation/uikit/uicollectionreusableview/1620136-reuseidentifier
     reuseIdentifier(): string | cocoascript.NSString;
-    setReuseIdentifier(): void;
+    setReuseIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uicollectionreusableview/1620141-prepareforreuse
     prepareForReuse():void;
     // https://developer.apple.com/documentation/uikit/uicollectionreusableview/1620132-preferredlayoutattributesfitting
@@ -18038,7 +18407,7 @@ declare namespace cocoascript {
   interface UICollectionViewDropPlaceholder extends UICollectionViewPlaceholder {
     // https://developer.apple.com/documentation/uikit/uicollectionviewdropplaceholder/2921637-previewparametersprovider
     previewParametersProvider(): UICollectionViewCell;
-    setPreviewParametersProvider(): void;
+    setPreviewParametersProvider(value: UICollectionViewCell): void;
     //
     alloc():UICollectionViewDropPlaceholder;
     //
@@ -18057,7 +18426,7 @@ declare namespace cocoascript {
     initWithInsertionIndexPath_reuseIdentifier(insertionIndexPath: NSIndexPath, reuseIdentifier: string | cocoascript.NSString):UICollectionViewPlaceholder;
     // https://developer.apple.com/documentation/uikit/uicollectionviewplaceholder/2921635-cellupdatehandler
     cellUpdateHandler(): UICollectionViewCell;
-    setCellUpdateHandler(): void;
+    setCellUpdateHandler(value: UICollectionViewCell): void;
     //
     alloc():UICollectionViewPlaceholder;
     //
@@ -18074,10 +18443,10 @@ declare namespace cocoascript {
   interface UITableViewFocusUpdateContext extends UIFocusUpdateContext {
     // https://developer.apple.com/documentation/uikit/uitableviewfocusupdatecontext/1614930-previouslyfocusedindexpath
     previouslyFocusedIndexPath(): NSIndexPath;
-    setPreviouslyFocusedIndexPath(): void;
+    setPreviouslyFocusedIndexPath(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uitableviewfocusupdatecontext/1614919-nextfocusedindexpath
     nextFocusedIndexPath(): NSIndexPath;
-    setNextFocusedIndexPath(): void;
+    setNextFocusedIndexPath(value: NSIndexPath): void;
     //
     alloc():UITableViewFocusUpdateContext;
     //
@@ -18098,42 +18467,45 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UITableViewHeaderFooterView;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/1624909-reuseidentifier
     reuseIdentifier(): string | cocoascript.NSString;
-    setReuseIdentifier(): void;
+    setReuseIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/1624916-prepareforreuse
     prepareForReuse():void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/3600594-backgroundconfiguration
     backgroundConfiguration(): UIBackgroundConfiguration;
-    setBackgroundConfiguration(): void;
+    setBackgroundConfiguration(value: UIBackgroundConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/3600592-automaticallyupdatesbackgroundco
-    automaticallyUpdatesBackgroundConfiguration(): BOOL;
-    setAutomaticallyUpdatesBackgroundConfiguration(): void;
+    automaticallyUpdatesBackgroundConfiguration(): boolean;
+    setAutomaticallyUpdatesBackgroundConfiguration(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/1624913-backgroundview
     backgroundView(): UIView;
-    setBackgroundView(): void;
+    setBackgroundView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/3600597-defaultcontentconfiguration
     defaultContentConfiguration():UIListContentConfiguration;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/3600596-contentconfiguration
     contentConfiguration(): UIContentConfiguration;
-    setContentConfiguration(): void;
+    setContentConfiguration(value: UIContentConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/3600593-automaticallyupdatescontentconfi
-    automaticallyUpdatesContentConfiguration(): BOOL;
-    setAutomaticallyUpdatesContentConfiguration(): void;
+    automaticallyUpdatesContentConfiguration(): boolean;
+    setAutomaticallyUpdatesContentConfiguration(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/1624914-contentview
     contentView(): UIView;
-    setContentView(): void;
+    setContentView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/1624912-textlabel
     textLabel(): UILabel;
-    setTextLabel(): void;
+    setTextLabel(value: UILabel): void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/1624910-detailtextlabel
     detailTextLabel(): UILabel;
-    setDetailTextLabel(): void;
+    setDetailTextLabel(value: UILabel): void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/3600595-configurationstate
     configurationState(): UIViewConfigurationState;
-    setConfigurationState(): void;
+    setConfigurationState(value: UIViewConfigurationState): void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/3600598-setneedsupdateconfiguration
     setNeedsUpdateConfiguration():void;
     // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/3600599-updateconfigurationusingstate
     updateConfigurationUsingState(state: UIViewConfigurationState):void;
+    // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterview/3750917-configurationupdatehandler
+    configurationUpdateHandler(): UITableViewHeaderFooterViewConfigurationUpdateHandler;
+    setConfigurationUpdateHandler(value: UITableViewHeaderFooterViewConfigurationUpdateHandler): void;
     //
     alloc():UITableViewHeaderFooterView;
     //
@@ -18152,10 +18524,10 @@ declare namespace cocoascript {
     configurationWithActions(actions: UIContextualAction):UISwipeActionsConfiguration;
     // https://developer.apple.com/documentation/uikit/uiswipeactionsconfiguration/2902360-actions
     actions(): UIContextualAction;
-    setActions(): void;
+    setActions(value: UIContextualAction): void;
     // https://developer.apple.com/documentation/uikit/uiswipeactionsconfiguration/2902361-performsfirstactionwithfullswipe
-    performsFirstActionWithFullSwipe(): BOOL;
-    setPerformsFirstActionWithFullSwipe(): void;
+    performsFirstActionWithFullSwipe(): boolean;
+    setPerformsFirstActionWithFullSwipe(value: boolean): void;
     //
     alloc():UISwipeActionsConfiguration;
     //
@@ -18174,19 +18546,19 @@ declare namespace cocoascript {
     contextualActionWithStyle_title_handler(style: UIContextualActionStyle, title: string | cocoascript.NSString, handler: UIContextualActionHandler):UIContextualAction;
     // https://developer.apple.com/documentation/uikit/uicontextualaction/2902342-title
     title(): string | cocoascript.NSString;
-    setTitle(): void;
+    setTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uicontextualaction/2902335-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     // https://developer.apple.com/documentation/uikit/uicontextualaction/2902337-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uicontextualaction/2902341-handler
     handler(): UIContextualActionHandler;
-    setHandler(): void;
+    setHandler(value: UIContextualActionHandler): void;
     // https://developer.apple.com/documentation/uikit/uicontextualaction/2902334-style
     style(): UIContextualActionStyle;
-    setStyle(): void;
+    setStyle(value: UIContextualActionStyle): void;
     //
     alloc():UIContextualAction;
     //
@@ -18203,7 +18575,7 @@ declare namespace cocoascript {
   interface UITableViewDropPlaceholder extends UITableViewPlaceholder {
     // https://developer.apple.com/documentation/uikit/uitableviewdropplaceholder/2921668-previewparametersprovider
     previewParametersProvider(): UITableViewCell;
-    setPreviewParametersProvider(): void;
+    setPreviewParametersProvider(value: UITableViewCell): void;
     //
     alloc():UITableViewDropPlaceholder;
     //
@@ -18222,7 +18594,7 @@ declare namespace cocoascript {
     initWithInsertionIndexPath_reuseIdentifier_rowHeight(insertionIndexPath: NSIndexPath, reuseIdentifier: string | cocoascript.NSString, rowHeight: CGFloat):UITableViewPlaceholder;
     // https://developer.apple.com/documentation/uikit/uitableviewplaceholder/2921671-cellupdatehandler
     cellUpdateHandler(): UITableViewCell;
-    setCellUpdateHandler(): void;
+    setCellUpdateHandler(value: UITableViewCell): void;
     //
     alloc():UITableViewPlaceholder;
     //
@@ -18270,17 +18642,17 @@ declare namespace cocoascript {
    */
   interface UITextDraggable extends UITextInput {
     // https://developer.apple.com/documentation/uikit/uitextdraggable/2890913-textdragactive
-    textDragActive(): BOOL;
-    setTextDragActive(): void;
+    textDragActive(): boolean;
+    setTextDragActive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextdraggable/2890911-textdraginteraction
     textDragInteraction(): UIDragInteraction;
-    setTextDragInteraction(): void;
+    setTextDragInteraction(value: UIDragInteraction): void;
     // https://developer.apple.com/documentation/uikit/uitextdraggable/2890903-textdragdelegate
     textDragDelegate(): UITextDragDelegate;
-    setTextDragDelegate(): void;
+    setTextDragDelegate(value: UITextDragDelegate): void;
     // https://developer.apple.com/documentation/uikit/uitextdraggable/2897255-textdragoptions
     textDragOptions(): UITextDragOptions;
-    setTextDragOptions(): void;
+    setTextDragOptions(value: UITextDragOptions): void;
   }
 }
 declare namespace cocoascript {
@@ -18294,14 +18666,14 @@ declare namespace cocoascript {
    */
   interface UITextDroppable extends UITextInput {
     // https://developer.apple.com/documentation/uikit/uitextdroppable/2890852-textdropactive
-    textDropActive(): BOOL;
-    setTextDropActive(): void;
+    textDropActive(): boolean;
+    setTextDropActive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uitextdroppable/2890862-textdropinteraction
     textDropInteraction(): UIDropInteraction;
-    setTextDropInteraction(): void;
+    setTextDropInteraction(value: UIDropInteraction): void;
     // https://developer.apple.com/documentation/uikit/uitextdroppable/2890860-textdropdelegate
     textDropDelegate(): UITextDropDelegate;
-    setTextDropDelegate(): void;
+    setTextDropDelegate(value: UITextDropDelegate): void;
   }
 }
 declare namespace cocoascript {
@@ -18317,24 +18689,24 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uitextdragpreviewrenderer/2890970-initwithlayoutmanager
     initWithLayoutManager_range(layoutManager: NSLayoutManager, range: NSRange):UITextDragPreviewRenderer;
     // https://developer.apple.com/documentation/uikit/uitextdragpreviewrenderer/2891008-initwithlayoutmanager
-    initWithLayoutManager_range_unifyRects(layoutManager: NSLayoutManager, range: NSRange, unifyRects: BOOL):UITextDragPreviewRenderer;
+    initWithLayoutManager_range_unifyRects(layoutManager: NSLayoutManager, range: NSRange, unifyRects: boolean):UITextDragPreviewRenderer;
     // https://developer.apple.com/documentation/uikit/uitextdragpreviewrenderer/2890974-bodyrect
     bodyRect(): CGRect;
-    setBodyRect(): void;
+    setBodyRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uitextdragpreviewrenderer/2891020-firstlinerect
     firstLineRect(): CGRect;
-    setFirstLineRect(): void;
+    setFirstLineRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uitextdragpreviewrenderer/2891017-lastlinerect
     lastLineRect(): CGRect;
-    setLastLineRect(): void;
+    setLastLineRect(value: CGRect): void;
     // https://developer.apple.com/documentation/uikit/uitextdragpreviewrenderer/2890984-adjustfirstlinerect
     adjustFirstLineRect_bodyRect_lastLineRect_textOrigin(firstLineRect: CGRect, bodyRect: CGRect, lastLineRect: CGRect, origin: CGPoint):void;
     // https://developer.apple.com/documentation/uikit/uitextdragpreviewrenderer/2891018-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uitextdragpreviewrenderer/2891019-layoutmanager
     layoutManager(): NSLayoutManager;
-    setLayoutManager(): void;
+    setLayoutManager(value: NSLayoutManager): void;
     //
     alloc():UITextDragPreviewRenderer;
     //
@@ -18376,11 +18748,11 @@ declare namespace cocoascript {
    */
   interface UINavigationBarDelegate extends UIBarPositioningDelegate {
     // https://developer.apple.com/documentation/uikit/uinavigationbardelegate/1624941-navigationbar
-    navigationBar_shouldPushItem(navigationBar: UINavigationBar, item: UINavigationItem):BOOL;
+    navigationBar_shouldPushItem(navigationBar: UINavigationBar, item: UINavigationItem):boolean;
     // https://developer.apple.com/documentation/uikit/uinavigationbardelegate/1624964-navigationbar
     navigationBar_didPushItem(navigationBar: UINavigationBar, item: UINavigationItem):void;
     // https://developer.apple.com/documentation/uikit/uinavigationbardelegate/1624944-navigationbar
-    navigationBar_shouldPopItem(navigationBar: UINavigationBar, item: UINavigationItem):BOOL;
+    navigationBar_shouldPopItem(navigationBar: UINavigationBar, item: UINavigationItem):boolean;
     // https://developer.apple.com/documentation/uikit/uinavigationbardelegate/1624948-navigationbar
     navigationBar_didPopItem(navigationBar: UINavigationBar, item: UINavigationItem):void;
   }
@@ -18389,6 +18761,8 @@ declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uitabbarsystemitem
   type UITabBarSystemItem = cocoascript.NSInteger;
 }
+// https://developer.apple.com/documentation/uikit/uilargecontentviewerinteractionenabledstatusdidchangenotification
+declare const UILargeContentViewerInteractionEnabledStatusDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * A relationship between two dynamic items, or between a dynamic item and an anchor point.
@@ -18415,28 +18789,28 @@ declare namespace cocoascript {
     initWithItem_offsetFromCenter_attachedToItem_offsetFromCenter(item1: UIDynamicItem, offset1: UIOffset, item2: UIDynamicItem, offset2: UIOffset):UIAttachmentBehavior;
     // https://developer.apple.com/documentation/uikit/uiattachmentbehavior/1621311-items
     items(): UIDynamicItem;
-    setItems(): void;
+    setItems(value: UIDynamicItem): void;
     // https://developer.apple.com/documentation/uikit/uiattachmentbehavior/1621315-anchorpoint
     anchorPoint(): CGPoint;
-    setAnchorPoint(): void;
+    setAnchorPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uiattachmentbehavior/1621312-attachedbehaviortype
     attachedBehaviorType(): UIAttachmentBehaviorType;
-    setAttachedBehaviorType(): void;
+    setAttachedBehaviorType(value: UIAttachmentBehaviorType): void;
     // https://developer.apple.com/documentation/uikit/uiattachmentbehavior/1621302-damping
     damping(): CGFloat;
-    setDamping(): void;
+    setDamping(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiattachmentbehavior/1621321-frequency
     frequency(): CGFloat;
-    setFrequency(): void;
+    setFrequency(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiattachmentbehavior/1621304-length
     length(): CGFloat;
-    setLength(): void;
+    setLength(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiattachmentbehavior/1621307-frictiontorque
     frictionTorque(): CGFloat;
-    setFrictionTorque(): void;
+    setFrictionTorque(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uiattachmentbehavior/1621294-attachmentrange
     attachmentRange(): UIFloatRange;
-    setAttachmentRange(): void;
+    setAttachmentRange(value: UIFloatRange): void;
     //
     alloc():UIAttachmentBehavior;
     //
@@ -18451,6 +18825,10 @@ declare const UIOffsetZero: cocoascript.UIOffset;
 declare const UIEdgeInsetsZero: cocoascript.UIEdgeInsets;
 // https://developer.apple.com/documentation/uikit/nsdirectionaledgeinsetszero
 declare const NSDirectionalEdgeInsetsZero: cocoascript.NSDirectionalEdgeInsets;
+// https://developer.apple.com/documentation/uikit/uiapplicationopenexternalurloptionseventattributionkey
+declare const UIApplicationOpenExternalURLOptionsEventAttributionKey: cocoascript.UIApplicationOpenExternalURLOptionsKey;
+// https://developer.apple.com/documentation/uikit/uiapplicationopenurloptionseventattributionkey
+declare const UIApplicationOpenURLOptionsEventAttributionKey: cocoascript.UIApplicationOpenURLOptionsKey;
 // https://developer.apple.com/documentation/uikit/uinavigationcontrollerhideshowbarduration
 declare const UINavigationControllerHideShowBarDuration: cocoascript.CGFloat;
 declare namespace cocoascript {
@@ -18486,17 +18864,17 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerdelegate/1623197-primaryviewcontrollerforcollapsi
     primaryViewControllerForCollapsingSplitViewController(splitViewController: UISplitViewController):UIViewController;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerdelegate/1623184-splitviewcontroller
-    splitViewController_collapseSecondaryViewController_ontoPrimaryViewController(splitViewController: UISplitViewController, secondaryViewController: UIViewController, primaryViewController: UIViewController):BOOL;
+    splitViewController_collapseSecondaryViewController_ontoPrimaryViewController(splitViewController: UISplitViewController, secondaryViewController: UIViewController, primaryViewController: UIViewController):boolean;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerdelegate/1623188-primaryviewcontrollerforexpandin
     primaryViewControllerForExpandingSplitViewController(splitViewController: UISplitViewController):UIViewController;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerdelegate/1623189-splitviewcontroller
     splitViewController_separateSecondaryViewControllerFromPrimaryViewController(splitViewController: UISplitViewController, primaryViewController: UIViewController):UIViewController;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerdelegate/1623168-splitviewcontroller
-    splitViewController_showViewController_sender(splitViewController: UISplitViewController, vc: UIViewController, sender: UISplitViewControllerDelegate):BOOL;
+    splitViewController_showViewController_sender(splitViewController: UISplitViewController, vc: UIViewController, sender: UISplitViewControllerDelegate):boolean;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerdelegate/1623204-splitviewcontroller
-    splitViewController_showDetailViewController_sender(splitViewController: UISplitViewController, vc: UIViewController, sender: UISplitViewControllerDelegate):BOOL;
+    splitViewController_showDetailViewController_sender(splitViewController: UISplitViewController, vc: UIViewController, sender: UISplitViewControllerDelegate):boolean;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerdelegate/1623174-splitviewcontroller
-    splitViewController_shouldHideViewController_inOrientation(svc: UISplitViewController, vc: UIViewController, orientation: UIInterfaceOrientation):BOOL;
+    splitViewController_shouldHideViewController_inOrientation(svc: UISplitViewController, vc: UIViewController, orientation: UIInterfaceOrientation):boolean;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerdelegate/1623175-splitviewcontroller
     splitViewController_willHideViewController_withBarButtonItem_forPopoverController(svc: UISplitViewController, aViewController: UIViewController, barButtonItem: UIBarButtonItem, pc: UIPopoverController):void;
     // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerdelegate/1623202-splitviewcontroller
@@ -18522,6 +18900,10 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uisplitviewcontrollercolumn
   type UISplitViewControllerColumn = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerdisplaymodebuttonvisibility
+  type UISplitViewControllerDisplayModeButtonVisibility = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uisplitviewcontrollerprimaryedge
@@ -18557,6 +18939,26 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   /**
+   * An object that represents a height where a sheet naturally rests.
+   * https://developer.apple.com/documentation/uikit/uisheetpresentationcontrollerdetent
+   */
+  interface UISheetPresentationControllerDetent extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontrollerdetent/3801916-largedetent
+    largeDetent():UISheetPresentationControllerDetent;
+    // https://developer.apple.com/documentation/uikit/uisheetpresentationcontrollerdetent/3801917-mediumdetent
+    mediumDetent():UISheetPresentationControllerDetent;
+    //
+    alloc():UISheetPresentationControllerDetent;
+    //
+    init():UISheetPresentationControllerDetent;
+  }
+}
+
+declare const UISheetPresentationControllerDetent: cocoascript.UISheetPresentationControllerDetent;
+// https://developer.apple.com/documentation/uikit/uisheetpresentationcontrollerautomaticdimension
+declare const UISheetPresentationControllerAutomaticDimension: cocoascript.CGFloat;
+declare namespace cocoascript {
+  /**
    * A selectable search parameter.
    * https://developer.apple.com/documentation/uikit/uisearchsuggestionitem
    */
@@ -18575,13 +18977,13 @@ declare namespace cocoascript {
     suggestionWithLocalizedSuggestion(suggestion: string | cocoascript.NSString):UISearchSuggestionItem;
     // https://developer.apple.com/documentation/uikit/uisearchsuggestionitem/3584833-localizedsuggestion
     localizedSuggestion(): string | cocoascript.NSString;
-    setLocalizedSuggestion(): void;
+    setLocalizedSuggestion(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisearchsuggestionitem/3584832-localizeddescription
     localizedDescription(): string | cocoascript.NSString;
-    setLocalizedDescription(): void;
+    setLocalizedDescription(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisearchsuggestionitem/3584828-iconimage
     iconImage(): UIImage;
-    setIconImage(): void;
+    setIconImage(value: UIImage): void;
     //
     alloc():UISearchSuggestionItem;
     //
@@ -18604,22 +19006,22 @@ declare namespace cocoascript {
     initWithIdentifier_localizedTitle_availability_handler(identifier: string | cocoascript.NSString, localizedTitle: string | cocoascript.NSString, availability: UIDocumentBrowserActionAvailability, handler: NSURL):UIDocumentBrowserAction;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowseraction/2874076-image
     image(): UIImage;
-    setImage(): void;
+    setImage(value: UIImage): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowseraction/2874070-supportedcontenttypes
     supportedContentTypes(): string | cocoascript.NSString;
-    setSupportedContentTypes(): void;
+    setSupportedContentTypes(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowseraction/2874074-supportsmultipleitems
-    supportsMultipleItems(): BOOL;
-    setSupportsMultipleItems(): void;
+    supportsMultipleItems(): boolean;
+    setSupportsMultipleItems(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowseraction/2874069-identifier
     identifier(): string | cocoascript.NSString;
-    setIdentifier(): void;
+    setIdentifier(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowseraction/2874071-localizedtitle
     localizedTitle(): string | cocoascript.NSString;
-    setLocalizedTitle(): void;
+    setLocalizedTitle(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowseraction/2874078-availability
     availability(): UIDocumentBrowserActionAvailability;
-    setAvailability(): void;
+    setAvailability(value: UIDocumentBrowserActionAvailability): void;
     //
     alloc():UIDocumentBrowserAction;
     //
@@ -18636,10 +19038,10 @@ declare namespace cocoascript {
   interface UIDocumentBrowserTransitionController extends NSObject {
     // https://developer.apple.com/documentation/uikit/uidocumentbrowsertransitioncontroller/2874195-loadingprogress
     loadingProgress(): NSProgress;
-    setLoadingProgress(): void;
+    setLoadingProgress(value: NSProgress): void;
     // https://developer.apple.com/documentation/uikit/uidocumentbrowsertransitioncontroller/2874176-targetview
     targetView(): UIView;
-    setTargetView(): void;
+    setTargetView(value: UIView): void;
     //
     alloc():UIDocumentBrowserTransitionController;
     //
@@ -18678,16 +19080,16 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIListContentView;
     // https://developer.apple.com/documentation/uikit/uilistcontentview/3600552-configuration
     configuration(): UIListContentConfiguration;
-    setConfiguration(): void;
+    setConfiguration(value: UIListContentConfiguration): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentview/3650226-textlayoutguide
     textLayoutGuide(): UILayoutGuide;
-    setTextLayoutGuide(): void;
+    setTextLayoutGuide(value: UILayoutGuide): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentview/3650225-secondarytextlayoutguide
     secondaryTextLayoutGuide(): UILayoutGuide;
-    setSecondaryTextLayoutGuide(): void;
+    setSecondaryTextLayoutGuide(value: UILayoutGuide): void;
     // https://developer.apple.com/documentation/uikit/uilistcontentview/3650224-imagelayoutguide
     imageLayoutGuide(): UILayoutGuide;
-    setImageLayoutGuide(): void;
+    setImageLayoutGuide(value: UILayoutGuide): void;
     //
     alloc():UIListContentView;
     //
@@ -18704,19 +19106,22 @@ declare namespace cocoascript {
   interface UIViewConfigurationState extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiviewconfigurationstate/3601076-traitcollection
     traitCollection(): UITraitCollection;
-    setTraitCollection(): void;
+    setTraitCollection(value: UITraitCollection): void;
     // https://developer.apple.com/documentation/uikit/uiviewconfigurationstate/3601074-selected
-    selected(): BOOL;
-    setSelected(): void;
+    selected(): boolean;
+    setSelected(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewconfigurationstate/3601073-highlighted
-    highlighted(): BOOL;
-    setHighlighted(): void;
+    highlighted(): boolean;
+    setHighlighted(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewconfigurationstate/3601072-focused
-    focused(): BOOL;
-    setFocused(): void;
+    focused(): boolean;
+    setFocused(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewconfigurationstate/3601071-disabled
-    disabled(): BOOL;
-    setDisabled(): void;
+    disabled(): boolean;
+    setDisabled(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uiviewconfigurationstate/3750928-pinned
+    pinned(): boolean;
+    setPinned(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uiviewconfigurationstate/3600605-initwithtraitcollection
     initWithTraitCollection(traitCollection: UITraitCollection):UIViewConfigurationState;
     // https://developer.apple.com/documentation/uikit/uiviewconfigurationstate/3600604-initwithcoder
@@ -18736,23 +19141,23 @@ declare namespace cocoascript {
    */
   interface UICellConfigurationState extends UIViewConfigurationState {
     // https://developer.apple.com/documentation/uikit/uicellconfigurationstate/3600400-editing
-    editing(): BOOL;
-    setEditing(): void;
+    editing(): boolean;
+    setEditing(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicellconfigurationstate/3600402-swiped
-    swiped(): BOOL;
-    setSwiped(): void;
+    swiped(): boolean;
+    setSwiped(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicellconfigurationstate/3600401-expanded
-    expanded(): BOOL;
-    setExpanded(): void;
+    expanded(): boolean;
+    setExpanded(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicellconfigurationstate/3672180-reordering
-    reordering(): BOOL;
-    setReordering(): void;
+    reordering(): boolean;
+    setReordering(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicellconfigurationstate/3601198-celldragstate
     cellDragState(): UICellConfigurationDragState;
-    setCellDragState(): void;
+    setCellDragState(value: UICellConfigurationDragState): void;
     // https://developer.apple.com/documentation/uikit/uicellconfigurationstate/3601199-celldropstate
     cellDropState(): UICellConfigurationDropState;
-    setCellDropState(): void;
+    setCellDropState(value: UICellConfigurationDropState): void;
     //
     alloc():UICellConfigurationState;
     //
@@ -18791,7 +19196,7 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UISpringTimingParameters;
     // https://developer.apple.com/documentation/uikit/uispringtimingparameters/1649909-initialvelocity
     initialVelocity(): CGVector;
-    setInitialVelocity(): void;
+    setInitialVelocity(value: CGVector): void;
     //
     alloc():UISpringTimingParameters;
     //
@@ -18816,13 +19221,13 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UICubicTimingParameters;
     // https://developer.apple.com/documentation/uikit/uicubictimingparameters/1649841-animationcurve
     animationCurve(): UIViewAnimationCurve;
-    setAnimationCurve(): void;
+    setAnimationCurve(value: UIViewAnimationCurve): void;
     // https://developer.apple.com/documentation/uikit/uicubictimingparameters/1649914-controlpoint1
     controlPoint1(): CGPoint;
-    setControlPoint1(): void;
+    setControlPoint1(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uicubictimingparameters/1649907-controlpoint2
     controlPoint2(): CGPoint;
-    setControlPoint2(): void;
+    setControlPoint2(value: CGPoint): void;
     //
     alloc():UICubicTimingParameters;
     //
@@ -18855,22 +19260,22 @@ declare namespace cocoascript {
   interface UIPercentDrivenInteractiveTransition extends NSObject {
     // https://developer.apple.com/documentation/uikit/uipercentdriveninteractivetransition/1829439-timingcurve
     timingCurve(): UITimingCurveProvider;
-    setTimingCurve(): void;
+    setTimingCurve(value: UITimingCurveProvider): void;
     // https://developer.apple.com/documentation/uikit/uipercentdriveninteractivetransition/1622048-completioncurve
     completionCurve(): UIViewAnimationCurve;
-    setCompletionCurve(): void;
+    setCompletionCurve(value: UIViewAnimationCurve): void;
     // https://developer.apple.com/documentation/uikit/uipercentdriveninteractivetransition/1622029-duration
     duration(): CGFloat;
-    setDuration(): void;
+    setDuration(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uipercentdriveninteractivetransition/1622053-percentcomplete
     percentComplete(): CGFloat;
-    setPercentComplete(): void;
+    setPercentComplete(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uipercentdriveninteractivetransition/1622052-completionspeed
     completionSpeed(): CGFloat;
-    setCompletionSpeed(): void;
+    setCompletionSpeed(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uipercentdriveninteractivetransition/1829427-wantsinteractivestart
-    wantsInteractiveStart(): BOOL;
-    setWantsInteractiveStart(): void;
+    wantsInteractiveStart(): boolean;
+    setWantsInteractiveStart(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipercentdriveninteractivetransition/1622051-updateinteractivetransition
     updateInteractiveTransition(percentComplete: CGFloat):void;
     // https://developer.apple.com/documentation/uikit/uipercentdriveninteractivetransition/1829435-pauseinteractivetransition
@@ -18894,9 +19299,9 @@ declare namespace cocoascript {
    */
   interface UIViewControllerTransitionCoordinator extends UIViewControllerTransitionCoordinatorContext {
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinator/1619300-animatealongsidetransition
-    animateAlongsideTransition_completion(animation: UIViewControllerTransitionCoordinatorContext, completion: UIViewControllerTransitionCoordinatorContext):BOOL;
+    animateAlongsideTransition_completion(animation: UIViewControllerTransitionCoordinatorContext, completion: UIViewControllerTransitionCoordinatorContext):boolean;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinator/1619295-animatealongsidetransitioninview
-    animateAlongsideTransitionInView_animation_completion(view: UIView, animation: UIViewControllerTransitionCoordinatorContext, completion: UIViewControllerTransitionCoordinatorContext):BOOL;
+    animateAlongsideTransitionInView_animation_completion(view: UIView, animation: UIViewControllerTransitionCoordinatorContext, completion: UIViewControllerTransitionCoordinatorContext):boolean;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinator/1829391-notifywheninteractionchangesusin
     notifyWhenInteractionChangesUsingBlock(handler: UIViewControllerTransitionCoordinatorContext):void;
     // https://developer.apple.com/documentation/uikit/uiviewcontrollertransitioncoordinator/1619292-notifywheninteractionendsusingbl
@@ -18923,19 +19328,19 @@ declare namespace cocoascript {
     removeAllBehaviors():void;
     // https://developer.apple.com/documentation/uikit/uidynamicanimator/1621199-delegate
     delegate(): UIDynamicAnimatorDelegate;
-    setDelegate(): void;
+    setDelegate(value: UIDynamicAnimatorDelegate): void;
     // https://developer.apple.com/documentation/uikit/uidynamicanimator/1621202-elapsedtime
     elapsedTime(): NSTimeInterval;
-    setElapsedTime(): void;
+    setElapsedTime(value: NSTimeInterval): void;
     // https://developer.apple.com/documentation/uikit/uidynamicanimator/1621192-running
-    running(): BOOL;
-    setRunning(): void;
+    running(): boolean;
+    setRunning(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidynamicanimator/1621198-behaviors
     behaviors(): UIDynamicBehavior;
-    setBehaviors(): void;
+    setBehaviors(value: UIDynamicBehavior): void;
     // https://developer.apple.com/documentation/uikit/uidynamicanimator/1621200-referenceview
     referenceView(): UIView;
-    setReferenceView(): void;
+    setReferenceView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uidynamicanimator/1621190-updateitemusingcurrentstate
     updateItemUsingCurrentState(item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uidynamicanimator/1621204-layoutattributesforcellatindexpa
@@ -18966,39 +19371,39 @@ declare namespace cocoascript {
     removeItem(item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624400-items
     items(): UIDynamicItem;
-    setItems(): void;
+    setItems(value: UIDynamicItem): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624384-addangularvelocity
     addAngularVelocity_forItem(velocity: CGFloat, item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624391-addlinearvelocity
     addLinearVelocity_forItem(velocity: CGPoint, item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624386-allowsrotation
-    allowsRotation(): BOOL;
-    setAllowsRotation(): void;
+    allowsRotation(): boolean;
+    setAllowsRotation(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624396-angularresistance
     angularResistance(): CGFloat;
-    setAngularResistance(): void;
+    setAngularResistance(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624389-angularvelocityforitem
     angularVelocityForItem(item: UIDynamicItem):CGFloat;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624388-linearvelocityforitem
     linearVelocityForItem(item: UIDynamicItem):CGPoint;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624395-density
     density(): CGFloat;
-    setDensity(): void;
+    setDensity(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624387-elasticity
     elasticity(): CGFloat;
-    setElasticity(): void;
+    setElasticity(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624392-friction
     friction(): CGFloat;
-    setFriction(): void;
+    setFriction(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624399-resistance
     resistance(): CGFloat;
-    setResistance(): void;
+    setResistance(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624390-charge
     charge(): CGFloat;
-    setCharge(): void;
+    setCharge(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uidynamicitembehavior/1624394-anchored
-    anchored(): BOOL;
-    setAnchored(): void;
+    anchored(): boolean;
+    setAnchored(value: boolean): void;
     //
     alloc():UIDynamicItemBehavior;
     //
@@ -19017,7 +19422,7 @@ declare namespace cocoascript {
     initWithItems(items: UIDynamicItem):UIDynamicItemGroup;
     // https://developer.apple.com/documentation/uikit/uidynamicitemgroup/1618489-items
     items(): UIDynamicItem;
-    setItems(): void;
+    setItems(value: UIDynamicItem): void;
     //
     alloc():UIDynamicItemGroup;
     //
@@ -19034,17 +19439,17 @@ declare namespace cocoascript {
   interface UIDynamicBehavior extends NSObject {
     // https://developer.apple.com/documentation/uikit/uidynamicbehavior/1618499-action
     action(): void;
-    setAction(): void;
+    setAction(value: void): void;
     // https://developer.apple.com/documentation/uikit/uidynamicbehavior/1618496-addchildbehavior
     addChildBehavior(behavior: UIDynamicBehavior):void;
     // https://developer.apple.com/documentation/uikit/uidynamicbehavior/1618482-childbehaviors
     childBehaviors(): UIDynamicBehavior;
-    setChildBehaviors(): void;
+    setChildBehaviors(value: UIDynamicBehavior): void;
     // https://developer.apple.com/documentation/uikit/uidynamicbehavior/1618486-removechildbehavior
     removeChildBehavior(behavior: UIDynamicBehavior):void;
     // https://developer.apple.com/documentation/uikit/uidynamicbehavior/1618501-dynamicanimator
     dynamicAnimator(): UIDynamicAnimator;
-    setDynamicAnimator(): void;
+    setDynamicAnimator(value: UIDynamicAnimator): void;
     // https://developer.apple.com/documentation/uikit/uidynamicbehavior/1618488-willmovetoanimator
     willMoveToAnimator(dynamicAnimator: UIDynamicAnimator):void;
     //
@@ -19069,22 +19474,22 @@ declare namespace cocoascript {
     removeItem(item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624819-items
     items(): UIDynamicItem;
-    setItems(): void;
+    setItems(value: UIDynamicItem): void;
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624828-collisiondelegate
     collisionDelegate(): UICollisionBehaviorDelegate;
-    setCollisionDelegate(): void;
+    setCollisionDelegate(value: UICollisionBehaviorDelegate): void;
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624822-addboundarywithidentifier
     addBoundaryWithIdentifier_forPath(identifier: NSCopying, bezierPath: UIBezierPath):void;
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624821-addboundarywithidentifier
     addBoundaryWithIdentifier_fromPoint_toPoint(identifier: NSCopying, p1: CGPoint, p2: CGPoint):void;
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624812-boundaryidentifiers
     boundaryIdentifiers(): NSCopying;
-    setBoundaryIdentifiers(): void;
+    setBoundaryIdentifiers(value: NSCopying): void;
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624825-boundarywithidentifier
     boundaryWithIdentifier(identifier: NSCopying):UIBezierPath;
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624832-collisionmode
     collisionMode(): UICollisionBehaviorMode;
-    setCollisionMode(): void;
+    setCollisionMode(value: UICollisionBehaviorMode): void;
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624827-removeallboundaries
     removeAllBoundaries():void;
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624823-removeboundarywithidentifier
@@ -19092,8 +19497,8 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624818-settranslatesreferenceboundsinto
     setTranslatesReferenceBoundsIntoBoundaryWithInsets(insets: UIEdgeInsets):void;
     // https://developer.apple.com/documentation/uikit/uicollisionbehavior/1624826-translatesreferenceboundsintobou
-    translatesReferenceBoundsIntoBoundary(): BOOL;
-    setTranslatesReferenceBoundsIntoBoundary(): void;
+    translatesReferenceBoundsIntoBoundary(): boolean;
+    setTranslatesReferenceBoundsIntoBoundary(value: boolean): void;
     //
     alloc():UICollisionBehavior;
     //
@@ -19136,31 +19541,31 @@ declare namespace cocoascript {
     removeItem(item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uifieldbehavior/1625002-items
     items(): UIDynamicItem;
-    setItems(): void;
+    setItems(value: UIDynamicItem): void;
     // https://developer.apple.com/documentation/uikit/uifieldbehavior/1625003-position
     position(): CGPoint;
-    setPosition(): void;
+    setPosition(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uifieldbehavior/1625005-region
     region(): UIRegion;
-    setRegion(): void;
+    setRegion(value: UIRegion): void;
     // https://developer.apple.com/documentation/uikit/uifieldbehavior/1624997-strength
     strength(): CGFloat;
-    setStrength(): void;
+    setStrength(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifieldbehavior/1624988-falloff
     falloff(): CGFloat;
-    setFalloff(): void;
+    setFalloff(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifieldbehavior/1624994-minimumradius
     minimumRadius(): CGFloat;
-    setMinimumRadius(): void;
+    setMinimumRadius(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifieldbehavior/1624987-direction
     direction(): CGVector;
-    setDirection(): void;
+    setDirection(value: CGVector): void;
     // https://developer.apple.com/documentation/uikit/uifieldbehavior/1624998-smoothness
     smoothness(): CGFloat;
-    setSmoothness(): void;
+    setSmoothness(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uifieldbehavior/1624986-animationspeed
     animationSpeed(): CGFloat;
-    setAnimationSpeed(): void;
+    setAnimationSpeed(value: CGFloat): void;
     //
     alloc():UIFieldBehavior;
     //
@@ -19179,20 +19584,20 @@ declare namespace cocoascript {
     initWithItems(items: UIDynamicItem):UIGravityBehavior;
     // https://developer.apple.com/documentation/uikit/uigravitybehavior/1620420-items
     items(): UIDynamicItem;
-    setItems(): void;
+    setItems(value: UIDynamicItem): void;
     // https://developer.apple.com/documentation/uikit/uigravitybehavior/1620415-additem
     addItem(item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uigravitybehavior/1620422-removeitem
     removeItem(item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uigravitybehavior/1620423-gravitydirection
     gravityDirection(): CGVector;
-    setGravityDirection(): void;
+    setGravityDirection(value: CGVector): void;
     // https://developer.apple.com/documentation/uikit/uigravitybehavior/1620417-angle
     angle(): CGFloat;
-    setAngle(): void;
+    setAngle(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uigravitybehavior/1620418-magnitude
     magnitude(): CGFloat;
-    setMagnitude(): void;
+    setMagnitude(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uigravitybehavior/1620414-setangle
     setAngle_magnitude(angle: CGFloat, magnitude: CGFloat):void;
     //
@@ -19210,8 +19615,8 @@ declare namespace cocoascript {
    */
   interface UIPushBehavior extends UIDynamicBehavior {
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623336-active
-    active(): BOOL;
-    setActive(): void;
+    active(): boolean;
+    setActive(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623333-additem
     addItem(item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623329-initwithitems
@@ -19220,25 +19625,25 @@ declare namespace cocoascript {
     removeItem(item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623339-items
     items(): UIDynamicItem;
-    setItems(): void;
+    setItems(value: UIDynamicItem): void;
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623335-setangle
     setAngle_magnitude(angle: CGFloat, magnitude: CGFloat):void;
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623332-angle
     angle(): CGFloat;
-    setAngle(): void;
+    setAngle(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623330-magnitude
     magnitude(): CGFloat;
-    setMagnitude(): void;
+    setMagnitude(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623340-mode
     mode(): UIPushBehaviorMode;
-    setMode(): void;
+    setMode(value: UIPushBehaviorMode): void;
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623341-settargetoffsetfromcenter
     setTargetOffsetFromCenter_forItem(o: UIOffset, item: UIDynamicItem):void;
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623338-targetoffsetfromcenterforitem
     targetOffsetFromCenterForItem(item: UIDynamicItem):UIOffset;
     // https://developer.apple.com/documentation/uikit/uipushbehavior/1623331-pushdirection
     pushDirection(): CGVector;
-    setPushDirection(): void;
+    setPushDirection(value: CGVector): void;
     //
     alloc():UIPushBehavior;
     //
@@ -19257,10 +19662,10 @@ declare namespace cocoascript {
     initWithItem_snapToPoint(item: UIDynamicItem, point: CGPoint):UISnapBehavior;
     // https://developer.apple.com/documentation/uikit/uisnapbehavior/1621013-snappoint
     snapPoint(): CGPoint;
-    setSnapPoint(): void;
+    setSnapPoint(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uisnapbehavior/1621012-damping
     damping(): CGFloat;
-    setDamping(): void;
+    setDamping(value: CGFloat): void;
     //
     alloc():UISnapBehavior;
     //
@@ -19277,7 +19682,7 @@ declare namespace cocoascript {
   interface UIMotionEffectGroup extends UIMotionEffect {
     // https://developer.apple.com/documentation/uikit/uimotioneffectgroup/1622374-motioneffects
     motionEffects(): UIMotionEffect;
-    setMotionEffects(): void;
+    setMotionEffects(value: UIMotionEffect): void;
     //
     alloc():UIMotionEffectGroup;
     //
@@ -19298,16 +19703,16 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UIInterpolatingMotionEffect;
     // https://developer.apple.com/documentation/uikit/uiinterpolatingmotioneffect/1622378-keypath
     keyPath(): string | cocoascript.NSString;
-    setKeyPath(): void;
+    setKeyPath(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uiinterpolatingmotioneffect/1622377-type
     type(): UIInterpolatingMotionEffectType;
-    setType(): void;
+    setType(value: UIInterpolatingMotionEffectType): void;
     // https://developer.apple.com/documentation/uikit/uiinterpolatingmotioneffect/1622365-minimumrelativevalue
     minimumRelativeValue(): id;
-    setMinimumRelativeValue(): void;
+    setMinimumRelativeValue(value: id): void;
     // https://developer.apple.com/documentation/uikit/uiinterpolatingmotioneffect/1622376-maximumrelativevalue
     maximumRelativeValue(): id;
-    setMaximumRelativeValue(): void;
+    setMaximumRelativeValue(value: id): void;
     //
     alloc():UIInterpolatingMotionEffect;
     //
@@ -19438,12 +19843,13 @@ declare const NSTargetTextScalingDocumentOption: cocoascript.NSAttributedStringD
 declare const NSSourceTextScalingDocumentOption: cocoascript.NSAttributedStringDocumentReadingOptionKey;
 declare namespace cocoascript {
   /**
+   * A placeholder object that reserves visual space in a text input view.
    * https://developer.apple.com/documentation/uikit/uitextplaceholder
    */
   interface UITextPlaceholder extends NSObject {
     // https://developer.apple.com/documentation/uikit/uitextplaceholder/3213957-rects
     rects(): UITextSelectionRect;
-    setRects(): void;
+    setRects(value: UITextSelectionRect): void;
     //
     alloc():UITextPlaceholder;
     //
@@ -19597,17 +20003,17 @@ declare namespace cocoascript {
    */
   interface UICollectionViewLayoutInvalidationContext extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617793-invalidateeverything
-    invalidateEverything(): BOOL;
-    setInvalidateEverything(): void;
+    invalidateEverything(): boolean;
+    setInvalidateEverything(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617760-invalidatedatasourcecounts
-    invalidateDataSourceCounts(): BOOL;
-    setInvalidateDataSourceCounts(): void;
+    invalidateDataSourceCounts(): boolean;
+    setInvalidateDataSourceCounts(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617731-contentoffsetadjustment
     contentOffsetAdjustment(): CGPoint;
-    setContentOffsetAdjustment(): void;
+    setContentOffsetAdjustment(value: CGPoint): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617763-contentsizeadjustment
     contentSizeAdjustment(): CGSize;
-    setContentSizeAdjustment(): void;
+    setContentSizeAdjustment(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617795-invalidateitemsatindexpaths
     invalidateItemsAtIndexPaths(indexPaths: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617747-invalidatesupplementaryelementso
@@ -19616,22 +20022,22 @@ declare namespace cocoascript {
     invalidateDecorationElementsOfKind_atIndexPaths(elementKind: string | cocoascript.NSString, indexPaths: NSIndexPath):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617723-invalidateditemindexpaths
     invalidatedItemIndexPaths(): NSIndexPath;
-    setInvalidatedItemIndexPaths(): void;
+    setInvalidatedItemIndexPaths(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617777-invalidatedsupplementaryindexpat
     invalidatedSupplementaryIndexPaths(): NSIndexPath;
-    setInvalidatedSupplementaryIndexPaths(): void;
+    setInvalidatedSupplementaryIndexPaths(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617805-invalidateddecorationindexpaths
     invalidatedDecorationIndexPaths(): NSIndexPath;
-    setInvalidatedDecorationIndexPaths(): void;
+    setInvalidatedDecorationIndexPaths(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617800-previousindexpathsforinteractive
     previousIndexPathsForInteractivelyMovingItems(): NSIndexPath;
-    setPreviousIndexPathsForInteractivelyMovingItems(): void;
+    setPreviousIndexPathsForInteractivelyMovingItems(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617780-targetindexpathsforinteractively
     targetIndexPathsForInteractivelyMovingItems(): NSIndexPath;
-    setTargetIndexPathsForInteractivelyMovingItems(): void;
+    setTargetIndexPathsForInteractivelyMovingItems(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617808-interactivemovementtarget
     interactiveMovementTarget(): CGPoint;
-    setInteractiveMovementTarget(): void;
+    setInteractiveMovementTarget(value: CGPoint): void;
     //
     alloc():UICollectionViewLayoutInvalidationContext;
     //
@@ -19658,7 +20064,7 @@ declare namespace cocoascript {
     layoutWithListConfiguration(configuration: UICollectionLayoutListConfiguration):UICollectionViewCompositionalLayout;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcompositionallayout/3199209-configuration
     configuration(): UICollectionViewCompositionalLayoutConfiguration;
-    setConfiguration(): void;
+    setConfiguration(value: UICollectionViewCompositionalLayoutConfiguration): void;
     //
     alloc():UICollectionViewCompositionalLayout;
     //
@@ -19675,37 +20081,37 @@ declare namespace cocoascript {
   interface UICollectionViewFlowLayout extends UICollectionViewLayout {
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/1617720-scrolldirection
     scrollDirection(): UICollectionViewScrollDirection;
-    setScrollDirection(): void;
+    setScrollDirection(value: UICollectionViewScrollDirection): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/1617717-minimumlinespacing
     minimumLineSpacing(): CGFloat;
-    setMinimumLineSpacing(): void;
+    setMinimumLineSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/1617706-minimuminteritemspacing
     minimumInteritemSpacing(): CGFloat;
-    setMinimumInteritemSpacing(): void;
+    setMinimumInteritemSpacing(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/1617711-itemsize
     itemSize(): CGSize;
-    setItemSize(): void;
+    setItemSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/1617709-estimateditemsize
     estimatedItemSize(): CGSize;
-    setEstimatedItemSize(): void;
+    setEstimatedItemSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/1617714-sectioninset
     sectionInset(): UIEdgeInsets;
-    setSectionInset(): void;
+    setSectionInset(value: UIEdgeInsets): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/2921645-sectioninsetreference
     sectionInsetReference(): UICollectionViewFlowLayoutSectionInsetReference;
-    setSectionInsetReference(): void;
+    setSectionInsetReference(value: UICollectionViewFlowLayoutSectionInsetReference): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/1617710-headerreferencesize
     headerReferenceSize(): CGSize;
-    setHeaderReferenceSize(): void;
+    setHeaderReferenceSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/1617703-footerreferencesize
     footerReferenceSize(): CGSize;
-    setFooterReferenceSize(): void;
+    setFooterReferenceSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/1617699-sectionheaderspintovisiblebounds
-    sectionHeadersPinToVisibleBounds(): BOOL;
-    setSectionHeadersPinToVisibleBounds(): void;
+    sectionHeadersPinToVisibleBounds(): boolean;
+    setSectionHeadersPinToVisibleBounds(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayout/1617701-sectionfooterspintovisiblebounds
-    sectionFootersPinToVisibleBounds(): BOOL;
-    setSectionFootersPinToVisibleBounds(): void;
+    sectionFootersPinToVisibleBounds(): boolean;
+    setSectionFootersPinToVisibleBounds(value: boolean): void;
     //
     alloc():UICollectionViewFlowLayout;
     //
@@ -19726,17 +20132,17 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UICollectionViewTransitionLayout;
     // https://developer.apple.com/documentation/uikit/uicollectionviewtransitionlayout/1622191-transitionprogress
     transitionProgress(): CGFloat;
-    setTransitionProgress(): void;
+    setTransitionProgress(value: CGFloat): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewtransitionlayout/1622194-updatevalue
     updateValue_forAnimatedKey(value: CGFloat, key: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewtransitionlayout/1622193-valueforanimatedkey
     valueForAnimatedKey(key: string | cocoascript.NSString):CGFloat;
     // https://developer.apple.com/documentation/uikit/uicollectionviewtransitionlayout/1622190-currentlayout
     currentLayout(): UICollectionViewLayout;
-    setCurrentLayout(): void;
+    setCurrentLayout(value: UICollectionViewLayout): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewtransitionlayout/1622188-nextlayout
     nextLayout(): UICollectionViewLayout;
-    setNextLayout(): void;
+    setNextLayout(value: UICollectionViewLayout): void;
     //
     alloc():UICollectionViewTransitionLayout;
     //
@@ -19752,11 +20158,11 @@ declare namespace cocoascript {
    */
   interface UICollectionViewFlowLayoutInvalidationContext extends UICollectionViewLayoutInvalidationContext {
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayoutinvalidationcontext/1617721-invalidateflowlayoutdelegatemetr
-    invalidateFlowLayoutDelegateMetrics(): BOOL;
-    setInvalidateFlowLayoutDelegateMetrics(): void;
+    invalidateFlowLayoutDelegateMetrics(): boolean;
+    setInvalidateFlowLayoutDelegateMetrics(value: boolean): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayoutinvalidationcontext/1617707-invalidateflowlayoutattributes
-    invalidateFlowLayoutAttributes(): BOOL;
-    setInvalidateFlowLayoutAttributes(): void;
+    invalidateFlowLayoutAttributes(): boolean;
+    setInvalidateFlowLayoutAttributes(value: boolean): void;
     //
     alloc():UICollectionViewFlowLayoutInvalidationContext;
     //
@@ -19798,11 +20204,39 @@ declare namespace cocoascript {
   type UITableViewCellFocusStyle = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uiconfigurationtextattributestransformer
+  type UIConfigurationTextAttributesTransformer = cocoascript.id;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uibuttonconfigurationtitlealignment
+  type UIButtonConfigurationTitleAlignment = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uibuttonconfigurationsize
+  type UIButtonConfigurationSize = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uibuttonconfigurationcornerstyle
+  type UIButtonConfigurationCornerStyle = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uibuttonconfigurationmacidiomstyle
+  type UIButtonConfigurationMacIdiomStyle = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasourcecellprovider
   type UITableViewDiffableDataSourceCellProvider = cocoascript.id;
 }
 // https://developer.apple.com/documentation/uikit/uimenustandardedit
 declare const UIMenuStandardEdit: cocoascript.UIMenuIdentifier;
+// https://developer.apple.com/documentation/uikit/uiactionpaste
+declare const UIActionPaste: cocoascript.UIActionIdentifier;
+// https://developer.apple.com/documentation/uikit/uiactionpasteandgo
+declare const UIActionPasteAndGo: cocoascript.UIActionIdentifier;
+// https://developer.apple.com/documentation/uikit/uiactionpasteandmatchstyle
+declare const UIActionPasteAndMatchStyle: cocoascript.UIActionIdentifier;
+// https://developer.apple.com/documentation/uikit/uiactionpasteandsearch
+declare const UIActionPasteAndSearch: cocoascript.UIActionIdentifier;
 // https://developer.apple.com/documentation/uikit/uimenuapplication
 declare const UIMenuApplication: cocoascript.UIMenuIdentifier;
 // https://developer.apple.com/documentation/uikit/uimenufile
@@ -19889,6 +20323,8 @@ declare const UIMenuBringAllToFront: cocoascript.UIMenuIdentifier;
 declare const UIMenuRoot: cocoascript.UIMenuIdentifier;
 // https://developer.apple.com/documentation/uikit/uimenuopenrecent
 declare const UIMenuOpenRecent: cocoascript.UIMenuIdentifier;
+// https://developer.apple.com/documentation/uikit/uimenusidebar
+declare const UIMenuSidebar: cocoascript.UIMenuIdentifier;
 // https://developer.apple.com/documentation/uikit/uiimagepickercontrollermediametadata
 declare const UIImagePickerControllerMediaMetadata: cocoascript.UIImagePickerControllerInfoKey;
 declare namespace cocoascript {
@@ -19927,10 +20363,10 @@ declare namespace cocoascript {
   interface UISceneSizeRestrictions extends NSObject {
     // https://developer.apple.com/documentation/uikit/uiscenesizerestrictions/3368161-minimumsize
     minimumSize(): CGSize;
-    setMinimumSize(): void;
+    setMinimumSize(value: CGSize): void;
     // https://developer.apple.com/documentation/uikit/uiscenesizerestrictions/3368160-maximumsize
     maximumSize(): CGSize;
-    setMaximumSize(): void;
+    setMaximumSize(value: CGSize): void;
     //
     alloc():UISceneSizeRestrictions;
     //
@@ -19940,8 +20376,78 @@ declare namespace cocoascript {
 
 declare const UISceneSizeRestrictions: cocoascript.UISceneSizeRestrictions;
 declare namespace cocoascript {
+  /**
+   * https://developer.apple.com/documentation/uikit/uiwindowsceneactivationaction
+   */
+  interface UIWindowSceneActivationAction extends UIAction {
+    // https://developer.apple.com/documentation/uikit/uiwindowsceneactivationaction/3752224-title
+    title(): string | cocoascript.NSString;
+    setTitle(value: string | cocoascript.NSString): void;
+    // https://developer.apple.com/documentation/uikit/uiwindowsceneactivationaction/3752223-actionwithidentifier
+    actionWithIdentifier_alternateAction_configurationProvider(identifier: UIActionIdentifier, alternateAction: UIAction, configurationProvider: UIWindowSceneActivationActionConfigurationProvider):UIWindowSceneActivationAction;
+    //
+    alloc():UIWindowSceneActivationAction;
+    //
+    init():UIWindowSceneActivationAction;
+  }
+}
+
+declare const UIWindowSceneActivationAction: cocoascript.UIWindowSceneActivationAction;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uiwindowsceneactivationactionconfigurationprovider
+  type UIWindowSceneActivationActionConfigurationProvider = cocoascript.UIWindowSceneActivationAction;
+}
+declare namespace cocoascript {
+  /**
+   * https://developer.apple.com/documentation/uikit/uiwindowsceneactivationconfiguration
+   */
+  interface UIWindowSceneActivationConfiguration extends NSObject {
+    // https://developer.apple.com/documentation/uikit/uiwindowsceneactivationconfiguration/3752228-options
+    options(): UIWindowSceneActivationRequestOptions;
+    setOptions(value: UIWindowSceneActivationRequestOptions): void;
+    // https://developer.apple.com/documentation/uikit/uiwindowsceneactivationconfiguration/3752229-preview
+    preview(): UITargetedPreview;
+    setPreview(value: UITargetedPreview): void;
+    // https://developer.apple.com/documentation/uikit/uiwindowsceneactivationconfiguration/3752230-useractivity
+    userActivity(): NSUserActivity;
+    setUserActivity(value: NSUserActivity): void;
+    // https://developer.apple.com/documentation/uikit/uiwindowsceneactivationconfiguration/3752227-initwithuseractivity
+    initWithUserActivity(userActivity: NSUserActivity):UIWindowSceneActivationConfiguration;
+    //
+    alloc():UIWindowSceneActivationConfiguration;
+    //
+    init():UIWindowSceneActivationConfiguration;
+  }
+}
+
+declare const UIWindowSceneActivationConfiguration: cocoascript.UIWindowSceneActivationConfiguration;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uiwindowsceneactivationinteractionconfigurationprovider
+  type UIWindowSceneActivationInteractionConfigurationProvider = cocoascript.CGPoint;
+}
+declare namespace cocoascript {
+  /**
+   * https://developer.apple.com/documentation/uikit/uiwindowsceneactivationrequestoptions
+   */
+  interface UIWindowSceneActivationRequestOptions extends UISceneActivationRequestOptions {
+    // https://developer.apple.com/documentation/uikit/uiwindowsceneactivationrequestoptions/3750934-preferredpresentationstyle
+    preferredPresentationStyle(): UIWindowScenePresentationStyle;
+    setPreferredPresentationStyle(value: UIWindowScenePresentationStyle): void;
+    //
+    alloc():UIWindowSceneActivationRequestOptions;
+    //
+    init():UIWindowSceneActivationRequestOptions;
+  }
+}
+
+declare const UIWindowSceneActivationRequestOptions: cocoascript.UIWindowSceneActivationRequestOptions;
+declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uiwindowscenedismissalanimation
   type UIWindowSceneDismissalAnimation = cocoascript.NSInteger;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uiwindowscenepresentationstyle
+  type UIWindowScenePresentationStyle = cocoascript.NSUInteger;
 }
 // https://developer.apple.com/documentation/uikit/uifocussoundidentifierdefault
 declare const UIFocusSoundIdentifierDefault: cocoascript.UIFocusSoundIdentifier;
@@ -20011,13 +20517,13 @@ declare namespace cocoascript {
   interface UICollectionViewUpdateItem extends NSObject {
     // https://developer.apple.com/documentation/uikit/uicollectionviewupdateitem/1617772-indexpathbeforeupdate
     indexPathBeforeUpdate(): NSIndexPath;
-    setIndexPathBeforeUpdate(): void;
+    setIndexPathBeforeUpdate(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewupdateitem/1617765-indexpathafterupdate
     indexPathAfterUpdate(): NSIndexPath;
-    setIndexPathAfterUpdate(): void;
+    setIndexPathAfterUpdate(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewupdateitem/1617748-updateaction
     updateAction(): UICollectionUpdateAction;
-    setUpdateAction(): void;
+    setUpdateAction(value: UICollectionUpdateAction): void;
     //
     alloc():UICollectionViewUpdateItem;
     //
@@ -20034,10 +20540,10 @@ declare namespace cocoascript {
   interface UICollectionViewFocusUpdateContext extends UIFocusUpdateContext {
     // https://developer.apple.com/documentation/uikit/uicollectionviewfocusupdatecontext/1618077-previouslyfocusedindexpath
     previouslyFocusedIndexPath(): NSIndexPath;
-    setPreviouslyFocusedIndexPath(): void;
+    setPreviouslyFocusedIndexPath(value: NSIndexPath): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewfocusupdatecontext/1618011-nextfocusedindexpath
     nextFocusedIndexPath(): NSIndexPath;
-    setNextFocusedIndexPath(): void;
+    setNextFocusedIndexPath(value: NSIndexPath): void;
     //
     alloc():UICollectionViewFocusUpdateContext;
     //
@@ -20084,25 +20590,25 @@ declare namespace cocoascript {
   interface UISceneConnectionOptions extends NSObject {
     // https://developer.apple.com/documentation/uikit/uisceneconnectionoptions/3238074-useractivities
     userActivities(): NSUserActivity;
-    setUserActivities(): void;
+    setUserActivities(value: NSUserActivity): void;
     // https://developer.apple.com/documentation/uikit/uisceneconnectionoptions/3238072-shortcutitem
     shortcutItem(): UIApplicationShortcutItem;
-    setShortcutItem(): void;
+    setShortcutItem(value: UIApplicationShortcutItem): void;
     // https://developer.apple.com/documentation/uikit/uisceneconnectionoptions/3238068-urlcontexts
     URLContexts(): UIOpenURLContext;
-    setURLContexts(): void;
+    setURLContexts(value: UIOpenURLContext): void;
     // https://developer.apple.com/documentation/uikit/uisceneconnectionoptions/3238070-handoffuseractivitytype
     handoffUserActivityType(): string | cocoascript.NSString;
-    setHandoffUserActivityType(): void;
+    setHandoffUserActivityType(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisceneconnectionoptions/3238069-cloudkitsharemetadata
     cloudKitShareMetadata(): CKShareMetadata;
-    setCloudKitShareMetadata(): void;
+    setCloudKitShareMetadata(value: CKShareMetadata): void;
     // https://developer.apple.com/documentation/uikit/uisceneconnectionoptions/3238071-notificationresponse
     notificationResponse(): UNNotificationResponse;
-    setNotificationResponse(): void;
+    setNotificationResponse(value: UNNotificationResponse): void;
     // https://developer.apple.com/documentation/uikit/uisceneconnectionoptions/3238073-sourceapplication
     sourceApplication(): string | cocoascript.NSString;
-    setSourceApplication(): void;
+    setSourceApplication(value: string | cocoascript.NSString): void;
     //
     alloc():UISceneConnectionOptions;
     //
@@ -20133,6 +20639,8 @@ declare const UIApplicationLaunchOptionsURLKey: cocoascript.UIApplicationLaunchO
 declare const UIApplicationLaunchOptionsUserActivityDictionaryKey: cocoascript.UIApplicationLaunchOptionsKey;
 // https://developer.apple.com/documentation/uikit/uiapplicationlaunchoptionsuseractivitytypekey
 declare const UIApplicationLaunchOptionsUserActivityTypeKey: cocoascript.UIApplicationLaunchOptionsKey;
+// https://developer.apple.com/documentation/uikit/uiapplicationlaunchoptionseventattributionkey
+declare const UIApplicationLaunchOptionsEventAttributionKey: cocoascript.UIApplicationLaunchOptionsKey;
 // https://developer.apple.com/documentation/uikit/uiapplicationopenurloptionssourceapplicationkey
 declare const UIApplicationOpenURLOptionsSourceApplicationKey: cocoascript.UIApplicationOpenURLOptionsKey;
 // https://developer.apple.com/documentation/uikit/uiapplicationopenurloptionsannotationkey
@@ -20163,13 +20671,16 @@ declare namespace cocoascript {
   interface UISceneOpenURLOptions extends NSObject {
     // https://developer.apple.com/documentation/uikit/uisceneopenurloptions/3197945-sourceapplication
     sourceApplication(): string | cocoascript.NSString;
-    setSourceApplication(): void;
+    setSourceApplication(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uisceneopenurloptions/3197943-annotation
     annotation(): id;
-    setAnnotation(): void;
+    setAnnotation(value: id): void;
     // https://developer.apple.com/documentation/uikit/uisceneopenurloptions/3197944-openinplace
-    openInPlace(): BOOL;
-    setOpenInPlace(): void;
+    openInPlace(): boolean;
+    setOpenInPlace(value: boolean): void;
+    // https://developer.apple.com/documentation/uikit/uisceneopenurloptions/3727337-eventattribution
+    eventAttribution(): UIEventAttribution;
+    setEventAttribution(value: UIEventAttribution): void;
     //
     alloc():UISceneOpenURLOptions;
     //
@@ -20194,13 +20705,13 @@ declare namespace cocoascript {
     registrationWithCellNib_configurationHandler(cellNib: UINib, configurationHandler: UICollectionViewCellRegistrationConfigurationHandler):UICollectionViewCellRegistration;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcellregistration/3600445-configurationhandler
     configurationHandler(): UICollectionViewCellRegistrationConfigurationHandler;
-    setConfigurationHandler(): void;
+    setConfigurationHandler(value: UICollectionViewCellRegistrationConfigurationHandler): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcellregistration/3600443-cellclass
     cellClass(): Class;
-    setCellClass(): void;
+    setCellClass(value: Class): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewcellregistration/3600444-cellnib
     cellNib(): UINib;
-    setCellNib(): void;
+    setCellNib(value: UINib): void;
     //
     alloc():UICollectionViewCellRegistration;
     //
@@ -20221,16 +20732,16 @@ declare namespace cocoascript {
     registrationWithSupplementaryNib_elementKind_configurationHandler(supplementaryNib: UINib, elementKind: string | cocoascript.NSString, configurationHandler: UICollectionViewSupplementaryRegistrationConfigurationHandler):UICollectionViewSupplementaryRegistration;
     // https://developer.apple.com/documentation/uikit/uicollectionviewsupplementaryregistration/3600450-configurationhandler
     configurationHandler(): UICollectionViewSupplementaryRegistrationConfigurationHandler;
-    setConfigurationHandler(): void;
+    setConfigurationHandler(value: UICollectionViewSupplementaryRegistrationConfigurationHandler): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewsupplementaryregistration/3600451-elementkind
     elementKind(): string | cocoascript.NSString;
-    setElementKind(): void;
+    setElementKind(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewsupplementaryregistration/3600454-supplementaryclass
     supplementaryClass(): Class;
-    setSupplementaryClass(): void;
+    setSupplementaryClass(value: Class): void;
     // https://developer.apple.com/documentation/uikit/uicollectionviewsupplementaryregistration/3600455-supplementarynib
     supplementaryNib(): UINib;
-    setSupplementaryNib(): void;
+    setSupplementaryNib(value: UINib): void;
     //
     alloc():UICollectionViewSupplementaryRegistration;
     //
@@ -20241,7 +20752,7 @@ declare namespace cocoascript {
 declare const UICollectionViewSupplementaryRegistration: cocoascript.UICollectionViewSupplementaryRegistration;
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uicollectionviewlayoutinteractivetransitioncompletion
-  type UICollectionViewLayoutInteractiveTransitionCompletion = cocoascript.BOOL;
+  type UICollectionViewLayoutInteractiveTransitionCompletion = boolean;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uicollectionviewreorderingcadence
@@ -20259,12 +20770,28 @@ declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uicollectionelementcategory
   type UICollectionElementCategory = cocoascript.NSUInteger;
 }
+// https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatterncalendarevent
+declare const UIPasteboardDetectionPatternCalendarEvent: cocoascript.UIPasteboardDetectionPattern;
+// https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatternemailaddress
+declare const UIPasteboardDetectionPatternEmailAddress: cocoascript.UIPasteboardDetectionPattern;
+// https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatternflightnumber
+declare const UIPasteboardDetectionPatternFlightNumber: cocoascript.UIPasteboardDetectionPattern;
+// https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatternlink
+declare const UIPasteboardDetectionPatternLink: cocoascript.UIPasteboardDetectionPattern;
+// https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatternmoneyamount
+declare const UIPasteboardDetectionPatternMoneyAmount: cocoascript.UIPasteboardDetectionPattern;
 // https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatternnumber
 declare const UIPasteboardDetectionPatternNumber: cocoascript.UIPasteboardDetectionPattern;
+// https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatternphonenumber
+declare const UIPasteboardDetectionPatternPhoneNumber: cocoascript.UIPasteboardDetectionPattern;
+// https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatternpostaladdress
+declare const UIPasteboardDetectionPatternPostalAddress: cocoascript.UIPasteboardDetectionPattern;
 // https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatternprobablewebsearch
 declare const UIPasteboardDetectionPatternProbableWebSearch: cocoascript.UIPasteboardDetectionPattern;
 // https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatternprobableweburl
 declare const UIPasteboardDetectionPatternProbableWebURL: cocoascript.UIPasteboardDetectionPattern;
+// https://developer.apple.com/documentation/uikit/uipasteboarddetectionpatternshipmenttrackingnumber
+declare const UIPasteboardDetectionPatternShipmentTrackingNumber: cocoascript.UIPasteboardDetectionPattern;
 // https://developer.apple.com/documentation/uikit/uinibexternalobjects
 declare const UINibExternalObjects: cocoascript.UINibOptionsKey;
 // https://developer.apple.com/documentation/uikit/uiactivitytypeaddtoreadinglist
@@ -20323,16 +20850,16 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UICellAccessoryCustomView;
     // https://developer.apple.com/documentation/uikit/uicellaccessorycustomview/3600359-customview
     customView(): UIView;
-    setCustomView(): void;
+    setCustomView(value: UIView): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessorycustomview/3600363-placement
     placement(): UICellAccessoryPlacement;
-    setPlacement(): void;
+    setPlacement(value: UICellAccessoryPlacement): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessorycustomview/3600364-position
     position(): UICellAccessoryPosition;
-    setPosition(): void;
+    setPosition(value: UICellAccessoryPosition): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessorycustomview/3600362-maintainsfixedsize
-    maintainsFixedSize(): BOOL;
-    setMaintainsFixedSize(): void;
+    maintainsFixedSize(): boolean;
+    setMaintainsFixedSize(value: boolean): void;
     //
     alloc():UICellAccessoryCustomView;
     //
@@ -20363,10 +20890,10 @@ declare namespace cocoascript {
   interface UICellAccessoryOutlineDisclosure extends UICellAccessory {
     // https://developer.apple.com/documentation/uikit/uicellaccessoryoutlinedisclosure/3600383-actionhandler
     actionHandler(): void;
-    setActionHandler(): void;
+    setActionHandler(value: void): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessoryoutlinedisclosure/3600385-style
     style(): UICellAccessoryOutlineDisclosureStyle;
-    setStyle(): void;
+    setStyle(value: UICellAccessoryOutlineDisclosureStyle): void;
     //
     alloc():UICellAccessoryOutlineDisclosure;
     //
@@ -20397,10 +20924,10 @@ declare namespace cocoascript {
   interface UICellAccessoryDelete extends UICellAccessory {
     // https://developer.apple.com/documentation/uikit/uicellaccessorydelete/3600366-actionhandler
     actionHandler(): void;
-    setActionHandler(): void;
+    setActionHandler(value: void): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessorydelete/3667727-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     //
     alloc():UICellAccessoryDelete;
     //
@@ -20417,10 +20944,10 @@ declare namespace cocoascript {
   interface UICellAccessoryInsert extends UICellAccessory {
     // https://developer.apple.com/documentation/uikit/uicellaccessoryinsert/3600373-actionhandler
     actionHandler(): void;
-    setActionHandler(): void;
+    setActionHandler(value: void): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessoryinsert/3667728-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     //
     alloc():UICellAccessoryInsert;
     //
@@ -20436,8 +20963,8 @@ declare namespace cocoascript {
    */
   interface UICellAccessoryReorder extends UICellAccessory {
     // https://developer.apple.com/documentation/uikit/uicellaccessoryreorder/3600397-showsverticalseparator
-    showsVerticalSeparator(): BOOL;
-    setShowsVerticalSeparator(): void;
+    showsVerticalSeparator(): boolean;
+    setShowsVerticalSeparator(value: boolean): void;
     //
     alloc():UICellAccessoryReorder;
     //
@@ -20454,7 +20981,7 @@ declare namespace cocoascript {
   interface UICellAccessoryMultiselect extends UICellAccessory {
     // https://developer.apple.com/documentation/uikit/uicellaccessorymultiselect/3667729-backgroundcolor
     backgroundColor(): UIColor;
-    setBackgroundColor(): void;
+    setBackgroundColor(value: UIColor): void;
     //
     alloc():UICellAccessoryMultiselect;
     //
@@ -20475,13 +21002,13 @@ declare namespace cocoascript {
     initWithCoder(coder: NSCoder):UICellAccessoryLabel;
     // https://developer.apple.com/documentation/uikit/uicellaccessorylabel/3600379-text
     text(): string | cocoascript.NSString;
-    setText(): void;
+    setText(value: string | cocoascript.NSString): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessorylabel/3600376-font
     font(): UIFont;
-    setFont(): void;
+    setFont(value: UIFont): void;
     // https://developer.apple.com/documentation/uikit/uicellaccessorylabel/3600375-adjustsfontforcontentsizecategor
-    adjustsFontForContentSizeCategory(): BOOL;
-    setAdjustsFontForContentSizeCategory(): void;
+    adjustsFontForContentSizeCategory(): boolean;
+    setAdjustsFontForContentSizeCategory(value: boolean): void;
     //
     alloc():UICellAccessoryLabel;
     //
@@ -20509,6 +21036,10 @@ declare namespace cocoascript {
   type UICollectionLayoutListAppearance = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistitemseparatorhandler
+  type UICollectionLayoutListItemSeparatorHandler = cocoascript.UIListSeparatorConfiguration;
+}
+declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistheadermode
   type UICollectionLayoutListHeaderMode = cocoascript.NSInteger;
 }
@@ -20516,6 +21047,8 @@ declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistfootermode
   type UICollectionLayoutListFooterMode = cocoascript.NSInteger;
 }
+// https://developer.apple.com/documentation/uikit/uicollectionviewlayoutautomaticdimension
+declare const UICollectionViewLayoutAutomaticDimension: cocoascript.CGFloat;
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uicollectionlayoutlistswipeactionsconfigurationprovider
   type UICollectionLayoutListSwipeActionsConfigurationProvider = cocoascript.NSIndexPath;
@@ -20528,16 +21061,16 @@ declare namespace cocoascript {
   interface NSDiffableDataSourceTransaction extends NSObject {
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcetransaction/3600510-sectiontransactions
     sectionTransactions(): any;
-    setSectionTransactions(): void;
+    setSectionTransactions(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcetransaction/3600509-initialsnapshot
     initialSnapshot(): any;
-    setInitialSnapshot(): void;
+    setInitialSnapshot(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcetransaction/3600508-finalsnapshot
     finalSnapshot(): any;
-    setFinalSnapshot(): void;
+    setFinalSnapshot(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcetransaction/3600507-difference
     difference(): any;
-    setDifference(): void;
+    setDifference(value: any): void;
     //
     alloc():NSDiffableDataSourceTransaction;
     //
@@ -20554,16 +21087,16 @@ declare namespace cocoascript {
   interface NSDiffableDataSourceSectionTransaction extends NSObject {
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectiontransaction/3600505-sectionidentifier
     sectionIdentifier(): any;
-    setSectionIdentifier(): void;
+    setSectionIdentifier(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectiontransaction/3600504-initialsnapshot
     initialSnapshot(): any;
-    setInitialSnapshot(): void;
+    setInitialSnapshot(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectiontransaction/3600503-finalsnapshot
     finalSnapshot(): any;
-    setFinalSnapshot(): void;
+    setFinalSnapshot(value: any): void;
     // https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesectiontransaction/3600502-difference
     difference(): any;
-    setDifference(): void;
+    setDifference(value: any): void;
     //
     alloc():NSDiffableDataSourceSectionTransaction;
     //
@@ -20582,6 +21115,12 @@ declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uilistcontenttexttransform
   type UIListContentTextTransform = cocoascript.NSInteger;
 }
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uilistseparatorvisibility
+  type UIListSeparatorVisibility = cocoascript.NSInteger;
+}
+// https://developer.apple.com/documentation/uikit/uilistseparatorautomaticinsets
+declare const UIListSeparatorAutomaticInsets: cocoascript.NSDirectionalEdgeInsets;
 // https://developer.apple.com/documentation/uikit/uitextcontenttypeemailaddress
 declare const UITextContentTypeEmailAddress: cocoascript.UITextContentType;
 declare namespace cocoascript {
@@ -20620,6 +21159,22 @@ declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uipointereffecttintmode
   type UIPointerEffectTintMode = cocoascript.NSInteger;
 }
+// https://developer.apple.com/documentation/uikit/uipointeraccessorypositionbottom
+declare const UIPointerAccessoryPositionBottom: cocoascript.UIPointerAccessoryPosition;
+// https://developer.apple.com/documentation/uikit/uipointeraccessorypositionbottomleft
+declare const UIPointerAccessoryPositionBottomLeft: cocoascript.UIPointerAccessoryPosition;
+// https://developer.apple.com/documentation/uikit/uipointeraccessorypositionbottomright
+declare const UIPointerAccessoryPositionBottomRight: cocoascript.UIPointerAccessoryPosition;
+// https://developer.apple.com/documentation/uikit/uipointeraccessorypositionleft
+declare const UIPointerAccessoryPositionLeft: cocoascript.UIPointerAccessoryPosition;
+// https://developer.apple.com/documentation/uikit/uipointeraccessorypositionright
+declare const UIPointerAccessoryPositionRight: cocoascript.UIPointerAccessoryPosition;
+// https://developer.apple.com/documentation/uikit/uipointeraccessorypositiontop
+declare const UIPointerAccessoryPositionTop: cocoascript.UIPointerAccessoryPosition;
+// https://developer.apple.com/documentation/uikit/uipointeraccessorypositiontopleft
+declare const UIPointerAccessoryPositionTopLeft: cocoascript.UIPointerAccessoryPosition;
+// https://developer.apple.com/documentation/uikit/uipointeraccessorypositiontopright
+declare const UIPointerAccessoryPositionTopRight: cocoascript.UIPointerAccessoryPosition;
 // https://developer.apple.com/documentation/uikit/uiaccessibilitynotificationswitchcontrolidentifier
 declare const UIAccessibilityNotificationSwitchControlIdentifier: cocoascript.UIAccessibilityAssistiveTechnologyIdentifier;
 // https://developer.apple.com/documentation/uikit/uiaccessibilitynotificationvoiceoveridentifier
@@ -20645,12 +21200,20 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uicollectionviewcellconfigurationupdatehandler
+  type UICollectionViewCellConfigurationUpdateHandler = cocoascript.UICellConfigurationState;
+}
+declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uicollectionviewcelldragstate
   type UICollectionViewCellDragState = cocoascript.NSInteger;
 }
 declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uitableviewheaderfooterviewconfigurationupdatehandler
+  type UITableViewHeaderFooterViewConfigurationUpdateHandler = cocoascript.UIViewConfigurationState;
+}
+declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uicontextualactionhandler
-  type UIContextualActionHandler = cocoascript.BOOL;
+  type UIContextualActionHandler = boolean;
 }
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uicontextualactionstyle
@@ -20676,6 +21239,14 @@ declare namespace cocoascript {
 declare const UIPageViewControllerOptionInterPageSpacingKey: cocoascript.UIPageViewControllerOptionsKey;
 // https://developer.apple.com/documentation/uikit/uipageviewcontrolleroptionspinelocationkey
 declare const UIPageViewControllerOptionSpineLocationKey: cocoascript.UIPageViewControllerOptionsKey;
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/uikit/uisheetpresentationcontrollerdetentidentifier
+  type UISheetPresentationControllerDetentIdentifier = cocoascript.NSString;
+}
+// https://developer.apple.com/documentation/uikit/uisheetpresentationcontrollerdetentidentifiermedium
+declare const UISheetPresentationControllerDetentIdentifierMedium: cocoascript.UISheetPresentationControllerDetentIdentifier;
+// https://developer.apple.com/documentation/uikit/uisheetpresentationcontrollerdetentidentifierlarge
+declare const UISheetPresentationControllerDetentIdentifierLarge: cocoascript.UISheetPresentationControllerDetentIdentifier;
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uidocumentbrowseractionavailability
   type UIDocumentBrowserActionAvailability = cocoascript.NSInteger;
@@ -20712,16 +21283,6 @@ declare const UIWindowLevelNormal: cocoascript.UIWindowLevel;
 declare const UIWindowLevelStatusBar: cocoascript.UIWindowLevel;
 // https://developer.apple.com/documentation/uikit/uiwindowlevelalert
 declare const UIWindowLevelAlert: cocoascript.UIWindowLevel;
-// https://developer.apple.com/documentation/uikit/uicontentsizecategoryaccessibilitymedium
-declare const UIContentSizeCategoryAccessibilityMedium: cocoascript.UIContentSizeCategory;
-// https://developer.apple.com/documentation/uikit/uicontentsizecategoryaccessibilitylarge
-declare const UIContentSizeCategoryAccessibilityLarge: cocoascript.UIContentSizeCategory;
-// https://developer.apple.com/documentation/uikit/uicontentsizecategoryaccessibilityextralarge
-declare const UIContentSizeCategoryAccessibilityExtraLarge: cocoascript.UIContentSizeCategory;
-// https://developer.apple.com/documentation/uikit/uicontentsizecategoryaccessibilityextraextralarge
-declare const UIContentSizeCategoryAccessibilityExtraExtraLarge: cocoascript.UIContentSizeCategory;
-// https://developer.apple.com/documentation/uikit/uicontentsizecategoryaccessibilityextraextraextralarge
-declare const UIContentSizeCategoryAccessibilityExtraExtraExtraLarge: cocoascript.UIContentSizeCategory;
 // https://developer.apple.com/documentation/uikit/uifontweighttrait
 declare const UIFontWeightTrait: cocoascript.UIFontDescriptorTraitKey;
 // https://developer.apple.com/documentation/uikit/uifontweightultralight
@@ -20792,48 +21353,44 @@ declare const UITextWritingDirectionLeftToRight: cocoascript.UITextWritingDirect
 declare const UITextWritingDirectionRightToLeft: cocoascript.UITextWritingDirection;
 // https://developer.apple.com/documentation/uikit/uitextcontenttypeurl
 declare const UITextContentTypeURL: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypenameprefix
+declare const UITextContentTypeNamePrefix: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypename
+declare const UITextContentTypeName: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypenamesuffix
+declare const UITextContentTypeNameSuffix: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypegivenname
+declare const UITextContentTypeGivenName: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypemiddlename
+declare const UITextContentTypeMiddleName: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypefamilyname
+declare const UITextContentTypeFamilyName: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypenickname
+declare const UITextContentTypeNickname: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypeorganizationname
+declare const UITextContentTypeOrganizationName: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypejobtitle
+declare const UITextContentTypeJobTitle: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypelocation
+declare const UITextContentTypeLocation: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypefullstreetaddress
+declare const UITextContentTypeFullStreetAddress: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypestreetaddressline1
+declare const UITextContentTypeStreetAddressLine1: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypestreetaddressline2
+declare const UITextContentTypeStreetAddressLine2: cocoascript.UITextContentType;
 // https://developer.apple.com/documentation/uikit/uitextcontenttypeaddresscity
 declare const UITextContentTypeAddressCity: cocoascript.UITextContentType;
 // https://developer.apple.com/documentation/uikit/uitextcontenttypeaddresscityandstate
 declare const UITextContentTypeAddressCityAndState: cocoascript.UITextContentType;
 // https://developer.apple.com/documentation/uikit/uitextcontenttypeaddressstate
 declare const UITextContentTypeAddressState: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypecountryname
-declare const UITextContentTypeCountryName: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypecreditcardnumber
-declare const UITextContentTypeCreditCardNumber: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypefamilyname
-declare const UITextContentTypeFamilyName: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypefullstreetaddress
-declare const UITextContentTypeFullStreetAddress: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypegivenname
-declare const UITextContentTypeGivenName: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypejobtitle
-declare const UITextContentTypeJobTitle: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypelocation
-declare const UITextContentTypeLocation: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypemiddlename
-declare const UITextContentTypeMiddleName: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypename
-declare const UITextContentTypeName: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypenameprefix
-declare const UITextContentTypeNamePrefix: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypenamesuffix
-declare const UITextContentTypeNameSuffix: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypenickname
-declare const UITextContentTypeNickname: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypeorganizationname
-declare const UITextContentTypeOrganizationName: cocoascript.UITextContentType;
 // https://developer.apple.com/documentation/uikit/uitextcontenttypepostalcode
 declare const UITextContentTypePostalCode: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypestreetaddressline1
-declare const UITextContentTypeStreetAddressLine1: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypestreetaddressline2
-declare const UITextContentTypeStreetAddressLine2: cocoascript.UITextContentType;
 // https://developer.apple.com/documentation/uikit/uitextcontenttypesublocality
 declare const UITextContentTypeSublocality: cocoascript.UITextContentType;
-// https://developer.apple.com/documentation/uikit/uitextcontenttypetelephonenumber
-declare const UITextContentTypeTelephoneNumber: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypecountryname
+declare const UITextContentTypeCountryName: cocoascript.UITextContentType;
 // https://developer.apple.com/documentation/uikit/uitextcontenttypeusername
 declare const UITextContentTypeUsername: cocoascript.UITextContentType;
 // https://developer.apple.com/documentation/uikit/uitextcontenttypepassword
@@ -20842,16 +21399,28 @@ declare const UITextContentTypePassword: cocoascript.UITextContentType;
 declare const UITextContentTypeNewPassword: cocoascript.UITextContentType;
 // https://developer.apple.com/documentation/uikit/uitextcontenttypeonetimecode
 declare const UITextContentTypeOneTimeCode: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypetelephonenumber
+declare const UITextContentTypeTelephoneNumber: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypecreditcardnumber
+declare const UITextContentTypeCreditCardNumber: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypedatetime
+declare const UITextContentTypeDateTime: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypeflightnumber
+declare const UITextContentTypeFlightNumber: cocoascript.UITextContentType;
+// https://developer.apple.com/documentation/uikit/uitextcontenttypeshipmenttrackingnumber
+declare const UITextContentTypeShipmentTrackingNumber: cocoascript.UITextContentType;
 // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayoutautomaticsize
 declare const UICollectionViewFlowLayoutAutomaticSize: cocoascript.CGSize;
 declare namespace cocoascript {
   // https://developer.apple.com/documentation/uikit/uicollectionviewflowlayoutsectioninsetreference
   type UICollectionViewFlowLayoutSectionInsetReference = cocoascript.NSInteger;
 }
-// https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationmetadatakeymessagebody
-declare const UIActivityItemsConfigurationMetadataKeyMessageBody: cocoascript.UIActivityItemsConfigurationMetadataKey;
 // https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationmetadatakeytitle
 declare const UIActivityItemsConfigurationMetadataKeyTitle: cocoascript.UIActivityItemsConfigurationMetadataKey;
+// https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationmetadatakeymessagebody
+declare const UIActivityItemsConfigurationMetadataKeyMessageBody: cocoascript.UIActivityItemsConfigurationMetadataKey;
+// https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationmetadatakeylinkpresentationmetadata
+declare const UIActivityItemsConfigurationMetadataKeyLinkPresentationMetadata: cocoascript.UIActivityItemsConfigurationMetadataKey;
 // https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationinteractionshare
 declare const UIActivityItemsConfigurationInteractionShare: cocoascript.UIActivityItemsConfigurationInteraction;
 // https://developer.apple.com/documentation/uikit/uiactivityitemsconfigurationpreviewintentfullsize

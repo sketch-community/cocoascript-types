@@ -18,7 +18,7 @@ declare namespace cocoascript {
   interface GKGameModelUpdate extends NSObject {
     // https://developer.apple.com/documentation/gameplaykit/gkgamemodelupdate/1490280-value
     value(): NSInteger;
-    setValue(): void;
+    setValue(value: NSInteger): void;
   }
 }
 declare namespace cocoascript {
@@ -29,7 +29,7 @@ declare namespace cocoascript {
   interface GKGameModelPlayer extends NSObject {
     // https://developer.apple.com/documentation/gameplaykit/gkgamemodelplayer/1490272-playerid
     playerId(): NSInteger;
-    setPlayerId(): void;
+    setPlayerId(value: NSInteger): void;
   }
 }
 declare namespace cocoascript {
@@ -40,18 +40,18 @@ declare namespace cocoascript {
   interface GKGameModel extends NSCopying {
     // https://developer.apple.com/documentation/gameplaykit/gkgamemodel/1490287-players
     players(): GKGameModelPlayer;
-    setPlayers(): void;
+    setPlayers(value: GKGameModelPlayer): void;
     // https://developer.apple.com/documentation/gameplaykit/gkgamemodel/1490293-activeplayer
     activePlayer(): GKGameModelPlayer;
-    setActivePlayer(): void;
+    setActivePlayer(value: GKGameModelPlayer): void;
     // https://developer.apple.com/documentation/gameplaykit/gkgamemodel/1490288-gamemodelupdatesforplayer
     gameModelUpdatesForPlayer(player: GKGameModelPlayer):GKGameModelUpdate;
     // https://developer.apple.com/documentation/gameplaykit/gkgamemodel/1490281-scoreforplayer
     scoreForPlayer(player: GKGameModelPlayer):NSInteger;
     // https://developer.apple.com/documentation/gameplaykit/gkgamemodel/1490286-islossforplayer
-    isLossForPlayer(player: GKGameModelPlayer):BOOL;
+    isLossForPlayer(player: GKGameModelPlayer):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkgamemodel/1490271-iswinforplayer
-    isWinForPlayer(player: GKGameModelPlayer):BOOL;
+    isWinForPlayer(player: GKGameModelPlayer):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkgamemodel/1490278-applygamemodelupdate
     applyGameModelUpdate(gameModelUpdate: GKGameModelUpdate):void;
     // https://developer.apple.com/documentation/gameplaykit/gkgamemodel/1490276-unapplygamemodelupdate
@@ -76,10 +76,10 @@ declare namespace cocoascript {
   interface GKStrategist extends NSObject {
     // https://developer.apple.com/documentation/gameplaykit/gkstrategist/1501231-gamemodel
     gameModel(): GKGameModel;
-    setGameModel(): void;
+    setGameModel(value: GKGameModel): void;
     // https://developer.apple.com/documentation/gameplaykit/gkstrategist/1501317-randomsource
     randomSource(): GKRandom;
-    setRandomSource(): void;
+    setRandomSource(value: GKRandom): void;
     // https://developer.apple.com/documentation/gameplaykit/gkstrategist/1501118-bestmoveforactiveplayer
     bestMoveForActivePlayer():GKGameModelUpdate;
   }
@@ -108,7 +108,7 @@ declare namespace cocoascript {
     removeAllGoals():void;
     // https://developer.apple.com/documentation/gameplaykit/gkbehavior/1388721-goalcount
     goalCount(): NSInteger;
-    setGoalCount(): void;
+    setGoalCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkbehavior/1388723-objectforkeyedsubscript
     objectForKeyedSubscript(goal: GKGoal):NSNumber;
     // https://developer.apple.com/documentation/gameplaykit/gkbehavior/1388735-setobject
@@ -158,12 +158,12 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/gameplaykit/gkgraph/1501040-addnodes
     addNodes(nodes: GKGraphNode):void;
     // https://developer.apple.com/documentation/gameplaykit/gkgraph/1501152-connectnodetolowestcostnode
-    connectNodeToLowestCostNode_bidirectional(node: GKGraphNode, bidirectional: BOOL):void;
+    connectNodeToLowestCostNode_bidirectional(node: GKGraphNode, bidirectional: boolean):void;
     // https://developer.apple.com/documentation/gameplaykit/gkgraph/1501303-removenodes
     removeNodes(nodes: GKGraphNode):void;
     // https://developer.apple.com/documentation/gameplaykit/gkgraph/1501223-nodes
     nodes(): GKGraphNode;
-    setNodes(): void;
+    setNodes(value: GKGraphNode): void;
     // https://developer.apple.com/documentation/gameplaykit/gkgraph/1501270-findpathfromnode
     findPathFromNode_toNode(startNode: GKGraphNode, endNode: GKGraphNode):GKGraphNode;
     //
@@ -186,7 +186,7 @@ declare namespace cocoascript {
     entity():GKEntity;
     // https://developer.apple.com/documentation/gameplaykit/gkentity/1501182-components
     components(): GKComponent;
-    setComponents(): void;
+    setComponents(value: GKComponent): void;
     // https://developer.apple.com/documentation/gameplaykit/gkentity/1571498-componentforclass
     componentForClass(componentClass: Class):GKComponent;
     // https://developer.apple.com/documentation/gameplaykit/gkentity/1501312-addcomponent
@@ -213,7 +213,7 @@ declare namespace cocoascript {
     updateWithDeltaTime(seconds: NSTimeInterval):void;
     // https://developer.apple.com/documentation/gameplaykit/gkcomponent/1501250-entity
     entity(): GKEntity;
-    setEntity(): void;
+    setEntity(value: GKEntity): void;
     // https://developer.apple.com/documentation/gameplaykit/gkcomponent/1687601-didaddtoentity
     didAddToEntity():void;
     // https://developer.apple.com/documentation/gameplaykit/gkcomponent/1640914-willremovefromentity
@@ -255,7 +255,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/gameplaykit/gkgoal/1501166-goaltostayonpath
     goalToStayOnPath_maxPredictionTime(path: GKPath, maxPredictionTime: NSTimeInterval):GKGoal;
     // https://developer.apple.com/documentation/gameplaykit/gkgoal/1501095-goaltofollowpath
-    goalToFollowPath_maxPredictionTime_forward(path: GKPath, maxPredictionTime: NSTimeInterval, forward: BOOL):GKGoal;
+    goalToFollowPath_maxPredictionTime_forward(path: GKPath, maxPredictionTime: NSTimeInterval, forward: boolean):GKGoal;
     //
     alloc():GKGoal;
     //
@@ -274,17 +274,17 @@ declare namespace cocoascript {
     sceneWithFileNamed(filename: string | cocoascript.NSString):GKScene;
     // https://developer.apple.com/documentation/gameplaykit/gkscene/1640947-rootnode
     rootNode(): GKSceneRootNodeType;
-    setRootNode(): void;
+    setRootNode(value: GKSceneRootNodeType): void;
     // https://developer.apple.com/documentation/gameplaykit/gkscene/1640795-entities
     entities(): GKEntity;
-    setEntities(): void;
+    setEntities(value: GKEntity): void;
     // https://developer.apple.com/documentation/gameplaykit/gkscene/1640954-addentity
     addEntity(entity: GKEntity):void;
     // https://developer.apple.com/documentation/gameplaykit/gkscene/1640686-removeentity
     removeEntity(entity: GKEntity):void;
     // https://developer.apple.com/documentation/gameplaykit/gkscene/1640940-graphs
     graphs(): GKGraph;
-    setGraphs(): void;
+    setGraphs(value: GKGraph): void;
     // https://developer.apple.com/documentation/gameplaykit/gkscene/1640663-removegraph
     removeGraph(name: string | cocoascript.NSString):void;
     // https://developer.apple.com/documentation/gameplaykit/gkscene/2873253-scenewithfilenamed
@@ -307,11 +307,11 @@ declare namespace cocoascript {
   interface GKGraphNode extends NSObject {
     // https://developer.apple.com/documentation/gameplaykit/gkgraphnode/1427535-connectednodes
     connectedNodes(): GKGraphNode;
-    setConnectedNodes(): void;
+    setConnectedNodes(value: GKGraphNode): void;
     // https://developer.apple.com/documentation/gameplaykit/gkgraphnode/1427554-addconnectionstonodes
-    addConnectionsToNodes_bidirectional(nodes: GKGraphNode, bidirectional: BOOL):void;
+    addConnectionsToNodes_bidirectional(nodes: GKGraphNode, bidirectional: boolean):void;
     // https://developer.apple.com/documentation/gameplaykit/gkgraphnode/1427548-removeconnectionstonodes
-    removeConnectionsToNodes_bidirectional(nodes: GKGraphNode, bidirectional: BOOL):void;
+    removeConnectionsToNodes_bidirectional(nodes: GKGraphNode, bidirectional: boolean):void;
     // https://developer.apple.com/documentation/gameplaykit/gkgraphnode/1427531-costtonode
     costToNode(node: GKGraphNode):number;
     // https://developer.apple.com/documentation/gameplaykit/gkgraphnode/1427556-estimatedcosttonode
@@ -340,7 +340,7 @@ declare namespace cocoascript {
     obstacleWithPoints_count(points: vector_float2, numPoints: any):GKPolygonObstacle;
     // https://developer.apple.com/documentation/gameplaykit/gkpolygonobstacle/1501150-vertexcount
     vertexCount(): NSUInteger;
-    setVertexCount(): void;
+    setVertexCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkpolygonobstacle/1501068-vertexatindex
     vertexAtIndex(index: NSUInteger):vector_float2;
     //
@@ -359,15 +359,15 @@ declare namespace cocoascript {
   interface GKAgent2D extends GKAgent {
     // https://developer.apple.com/documentation/gameplaykit/gkagent2d/1501043-position
     position(): vector_float2;
-    setPosition(): void;
+    setPosition(value: vector_float2): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent2d/1501045-rotation
     rotation(): number;
-    setRotation(): void;
+    setRotation(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent2d/1501242-updatewithdeltatime
     updateWithDeltaTime(seconds: NSTimeInterval):void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent2d/1501186-velocity
     velocity(): vector_float2;
-    setVelocity(): void;
+    setVelocity(value: vector_float2): void;
     //
     alloc():GKAgent2D;
     //
@@ -384,25 +384,25 @@ declare namespace cocoascript {
   interface GKAgent extends GKComponent {
     // https://developer.apple.com/documentation/gameplaykit/gkagent/1501272-behavior
     behavior(): GKBehavior;
-    setBehavior(): void;
+    setBehavior(value: GKBehavior): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent/1501080-mass
     mass(): number;
-    setMass(): void;
+    setMass(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent/1501224-maxacceleration
     maxAcceleration(): number;
-    setMaxAcceleration(): void;
+    setMaxAcceleration(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent/1501323-maxspeed
     maxSpeed(): number;
-    setMaxSpeed(): void;
+    setMaxSpeed(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent/1501066-radius
     radius(): number;
-    setRadius(): void;
+    setRadius(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent/1501215-delegate
     delegate(): GKAgentDelegate;
-    setDelegate(): void;
+    setDelegate(value: GKAgentDelegate): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent/1501038-speed
     speed(): number;
-    setSpeed(): void;
+    setSpeed(value: number): void;
     //
     alloc():GKAgent;
     //
@@ -421,18 +421,18 @@ declare namespace cocoascript {
     initWithAttribute(attribute: NSObject):GKDecisionTree;
     // https://developer.apple.com/documentation/gameplaykit/gkdecisiontree/1640655-rootnode
     rootNode(): GKDecisionNode;
-    setRootNode(): void;
+    setRootNode(value: GKDecisionNode): void;
     // https://developer.apple.com/documentation/gameplaykit/gkdecisiontree/1640769-initwithexamples
     initWithExamples_actions_attributes(examples: NSObject, actions: NSObject, attributes: NSObject):GKDecisionTree;
     // https://developer.apple.com/documentation/gameplaykit/gkdecisiontree/1640891-findactionforanswers
     findActionForAnswers(answers: NSObject):NSObject;
     // https://developer.apple.com/documentation/gameplaykit/gkdecisiontree/1640654-randomsource
     randomSource(): GKRandomSource;
-    setRandomSource(): void;
+    setRandomSource(value: GKRandomSource): void;
     // https://developer.apple.com/documentation/gameplaykit/gkdecisiontree/2865877-initwithurl
     initWithURL_error(url: NSURL, error: NSError):GKDecisionTree;
     // https://developer.apple.com/documentation/gameplaykit/gkdecisiontree/2865878-exporttourl
-    exportToURL_error(url: NSURL, error: NSError):BOOL;
+    exportToURL_error(url: NSURL, error: NSError):boolean;
     //
     alloc():GKDecisionTree;
     //
@@ -449,18 +449,18 @@ declare namespace cocoascript {
   interface GKAgent3D extends GKAgent {
     // https://developer.apple.com/documentation/gameplaykit/gkagent3d/1640702-position
     position(): vector_float3;
-    setPosition(): void;
+    setPosition(value: vector_float3): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent3d/1640665-rotation
     rotation(): matrix_float3x3;
-    setRotation(): void;
+    setRotation(value: matrix_float3x3): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent3d/1640645-updatewithdeltatime
     updateWithDeltaTime(seconds: NSTimeInterval):void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent3d/1640961-velocity
     velocity(): vector_float3;
-    setVelocity(): void;
+    setVelocity(value: vector_float3): void;
     // https://developer.apple.com/documentation/gameplaykit/gkagent3d/2143064-righthanded
-    rightHanded(): BOOL;
-    setRightHanded(): void;
+    rightHanded(): boolean;
+    setRightHanded(value: boolean): void;
     //
     alloc():GKAgent3D;
     //
@@ -481,7 +481,7 @@ declare namespace cocoascript {
     initWithNode(node: SKNode):GKSKNodeComponent;
     // https://developer.apple.com/documentation/gameplaykit/gksknodecomponent/1640728-node
     node(): SKNode;
-    setNode(): void;
+    setNode(value: SKNode): void;
     //
     alloc():GKSKNodeComponent;
     //
@@ -499,7 +499,7 @@ declare namespace cocoascript {
     initWithNode(node: any):GKSCNNodeComponent;
     // https://developer.apple.com/documentation/gameplaykit/gkscnnodecomponent/2873245-node
     node(): any;
-    setNode(): void;
+    setNode(value: any): void;
     // https://developer.apple.com/documentation/gameplaykit/gkscnnodecomponent/2873247-componentwithnode
     componentWithNode(node: any):GKSCNNodeComponent;
     //
@@ -530,7 +530,7 @@ declare namespace cocoascript {
     removeAllBehaviors():void;
     // https://developer.apple.com/documentation/gameplaykit/gkcompositebehavior/1640881-behaviorcount
     behaviorCount(): NSInteger;
-    setBehaviorCount(): void;
+    setBehaviorCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkcompositebehavior/1640719-objectforkeyedsubscript
     objectForKeyedSubscript(behavior: GKBehavior):NSNumber;
     // https://developer.apple.com/documentation/gameplaykit/gkcompositebehavior/1646643-setobject
@@ -552,26 +552,26 @@ declare namespace cocoascript {
    */
   interface GKPath extends NSObject {
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1501048-initwithpoints
-    initWithPoints_count_radius_cyclical(points: vector_float2, count: any, radius: number, cyclical: BOOL):GKPath;
+    initWithPoints_count_radius_cyclical(points: vector_float2, count: any, radius: number, cyclical: boolean):GKPath;
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1574695-pathwithpoints
-    pathWithPoints_count_radius_cyclical(points: vector_float2, count: any, radius: number, cyclical: BOOL):GKPath;
+    pathWithPoints_count_radius_cyclical(points: vector_float2, count: any, radius: number, cyclical: boolean):GKPath;
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1778297-initwithfloat3points
-    initWithFloat3Points_count_radius_cyclical(points: vector_float3, count: any, radius: number, cyclical: BOOL):GKPath;
+    initWithFloat3Points_count_radius_cyclical(points: vector_float3, count: any, radius: number, cyclical: boolean):GKPath;
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1779559-pathwithfloat3points
-    pathWithFloat3Points_count_radius_cyclical(points: vector_float3, count: any, radius: number, cyclical: BOOL):GKPath;
+    pathWithFloat3Points_count_radius_cyclical(points: vector_float3, count: any, radius: number, cyclical: boolean):GKPath;
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1501138-initwithgraphnodes
     initWithGraphNodes_radius(graphNodes: GKGraphNode, radius: number):GKPath;
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1574696-pathwithgraphnodes
     pathWithGraphNodes_radius(graphNodes: GKGraphNode, radius: number):GKPath;
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1501281-radius
     radius(): number;
-    setRadius(): void;
+    setRadius(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1501244-cyclical
-    cyclical(): BOOL;
-    setCyclical(): void;
+    cyclical(): boolean;
+    setCyclical(value: boolean): void;
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1501071-numpoints
     numPoints(): NSUInteger;
-    setNumPoints(): void;
+    setNumPoints(value: NSUInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1778285-float2atindex
     float2AtIndex(index: NSUInteger):vector_float2;
     // https://developer.apple.com/documentation/gameplaykit/gkpath/1778310-float3atindex
@@ -594,7 +594,7 @@ declare namespace cocoascript {
   interface GKMinmaxStrategist extends NSObject {
     // https://developer.apple.com/documentation/gameplaykit/gkminmaxstrategist/1501226-maxlookaheaddepth
     maxLookAheadDepth(): NSInteger;
-    setMaxLookAheadDepth(): void;
+    setMaxLookAheadDepth(value: NSInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkminmaxstrategist/1501137-bestmoveforplayer
     bestMoveForPlayer(player: GKGameModelPlayer):GKGameModelUpdate;
     // https://developer.apple.com/documentation/gameplaykit/gkminmaxstrategist/1501140-randommoveforplayer
@@ -615,10 +615,10 @@ declare namespace cocoascript {
   interface GKMonteCarloStrategist extends NSObject {
     // https://developer.apple.com/documentation/gameplaykit/gkmontecarlostrategist/1640936-budget
     budget(): NSUInteger;
-    setBudget(): void;
+    setBudget(value: NSUInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkmontecarlostrategist/1640679-explorationparameter
     explorationParameter(): NSUInteger;
-    setExplorationParameter(): void;
+    setExplorationParameter(value: NSUInteger): void;
     //
     alloc():GKMonteCarloStrategist;
     //
@@ -650,16 +650,16 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/gameplaykit/gkrandomdistribution/1495645-nextuniform
     nextUniform():number;
     // https://developer.apple.com/documentation/gameplaykit/gkrandomdistribution/1495624-nextbool
-    nextBool():BOOL;
+    nextBool():boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkrandomdistribution/1495648-lowestvalue
     lowestValue(): NSInteger;
-    setLowestValue(): void;
+    setLowestValue(value: NSInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkrandomdistribution/1495640-highestvalue
     highestValue(): NSInteger;
-    setHighestValue(): void;
+    setHighestValue(value: NSInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkrandomdistribution/1495646-numberofpossibleoutcomes
     numberOfPossibleOutcomes(): NSUInteger;
-    setNumberOfPossibleOutcomes(): void;
+    setNumberOfPossibleOutcomes(value: NSUInteger): void;
     //
     alloc():GKRandomDistribution;
     //
@@ -680,7 +680,7 @@ declare namespace cocoascript {
     initWithSeed(seed: NSData):GKARC4RandomSource;
     // https://developer.apple.com/documentation/gameplaykit/gkarc4randomsource/1501260-seed
     seed(): NSData;
-    setSeed(): void;
+    setSeed(value: NSData): void;
     // https://developer.apple.com/documentation/gameplaykit/gkarc4randomsource/1501132-dropvalueswithcount
     dropValuesWithCount(count: NSUInteger):void;
     //
@@ -703,7 +703,7 @@ declare namespace cocoascript {
     initWithSeed(seed: number):GKLinearCongruentialRandomSource;
     // https://developer.apple.com/documentation/gameplaykit/gklinearcongruentialrandomsource/1501103-seed
     seed(): number;
-    setSeed(): void;
+    setSeed(value: number): void;
     //
     alloc():GKLinearCongruentialRandomSource;
     //
@@ -724,7 +724,7 @@ declare namespace cocoascript {
     initWithSeed(seed: number):GKMersenneTwisterRandomSource;
     // https://developer.apple.com/documentation/gameplaykit/gkmersennetwisterrandomsource/1501279-seed
     seed(): number;
-    setSeed(): void;
+    setSeed(value: number): void;
     //
     alloc():GKMersenneTwisterRandomSource;
     //
@@ -746,7 +746,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/gameplaykit/gkrandom/1501036-nextuniform
     nextUniform():number;
     // https://developer.apple.com/documentation/gameplaykit/gkrandom/1501085-nextbool
-    nextBool():BOOL;
+    nextBool():boolean;
   }
 }
 declare namespace cocoascript {
@@ -761,10 +761,10 @@ declare namespace cocoascript {
     initWithRandomSource_mean_deviation(source: GKRandom, mean: number, deviation: number):GKGaussianDistribution;
     // https://developer.apple.com/documentation/gameplaykit/gkgaussiandistribution/1495644-mean
     mean(): number;
-    setMean(): void;
+    setMean(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkgaussiandistribution/1495623-deviation
     deviation(): number;
-    setDeviation(): void;
+    setDeviation(value: number): void;
     //
     alloc():GKGaussianDistribution;
     //
@@ -794,29 +794,29 @@ declare namespace cocoascript {
    */
   interface GKGridGraph extends GKGraph {
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1640883-initfromgridstartingat
-    initFromGridStartingAt_width_height_diagonalsAllowed_nodeClass(position: vector_int2, width: number, height: number, diagonalsAllowed: BOOL, nodeClass: Class):GKGridGraph;
+    initFromGridStartingAt_width_height_diagonalsAllowed_nodeClass(position: vector_int2, width: number, height: number, diagonalsAllowed: boolean, nodeClass: Class):GKGridGraph;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1644761-graphfromgridstartingat
-    graphFromGridStartingAt_width_height_diagonalsAllowed_nodeClass(position: vector_int2, width: number, height: number, diagonalsAllowed: BOOL, nodeClass: Class):GKGridGraph;
+    graphFromGridStartingAt_width_height_diagonalsAllowed_nodeClass(position: vector_int2, width: number, height: number, diagonalsAllowed: boolean, nodeClass: Class):GKGridGraph;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1501289-initfromgridstartingat
-    initFromGridStartingAt_width_height_diagonalsAllowed(position: vector_int2, width: number, height: number, diagonalsAllowed: BOOL):GKGridGraph;
+    initFromGridStartingAt_width_height_diagonalsAllowed(position: vector_int2, width: number, height: number, diagonalsAllowed: boolean):GKGridGraph;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1556416-graphfromgridstartingat
-    graphFromGridStartingAt_width_height_diagonalsAllowed(position: vector_int2, width: number, height: number, diagonalsAllowed: BOOL):GKGridGraph;
+    graphFromGridStartingAt_width_height_diagonalsAllowed(position: vector_int2, width: number, height: number, diagonalsAllowed: boolean):GKGridGraph;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1501287-nodeatgridposition
     nodeAtGridPosition(position: vector_int2):void;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1501192-connectnodetoadjacentnodes
     connectNodeToAdjacentNodes(node: GKGridGraphNode):void;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1501179-diagonalsallowed
-    diagonalsAllowed(): BOOL;
-    setDiagonalsAllowed(): void;
+    diagonalsAllowed(): boolean;
+    setDiagonalsAllowed(value: boolean): void;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1501194-gridorigin
     gridOrigin(): vector_int2;
-    setGridOrigin(): void;
+    setGridOrigin(value: vector_int2): void;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1501291-gridwidth
     gridWidth(): NSUInteger;
-    setGridWidth(): void;
+    setGridWidth(value: NSUInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1501184-gridheight
     gridHeight(): NSUInteger;
-    setGridHeight(): void;
+    setGridHeight(value: NSUInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraph/1640837-classforgenericargumentatindex
     classForGenericArgumentAtIndex(index: NSUInteger):Class;
     //
@@ -843,7 +843,7 @@ declare namespace cocoascript {
     graphWithObstacles_bufferRadius(obstacles: GKPolygonObstacle, bufferRadius: number):GKObstacleGraph;
     // https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/1501213-obstacles
     obstacles(): GKPolygonObstacle;
-    setObstacles(): void;
+    setObstacles(value: GKPolygonObstacle): void;
     // https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/1501073-addobstacles
     addObstacles(obstacles: GKPolygonObstacle):void;
     // https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/1501058-removeobstacles
@@ -860,13 +860,13 @@ declare namespace cocoascript {
     connectNodeUsingObstacles_ignoringBufferRadiusOfObstacles(node: NodeType, obstaclesBufferRadiusToIgnore: GKPolygonObstacle):void;
     // https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/1501119-bufferradius
     bufferRadius(): number;
-    setBufferRadius(): void;
+    setBufferRadius(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/1501060-lockconnectionfromnode
     lockConnectionFromNode_toNode(startNode: NodeType, endNode: NodeType):void;
     // https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/1501093-unlockconnectionfromnode
     unlockConnectionFromNode_toNode(startNode: NodeType, endNode: NodeType):void;
     // https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/1501126-isconnectionlockedfromnode
-    isConnectionLockedFromNode_toNode(startNode: NodeType, endNode: NodeType):BOOL;
+    isConnectionLockedFromNode_toNode(startNode: NodeType, endNode: NodeType):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph/1640659-classforgenericargumentatindex
     classForGenericArgumentAtIndex(index: NSUInteger):Class;
     //
@@ -893,7 +893,7 @@ declare namespace cocoascript {
     graphWithBufferRadius_minCoordinate_maxCoordinate(bufferRadius: number, min: vector_float2, max: vector_float2):GKMeshGraph;
     // https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/1640684-obstacles
     obstacles(): GKPolygonObstacle;
-    setObstacles(): void;
+    setObstacles(value: GKPolygonObstacle): void;
     // https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/1640689-addobstacles
     addObstacles(obstacles: GKPolygonObstacle):void;
     // https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/1640677-removeobstacles
@@ -902,17 +902,17 @@ declare namespace cocoascript {
     connectNodeUsingObstacles(node: NodeType):void;
     // https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/1640945-bufferradius
     bufferRadius(): number;
-    setBufferRadius(): void;
+    setBufferRadius(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/1640683-triangulate
     triangulate():void;
     // https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/1640674-triangulationmode
     triangulationMode(): GKMeshGraphTriangulationMode;
-    setTriangulationMode(): void;
+    setTriangulationMode(value: GKMeshGraphTriangulationMode): void;
     // https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/1640709-triangleatindex
     triangleAtIndex(index: NSUInteger):GKTriangle;
     // https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/1687602-trianglecount
     triangleCount(): NSUInteger;
-    setTriangleCount(): void;
+    setTriangleCount(value: NSUInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkmeshgraph/1640740-classforgenericargumentatindex
     classForGenericArgumentAtIndex(index: NSUInteger):Class;
     //
@@ -935,7 +935,7 @@ declare namespace cocoascript {
     nodeWithGridPosition(gridPosition: vector_int2):GKGridGraphNode;
     // https://developer.apple.com/documentation/gameplaykit/gkgridgraphnode/1427533-gridposition
     gridPosition(): vector_int2;
-    setGridPosition(): void;
+    setGridPosition(value: vector_int2): void;
     //
     alloc():GKGridGraphNode;
     //
@@ -956,7 +956,7 @@ declare namespace cocoascript {
     nodeWithPoint(point: vector_float2):GKGraphNode2D;
     // https://developer.apple.com/documentation/gameplaykit/gkgraphnode2d/1427539-position
     position(): vector_float2;
-    setPosition(): void;
+    setPosition(value: vector_float2): void;
     //
     alloc():GKGraphNode2D;
     //
@@ -977,7 +977,7 @@ declare namespace cocoascript {
     nodeWithPoint(point: vector_float3):GKGraphNode3D;
     // https://developer.apple.com/documentation/gameplaykit/gkgraphnode3d/1640786-position
     position(): vector_float3;
-    setPosition(): void;
+    setPosition(value: vector_float3): void;
     //
     alloc():GKGraphNode3D;
     //
@@ -996,10 +996,10 @@ declare namespace cocoascript {
     initWithComponentClass(cls: Class):GKComponentSystem;
     // https://developer.apple.com/documentation/gameplaykit/gkcomponentsystem/1501190-componentclass
     componentClass(): Class;
-    setComponentClass(): void;
+    setComponentClass(value: Class): void;
     // https://developer.apple.com/documentation/gameplaykit/gkcomponentsystem/1501083-components
     components(): ComponentType;
-    setComponents(): void;
+    setComponents(value: ComponentType): void;
     // https://developer.apple.com/documentation/gameplaykit/gkcomponentsystem/1501034-addcomponent
     addComponent(component: ComponentType):void;
     // https://developer.apple.com/documentation/gameplaykit/gkcomponentsystem/1501176-addcomponentwithentity
@@ -1048,10 +1048,10 @@ declare namespace cocoascript {
     obstacleWithRadius(radius: number):GKCircleObstacle;
     // https://developer.apple.com/documentation/gameplaykit/gkcircleobstacle/1501283-position
     position(): vector_float2;
-    setPosition(): void;
+    setPosition(value: vector_float2): void;
     // https://developer.apple.com/documentation/gameplaykit/gkcircleobstacle/1501112-radius
     radius(): number;
-    setRadius(): void;
+    setRadius(value: number): void;
     //
     alloc():GKCircleObstacle;
     //
@@ -1072,10 +1072,10 @@ declare namespace cocoascript {
     obstacleWithRadius(radius: number):GKSphereObstacle;
     // https://developer.apple.com/documentation/gameplaykit/gksphereobstacle/1778313-position
     position(): vector_float3;
-    setPosition(): void;
+    setPosition(value: vector_float3): void;
     // https://developer.apple.com/documentation/gameplaykit/gksphereobstacle/1778325-radius
     radius(): number;
-    setRadius(): void;
+    setRadius(value: number): void;
     //
     alloc():GKSphereObstacle;
     //
@@ -1116,9 +1116,9 @@ declare namespace cocoascript {
     state():GKState;
     // https://developer.apple.com/documentation/gameplaykit/gkstate/1501041-statemachine
     stateMachine(): GKStateMachine;
-    setStateMachine(): void;
+    setStateMachine(value: GKStateMachine): void;
     // https://developer.apple.com/documentation/gameplaykit/gkstate/1501221-isvalidnextstate
-    isValidNextState(stateClass: Class):BOOL;
+    isValidNextState(stateClass: Class):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkstate/1501076-didenterwithpreviousstate
     didEnterWithPreviousState(previousState: GKState):void;
     // https://developer.apple.com/documentation/gameplaykit/gkstate/1501136-updatewithdeltatime
@@ -1145,11 +1145,11 @@ declare namespace cocoascript {
     stateMachineWithStates(states: GKState):GKStateMachine;
     // https://developer.apple.com/documentation/gameplaykit/gkstatemachine/1385750-currentstate
     currentState(): GKState;
-    setCurrentState(): void;
+    setCurrentState(value: GKState): void;
     // https://developer.apple.com/documentation/gameplaykit/gkstatemachine/1385752-canenterstate
-    canEnterState(stateClass: Class):BOOL;
+    canEnterState(stateClass: Class):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkstatemachine/1385753-enterstate
-    enterState(stateClass: Class):BOOL;
+    enterState(stateClass: Class):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkstatemachine/1385739-stateforclass
     stateForClass(stateClass: Class):GKState;
     // https://developer.apple.com/documentation/gameplaykit/gkstatemachine/1385748-updatewithdeltatime
@@ -1177,9 +1177,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/gameplaykit/gkquadtree/1778320-addelement
     addElement_withQuad(element: ElementType, quad: GKQuad):GKQuadtreeNode;
     // https://developer.apple.com/documentation/gameplaykit/gkquadtree/1778286-removeelement
-    removeElement_withNode(data: ElementType, node: GKQuadtreeNode):BOOL;
+    removeElement_withNode(data: ElementType, node: GKQuadtreeNode):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkquadtree/1778294-removeelement
-    removeElement(element: ElementType):BOOL;
+    removeElement(element: ElementType):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkquadtree/1778327-elementsatpoint
     elementsAtPoint(point: vector_float2):NSArray;
     // https://developer.apple.com/documentation/gameplaykit/gkquadtree/1778279-elementsinquad
@@ -1200,7 +1200,7 @@ declare namespace cocoascript {
   interface GKQuadtreeNode extends NSObject {
     // https://developer.apple.com/documentation/gameplaykit/gkquadtreenode/1778318-quad
     quad(): GKQuad;
-    setQuad(): void;
+    setQuad(value: GKQuad): void;
     //
     alloc():GKQuadtreeNode;
     //
@@ -1224,9 +1224,9 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/gameplaykit/gkoctree/1640833-addelement
     addElement_withBox(element: ElementType, box: GKBox):GKOctreeNode;
     // https://developer.apple.com/documentation/gameplaykit/gkoctree/1640653-removeelement
-    removeElement_withNode(element: ElementType, node: GKOctreeNode):BOOL;
+    removeElement_withNode(element: ElementType, node: GKOctreeNode):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkoctree/1640873-removeelement
-    removeElement(element: ElementType):BOOL;
+    removeElement(element: ElementType):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkoctree/1640859-elementsatpoint
     elementsAtPoint(point: vector_float3):NSArray;
     // https://developer.apple.com/documentation/gameplaykit/gkoctree/1640941-elementsinbox
@@ -1247,7 +1247,7 @@ declare namespace cocoascript {
   interface GKOctreeNode extends NSObject {
     // https://developer.apple.com/documentation/gameplaykit/gkoctreenode/1640729-box
     box(): GKBox;
-    setBox(): void;
+    setBox(value: GKBox): void;
     //
     alloc():GKOctreeNode;
     //
@@ -1274,7 +1274,7 @@ declare namespace cocoascript {
     elementsInBoundingRectMin_rectMax(rectMin: vector_float2, rectMax: vector_float2):NSArray;
     // https://developer.apple.com/documentation/gameplaykit/gkrtree/1640267-queryreserve
     queryReserve(): NSUInteger;
-    setQueryReserve(): void;
+    setQueryReserve(value: NSUInteger): void;
     //
     alloc():GKRTree;
     //
@@ -1317,7 +1317,7 @@ declare namespace cocoascript {
     noiseWithComponentNoises_selectionNoise_componentBoundaries_boundaryBlendDistances(noises: GKNoise, selectionNoise: GKNoise, componentBoundaries: NSNumber, blendDistances: NSNumber):GKNoise;
     // https://developer.apple.com/documentation/gameplaykit/gknoise/1778278-gradientcolors
     gradientColors(): UIColor;
-    setGradientColors(): void;
+    setGradientColors(value: UIColor): void;
     // https://developer.apple.com/documentation/gameplaykit/gknoise/1778317-applyabsolutevalue
     applyAbsoluteValue():void;
     // https://developer.apple.com/documentation/gameplaykit/gknoise/1778306-invert
@@ -1329,7 +1329,7 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/gameplaykit/gknoise/1823487-remapvaluestocurvewithcontrolpoi
     remapValuesToCurveWithControlPoints(controlPoints: NSNumber):void;
     // https://developer.apple.com/documentation/gameplaykit/gknoise/1823486-remapvaluestoterraceswithpeaks
-    remapValuesToTerracesWithPeaks_terracesInverted(peakInputValues: NSNumber, inverted: BOOL):void;
+    remapValuesToTerracesWithPeaks_terracesInverted(peakInputValues: NSNumber, inverted: boolean):void;
     // https://developer.apple.com/documentation/gameplaykit/gknoise/1778324-addwithnoise
     addWithNoise(noise: GKNoise):void;
     // https://developer.apple.com/documentation/gameplaykit/gknoise/1778332-multiplywithnoise
@@ -1371,13 +1371,13 @@ declare namespace cocoascript {
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1823706-initwithnoise
     initWithNoise(noise: GKNoise):GKNoiseMap;
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1823704-initwithnoise
-    initWithNoise_size_origin_sampleCount_seamless(noise: GKNoise, size: vector_double2, origin: vector_double2, sampleCount: vector_int2, seamless: BOOL):GKNoiseMap;
+    initWithNoise_size_origin_sampleCount_seamless(noise: GKNoise, size: vector_double2, origin: vector_double2, sampleCount: vector_int2, seamless: boolean):GKNoiseMap;
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1823702-init
     init():GKNoiseMap;
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1827529-noisemapwithnoise
     noiseMapWithNoise(noise: GKNoise):GKNoiseMap;
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1827530-noisemapwithnoise
-    noiseMapWithNoise_size_origin_sampleCount_seamless(noise: GKNoise, size: vector_double2, origin: vector_double2, sampleCount: vector_int2, seamless: BOOL):GKNoiseMap;
+    noiseMapWithNoise_size_origin_sampleCount_seamless(noise: GKNoise, size: vector_double2, origin: vector_double2, sampleCount: vector_int2, seamless: boolean):GKNoiseMap;
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1823698-valueatposition
     valueAtPosition(position: vector_int2):number;
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1823703-interpolatedvalueatposition
@@ -1386,16 +1386,16 @@ declare namespace cocoascript {
     setValue_atPosition(value: number, position: vector_int2):void;
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1823700-size
     size(): vector_double2;
-    setSize(): void;
+    setSize(value: vector_double2): void;
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1823696-origin
     origin(): vector_double2;
-    setOrigin(): void;
+    setOrigin(value: vector_double2): void;
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1823697-samplecount
     sampleCount(): vector_int2;
-    setSampleCount(): void;
+    setSampleCount(value: vector_int2): void;
     // https://developer.apple.com/documentation/gameplaykit/gknoisemap/1640681-seamless
-    seamless(): BOOL;
-    setSeamless(): void;
+    seamless(): boolean;
+    setSeamless(value: boolean): void;
     //
     alloc():GKNoiseMap;
     //
@@ -1412,16 +1412,16 @@ declare namespace cocoascript {
   interface GKCoherentNoiseSource extends GKNoiseSource {
     // https://developer.apple.com/documentation/gameplaykit/gkcoherentnoisesource/1823695-frequency
     frequency(): number;
-    setFrequency(): void;
+    setFrequency(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkcoherentnoisesource/1778299-octavecount
     octaveCount(): NSInteger;
-    setOctaveCount(): void;
+    setOctaveCount(value: NSInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkcoherentnoisesource/1778292-lacunarity
     lacunarity(): number;
-    setLacunarity(): void;
+    setLacunarity(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkcoherentnoisesource/1778293-seed
     seed(): number;
-    setSeed(): void;
+    setSeed(value: number): void;
     //
     alloc():GKCoherentNoiseSource;
     //
@@ -1442,7 +1442,7 @@ declare namespace cocoascript {
     initWithFrequency_octaveCount_persistence_lacunarity_seed(frequency: number, octaveCount: NSInteger, persistence: number, lacunarity: number, seed: number):GKBillowNoiseSource;
     // https://developer.apple.com/documentation/gameplaykit/gkbillownoisesource/1640650-persistence
     persistence(): number;
-    setPersistence(): void;
+    setPersistence(value: number): void;
     //
     alloc():GKBillowNoiseSource;
     //
@@ -1463,7 +1463,7 @@ declare namespace cocoascript {
     perlinNoiseSourceWithFrequency_octaveCount_persistence_lacunarity_seed(frequency: number, octaveCount: NSInteger, persistence: number, lacunarity: number, seed: number):GKPerlinNoiseSource;
     // https://developer.apple.com/documentation/gameplaykit/gkperlinnoisesource/1640299-persistence
     persistence(): number;
-    setPersistence(): void;
+    setPersistence(value: number): void;
     //
     alloc():GKPerlinNoiseSource;
     //
@@ -1497,21 +1497,21 @@ declare namespace cocoascript {
    */
   interface GKVoronoiNoiseSource extends GKNoiseSource {
     // https://developer.apple.com/documentation/gameplaykit/gkvoronoinoisesource/1640726-initwithfrequency
-    initWithFrequency_displacement_distanceEnabled_seed(frequency: number, displacement: number, distanceEnabled: BOOL, seed: number):GKVoronoiNoiseSource;
+    initWithFrequency_displacement_distanceEnabled_seed(frequency: number, displacement: number, distanceEnabled: boolean, seed: number):GKVoronoiNoiseSource;
     // https://developer.apple.com/documentation/gameplaykit/gkvoronoinoisesource/1640771-voronoinoisewithfrequency
-    voronoiNoiseWithFrequency_displacement_distanceEnabled_seed(frequency: number, displacement: number, distanceEnabled: BOOL, seed: number):GKVoronoiNoiseSource;
+    voronoiNoiseWithFrequency_displacement_distanceEnabled_seed(frequency: number, displacement: number, distanceEnabled: boolean, seed: number):GKVoronoiNoiseSource;
     // https://developer.apple.com/documentation/gameplaykit/gkvoronoinoisesource/1640711-frequency
     frequency(): number;
-    setFrequency(): void;
+    setFrequency(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkvoronoinoisesource/1640682-displacement
     displacement(): number;
-    setDisplacement(): void;
+    setDisplacement(value: number): void;
     // https://developer.apple.com/documentation/gameplaykit/gkvoronoinoisesource/1640789-distanceenabled
-    distanceEnabled(): BOOL;
-    setDistanceEnabled(): void;
+    distanceEnabled(): boolean;
+    setDistanceEnabled(value: boolean): void;
     // https://developer.apple.com/documentation/gameplaykit/gkvoronoinoisesource/1640938-seed
     seed(): number;
-    setSeed(): void;
+    setSeed(value: number): void;
     //
     alloc():GKVoronoiNoiseSource;
     //
@@ -1532,7 +1532,7 @@ declare namespace cocoascript {
     cylindersNoiseWithFrequency(frequency: number):GKCylindersNoiseSource;
     // https://developer.apple.com/documentation/gameplaykit/gkcylindersnoisesource/1640822-frequency
     frequency(): number;
-    setFrequency(): void;
+    setFrequency(value: number): void;
     //
     alloc():GKCylindersNoiseSource;
     //
@@ -1553,7 +1553,7 @@ declare namespace cocoascript {
     spheresNoiseWithFrequency(frequency: number):GKSpheresNoiseSource;
     // https://developer.apple.com/documentation/gameplaykit/gkspheresnoisesource/1640716-frequency
     frequency(): number;
-    setFrequency(): void;
+    setFrequency(value: number): void;
     //
     alloc():GKSpheresNoiseSource;
     //
@@ -1574,7 +1574,7 @@ declare namespace cocoascript {
     checkerboardNoiseWithSquareSize(squareSize: number):GKCheckerboardNoiseSource;
     // https://developer.apple.com/documentation/gameplaykit/gkcheckerboardnoisesource/1823705-squaresize
     squareSize(): number;
-    setSquareSize(): void;
+    setSquareSize(value: number): void;
     //
     alloc():GKCheckerboardNoiseSource;
     //
@@ -1595,7 +1595,7 @@ declare namespace cocoascript {
     constantNoiseWithValue(value: number):GKConstantNoiseSource;
     // https://developer.apple.com/documentation/gameplaykit/gkconstantnoisesource/1640959-value
     value(): number;
-    setValue(): void;
+    setValue(value: number): void;
     //
     alloc():GKConstantNoiseSource;
     //
@@ -1618,9 +1618,9 @@ declare namespace cocoascript {
     ruleWithBlockPredicate_action(predicate: GKRuleSystem, action: GKRuleSystem):GKRule;
     // https://developer.apple.com/documentation/gameplaykit/gkrule/1501148-salience
     salience(): NSInteger;
-    setSalience(): void;
+    setSalience(value: NSInteger): void;
     // https://developer.apple.com/documentation/gameplaykit/gkrule/1501234-evaluatepredicatewithsystem
-    evaluatePredicateWithSystem(system: GKRuleSystem):BOOL;
+    evaluatePredicateWithSystem(system: GKRuleSystem):boolean;
     // https://developer.apple.com/documentation/gameplaykit/gkrule/1501111-performactionwithsystem
     performActionWithSystem(system: GKRuleSystem):void;
     //
@@ -1641,9 +1641,9 @@ declare namespace cocoascript {
     initWithPredicate(predicate: NSPredicate):GKNSPredicateRule;
     // https://developer.apple.com/documentation/gameplaykit/gknspredicaterule/1501107-predicate
     predicate(): NSPredicate;
-    setPredicate(): void;
+    setPredicate(value: NSPredicate): void;
     // https://developer.apple.com/documentation/gameplaykit/gknspredicaterule/1501307-evaluatepredicatewithsystem
-    evaluatePredicateWithSystem(system: GKRuleSystem):BOOL;
+    evaluatePredicateWithSystem(system: GKRuleSystem):boolean;
     //
     alloc():GKNSPredicateRule;
     //
@@ -1662,10 +1662,10 @@ declare namespace cocoascript {
     init():GKRuleSystem;
     // https://developer.apple.com/documentation/gameplaykit/gkrulesystem/1501238-state
     state(): NSMutableDictionary;
-    setState(): void;
+    setState(value: NSMutableDictionary): void;
     // https://developer.apple.com/documentation/gameplaykit/gkrulesystem/1501114-rules
     rules(): GKRule;
-    setRules(): void;
+    setRules(value: GKRule): void;
     // https://developer.apple.com/documentation/gameplaykit/gkrulesystem/1501274-addrule
     addRule(rule: GKRule):void;
     // https://developer.apple.com/documentation/gameplaykit/gkrulesystem/1501130-addrulesfromarray
@@ -1676,15 +1676,15 @@ declare namespace cocoascript {
     evaluate():void;
     // https://developer.apple.com/documentation/gameplaykit/gkrulesystem/1501078-agenda
     agenda(): GKRule;
-    setAgenda(): void;
+    setAgenda(value: GKRule): void;
     // https://developer.apple.com/documentation/gameplaykit/gkrulesystem/1501057-executed
     executed(): GKRule;
-    setExecuted(): void;
+    setExecuted(value: GKRule): void;
     // https://developer.apple.com/documentation/gameplaykit/gkrulesystem/1501301-reset
     reset():void;
     // https://developer.apple.com/documentation/gameplaykit/gkrulesystem/1501276-facts
     facts(): NSArray;
-    setFacts(): void;
+    setFacts(value: NSArray): void;
     // https://developer.apple.com/documentation/gameplaykit/gkrulesystem/1501109-assertfact
     assertFact(fact: NSObject):void;
     // https://developer.apple.com/documentation/gameplaykit/gkrulesystem/1501079-assertfact
