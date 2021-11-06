@@ -13,7 +13,10 @@
     "download": "ts-node bin/download.ts",
     "generate": "ts-node bin/generate.ts",
     "dtslint": "dtslint types",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "prettier lib/*.ts",
+    "lint": "npm run prettier",
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@supercharge/promise-pool": "^1.6.0",
